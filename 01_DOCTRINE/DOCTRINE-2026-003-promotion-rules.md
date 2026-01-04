@@ -2,18 +2,15 @@
 id: DOCTRINE-2026-003
 title: Promotion Rules (Inbox → Research → Doctrine)
 owner: ML1
-status: draft
-created_date: 2026-01-04
-last_updated: 2026-01-04
-tags: [promotion, workflow, governance]
-
-effective_date:
+status: approved
+effective_date: 2026-01-04
 supersedes:
 
 provenance:
-  decided_by:
-  decided_on:
-  context: Defines how information moves through the system without gaining authority implicitly
+  decided_by: ML1
+  decided_on: 2026-01-04
+  context: Approved doctrine defining promotion lifecycle and preventing implicit authority
+
 ---
 
 # Promotion Rules (Inbox → Research → Doctrine)
