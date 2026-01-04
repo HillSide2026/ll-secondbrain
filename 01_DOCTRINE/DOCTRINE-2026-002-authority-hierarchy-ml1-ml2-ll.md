@@ -1,8 +1,12 @@
+---
 id: DOCTRINE-2026-002
 title: Authority Hierarchy (ML1 / ML2 / LL)
 owner: ML1
-
 status: approved
+created_date: 2026-01-04
+last_updated: 2026-01-04
+tags: [authority, governance, hierarchy]
+
 effective_date: 2026-01-04
 supersedes:
 
@@ -10,6 +14,12 @@ provenance:
   decided_by: ML1
   decided_on: 2026-01-04
   context: Approved doctrine establishing authority hierarchy between ML1, ML2, and LL
+---
+
+
+
+
+
 ---
 
 # Authority Hierarchy (ML1 / ML2 / LL)
