@@ -29,3 +29,11 @@ This log records all system-level decisions affecting the Second Brain.
 **Approved by:** ML1  
 **Artifacts impacted:** /01_DOCTRINE/DOCTRINE-2026-002-authority-hierarchy-ml1-ml2-ll.md  
 **Notes:** Establishes non-delegable human authority and execution-only role of LL
+
+## 2026-01-04 — Approve Doctrine 2026-003 (Promotion Rules)
+
+**Decision:** Approved doctrine defining promotion lifecycle from Inbox to Research to Doctrine  
+**Approved by:** ML1  
+**Artifacts impacted:** /01_DOCTRINE/DOCTRINE-2026-003-promotion-rules.md  
+**Notes:** Establishes controlled pathway for authority creation and prevents implicit promotion
+
