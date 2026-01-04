@@ -5,6 +5,7 @@ owner: ML1
 status: approved
 effective_date: 2026-01-04
 supersedes:
+tags: [promotion, workflow, governance]
 
 provenance:
   decided_by: ML1
