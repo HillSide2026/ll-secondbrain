@@ -10,7 +10,6 @@ provenance:
   decided_by: ML1
   decided_on: 2026-01-04
   context: Approved doctrine defining promotion lifecycle and preventing implicit authority
-
 ---
 
 # Promotion Rules (Inbox → Research → Doctrine)
