@@ -1,8 +1,12 @@
 # Doctrine
 
-This folder contains **ML1-approved doctrine**: policies, standards, principles, and rules.
+ML1-approved policies, standards, principles, and rules governing the system.
 
-Rules:
-- Doctrine must include YAML frontmatter per `/00_SYSTEM/SCHEMAS.md`
-- Status must be `approved` to be treated as authoritative
-- Superseded doctrine is moved to `/09_ARCHIVE` and linked via `supersedes`
+## Authority
+- Authoritative doctrine that inherits structure rules from `00_SYSTEM`.
+- Superseding updates move deprecated items to `09_ARCHIVE` with cross-references.
+
+## Usage
+- Include YAML frontmatter per `00_SYSTEM/SCHEMAS.md` and track status.
+- Cite doctrine IDs when deriving playbooks or templates.
+- Submit revisions through change control defined in `00_SYSTEM`.

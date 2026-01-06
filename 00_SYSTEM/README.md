@@ -1,12 +1,12 @@
 # System Definition
 
-This directory defines how the Second Brain works.
+Defines how the Second Brain repository is structured and governed.
 
-Anything in this folder governs:
-- structure
-- schemas
-- naming
-- decision provenance
-- change control
+## Authority
+- Authoritative rules for structure, schemas, naming, decision provenance, and change control.
+- Other directories must align with definitions maintained here.
 
-No content outside this folder may contradict rules defined here.
+## Usage
+- Consult `SCHEMAS.md` and `GLOSSARY.md` before adding or modifying content elsewhere.
+- Record structural changes in `DECISION_LOG.md` to preserve provenance.
+- Update this folder before adjusting derived materials in other directories.
