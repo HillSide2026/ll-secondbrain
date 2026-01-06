@@ -1,0 +1,28 @@
+name: Verify required repository docs
+
+on:
+  pull_request:
+
+jobs:
+  check-required-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Ensure required documentation files exist
+        run: |
+          missing=0
+          if [ ! -f CODEX.md ]; then
+            echo "ERROR: CODEX.md is missing from the repository root."
+            missing=1
+          fi
+
+          if [ ! -f REPO_MAP.md ]; then
+            echo "ERROR: REPO_MAP.md is missing from the repository root."
+            missing=1
+          fi
+
+          if [ "$missing" -ne 0 ]; then
+            exit 1
+          fi
