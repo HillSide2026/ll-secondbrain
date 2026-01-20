@@ -4,6 +4,7 @@
 - 01_DOCTRINE — ML1-approved doctrines, policies, standards
 - 02_PLAYBOOKS — Repeatable operational workflows
 - 03_TEMPLATES — Reusable document templates
+- 3.a_Matters — Case-specific, stateful matter records. Each folder represents one distinct matter with its own lifecycle.
 - 06_RESEARCH — Research notes and source material
 - 07_REFERENCE — Stable reference (definitions, glossaries)
 - 08_INBOX — Unprocessed intake (must be triaged)

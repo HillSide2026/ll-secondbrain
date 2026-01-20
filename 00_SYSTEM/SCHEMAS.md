@@ -24,3 +24,14 @@ provenance:
   decided_on:
   context:
 ---
+
+## Matter
+
+Matter = {
+  overview,
+  facts,
+  Records (documents + communications including email)
+  analysis,
+  Outputs
+  actions,
+}
