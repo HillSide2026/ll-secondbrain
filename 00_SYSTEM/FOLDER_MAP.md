@@ -4,7 +4,7 @@
 - 01_DOCTRINE — ML1-approved doctrines, policies, standards
 - 02_PLAYBOOKS — Repeatable operational workflows
 - 03_TEMPLATES — Reusable document templates
-- 04_INITIATIVES — Strategic initiatives and projects
+- 04_INITIATIVES — Strategic initiatives and projects. Grouped by portfolio (SYSTEM vs LL) based on primary beneficiary.
 - 05_MATTERS — Case-specific, stateful matter records. Each folder represents one distinct matter with its own lifecycle.
 - 06_RUNS — Execution runs and operational logs
 - 07_RESEARCH — Research notes and source material
