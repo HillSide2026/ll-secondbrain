@@ -52,26 +52,33 @@
 - **Inventory map:** Confirm system portfolio boundaries and related repositories.
   - **Dependencies:** None.
   - **Risks:** Overlooking informal artifacts stored outside standard folders.
+  - **Owner:** ML1.
 - **Integration gap scan:** Identify required data sources, credentials, and access models.
   - **Dependencies:** Inventory map.
   - **Risks:** Undocumented access constraints.
+  - **Owner:** ML1.
 - **Agent role discovery:** Define system-level roles and responsibilities at high level.
   - **Dependencies:** Inventory map.
   - **Risks:** Role overlap with matter workflows.
+  - **Owner:** ML1.
 
 ### Stage 2 Backlog
 - **Gmail read-only spec:** Required mailbox scopes, retention expectations, audit logging.
   - **Dependencies:** Stage 1 integration gap scan.
   - **Risks:** API limits or policy constraints.
+  - **Owner:** Agent (Integration Steward Agent).
 - **SharePoint read-only spec:** Site/library scopes, metadata fields, search behaviors.
   - **Dependencies:** Stage 1 integration gap scan.
   - **Risks:** Permissions complexity and tenant restrictions.
+  - **Owner:** Agent (Integration Steward Agent).
 - **Microsoft Word read-only spec:** Document access patterns and extraction needs.
   - **Dependencies:** Stage 1 integration gap scan.
   - **Risks:** File format inconsistencies.
+  - **Owner:** Agent (Integration Steward Agent).
 - **Integration comparison matrix:** API vs export vs connector options.
   - **Dependencies:** Gmail/SharePoint/Word specs.
   - **Risks:** Unclear operational cost or compliance impact.
+  - **Owner:** Agent (Integration Steward Agent).
 
 ### Stage 3 Backlog
 - **Agent roster (5 active system-level agents):**
@@ -82,23 +89,29 @@
   - Runbook & QA Agent
   - **Dependencies:** Stage 1 agent role discovery.
   - **Risks:** Role ambiguity or duplicated responsibilities.
+  - **Owner:** ML1.
 - **Agent handoff map:** Inputs/outputs per agent, with sequencing.
   - **Dependencies:** Agent roster.
   - **Risks:** Missing ownership for outputs.
+  - **Owner:** Agent (System Governance Agent).
 - **System runbook outlines:** Draft runbooks for each agent.
   - **Dependencies:** Agent handoff map.
   - **Risks:** Overlap with doctrine or playbooks.
+  - **Owner:** Agent (Runbook & QA Agent).
 
 ### Stage 4 Backlog
 - **Operating cadence draft:** Weekly review, monthly portfolio check-in.
   - **Dependencies:** Stage 3 runbook outlines.
   - **Risks:** Cadence too heavy for ML1.
+  - **Owner:** Agent (Portfolio Planning Agent).
 - **Promotion criteria draft:** Conditions to move draft → active roadmap.
   - **Dependencies:** Stage 1 inventory, Stage 3 agent map.
   - **Risks:** Insufficient clarity for ML1 decision.
+  - **Owner:** ML1.
 - **Audit checklist draft:** Minimal compliance list for system portfolio changes.
   - **Dependencies:** Operating cadence draft.
   - **Risks:** Checklist conflicts with doctrine.
+  - **Owner:** Agent (System Governance Agent).
 
 ---
 
@@ -146,10 +159,26 @@
 
 ---
 
+## Week-1 Success Criteria
+- **5 active system-level agents:** Each named agent completes a defined runbook flow end-to-end and produces a tangible repo artifact (e.g., draft, map, or checklist) in the roadmap’s scope.
+- **Read-only integrations:** Each integration specification is validated against a source system with documented access scopes and an explicit statement that no write-back or mutation capability is enabled.
+
+## Out of Scope (This Roadmap)
+- No matter-level work or matter execution workflows.
+- No write-back, mutation, or automation that changes external systems.
+- No doctrine updates or policy changes.
+- No automatic promotion or execution authorization for this roadmap.
+
 ## TBD (Placeholder)
 - [TBD] Confirm naming conventions for agent artifacts.
 - [TBD] Confirm integration logging + retention requirements.
 - [TBD] Confirm allowable data extraction formats.
+
+## Roadmap Promotion Criteria (Draft → Active)
+- ML1 review package includes evidence that Stage 1 DoD artifacts exist and are stored in-repo.
+- Week-1 success criteria are demonstrated with linked artifacts for each agent and integration spec.
+- Clear ownership mapping exists for all backlog items with no unassigned blockers.
+- Decision questions for ML1 are answered or explicitly logged as open with rationale.
 
 ## Decision Questions for ML1
 1. Which integration approach is preferred for Gmail/SharePoint/Word (API vs connector vs export)?
