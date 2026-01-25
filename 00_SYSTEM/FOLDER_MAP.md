@@ -5,6 +5,7 @@
 - 02_PLAYBOOKS — Repeatable operational workflows
 - 03_TEMPLATES — Reusable document templates
 - 04_INITIATIVES — Strategic initiatives and projects. Grouped by portfolio (SYSTEM vs LL) based on primary beneficiary.
+  - System roadmaps live in 04_INITIATIVES/SYSTEM_PORTFOLIO/{00_DRAFT_ROADMAPS,01_ACTIVE_ROADMAPS}.
 - 05_MATTERS — Case-specific, stateful matter records. Each folder represents one distinct matter with its own lifecycle.
 - 06_RUNS — Execution runs and operational logs
 - 07_RESEARCH — Research notes and source material
