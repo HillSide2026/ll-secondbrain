@@ -1,8 +1,21 @@
 # Doctrine
 
-This folder contains **ML1-approved doctrine**: policies, standards, principles, and rules.
+Doctrine is the system's authoritative guidance. It is organized by type:
 
-Rules:
-- Doctrine must include YAML frontmatter per `/00_SYSTEM/SCHEMAS.md`
-- Status must be `approved` to be treated as authoritative
-- Superseded doctrine is moved to `/10_ARCHIVE` and linked via `supersedes`
+## 01_BINDING
+Non-optional rules, definitions, constraints, and required workflows.
+If violated, it is a system breach.
+
+## 02_INTERPRETIVE
+Clarifications, edge-case guidance, and principles for exercising judgment
+when binding doctrine does not uniquely determine an outcome.
+Interpretive doctrine does not override binding doctrine.
+
+## 03_PROCEDURAL
+Governance and change-control doctrine: how doctrine and system rules are
+reviewed, approved, versioned, deprecated, and migrated.
+
+## Classification rule
+- "must / required / never / always" → Binding
+- "means / applies when / examples / principles" → Interpretive
+- "review / approval / version / deprecate / change control" → Procedural
