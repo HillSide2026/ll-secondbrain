@@ -1,7 +1,7 @@
 # System Definition
 
 This directory defines how the Second Brain works.
-3.a_Matters holds live and historical matter files. It is operational memory, not doctrine.
+05_MATTERS holds live and historical matter files. It is operational memory, not doctrine.
 
 Anything in this folder governs:
 - structure
