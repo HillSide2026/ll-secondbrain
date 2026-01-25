@@ -1,7 +1,7 @@
 # Folder Map
 
 - 00_SYSTEM — How the system works (rules, schemas, governance)
-- 01_DOCTRINE — ML1-approved doctrines, policies, standards
+- 01_DOCTRINE — ML1-approved doctrines, principles, policies, standards
 - 02_PLAYBOOKS — Repeatable operational workflows
 - 03_TEMPLATES — Reusable document templates
 - 04_INITIATIVES — Strategic initiatives and projects. Grouped by portfolio (SYSTEM vs LL) based on primary beneficiary.
