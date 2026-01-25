@@ -5,8 +5,8 @@
 - Owner: ML1
 - Precondition: Stage 1 completed
 - Stage 1 completion artifact: `04_INITIATIVES/SYSTEM_PORTFOLIO/00_DRAFT_ROADMAPS/STAGE1_INVENTORY.md`
-- Kickoff date: TBD (set by ML1)
-- Review cadence: biweekly (ML1 review)
+- Kickoff date: 2026-01-25 (set by ML1)
+- Review cadence: daily (ML1 review)
 
 ## Purpose
 Stage 2 defines, bounds, and validates read-only integration specifications for Gmail, SharePoint, and Microsoft Word, ensuring access scopes, audit expectations, and comparison criteria are documented without execution, credentialed access, or write-back capabilities.
