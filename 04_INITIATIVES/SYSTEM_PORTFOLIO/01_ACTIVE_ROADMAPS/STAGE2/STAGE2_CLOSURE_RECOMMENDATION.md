@@ -24,11 +24,11 @@
 | Integration comparison matrix | PASS | Matrix completed with system/approach comparisons across dimensions. |
 | Audit/logging expectations | PASS | Audit/logging expectations documented with required elements. |
 | Spec completeness checklist | PASS | Checklist completed with PASS for all three specs. |
-| No-write-path review | PASS | Verification checklist completed; no write paths identified. |
+| No-write-path review | PASS | Verification checklist completed (including audit/logging expectations); no write paths identified. |
 
 ## No-Write-Path Review Outcome
 - Result: PASS
-- Evidence: Verification checklist completed with no write/mutation/execution or credential paths identified.
+- Evidence: Verification checklist completed (including audit/logging expectations) with no write/mutation/execution or credential paths identified.
 
 ## Stage 2 Definition of Done (DoD) Evaluation
 | DoD Requirement | Result | Evidence |
