@@ -19,20 +19,26 @@
 - Policy/compliance risk
 
 ## Summary Table
-| System | Read-only scope fidelity | Audit/logging support | Permission complexity | Rate limits / throttling | Administrative overhead | Policy/compliance risk |
-| --- | --- | --- | --- | --- | --- | --- |
-| Gmail | High for message metadata and bodies within mailbox scope. | API access logs supported; scope usage must be documented. | Medium (mailbox scope approvals, delegated access decisions). | API quotas and per-user limits apply. | Medium (scope governance and mailbox selection). | Medium (email sensitivity and retention constraints). |
-| SharePoint | High for site/library metadata and document access within approved sites. | Site/library access logs where enabled; tenant-level audit varies. | High (site/library permissions and tenant policies). | API throttling and paging limits likely. | High (site selection, permissions coordination). | Medium-High (content sensitivity and tenant policy constraints). |
-| Microsoft Word | Medium-High for document content and basic structure within approved repositories. | Audit support depends on repository provider; document-level access logs may vary. | Medium (repository-level permissions). | Repository or API limits vary by storage system. | Medium (repository identification and access mapping). | Medium (document sensitivity and format exclusions). |
+| System | Approach | Read-Only Scope Fidelity | Audit/Logging Support | Permission Complexity | Rate Limits / Throttling | Administrative Overhead | Policy/Compliance Risk |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Gmail | API | High when limited to read-only scopes. | Medium; depends on API/tenant logging. | Medium; scope configuration required. | Medium; API quotas apply. | Medium; app registration and monitoring. | Medium; mailbox data sensitivity. |
+| Gmail | Connector | Medium; connector capabilities vary by vendor. | Medium; vendor log availability varies. | Medium; connector permissions review needed. | Low to Medium; vendor-managed throttling. | Medium to High; vendor onboarding required. | Medium; third-party processing risk. |
+| Gmail | Export | Low; export may exceed read-only needs. | Low; export logs limited. | High; export permissions can be broad. | Low; batch export. | High; manual export management. | High; data handling exposure. |
+| SharePoint | API | High when scoped to read-only endpoints. | Medium; dependent on tenant audit logs. | High; site/library permission complexity. | Medium; API throttling and paging. | Medium; app registration and consent. | Medium; document sensitivity and access scope. |
+| SharePoint | Connector | Medium; connector abstraction varies. | Medium; vendor log availability varies. | High; connector permissions mapping to sites. | Low to Medium; vendor-managed throttling. | Medium to High; vendor onboarding required. | Medium; third-party processing risk. |
+| SharePoint | Export | Low; export may overshoot read-only targets. | Low; export logs limited. | High; export permissions can be broad. | Low; batch export. | High; manual export management. | High; data handling exposure. |
+| Microsoft Word | API | Medium; depends on storage repository API. | Low to Medium; repository audit logs vary. | Medium; repository permissions needed. | Medium; repository API throttling. | Medium; integration setup varies by repo. | Medium; document content sensitivity. |
+| Microsoft Word | Connector | Medium; connector capabilities vary. | Medium; vendor log availability varies. | Medium; connector permissions review needed. | Low to Medium; vendor-managed throttling. | Medium to High; vendor onboarding required. | Medium; third-party processing risk. |
+| Microsoft Word | Export | Low; export often exceeds read-only intent. | Low; export logs limited. | Medium to High; export permissions may be broad. | Low; batch export. | High; manual export management. | High; data handling exposure. |
 
 ## Constraints and Assumptions
 - No live credential testing performed.
 - Documentation and admin confirmation only.
 
 ## Observations
-- Gmail offers consistent read-only access patterns but is sensitive to mailbox scope and retention rules.
-- SharePoint presents the highest permissions complexity due to tenant-level policy and site variability.
-- Word document access fidelity depends on repository controls and may vary across storage systems.
+- API approaches provide the highest read-only scope fidelity but require careful scope management and tenant permissions.
+- Connector approaches introduce vendor dependency and variable audit/logging coverage.
+- Export approaches increase compliance risk and administrative overhead due to broad access and manual handling.
 
 ## Open Questions
 - Which approach minimizes compliance risk?
