@@ -17,135 +17,161 @@
 
 ---
 
-## Stages (Milestones) + Definition of Done
+## Stage Structure
 
-### Stage 1 — System Discovery & Readiness Baseline ✅ COMPLETE
-**Definition of Done (DoD):**
-- System inventory completed for core governance + portfolio structure.
-- Gaps/opportunities list created for system-level agents and read-only integrations.
-- Draft architecture map for integrations and agent roles documented.
-- Risks and dependencies logged for downstream stages.
-
-**Status:** Archived at `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/`
-
-### Stage 2 — Read-Only Integration Foundation ✅ COMPLETE
-**Definition of Done (DoD):**
-- Read-only integration requirements defined for Gmail, SharePoint, and Microsoft Word.
-- Data access boundaries + audit expectations documented.
-- Integration approach options (API, connector, export) compared with tradeoffs.
-- Pilot test plan drafted (no execution authorization).
-
-**Status:** Archived at `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE2/`
-
-### Stage 3 — System-Level Agent Orchestration ✅ COMPLETE
-**Definition of Done (DoD):**
-- 5 active system-level agent roles defined with responsibilities + handoffs.
-- Agent governance guardrails documented (no doctrine changes).
-- System runbooks scoped for agent execution flows.
-- Metrics for system reliability + throughput defined.
-
-**Status:** READY_FOR_CLOSURE at `01_ACTIVE_ROADMAPS/STAGE3/`
-
-### Stage 4 — Portfolio Operating Rhythm ✅ COMPLETE
-**Definition of Done (DoD):**
-- Roadmap-to-run cadence defined (draft schedule + review triggers).
-- Backlog intake and prioritization rules drafted for system portfolio.
-- Active roadmap promotion criteria drafted for ML1 decision.
-- Audit checklist drafted for ongoing compliance.
-
-**Status:** READY_FOR_CLOSURE at `01_ACTIVE_ROADMAPS/STAGE4/`
-
-### Stage 5 — Agent Implementation & Integration Activation 🔄 ACTIVE
-**Definition of Done (DoD):**
-- Agent runtime selected and configured (Claude Code, MCP, or custom)
-- All 5 system-level agents deployed and operational
-- Gmail read-only integration activated with audit logging
-- SharePoint read-only integration activated with audit logging
-- Word/OneDrive read-only integration activated with audit logging
-- Integration test results documented (read-only verified, no write paths)
-
-**Status:** KICKOFF at `01_ACTIVE_ROADMAPS/STAGE5/`
-
-### Stage 6 — Operational Validation & Steady State 📋 PLANNED
-**Definition of Done (DoD):**
-- First full operating cycle completed (weekly cadence)
-- All agents produce at least one artifact per runbook
-- Metrics baseline established (compliance rate, triage time, etc.)
-- Operating rhythm validated and adjusted if needed
-- System declared operational for steady-state use
-
-**Status:** PLANNED (pending Stage 5 completion)
+```
+ROADMAP-SYSTEM-2026W05
+├── Stage 1 — Foundation & Governance ✅ COMPLETE
+│   ├── 1.1 System Discovery & Readiness
+│   ├── 1.2 Integration Specifications
+│   ├── 1.3 Agent Orchestration Design
+│   └── 1.4 Operating Rhythm Rules
+│
+└── Stage 2 — Implementation & Operations 🔄 ACTIVE
+    ├── 2.1 Agent Runtime Setup
+    ├── 2.2 Integration Activation
+    └── 2.3 Operational Validation
+```
 
 ---
 
-## Backlog by Stage
+## Stage 1 — Foundation & Governance ✅ COMPLETE
 
-### Stage 5 Backlog
-- **SYS-001: Agent runtime selection** — Choose Claude Code agents, MCP servers, or custom SDK
-  - **Dependencies:** Stage 3 agent roster
-  - **Risks:** Wrong choice requires re-architecture
-  - **Owner:** ML1
-- **SYS-002: Gmail integration** — OAuth app, scopes, audit logging per Stage 2 spec
-  - **Dependencies:** SYS-001
-  - **Risks:** API limits, policy constraints
-  - **Owner:** Integration Steward Agent
-- **SYS-003: SharePoint integration** — Graph API, site scopes per Stage 2 spec
-  - **Dependencies:** SYS-001
-  - **Risks:** Permissions complexity, tenant restrictions
-  - **Owner:** Integration Steward Agent
-- **SYS-004: Word/OneDrive integration** — Document access per Stage 2 spec
-  - **Dependencies:** SYS-001
-  - **Risks:** File format inconsistencies
-  - **Owner:** Integration Steward Agent
-- **SYS-005 to SYS-009: Deploy 5 agents** — Configure and deploy each agent
-  - **Dependencies:** SYS-001
-  - **Risks:** Role ambiguity, missing handoffs
-  - **Owner:** Runbook & QA Agent
+**Purpose:** Establish governance framework, design agents, specify integrations, define operating rules.
+**Status:** All sub-stages complete. Artifacts archived or ready for archive.
 
-### Stage 6 Backlog
-- **SYS-010: First operating cycle** — Execute weekly cadence end-to-end
-  - **Dependencies:** SYS-005 to SYS-009
-  - **Risks:** Cadence too heavy, gaps in handoffs
-  - **Owner:** All Agents
-- **SYS-011: Archive Stage 3 + 4** — Move to 10_ARCHIVE
-  - **Dependencies:** Stage closures approved
-  - **Risks:** None
-  - **Owner:** Knowledge Curation Agent
-- **Metrics baseline** — Establish initial values for all Stage 3 metrics
-  - **Dependencies:** SYS-010
-  - **Risks:** Insufficient data
-  - **Owner:** Portfolio Planning Agent
-- **Operating rhythm adjustment** — Tune cadence based on first cycle learnings
-  - **Dependencies:** Metrics baseline
-  - **Risks:** Over-engineering
-  - **Owner:** ML1
+### 1.1 System Discovery & Readiness Baseline ✅
+**DoD:**
+- System inventory completed for core governance + portfolio structure
+- Gaps/opportunities list created for agents and integrations
+- Architecture map for integrations and agent roles documented
+- Risks and dependencies logged
+
+**Artifacts:** `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/`
+
+### 1.2 Read-Only Integration Foundation ✅
+**DoD:**
+- Integration requirements defined for Gmail, SharePoint, Word
+- Data access boundaries + audit expectations documented
+- Integration approach options compared with tradeoffs
+- Pilot test plan drafted
+
+**Artifacts:** `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE2/`
+
+### 1.3 System-Level Agent Orchestration ✅
+**DoD:**
+- 5 system-level agent roles defined with responsibilities + handoffs
+- Agent governance guardrails documented
+- Runbooks scoped for agent execution flows
+- Metrics for reliability + throughput defined
+
+**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE3/` (ready for archive)
+
+### 1.4 Portfolio Operating Rhythm ✅
+**DoD:**
+- Roadmap-to-run cadence defined
+- Backlog intake and prioritization rules drafted
+- Promotion criteria drafted for ML1 decision
+- Audit checklist drafted
+
+**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE4/` (ready for archive)
+
+---
+
+## Stage 2 — Implementation & Operations 🔄 ACTIVE
+
+**Purpose:** Build and deploy actual agents and integrations; validate operational readiness.
+**Status:** Kickoff approved. Sub-stages in progress.
+
+### 2.1 Agent Runtime Setup 🔄 IN PROGRESS
+**DoD:**
+- Agent runtime selected and configured: **Claude Code agents**
+- Credential storage configured: **Environment variables** (`.env` excluded from git)
+- All 5 agents deployed and tested against runbooks
+
+**Decisions Resolved:**
+- Runtime: Claude Code agents (subprocess model)
+- Credentials: Environment variables (upgrade to secrets manager later if needed)
+
+**Backlog Items:** SYS-001, SYS-005 to SYS-009
+
+### 2.2 Integration Activation 📋 PLANNED
+**DoD:**
+- Gmail read-only integration active with audit logging
+- SharePoint read-only integration active with audit logging
+- Word/OneDrive read-only integration active with audit logging
+- No-write-path verification completed for all
+
+**Sequence:** Gmail → SharePoint → Word (per ML1 decision)
+
+**Backlog Items:** SYS-002, SYS-003, SYS-004
+
+### 2.3 Operational Validation 📋 PLANNED
+**DoD:**
+- First full operating cycle completed (weekly cadence)
+- All agents produce at least one artifact per runbook
+- Metrics baseline established
+- System declared operational for steady-state use
+
+**Backlog Items:** SYS-010, SYS-011, metrics baseline, rhythm adjustment
+
+---
+
+## Backlog Summary
+
+### Stage 2.1 — Agent Runtime
+| ID | Description | Owner | Status |
+|----|-------------|-------|--------|
+| SYS-001 | Agent runtime selection | ML1 | **RESOLVED: Claude Code** |
+| SYS-005 | Deploy System Governance Agent | Runbook & QA | pending |
+| SYS-006 | Deploy Portfolio Planning Agent | Runbook & QA | pending |
+| SYS-007 | Deploy Integration Steward Agent | Runbook & QA | pending |
+| SYS-008 | Deploy Knowledge Curation Agent | Runbook & QA | pending |
+| SYS-009 | Deploy Runbook & QA Agent | Runbook & QA | pending |
+
+### Stage 2.2 — Integrations
+| ID | Description | Owner | Status |
+|----|-------------|-------|--------|
+| SYS-002 | Gmail read-only integration | Integration Steward | pending (first) |
+| SYS-003 | SharePoint read-only integration | Integration Steward | pending (second) |
+| SYS-004 | Word/OneDrive integration | Integration Steward | pending (third) |
+
+### Stage 2.3 — Validation
+| ID | Description | Owner | Status |
+|----|-------------|-------|--------|
+| SYS-010 | First operating cycle | All Agents | pending |
+| SYS-011 | Archive Stage 1 artifacts | Knowledge Curation | pending |
 
 ---
 
 ## Out of Scope (This Roadmap)
 - Matter-level work or matter execution workflows
-- Write-back, mutation, or automation that changes external systems (beyond read-only)
-- Doctrine updates or policy changes (require separate doctrine PRs)
-- LL Portfolio initiatives (separate portfolio)
+- Write-back, mutation, or automation that changes external systems
+- Doctrine updates or policy changes
+- LL Portfolio initiatives
 
-## Resolved Decision Questions
-1. ~~Which integration approach is preferred?~~ → **API-based (OAuth/Graph)** for Gmail and SharePoint
-2. ~~Are the proposed 5 agents correct?~~ → **Yes, approved as-is**
-3. ~~What cadence is acceptable?~~ → **Weekly** (with monthly health check)
-4. ~~What evidence for promotion?~~ → **Checklist per STAGE4_PROMOTION_CRITERIA.md**
-5. ~~Additional dependencies before Stage 2?~~ → **None identified**
+## Resolved Decisions
+
+| # | Question | Decision | Date |
+|---|----------|----------|------|
+| 1 | Integration approach | API-based (OAuth/Graph) | 2026-01-26 |
+| 2 | Agent roster | 5 agents approved as-is | 2026-01-26 |
+| 3 | Review cadence | Weekly (monthly health check) | 2026-01-26 |
+| 4 | Promotion evidence | Per STAGE4_PROMOTION_CRITERIA.md | 2026-01-26 |
+| 5 | Agent runtime | **Claude Code agents** | 2026-01-26 |
+| 6 | Credential storage | **Environment variables** | 2026-01-26 |
+| 7 | Integration order | **Gmail → SharePoint → Word** | 2026-01-26 |
 
 ## TBD (Remaining)
-- [TBD] Confirm agent runtime choice (SYS-001)
-- [TBD] Confirm credential storage approach for integrations
-- [TBD] Confirm integration logging retention period
+- [TBD] Integration logging retention period
 
 ---
 
-## Roadmap Promotion Record
+## Roadmap Record
 
 | Date | Action | Approver | Notes |
 |------|--------|----------|-------|
 | 2026-01-25 | Created as DRAFT | ML1 | Initial roadmap |
-| 2026-01-26 | Stage 1-4 completed | ML1 | Documentation phases done |
-| 2026-01-26 | Promoted to ACTIVE | ML1 | Implementation phases begin |
+| 2026-01-26 | Stage 1 completed | ML1 | Foundation phases done |
+| 2026-01-26 | Promoted to ACTIVE | ML1 | Implementation begins |
+| 2026-01-26 | Stage 2 decisions | ML1 | Runtime, credentials, order resolved |
