@@ -47,7 +47,7 @@ ROADMAP-SYSTEM-2026W05
 - Architecture map for integrations and agent roles documented
 - Risks and dependencies logged
 
-**Artifacts:** `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/`
+**Artifacts:** `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.1/`
 
 ### 1.2 Read-Only Integration Foundation ✅
 **DoD:**
@@ -56,7 +56,7 @@ ROADMAP-SYSTEM-2026W05
 - Integration approach options compared with tradeoffs
 - Pilot test plan drafted
 
-**Artifacts:** `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE2/`
+**Artifacts:** `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.2/`
 
 ### 1.3 System-Level Agent Orchestration ✅
 **DoD:**
@@ -65,7 +65,7 @@ ROADMAP-SYSTEM-2026W05
 - Runbooks scoped for agent execution flows
 - Metrics for reliability + throughput defined
 
-**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE3/` (ready for archive)
+**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/` (ready for archive)
 
 ### 1.4 Portfolio Operating Rhythm ✅
 **DoD:**
@@ -74,7 +74,7 @@ ROADMAP-SYSTEM-2026W05
 - Promotion criteria drafted for ML1 decision
 - Audit checklist drafted
 
-**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE4/` (ready for archive)
+**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.4/` (ready for archive)
 
 ---
 

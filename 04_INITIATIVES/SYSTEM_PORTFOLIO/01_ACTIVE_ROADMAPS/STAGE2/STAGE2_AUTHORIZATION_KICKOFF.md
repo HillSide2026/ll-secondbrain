@@ -71,7 +71,7 @@ Explicitly prohibited:
 ## Binding Inputs
 
 ### From Stage 1.2 (Integration Specs)
-Located at `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE2/`:
+Located at `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.2/`:
 - STAGE2_GMAIL_READ_ONLY_SPEC.md
 - STAGE2_SHAREPOINT_READ_ONLY_SPEC.md
 - STAGE2_WORD_READ_ONLY_SPEC.md
@@ -79,13 +79,13 @@ Located at `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE2/`:
 - STAGE2_NO_WRITE_PATH_REVIEW.md
 
 ### From Stage 1.3 (Agent Definitions)
-Located at `01_ACTIVE_ROADMAPS/STAGE3/`:
+Located at `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/`:
 - STAGE3_AGENT_ROSTER.md — 5 agent definitions
 - STAGE3_HANDOFF_MAP.md — Agent interactions
 - STAGE3_RUNBOOK_*.md — 5 agent runbooks
 
 ### From Stage 1.4 (Operating Rules)
-Located at `01_ACTIVE_ROADMAPS/STAGE4/`:
+Located at `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.4/`:
 - STAGE4_OPERATING_CADENCE.md
 - STAGE4_AUDIT_CHECKLIST.md
 
