@@ -1,9 +1,9 @@
 # Agent Definition
 **Agent:** SYS-006 — Portfolio Planning
 
-**Version:** v0.1
+**Version:** v1.0
 **Layer:** 01_SYSTEM
-**Status:** Draft (not approved)
+**Status:** Active (ML1 approved 2026-01-27)
 
 ---
 
@@ -15,7 +15,7 @@ Manage roadmap sequencing, backlog prioritization, and stage transitions.
 
 ## Derived From
 
-- Runbook: `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE3_RUNBOOK_PORTFOLIO_PLANNING.md`
+- Runbook: `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE1.3_RUNBOOK_PORTFOLIO_PLANNING.md`
 
 ---
 

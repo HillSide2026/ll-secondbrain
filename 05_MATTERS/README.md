@@ -1,44 +1,80 @@
-# Matters
+# 05_MATTERS
 
-## Status layout
+## Purpose
+
+This directory contains matter-level information organized by **Delivery Status** (lawyer attention priority).
+
+Folder placement reflects `delivery_status` only. The other two fields (`status`, `fulfillment_status`) are metadata stored in each matter's `MATTER.yaml`.
+
+---
+
+## Directory Structure
 
 ```
 05_MATTERS/
-├── OPEN/
-│   ├── essential/
-│   ├── strategic/
-│   ├── standard/
-│   └── parked/
-├── PENDING/
-└── CLOSED/
+├── ESSENTIAL/   # Highest lawyer attention
+├── STRATEGIC/   # Strategic importance
+├── STANDARD/    # Normal priority
+└── PARKED/      # Temporarily deprioritized
 ```
 
-`OPEN` subfolders map to the delivery status values (essential, strategic, standard, parked).
+---
 
-## Matter template
+## ESSENTIAL
 
-```
-{MATTER_ID}/
+| matter_id | matter_name | status | delivery_status | fulfillment_status | path |
+|-----------|-------------|--------|-----------------|-------------------|------|
+| 25-927-00003 | Stream Ventures Limited | Open | Essential | urgent | `ESSENTIAL/25-927-00003/` |
+| 25-1593-00001 | 1001162998 Ontario Corp. o/a KaleMart | Open | Essential | active | `ESSENTIAL/25-1593-00001/` |
+| 26-1630-00001 | Marcela Hernandez | Open | Essential | active | `ESSENTIAL/26-1630-00001/` |
 
-├── 00_META.md
-STATUS:                        # OPEN/PENDING/CLOSED
-DELIVERY_STATUS:               # essential/strategic/standard/parked
-PRACTICE_AREA:                 # corporate / contract / compliance / transaction
+---
 
-├── 01_OPS/
-│   ├── TASKS.md               # task table (stateful)
-│   ├── DEADLINES.md           # hard dates + consequences
-│   ├── NEXT_ACTIONS.md        # top 5–10 next moves
-│   └── STATUS_SUMMARY.md      # one-page “where we are”
+## STRATEGIC
 
-├── 02_WORK/
-│   ├── 01_INTAKE/
-│   ├── 02_TRIAGE/
-│   ├── 03_RESEARCH/
-│   ├── 04_ANALYSIS/
-│   ├── 05_DRAFTS/
-│   ├── 06_REVIEW/
-│   ├── 07_DECISIONS/
-│   ├── 08_OUTPUTS/
-│   └── 09_RUN_LOGS/
-```
+| matter_id | matter_name | status | delivery_status | fulfillment_status | path |
+|-----------|-------------|--------|-----------------|-------------------|------|
+| 24-256-00001 | Aspire Infusions Inc | Open | Strategic | active | `STRATEGIC/24-256-00001/` |
+| 24-336-00004 | Mascore Helical Piles | Open | Strategic | active | `STRATEGIC/24-336-00004/` |
+| 25-1231-00001 | Charmaine Spiteri | Open | Strategic | active | `STRATEGIC/25-1231-00001/` |
+| 25-1318-00001 | Zelko Culibrk | Open | Strategic | active | `STRATEGIC/25-1318-00001/` |
+
+---
+
+## STANDARD
+
+| matter_id | matter_name | status | delivery_status | fulfillment_status | path |
+|-----------|-------------|--------|-----------------|-------------------|------|
+| 22-194-00006 | Rousseau Mazzuca LLP | Open | Standard | active | `STANDARD/22-194-00006/` |
+| 23-194-00013 | Rousseau Mazzuca LLP | Open | Standard | active | `STANDARD/23-194-00013/` |
+| 23-235-00001 | Baobab Energy Africa Ltd | Open | Standard | active | `STANDARD/23-235-00001/` |
+| 24-194-00059 | RM Carpenters training center | Open | Standard | active | `STANDARD/24-194-00059/` |
+| 24-845-00001 | STAR 333 SPORTS INC. | Open | Standard | active | `STANDARD/24-845-00001/` |
+| 25-1185-00001 | Alexander Klys | Open | Standard | active | `STANDARD/25-1185-00001/` |
+| 25-1363-00001 | Raevan Joy Sambrano | Open | Standard | active | `STANDARD/25-1363-00001/` |
+| 25-1525-00001 | Kleenup Cleaning Services Inc. | Open | Standard | active | `STANDARD/25-1525-00001/` |
+| 25-1538-00002 | Georgiana Nicoară | Open | Standard | active | `STANDARD/25-1538-00002/` |
+| 25-845-00002 | STAR 333 SPORTS INC. | Open | Standard | active | `STANDARD/25-845-00002/` |
+
+---
+
+## PARKED
+
+| matter_id | matter_name | status | delivery_status | fulfillment_status | path |
+|-----------|-------------|--------|-----------------|-------------------|------|
+| 23-169-00003 | Best Bottles Inc. | Open | Parked | active | `PARKED/23-169-00003/` |
+| 25-822-00001 | Majid Hajibeigy | Open | Parked | active | `PARKED/25-822-00001/` |
+| 25-1024-00001 | AllPro Construction Group | Open | Parked | active | `PARKED/25-1024-00001/` |
+| 25-1192-00001 | The Knot Churros International Limited | Open | Parked | active | `PARKED/25-1192-00001/` |
+
+---
+
+## Field Model
+
+| Field | Storage | Source | Values |
+|-------|---------|--------|--------|
+| `status` | Metadata | Clio | Open \| Pending \| Closed |
+| `delivery_status` | Directory | ML1 | Essential \| Strategic \| Standard \| Parked |
+| `fulfillment_status` | Metadata | Admin | urgent \| active \| keep in view \| dormant |
+
+**Non-inference rule:** Do not infer any field from any other.

@@ -1,9 +1,9 @@
 # Agent Definition
 **Agent:** SYS-007 — Integration Steward
 
-**Version:** v0.1
+**Version:** v1.0
 **Layer:** 01_SYSTEM
-**Status:** Draft (not approved)
+**Status:** Active (ML1 approved 2026-01-27)
 
 ---
 
@@ -15,7 +15,7 @@ Manage read-only integration specifications and maintain access boundaries.
 
 ## Derived From
 
-- Runbook: `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE3_RUNBOOK_INTEGRATION_STEWARD.md`
+- Runbook: `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE1.3_RUNBOOK_INTEGRATION_STEWARD.md`
 
 ---
 
