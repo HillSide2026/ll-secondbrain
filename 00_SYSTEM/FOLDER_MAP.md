@@ -8,7 +8,7 @@
   - System roadmaps live in 04_INITIATIVES/SYSTEM_PORTFOLIO/{00_DRAFT_ROADMAPS,01_ACTIVE_ROADMAPS}.
 - 05_MATTERS — Case-specific, stateful matter records. Each folder represents one distinct matter with its own lifecycle.
 - 06_RUNS — Execution runs and operational logs
-- 07_RESEARCH — Research notes and source material
-- 08_REFERENCE — Stable reference (definitions, glossaries)
+- 07_REFERENCE — Stable reference material (external law/standards/vendors, internal definitions/models)
+- 08_RESEARCH — Working notes, explorations, and non-authoritative analysis
 - 09_INBOX — Unprocessed intake (must be triaged)
 - 10_ARCHIVE — Deprecated or superseded artifacts (never deleted)

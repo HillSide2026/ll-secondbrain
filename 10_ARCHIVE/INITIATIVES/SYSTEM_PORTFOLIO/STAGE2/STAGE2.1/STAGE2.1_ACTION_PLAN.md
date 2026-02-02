@@ -3,7 +3,7 @@
 ## Overview
 Deploy 5 system-level agents using Claude Code as the runtime.
 
-**Status:** IN PROGRESS
+**Status:** ✅ COMPLETE (2026-01-31 — status corrected per Stage 2.8 audit)
 **Owner:** ML1 + Runbook & QA Agent
 **Target:** All 5 agents operational and tested
 
@@ -17,9 +17,9 @@ Deploy 5 system-level agents using Claude Code as the runtime.
 - [x] Integration order: Gmail → SharePoint → Word
 
 ### Dependencies
-- Stage 1.3 Agent Roster: `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE3_AGENT_ROSTER.md`
-- Stage 1.3 Runbooks: `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE3_RUNBOOK_*.md`
-- Stage 1.3 Handoff Map: `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE3_HANDOFF_MAP.md`
+- Stage 1.3 Agent Roster: `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE1.3_AGENT_ROSTER.md`
+- Stage 1.3 Runbooks: `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE1.3_RUNBOOK_*.md`
+- Stage 1.3 Handoff Map: `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE1.3_HANDOFF_MAP.md`
 
 ---
 
@@ -335,23 +335,23 @@ All agent-produced artifacts/reports MUST use this structure:
 ### Phase 2: Agent Deployment
 | Agent | Definition | Tests Pass | Notes |
 |-------|------------|------------|-------|
-| SYS-005 System Governance | ✅ | ⬜ | v0.1 DRAFT |
-| SYS-006 Portfolio Planning | ✅ | ⬜ | v0.1 DRAFT |
-| SYS-007 Integration Steward | ✅ | ⬜ | v0.1 DRAFT |
-| SYS-008 Knowledge Curation | ✅ | ⬜ | v0.1 DRAFT |
-| SYS-009 Runbook & QA | ✅ | ⬜ | v0.1 DRAFT |
+| SYS-005 System Governance | ✅ | ✅ | v0.1 DRAFT |
+| SYS-006 Portfolio Planning | ✅ | ✅ | v0.1 DRAFT |
+| SYS-007 Integration Steward | ✅ | ✅ | v0.1 DRAFT |
+| SYS-008 Knowledge Curation | ✅ | ✅ | v0.1 DRAFT |
+| SYS-009 Runbook & QA | ✅ | ✅ | v0.1 DRAFT |
 | 2.6 Write-Back Policy | ✅ | — | 00_SYSTEM/WRITE_BACK_POLICY.md |
 | 2.7 Test Fixtures | ✅ | — | 03_TESTS/fixtures + golden_outputs |
 
 ### Phase 3: Testing
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| 3.1 Handoff tests | ⬜ pending | | |
-| 3.2 Failure-mode test | ⬜ pending | | |
-| 3.3 End-to-end test | ⬜ pending | | |
+| 3.1 Handoff tests | ✅ done | 2026-01-27 | 03_TESTS/agent_outputs/PHASE3.1_HANDOFF_TEST_RESULTS.md |
+| 3.2 Failure-mode test | ✅ done | 2026-01-27 | 03_TESTS/agent_outputs/PHASE3.2_FAILURE_MODE_TEST.md |
+| 3.3 End-to-end test | ✅ done | 2026-01-27 | 03_TESTS/agent_outputs/PHASE3.3_E2E_TEST_RESULTS.md |
 
 ### Phase 4: Documentation
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| 4.1 Deployment guide | ⬜ pending | | |
-| 4.2 Credential docs | ⬜ pending | | |
+| 4.1 Deployment guide | ✅ done | 2026-01-27 | 02_PLAYBOOKS/AGENT_DEPLOYMENT_GUIDE.md |
+| 4.2 Credential docs | ✅ done | 2026-01-27 | 02_PLAYBOOKS/CREDENTIAL_INVENTORY.md |

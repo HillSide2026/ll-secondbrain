@@ -80,26 +80,26 @@ Located at `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.2/`:
 
 ### From Stage 1.3 (Agent Definitions)
 Located at `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/`:
-- STAGE3_AGENT_ROSTER.md — 5 agent definitions
-- STAGE3_HANDOFF_MAP.md — Agent interactions
-- STAGE3_RUNBOOK_*.md — 5 agent runbooks
+- STAGE1.3_AGENT_ROSTER.md — 5 agent definitions
+- STAGE1.3_HANDOFF_MAP.md — Agent interactions
+- STAGE1.3_RUNBOOK_*.md — 5 agent runbooks
 
 ### From Stage 1.4 (Operating Rules)
 Located at `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.4/`:
-- STAGE4_OPERATING_CADENCE.md
-- STAGE4_AUDIT_CHECKLIST.md
+- STAGE1.4_OPERATING_CADENCE.md
+- STAGE1.4_AUDIT_CHECKLIST.md
 
 ---
 
 ## Definition of Done (DoD)
 
-### 2.1 Agent Runtime ✅ criteria
+### 2.1 Agent Runtime ✅ COMPLETE (2026-01-27)
 - [x] Agent runtime selected: **Claude Code agents**
-- [ ] System Governance Agent deployed and tested (SYS-005)
-- [ ] Portfolio Planning Agent deployed and tested (SYS-006)
-- [ ] Integration Steward Agent deployed and tested (SYS-007)
-- [ ] Knowledge Curation Agent deployed and tested (SYS-008)
-- [ ] Runbook & QA Agent deployed and tested (SYS-009)
+- [x] System Governance Agent deployed and tested (SYS-005) — v1.0 Active
+- [x] Portfolio Planning Agent deployed and tested (SYS-006) — v1.0 Active
+- [x] Integration Steward Agent deployed and tested (SYS-007) — v1.0 Active
+- [x] Knowledge Curation Agent deployed and tested (SYS-008) — v1.0 Active
+- [x] Runbook & QA Agent deployed and tested (SYS-009) — v1.0 Active
 
 ### 2.2 Integration Activation criteria
 - [ ] Gmail read-only integration active (SYS-002)

@@ -8,7 +8,7 @@
 - **02_PLAYBOOKS / 03_TEMPLATES:** Both folders exist with READMEs only.
 - **04_INITIATIVES (SYSTEM_PORTFOLIO structure):** `SYSTEM_PORTFOLIO` includes `00_DRAFT_ROADMAPS/` (draft roadmap + README) and `01_ACTIVE_ROADMAPS/` (README). `LL_PORTFOLIO` exists but is out of scope for system-level Stage 1 inventory.
 - **06_RUNS:** Folder exists but contains no files.
-- **Other top-level folders (per folder map):** `05_MATTERS` exists but contains no files; `07_RESEARCH`, `08_REFERENCE`, `09_INBOX`, `10_ARCHIVE` each contain a README only.
+- **Other top-level folders (per folder map):** `05_MATTERS` exists but contains no files; `07_REFERENCE`, `09_INBOX`, `10_ARCHIVE` each contain a README only.
 
 **Index of key files (repo-relative paths):**
 - `00_SYSTEM/README.md`
@@ -29,8 +29,7 @@
 - `04_INITIATIVES/SYSTEM_PORTFOLIO/00_DRAFT_ROADMAPS/README.md`
 - `04_INITIATIVES/SYSTEM_PORTFOLIO/00_DRAFT_ROADMAPS/SYSTEM_ROADMAP_2026-W05.md`
 - `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/README.md`
-- `07_RESEARCH/README.md`
-- `08_REFERENCE/README.md`
+- `07_REFERENCE/README.md`
 - `09_INBOX/README.md`
 - `10_ARCHIVE/README.md`
 

@@ -75,7 +75,7 @@ System Governance flags issue
 | System Governance | `06_RUNS/RUN-*/compliance/` |
 | Portfolio Planning | `04_INITIATIVES/SYSTEM_PORTFOLIO/BACKLOG.md` |
 | Integration Steward | `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE2/` (read), new specs in active stages |
-| Knowledge Curation | `00_SYSTEM/`, `07_RESEARCH/`, `09_INBOX/` |
+| Knowledge Curation | `00_SYSTEM/`, `08_RESEARCH/`, `09_INBOX/` |
 | Runbook & QA | `02_PLAYBOOKS/`, `04_INITIATIVES/.../STAGE*/` |
 
 ---
