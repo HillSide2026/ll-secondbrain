@@ -181,7 +181,19 @@ Tasks MUST NOT disappear from the report solely because they fall outside the em
 
 ---
 
-## 8. Non-Goals
+## 8. Sort Order
+
+When the ledger is rendered (to report, spreadsheet, or any output view), entries MUST be sorted in the following order:
+
+1. **Primary:** `suggested_workstream` — DELIVERY → FULFILLMENT → MARKETING → MANAGEMENT → UNROUTED
+2. **Secondary:** `matter_id` — ascending alphanumeric within each workstream
+3. **Tertiary:** `task_id` — ascending within each matter
+
+DELIVERY always appears first. This ensures the highest-priority operational work is surfaced at the top of every view.
+
+---
+
+## 9. Non-Goals
 
 The ledger MUST NOT:
 
@@ -196,7 +208,7 @@ The ledger MUST NOT:
 
 ---
 
-## 9. References
+## 10. References
 
 - `MATTER_TODO_REPORT.md` — Report specification (references this document for carry-forward behavior)
 - `MATTER_TODO_OUTPUT_SCHEMA.md` — Output schema (includes ledger presentation fields)

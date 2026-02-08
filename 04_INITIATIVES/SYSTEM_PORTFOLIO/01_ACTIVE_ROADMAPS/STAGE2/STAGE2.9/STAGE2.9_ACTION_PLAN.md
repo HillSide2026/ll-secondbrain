@@ -90,3 +90,4 @@
 |------|--------|-------|
 | Test read/write inside folder | ⬜ | Must pass |
 | Test denial outside folder | ⬜ | Must fail as expected |
+| Auth + boundary smoke test | ❌ blocked | 2026-02-08 — oauth2.googleapis.com unreachable |

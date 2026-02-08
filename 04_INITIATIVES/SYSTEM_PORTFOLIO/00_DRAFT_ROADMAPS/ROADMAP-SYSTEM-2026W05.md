@@ -30,7 +30,11 @@ ROADMAP-SYSTEM-2026W05
 └── Stage 2 — Implementation & Operations 🔄 ACTIVE
     ├── 2.1 Agent Runtime Setup
     ├── 2.2 Integration Activation
-    └── 2.3 Operational Validation
+    ├── 2.3 Operational Validation
+    ├── 2.9 Drive Integration Setup
+    ├── 2.10 Move Authoritative Ledger to Drive
+    ├── 2.11 Matter Management Agent
+    └── 2.12 Calendar Scheduling
 ```
 
 ---
@@ -114,6 +118,38 @@ ROADMAP-SYSTEM-2026W05
 - System declared operational for steady-state use
 
 **Backlog Items:** SYS-010, SYS-011, metrics baseline, rhythm adjustment
+
+### 2.9 Drive Integration Setup 🟨 BACKLOG
+**DoD:**
+- Drive access limited to approved folder boundary
+- Read/write test passes inside boundary; fails outside
+- Auth model + scopes documented
+
+**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE2/STAGE2.9/`
+
+### 2.10 Authoritative Ledger in Drive 🟨 BACKLOG
+**DoD:**
+- Ledger persists in Drive and survives daily regeneration
+- Human status edits respected
+- Daily report is ledger-first
+
+**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE2/STAGE2.10/`
+
+### 2.11 Matter Management Agent 🟨 BACKLOG
+**DoD:**
+- Hourly Matter Dashboard runs (9–5, Mon–Fri)
+- Repo-local outputs only (no write-back)
+- Governance validation passes
+
+**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE2/STAGE2.11/`
+
+### 2.12 Calendar Scheduling 🟨 BACKLOG
+**DoD:**
+- Top-priority tasks scheduled to approved calendar
+- Human approval gate enforced
+- Audit logs for each calendar write
+
+**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE2/STAGE2.12/`
 
 ---
 
