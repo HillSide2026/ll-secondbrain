@@ -1,3 +1,14 @@
+---
+id: MATTER-25-1538-00002-README
+
+title: Georgiana Nicoară
+owner: ML1
+status: draft
+created_date: 2026-02-02
+last_updated: 2026-02-02
+tags: [matter, 25-1538-00002]
+---
+
 # Georgiana Nicoară
 
 ## Matter ID
@@ -8,8 +19,11 @@
 - **Delivery Status:** Standard
 - **Fulfillment Status:** active
 
-## Overview
-[Brief description of the matter]
+## Client ID
+`2447131210`
+
+## Description
+Corporate Solution
 
 ## Key Dates
 - **Opened:** 2025-01-01

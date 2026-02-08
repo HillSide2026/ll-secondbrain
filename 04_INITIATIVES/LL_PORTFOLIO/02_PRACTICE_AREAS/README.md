@@ -21,6 +21,16 @@ Durable legal operating knowledge by domain.
 - Strategy
 - "Common practice" treated as authority
 
+---
+
+## Authoritative Practice Areas
+
+- Corporate
+- Contracts
+- Payment Services
+
+---
+
 ## ML1 Authority Statement
 
 ML1 approves all doctrine. ML2 may maintain playbooks, checklists, and standards but must not update doctrine without formal change control.
@@ -37,8 +47,8 @@ ML2 must NOT:
 
 ## Approval State
 
-**READ-ONLY** — Awaiting ML1 population
+**ACTIVE** — Practice area registry populated by ML1
 
 ## Last ML1 Review Date
 
-*Not yet reviewed*
+2026-02-07

@@ -2,11 +2,11 @@
 
 ## Status
 
-- **Status:** PAUSED (Phase 2.2.1 complete; Phases 2.2.2–2.2.3 deferred pending Stage 2.3)
+- **Status:** IN PROGRESS (Phases 2.2.1–2.2.2 complete; Phase 2.2.3 pending)
 - **Owner:** ML1
 - **Execution Owner:** Integration Steward Agent (SYS-007)
 - **Dependencies:** Stage 2.1 Agent Runtime Setup (CLOSED)
-- **Note:** Per ML1 directive (2026-01-28), pivoting to Stage 2.3 Inbox Intelligence Layer
+- **Note:** Resumed 2026-02-03; Phase 2.2.3 (Word/OneDrive) pending
 
 ---
 
@@ -102,22 +102,22 @@ Located at: `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.2/`
 
 ## Workstreams & Action Items
 
-### Workstream B1 — Gmail Integration (Phase 2.2.1)
+### Workstream B1 — Google Workspace Integration (Phase 2.2.1) ✅ COMPLETE
 
 **Owner:** SYS-007 Integration Steward
 
 **Steps:**
 
-1. [ ] Create or select Google Cloud project
-2. [ ] Configure OAuth consent screen
+1. [x] Create or select Google Cloud project
+2. [x] Configure OAuth consent screen
    - User type: internal (if applicable)
-   - Scopes: Gmail read-only only
-3. [ ] Generate OAuth credentials
-4. [ ] Store credentials in `.env` (not committed)
-5. [ ] Implement audit logging per Stage 1.2
-6. [ ] Test read-only access
-7. [ ] Verify no-write-path compliance
-8. [ ] Produce integration status + compliance report
+   - Scopes: Gmail read-only, Calendar read-only
+3. [x] Generate OAuth credentials
+4. [x] Store credentials in `.env` (not committed)
+5. [x] Implement audit logging per Stage 1.2
+6. [x] Test read-only access
+7. [x] Verify no-write-path compliance
+8. [x] Produce integration status + compliance report
 
 **Deliverables:**
 
@@ -127,22 +127,22 @@ Located at: `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.2/`
 
 ---
 
-### Workstream B2 — SharePoint Integration (Phase 2.2.2)
+### Workstream B2 — SharePoint Integration (Phase 2.2.2) ✅ COMPLETE
 
 **Owner:** SYS-007 Integration Steward
 **Dependency:** Completion of Phase 2.2.1
 
 **Steps:**
 
-1. [ ] Register Azure AD application
-2. [ ] Configure Microsoft Graph permissions
+1. [x] Register Azure AD application
+2. [x] Configure Microsoft Graph permissions
    - SharePoint read-only scopes only
-3. [ ] Generate client credentials
-4. [ ] Store credentials in `.env`
-5. [ ] Implement audit logging
-6. [ ] Test read-only SharePoint access
-7. [ ] Verify no-write-path compliance
-8. [ ] Produce integration status + compliance report
+3. [x] Generate client credentials
+4. [x] Store credentials in `.env`
+5. [x] Implement audit logging
+6. [x] Test read-only SharePoint access
+7. [x] Verify no-write-path compliance
+8. [x] Produce integration status + compliance report
 
 **Deliverables:**
 
@@ -195,8 +195,8 @@ Located at: `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.2/`
 
 Stage 2.2 is complete when:
 
-- [ ] Gmail read-only integration active and verified
-- [ ] SharePoint read-only integration active and verified
+- [x] Gmail read-only integration active and verified
+- [x] SharePoint read-only integration active and verified
 - [ ] Word/OneDrive read-only integration active and verified
 - [ ] Audit logging implemented for all integrations
 - [ ] No-write-path verification completed and documented
@@ -232,7 +232,9 @@ All outputs must follow the Standard Output Format and be stored in approved loc
 
 ## Execution Tracking
 
-### Phase 2.2.1: Gmail Integration ✅ COMPLETE
+### Phase 2.2.1: Google Workspace Integration ✅ COMPLETE
+
+#### Gmail
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
 | Google Cloud project | ✅ done | 2026-01-28 | Project configured |
@@ -243,16 +245,24 @@ All outputs must follow the Standard Output Format and be stored in approved loc
 | No-write-path verification | ✅ done | 2026-01-28 | GMAIL_NO_WRITE_PATH_VERIFICATION.md |
 | Compliance report | ✅ done | 2026-01-28 | GMAIL_INTEGRATION_COMPLIANCE_REPORT.md |
 
-### Phase 2.2.2: SharePoint Integration
+#### Google Calendar
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| Azure AD application | ⬜ pending | | |
-| Graph permissions | ⬜ pending | | |
-| Credentials generated | ⬜ pending | | |
-| Audit logging | ⬜ pending | | |
-| Read-only test | ⬜ pending | | |
-| No-write-path verification | ⬜ pending | | |
-| Compliance report | ⬜ pending | | |
+| Calendar API enabled | ✅ done | 2026-02-02 | Same GCP project as Gmail |
+| Read-only scope | ✅ done | 2026-02-02 | calendar.readonly scope |
+| Credentials generated | ✅ done | 2026-02-02 | Shared OAuth with Gmail |
+| Read-only test | ✅ done | 2026-02-02 | Connected to primary calendar |
+
+### Phase 2.2.2: SharePoint Integration ✅ COMPLETE
+| Item | Status | Date | Notes |
+|------|--------|------|-------|
+| Azure AD application | ✅ done | 2026-02-03 | Microsoft Entra app registration complete |
+| Graph permissions | ✅ done | 2026-02-03 | Read-only scopes only |
+| Credentials generated | ✅ done | 2026-02-03 | .env populated, credentials validated |
+| Audit logging | ✅ done | 2026-02-03 | Audit scaffolding in place |
+| Read-only test | ✅ done | 2026-02-03 | Dry-run EXIT=0, scripts/sharepoint_integration.py |
+| No-write-path verification | ✅ done | 2026-02-03 | Read-only guarantees preserved |
+| State/metadata scaffolding | ✅ done | 2026-02-03 | state/, raw/, metadata/ directories ready |
 
 ### Phase 2.2.3: Word/OneDrive Integration
 | Item | Status | Date | Notes |

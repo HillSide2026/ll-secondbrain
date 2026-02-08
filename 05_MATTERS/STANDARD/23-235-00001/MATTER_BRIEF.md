@@ -1,3 +1,14 @@
+---
+id: MATTER-23-235-00001-MATTER_BRIEF
+
+title: Matter Brief — 23-235-00001 — Baobab Energy Africa Ltd
+owner: ML1
+status: draft
+created_date: 2026-01-31
+last_updated: 2026-01-31
+tags: [matter, 23-235-00001]
+---
+
 # Matter Brief — 23-235-00001 — Baobab Energy Africa Ltd
 
 ## One-paragraph gist

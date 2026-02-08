@@ -1,3 +1,14 @@
+---
+id: MATTERS-README
+
+title: 05_MATTERS
+owner: ML1
+status: draft
+created_date: 2026-01-30
+last_updated: 2026-01-30
+tags: [matter]
+---
+
 # 05_MATTERS
 
 ## Purpose

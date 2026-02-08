@@ -1,3 +1,14 @@
+---
+id: MATTER-25-1024-00001-README
+
+title: AllPro Construction Group
+owner: ML1
+status: draft
+created_date: 2026-02-02
+last_updated: 2026-02-02
+tags: [matter, 25-1024-00001]
+---
+
 # AllPro Construction Group
 
 ## Matter ID
@@ -8,8 +19,11 @@
 - **Delivery Status:** Parked
 - **Fulfillment Status:** active
 
-## Overview
-[Brief description of the matter]
+## Client ID
+`2378951275`
+
+## Description
+Corporate / Commercial Matters
 
 ## Key Dates
 - **Opened:** 2025-01-01
