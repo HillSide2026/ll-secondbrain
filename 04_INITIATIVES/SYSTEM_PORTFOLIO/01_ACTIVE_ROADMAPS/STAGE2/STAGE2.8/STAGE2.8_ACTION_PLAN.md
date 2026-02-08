@@ -1,3 +1,13 @@
+---
+id: STAGE2.8-ACTION-PLAN
+title: Stage 2.8 — Stage Audit & Archival
+owner: ML1
+status: approved
+created_date: 2026-01-31
+last_updated: 2026-01-31
+tags: [stage2, roadmap, audit, archival]
+---
+
 # Stage 2.8 — Stage Audit & Archival
 
 ## Status

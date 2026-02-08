@@ -1,3 +1,14 @@
+---
+id: MATTER-25-1593-00001-MATTER_BRIEF
+
+title: Matter Brief — 25-1593-00001 — 1001162998 Ontario Corp. o/a KaleMart
+owner: ML1
+status: draft
+created_date: 2026-01-31
+last_updated: 2026-01-31
+tags: [matter, 25-1593-00001]
+---
+
 # Matter Brief — 25-1593-00001 — 1001162998 Ontario Corp. o/a KaleMart
 
 ## One-paragraph gist

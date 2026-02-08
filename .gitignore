@@ -17,3 +17,7 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+# Local & run logs
+logs/
+06_RUNS/logs/
+*.log

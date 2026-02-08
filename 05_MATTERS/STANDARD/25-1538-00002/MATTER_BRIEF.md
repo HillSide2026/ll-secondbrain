@@ -1,3 +1,14 @@
+---
+id: MATTER-25-1538-00002-MATTER_BRIEF
+
+title: Matter Brief — 25-1538-00002 — Georgiana Nicoară
+owner: ML1
+status: draft
+created_date: 2026-01-31
+last_updated: 2026-01-31
+tags: [matter, 25-1538-00002]
+---
+
 # Matter Brief — 25-1538-00002 — Georgiana Nicoară
 
 ## One-paragraph gist

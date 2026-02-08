@@ -1,3 +1,14 @@
+---
+id: MATTER-25-927-00003-ISSUES_AND_POSITIONS
+
+title: Issues & Positions — 25-927-00003 — Stream Ventures Limited
+owner: ML1
+status: draft
+created_date: 2026-02-01
+last_updated: 2026-02-01
+tags: [matter, 25-927-00003]
+---
+
 # Issues & Positions — 25-927-00003 — Stream Ventures Limited
 
 ## Issues

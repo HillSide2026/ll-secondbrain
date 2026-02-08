@@ -1,3 +1,14 @@
+---
+id: MATTER-22-194-00006-MATTER_BRIEF
+
+title: Matter Brief — 22-194-00006 — Rousseau Mazzuca LLP
+owner: ML1
+status: draft
+created_date: 2026-01-31
+last_updated: 2026-01-31
+tags: [matter, 22-194-00006]
+---
+
 # Matter Brief — 22-194-00006 — Rousseau Mazzuca LLP
 
 ## One-paragraph gist
