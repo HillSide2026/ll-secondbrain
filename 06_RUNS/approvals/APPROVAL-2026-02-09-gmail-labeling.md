@@ -22,4 +22,4 @@ tags: [approval, gmail, labeling, stage2.13]
 - subject: Re: 601 Yonge Lease with legal review
 
 **Label:**
-- LL/1. Delivery/1.1 - Essential/25-1593-00001
+- LL/1./1.1 - Essential/25-1593-00001
