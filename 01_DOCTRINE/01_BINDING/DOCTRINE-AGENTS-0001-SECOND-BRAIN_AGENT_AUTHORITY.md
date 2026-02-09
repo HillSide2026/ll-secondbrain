@@ -1,3 +1,13 @@
+---
+id: 01_doctrine__01_binding__doctrine-agents-0001-second-brain_agent_authority_md
+title: DOCTRINE-AGENTS-0001: Second Brain Agent Authority
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # DOCTRINE-AGENTS-0001: Second Brain Agent Authority
 
 **Status:** BINDING

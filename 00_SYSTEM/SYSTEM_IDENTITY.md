@@ -1,3 +1,13 @@
+---
+id: 00_system__system_identity_md
+title: System Identity — LL Second Brain (ML2)
+owner: ML1
+status: draft
+created_date: 2026-01-25
+last_updated: 2026-01-25
+tags: []
+---
+
 # System Identity — LL Second Brain (ML2)
 
 ## What This Repository Is

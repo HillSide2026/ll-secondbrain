@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__ll_portfolio__07_strategic_initiatives__readme_md
+title: 07_STRATEGIC_INITIATIVES — Change and Evolution
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # 07_STRATEGIC_INITIATIVES — Change and Evolution
 
 ## Purpose

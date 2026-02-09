@@ -7,6 +7,7 @@ status: draft
 created_date: 2026-02-03
 last_updated: 2026-02-03
 tags: [matter, 24-682-00002]
+practice_areas: [TBD]
 ---
 
 # Stream Ventures Limited

@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__corporate__agents__intake_question_packs_md
+title: Intake Question Packs
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Intake Question Packs
 
 Minimum viable fact sets per Solution. Asked in fixed order when confidence is LOW or assumption budget exceeded.

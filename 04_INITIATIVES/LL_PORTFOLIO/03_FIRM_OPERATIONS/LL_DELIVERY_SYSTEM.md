@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__ll_portfolio__03_firm_operations__ll_delivery_system_md
+title: LL Delivery System
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # LL Delivery System
 
 ## Purpose

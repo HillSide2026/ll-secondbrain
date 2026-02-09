@@ -1,3 +1,13 @@
+---
+id: 06_runs__03_tests__golden_outputs__readme_md
+title: Golden Outputs
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Golden Outputs
 
 Expected agent outputs when processing test fixtures.

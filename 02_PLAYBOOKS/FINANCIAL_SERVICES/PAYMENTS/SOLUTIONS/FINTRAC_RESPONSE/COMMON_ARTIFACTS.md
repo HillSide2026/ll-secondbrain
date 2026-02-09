@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__solutions__fintrac_response__common_artifacts_md
+title: Common Artifacts: FINTRAC_RESPONSE
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Common Artifacts: FINTRAC_RESPONSE
 
 ## Core Artifacts

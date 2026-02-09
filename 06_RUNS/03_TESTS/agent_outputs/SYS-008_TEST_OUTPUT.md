@@ -1,3 +1,13 @@
+---
+id: 06_runs__03_tests__agent_outputs__sys-008_test_output_md
+title: Inbox Triage Report
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Inbox Triage Report
 
 **Agent:** SYS-008 — Knowledge Curation

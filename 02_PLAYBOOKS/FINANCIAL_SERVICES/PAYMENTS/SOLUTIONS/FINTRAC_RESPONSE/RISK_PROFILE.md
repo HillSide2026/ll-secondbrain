@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__solutions__fintrac_response__risk_profile_md
+title: Risk Profile: FINTRAC_RESPONSE
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Risk Profile: FINTRAC_RESPONSE
 
 ## Inherent Risk Characteristics

@@ -1,3 +1,13 @@
+---
+id: 01_doctrine__01_binding__doctrine-2026-006-decision-principles_md
+title: DOCTRINE 2026 006 decision principles
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 DOCTRINE-2026-006 — Decision Principles
 Status: Binding Doctrine
 Authority: ML1

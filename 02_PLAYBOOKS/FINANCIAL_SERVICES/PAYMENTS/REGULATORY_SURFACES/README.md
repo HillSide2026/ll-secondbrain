@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__regulatory_surfaces__readme_md
+title: Regulatory Surfaces — Payments
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Regulatory Surfaces — Payments
 
 Statutory and regulatory touchpoints for Payments advisory matters.

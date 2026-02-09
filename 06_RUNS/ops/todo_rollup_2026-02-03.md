@@ -1,3 +1,13 @@
+---
+id: 06_runs__ops__todo_rollup_2026-02-03_md
+title: Firmwide To-Do Rollup
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Firmwide To-Do Rollup
 
 _Generated: 2026-02-03 20:29_
@@ -80,7 +90,8 @@ Please let me know whether Iberbanco will advance the fun... | High | 2026-02-02
 | All, Please see attached from a banking perspective one use case | Medium | 2026-02-02 — Re: RPAA - |
 | Matthew, Can you please review the attached agreement from Snowcap&#39;s perspec... | High | 2026-01-30 — Fwd: Diameter Pay |
 | James,
-Can you share the payment flow diagrams for Snowcap, please If you need... | High | 2026-01-29 — Fwd: RPAA - |
+Can you share the payment flow diagrams for Snowcap, please If you need
+... | High | 2026-01-29 — Fwd: RPAA - |
 
 ### UNASSIGNED —  [UNASSIGNED]
 
@@ -93,7 +104,8 @@ Can you share the payment flow diagrams for Snowcap, please If you need... | Hi
 back | High | 2026-02-03 — Re: New message from Donald La |
 | A few people hung up when they realized it was a bot, i will try ot 
 provide
-... | Medium | 2026-02-03 — Re: AI Call Recap |
+
+... | Medium | 2026-02-03 — Re: AI Call Recap |
 | No further action is needed on your part For more on version 6.9.1, see the Abou... | High | 2026-02-03 — [Nikko Discovery] Your site ha |
 | I have the documents, have taken a quick look and will aim to
 follow up in a fe... | High | 2026-02-03 — Re: Corporate Law Firm |

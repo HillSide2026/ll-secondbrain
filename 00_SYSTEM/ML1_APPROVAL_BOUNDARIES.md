@@ -1,3 +1,13 @@
+---
+id: 00_system__ml1_approval_boundaries_md
+title: ML1 Approval Boundaries
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # ML1 Approval Boundaries
 
 **Version:** 1.0

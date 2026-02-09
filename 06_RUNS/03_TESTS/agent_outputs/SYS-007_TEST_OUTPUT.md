@@ -1,3 +1,13 @@
+---
+id: 06_runs__03_tests__agent_outputs__sys-007_test_output_md
+title: No-Write-Path Verification Report
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # No-Write-Path Verification Report
 
 **Agent:** SYS-007 — Integration Steward

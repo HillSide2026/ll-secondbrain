@@ -1,3 +1,13 @@
+---
+id: 00_system__architecture__arch-2026-00x-integration-plan_md
+title: ARCH 2026 00X integration plan
+owner: ML1
+status: draft
+created_date: 2026-01-25
+last_updated: 2026-01-25
+tags: []
+---
+
 LL Second Brain — Integration Plan (DRAFT)
 
 Purpose and Status

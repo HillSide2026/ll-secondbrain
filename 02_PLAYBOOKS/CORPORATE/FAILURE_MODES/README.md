@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__corporate__failure_modes__readme_md
+title: Corporate Failure Modes
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Corporate Failure Modes
 
 Documented patterns of what goes wrong in corporate matters, with mitigations.

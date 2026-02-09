@@ -1,3 +1,13 @@
+---
+id: 00_system__readme_md
+title: System Definition
+owner: ML1
+status: draft
+created_date: 2026-01-25
+last_updated: 2026-01-25
+tags: []
+---
+
 # System Definition
 
 This directory defines how the Second Brain works.

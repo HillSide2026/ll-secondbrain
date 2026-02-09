@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__solutions__readme_md
+title: Solutions — Payments
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Solutions — Payments
 
 Solution frames for Payments advisory problem spaces. Each solution is a 5-file packet encoding expert knowledge about a problem space.

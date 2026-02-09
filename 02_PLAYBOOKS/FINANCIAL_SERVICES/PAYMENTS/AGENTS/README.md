@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__agents__readme_md
+title: Agents — Payments
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-09
+tags: []
+---
+
 # Agents — Payments
 
 Agent specifications, permissions, and handoff definitions for the Payments practice area.
@@ -24,5 +34,5 @@ Agent specifications, permissions, and handoff definitions for the Payments prac
 
 ## Architectural Reference
 
-- [PRACTICE_AREA_MASTER_AGENT_SPEC](../../../00_SYSTEM/AGENTS/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
-- [AGENT_TYPOLOGY](../../../00_SYSTEM/AGENTS/AGENT_TYPOLOGY.md)
+- [PRACTICE_AREA_MASTER_AGENT_SPEC](../../../../00_SYSTEM/AGENTS/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
+- [AGENT_TYPOLOGY](../../../../00_SYSTEM/AGENTS/AGENT_TYPOLOGY.md)

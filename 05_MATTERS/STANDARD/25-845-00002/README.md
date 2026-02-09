@@ -7,6 +7,7 @@ status: draft
 created_date: 2026-02-02
 last_updated: 2026-02-02
 tags: [matter, 25-845-00002]
+practice_areas: [TBD]
 ---
 
 # STAR 333 SPORTS INC.

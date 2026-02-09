@@ -1,3 +1,13 @@
+---
+id: 10_archive__initiatives__system_portfolio__stage1__stage1_2__stage2_integration_comparison_matrix_md
+title: Stage 2 Cross-Integration Comparison Matrix
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Stage 2 Cross-Integration Comparison Matrix
 
 ## Systems Compared

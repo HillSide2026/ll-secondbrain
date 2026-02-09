@@ -1,3 +1,13 @@
+---
+id: 06_runs__03_tests__agent_outputs__phase3_2_failure_mode_test_md
+title: Phase 3.2 — Failure Mode Test Results
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Phase 3.2 — Failure Mode Test Results
 
 **Test Date:** 2026-01-27

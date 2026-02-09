@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__execution__supervised_execution_runbook_md
+title: Supervised Execution Runbook — Stage 2.5
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Supervised Execution Runbook — Stage 2.5
 
 ## Purpose

@@ -1,3 +1,13 @@
+---
+id: readme_md
+title: Second Brain — Layer 1 Knowledge Repository
+owner: ML1
+status: draft
+created_date: 2026-01-25
+last_updated: 2026-01-25
+tags: []
+---
+
 # Second Brain — Layer 1 Knowledge Repository
 
 This repository is the **Layer 1 system of record** for Matthew Levine’s Second Brain,

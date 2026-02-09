@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__agent_deployment_guide_md
+title: Agent Deployment Guide
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Agent Deployment Guide
 
 **Version:** 2.0

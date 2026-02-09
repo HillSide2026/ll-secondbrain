@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__ll_portfolio__05_matter_docketing__specs__matters_field_model_md
+title: Matters Field Model
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Matters Field Model
 
 ## Core Rule

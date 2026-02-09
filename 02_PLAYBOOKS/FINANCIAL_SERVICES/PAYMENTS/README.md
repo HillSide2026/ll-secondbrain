@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__readme_md
+title: Financial Services — Payments
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Financial Services — Payments
 
 Architecture for payments advisory matters. This module defines solution frames, overlays, decision support, and agent infrastructure for the Payments practice area. It contains no legal or compliance analysis and no substantive requirements, thresholds, or procedures.

@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__inbox_triage__taxonomy_md
+title: Inbox Triage Taxonomy
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Inbox Triage Taxonomy
 
 **Status:** Active (ML1 approved)

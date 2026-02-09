@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__ll_portfolio__readme_md
+title: LL_PORTFOLIO — Levine Law Workstream Registry
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # LL_PORTFOLIO — Levine Law Workstream Registry
 
 ## Meta-Rule

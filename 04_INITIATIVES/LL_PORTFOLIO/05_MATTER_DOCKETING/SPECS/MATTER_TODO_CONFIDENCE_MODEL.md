@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__ll_portfolio__05_matter_docketing__specs__matter_todo_confidence_model_md
+title: Matter To-Do Confidence Model
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Matter To-Do Confidence Model
 
 **Status:** NORMATIVE

@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__matter_dashboard__runbook__stage_2_11_md
+title: Runbook — Matter Dashboard (Stage 2.11)
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Runbook — Matter Dashboard (Stage 2.11)
 
 ## When to Run

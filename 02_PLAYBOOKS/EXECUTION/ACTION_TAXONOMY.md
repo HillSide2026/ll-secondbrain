@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__execution__action_taxonomy_md
+title: Action Taxonomy — Stage 2.6
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Action Taxonomy — Stage 2.6
 
 ## Purpose

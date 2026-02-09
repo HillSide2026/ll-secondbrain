@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__stage3__communication_coverage_assistant_md
+title: Agent: Communication Coverage Assistant (Stage 3.3)
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Agent: Communication Coverage Assistant (Stage 3.3)
 
 ## Function

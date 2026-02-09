@@ -1,3 +1,13 @@
+---
+id: 00_system__agents__sys-005_system_governance_md
+title: Agent Definition
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Agent Definition
 **Agent:** SYS-005 — System Governance
 

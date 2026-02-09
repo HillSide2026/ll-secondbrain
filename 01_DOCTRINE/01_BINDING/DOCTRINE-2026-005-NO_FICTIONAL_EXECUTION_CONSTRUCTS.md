@@ -1,3 +1,13 @@
+---
+id: 01_doctrine__01_binding__doctrine-2026-005-no_fictional_execution_constructs_md
+title: No Fictional Execution Constructs
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # No Fictional Execution Constructs
 
 **Document ID:** DOCTRINE-2026-005

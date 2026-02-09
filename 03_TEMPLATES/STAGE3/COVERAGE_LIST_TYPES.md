@@ -1,3 +1,13 @@
+---
+id: 03_templates__stage3__coverage_list_types_md
+title: Stage 3.3 — Coverage List Types
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Stage 3.3 — Coverage List Types
 
 ## Points to Cover

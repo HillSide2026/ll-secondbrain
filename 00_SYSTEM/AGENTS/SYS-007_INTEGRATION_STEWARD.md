@@ -1,3 +1,13 @@
+---
+id: 00_system__agents__sys-007_integration_steward_md
+title: Agent Definition
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Agent Definition
 **Agent:** SYS-007 — Integration Steward
 

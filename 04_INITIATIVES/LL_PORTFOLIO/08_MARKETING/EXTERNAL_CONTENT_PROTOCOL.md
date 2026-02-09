@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__ll_portfolio__08_marketing__external_content_protocol_md
+title: External Content Improvement Protocol
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # External Content Improvement Protocol
 
 **Location:** `LL_PORTFOLIO/08_MARKETING/`

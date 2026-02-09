@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__system_portfolio__01_active_roadmaps__roadmap-system-2026w05-promotion-checklist_md
+title: Promotion Checklist — ROADMAP-SYSTEM-2026W05
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Promotion Checklist — ROADMAP-SYSTEM-2026W05
 
 ## Roadmap Information

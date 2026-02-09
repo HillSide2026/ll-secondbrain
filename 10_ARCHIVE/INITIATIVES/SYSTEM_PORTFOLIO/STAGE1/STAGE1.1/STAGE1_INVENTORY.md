@@ -1,3 +1,13 @@
+---
+id: 10_archive__initiatives__system_portfolio__stage1__stage1_1__stage1_inventory_md
+title: Stage 1 — System Discovery & Readiness Baseline (Consolidated)
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Stage 1 — System Discovery & Readiness Baseline (Consolidated)
 
 ## STAGE1_INVENTORY

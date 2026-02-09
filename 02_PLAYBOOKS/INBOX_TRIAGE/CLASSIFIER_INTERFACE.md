@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__inbox_triage__classifier_interface_md
+title: Inbox Classifier Interface Specification
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Inbox Classifier Interface Specification
 
 **Status:** Draft — for ML1 approval

@@ -1,3 +1,13 @@
+---
+id: 10_archive__initiatives__system_portfolio__stage2__stage2_6__stage2_6_closure_recommendation_md
+title: Stage 2.6 — Closure Recommendation
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Stage 2.6 — Closure Recommendation
 
 ## Status: CLOSED

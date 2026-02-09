@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__contracts__regulatory_surfaces__readme_md
+title: Contract Regulatory Surfaces
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Contract Regulatory Surfaces
 
 Statutory and regulatory touchpoints for contract matters.

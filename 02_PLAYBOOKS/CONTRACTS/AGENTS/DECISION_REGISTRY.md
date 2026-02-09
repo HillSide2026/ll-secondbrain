@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__contracts__agents__decision_registry_md
+title: Decision Registry — Contracts
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Decision Registry — Contracts
 
 Named decision points the Contracts Master Agent must recognize and label.

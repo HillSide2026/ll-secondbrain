@@ -1,3 +1,13 @@
+---
+id: 00_system__architecture__arch-2026-01x-stage1-architecture-map_md
+title: Stage 1 Architecture Map — Integrations & Agent Roles (Draft)
+owner: ML1
+status: draft
+created_date: 2026-01-25
+last_updated: 2026-01-25
+tags: []
+---
+
 # Stage 1 Architecture Map — Integrations & Agent Roles (Draft)
 
 **Status:** Draft (Stage 1)

@@ -7,6 +7,7 @@ status: draft
 created_date: 2026-01-30
 last_updated: 2026-01-30
 tags: [matter, 22-194-00006]
+practice_areas: [TBD]
 ---
 
 # Rousseau Mazzuca LLP

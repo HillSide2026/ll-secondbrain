@@ -1,3 +1,13 @@
+---
+id: 01_doctrine__01_binding__doctrine-repo-0001-no-toplevel-directories_md
+title: Doctrine: Claude Code Must Not Create Top-Level Directories
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Doctrine: Claude Code Must Not Create Top-Level Directories
 
 **Status:** BINDING

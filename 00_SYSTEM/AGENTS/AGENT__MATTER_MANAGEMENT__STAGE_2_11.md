@@ -1,3 +1,13 @@
+---
+id: 00_system__agents__agent__matter_management__stage_2_11_md
+title: Matter Management Agent — Stage 2.11
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Matter Management Agent — Stage 2.11
 
 ## Role

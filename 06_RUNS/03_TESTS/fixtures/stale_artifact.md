@@ -1,3 +1,13 @@
+---
+id: 06_runs__03_tests__fixtures__stale_artifact_md
+title: Test Fixture: Stale Artifact
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Test Fixture: Stale Artifact
 
 **Fixture ID:** FIXTURE-002

@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__contracts__question_banks__readme_md
+title: Contract Question Banks
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Contract Question Banks
 
 Structured intake and scoping questions for contract Solutions.

@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__execution__grouping_logic_md
+title: Proposal Grouping Logic — Stage 2.6
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Proposal Grouping Logic — Stage 2.6
 
 ## Purpose

@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__corporate__question_banks__readme_md
+title: Corporate Question Banks
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Corporate Question Banks
 
 Structured questions for intake, diligence, and risk assessment.

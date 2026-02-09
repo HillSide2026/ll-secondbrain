@@ -1,3 +1,13 @@
+---
+id: 10_archive__initiatives__system_portfolio__stage1__stage1_4__stage1_4_operating_cadence_md
+title: Stage 4 — Operating Cadence
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Stage 4 — Operating Cadence
 
 ## Status

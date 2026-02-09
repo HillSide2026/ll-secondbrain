@@ -1,3 +1,13 @@
+---
+id: 01_doctrine__01_binding__second_brain_model_md
+title: Second Brain System Model
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Second Brain System Model
 
 Type: Interpretive Doctrine  

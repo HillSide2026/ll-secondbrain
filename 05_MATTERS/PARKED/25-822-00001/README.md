@@ -7,6 +7,7 @@ status: draft
 created_date: 2026-02-02
 last_updated: 2026-02-02
 tags: [matter, 25-822-00001]
+practice_areas: [TBD]
 ---
 
 # Majid Hajibeigy

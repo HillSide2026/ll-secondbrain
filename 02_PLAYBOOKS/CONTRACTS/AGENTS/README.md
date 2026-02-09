@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__contracts__agents__readme_md
+title: Contract Playbook Agents
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Contract Playbook Agents
 
 Agent role specifications and supporting references for the Contracts practice area.

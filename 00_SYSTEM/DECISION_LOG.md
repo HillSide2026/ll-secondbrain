@@ -1,3 +1,13 @@
+---
+id: 00_system__decision_log_md
+title: Decision Log
+owner: ML1
+status: draft
+created_date: 2026-01-25
+last_updated: 2026-01-25
+tags: []
+---
+
 # Decision Log
 
 This log records all system-level decisions affecting the Second Brain.

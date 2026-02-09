@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__inbox_triage__pilot_run_md
+title: Inbox Intelligence — Pilot Run Procedure
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Inbox Intelligence — Pilot Run Procedure
 
 **Status:** Draft — for ML1 approval

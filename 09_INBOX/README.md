@@ -1,3 +1,13 @@
+---
+id: 09_inbox__readme_md
+title: 09_INBOX — Multi-Source Intake Layer
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # 09_INBOX — Multi-Source Intake Layer
 
 **Purpose:** Temporary holding area for unadjudicated inputs, regardless of origin.

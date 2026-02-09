@@ -1,3 +1,13 @@
+---
+id: 00_system__schemas_inbox_triage_md
+title: Draft Placement Plan — Schema
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Draft Placement Plan — Schema
 
 **Status:** Draft — binding once approved

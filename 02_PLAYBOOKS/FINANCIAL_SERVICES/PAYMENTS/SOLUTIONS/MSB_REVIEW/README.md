@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__solutions__msb_review__readme_md
+title: MSB Review — Overview
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # MSB Review — Overview
 
 The MSB Review solution provides a structured legal review of an existing money services business's (MSB's) regulatory posture under the PCMLTFA / FINTRAC regime, focused on identifying material gaps, inconsistencies, and risk areas in an MSB's registration status and ongoing compliance framework.

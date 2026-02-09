@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__solutions__msb_intake_and_registration__readme_md
+title: MSB Intake & Registration — Overview
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # MSB Intake & Registration — Overview
 
 The MSB Intake & Registration solution provides an integrated legal workstream combining MSB status determination, FINTRAC MSB registration support, and high-level AML/KYC policy drafting, delivered as a single, bounded engagement.

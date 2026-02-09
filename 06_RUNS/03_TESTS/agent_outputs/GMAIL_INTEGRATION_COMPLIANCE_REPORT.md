@@ -1,3 +1,13 @@
+---
+id: 06_runs__03_tests__agent_outputs__gmail_integration_compliance_report_md
+title: Gmail Integration Compliance Report
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Gmail Integration Compliance Report
 
 **Agent:** SYS-005 — System Governance

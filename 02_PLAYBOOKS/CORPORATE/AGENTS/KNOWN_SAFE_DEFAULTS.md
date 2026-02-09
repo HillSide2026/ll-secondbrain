@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__corporate__agents__known_safe_defaults_md
+title: Known-Safe Defaults
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Known-Safe Defaults
 
 Default positions the Agent may apply without escalation when:

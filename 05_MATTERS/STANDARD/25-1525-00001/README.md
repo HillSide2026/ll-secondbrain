@@ -7,6 +7,7 @@ status: draft
 created_date: 2026-02-02
 last_updated: 2026-02-02
 tags: [matter, 25-1525-00001]
+practice_areas: [TBD]
 ---
 
 # Kleenup Cleaning Services Inc.

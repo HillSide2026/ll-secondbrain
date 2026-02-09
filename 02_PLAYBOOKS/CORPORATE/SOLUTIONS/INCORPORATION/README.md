@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__corporate__solutions__incorporation__readme_md
+title: Incorporation
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Incorporation
 
 This solution frame applies to formation of a new Ontario or federal (Canada) corporation.

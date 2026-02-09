@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__corporate__solutions__shareholder_change__risk_profile_md
+title: Risk Profile: Shareholder Change
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Risk Profile: Shareholder Change
 
 Frequent risk surfaces in this solution space.

@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__solutions__fintrac_response__solution_scope_md
+title: Solution Scope: FINTRAC_RESPONSE
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Solution Scope: FINTRAC_RESPONSE
 
 ## In Scope

@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__contracts__solutions__readme_md
+title: Contract Solutions
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Contract Solutions
 
 Solution frames for contract law problem spaces.

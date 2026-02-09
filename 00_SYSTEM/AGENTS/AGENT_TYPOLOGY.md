@@ -1,3 +1,13 @@
+---
+id: 00_system__agents__agent_typology_md
+title: Agent Typology
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Agent Typology
 
 Classification of agents operating within the Second Brain system.
@@ -9,6 +19,21 @@ Classification of agents operating within the Second Brain system.
 Define the distinct categories of agents, their roles, authority boundaries, and relationships to system resources. This typology governs how agents are instantiated, configured, and constrained.
 
 This document reflects the current state of the system and explicitly identifies planned but not yet implemented agent types.
+
+---
+
+## Agents Index (Derived from AGENTS.md)
+
+### System Agents
+- 00_SYSTEM/AGENTS/SYS-005_SYSTEM_GOVERNANCE.md
+- 00_SYSTEM/AGENTS/SYS-006_PORTFOLIO_PLANNING.md
+- 00_SYSTEM/AGENTS/SYS-007_INTEGRATION_STEWARD.md
+- 00_SYSTEM/AGENTS/SYS-008_KNOWLEDGE_CURATION.md
+- 00_SYSTEM/AGENTS/SYS-009_RUNBOOK_QA.md
+
+### Proto-Agents (Draft)
+- 00_SYSTEM/AGENTS/PROTO-REPO-LINTER.md
+- 00_SYSTEM/AGENTS/PROTO-FOLDER-MAP-DRIFT.md
 
 ---
 

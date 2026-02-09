@@ -7,6 +7,7 @@ status: draft
 created_date: 2026-02-03
 last_updated: 2026-02-03
 tags: [matter, 25-174-00001]
+practice_areas: [TBD]
 ---
 
 # Danielle Thompson

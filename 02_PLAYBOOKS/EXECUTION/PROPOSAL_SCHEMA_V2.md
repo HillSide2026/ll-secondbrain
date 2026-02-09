@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__execution__proposal_schema_v2_md
+title: Proposal Record Schema — v2 (Stage 2.6)
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Proposal Record Schema — v2 (Stage 2.6)
 
 ## Purpose

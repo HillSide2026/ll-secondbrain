@@ -1,3 +1,13 @@
+---
+id: 10_archive__initiatives__system_portfolio__stage1__stage1_3__stage1_3_runbook_integration_steward_md
+title: Runbook: Integration Steward Agent
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Runbook: Integration Steward Agent
 
 ## Purpose

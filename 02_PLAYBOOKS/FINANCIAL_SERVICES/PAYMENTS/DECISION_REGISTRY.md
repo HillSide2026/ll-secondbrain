@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__decision_registry_md
+title: Decision Registry — Payments
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Decision Registry — Payments
 
 Named decision points for the Payments practice area. Each decision must be labeled and confidence-scored in agent output.

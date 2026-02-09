@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__ll_portfolio__03_firm_operations__matter_pipeline__email_to_matter_pipeline_md
+title: Email-to-Matter Pipeline Workflow
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Email-to-Matter Pipeline Workflow
 
 **Location:** `LL_PORTFOLIO/03_FIRM_OPERATIONS/MATTER_PIPELINE/`

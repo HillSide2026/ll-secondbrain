@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__corporate__solutions__shareholder_change__solution_assembly_md
+title: Solution Assembly: Shareholder Change
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Solution Assembly: Shareholder Change
 
 This solution typically draws from the following playbook components.

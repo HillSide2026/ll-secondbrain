@@ -7,6 +7,7 @@ status: draft
 created_date: 2026-02-03
 last_updated: 2026-02-03
 tags: [matter, 26-1593-00002]
+practice_areas: [TBD]
 ---
 
 # 1001162998 Ontario Corp. o/a KaleMart

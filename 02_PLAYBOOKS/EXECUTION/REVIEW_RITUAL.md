@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__execution__review_ritual_md
+title: Review Ritual — Stage 2.6
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Review Ritual — Stage 2.6
 
 ## Purpose

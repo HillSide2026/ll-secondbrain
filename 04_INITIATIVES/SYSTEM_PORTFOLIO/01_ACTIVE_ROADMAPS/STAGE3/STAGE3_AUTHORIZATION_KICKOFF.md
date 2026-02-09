@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__system_portfolio__01_active_roadmaps__stage3__stage3_authorization_kickoff_md
+title: Stage 3 — Authorization Kickoff
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Stage 3 — Authorization Kickoff
 
 ## Cognitive & Communication Scaffolding (With Agents, No Authority)

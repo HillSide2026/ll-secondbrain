@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__ll_portfolio__03_firm_operations__agent_spec-pipeline-tracker_md
+title: AGENT SPEC — Pipeline Tracker
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # AGENT SPEC — Pipeline Tracker
 
 Agent Name: Pipeline Tracker  

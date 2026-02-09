@@ -1,3 +1,13 @@
+---
+id: 10_archive__initiatives__system_portfolio__stage3__stage3_2__stage3_2_action_plan_md
+title: Stage 3.2 — Outlines & Structural Skeletons
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Stage 3.2 — Outlines & Structural Skeletons
 
 ## Status

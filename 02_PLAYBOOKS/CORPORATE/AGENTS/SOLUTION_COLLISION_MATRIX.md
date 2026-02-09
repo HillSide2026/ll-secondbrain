@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__corporate__agents__solution_collision_matrix_md
+title: Solution Collision Matrix
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Solution Collision Matrix
 
 Routing logic when multiple Solutions apply to a single matter.

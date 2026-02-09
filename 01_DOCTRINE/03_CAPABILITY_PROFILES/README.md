@@ -1,3 +1,13 @@
+---
+id: 01_doctrine__03_capability_profiles__readme_md
+title: Agent Capability Profiles
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Agent Capability Profiles
 
 This directory contains **opt-in capability profiles** that grant specific, limited relaxations to the Canonical Agent Doctrine (`DOCTRINE-AGENTS-0001`).

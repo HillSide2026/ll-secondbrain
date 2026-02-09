@@ -1,8 +1,19 @@
+---
+id: 02_playbooks__corporate__agents__corporate_law_master_agent_md
+title: Corporate Law Master Agent — Expert Spec (Ontario)
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-09
+tags: []
+---
+
 # Corporate Law Master Agent — Expert Spec (Ontario)
 
 **Role ID:** CORP-MASTER-001
-**Status:** ACTIVE
+**Status:** DRAFT
 **Effective:** 2026-02-05
+**Instantiates:** [PRACTICE_AREA_MASTER_AGENT_SPEC v1.0](../../../00_SYSTEM/AGENTS/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
 **Capability Profile:** AGENT-CAPABILITY-PROFILE-0001 (Draft Write Access)
 
 ---
@@ -111,7 +122,7 @@ STATUTE: OBCA | CBCA | TBD
 AGREEMENT TYPE: SA | USA | N/A
 ```
 
-### 6.2 Decision Points
+### 6.2 Decision Registry
 For each applicable decision point (see [DECISION_REGISTRY.md](DECISION_REGISTRY.md)):
 ```
 DECISION: [D0X_NAME]
@@ -128,7 +139,7 @@ ASSUMPTIONS: [max 3 before intake questions required]
 - [A_TYPE]: [assumption text]
 ```
 
-### 6.4 Plan
+### 6.4 Execution Plan
 ```
 PLAN:
 1. [Step] → [Solution section reference, e.g., INCORPORATION/SOLUTION_ASSEMBLY.md#step-3]
@@ -136,7 +147,7 @@ PLAN:
 ...
 ```
 
-### 6.5 Risks + Failure Modes
+### 6.5 Risks & Failure Modes
 ```
 RISKS:
 - [risk from RISK_PROFILE.md]

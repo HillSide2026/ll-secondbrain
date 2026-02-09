@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__inbox_triage__logging_spec_md
+title: Inbox Intelligence — Classification Logging Specification
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Inbox Intelligence — Classification Logging Specification
 
 **Status:** Draft — for ML1 approval

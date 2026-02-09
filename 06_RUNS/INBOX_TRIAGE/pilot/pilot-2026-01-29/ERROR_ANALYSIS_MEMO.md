@@ -1,3 +1,13 @@
+---
+id: 06_runs__inbox_triage__pilot__pilot-2026-01-29__error_analysis_memo_md
+title: Error Analysis Memo — Stage 2.4 Workstream B
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Error Analysis Memo — Stage 2.4 Workstream B
 
 **Agent:** SYS-008 — Knowledge Curation

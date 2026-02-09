@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__solutions__solution_index_md
+title: Solution Index — Payments
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Solution Index — Payments
 
 | # | Solution | Sub-Specs |

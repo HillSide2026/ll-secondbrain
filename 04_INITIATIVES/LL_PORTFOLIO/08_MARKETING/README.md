@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__ll_portfolio__08_marketing__readme_md
+title: Marketing Portfolio
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Marketing Portfolio
 
 **Location:** `04_INITIATIVES/LL_PORTFOLIO/08_MARKETING/`

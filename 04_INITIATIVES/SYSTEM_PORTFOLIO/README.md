@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__system_portfolio__readme_md
+title: SYSTEM_PORTFOLIO
+owner: ML1
+status: draft
+created_date: 2026-01-25
+last_updated: 2026-01-25
+tags: []
+---
+
 # SYSTEM_PORTFOLIO
 
 ## Purpose

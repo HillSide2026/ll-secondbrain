@@ -1,3 +1,13 @@
+---
+id: 10_archive__initiatives__system_portfolio__stage1__stage1_3__stage1_3_metrics_and_cadence_md
+title: Stage 3 — Metrics and Review Cadence
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Stage 3 — Metrics and Review Cadence
 
 ## Status

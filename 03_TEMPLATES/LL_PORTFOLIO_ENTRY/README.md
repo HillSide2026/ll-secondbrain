@@ -1,3 +1,13 @@
+---
+id: 03_templates__ll_portfolio_entry__readme_md
+title: [Entry Name]
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # [Entry Name]
 
 ## Purpose

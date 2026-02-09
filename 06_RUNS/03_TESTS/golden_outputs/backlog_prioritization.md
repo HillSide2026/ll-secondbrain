@@ -1,3 +1,13 @@
+---
+id: 06_runs__03_tests__golden_outputs__backlog_prioritization_md
+title: Backlog Prioritization Report
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Backlog Prioritization Report
 
 **Agent:** SYS-006 — Portfolio Planning

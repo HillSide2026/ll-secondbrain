@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__overlays__crypto__interfaces_md
+title: Interfaces: CRYPTO
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Interfaces: CRYPTO
 
 ## Invoked By

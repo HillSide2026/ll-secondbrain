@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__ll_portfolio__04_risk_compliance__readme_md
+title: 04_RISK_COMPLIANCE — Defensive Clarity
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # 04_RISK_COMPLIANCE — Defensive Clarity
 
 ## Purpose

@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__system_portfolio__01_active_roadmaps__stage3__stage3_3__stage3_scope_3_3_md
+title: Stage 3.3 Scope Lock — Coverage & Brainstorm Lists
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Stage 3.3 Scope Lock — Coverage & Brainstorm Lists
 
 ## Purpose

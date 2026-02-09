@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__execution__rollback_procedure_md
+title: Rollback Procedure — Stage 2.5
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Rollback Procedure — Stage 2.5
 
 ## Purpose

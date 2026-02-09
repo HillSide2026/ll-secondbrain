@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__corporate__solutions__incorporation__common_artifacts_md
+title: Common Artifacts: Incorporation
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Common Artifacts: Incorporation
 
 Categories of documents typically assembled in this solution space.

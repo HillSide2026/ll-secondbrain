@@ -1,3 +1,13 @@
+---
+id: 10_archive__initiatives__system_portfolio__stage3__stage3_1__stage3_1_labeling_schema_md
+title: Stage 3.1 — Artifact Labeling Schema
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Stage 3.1 — Artifact Labeling Schema
 
 ## Purpose

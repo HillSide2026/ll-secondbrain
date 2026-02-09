@@ -1,3 +1,13 @@
+---
+id: 06_runs__inbox_triage__pilot__pilot-2026-01-29__pilot_summary_md
+title: Inbox Intelligence Pilot Summary
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Inbox Intelligence Pilot Summary
 
 **Run ID:** pilot-2026-01-29

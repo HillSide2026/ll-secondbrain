@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__failure_modes__readme_md
+title: Failure Modes — Payments
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Failure Modes — Payments
 
 Known failure patterns in Payments advisory matters.

@@ -7,6 +7,7 @@ status: draft
 created_date: 2026-02-03
 last_updated: 2026-02-03
 tags: [matter, 24-601-00001]
+practice_areas: [TBD]
 ---
 
 # Meta Bytes North America Inc

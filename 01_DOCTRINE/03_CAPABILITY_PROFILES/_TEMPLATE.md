@@ -1,3 +1,13 @@
+---
+id: 01_doctrine__03_capability_profiles___template_md
+title: AGENT-CAPABILITY-PROFILE-XXXX: [Profile Name]
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # AGENT-CAPABILITY-PROFILE-XXXX: [Profile Name]
 
 **Status:** DRAFT | ACTIVE | REVOKED

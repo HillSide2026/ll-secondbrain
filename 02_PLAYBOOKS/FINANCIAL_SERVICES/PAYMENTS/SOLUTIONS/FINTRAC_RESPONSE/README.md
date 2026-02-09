@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__solutions__fintrac_response__readme_md
+title: FINTRAC Response — Overview
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # FINTRAC Response — Overview
 
 Structured legal workstream for responding to FINTRAC inquiries, examinations, compliance assessments, and enforcement-related correspondence.

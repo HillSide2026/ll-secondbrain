@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__contracts__failure_modes__readme_md
+title: Contract Failure Modes
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Contract Failure Modes
 
 Known failure patterns in contract matters.

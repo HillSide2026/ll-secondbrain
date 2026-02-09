@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__ll_portfolio__03_firm_operations__readme_md
+title: 03_FIRM_OPERATIONS — How the Firm Runs
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # 03_FIRM_OPERATIONS — How the Firm Runs
 
 ## Purpose

@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__corporate__solutions__shareholder_change__readme_md
+title: Shareholder Change
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Shareholder Change
 
 This solution frame applies to situations where ownership, control, or economic rights among shareholders are changing.

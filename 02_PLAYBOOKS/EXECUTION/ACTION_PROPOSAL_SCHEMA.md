@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__execution__action_proposal_schema_md
+title: Action Proposal — Schema (Stage 2.5)
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Action Proposal — Schema (Stage 2.5)
 
 ## Purpose

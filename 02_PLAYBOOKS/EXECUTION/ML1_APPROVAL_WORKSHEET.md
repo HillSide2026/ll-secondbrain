@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__execution__ml1_approval_worksheet_md
+title: ML1 Approval Worksheet — Stage 2.5
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # ML1 Approval Worksheet — Stage 2.5
 
 ## Purpose

@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__known_safe_defaults_md
+title: Known-Safe Defaults — Payments
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Known-Safe Defaults — Payments
 
 Default positions that may be applied without escalation when confidence is HIGH, no red flags exist, and facts align with standard assumptions.

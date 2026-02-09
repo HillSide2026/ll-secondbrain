@@ -1,3 +1,13 @@
+---
+id: 00_system__folder_map_md
+title: Folder Map
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Folder Map
 
 - 00_SYSTEM — How the system works (rules, schemas, governance)

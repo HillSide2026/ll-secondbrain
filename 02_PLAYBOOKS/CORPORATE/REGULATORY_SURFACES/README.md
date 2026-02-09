@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__corporate__regulatory_surfaces__readme_md
+title: Regulatory Surfaces
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Regulatory Surfaces
 
 Mapping of regulatory touchpoints for corporate transactions.

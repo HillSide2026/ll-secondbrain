@@ -1,3 +1,13 @@
+---
+id: 03_templates__readme_md
+title: Templates
+owner: ML1
+status: draft
+created_date: 2026-01-25
+last_updated: 2026-01-25
+tags: []
+---
+
 # Templates
 
 Reusable document templates.

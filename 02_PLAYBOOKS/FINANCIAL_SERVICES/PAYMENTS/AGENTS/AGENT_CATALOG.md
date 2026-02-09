@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__agents__agent_catalog_md
+title: Agent Catalog — Payments
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Agent Catalog — Payments
 
 Registered agents for the Payments practice area.

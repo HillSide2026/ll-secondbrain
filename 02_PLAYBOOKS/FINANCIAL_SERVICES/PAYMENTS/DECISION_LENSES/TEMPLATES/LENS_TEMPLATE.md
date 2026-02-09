@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__decision_lenses__templates__lens_template_md
+title: Decision Lens: [LENS_ID]
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Decision Lens: [LENS_ID]
 
 ## Purpose

@@ -1,3 +1,13 @@
+---
+id: 10_archive__initiatives__system_portfolio__stage1__stage1_3__stage1_3_runbook_system_governance_md
+title: Runbook: System Governance Agent
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Runbook: System Governance Agent
 
 ## Purpose

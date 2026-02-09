@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__contracts__issue_maps__readme_md
+title: Contract Issue Maps
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Contract Issue Maps
 
 Structured taxonomies of recurring contract issues.

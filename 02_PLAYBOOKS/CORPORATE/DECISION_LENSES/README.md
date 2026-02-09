@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__corporate__decision_lenses__readme_md
+title: Decision Lenses
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Decision Lenses
 
 Structured frameworks for analyzing corporate law decisions.

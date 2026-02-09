@@ -1,3 +1,13 @@
+---
+id: 00_system__schemas_md
+title: Artifact Schemas
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Artifact Schemas
 
 All markdown files in this repository MUST begin with YAML frontmatter.

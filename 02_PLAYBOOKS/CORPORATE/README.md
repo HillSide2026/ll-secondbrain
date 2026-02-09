@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__corporate__readme_md
+title: Corporate Playbooks
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Corporate Playbooks
 
 Practice-area playbooks for corporate/commercial law matters.

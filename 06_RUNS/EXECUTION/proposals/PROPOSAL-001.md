@@ -1,3 +1,13 @@
+---
+id: 06_runs__execution__proposals__proposal-001_md
+title: Action Proposal — PROPOSAL-001
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Action Proposal — PROPOSAL-001
 
 ## Proposal Metadata

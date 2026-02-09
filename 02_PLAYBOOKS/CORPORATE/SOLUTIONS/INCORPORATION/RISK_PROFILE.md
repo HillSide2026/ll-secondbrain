@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__corporate__solutions__incorporation__risk_profile_md
+title: Risk Profile: Incorporation
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Risk Profile: Incorporation
 
 ---

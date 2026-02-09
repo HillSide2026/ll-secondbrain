@@ -1,3 +1,13 @@
+---
+id: 06_runs__03_tests__fixtures__pr_changeset__wrong_folder_doc_md
+title: Binding Policy: Test Policy
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Binding Policy: Test Policy
 
 **Status:** BINDING

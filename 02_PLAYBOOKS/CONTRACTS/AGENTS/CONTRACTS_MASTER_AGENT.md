@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__contracts__agents__contracts_master_agent_md
+title: Contracts Master Agent — Expert Spec (Ontario)
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-09
+tags: []
+---
+
 # Contracts Master Agent — Expert Spec (Ontario)
 
 **Role ID:** CONTRACTS-MASTER-001
@@ -112,7 +122,7 @@ CLIENT POSITION: vendor | customer | licensor | licensee | employer | related en
 RELATIONSHIP TYPE: one-off | framework | protective
 ```
 
-### 6.2 Decision Points
+### 6.2 Decision Registry
 For each applicable decision point (see [DECISION_REGISTRY.md](DECISION_REGISTRY.md)):
 ```
 DECISION: [D0X_NAME]
@@ -129,14 +139,14 @@ ASSUMPTIONS: [max 3 before intake questions required]
 - [A_TYPE]: [assumption text]
 ```
 
-### 6.4 Plan
+### 6.4 Execution Plan
 ```
 PLAN:
 1. [Step] -> [Solution section reference]
 2. [Step] -> [reference]
 ```
 
-### 6.5 Risks + Failure Modes
+### 6.5 Risks & Failure Modes
 ```
 RISKS:
 - [risk from RISK_PROFILE.md]

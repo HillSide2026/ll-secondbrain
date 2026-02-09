@@ -1,3 +1,13 @@
+---
+id: 10_archive__initiatives__system_portfolio__stage1__stage1_2__stage2_word_read_only_spec_md
+title: Microsoft Word Read-Only Integration Specification
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Microsoft Word Read-Only Integration Specification
 
 ## Scope

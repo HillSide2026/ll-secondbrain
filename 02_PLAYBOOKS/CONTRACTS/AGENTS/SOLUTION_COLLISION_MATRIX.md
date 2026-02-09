@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__contracts__agents__solution_collision_matrix_md
+title: Solution Collision Matrix — Contracts
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Solution Collision Matrix — Contracts
 
 Routing logic when multiple Contract Solutions apply.

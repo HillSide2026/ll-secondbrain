@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__matter_dashboard__gmail_labeling_policy_md
+title: Gmail Matter Labeling Policy — Stage 2.13
+owner: ML1
+status: draft
+created_date: 2026-02-09
+last_updated: 2026-02-09
+tags: []
+---
+
 # Gmail Matter Labeling Policy — Stage 2.13
 
 ## Purpose

@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__solution_collision_matrix_md
+title: Solution Collision Matrix — Payments
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Solution Collision Matrix — Payments
 
 Routing logic when multiple solutions or overlays interact.

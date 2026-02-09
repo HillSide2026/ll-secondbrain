@@ -1,3 +1,13 @@
+---
+id: 01_doctrine__readme_md
+title: Doctrine
+owner: ML1
+status: draft
+created_date: 2026-01-25
+last_updated: 2026-01-25
+tags: []
+---
+
 # Doctrine
 
 Doctrine is the system's authoritative guidance. It is organized by type:

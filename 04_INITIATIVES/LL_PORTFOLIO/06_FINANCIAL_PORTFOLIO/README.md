@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__ll_portfolio__06_financial_portfolio__readme_md
+title: 06_FINANCIAL_PORTFOLIO — Models & Constraints
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # 06_FINANCIAL_PORTFOLIO — Models & Constraints
 
 ## Purpose

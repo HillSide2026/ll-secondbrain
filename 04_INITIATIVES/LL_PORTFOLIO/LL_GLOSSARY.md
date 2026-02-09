@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__ll_portfolio__ll_glossary_md
+title: LL Glossary
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # LL Glossary
 
 This glossary defines key terms as they are used within the LL Portfolio.

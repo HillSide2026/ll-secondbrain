@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__corporate__solutions__shareholder_agreement__readme_md
+title: Shareholder Agreement
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Shareholder Agreement
 
 This solution frame applies to two related but distinct agreement types:

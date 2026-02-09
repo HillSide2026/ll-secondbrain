@@ -1,3 +1,13 @@
+---
+id: 04_initiatives__ll_portfolio__02_practice_areas__readme_md
+title: 02_PRACTICE_AREAS — Durable Legal Operating Knowledge
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # 02_PRACTICE_AREAS — Durable Legal Operating Knowledge
 
 ## Purpose

@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__stage3__conversation_summarizer_md
+title: Agent: Conversation Summarizer (Stage 3.4)
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Agent: Conversation Summarizer (Stage 3.4)
 
 ## Function

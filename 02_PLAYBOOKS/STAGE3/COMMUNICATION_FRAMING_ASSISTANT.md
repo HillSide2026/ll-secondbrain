@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__stage3__communication_framing_assistant_md
+title: Agent: Communication Framing Assistant (Stage 3.5)
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Agent: Communication Framing Assistant (Stage 3.5)
 
 ## Function

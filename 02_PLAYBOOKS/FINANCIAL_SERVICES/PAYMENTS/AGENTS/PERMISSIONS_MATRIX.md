@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__agents__permissions_matrix_md
+title: Permissions Matrix — Payments
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Permissions Matrix — Payments
 
 Agent capability and authority boundaries for the Payments practice area.

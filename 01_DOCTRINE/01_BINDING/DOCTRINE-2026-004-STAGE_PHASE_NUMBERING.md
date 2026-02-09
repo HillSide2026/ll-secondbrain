@@ -1,3 +1,13 @@
+---
+id: 01_doctrine__01_binding__doctrine-2026-004-stage_phase_numbering_md
+title: Canonical Stage & Phase Numbering Doctrine
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Canonical Stage & Phase Numbering Doctrine
 
 **Document ID:** DOCTRINE-2026-004

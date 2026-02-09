@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__credential_inventory_md
+title: Credential Inventory
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Credential Inventory
 
 **Version:** 1.0

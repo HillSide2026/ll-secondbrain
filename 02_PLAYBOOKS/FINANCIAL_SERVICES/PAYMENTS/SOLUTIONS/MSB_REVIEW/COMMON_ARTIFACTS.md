@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__financial_services__payments__solutions__msb_review__common_artifacts_md
+title: Common Artifacts: MSB_REVIEW
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Common Artifacts: MSB_REVIEW
 
 The MSB Review solution typically produces the following artifacts:

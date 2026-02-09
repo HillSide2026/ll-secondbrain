@@ -1,3 +1,13 @@
+---
+id: 06_runs__execution__execution_log_md
+title: Execution Log — Stage 2.5
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Execution Log — Stage 2.5
 
 ## Log Entry Template

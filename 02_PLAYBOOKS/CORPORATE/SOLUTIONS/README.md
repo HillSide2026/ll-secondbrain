@@ -1,3 +1,13 @@
+---
+id: 02_playbooks__corporate__solutions__readme_md
+title: Corporate Solutions
+owner: ML1
+status: draft
+created_date: 2026-02-08
+last_updated: 2026-02-08
+tags: []
+---
+
 # Corporate Solutions
 
 Solution frames for corporate law problem spaces.
