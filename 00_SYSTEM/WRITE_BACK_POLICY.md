@@ -148,7 +148,7 @@ Define Gmail write-back boundaries for applying matter-number labels.
 
 ### Permitted Writes
 The agent MAY:
-- Add or remove labels in the `LL/1. Delivery/1.1 - <delivery_status>/<matter_id>` format
+- Add or remove labels in the `LL/1./<delivery_status>/<matter_id>` format
 - Create labels on demand at first authorized use
 
 ### Prohibited Writes

@@ -4,8 +4,8 @@
 Define the deterministic rules and guardrails for applying matter-number labels to Gmail messages.
 
 ## Label Naming
-- Format: `LL/1. Delivery/1.1 - <delivery_status>/<matter_id>`
-  - Example: `LL/1. Delivery/1.1 - Essential/25-927-00003`
+- Format: `LL/1./<delivery_status>/<matter_id>`
+  - Example: `LL/1./1.1 - Essential/25-927-00003`
 - Labels are created on demand at first authorized use
 - Label deletion is prohibited (labels may only be added to or removed from messages)
 

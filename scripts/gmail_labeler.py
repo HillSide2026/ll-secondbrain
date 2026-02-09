@@ -13,6 +13,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List
@@ -118,7 +119,8 @@ def main() -> int:
         operation = action.get("operation")
         reason = action.get("reason")
 
-        if not label or "Delivery/1.1 -" not in label:
+        pattern = r"^LL/1\\./[^/]+/\\d{2}-\\d{3,4}-\\d{5}$"
+        if not label or not re.match(pattern, label):
             entry = {
                 "message_id": message_id,
                 "gmail_thread_id": thread_id,
@@ -129,6 +131,22 @@ def main() -> int:
                 "approving_human": approved_by,
                 "approval_artifact_reference": approval_artifact,
                 "reason": reason or "invalid label schema",
+                "status": "refused",
+            }
+            append_audit(entry)
+            continue
+
+        if not label.endswith(f"/{matter_id}"):
+            entry = {
+                "message_id": message_id,
+                "gmail_thread_id": thread_id,
+                "label_applied_or_removed": label,
+                "matter_id": matter_id,
+                "operation": operation,
+                "timestamp": datetime.utcnow().isoformat() + "Z",
+                "approving_human": approved_by,
+                "approval_artifact_reference": approval_artifact,
+                "reason": reason or "label/matter_id mismatch",
                 "status": "refused",
             }
             append_audit(entry)

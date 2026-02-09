@@ -19,6 +19,7 @@ import json
 import os
 import re
 import sys
+import subprocess
 from copy import deepcopy
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -51,6 +52,7 @@ PREFILTER_PATH = OPS_DIR / "emails_prefiltered.json"
 ATTRIBUTED_PATH = OPS_DIR / "emails_attributed.json"
 LEDGER_PATH = OPS_DIR / "MATTER_TODO_LEDGER.json"
 REPORT_PATH = OPS_DIR / "MATTER_TODO_REPORT.md"
+LABEL_MANIFEST_PATH = OPS_DIR / "gmail_label_manifest_proposed.json"
 
 PARTICIPANT_MAPPING_PATH = REPO_ROOT / "00_SYSTEM" / "participant_mapping.yaml"
 
@@ -369,12 +371,73 @@ def push_ledger_to_sheets(ledger: Dict, dry_run: bool) -> None:
     print(f"Ledger pushed to Sheets tab: {title}")
 
 
+def label_schema(delivery_status: str, matter_id: str) -> str:
+    return f"LL/1./{delivery_status}/{matter_id}"
+
+
+def label_schema_valid(label: str, matter_id: str) -> bool:
+    pattern = r"^LL/1\\./[^/]+/\\d{2}-\\d{3,4}-\\d{5}$"
+    if not re.match(pattern, label):
+        return False
+    return label.endswith(f"/{matter_id}")
+
+
+def mapping_method_allowed(method: str) -> bool:
+    return method in {
+        "clio_tag",
+        "clio_tag_fuzzy",
+        "thread_reuse",
+        "participant_domain",
+        "participant_email",
+        "participant_name",
+    }
+
+
+def build_label_manifest(attributed: List[Dict], matters: Dict[str, Dict], approval_artifact: str) -> Dict:
+    actions = []
+    for email in attributed:
+        matter_id = email.get("matter_id")
+        if not matter_id or matter_id == "UNASSIGNED" or matter_id in SPECIAL_MATTER_IDS:
+            continue
+        method = email.get("mapping_method")
+        if not mapping_method_allowed(method):
+            continue
+
+        matter = matters.get(matter_id, {})
+        delivery_status = matter.get("delivery_status")
+        if not delivery_status:
+            continue
+
+        label = label_schema(delivery_status, matter_id)
+        if not label_schema_valid(label, matter_id):
+            continue
+
+        actions.append({
+            "message_id": email.get("id") or email.get("message_id"),
+            "gmail_thread_id": email.get("thread_id", ""),
+            "matter_id": matter_id,
+            "label": label,
+            "operation": "add",
+            "reason": f"deterministic mapping: {method}",
+        })
+
+    return {
+        "run_id": f"RUN-{today_str()}-gmail-labeling",
+        "approved_by": "ML1",
+        "approval_artifact": approval_artifact or "",
+        "actions": actions,
+    }
+
+
 def main() -> int:
     load_dotenv(REPO_ROOT / ".env")
 
     parser = argparse.ArgumentParser(description="Run Matter Dashboard daily cycle")
     parser.add_argument("--days", type=int, default=2, help="Email lookback window")
     parser.add_argument("--dry-run", action="store_true", help="Skip external I/O")
+    parser.add_argument("--label-manifest", action="store_true", help="Generate Gmail label manifest")
+    parser.add_argument("--label-execute", action="store_true", help="Execute Gmail labeling via gmail_labeler.py")
+    parser.add_argument("--approval-artifact", type=str, default="", help="Approval artifact path for labeling run")
     args = parser.parse_args()
 
     print("=" * 60)
@@ -570,7 +633,26 @@ def main() -> int:
     # Step 9: Push ledger to Sheets
     push_ledger_to_sheets(ledger, dry_run=args.dry_run)
 
-    print("Pipeline complete")
+    # Step 10: Optional Gmail labeling manifest + execution
+    if args.label_manifest:
+        manifest = build_label_manifest(attributed, matters, args.approval_artifact)
+        LABEL_MANIFEST_PATH.write_text(json.dumps(manifest, indent=2))
+        print(f"Wrote Gmail label manifest: {LABEL_MANIFEST_PATH}")
+
+        if args.label_execute:
+            if args.dry_run:
+                print("[DRY RUN] Skipping Gmail label execution")
+            else:
+                cmd = [
+                    sys.executable,
+                    str(REPO_ROOT / "scripts" / "gmail_labeler.py"),
+                    "--manifest",
+                    str(LABEL_MANIFEST_PATH),
+                    "--execute",
+                ]
+                subprocess.run(cmd, check=False)
+
+    print("Matter Dashboard complete")
     return 0
 
 
