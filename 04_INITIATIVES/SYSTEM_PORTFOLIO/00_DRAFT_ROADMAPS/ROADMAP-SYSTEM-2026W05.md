@@ -34,7 +34,8 @@ ROADMAP-SYSTEM-2026W05
     ├── 2.9 Drive Integration Setup
     ├── 2.10 Move Authoritative Ledger to Drive
     ├── 2.11 Matter Management Agent
-    └── 2.12 Calendar Scheduling
+    ├── 2.12 Calendar Scheduling
+    └── 2.13 Gmail Matter Labeling
 ```
 
 ---
@@ -150,6 +151,14 @@ ROADMAP-SYSTEM-2026W05
 - Audit logs for each calendar write
 
 **Artifacts:** `01_ACTIVE_ROADMAPS/STAGE2/STAGE2.12/`
+
+### 2.13 Gmail Matter Labeling 🟨 BACKLOG
+**DoD:**
+- Deterministic matter-number labeling policy approved
+- Gmail labels applied via write-back (labels only)
+- Audit logging for each label write
+
+**Artifacts:** `01_ACTIVE_ROADMAPS/STAGE2/STAGE2.13/`
 
 ---
 

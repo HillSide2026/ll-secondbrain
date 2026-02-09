@@ -289,7 +289,7 @@ def update_participant_mapping(new_mappings: Dict[str, str]) -> int:
     content = PARTICIPANT_MAPPING_PATH.read_text() if PARTICIPANT_MAPPING_PATH.exists() else ""
     marker = "# AUTO-DISCOVERED MAPPINGS"
     if marker not in content:
-        content = content.rstrip() + "\n\n# =============================================================================\n" + marker + "\n# Added by run_todo_pipeline.py\n"
+        content = content.rstrip() + "\n\n# =============================================================================\n" + marker + "\n# Added by run_matter_dashboard.py\n"
 
     block_lines = [f"# Generated: {datetime.now().strftime('%Y-%m-%d')}"]
     for key in sorted(additions.keys()):

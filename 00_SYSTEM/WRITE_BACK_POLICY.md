@@ -99,3 +99,68 @@ When external write-back is authorized (Stage 3+), the following additional requ
 - Agent definitions: `00_SYSTEM/AGENTS/`
 - Stage 2.1 Action Plan: `01_ACTIVE_ROADMAPS/STAGE2/STAGE2.1_ACTION_PLAN.md`
 - Stage 2 Authorization: `01_ACTIVE_ROADMAPS/STAGE2/STAGE5_AUTHORIZATION_KICKOFF.md`
+---
+
+## Stage 2.11 — Matter Dashboard Write-Back (Drive Ledger)
+
+### Purpose
+Define what the Matter Management Agent may and may not modify when writing to the authoritative ledger.
+This policy prevents silent corruption of human judgment and ensures auditability.
+
+### Authoritative Store
+- The Google Drive Ledger document is the sole authoritative store
+- Local state may support idempotency but never overrides the ledger
+
+### Permitted Writes
+The agent MAY:
+- Add new task rows
+- Update system-owned fields (status, timestamps, routing tags)
+- Append run metadata (run_id, last_seen, system_notes)
+
+### Prohibited Writes
+The agent MUST NOT:
+- Overwrite human-entered notes or commentary fields
+- Delete rows unless explicitly marked system-deletable
+- Modify structure or schema of the ledger
+- Write to any document outside the approved Drive folder
+
+### Conflict Handling
+If a conflict is detected between system output and human edits:
+- Preserve human edits
+- Flag the row as `needs_review`
+- Record the conflict in the run log
+
+### Enforcement
+- All writes must pass the Drive boundary guard
+- Any violation results in immediate refusal and NO-OP
+
+---
+
+## Stage 2.13 — Gmail Matter Labeling (Write-Back)
+
+### Purpose
+Define Gmail write-back boundaries for applying matter-number labels.
+
+### Authoritative Behavior
+- Labels only (add/remove)
+- No message content changes
+- No move/delete operations
+
+### Permitted Writes
+The agent MAY:
+- Add or remove labels in the `LL/1. Delivery/1.1 - <delivery_status>/<matter_id>` format
+- Create labels on demand at first authorized use
+
+### Prohibited Writes
+The agent MUST NOT:
+- Modify message bodies or headers
+- Move, delete, trash, or archive messages
+- Write to any mailbox outside the approved account
+
+### Approval Gate
+- Each run requires an explicit human approval artifact
+- Absence of approval must hard-block execution
+
+### Audit Logging
+- All label writes must be logged in an append-only audit file
+- Each entry must include message_id, label, operation, timestamp, approving_human, and reason

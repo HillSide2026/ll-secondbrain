@@ -25,7 +25,7 @@ tags: [stage2, roadmap, matter-dashboard, agent]
 
 > Can we introduce a Matter Management Agent that runs the Matter Dashboard cycle during business hours without crossing write-back or scheduling boundaries?
 
-**Stage 2.11 succeeds if the Matter Management Agent can run the Matter Dashboard cycle on an hourly cadence (9–5, Mon–Fri), with outputs still confined to repo-local artifacts and without external write-back.**
+**Stage 2.11 succeeds if the Matter Management Agent can run the Matter Dashboard cycle on an hourly cadence (9–5, Mon–Fri), including writing the authoritative ledger in Google Drive within approved boundaries.**
 
 ---
 
@@ -40,21 +40,28 @@ tags: [stage2, roadmap, matter-dashboard, agent]
 | Run orchestration for Matter Dashboard | Standard daily cycle execution |
 | Logging + run tracking | Audit trail |
 
+### Planned Coverage (Summary)
+
+- Define the Matter Management Agent role, authority, and refusal conditions
+- Establish Matter Dashboard runs during business hours (Mon–Fri, 09:00–17:00)
+- Orchestrate the Matter Dashboard run (including Drive ledger writes within approved boundary)
+- Logging + run tracking for each run
+
 ### Out-of-Scope
 
 | Element | Why Excluded |
 |---------|--------------|
 | Calendar write-back | Deferred to Stage 2.12 |
 | Automated task scheduling | Requires calendar integration |
-| External writes beyond repo | Not authorized in this stage |
+| External writes beyond Drive ledger | Not authorized in this stage |
 
 ---
 
 ## 2. Implementation Notes (Normative Constraints)
 
 1. Runs occur only **Mon–Fri, 09:00–17:00 local time**, with at most one run per hour.
-2. The agent MUST NOT create or modify external resources (Gmail/Drive/Calendar).
-3. Outputs remain local to the repo (`06_RUNS/ops/`, `06_RUNS/EXECUTION/`).
+2. The agent MAY write to the approved Drive ledger only; all other external writes are prohibited.
+3. Outputs remain local to the repo (`06_RUNS/ops/`, `06_RUNS/EXECUTION/`) in addition to the Drive ledger.
 4. All automation MUST be human-triggered until ML1 approves background scheduling.
 
 ---
@@ -65,13 +72,14 @@ tags: [stage2, roadmap, matter-dashboard, agent]
 - Runbook for hourly Matter Dashboard cycle
 - Schedule policy (business-hour cadence, manual trigger spec)
 - Example run log(s) showing hourly execution
+- Drive ledger write policy + boundary guard reference
 
 ---
 
 ## 4. Acceptance Criteria
 
 - Matter Dashboard runs on hourly cadence within business hours
-- No external write-back performed
+- Drive ledger writes occur only within approved boundary
 - Run logs and outputs captured in repo
 - SYS-005 governance validation passes
 
@@ -98,7 +106,7 @@ tags: [stage2, roadmap, matter-dashboard, agent]
 | Risk | Likelihood | Impact | Control |
 |------|------------|--------|---------|
 | Background automation without approval | Medium | High | Manual trigger only until ML1 approval |
-| Write-back boundary violations | Low | High | SYS-005 governance review |
+| Write-back boundary violations | Medium | High | Boundary guard + SYS-005 governance review |
 
 ---
 

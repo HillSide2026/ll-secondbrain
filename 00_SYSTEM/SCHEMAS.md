@@ -86,3 +86,46 @@ Matters are placed in directories by `delivery_status` only:
 - `Strategic` → `05_MATTERS/STRATEGIC/`
 - `Standard` → `05_MATTERS/STANDARD/`
 - `Parked` → `05_MATTERS/PARKED/`
+---
+
+## Run Log Schema — Matter Dashboard
+
+### Required Fields
+- run_id
+- timestamp
+- operator
+- ledger_doc_id
+- approved_folder_id
+- boundary_check: pass/fail
+- inputs_used (versions/hashes)
+- actions_taken
+- rows_added
+- rows_updated
+- rows_flagged_needs_review
+- refusal_reason (if any)
+- status: ok | noop | refused | partial
+
+### Storage
+- Logs stored under `06_RUNS/`
+- One log per run cycle
+- Immutable after write
+
+### Purpose
+Enable audit, rollback analysis, and post-mortem review without re-running the system.
+
+---
+
+## Gmail Label Audit Log (NDJSON)
+
+Each line is a JSON object with the following required fields:
+
+- message_id
+- gmail_thread_id
+- label_applied_or_removed
+- matter_id
+- operation (add | remove)
+- timestamp (UTC, ISO-8601)
+- approving_human
+- approval_artifact_reference
+- reason
+- status (ok | refused | failed)
