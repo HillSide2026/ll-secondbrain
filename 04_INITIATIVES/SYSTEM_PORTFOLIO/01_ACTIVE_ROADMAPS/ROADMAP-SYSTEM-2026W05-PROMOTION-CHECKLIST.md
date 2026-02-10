@@ -4,7 +4,7 @@ title: Promotion Checklist — ROADMAP-SYSTEM-2026W05
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-10
 tags: []
 ---
 
@@ -44,7 +44,7 @@ tags: []
 - [x] **Stage 1:** COMPLETE — archived
 - [x] **Stage 2:** COMPLETE — archived
 - [x] **Stage 3:** COMPLETE — ready for archive
-- [x] **Stage 4:** COMPLETE — ready for archive
+- [ ] **Stage 4:** OUTSTANDING — not ready for archive
 - [ ] **Stage 5:** KICKOFF — authorization created
 - [ ] **Stage 6:** PLANNED — pending Stage 5
 
@@ -59,8 +59,8 @@ tags: []
 ## ML1 Decision
 
 ### Promotion Recommendation
-The roadmap meets all promotion criteria:
-- 4 stages completed with documented deliverables
+The roadmap meets promotion criteria with the exception noted below:
+- 3 stages completed with documented deliverables
 - 2 implementation stages defined with clear DoD
 - Backlog populated with 11 candidate items
 - All ML1 decision questions resolved

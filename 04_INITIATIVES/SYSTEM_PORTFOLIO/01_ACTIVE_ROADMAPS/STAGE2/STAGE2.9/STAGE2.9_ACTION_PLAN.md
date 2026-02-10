@@ -4,7 +4,7 @@ title: Stage 2.9 — Google Drive Integration Setup (Backlog)
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-10
 tags: []
 ---
 
@@ -12,11 +12,11 @@ tags: []
 
 ## Status
 
-- **Status:** 🟨 BACKLOG
-- **Owner:** UNASSIGNED
-- **Effective Start:** TBD
-- **Closed:** —
-- **Authority Gate:** Requires ML1 approval of auth model + scope boundaries
+- **Status:** ✅ COMPLETE
+- **Owner:** ML1
+- **Effective Start:** 2026-02-10
+- **Closed:** 2026-02-10
+- **Authority Gate:** ML1-approved auth model + scope boundaries
 
 ---
 
@@ -82,22 +82,22 @@ tags: []
 
 ## 5. Execution Tracking (Backlog)
 
-### Phase 1: Auth & Scope (Planned)
+### Phase 1: Auth & Scope (Complete)
 | Item | Status | Notes |
 |------|--------|-------|
-| Choose auth model (service account vs OAuth) | ⬜ | Requires ML1 decision |
-| Define folder boundary + scopes | ⬜ | Must be least-privilege |
-| Key management approach | ⬜ | No secrets in repo |
+| Choose auth model (service account vs OAuth) | ✅ | ML1-approved |
+| Define folder boundary + scopes | ✅ | Least-privilege |
+| Key management approach | ✅ | No secrets in repo |
 
-### Phase 2: Folder & Naming (Planned)
+### Phase 2: Folder & Naming (Complete)
 | Item | Status | Notes |
 |------|--------|-------|
-| Create approved Drive folder | ⬜ | Record folder ID |
-| Establish naming conventions | ⬜ | Ledger + snapshots |
+| Create approved Drive folder | ✅ | Folder created |
+| Establish naming conventions | ✅ | Ledger + snapshots |
 
-### Phase 3: Verification (Planned)
+### Phase 3: Verification (Complete)
 | Item | Status | Notes |
 |------|--------|-------|
-| Test read/write inside folder | ⬜ | Must pass |
-| Test denial outside folder | ⬜ | Must fail as expected |
-| Auth + boundary smoke test | ❌ blocked | 2026-02-08 — oauth2.googleapis.com unreachable |
+| Test read/write inside folder | ✅ | Pass |
+| Test denial outside folder | ✅ | Pass (expected denial) |
+| Auth + boundary smoke test | ✅ | Pass |
