@@ -119,7 +119,7 @@ def main() -> int:
         operation = action.get("operation")
         reason = action.get("reason")
 
-        pattern = r"^LL/1\\./[^/]+/\\d{2}-\\d{3,4}-\\d{5}$"
+        pattern = r"^LL/1\./\d+\.\d+ - [A-Z][a-z]+/\d{2}-\d{3,4}-\d{5}( -- .+)?$"
         if not label or not re.match(pattern, label):
             entry = {
                 "message_id": message_id,
@@ -136,7 +136,8 @@ def main() -> int:
             append_audit(entry)
             continue
 
-        if not label.endswith(f"/{matter_id}"):
+        matter_segment = label.split("/")[3] if len(label.split("/")) >= 4 else ""
+        if not (matter_segment == matter_id or matter_segment.startswith(f"{matter_id} -- ")):
             entry = {
                 "message_id": message_id,
                 "gmail_thread_id": thread_id,

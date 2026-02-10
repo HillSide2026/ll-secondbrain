@@ -14,10 +14,25 @@ tags: []
 Define the deterministic rules and guardrails for applying matter-number labels to Gmail messages.
 
 ## Label Naming
-- Format: `LL/1./<delivery_status>/<matter_id>`
-  - Example: `LL/1./1.1 - Essential/25-927-00003`
-- Labels are created on demand at first authorized use
-- Label deletion is prohibited (labels may only be added to or removed from messages)
+
+Canonical format: `LL/1./<delivery_status>/<matter_id> -- <matter_name>`
+
+Where:
+- `LL/1./` is the stable namespace container
+- `<delivery_status>` is a single parent segment chosen from the approved set:
+  - `1.1 - Essential`
+  - `1.2 - Strategic`
+  - `1.3 - Standard`
+  - `1.4 - Parked`
+- `<matter_id>` is the canonical identifier (e.g., `25-927-00003`)
+- `<matter_name>` is an optional presentation suffix for human readability (e.g., client or project name). It MUST NOT be used for attribution.
+
+Examples:
+- `LL/1./1.1 - Essential/25-927-00003 -- Stream Ventures Limited`
+- `LL/1./1.2 - Strategic/25-1318-00001 -- Zelko Culibrk`
+- `LL/1./1.3 - Standard/25-194-00059`
+
+Labels are created on demand at first authorized use. Label deletion is prohibited (labels may only be added to or removed from messages).
 
 ## Eligibility (Deterministic Attribution)
 A message is eligible for labeling only if it is deterministically associated to a matter via an approved structured source:

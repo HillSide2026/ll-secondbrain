@@ -4,8 +4,8 @@ title: Reference Directory
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
-tags: []
+last_updated: 2026-02-10
+tags: [reference]
 ---
 
 # Reference Directory
@@ -97,6 +97,55 @@ Ask:
 - **No** → it might belong here
 
 **When in doubt, place the material in Research instead.**
+
+---
+
+## Naming + Metadata Standards
+
+All reference notes in `07_REFERENCE/` must use:
+
+**File naming pattern**
+`YYYY-MM-DD__Topic__Descriptor__vX.Y.md`
+
+Example:
+`2026-02-09__Corporate-Law__Shareholder-Agreements_Checklist__v1.0.md`
+
+Rules:
+- Date = creation or last major revision date
+- Use kebab-case inside segments if needed (e.g., `Corporate-Law`, `Minute-Book`)
+- `v1.0+` = reference-grade
+
+**Required YAML metadata (reference notes)**
+```yaml
+---
+layer: 07_REFERENCE
+domain: corporate-law
+status: stable
+owner: ML2
+authority: ML1-approved
+approved_by: "ML1"
+approved_on: 2026-02-09
+version: v1.0
+scope: "ON - general"
+supersedes: null
+sources:
+  - type: statute|rule|case|policy|memo
+    citation: ""
+---
+```
+
+---
+
+## Folder-Level Convention
+
+`07_REFERENCE` is stabilized, citable, and reusable.
+
+Promotion from `08_RESEARCH` requires:
+- `supersedes` if replacing an older 07 item
+- A link back to the originating 08 artifact (path or ID) in the 07 header
+- Updating the 08 artifact:
+  - `status: promoted`
+  - `promoted_to: <path or id>`
 
 ---
 

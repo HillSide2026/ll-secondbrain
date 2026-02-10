@@ -15,9 +15,9 @@ tags: [matter, 25-1593-00001]
 (Plain-language description of what this matter is about.)
 
 ## Parties
-- Client:
-- Counterparties:
-- Key contacts:
+- Client: KaleMart (Franchisee)
+- Counterparties: KaleMart (Franchisor)
+- Key contacts: Chris Roop
 
 ## What's happened so far
 - (High-signal bullets only)

@@ -12,7 +12,7 @@
       "badge": "NEW",
       "last_seen": "2026-02-08",
       "first_seen": "2026-02-08",
-      "ledger_status": "NEW",
+      "ledger_status": "DONE",
       "suggested_workstream": "DELIVERY",
       "suggested_lane": "LAWYER",
       "routing_confidence": "HIGH",
@@ -208,7 +208,7 @@
       "badge": "NEW",
       "last_seen": "2026-02-08",
       "first_seen": "2026-02-08",
-      "ledger_status": "NEW",
+      "ledger_status": "DONE",
       "suggested_workstream": "DELIVERY",
       "suggested_lane": "LAWYER",
       "routing_confidence": "HIGH",
@@ -404,7 +404,7 @@
       "badge": "NEW",
       "last_seen": "2026-02-08",
       "first_seen": "2026-02-08",
-      "ledger_status": "NEW",
+      "ledger_status": "DONE",
       "suggested_workstream": "DELIVERY",
       "suggested_lane": "LAWYER",
       "routing_confidence": "HIGH",
@@ -615,8 +615,484 @@
           "message_ref": "19c1f3b4525fd90a"
         }
       ]
+    },
+    {
+      "task_id": "173bde6cfa6d",
+      "matter_id": "26-259-00003",
+      "classification": "ACTION_REQUIRED",
+      "task": "Review: Thank you responding to my email. In order to hire you what I have do what kind of documents I have to sign also I wo...",
+      "why": "Derived from email request",
+      "due": null,
+      "owner": null,
+      "confidence": "medium",
+      "badge": "NEW",
+      "last_seen": "2026-02-09",
+      "first_seen": "2026-02-09",
+      "ledger_status": "NEW",
+      "suggested_workstream": "UNROUTED",
+      "suggested_lane": "UNROUTED",
+      "routing_confidence": "LOW",
+      "routing_reason": "Default routing (not classified)",
+      "next_action_type": "OTHER",
+      "evidence": [
+        {
+          "email_date": "2026-02-09",
+          "from": "marjan banisaeed <mbanisaeed@hotmail.com>",
+          "subject": "Re: Questions to ask the lawyer:",
+          "quote": "Hi Matthew Thank you responding to my email. In order to hire you what I have do what kind of documents I have to sign also I would like to know how much I pay in order to retain you, please let me...",
+          "message_ref": "19c454a305b8494c"
+        }
+      ]
+    },
+    {
+      "task_id": "6f5017d46a47",
+      "matter_id": "FIRM_INTERNAL",
+      "classification": "ACTION_REQUIRED",
+      "task": "Thank you, that all sounds perfect. I’m excited about the opportunity to work together and to get started",
+      "why": "Derived from email request",
+      "due": null,
+      "owner": null,
+      "confidence": "medium",
+      "badge": "NEW",
+      "last_seen": "2026-02-09",
+      "first_seen": "2026-02-09",
+      "ledger_status": "NEW",
+      "suggested_workstream": "UNROUTED",
+      "suggested_lane": "UNROUTED",
+      "routing_confidence": "LOW",
+      "routing_reason": "Default routing (not classified)",
+      "next_action_type": "OTHER",
+      "evidence": [
+        {
+          "email_date": "2026-02-09",
+          "from": "Laura Hinton <laura.e.hintonn@gmail.com>",
+          "subject": "Re: Phone Call",
+          "quote": "Hi Matthew, Thank you, that all sounds perfect. I’m excited about the opportunity to work together and to get started. Wednesday at 4:00 p.m. works perfectly. I’ll give you a call then. Looking for...",
+          "message_ref": "19c452f9574b10e3"
+        }
+      ]
+    },
+    {
+      "task_id": "cfd48aa2bdc3",
+      "matter_id": "25-927-00003",
+      "classification": "ACTION_REQUIRED",
+      "task": "I found Raymond&#39;s e-mail where he requested the information below in order to give a quote for getting the financ...",
+      "why": "Derived from email request",
+      "due": null,
+      "owner": null,
+      "confidence": "medium",
+      "badge": "NEW",
+      "last_seen": "2026-02-09",
+      "first_seen": "2026-02-09",
+      "ledger_status": "NEW",
+      "suggested_workstream": "UNROUTED",
+      "suggested_lane": "LAWYER",
+      "routing_confidence": "LOW",
+      "routing_reason": "Default routing (not classified)",
+      "next_action_type": "OTHER",
+      "evidence": [
+        {
+          "email_date": "2026-02-09",
+          "from": "Sonia B <sonia@stream.money>",
+          "subject": "Maple Wave and SnowCap",
+          "quote": "Hi Matthew I found Raymond&#39;s e-mail where he requested the information below in order to give a quote for getting the financials prepared and submitted. I have put together the attached spreads...",
+          "message_ref": "19c44a9c56f8c51b"
+        }
+      ]
+    },
+    {
+      "task_id": "5133681d8ed0",
+      "matter_id": "UNASSIGNED",
+      "classification": "ACTION_REQUIRED",
+      "task": "Thank you for letting me know. I will reach out to you once I am ready to proceed",
+      "why": "Derived from email request",
+      "due": null,
+      "owner": null,
+      "confidence": "medium",
+      "badge": "NEW",
+      "last_seen": "2026-02-09",
+      "first_seen": "2026-02-09",
+      "ledger_status": "NEW",
+      "suggested_workstream": "UNROUTED",
+      "suggested_lane": "UNROUTED",
+      "routing_confidence": "LOW",
+      "routing_reason": "Default routing (not classified)",
+      "next_action_type": "OTHER",
+      "evidence": [
+        {
+          "email_date": "2026-02-09",
+          "from": "Muhammad Ahmad <mo.ahmadca@gmail.com>",
+          "subject": "Re: corporate lawyer",
+          "quote": "Hi Matthew, Thank you for letting me know. I will reach out to you once I am ready to proceed. Best, Muhammad On Mon, Feb 9, 2026 at 4:37 PM Matthew Levine <matthew@levinelegal.ca> wrote: > Hi Muha...",
+          "message_ref": "19c4457c960d47a3"
+        }
+      ]
+    },
+    {
+      "task_id": "151a5500c94f",
+      "matter_id": "26-259-00003",
+      "classification": "ACTION_REQUIRED",
+      "task": "I hope you are doing well I am so confused to know what I do with this woman we want to find a solution with out payi...",
+      "why": "Derived from email request",
+      "due": null,
+      "owner": null,
+      "confidence": "medium",
+      "badge": "NEW",
+      "last_seen": "2026-02-09",
+      "first_seen": "2026-02-09",
+      "ledger_status": "NEW",
+      "suggested_workstream": "UNROUTED",
+      "suggested_lane": "UNROUTED",
+      "routing_confidence": "LOW",
+      "routing_reason": "Default routing (not classified)",
+      "next_action_type": "OTHER",
+      "evidence": [
+        {
+          "email_date": "2026-02-09",
+          "from": "marjan banisaeed <mbanisaeed@hotmail.com>",
+          "subject": "Re: Corporate Law Firm",
+          "quote": "Hi Matthew I hope you are doing well I am so confused to know what I do with this woman we want to find a solution with out paying her but I don’t know if that is possible in the mean time Allen wo...",
+          "message_ref": "19c4410a82ae2ff9"
+        }
+      ]
+    },
+    {
+      "task_id": "ebb494faef63",
+      "matter_id": "25-1318-00001",
+      "classification": "ACTION_REQUIRED",
+      "task": "Just quickly, just talked to the bank,,they said they have not received, or see any transfer of funds into my account...",
+      "why": "Derived from email request",
+      "due": null,
+      "owner": null,
+      "confidence": "medium",
+      "badge": "NEW",
+      "last_seen": "2026-02-09",
+      "first_seen": "2026-02-09",
+      "ledger_status": "NEW",
+      "suggested_workstream": "UNROUTED",
+      "suggested_lane": "UNROUTED",
+      "routing_confidence": "LOW",
+      "routing_reason": "Default routing (not classified)",
+      "next_action_type": "OTHER",
+      "evidence": [
+        {
+          "email_date": "2026-02-09",
+          "from": "Zelko Culibrk <zeeculibrk@gmail.com>",
+          "subject": "Re: 1716867 Ontario Inc. - Shareholders",
+          "quote": "Hi Matthew Just quickly, just talked to the bank,,they said they have not received, or see any transfer of funds into my account.Hopefully you can check on your end, to see if there was an error ma...",
+          "message_ref": "19c43e8cbd50b9d5"
+        }
+      ]
+    },
+    {
+      "task_id": "14dfe0d4ed72",
+      "matter_id": "25-194-00059",
+      "classification": "ACTION_REQUIRED",
+      "task": "- Lets touch base on this asap. Are you free tomorrow afternoon for a quick Zoom with Mike and I",
+      "why": "Derived from email request",
+      "due": null,
+      "owner": null,
+      "confidence": "medium",
+      "badge": "NEW",
+      "last_seen": "2026-02-09",
+      "first_seen": "2026-02-09",
+      "ledger_status": "NEW",
+      "suggested_workstream": "UNROUTED",
+      "suggested_lane": "UNROUTED",
+      "routing_confidence": "LOW",
+      "routing_reason": "Default routing (not classified)",
+      "next_action_type": "OTHER",
+      "evidence": [
+        {
+          "email_date": "2026-02-09",
+          "from": "Michael Mandarino <mmandarino@rousseaumazzuca.com>",
+          "subject": "RE: rent arrears",
+          "quote": "Matt - Lets touch base on this asap. Are you free tomorrow afternoon for a quick Zoom with Mike and I. We need to get this concluded. Regards Michael Mandarino Partner Rousseau Mazzuca LLP T: 416.304.",
+          "message_ref": "19c43b7cb377fe40"
+        }
+      ]
+    },
+    {
+      "task_id": "414fa8bc67b6",
+      "matter_id": "FIRM_INTERNAL",
+      "classification": "ACTION_REQUIRED",
+      "task": "Call: I hope you are doing well and had a wonderful weekend. I just wanted to follow up regarding our phone call this week",
+      "why": "Derived from email request",
+      "due": null,
+      "owner": null,
+      "confidence": "medium",
+      "badge": "NEW",
+      "last_seen": "2026-02-09",
+      "first_seen": "2026-02-09",
+      "ledger_status": "NEW",
+      "suggested_workstream": "UNROUTED",
+      "suggested_lane": "UNROUTED",
+      "routing_confidence": "LOW",
+      "routing_reason": "Default routing (not classified)",
+      "next_action_type": "OTHER",
+      "evidence": [
+        {
+          "email_date": "2026-02-09",
+          "from": "Laura Hinton <laura.e.hintonn@gmail.com>",
+          "subject": "Phone Call",
+          "quote": "Hi Matthew, I hope you are doing well and had a wonderful weekend. I just wanted to follow up regarding our phone call this week. I know you had mentioned for us to speak early this week, so I just...",
+          "message_ref": "19c439e5b92febbe"
+        }
+      ]
+    },
+    {
+      "task_id": "3c0143e89027",
+      "matter_id": "25-1318-00001",
+      "classification": "ACTION_REQUIRED",
+      "task": "Just wanted to let you know the funds have not been deposited into my account yet",
+      "why": "Derived from email request",
+      "due": null,
+      "owner": null,
+      "confidence": "medium",
+      "badge": "NEW",
+      "last_seen": "2026-02-09",
+      "first_seen": "2026-02-09",
+      "ledger_status": "NEW",
+      "suggested_workstream": "UNROUTED",
+      "suggested_lane": "UNROUTED",
+      "routing_confidence": "LOW",
+      "routing_reason": "Default routing (not classified)",
+      "next_action_type": "OTHER",
+      "evidence": [
+        {
+          "email_date": "2026-02-09",
+          "from": "Zelko Culibrk <zeeculibrk@gmail.com>",
+          "subject": "Re: 1716867 Ontario Inc. - Shareholders",
+          "quote": "Hi Matthew Just wanted to let you know the funds have not been deposited into my account yet. The RBC financial advisor just emailed me, to let me know, the funds are not there yet.We had a meeting...",
+          "message_ref": "19c43853c50f1bd5"
+        }
+      ]
+    },
+    {
+      "task_id": "939827aa750c",
+      "matter_id": "24-336-00004",
+      "classification": "ACTION_REQUIRED",
+      "task": "Have looked into the government funding and seems that anything that’s available is for large companies and the loan ...",
+      "why": "Derived from email request",
+      "due": null,
+      "owner": null,
+      "confidence": "medium",
+      "badge": "NEW",
+      "last_seen": "2026-02-09",
+      "first_seen": "2026-02-09",
+      "ledger_status": "NEW",
+      "suggested_workstream": "UNROUTED",
+      "suggested_lane": "UNROUTED",
+      "routing_confidence": "LOW",
+      "routing_reason": "Default routing (not classified)",
+      "next_action_type": "OTHER",
+      "evidence": [
+        {
+          "email_date": "2026-02-09",
+          "from": "Max Hill <mhill@mascore.ca>",
+          "subject": "RE: New Project",
+          "quote": "Hi Matthew, Have looked into the government funding and seems that anything that’s available is for large companies and the loan amounts are aggressive. Do you have any ideas? Max Hill, C.E.T Masco...",
+          "message_ref": "19c436e40ec5ad6d"
+        }
+      ]
+    },
+    {
+      "task_id": "03bf76e4b874",
+      "matter_id": "25-256-00005",
+      "classification": "ACTION_REQUIRED",
+      "task": "Hope all is well with you. Wanted to set some time to review the below and update the status on these items",
+      "why": "Derived from email request",
+      "due": null,
+      "owner": null,
+      "confidence": "medium",
+      "badge": "NEW",
+      "last_seen": "2026-02-09",
+      "first_seen": "2026-02-09",
+      "ledger_status": "NEW",
+      "suggested_workstream": "UNROUTED",
+      "suggested_lane": "UNROUTED",
+      "routing_confidence": "LOW",
+      "routing_reason": "Default routing (not classified)",
+      "next_action_type": "OTHER",
+      "evidence": [
+        {
+          "email_date": "2026-02-09",
+          "from": "Shane Sequeira <shane@aspireinfusions.ca>",
+          "subject": "RE: Matthew/Sy",
+          "quote": "Hi Matthew, Hope all is well with you. Wanted to set some time to review the below and update the status on these items. Please let us know your availability this week or next and will send over an",
+          "message_ref": "19c43685893e73c0"
+        }
+      ]
+    },
+    {
+      "task_id": "8614968bf9ff",
+      "matter_id": "UNASSIGNED",
+      "classification": "ACTION_REQUIRED",
+      "task": "Review: It was great speaking with you. Please see attached for my minute book",
+      "why": "Derived from email request",
+      "due": null,
+      "owner": null,
+      "confidence": "medium",
+      "badge": "NEW",
+      "last_seen": "2026-02-09",
+      "first_seen": "2026-02-09",
+      "ledger_status": "NEW",
+      "suggested_workstream": "UNROUTED",
+      "suggested_lane": "UNROUTED",
+      "routing_confidence": "LOW",
+      "routing_reason": "Default routing (not classified)",
+      "next_action_type": "OTHER",
+      "evidence": [
+        {
+          "email_date": "2026-02-09",
+          "from": "Muhammad Ahmad <mo.ahmadca@gmail.com>",
+          "subject": "Re: corporate lawyer",
+          "quote": "Hi Matthew, It was great speaking with you. Please see attached for my minute book. Also, can you please let me know if you accept Amex as a payment option? Thank you, Muhammad On Fri, Feb 6, 2026 ...",
+          "message_ref": "19c433105bb125e8"
+        }
+      ]
+    },
+    {
+      "task_id": "f93c20c6d375",
+      "matter_id": "25-256-00005",
+      "classification": "ACTION_REQUIRED",
+      "task": "Review: Michael, Please see attached.",
+      "why": "Derived from email request",
+      "due": null,
+      "owner": null,
+      "confidence": "medium",
+      "badge": "NEW",
+      "last_seen": "2026-02-09",
+      "first_seen": "2026-02-09",
+      "ledger_status": "NEW",
+      "suggested_workstream": "UNROUTED",
+      "suggested_lane": "UNROUTED",
+      "routing_confidence": "LOW",
+      "routing_reason": "Default routing (not classified)",
+      "next_action_type": "OTHER",
+      "evidence": [
+        {
+          "email_date": "2026-02-09",
+          "from": "Shane Sequeira <shane@aspireinfusions.com>",
+          "subject": "RE: Seeker Cannabis | Agreement review",
+          "quote": "Hi Michael, Please see attached. Thanks! For Tokyo Smoke, just to confirm for the 6% fee, would it be on top of the Seeker 8% fee? So effectively a total of 14%? Best Regards, Shane From: Michael Bou",
+          "message_ref": "19c43033dcd38400"
+        }
+      ]
+    },
+    {
+      "task_id": "5cecea21f8aa",
+      "matter_id": "UNASSIGNED",
+      "classification": "ACTION_REQUIRED",
+      "task": "Thank you for your message and for your support throughout this process",
+      "why": "Derived from email request",
+      "due": null,
+      "owner": null,
+      "confidence": "medium",
+      "badge": "NEW",
+      "last_seen": "2026-02-09",
+      "first_seen": "2026-02-09",
+      "ledger_status": "NEW",
+      "suggested_workstream": "UNROUTED",
+      "suggested_lane": "UNROUTED",
+      "routing_confidence": "LOW",
+      "routing_reason": "Default routing (not classified)",
+      "next_action_type": "OTHER",
+      "evidence": [
+        {
+          "email_date": "2026-02-08",
+          "from": "Jyotika Gahlaut <jyotikagahlaut@gmail.com>",
+          "subject": "Re: Nani's - Liberty Village franchise unit and sub-lease",
+          "quote": "Hi Matthew, Thank you for your message and for your support throughout this process. I appreciate the time and effort you have dedicated to our matter. Could you please provide a final invoice and a",
+          "message_ref": "19c3f25fa9627551"
+        }
+      ]
+    },
+    {
+      "task_id": "64570d59317d",
+      "matter_id": "25-1614-00001",
+      "classification": "ACTION_REQUIRED",
+      "task": "Execute: After sending the signed SPA to the buyer, he sent us some comments from his side and asked you to review",
+      "why": "Derived from email request",
+      "due": null,
+      "owner": null,
+      "confidence": "medium",
+      "badge": "NEW",
+      "last_seen": "2026-02-09",
+      "first_seen": "2026-02-09",
+      "ledger_status": "NEW",
+      "suggested_workstream": "UNROUTED",
+      "suggested_lane": "UNROUTED",
+      "routing_confidence": "LOW",
+      "routing_reason": "Default routing (not classified)",
+      "next_action_type": "OTHER",
+      "evidence": [
+        {
+          "email_date": "2026-02-08",
+          "from": "\"Chen | Clearsky Network\" <Chen.Ben@clearsky-network.com>",
+          "subject": "RE: SPA",
+          "quote": "Hi Matthew, After sending the signed SPA to the buyer, he sent us some comments from his side and asked you to review. Its important to mention that we hold 100% of the funds paid by the buyer – the",
+          "message_ref": "19c3d11706082ed1"
+        }
+      ]
+    },
+    {
+      "task_id": "f5eda8b3e1e3",
+      "matter_id": "25-1614-00001",
+      "classification": "ACTION_REQUIRED",
+      "task": "As agreed we should send 50% of the payment upfront and 50% after ownership change",
+      "why": "Derived from email request",
+      "due": null,
+      "owner": null,
+      "confidence": "medium",
+      "badge": "NEW",
+      "last_seen": "2026-02-09",
+      "first_seen": "2026-02-09",
+      "ledger_status": "NEW",
+      "suggested_workstream": "UNROUTED",
+      "suggested_lane": "UNROUTED",
+      "routing_confidence": "LOW",
+      "routing_reason": "Default routing (not classified)",
+      "next_action_type": "OTHER",
+      "evidence": [
+        {
+          "email_date": "2026-02-08",
+          "from": "\"Chen | Clearsky Network\" <Chen.Ben@clearsky-network.com>",
+          "subject": "RE: SPA",
+          "quote": "Hi Matthew, As agreed we should send 50% of the payment upfront and 50% after ownership change. Would you like to adjust the invoice accordingly? Best regards, Chen From: Matthew Levine <matthew@le...",
+          "message_ref": "19c3cab15d72fe34"
+        }
+      ]
+    },
+    {
+      "task_id": "38c99caa9d7c",
+      "matter_id": "25-194-00059",
+      "classification": "ACTION_REQUIRED",
+      "task": "Everyone, Aline and I are live streaming our wedding on Twitch tomorrow at 3:50pm",
+      "why": "Derived from email request",
+      "due": null,
+      "owner": null,
+      "confidence": "medium",
+      "badge": "NEW",
+      "last_seen": "2026-02-09",
+      "first_seen": "2026-02-09",
+      "ledger_status": "NEW",
+      "suggested_workstream": "UNROUTED",
+      "suggested_lane": "UNROUTED",
+      "routing_confidence": "LOW",
+      "routing_reason": "Default routing (not classified)",
+      "next_action_type": "OTHER",
+      "evidence": [
+        {
+          "email_date": "2026-02-07",
+          "from": "Daniel Wright <Dwright@rousseaumazzuca.com>",
+          "subject": "Daniel & Aline Wedding Stream",
+          "quote": "Hi everyone, Aline and I are live streaming our wedding on Twitch tomorrow at 3:50pm. Our Twitch username is: DanielJWright18 Feel free to tune in for our ceremony! Best, I am emailing from my cell...",
+          "message_ref": "19c385c27f12a21a"
+        }
+      ]
     }
   ],
-  "last_run": "2026-02-08",
+  "last_run": "2026-02-09T21:07:13.780752",
   "version": "2.0"
 }

@@ -57,5 +57,9 @@ def get_drive():
     return build("drive", "v3", credentials=get_creds(), cache_discovery=False)
 
 
+def get_gmail():
+    return build("gmail", "v1", credentials=get_creds(), cache_discovery=False)
+
+
 def get_sheets():
     return build("sheets", "v4", credentials=get_creds(), cache_discovery=False)

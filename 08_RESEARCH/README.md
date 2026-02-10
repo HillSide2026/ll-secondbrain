@@ -4,8 +4,8 @@ title: Research Directory
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
-tags: []
+last_updated: 2026-02-10
+tags: [research]
 ---
 
 # Research Directory
@@ -76,6 +76,55 @@ Promotion out of Research:
 
 ---
 
+## Naming + Metadata Standards
+
+All research notes in `08_RESEARCH/` must use:
+
+**File naming pattern**
+`YYYY-MM-DD__Topic__Descriptor__vX.Y.md`
+
+Example:
+`2026-02-09__Corporate-Law__Shareholder-Agreements_Issues-List__v0.1.md`
+
+Rules:
+- Date = creation or last major revision date
+- Use kebab-case inside segments if needed (e.g., `Corporate-Law`, `Minute-Book`)
+- `v0.x` = research/draft; promotion to `v1.0+` typically moves to `07_REFERENCE`
+
+**Required YAML metadata (research notes)**
+```yaml
+---
+layer: 08_RESEARCH
+domain: corporate-law
+status: draft
+owner: ML2
+authority: not-approved
+confidence: exploratory
+created: 2026-02-09
+updated: 2026-02-09
+scope: "ON - general"
+matter_id: null
+sources:
+  - type: url|pdf|book|case|statute
+    citation: ""
+open_questions:
+  - ""
+next_actions:
+  - ""
+---
+```
+
+---
+
+## Folder-Level Convention
+
+`08_RESEARCH` is exploratory, provisional, and evolving.
+
+Corporate law research must live under:
+`08_RESEARCH/Corporate Law/`
+
+---
+
 ## Agent Behavior
 
 | Agent | Behavior |
@@ -92,6 +141,7 @@ Promotion out of Research:
 
 ```
 08_RESEARCH/
+├── Corporate Law/        # Corporate law research (Ontario)
 ├── ACTIVE/
 │   ├── integrations/    # Integration research
 │   ├── agents/          # Agent design research

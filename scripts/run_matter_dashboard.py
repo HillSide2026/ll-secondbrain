@@ -108,6 +108,98 @@ def load_ledger() -> Dict:
     return {"version": "2.0", "last_run": None, "entries": []}
 
 
+# Human-editable fields that the Sheets read-back should honor
+HUMAN_FIELDS = {"STATUS", "OWNER", "DUE"}
+# Map Sheets header names → ledger JSON field names
+SHEETS_TO_LEDGER = {"STATUS": "ledger_status", "OWNER": "owner", "DUE": "due"}
+
+
+def read_back_from_sheets(ledger: Dict, dry_run: bool) -> int:
+    """Read the most recent Sheets tab and merge human edits into the ledger.
+
+    Returns the number of fields updated.
+    """
+    if dry_run:
+        return 0
+
+    try:
+        from auth_google import get_sheets
+    except Exception:
+        return 0
+
+    doc_id = os.environ.get("LEDGER_DOC_ID")
+    if not doc_id:
+        return 0
+
+    sheets = get_sheets()
+
+    # Get all sheet tabs, find the most recent (index 0 = leftmost = newest)
+    meta = sheets.spreadsheets().get(
+        spreadsheetId=doc_id, fields="sheets.properties"
+    ).execute()
+    sheet_tabs = meta.get("sheets", [])
+    if not sheet_tabs:
+        return 0
+
+    # Sort by index to find the leftmost (most recent) tab
+    sheet_tabs.sort(key=lambda s: s["properties"]["index"])
+    latest_tab = sheet_tabs[0]["properties"]["title"]
+
+    # Read all values from the latest tab
+    result = sheets.spreadsheets().values().get(
+        spreadsheetId=doc_id, range="{}!A:R".format(latest_tab)
+    ).execute()
+    rows = result.get("values", [])
+    if len(rows) < 2:
+        return 0
+
+    header = rows[0]
+    # Find column indices for TASK_ID and human-editable fields
+    col_map = {}
+    for i, h in enumerate(header):
+        if h in ("TASK_ID",) or h in HUMAN_FIELDS:
+            col_map[h] = i
+
+    if "TASK_ID" not in col_map:
+        return 0
+
+    task_id_col = col_map["TASK_ID"]
+
+    # Build lookup: task_id → {field: value} from Sheets
+    sheets_edits = {}
+    for row in rows[1:]:
+        if len(row) <= task_id_col:
+            continue
+        tid = row[task_id_col].strip()
+        if not tid:
+            continue
+        edits = {}
+        for field_name in HUMAN_FIELDS:
+            if field_name not in col_map:
+                continue
+            idx = col_map[field_name]
+            val = row[idx].strip() if len(row) > idx else ""
+            edits[field_name] = val
+        sheets_edits[tid] = edits
+
+    # Merge into ledger entries
+    updated = 0
+    for entry in ledger.get("entries", []):
+        tid = entry.get("task_id", "")
+        if tid not in sheets_edits:
+            continue
+        for sheets_field, ledger_field in SHEETS_TO_LEDGER.items():
+            sheets_val = sheets_edits[tid].get(sheets_field, "")
+            if not sheets_val:
+                continue
+            current = entry.get(ledger_field) or ""
+            if str(current) != sheets_val:
+                entry[ledger_field] = sheets_val if sheets_val else None
+                updated += 1
+
+    return updated
+
+
 def write_ledger(ledger: Dict) -> None:
     LEDGER_PATH.parent.mkdir(parents=True, exist_ok=True)
     LEDGER_PATH.write_text(json.dumps(ledger, indent=2, ensure_ascii=False))
@@ -302,7 +394,7 @@ def update_participant_mapping(new_mappings: Dict[str, str]) -> int:
     return len(additions)
 
 
-def push_ledger_to_sheets(ledger: Dict, dry_run: bool) -> None:
+def push_ledger_to_sheets(ledger: Dict, matters: Dict, dry_run: bool) -> None:
     if dry_run:
         print("[DRY RUN] Skipping Google Sheets push")
         return
@@ -323,63 +415,105 @@ def push_ledger_to_sheets(ledger: Dict, dry_run: bool) -> None:
     sheets = get_sheets()
     assert_doc_in_approved_folder(drive, doc_id)
 
-    title = datetime.now().strftime("%Y-%m-%d")
-    body = {"requests": [{"addSheet": {"properties": {"title": title}}}]}
+    # Timestamped tab name per spec
+    tab_name = datetime.now().strftime("%Y-%m-%d_%H%M")
+    body = {"requests": [{"addSheet": {"properties": {"title": tab_name, "index": 0}}}]}
     sheets.spreadsheets().batchUpdate(spreadsheetId=doc_id, body=body).execute()
 
+    # Sort per Ledger Spec Section 8:
+    #   1. suggested_workstream (DELIVERY → FULFILLMENT → MARKETING → MANAGEMENT → UNROUTED)
+    #   2. delivery_status (ESSENTIAL → STRATEGIC → STANDARD → PARKED)
+    #   3. matter_id (ascending, groups matter tasks together)
+    #   4. task_id (ascending within matter)
+    WORKSTREAM_ORDER = {"DELIVERY": 0, "FULFILLMENT": 1, "MARKETING": 2, "MANAGEMENT": 3, "UNROUTED": 4}
+    DELIVERY_STATUS_ORDER = {"essential": 0, "strategic": 1, "standard": 2, "parked": 3}
+
+    entries = list(ledger.get("entries", []))
+    entries.sort(key=lambda e: (
+        WORKSTREAM_ORDER.get(e.get("suggested_workstream", "UNROUTED"), 99),
+        DELIVERY_STATUS_ORDER.get(
+            matters.get(e.get("matter_id", ""), {}).get("delivery_status", ""), 99
+        ),
+        e.get("matter_id", ""),
+        e.get("task_id", ""),
+    ))
+
     headers = [
-        "task_id",
-        "matter_id",
-        "task",
-        "ledger_status",
-        "first_seen",
-        "last_seen",
-        "due",
-        "suggested_workstream",
-        "suggested_lane",
-        "routing_confidence",
-        "routing_reason",
-        "next_action_type",
-        "evidence",
+        "TASK_ID", "MATTER_ID", "CLASSIFICATION", "TASK", "WHY", "DUE",
+        "STATUS", "OWNER", "CONFIDENCE", "BADGE", "LAST_SEEN", "FIRST_SEEN",
+        "SUGGESTED_WORKSTREAM", "SUGGESTED_LANE", "ROUTING_CONFIDENCE",
+        "ROUTING_REASON", "NEXT_ACTION_TYPE", "EVIDENCE_SUMMARY",
     ]
 
     values = [headers]
-    for entry in ledger.get("entries", []):
+    for entry in entries:
+        evidence = entry.get("evidence", [])
+        ev_summary = ""
+        if evidence:
+            parts = []
+            for ev in evidence:
+                parts.append("{}: {} ({})".format(
+                    ev.get("from", ""), ev.get("subject", ""), ev.get("email_date", "")
+                ))
+            ev_summary = "; ".join(parts)
+
         values.append([
-            entry.get("task_id"),
-            entry.get("matter_id"),
-            entry.get("task"),
-            entry.get("ledger_status"),
-            entry.get("first_seen"),
-            entry.get("last_seen"),
-            entry.get("due"),
-            entry.get("suggested_workstream"),
-            entry.get("suggested_lane"),
-            entry.get("routing_confidence"),
-            entry.get("routing_reason"),
-            entry.get("next_action_type"),
-            json.dumps(entry.get("evidence", []), ensure_ascii=False),
+            entry.get("task_id", ""),
+            entry.get("matter_id", ""),
+            entry.get("classification", ""),
+            entry.get("task", ""),
+            entry.get("why", ""),
+            entry.get("due") or "",
+            entry.get("ledger_status", ""),
+            entry.get("owner") or "",
+            entry.get("confidence", ""),
+            entry.get("badge", ""),
+            entry.get("last_seen", ""),
+            entry.get("first_seen", ""),
+            entry.get("suggested_workstream", ""),
+            entry.get("suggested_lane", ""),
+            entry.get("routing_confidence", ""),
+            entry.get("routing_reason", ""),
+            entry.get("next_action_type", ""),
+            ev_summary,
         ])
 
     sheets.spreadsheets().values().update(
         spreadsheetId=doc_id,
-        range=f"{title}!A1",
+        range="{}!A1".format(tab_name),
         valueInputOption="RAW",
         body={"values": values},
     ).execute()
 
-    print(f"Ledger pushed to Sheets tab: {title}")
+    print("Ledger pushed to Sheets tab: {} ({} rows)".format(tab_name, len(values) - 1))
 
 
-def label_schema(delivery_status: str, matter_id: str) -> str:
-    return f"LL/1./{delivery_status}/{matter_id}"
+DELIVERY_STATUS_LABELS = {
+    "essential": "1.1 - Essential",
+    "strategic": "1.2 - Strategic",
+    "standard": "1.3 - Standard",
+    "parked": "1.4 - Parked",
+}
+
+
+def label_schema(delivery_status: str, matter_id: str, matter_name: str = "") -> str:
+    status_label = DELIVERY_STATUS_LABELS.get(delivery_status.lower(), delivery_status)
+    label = f"LL/1./{status_label}/{matter_id}"
+    if matter_name:
+        label += f" -- {matter_name}"
+    return label
 
 
 def label_schema_valid(label: str, matter_id: str) -> bool:
-    pattern = r"^LL/1\\./[^/]+/\\d{2}-\\d{3,4}-\\d{5}$"
+    pattern = r"^LL/1\./\d+\.\d+ - [A-Z][a-z]+/\d{2}-\d{3,4}-\d{5}( -- .+)?$"
     if not re.match(pattern, label):
         return False
-    return label.endswith(f"/{matter_id}")
+    # Extract matter segment (4th /-delimited part) and verify it starts with matter_id
+    parts = label.split("/")
+    if len(parts) < 4:
+        return False
+    matter_segment = parts[3]
+    return matter_segment == matter_id or matter_segment.startswith(f"{matter_id} -- ")
 
 
 def mapping_method_allowed(method: str) -> bool:
@@ -408,7 +542,8 @@ def build_label_manifest(attributed: List[Dict], matters: Dict[str, Dict], appro
         if not delivery_status:
             continue
 
-        label = label_schema(delivery_status, matter_id)
+        matter_name = matter.get("matter_name", "")
+        label = label_schema(delivery_status, matter_id, matter_name)
         if not label_schema_valid(label, matter_id):
             continue
 
@@ -583,8 +718,13 @@ def main() -> int:
         }
         actions.append(task)
 
-    # Step 6: Reconcile ledger
+    # Step 6a: Load ledger and read back human edits from Sheets
     ledger = load_ledger()
+    edits = read_back_from_sheets(ledger, dry_run=args.dry_run)
+    if edits:
+        print("Read back {} human edit(s) from Sheets".format(edits))
+
+    # Step 6b: Reconcile ledger with today's extracted tasks
     ledger, carry_forward = reconcile_ledger(actions, ledger)
     write_ledger(ledger)
 
@@ -631,7 +771,7 @@ def main() -> int:
     )
 
     # Step 9: Push ledger to Sheets
-    push_ledger_to_sheets(ledger, dry_run=args.dry_run)
+    push_ledger_to_sheets(ledger, matters, dry_run=args.dry_run)
 
     # Step 10: Optional Gmail labeling manifest + execution
     if args.label_manifest:

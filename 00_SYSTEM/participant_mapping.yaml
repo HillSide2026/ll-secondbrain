@@ -273,3 +273,28 @@ mbanisa: "26-259-00003"
 # 5. COUNTERPARTIES: External counsel routes to their client's matter.
 #    TODO: Map opposing counsel domains to relevant matters.
 #
+
+# =============================================================================
+# AUTO-DISCOVERED MAPPINGS
+# Added by run_matter_dashboard.py
+# Generated: 2026-02-09
+akhil: "25-194-00059"
+aspireinfusions.ca: "25-256-00005"
+aspireinfusions.com: "25-256-00005"
+berkeley-ig: "25-927-00003"
+berkeley-ig.com: "25-927-00003"
+chenben: "25-1614-00001"
+clearsky-network: "25-1614-00001"
+clearsky-network.com: "25-1614-00001"
+dwright: "25-194-00059"
+fireblocks.com: "25-927-00003"
+gmail: "25-1318-00001"
+gmail.com: "25-1318-00001"
+hotmail: "26-259-00003"
+hotmail.com: "26-259-00003"
+mmandarino: "25-194-00059"
+sbedi: "25-927-00003"
+shane: "25-256-00005"
+sonia: "25-927-00003"
+tulikad: "25-927-00003"
+zeeculibrk: "25-1318-00001"

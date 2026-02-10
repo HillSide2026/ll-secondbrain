@@ -135,9 +135,23 @@ Tasks with status `TRIAGED` or `WAITING` MUST NOT be automatically marked `STALE
 
 ---
 
-## 6. Daily Run Behavior (Two-Phase)
+## 6. Daily Run Behavior (Three-Phase)
 
-Each daily run MUST perform both phases below.
+Each daily run MUST perform all phases below in order.
+
+### Phase 0 — Read Back Human Edits from Sheets
+
+Before extraction, the system MUST read the most recent Sheets tab and merge any human edits into the local ledger. Human-editable fields are:
+
+- `status` (ledger_status) — e.g., NEW → TRIAGED, DONE, DROPPED, WAITING
+- `owner` — human-assigned owner
+- `due` — human-assigned deadline
+
+If a field in Sheets differs from the local ledger value, the Sheets value wins. This ensures that triage performed directly in the spreadsheet is not overwritten by the next pipeline run.
+
+The system MUST NOT overwrite human-set values during reconciliation (Phase 2). Specifically:
+- If `status` was changed by a human (e.g., to TRIAGED or DONE), the system MUST NOT reset it to NEW.
+- If `owner` was set by a human, the system MUST NOT clear it.
 
 ### Phase 1 — Extract Candidates
 
@@ -196,10 +210,13 @@ Tasks MUST NOT disappear from the report solely because they fall outside the em
 When the ledger is rendered (to report, spreadsheet, or any output view), entries MUST be sorted in the following order:
 
 1. **Primary:** `suggested_workstream` — DELIVERY → FULFILLMENT → MARKETING → MANAGEMENT → UNROUTED
-2. **Secondary:** `matter_id` — ascending alphanumeric within each workstream
-3. **Tertiary:** `task_id` — ascending within each matter
+2. **Secondary:** `delivery_status` — ESSENTIAL → STRATEGIC → STANDARD → PARKED
+3. **Tertiary:** `matter_id` — ascending alphanumeric (groups all tasks for the same matter together)
+4. **Quaternary:** `task_id` — ascending within each matter
 
-DELIVERY always appears first. This ensures the highest-priority operational work is surfaced at the top of every view.
+DELIVERY always appears first. Within each workstream, matters are ranked by delivery status so that essential matters surface before parked matters.
+
+Each Sheets tab MUST be timestamped (e.g., `2026-02-09_1539`), not date-only.
 
 ---
 
