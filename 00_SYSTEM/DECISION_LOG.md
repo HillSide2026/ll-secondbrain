@@ -43,3 +43,10 @@ This log records all system-level decisions affecting the Second Brain.
 **Approved by:** ML1  
 **Artifacts impacted:** /04_INITIATIVES/SYSTEM_PORTFOLIO/00_DRAFT_ROADMAPS/STAGE1_INVENTORY.md; /00_SYSTEM/architecture/ARCH-2026-01X-stage1-architecture-map.md  
 **Notes:** Stage 1 DoD satisfied per evidence in the consolidated report and architecture map
+
+## 2026-02-03 — Approve Doctrine 2026-004 (Canonical Agent Doctrine)
+
+**Decision:** Approved doctrine defining canonical constraints for agent operation in the Second Brain system  
+**Approved by:** ML1  
+**Artifacts impacted:** /01_DOCTRINE/01_BINDING/DOCTRINE-2026-004-canonical-agent-doctrine.md  
+**Notes:** Establishes binding constraints on agent authority, scope, attribution, and non-simulation requirements
