@@ -4,7 +4,7 @@ title: Stage 2.10 — Move Authoritative Ledger to Google Drive (Backlog)
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-10
 tags: []
 ---
 
@@ -12,11 +12,11 @@ tags: []
 
 ## Status
 
-- **Status:** 🟨 BACKLOG
-- **Owner:** UNASSIGNED
-- **Effective Start:** TBD (depends on Stage 2.9)
-- **Closed:** —
-- **Authority Gate:** Requires ML1 approval of ledger schema + change control approach
+- **Status:** ✅ COMPLETE
+- **Owner:** ML1
+- **Effective Start:** 2026-02-10
+- **Closed:** 2026-02-10
+- **Authority Gate:** ML1-approved ledger schema + change control approach
 
 ---
 
@@ -84,23 +84,23 @@ tags: []
 
 ## 5. Execution Tracking (Backlog)
 
-### Phase 1: Sheet + Schema (Planned)
+### Phase 1: Sheet + Schema (Complete)
 | Item | Status | Notes |
 |------|--------|-------|
-| Create canonical Google Sheet | ⬜ | Must live in approved folder |
-| Define schema (columns + enums) | ⬜ | ML1 approval required |
-| Define human-editable fields | ⬜ | Status + notes only (default) |
+| Create canonical Google Sheet | ✅ | Approved folder |
+| Define schema (columns + enums) | ✅ | ML1-approved |
+| Define human-editable fields | ✅ | Status + notes only |
 
-### Phase 2: Reconciliation (Planned)
+### Phase 2: Reconciliation (Complete)
 | Item | Status | Notes |
 |------|--------|-------|
-| Read ledger from Drive | ⬜ | Ledger-first |
-| Write updates to Drive ledger | ⬜ | Preserve human status |
-| Carry-forward unresolved tasks | ⬜ | No window-drop |
+| Read ledger from Drive | ✅ | Ledger-first |
+| Write updates to Drive ledger | ✅ | Preserve human status |
+| Carry-forward unresolved tasks | ✅ | No window-drop |
 
-### Phase 3: Migration + Change Control (Planned)
+### Phase 3: Migration + Change Control (Complete)
 | Item | Status | Notes |
 |------|--------|-------|
-| Export local ledger | ⬜ | Preserve `task_id` |
-| Import into Drive ledger | ⬜ | Verify counts + IDs |
-| Snapshot strategy | ⬜ | Daily export or Drive versions |
+| Export local ledger | ✅ | Preserved `task_id` |
+| Import into Drive ledger | ✅ | Counts + IDs verified |
+| Snapshot strategy | ✅ | Drive versions or daily export |

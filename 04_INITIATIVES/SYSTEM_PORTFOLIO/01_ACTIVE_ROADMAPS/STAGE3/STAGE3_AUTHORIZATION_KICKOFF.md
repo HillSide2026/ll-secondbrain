@@ -4,7 +4,7 @@ title: Stage 3 — Authorization Kickoff
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-10
 tags: []
 ---
 
@@ -232,6 +232,30 @@ Every artifact is:
 
 ---
 
+### Stage 3.6 — Draft Responses (Internal Only)
+
+**Objective:** Provide draft response starting points without exporting to Gmail, inbox, or any external system.
+
+**Allowed Output:**
+- Draft response options (internal only)
+- Clearly labeled system-generated drafts
+
+**Constraints:**
+- No export to Gmail or inbox
+- No external writes
+- No send-ready wording
+- Use / Ignore / Delete only
+
+**Agent Introduced:**
+- Draft Response Assistant
+
+**Exit Gate:**
+- Drafts speed starting but never feel send-ready
+- All drafts remain local and labeled
+- Any export attempt triggers immediate stop
+
+---
+
 ## 5. Agent Summary (Stage 3)
 
 | Agent | Sub-Stage | Function | Ceiling |
@@ -244,6 +268,7 @@ Every artifact is:
 | Conversation Summarizer | 3.4 | Compress threads | No inference |
 | Document Condenser | 3.4 | Compress docs | No synthesis |
 | Comm Framing Assistant | 3.5 | Approach options | No wording |
+| Draft Response Assistant | 3.6 | Internal drafts | No export |
 
 **All agents are:**
 - stateless
@@ -317,6 +342,12 @@ They live in a different mental and system bucket.
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
 | Communication Framing Assistant | ⬜ pending | | |
+| Exit gate validation | ⬜ pending | | |
+
+### Stage 3.6 — Draft Responses (Internal Only) 🟨 BACKLOG
+| Item | Status | Date | Notes |
+|------|--------|------|-------|
+| Draft Response Assistant | ⬜ pending | | |
 | Exit gate validation | ⬜ pending | | |
 
 ---
