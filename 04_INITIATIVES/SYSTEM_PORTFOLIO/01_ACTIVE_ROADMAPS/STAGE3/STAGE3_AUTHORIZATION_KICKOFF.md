@@ -4,7 +4,7 @@ title: Stage 3 — Authorization Kickoff
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-10
+last_updated: 2026-02-11
 tags: []
 ---
 
@@ -33,6 +33,15 @@ It is about reducing friction in thinking and communication while keeping author
 > Can the system reliably generate scaffolding (structure, coverage, compression) that makes ML1 think and communicate faster — without becoming a writer, advisor, or actor?
 
 **If the system ever feels like it is speaking for you, Stage 3 has failed.**
+
+Stage 3 must remain:
+- **Non-executing**
+- **Non-authoritative**
+- **Non-writing (no external/system-of-record writes)**
+- **Non-policy-creating**
+- **ML1-dependent for any external impact**
+
+Internal-only drafts are permitted in Stage 3.6, but **must never propagate** to external systems.
 
 ---
 
@@ -221,9 +230,26 @@ Every artifact is:
 - Bullets only
 - No wording
 - No preferred option unless requested
+- No recommendation language or implied authority
+- Must label uncertainty explicitly
 
 **Agent Introduced:**
 - Communication Framing Assistant
+
+**Deliverables:**
+- **Framing Variant Schema v1.0** (per-variant fields):
+  - Framing lens (e.g., risk-minimizing, aggressive, conservative, client-centered, precedent-driven)
+  - Core thesis
+  - Key implications
+  - Assumptions
+  - Hidden tradeoffs
+  - What this framing deprioritizes
+- **Variant Comparison Matrix** (structured table):
+  - Stability
+  - Risk exposure
+  - Operational load
+  - Reversibility
+  - Escalation likelihood
 
 **Exit Gate:**
 - Aids approach selection
@@ -249,10 +275,54 @@ Every artifact is:
 **Agent Introduced:**
 - Draft Response Assistant
 
+**Deliverables:**
+- **Draft Classification Layer** (all drafts tagged):
+  - Internal Draft — No Distribution
+  - Draft for ML1 Revision
+  - Draft Requires Substantive Legal Judgment
+  - Draft Structurally Complete — Substantive Review Needed
+- **Draft Construction Protocol** (each draft logs):
+  - Source artifacts referenced
+  - Applied doctrine
+  - Open assumptions
+  - Missing information
+  - Confidence band
+- **No-Propagation Enforcement** (hard rule):
+  - Drafts cannot be auto-sent
+  - Drafts cannot be auto-inserted into external systems
+  - Drafts cannot mutate system memory
+
 **Exit Gate:**
 - Drafts speed starting but never feel send-ready
 - All drafts remain local and labeled
 - Any export attempt triggers immediate stop
+
+---
+
+### Stage 3.7 — Cognitive Consistency Checks (Read-Only)
+
+**Objective:** Surface contradictions or drift before authority elevation.
+
+**Allowed Output:**
+- Flags only (no resolution, no recommendations)
+
+**System Flags:**
+- Contradictory doctrine references
+- Outdated template usage
+- Inconsistent framing
+- Coverage gaps
+
+**Constraints:**
+- Read-only, non-authoritative
+- Surfaces inconsistencies but does not resolve them
+- No policy creation
+
+**Agent Introduced:**
+- Cognitive Consistency Checker
+
+**Exit Gate:**
+- Conflict & drift surfacing is reliable and non-invasive
+- No attempts to resolve or override ML1 judgment
 
 ---
 
@@ -269,6 +339,7 @@ Every artifact is:
 | Document Condenser | 3.4 | Compress docs | No synthesis |
 | Comm Framing Assistant | 3.5 | Approach options | No wording |
 | Draft Response Assistant | 3.6 | Internal drafts | No export |
+| Cognitive Consistency Checker | 3.7 | Drift surfacing | No resolution |
 
 **All agents are:**
 - stateless
@@ -338,16 +409,22 @@ They live in a different mental and system bucket.
 | Timeline mode | ✅ done | 2026-01-31 | 1/2 core test pass |
 | Exit gate validation | ✅ done | 2026-01-31 | ML1 confirmed |
 
-### Stage 3.5 — Framing Variants (Optional) 🔄 IN PROGRESS
+### Stage 3.5 — Framing Variants (Optional) ✅ COMPLETE
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| Communication Framing Assistant | ⬜ pending | | |
+| Communication Framing Assistant | ✅ done | 2026-02-11 | 3/3 tests pass |
+| Exit gate validation | ✅ done | 2026-02-11 | ML1 confirmed |
+
+### Stage 3.6 — Draft Responses (Internal Only) 🔄 IN PROGRESS
+| Item | Status | Date | Notes |
+|------|--------|------|-------|
+| Draft Response Assistant | 🔄 in progress | 2026-02-11 | Spec drafted |
 | Exit gate validation | ⬜ pending | | |
 
-### Stage 3.6 — Draft Responses (Internal Only) 🟨 BACKLOG
+### Stage 3.7 — Cognitive Consistency Checks 🟨 BACKLOG
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| Draft Response Assistant | ⬜ pending | | |
+| Cognitive Consistency Checker | ⬜ pending | | |
 | Exit gate validation | ⬜ pending | | |
 
 ---
@@ -356,8 +433,13 @@ They live in a different mental and system bucket.
 
 Stage 3 is complete when:
 
+- [ ] Draft generation is consistent
+- [ ] Framing variants are balanced and neutral
+- [ ] Conflict surfacing works (read-only, no resolution)
+- [ ] Guardrails are not being triggered frequently
+- [ ] ML1 review time decreases measurably (not bypassed)
+- [ ] No unauthorized outputs have occurred
 - [ ] All sub-stage exit gates passed
-- [ ] No failure signals observed
 - [ ] ML1 confirms: "I think faster, I communicate faster, I do not trust the system"
 - [ ] SYS-005 governance PASS
 - [ ] SYS-009 QA PASS

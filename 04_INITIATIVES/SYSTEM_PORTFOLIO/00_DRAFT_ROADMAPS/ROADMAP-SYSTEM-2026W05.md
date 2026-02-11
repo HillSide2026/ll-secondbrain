@@ -4,7 +4,7 @@ title: System Roadmap 2026-W05
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-11
 tags: []
 ---
 
@@ -128,6 +128,12 @@ ROADMAP-SYSTEM-2026W05
 - Metrics baseline established
 - System declared operational for steady-state use
 
+**Deliverable Complexity Ladder (D1–D4):**
+- **D1:** Email labeling (deterministic, bounded)
+- **D2:** Case summaries (neutral, source-bound)
+- **D3:** Multi-artifact packets with cross-references
+- **D4:** Controlled propagation outputs (Stage 4 protocol)
+
 **Backlog Items:** SYS-010, SYS-011, metrics baseline, rhythm adjustment
 
 ### 2.9 Drive Integration Setup 🟨 BACKLOG
@@ -212,7 +218,7 @@ ROADMAP-SYSTEM-2026W05
 | 1 | Integration approach | API-based (OAuth/Graph) | 2026-01-26 |
 | 2 | Agent roster | 5 agents approved as-is | 2026-01-26 |
 | 3 | Review cadence | Weekly (monthly health check) | 2026-01-26 |
-| 4 | Promotion evidence | Per STAGE4_PROMOTION_CRITERIA.md | 2026-01-26 |
+| 4 | Promotion evidence | Per 01_ACTIVE_ROADMAPS/STAGE4/STAGE4_PROMOTION_CRITERIA.md | 2026-01-26 |
 | 5 | Agent runtime | **Claude Code agents** | 2026-01-26 |
 | 6 | Credential storage | **Environment variables** | 2026-01-26 |
 | 7 | Integration order | **Gmail → SharePoint → Word** | 2026-01-26 |

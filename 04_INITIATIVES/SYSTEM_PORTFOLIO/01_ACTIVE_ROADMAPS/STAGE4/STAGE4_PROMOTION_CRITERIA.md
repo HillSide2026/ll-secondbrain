@@ -1,14 +1,14 @@
 ---
-id: 10_archive__initiatives__system_portfolio__stage1__stage1_4__stage1_4_promotion_criteria_md
-title: Stage 1.4 — Roadmap Promotion Criteria
+id: 04_initiatives__system_portfolio__01_active_roadmaps__stage4__stage4_promotion_criteria_md
+title: Stage 4 — Roadmap Promotion Criteria
 owner: ML1
 status: draft
-created_date: 2026-02-08
+created_date: 2026-02-11
 last_updated: 2026-02-11
 tags: []
 ---
 
-# Stage 1.4 — Roadmap Promotion Criteria
+# Stage 4 — Roadmap Promotion Criteria
 
 ## Status
 - Status: APPROVED

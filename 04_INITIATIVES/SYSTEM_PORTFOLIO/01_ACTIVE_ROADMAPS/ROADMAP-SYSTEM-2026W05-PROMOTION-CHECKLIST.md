@@ -4,7 +4,7 @@ title: Promotion Checklist — ROADMAP-SYSTEM-2026W05
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-10
+last_updated: 2026-02-11
 tags: []
 ---
 
@@ -35,7 +35,7 @@ tags: []
   - Integration approach: API-based (OAuth/Graph)
   - Agent roster: Approved as-is
   - Cadence: Weekly
-  - Promotion evidence: Per STAGE4_PROMOTION_CRITERIA.md
+  - Promotion evidence: Per 01_ACTIVE_ROADMAPS/STAGE4/STAGE4_PROMOTION_CRITERIA.md
   - Additional dependencies: None
 - [x] **No doctrine conflicts:** Roadmap does not modify doctrine
 - [x] **Folder placement:** Correct location in SYSTEM_PORTFOLIO
