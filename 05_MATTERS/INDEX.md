@@ -15,14 +15,13 @@ _Generated: 2026-02-03 02:01_
 
 **Total Matters:** 33
 
-## Essential (4)
+## Essential (3)
 
 | Matter ID | Client/Name | Status | Fulfillment | Practice Area |
 |-----------|-------------|--------|-------------|---------------|
 | [25-1593-00001](05_MATTERS/ESSENTIAL/25-1593-00001/README.md) | 1001162998 Ontario Corp. o/a KaleMart | ** Open | ** active | TBD |
 | [25-927-00003](05_MATTERS/ESSENTIAL/25-927-00003/README.md) | Stream Ventures Limited | ** Open | ** urgent | TBD |
 | [25-1603-00001](05_MATTERS/ESSENTIAL/25-1603-00001/README.md) | IBERBANCO LTD | ** Open | ** active | TBD |
-| [26-1630-00001](05_MATTERS/ESSENTIAL/26-1630-00001/README.md) | Marcela Hernandez | ** Open | ** active | TBD |
 
 
 ## Strategic (5)
@@ -58,10 +57,11 @@ _Generated: 2026-02-03 02:01_
 | [23-235-00001](05_MATTERS/STANDARD/23-235-00001/README.md) | Baobab Energy Africa Ltd | ** Open | ** active | TBD |
 
 
-## Parked (10)
+## Parked (11)
 
 | Matter ID | Client/Name | Status | Fulfillment | Practice Area |
 |-----------|-------------|--------|-------------|---------------|
+| [26-1630-00001](05_MATTERS/PARKED/26-1630-00001/README.md) | Marcela Hernandez | ** Open | ** keep in view | TBD |
 | [25-1024-00001](05_MATTERS/PARKED/25-1024-00001/README.md) | AllPro Construction Group | ** Open | ** active | TBD |
 | [25-192-00003](05_MATTERS/PARKED/25-192-00003/README.md) | If Not Me Inc | ** Open | ** inactive | TBD |
 | [23-169-00003](05_MATTERS/PARKED/23-169-00003/README.md) | Best Bottles Inc. | ** Open | ** active | TBD |
@@ -76,8 +76,8 @@ _Generated: 2026-02-03 02:01_
 
 ## Summary by Fulfillment Status
 
-- **active:** 26
-- **inactive:** 6
+- **active:** 25
+- **inactive:** 7
 - **urgent:** 1
 
 ## Recently Created (Top 10)

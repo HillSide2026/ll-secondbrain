@@ -133,7 +133,7 @@ def read_back_from_sheets(ledger: Dict, dry_run: bool) -> int:
 
     sheets = get_sheets()
 
-    # Get all sheet tabs, find the most recent (index 0 = leftmost = newest)
+    # Find the most recent timestamped tab (skip "dashboard" which is the overview)
     meta = sheets.spreadsheets().get(
         spreadsheetId=doc_id, fields="sheets.properties"
     ).execute()
@@ -141,11 +141,18 @@ def read_back_from_sheets(ledger: Dict, dry_run: bool) -> int:
     if not sheet_tabs:
         return 0
 
-    # Sort by index to find the leftmost (most recent) tab
+    # Sort by index; pick the first tab that isn't "dashboard"
     sheet_tabs.sort(key=lambda s: s["properties"]["index"])
-    latest_tab = sheet_tabs[0]["properties"]["title"]
+    latest_tab = None
+    for s in sheet_tabs:
+        title = s["properties"]["title"]
+        if title != "dashboard":
+            latest_tab = title
+            break
+    if not latest_tab:
+        return 0
 
-    # Read all values from the latest tab
+    # Read all values from the most recent timestamped tab
     result = sheets.spreadsheets().values().get(
         spreadsheetId=doc_id, range="{}!A:R".format(latest_tab)
     ).execute()
@@ -183,6 +190,7 @@ def read_back_from_sheets(ledger: Dict, dry_run: bool) -> int:
         sheets_edits[tid] = edits
 
     # Merge into ledger entries
+    TERMINAL_STATUSES = {"DONE", "DROPPED"}
     updated = 0
     for entry in ledger.get("entries", []):
         tid = entry.get("task_id", "")
@@ -194,6 +202,12 @@ def read_back_from_sheets(ledger: Dict, dry_run: bool) -> int:
                 continue
             current = entry.get(ledger_field) or ""
             if str(current) != sheets_val:
+                # Guard terminal statuses: don't let a stale Sheets push
+                # revert DONE/DROPPED back to an active state
+                if ledger_field == "ledger_status":
+                    if (str(current).upper() in TERMINAL_STATUSES
+                            and sheets_val.upper() not in TERMINAL_STATUSES):
+                        continue
                 entry[ledger_field] = sheets_val if sheets_val else None
                 updated += 1
 
@@ -209,12 +223,17 @@ def reconcile_ledger(actions: List[Dict], ledger: Dict) -> Tuple[Dict, int]:
     entries = ledger.get("entries", [])
     by_id = {e.get("task_id"): e for e in entries if e.get("task_id")}
 
+    TERMINAL_STATUSES = {"DONE", "DROPPED"}
+
     seen_today = set()
     for task in actions:
         task_id = task["task_id"]
         seen_today.add(task_id)
         if task_id in by_id:
             entry = by_id[task_id]
+            # Don't resurrect resolved tasks
+            if (entry.get("ledger_status") or "").upper() in TERMINAL_STATUSES:
+                continue
             entry["last_seen"] = today_str()
             # Append evidence if new
             new_evidence = task.get("evidence", [])
@@ -394,46 +413,21 @@ def update_participant_mapping(new_mappings: Dict[str, str]) -> int:
     return len(additions)
 
 
-def push_ledger_to_sheets(ledger: Dict, matters: Dict, dry_run: bool) -> None:
-    if dry_run:
-        print("[DRY RUN] Skipping Google Sheets push")
-        return
-
-    try:
-        from auth_google import get_drive, get_sheets
-        from boundary import assert_doc_in_approved_folder
-    except Exception as e:
-        print(f"Sheets push skipped: auth modules unavailable ({e})")
-        return
-
-    doc_id = os.environ.get("LEDGER_DOC_ID")
-    if not doc_id:
-        print("Sheets push skipped: LEDGER_DOC_ID not set")
-        return
-
-    drive = get_drive()
-    sheets = get_sheets()
-    assert_doc_in_approved_folder(drive, doc_id)
-
-    # Timestamped tab name per spec
-    tab_name = datetime.now().strftime("%Y-%m-%d_%H%M")
-    body = {"requests": [{"addSheet": {"properties": {"title": tab_name, "index": 0}}}]}
-    sheets.spreadsheets().batchUpdate(spreadsheetId=doc_id, body=body).execute()
-
-    # Sort per Ledger Spec Section 8:
-    #   1. suggested_workstream (DELIVERY → FULFILLMENT → MARKETING → MANAGEMENT → UNROUTED)
-    #   2. delivery_status (ESSENTIAL → STRATEGIC → STANDARD → PARKED)
-    #   3. matter_id (ascending, groups matter tasks together)
-    #   4. task_id (ascending within matter)
-    WORKSTREAM_ORDER = {"DELIVERY": 0, "FULFILLMENT": 1, "MARKETING": 2, "MANAGEMENT": 3, "UNROUTED": 4}
+def _prepare_ledger_values(ledger: Dict, matters: Dict) -> Tuple[List[str], List[List[str]]]:
+    """Build sorted header + row values for Sheets push (shared by both docs)."""
     DELIVERY_STATUS_ORDER = {"essential": 0, "strategic": 1, "standard": 2, "parked": 3}
+    WORKSTREAM_ORDER = {"DELIVERY": 0, "FULFILLMENT": 1, "MARKETING": 2, "MANAGEMENT": 3, "UNROUTED": 4}
+    TERMINAL_STATUSES = {"DONE", "DROPPED"}
 
-    entries = list(ledger.get("entries", []))
+    entries = [
+        e for e in ledger.get("entries", [])
+        if (e.get("ledger_status") or "").upper() not in TERMINAL_STATUSES
+    ]
     entries.sort(key=lambda e: (
-        WORKSTREAM_ORDER.get(e.get("suggested_workstream", "UNROUTED"), 99),
         DELIVERY_STATUS_ORDER.get(
             matters.get(e.get("matter_id", ""), {}).get("delivery_status", ""), 99
         ),
+        WORKSTREAM_ORDER.get(e.get("suggested_workstream", "UNROUTED"), 99),
         e.get("matter_id", ""),
         e.get("task_id", ""),
     ))
@@ -478,6 +472,96 @@ def push_ledger_to_sheets(ledger: Dict, matters: Dict, dry_run: bool) -> None:
             ev_summary,
         ])
 
+    return headers, values
+
+
+def _apply_sheet_formatting(sheets, doc_id: str, sheet_id: int,
+                            headers: List[str], num_rows: int) -> None:
+    """Apply standard formatting: frozen header, bold, dropdown, auto-resize."""
+    num_cols = len(headers)
+    status_col = headers.index("STATUS")
+
+    fmt_requests = [
+        # Freeze header row
+        {
+            "updateSheetProperties": {
+                "properties": {"sheetId": sheet_id, "gridProperties": {"frozenRowCount": 1}},
+                "fields": "gridProperties.frozenRowCount",
+            }
+        },
+        # Bold header row
+        {
+            "repeatCell": {
+                "range": {"sheetId": sheet_id, "startRowIndex": 0, "endRowIndex": 1,
+                          "startColumnIndex": 0, "endColumnIndex": num_cols},
+                "cell": {"userEnteredFormat": {"textFormat": {"bold": True}}},
+                "fields": "userEnteredFormat.textFormat.bold",
+            }
+        },
+        # Data validation: STATUS column dropdown
+        {
+            "setDataValidation": {
+                "range": {"sheetId": sheet_id, "startRowIndex": 1, "endRowIndex": num_rows,
+                          "startColumnIndex": status_col, "endColumnIndex": status_col + 1},
+                "rule": {
+                    "condition": {
+                        "type": "ONE_OF_LIST",
+                        "values": [
+                            {"userEnteredValue": "NEW"},
+                            {"userEnteredValue": "TRIAGED"},
+                            {"userEnteredValue": "WAITING"},
+                            {"userEnteredValue": "DONE"},
+                            {"userEnteredValue": "DROPPED"},
+                        ],
+                    },
+                    "showCustomUi": True,
+                    "strict": True,
+                },
+            }
+        },
+        # Auto-resize columns to fit content
+        {
+            "autoResizeDimensions": {
+                "dimensions": {"sheetId": sheet_id, "dimension": "COLUMNS",
+                               "startIndex": 0, "endIndex": num_cols},
+            }
+        },
+    ]
+    sheets.spreadsheets().batchUpdate(
+        spreadsheetId=doc_id, body={"requests": fmt_requests}
+    ).execute()
+
+
+def push_ledger_to_sheets(ledger: Dict, matters: Dict, dry_run: bool) -> None:
+    """Push ledger to a new timestamped tab in LEDGER__TODO__MASTER (index 1+)."""
+    if dry_run:
+        print("[DRY RUN] Skipping ledger tab push")
+        return
+
+    try:
+        from auth_google import get_drive, get_sheets
+        from boundary import assert_doc_in_approved_folder
+    except Exception as e:
+        print(f"Sheets push skipped: auth modules unavailable ({e})")
+        return
+
+    doc_id = os.environ.get("LEDGER_DOC_ID")
+    if not doc_id:
+        print("Sheets push skipped: LEDGER_DOC_ID not set")
+        return
+
+    drive = get_drive()
+    sheets = get_sheets()
+    assert_doc_in_approved_folder(drive, doc_id)
+
+    # Timestamped tab after the dashboard tab
+    tab_name = datetime.now().strftime("%Y-%m-%d_%H%M")
+    add_body = {"requests": [{"addSheet": {"properties": {"title": tab_name, "index": 1}}}]}
+    add_resp = sheets.spreadsheets().batchUpdate(spreadsheetId=doc_id, body=add_body).execute()
+    sheet_id = add_resp["replies"][0]["addSheet"]["properties"]["sheetId"]
+
+    headers, values = _prepare_ledger_values(ledger, matters)
+
     sheets.spreadsheets().values().update(
         spreadsheetId=doc_id,
         range="{}!A1".format(tab_name),
@@ -485,7 +569,126 @@ def push_ledger_to_sheets(ledger: Dict, matters: Dict, dry_run: bool) -> None:
         body={"values": values},
     ).execute()
 
-    print("Ledger pushed to Sheets tab: {} ({} rows)".format(tab_name, len(values) - 1))
+    _apply_sheet_formatting(sheets, doc_id, sheet_id, headers, len(values))
+    print("Ledger tab: {} ({} rows)".format(tab_name, len(values) - 1))
+
+
+def push_dashboard(ledger: Dict, matters: Dict, dry_run: bool) -> None:
+    """Replace the evergreen 'dashboard' tab (index 0) in LEDGER__TODO__MASTER.
+
+    Dashboard is a matter-level summary: one row per matter with pending
+    tasks aggregated. Only matters with a delivery_status (essential/strategic/
+    standard/parked) are included — excludes UNASSIGNED, FIRM_INTERNAL, etc.
+    """
+    if dry_run:
+        print("[DRY RUN] Skipping dashboard push")
+        return
+
+    try:
+        from auth_google import get_drive, get_sheets
+        from boundary import assert_doc_in_approved_folder
+    except Exception as e:
+        print(f"Dashboard push skipped: auth modules unavailable ({e})")
+        return
+
+    doc_id = os.environ.get("LEDGER_DOC_ID")
+    if not doc_id:
+        print("Dashboard push skipped: LEDGER_DOC_ID not set")
+        return
+
+    drive = get_drive()
+    sheets = get_sheets()
+    assert_doc_in_approved_folder(drive, doc_id)
+
+    # Replace existing "dashboard" tab if present
+    tab_name = "dashboard"
+    meta = sheets.spreadsheets().get(
+        spreadsheetId=doc_id, fields="sheets.properties"
+    ).execute()
+    for s in meta.get("sheets", []):
+        if s["properties"]["title"] == tab_name:
+            sheets.spreadsheets().batchUpdate(spreadsheetId=doc_id, body={
+                "requests": [{"deleteSheet": {"sheetId": s["properties"]["sheetId"]}}]
+            }).execute()
+            break
+
+    add_body = {"requests": [{"addSheet": {"properties": {"title": tab_name, "index": 0}}}]}
+    add_resp = sheets.spreadsheets().batchUpdate(spreadsheetId=doc_id, body=add_body).execute()
+    sheet_id = add_resp["replies"][0]["addSheet"]["properties"]["sheetId"]
+
+    # Build matter-level summary: only DELIVERY workstream, exclude terminal
+    TERMINAL_STATUSES = {"DONE", "DROPPED"}
+    DELIVERY_STATUS_ORDER = {"essential": 0, "strategic": 1, "standard": 2, "parked": 3}
+
+    # Group pending tasks by matter_id (only matters with a delivery_status)
+    matter_tasks = {}
+    for entry in ledger.get("entries", []):
+        if (entry.get("ledger_status") or "").upper() in TERMINAL_STATUSES:
+            continue
+        mid = entry.get("matter_id", "")
+        # Only include tasks belonging to a real matter (has delivery_status)
+        if mid not in matters:
+            continue
+        if mid not in matter_tasks:
+            matter_tasks[mid] = []
+        matter_tasks[mid].append(entry.get("task", ""))
+
+    # Build rows sorted by delivery_status
+    rows = []
+    for mid, tasks in matter_tasks.items():
+        matter_info = matters.get(mid, {})
+        matter_name = matter_info.get("matter_name", mid)
+        delivery_status = matter_info.get("delivery_status", "")
+        summary = "; ".join(t for t in tasks if t)
+        rows.append((
+            DELIVERY_STATUS_ORDER.get(delivery_status, 99),
+            mid,
+            matter_name,
+            summary,
+        ))
+    rows.sort(key=lambda r: (r[0], r[1]))
+
+    headers = ["MATTER_ID", "MATTER_NAME", "PENDING_TASKS"]
+    values = [headers]
+    for _, mid, name, summary in rows:
+        values.append([mid, name, summary])
+
+    sheets.spreadsheets().values().update(
+        spreadsheetId=doc_id,
+        range="{}!A1".format(tab_name),
+        valueInputOption="RAW",
+        body={"values": values},
+    ).execute()
+
+    # Formatting: frozen header, bold header, auto-resize
+    num_cols = len(headers)
+    fmt_requests = [
+        {
+            "updateSheetProperties": {
+                "properties": {"sheetId": sheet_id, "gridProperties": {"frozenRowCount": 1}},
+                "fields": "gridProperties.frozenRowCount",
+            }
+        },
+        {
+            "repeatCell": {
+                "range": {"sheetId": sheet_id, "startRowIndex": 0, "endRowIndex": 1,
+                          "startColumnIndex": 0, "endColumnIndex": num_cols},
+                "cell": {"userEnteredFormat": {"textFormat": {"bold": True}}},
+                "fields": "userEnteredFormat.textFormat.bold",
+            }
+        },
+        {
+            "autoResizeDimensions": {
+                "dimensions": {"sheetId": sheet_id, "dimension": "COLUMNS",
+                               "startIndex": 0, "endIndex": num_cols},
+            }
+        },
+    ]
+    sheets.spreadsheets().batchUpdate(
+        spreadsheetId=doc_id, body={"requests": fmt_requests}
+    ).execute()
+
+    print("Dashboard tab refreshed ({} matters)".format(len(values) - 1))
 
 
 DELIVERY_STATUS_LABELS = {
@@ -638,8 +841,20 @@ def main() -> int:
             domain_full = sender.split("@")[1].lower()
             domain_root = domain_full.split(".")[0]
 
+            # Never auto-map generic consumer email domains to a matter
+            GENERIC_DOMAINS = {
+                "gmail", "gmail.com", "hotmail", "hotmail.com",
+                "outlook", "outlook.com", "yahoo", "yahoo.com", "yahoo.ca",
+                "icloud", "icloud.com", "aol", "aol.com",
+                "live", "live.com", "live.ca", "msn", "msn.com",
+                "protonmail", "protonmail.com", "proton", "proton.me",
+                "mail", "mail.com", "email", "email.com",
+            }
+
             for key in [prefix, domain_full, domain_root]:
                 if not key:
+                    continue
+                if key in GENERIC_DOMAINS:
                     continue
                 if key not in participant_mapping:
                     new_mappings[key] = matter_id
@@ -770,8 +985,11 @@ def main() -> int:
         "---\n" + yaml.safe_dump(frontmatter, sort_keys=False).strip() + "\n---\n\n" + report_body
     )
 
-    # Step 9: Push ledger to Sheets
+    # Step 9a: Push timestamped ledger tab (human-editable, read-back source)
     push_ledger_to_sheets(ledger, matters, dry_run=args.dry_run)
+
+    # Step 9b: Refresh the evergreen dashboard tab (index 0, overview)
+    push_dashboard(ledger, matters, dry_run=args.dry_run)
 
     # Step 10: Optional Gmail labeling manifest + execution
     if args.label_manifest:

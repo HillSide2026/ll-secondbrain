@@ -4,7 +4,7 @@ title: Agent: Corporate Law Issue Spotter (Stage 3.3)
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-10
 tags: []
 ---
 
@@ -74,6 +74,7 @@ If it feels like legal advice, the agent has failed.
 - Share certificates or uncertificated
 
 ### 5. Corporate Governance
+- Minority shareholder protection tactics (corporate records access; meeting requirements for shareholders/directors)
 - Meeting requirements (shareholders, directors)
 - Quorum provisions
 - Written resolutions in lieu of meetings

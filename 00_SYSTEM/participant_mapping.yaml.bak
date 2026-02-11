@@ -273,3 +273,33 @@ mbanisa: "26-259-00003"
 # 5. COUNTERPARTIES: External counsel routes to their client's matter.
 #    TODO: Map opposing counsel domains to relevant matters.
 #
+
+# =============================================================================
+# AUTO-DISCOVERED MAPPINGS
+# Added by run_matter_dashboard.py
+# Generated: 2026-02-09
+akhil: "25-194-00059"
+aspireinfusions.ca: "25-256-00005"
+aspireinfusions.com: "25-256-00005"
+berkeley-ig: "25-927-00003"
+berkeley-ig.com: "25-927-00003"
+chenben: "25-1614-00001"
+clearsky-network: "25-1614-00001"
+clearsky-network.com: "25-1614-00001"
+dwright: "25-194-00059"
+fireblocks.com: "25-927-00003"
+# gmail/gmail.com: REMOVED — generic domain, was falsely routing all Gmail senders to Culibrk
+# hotmail/hotmail.com: REMOVED — generic domain, was falsely routing all Hotmail senders to LL Onboarding
+mmandarino: "25-194-00059"
+sbedi: "25-927-00003"
+shane: "25-256-00005"
+sonia: "25-927-00003"
+tulikad: "25-927-00003"
+zeeculibrk: "25-1318-00001"
+# Generated: 2026-02-10
+elliptic: "25-927-00003"
+elliptic.co: "25-927-00003"
+jayunalkat: "25-927-00003"
+jyotikagahlaut: "25-1571-00001"  # Kishmish Inc., not Culibrk — corrected
+lauraehintonn: "FIRM_INTERNAL"  # Laura Hinton typo variant — corrected from Culibrk
+# moahmadca: REMOVED — Muhammad Ahmad, no connection to Culibrk. Re-add with correct matter when identified

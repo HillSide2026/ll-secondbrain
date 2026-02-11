@@ -288,13 +288,24 @@ clearsky-network: "25-1614-00001"
 clearsky-network.com: "25-1614-00001"
 dwright: "25-194-00059"
 fireblocks.com: "25-927-00003"
-gmail: "25-1318-00001"
-gmail.com: "25-1318-00001"
-hotmail: "26-259-00003"
-hotmail.com: "26-259-00003"
+# gmail/gmail.com: REMOVED — generic domain, was falsely routing all Gmail senders to Culibrk
+# hotmail/hotmail.com: REMOVED — generic domain, was falsely routing all Hotmail senders to LL Onboarding
 mmandarino: "25-194-00059"
 sbedi: "25-927-00003"
 shane: "25-256-00005"
 sonia: "25-927-00003"
 tulikad: "25-927-00003"
 zeeculibrk: "25-1318-00001"
+# Generated: 2026-02-10
+elliptic: "25-927-00003"
+elliptic.co: "25-927-00003"
+jayunalkat: "25-927-00003"
+jyotikagahlaut: "25-1571-00001"  # Kishmish Inc., not Culibrk — corrected
+lauraehintonn: "FIRM_INTERNAL"  # Laura Hinton typo variant — corrected from Culibrk
+# moahmadca: REMOVED — Muhammad Ahmad, no connection to Culibrk. Re-add with correct matter when identified
+# Generated: 2026-02-10
+brittany: "25-194-00059"
+michael: "25-256-00005"
+roopchristopher: "25-1593-00001"
+super60: "24-845-00001"
+super60.com: "24-845-00001"
