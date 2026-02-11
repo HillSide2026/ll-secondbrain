@@ -4,7 +4,7 @@ title: Classifier Calibration Log — Stage 2.6
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-11
 tags: []
 ---
 
@@ -62,6 +62,23 @@ No calibration becomes "hard" without explicit ML1 approval.
 **Date:**
 **Notes:**
 ```
+
+---
+
+## QA Failures — Stage 4.1
+
+For each failure, record:
+
+- Date:
+- Deliverable Class (D1–D4):
+- Run ID:
+- Total Score:
+- Failed Dimension(s):
+- Root Cause:
+- Revision Completed (Y/N):
+- Reviewer:
+
+All QA failures must be retained for audit.
 
 ---
 

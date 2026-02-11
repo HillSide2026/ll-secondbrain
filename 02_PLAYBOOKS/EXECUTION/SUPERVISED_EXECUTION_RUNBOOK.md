@@ -4,7 +4,7 @@ title: Supervised Execution Runbook — Stage 2.5
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-11
 tags: []
 ---
 
@@ -21,6 +21,28 @@ Define the minimal, safe procedure for executing a single approved action.
 - Approved Action Proposal exists
 - ML1 Approval Worksheet completed with "Approve"
 - SYS-005 governance check passed
+
+---
+
+## Stage 4 Execution Gate Rule
+
+No artifact may proceed to execution unless:
+
+- QA Scoring Sheet completed
+- Total score ≥ 11/12
+- Correctness = 2
+- No Hallucinations = 2
+- Proper Scope & Authority = 2
+- Evidence references attached
+- ML1 approval artifact completed
+
+If any requirement is not met:
+
+Execution is automatically blocked.
+
+All QA fails must be logged in `02_PLAYBOOKS/EXECUTION/CALIBRATION_LOG.md`.
+
+No exceptions.
 
 ---
 
