@@ -3,7 +3,7 @@ id: STAGE3.6-ACTION-PLAN
 
 title: Stage 3.6 — Draft Responses (Internal Only)
 owner: ML1
-status: active
+status: complete
 created_date: 2026-02-10
 last_updated: 2026-02-11
 tags: [stage3, roadmap, drafts, communication]
@@ -13,11 +13,11 @@ tags: [stage3, roadmap, drafts, communication]
 
 ## Status
 
-- **Status:** 🔄 IN PROGRESS
+- **Status:** ✅ COMPLETE
 - **Owner:** ML1
 - **Effective Start:** 2026-02-11
-- **Closed:** —
-- **Authority Gate:** Requires ML1 approval of draft boundaries + storage rules
+- **Closed:** 2026-02-11
+- **Authority Gate:** ML1 approval of draft boundaries + storage rules (recorded)
 
 ---
 
@@ -134,19 +134,19 @@ Drafts cannot:
 | Define storage location + naming | ✅ | `06_RUNS/STAGE3.6/README.md` |
 | Draft output template | ✅ | `02_PLAYBOOKS/STAGE3/DRAFT_RESPONSE_TEMPLATE.md` |
 
-### Phase 2: Implementation (Planned)
+### Phase 2: Implementation (Completed)
 | Item | Status | Notes |
 |------|--------|-------|
-| Implement draft generator | ⬜ | Local-only writes |
-| Implement run logging | ⬜ | `06_RUNS/` |
-| Add boundary guard | ⬜ | No external paths |
+| Implement draft generator | ✅ | `scripts/run_draft_response.py` — local-only writes |
+| Implement run logging | ✅ | `06_RUNS/STAGE3.6/RUN-YYYY-MM-DD-*.md` |
+| Add boundary guard | ✅ | `assert_write_path_allowed()` — blocks `09_INBOX/`, `00_SYSTEM/`, `05_MATTERS/` |
 
-### Phase 3: Verification (Planned)
+### Phase 3: Verification (Completed)
 | Item | Status | Notes |
 |------|--------|-------|
-| Run TEST-DR1 | ⬜ | Must pass |
-| Run TEST-DR2 | ⬜ | Must pass |
-| Run TEST-DR3 | ⬜ | Must pass |
+| Run TEST-DR1 | ✅ | Logged in `06_RUNS/STAGE3.6/TESTS_3.6_DRAFT_RESPONSES.md` (2026-02-11). |
+| Run TEST-DR2 | ✅ | Logged in `06_RUNS/STAGE3.6/TESTS_3.6_DRAFT_RESPONSES.md` (2026-02-11). |
+| Run TEST-DR3 | ✅ | Logged in `06_RUNS/STAGE3.6/TESTS_3.6_DRAFT_RESPONSES.md` (2026-02-11). |
 
 ---
 
@@ -168,3 +168,5 @@ Drafts cannot:
 - Draft Response Assistant: `02_PLAYBOOKS/STAGE3/DRAFT_RESPONSE_ASSISTANT.md`
 - Draft Response Template: `02_PLAYBOOKS/STAGE3/DRAFT_RESPONSE_TEMPLATE.md`
 - Stage 3.6 Runs: `06_RUNS/STAGE3.6/README.md`
+- Draft Response Runbook: `02_PLAYBOOKS/STAGE3/DRAFT_RESPONSE_RUNBOOK.md`
+- Stage 3.6 Tests: `06_RUNS/STAGE3.6/TESTS_3.6_DRAFT_RESPONSES.md`

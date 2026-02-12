@@ -2,7 +2,7 @@
 id: 04_initiatives__system_portfolio__01_active_roadmaps__stage3__stage3_7__stage3_7_action_plan_md
 title: Stage 3.7 — Cognitive Consistency Checks (Read-Only)
 owner: ML1
-status: draft
+status: complete
 created_date: 2026-02-11
 last_updated: 2026-02-11
 tags: [stage3, roadmap, consistency, drift]
@@ -12,10 +12,10 @@ tags: [stage3, roadmap, consistency, drift]
 
 ## Status
 
-- **Status:** 🟨 BACKLOG
-- **Owner:** UNASSIGNED
-- **Effective Start:** TBD (after Stage 3.6)
-- **Closed:** —
+- **Status:** ✅ COMPLETE
+- **Owner:** ML1
+- **Effective Start:** 2026-02-11
+- **Closed:** 2026-02-11
 - **Authority Gate:** Read-only only; no resolution or authority elevation
 
 ---
@@ -59,7 +59,7 @@ tags: [stage3, roadmap, consistency, drift]
 
 ## 3. Deliverables
 
-- Cognitive Consistency Checker agent definition
+- Cognitive Consistency Checker agent definition (`02_PLAYBOOKS/STAGE3/COGNITIVE_CONSISTENCY_CHECKER.md`)
 - Conflict & drift detection checklist
 - Report template (flags only)
 - Runbook for scan cadence (manual trigger)
@@ -84,26 +84,26 @@ tags: [stage3, roadmap, consistency, drift]
 
 ---
 
-## 6. Execution Tracking (Backlog)
+## 6. Execution Tracking (Completed)
 
 ### Phase 1: Agent Definition (Planned)
 | Item | Status | Notes |
 |------|--------|-------|
-| Define agent scope + refusal conditions | ⬜ | Read-only only |
-| Define detection checklist | ⬜ | No recommendations |
+| Define agent scope + refusal conditions | ✅ | `02_PLAYBOOKS/STAGE3/COGNITIVE_CONSISTENCY_CHECKER.md` |
+| Define detection checklist | ✅ | Checklist in agent spec |
 
 ### Phase 2: Implementation (Planned)
 | Item | Status | Notes |
 |------|--------|-------|
-| Implement scanner | ⬜ | Manual trigger |
-| Implement report template | ⬜ | Flags only |
+| Implement scanner | ✅ | Manual trigger (runbook) |
+| Implement report template | ✅ | `02_PLAYBOOKS/STAGE3/COGNITIVE_CONSISTENCY_REPORT_TEMPLATE.md` |
 
 ### Phase 3: Verification (Planned)
 | Item | Status | Notes |
 |------|--------|-------|
-| Run TEST-CC1 | ⬜ | Must pass |
-| Run TEST-CC2 | ⬜ | Must pass |
-| Run TEST-CC3 | ⬜ | Must pass |
+| Run TEST-CC1 | ✅ | `06_RUNS/STAGE3/TESTS_3.7_COGNITIVE_CONSISTENCY.md` |
+| Run TEST-CC2 | ✅ | `06_RUNS/STAGE3/TESTS_3.7_COGNITIVE_CONSISTENCY.md` |
+| Run TEST-CC3 | ✅ | `06_RUNS/STAGE3/TESTS_3.7_COGNITIVE_CONSISTENCY.md` |
 
 ---
 
@@ -120,3 +120,7 @@ tags: [stage3, roadmap, consistency, drift]
 
 - Stage 3 Authorization: `STAGE3_AUTHORIZATION_KICKOFF.md`
 - Stage 3.6 Drafts: `STAGE3.6/STAGE3.6_ACTION_PLAN.md`
+- Agent Spec: `02_PLAYBOOKS/STAGE3/COGNITIVE_CONSISTENCY_CHECKER.md`
+- Test Suite: `06_RUNS/STAGE3/TESTS_3.7_COGNITIVE_CONSISTENCY.md`
+- Report Template: `02_PLAYBOOKS/STAGE3/COGNITIVE_CONSISTENCY_REPORT_TEMPLATE.md`
+- Runbook: `02_PLAYBOOKS/STAGE3/COGNITIVE_CONSISTENCY_RUNBOOK.md`

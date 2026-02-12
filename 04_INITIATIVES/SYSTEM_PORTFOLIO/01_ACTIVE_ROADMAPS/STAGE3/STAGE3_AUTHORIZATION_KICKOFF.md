@@ -415,19 +415,23 @@ They live in a different mental and system bucket.
 | Communication Framing Assistant | ✅ done | 2026-02-11 | 3/3 tests pass |
 | Exit gate validation | ✅ done | 2026-02-11 | ML1 confirmed |
 
-### Stage 3.6 — Draft Responses (Internal Only) 🔄 IN PROGRESS
+### Stage 3.6 — Draft Responses (Internal Only) ✅ COMPLETE
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| Draft Response Assistant | 🔄 in progress | 2026-02-11 | Spec drafted |
-| Exit gate validation | ⬜ pending | | |
+| Draft Response Assistant | ✅ done | 2026-02-11 | Phase 2 + tests logged |
+| Exit gate validation | ✅ done | 2026-02-11 | ML1 confirmed |
 
-### Stage 3.7 — Cognitive Consistency Checks 🟨 BACKLOG
+### Stage 3.7 — Cognitive Consistency Checks ✅ COMPLETE
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| Cognitive Consistency Checker | ⬜ pending | | |
-| Exit gate validation | ⬜ pending | | |
+| Cognitive Consistency Checker | ✅ done | 2026-02-11 | Tests logged |
+| Exit gate validation | ✅ done | 2026-02-11 | ML1 confirmed |
 
 ---
+
+## Stage 3 Backlog Notes
+
+- Untracked scripts present in repo: `scripts/run_draft_response.py`, `scripts/push_drafts_to_sheets.py` (pre-existing; left untouched). Decide whether to adopt, relocate, or archive.
 
 ## 9. Definition of Done (Stage 3)
 

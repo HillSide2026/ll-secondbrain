@@ -55,6 +55,9 @@ Prepare internal-only draft response scaffolds that accelerate ML1 writing witho
 ## Output Template
 Use: `02_PLAYBOOKS/STAGE3/DRAFT_RESPONSE_TEMPLATE.md`
 
+## Runbook
+See: `02_PLAYBOOKS/STAGE3/DRAFT_RESPONSE_RUNBOOK.md`
+
 ## Failure Conditions
 - Draft exported or pasted into external system
 - Output feels send-ready
