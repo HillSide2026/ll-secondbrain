@@ -4,7 +4,7 @@ title: Promotion Checklist — ROADMAP-SYSTEM-2026W05
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-11
+last_updated: 2026-02-12
 tags: []
 ---
 
@@ -43,7 +43,7 @@ tags: []
 ### Evidence of Progress
 - [x] **Stage 1:** COMPLETE — archived
 - [x] **Stage 2:** COMPLETE — archived
-- [x] **Stage 3:** COMPLETE — ready for archive
+- [ ] **Stage 3:** IN PROGRESS — 3.8/3.9 pending
 - [ ] **Stage 4:** OUTSTANDING — not ready for archive
 - [ ] **Stage 5:** KICKOFF — authorization created
 - [ ] **Stage 6:** PLANNED — pending Stage 5

@@ -4,7 +4,7 @@ title: Stage 3 — Authorization Kickoff
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-11
+last_updated: 2026-02-12
 tags: []
 ---
 
@@ -326,6 +326,52 @@ Every artifact is:
 
 ---
 
+### Stage 3.8 — Consistency Metric Development
+
+**Objective:** Define a read-only consistency metric for internal outputs without creating authority or enforcement.
+
+**Allowed Output:**
+- Metric spec
+- Scoring worksheet
+- Baseline sampling protocol
+
+**Constraints:**
+- Read-only analysis only
+- No recommendations or prescriptions
+- No enforcement or gating
+
+**Deliverables:**
+- `CONSISTENCY_METRIC_SPEC.md`
+- `CONSISTENCY_METRIC_WORKSHEET.md`
+
+**Exit Gate:**
+- Metric dimensions and rubric defined
+- Worksheet ready for use
+- Baseline sampling protocol documented
+
+---
+
+### Stage 3.9 — Consistency Metric Validation
+
+**Objective:** Validate the consistency metric across a baseline sample set without authority creep.
+
+**Allowed Output:**
+- Test report
+- Calibration notes
+
+**Constraints:**
+- Read-only analysis only
+- No recommendations or prescriptions
+- No enforcement or gating
+
+**Deliverables:**
+- `CONSISTENCY_METRIC_TEST_REPORT.md`
+
+**Exit Gate:**
+- Metric applied to baseline set
+- Variance within tolerance
+- Thresholds documented
+
 ## 5. Agent Summary (Stage 3)
 
 | Agent | Sub-Stage | Function | Ceiling |
@@ -340,6 +386,8 @@ Every artifact is:
 | Comm Framing Assistant | 3.5 | Approach options | No wording |
 | Draft Response Assistant | 3.6 | Internal drafts | No export |
 | Cognitive Consistency Checker | 3.7 | Drift surfacing | No resolution |
+| Consistency Metric Analyst | 3.8 | Define metric | No enforcement |
+| Consistency Metric Validator | 3.9 | Validate metric | No enforcement |
 
 **All agents are:**
 - stateless
@@ -426,6 +474,23 @@ They live in a different mental and system bucket.
 |------|--------|------|-------|
 | Cognitive Consistency Checker | ✅ done | 2026-02-11 | Tests logged |
 | Exit gate validation | ✅ done | 2026-02-11 | ML1 confirmed |
+
+---
+
+### Stage 3.8 — Consistency Metric Development 🔄 IN PROGRESS
+| Item | Status | Date | Notes |
+|------|--------|------|-------|
+| Consistency metric spec | ✅ done | 2026-02-12 | `CONSISTENCY_METRIC_SPEC.md` |
+| Scoring worksheet | ✅ done | 2026-02-12 | `CONSISTENCY_METRIC_WORKSHEET.md` |
+| Draft promotion control doctrine | ✅ done | 2026-02-12 | `STAGE3.8_DRAFT_DOCTRINE_SB_EXECUTION_PROMOTION_CONTROL.md` |
+| Draft SharePoint trigger spec | ✅ done | 2026-02-12 | `STAGE3.8_DRAFT_SPEC_SHAREPOINT_METADATA_PROMOTION_TRIGGER.md` |
+| Exit gate validation | ⬜ pending | | |
+
+### Stage 3.9 — Consistency Metric Validation 🟨 BACKLOG
+| Item | Status | Date | Notes |
+|------|--------|------|-------|
+| Metric test report | ⬜ pending | | `CONSISTENCY_METRIC_TEST_REPORT.md` |
+| Exit gate validation | ⬜ pending | | |
 
 ---
 
