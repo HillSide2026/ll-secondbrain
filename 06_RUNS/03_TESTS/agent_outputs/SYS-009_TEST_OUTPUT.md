@@ -48,7 +48,7 @@ tags: []
    - Issue: Content type mismatch with location
    - Content Type: Doctrine/Policy (contains "BINDING")
    - Current Location: `03_TESTS/fixtures/pr_changeset/`
-   - Required Location: `01_DOCTRINE/01_BINDING/`
+   - Required Location: `01_DOCTRINE/01_invariants/`
    - Severity: High (governance violation)
    - Note: Defer placement ruling to SYS-005
 

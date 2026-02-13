@@ -8,6 +8,21 @@ last_updated: 2026-02-11
 tags: [quality, rubric, qa]
 ---
 
+## Playbook Header
+Playbook ID: 02_playbooks__execution__quality_rubric_md
+Version: 1.0
+Status: draft
+
+Principles Referenced: PRN-001, PRN-002, PRN-003, PRN-004, PRN-005, PRN-006, PRN-007, PRN-008, PRN-009
+Policies Applied: POL-002, POL-004, POL-006, POL-007, POL-008, POL-009
+Protocols Enforced: PRO-002, PRO-004, PRO-006, PRO-007, PRO-008, PRO-009
+Doctrine Invoked: 00_SYSTEM/constitution.md, 01_DOCTRINE/index.yaml
+
+Inputs: TBD
+Outputs: TBD
+Acceptance Criteria: TBD
+
+
 # Quality Rubric
 
 ## Purpose
@@ -72,7 +87,7 @@ To pass:
 - **Correctness = 2**
 - **No Hallucinations = 2**
 - **Proper Scope & Authority = 2**
-- **Total score ≥ 9/12** (all dimensions combined)
+- **Total score ≥ 11/12** (all dimensions combined)
 
 ---
 
@@ -82,11 +97,11 @@ Use these tiers to ratchet quality expectations over time as outputs become more
 
 **D1 — Simple Output**
 - Single artifact, single domain, no cross‑references
-- Expect **Total score ≥ 9/12**
+- Expect **Total score ≥ 11/12**
 
 **D2 — Structured Output**
 - Multiple sections, cross‑references, or schema adherence
-- Expect **Total score ≥ 10/12**
+- Expect **Total score ≥ 11/12**
 
 **D3 — Multi‑Artifact Output**
 - References multiple sources or artifacts; traceability required

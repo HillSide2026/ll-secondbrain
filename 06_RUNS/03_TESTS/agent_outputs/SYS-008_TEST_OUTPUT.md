@@ -32,7 +32,7 @@ tags: []
 1. **FIXTURE-001: Misplaced Artifact**
    - Status: **MISPLACED**
    - Current Location: `04_INITIATIVES/` (simulated)
-   - Correct Location: `01_DOCTRINE/01_BINDING/`
+   - Correct Location: `01_DOCTRINE/01_invariants/`
    - Content Type: Binding doctrine (Status: BINDING, Authority: ML1)
    - Detection Method: Keyword analysis ("BINDING", "Authority")
    - Action Required: Propose move to correct folder
@@ -51,7 +51,7 @@ tags: []
 ## Recommendations
 
 1. **Misplaced Artifact (FIXTURE-001)**:
-   - Move to `01_DOCTRINE/01_BINDING/`
+   - Move to `01_DOCTRINE/01_invariants/`
    - Rename to follow doctrine naming convention: `DOCTRINE-2026-XXX-*.md`
    - Requires ML1 approval (doctrine promotion)
    - Handoff to SYS-005 for governance validation

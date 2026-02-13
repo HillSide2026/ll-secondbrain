@@ -3,6 +3,7 @@ id: 01_doctrine__03_capability_profiles__agent-capability-profile-0001-draft_wri
 title: AGENT-CAPABILITY-PROFILE-0001: Draft Write Access
 owner: ML1
 status: draft
+version: 1.0
 created_date: 2026-02-08
 last_updated: 2026-02-08
 tags: []

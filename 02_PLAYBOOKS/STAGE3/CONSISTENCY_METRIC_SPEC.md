@@ -1,6 +1,6 @@
 ---
 id: 02_playbooks__stage3__consistency_metric_spec_md
-title: Consistency Metric Spec v1.0 (Stage 3.8)
+title: Consistency Metric Spec v1.0 (Stage 3.9)
 owner: ML1
 status: draft
 created_date: 2026-02-12
@@ -8,7 +8,22 @@ last_updated: 2026-02-12
 tags: [stage3, metric, consistency]
 ---
 
-# Consistency Metric Spec v1.0 (Stage 3.8)
+## Playbook Header
+Playbook ID: 02_playbooks__stage3__consistency_metric_spec_md
+Version: 1.0
+Status: draft
+
+Principles Referenced: PRN-001, PRN-002, PRN-003, PRN-004, PRN-005, PRN-006, PRN-008, PRN-009
+Policies Applied: POL-003, POL-004, POL-006, POL-007, POL-009, POL-010
+Protocols Enforced: PRO-003, PRO-004, PRO-006, PRO-007, PRO-009, PRO-010
+Doctrine Invoked: 00_SYSTEM/constitution.md, 01_DOCTRINE/index.yaml
+
+Inputs: TBD
+Outputs: TBD
+Acceptance Criteria: TBD
+
+
+# Consistency Metric Spec v1.0 (Stage 3.9)
 
 ## Purpose
 Define a read-only metric that measures internal consistency across system outputs without creating authority or enforcement.

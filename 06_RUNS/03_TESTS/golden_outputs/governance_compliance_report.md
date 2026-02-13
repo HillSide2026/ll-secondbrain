@@ -41,7 +41,7 @@ tags: []
 3. **wrong_folder_doc.md** — Folder placement violation
    - Severity: High
    - Current: `03_TESTS/fixtures/pr_changeset/`
-   - Required: `01_DOCTRINE/01_BINDING/`
+   - Required: `01_DOCTRINE/01_invariants/`
    - Reason: Contains "BINDING" policy language
 
 ---
@@ -57,7 +57,7 @@ tags: []
    ---
    ```
 
-2. Move `wrong_folder_doc.md` to `01_DOCTRINE/01_BINDING/`
+2. Move `wrong_folder_doc.md` to `01_DOCTRINE/01_invariants/`
    - Rename to follow doctrine naming: `DOCTRINE-2026-XXX-*.md`
    - Requires ML1 approval for doctrine promotion
 
@@ -66,7 +66,7 @@ tags: []
 ## Actions
 
 - [ ] Add frontmatter to new_playbook.md
-- [ ] Move wrong_folder_doc.md to 01_DOCTRINE/01_BINDING/
+- [ ] Move wrong_folder_doc.md to 01_DOCTRINE/01_invariants/
 - [ ] Obtain ML1 approval for doctrine file
 - [ ] Re-run governance check after remediation
 

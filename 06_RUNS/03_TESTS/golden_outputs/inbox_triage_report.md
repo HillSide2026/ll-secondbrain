@@ -30,7 +30,7 @@ tags: []
 
 1. **FIXTURE-001: Misplaced Artifact**
    - Current: Simulated in `04_INITIATIVES/`
-   - Proposed: `01_DOCTRINE/01_BINDING/`
+   - Proposed: `01_DOCTRINE/01_invariants/`
    - Rationale: Contains binding policy language
    - Age: N/A (placement issue, not staleness)
    - Action: Propose move to correct folder

@@ -8,6 +8,21 @@ last_updated: 2026-02-08
 tags: []
 ---
 
+## Playbook Header
+Playbook ID: 02_playbooks__contracts__agents__solution_collision_matrix_md
+Version: 1.0
+Status: draft
+
+Principles Referenced: PRN-001, PRN-002, PRN-003, PRN-004, PRN-005, PRN-006, PRN-007, PRN-008, PRN-009
+Policies Applied: POL-004, POL-006, POL-007, POL-008, POL-009, POL-010
+Protocols Enforced: PRO-004, PRO-006, PRO-007, PRO-008, PRO-009, PRO-010
+Doctrine Invoked: 00_SYSTEM/constitution.md, 01_DOCTRINE/index.yaml
+
+Inputs: TBD
+Outputs: TBD
+Acceptance Criteria: TBD
+
+
 # Solution Collision Matrix — Contracts
 
 Routing logic when multiple Contract Solutions apply.

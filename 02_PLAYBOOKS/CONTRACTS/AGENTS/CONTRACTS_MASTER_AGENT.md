@@ -8,6 +8,21 @@ last_updated: 2026-02-09
 tags: []
 ---
 
+## Playbook Header
+Playbook ID: 02_playbooks__contracts__agents__contracts_master_agent_md
+Version: 1.0
+Status: draft
+
+Principles Referenced: PRN-001, PRN-002, PRN-003, PRN-004, PRN-005, PRN-006, PRN-007, PRN-008, PRN-009
+Policies Applied: POL-001, POL-002, POL-003, POL-004, POL-005, POL-006, POL-007, POL-008, POL-009, POL-011
+Protocols Enforced: PRO-001, PRO-002, PRO-003, PRO-004, PRO-005, PRO-006, PRO-007, PRO-008, PRO-009, PRO-011
+Doctrine Invoked: 00_SYSTEM/constitution.md, 01_DOCTRINE/index.yaml
+
+Inputs: TBD
+Outputs: TBD
+Acceptance Criteria: TBD
+
+
 # Contracts Master Agent — Expert Spec (Ontario)
 
 **Role ID:** CONTRACTS-MASTER-001
@@ -260,5 +275,5 @@ This agent's scope ends at demand letter.
 ## 13. References
 
 - Generic Spec: [PRACTICE_AREA_MASTER_AGENT_SPEC](../../../00_SYSTEM/AGENTS/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
-- Agent Doctrine: [DOCTRINE-AGENTS-0001](../../../01_DOCTRINE/01_BINDING/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md)
+- Agent Doctrine: [DOCTRINE-AGENTS-0001](../../../01_DOCTRINE/01_invariants/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md)
 - Solutions: [SOLUTIONS/](../SOLUTIONS/)

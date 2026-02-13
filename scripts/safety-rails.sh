@@ -130,7 +130,7 @@ echo ""
 # -----------------------------------------------------------------------------
 echo "Check 5: Doctrine file format"
 
-for doctrine_file in 01_DOCTRINE/01_BINDING/DOCTRINE-*.md; do
+for doctrine_file in 01_DOCTRINE/01_invariants/DOCTRINE-*.md; do
     if [ -f "$doctrine_file" ]; then
         # Check for Status field
         if grep -q "Status:" "$doctrine_file" 2>/dev/null; then

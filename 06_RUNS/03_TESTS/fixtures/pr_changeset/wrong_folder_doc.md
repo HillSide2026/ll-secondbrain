@@ -19,7 +19,7 @@ tags: []
 ## Policy Statement
 
 This document contains binding policy language but is placed
-in the wrong folder (PR changeset instead of 01_DOCTRINE/01_BINDING/).
+in the wrong folder (PR changeset instead of 01_DOCTRINE/01_invariants/).
 
 SYS-005 should flag this as a folder placement violation.
 
