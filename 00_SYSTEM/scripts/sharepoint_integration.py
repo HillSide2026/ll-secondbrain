@@ -36,7 +36,7 @@ import msal
 # =============================
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-CONFIG_PATH = REPO_ROOT / "sharepoint_sources.yaml"
+CONFIG_PATH = REPO_ROOT / "00_SYSTEM" / "integrations" / "sharepoint" / "sharepoint_sources.yaml"
 
 SOURCES_DIR = REPO_ROOT / "09_INBOX" / "_sources" / "sharepoint"
 STATE_DIR = SOURCES_DIR / "state"
