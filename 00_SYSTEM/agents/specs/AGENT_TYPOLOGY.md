@@ -32,8 +32,8 @@ This document reflects the current state of the system and explicitly identifies
 - 00_SYSTEM/agents/specs/system_management/SMA_RUNBOOK_QA.md
 
 ### Proto-Agents (Draft)
-- 00_SYSTEM/architecture/PROTO-REPO-LINTER.md
-- 00_SYSTEM/architecture/PROTO-FOLDER-MAP-DRIFT.md
+- 00_SYSTEM/agents/specs/system_admin/SAA_REPO_LINTER.md
+- 00_SYSTEM/agents/specs/system_admin/SAA_FOLDER_MAP_DRIFT.md
 
 ---
 
