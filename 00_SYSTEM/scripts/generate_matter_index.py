@@ -5,7 +5,7 @@ generate_matter_index.py — Matter Index Generator
 Scans 05_MATTERS/ and generates a consolidated index at 05_MATTERS/INDEX.md.
 
 Usage:
-    python scripts/generate_matter_index.py
+    python 00_SYSTEM/scripts/generate_matter_index.py
 
 Output:
     05_MATTERS/INDEX.md

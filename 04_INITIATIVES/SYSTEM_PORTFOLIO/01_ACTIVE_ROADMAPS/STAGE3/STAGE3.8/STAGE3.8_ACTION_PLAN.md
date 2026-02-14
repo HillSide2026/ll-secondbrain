@@ -114,7 +114,7 @@ Lifecycle transitions must be:
 
 ## 5.3 Template Registry
 
-File: `02_PLAYBOOKS/EXECUTION/TEMPLATE_REGISTRY.json`
+File: `02_PLAYBOOKS/_assets/execution/reference/TEMPLATE_REGISTRY.json`
 
 Must include per template:
 
@@ -178,7 +178,7 @@ No silent partial states permitted.
 
 ## 5.8 Discovery Infrastructure
 
-`scripts/sharepoint_discovery.py` must verify:
+`00_SYSTEM/scripts/sharepoint_discovery.py` must verify:
 
 - Drive existence
 - Folder structure integrity
@@ -234,29 +234,29 @@ Discovery output stored under: `09_INBOX/_sources/sharepoint/discovery/`
 
 | Item | Status | Notes |
 |------|--------|-------|
-| SharePoint discovery scanner | ✅ | `scripts/sharepoint_discovery.py` |
+| SharePoint discovery scanner | ✅ | `00_SYSTEM/scripts/sharepoint_discovery.py` |
 | Live discovery scan | ✅ | Site, drive, folders, columns inventoried |
-| SB Graph Bridge executor | ✅ | `scripts/sb_graph_bridge.py` |
-| Bridge request schema | ✅ | `scripts/sb_bridge_request.schema.json` |
+| SB Graph Bridge executor | ✅ | `00_SYSTEM/scripts/sb_graph_bridge.py` |
+| Bridge request schema | ✅ | `00_SYSTEM/scripts/sb_bridge_request.schema.json` |
 | Bridge dry-run validation | ✅ | All phases pass |
-| Sample bridge request | ✅ | `scripts/request.json` |
+| Sample bridge request | ✅ | `00_SYSTEM/scripts/request.json` |
 
 ## Phase 3: Hardening (Complete)
 
 | Item | Status | Notes |
 |------|--------|-------|
 | Execution governance document | ✅ | `STAGE3.8_EXECUTION_GOVERNANCE_DOC.md` |
-| Template registry | ✅ | `02_PLAYBOOKS/EXECUTION/TEMPLATE_REGISTRY.json` (delivered Phase 2) |
+| Template registry | ✅ | `02_PLAYBOOKS/_assets/execution/reference/TEMPLATE_REGISTRY.json` (delivered Phase 2) |
 | Content control validation spec | ✅ | `STAGE3.8_CONTENT_CONTROL_VALIDATION_SPEC.md` |
 | Content control validation impl | ✅ | Phase 4 (registry) + Phase 7 (OpenXML introspection) in bridge |
 
 ## Phase 4: Live Execution (Complete)
 
-Provisioning script: `scripts/setup_sb_execution.py`
+Provisioning script: `00_SYSTEM/scripts/setup_sb_execution.py`
 
 | Item | Status | Notes |
 |------|--------|-------|
-| Provisioning script | ✅ | `scripts/setup_sb_execution.py` (--verify / --provision) |
+| Provisioning script | ✅ | `00_SYSTEM/scripts/setup_sb_execution.py` (--verify / --provision) |
 | Add write permissions to Azure app | ✅ | Files.ReadWrite.All + Sites.Manage.All granted |
 | Run `--verify` to confirm drive access | ✅ | Drive `b!aepYh7...` confirmed accessible |
 | Run `--provision` to create columns | ✅ | 9 SB_* columns created |
@@ -266,7 +266,7 @@ Provisioning script: `scripts/setup_sb_execution.py`
 
 ## Phase 5: Pressure Testing (Complete)
 
-Test suite: `scripts/pressure_test_bridge.py` — **52/52 passed**
+Test suite: `00_SYSTEM/scripts/pressure_test_bridge.py` — **52/52 passed**
 
 | Item | Status | Notes |
 |------|--------|-------|
@@ -324,7 +324,7 @@ Fixes applied during pressure testing:
 - Stage 3.10 (Metric Validation): `STAGE3.10/STAGE3.10_ACTION_PLAN.md`
 - Draft Doctrine: `STAGE3.8_DRAFT_DOCTRINE_SB_EXECUTION_PROMOTION_CONTROL.md`
 - Draft Spec: `STAGE3.8_DRAFT_SPEC_SHAREPOINT_METADATA_PROMOTION_TRIGGER.md`
-- Discovery Scanner: `scripts/sharepoint_discovery.py`
-- Bridge Executor: `scripts/sb_graph_bridge.py`
-- Bridge Schema: `scripts/sb_bridge_request.schema.json`
-- Sample Request: `scripts/request.json`
+- Discovery Scanner: `00_SYSTEM/scripts/sharepoint_discovery.py`
+- Bridge Executor: `00_SYSTEM/scripts/sb_graph_bridge.py`
+- Bridge Schema: `00_SYSTEM/scripts/sb_bridge_request.schema.json`
+- Sample Request: `00_SYSTEM/scripts/request.json`

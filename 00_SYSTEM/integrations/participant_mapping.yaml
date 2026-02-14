@@ -1,6 +1,6 @@
 # Participant Mapping — Email Domain/Person → Matter ID
 #
-# Used by: scripts/todo_rollup.py
+# Used by: 00_SYSTEM/scripts/todo_rollup.py
 # Purpose: Map email senders to matters for task extraction
 #
 # Generated: 2026-02-03 (rough draft from 30-day email analysis)

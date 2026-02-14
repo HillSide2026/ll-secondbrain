@@ -1,6 +1,6 @@
 #!/bin/bash
 # Pre-commit hook for ll-secondbrain
-# Install: cp scripts/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+# Install: cp 00_SYSTEM/scripts/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
 #
 # Checks:
 # 1. Safety rails (credentials, folder structure, agent definitions)
@@ -34,9 +34,9 @@ fi
 # Check 1: Run safety rails
 # -----------------------------------------------------------------------------
 echo "Running safety rails..."
-if ! ./scripts/safety-rails.sh > /dev/null 2>&1; then
+if ! ./00_SYSTEM/scripts/safety-rails.sh > /dev/null 2>&1; then
     echo -e "${YELLOW}WARN${NC}: Safety rails check has warnings or errors."
-    echo "  Run ./scripts/safety-rails.sh for details."
+    echo "  Run ./00_SYSTEM/scripts/safety-rails.sh for details."
     # Continue - warnings don't block commit
 fi
 echo -e "${GREEN}OK${NC}: Safety rails check complete"
@@ -48,9 +48,9 @@ echo ""
 STAGED_MATTERS=$(git diff --cached --name-only | grep "^05_MATTERS/" | head -1)
 if [ -n "$STAGED_MATTERS" ]; then
     echo "Matter files staged - running validation..."
-    if ! python3 ./scripts/validate_matter_yaml.py > /dev/null 2>&1; then
+    if ! python3 ./00_SYSTEM/scripts/validate_matter_yaml.py > /dev/null 2>&1; then
         echo -e "${RED}FAIL${NC}: Matter YAML validation failed!"
-        echo "  Run: python3 ./scripts/validate_matter_yaml.py"
+        echo "  Run: python3 ./00_SYSTEM/scripts/validate_matter_yaml.py"
         exit 1
     fi
     echo -e "${GREEN}OK${NC}: Matter YAML validation passed"

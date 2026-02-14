@@ -245,7 +245,7 @@ To be implemented. Instantiation pattern TBD — expected to require:
 
 | Agent | Location | Status |
 |-------|----------|--------|
-| todo-rollup | scripts/todo_rollup.py | Active |
+| todo-rollup | 00_SYSTEM/scripts/todo_rollup.py | Active |
 | system-governance | TBD | Planned |
 | project-manager | TBD | Planned |
 

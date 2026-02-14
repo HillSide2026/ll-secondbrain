@@ -130,14 +130,14 @@ Drafts cannot:
 ### Phase 1: Agent Definition (Completed)
 | Item | Status | Notes |
 |------|--------|-------|
-| Define agent scope + refusal conditions | ✅ | `02_PLAYBOOKS/STAGE3/DRAFT_RESPONSE_ASSISTANT.md` |
+| Define agent scope + refusal conditions | ✅ | `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/DRAFT_RESPONSE_ASSISTANT.md` |
 | Define storage location + naming | ✅ | `06_RUNS/STAGE3.6/README.md` |
-| Draft output template | ✅ | `02_PLAYBOOKS/STAGE3/DRAFT_RESPONSE_TEMPLATE.md` |
+| Draft output template | ✅ | `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/DRAFT_RESPONSE_TEMPLATE.md` |
 
 ### Phase 2: Implementation (Completed)
 | Item | Status | Notes |
 |------|--------|-------|
-| Implement draft generator | ✅ | `scripts/run_draft_response.py` — local-only writes |
+| Implement draft generator | ✅ | `00_SYSTEM/scripts/run_draft_response.py` — local-only writes |
 | Implement run logging | ✅ | `06_RUNS/STAGE3.6/RUN-YYYY-MM-DD-*.md` |
 | Add boundary guard | ✅ | `assert_write_path_allowed()` — blocks `09_INBOX/`, `00_SYSTEM/`, `05_MATTERS/` |
 
@@ -164,9 +164,9 @@ Drafts cannot:
 
 - Stage 3.5: `STAGE3.5/STAGE3.5_ACTION_PLAN.md`
 - Stage 3 Authorization: `STAGE3_AUTHORIZATION_KICKOFF.md`
-- Write-Back Policy: `00_SYSTEM/WRITE_BACK_POLICY.md`
-- Draft Response Assistant: `02_PLAYBOOKS/STAGE3/DRAFT_RESPONSE_ASSISTANT.md`
-- Draft Response Template: `02_PLAYBOOKS/STAGE3/DRAFT_RESPONSE_TEMPLATE.md`
+- Write-Back Policy: `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`
+- Draft Response Assistant: `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/DRAFT_RESPONSE_ASSISTANT.md`
+- Draft Response Template: `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/DRAFT_RESPONSE_TEMPLATE.md`
 - Stage 3.6 Runs: `06_RUNS/STAGE3.6/README.md`
-- Draft Response Runbook: `02_PLAYBOOKS/STAGE3/DRAFT_RESPONSE_RUNBOOK.md`
+- Draft Response Runbook: `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/DRAFT_RESPONSE_RUNBOOK.md`
 - Stage 3.6 Tests: `06_RUNS/STAGE3.6/TESTS_3.6_DRAFT_RESPONSES.md`

@@ -7,7 +7,7 @@ Two-stage pipeline:
   Stage 2: Generate verb-first lawyer tasks from ACTION_REQUIRED emails only
 
 Usage:
-    python scripts/todo_rollup.py [--days 14] [--dry-run]
+    python 00_SYSTEM/scripts/todo_rollup.py [--days 14] [--dry-run]
 
 Output:
     06_RUNS/ops/todo_rollup_YYYY-MM-DD.md

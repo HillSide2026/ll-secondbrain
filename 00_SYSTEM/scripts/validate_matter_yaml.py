@@ -6,7 +6,7 @@ Scans 05_MATTERS/ and validates each matter against the schema defined in
 00_SYSTEM/SCHEMAS.md.
 
 Usage:
-    python scripts/validate_matter_yaml.py [--fix-missing] [--verbose]
+    python 00_SYSTEM/scripts/validate_matter_yaml.py [--fix-missing] [--verbose]
 
 Options:
     --fix-missing   Create missing MATTER.yaml files with placeholder values

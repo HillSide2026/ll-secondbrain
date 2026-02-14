@@ -4,7 +4,7 @@ Gmail OAuth Setup Script
 Generates a refresh token for Gmail API read-only access.
 
 Usage:
-    python scripts/gmail-oauth-setup.py
+    python 00_SYSTEM/scripts/gmail-oauth-setup.py
 
 Prerequisites:
     pip install google-auth-oauthlib google-auth-httplib2 google-api-python-client python-dotenv

@@ -496,7 +496,7 @@ They live in a different mental and system bucket.
 
 ## Stage 3 Backlog Notes
 
-- Untracked scripts present in repo: `scripts/run_draft_response.py`, `scripts/push_drafts_to_sheets.py` (pre-existing; left untouched). Decide whether to adopt, relocate, or archive.
+- Untracked scripts present in repo: `00_SYSTEM/scripts/run_draft_response.py`, `00_SYSTEM/scripts/push_drafts_to_sheets.py` (pre-existing; left untouched). Decide whether to adopt, relocate, or archive.
 
 ## 9. Definition of Done (Stage 3)
 
@@ -518,5 +518,5 @@ Stage 3 is complete when:
 ## 10. References
 
 - Stage 2.6 Closure: `STAGE2/STAGE2.6/STAGE2.6_CLOSURE_RECOMMENDATION.md`
-- Classifier (v0.3): `scripts/inbox_classifier.py`
-- Calibration Log: `02_PLAYBOOKS/EXECUTION/CALIBRATION_LOG.md`
+- Classifier (v0.3): `00_SYSTEM/scripts/inbox_classifier.py`
+- Calibration Log: `02_PLAYBOOKS/_assets/execution/log_formats/calibration_log/README.md`

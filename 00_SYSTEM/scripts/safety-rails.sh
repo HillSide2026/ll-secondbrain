@@ -2,7 +2,7 @@
 # Safety Rails Script for ll-secondbrain
 # Validates repository compliance with system governance rules
 #
-# Usage: ./scripts/safety-rails.sh [--fix]
+# Usage: ./00_SYSTEM/scripts/safety-rails.sh [--fix]
 #
 # Checks:
 # 1. .env is not tracked in git
