@@ -3,6 +3,7 @@ id: 00_system__write_back_policy_md
 title: System Write-Back Policy
 owner: ML1
 status: draft
+version: 1.0
 created_date: 2026-02-09
 last_updated: 2026-02-09
 tags: []

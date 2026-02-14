@@ -51,5 +51,5 @@ Agent specifications, permissions, and handoff definitions for the Payments prac
 
 ## Architectural Reference
 
-- [PRACTICE_AREA_MASTER_AGENT_SPEC](../../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
-- [AGENT_TYPOLOGY](../../../../00_SYSTEM/agents/specs/AGENT_TYPOLOGY.md)
+- [PRACTICE_AREA_MASTER_AGENT_SPEC](../../../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
+- [AGENT_TYPOLOGY](../../../../../00_SYSTEM/agents/specs/AGENT_TYPOLOGY.md)

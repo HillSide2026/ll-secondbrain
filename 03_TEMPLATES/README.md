@@ -3,6 +3,7 @@ id: 03_templates__readme_md
 title: Templates
 owner: ML1
 status: draft
+version: 1.0
 created_date: 2026-01-25
 last_updated: 2026-01-25
 tags: []

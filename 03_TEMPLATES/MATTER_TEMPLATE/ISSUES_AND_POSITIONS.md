@@ -3,6 +3,7 @@ id: 03_templates__matter_template__issues_and_positions_md
 title: Issues & Positions — <matter_id>
 owner: ML1
 status: draft
+version: 1.0
 created_date: 2026-02-08
 last_updated: 2026-02-08
 tags: []

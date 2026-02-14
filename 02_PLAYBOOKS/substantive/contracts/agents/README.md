@@ -46,8 +46,8 @@ Define agent roles that operate within the Contracts Playbooks system. Specifica
 | Layer | Purpose |
 |-------|---------|
 | Agent Typology | Type 2: Practice Area Master Agent |
-| Generic Spec | [PRACTICE_AREA_MASTER_AGENT_SPEC](../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md) |
-| Agent Doctrine | [DOCTRINE-AGENTS-0001](../../../01_DOCTRINE/01_invariants/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md) |
+| Generic Spec | [PRACTICE_AREA_MASTER_AGENT_SPEC](../../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md) |
+| Agent Doctrine | [DOCTRINE-AGENTS-0001](../../../../01_DOCTRINE/01_invariants/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md) |
 | **This Instantiation** | Contracts-specific expertise and decision points |
 
 ---

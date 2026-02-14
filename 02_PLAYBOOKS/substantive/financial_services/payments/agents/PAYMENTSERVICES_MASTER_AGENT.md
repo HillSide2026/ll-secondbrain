@@ -30,7 +30,7 @@ Acceptance Criteria: TBD
 **Role ID:** PAYMENTS-MASTER-001
 **Status:** DRAFT
 **Effective:** 2026-02-07
-**Instantiates:** [PRACTICE_AREA_MASTER_AGENT_SPEC v1.0](../../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
+**Instantiates:** [PRACTICE_AREA_MASTER_AGENT_SPEC v1.0](../../../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
 
 ---
 
@@ -387,8 +387,8 @@ Solutions do not replace expertise — they discipline it.
 
 ## 17. Doctrine References
 
-- Generic Spec: [PRACTICE_AREA_MASTER_AGENT_SPEC](../../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
-- Agent Doctrine: [DOCTRINE-AGENTS-0001](../../../../01_DOCTRINE/01_invariants/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md)
-- Agent Typology: [AGENT_TYPOLOGY](../../../../00_SYSTEM/agents/specs/AGENT_TYPOLOGY.md)
+- Generic Spec: [PRACTICE_AREA_MASTER_AGENT_SPEC](../../../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
+- Agent Doctrine: [DOCTRINE-AGENTS-0001](../../../../../01_DOCTRINE/01_invariants/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md)
+- Agent Typology: [AGENT_TYPOLOGY](../../../../../00_SYSTEM/agents/specs/AGENT_TYPOLOGY.md)
 - Solutions: [solutions/](../solutions/)
 - Overlays: [overlays/](../overlays/)

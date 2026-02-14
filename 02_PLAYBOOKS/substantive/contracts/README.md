@@ -71,5 +71,5 @@ These are parallel practice areas with shared architectural patterns but indepen
 ## Architectural Reference
 
 This practice area follows the Practice Area Master Agent Spec v1.0:
-- [PRACTICE_AREA_MASTER_AGENT_SPEC](../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
-- [AGENT_TYPOLOGY](../../00_SYSTEM/agents/specs/AGENT_TYPOLOGY.md)
+- [PRACTICE_AREA_MASTER_AGENT_SPEC](../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
+- [AGENT_TYPOLOGY](../../../00_SYSTEM/agents/specs/AGENT_TYPOLOGY.md)

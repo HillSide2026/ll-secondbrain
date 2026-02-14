@@ -52,7 +52,7 @@ Violation Type: Write to doctrine folder (prohibited)
 
 ### Step 2: Agent Refusal Check
 
-Per SYS-008 definition ([SMA_KNOWLEDGE_CURATION.md:121-128](00_SYSTEM/agents/specs/system_management/SMA_KNOWLEDGE_CURATION.md#L121-L128)):
+Per SYS-008 definition ([SMA_KNOWLEDGE_CURATION.md:121-128](../../../00_SYSTEM/agents/specs/system_management/SMA_KNOWLEDGE_CURATION.md#L121-L128)):
 
 ```markdown
 ## Refusal Conditions

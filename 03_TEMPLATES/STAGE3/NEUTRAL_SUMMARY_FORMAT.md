@@ -3,6 +3,7 @@ id: 03_templates__stage3__neutral_summary_format_md
 title: Neutral Summary — Output Format (Stage 3.4)
 owner: ML1
 status: draft
+version: 1.0
 created_date: 2026-02-08
 last_updated: 2026-02-08
 tags: []

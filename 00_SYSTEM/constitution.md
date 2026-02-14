@@ -1,3 +1,13 @@
+---
+id: 00_system__constitution_md
+title: Constitution
+owner: ML1
+status: active
+version: 1.0
+created_date: 2026-02-14
+last_updated: 2026-02-14
+tags: [constitution, governance]
+---
 # Constitution
 
 Version: 1.0

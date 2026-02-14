@@ -30,7 +30,7 @@ Acceptance Criteria: TBD
 **Role ID:** CORP-MASTER-001
 **Status:** DRAFT
 **Effective:** 2026-02-05
-**Instantiates:** [PRACTICE_AREA_MASTER_AGENT_SPEC v1.0](../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
+**Instantiates:** [PRACTICE_AREA_MASTER_AGENT_SPEC v1.0](../../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
 **Capability Profile:** AGENT-CAPABILITY-PROFILE-0001 (Draft Write Access)
 
 ---
@@ -347,6 +347,6 @@ Solutions do not replace expertise — they discipline it.
 
 ## 16. Doctrine References
 
-- Parent Doctrine: [DOCTRINE-AGENTS-0001](../../../01_DOCTRINE/01_invariants/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md)
-- Capability Profile: [AGENT-CAPABILITY-PROFILE-0001](../../../01_DOCTRINE/03_capability_profiles/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md)
+- Parent Doctrine: [DOCTRINE-AGENTS-0001](../../../../01_DOCTRINE/01_invariants/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md)
+- Capability Profile: [AGENT-CAPABILITY-PROFILE-0001](../../../../01_DOCTRINE/03_capability_profiles/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md)
 - Solutions: [solutions/](../solutions/)
