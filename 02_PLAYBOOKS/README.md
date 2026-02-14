@@ -3,6 +3,8 @@ id: 02_playbooks__readme_md
 title: Playbooks
 owner: ML1
 status: draft
+version: 1.0
+supersedes:
 created_date: 2026-01-25
 last_updated: 2026-01-25
 tags: []
@@ -27,7 +29,24 @@ Acceptance Criteria: TBD
 
 Repeatable workflows and SOPs derived from doctrine.
 
+## Taxonomy
+
+- `core/`: lifecycle backbone workflows (intake/triage/scaffold/extract/update).
+- `substantive/`: legal-work workflows (review/draft/file/analyze) regardless of domain.
+- `execution/`: deliverable-generation workflows (emails, memos, escalation packets).
+- `system/`: meta-workflows that modify ML2 itself (doctrine/policy/template processes).
+- `_registry/`: navigation + status registry only (no workflows).
+- `_assets/`: reusable assets (schemas, rubrics, worksheets, formats) used by playbooks.
+
 Rules:
-- Must include YAML frontmatter per `/00_SYSTEM/SCHEMAS.md`
+- Must include YAML frontmatter per `/00_SYSTEM/schemas/SCHEMAS.md`
+- `version` and `supersedes` live in YAML frontmatter; Playbook Header `Version` must match `version`
 - May reference doctrine IDs
 - If a playbook conflicts with doctrine, doctrine wins
+- Folders under `core/`, `substantive/`, `execution/`, and `system/` must be workflows and must include `README.md`, `metadata.yaml`, `steps.yaml`, and `acceptance.md`; otherwise place them under `_assets/`.
+- Anything that is not a repeatable workflow does not belong in `core/`, `substantive/`, `execution/`, or `system/`.
+
+Registry: `02_PLAYBOOKS/_registry/README.md`
+Playbook index: `02_PLAYBOOKS/_registry/PLAYBOOK_INDEX.md`
+Status manifests (derived views): `02_PLAYBOOKS/_registry/ACTIVE_INDEX.md`, `02_PLAYBOOKS/_registry/DRAFT_INDEX.md`
+Structure policy: `02_PLAYBOOKS/_registry/STRUCTURE_POLICY.md`
