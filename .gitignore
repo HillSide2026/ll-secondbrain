@@ -19,6 +19,7 @@ Thumbs.db
 *.temp
 # Local secrets
 00_SYSTEM/local_secrets/
+00_SYSTEM/integrations/local_secrets/
 
 # Local & run logs
 logs/
