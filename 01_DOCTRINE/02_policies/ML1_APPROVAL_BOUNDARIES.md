@@ -147,7 +147,7 @@ ML1 approvals should be recorded in the relevant artifact or closure document wi
 
 - Agent Deployment Guide: `00_SYSTEM/agents/deployment/AGENT_DEPLOYMENT_GUIDE.md`
 - Write-Back Policy: `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`
-- Agent Definitions: `00_SYSTEM/architecture/`
+- Agent Definitions: `00_SYSTEM/agents/specs/system_management/`
 - Doctrine: `01_DOCTRINE/`
 
 ---

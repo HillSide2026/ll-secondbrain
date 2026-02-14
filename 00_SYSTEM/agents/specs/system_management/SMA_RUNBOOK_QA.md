@@ -89,7 +89,7 @@ All outputs must follow the standard agent output format.
 ```
 Validate agent definition for schema compliance.
 Inputs:
-- Artifact: 00_SYSTEM/architecture/SYS-007_INTEGRATION_STEWARD.md
+- Artifact: 00_SYSTEM/agents/specs/system_management/SMA_INTEGRATION_STEWARD.md
 - Schema: 00_SYSTEM/schemas/SCHEMAS.md (agent definition schema)
 Produce: QA validation report with pass/fail and issue list.
 ```

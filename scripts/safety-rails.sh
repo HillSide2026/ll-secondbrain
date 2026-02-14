@@ -81,10 +81,10 @@ echo ""
 # -----------------------------------------------------------------------------
 # Check 3: Agent definition files exist and have required sections
 # -----------------------------------------------------------------------------
-echo "Check 3: Agent definitions in 00_SYSTEM/architecture/"
+echo "Check 3: System management agent specs in 00_SYSTEM/agents/specs/system_management/"
 
-AGENT_DIR="00_SYSTEM/architecture"
-REQUIRED_AGENTS=("SYS-005" "SYS-006" "SYS-007" "SYS-008" "SYS-009")
+AGENT_DIR="00_SYSTEM/agents/specs/system_management"
+REQUIRED_AGENTS=("SMA_SYSTEM_GOVERNANCE" "SMA_PORTFOLIO_PLANNING" "SMA_INTEGRATION_STEWARD" "SMA_KNOWLEDGE_CURATION" "SMA_RUNBOOK_QA")
 
 for agent in "${REQUIRED_AGENTS[@]}"; do
     AGENT_FILE=$(find "$AGENT_DIR" -name "${agent}*.md" 2>/dev/null | head -1)

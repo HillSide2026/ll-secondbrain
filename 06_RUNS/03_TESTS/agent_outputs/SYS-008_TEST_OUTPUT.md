@@ -84,8 +84,8 @@ tags: []
 
 - 03_TESTS/fixtures/misplaced_artifact.md:35-42 — Contains "BINDING" and "Authority: ML1"
 - 03_TESTS/fixtures/stale_artifact.md:14 — Last Updated: 2025-09-29 (120 days ago)
-- 00_SYSTEM/FOLDER_MAP.md — Folder placement rules (reference)
-- 00_SYSTEM/AGENTS/SYS-008_KNOWLEDGE_CURATION.md — Staleness threshold (90 days)
+- 00_SYSTEM/architecture/FOLDER_MAP.md — Folder placement rules (reference)
+- 00_SYSTEM/agents/specs/system_management/SMA_KNOWLEDGE_CURATION.md — Staleness threshold (90 days)
 
 ---
 

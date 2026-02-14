@@ -63,12 +63,12 @@ Deploy 5 system-level agents using Claude Code as the runtime.
 **Deliverable:** `.env.example` file with comments explaining each variable
 
 #### 1.2 Create agent configuration directory (AMENDED)
-- [ ] **Create `00_SYSTEM/AGENTS/` directory** — Canonical home for agent definitions
+- [ ] **Create `00_SYSTEM/agents/` directory** — Canonical home for agent definitions
 - [ ] **Create agent definition templates** — One per agent, based on runbooks
 - [ ] **Document invocation patterns** — How to call each agent
 - [ ] **Add per-agent contract sections (NEW)** — Inputs/Outputs/Permissions/Prohibitions/Refusals
 
-**Deliverable:** Agent definition files in `00_SYSTEM/AGENTS/`
+**Deliverable:** Agent definition files in `00_SYSTEM/agents/`
 
 ---
 
@@ -123,7 +123,7 @@ All agent-produced artifacts/reports MUST use this structure:
 **Purpose:** Enforce system rules, validate compliance, review changes
 
 **Setup Steps:**
-- [ ] Create `00_SYSTEM/AGENTS/SYS-005_SYSTEM_GOVERNANCE.md`
+- [ ] Create `00_SYSTEM/agents/specs/system_management/SMA_SYSTEM_GOVERNANCE.md`
 - [ ] Define agent prompt based on `STAGE3_RUNBOOK_SYSTEM_GOVERNANCE.md`
 - [ ] Include required agent definition schema sections
 - [ ] Test: Agent validates a PR for governance compliance
@@ -143,7 +143,7 @@ All agent-produced artifacts/reports MUST use this structure:
 **Purpose:** Manage roadmap sequencing, backlog, stage transitions
 
 **Setup Steps:**
-- [ ] Create `00_SYSTEM/AGENTS/SYS-006_PORTFOLIO_PLANNING.md`
+- [ ] Create `00_SYSTEM/agents/specs/system_management/SMA_PORTFOLIO_PLANNING.md`
 - [ ] Define agent prompt based on `STAGE3_RUNBOOK_PORTFOLIO_PLANNING.md`
 - [ ] Include required agent definition schema sections
 - [ ] Test: Agent reviews backlog and proposes prioritization (standard output format)
@@ -161,7 +161,7 @@ All agent-produced artifacts/reports MUST use this structure:
 **Purpose:** Manage read-only integration specs and access
 
 **Setup Steps:**
-- [ ] Create `00_SYSTEM/AGENTS/SYS-007_INTEGRATION_STEWARD.md`
+- [ ] Create `00_SYSTEM/agents/specs/system_management/SMA_INTEGRATION_STEWARD.md`
 - [ ] Define agent prompt based on `STAGE3_RUNBOOK_INTEGRATION_STEWARD.md`
 - [ ] Include required agent definition schema sections
 - [ ] Test: Agent reviews integration spec for compliance
@@ -180,7 +180,7 @@ All agent-produced artifacts/reports MUST use this structure:
 **Purpose:** Organize, index, maintain system knowledge
 
 **Setup Steps:**
-- [ ] Create `00_SYSTEM/AGENTS/SYS-008_KNOWLEDGE_CURATION.md`
+- [ ] Create `00_SYSTEM/agents/specs/system_management/SMA_KNOWLEDGE_CURATION.md`
 - [ ] Define agent prompt based on `STAGE3_RUNBOOK_KNOWLEDGE_CURATION.md`
 - [ ] Include required agent definition schema sections
 - [ ] Test: Agent scans INBOX and proposes triage (standard output format)
@@ -199,7 +199,7 @@ All agent-produced artifacts/reports MUST use this structure:
 **Purpose:** Draft runbooks, validate artifact quality
 
 **Setup Steps:**
-- [ ] Create `00_SYSTEM/AGENTS/SYS-009_RUNBOOK_QA.md`
+- [ ] Create `00_SYSTEM/agents/specs/system_management/SMA_RUNBOOK_QA.md`
 - [ ] Define agent prompt based on `STAGE3_RUNBOOK_QA.md`
 - [ ] Include required agent definition schema sections
 - [ ] Test: Agent validates YAML frontmatter
@@ -224,7 +224,7 @@ All agent-produced artifacts/reports MUST use this structure:
   - **External writes require ML1 approval**, change summary, and rollback plan (to be activated in later stage)
 - [ ] Add policy reference into each agent's Authority Scope section
 
-**Deliverable:** `00_SYSTEM/WRITE_BACK_POLICY.md` (or equivalent) and agent files updated to reference it
+**Deliverable:** `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md` (or equivalent) and agent files updated to reference it
 
 ---
 
@@ -278,7 +278,7 @@ All agent-produced artifacts/reports MUST use this structure:
 ### Phase 4: Documentation
 
 #### 4.1 Agent deployment guide
-- [ ] Create `02_PLAYBOOKS/AGENT_DEPLOYMENT_GUIDE.md`
+- [ ] Create `00_SYSTEM/agents/deployment/AGENT_DEPLOYMENT_GUIDE.md`
 - [ ] Document how to invoke each agent
 - [ ] Include troubleshooting section
 - [ ] Include agent definition vs playbook distinction (NEW)
@@ -319,7 +319,7 @@ All agent-produced artifacts/reports MUST use this structure:
 
 | Criterion | Measure |
 |-----------|---------|
-| All 5 agents defined | Agent files exist in `00_SYSTEM/AGENTS/` |
+| All 5 agents defined | Agent files exist in `00_SYSTEM/agents/` |
 | All 5 agents tested | Each produces at least one artifact using standard output format |
 | Agent contracts present | Each agent file includes the required agent definition schema sections |
 | Handoffs work | At least one handoff test passes and outputs are in allowed folders |
@@ -340,7 +340,7 @@ All agent-produced artifacts/reports MUST use this structure:
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
 | 1.1 Credential infra | ✅ done | 2026-01-27 | .env.example + .gitignore created |
-| 1.2 Agent directory | ✅ done | 2026-01-27 | 00_SYSTEM/AGENTS/ created |
+| 1.2 Agent directory | ✅ done | 2026-01-27 | 00_SYSTEM/agents/ created |
 
 ### Phase 2: Agent Deployment
 | Agent | Definition | Tests Pass | Notes |
@@ -350,7 +350,7 @@ All agent-produced artifacts/reports MUST use this structure:
 | SYS-007 Integration Steward | ✅ | ✅ | v0.1 DRAFT |
 | SYS-008 Knowledge Curation | ✅ | ✅ | v0.1 DRAFT |
 | SYS-009 Runbook & QA | ✅ | ✅ | v0.1 DRAFT |
-| 2.6 Write-Back Policy | ✅ | — | 00_SYSTEM/WRITE_BACK_POLICY.md |
+| 2.6 Write-Back Policy | ✅ | — | 01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md |
 | 2.7 Test Fixtures | ✅ | — | 03_TESTS/fixtures + golden_outputs |
 
 ### Phase 3: Testing
@@ -363,5 +363,5 @@ All agent-produced artifacts/reports MUST use this structure:
 ### Phase 4: Documentation
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| 4.1 Deployment guide | ✅ done | 2026-01-27 | 02_PLAYBOOKS/AGENT_DEPLOYMENT_GUIDE.md |
-| 4.2 Credential docs | ✅ done | 2026-01-27 | 02_PLAYBOOKS/CREDENTIAL_INVENTORY.md |
+| 4.1 Deployment guide | ✅ done | 2026-01-27 | 00_SYSTEM/agents/deployment/AGENT_DEPLOYMENT_GUIDE.md |
+| 4.2 Credential docs | ✅ done | 2026-01-27 | 00_SYSTEM/security/CREDENTIAL_INVENTORY.md |
