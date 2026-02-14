@@ -25,15 +25,15 @@ This document reflects the current state of the system and explicitly identifies
 ## Agents Index (Derived from AGENTS.md)
 
 ### System Agents
-- 00_SYSTEM/AGENTS/SYS-005_SYSTEM_GOVERNANCE.md
-- 00_SYSTEM/AGENTS/SYS-006_PORTFOLIO_PLANNING.md
-- 00_SYSTEM/AGENTS/SYS-007_INTEGRATION_STEWARD.md
-- 00_SYSTEM/AGENTS/SYS-008_KNOWLEDGE_CURATION.md
-- 00_SYSTEM/AGENTS/SYS-009_RUNBOOK_QA.md
+- 00_SYSTEM/architecture/SYS-005_SYSTEM_GOVERNANCE.md
+- 00_SYSTEM/architecture/SYS-006_PORTFOLIO_PLANNING.md
+- 00_SYSTEM/architecture/SYS-007_INTEGRATION_STEWARD.md
+- 00_SYSTEM/architecture/SYS-008_KNOWLEDGE_CURATION.md
+- 00_SYSTEM/architecture/SYS-009_RUNBOOK_QA.md
 
 ### Proto-Agents (Draft)
-- 00_SYSTEM/AGENTS/PROTO-REPO-LINTER.md
-- 00_SYSTEM/AGENTS/PROTO-FOLDER-MAP-DRIFT.md
+- 00_SYSTEM/architecture/PROTO-REPO-LINTER.md
+- 00_SYSTEM/architecture/PROTO-FOLDER-MAP-DRIFT.md
 
 ---
 
@@ -250,9 +250,9 @@ To be implemented. Instantiation pattern TBD — expected to require:
 
 | Agent | Practice Area | Location | Status |
 |-------|---------------|----------|--------|
-| CORPORATE_LAW_MASTER_AGENT | Corporate (Ontario) | 02_PLAYBOOKS/CORPORATE/AGENTS/ | Active |
-| CONTRACTS_MASTER_AGENT | Contracts | 02_PLAYBOOKS/CONTRACTS/AGENTS/ | Active |
-| PAYMENTSERVICES_MASTER_AGENT | Payments | 02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/AGENTS/ | Active |
+| CORPORATE_LAW_MASTER_AGENT | Corporate (Ontario) | 02_PLAYBOOKS/substantive/corporate/agents/ | Active |
+| CONTRACTS_MASTER_AGENT | Contracts | 02_PLAYBOOKS/substantive/contracts/agents/ | Active |
+| PAYMENTSERVICES_MASTER_AGENT | Payments | 02_PLAYBOOKS/substantive/financial_services/payments/agents/ | Active |
 
 ### Type 3 Agents
 

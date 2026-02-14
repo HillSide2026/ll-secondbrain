@@ -11,7 +11,7 @@ tags: []
 
 # Doctrine: Claude Code Must Not Create Top-Level Directories
 
-**Status:** BINDING
+**Status:** INVARIANT
 **Doctrine ID:** DOCTRINE-REPO-0001
 **Effective:** 2026-02-07
 **Authority:** ML1

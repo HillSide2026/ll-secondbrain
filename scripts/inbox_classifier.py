@@ -103,7 +103,7 @@ SYSTEM_DOMAINS_PATTERNS = [
 
 # ============================================================
 # CALIBRATED RULES (v0.3) - ML1 Approved 2026-01-30
-# See: 02_PLAYBOOKS/EXECUTION/CALIBRATION_LOG.md
+# See: 02_PLAYBOOKS/execution/CALIBRATION_LOG.md
 # ============================================================
 
 # Known noise senders (OBS-20260130-002)

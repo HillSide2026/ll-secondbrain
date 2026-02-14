@@ -94,5 +94,5 @@ tags: []
 
 ## References
 
-- Taxonomy: `02_PLAYBOOKS/INBOX_TRIAGE/TAXONOMY.md`
-- Classifier Interface: `02_PLAYBOOKS/INBOX_TRIAGE/CLASSIFIER_INTERFACE.md`
+- Taxonomy: `02_PLAYBOOKS/core/inbox_triage/TAXONOMY.md`
+- Classifier Interface: `02_PLAYBOOKS/core/inbox_triage/CLASSIFIER_INTERFACE.md`

@@ -38,8 +38,8 @@ All agent outputs are recommendations until ML1 approval is granted. No agent ac
 | Create new doctrine document | **YES** |
 | Modify existing doctrine | **YES** |
 | Promote artifact to BINDING status | **YES** |
-| Modify `00_SYSTEM/SCHEMAS.md` | **YES** |
-| Modify `00_SYSTEM/FOLDER_MAP.md` | **YES** |
+| Modify `00_SYSTEM/schemas/SCHEMAS.md` | **YES** |
+| Modify `00_SYSTEM/architecture/FOLDER_MAP.md` | **YES** |
 | Modify this document | **YES** |
 
 ---
@@ -145,9 +145,9 @@ ML1 approvals should be recorded in the relevant artifact or closure document wi
 
 ## Cross-References
 
-- Agent Deployment Guide: `02_PLAYBOOKS/AGENT_DEPLOYMENT_GUIDE.md`
-- Write-Back Policy: `00_SYSTEM/WRITE_BACK_POLICY.md`
-- Agent Definitions: `00_SYSTEM/AGENTS/`
+- Agent Deployment Guide: `00_SYSTEM/agents/deployment/AGENT_DEPLOYMENT_GUIDE.md`
+- Write-Back Policy: `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`
+- Agent Definitions: `00_SYSTEM/architecture/`
 - Doctrine: `01_DOCTRINE/`
 
 ---

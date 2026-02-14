@@ -428,7 +428,7 @@ def generate_run_log(
         "",
         f"**Run date:** {today}",
         "**Agent:** Draft Response Assistant (Stage 3.6)",
-        "**Parent:** `02_PLAYBOOKS/STAGE3/DRAFT_RESPONSE_ASSISTANT.md`",
+        "**Parent:** `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/DRAFT_RESPONSE_ASSISTANT.md`",
         f"**Duration:** {duration:.1f}s",
         f"**Mode:** {'DRY RUN' if args.dry_run else 'LIVE'}",
         "",

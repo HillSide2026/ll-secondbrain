@@ -166,13 +166,13 @@ The agent must stop and escalate if:
 | Reports and summaries | Designated integration review/report directory |
 | Updated specs | Versioned alongside existing specs with archived originals |
 | Comparison matrix | Canonical matrix location only |
-| Capability matrix | `00_SYSTEM/AGENTS/outputs/` or designated report folder |
+| Capability matrix | Designated report folder |
 
 ---
 
 ## Write-Back Policy Reference
 
-This agent operates under `00_SYSTEM/WRITE_BACK_POLICY.md`:
+This agent operates under `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`:
 - Local-first: all work lands in repo first
 - External tool writes are disallowed in Stage 2.1
 - External writes require ML1 approval (future stages)

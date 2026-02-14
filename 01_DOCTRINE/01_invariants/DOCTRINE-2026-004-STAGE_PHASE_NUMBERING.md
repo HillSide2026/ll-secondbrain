@@ -12,7 +12,7 @@ tags: []
 # Canonical Stage & Phase Numbering Doctrine
 
 **Document ID:** DOCTRINE-2026-004
-**Status:** BINDING
+**Status:** INVARIANT
 **Effective:** 2026-01-27
 **Authority:** ML1
 

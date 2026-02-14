@@ -11,7 +11,7 @@ tags: []
 
 # DOCTRINE-AGENTS-0001: Second Brain Agent Authority
 
-**Status:** BINDING
+**Status:** INVARIANT
 **Effective:** 2026-02-04
 **Scope:** All agents operating within the Second Brain system
 
