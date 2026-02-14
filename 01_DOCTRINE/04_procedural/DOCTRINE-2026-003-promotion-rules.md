@@ -6,6 +6,8 @@ status: approved
 version: 1.0
 effective_date: 2026-01-04
 supersedes:
+created_date: 2026-01-04
+last_updated: 2026-02-14
 tags: [promotion, workflow, governance]
 
 provenance:

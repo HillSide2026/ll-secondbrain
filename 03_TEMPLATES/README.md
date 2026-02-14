@@ -21,5 +21,5 @@ Protocols Enforced: PRO-001, PRO-002, PRO-003, PRO-004, PRO-005, PRO-006, PRO-00
 Reusable document templates.
 
 Rules:
-- Must include YAML frontmatter per `/00_SYSTEM/SCHEMAS.md`
+- Must include YAML frontmatter per `/00_SYSTEM/schemas/SCHEMAS.md`
 - Templates are not doctrine; they are tools derived from doctrine/playbooks

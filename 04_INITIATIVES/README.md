@@ -83,6 +83,6 @@ See: `LL_PORTFOLIO/README.md` for detailed governance rules.
 
 ## References
 
-- Folder Map: `00_SYSTEM/FOLDER_MAP.md`
+- Folder Map: `00_SYSTEM/architecture/FOLDER_MAP.md`
 - System Portfolio: `SYSTEM_PORTFOLIO/README.md`
 - LL Portfolio: `LL_PORTFOLIO/README.md`

@@ -25,9 +25,9 @@ Install the Quality Rubric as the mandatory pre‑execution gate so no artifact 
 - Any changes to execution playbooks
 
 ## Inputs & Dependencies
-- `02_PLAYBOOKS/EXECUTION/QUALITY_RUBRIC.md`
-- `02_PLAYBOOKS/EXECUTION/SUPERVISED_EXECUTION_RUNBOOK.md`
-- `02_PLAYBOOKS/EXECUTION/ML1_APPROVAL_WORKSHEET.md`
+- `02_PLAYBOOKS/_assets/execution/rubrics/quality_rubric/README.md`
+- `02_PLAYBOOKS/execution/supervised_execution_runbook/README.md`
+- `02_PLAYBOOKS/_assets/execution/worksheets/ml1_approval_worksheet/README.md`
 
 ## Workflow Summary
 Draft → QA scoring → Evidence attachment → ML1 approval artifact → Simulated execution → Log entry

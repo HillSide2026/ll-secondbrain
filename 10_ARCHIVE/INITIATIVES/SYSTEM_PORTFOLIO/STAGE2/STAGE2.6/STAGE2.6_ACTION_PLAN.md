@@ -351,6 +351,6 @@ Stage 2.6 is complete when:
 
 - Stage 2.5 Action Plan: `STAGE2.5/STAGE2.5_ACTION_PLAN.md`
 - Stage 2.5 Governance Report: `STAGE2.5/STAGE2.5_GOVERNANCE_REPORT.md`
-- Action Proposal Schema (v1): `02_PLAYBOOKS/EXECUTION/ACTION_PROPOSAL_SCHEMA.md`
+- Action Proposal Schema (v1): `02_PLAYBOOKS/_assets/execution/schemas/action_proposal_schema/README.md`
 - Execution Log: `06_RUNS/EXECUTION/execution_log.md`
-- Taxonomy (v1.3): `02_PLAYBOOKS/INBOX_TRIAGE/TAXONOMY.md`
+- Taxonomy (v1.3): `02_PLAYBOOKS/core/inbox_triage/TAXONOMY.md`

@@ -71,14 +71,14 @@ ML1 confirmed:
 ## Artifacts Produced
 
 ### Playbooks
-- `02_PLAYBOOKS/EXECUTION/PROPOSAL_SCHEMA_V2.md`
-- `02_PLAYBOOKS/EXECUTION/QUEUE_STORAGE_FORMAT.md`
-- `02_PLAYBOOKS/EXECUTION/ACTION_TAXONOMY.md`
-- `02_PLAYBOOKS/EXECUTION/CALIBRATION_LOG.md`
-- `02_PLAYBOOKS/EXECUTION/FAILURE_MODES.md`
-- `02_PLAYBOOKS/EXECUTION/BATCH_REVIEW_WORKSHEET.md`
-- `02_PLAYBOOKS/EXECUTION/GROUPING_LOGIC.md`
-- `02_PLAYBOOKS/EXECUTION/REVIEW_RITUAL.md`
+- `02_PLAYBOOKS/_assets/execution/schemas/proposal_schema_v2/README.md`
+- `02_PLAYBOOKS/_assets/execution/log_formats/queue_storage_format/README.md`
+- `02_PLAYBOOKS/_assets/execution/taxonomies/action_taxonomy/README.md`
+- `02_PLAYBOOKS/_assets/execution/log_formats/calibration_log/README.md`
+- `02_PLAYBOOKS/_assets/execution/reference/failure_modes/README.md`
+- `02_PLAYBOOKS/_assets/execution/worksheets/batch_review_worksheet/README.md`
+- `02_PLAYBOOKS/_assets/execution/taxonomies/grouping_logic/README.md`
+- `02_PLAYBOOKS/execution/review_ritual/README.md`
 
 ### Classifier
 - `scripts/inbox_classifier.py` — v0.3 with calibrated rules

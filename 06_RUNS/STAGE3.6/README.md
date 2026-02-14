@@ -12,7 +12,7 @@ tags: [stage3, drafts, runs]
 
 Purpose: store internal-only draft responses and run logs for Stage 3.6 testing.
 
-Runbook: `02_PLAYBOOKS/STAGE3/DRAFT_RESPONSE_RUNBOOK.md`
+Runbook: `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/DRAFT_RESPONSE_RUNBOOK.md`
 
 ## Storage Locations
 - Drafts: `06_RUNS/STAGE3.6/DRAFTS/`

@@ -41,7 +41,7 @@ tags: [governance, compliance, SYS-005, STAGE2.8]
 ## Governance Review Notes
 
 - Change type: Content (stage action plan)
-- Placement validation: `04_INITIATIVES/.../01_ACTIVE_ROADMAPS/` is correct per `00_SYSTEM/FOLDER_MAP.md`
+- Placement validation: `04_INITIATIVES/.../01_ACTIVE_ROADMAPS/` is correct per `00_SYSTEM/architecture/FOLDER_MAP.md`
 - Schema validation: Missing YAML frontmatter (required for all markdown artifacts)
 - Doctrine alignment: No binding doctrine conflicts observed
 
@@ -84,8 +84,8 @@ tags: [stage2, roadmap, audit, archival]
 ## Evidence
 
 - `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE2/STAGE2.8/STAGE2.8_ACTION_PLAN.md:1` — File starts with `# Stage 2.8 — Stage Audit & Archival` (no YAML frontmatter)
-- `00_SYSTEM/SCHEMAS.md` — Requires YAML frontmatter for all markdown artifacts
-- `00_SYSTEM/FOLDER_MAP.md` — Confirms initiative placement rules
+- `00_SYSTEM/schemas/SCHEMAS.md` — Requires YAML frontmatter for all markdown artifacts
+- `00_SYSTEM/architecture/FOLDER_MAP.md` — Confirms initiative placement rules
 
 ---
 

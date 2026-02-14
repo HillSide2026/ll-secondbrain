@@ -76,7 +76,7 @@ tags: []
 
 - 03_TESTS/fixtures/pr_changeset/new_playbook.md:1 — No YAML frontmatter block
 - 03_TESTS/fixtures/pr_changeset/wrong_folder_doc.md:1 — "Binding Policy" in non-doctrine folder
-- 00_SYSTEM/FOLDER_MAP.md — Defines folder placement rules
+- 00_SYSTEM/architecture/FOLDER_MAP.md — Defines folder placement rules
 
 ---
 

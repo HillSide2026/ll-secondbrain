@@ -76,7 +76,7 @@ tags: []
 
 - 03_TESTS/fixtures/misplaced_artifact.md — Contains "BINDING" policy language
 - 03_TESTS/fixtures/stale_artifact.md — Simulated last_updated: 2025-09-29
-- 00_SYSTEM/FOLDER_MAP.md — Folder placement rules
+- 00_SYSTEM/architecture/FOLDER_MAP.md — Folder placement rules
 
 ---
 

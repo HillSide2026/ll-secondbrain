@@ -37,7 +37,7 @@ No findings.
 ## Governance Review Notes
 
 - Change type: Structure (matter moves, new research/reference trees), Content (new research notes, reference spec, playbook updates, ops outputs), Metadata (none)
-- Placement validation: Matter folders align with `delivery_status` and `00_SYSTEM/FOLDER_MAP.md` rules
+- Placement validation: Matter folders align with `delivery_status` and `00_SYSTEM/architecture/FOLDER_MAP.md` rules
 - Schema validation: All modified/added markdown artifacts include required YAML frontmatter
 - Doctrine alignment: No binding doctrine conflicts detected
 
@@ -63,8 +63,8 @@ None.
 
 ## Evidence
 
-- `00_SYSTEM/FOLDER_MAP.md`
-- `00_SYSTEM/SCHEMAS.md`
+- `00_SYSTEM/architecture/FOLDER_MAP.md`
+- `00_SYSTEM/schemas/SCHEMAS.md`
 - `05_MATTERS/STRATEGIC/25-1593-00001/MATTER.yaml:1`
 - `05_MATTERS/STANDARD/26-1630-00001/MATTER.yaml:1`
 - `07_REFERENCE/Corporate Law/2026-02-10__Corporate-Law__Knowledge-Innovation-Agent_Spec__v1.0.md:1`

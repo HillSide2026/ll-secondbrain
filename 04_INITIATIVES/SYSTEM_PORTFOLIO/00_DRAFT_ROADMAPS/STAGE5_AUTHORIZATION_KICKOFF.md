@@ -82,7 +82,7 @@ Stage 5 is authorized to execute **only** workflows that meet all of the followi
 
 ## Binding Inputs (Stage 5 must use these)
 - Approved playbooks, policies, and templates (specifics TBD per workflow)
-- `00_SYSTEM/WRITE_BACK_POLICY.md`
+- `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`
 - `04_INITIATIVES/SYSTEM_PORTFOLIO/00_DRAFT_ROADMAPS/ROADMAP-SYSTEM-2026W05.md`
 
 ---

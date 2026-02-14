@@ -59,7 +59,7 @@ tags: [stage3, roadmap, consistency, drift]
 
 ## 3. Deliverables
 
-- Cognitive Consistency Checker agent definition (`02_PLAYBOOKS/STAGE3/COGNITIVE_CONSISTENCY_CHECKER.md`)
+- Cognitive Consistency Checker agent definition (`04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/COGNITIVE_CONSISTENCY_CHECKER.md`)
 - Conflict & drift detection checklist
 - Report template (flags only)
 - Runbook for scan cadence (manual trigger)
@@ -89,14 +89,14 @@ tags: [stage3, roadmap, consistency, drift]
 ### Phase 1: Agent Definition (Planned)
 | Item | Status | Notes |
 |------|--------|-------|
-| Define agent scope + refusal conditions | ✅ | `02_PLAYBOOKS/STAGE3/COGNITIVE_CONSISTENCY_CHECKER.md` |
+| Define agent scope + refusal conditions | ✅ | `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/COGNITIVE_CONSISTENCY_CHECKER.md` |
 | Define detection checklist | ✅ | Checklist in agent spec |
 
 ### Phase 2: Implementation (Planned)
 | Item | Status | Notes |
 |------|--------|-------|
 | Implement scanner | ✅ | Manual trigger (runbook) |
-| Implement report template | ✅ | `02_PLAYBOOKS/STAGE3/COGNITIVE_CONSISTENCY_REPORT_TEMPLATE.md` |
+| Implement report template | ✅ | `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/COGNITIVE_CONSISTENCY_REPORT_TEMPLATE.md` |
 
 ### Phase 3: Verification (Planned)
 | Item | Status | Notes |
@@ -120,7 +120,7 @@ tags: [stage3, roadmap, consistency, drift]
 
 - Stage 3 Authorization: `STAGE3_AUTHORIZATION_KICKOFF.md`
 - Stage 3.6 Drafts: `STAGE3.6/STAGE3.6_ACTION_PLAN.md`
-- Agent Spec: `02_PLAYBOOKS/STAGE3/COGNITIVE_CONSISTENCY_CHECKER.md`
+- Agent Spec: `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/COGNITIVE_CONSISTENCY_CHECKER.md`
 - Test Suite: `06_RUNS/STAGE3/TESTS_3.7_COGNITIVE_CONSISTENCY.md`
-- Report Template: `02_PLAYBOOKS/STAGE3/COGNITIVE_CONSISTENCY_REPORT_TEMPLATE.md`
-- Runbook: `02_PLAYBOOKS/STAGE3/COGNITIVE_CONSISTENCY_RUNBOOK.md`
+- Report Template: `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/COGNITIVE_CONSISTENCY_REPORT_TEMPLATE.md`
+- Runbook: `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/COGNITIVE_CONSISTENCY_RUNBOOK.md`

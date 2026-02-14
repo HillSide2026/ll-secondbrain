@@ -218,11 +218,11 @@ Each artifact must include:
   - Director numbers compliant with OBCA
   - Registered office province correct
   - Filing form fields match draft articles
-- Score logged in `02_PLAYBOOKS/EXECUTION/CALIBRATION_LOG.md`
+- Score logged in `02_PLAYBOOKS/_assets/execution/log_formats/calibration_log/README.md`
 - No execution below 11/12
 
 **Phase 4 — ML1 Approval (Heightened):**
-`02_PLAYBOOKS/EXECUTION/ML1_APPROVAL_WORKSHEET.md` must include Ontario‑specific confirmations:
+`02_PLAYBOOKS/_assets/execution/worksheets/ml1_approval_worksheet/README.md` must include Ontario‑specific confirmations:
 - Share structure approved
 - Tax‑sensitive structuring involved (Y/N)
 - USA implications reviewed
@@ -232,7 +232,7 @@ Each artifact must include:
 Approval artifact stored before filing.
 
 **Phase 5 — Supervised Execution:**
-Under `02_PLAYBOOKS/EXECUTION/SUPERVISED_EXECUTION_RUNBOOK.md`:
+Under `02_PLAYBOOKS/execution/supervised_execution_runbook/README.md`:
 - File Articles (if filing step included)
 - Save stamped Articles
 - Generate minute book folder
@@ -250,11 +250,11 @@ Add Ontario‑specific audit checklist items:
 - Corporate profile report scheduled (if needed)
 
 Logged in:
-- `02_PLAYBOOKS/EXECUTION/BATCH_REVIEW_WORKSHEET.md`
-- `02_PLAYBOOKS/EXECUTION/CALIBRATION_LOG.md`
+- `02_PLAYBOOKS/_assets/execution/worksheets/batch_review_worksheet/README.md`
+- `02_PLAYBOOKS/_assets/execution/log_formats/calibration_log/README.md`
 
 **Additional D4 Controls (Ontario):**
-Add to `02_PLAYBOOKS/EXECUTION/FAILURE_MODES.md`:
+Add to `02_PLAYBOOKS/_assets/execution/reference/failure_modes/README.md`:
 - Incorrect share rights language
 - Mismatch between Articles and resolutions
 - Improper director appointment timing

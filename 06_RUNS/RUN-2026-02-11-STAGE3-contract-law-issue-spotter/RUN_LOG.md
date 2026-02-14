@@ -12,7 +12,7 @@ tags: [run, stage3, contract-law, issue-spotter]
 
 **Run:** RUN-2026-02-11-STAGE3-contract-law-issue-spotter
 **Agent:** Contract Law Issue Spotter (Stage 3.3)
-**Parent:** `02_PLAYBOOKS/STAGE3/CONTRACT_LAW_ISSUE_SPOTTER.md`
+**Parent:** `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/CONTRACT_LAW_ISSUE_SPOTTER.md`
 **Scope:** Review `08_RESEARCH/Contract Law/` contents for issue-spotting themes (folder/manifest + doc-level scan)
 **Date:** 2026-02-11
 

@@ -58,7 +58,7 @@ Its job is to offer approach options, not wording.
 **Output:** Bullet-level framing options (not wording)
 **Ceiling:** No sentences, no preferred option unless requested
 
-See: `02_PLAYBOOKS/STAGE3/COMMUNICATION_FRAMING_ASSISTANT.md`
+See: `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/COMMUNICATION_FRAMING_ASSISTANT.md`
 
 ---
 

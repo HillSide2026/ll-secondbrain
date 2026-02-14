@@ -732,7 +732,7 @@
         "site": "levinellp.sharepoint.com/sites/Documentation"
       }
     },
-    "path": "/Users/matthewlevine/Repos/ll-secondbrain/00_SYSTEM/sharepoint_sources.yaml"
+    "path": "/Users/matthewlevine/Repos/ll-secondbrain/00_SYSTEM/integrations/sharepoint/sharepoint_sources.yaml"
   },
   "drives_by_site": {
     "levinellp.sharepoint.com,129fbf25-8f8f-4197-ba4d-9828bbf7658f,87cc4b45-5fec-4f02-b38b-23faea76efa8": [
