@@ -34,6 +34,9 @@ This document reflects the current state of the system and explicitly identifies
 ### Proto-Agents (Draft)
 - 00_SYSTEM/agents/specs/system_admin/SAA_REPO_LINTER.md
 - 00_SYSTEM/agents/specs/system_admin/SAA_FOLDER_MAP_DRIFT.md
+- 00_SYSTEM/agents/specs/system_admin/SAA_REFERENCE_INTEGRITY.md
+- 00_SYSTEM/agents/specs/system_admin/SAA_METADATA_ENFORCER.md
+- 00_SYSTEM/agents/specs/system_admin/SAA_REGISTRY_SYNC.md
 
 ---
 
