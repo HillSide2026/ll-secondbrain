@@ -1,3 +1,19 @@
+id: 00_system__integrations__sharepoint__sources_yaml
+title: SharePoint Sources
+owner: ML1
+status: initiated
+version: 1.0
+created_date: 2026-02-15
+last_updated: 2026-02-15
+sources: []
+ingestion:
+  triggers: []
+  notes: []
+consumers:
+  playbooks: []
+  run_graphs: []
+change_notes: []
+
 sharepoint:
   site: levinellp.sharepoint.com/sites/Documentation
   drive_id: b!aepYh7XvLkaJQFKWL0yhBXltDNo4pJRJpSPL-X-uZ-tNtZwBKQHoRYMyWJLL2q-P
