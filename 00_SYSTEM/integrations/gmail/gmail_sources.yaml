@@ -32,5 +32,7 @@ consumers:
     - 00_SYSTEM/scripts/run_pilot.py
   playbooks: []
   run_graphs: []
+related_artifacts:
+  - 00_SYSTEM/matters/matter_identity_map.yaml
 change_notes:
   - participant_mapping.yaml remains at 00_SYSTEM/integrations/participant_mapping.yaml

@@ -31,6 +31,8 @@ consumers:
     - 00_SYSTEM/scripts/setup_sb_execution.py
   playbooks: []
   run_graphs: []
+related_artifacts:
+  - 00_SYSTEM/matters/matter_identity_map.yaml
 change_notes:
   - Contract header populated; existing sharepoint config block preserved.
 
