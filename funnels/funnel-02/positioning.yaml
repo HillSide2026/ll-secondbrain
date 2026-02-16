@@ -1,0 +1,119 @@
+role: future-state
+purpose: Preventative structural review
+identity_alignment: Structured outside counsel for growing Ontario businesses
+core_offer: Ontario Corporate Health Check
+category: Preventative structural review
+audience: $1M-$8M Ontario operating businesses
+price_positioning: Paid diagnostic (filters serious buyers)
+outcome: Risk clarity and prioritized remediation roadmap
+not_this:
+  - legal opinion
+  - litigation strategy
+  - crisis response
+  - free consultation disguised as value
+this_is: Structured governance and risk exposure assessment for operating companies that have outgrown their original setup.
+tone: calm, professional, confident
+product_name_options:
+  - The Corporate Stability Audit
+  - The Governance and Exposure Review
+  - The Ontario Corporate Health Check
+  - The Structural Readiness Assessment
+deliverable_structure:
+  phase_1:
+    name: Intake and Document Collection
+    client_uploads:
+      - articles and bylaws
+      - shareholder agreement
+      - director and officer registers
+      - key commercial contracts
+      - employment and contractor agreements
+      - option or equity documents
+      - minute book (if maintained)
+      - recent financing documents
+    includes:
+      - structured questionnaire
+      - 45-minute business context call
+    positioning_language: We are not reviewing theory. We are reviewing your operating reality.
+  phase_2:
+    name: Structured Legal Review
+    pillars:
+      - name: Corporate Governance Integrity
+        checks:
+          - director resolutions current
+          - officer roles documented
+          - share issuances compliant
+          - minute book defensible
+          - consents and waivers documented
+        risk_output:
+          - Clean
+          - Minor Exposure
+          - Structural Risk
+          - Immediate Governance Gap
+      - name: Shareholder and Ownership Structure
+        checks:
+          - shareholder agreement reflects current reality
+          - vesting mechanics enforceable
+          - drag and tag provisions workable
+          - deadlock clauses realistic
+          - founder departures structured
+      - name: Employment and Contractor Risk
+        checks:
+          - contractor misclassification exposure
+          - IP ownership clarity
+          - termination enforceability
+          - restrictive covenant strength
+          - incentive plan documentation
+      - name: Commercial Contract Risk
+        checks:
+          - limitation of liability clauses
+          - indemnity structure
+          - auto-renewal traps
+          - assignment restrictions
+          - personal guarantees
+          - uncapped exposure
+      - name: Regulatory and Compliance Alignment
+        checks:
+          - industry-specific regulatory triggers
+          - securities law implications (if raising funds)
+          - privacy obligations (if data-heavy)
+          - director liability exposure
+          - record keeping obligations
+outputs:
+  - name: Executive Risk Summary
+    details:
+      - plain-language exposure overview
+      - risk-tier classification
+      - red/yellow/green matrix
+      - commercial interpretation
+  - name: Prioritized Action Plan
+    details:
+      - immediate (0-30 days)
+      - near-term (90 days)
+      - strategic (12 months)
+      - estimated remediation ranges
+      - impact level
+      - urgency rating
+  - name: Governance Scorecard
+    details:
+      - one-page structural stability snapshot
+pricing_strategy:
+  range: $2,500-$4,500 fixed fee
+  intent:
+    - filter unserious buyers
+    - signal depth
+    - create anchor for remediation work
+packaging_variations:
+  - Tier 1 - Corporate Health Check ($2.5k-$4.5k)
+  - Tier 2 - Health Check and Implementation Roadmap Workshop ($6k)
+  - Tier 3 - Annual Governance Maintenance Plan (retainer)
+psychological_positioning:
+  responds_to:
+    - controlled risk language
+    - commercial framing
+    - structured prioritization
+    - calm authority
+  avoids:
+    - fear tactics
+    - alarmism
+    - legal lectures
+identity_statement: Structured outside counsel for Ontario businesses that have outgrown their original legal framework.

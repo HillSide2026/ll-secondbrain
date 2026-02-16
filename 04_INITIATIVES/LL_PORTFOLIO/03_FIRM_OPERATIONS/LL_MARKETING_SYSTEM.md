@@ -34,6 +34,25 @@ Covers pre-engagement activities prior to formal onboarding.
 - LL Delivery System
 - LL Fulfillment System
 
+## Marketing Agents
+Source: `04_INITIATIVES/LL_PORTFOLIO/08_MARKETING/AGENT_ROSTER.md`
+
+Primary agents:
+- Niche Authority Agent — positioning editor-in-chief
+- Content Improvement Agent — book/blog improvement and derivative content
+- Funnel Analytics Agent — conversion and attribution intelligence
+
+Sub-agents:
+- Lead Capture Monitor — inbound signal telemetry
+- Intake Summary Agent — summarization and flagging
+- Onboarding Tracker — handoff sentinel
+
+## Funnels & Initiatives
+The authoritative funnel definitions and marketing initiatives live in:
+`04_INITIATIVES/LL_PORTFOLIO/08_MARKETING/README.md`
+
+This system references those definitions; it does not redefine them here.
+
 ## Design Points
 - When does a lead transition to sales – after they become a client.
 - What qualifies an inquiry for escalation – inscope with budget
