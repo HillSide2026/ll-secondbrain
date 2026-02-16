@@ -5,7 +5,9 @@ awareness_content_topics:
   - 5 hidden governance gaps in growing Ontario companies
   - why your shareholder agreement may no longer protect you
   - the contractor misclassification risk most CFOs ignore
-lead_magnet: Corporate Risk Self-Assessment Checklist (Free)
+lead_magnet: Growth Without Structural Drift (TM)
+lead_magnets:
+  - funnel2_leadmagnet_v2.md
 budget_owner: ML1
 optimization_goal: Paid health check purchases
 keywords: []

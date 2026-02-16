@@ -503,5 +503,7 @@ Avoid: "You're exposed."
 
 Use: "Your program may be compliant -- but is it defensible?"
 
-## Entry 4: Ongoing AML Counsel Retainer
+## Core Offers
+
+### Core 1: Ongoing AML Counsel Retainer
 TBD

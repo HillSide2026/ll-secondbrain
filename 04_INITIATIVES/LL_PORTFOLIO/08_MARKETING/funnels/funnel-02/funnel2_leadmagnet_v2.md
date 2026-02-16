@@ -4,12 +4,12 @@ owner: ML1
 status: draft
 version: 2.0
 created_date: 2026-02-15
-last_updated: 2026-02-15
+last_updated: 2026-02-16
 tags: [funnel-02, lead-magnet, corporate-health-check, governance]
 ---
 
 # Growth Without Structural Drift (TM)
-## What the Harvard Business Review Reveals About Corporate Growth -- and Why Structure Often Lags Behind Success
+## What the Harvard Business Review Reveals About Corporate Growth
 
 ## Introduction
 In a landmark Harvard Business Review article, "The Five Stages of Small Business Growth," researchers Neil C. Churchill and Virginia L. Lewis examined how companies evolve from inception to institutional maturity.
@@ -18,7 +18,7 @@ Their conclusion was simple but powerful:
 
 Growth follows predictable stages.
 
-What their research did not explore in depth -- but what becomes evident in practice -- is that corporate legal structure does not always evolve at the same pace.
+What their research did not explore in depth -- but what becomes evident in practice -- is that corporate structure does not always evolve at the same pace.
 
 As Ontario businesses move from early viability to sustained profitability, operational complexity increases.
 
