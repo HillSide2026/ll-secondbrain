@@ -62,6 +62,7 @@ class GmailClient:
         'users.getProfile',
         'users.messages.list',
         'users.messages.get',
+        'users.history.list',
         'users.labels.list',
         'users.labels.get',
         'users.threads.list',
@@ -189,6 +190,35 @@ class GmailClient:
             return messages
         except Exception as e:
             self._log_audit("ERROR", f"listMessages failed: {e}", success=False)
+            raise
+
+    def list_history(
+        self,
+        start_history_id: str,
+        history_types: Optional[List[str]] = None,
+        max_results: int = 500,
+    ) -> Dict[str, Any]:
+        """List Gmail history since a given historyId."""
+        self._check_method_allowed('users.history.list')
+
+        try:
+            kwargs = {
+                'userId': 'me',
+                'startHistoryId': start_history_id,
+                'maxResults': max_results,
+            }
+            if history_types:
+                kwargs['historyTypes'] = history_types
+
+            result = self.service.users().history().list(**kwargs).execute()
+            history = result.get('history', [])
+            self._log_audit(
+                "READ",
+                f"listHistory: {len(history)} entries (startHistoryId={start_history_id})"
+            )
+            return result
+        except Exception as e:
+            self._log_audit("ERROR", f"listHistory failed: {e}", success=False)
             raise
 
     def get_message(self,

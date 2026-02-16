@@ -36,6 +36,7 @@ from todo_rollup import (
     create_dedup_key,
     extract_deadline,
     fetch_emails,
+    hydrate_email_bodies,
     generate_report,
     load_matters,
     map_email_to_matter,
@@ -783,7 +784,13 @@ def main() -> int:
     print("=" * 60)
 
     # Step 1: Fetch emails
-    emails = fetch_emails(days=args.days, dry_run=args.dry_run)
+    emails = fetch_emails(
+        days=args.days,
+        dry_run=args.dry_run,
+        body_fetch_policy="none",
+        use_history=True,
+        state_path=OPS_DIR / "gmail_history_state.json",
+    )
 
     # Persist fetch output (best effort)
     OPS_DIR.mkdir(parents=True, exist_ok=True)
@@ -803,6 +810,9 @@ def main() -> int:
     candidates, prefilter_summary, prefilter_output = prefilter_emails(emails)
     prefilter_output["input_window_days"] = args.days
     PREFILTER_PATH.write_text(json.dumps(prefilter_output, indent=2, ensure_ascii=False))
+
+    # Hydrate bodies only for candidates
+    hydrate_email_bodies(candidates, max_chars=2000, dry_run=args.dry_run)
 
     # Step 3: Load matters + mapping
     matters = load_matters()

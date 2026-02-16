@@ -39,6 +39,7 @@ from gmail_integration import GmailClient
 REPO_ROOT = Path(__file__).parent.parent
 MATTERS_ROOT = REPO_ROOT / '05_MATTERS'
 OUTPUT_DIR = REPO_ROOT / '06_RUNS' / 'ops'
+HISTORY_STATE_PATH = OUTPUT_DIR / 'gmail_history_state.json'
 
 
 # =============================================================================
@@ -492,30 +493,131 @@ def get_message_body(msg: Dict) -> str:
     return msg.get('snippet', '')
 
 
-def fetch_emails(days: int = 14, dry_run: bool = False) -> List[Dict]:
-    """Fetch emails from the last N days."""
+def hydrate_email_bodies(emails: List[Dict], max_chars: int = 2000, dry_run: bool = False) -> List[Dict]:
+    """Fetch and attach full bodies for selected emails only."""
+    if dry_run or not emails:
+        return emails
+
+    client = GmailClient()
+    for i, email in enumerate(emails):
+        if email.get('body'):
+            continue
+        msg_id = email.get('id')
+        if not msg_id:
+            continue
+        try:
+            msg = client.get_message(msg_id, format='full')
+            body = get_message_body(msg)
+            if len(body) > max_chars:
+                body = body[:max_chars] + "\n[TRUNCATED]"
+            email['body'] = body
+            email['snippet'] = msg.get('snippet', email.get('snippet', ''))
+            email['label_ids'] = msg.get('labelIds', email.get('label_ids', []))
+            email['thread_id'] = msg.get('threadId', email.get('thread_id', ''))
+            email['internal_date'] = msg.get('internalDate', email.get('internal_date', ''))
+        except Exception as e:
+            print(f"  Warning: failed to hydrate body for {msg_id}: {e}")
+
+        if (i + 1) % 50 == 0:
+            print(f"  Hydrated {i + 1}/{len(emails)} candidate bodies...")
+
+    return emails
+
+
+def load_history_state(state_path: Path) -> Dict[str, Any]:
+    if state_path.exists():
+        try:
+            return json.loads(state_path.read_text())
+        except Exception:
+            return {}
+    return {}
+
+
+def save_history_state(state_path: Path, history_id: str, source: str) -> None:
+    state = {
+        "history_id": history_id,
+        "updated_at": datetime.now().isoformat(),
+        "source": source,
+    }
+    state_path.parent.mkdir(parents=True, exist_ok=True)
+    state_path.write_text(json.dumps(state, indent=2))
+
+
+def extract_history_message_ids(history: List[Dict[str, Any]]) -> List[str]:
+    ids = set()
+    for item in history:
+        for msg in item.get("messages", []):
+            if msg.get("id"):
+                ids.add(msg["id"])
+        for msg in item.get("messagesAdded", []):
+            message = msg.get("message", {})
+            if message.get("id"):
+                ids.add(message["id"])
+    return sorted(ids)
+
+
+def fetch_emails(
+    days: int = 14,
+    dry_run: bool = False,
+    body_fetch_policy: str = "actionable",
+    max_results: int = 500,
+    body_max_chars: int = 2000,
+    use_history: bool = True,
+    history_types: Optional[List[str]] = None,
+    state_path: Optional[Path] = None,
+) -> List[Dict]:
+    """Fetch emails from the last N days.
+
+    body_fetch_policy:
+      - "none": metadata only
+      - "actionable": fetch full bodies only for ACTION_REQUIRED / WAITING_ON_OTHER
+      - "all": fetch full bodies for all messages
+    """
     if dry_run:
         print("[DRY RUN] Would fetch emails from Gmail")
         return []
 
     client = GmailClient()
+    history_ids = []
+    latest_history_id = None
+
+    if use_history:
+        state_file = state_path or HISTORY_STATE_PATH
+        state = load_history_state(state_file)
+        start_history_id = state.get("history_id")
+        if start_history_id:
+            try:
+                result = client.list_history(
+                    start_history_id,
+                    history_types=history_types or ["messageAdded"],
+                    max_results=max_results,
+                )
+                history_ids = extract_history_message_ids(result.get("history", []))
+                latest_history_id = result.get("historyId")
+                print(f"History delta: {len(history_ids)} messages since {start_history_id}")
+            except Exception as e:
+                print(f"History fetch failed, falling back to date query: {e}")
+
     after_date = (datetime.now() - timedelta(days=days)).strftime('%Y/%m/%d')
     query = f"after:{after_date}"
 
     print(f"Fetching emails from last {days} days...")
     print(f"Query: {query}")
 
-    messages = client.list_messages(max_results=500, query=query)
+    if history_ids:
+        messages = [{"id": mid} for mid in history_ids]
+    else:
+        messages = client.list_messages(max_results=max_results, query=query)
     print(f"Found {len(messages)} messages")
 
     results = []
     for i, msg_meta in enumerate(messages):
         msg_id = msg_meta['id']
-        msg = client.get_message(msg_id, format='full')
+        msg = client.get_message(msg_id, format='metadata')
 
         headers = parse_email_headers(msg)
         snippet = msg.get('snippet', '')
-        body = get_message_body(msg)
+        body = ""
 
         # Get sender domain for classification
         sender_email = headers.get('sender', {}).get('email', '')
@@ -527,6 +629,25 @@ def fetch_emails(days: int = 14, dry_run: bool = False) -> List[Dict]:
         classification, class_reason = classify_email(
             headers['subject'], body, snippet, sender_domain
         )
+
+        # Fetch full body only when needed
+        if body_fetch_policy == "all" or (
+            body_fetch_policy == "actionable"
+            and classification in {EmailClass.ACTION_REQUIRED, EmailClass.WAITING_ON_OTHER}
+        ):
+            try:
+                full_msg = client.get_message(msg_id, format='full')
+                body = get_message_body(full_msg)
+                if len(body) > body_max_chars:
+                    body = body[:body_max_chars] + "\n[TRUNCATED]"
+                snippet = full_msg.get('snippet', snippet)
+                msg = full_msg
+                # Reclassify with full body
+                classification, class_reason = classify_email(
+                    headers['subject'], body, snippet, sender_domain
+                )
+            except Exception as e:
+                print(f"  Warning: failed to fetch full body for {msg_id}: {e}")
 
         email_data = {
             'id': msg_id,
@@ -545,6 +666,17 @@ def fetch_emails(days: int = 14, dry_run: bool = False) -> List[Dict]:
 
         if (i + 1) % 50 == 0:
             print(f"  Processed {i + 1}/{len(messages)} messages...")
+
+    # Update history state if possible
+    if use_history:
+        try:
+            if not latest_history_id:
+                profile = client.get_profile()
+                latest_history_id = profile.get("historyId")
+            if latest_history_id:
+                save_history_state(state_path or HISTORY_STATE_PATH, latest_history_id, "users.history.list")
+        except Exception as e:
+            print(f"Warning: failed to update history state: {e}")
 
     return results
 
