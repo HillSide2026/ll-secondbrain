@@ -20,7 +20,7 @@ Draft runbooks, validate artifact quality, and perform QA checks.
 
 ## Inputs
 - Workflow definitions
-- `00_SYSTEM/SCHEMAS.md`
+- `00_SYSTEM/schemas/SCHEMAS.md`
 - Draft artifacts for review
 
 ## Procedure

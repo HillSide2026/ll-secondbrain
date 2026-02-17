@@ -62,7 +62,7 @@ Its job is to compress, not to interpret.
 **Output:** Neutral summary, timeline (optional)
 **Ceiling:** No inference, no synthesis across speakers, no conclusions
 
-See: `02_PLAYBOOKS/STAGE3/CONVERSATION_SUMMARIZER.md`
+See: `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/CONVERSATION_SUMMARIZER.md`
 
 ### Agent 2: Document Condenser
 
@@ -70,7 +70,7 @@ See: `02_PLAYBOOKS/STAGE3/CONVERSATION_SUMMARIZER.md`
 **Output:** Section-by-section compression, bullet summaries
 **Ceiling:** No synthesis across sections, no inferred intent
 
-See: `02_PLAYBOOKS/STAGE3/DOCUMENT_CONDENSER.md`
+See: `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/DOCUMENT_CONDENSER.md`
 
 ---
 

@@ -88,7 +88,7 @@ Build a deterministic, auditable inbox triage classifier that:
 
 **Deliverables:**
 
-- `02_PLAYBOOKS/INBOX_TRIAGE/TAXONOMY.md` (taxonomy + confidence rules)
+- `02_PLAYBOOKS/core/inbox_triage/TAXONOMY.md` (taxonomy + confidence rules)
 
 ---
 
@@ -116,7 +116,7 @@ Build a deterministic, auditable inbox triage classifier that:
 
 **Deliverables:**
 
-- `02_PLAYBOOKS/INBOX_TRIAGE/CLASSIFIER_INTERFACE.md`
+- `02_PLAYBOOKS/core/inbox_triage/CLASSIFIER_INTERFACE.md`
 
 ---
 
@@ -140,7 +140,7 @@ Build a deterministic, auditable inbox triage classifier that:
 
 **Deliverables:**
 
-- `00_SYSTEM/SCHEMAS_INBOX_TRIAGE.md`
+- `00_SYSTEM/schemas/SCHEMAS_INBOX_TRIAGE.md`
 - `03_TEMPLATES/INBOX_TRIAGE/DRAFT_PLACEMENT_PLAN.json` (example template)
 
 ---
@@ -162,7 +162,7 @@ Log every classification decision:
 
 **Deliverables:**
 
-- `02_PLAYBOOKS/INBOX_TRIAGE/LOGGING_SPEC.md`
+- `02_PLAYBOOKS/core/inbox_triage/LOGGING_SPEC.md`
 - Append-only log location (repo-local):
   - `06_RUNS/INBOX_TRIAGE/logs/classification_log.ndjson`
 
@@ -244,33 +244,33 @@ Log every classification decision:
 | Lifecycle states defined | ✅ done | 2026-01-28 | 4 states |
 | System domains defined | ✅ done | 2026-01-28 | 5 domains |
 | Confidence policy defined | ✅ done | 2026-01-28 | High/Medium/Low thresholds |
-| TAXONOMY.md published | ✅ done | 2026-01-28 | 02_PLAYBOOKS/INBOX_TRIAGE/TAXONOMY.md |
+| TAXONOMY.md published | ✅ done | 2026-01-28 | 02_PLAYBOOKS/core/inbox_triage/TAXONOMY.md |
 
 ### Phase 2.3.2: Classifier Interface Spec ✅ COMPLETE
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
 | Inputs defined | ✅ done | 2026-01-28 | 6 required inputs |
 | Outputs defined | ✅ done | 2026-01-28 | 10 required outputs |
-| CLASSIFIER_INTERFACE.md published | ✅ done | 2026-01-28 | 02_PLAYBOOKS/INBOX_TRIAGE/CLASSIFIER_INTERFACE.md |
+| CLASSIFIER_INTERFACE.md published | ✅ done | 2026-01-28 | 02_PLAYBOOKS/core/inbox_triage/CLASSIFIER_INTERFACE.md |
 
 ### Phase 2.3.3: Draft Placement Plan Schema ✅ COMPLETE
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
 | Schema defined | ✅ done | 2026-01-28 | 9 required fields |
-| SCHEMAS_INBOX_TRIAGE.md published | ✅ done | 2026-01-28 | 00_SYSTEM/SCHEMAS_INBOX_TRIAGE.md |
+| SCHEMAS_INBOX_TRIAGE.md published | ✅ done | 2026-01-28 | 00_SYSTEM/schemas/SCHEMAS_INBOX_TRIAGE.md |
 | Example template created | ✅ done | 2026-01-28 | 03_TEMPLATES/INBOX_TRIAGE/DRAFT_PLACEMENT_PLAN.json |
 
 ### Phase 2.3.4: Logging Spec ✅ COMPLETE
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
 | Log format defined | ✅ done | 2026-01-28 | NDJSON, append-only |
-| LOGGING_SPEC.md published | ✅ done | 2026-01-28 | 02_PLAYBOOKS/INBOX_TRIAGE/LOGGING_SPEC.md |
+| LOGGING_SPEC.md published | ✅ done | 2026-01-28 | 02_PLAYBOOKS/core/inbox_triage/LOGGING_SPEC.md |
 | Log directory created | ✅ done | 2026-01-28 | 06_RUNS/INBOX_TRIAGE/logs/ |
 
 ### Phase 2.3.5: Pilot Run ✅ COMPLETE
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| PILOT_RUN.md published | ✅ done | 2026-01-28 | 02_PLAYBOOKS/INBOX_TRIAGE/PILOT_RUN.md |
+| PILOT_RUN.md published | ✅ done | 2026-01-28 | 02_PLAYBOOKS/core/inbox_triage/PILOT_RUN.md |
 | Pilot constraints confirmed | ✅ done | 2026-01-29 | 100 messages, run_id=pilot-2026-01-29 |
 | Messages pulled | ✅ done | 2026-01-29 | 100 messages via Gmail read-only |
 | Classification run | ✅ done | 2026-01-29 | inbox-triage-v0.1, 100% classified |
@@ -286,7 +286,7 @@ Log every classification decision:
 - Stage 2 Authorization: `01_ACTIVE_ROADMAPS/STAGE2/STAGE2_AUTHORIZATION_KICKOFF.md`
 - Gmail Integration (Phase 2.2.1): `01_ACTIVE_ROADMAPS/STAGE2/STAGE2.2/STAGE2.2_ACTION_PLAN.md`
 - Gmail Module: `scripts/gmail_integration.py`
-- Write-Back Policy: `00_SYSTEM/WRITE_BACK_POLICY.md`
+- Write-Back Policy: `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`
 
 ---
 

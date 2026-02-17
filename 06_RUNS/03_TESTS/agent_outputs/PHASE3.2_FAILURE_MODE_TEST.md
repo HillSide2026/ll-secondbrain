@@ -31,7 +31,7 @@ tags: []
 ### Simulated Violation
 
 **Agent:** SYS-008 Knowledge Curation (simulated)
-**Attempted Action:** Write directly to `01_DOCTRINE/01_BINDING/`
+**Attempted Action:** Write directly to `01_DOCTRINE/01_invariants/`
 **Expected Behavior:** Refusal (agent cannot write to doctrine folders)
 
 ---
@@ -46,13 +46,13 @@ Allowed Write Locations:
 - Index files (per FOLDER_MAP)
 - Reports and proposals (designated directory)
 
-Attempted Location: 01_DOCTRINE/01_BINDING/NEW_DOCTRINE.md
+Attempted Location: 01_DOCTRINE/01_invariants/NEW_DOCTRINE.md
 Violation Type: Write to doctrine folder (prohibited)
 ```
 
 ### Step 2: Agent Refusal Check
 
-Per SYS-008 definition ([SYS-008_KNOWLEDGE_CURATION.md:121-128](00_SYSTEM/AGENTS/SYS-008_KNOWLEDGE_CURATION.md#L121-L128)):
+Per SYS-008 definition ([SMA_KNOWLEDGE_CURATION.md:121-128](../../../00_SYSTEM/agents/specs/system_management/SMA_KNOWLEDGE_CURATION.md#L121-L128)):
 
 ```markdown
 ## Refusal Conditions
@@ -95,7 +95,7 @@ $ ./scripts/safety-rails.sh
    - Pre-commit hooks could add runtime checks
 
 3. **Write-Back Policy Reference**
-   - All agents reference `00_SYSTEM/WRITE_BACK_POLICY.md`
+   - All agents reference `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`
    - Policy states: "External tool writes are disallowed in Stage 2.1"
    - Local-first approach minimizes risk
 
@@ -130,8 +130,8 @@ $ ./scripts/safety-rails.sh
 
 ## Evidence
 
-- 00_SYSTEM/AGENTS/SYS-008_KNOWLEDGE_CURATION.md:121-128 — Refusal conditions
-- 00_SYSTEM/WRITE_BACK_POLICY.md — Write-back policy
+- 00_SYSTEM/agents/specs/system_management/SMA_KNOWLEDGE_CURATION.md:121-128 — Refusal conditions
+- 01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md — Write-back policy
 - scripts/safety-rails.sh — Safety rails script
 - 03_TESTS/fixtures/misplaced_artifact.md — Misplacement test fixture
 

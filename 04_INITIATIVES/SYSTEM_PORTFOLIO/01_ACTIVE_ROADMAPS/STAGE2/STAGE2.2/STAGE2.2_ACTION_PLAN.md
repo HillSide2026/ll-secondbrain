@@ -250,7 +250,7 @@ All outputs must follow the Standard Output Format and be stored in approved loc
 | Google Cloud project | ✅ done | 2026-01-28 | Project configured |
 | OAuth consent screen | ✅ done | 2026-01-28 | Read-only scope only |
 | Credentials generated | ✅ done | 2026-01-28 | .env populated, refresh token obtained |
-| Audit logging | ✅ done | 2026-01-28 | scripts/gmail_integration.py, logs/gmail_audit.log |
+| Audit logging | ✅ done | 2026-01-28 | 00_SYSTEM/scripts/gmail_integration.py, logs/gmail_audit.log |
 | Read-only test | ✅ done | 2026-01-28 | Connected as matthew@levinelegal.ca |
 | No-write-path verification | ✅ done | 2026-01-28 | GMAIL_NO_WRITE_PATH_VERIFICATION.md |
 | Compliance report | ✅ done | 2026-01-28 | GMAIL_INTEGRATION_COMPLIANCE_REPORT.md |
@@ -270,7 +270,7 @@ All outputs must follow the Standard Output Format and be stored in approved loc
 | Graph permissions | ✅ done | 2026-02-03 | Read-only scopes only |
 | Credentials generated | ✅ done | 2026-02-03 | .env populated, credentials validated |
 | Audit logging | ✅ done | 2026-02-03 | Audit scaffolding in place |
-| Read-only test | ✅ done | 2026-02-03 | Dry-run EXIT=0, scripts/sharepoint_integration.py |
+| Read-only test | ✅ done | 2026-02-03 | Dry-run EXIT=0, 00_SYSTEM/scripts/sharepoint_integration.py |
 | No-write-path verification | ✅ done | 2026-02-03 | Read-only guarantees preserved |
 | State/metadata scaffolding | ✅ done | 2026-02-03 | state/, raw/, metadata/ directories ready |
 
@@ -289,8 +289,8 @@ All outputs must follow the Standard Output Format and be stored in approved loc
 ## References
 
 - Stage 2 Authorization: `01_ACTIVE_ROADMAPS/STAGE2/STAGE2_AUTHORIZATION_KICKOFF.md`
-- Write-Back Policy: `00_SYSTEM/WRITE_BACK_POLICY.md`
-- ML1 Approval Boundaries: `00_SYSTEM/ML1_APPROVAL_BOUNDARIES.md`
-- Credential Inventory: `02_PLAYBOOKS/CREDENTIAL_INVENTORY.md`
-- Agent Deployment Guide: `02_PLAYBOOKS/AGENT_DEPLOYMENT_GUIDE.md`
+- Write-Back Policy: `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`
+- ML1 Approval Boundaries: `01_DOCTRINE/02_policies/ML1_APPROVAL_BOUNDARIES.md`
+- Credential Inventory: `00_SYSTEM/security/CREDENTIAL_INVENTORY.md`
+- Agent Deployment Guide: `00_SYSTEM/agents/deployment/AGENT_DEPLOYMENT_GUIDE.md`
 - **Multi-Source Inbox Architecture: `09_INBOX/README.md`**

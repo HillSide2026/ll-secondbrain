@@ -46,7 +46,7 @@ tags: []
 3. **wrong_folder_doc.md** — Folder Placement Violation
    - Change Type: Doctrine
    - Folder Placement: **FAIL** — Doctrine content in `03_TESTS/fixtures/pr_changeset/`
-   - Required Location: `01_DOCTRINE/01_BINDING/`
+   - Required Location: `01_DOCTRINE/01_invariants/`
    - Schema Compliance: Partial (has Status/Authority fields, not full YAML block)
    - Doctrine Alignment: Content claims BINDING authority
    - Status: **REQUIRES REMEDIATION + ML1 APPROVAL**
@@ -66,7 +66,7 @@ tags: []
    ```
 
 2. **wrong_folder_doc.md**:
-   - Move to `01_DOCTRINE/01_BINDING/`
+   - Move to `01_DOCTRINE/01_invariants/`
    - Rename to follow doctrine naming convention: `DOCTRINE-2026-XXX-*.md`
    - **Escalate to ML1** — Doctrine promotion requires explicit approval
 
@@ -76,7 +76,7 @@ tags: []
 
 - [ ] Add YAML frontmatter to new_playbook.md
 - [ ] Escalate wrong_folder_doc.md to ML1 for doctrine approval
-- [ ] Move wrong_folder_doc.md to 01_DOCTRINE/01_BINDING/ after approval
+- [ ] Move wrong_folder_doc.md to 01_DOCTRINE/01_invariants/ after approval
 - [ ] Re-run governance check after remediation
 
 ---
@@ -86,7 +86,7 @@ tags: []
 - 03_TESTS/fixtures/pr_changeset/new_playbook.md:1 — Starts with `# New Playbook` (no YAML frontmatter)
 - 03_TESTS/fixtures/pr_changeset/wrong_folder_doc.md:3 — Contains `**Status:** BINDING`
 - 03_TESTS/fixtures/pr_changeset/wrong_folder_doc.md:4 — Contains `**Authority:** ML1`
-- 01_DOCTRINE/01_BINDING/DOCTRINE-2026-004-STAGE_PHASE_NUMBERING.md — Reference for doctrine format
+- 01_DOCTRINE/01_invariants/DOCTRINE-2026-004-STAGE_PHASE_NUMBERING.md — Reference for doctrine format
 
 ---
 

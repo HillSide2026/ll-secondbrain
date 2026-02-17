@@ -17,11 +17,11 @@ tags: []
 
 ## Scenario
 
-This artifact simulates a document that should be in `01_DOCTRINE/01_BINDING/`
+This artifact simulates a document that should be in `01_DOCTRINE/01_invariants/`
 but is instead placed in `04_INITIATIVES/`.
 
 **Current Location:** `04_INITIATIVES/SOME_DOCTRINE_FILE.md` (simulated)
-**Correct Location:** `01_DOCTRINE/01_BINDING/`
+**Correct Location:** `01_DOCTRINE/01_invariants/`
 
 ---
 
@@ -48,7 +48,7 @@ but is instead placed in `04_INITIATIVES/`.
 **Authority:** ML1
 
 This is a doctrine document that was incorrectly placed.
-It contains binding rules that should be in 01_DOCTRINE/01_BINDING/.
+It contains binding rules that should be in 01_DOCTRINE/01_invariants/.
 ```
 
 ---
@@ -58,6 +58,6 @@ It contains binding rules that should be in 01_DOCTRINE/01_BINDING/.
 | Check | Expected Result |
 |-------|-----------------|
 | Folder violation detected | Yes |
-| Correct folder identified | `01_DOCTRINE/01_BINDING/` |
+| Correct folder identified | `01_DOCTRINE/01_invariants/` |
 | Escalation triggered | No (clear case) |
 | Output format compliant | Yes |

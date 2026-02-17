@@ -49,7 +49,7 @@ tags: []
 | Standard output format | PASS | All sections present |
 | Promotion proposals generated | PASS | With rationale |
 
-**Evidence:** [SYS-008_TEST_OUTPUT.md](03_TESTS/agent_outputs/SYS-008_TEST_OUTPUT.md)
+**Evidence:** [SYS-008_TEST_OUTPUT.md](SYS-008_TEST_OUTPUT.md)
 
 ---
 
@@ -69,7 +69,7 @@ tags: []
 | Standard output format | PASS | All sections present |
 | Sequencing proposals generated | PASS | With dependencies |
 
-**Evidence:** [SYS-006_TEST_OUTPUT.md](03_TESTS/agent_outputs/SYS-006_TEST_OUTPUT.md)
+**Evidence:** [SYS-006_TEST_OUTPUT.md](SYS-006_TEST_OUTPUT.md)
 
 ---
 
@@ -89,7 +89,7 @@ tags: []
 | Standard output format | PASS | All sections present |
 | Remediation actions listed | PASS | Clear next steps |
 
-**Evidence:** [SYS-005_TEST_OUTPUT.md](03_TESTS/agent_outputs/SYS-005_TEST_OUTPUT.md)
+**Evidence:** [SYS-005_TEST_OUTPUT.md](SYS-005_TEST_OUTPUT.md)
 
 ---
 
@@ -109,7 +109,7 @@ tags: []
 | Standard output format | PASS | All sections present |
 | Handoff to QA prepared | PASS | Summary included |
 
-**Evidence:** [SYS-007_TEST_OUTPUT.md](03_TESTS/agent_outputs/SYS-007_TEST_OUTPUT.md)
+**Evidence:** [SYS-007_TEST_OUTPUT.md](SYS-007_TEST_OUTPUT.md)
 
 ---
 
@@ -129,7 +129,7 @@ tags: []
 | Standard output format | PASS | All sections present |
 | Remediation suggestions provided | PASS | With templates |
 
-**Evidence:** [SYS-009_TEST_OUTPUT.md](03_TESTS/agent_outputs/SYS-009_TEST_OUTPUT.md)
+**Evidence:** [SYS-009_TEST_OUTPUT.md](SYS-009_TEST_OUTPUT.md)
 
 ---
 

@@ -11,7 +11,7 @@ scope: "ON - general"
 matter_id: null
 sources:
   - type: internal
-    citation: "02_PLAYBOOKS/CORPORATE/SOLUTIONS + 08_RESEARCH/Corporate Law/SOURCES"
+    citation: "02_PLAYBOOKS/substantive/corporate/solutions + 08_RESEARCH/Corporate Law/SOURCES"
 open_questions:
   - "Validate keyword mapping and add missing sources."
 next_actions:

@@ -23,6 +23,7 @@ tags: []
 | Niche Authority Agent | Primary | Editor-in-chief for positioning |
 | Content Improvement Agent | Primary | Workhorse for book + blog |
 | Funnel Analytics Agent | Primary | Conversion and attribution |
+| Marketing System Coherence Agent | Primary | Cross-funnel coherence and consistency |
 | Lead Capture Monitor | Sub-agent | Telemetry |
 | Intake Summary Agent | Sub-agent | Summarization + flagging |
 | Onboarding Tracker | Sub-agent | Handoff sentinel |
@@ -163,6 +164,69 @@ tags: []
 - Infer matter-level data from funnel data
 - Score or rank lead quality
 - Suggest acceptance or rejection
+
+---
+
+## 4. Marketing System Coherence Agent
+
+**Role:** Cross-funnel coherence and system consistency
+
+**Purpose:**
+- Ensure consistent positioning, offer language, and boundaries across funnels
+- Detect drift between funnel specs, marketing materials, and portfolio doctrine
+- Keep the marketing system aligned to LL identity and authority boundaries
+
+### Scope
+
+| Area | Responsibility |
+|------|----------------|
+| Funnel alignment | Ensure funnel docs and offers don’t conflict |
+| Identity coherence | Keep tone/claims consistent with LL identity and claim ceilings (once codified) |
+| Boundary integrity | Prevent marketing from bleeding into delivery/docketing with explicit boundary checks |
+| Portfolio integrity | Detect marketing that implies scope expansion beyond portfolio doctrine |
+
+### Allowed
+
+- Flag contradictions or drift across funnel definitions
+- Recommend consolidation of conflicting language or offers
+- Propose updates to keep doctrine, funnels, and materials aligned
+- Identify missing definitions or inconsistent terminology
+
+### Boundary Integrity (Examples)
+
+- Marketing promises specific turnaround times not codified in operations
+- Funnel promises scope beyond portfolio doctrine
+- Sales scripts commit to legal interpretations or outcomes
+- Marketing language blurs intake/onboarding with delivery or docketing
+
+### Identity Anchors
+
+- Canonical identity doctrine: TBD
+- Claim ceilings: TBD (no outcome guarantees until codified)
+
+### ML1 Interface
+
+- All ambiguity or scope expansion proposals must be escalated to ML1
+- ML1 is the sole authority to approve identity, scope, and claim ceilings
+
+### Escalation Mechanics
+
+- When drift is detected, produce a short diff and a recommended correction
+- If doctrine is missing or unclear, label as doctrine gap and escalate
+
+### Version Conflict Handling
+
+- If funnel specs conflict, freeze changes and notify ML1 for resolution
+- Do not reconcile by inference; propose options with impact notes
+
+### Prohibited
+
+- Create new policy or override ML1 decisions
+- Approve or publish external-facing content
+- Change funnel specs without ML1 approval
+- Interpret doctrine beyond explicit language
+- Resolve ambiguity without escalation
+
 
 ---
 

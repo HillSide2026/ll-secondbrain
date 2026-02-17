@@ -3,9 +3,9 @@ id: STAGE3.6-ACTION-PLAN
 
 title: Stage 3.6 — Draft Responses (Internal Only)
 owner: ML1
-status: draft
+status: complete
 created_date: 2026-02-10
-last_updated: 2026-02-10
+last_updated: 2026-02-11
 tags: [stage3, roadmap, drafts, communication]
 ---
 
@@ -13,11 +13,11 @@ tags: [stage3, roadmap, drafts, communication]
 
 ## Status
 
-- **Status:** 🟨 BACKLOG
-- **Owner:** UNASSIGNED
-- **Effective Start:** TBD (after Stage 3.5)
-- **Closed:** —
-- **Authority Gate:** Requires ML1 approval of draft boundaries + storage rules
+- **Status:** ✅ COMPLETE
+- **Owner:** ML1
+- **Effective Start:** 2026-02-11
+- **Closed:** 2026-02-11
+- **Authority Gate:** ML1 approval of draft boundaries + storage rules (recorded)
 
 ---
 
@@ -58,6 +58,7 @@ tags: [stage3, roadmap, drafts, communication]
 3. Drafts MUST support only: **use / ignore / delete**.
 4. Drafts MUST NOT be stored in `09_INBOX/` or any external integration folder.
 5. Drafts MUST NOT be copied into email clients or sent automatically.
+6. Drafts MUST NOT mutate system memory or create policy.
 
 ---
 
@@ -66,21 +67,55 @@ tags: [stage3, roadmap, drafts, communication]
 - Draft Response Agent definition (scope, refusal conditions)
 - Draft storage location + naming convention
 - Draft output template (labeling + provenance)
+- Draft classification layer (required tags)
+- Draft construction protocol (logged metadata)
+- No-propagation enforcement controls
 - Runbook for safe generation + review
 - Boundary test results (no external writes)
 
 ---
 
-## 4. Acceptance Criteria
+## 4. Draft Classification Layer (Required Tags)
+
+All drafts must be tagged as one of:
+- **Internal Draft — No Distribution**
+- **Draft for ML1 Revision**
+- **Draft Requires Substantive Legal Judgment**
+- **Draft Structurally Complete — Substantive Review Needed**
+
+---
+
+## 5. Draft Construction Protocol (Per-Draft Log)
+
+Each draft must log:
+- Source artifacts referenced
+- Applied doctrine
+- Open assumptions
+- Missing information
+- Confidence band
+
+---
+
+## 6. No-Propagation Enforcement (Hard Rule)
+
+Drafts cannot:
+- Be auto-sent
+- Be auto-inserted into external systems
+- Mutate system memory
+
+---
+
+## 7. Acceptance Criteria
 
 - Drafts are **useful** but never “send-ready”
 - All outputs are clearly system-labeled
+- Classification tags and construction protocol logged for each draft
 - No external writes observed in tests
 - SYS-005 governance validation passes
 
 ---
 
-## 5. Test Suite Requirements
+## 8. Test Suite Requirements
 
 | Test | Input | Pass Criteria |
 |------|-------|---------------|
@@ -90,32 +125,32 @@ tags: [stage3, roadmap, drafts, communication]
 
 ---
 
-## 6. Execution Tracking (Backlog)
+## 9. Execution Tracking (In Progress)
 
-### Phase 1: Agent Definition (Planned)
+### Phase 1: Agent Definition (Completed)
 | Item | Status | Notes |
 |------|--------|-------|
-| Define agent scope + refusal conditions | ⬜ | ML1 approval required |
-| Define storage location + naming | ⬜ | Local-only, labeled |
-| Draft output template | ⬜ | Labeling mandatory |
+| Define agent scope + refusal conditions | ✅ | `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/DRAFT_RESPONSE_ASSISTANT.md` |
+| Define storage location + naming | ✅ | `06_RUNS/STAGE3.6/README.md` |
+| Draft output template | ✅ | `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/DRAFT_RESPONSE_TEMPLATE.md` |
 
-### Phase 2: Implementation (Planned)
+### Phase 2: Implementation (Completed)
 | Item | Status | Notes |
 |------|--------|-------|
-| Implement draft generator | ⬜ | Local-only writes |
-| Implement run logging | ⬜ | `06_RUNS/` |
-| Add boundary guard | ⬜ | No external paths |
+| Implement draft generator | ✅ | `00_SYSTEM/scripts/run_draft_response.py` — local-only writes |
+| Implement run logging | ✅ | `06_RUNS/STAGE3.6/RUN-YYYY-MM-DD-*.md` |
+| Add boundary guard | ✅ | `assert_write_path_allowed()` — blocks `09_INBOX/`, `00_SYSTEM/`, `05_MATTERS/` |
 
-### Phase 3: Verification (Planned)
+### Phase 3: Verification (Completed)
 | Item | Status | Notes |
 |------|--------|-------|
-| Run TEST-DR1 | ⬜ | Must pass |
-| Run TEST-DR2 | ⬜ | Must pass |
-| Run TEST-DR3 | ⬜ | Must pass |
+| Run TEST-DR1 | ✅ | Logged in `06_RUNS/STAGE3.6/TESTS_3.6_DRAFT_RESPONSES.md` (2026-02-11). |
+| Run TEST-DR2 | ✅ | Logged in `06_RUNS/STAGE3.6/TESTS_3.6_DRAFT_RESPONSES.md` (2026-02-11). |
+| Run TEST-DR3 | ✅ | Logged in `06_RUNS/STAGE3.6/TESTS_3.6_DRAFT_RESPONSES.md` (2026-02-11). |
 
 ---
 
-## 7. Risks & Controls
+## 10. Risks & Controls
 
 | Risk | Likelihood | Impact | Control |
 |------|------------|--------|---------|
@@ -129,4 +164,9 @@ tags: [stage3, roadmap, drafts, communication]
 
 - Stage 3.5: `STAGE3.5/STAGE3.5_ACTION_PLAN.md`
 - Stage 3 Authorization: `STAGE3_AUTHORIZATION_KICKOFF.md`
-- Write-Back Policy: `00_SYSTEM/WRITE_BACK_POLICY.md`
+- Write-Back Policy: `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`
+- Draft Response Assistant: `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/DRAFT_RESPONSE_ASSISTANT.md`
+- Draft Response Template: `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/DRAFT_RESPONSE_TEMPLATE.md`
+- Stage 3.6 Runs: `06_RUNS/STAGE3.6/README.md`
+- Draft Response Runbook: `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/DRAFT_RESPONSE_RUNBOOK.md`
+- Stage 3.6 Tests: `06_RUNS/STAGE3.6/TESTS_3.6_DRAFT_RESPONSES.md`

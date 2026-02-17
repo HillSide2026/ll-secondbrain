@@ -12,6 +12,7 @@
 
 # OS
 .DS_Store
+**/.DS_Store
 Thumbs.db
 
 # Temporary files
@@ -19,8 +20,10 @@ Thumbs.db
 *.temp
 # Local secrets
 00_SYSTEM/local_secrets/
+00_SYSTEM/integrations/local_secrets/
 
 # Local & run logs
 logs/
 06_RUNS/logs/
 *.log
+sharepoint_sources.yaml

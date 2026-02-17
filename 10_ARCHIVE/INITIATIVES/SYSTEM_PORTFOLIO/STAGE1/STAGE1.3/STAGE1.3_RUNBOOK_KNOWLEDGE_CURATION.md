@@ -20,7 +20,7 @@ Organize, index, and maintain system knowledge artifacts.
 
 ## Inputs
 - `09_INBOX/` contents
-- `00_SYSTEM/FOLDER_MAP.md`
+- `00_SYSTEM/architecture/FOLDER_MAP.md`
 - Repository file tree
 
 ## Procedure

@@ -22,11 +22,11 @@ tags: []
 
 **Index of key files (repo-relative paths):**
 - `00_SYSTEM/README.md`
-- `00_SYSTEM/FOLDER_MAP.md`
-- `00_SYSTEM/GLOSSARY.md`
-- `00_SYSTEM/SCHEMAS.md`
-- `00_SYSTEM/SYSTEM_IDENTITY.md`
-- `00_SYSTEM/DECISION_LOG.md`
+- `00_SYSTEM/architecture/FOLDER_MAP.md`
+- `00_SYSTEM/architecture/GLOSSARY.md`
+- `00_SYSTEM/schemas/SCHEMAS.md`
+- `01_DOCTRINE/02_interpretive/SYSTEM_IDENTITY.md`
+- `00_SYSTEM/logs/DECISION_LOG.md`
 - `00_SYSTEM/architecture/ARCH-2026-00X-integration-plan.md`
 - `00_SYSTEM/architecture/ARCH-2026-01X-stage1-architecture-map.md`
 - `01_DOCTRINE/README.md`

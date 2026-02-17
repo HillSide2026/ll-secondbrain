@@ -1,14 +1,14 @@
 ---
 id: 10_archive__initiatives__system_portfolio__stage1__stage1_4__stage1_4_audit_checklist_md
-title: Stage 4 — Audit Checklist
+title: Stage 1.4 — Audit Checklist
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-11
 tags: []
 ---
 
-# Stage 4 — Audit Checklist
+# Stage 1.4 — Audit Checklist
 
 ## Status
 - Status: APPROVED
@@ -58,7 +58,7 @@ This checklist covers:
 | Check | Criteria | Pass/Fail |
 |-------|----------|-----------|
 | **INBOX Hygiene** | No items > 7 days without triage | |
-| **Backlog Hygiene** | No stale items per STAGE4_BACKLOG_RULES.md | |
+| **Backlog Hygiene** | No stale items per STAGE1.4_BACKLOG_RULES.md | |
 | **Metrics Logged** | Weekly metrics log entries exist | |
 | **Stage Closures** | Closed stages have closure recommendation + ML1 sign-off | |
 | **Cadence Adherence** | Weekly sync outputs documented | |

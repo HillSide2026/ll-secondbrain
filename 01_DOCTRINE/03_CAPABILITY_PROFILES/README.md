@@ -3,12 +3,16 @@ id: 01_doctrine__03_capability_profiles__readme_md
 title: Agent Capability Profiles
 owner: ML1
 status: draft
+version: 1.0
 created_date: 2026-02-08
 last_updated: 2026-02-08
 tags: []
 ---
 
 # Agent Capability Profiles
+
+Definition: Opt-in profiles that grant scoped, revocable relaxations to default agent constraints under ML1 control.
+Boundary: Does not change binding doctrine, policies, or protocols; profiles only permit constrained exceptions.
 
 This directory contains **opt-in capability profiles** that grant specific, limited relaxations to the Canonical Agent Doctrine (`DOCTRINE-AGENTS-0001`).
 

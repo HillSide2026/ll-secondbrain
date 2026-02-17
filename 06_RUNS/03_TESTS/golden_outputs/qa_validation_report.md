@@ -81,7 +81,7 @@ tags: []
 - 03_TESTS/fixtures/pr_changeset/new_playbook.md:1 — File starts with `# New Playbook` (no `---` block)
 - 03_TESTS/fixtures/pr_changeset/modified_runbook.md:1-6 — Valid YAML frontmatter
 - 03_TESTS/fixtures/pr_changeset/wrong_folder_doc.md:1 — Contains "Binding Policy" header
-- 00_SYSTEM/SCHEMAS.md — Schema reference (if exists)
+- 00_SYSTEM/schemas/SCHEMAS.md — Schema reference (if exists)
 
 ---
 

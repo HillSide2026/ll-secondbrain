@@ -1,35 +1,39 @@
 ---
 id: MATTER-25-1231-00001-MATTER_BRIEF
 
-title: Matter Brief — 25-1231-00001 — Charmaine Spiteri
+title: Matter Brief -- 25-1231-00001 -- Charmaine Spiteri
 owner: ML1
 status: draft
 created_date: 2026-01-31
-last_updated: 2026-01-31
+last_updated: 2026-02-16
 tags: [matter, 25-1231-00001]
 ---
 
-# Matter Brief — 25-1231-00001 — Charmaine Spiteri
+# Matter Brief -- 25-1231-00001 -- Charmaine Spiteri
 
 ## One-paragraph gist
-(Plain-language description of what this matter is about.)
+Corporate strategy matter for Charmaine Spiteri. The file is open and active; detailed scope and current focus are not specified in the repo.
 
 ## Parties
-- Client:
-- Counterparties:
-- Key contacts:
+- Client: Charmaine Spiteri
+- Counterparties: Not specified
+- Key contacts: Not specified
 
 ## What's happened so far
-- (High-signal bullets only)
+- Matter opened (2025-01-01).
+- No additional activity details captured in the repo.
 
 ## Current posture
-- (Where things stand right now)
+- Open; Delivery Status: Strategic; Fulfillment Status: active.
+- Current focus not yet documented.
 
 ## Near-term milestones
-- (Bullets; not a task list)
+- Define current priority / next action.
+- Populate key deadlines.
 
 ## Open questions
-- (Bullets)
+- What is the current priority / next action?
+- Are there specific deadlines or deliverables?
 
 ## Change log
-- YYYY-MM-DD — Summary updated
+- 2026-02-16 -- Summary updated from README.

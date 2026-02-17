@@ -99,7 +99,7 @@ All outputs are ML1-reviewed drafts only.
 ### Knowledge Sources (Read-Only unless instructed)
 - `07_REFERENCE/Corporate Law/`
 - `08_RESEARCH/Corporate Law/`
-- `02_PLAYBOOKS/CORPORATE/`
+- `02_PLAYBOOKS/substantive/corporate/`
   - `AGENTS/`
   - `DECISION_LENSES/`
   - `FAILURE_MODES/`
@@ -179,7 +179,7 @@ Work performed in `08_RESEARCH/Corporate Law/`.
 
 ### 2) Solution‑First Index (Research Draft)
 **Required Sections**
-- Solution list (from `02_PLAYBOOKS/CORPORATE/SOLUTIONS/`)
+- Solution list (from `02_PLAYBOOKS/substantive/corporate/solutions/`)
 - For each solution: locations of relevant knowledge (07/08/playbooks)
 - Missing knowledge per solution
 - Risks or ambiguity notes
@@ -327,7 +327,7 @@ This list defines the conceptual and structural sources the agent draws on. Inte
 ### 5) Firm‑Internal & System‑Native Texts (Highest Weight)
 **ML2 Artifacts**
 - `07_REFERENCE/Corporate Law/*`
-- `02_PLAYBOOKS/CORPORATE/*`
+- `02_PLAYBOOKS/substantive/corporate/*`
 - `DECISION_LENSES`
 - `FAILURE_MODES`
 - `ISSUE_MAPS`

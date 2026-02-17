@@ -11,8 +11,8 @@ tags: []
 # Folder-Map-Drift Report
 
 ## Inputs
-- FOLDER_MAP.md: 00_SYSTEM/FOLDER_MAP.md
-- SCHEMAS.md: 00_SYSTEM/SCHEMAS.md
+- FOLDER_MAP.md: 00_SYSTEM/architecture/FOLDER_MAP.md
+- SCHEMAS.md: 00_SYSTEM/schemas/SCHEMAS.md
 - Prior drift report: none found in 09_INBOX/_AGENT_OUTPUT
 
 ## Summary
@@ -34,7 +34,7 @@ tags: []
 - Missing: none
 
 ## Recommended Map Updates (Draft)
-- If unmapped top-level folders are intended, add them to `00_SYSTEM/FOLDER_MAP.md`.
+- If unmapped top-level folders are intended, add them to `00_SYSTEM/architecture/FOLDER_MAP.md`.
 
 ## Delta vs Last Report
 - No prior drift report found; delta not computed.

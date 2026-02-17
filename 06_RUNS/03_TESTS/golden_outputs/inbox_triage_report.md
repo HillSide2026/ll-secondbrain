@@ -30,7 +30,7 @@ tags: []
 
 1. **FIXTURE-001: Misplaced Artifact**
    - Current: Simulated in `04_INITIATIVES/`
-   - Proposed: `01_DOCTRINE/01_BINDING/`
+   - Proposed: `01_DOCTRINE/01_invariants/`
    - Rationale: Contains binding policy language
    - Age: N/A (placement issue, not staleness)
    - Action: Propose move to correct folder
@@ -76,7 +76,7 @@ tags: []
 
 - 03_TESTS/fixtures/misplaced_artifact.md — Contains "BINDING" policy language
 - 03_TESTS/fixtures/stale_artifact.md — Simulated last_updated: 2025-09-29
-- 00_SYSTEM/FOLDER_MAP.md — Folder placement rules
+- 00_SYSTEM/architecture/FOLDER_MAP.md — Folder placement rules
 
 ---
 

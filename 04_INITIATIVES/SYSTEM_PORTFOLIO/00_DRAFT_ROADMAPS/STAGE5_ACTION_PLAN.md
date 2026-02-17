@@ -22,7 +22,7 @@ tags: [stage5, roadmap, delegated-execution, corporate-solutions]
 
 ## Stage 5 Core Question
 
-> Can ML2 execute **corporate solution workflows** deterministically using the approved solution frames in `02_PLAYBOOKS/CORPORATE/SOLUTIONS/`, without introducing new judgment or exporting drafts to external systems?
+> Can ML2 execute **corporate solution workflows** deterministically using the approved solution frames in `02_PLAYBOOKS/substantive/corporate/solutions/`, without introducing new judgment or exporting drafts to external systems?
 
 **Stage 5 succeeds if solution execution is repeatable, auditable, and entirely bounded by existing doctrine.**
 
@@ -54,7 +54,7 @@ tags: [stage5, roadmap, delegated-execution, corporate-solutions]
 ## 2. Authorized Solution Set (Initial)
 
 Execution is **limited** to solution frames present in:
-`02_PLAYBOOKS/CORPORATE/SOLUTIONS/`
+`02_PLAYBOOKS/substantive/corporate/solutions/`
 
 Initial eligible solutions (per current directory set):
 - INCORPORATION
@@ -68,11 +68,11 @@ Initial eligible solutions (per current directory set):
 ## 3. Binding Inputs
 
 - Solution frames:
-  - `02_PLAYBOOKS/CORPORATE/SOLUTIONS/INCORPORATION/`
-  - `02_PLAYBOOKS/CORPORATE/SOLUTIONS/SHAREHOLDER_AGREEMENT/`
-  - `02_PLAYBOOKS/CORPORATE/SOLUTIONS/SHAREHOLDER_CHANGE/`
-- `02_PLAYBOOKS/CORPORATE/SOLUTIONS/README.md`
-- `00_SYSTEM/WRITE_BACK_POLICY.md`
+  - `02_PLAYBOOKS/substantive/corporate/solutions/incorporation/`
+  - `02_PLAYBOOKS/substantive/corporate/solutions/shareholder_agreement/`
+  - `02_PLAYBOOKS/substantive/corporate/solutions/shareholder_change/`
+- `02_PLAYBOOKS/substantive/corporate/solutions/README.md`
+- `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`
 - Stage 5 Authorization: `00_DRAFT_ROADMAPS/STAGE5_AUTHORIZATION_KICKOFF.md`
 
 ---
@@ -145,6 +145,6 @@ Initial eligible solutions (per current directory set):
 
 ## 9. References
 
-- `02_PLAYBOOKS/CORPORATE/SOLUTIONS/`
-- `00_SYSTEM/WRITE_BACK_POLICY.md`
+- `02_PLAYBOOKS/substantive/corporate/solutions/`
+- `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`
 - `00_DRAFT_ROADMAPS/STAGE5_AUTHORIZATION_KICKOFF.md`

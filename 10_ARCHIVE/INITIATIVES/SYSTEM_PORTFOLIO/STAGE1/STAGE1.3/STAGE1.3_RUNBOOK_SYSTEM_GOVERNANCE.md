@@ -20,8 +20,8 @@ Validate system compliance, review changes, and enforce governance rules.
 
 ## Inputs
 - PR diff or artifact path
-- `00_SYSTEM/FOLDER_MAP.md`
-- `00_SYSTEM/SCHEMAS.md`
+- `00_SYSTEM/architecture/FOLDER_MAP.md`
+- `00_SYSTEM/schemas/SCHEMAS.md`
 - `01_DOCTRINE/` (binding rules)
 
 ## Procedure

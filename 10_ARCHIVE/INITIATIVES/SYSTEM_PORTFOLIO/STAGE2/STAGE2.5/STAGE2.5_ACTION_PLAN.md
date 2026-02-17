@@ -245,11 +245,11 @@ Stage 2.5 is where the system learns how to act **with permission**, not how to 
 ## References
 
 - Stage 2.4 Readiness Determination: `STAGE2.4/STAGE2.4_READINESS_DETERMINATION.md`
-- Taxonomy (v1.3): `02_PLAYBOOKS/INBOX_TRIAGE/TAXONOMY.md`
+- Taxonomy (v1.3): `02_PLAYBOOKS/core/inbox_triage/TAXONOMY.md`
 - Classifier (v0.2): `scripts/inbox_classifier.py`
 - Draft Placement Plans: `06_RUNS/INBOX_TRIAGE/pilot/pilot-2026-01-30-v2/placement_plans/`
-- Action Proposal Schema: `02_PLAYBOOKS/EXECUTION/ACTION_PROPOSAL_SCHEMA.md`
-- ML1 Approval Worksheet: `02_PLAYBOOKS/EXECUTION/ML1_APPROVAL_WORKSHEET.md`
-- Supervised Execution Runbook: `02_PLAYBOOKS/EXECUTION/SUPERVISED_EXECUTION_RUNBOOK.md`
-- Rollback Procedure: `02_PLAYBOOKS/EXECUTION/ROLLBACK_PROCEDURE.md`
+- Action Proposal Schema: `02_PLAYBOOKS/_assets/execution/schemas/action_proposal_schema/README.md`
+- ML1 Approval Worksheet: `02_PLAYBOOKS/_assets/execution/worksheets/ml1_approval_worksheet/README.md`
+- Supervised Execution Runbook: `02_PLAYBOOKS/execution/supervised_execution_runbook/README.md`
+- Rollback Procedure: `02_PLAYBOOKS/execution/rollback_procedure/README.md`
 - Execution Log: `06_RUNS/EXECUTION/execution_log.md`

@@ -37,7 +37,6 @@ Folder placement reflects `delivery_status` only. The other two fields (`status`
 |-----------|-------------|--------|-----------------|-------------------|------|
 | 25-927-00003 | Stream Ventures Limited | Open | Essential | urgent | `ESSENTIAL/25-927-00003/` |
 | 25-1593-00001 | 1001162998 Ontario Corp. o/a KaleMart | Open | Essential | active | `ESSENTIAL/25-1593-00001/` |
-| 26-1630-00001 | Marcela Hernandez | Open | Essential | active | `ESSENTIAL/26-1630-00001/` |
 
 ---
 
@@ -73,6 +72,7 @@ Folder placement reflects `delivery_status` only. The other two fields (`status`
 
 | matter_id | matter_name | status | delivery_status | fulfillment_status | path |
 |-----------|-------------|--------|-----------------|-------------------|------|
+| 26-1630-00001 | Marcela Hernandez | Open | Parked | keep in view | `PARKED/26-1630-00001/` |
 | 23-169-00003 | Best Bottles Inc. | Open | Parked | active | `PARKED/23-169-00003/` |
 | 25-822-00001 | Majid Hajibeigy | Open | Parked | active | `PARKED/25-822-00001/` |
 | 25-1024-00001 | AllPro Construction Group | Open | Parked | active | `PARKED/25-1024-00001/` |
