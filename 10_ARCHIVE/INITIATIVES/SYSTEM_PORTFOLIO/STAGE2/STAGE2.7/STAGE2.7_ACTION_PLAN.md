@@ -154,5 +154,5 @@ tags: []
 ## References
 
 - Matter Field Model: `01_SYSTEM/MATTERS_FIELD_MODEL.md`
-- SCHEMAS.md: `00_SYSTEM/SCHEMAS.md`
+- SCHEMAS.md: `00_SYSTEM/schemas/SCHEMAS.md`
 - Stage 2.6: `STAGE2.6/STAGE2.6_ACTION_PLAN.md`

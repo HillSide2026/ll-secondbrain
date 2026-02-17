@@ -22,7 +22,7 @@ tags: []
 - No schema violations detected within practice-area markdown files.
 
 ## Safe Fixes (Draft)
-- Add YAML frontmatter to markdown files missing it, per `00_SYSTEM/SCHEMAS.md`.
+- Add YAML frontmatter to markdown files missing it, per `00_SYSTEM/schemas/SCHEMAS.md`.
 
 ## ML1 Policy Questions
 - Confirm the authoritative list of practice-area folders under `02_PLAYBOOKS/` (current scan excludes `EXECUTION`, `INBOX_TRIAGE`, `MATTER_DASHBOARD`, `STAGE3`).

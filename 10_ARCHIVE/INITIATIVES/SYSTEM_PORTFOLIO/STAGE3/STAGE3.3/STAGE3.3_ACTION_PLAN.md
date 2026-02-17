@@ -62,7 +62,7 @@ Its job is to surface, not to direct.
 **Output:** Risks to flag (list only)
 **Ceiling:** No advice, conclusions, likelihood, or severity
 
-See: `02_PLAYBOOKS/STAGE3/ISSUE_SPOTTER.md`
+See: `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/ISSUE_SPOTTER.md`
 
 ### Agent 2: Communication Coverage Assistant
 
@@ -70,7 +70,7 @@ See: `02_PLAYBOOKS/STAGE3/ISSUE_SPOTTER.md`
 **Output:** Points to cover, Questions to answer, Likely misunderstandings
 **Ceiling:** Lists only, no phrasing, no prioritization
 
-See: `02_PLAYBOOKS/STAGE3/COMMUNICATION_COVERAGE_ASSISTANT.md`
+See: `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/COMMUNICATION_COVERAGE_ASSISTANT.md`
 
 ### Agent 3: Corporate Law Issue Spotter
 
@@ -80,7 +80,7 @@ See: `02_PLAYBOOKS/STAGE3/COMMUNICATION_COVERAGE_ASSISTANT.md`
 
 **Critical Framing:** "Have you considered X?" not "X is an issue."
 
-See: `02_PLAYBOOKS/STAGE3/CORPORATE_LAW_ISSUE_SPOTTER.md`
+See: `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/CORPORATE_LAW_ISSUE_SPOTTER.md`
 
 ---
 

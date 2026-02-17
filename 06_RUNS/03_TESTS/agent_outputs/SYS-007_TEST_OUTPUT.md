@@ -93,8 +93,8 @@ tags: []
 
 ## Evidence
 
-- 00_SYSTEM/WRITE_BACK_POLICY.md — Confirms local-first policy
-- 00_SYSTEM/AGENTS/SYS-007_INTEGRATION_STEWARD.md:38-41 — Explicit prohibitions
+- 01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md — Confirms local-first policy
+- 00_SYSTEM/agents/specs/system_management/SMA_INTEGRATION_STEWARD.md:38-41 — Explicit prohibitions
 - 10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.2/ — Archived integration specs
 - 03_TESTS/fixtures/conflicting_rules.md — Rule collision detection test (not applicable here)
 

@@ -250,8 +250,8 @@ A successful Stage 2.4 produces:
 - Pilot v2 Summary: `06_RUNS/INBOX_TRIAGE/pilot/pilot-2026-01-30-v2/pilot_summary.md`
 - Placement Plans: `06_RUNS/INBOX_TRIAGE/pilot/pilot-2026-01-30-v2/placement_plans/`
 - Classification Log: `06_RUNS/INBOX_TRIAGE/logs/classification_log.ndjson`
-- Taxonomy (v1.3): `02_PLAYBOOKS/INBOX_TRIAGE/TAXONOMY.md`
-- Classifier Interface: `02_PLAYBOOKS/INBOX_TRIAGE/CLASSIFIER_INTERFACE.md`
+- Taxonomy (v1.3): `02_PLAYBOOKS/core/inbox_triage/TAXONOMY.md`
+- Classifier Interface: `02_PLAYBOOKS/core/inbox_triage/CLASSIFIER_INTERFACE.md`
 - Classifier Script (v0.2): `scripts/inbox_classifier.py`
 
 ---

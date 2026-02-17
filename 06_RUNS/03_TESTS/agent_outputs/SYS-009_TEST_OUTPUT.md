@@ -48,7 +48,7 @@ tags: []
    - Issue: Content type mismatch with location
    - Content Type: Doctrine/Policy (contains "BINDING")
    - Current Location: `03_TESTS/fixtures/pr_changeset/`
-   - Required Location: `01_DOCTRINE/01_BINDING/`
+   - Required Location: `01_DOCTRINE/01_invariants/`
    - Severity: High (governance violation)
    - Note: Defer placement ruling to SYS-005
 
@@ -103,7 +103,7 @@ tags: []
 - 03_TESTS/fixtures/pr_changeset/modified_runbook.md:1-6 — Valid YAML frontmatter present
 - 03_TESTS/fixtures/pr_changeset/wrong_folder_doc.md:1 — Contains "Binding Policy" header
 - 03_TESTS/golden_outputs/qa_validation_report.md — Reference golden output
-- 00_SYSTEM/SCHEMAS.md — Schema reference (if exists)
+- 00_SYSTEM/schemas/SCHEMAS.md — Schema reference (if exists)
 
 ---
 

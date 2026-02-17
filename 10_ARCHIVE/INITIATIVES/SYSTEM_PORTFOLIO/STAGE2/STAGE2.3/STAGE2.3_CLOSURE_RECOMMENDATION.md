@@ -26,10 +26,10 @@ Stage 2.3 (Inbox Intelligence Layer) has achieved all Definition of Done criteri
 
 | Criterion | Status | Evidence |
 |-----------|--------|----------|
-| Taxonomy defined and published | ✅ | 02_PLAYBOOKS/INBOX_TRIAGE/TAXONOMY.md |
-| Classifier interface spec published | ✅ | 02_PLAYBOOKS/INBOX_TRIAGE/CLASSIFIER_INTERFACE.md |
-| Draft Placement Plan schema published | ✅ | 00_SYSTEM/SCHEMAS_INBOX_TRIAGE.md |
-| Logging spec published | ✅ | 02_PLAYBOOKS/INBOX_TRIAGE/LOGGING_SPEC.md |
+| Taxonomy defined and published | ✅ | 02_PLAYBOOKS/core/inbox_triage/TAXONOMY.md |
+| Classifier interface spec published | ✅ | 02_PLAYBOOKS/core/inbox_triage/CLASSIFIER_INTERFACE.md |
+| Draft Placement Plan schema published | ✅ | 00_SYSTEM/schemas/SCHEMAS_INBOX_TRIAGE.md |
+| Logging spec published | ✅ | 02_PLAYBOOKS/core/inbox_triage/LOGGING_SPEC.md |
 | Pilot run completed | ✅ | 100 messages, pilot-2026-01-29 |
 | Pilot outputs produced | ✅ | Plans, logs, summary |
 | SYS-005 governance PASS | ✅ | STAGE2.3_GOVERNANCE_REPORT.md |
@@ -42,12 +42,12 @@ Stage 2.3 (Inbox Intelligence Layer) has achieved all Definition of Done criteri
 ### Documentation (Phases 2.3.1–2.3.4)
 | Artifact | Location |
 |----------|----------|
-| Triage Taxonomy | 02_PLAYBOOKS/INBOX_TRIAGE/TAXONOMY.md |
-| Classifier Interface | 02_PLAYBOOKS/INBOX_TRIAGE/CLASSIFIER_INTERFACE.md |
-| Draft Placement Plan Schema | 00_SYSTEM/SCHEMAS_INBOX_TRIAGE.md |
+| Triage Taxonomy | 02_PLAYBOOKS/core/inbox_triage/TAXONOMY.md |
+| Classifier Interface | 02_PLAYBOOKS/core/inbox_triage/CLASSIFIER_INTERFACE.md |
+| Draft Placement Plan Schema | 00_SYSTEM/schemas/SCHEMAS_INBOX_TRIAGE.md |
 | Example Template | 03_TEMPLATES/INBOX_TRIAGE/DRAFT_PLACEMENT_PLAN.json |
-| Logging Spec | 02_PLAYBOOKS/INBOX_TRIAGE/LOGGING_SPEC.md |
-| Pilot Run Procedure | 02_PLAYBOOKS/INBOX_TRIAGE/PILOT_RUN.md |
+| Logging Spec | 02_PLAYBOOKS/core/inbox_triage/LOGGING_SPEC.md |
+| Pilot Run Procedure | 02_PLAYBOOKS/core/inbox_triage/PILOT_RUN.md |
 
 ### Implementation (Phase 2.3.5)
 | Artifact | Location |

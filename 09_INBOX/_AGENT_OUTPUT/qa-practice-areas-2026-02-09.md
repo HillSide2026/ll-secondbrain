@@ -23,24 +23,24 @@ tags: []
 
 ## Findings
 ### Broken Internal Links (High)
-- 02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/AGENTS/README.md — `../../../00_SYSTEM/AGENTS/PRACTICE_AREA_MASTER_AGENT_SPEC.md` (missing_target)
-- 02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/AGENTS/README.md — `../../../00_SYSTEM/AGENTS/AGENT_TYPOLOGY.md` (missing_target)
-- 02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/AGENTS/PAYMENTSERVICES_MASTER_AGENT.md — `../../../00_SYSTEM/AGENTS/PRACTICE_AREA_MASTER_AGENT_SPEC.md` (missing_target)
-- 02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/AGENTS/PAYMENTSERVICES_MASTER_AGENT.md — `../../../00_SYSTEM/AGENTS/PRACTICE_AREA_MASTER_AGENT_SPEC.md` (missing_target)
-- 02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/AGENTS/PAYMENTSERVICES_MASTER_AGENT.md — `../../../01_DOCTRINE/01_BINDING/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md` (missing_target)
-- 02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/AGENTS/PAYMENTSERVICES_MASTER_AGENT.md — `../../../00_SYSTEM/AGENTS/AGENT_TYPOLOGY.md` (missing_target)
+- 02_PLAYBOOKS/substantive/financial_services/payments/agents/README.md — `../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md` (missing_target)
+- 02_PLAYBOOKS/substantive/financial_services/payments/agents/README.md — `../../../00_SYSTEM/agents/specs/AGENT_TYPOLOGY.md` (missing_target)
+- 02_PLAYBOOKS/substantive/financial_services/payments/agents/PAYMENTSERVICES_MASTER_AGENT.md — `../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md` (missing_target)
+- 02_PLAYBOOKS/substantive/financial_services/payments/agents/PAYMENTSERVICES_MASTER_AGENT.md — `../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md` (missing_target)
+- 02_PLAYBOOKS/substantive/financial_services/payments/agents/PAYMENTSERVICES_MASTER_AGENT.md — `../../../01_DOCTRINE/01_invariants/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md` (missing_target)
+- 02_PLAYBOOKS/substantive/financial_services/payments/agents/PAYMENTSERVICES_MASTER_AGENT.md — `../../../00_SYSTEM/agents/specs/AGENT_TYPOLOGY.md` (missing_target)
 
 ### Agent Specs Missing Required Sections (Medium)
-- 02_PLAYBOOKS/CORPORATE/AGENTS/CORPORATE_LAW_MASTER_AGENT.md — missing: Decision Registry, Execution Plan, Risks & Failure Modes
-- 02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/AGENTS/PAYMENTSERVICES_MASTER_AGENT.md — missing: Decision Registry, Execution Plan, Risks & Failure Modes
-- 02_PLAYBOOKS/CONTRACTS/AGENTS/CONTRACTS_MASTER_AGENT.md — missing: Decision Registry, Execution Plan, Risks & Failure Modes
+- 02_PLAYBOOKS/substantive/corporate/agents/CORPORATE_LAW_MASTER_AGENT.md — missing: Decision Registry, Execution Plan, Risks & Failure Modes
+- 02_PLAYBOOKS/substantive/financial_services/payments/agents/PAYMENTSERVICES_MASTER_AGENT.md — missing: Decision Registry, Execution Plan, Risks & Failure Modes
+- 02_PLAYBOOKS/substantive/contracts/agents/CONTRACTS_MASTER_AGENT.md — missing: Decision Registry, Execution Plan, Risks & Failure Modes
 
 ### Agent Specs Missing Spec Reference (Low)
-- 02_PLAYBOOKS/CORPORATE/AGENTS/CORPORATE_LAW_MASTER_AGENT.md
+- 02_PLAYBOOKS/substantive/corporate/agents/CORPORATE_LAW_MASTER_AGENT.md
 
 ## Notes
 - Anchor validation is based on simple GitHub-style slugging; false positives possible for custom anchors.
 - Section checks are string-based and do not validate order or completeness of content.
 
 ## ML1 Policy Questions
-- Confirm required sections for practice-area agent specs (currently inferred from `00_SYSTEM/AGENTS/PRACTICE_AREA_MASTER_AGENT_SPEC.md`).
+- Confirm required sections for practice-area agent specs (currently inferred from `00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md`).

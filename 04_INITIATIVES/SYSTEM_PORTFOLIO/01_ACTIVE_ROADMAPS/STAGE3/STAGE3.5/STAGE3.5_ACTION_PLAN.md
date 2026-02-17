@@ -2,9 +2,9 @@
 id: 04_initiatives__system_portfolio__01_active_roadmaps__stage3__stage3_5__stage3_5_action_plan_md
 title: Stage 3.5 — Framing Variants
 owner: ML1
-status: draft
+status: complete
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-11
 tags: []
 ---
 
@@ -12,9 +12,10 @@ tags: []
 
 ## Status
 
-- **Status:** AUTHORIZED
+- **Status:** COMPLETE
 - **Owner:** ML1
 - **Effective Start:** 2026-01-31 (Stage 3.4 closed)
+- **Closed:** 2026-02-11
 - **Authority Gate:** Exit criteria must be met before Stage 3 completion
 
 ---
@@ -57,7 +58,7 @@ Its job is to offer approach options, not wording.
 **Output:** Bullet-level framing options (not wording)
 **Ceiling:** No sentences, no preferred option unless requested
 
-See: `02_PLAYBOOKS/STAGE3/COMMUNICATION_FRAMING_ASSISTANT.md`
+See: `04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE3/PLAYBOOKS/COMMUNICATION_FRAMING_ASSISTANT.md`
 
 ---
 
@@ -68,13 +69,38 @@ All Stage 3.5 outputs must:
 - [ ] Offer bullets, not prose
 - [ ] Describe approaches, not provide wording
 - [ ] Present options neutrally (no preferred unless asked)
+- [ ] Avoid recommendation language or implied authority
+- [ ] Label uncertainty explicitly
 - [ ] Bear visible labels (per labeling schema)
 - [ ] Support only Use/Ignore/Delete actions
 - [ ] Never feel like drafts to edit
 
 ---
 
-## 4. Example Use Cases
+## 4. Framing Variant Schema v1.0
+
+Each variant must include:
+- **Framing lens** (e.g., risk-minimizing, aggressive, conservative, client-centered, precedent-driven)
+- **Core thesis**
+- **Key implications**
+- **Assumptions**
+- **Hidden tradeoffs**
+- **What this framing deprioritizes**
+
+---
+
+## 5. Variant Comparison Matrix
+
+Structured comparison table for each variant:
+- Stability
+- Risk exposure
+- Operational load
+- Reversibility
+- Escalation likelihood
+
+---
+
+## 6. Example Use Cases
 
 | Scenario | Input | Expected Output |
 |----------|-------|-----------------|
@@ -84,7 +110,7 @@ All Stage 3.5 outputs must:
 
 ---
 
-## 5. Test Suite Requirements
+## 7. Test Suite Requirements
 
 Before agent is considered "introduced," it must pass:
 
@@ -96,39 +122,40 @@ Before agent is considered "introduced," it must pass:
 
 ---
 
-## 6. Exit Criteria (Binary)
+## 8. Exit Criteria (Binary)
 
 Stage 3.5 is done when:
 
-- [ ] Communication Framing Assistant passes all 3 tests
-- [ ] Aids approach selection
-- [ ] Does not tempt verbatim reuse
-- [ ] ML1 confirms: "I pick an angle faster, but I still write everything"
-- [ ] Roll back immediately if it feels like drafting
+- [x] Communication Framing Assistant passes all 3 tests
+- [x] Framing Variant Schema v1.0 and Comparison Matrix used in outputs
+- [x] Aids approach selection
+- [x] Does not tempt verbatim reuse
+- [x] ML1 confirms: "I pick an angle faster, but I still write everything"
+- [x] Roll back immediately if it feels like drafting
 
 **If any output feels send-ready, Stage 3.5 must pause.**
 
 ---
 
-## 7. Execution Tracking
+## 9. Execution Tracking
 
 ### Agent Introduction
 
 | Agent | Spec Created | Tests Passed | Status |
 |-------|--------------|--------------|--------|
-| Communication Framing Assistant | ✅ done | ⬜ 0/3 | Not introduced |
+| Communication Framing Assistant | ✅ done | ✅ 3/3 | Introduced |
 
 ### Test Results
 
 | Test ID | Date | Result | Notes |
 |---------|------|--------|-------|
-| TEST-FA1 | — | — | — |
-| TEST-FA2 | — | — | — |
-| TEST-FA3 | — | — | — |
+| TEST-FA1 | 2026-02-11 | PASS | `06_RUNS/STAGE3/TESTS_3.5_FRAMING_VARIANTS.md` |
+| TEST-FA2 | 2026-02-11 | PASS | `06_RUNS/STAGE3/TESTS_3.5_FRAMING_VARIANTS.md` |
+| TEST-FA3 | 2026-02-11 | PASS | `06_RUNS/STAGE3/TESTS_3.5_FRAMING_VARIANTS.md` |
 
 ---
 
-## 8. Rollback Trigger
+## 10. Rollback Trigger
 
 **IMMEDIATE STOP if:**
 - Output contains sentences intended for reuse
@@ -145,3 +172,4 @@ Stage 3.5 is the narrowest and most optional sub-stage. Conservative implementat
 - Stage 3.1 Foundation: `STAGE3.1/STAGE3.1_ACTION_PLAN.md`
 - Labeling Schema: `STAGE3.1/STAGE3.1_LABELING_SCHEMA.md`
 - Interaction Model: `STAGE3.1/STAGE3.1_INTERACTION_MODEL.md`
+- Stage 3.5 Tests: `06_RUNS/STAGE3/TESTS_3.5_FRAMING_VARIANTS.md`

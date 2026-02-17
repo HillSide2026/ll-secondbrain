@@ -33,7 +33,7 @@ tags: []
 1. **SYS-001** (Agent runtime selection)
    - Status: RESOLVED
    - Decision: Claude Code agents selected as runtime
-   - Evidence: Agent definitions created in `00_SYSTEM/AGENTS/`
+   - Evidence: Agent definitions created in `00_SYSTEM/agents/`
    - No further action required
 
 2. **SYS-005 to SYS-009** (Agent deployment)
@@ -89,7 +89,7 @@ tags: []
 - 04_INITIATIVES/SYSTEM_PORTFOLIO/BACKLOG.md — Current backlog source
 - 04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE2/STAGE2_AUTHORIZATION_KICKOFF.md:94-102 — DoD criteria
 - 04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE2/STAGE2.1/STAGE2.1_ACTION_PLAN.md — Execution tracking
-- 00_SYSTEM/AGENTS/ — Agent definitions (5 files present)
+- 00_SYSTEM/agents/ — Agent definitions (5 files present)
 - 03_TESTS/agent_outputs/SYS-005_TEST_OUTPUT.md — Completed test output
 
 ---

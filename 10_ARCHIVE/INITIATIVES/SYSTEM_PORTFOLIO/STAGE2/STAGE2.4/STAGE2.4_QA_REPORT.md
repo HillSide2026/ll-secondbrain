@@ -25,8 +25,8 @@ tags: []
 | Stage 2.4 Action Plan | `STAGE2.4/STAGE2.4_ACTION_PLAN.md` | COMPLETE |
 | ML1 Review Worksheet | `pilot-2026-01-29/ML1_REVIEW_WORKSHEET.md` | COMPLETE |
 | Error Analysis Memo | `pilot-2026-01-29/ERROR_ANALYSIS_MEMO.md` | COMPLETE |
-| Taxonomy (v1.3) | `02_PLAYBOOKS/INBOX_TRIAGE/TAXONOMY.md` | COMPLETE |
-| Classifier Interface | `02_PLAYBOOKS/INBOX_TRIAGE/CLASSIFIER_INTERFACE.md` | COMPLETE |
+| Taxonomy (v1.3) | `02_PLAYBOOKS/core/inbox_triage/TAXONOMY.md` | COMPLETE |
+| Classifier Interface | `02_PLAYBOOKS/core/inbox_triage/CLASSIFIER_INTERFACE.md` | COMPLETE |
 | Pilot v1 Summary | `pilot-2026-01-29/pilot_summary.md` | COMPLETE |
 | Pilot v2 Summary | `pilot-2026-01-30-v2/pilot_summary.md` | COMPLETE |
 | Governance Report | `STAGE2.4/STAGE2.4_GOVERNANCE_REPORT.md` | COMPLETE |

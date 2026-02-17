@@ -114,4 +114,4 @@ tags: [stage2, roadmap, matter-dashboard, agent]
 
 - Stage 2.9 Action Plan: `STAGE2.9/STAGE2.9_ACTION_PLAN.md`
 - Stage 2.10 Action Plan: `STAGE2.10/STAGE2.10_ACTION_PLAN.md`
-- Write-Back Policy: `00_SYSTEM/WRITE_BACK_POLICY.md`
+- Write-Back Policy: `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`

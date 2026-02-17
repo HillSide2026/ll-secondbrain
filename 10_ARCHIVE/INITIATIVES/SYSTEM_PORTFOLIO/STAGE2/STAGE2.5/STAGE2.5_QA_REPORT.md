@@ -23,10 +23,10 @@ tags: []
 | Artifact | Location | Status |
 |----------|----------|--------|
 | Stage 2.5 Action Plan | `STAGE2.5/STAGE2.5_ACTION_PLAN.md` | COMPLETE |
-| Action Proposal Schema | `02_PLAYBOOKS/EXECUTION/ACTION_PROPOSAL_SCHEMA.md` | COMPLETE |
-| ML1 Approval Worksheet | `02_PLAYBOOKS/EXECUTION/ML1_APPROVAL_WORKSHEET.md` | COMPLETE |
-| Supervised Execution Runbook | `02_PLAYBOOKS/EXECUTION/SUPERVISED_EXECUTION_RUNBOOK.md` | COMPLETE |
-| Rollback Procedure | `02_PLAYBOOKS/EXECUTION/ROLLBACK_PROCEDURE.md` | COMPLETE |
+| Action Proposal Schema | `02_PLAYBOOKS/_assets/execution/schemas/action_proposal_schema/README.md` | COMPLETE |
+| ML1 Approval Worksheet | `02_PLAYBOOKS/_assets/execution/worksheets/ml1_approval_worksheet/README.md` | COMPLETE |
+| Supervised Execution Runbook | `02_PLAYBOOKS/execution/supervised_execution_runbook/README.md` | COMPLETE |
+| Rollback Procedure | `02_PLAYBOOKS/execution/rollback_procedure/README.md` | COMPLETE |
 | Execution Log | `06_RUNS/EXECUTION/execution_log.md` | COMPLETE |
 
 ### First Execution Artifacts

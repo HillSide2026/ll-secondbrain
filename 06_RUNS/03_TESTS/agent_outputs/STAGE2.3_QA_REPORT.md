@@ -31,7 +31,7 @@ tags: []
 
 ### 1. Draft Placement Plan Schema Compliance
 
-**Schema Reference:** `00_SYSTEM/SCHEMAS_INBOX_TRIAGE.md`
+**Schema Reference:** `00_SYSTEM/schemas/SCHEMAS_INBOX_TRIAGE.md`
 
 | Required Field | Present | Valid | Notes |
 |----------------|---------|-------|-------|
@@ -65,7 +65,7 @@ tags: []
 
 ### 2. Classification Log Format Compliance
 
-**Spec Reference:** `02_PLAYBOOKS/INBOX_TRIAGE/LOGGING_SPEC.md`
+**Spec Reference:** `02_PLAYBOOKS/core/inbox_triage/LOGGING_SPEC.md`
 
 | Requirement | Status | Evidence |
 |-------------|--------|----------|
@@ -101,7 +101,7 @@ tags: []
 
 ### 3. Summary Report Completeness
 
-**Spec Reference:** `02_PLAYBOOKS/INBOX_TRIAGE/PILOT_RUN.md`
+**Spec Reference:** `02_PLAYBOOKS/core/inbox_triage/PILOT_RUN.md`
 
 | Required Section | Present | Notes |
 |------------------|---------|-------|
