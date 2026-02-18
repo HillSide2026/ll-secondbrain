@@ -24,6 +24,13 @@ provenance:
 
 # Authority Hierarchy (ML1 / ML2 / LL)
 
+**Document ID:** DOCTRINE-2026-002
+**Status:** APPROVED
+**Effective:** 2026-01-04
+**Authority:** ML1
+
+---
+
 ## Purpose
 
 This doctrine defines the **authority hierarchy** governing:

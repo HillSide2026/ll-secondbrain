@@ -21,6 +21,13 @@ Moved from `01_DOCTRINE/01_invariants/` to `01_DOCTRINE/04_procedural/` on 2026-
 
 # Promotion Rules (Inbox → Research → Doctrine)
 
+**Document ID:** DOCTRINE-2026-003
+**Status:** APPROVED
+**Effective:** 2026-01-04
+**Authority:** ML1
+
+---
+
 ## Purpose
 
 This doctrine defines the **promotion lifecycle** of information within the Second Brain system.

@@ -18,6 +18,13 @@ provenance:
 
 # What Qualifies as Doctrine
 
+**Document ID:** DOCTRINE-2026-001
+**Status:** APPROVED
+**Effective:** 2026-01-04
+**Authority:** ML1
+
+---
+
 ## Purpose
 
 This doctrine defines what qualifies as **doctrine** within the Second Brain system.
