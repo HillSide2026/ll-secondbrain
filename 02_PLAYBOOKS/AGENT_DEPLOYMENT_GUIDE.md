@@ -101,8 +101,8 @@ Review PR changeset for governance compliance.
 
 Inputs:
 - PR diff or artifact paths: [paths]
-- Folder map: 00_SYSTEM/FOLDER_MAP.md
-- Schemas: 00_SYSTEM/SCHEMAS.md
+- Folder map: 00_SYSTEM/architecture/FOLDER_MAP.md
+- Schemas: 00_SYSTEM/schemas/SCHEMAS.md
 - Doctrine: 01_DOCTRINE/
 
 Scope: full governance review
@@ -144,7 +144,7 @@ Review integration spec for no-write-path compliance.
 
 Inputs:
 - Integration spec: [path]
-- Write-back policy: 00_SYSTEM/WRITE_BACK_POLICY.md
+- Write-back policy: 01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md
 
 Scope: Specified integration only
 Context: Stage 2.1 read-only validation
@@ -165,7 +165,7 @@ Triage INBOX and propose artifact placements.
 
 Inputs:
 - INBOX: 09_INBOX/
-- Folder map: 00_SYSTEM/FOLDER_MAP.md
+- Folder map: 00_SYSTEM/architecture/FOLDER_MAP.md
 
 Scope: INBOX-only
 Context: Weekly cycle 2026-W05
@@ -184,7 +184,7 @@ Validate artifact for schema compliance.
 
 Inputs:
 - Artifact: [path]
-- Schemas: 00_SYSTEM/SCHEMAS.md
+- Schemas: 00_SYSTEM/schemas/SCHEMAS.md
 - Handoff map: 01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE1.3_HANDOFF_MAP.md
 
 Scope: Full QA validation

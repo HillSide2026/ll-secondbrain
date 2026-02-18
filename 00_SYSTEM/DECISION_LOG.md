@@ -58,5 +58,5 @@ This log records all system-level decisions affecting the Second Brain.
 
 **Decision:** Approved doctrine defining canonical constraints for agent operation in the Second Brain system  
 **Approved by:** ML1  
-**Artifacts impacted:** /01_DOCTRINE/01_BINDING/DOCTRINE-2026-004-canonical-agent-doctrine.md  
+**Artifacts impacted:** /01_DOCTRINE/02_policies/DOCTRINE-2026-004-canonical-agent-doctrine.md  
 **Notes:** Establishes binding constraints on agent authority, scope, attribution, and non-simulation requirements

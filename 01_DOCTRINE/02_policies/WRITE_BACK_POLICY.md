@@ -107,7 +107,7 @@ When external write-back is authorized (Stage 3+), the following additional requ
 
 ## References
 
-- Agent definitions: `00_SYSTEM/agents/specs/system_management/`
+- Agent definitions: `00_SYSTEM/AGENTS/`
 - Stage 2.1 Action Plan: `01_ACTIVE_ROADMAPS/STAGE2/STAGE2.1_ACTION_PLAN.md`
 - Stage 2 Authorization: `01_ACTIVE_ROADMAPS/STAGE2/STAGE5_AUTHORIZATION_KICKOFF.md`
 ---

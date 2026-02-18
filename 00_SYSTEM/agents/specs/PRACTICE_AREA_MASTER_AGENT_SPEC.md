@@ -227,4 +227,4 @@ To create a Practice Area Master Agent for a specific domain:
 
 - Agent Typology: [AGENT_TYPOLOGY.md](AGENT_TYPOLOGY.md)
 - Agent Doctrine: [DOCTRINE-AGENTS-0001](../../01_DOCTRINE/01_invariants/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md)
-- Capability Profiles: [03_CAPABILITY_PROFILES](../../01_DOCTRINE/03_capability_profiles/)
+- Capability Profiles: [03_capability_profiles](../../01_DOCTRINE/03_capability_profiles/)

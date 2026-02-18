@@ -81,10 +81,10 @@ echo ""
 # -----------------------------------------------------------------------------
 # Check 3: Agent definition files exist and have required sections
 # -----------------------------------------------------------------------------
-echo "Check 3: Agent definitions in 00_SYSTEM/AGENTS/"
+echo "Check 3: System management agent specs in 00_SYSTEM/AGENTS/"
 
 AGENT_DIR="00_SYSTEM/AGENTS"
-REQUIRED_AGENTS=("SMA-001" "SMA-002" "SMA-003" "SMA-004" "SMA-005")
+REQUIRED_AGENTS=("SMA-001_SYSTEM_GOVERNANCE" "SMA-002_PORTFOLIO_PLANNING" "SMA-003_INTEGRATION_STEWARD" "SMA-004_KNOWLEDGE_CURATION" "SMA-005_RUNBOOK_QA")
 
 for agent in "${REQUIRED_AGENTS[@]}"; do
     AGENT_FILE=$(find "$AGENT_DIR" -name "${agent}*.md" 2>/dev/null | head -1)
@@ -130,7 +130,7 @@ echo ""
 # -----------------------------------------------------------------------------
 echo "Check 5: Doctrine file format"
 
-for doctrine_file in 01_DOCTRINE/01_BINDING/DOCTRINE-*.md; do
+for doctrine_file in $(find 01_DOCTRINE -type f -name "DOCTRINE-*.md" 2>/dev/null); do
     if [ -f "$doctrine_file" ]; then
         # Check for Status field
         if grep -q "Status:" "$doctrine_file" 2>/dev/null; then

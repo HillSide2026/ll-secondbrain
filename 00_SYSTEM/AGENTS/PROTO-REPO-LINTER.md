@@ -14,7 +14,25 @@ tags: []
 Detect structural, schema, and naming violations.
 
 ## Scope
-Entire repo structure and project folder compliance; reports only.
+This agent applies only to ML2 governed artifacts as defined in the
+ML2 Ontology Boundary invariant: `01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md`
+
+In-scope artifacts include:
+
+- Governed ontology layers (00_SYSTEM→10_ARCHIVE)
+- Integration specifications located under `00_SYSTEM/integrations/`
+- Metadata-bearing artifacts with valid frontmatter
+
+Out-of-scope artifacts include:
+
+- Repository infrastructure files (.gitignore, LICENSE, README.md, etc.)
+- Runtime logs
+- Scripts and tooling
+- Environment configuration
+- Secrets and credentials
+- CI or tooling config
+
+Boundary Reference: INV-ML2-BOUNDARY (01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md)
 
 ## Authority
 None. Advisory/draft output only.

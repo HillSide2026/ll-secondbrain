@@ -33,7 +33,7 @@ Organize, index, and maintain system knowledge artifacts.
 
 ### Read Permissions
 - `09_INBOX/`
-- `00_SYSTEM/FOLDER_MAP.md`
+- `00_SYSTEM/architecture/FOLDER_MAP.md`
 - Entire repository file tree (read-only)
 
 ### Write Permissions
@@ -53,7 +53,7 @@ Organize, index, and maintain system knowledge artifacts.
 | Input | Location |
 |-------|----------|
 | INBOX contents | `09_INBOX/` |
-| Folder map | `00_SYSTEM/FOLDER_MAP.md` |
+| Folder map | `00_SYSTEM/architecture/FOLDER_MAP.md` |
 | Repository file tree | Entire repo (read-only) |
 
 ---
@@ -88,7 +88,7 @@ Triage INBOX and propose artifact placements.
 Inputs:
 - Scope: INBOX-only
 - Context: Weekly cycle 2026-W05
-- Folder map: 00_SYSTEM/FOLDER_MAP.md
+- Folder map: 00_SYSTEM/architecture/FOLDER_MAP.md
 Produce: INBOX triage report with promotion proposals.
 ```
 
@@ -159,7 +159,7 @@ The agent must stop and escalate if:
 
 ## Write-Back Policy Reference
 
-This agent operates under `00_SYSTEM/WRITE_BACK_POLICY.md`:
+This agent operates under `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`:
 - Local-first: all work lands in repo first
 - External tool writes are disallowed in Stage 2.1
 - External writes require ML1 approval (future stages)

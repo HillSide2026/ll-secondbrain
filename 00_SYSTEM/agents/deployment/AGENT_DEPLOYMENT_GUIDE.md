@@ -60,7 +60,7 @@ This document is an operational artifact. Agent Definitions remain the source of
 
 ### Agent Definition
 
-* Located in `00_SYSTEM/agents/specs/system_management/`
+* Located in `00_SYSTEM/AGENTS/`
 * Defines agent capabilities, permissions, and constraints
 * Machine-readable contract for agent behavior
 * Includes:
@@ -357,7 +357,7 @@ Canonical reference: `01_DOCTRINE/02_policies/ML1_APPROVAL_BOUNDARIES.md`
 
 ## Related Documents
 
-* Agent Definitions: `00_SYSTEM/agents/specs/system_management/`
+* Agent Definitions: `00_SYSTEM/AGENTS/`
 * Write-Back Policy: `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`
 * ML1 Approval Boundaries: `01_DOCTRINE/02_policies/ML1_APPROVAL_BOUNDARIES.md`
 * Folder Map: `00_SYSTEM/architecture/FOLDER_MAP.md`

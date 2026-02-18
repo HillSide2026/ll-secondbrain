@@ -4,16 +4,16 @@ name: System Admin Sweep
 description: Orchestrate system admin SAA agents into a unified sweep with a shared output contract.
 run_root: 06_RUNS/${run_id}/system_admin
 output_contract:
-  markdown: 00_SYSTEM/agents/specs/system_admin/SAA_OUTPUT_CONTRACT.md
-  schema: 00_SYSTEM/agents/specs/system_admin/SAA_OUTPUT_CONTRACT.json
+  markdown: 00_SYSTEM/AGENTS/specs/system_admin/SAA_OUTPUT_CONTRACT.md
+  schema: 00_SYSTEM/AGENTS/specs/system_admin/SAA_OUTPUT_CONTRACT.json
 steps:
   - id: repo_linter
     action: run_agent
     agent: SAA_REPO_LINTER
     inputs:
-      - path: 00_SYSTEM/agents/specs/system_admin/SAA_OUTPUT_CONTRACT.md
-      - path: 00_SYSTEM/agents/specs/system_admin/_shared/inventory.schema.json
-      - path: 00_SYSTEM/agents/specs/system_admin/_shared/findings.schema.json
+      - path: 00_SYSTEM/AGENTS/specs/system_admin/SAA_OUTPUT_CONTRACT.md
+      - path: 00_SYSTEM/AGENTS/specs/system_admin/_shared/inventory.schema.json
+      - path: 00_SYSTEM/AGENTS/specs/system_admin/_shared/findings.schema.json
     outputs:
       - path: ${run_root}/inventory.json
       - path: ${run_root}/findings_SAA_REPO_LINTER.json
@@ -25,8 +25,8 @@ steps:
     agent: SAA_FOLDER_MAP_DRIFT
     inputs:
       - path: ${run_root}/inventory.json
-      - path: 00_SYSTEM/agents/specs/system_admin/SAA_OUTPUT_CONTRACT.md
-      - path: 00_SYSTEM/agents/specs/system_admin/_shared/findings.schema.json
+      - path: 00_SYSTEM/AGENTS/specs/system_admin/SAA_OUTPUT_CONTRACT.md
+      - path: 00_SYSTEM/AGENTS/specs/system_admin/_shared/findings.schema.json
     outputs:
       - path: ${run_root}/findings_SAA_FOLDER_MAP_DRIFT.json
       - path: ${run_root}/appendix_folder_map_drift.md
@@ -37,9 +37,9 @@ steps:
     agent: SAA_METADATA_ENFORCER
     inputs:
       - path: ${run_root}/inventory.json
-      - path: 00_SYSTEM/agents/specs/system_admin/SAA_OUTPUT_CONTRACT.md
-      - path: 00_SYSTEM/agents/specs/system_admin/_shared/findings.schema.json
-      - path: 00_SYSTEM/agents/specs/system_admin/_shared/metadata_index.schema.json
+      - path: 00_SYSTEM/AGENTS/specs/system_admin/SAA_OUTPUT_CONTRACT.md
+      - path: 00_SYSTEM/AGENTS/specs/system_admin/_shared/findings.schema.json
+      - path: 00_SYSTEM/AGENTS/specs/system_admin/_shared/metadata_index.schema.json
     outputs:
       - path: ${run_root}/findings_SAA_METADATA_ENFORCER.json
       - path: ${run_root}/appendix_metadata_enforcer.md
@@ -50,8 +50,8 @@ steps:
     agent: SAA_REFERENCE_INTEGRITY
     inputs:
       - path: ${run_root}/inventory.json
-      - path: 00_SYSTEM/agents/specs/system_admin/SAA_OUTPUT_CONTRACT.md
-      - path: 00_SYSTEM/agents/specs/system_admin/_shared/findings.schema.json
+      - path: 00_SYSTEM/AGENTS/specs/system_admin/SAA_OUTPUT_CONTRACT.md
+      - path: 00_SYSTEM/AGENTS/specs/system_admin/_shared/findings.schema.json
     outputs:
       - path: ${run_root}/findings_SAA_REFERENCE_INTEGRITY.json
       - path: ${run_root}/appendix_reference_integrity.md
@@ -63,8 +63,8 @@ steps:
     inputs:
       - path: ${run_root}/inventory.json
       - path: 02_PLAYBOOKS/_registry/PLAYBOOK_INDEX.md
-      - path: 00_SYSTEM/agents/specs/system_admin/SAA_OUTPUT_CONTRACT.md
-      - path: 00_SYSTEM/agents/specs/system_admin/_shared/findings.schema.json
+      - path: 00_SYSTEM/AGENTS/specs/system_admin/SAA_OUTPUT_CONTRACT.md
+      - path: 00_SYSTEM/AGENTS/specs/system_admin/_shared/findings.schema.json
     outputs:
       - path: ${run_root}/findings_SAA_REGISTRY_SYNC.json
       - path: ${run_root}/appendix_registry_sync.md
@@ -78,7 +78,7 @@ steps:
       - path: ${run_root}/findings_SAA_METADATA_ENFORCER.json
       - path: ${run_root}/findings_SAA_REFERENCE_INTEGRITY.json
       - path: ${run_root}/findings_SAA_REGISTRY_SYNC.json
-      - path: 00_SYSTEM/agents/specs/system_admin/SAA_OUTPUT_CONTRACT.md
+      - path: 00_SYSTEM/AGENTS/specs/system_admin/SAA_OUTPUT_CONTRACT.md
     outputs:
       - path: ${run_root}/findings.json
     failure_mode:
@@ -88,7 +88,7 @@ steps:
     inputs:
       - path: ${run_root}/findings.json
       - path: ${run_root}/inventory.json
-      - path: 00_SYSTEM/agents/specs/system_admin/SAA_OUTPUT_CONTRACT.md
+      - path: 00_SYSTEM/AGENTS/specs/system_admin/SAA_OUTPUT_CONTRACT.md
     outputs:
       - path: ${run_root}/findings.md
       - path: ${run_root}/SYSTEM_ADMIN_REPORT.md

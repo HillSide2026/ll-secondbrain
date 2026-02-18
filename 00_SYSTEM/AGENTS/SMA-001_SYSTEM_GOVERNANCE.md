@@ -33,8 +33,8 @@ Validate system compliance, review changes, and enforce governance rules.
 
 ### Read Permissions
 - PR diffs or artifact paths under review
-- `00_SYSTEM/FOLDER_MAP.md`
-- `00_SYSTEM/SCHEMAS.md`
+- `00_SYSTEM/architecture/FOLDER_MAP.md`
+- `00_SYSTEM/schemas/SCHEMAS.md`
 - `01_DOCTRINE/` (binding rules, read-only)
 - Repository file tree (read-only)
 
@@ -56,8 +56,8 @@ Validate system compliance, review changes, and enforce governance rules.
 | Input | Location |
 |-------|----------|
 | PR diff or artifact path | Under review |
-| Folder map | `00_SYSTEM/FOLDER_MAP.md` |
-| Schemas | `00_SYSTEM/SCHEMAS.md` |
+| Folder map | `00_SYSTEM/architecture/FOLDER_MAP.md` |
+| Schemas | `00_SYSTEM/schemas/SCHEMAS.md` |
 | Binding doctrine | `01_DOCTRINE/` |
 
 ---
@@ -91,7 +91,7 @@ Review artifact placement for compliance.
 Inputs:
 - Artifact: 04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE2/STAGE2.1_ACTION_PLAN.md
 - Scope: full
-- Folder map: 00_SYSTEM/FOLDER_MAP.md
+- Folder map: 00_SYSTEM/architecture/FOLDER_MAP.md
 Produce: Compliance report with pass/fail and recommendations.
 ```
 
@@ -158,7 +158,7 @@ The agent must stop and escalate if:
 
 ## Write-Back Policy Reference
 
-This agent operates under `00_SYSTEM/WRITE_BACK_POLICY.md`:
+This agent operates under `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`:
 - Local-first: all work lands in repo first
 - External tool writes are disallowed in Stage 2.1
 - External writes require ML1 approval (future stages)

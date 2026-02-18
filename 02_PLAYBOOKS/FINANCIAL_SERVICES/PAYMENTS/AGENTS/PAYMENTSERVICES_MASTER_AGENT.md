@@ -371,7 +371,7 @@ Solutions do not replace expertise — they discipline it.
 ## 17. Doctrine References
 
 - Generic Spec: [PRACTICE_AREA_MASTER_AGENT_SPEC](../../../../00_SYSTEM/AGENTS/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
-- Agent Doctrine: [DOCTRINE-AGENTS-0001](../../../../01_DOCTRINE/01_BINDING/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md)
+- Agent Doctrine: [DOCTRINE-AGENTS-0001](../../../../01_DOCTRINE/01_invariants/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md)
 - Agent Typology: [AGENT_TYPOLOGY](../../../../00_SYSTEM/AGENTS/AGENT_TYPOLOGY.md)
 - Solutions: [SOLUTIONS/](../SOLUTIONS/)
 - Overlays: [OVERLAYS/](../OVERLAYS/)
