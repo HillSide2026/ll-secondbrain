@@ -51,11 +51,11 @@ Any future write-back capabilities require:
 
 | Agent | Allowed Write Locations |
 |-------|------------------------|
-| SYS-005 System Governance | Compliance reports, governance audit outputs |
-| SYS-006 Portfolio Planning | Backlog updates, stage closure recommendations, roadmap proposals |
-| SYS-007 Integration Steward | Integration specs (versioned), capability matrices, verification reports |
-| SYS-008 Knowledge Curation | Triage recommendations, artifact promotion proposals, index updates |
-| SYS-009 Runbook & QA | QA validation reports, runbook drafts |
+| SMA-001 System Governance | Compliance reports, governance audit outputs |
+| SMA-002 Portfolio Planning | Backlog updates, stage closure recommendations, roadmap proposals |
+| SMA-003 Integration Steward | Integration specs (versioned), capability matrices, verification reports |
+| SMA-004 Knowledge Curation | Triage recommendations, artifact promotion proposals, index updates |
+| SMA-005 Runbook & QA | QA validation reports, runbook drafts |
 
 ### Prohibited Actions (All Agents)
 
@@ -76,7 +76,7 @@ Safety rails validate:
 - Required frontmatter present for artifact types
 
 ### Governance Review
-System Governance Agent (SYS-005) validates:
+System Governance Agent (SMA-001) validates:
 - Output placement compliance
 - Write permission boundaries
 - Escalation when violations detected

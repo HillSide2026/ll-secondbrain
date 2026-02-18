@@ -74,7 +74,7 @@ tags: [stage2, roadmap, matter-dashboard, calendar]
 - Calendar events created only for eligible top-priority tasks
 - Human approval gate enforced for every write
 - Audit logs produced for each scheduled event
-- SYS-005 governance validation passes
+- SMA-001 governance validation passes
 
 ---
 
@@ -104,7 +104,7 @@ tags: [stage2, roadmap, matter-dashboard, calendar]
 
 | Risk | Likelihood | Impact | Control |
 |------|------------|--------|---------|
-| Unapproved writes to calendar | Medium | High | Human approval gate + SYS-005 review |
+| Unapproved writes to calendar | Medium | High | Human approval gate + SMA-001 review |
 | Scheduling wrong calendar | Medium | High | Boundary enforcement by calendar ID |
 
 ---

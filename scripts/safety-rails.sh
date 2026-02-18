@@ -84,7 +84,7 @@ echo ""
 echo "Check 3: Agent definitions in 00_SYSTEM/AGENTS/"
 
 AGENT_DIR="00_SYSTEM/AGENTS"
-REQUIRED_AGENTS=("SYS-005" "SYS-006" "SYS-007" "SYS-008" "SYS-009")
+REQUIRED_AGENTS=("SMA-001" "SMA-002" "SMA-003" "SMA-004" "SMA-005")
 
 for agent in "${REQUIRED_AGENTS[@]}"; do
     AGENT_FILE=$(find "$AGENT_DIR" -name "${agent}*.md" 2>/dev/null | head -1)

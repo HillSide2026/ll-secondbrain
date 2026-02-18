@@ -170,8 +170,8 @@ Every proposal must include:
 If an action is needed but not in taxonomy:
 
 1. ML1 notes the need
-2. SYS-008 drafts action specification
-3. SYS-005 reviews for governance
+2. SMA-004 drafts action specification
+3. SMA-001 reviews for governance
 4. ML1 approves addition to taxonomy
 5. Action becomes available
 

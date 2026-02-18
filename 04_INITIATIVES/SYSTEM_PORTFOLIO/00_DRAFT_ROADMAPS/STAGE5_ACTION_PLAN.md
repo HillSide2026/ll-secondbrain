@@ -102,8 +102,8 @@ Initial eligible solutions (per current directory set):
 - Each solution run produces a deterministic packet using only approved inputs
 - Drafts are useful but not send-ready
 - All outputs are clearly labeled and remain local
-- SYS-005 governance validation passes
-- SYS-009 QA validation passes
+- SMA-001 governance validation passes
+- SMA-005 QA validation passes
 
 ---
 
@@ -139,7 +139,7 @@ Initial eligible solutions (per current directory set):
 | Drafts feel send-ready | Medium | High | Strict constraints + rollback trigger |
 | Hidden judgment in execution | Medium | High | Refusal conditions + ML1 escalation |
 | Scope creep beyond solution frames | Medium | High | Allowed list only |
-| External write leakage | Low | Critical | Boundary guard + SYS-005 review |
+| External write leakage | Low | Critical | Boundary guard + SMA-001 review |
 
 ---
 

@@ -81,9 +81,9 @@ Promotion of material into Reference is a deliberate act, not cleanup. Most prom
 
 | Agent | Behavior |
 |-------|----------|
-| SYS-008 | May index and flag reference material but may not rewrite or reinterpret it as truth |
-| SYS-009 | May check attribution, structure, and completeness |
-| SYS-005 | Enforces stricter governance standards here than elsewhere |
+| SMA-004 | May index and flag reference material but may not rewrite or reinterpret it as truth |
+| SMA-005 | May check attribution, structure, and completeness |
+| SMA-001 | Enforces stricter governance standards here than elsewhere |
 
 ---
 

@@ -25,11 +25,11 @@ This document reflects the current state of the system and explicitly identifies
 ## Agents Index (Derived from AGENTS.md)
 
 ### System Agents
-- 00_SYSTEM/agents/specs/system_management/SMA_SYSTEM_GOVERNANCE.md
-- 00_SYSTEM/agents/specs/system_management/SMA_PORTFOLIO_PLANNING.md
-- 00_SYSTEM/agents/specs/system_management/SMA_INTEGRATION_STEWARD.md
-- 00_SYSTEM/agents/specs/system_management/SMA_KNOWLEDGE_CURATION.md
-- 00_SYSTEM/agents/specs/system_management/SMA_RUNBOOK_QA.md
+- 00_SYSTEM/agents/specs/system_management/SMA-001_SYSTEM_GOVERNANCE.md
+- 00_SYSTEM/agents/specs/system_management/SMA-002_PORTFOLIO_PLANNING.md
+- 00_SYSTEM/agents/specs/system_management/SMA-003_INTEGRATION_STEWARD.md
+- 00_SYSTEM/agents/specs/system_management/SMA-004_KNOWLEDGE_CURATION.md
+- 00_SYSTEM/agents/specs/system_management/SMA-005_RUNBOOK_QA.md
 
 ### Proto-Agents (Draft)
 - 00_SYSTEM/agents/specs/system_admin/SAA_REPO_LINTER.md

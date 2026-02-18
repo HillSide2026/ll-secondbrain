@@ -70,7 +70,7 @@ tags: [stage3, roadmap, consistency, drift]
 
 - Flags are relevant and non-invasive
 - No implied authority or recommendations
-- SYS-005 governance validation passes
+- SMA-001 governance validation passes
 
 ---
 

@@ -182,7 +182,7 @@ Until explicitly automated by ML1, every labeling run requires affirmative human
 - Labels applied only when matter attribution confidence is sufficient
 - No message content changes or moves
 - Audit logs produced for every label write
-- SYS-005 governance validation passes
+- SMA-001 governance validation passes
 
 ---
 
@@ -216,7 +216,7 @@ Until explicitly automated by ML1, every labeling run requires affirmative human
 | Risk | Likelihood | Impact | Control |
 |------|------------|--------|---------|
 | Mislabeling emails | Medium | High | Deterministic rules + approval gate |
-| Unauthorized writes | Medium | High | Boundary enforcement + SYS-005 review |
+| Unauthorized writes | Medium | High | Boundary enforcement + SMA-001 review |
 
 ---
 

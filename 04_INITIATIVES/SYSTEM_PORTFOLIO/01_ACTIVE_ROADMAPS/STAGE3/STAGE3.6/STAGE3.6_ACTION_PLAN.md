@@ -111,7 +111,7 @@ Drafts cannot:
 - All outputs are clearly system-labeled
 - Classification tags and construction protocol logged for each draft
 - No external writes observed in tests
-- SYS-005 governance validation passes
+- SMA-001 governance validation passes
 
 ---
 
@@ -155,7 +155,7 @@ Drafts cannot:
 | Risk | Likelihood | Impact | Control |
 |------|------------|--------|---------|
 | Drafts get copied into email without review | Medium | High | Clear labels + ML1 gate |
-| Boundary leaks to external systems | Low | Critical | Path guard + SYS-005 review |
+| Boundary leaks to external systems | Low | Critical | Path guard + SMA-001 review |
 | Drafts feel “send-ready” | Medium | High | Strict constraints + rollback trigger |
 
 ---

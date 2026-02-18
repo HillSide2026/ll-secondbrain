@@ -1,5 +1,5 @@
 ---
-id: 00_system__agents__sys-008_knowledge_curation_md
+id: 00_system__agents__sma-004_knowledge_curation_md
 title: Agent Definition
 owner: ML1
 status: draft
@@ -9,7 +9,7 @@ tags: []
 ---
 
 # Agent Definition
-**Agent:** SYS-008 — Knowledge Curation
+**Agent:** SMA-004 — Knowledge Curation
 
 **Version:** v1.0
 **Layer:** 01_SYSTEM
@@ -33,7 +33,7 @@ Organize, index, and maintain system knowledge artifacts.
 
 ### Read Permissions
 - `09_INBOX/`
-- `00_SYSTEM/FOLDER_MAP.md`
+- `00_SYSTEM/architecture/FOLDER_MAP.md`
 - Entire repository file tree (read-only)
 
 ### Write Permissions
@@ -53,7 +53,7 @@ Organize, index, and maintain system knowledge artifacts.
 | Input | Location |
 |-------|----------|
 | INBOX contents | `09_INBOX/` |
-| Folder map | `00_SYSTEM/FOLDER_MAP.md` |
+| Folder map | `00_SYSTEM/architecture/FOLDER_MAP.md` |
 | Repository file tree | Entire repo (read-only) |
 
 ---
@@ -88,7 +88,7 @@ Triage INBOX and propose artifact placements.
 Inputs:
 - Scope: INBOX-only
 - Context: Weekly cycle 2026-W05
-- Folder map: 00_SYSTEM/FOLDER_MAP.md
+- Folder map: 00_SYSTEM/architecture/FOLDER_MAP.md
 Produce: INBOX triage report with promotion proposals.
 ```
 
@@ -143,7 +143,7 @@ The agent must stop and escalate if:
 | Condition | Escalate To |
 |-----------|-------------|
 | Doctrine promotion decisions | ML1 |
-| Placement disputes | System Governance Agent (SYS-005) |
+| Placement disputes | System Governance Agent (SMA-001) |
 
 ---
 
@@ -159,7 +159,7 @@ The agent must stop and escalate if:
 
 ## Write-Back Policy Reference
 
-This agent operates under `00_SYSTEM/WRITE_BACK_POLICY.md`:
+This agent operates under `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`:
 - Local-first: all work lands in repo first
 - External tool writes are disallowed in Stage 2.1
 - External writes require ML1 approval (future stages)
@@ -182,4 +182,4 @@ This agent definition is ready for ML1 review.
 Upon approval, next available steps:
 1. Generate test fixtures (misplaced artifact, stale artifact examples)
 2. Generate golden output examples (triage report, promotion proposal)
-3. Cross-check authority boundaries with SYS-005 and SYS-009
+3. Cross-check authority boundaries with SMA-001 and SMA-005

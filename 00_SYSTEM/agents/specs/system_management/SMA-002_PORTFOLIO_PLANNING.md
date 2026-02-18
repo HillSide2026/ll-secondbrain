@@ -1,5 +1,5 @@
 ---
-id: 00_system__agents__sys-006_portfolio_planning_md
+id: 00_system__agents__sma-002_portfolio_planning_md
 title: Agent Definition
 owner: ML1
 status: draft
@@ -9,7 +9,7 @@ tags: []
 ---
 
 # Agent Definition
-**Agent:** SYS-006 — Portfolio Planning
+**Agent:** SMA-002 — Portfolio Planning
 
 **Version:** v1.0
 **Layer:** 01_SYSTEM
@@ -140,7 +140,7 @@ The agent must stop and escalate if:
 | Condition | Escalate To |
 |-----------|-------------|
 | Roadmap promotion or approval | ML1 |
-| DoD disputes or compliance conflicts | System Governance Agent (SYS-005) |
+| DoD disputes or compliance conflicts | System Governance Agent (SMA-001) |
 
 ---
 
@@ -176,6 +176,6 @@ This agent operates under `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`:
 This agent definition is ready for ML1 review.
 
 Upon approval, next available steps:
-1. Generate test fixtures and golden outputs for SYS-006
-2. Generate QA validation checks for SYS-009
-3. Cross-check authority boundaries with SYS-005 and SYS-008
+1. Generate test fixtures and golden outputs for SMA-002
+2. Generate QA validation checks for SMA-005
+3. Cross-check authority boundaries with SMA-001 and SMA-004

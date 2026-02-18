@@ -30,12 +30,12 @@ inclusion in active roadmaps but do not authorize execution by themselves.
 | SYS-002 | Set up Gmail read-only integration (OAuth app, scopes, audit logging) | Integration Steward | Stage 2 specs, SYS-001 | P1 | candidate |
 | SYS-003 | Set up SharePoint read-only integration (Graph API, site scopes) | Integration Steward | Stage 2 specs, SYS-001 | P1 | candidate |
 | SYS-004 | Set up Word/OneDrive read-only integration (document access) | Integration Steward | Stage 2 specs, SYS-001 | P1 | candidate |
-| SYS-005 | Deploy and configure System Governance Agent | Runbook & QA | SYS-001 | P1 | candidate |
-| SYS-006 | Deploy and configure Portfolio Planning Agent | Runbook & QA | SYS-001 | P1 | candidate |
-| SYS-007 | Deploy and configure Integration Steward Agent | Runbook & QA | SYS-001 | P1 | candidate |
-| SYS-008 | Deploy and configure Knowledge Curation Agent | Runbook & QA | SYS-001 | P1 | candidate |
-| SYS-009 | Deploy and configure Runbook & QA Agent | Runbook & QA | SYS-001 | P1 | candidate |
-| SYS-010 | Execute first operating cycle (weekly cadence test) | All Agents | SYS-005 to SYS-009 | P2 | candidate |
+| SMA-001 | Deploy and configure System Governance Agent | Runbook & QA | SYS-001 | P1 | candidate |
+| SMA-002 | Deploy and configure Portfolio Planning Agent | Runbook & QA | SYS-001 | P1 | candidate |
+| SMA-003 | Deploy and configure Integration Steward Agent | Runbook & QA | SYS-001 | P1 | candidate |
+| SMA-004 | Deploy and configure Knowledge Curation Agent | Runbook & QA | SYS-001 | P1 | candidate |
+| SMA-005 | Deploy and configure Runbook & QA Agent | Runbook & QA | SYS-001 | P1 | candidate |
+| SYS-010 | Execute first operating cycle (weekly cadence test) | All Agents | SMA-001 to SMA-005 | P2 | candidate |
 | SYS-011 | Archive completed Stage 3 + Stage 4 artifacts | Knowledge Curation | Stage closures approved | P2 | candidate |
 
 ---

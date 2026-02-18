@@ -1,5 +1,5 @@
 ---
-id: 00_system__agents__sys-007_integration_steward_md
+id: 00_system__agents__sma-003_integration_steward_md
 title: Agent Definition
 owner: ML1
 status: draft
@@ -9,7 +9,7 @@ tags: []
 ---
 
 # Agent Definition
-**Agent:** SYS-007 — Integration Steward
+**Agent:** SMA-003 — Integration Steward
 
 **Version:** v1.0
 **Layer:** 01_SYSTEM
@@ -155,7 +155,7 @@ The agent must stop and escalate if:
 | Condition | Escalate To |
 |-----------|-------------|
 | Integration approach decisions | ML1 |
-| Compliance or boundary concerns | System Governance Agent (SYS-005) |
+| Compliance or boundary concerns | System Governance Agent (SMA-001) |
 
 ---
 
@@ -194,5 +194,5 @@ This agent definition is ready for ML1 review.
 Upon approval, the next steps are:
 1. Generate test fixtures for this agent
 2. Generate golden output examples
-3. Draft QA validation checks for SYS-009
+3. Draft QA validation checks for SMA-005
 4. Cross-check for conflicts with other agent definitions

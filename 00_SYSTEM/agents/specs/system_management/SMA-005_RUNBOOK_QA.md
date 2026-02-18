@@ -1,5 +1,5 @@
 ---
-id: 00_system__agents__sys-009_runbook_qa_md
+id: 00_system__agents__sma-005_runbook_qa_md
 title: Agent Definition
 owner: ML1
 status: draft
@@ -9,7 +9,7 @@ tags: []
 ---
 
 # Agent Definition
-**Agent:** SYS-009 — Runbook & QA
+**Agent:** SMA-005 — Runbook & QA
 
 **Version:** v1.0
 **Layer:** 01_SYSTEM
@@ -33,7 +33,7 @@ Draft runbooks, validate artifact quality, and perform QA checks.
 
 ### Read Permissions
 - Workflow definitions
-- `00_SYSTEM/SCHEMAS.md`
+- `00_SYSTEM/schemas/SCHEMAS.md`
 - Draft artifacts submitted for review
 - Handoff Map (read-only)
 
@@ -55,7 +55,7 @@ Draft runbooks, validate artifact quality, and perform QA checks.
 | Input | Location |
 |-------|----------|
 | Workflow definitions | As provided |
-| Schemas | `00_SYSTEM/SCHEMAS.md` |
+| Schemas | `00_SYSTEM/schemas/SCHEMAS.md` |
 | Draft artifacts | Submitted for review |
 | Handoff Map | `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE1.3_HANDOFF_MAP.md` |
 
@@ -89,8 +89,8 @@ All outputs must follow the standard agent output format.
 ```
 Validate agent definition for schema compliance.
 Inputs:
-- Artifact: 00_SYSTEM/AGENTS/SYS-007_INTEGRATION_STEWARD.md
-- Schema: 00_SYSTEM/SCHEMAS.md (agent definition schema)
+- Artifact: 00_SYSTEM/agents/specs/system_management/SMA-003_INTEGRATION_STEWARD.md
+- Schema: 00_SYSTEM/schemas/SCHEMAS.md (agent definition schema)
 Produce: QA validation report with pass/fail and issue list.
 ```
 
@@ -140,8 +140,8 @@ The agent must stop and escalate if:
 
 | Condition | Escalate To |
 |-----------|-------------|
-| Schema conflicts | System Governance Agent (SYS-005) |
-| Unclear requirements or scope gaps | Portfolio Planning Agent (SYS-006) |
+| Schema conflicts | System Governance Agent (SMA-001) |
+| Unclear requirements or scope gaps | Portfolio Planning Agent (SMA-002) |
 
 ---
 
@@ -157,7 +157,7 @@ The agent must stop and escalate if:
 
 ## Write-Back Policy Reference
 
-This agent operates under `00_SYSTEM/WRITE_BACK_POLICY.md`:
+This agent operates under `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`:
 - Local-first: all work lands in repo first
 - External tool writes are disallowed in Stage 2.1
 - External writes require ML1 approval (future stages)

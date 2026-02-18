@@ -108,7 +108,7 @@ ROADMAP-SYSTEM-2026W05
 - Runtime: Claude Code agents (subprocess model)
 - Credentials: Environment variables (upgrade to secrets manager later if needed)
 
-**Backlog Items:** SYS-001, SYS-005 to SYS-009
+**Backlog Items:** SYS-001, SMA-001 to SMA-005
 
 ### 2.2 Integration Activation 📋 PLANNED
 **DoD:**
@@ -184,11 +184,11 @@ ROADMAP-SYSTEM-2026W05
 | ID | Description | Owner | Status |
 |----|-------------|-------|--------|
 | SYS-001 | Agent runtime selection | ML1 | **RESOLVED: Claude Code** |
-| SYS-005 | Deploy System Governance Agent | Runbook & QA | pending |
-| SYS-006 | Deploy Portfolio Planning Agent | Runbook & QA | pending |
-| SYS-007 | Deploy Integration Steward Agent | Runbook & QA | pending |
-| SYS-008 | Deploy Knowledge Curation Agent | Runbook & QA | pending |
-| SYS-009 | Deploy Runbook & QA Agent | Runbook & QA | pending |
+| SMA-001 | Deploy System Governance Agent | Runbook & QA | pending |
+| SMA-002 | Deploy Portfolio Planning Agent | Runbook & QA | pending |
+| SMA-003 | Deploy Integration Steward Agent | Runbook & QA | pending |
+| SMA-004 | Deploy Knowledge Curation Agent | Runbook & QA | pending |
+| SMA-005 | Deploy Runbook & QA Agent | Runbook & QA | pending |
 
 ### Stage 2.2 — Integrations
 | ID | Description | Owner | Status |

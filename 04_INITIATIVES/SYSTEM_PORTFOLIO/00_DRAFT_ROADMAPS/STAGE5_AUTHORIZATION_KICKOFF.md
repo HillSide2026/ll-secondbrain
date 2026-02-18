@@ -94,8 +94,8 @@ Stage 5 is authorized to execute **only** workflows that meet all of the followi
   - Deterministic execution definition
   - Refusal conditions + escalation triggers
   - Audit logging + rollback plan
-- SYS-005 governance PASS for Stage 5 authorization package
-- SYS-009 QA PASS for workflow test outputs
+- SMA-001 governance PASS for Stage 5 authorization package
+- SMA-005 QA PASS for workflow test outputs
 
 ---
 

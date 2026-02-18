@@ -14,7 +14,7 @@ tags: []
 
 - **Status:** IN PROGRESS (Phases 2.2.1–2.2.2 complete; Phase 2.2.3 pending)
 - **Owner:** ML1
-- **Execution Owner:** Integration Steward Agent (SYS-007)
+- **Execution Owner:** Integration Steward Agent (SMA-003)
 - **Dependencies:** Stage 2.1 Agent Runtime Setup (CLOSED)
 - **Note:** Resumed 2026-02-03; Phase 2.2.3 (Word/OneDrive) pending
 
@@ -103,9 +103,9 @@ Located at: `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.2/`
 
 | Agent | Role |
 |-------|------|
-| SYS-007 Integration Steward | Primary executor |
-| SYS-005 System Governance | Compliance validation |
-| SYS-009 Runbook & QA | QA and schema checks |
+| SMA-003 Integration Steward | Primary executor |
+| SMA-001 System Governance | Compliance validation |
+| SMA-005 Runbook & QA | QA and schema checks |
 | ML1 | Approval and escalation authority |
 
 ---
@@ -114,7 +114,7 @@ Located at: `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.2/`
 
 ### Workstream B1 — Google Workspace Integration (Phase 2.2.1) ✅ COMPLETE
 
-**Owner:** SYS-007 Integration Steward
+**Owner:** SMA-003 Integration Steward
 
 **Steps:**
 
@@ -139,7 +139,7 @@ Located at: `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.2/`
 
 ### Workstream B2 — SharePoint Integration (Phase 2.2.2) ✅ COMPLETE
 
-**Owner:** SYS-007 Integration Steward
+**Owner:** SMA-003 Integration Steward
 **Dependency:** Completion of Phase 2.2.1
 
 **Steps:**
@@ -164,7 +164,7 @@ Located at: `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.2/`
 
 ### Workstream B3 — Word / OneDrive Integration (Phase 2.2.3)
 
-**Owner:** SYS-007 Integration Steward
+**Owner:** SMA-003 Integration Steward
 **Dependency:** Completion of Phase 2.2.2
 
 **Steps:**
@@ -186,14 +186,14 @@ Located at: `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.2/`
 
 ## Governance & QA Checks (Mandatory)
 
-### System Governance (SYS-005)
+### System Governance (SMA-001)
 
 - Validate declared scopes vs specs
 - Confirm no write permissions granted
 - Review placement and documentation of artifacts
 - Issue pass/fail compliance determination
 
-### Runbook & QA (SYS-009)
+### Runbook & QA (SMA-005)
 
 - Validate reports against standard output format
 - Confirm schema and required sections
@@ -210,8 +210,8 @@ Stage 2.2 is complete when:
 - [ ] Word/OneDrive read-only integration active and verified
 - [ ] Audit logging implemented for all integrations
 - [ ] No-write-path verification completed and documented
-- [ ] SYS-005 compliance reports issued (pass)
-- [ ] SYS-009 QA validation completed (pass)
+- [ ] SMA-001 compliance reports issued (pass)
+- [ ] SMA-005 QA validation completed (pass)
 
 ---
 
@@ -233,7 +233,7 @@ All outputs must follow the Standard Output Format and be stored in approved loc
 
 | Risk | Likelihood | Impact | Control |
 |------|------------|--------|---------|
-| OAuth scope creep | Low | High | Explicit scope review + SYS-005 validation |
+| OAuth scope creep | Low | High | Explicit scope review + SMA-001 validation |
 | Credential exposure | Low | Critical | `.env` only, gitignored, safety rails |
 | Undetected write path | Low | High | Explicit no-write-path testing + reports |
 | Integration drift | Low | Medium | Specs are binding; changes escalated to ML1 |

@@ -1,5 +1,5 @@
 ---
-id: 00_system__agents__sys-005_system_governance_md
+id: 00_system__agents__sma-001_system_governance_md
 title: Agent Definition
 owner: ML1
 status: draft
@@ -9,7 +9,7 @@ tags: []
 ---
 
 # Agent Definition
-**Agent:** SYS-005 — System Governance
+**Agent:** SMA-001 — System Governance
 
 **Version:** v1.0
 **Layer:** 01_SYSTEM
@@ -143,7 +143,7 @@ The agent must stop and escalate if:
 | Condition | Escalate To |
 |-----------|-------------|
 | Doctrine conflicts or binding rule interpretation | ML1 |
-| Unclear artifact placement | Knowledge Curation Agent (SYS-008) |
+| Unclear artifact placement | Knowledge Curation Agent (SMA-004) |
 
 ---
 
