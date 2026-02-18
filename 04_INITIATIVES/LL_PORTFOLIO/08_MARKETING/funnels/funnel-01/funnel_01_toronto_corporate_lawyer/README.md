@@ -4,7 +4,7 @@ title: Funnel 01 — Toronto Corporate Lawyer
 owner: ML1
 status: draft
 created_date: 2026-02-15
-last_updated: 2026-02-15
+last_updated: 2026-02-18
 tags: [marketing, funnel]
 ---
 
@@ -51,30 +51,12 @@ This funnel is barely break-even. The agency cannot acquire other client types. 
 
 Treat this as an empirical fact until disproven by new evidence.
 
-## Identity Definition
+## Current Funnel 1 (Status Quo)
 
-LL is:
-- Risk stabilizer
-- Governance architect
-- Commercial legal operator
-- Long-term partner
-
-That means:
-LL’s marketing must attract operators thinking in quarters and years, not days.
-
-## Strategic Reframe of Funnel 1
-
-Current Funnel 1:
 - Keyword-led
 - Crisis-skewed
 - Volume-oriented
 - Reactive intake structure
-
-Target Funnel (aligned to Identity B):
-- Maturity-led
-- Preventative positioning
-- Qualification-heavy
-- Structured assessment entry point
 
 ## New Core Offer
 
@@ -92,50 +74,3 @@ This signals:
 
 ## Observed Inbound Profile (Current Reality)
 Small business owners facing reactive or distressed legal needs in Ontario. This is who the funnel currently attracts.
-
-## Target Client (Economic Buyer)
-### Target Reader (Entry-Level Audience)
-Founder or owner of an Ontario business:
-- $1M–$8M revenue
-- 5–30 employees
-- Accountant involved
-- Has signed contracts without formal review
-- Has contractor or employment classification grey areas
-- Has a shareholder structure drafted early in the business
-
-Confirmed roles:
-- Owner-operator
-- Founder (5–20 employee business)
-- Managing director of a privately held corporation
-- Family business successor
-- Incorporated contractor scaling into employer
-
-Reader maturity profile:
-- Lean internal team (no in‑house counsel)
-- Lawyer used reactively
-- Has encountered at least one legal scare (contract dispute, unpaid invoice, employee issue, partnership tension)
-- Knows they are winging it legally but has not systematized
-- Not in meltdown, but feels exposed
-
-They are capable business people. They are not sophisticated about corporate structuring. They do not want to be embarrassed for not knowing.
-
-### Target Economic Buyer
-An Ontario business owner who realizes: “If something goes wrong, we’re not protected.”
-
-Typical triggers:
-- Accountant flags structural risk
-- Investor discussions introduce governance scrutiny
-- Transition from contractors to employees
-- Growth beyond the original partnership structure
-- Preparing for financing or expansion
-
-Conversion is maturity-based, not panic-based.
-
-### What Entry Content Must Deliver
-- Plain‑English guidance
-- Clear framing of what corporate legal hygiene means
-- Sequencing of what matters now vs later
-- Calm authority (not alarmist, not academic)
-- Visible business literacy (revenue, margin, contracts — not just statutes)
-
-The goal is not to impress. The goal is to stabilize.
