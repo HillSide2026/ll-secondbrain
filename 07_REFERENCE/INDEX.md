@@ -64,4 +64,4 @@ Central index of all reference material. Updated as items are added.
 
 - Items should be indexed when added
 - Staleness flags noted in this index
-- SYS-008 may suggest updates to this index
+- SMA-004 may suggest updates to this index

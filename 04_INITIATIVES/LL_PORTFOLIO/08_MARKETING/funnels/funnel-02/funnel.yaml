@@ -3,8 +3,8 @@ meta:
   name: Funnel 01 Future State
   status: planned
   owner: ML1
-  version: 3.0.0
-  last_updated: '2026-02-15'
+  version: 3.0.1
+  last_updated: '2026-02-18'
 lineage:
   type: state-of
   of: funnel-01
@@ -24,7 +24,18 @@ spec:
     entry_offer: Corporate Health Check (paid diagnostic)
     tagline: Structural Stability Audit for Growing Ontario Businesses
     description: Structured governance and risk exposure assessment for operating companies that have outgrown their original setup.
+  positioning_intent:
+    target_funnel_traits:
+      - maturity-led
+      - preventative positioning
+      - qualification-heavy
+      - structured assessment entry point
+    buyer_time_horizon: Operators thinking in quarters and years, not days.
 history:
+- v: 3.0.1
+  date: '2026-02-18'
+  by: ML1
+  change: Merged future-state positioning notes from Funnel 01 folder into funnel-02 spec.
 - v: 3.0.0
   date: '2026-02-15'
   by: ML1

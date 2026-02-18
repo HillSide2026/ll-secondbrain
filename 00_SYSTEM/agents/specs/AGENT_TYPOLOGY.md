@@ -4,7 +4,7 @@ title: Agent Typology
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-18
 tags: []
 ---
 
@@ -24,19 +24,58 @@ This document reflects the current state of the system and explicitly identifies
 
 ## Agents Index (Derived from AGENTS.md)
 
-### System Agents
-- 00_SYSTEM/agents/specs/system_management/SMA_SYSTEM_GOVERNANCE.md
-- 00_SYSTEM/agents/specs/system_management/SMA_PORTFOLIO_PLANNING.md
-- 00_SYSTEM/agents/specs/system_management/SMA_INTEGRATION_STEWARD.md
-- 00_SYSTEM/agents/specs/system_management/SMA_KNOWLEDGE_CURATION.md
-- 00_SYSTEM/agents/specs/system_management/SMA_RUNBOOK_QA.md
+Generated on 2026-02-18.
 
-### Proto-Agents (Draft)
-- 00_SYSTEM/agents/specs/system_admin/SAA_REPO_LINTER.md
-- 00_SYSTEM/agents/specs/system_admin/SAA_FOLDER_MAP_DRIFT.md
-- 00_SYSTEM/agents/specs/system_admin/SAA_REFERENCE_INTEGRITY.md
-- 00_SYSTEM/agents/specs/system_admin/SAA_METADATA_ENFORCER.md
-- 00_SYSTEM/agents/specs/system_admin/SAA_REGISTRY_SYNC.md
+### System Management Agents (SMA)
+
+| Agent | Status | Path | Notes |
+| --- | --- | --- | --- |
+| SMA-001 — System Governance | draft | `00_SYSTEM/AGENTS/SMA-001_SYSTEM_GOVERNANCE.md` |  |
+| SMA-002 — Portfolio Planning | draft | `00_SYSTEM/AGENTS/SMA-002_PORTFOLIO_PLANNING.md` |  |
+| SMA-003 — Integration Steward | draft | `00_SYSTEM/AGENTS/SMA-003_INTEGRATION_STEWARD.md` |  |
+| SMA-004 — Knowledge Curation | draft | `00_SYSTEM/AGENTS/SMA-004_KNOWLEDGE_CURATION.md` |  |
+| SMA-005 — Runbook & QA | draft | `00_SYSTEM/AGENTS/SMA-005_RUNBOOK_QA.md` |  |
+
+### System Admin Agents (SAA)
+
+| Agent | Status | Path | Notes |
+| --- | --- | --- | --- |
+| Proto-Agent Charter - Folder Map Drift | draft | `00_SYSTEM/AGENTS/specs/system_admin/SAA_FOLDER_MAP_DRIFT.md` |  |
+| Proto-Agent Charter - Agent Index Reconciler | draft | `00_SYSTEM/AGENTS/specs/system_admin/SAA_AGENT_INDEX_RECONCILER.md` |  |
+| Proto-Agent Charter - Metadata Enforcer | draft | `00_SYSTEM/AGENTS/specs/system_admin/SAA_METADATA_ENFORCER.md` |  |
+| Proto-Agent Charter - Reference Integrity | draft | `00_SYSTEM/AGENTS/specs/system_admin/SAA_REFERENCE_INTEGRITY.md` |  |
+| Proto-Agent Charter - Registry Sync | draft | `00_SYSTEM/AGENTS/specs/system_admin/SAA_REGISTRY_SYNC.md` |  |
+| Proto-Agent Charter - Repo Linter | draft | `00_SYSTEM/AGENTS/specs/system_admin/SAA_REPO_LINTER.md` |  |
+
+### Practice Area Master Agents
+
+| Agent | Status | Path | Notes |
+| --- | --- | --- | --- |
+| Contracts Master Agent — Expert Spec (Ontario) | draft | `02_PLAYBOOKS/CONTRACTS/AGENTS/CONTRACTS_MASTER_AGENT.md` | duplicate paths below |
+| (duplicate) | draft | `02_PLAYBOOKS/substantive/contracts/agents/CONTRACTS_MASTER_AGENT.md` |  |
+| Corporate Law Master Agent — Expert Spec (Ontario) | draft | `02_PLAYBOOKS/CORPORATE/AGENTS/CORPORATE_LAW_MASTER_AGENT.md` | duplicate paths below |
+| (duplicate) | draft | `02_PLAYBOOKS/substantive/corporate/agents/CORPORATE_LAW_MASTER_AGENT.md` |  |
+| Payment Services Master Agent — Expert Spec (Canada) | draft | `02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/AGENTS/PAYMENTSERVICES_MASTER_AGENT.md` | duplicate paths below |
+| (duplicate) | draft | `02_PLAYBOOKS/substantive/financial_services/payments/agents/PAYMENTSERVICES_MASTER_AGENT.md` |  |
+
+### Other Agent Specs
+
+| Agent | Status | Path | Notes |
+| --- | --- | --- | --- |
+| Matter Management Agent — Stage 2.11 | draft | `00_SYSTEM/AGENTS/specs/AGENT__MATTER_MANAGEMENT__STAGE_2_11.md` |  |
+| AGENT SPEC — Pipeline Tracker | draft | `00_SYSTEM/AGENT_SPEC-PIPELINE-TRACKER.md` |  |
+| AGENT SPEC — Pipeline Tracker | draft | `04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/AGENT_SPEC-PIPELINE-TRACKER.md` |  |
+
+### Agent Frameworks (Not Agents)
+
+| Document | Status | Path | Notes |
+| --- | --- | --- | --- |
+| Agent Typology | draft | `00_SYSTEM/AGENTS/specs/AGENT_TYPOLOGY.md` |  |
+| Practice Area Master Agent — Spec v1.0 | draft | `00_SYSTEM/AGENTS/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md` |  |
+
+### Referenced but Missing Specs
+
+None.
 
 ---
 
@@ -112,7 +151,6 @@ They currently combine:
 | CORPORATE_LAW_MASTER_AGENT | Corporate |
 | CONTRACTS_MASTER_AGENT | Contracts |
 | PAYMENTSERVICES_MASTER_AGENT | Payments |
-| TRANSACTIONS_MASTER_AGENT | Transactions |
 
 ### Governing Specification
 

@@ -510,8 +510,8 @@ Stage 3 is complete when:
 - [ ] No unauthorized outputs have occurred
 - [ ] All sub-stage exit gates passed
 - [ ] ML1 confirms: "I think faster, I communicate faster, I do not trust the system"
-- [ ] SYS-005 governance PASS
-- [ ] SYS-009 QA PASS
+- [ ] SMA-001 governance PASS
+- [ ] SMA-005 QA PASS
 
 ---
 

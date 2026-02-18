@@ -6,6 +6,49 @@ category: Preventative structural review
 audience: $1M-$8M Ontario operating businesses
 price_positioning: Paid diagnostic (filters serious buyers)
 outcome: Risk clarity and prioritized remediation roadmap
+identity_roles:
+  - Risk stabilizer
+  - Governance architect
+  - Commercial legal operator
+  - Long-term partner
+buyer_time_horizon: Operators thinking in quarters and years, not days.
+target_funnel_traits:
+  - maturity-led
+  - preventative positioning
+  - qualification-heavy
+  - structured assessment entry point
+target_reader_profile:
+  description: Founder or owner of an Ontario business.
+  revenue_range: $1M-$8M
+  employee_range: 5-30
+  indicators:
+    - Accountant involved
+    - Has signed contracts without formal review
+    - Contractor or employment classification gray areas
+    - Shareholder structure drafted early in the business
+  roles:
+    - Owner-operator
+    - Founder (5-20 employee business)
+    - Managing director of a privately held corporation
+    - Family business successor
+    - Incorporated contractor scaling into employer
+  maturity_profile:
+    - Lean internal team (no in-house counsel)
+    - Lawyer used reactively
+    - Has encountered at least one legal scare
+    - Knows they are winging it legally but has not systematized
+    - Not in meltdown, but feels exposed
+  buyer_ethos:
+    - Capable business people
+    - Not sophisticated about corporate structuring
+    - Prefer not to be embarrassed for not knowing
+conversion_basis: Maturity-based, not panic-based.
+entry_content_requirements:
+  - Plain-English guidance
+  - Clear framing of what corporate legal hygiene means
+  - Sequencing of what matters now vs later
+  - Calm authority (not alarmist, not academic)
+  - Visible business literacy (revenue, margin, contracts -- not just statutes)
 not_this:
   - legal opinion
   - litigation strategy

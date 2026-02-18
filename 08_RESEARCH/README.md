@@ -129,9 +129,9 @@ Corporate law research must live under:
 
 | Agent | Behavior |
 |-------|----------|
-| SYS-008 | May organize, summarize, and propose synthesis of research |
-| SYS-009 | May check clarity and internal consistency |
-| SYS-005 | Generally hands-off unless governance rules are implicated |
+| SMA-004 | May organize, summarize, and propose synthesis of research |
+| SMA-005 | May check clarity and internal consistency |
+| SMA-001 | Generally hands-off unless governance rules are implicated |
 
 **Agents must clearly label outputs derived from Research as non-canonical.**
 

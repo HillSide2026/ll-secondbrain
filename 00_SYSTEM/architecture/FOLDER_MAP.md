@@ -22,3 +22,4 @@ tags: []
 - 08_RESEARCH — Working notes, explorations, and non-authoritative analysis
 - 09_INBOX — Unprocessed intake (must be triaged)
 - 10_ARCHIVE — Deprecated or superseded artifacts (never deleted)
+- scripts — Local tooling and operational scripts (non-ML2)

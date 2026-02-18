@@ -100,12 +100,12 @@ Summary MUST include:
 
 ## 5. Validation Gates
 
-### SYS-005 — Governance
+### SMA-001 — Governance
 - Confirms no-write-path intact
 - Confirms no movement or execution
 - Confirms outputs placed correctly
 
-### SYS-009 — QA
+### SMA-005 — QA
 - Validates schema compliance
 - Validates log format
 - Validates report completeness

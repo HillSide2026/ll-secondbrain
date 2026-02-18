@@ -263,8 +263,8 @@ def generate_summary_report(stats: dict) -> str:
 
 ## Next Steps
 
-1. SYS-005 Governance Review
-2. SYS-009 QA Validation
+1. SMA-001 Governance Review
+2. SMA-005 QA Validation
 3. ML1 Review of classifications
 4. Stage 2.3 closure determination
 """

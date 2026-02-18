@@ -21,13 +21,13 @@ Logging requirement: Record failed checks and required corrections in the audit 
 
 ## Enforcement Responsibilities (moved from DOCTRINE-2026-004)
 
-### SYS-005 (System Governance)
+### SMA-001 (System Governance)
 Must:
 - Reject artifacts with malformed or inconsistent stage/phase numbers
 - Reject artifacts whose phase does not belong to the referenced stage
 - Flag skipped or duplicate phase numbers
 
-### SYS-009 (Runbook & QA)
+### SMA-005 (Runbook & QA)
 Must:
 - Validate naming, directory placement, and numbering consistency
 - Fail QA if:

@@ -48,11 +48,11 @@ This document is an operational artifact. Agent Definitions remain the source of
 
 | Agent ID | Name                | Purpose                                            |
 | -------- | ------------------- | -------------------------------------------------- |
-| SYS-005  | System Governance   | Validate compliance, review changes, enforce rules |
-| SYS-006  | Portfolio Planning  | Manage roadmaps, backlog, stage transitions        |
-| SYS-007  | Integration Steward | Govern integration specs (read-only)               |
-| SYS-008  | Knowledge Curation  | Organize, index, maintain knowledge artifacts      |
-| SYS-009  | Runbook & QA        | Draft runbooks, validate artifact quality          |
+| SMA-001  | System Governance   | Validate compliance, review changes, enforce rules |
+| SMA-002  | Portfolio Planning  | Manage roadmaps, backlog, stage transitions        |
+| SMA-003  | Integration Steward | Govern integration specs (read-only)               |
+| SMA-004  | Knowledge Curation  | Organize, index, maintain knowledge artifacts      |
+| SMA-005  | Runbook & QA        | Draft runbooks, validate artifact quality          |
 
 ---
 
@@ -60,7 +60,7 @@ This document is an operational artifact. Agent Definitions remain the source of
 
 ### Agent Definition
 
-* Located in `00_SYSTEM/agents/specs/system_management/`
+* Located in `00_SYSTEM/AGENTS/`
 * Defines agent capabilities, permissions, and constraints
 * Machine-readable contract for agent behavior
 * Includes:
@@ -109,7 +109,7 @@ Produce: [expected output type]
 
 ## Agent Invocation Guides
 
-### SYS-005 — System Governance
+### SMA-001 — System Governance
 
 **Use when:** Validating PR compliance, checking folder placement, reviewing doctrine alignment
 
@@ -130,7 +130,7 @@ Produce: Governance compliance report with pass/fail and recommendations.
 
 ---
 
-### SYS-006 — Portfolio Planning
+### SMA-002 — Portfolio Planning
 
 **Use when:** Reviewing backlog, preparing stage closure, sequencing roadmap items
 
@@ -150,7 +150,7 @@ Produce: Stage closure recommendation with DoD evidence.
 
 ---
 
-### SYS-007 — Integration Steward
+### SMA-003 — Integration Steward
 
 **Role:** Read-only integration governance agent
 
@@ -169,11 +169,11 @@ Context: Stage 2.1 read-only validation
 Produce: No-write-path verification report and capability matrix.
 ```
 
-**Note:** SYS-007 has no execution or external write authority.
+**Note:** SMA-003 has no execution or external write authority.
 
 ---
 
-### SYS-008 — Knowledge Curation
+### SMA-004 — Knowledge Curation
 
 **Use when:** Triaging INBOX, identifying stale artifacts, proposing placements
 
@@ -192,7 +192,7 @@ Produce: INBOX triage report with promotion proposals.
 
 ---
 
-### SYS-009 — Runbook & QA
+### SMA-005 — Runbook & QA
 
 **Use when:** Validating artifact quality, checking schemas, reviewing runbook drafts
 
@@ -256,11 +256,11 @@ All agents operate under `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`:
 
 | Agent   | Allowed Locations                                  |
 | ------- | -------------------------------------------------- |
-| SYS-005 | Compliance reports, governance review notes        |
-| SYS-006 | BACKLOG.md (within scope), planning reports        |
-| SYS-007 | Integration specs (versioned), capability matrices |
-| SYS-008 | Index files, triage reports                        |
-| SYS-009 | QA reports, runbook drafts                         |
+| SMA-001 | Compliance reports, governance review notes        |
+| SMA-002 | BACKLOG.md (within scope), planning reports        |
+| SMA-003 | Integration specs (versioned), capability matrices |
+| SMA-004 | Index files, triage reports                        |
+| SMA-005 | QA reports, runbook drafts                         |
 
 ---
 
@@ -294,11 +294,11 @@ Canonical reference: `01_DOCTRINE/02_policies/ML1_APPROVAL_BOUNDARIES.md`
 
 | Agent   | Version | Status |
 | ------- | ------- | ------ |
-| SYS-005 | v1.0    | Active |
-| SYS-006 | v1.0    | Active |
-| SYS-007 | v1.0    | Active |
-| SYS-008 | v1.0    | Active |
-| SYS-009 | v1.0    | Active |
+| SMA-001 | v1.0    | Active |
+| SMA-002 | v1.0    | Active |
+| SMA-003 | v1.0    | Active |
+| SMA-004 | v1.0    | Active |
+| SMA-005 | v1.0    | Active |
 
 ---
 
@@ -321,7 +321,7 @@ Canonical reference: `01_DOCTRINE/02_policies/ML1_APPROVAL_BOUNDARIES.md`
 
 1. Re-invoke with explicit format requirement
 2. Validate against standard output format
-3. Request SYS-009 QA validation
+3. Request SMA-005 QA validation
 
 ### Prohibited Write Attempt
 
@@ -330,17 +330,17 @@ Canonical reference: `01_DOCTRINE/02_policies/ML1_APPROVAL_BOUNDARIES.md`
 1. Stop execution
 2. Review invocation context
 3. Run safety rails script
-4. Report to SYS-005
+4. Report to SMA-001
 
 ---
 
 ## Weekly Operating Cycle
 
-1. Run SYS-008 INBOX scan
-2. Run SYS-006 backlog update
-3. Run SYS-005 compliance check (if PRs pending)
-4. Run SYS-007 integration review (if applicable)
-5. Run SYS-009 QA validation (if artifacts submitted)
+1. Run SMA-004 INBOX scan
+2. Run SMA-002 backlog update
+3. Run SMA-001 compliance check (if PRs pending)
+4. Run SMA-003 integration review (if applicable)
+5. Run SMA-005 QA validation (if artifacts submitted)
 6. Review outputs for format compliance
 7. Document cycle results
 
@@ -357,7 +357,7 @@ Canonical reference: `01_DOCTRINE/02_policies/ML1_APPROVAL_BOUNDARIES.md`
 
 ## Related Documents
 
-* Agent Definitions: `00_SYSTEM/agents/specs/system_management/`
+* Agent Definitions: `00_SYSTEM/AGENTS/`
 * Write-Back Policy: `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`
 * ML1 Approval Boundaries: `01_DOCTRINE/02_policies/ML1_APPROVAL_BOUNDARIES.md`
 * Folder Map: `00_SYSTEM/architecture/FOLDER_MAP.md`

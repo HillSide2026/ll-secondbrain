@@ -81,7 +81,7 @@ tags: [stage2, roadmap, matter-dashboard, agent]
 - Matter Dashboard runs on hourly cadence within business hours
 - Drive ledger writes occur only within approved boundary
 - Run logs and outputs captured in repo
-- SYS-005 governance validation passes
+- SMA-001 governance validation passes
 
 ---
 
@@ -106,7 +106,7 @@ tags: [stage2, roadmap, matter-dashboard, agent]
 | Risk | Likelihood | Impact | Control |
 |------|------------|--------|---------|
 | Background automation without approval | Medium | High | Manual trigger only until ML1 approval |
-| Write-back boundary violations | Medium | High | Boundary guard + SYS-005 governance review |
+| Write-back boundary violations | Medium | High | Boundary guard + SMA-001 governance review |
 
 ---
 

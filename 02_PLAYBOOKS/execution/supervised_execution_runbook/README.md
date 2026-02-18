@@ -37,7 +37,7 @@ Define the minimal, safe procedure for executing a single approved action.
 
 - Approved Action Proposal exists
 - ML1 Approval Worksheet completed with "Approve"
-- SYS-005 governance check passed
+- SMA-001 governance check passed
 
 ---
 

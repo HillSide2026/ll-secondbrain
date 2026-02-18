@@ -105,11 +105,11 @@ Located at `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.4/`:
 
 ### 2.1 Agent Runtime ✅ COMPLETE (2026-01-27)
 - [x] Agent runtime selected: **Claude Code agents**
-- [x] System Governance Agent deployed and tested (SYS-005) — v1.0 Active
-- [x] Portfolio Planning Agent deployed and tested (SYS-006) — v1.0 Active
-- [x] Integration Steward Agent deployed and tested (SYS-007) — v1.0 Active
-- [x] Knowledge Curation Agent deployed and tested (SYS-008) — v1.0 Active
-- [x] Runbook & QA Agent deployed and tested (SYS-009) — v1.0 Active
+- [x] System Governance Agent deployed and tested (SMA-001) — v1.0 Active
+- [x] Portfolio Planning Agent deployed and tested (SMA-002) — v1.0 Active
+- [x] Integration Steward Agent deployed and tested (SMA-003) — v1.0 Active
+- [x] Knowledge Curation Agent deployed and tested (SMA-004) — v1.0 Active
+- [x] Runbook & QA Agent deployed and tested (SMA-005) — v1.0 Active
 
 ### 2.2 Integration Activation criteria
 - [ ] Gmail read-only integration active (SYS-002)

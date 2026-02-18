@@ -141,11 +141,11 @@ Example:
 - Logs do not imply correctness
 - Logs do not authorize execution
 
-**SYS-005 validates:**
+**SMA-001 validates:**
 - append-only behavior
 - no forbidden fields
 - status = proposal_only
 
-**SYS-009 validates:**
+**SMA-005 validates:**
 - schema compliance
 - required fields present
