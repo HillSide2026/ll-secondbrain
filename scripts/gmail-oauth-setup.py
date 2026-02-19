@@ -29,27 +29,34 @@ except ImportError as e:
     sys.exit(1)
 
 # Gmail read-only scope only
-SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
+SCOPES = ['https://www.googleapis.com/auth/gmail.modify']
 
 def main():
     """Run OAuth flow and save refresh token."""
 
-    # Load environment
+    # Load environment explicitly from repo root, overriding any existing env vars
     env_path = project_root / '.env'
-    load_dotenv(env_path)
+    print(f"Loading .env from: {env_path.resolve()}")
+    result = load_dotenv(dotenv_path=str(env_path), override=True)
+    print(f"load_dotenv() loaded file: {result}")
+    print()
 
     client_id = os.getenv('GMAIL_CLIENT_ID')
     client_secret = os.getenv('GMAIL_CLIENT_SECRET')
+
+    print(f"Env var name:  GMAIL_CLIENT_ID")
+    print(f"CLIENT_ID:     {client_id}")
+    print()
 
     if not client_id or not client_secret:
         print("ERROR: GMAIL_CLIENT_ID and GMAIL_CLIENT_SECRET must be set in .env")
         sys.exit(1)
 
     print("=" * 60)
-    print("Gmail OAuth Setup - Read-Only Access")
+    print("Gmail OAuth Setup - gmail.modify Access")
     print("=" * 60)
     print()
-    print("Scope: gmail.readonly (read-only, no write access)")
+    print("Scope: gmail.modify")
     print()
 
     # Create OAuth client config
@@ -69,17 +76,27 @@ def main():
     print()
 
     try:
-        flow = InstalledAppFlow.from_client_config(client_config, SCOPES)
+        flow = InstalledAppFlow.from_client_config(
+            client_config, SCOPES,
+        )
+        flow.oauth2session.params.update({
+            'access_type': 'offline',
+            'prompt': 'consent',
+        })
         credentials = flow.run_local_server(
             port=8080,
             prompt='consent',
-            access_type='offline'
+            access_type='offline',
         )
     except Exception as e:
         print(f"ERROR during OAuth flow: {e}")
         print()
         print("Trying console-based flow instead...")
         flow = InstalledAppFlow.from_client_config(client_config, SCOPES)
+        flow.oauth2session.params.update({
+            'access_type': 'offline',
+            'prompt': 'consent',
+        })
         credentials = flow.run_console()
 
     # Extract refresh token

@@ -27,3 +27,7 @@ logs/
 06_RUNS/logs/
 *.log
 sharepoint_sources.yaml
+
+# Runtime artifacts
+state/
+06_RUNS/ops/gmail_fetch_latest.json
