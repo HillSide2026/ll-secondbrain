@@ -119,7 +119,7 @@ class GmailClient:
             token_uri="https://oauth2.googleapis.com/token",
             client_id=self.client_id,
             client_secret=self.client_secret,
-            scopes=['https://www.googleapis.com/auth/gmail.readonly']
+            scopes=['https://www.googleapis.com/auth/gmail.modify']
         )
 
         self.service = build('gmail', 'v1', credentials=credentials)
