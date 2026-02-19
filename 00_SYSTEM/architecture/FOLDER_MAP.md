@@ -4,13 +4,14 @@ title: Folder Map
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-19
 tags: []
 ---
 
 # Folder Map
 
 - 00_SYSTEM — How the system works (rules, schemas, governance)
+- .claude — Automation hub configuration (non-ML2, non-canon)
 - 01_DOCTRINE — ML1-approved doctrines, principles, policies, standards
 - 02_PLAYBOOKS — Repeatable operational workflows
 - 03_TEMPLATES — Reusable document templates
