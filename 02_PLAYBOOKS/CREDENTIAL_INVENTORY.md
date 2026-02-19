@@ -166,7 +166,7 @@ Before activating integrations (Stage 2.2):
 
 ## Related Documents
 
-- Write-Back Policy: `00_SYSTEM/WRITE_BACK_POLICY.md`
-- Agent Deployment Guide: `02_PLAYBOOKS/AGENT_DEPLOYMENT_GUIDE.md`
+- Write-Back Policy: `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`
+- Agent Deployment Guide: `00_SYSTEM/AGENTS/deployment/AGENT_DEPLOYMENT_GUIDE.md`
 - Safety Rails Script: `scripts/safety-rails.sh`
 - Environment Template: `.env.example`

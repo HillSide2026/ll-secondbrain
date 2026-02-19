@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-01-25
-last_updated: 2026-01-25
+last_updated: 2026-02-19
 tags: []
 ---
 
@@ -19,6 +19,7 @@ It contains:
 - approved playbooks and templates
 - governed structures for initiatives, matters, and execution
 - auditable outputs derived from approved artifacts
+- automation configuration in `.claude/` that governs execution (version-controlled, non-canon)
 
 ML2 exists to preserve, apply, and enforce ML1's decisions consistently over time.
 

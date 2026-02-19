@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-14
-last_updated: 2026-02-14
+last_updated: 2026-02-19
 tags: [architecture, system, boundary, ontology]
 ---
 
@@ -21,6 +21,8 @@ It clarifies the distinction between:
 - ML2 (governed ontology)
 - The System (execution environment)
 - The Repository (transport container)
+
+It also records the current layered architecture and execution flow used by the system.
 
 This document is architectural and interpretive.  
 Binding constraints on ML2 are defined in:
@@ -115,6 +117,82 @@ These are container artifacts and are not governed ontology.
 
 ---
 
+# Layered Architecture (Operational)
+
+This layer model is an operational mapping that aligns with the core definitions above.
+It does not override the ML2 ontology boundary invariant.
+
+## Layer 1 — ML2 Core (Canonical Knowledge Layer)
+
+Definition: The governed, canonical artifacts that make up ML2.
+
+Identity test:
+If automation and integrations are removed, ML2 Core still exists as authoritative knowledge.
+
+Practical mapping in this repository:
+- 01_DOCTRINE/
+- 02_PLAYBOOKS/
+- 03_TEMPLATES/
+- 04_INITIATIVES/
+- 05_MATTERS/
+- 06_RUNS/
+- 07_REFERENCE/
+- 08_RESEARCH/
+- 09_INBOX/
+- 10_ARCHIVE/
+- 00_SYSTEM/ (governed artifacts only)
+
+Note:
+ML2 is conceptual and not defined by its storage medium. The list above is a practical mapping, not a boundary rule.
+
+## Layer 1A — ML2 Configuration (Automation Hub)
+
+Definition: Version-controlled execution configuration stored alongside ML2 Core.
+
+Location:
+- .claude/ (commands, hooks, agents configuration)
+
+Purpose:
+- Define deterministic execution commands
+- Bind AI behavior to canon artifacts
+- Enforce doctrine-aligned checks
+
+Important distinction:
+Configuration is version-controlled but is not itself ML2 canon.
+
+## Layer 2 — AI Execution Layer
+
+Definition: The runtime intelligence engine (e.g., Claude Code) that reads from ML2 Core, executes commands, applies hooks, and generates outputs.
+
+Characteristics:
+- Ephemeral runtime
+- Context-aware
+- Governed by doctrine and configuration
+- Writes only within permitted scope
+
+Layer 2 is behavior, not identity.
+
+## Layer 3 — External Integration Surface
+
+Definition: Connected business tools and systems that exchange information with ML2.
+
+Examples:
+- Gmail
+- Drive
+- SharePoint
+- CRM systems
+- Project management tools
+
+Characteristics:
+- Not part of ML2
+- Provide inputs or receive outputs
+- May disconnect or degrade without harming ML2 Core
+
+Operational evidence principle (non-binding):
+An integration is considered operational only when it produces evidence artifacts inside the repository.
+
+---
+
 # Boundary Principles
 
 ## Ontology vs Mechanism
@@ -135,6 +213,35 @@ If it would not survive that migration, it belongs to the System or repository l
 
 ---
 
+# Execution Flow Model (Operational)
+
+This flow describes current system practice and is not a substitute for binding doctrine.
+
+External Signal  
+→ Inbox / Matter / Initiative  
+→ Run (AI Execution)  
+→ Outcome  
+→ Promote / Park / Archive
+
+Run outcome recording (operational):
+- `06_RUNS/_RUN_TEMPLATE/OUTCOME.yaml`
+- `06_RUNS/99_distill_queue/README.md`
+
+Binding promotion rules remain in:
+`01_DOCTRINE/04_procedural/DOCTRINE-2026-003-promotion-rules.md`
+
+---
+
+# Canon Promotion Model (Current vs Proposed)
+
+Current binding model:
+Inbox → Research → Doctrine (see DOCTRINE-2026-003).
+
+Proposed ladder (non-binding, requires ML1 approval to formalize):
+Research → Template → Playbook → Doctrine.
+
+---
+
 # Integration Model
 
 Integrations have two components:
@@ -150,6 +257,16 @@ Integrations have two components:
    - May change without altering ontology
 
 Secrets and credentials are never ML2.
+
+---
+
+# Observability Surface
+
+Operational health and status summary:
+- `00_SYSTEM/DASHBOARD.md`
+
+The dashboard is expected to surface runs, promotions, distill queue count, and integration status.
+Automation for these metrics is not required for this document to remain valid.
 
 ---
 

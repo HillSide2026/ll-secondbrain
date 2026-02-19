@@ -4,7 +4,7 @@ title: Decision Log
 owner: ML1
 status: draft
 created_date: 2026-01-25
-last_updated: 2026-01-25
+last_updated: 2026-02-19
 tags: []
 ---
 
@@ -60,3 +60,17 @@ This log records all system-level decisions affecting the Second Brain.
 **Approved by:** ML1  
 **Artifacts impacted:** /01_DOCTRINE/02_policies/DOCTRINE-2026-007-canonical-agent-doctrine.md  
 **Notes:** Establishes binding constraints on agent authority, scope, attribution, and non-simulation requirements. Renumbered from DOCTRINE-2026-004 on 2026-02-19 to resolve ID collision.
+
+## 2026-02-19 — Approve Doctrine 2026-008 (Run Outcome Rules)
+
+**Decision:** Approved procedural doctrine requiring a single run outcome (Promote / Park / Archive) with explicit recording  
+**Approved by:** ML1  
+**Artifacts impacted:** `01_DOCTRINE/04_procedural/DOCTRINE-2026-008-run-outcome-rules.md`  
+**Notes:** Establishes mandatory outcome recording and ties Park outcomes to the distill queue
+
+## 2026-02-19 — Approve Policy POL-012 (Canon-Referenced Automation Commands)
+
+**Decision:** Approved policy requiring automation commands to reference canonical inputs and doctrine by explicit path/id  
+**Approved by:** ML1  
+**Artifacts impacted:** `01_DOCTRINE/02_policies/POL-012_Canon_Referenced_Automation_Commands.md`  
+**Notes:** Ensures command definitions are reproducible and bound to canon

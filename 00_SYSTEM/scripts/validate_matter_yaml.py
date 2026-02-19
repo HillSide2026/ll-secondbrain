@@ -3,7 +3,7 @@
 validate_matter_yaml.py — Matter Schema Validation
 
 Scans 05_MATTERS/ and validates each matter against the schema defined in
-00_SYSTEM/SCHEMAS.md.
+00_SYSTEM/schemas/SCHEMAS.md.
 
 Usage:
     python 00_SYSTEM/scripts/validate_matter_yaml.py [--fix-missing] [--verbose]
@@ -23,7 +23,7 @@ import yaml
 from pathlib import Path
 from datetime import datetime
 
-# Schema definition per 00_SYSTEM/SCHEMAS.md
+# Schema definition per 00_SYSTEM/schemas/SCHEMAS.md
 REQUIRED_FIELDS = {
     'matter_id': str,
     'matter_name': str,

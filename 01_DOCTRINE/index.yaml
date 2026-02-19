@@ -160,6 +160,12 @@ policies:
   version: '1.0'
   status: active
   history: []
+- id: POL-012
+  title: Canon-Referenced Automation Commands
+  path: 01_DOCTRINE/02_policies/POL-012_Canon_Referenced_Automation_Commands.md
+  version: '1.0'
+  status: active
+  history: []
 - id: 01_doctrine__policies__readme_md
   title: Policies (Level 3)
   path: 01_DOCTRINE/02_policies/README.md
@@ -346,6 +352,12 @@ doctrine:
 - id: DOCTRINE-2026-003
   title: "Promotion Rules (Inbox \u2192 Research \u2192 Doctrine)"
   path: 01_DOCTRINE/04_procedural/DOCTRINE-2026-003-promotion-rules.md
+  version: '1.0'
+  status: approved
+  history: []
+- id: DOCTRINE-2026-008
+  title: Run Outcome Rules (Promote / Park / Archive)
+  path: 01_DOCTRINE/04_procedural/DOCTRINE-2026-008-run-outcome-rules.md
   version: '1.0'
   status: approved
   history: []
