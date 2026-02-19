@@ -344,6 +344,25 @@ Canonical reference: `01_DOCTRINE/02_policies/ML1_APPROVAL_BOUNDARIES.md`
 6. Review outputs for format compliance
 7. Document cycle results
 
+### Automation (Weekly Sweep)
+
+Run both sweeps with a single command:
+
+```bash
+python3 00_SYSTEM/scripts/run_weekly_cycle.py
+```
+
+This will:
+- Run the System Admin sweep
+- Run the System Management sweep
+- Write a weekly cycle log under `06_RUNS/`
+
+**Example schedule (cron):**
+```bash
+# Every Monday at 09:00
+0 9 * * 1 cd /path/to/ll-secondbrain_fresh && python3 00_SYSTEM/scripts/run_weekly_cycle.py
+```
+
 ---
 
 ## Known Gaps (Intentional)
