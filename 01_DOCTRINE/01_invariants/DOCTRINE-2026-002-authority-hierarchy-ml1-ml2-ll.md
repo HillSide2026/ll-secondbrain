@@ -17,10 +17,6 @@ provenance:
   context: Approved doctrine establishing authority hierarchy between ML1, ML2, and LL
 ---
 
-
-
-
-
 ---
 
 # Authority Hierarchy (ML1 / ML2 / LL)

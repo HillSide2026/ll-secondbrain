@@ -1,5 +1,5 @@
 ---
-id: 01_doctrine__01_binding__second_brain_model_md
+id: 01_doctrine__02_interpretive__second_brain_model_md
 title: Second Brain System Model
 owner: ML1
 status: draft
