@@ -1,5 +1,5 @@
 ---
-id: 01_doctrine__01_binding__doctrine-2026-004-stage_phase_numbering_md
+id: 01_doctrine__01_invariants__doctrine-2026-004-stage_phase_numbering_md
 title: Canonical Stage & Phase Numbering Doctrine
 owner: ML1
 status: draft

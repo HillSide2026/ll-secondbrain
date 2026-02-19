@@ -1,5 +1,5 @@
 schema_version: '1.0'
-last_updated: '2026-02-13'
+last_updated: '2026-02-19'
 rules_dir: 01_DOCTRINE/rules
 tests_dir: 01_DOCTRINE/tests
 rules: []
@@ -15,7 +15,7 @@ constitution:
   status: Active
   history: []
 principles:
-- id: 01_doctrine__01_binding__doctrine-2026-006-decision-principles_md
+- id: 01_doctrine__01_principles__doctrine-2026-006-decision-principles_md
   title: DOCTRINE 2026 006 decision principles
   path: 01_DOCTRINE/01_principles/DOCTRINE-2026-006-decision-principles.md
   version: '1.0'
@@ -82,13 +82,13 @@ principles:
   status: active
   history: []
 - id: 01_doctrine__principles__readme_md
-  title: Principles (Level 1)
+  title: Principles (Level 2)
   path: 01_DOCTRINE/01_principles/README.md
   version: '1.0'
   status: draft
   history: []
 policies:
-- id: 01_doctrine__01_binding__doctrine-2026-005-no_fictional_execution_constructs_md
+- id: 01_doctrine__02_policies__doctrine-2026-005-no_fictional_execution_constructs_md
   title: No Fictional Execution Constructs
   path: 01_DOCTRINE/02_policies/DOCTRINE-2026-005-NO_FICTIONAL_EXECUTION_CONSTRUCTS.md
   version: '1.0'
@@ -161,8 +161,26 @@ policies:
   status: active
   history: []
 - id: 01_doctrine__policies__readme_md
-  title: Policies (Level 2)
+  title: Policies (Level 3)
   path: 01_DOCTRINE/02_policies/README.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: 01_doctrine__02_policies__doctrine-2026-007-canonical-agent-doctrine_md
+  title: Canonical Agent Doctrine
+  path: 01_DOCTRINE/02_policies/DOCTRINE-2026-007-canonical-agent-doctrine.md
+  version: '1.0'
+  status: approved
+  history: []
+- id: 00_system__ml1_approval_boundaries_md
+  title: ML1 Approval Boundaries
+  path: 01_DOCTRINE/02_policies/ML1_APPROVAL_BOUNDARIES.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: 00_system__write_back_policy_md
+  title: System Write-Back Policy
+  path: 01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md
   version: '1.0'
   status: draft
   history: []
@@ -252,7 +270,7 @@ protocols:
   policy: POL-007
   history: []
 - id: 01_doctrine__protocols__readme_md
-  title: Protocols (Level 3)
+  title: Protocols (Level 4)
   path: 01_DOCTRINE/03_protocols/README.md
   version: '1.0'
   status: draft
@@ -271,33 +289,27 @@ doctrine:
   version: '1.0'
   status: approved
   history: []
-- id: 01_doctrine__01_binding__doctrine-2026-004-stage_phase_numbering_md
+- id: 01_doctrine__01_invariants__doctrine-2026-004-stage_phase_numbering_md
   title: Canonical Stage & Phase Numbering Doctrine
   path: 01_DOCTRINE/01_invariants/DOCTRINE-2026-004-STAGE_PHASE_NUMBERING.md
   version: '1.0'
   status: draft
   history: []
-- id: 01_doctrine__01_binding__doctrine-agents-0001-second-brain_agent_authority_md
+- id: 01_doctrine__01_invariants__doctrine-agents-0001-second-brain_agent_authority_md
   title: 'DOCTRINE-AGENTS-0001: Second Brain Agent Authority'
   path: 01_DOCTRINE/01_invariants/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md
   version: '1.0'
   status: draft
   history: []
-- id: 01_doctrine__01_binding__doctrine-repo-0001-no-toplevel-directories_md
+- id: 01_doctrine__01_invariants__doctrine-repo-0001-no-toplevel-directories_md
   title: 'Doctrine: Claude Code Must Not Create Top-Level Directories'
   path: 01_DOCTRINE/01_invariants/DOCTRINE-REPO-0001-no-toplevel-directories.md
   version: '1.0'
   status: draft
   history: []
-- id: 01_doctrine__01_binding__readme_md
-  title: Invariants
+- id: 01_doctrine__01_invariants__readme_md
+  title: Invariants (Level 1)
   path: 01_DOCTRINE/01_invariants/README.md
-  version: '1.0'
-  status: draft
-  history: []
-- id: 01_doctrine__principles__readme_md
-  title: Principles (Level 1)
-  path: 01_DOCTRINE/01_principles/README.md
   version: '1.0'
   status: draft
   history: []
@@ -307,15 +319,9 @@ doctrine:
   version: '1.0'
   status: draft
   history: []
-- id: 01_doctrine__01_binding__second_brain_model_md
+- id: 01_doctrine__02_interpretive__second_brain_model_md
   title: Second Brain System Model
   path: 01_DOCTRINE/02_interpretive/SECOND_BRAIN_MODEL.md
-  version: '1.0'
-  status: draft
-  history: []
-- id: 01_doctrine__policies__readme_md
-  title: Policies (Level 2)
-  path: 01_DOCTRINE/02_policies/README.md
   version: '1.0'
   status: draft
   history: []
@@ -334,12 +340,6 @@ doctrine:
 - id: 01_doctrine__03_capability_profiles___template_md
   title: 'AGENT-CAPABILITY-PROFILE-XXXX: [Profile Name]'
   path: 01_DOCTRINE/03_capability_profiles/_TEMPLATE.md
-  version: '1.0'
-  status: draft
-  history: []
-- id: 01_doctrine__protocols__readme_md
-  title: Protocols (Level 3)
-  path: 01_DOCTRINE/03_protocols/README.md
   version: '1.0'
   status: draft
   history: []
@@ -370,6 +370,18 @@ doctrine:
 - id: 01_doctrine__tests__readme_md
   title: Doctrine Test Fixtures
   path: 01_DOCTRINE/tests/README.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: inv-ml2-boundary
+  title: ML2 Ontology Boundary
+  path: 01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: 00_system__system_identity_md
+  title: "System Identity \u2014 LL Second Brain (ML2)"
+  path: 01_DOCTRINE/02_interpretive/SYSTEM_IDENTITY.md
   version: '1.0'
   status: draft
   history: []

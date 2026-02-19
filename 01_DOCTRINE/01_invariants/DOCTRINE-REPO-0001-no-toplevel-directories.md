@@ -1,5 +1,5 @@
 ---
-id: 01_doctrine__01_binding__doctrine-repo-0001-no-toplevel-directories_md
+id: 01_doctrine__01_invariants__doctrine-repo-0001-no-toplevel-directories_md
 title: Doctrine: Claude Code Must Not Create Top-Level Directories
 owner: ML1
 status: draft

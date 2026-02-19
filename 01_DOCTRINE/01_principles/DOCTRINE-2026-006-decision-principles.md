@@ -1,5 +1,5 @@
 ---
-id: 01_doctrine__01_binding__doctrine-2026-006-decision-principles_md
+id: 01_doctrine__01_principles__doctrine-2026-006-decision-principles_md
 title: DOCTRINE 2026 006 decision principles
 owner: ML1
 status: draft
@@ -13,7 +13,7 @@ tags: []
 Moved from `01_DOCTRINE/01_invariants/` to `01_DOCTRINE/01_principles/` on 2026-02-13 to reflect interpretive principles for judgment.
 
 DOCTRINE-2026-006 — Decision Principles
-Status: Binding Doctrine
+Status: Principle (Interpretive)
 Authority: ML1
 Effective Date: 2026-01-24
 Scope: System-wide (ML2)

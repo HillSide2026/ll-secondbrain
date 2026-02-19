@@ -1,5 +1,5 @@
 ---
-id: 01_doctrine__01_binding__doctrine-agents-0001-second-brain_agent_authority_md
+id: 01_doctrine__01_invariants__doctrine-agents-0001-second-brain_agent_authority_md
 title: DOCTRINE-AGENTS-0001: Second Brain Agent Authority
 owner: ML1
 status: draft

@@ -1,6 +1,6 @@
 ---
-id: 01_doctrine__01_binding__readme_md
-title: Invariants
+id: 01_doctrine__01_invariants__readme_md
+title: Invariants (Level 1)
 owner: ML1
 status: draft
 version: 1.0
@@ -9,7 +9,7 @@ last_updated: 2026-02-13
 tags: [doctrine, invariants]
 ---
 
-# Invariants
+# Invariants (Level 1)
 
 Definition:
 An Invariant is a structural property that must remain true for the system to remain coherent and valid.
