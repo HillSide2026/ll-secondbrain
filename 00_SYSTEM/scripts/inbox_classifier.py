@@ -52,10 +52,10 @@ SYSTEM_DOMAINS = [
 
 DESTINATION_MAP = {
     "Matters": "05_MATTERS",
-    "Operations": "04_OPERATIONS",
-    "Firm Management": "07_FIRM_MANAGEMENT",
+    "Operations": "04_INITIATIVES",
+    "Firm Management": "04_INITIATIVES",
     "System Operations": "00_SYSTEM",
-    "Personal Noise": "09_ARCHIVE"
+    "Personal Noise": "10_ARCHIVE"
 }
 
 # Object Type → System Domain mapping

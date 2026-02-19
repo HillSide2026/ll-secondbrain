@@ -15,7 +15,7 @@ from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 
 # Load .env from repo root
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parents[2]
 load_dotenv(REPO_ROOT / ".env")
 
 CLIENT_ID = os.environ["GMAIL_CLIENT_ID"]
@@ -23,6 +23,7 @@ CLIENT_SECRET = os.environ["GMAIL_CLIENT_SECRET"]
 REFRESH_TOKEN = os.environ["GMAIL_REFRESH_TOKEN"]
 
 OUTPUT_PATH = REPO_ROOT / "06_RUNS" / "ops" / "gmail_fetch_latest.json"
+BODY_CHAR_LIMIT = 1000
 
 
 def get_gmail_service():
@@ -76,8 +77,8 @@ def get_message_detail(service, msg_id):
                 break
 
     # Truncate very long bodies
-    if len(body) > 3000:
-        body = body[:3000] + "\n[TRUNCATED]"
+    if len(body) > BODY_CHAR_LIMIT:
+        body = body[:BODY_CHAR_LIMIT] + "\n[TRUNCATED]"
 
     return {
         "message_id": msg_id,
