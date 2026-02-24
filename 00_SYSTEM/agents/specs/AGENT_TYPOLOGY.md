@@ -4,7 +4,7 @@ title: Agent Typology
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-18
+last_updated: 2026-02-24
 tags: []
 ---
 
@@ -24,7 +24,7 @@ This document reflects the current state of the system and explicitly identifies
 
 ## Agents Index (Derived from AGENTS.md)
 
-Generated on 2026-02-18.
+Generated on 2026-02-24.
 
 ### System Management Agents (SMA)
 
@@ -35,6 +35,7 @@ Generated on 2026-02-18.
 | SMA-003 — Integration Steward | draft | `00_SYSTEM/AGENTS/SMA-003_INTEGRATION_STEWARD.md` |  |
 | SMA-004 — Knowledge Curation | draft | `00_SYSTEM/AGENTS/SMA-004_KNOWLEDGE_CURATION.md` |  |
 | SMA-005 — Runbook & QA | draft | `00_SYSTEM/AGENTS/SMA-005_RUNBOOK_QA.md` |  |
+| SMA-006 — System Librarian | draft | `00_SYSTEM/AGENTS/SMA-006_SYSTEM_LIBRARIAN.md` |  |
 
 ### System Admin Agents (SAA)
 

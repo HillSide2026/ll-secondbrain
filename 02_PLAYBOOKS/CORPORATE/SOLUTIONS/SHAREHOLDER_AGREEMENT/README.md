@@ -80,3 +80,4 @@ This solution frame applies to two related but distinct agreement types:
 | Assembly logic | [SOLUTION_ASSEMBLY.md](SOLUTION_ASSEMBLY.md) |
 | Common artifacts | [COMMON_ARTIFACTS.md](COMMON_ARTIFACTS.md) |
 | Risk profile | [RISK_PROFILE.md](RISK_PROFILE.md) |
+| Service line architecture | [SHA_Service_Line_Architecture.md](SHA_Service_Line_Architecture.md) |
