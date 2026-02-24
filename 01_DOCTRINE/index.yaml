@@ -1,5 +1,5 @@
 schema_version: '1.0'
-last_updated: '2026-02-19'
+last_updated: '2026-02-24'
 rules_dir: 01_DOCTRINE/rules
 tests_dir: 01_DOCTRINE/tests
 rules: []
@@ -294,6 +294,30 @@ doctrine:
   path: 01_DOCTRINE/01_invariants/DOCTRINE-2026-002-authority-hierarchy-ml1-ml2-ll.md
   version: '1.0'
   status: approved
+  history: []
+- id: DOCTRINE-RISK_MODEL-0001
+  title: Risk Model Doctrine (Economic, Execution, Relationship)
+  path: 01_DOCTRINE/01_invariants/DOCTRINE-RISK_MODEL-0001.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: DOCTRINE-MATTERS-0001
+  title: Matter Stages Doctrine
+  path: 01_DOCTRINE/01_invariants/DOCTRINE-MATTERS-0001-MATTER_STAGES.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: DOCTRINE-MATTERS-0002
+  title: Matter Solutions Doctrine
+  path: 01_DOCTRINE/01_invariants/DOCTRINE-MATTERS-0002-MATTER_SOLUTIONS.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: DOCTRINE-MATTERS-0003
+  title: Matter Summary Doctrine
+  path: 01_DOCTRINE/01_invariants/DOCTRINE-MATTERS-0003-MATTER_SUMMARY.md
+  version: '1.0'
+  status: draft
   history: []
 - id: 01_doctrine__01_invariants__doctrine-2026-004-stage_phase_numbering_md
   title: Canonical Stage & Phase Numbering Doctrine

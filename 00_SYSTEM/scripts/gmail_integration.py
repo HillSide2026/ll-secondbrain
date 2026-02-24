@@ -33,18 +33,27 @@ AUDIT_LOG_FILE = LOG_DIR / "gmail_audit.log"
 audit_logger = logging.getLogger("gmail_audit")
 audit_logger.setLevel(logging.INFO)
 
-# File handler for audit log
-file_handler = logging.FileHandler(AUDIT_LOG_FILE)
-file_handler.setFormatter(logging.Formatter(
-    '%(asctime)s | %(levelname)s | %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S'
-))
-audit_logger.addHandler(file_handler)
 
-# Console handler for visibility
-console_handler = logging.StreamHandler()
-console_handler.setFormatter(logging.Formatter('%(message)s'))
-audit_logger.addHandler(console_handler)
+def _configure_audit_logger():
+    """Ensure audit logger handlers are configured only once."""
+    if audit_logger.handlers:
+        return
+
+    # File handler for audit log
+    file_handler = logging.FileHandler(AUDIT_LOG_FILE)
+    file_handler.setFormatter(logging.Formatter(
+        '%(asctime)s | %(levelname)s | %(message)s',
+        datefmt='%Y-%m-%d %H:%M:%S'
+    ))
+    audit_logger.addHandler(file_handler)
+
+    # Console handler for visibility
+    console_handler = logging.StreamHandler()
+    console_handler.setFormatter(logging.Formatter('%(message)s'))
+    audit_logger.addHandler(console_handler)
+
+
+_configure_audit_logger()
 
 
 class GmailClient:
@@ -99,7 +108,7 @@ class GmailClient:
         """Load credentials from environment."""
         from dotenv import load_dotenv
 
-        env_path = Path(__file__).parent.parent / '.env'
+        env_path = Path(__file__).resolve().parents[2] / '.env'
         load_dotenv(env_path)
 
         self.client_id = os.getenv('GMAIL_CLIENT_ID')

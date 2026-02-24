@@ -6,7 +6,7 @@ status: draft
 version: 1.0
 supersedes:
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-24
 tags: []
 ---
 
@@ -28,7 +28,7 @@ Acceptance Criteria: TBD
 # Agent Deployment Guide
 
 **Version:** 2.0
-**Last Updated:** 2026-01-27
+**Last Updated:** 2026-02-24
 **Status:** Active
 
 ---
@@ -53,6 +53,7 @@ This document is an operational artifact. Agent Definitions remain the source of
 | SMA-003  | Integration Steward | Govern integration specs (read-only)               |
 | SMA-004  | Knowledge Curation  | Organize, index, maintain knowledge artifacts      |
 | SMA-005  | Runbook & QA        | Draft runbooks, validate artifact quality          |
+| SMA-006  | System Librarian    | Canonical placement, registration, validation      |
 
 ---
 
@@ -212,6 +213,27 @@ Produce: QA validation report with pass/fail and issue list.
 
 ---
 
+### SMA-006 — System Librarian
+
+**Use when:** Placing/renaming/registering system artifacts or validating index integrity
+
+```
+Place and register new doctrine + schema artifacts.
+
+Inputs:
+- Artifact payloads: [paths or inline]
+- Classification: type=doctrine|schema, domain=matters, status=draft, owner=ML1
+- Target action: place_and_register
+- Mode: propose
+
+Scope: Bounded to specified artifacts
+Context: New canonical artifacts
+
+Produce: Mapping + index updates + validation report + change packet.
+```
+
+---
+
 ## Standard Output Format
 
 All agents must produce outputs using this structure:
@@ -261,6 +283,7 @@ All agents operate under `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`:
 | SMA-003 | Integration specs (versioned), capability matrices |
 | SMA-004 | Index files, triage reports                        |
 | SMA-005 | QA reports, runbook drafts                         |
+| SMA-006 | Canonical artifact placements, index updates, change packets |
 
 ---
 
@@ -299,6 +322,7 @@ Canonical reference: `01_DOCTRINE/02_policies/ML1_APPROVAL_BOUNDARIES.md`
 | SMA-003 | v1.0    | Active |
 | SMA-004 | v1.0    | Active |
 | SMA-005 | v1.0    | Active |
+| SMA-006 | v1.0    | Draft  |
 
 ---
 
@@ -340,9 +364,10 @@ Canonical reference: `01_DOCTRINE/02_policies/ML1_APPROVAL_BOUNDARIES.md`
 2. Run SMA-002 backlog update
 3. Run SMA-001 compliance check (if PRs pending)
 4. Run SMA-003 integration review (if applicable)
-5. Run SMA-005 QA validation (if artifacts submitted)
-6. Review outputs for format compliance
-7. Document cycle results
+5. Run SMA-006 librarian pass (if new artifacts or index drift)
+6. Run SMA-005 QA validation (if artifacts submitted)
+7. Review outputs for format compliance
+8. Document cycle results
 
 ### Automation (Weekly Sweep)
 

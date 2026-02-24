@@ -4,7 +4,7 @@ title: Artifact Schemas
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-24
 tags: []
 ---
 
@@ -97,6 +97,31 @@ Matters are placed in directories by `delivery_status` only:
 - `Standard` → `05_MATTERS/STANDARD/`
 - `Parked` → `05_MATTERS/PARKED/`
 ---
+
+## Matter Stages Schema
+
+Location: `00_SYSTEM/schemas/SCHEMAS_MATTER_STAGES.md`  
+Status: draft
+
+## Matter Summary — Schema
+
+Location: `00_SYSTEM/schemas/SCHEMAS_MATTER_SUMMARY.md`  
+Status: draft
+
+## Solutions Schema
+
+Location: `00_SYSTEM/schemas/SCHEMAS_SOLUTIONS.md`  
+Status: draft
+
+## Draft Placement Plan — Schema
+
+Location: `00_SYSTEM/schemas/SCHEMAS_INBOX_TRIAGE.md`  
+Status: draft
+
+## Risk Model — Schema
+
+Location: `00_SYSTEM/schemas/SCHEMAS_RISK_MODEL.md`  
+Status: draft
 
 ## Run Log Schema — Matter Dashboard
 

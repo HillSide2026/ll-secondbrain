@@ -29,15 +29,17 @@ from inbox_classifier import InboxClassifier, extract_message_metadata, build_lo
 # Pilot configuration
 PILOT_CONFIG = {
     "max_messages": 100,
-    "run_id": f"pilot-{datetime.now(timezone.utc).strftime('%Y-%m-%d')}-v3",
+    "run_id": f"pilot-{datetime.now(timezone.utc).strftime('%Y-%m-%d-%H%M%SZ')}-v3",
 }
 
 # Output paths
-REPO_ROOT = Path(__file__).parent.parent
+REPO_ROOT = Path(__file__).resolve().parents[2]
 RUNS_DIR = REPO_ROOT / "06_RUNS" / "INBOX_TRIAGE"
 LOGS_DIR = RUNS_DIR / "logs"
 PILOT_DIR = RUNS_DIR / "pilot" / PILOT_CONFIG["run_id"]
 PLANS_DIR = PILOT_DIR / "placement_plans"
+OUTCOME_PATH = PILOT_DIR / "OUTCOME.yaml"
+DISTILL_DIR = REPO_ROOT / "06_RUNS" / "99_distill_queue"
 
 
 def ensure_directories():
@@ -71,14 +73,15 @@ def run_pilot():
         "system_domains": Counter(),
         "confidence_buckets": {"high": 0, "medium": 0, "low": 0},
         "needs_human": 0,
-        "errors": 0
+        "errors": 0,
+        "model_version": classifier.model_version,
     }
 
     # Open log file for appending
     log_file = LOGS_DIR / "classification_log.ndjson"
 
     print("Phase 1: Fetching messages from Gmail (read-only)...")
-    messages = gmail.list_messages(max_results=PILOT_CONFIG["max_messages"])
+    messages = gmail.list_messages(max_results=PILOT_CONFIG["max_messages"], label_ids=["INBOX"])
     print(f"  Retrieved {len(messages)} message IDs")
     print()
 
@@ -146,6 +149,9 @@ def run_pilot():
     print(f"  Summary written to: {summary_file}")
     print()
 
+    # Record outcome (default: PARK for pilot runs)
+    write_outcome(run_id=PILOT_CONFIG["run_id"], outcome="PARK")
+
     print("=" * 60)
     print("PILOT COMPLETE")
     print("=" * 60)
@@ -154,6 +160,7 @@ def run_pilot():
     print(f"  Classification Log: {log_file}")
     print(f"  Placement Plans: {PLANS_DIR}/")
     print(f"  Summary Report: {summary_file}")
+    print(f"  Outcome: {OUTCOME_PATH}")
     print()
     print("Quick Stats:")
     print(f"  Total Processed: {stats['total_processed']}")
@@ -174,7 +181,7 @@ def generate_summary_report(stats: dict) -> str:
 
 **Run ID:** {PILOT_CONFIG['run_id']}
 **Date:** {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}
-**Classifier Version:** inbox-triage-v0.2
+**Classifier Version:** {stats.get('model_version', 'unknown')}
 
 ---
 
@@ -270,6 +277,48 @@ def generate_summary_report(stats: dict) -> str:
 """
 
     return report
+
+
+def write_outcome(run_id: str, outcome: str = "PARK") -> None:
+    """Write OUTCOME.yaml and optional distill stub for Park outcomes."""
+    PILOT_DIR.mkdir(parents=True, exist_ok=True)
+    DISTILL_DIR.mkdir(parents=True, exist_ok=True)
+
+    date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    outcome_payload = f\"\"\"run_id: {run_id}
+date: {date_str}
+outcome: {outcome}
+promoted_to: []
+parked_items: []
+archive_reason: other
+notes: Pilot run outcome recorded by runner
+\"\"\"
+    OUTCOME_PATH.write_text(outcome_payload, encoding="utf-8")
+
+    if outcome == "PARK":
+        slug = "inbox-triage-pilot"
+        stub_path = DISTILL_DIR / f\"{date_str}__{run_id}__{slug}.md\"
+        if not stub_path.exists():
+            stub_path.write_text(
+                \"\"\"# Distill Stub
+
+## What to distill
+Pilot inbox triage classification outputs and summary.
+
+## Candidate target
+- 02_PLAYBOOKS/core/inbox_triage/ (update playbook or taxonomy if warranted)
+
+## Blocking questions
+- Are classification rules producing acceptable placements?
+- Do confidence thresholds need calibration?
+
+## Canon refs
+- 02_PLAYBOOKS/core/inbox_triage/README.md
+- 02_PLAYBOOKS/core/inbox_triage/TAXONOMY.md
+- 02_PLAYBOOKS/core/inbox_triage/LOGGING_SPEC.md
+\"\"\",
+                encoding="utf-8",
+            )
 
 
 if __name__ == "__main__":
