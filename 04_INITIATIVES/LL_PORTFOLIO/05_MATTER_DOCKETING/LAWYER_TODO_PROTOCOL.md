@@ -23,7 +23,7 @@ This protocol defines how **lawyer to-do items** are created, updated, and consu
 The goal is to provide:
 
 * A clear, lawyer-centric view of *what requires action*
-* Tight alignment with the **Matter Pipeline (delivery/docketing only)**
+* Tight alignment with the **Matter Operations Queue (delivery/docketing only)**
 * Zero contamination from admin, billing, or accounting tasks
 
 The to-do list is an **operational aid**, not a task manager of record and not a system of judgment.
@@ -51,7 +51,7 @@ Admin and accounts tasks live in **parallel workstreams** and must not appear on
 
 ## 3. Relationship to Other Systems (Critical)
 
-### Matter Pipeline
+### Matter Operations Queue
 
 * To-do items are **derived from**:
 
@@ -65,7 +65,7 @@ Admin and accounts tasks live in **parallel workstreams** and must not appear on
 * Clio Status / Fulfillment Status / Delivery Status remain authoritative
 * To-dos are **overlay artifacts** only
 
-### Email-to-Pipeline Workflow
+### Email-to-Matter Operations Queue Workflow
 
 * Emails may generate suggested to-dos
 * No to-do is created without a valid matter_id
@@ -100,7 +100,7 @@ Each to-do item MUST include:
 | **assigned_to** | Lawyer or role |
 | **priority** | Low / Normal / High / Urgent |
 | **due_trigger** | Date or event-based |
-| **source** | manual / email / pipeline-derived |
+| **source** | manual / email / operations queue-derived |
 | **created_at** | Timestamp |
 | **status** | Open / In Progress / Blocked / Completed |
 
@@ -116,7 +116,7 @@ Optional but recommended:
 To-dos may be created by:
 
 * A lawyer (manual)
-* ML2 (suggested, based on pipeline state or email events)
+* ML2 (suggested, based on operations queue state or email events)
 
 Creation constraints:
 
@@ -161,7 +161,7 @@ The Lawyer To-Do List MUST NOT be used to:
 * Enforce productivity metrics
 * Replace legal judgment
 * Act as a project plan or Gantt chart
-* Auto-advance pipeline states
+* Auto-advance operations queue states
 
 ---
 
@@ -169,7 +169,7 @@ The Lawyer To-Do List MUST NOT be used to:
 
 ML2 may:
 
-* Suggest to-dos based on pipeline state and email events
+* Suggest to-dos based on operations queue state and email events
 * De-duplicate similar tasks
 * Surface overdue or blocked items
 
@@ -212,7 +212,7 @@ ML2 must NOT:
 - Create to-dos without a valid matter_id
 - Complete or close to-dos autonomously
 - Use to-dos to track billing, admin, or accounting work
-- Auto-advance pipeline states based on to-do completion
+- Auto-advance operations queue states based on to-do completion
 - Enforce productivity or efficiency metrics
 
 ## Approval State

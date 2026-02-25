@@ -4,13 +4,19 @@ title: Financial Services — Payments
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-25
 tags: []
 ---
 
 # Financial Services — Payments
 
 Architecture for payments advisory matters. This module defines solution frames, overlays, decision support, and agent infrastructure for the Payments practice area. It contains no legal or compliance analysis and no substantive requirements, thresholds, or procedures.
+
+---
+
+## Strategies
+
+High-value engagement architectures that may orchestrate multiple solutions. Strategies require ML1 approval to create and live under `STRATEGIES/`.
 
 ---
 
@@ -48,6 +54,7 @@ Drafting and review of provider agreements lives in FINANCIAL_SERVICES/CONTRACTS
 
 | Directory / File | Purpose |
 |------------------|---------|
+| [STRATEGIES/](STRATEGIES/) | High-value engagement architectures |
 | [SOLUTIONS/](SOLUTIONS/) | Solution frames (5 solutions, 5-file packet each) |
 | [OVERLAYS/](OVERLAYS/) | Shared overlay modules (AML/KYC, Rails, Crypto) |
 | [AGENTS/](AGENTS/) | Agent catalog, permissions, handoffs |

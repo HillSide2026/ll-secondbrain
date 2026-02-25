@@ -4,7 +4,7 @@ title: Corporate Playbooks
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-25
 tags: []
 ---
 
@@ -18,7 +18,8 @@ Practice-area playbooks for corporate/commercial law matters.
 
 ```
 CORPORATE/
-├── SOLUTIONS/              # Matter-type workflows
+├── STRATEGIES/             # High-value engagement architectures
+├── SOLUTIONS/              # Solution frames (productized scopes)
 │   ├── INCORPORATION/
 │   ├── SHAREHOLDER_CHANGE/
 │   ├── SHAREHOLDER_CONFLICT/
@@ -33,13 +34,17 @@ CORPORATE/
 
 ---
 
+## STRATEGIES
+
+High-value engagement architectures that may orchestrate multiple solutions. Strategies require ML1 approval to create and live under `STRATEGIES/`.
+
 ## SOLUTIONS
 
-Step-by-step workflows for specific matter types. Each solution includes:
+Solution frames for specific corporate problem spaces. Each solution includes:
 - Scope definition
-- Phase breakdown
-- Deliverables checklist
-- Common variations
+- Assembly logic
+- Common artifacts
+- Risk profile
 
 ## ISSUE_MAPS
 

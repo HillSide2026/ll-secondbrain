@@ -4,7 +4,7 @@ title: 02_PRACTICE_AREAS — Durable Legal Operating Knowledge
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-25
 tags: []
 ---
 
@@ -35,9 +35,9 @@ Durable legal operating knowledge by domain.
 
 ## Authoritative Practice Areas
 
-- Corporate
-- Contracts
-- Payment Services
+- Corporate — `../../../02_PLAYBOOKS/CORPORATE/README.md`
+- Contracts — `../../../02_PLAYBOOKS/CONTRACTS/README.md`
+- Payment Services — `../../../02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/README.md`
 
 ---
 

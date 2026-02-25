@@ -4,7 +4,7 @@ title: Contract Solutions
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-25
 tags: []
 ---
 
@@ -75,6 +75,19 @@ This differs from Corporate, which branches primarily on statute (OBCA/CBCA) and
 - Final judgment remains with ML1
 - Presence of an artifact does not imply necessity
 - Absence does not imply defect
+
+---
+
+## Implemented Solution Folders
+
+The following solution frame folders are implemented in this directory:
+
+- [VENDOR_AGREEMENT/](VENDOR_AGREEMENT/)
+- [CUSTOMER_AGREEMENT/](CUSTOMER_AGREEMENT/)
+- [SERVICE_AGREEMENT/](SERVICE_AGREEMENT/)
+- [NDA_CONFIDENTIALITY/](NDA_CONFIDENTIALITY/)
+- [LICENSING/](LICENSING/)
+- [INTERCOMPANY/](INTERCOMPANY/)
 
 ---
 

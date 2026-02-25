@@ -4,7 +4,7 @@ title: Corporate Solutions
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-25
 tags: []
 ---
 
@@ -62,6 +62,19 @@ The solution frame specifies *which* components are typically relevant, not *how
 - Final judgment remains with ML1
 - Presence of an artifact does not imply necessity
 - Absence does not imply defect
+
+---
+
+## Implemented Solution Folders
+
+The following solution frame folders are implemented in this directory:
+
+- [INCORPORATION/](INCORPORATION/)
+- [SHAREHOLDER_AGREEMENT/](SHAREHOLDER_AGREEMENT/)
+- [SHAREHOLDER_CHANGE/](SHAREHOLDER_CHANGE/)
+- [SHAREHOLDER_CONFLICT/](SHAREHOLDER_CONFLICT/)
+- [BUSINESS_ACQUISITION/](BUSINESS_ACQUISITION/)
+- [CORPORATE_ADVISORY/](CORPORATE_ADVISORY/)
 
 ---
 

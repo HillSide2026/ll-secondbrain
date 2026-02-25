@@ -4,7 +4,7 @@ title: Marketing Portfolio — Agent Roster
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-25
 tags: []
 ---
 
@@ -24,6 +24,12 @@ tags: []
 | Content Improvement Agent | Primary | Workhorse for book + blog |
 | Funnel Analytics Agent | Primary | Conversion and attribution |
 | Marketing System Coherence Agent | Primary | Cross-funnel coherence and consistency |
+| Content Engine Agent | Primary | Governed overnight batch content generation for Funnels 02 and 03 |
+| Blog & SEO Specialist | Primary | SEO authority engine for Funnel 02 with secondary Funnel 03 support |
+| SEO & Metrics Master | Primary | Performance monitoring and optimization directives |
+| Conversion Architect | Primary | Diagnostic and retainer conversion optimization |
+| Strategic Editor | Primary | Coherence and alignment gatekeeper |
+| Selective Provocation Engine | Primary | High-signal top-of-funnel authority hooks |
 | Lead Capture Monitor | Sub-agent | Telemetry |
 | Intake Summary Agent | Sub-agent | Summarization + flagging |
 | Onboarding Tracker | Sub-agent | Handoff sentinel |

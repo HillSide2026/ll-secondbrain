@@ -113,8 +113,8 @@ You must not infer, reorder, merge, or repurpose these folders.
 | Matter State tracking (delivery posture) | Billing, accounting, collections |
 | Activity Period tagging | CRM, intake, sales, pre-engagement |
 | Delivery-related lawyer to-dos | Pricing, strategy, financial modeling |
-| Email-to-pipeline event mapping | Modifying Clio source-of-truth fields |
-| Suggested pipeline transitions (ML1 approval required) | Auto-applying State/Period changes without authorization |
+| Email-to-operations-queue event mapping | Modifying Clio source-of-truth fields |
+| Suggested operations queue transitions (ML1 approval required) | Auto-applying State/Period changes without authorization |
 
 ---
 

@@ -48,7 +48,7 @@ The Matter Docketing portfolio:
 
 This portfolio includes **delivery-only artifacts** tied to an existing matter:
 
-* Matter Pipeline States (delivery posture)
+* Matter Operations Queue States (delivery posture)
 * Activity Periods (what is happening now in delivery)
 * Lawyer To-Do Lists (delivery actions)
 * Delivery-relevant dependencies and blockers
@@ -75,7 +75,7 @@ Admin and accounting workflows exist as **parallel systems** and may create depe
 
 ## 5. Core Components
 
-### 5.1 Matter Pipeline
+### 5.1 Matter Operations Queue
 
 A non-linear, delivery-focused state model that indicates whether a matter is:
 
@@ -128,7 +128,7 @@ Dependencies are **facts**, not tasks.
 ## 6. Interaction With Other Portfolios
 
 * **Practice Areas:** Provide reusable execution knowledge; do not own matter state
-* **Firm Operations:** Define pipeline mechanics; do not track individual matters
+* **Firm Operations:** Define operations queue mechanics; do not track individual matters
 * **Financial Portfolio:** May analyze delivery patterns; may not control them
 * **Risk & Compliance:** May impose checks; may not advance delivery
 
@@ -153,7 +153,7 @@ ML1 is the sole authority for:
 - Judgment, prioritization, and acceptance of matters
 - Approving State transitions
 - Defining new States or Activity Periods
-- Authorizing any automated pipeline changes
+- Authorizing any automated operations queue changes
 
 ## Explicit Prohibitions
 

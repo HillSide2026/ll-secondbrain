@@ -6,7 +6,7 @@ status: draft
 version: 1.0
 supersedes:
 created_date: 2026-02-14
-last_updated: 2026-02-14
+last_updated: 2026-02-25
 tags: []
 ---
 
@@ -37,3 +37,15 @@ Subfolders:
 - contracts
 - corporate
 - financial_services
+
+---
+
+## Relationship to Solution Frames
+
+This `substantive/` tree is the playbook layer for execution workflows.
+
+Canonical solution frames live under:
+
+- `02_PLAYBOOKS/<PRACTICE_AREA>/SOLUTIONS/`
+
+Substantive playbooks should reference the canonical solution frames rather than duplicate solution-frame artifacts. Any duplicate solution-frame files here are legacy until explicitly retired by ML1.

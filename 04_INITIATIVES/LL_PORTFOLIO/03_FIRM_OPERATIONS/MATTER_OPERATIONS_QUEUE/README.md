@@ -1,6 +1,6 @@
 ---
-id: 04_initiatives__ll_portfolio__03_firm_operations__matter_pipeline__readme_md
-title: Matter Pipeline
+id: 04_initiatives__ll_portfolio__03_firm_operations__matter_operations_queue__readme_md
+title: Matter Operations Queue
 owner: ML1
 status: draft
 created_date: 2026-02-08
@@ -8,9 +8,9 @@ last_updated: 2026-02-08
 tags: []
 ---
 
-# Matter Pipeline
+# Matter Operations Queue
 
-**Location:** `LL_PORTFOLIO/03_FIRM_OPERATIONS/MATTER_PIPELINE/`
+**Location:** `LL_PORTFOLIO/03_FIRM_OPERATIONS/MATTER_OPERATIONS_QUEUE/`
 
 **Status:** Draft — Requires ML1 Approval
 
@@ -18,19 +18,19 @@ tags: []
 
 ## 1. Purpose
 
-The Matter Pipeline defines **delivery and docketing flow** for matters once a matter has been formally opened.
+The Matter Operations Queue defines **delivery and docketing flow** for matters once a matter has been formally opened.
 
 It models **legal delivery work only** — not administrative, accounting, or billing activity.
 
-Administrative and accounts work exists as a **parallel workstream** that may create dependencies (e.g., billing readiness, account setup), but is **explicitly excluded from the delivery pipeline**.
+Administrative and accounts work exists as a **parallel workstream** that may create dependencies (e.g., billing readiness, account setup), but is **explicitly excluded from the delivery operations queue**.
 
-The pipeline is therefore optimized to answer:
+The operations queue is therefore optimized to answer:
 
 * Which matters are docketing-ready?
 * Which matters are actively being delivered?
 * How much delivery capacity is currently in use?
 
-It is **not a linear workflow**. Legal delivery is episodic, cyclical, and frequently dormant. The pipeline therefore models matters as:
+It is **not a linear workflow**. Legal delivery is episodic, cyclical, and frequently dormant. The operations queue therefore models matters as:
 
 * **States** — stable, low-cardinality delivery conditions describing what a matter *is*
 * **Activity Periods** — repeatable, high-cardinality descriptions of what is *happening (or not happening)* in delivery over time
@@ -39,7 +39,7 @@ It is **not a linear workflow**. Legal delivery is episodic, cyclical, and frequ
 
 ## 2. Hard Scope Boundary
 
-The Matter Pipeline applies **only to matters**.
+The Matter Operations Queue applies **only to matters**.
 
 It explicitly excludes:
 
@@ -52,7 +52,7 @@ If a matter has not been formally opened, it is **out of scope** by definition.
 
 ### Relationship to System of Record
 
-The Matter Pipeline **does not replace or modify** existing matter status fields in the system of record.
+The Matter Operations Queue **does not replace or modify** existing matter status fields in the system of record.
 
 Matters already carry authoritative tags such as:
 
@@ -64,14 +64,14 @@ Matters already carry authoritative tags such as:
 
 **These remain the source-of-truth fields.**
 
-The Matter Pipeline introduces **additional, real-time operational tags**:
+The Matter Operations Queue introduces **additional, real-time operational tags**:
 
 | Field | Source | Purpose |
 |-------|--------|---------|
-| State | Matter Pipeline | Delivery posture |
-| Activity Period(s) | Matter Pipeline | What is happening now |
+| State | Matter Operations Queue | Delivery posture |
+| Activity Period(s) | Matter Operations Queue | What is happening now |
 
-The pipeline tags are **supplementary** — they do not override or conflict with system of record fields.
+The operations queue tags are **supplementary** — they do not override or conflict with system of record fields.
 
 ---
 
@@ -189,9 +189,9 @@ The matter remains **Active** throughout.
 
 ---
 
-## 6. What the Matter Pipeline Does NOT Do
+## 6. What the Matter Operations Queue Does NOT Do
 
-The pipeline does not:
+The operations queue does not:
 
 * Evaluate performance
 * Judge efficiency
@@ -242,7 +242,7 @@ ML2 may **observe and report** against this intent but must not:
 
 ## 9. Enforcement Rules
 
-* The Matter Pipeline governs **delivery only**
+* The Matter Operations Queue governs **delivery only**
 * Admin, accounting, and billing are parallel workstreams and must not be modeled as delivery states or periods
 * No linear progression assumptions are permitted
 * No lead, funnel, or sales concepts may be introduced
@@ -260,7 +260,7 @@ ML1 is the sole authority for:
 - Approving state transitions
 - Defining new states or periods
 - Setting capacity targets
-- Interpreting pipeline conditions
+- Interpreting operations queue conditions
 
 ## Explicit Prohibitions
 

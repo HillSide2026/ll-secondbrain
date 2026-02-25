@@ -4,7 +4,7 @@ title: Contracts Practice Area
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-02-25
 tags: []
 ---
 
@@ -33,6 +33,7 @@ LL may draft and send a demand letter within this practice area. After demand le
 
 | Directory | Purpose |
 |-----------|---------|
+| [STRATEGIES/](STRATEGIES/) | High-value engagement architectures |
 | [SOLUTIONS/](SOLUTIONS/) | Solution frames for contract types |
 | [ISSUE_MAPS/](ISSUE_MAPS/) | Structured taxonomies of contract issues |
 | [DECISION_LENSES/](DECISION_LENSES/) | Analytical frameworks for contract decisions |
@@ -40,6 +41,12 @@ LL may draft and send a demand letter within this practice area. After demand le
 | [QUESTION_BANKS/](QUESTION_BANKS/) | Structured intake/scoping questions per Solution |
 | [REGULATORY_SURFACES/](REGULATORY_SURFACES/) | Statutory/regulatory touchpoints |
 | [AGENTS/](AGENTS/) | Agent specifications and supporting references |
+
+---
+
+## STRATEGIES
+
+High-value engagement architectures that may orchestrate multiple solutions. Strategies require ML1 approval to create and live under `STRATEGIES/`.
 
 ---
 

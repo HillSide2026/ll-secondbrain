@@ -1,6 +1,6 @@
 ---
-id: 04_initiatives__ll_portfolio__03_firm_operations__matter_pipeline__email_to_matter_pipeline_md
-title: Email-to-Matter Pipeline Workflow
+id: 04_initiatives__ll_portfolio__03_firm_operations__matter_operations_queue__email_to_matter_operations_queue_md
+title: Email-to-Matter Operations Queue Workflow
 owner: ML1
 status: draft
 created_date: 2026-02-08
@@ -8,9 +8,9 @@ last_updated: 2026-02-08
 tags: []
 ---
 
-# Email-to-Matter Pipeline Workflow
+# Email-to-Matter Operations Queue Workflow
 
-**Location:** `LL_PORTFOLIO/03_FIRM_OPERATIONS/MATTER_PIPELINE/`
+**Location:** `LL_PORTFOLIO/03_FIRM_OPERATIONS/MATTER_OPERATIONS_QUEUE/`
 
 **Status:** Draft — Requires ML1 Approval
 
@@ -18,7 +18,7 @@ tags: []
 
 ## 1. Purpose
 
-The Email-to-Matter Pipeline defines how **inbound email signals** are mapped to **Matter Activity Periods** within the Matter Pipeline.
+The Email-to-Matter Operations Queue defines how **inbound email signals** are mapped to **Matter Activity Periods** within the Matter Operations Queue.
 
 It enables ML2 agents to:
 
@@ -123,7 +123,7 @@ Email events map to suggested Activity Periods based on content signals:
 
 ## 5. Admin/Accounting Exclusion List
 
-The following email categories are **explicitly excluded** from delivery pipeline processing:
+The following email categories are **explicitly excluded** from delivery operations queue processing:
 
 ### Administrative Exclusions
 
@@ -209,9 +209,9 @@ The following conditions require **immediate escalation to ML1**:
 
 ---
 
-## 8. Relationship to Matter Pipeline
+## 8. Relationship to Matter Operations Queue
 
-This workflow **supplements** the Matter Pipeline:
+This workflow **supplements** the Matter Operations Queue:
 
 * Matter States (Initiating, Backlog, Docketing Active, Paused, Closing) remain ML1-controlled
 * Activity Periods may be suggested by this workflow

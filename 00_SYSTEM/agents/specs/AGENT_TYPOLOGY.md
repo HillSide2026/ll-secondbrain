@@ -4,7 +4,7 @@ title: Agent Typology
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-24
+last_updated: 2026-02-25
 tags: []
 ---
 
@@ -24,7 +24,7 @@ This document reflects the current state of the system and explicitly identifies
 
 ## Agents Index (Derived from AGENTS.md)
 
-Generated on 2026-02-24.
+Generated on 2026-02-25.
 
 ### System Management Agents (SMA)
 
@@ -64,8 +64,8 @@ Generated on 2026-02-24.
 | Agent | Status | Path | Notes |
 | --- | --- | --- | --- |
 | Matter Management Agent — Stage 2.11 | draft | `00_SYSTEM/AGENTS/specs/AGENT__MATTER_MANAGEMENT__STAGE_2_11.md` |  |
-| AGENT SPEC — Pipeline Tracker | draft | `00_SYSTEM/AGENT_SPEC-PIPELINE-TRACKER.md` |  |
-| AGENT SPEC — Pipeline Tracker | draft | `04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/AGENT_SPEC-PIPELINE-TRACKER.md` |  |
+| AGENT SPEC — Matter Operations Queue Tracker | draft | `00_SYSTEM/AGENT_SPEC-MATTER_OPERATIONS_QUEUE_TRACKER.md` |  |
+| AGENT SPEC — Matter Operations Queue Tracker | draft | `04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/AGENT_SPEC-MATTER_OPERATIONS_QUEUE_TRACKER.md` |  |
 
 ### Agent Frameworks (Not Agents)
 
