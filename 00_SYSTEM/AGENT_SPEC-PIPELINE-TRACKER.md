@@ -94,6 +94,10 @@ The agent may not modify canonical records directly unless:
 
 ## 7) Decision Rules
 
+### Pipeline definition rule
+Pipeline solutions are those with solution_stage in PRE_WORK_STAGES (per SCHEMAS_SOLUTIONS.md).
+Matter pipeline is derived from solution pipeline; no alternate pipeline definition permitted.
+
 ### State update rule
 A state change can be proposed only if:
 - there is at least one concrete evidence item, and

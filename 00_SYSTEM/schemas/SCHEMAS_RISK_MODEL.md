@@ -21,6 +21,14 @@ tags: [schema, risk]
 - Solution-level required fields for execution risk
 - Client-level relationship signals (optional)
 
+### Stage Subset References (Authoritative)
+
+- Pre-work stages are defined in SCHEMAS_SOLUTIONS.md under PRE_WORK_STAGES.
+- Active work stages are defined in SCHEMAS_SOLUTIONS.md under ACTIVE_WORK_STAGES.
+- Completed stages are defined in SCHEMAS_SOLUTIONS.md under COMPLETED_STAGES.
+
+No other stage sets may be used for risk computations.
+
 ## 2. Enums
 
 regulatory_exposure:
@@ -110,7 +118,7 @@ Low-Probability Pipeline Ratio:
 Pipeline value definition:
 ```
 sum (solution.est_value * solution.probability_of_close)
-for solution_stage in {identified, scoped}
+for solution_stage in PRE_WORK_STAGES
 ```
 
 Low-prob subset:
@@ -142,7 +150,7 @@ novelty modifier: +10 if novelty_flag = true
 score = clamp(base + modifiers, 0, 100)
 ```
 
-Matter execution risk: max across active solutions; store driver solution_id.
+Matter execution risk: max across solutions where solution_stage in ACTIVE_WORK_STAGES; store driver solution_id.
 
 Relationship Risk Flags:
 Flag if:

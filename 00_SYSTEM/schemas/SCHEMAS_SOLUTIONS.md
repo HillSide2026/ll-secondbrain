@@ -73,3 +73,20 @@ tags: [schema, solutions]
 - delivered
 - billed
 - collected
+
+## Canonical Stage Subsets (Named)
+
+These subsets are the single source of truth for stage-grouped computations across the system
+(e.g., risk model metrics, matter summary rollups, pipeline dashboards).
+
+PRE_WORK_STAGES = { identified, scoped }
+
+ACTIVE_WORK_STAGES = { approved, in_production, client_review, awaiting_external }
+
+COMPLETED_STAGES = { delivered, billed, collected }
+
+Notes:
+- PRE_WORK_STAGES corresponds to pipeline / pre-engagement work.
+- ACTIVE_WORK_STAGES corresponds to execution / delivery in progress.
+- COMPLETED_STAGES corresponds to completed delivery and/or commercial completion.
+- Any component computing pipeline, active, completed, or rollups MUST reference these subsets.

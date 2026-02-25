@@ -123,6 +123,11 @@ Status: draft
 Location: `00_SYSTEM/schemas/SCHEMAS_RISK_MODEL.md`  
 Status: draft
 
+## Office Day — Schema
+
+Location: `00_SYSTEM/schemas/SCHEMAS_OFFICE_DAY.md`  
+Status: draft
+
 ## Run Log Schema — Matter Dashboard
 
 ### Required Fields

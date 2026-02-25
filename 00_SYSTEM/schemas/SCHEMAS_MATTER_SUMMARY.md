@@ -116,6 +116,27 @@ relationship_risk_flags:
 - scope_disputes
 - expansion_resistance
 
+## Pipeline Computation (Authoritative)
+
+### pipeline_solutions_count (Authoritative Definition)
+
+pipeline_solutions_count =
+count of solutions where solution_stage in PRE_WORK_STAGES
+(as defined in SCHEMAS_SOLUTIONS.md).
+
+### probability_weighted_pipeline_value (Authoritative Definition)
+
+probability_weighted_pipeline_value =
+sum (est_value * probability_of_close)
+for solutions where solution_stage in PRE_WORK_STAGES.
+
+Missing-value rules:
+- If est_value is missing or null -> treat as 0
+- If probability_of_close is missing or null -> treat as 0
+
+Rounding rule:
+- Do not round per-solution; round once at the final aggregate value.
+
 ## Validation Rules
 
 - generated_at required.

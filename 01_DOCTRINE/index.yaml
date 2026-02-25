@@ -319,6 +319,12 @@ doctrine:
   version: '1.0'
   status: draft
   history: []
+- id: DOCTRINE-OPS-0001
+  title: Office Day Model Doctrine
+  path: 01_DOCTRINE/01_invariants/DOCTRINE-OPS-0001-OFFICE_DAY_MODEL.md
+  version: '1.0'
+  status: draft
+  history: []
 - id: 01_doctrine__01_invariants__doctrine-2026-004-stage_phase_numbering_md
   title: Canonical Stage & Phase Numbering Doctrine
   path: 01_DOCTRINE/01_invariants/DOCTRINE-2026-004-STAGE_PHASE_NUMBERING.md
