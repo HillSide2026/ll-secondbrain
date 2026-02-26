@@ -72,11 +72,14 @@ Marketing is organized into distinct **FUNNELS**.
 
 Funnels must never be merged or inferred.
 
-Each funnel contains exactly three stages:
+Each funnel conforms to a **macro model** with three stages:
 
 1. Ads / Lead Capture
 2. Intake (Qualification)
 3. Onboarding (Closing)
+
+Detailed, funnel-specific pipeline stages are defined in each funnel spec under
+`04_INITIATIVES/LL_PORTFOLIO/08_MARKETING/04_FUNNELS/`.
 
 ---
 
