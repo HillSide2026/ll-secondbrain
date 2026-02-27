@@ -67,11 +67,29 @@ def load_folder_map_roots() -> List[str]:
     if not FOLDER_MAP_PATH.exists():
         return []
     roots: List[str] = []
-    pattern = re.compile(r"^-\s+([0-9]{2}_[A-Z0-9_]+)\b")
+    numbered_pattern = re.compile(r"^-\s+([0-9]{2}_[A-Z0-9_]+)\b")
+    section: str | None = None
     for line in FOLDER_MAP_PATH.read_text(encoding="utf-8").splitlines():
-        match = pattern.match(line.strip())
-        if match:
-            roots.append(match.group(1))
+        stripped = line.strip()
+        if stripped.startswith("## "):
+            header = stripped[3:].strip().lower()
+            if header.startswith("ml2 governed roots"):
+                section = "numbered"
+            elif header.startswith("non-ml2 root folders"):
+                section = "non_numbered"
+            else:
+                section = None
+            continue
+        if not line.startswith("- "):
+            continue
+        if section == "numbered":
+            match = numbered_pattern.match(stripped)
+            if match:
+                roots.append(match.group(1))
+        elif section == "non_numbered":
+            name = stripped[2:].split("—", 1)[0].strip()
+            if name and not name.startswith("."):
+                roots.append(name)
     return roots
 
 

@@ -4,7 +4,7 @@ title: Agent Typology
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-25
+last_updated: 2026-02-27
 tags: []
 ---
 
@@ -22,50 +22,72 @@ This document reflects the current state of the system and explicitly identifies
 
 ---
 
+## Agent Lifecycle States
+
+**Draft** — defined but not instantiated  
+**Planned** — concept approved but not implemented  
+**Active** — instantiated and operating  
+**Deprecated** — no longer used but retained for record  
+**Archived** — retired and removed from active registry  
+
+**Requirement:** All agent status values in this document must use **only** these lifecycle states.
+
+---
+
 ## Agents Index (Derived from AGENTS.md)
 
-Generated on 2026-02-25.
+Generated on 2026-02-26.
 
 ### System Management Agents (SMA)
 
-| Agent | Status | Path | Notes |
-| --- | --- | --- | --- |
-| SMA-001 — System Governance | draft | `00_SYSTEM/AGENTS/SMA-001_SYSTEM_GOVERNANCE.md` |  |
-| SMA-002 — Portfolio Planning | draft | `00_SYSTEM/AGENTS/SMA-002_PORTFOLIO_PLANNING.md` |  |
-| SMA-003 — Integration Steward | draft | `00_SYSTEM/AGENTS/SMA-003_INTEGRATION_STEWARD.md` |  |
-| SMA-004 — Knowledge Curation | draft | `00_SYSTEM/AGENTS/SMA-004_KNOWLEDGE_CURATION.md` |  |
-| SMA-005 — Runbook & QA | draft | `00_SYSTEM/AGENTS/SMA-005_RUNBOOK_QA.md` |  |
-| SMA-006 — System Librarian | draft | `00_SYSTEM/AGENTS/SMA-006_SYSTEM_LIBRARIAN.md` |  |
+| Agent | Class | Status | Path | Notes |
+| --- | --- | --- | --- | --- |
+| SMA-001 — System Governance | SMA | Active | `00_SYSTEM/AGENTS/SMA-001_SYSTEM_GOVERNANCE.md` | evidence: 06_RUNS/RUN-2026-02-27-SYSTEM-MANAGEMENT-SWEEP-001122Z/system_management/SMA-001_SYSTEM_GOVERNANCE_REPORT.md |
+| SMA-002 — Portfolio Planning | SMA | Active | `00_SYSTEM/AGENTS/SMA-002_PORTFOLIO_PLANNING.md` | evidence: 06_RUNS/RUN-2026-02-27-SYSTEM-MANAGEMENT-SWEEP-001122Z/system_management/SMA-002_PORTFOLIO_PLANNING_REPORT.md; 06_RUNS/RUN-2026-02-26-SMA-002-BACKLOG-SCAN-063539Z/portfolio_planning/ |
+| SMA-003 — Integration Steward | SMA | Active | `00_SYSTEM/AGENTS/SMA-003_INTEGRATION_STEWARD.md` | evidence: 06_RUNS/RUN-2026-02-27-SYSTEM-MANAGEMENT-SWEEP-001122Z/system_management/SMA-003_INTEGRATION_STEWARD_REPORT.md |
+| SMA-004 — Knowledge Curation | SMA | Active | `00_SYSTEM/AGENTS/SMA-004_KNOWLEDGE_CURATION.md` | evidence: 06_RUNS/RUN-2026-02-27-SYSTEM-MANAGEMENT-SWEEP-001122Z/system_management/SMA-004_KNOWLEDGE_CURATION_REPORT.md |
+| SMA-005 — Runbook & QA | SMA | Active | `00_SYSTEM/AGENTS/SMA-005_RUNBOOK_QA.md` | evidence: 06_RUNS/RUN-2026-02-27-SYSTEM-MANAGEMENT-SWEEP-001122Z/system_management/SMA-005_RUNBOOK_QA_REPORT.md |
+| SMA-006 — System Librarian | SMA | Planned | `00_SYSTEM/AGENTS/SMA-006_SYSTEM_LIBRARIAN.md` |  |
+
+### Levine Law Management Agents (LLM)
+
+| Agent | Class | Status | Path | Notes |
+| --- | --- | --- | --- | --- |
+| LLM-001 — Chief of Staff | LLM | Planned | `00_SYSTEM/AGENTS/LLM-001_CHIEF_OF_STAFF.md` |  |
+| LLM-003 — CFO Agent | LLM | Planned | `00_SYSTEM/AGENTS/LLM-003_CFO_AGENT.md` |  |
+| LLM-004 — Project Management Agent | LLM | draft | `00_SYSTEM/AGENTS/LLM-004_PROJECT_MANAGEMENT_AGENT.md` |  |
+| LLM-005 — Portfolio Management Agent | LLM | draft | `00_SYSTEM/AGENTS/LLM-005_PORTFOLIO_MANAGEMENT_AGENT.md` |  |
+| LLM-006 — Portfolio Governance Agent | LLM | draft | `00_SYSTEM/AGENTS/LLM-006_PORTFOLIO_GOVERNANCE_AGENT.md` |  |
 
 ### System Admin Agents (SAA)
 
-| Agent | Status | Path | Notes |
-| --- | --- | --- | --- |
-| Proto-Agent Charter - Folder Map Drift | draft | `00_SYSTEM/AGENTS/specs/system_admin/SAA_FOLDER_MAP_DRIFT.md` |  |
-| Proto-Agent Charter - Agent Index Reconciler | draft | `00_SYSTEM/AGENTS/specs/system_admin/SAA_AGENT_INDEX_RECONCILER.md` |  |
-| Proto-Agent Charter - Metadata Enforcer | draft | `00_SYSTEM/AGENTS/specs/system_admin/SAA_METADATA_ENFORCER.md` |  |
-| Proto-Agent Charter - Reference Integrity | draft | `00_SYSTEM/AGENTS/specs/system_admin/SAA_REFERENCE_INTEGRITY.md` |  |
-| Proto-Agent Charter - Registry Sync | draft | `00_SYSTEM/AGENTS/specs/system_admin/SAA_REGISTRY_SYNC.md` |  |
-| Proto-Agent Charter - Repo Linter | draft | `00_SYSTEM/AGENTS/specs/system_admin/SAA_REPO_LINTER.md` |  |
+| Agent | Class | Status | Path | Notes |
+| --- | --- | --- | --- | --- |
+| Proto-Agent Charter - Folder Map Drift | SAA | Active | `00_SYSTEM/AGENTS/specs/system_admin/SAA_FOLDER_MAP_DRIFT.md` |  |
+| Proto-Agent Charter - Agent Index Reconciler | SAA | Active | `00_SYSTEM/AGENTS/specs/system_admin/SAA_AGENT_INDEX_RECONCILER.md` |  |
+| Proto-Agent Charter - Metadata Enforcer | SAA | Active | `00_SYSTEM/AGENTS/specs/system_admin/SAA_METADATA_ENFORCER.md` |  |
+| Proto-Agent Charter - Reference Integrity | SAA | Active | `00_SYSTEM/AGENTS/specs/system_admin/SAA_REFERENCE_INTEGRITY.md` |  |
+| Proto-Agent Charter - Registry Sync | SAA | Active | `00_SYSTEM/AGENTS/specs/system_admin/SAA_REGISTRY_SYNC.md` |  |
+| Proto-Agent Charter - Repo Linter | SAA | Active | `00_SYSTEM/AGENTS/specs/system_admin/SAA_REPO_LINTER.md` |  |
 
 ### Practice Area Master Agents
 
-| Agent | Status | Path | Notes |
-| --- | --- | --- | --- |
-| Contracts Master Agent — Expert Spec (Ontario) | draft | `02_PLAYBOOKS/CONTRACTS/AGENTS/CONTRACTS_MASTER_AGENT.md` | duplicate paths below |
-| (duplicate) | draft | `02_PLAYBOOKS/substantive/contracts/agents/CONTRACTS_MASTER_AGENT.md` |  |
-| Corporate Law Master Agent — Expert Spec (Ontario) | draft | `02_PLAYBOOKS/CORPORATE/AGENTS/CORPORATE_LAW_MASTER_AGENT.md` | duplicate paths below |
-| (duplicate) | draft | `02_PLAYBOOKS/substantive/corporate/agents/CORPORATE_LAW_MASTER_AGENT.md` |  |
-| Payment Services Master Agent — Expert Spec (Canada) | draft | `02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/AGENTS/PAYMENTSERVICES_MASTER_AGENT.md` | duplicate paths below |
-| (duplicate) | draft | `02_PLAYBOOKS/substantive/financial_services/payments/agents/PAYMENTSERVICES_MASTER_AGENT.md` |  |
+| Agent | Class | Status | Path | Canonical Path Confirmed (Y/N) | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Contracts Master Agent — Expert Spec (Ontario) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/CONTRACTS/AGENTS/CONTRACTS_MASTER_AGENT.md` | Y | canonical |
+| (duplicate) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/substantive/contracts/agents/CONTRACTS_MASTER_AGENT.md` | N | duplicate path (invalid until resolved) |
+| Corporate Law Master Agent — Expert Spec (Ontario) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/CORPORATE/AGENTS/CORPORATE_LAW_MASTER_AGENT.md` | Y | canonical |
+| (duplicate) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/substantive/corporate/agents/CORPORATE_LAW_MASTER_AGENT.md` | N | duplicate path (invalid until resolved) |
+| Payment Services Master Agent — Expert Spec (Canada) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/AGENTS/PAYMENTSERVICES_MASTER_AGENT.md` | Y | canonical |
+| (duplicate) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/substantive/financial_services/payments/agents/PAYMENTSERVICES_MASTER_AGENT.md` | N | duplicate path (invalid until resolved) |
 
 ### Other Agent Specs
 
-| Agent | Status | Path | Notes |
-| --- | --- | --- | --- |
-| Matter Management Agent — Stage 2.11 | draft | `00_SYSTEM/AGENTS/specs/AGENT__MATTER_MANAGEMENT__STAGE_2_11.md` |  |
-| AGENT SPEC — Matter Operations Queue Tracker | draft | `00_SYSTEM/AGENT_SPEC-MATTER_OPERATIONS_QUEUE_TRACKER.md` |  |
-| AGENT SPEC — Matter Operations Queue Tracker | draft | `04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/AGENT_SPEC-MATTER_OPERATIONS_QUEUE_TRACKER.md` |  |
+| Agent | Class | Status | Path | Notes |
+| --- | --- | --- | --- | --- |
+| Matter Management Agent — Stage 2.11 | SMA | draft | `00_SYSTEM/AGENTS/specs/AGENT__MATTER_MANAGEMENT__STAGE_2_11.md` |  |
+| AGENT SPEC — Matter Operations Queue Tracker | SMA | draft | `00_SYSTEM/AGENT_SPEC-MATTER_OPERATIONS_QUEUE_TRACKER.md` |  |
+| AGENT SPEC — Matter Operations Queue Tracker | SMA | draft | `04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/AGENT_SPEC-MATTER_OPERATIONS_QUEUE_TRACKER.md` |  |
 
 ### Agent Frameworks (Not Agents)
 
@@ -156,6 +178,12 @@ They currently combine:
 ### Governing Specification
 
 - [PRACTICE_AREA_MASTER_AGENT_SPEC.md](PRACTICE_AREA_MASTER_AGENT_SPEC.md)
+
+### Canonical Path Rule (Mandatory)
+
+- Each Practice Area Master Agent must have **exactly one canonical path**.
+- Duplicate paths are **invalid** and must be resolved.
+- The index must explicitly mark **Canonical Path Confirmed (Y/N)** for each entry.
 
 ---
 
@@ -282,19 +310,19 @@ To be implemented. Instantiation pattern TBD — expected to require:
 
 ### Type 1 Agents
 
-| Agent | Location | Status |
-|-------|----------|--------|
-| todo-rollup | 00_SYSTEM/scripts/todo_rollup.py | Active |
-| system-governance | TBD | Planned |
-| project-manager | TBD | Planned |
+| Agent | Class | Location | Status |
+|-------|-------|----------|--------|
+| todo-rollup | SMA | 00_SYSTEM/scripts/todo_rollup.py | Active |
+| system-governance | SMA | TBD | Planned |
+| project-manager | SMA | TBD | Planned |
 
 ### Type 2 Agents
 
-| Agent | Practice Area | Location | Status |
-|-------|---------------|----------|--------|
-| CORPORATE_LAW_MASTER_AGENT | Corporate (Ontario) | 02_PLAYBOOKS/substantive/corporate/agents/ | Active |
-| CONTRACTS_MASTER_AGENT | Contracts | 02_PLAYBOOKS/substantive/contracts/agents/ | Active |
-| PAYMENTSERVICES_MASTER_AGENT | Payments | 02_PLAYBOOKS/substantive/financial_services/payments/agents/ | Active |
+| Agent | Class | Practice Area | Location | Status |
+|-------|-------|---------------|----------|--------|
+| CORPORATE_LAW_MASTER_AGENT | PRACTICE_MASTER | Corporate (Ontario) | 02_PLAYBOOKS/substantive/corporate/agents/ | Active |
+| CONTRACTS_MASTER_AGENT | PRACTICE_MASTER | Contracts | 02_PLAYBOOKS/substantive/contracts/agents/ | Active |
+| PAYMENTSERVICES_MASTER_AGENT | PRACTICE_MASTER | Payments | 02_PLAYBOOKS/substantive/financial_services/payments/agents/ | Active |
 
 ### Type 3 Agents
 

@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-09
-last_updated: 2026-02-09
+last_updated: 2026-02-27
 tags: []
 ---
 
@@ -23,21 +23,41 @@ Define rules governing how agents write data to the repository and external syst
 
 ---
 
+## Precedence
+
+For operational external writes, `01_DOCTRINE/02_policies/INTEGRATION_CONTROL_POLICY.md` governs and supersedes this policy.
+This policy remains authoritative for repository write permissions and for explicit constraints not overridden by Integration Control.
+
+---
+
 ## Core Principles
+
+### 0. System Scope (Amendment Approved 2026-02-26)
+The **system** includes the ML2 repository **plus explicitly incorporated integration surfaces** (e.g., Gmail, Calendar, SharePoint) governed by ML2 policy.
+
+- The repo remains the system of record.
+- Integrated surfaces are external execution surfaces governed by ML2.
+- Integration does not grant write authority; all write-backs remain approval-gated.
 
 ### 1. Local-First
 All agent work lands in the repository first. The repo is the system of record.
 
-### 2. Read-Only External Access (Stage 2.1)
-During Stage 2.1, all external integrations are **read-only**:
+### 2. Read-Only External Access (Default)
+External integrations are **read-only** unless an operational write is authorized under the Integration Control Policy.
 - Gmail: Read emails only
 - SharePoint: Read documents only
 - Word/OneDrive: Read documents only
 
-No agent may write, create, update, or delete data in external systems during this stage.
+No agent may write, create, update, or delete data in external systems unless allowed by Integration Control or an explicit write-back capability is approved.
 
-### 3. Explicit Authorization Required
-Any future write-back capabilities require:
+### 3. Explicit Authorization Required (Write-Back Capabilities)
+Write-back capabilities are **not** implied by system scope. The following high-risk write-backs remain explicitly gated and require ML1 approval per run:
+- Google Drive Ledger write-back (Stage 2.11)
+- Gmail matter labeling write-back (Stage 2.13)
+
+All other write-back capabilities remain prohibited unless explicitly added and approved, or permitted under Integration Control.
+
+Any approved write-back requires:
 - ML1 explicit approval
 - Change summary documenting what will be written
 - Rollback plan documenting how to undo changes
@@ -59,7 +79,7 @@ Any future write-back capabilities require:
 
 ### Prohibited Actions (All Agents)
 
-- Writing to external systems (Gmail, SharePoint, Word, etc.)
+- Writing to external systems (Gmail, SharePoint, Word, etc.) outside Integration Control or explicit approvals
 - Modifying credentials or secrets
 - Changing doctrine without ML1 approval
 - Writing outside designated output folders

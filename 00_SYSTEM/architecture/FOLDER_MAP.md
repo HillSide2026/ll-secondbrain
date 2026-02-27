@@ -4,14 +4,14 @@ title: Folder Map
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-19
+last_updated: 2026-02-27
 tags: []
 ---
 
 # Folder Map
 
+## ML2 Governed Roots (Numbered)
 - 00_SYSTEM — How the system works (rules, schemas, governance)
-- .claude — Automation hub configuration (non-ML2, non-canon)
 - 01_DOCTRINE — ML1-approved doctrines, principles, policies, standards
 - 02_PLAYBOOKS — Repeatable operational workflows
 - 03_TEMPLATES — Reusable document templates
@@ -23,4 +23,9 @@ tags: []
 - 08_RESEARCH — Working notes, explorations, and non-authoritative analysis
 - 09_INBOX — Unprocessed intake (must be triaged)
 - 10_ARCHIVE — Deprecated or superseded artifacts (never deleted)
+
+## Non-ML2 Root Folders (Non-Numbered)
 - scripts — Local tooling and operational scripts (non-ML2)
+
+## Non-ML2 Hidden Roots
+- .claude — Automation hub configuration (non-ML2, non-canon)

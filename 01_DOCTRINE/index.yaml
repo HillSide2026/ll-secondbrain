@@ -1,5 +1,5 @@
 schema_version: '1.0'
-last_updated: '2026-02-24'
+last_updated: '2026-02-27'
 rules_dir: 01_DOCTRINE/rules
 tests_dir: 01_DOCTRINE/tests
 rules: []
@@ -166,6 +166,12 @@ policies:
   version: '1.0'
   status: active
   history: []
+- id: 01_doctrine__02_policies__firm_project_doctrine_md
+  title: Firm Project Doctrine
+  path: 01_DOCTRINE/02_policies/FIRM_PROJECT_DOCTRINE.md
+  version: '1.0'
+  status: draft
+  history: []
 - id: 01_doctrine__policies__readme_md
   title: Policies (Level 3)
   path: 01_DOCTRINE/02_policies/README.md
@@ -187,6 +193,12 @@ policies:
 - id: 00_system__write_back_policy_md
   title: System Write-Back Policy
   path: 01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: 01_doctrine__02_policies__integration_control_policy_md
+  title: Integration Control Policy
+  path: 01_DOCTRINE/02_policies/INTEGRATION_CONTROL_POLICY.md
   version: '1.0'
   status: draft
   history: []
@@ -294,6 +306,18 @@ doctrine:
   path: 01_DOCTRINE/01_invariants/DOCTRINE-2026-002-authority-hierarchy-ml1-ml2-ll.md
   version: '1.0'
   status: approved
+  history: []
+- id: DOCTRINE-2026-003
+  title: LL-SB Architecture Doctrine
+  path: 01_DOCTRINE/01_invariants/DOCTRINE-2026-003-LL-SB-ARCHITECTURE.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: DOCTRINE-2026-008
+  title: Integration Doctrine (External Platform Governance)
+  path: 01_DOCTRINE/01_invariants/DOCTRINE-2026-008-INTEGRATION-DOCTRINE.md
+  version: '1.0'
+  status: draft
   history: []
 - id: DOCTRINE-RISK_MODEL-0001
   title: Risk Model Doctrine (Economic, Execution, Relationship)

@@ -18,12 +18,14 @@ sources:
     authority: unknown
     classification: execution_artifact
     ingestion: Applied via gmail_labeler.py with approval manifest
+    enabled: false
+    approval_required: ML1 write-back approval
 ingestion:
   triggers:
     - Manual run of fetch_gmail.py
-    - Manual run of gmail_labeler.py (labels only)
+    - Manual run of gmail_labeler.py (labels only; disabled unless ML1 write-back approval exists)
   notes:
-    - Read-only fetches are logged to logs/gmail_audit.log
+    - Read-only fetches are logged to 06_RUNS/logs/gmail_audit.log
 consumers:
   scripts:
     - 00_SYSTEM/scripts/gmail_integration.py

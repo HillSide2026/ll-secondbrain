@@ -4,7 +4,7 @@ title: System Admin Sweep Output Contract
 owner: ML1
 status: draft
 created_date: 2026-02-14
-last_updated: 2026-02-14
+last_updated: 2026-02-27
 tags: []
 ---
 
@@ -91,3 +91,85 @@ Human-readable summaries generated from `findings.json`.
 
 ## Failure Behavior
 If BLOCKER findings are produced, the run is marked failed **and** reports are still rendered.
+
+---
+
+## Operational Spec (Upgraded)
+
+### Required Inputs
+- This contract document (`00_SYSTEM/AGENTS/specs/system_admin/SAA_OUTPUT_CONTRACT.md`)
+- Contract schema file (`00_SYSTEM/AGENTS/specs/system_admin/SAA_OUTPUT_CONTRACT.json`)
+- Run identifier: `RUN-YYYY-MM-DD-SYSTEM-ADMIN-SWEEP-<slug>`
+- Run root: `06_RUNS/${run_id}/system_admin/`
+- Per-agent intermediate files (if generated):
+  - `findings_SAA_REPO_LINTER.json`
+  - `findings_SAA_FOLDER_MAP_DRIFT.json`
+  - `findings_SAA_METADATA_ENFORCER.json`
+  - `findings_SAA_REFERENCE_INTEGRITY.json`
+  - `findings_SAA_REGISTRY_SYNC.json`
+
+### Deterministic Checks
+1. **Run root check** — `06_RUNS/${run_id}/system_admin/` exists.
+2. **Canonical files check** — all required canonical files exist.
+3. **Appendix check** — all per-agent appendices exist.
+4. **Intermediate findings check** — per-agent findings files exist.
+5. **JSON schema check** — `inventory.json` and `findings.json` conform to contract schema.
+6. **Merge rules check** — `findings.json` is deduped and ordered per contract.
+
+### Pass/Fail Criteria
+- **FAIL:** Any required file missing or invalid JSON schema.
+- **WARN:** Extra files present or merge ordering inconsistent.
+- **PASS:** All required outputs exist and validate.
+
+### Output Location (Required)
+`06_RUNS/RUN-YYYY-MM-DD-SAA-OUTPUT-CONTRACT-<slug>/system_admin/`
+
+Required output file:
+- `SAA_OUTPUT_CONTRACT_REPORT.md`
+
+### Output Format (Required)
+```markdown
+---
+id: saa_output_contract_report
+title: System Admin Output Contract Report
+owner: ML1
+status: draft
+created_date: YYYY-MM-DD
+last_updated: YYYY-MM-DD
+tags: [system-admin, output-contract]
+---
+
+## Summary
+- Overall status: PASS | WARN | FAIL
+- Missing required files: N
+- Invalid JSON files: N
+- Merge rule violations: N
+
+## Findings
+1. ...
+
+## Recommendations
+1. ...
+
+## Evidence
+- Run root: 06_RUNS/<run_id>/system_admin/
+- Path: <path>
+```
+
+### Refusal Conditions
+- Contract doc or schema missing/unreadable
+- Run root not accessible
+- Run identifier not provided
+
+### Example Invocation
+```
+Validate system admin sweep outputs for run:
+RUN-2026-02-27-SYSTEM-ADMIN-SWEEP-001122Z
+
+Inputs:
+- Contract doc: 00_SYSTEM/AGENTS/specs/system_admin/SAA_OUTPUT_CONTRACT.md
+- Contract schema: 00_SYSTEM/AGENTS/specs/system_admin/SAA_OUTPUT_CONTRACT.json
+- Run root: 06_RUNS/RUN-2026-02-27-SYSTEM-ADMIN-SWEEP-001122Z/system_admin/
+
+Produce: SAA_OUTPUT_CONTRACT_REPORT.md under 06_RUNS.
+```
