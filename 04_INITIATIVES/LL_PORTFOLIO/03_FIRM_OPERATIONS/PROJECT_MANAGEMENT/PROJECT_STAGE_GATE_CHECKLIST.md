@@ -1,33 +1,18 @@
 # Project Stage Gate Checklist
 
-Derived from: `01_DOCTRINE/02_policies/FIRM_PROJECT_DOCTRINE.md`
+- Generated: 2026-03-05T03:26:51+00:00
+- Run ID: RUN-2026-03-05-LL-PORTFOLIO-AGENTS-032651Z
 
-## Use
+> Advisory output. ML1 approval remains required for decisions.
+## Stage Gate Snapshot
 
-- Checklist for validating stage gate readiness.
-- Non-authoritative; requires ML1 approval for advancement.
+| Project | Inferred Stage | Stage 1 Complete | Measurement Complete | Approvals Present | Blockers |
+| --- | --- | --- | --- | --- | --- |
+| LLP-001_CORPORATE_ENTITY_MANAGEMENT | 2 | yes | yes | yes | missing-planning |
+| LLP-002_CORPORATE_CLERK | 2 | yes | yes | yes | missing-planning |
+| LLP-003_ASSOCIATE_LAWYER | 2 | yes | yes | yes | missing-planning |
+| LLP-004_PARTNER_SUPERVISION | 2 | yes | yes | yes | missing-planning |
 
-## Stage Gate Checks (Template)
+## Rule
 
-### Stage 1 — Initiation
-- Required artifacts present
-- ML1 approval recorded
-
-### Stage 2 — Planning
-- Required planning artifacts present
-- Measurement architecture complete
-- ML1 scope approval recorded
-- ML1 metric approval recorded
-
-### Stage 3 — Implementation
-- Change control active
-- Approved scope in effect
-- No metric changes without re-planning
-
-### Stage 4 — Monitoring
-- Monitoring artifacts present
-- Metrics unchanged without approval
-
-### Stage 5 — Closing
-- Closing artifacts present
-- Disposition recorded (Completed / Promoted / Paused / Killed)
+- Do not advance a project gate without explicit ML1 approval.
