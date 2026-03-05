@@ -1,21 +1,22 @@
 # Project Health Rollup
 
-- Generated: 2026-03-05T03:26:51+00:00
-- Run ID: RUN-2026-03-05-LL-PORTFOLIO-AGENTS-032651Z
+- Generated: 2026-03-05T03:35:53+00:00
+- Run ID: RUN-2026-03-05-LL-PORTFOLIO-AGENTS-033553Z
 
 > Advisory output. ML1 approval remains required for decisions.
 ## Project Health Rollup
 
-| Project | Health | Open Gate Count | Planning Gaps |
-| --- | --- | --- | --- |
-| LLP-001_CORPORATE_ENTITY_MANAGEMENT | on-track | 24 | 8 |
-| LLP-002_CORPORATE_CLERK | on-track | 24 | 8 |
-| LLP-003_ASSOCIATE_LAWYER | on-track | 24 | 8 |
-| LLP-004_PARTNER_SUPERVISION | on-track | 24 | 8 |
+| Project | Health | Relevant Gate Gaps | Planning Gaps | Measurement Gaps |
+| --- | --- | --- | --- | --- |
+| LLP-001_CORPORATE_ENTITY_MANAGEMENT | watch | 8 | 8 | 0 |
+| LLP-002_CORPORATE_CLERK | watch | 8 | 8 | 0 |
+| LLP-003_ASSOCIATE_LAWYER | watch | 8 | 8 | 0 |
+| LLP-004_PARTNER_SUPERVISION | watch | 8 | 8 | 0 |
 
 ## Summary
 
 - Projects reviewed: 4
-- On-track: 4
-- Watch: 0
+- On-track: 0
+- Watch: 4
 - At-risk: 0
+- Average stage-2 readiness: 38%
