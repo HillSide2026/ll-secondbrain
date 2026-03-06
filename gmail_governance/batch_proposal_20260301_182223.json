@@ -1,0 +1,310 @@
+{
+  "batch_id": "20260301_182223",
+  "batch_size": 25,
+  "threads": [
+    {
+      "thread_id": "19caba185afc0756",
+      "subject": "Notification: Commute @ Mon Mar 2, 2026 6pm - 6:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Commute You have been invited by Matthew Levine to attend an event named Commute on Monday Mar 2, 2026 \u22c5 6pm \u2013 6:30pm (Eastern Time - Toronto). You have an upcoming event Commute Monday Mar 2, 2026 \u22c5",
+      "current_labels": [
+        "UNREAD",
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19cab93abcfeacba",
+      "subject": "Notification: Close Office @ Mon Mar 2, 2026 5:45pm - 6pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Close Office Close Office Protocol You have an upcoming event Close Office Monday Mar 2, 2026 \u22c5 5:45pm \u2013 6pm (Eastern Time - Toronto) Close Office Protocol Organizer Matthew Levine matthew@levinelegal",
+      "current_labels": [
+        "UNREAD",
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19cab7b2bad5ba49",
+      "subject": "\ud83d\udc49 You have unread notifications",
+      "sender": "Asana <no-reply@asana.com>",
+      "snippet": "Check out the latest from your team. Your unread notifications Get caught up levinelegal.ca View in Asana Lino Bernal assigned to JOCELYN ONG INQUIRY: Engagement Agreement JO JOCELYN ONG No due date",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "10_Action_Matthew"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19cab6a5b02da934",
+      "subject": "Notification: Firm Management @ Mon Mar 2, 2026 5pm - 5:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Firm Management You have been invited by Matthew Levine to attend an event named Firm Management on Monday Mar 2, 2026 \u22c5 5pm \u2013 5:30pm (Eastern Time - Toronto). You have an upcoming event Firm",
+      "current_labels": [
+        "UNREAD",
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19cab5e2267bfc6d",
+      "subject": "\ud83d\udce5 Lino assigned you a task: CREATE: Custom Records in Clio [25-1318-00001 - Zelko Culibrk]",
+      "sender": "Lino Bernal via Asana <no-reply@asana.com>",
+      "snippet": "Lino assigned a task to you Logo of Asana Lino assigned a task to you levinelegal.ca View task Subtask of 25-1318-00001 - Zelko Culibrk CREATE: Custom Records in Clio Assigned to Matthew Levine Due",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "10_Action_Matthew"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19cab4f1a6cb9cbf",
+      "subject": "Notification: LLA 6 @ Mon Mar 2, 2026 4:30pm - 5:15pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 6 Review Matter List, Act on Priority Matter(s) Start to Docket; Review Task List; Activities End - Great You have an upcoming event LLA 6 Monday Mar 2, 2026 \u22c5 4:30pm \u2013 5:15pm (Eastern Time -",
+      "current_labels": [
+        "UNREAD",
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19cab3fecf4b922f",
+      "subject": "\ud83d\udce5 Lino assigned you a task: CLARIFICATION: Clio Referece Number [24-646-00001 - ByNature Design]",
+      "sender": "Lino Bernal via Asana <no-reply@asana.com>",
+      "snippet": "Lino assigned a task to you Logo of Asana Lino assigned a task to you levinelegal.ca View task Subtask of 24-646-00001 - ByNature Design CLARIFICATION: Clio Referece Number Assigned to Matthew Levine",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "10_Action_Matthew"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19cab17e9451e005",
+      "subject": "Notification: LLA 5 @ Mon Mar 2, 2026 3:30pm - 4pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 5 Review Matter List, Act on Priority Matter(s) Start to Docket; Review Task List; Activities End - Great You have an upcoming event LLA 5 Monday Mar 2, 2026 \u22c5 3:30pm \u2013 4pm (Eastern Time - Toronto",
+      "current_labels": [
+        "UNREAD",
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19cab0d097e0d28e",
+      "subject": "\ud83d\udce5 Lino assigned you a task: INQUIRY: Wrong Upload Engagement Agreement? [25-1024-00001 - AllPro Cons\u2026]",
+      "sender": "Lino Bernal via Asana <no-reply@asana.com>",
+      "snippet": "Lino assigned a task to you Logo of Asana Lino assigned a task to you levinelegal.ca View task Subtask of 25-1024-00001 - AllPro Construction Group INQUIRY: Wrong Upload Engagement Agreement? Assigned",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "10_Action_Matthew"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19caaeeb75ba9563",
+      "subject": "Notification: LLA 4 @ Mon Mar 2, 2026 2:45pm - 3:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 4 Must docket at least .1Review RM Inbox? Review Matter List, - filter RM Matters- filter Active1- identify priority Matter (&quot;Priority Matter&quot;)For Priority Matter- Review Task List; -",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19caaca8bdf6f405",
+      "subject": "Your Second Brain is on the way",
+      "sender": "Iwo Szapar <hello@notifications.iwoszapar.com>",
+      "snippet": "Hi Matthew, Thanks for your purchase. I&#39;m looking forward to building your Second Brain together. Next step: Complete the questionnaire so I can personalize your setup before our call. Complete",
+      "current_labels": [
+        "IMPORTANT",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19caac5bd0a2b726",
+      "subject": "Notification: LL LUNCH @ Mon Mar 2, 2026 2pm - 2:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LL LUNCH You have been invited by Matthew Levine to attend an event named LL LUNCH on Monday Mar 2, 2026 \u22c5 2pm \u2013 2:30pm (Eastern Time - Toronto). You have an upcoming event LL LUNCH Monday Mar 2, 2026",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19caa597e6f8c430",
+      "subject": "Soulpepper Invoice auto payment information",
+      "sender": "Soulpepper Accounts <accounts@lc.soulpepper.com>",
+      "snippet": "Auto Payment Information Hi Matthew Payment of CA$1130.00 for invoice Levine Law - Ad Management - Monthly is due on March 1, 2026 and will be processed through visa ending with 3905. You can view you",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19caa579137fa46e",
+      "subject": "Notification: LLA 3 @ Mon Mar 2, 2026 12pm - 12:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 3 Review Matter List, Act on Priority Matter(s) Start to Docket; Input activities End - Great You have an upcoming event LLA 3 Monday Mar 2, 2026 \u22c5 12pm \u2013 12:30pm (Eastern Time - Toronto) Review",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19caa20bd2550e82",
+      "subject": "Notification: LLA 2 @ Mon Mar 2, 2026 11am - 11:45am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 2 Review Inbox &amp; Emails, Identify priority response Send priority response Review Matter List, Act on Priority Matter(s) Start to Docket; Review Task List; Activities End - Great You have an",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19caa050793400d8",
+      "subject": "Regus Invoice Number 943-33607",
+      "sender": "\"Toronto.Yorkville@regus.com\" <toronto.yorkville@regus.com>",
+      "snippet": "Hello, Your Regus invoice 943-33607 is ready, please see attached. Click here to access current and past invoices on MyRegus If you experience issues when viewing or printing your invoice, please",
+      "current_labels": [
+        "UNREAD",
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19ca9f780dd3beac",
+      "subject": "Notification: LLA I @ Mon Mar 2, 2026 10:15am - 10:45am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA I Review Matter List, Act on Priority Matter(s) Start to Docket; Review Task List; Activities End - Great You have an upcoming event LLA I Monday Mar 2, 2026 \u22c5 10:15am \u2013 10:45am (Eastern Time -",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19ca9e9dcffb45b4",
+      "subject": "Notification: Matthew/Lino Touchbase @ Mon Mar 2, 2026 10am - 10:30am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Matthew/Lino Touchbase Join with Google Meet \u2013 You have been invited by Lino Bernal to attend an event named Matthew/Lino Touchbase on Monday Mar 2, 2026 \u22c5 10am \u2013 10:30am (Eastern Time - Toronto). You",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19ca9e0781c8fb88",
+      "subject": "Notification: Open Office @ Mon Mar 2, 2026 9:50am - 9:55am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Open Office You have been invited by Matthew Levine to attend an event named Open Office on Monday Mar 2, 2026 \u22c5 9:50am \u2013 9:55am (Eastern Time - Toronto). You have an upcoming event Open Office Monday",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19c9c2b243bb9210",
+      "subject": "arbitration",
+      "sender": "Matthew Levine <matthew@levinelegal.ca>",
+      "snippet": "Hi Mike this is a bit of a long shot but are you by any chance interested in being approached to sit as an arbitrator? the reason i ask is that hte dispute involves a sports league. there is not a lot",
+      "current_labels": [
+        "SENT"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19c9674a3e1dcd91",
+      "subject": "Yellowbricks Capital Incorporatd - Post Closing",
+      "sender": "Matthew Levine <matthew@levinelegal.ca>",
+      "snippet": "Hello Chen I dont believe I have Mr Ebrahimi&#39;s email address. I will need to provide it to FINTRAC. The company key for the corporation in Ontario is 510436733. Once I have Mr Ebrahimi&#39;s",
+      "current_labels": [
+        "SENT"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19ca7f5902872dea",
+      "subject": "[HillSide2026/moosecoin2026] Run failed: Schema Gate - main (8989f24)",
+      "sender": "HillSide2026 <notifications@github.com>",
+      "snippet": "[HillSide2026/moosecoin2026] Schema Gate workflow run Schema Gate: All jobs have failed View workflow run Status Job Annotations Schema Gate / frontmatter Failed in 3 seconds annotations for Schema",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19ca5328531e877e",
+      "subject": "Payment plan installment submitted for Marcela Hernandez",
+      "sender": "Clio Team <notifications@clio.com>",
+      "snippet": "Payment notification An installment was submitted for Marcela Hernandez. It will be available in Clio and your merchant account in 2-3 business days. Learn more about payment statuses. Payment",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19c9cc85f5dbead0",
+      "subject": "Re: Receipt from Levine Law",
+      "sender": "Zelko Culibrk <zeeculibrk@gmail.com>",
+      "snippet": "Hi Jocelyn, Thank you for sending me a copy of the last statement for services rendered for January and February. Is it possible to get copies of all the invoices from September to date. Or, a",
+      "current_labels": [
+        "LL/1./1.2 - Strategic/25-1318 -- Zelko",
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19ca712de576f06f",
+      "subject": "Manual time was added",
+      "sender": "Upwork Notification <donotreply@upwork.com>",
+      "snippet": "Review manual time submitted Upwork Review the manual time that was recently submitted Hi Matthew, This email confirms that the following manual time has been submitted or edited today by your",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    }
+  ]
+}

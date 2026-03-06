@@ -1,0 +1,418 @@
+{
+  "batch_id": "20260306_115732",
+  "batch_size": 25,
+  "threads": [
+    {
+      "thread_id": "19cc3fc0d4ec57ac",
+      "subject": "Notification: lunch Matthew / David @ Fri Mar 6, 2026 12:30pm - 1:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "lunch Matthew / David Join with Google Meet \u2013 per our email chain. just adding to make sure You have an upcoming event Join with Google Meet Meeting link meet.google.com/ufr-ztot-zid Join by phone (CA",
+      "current_labels": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc3e08f3117e64",
+      "subject": "Notification: LLA 3 @ Fri Mar 6, 2026 12pm - 12:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 3 Review Matter List, Act on Priority Matter(s) Start to Docket; Input activities End - Great You have an upcoming event LLA 3 Friday Mar 6, 2026 \u22c5 12pm \u2013 12:30pm (Eastern Time - Toronto) Review",
+      "current_labels": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc3de4c863bc0f",
+      "subject": "Friday - tasks due soon: 5, tasks assigned: 7 -  levinelegal.ca",
+      "sender": "Asana <no-reply@asana.com>",
+      "snippet": "Hi Matthew, here&#39;s your daily update of Asana tasks: REVIEW: Custom Records , Consider updating your project progress, INQUIRY: \u2026 Friday: tasks assigned to you levinelegal.ca View in Asana Due soo",
+      "current_labels": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc3ad7e6d56cdc",
+      "subject": "Technology and Legal Practice 2026",
+      "sender": "LSO CPD <CPD@lso.ca>",
+      "snippet": "April 28 | Live Webcast LIVE WEBCAST Technology and Legal Practice 2026 Tuesday, April 28, 2026 9:00 am\u20134:00 pm Register CO-CHAIRS The Honourable Justice Jill Presser Ontario Superior Court of Justice",
+      "current_labels": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc3a975c9ce59e",
+      "subject": "Notification: LLA 2 @ Fri Mar 6, 2026 11am - 11:45am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 2 Review Inbox &amp; Emails, Identify priority response Send priority response Review Matter List, Act on Priority Matter(s) Start to Docket; Review Task List; Activities End - Great You have an",
+      "current_labels": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc3a89d1969354",
+      "subject": "Fwd: Utility bill",
+      "sender": "Harry Bedi <harry@stream.money>",
+      "snippet": "Hi Matthew. Please find attached the UK TV License in my name,. Thanks HArry ---------- Forwarded message --------- From: Sonia B &lt;sonia@stream.money&gt; Date: Fri, 6 Mar 2026 at 14:42 Subject:",
+      "current_labels": [
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "INBOX",
+        "UNREAD",
+        "IMPORTANT",
+        "CATEGORY_PERSONAL"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc394cfa5e48d4",
+      "subject": "[LLS] Please moderate: \"Hello world!\"",
+      "sender": "WordPress <wordpress@levinelegalservices.com>",
+      "snippet": "A new comment on the post &quot;Hello world!&quot; is waiting for your approval https://levinelegalservices.com/2023/01/01/hello-world/ Author: Diana3684 (IP address: 23.94.182.50, 23-94-182-50-host.",
+      "current_labels": [
+        "CATEGORY_PERSONAL",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "20_Action_Team",
+      "extracted_matter_number": "23-94",
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb1d1996d9e449",
+      "subject": "Reminder: Invoice 2025-497 from AzPerLegal Services Inc.",
+      "sender": "\"AzPerLegal Services Inc.\" <quickbooks@notification.intuit.com>",
+      "snippet": "INVOICE 2025-497 DETAILS AzPerLegal Services Inc. DUE 01-01-2026 $248.40 Print or save Powered by QuickBooks Just a reminder that we have not received a payment for this invoice yet. Payment can be",
+      "current_labels": [
+        "SENT",
+        "UNREAD",
+        "IMPORTANT",
+        "INBOX",
+        "CATEGORY_PERSONAL",
+        "20_Action_Team",
+        "CATEGORY_UPDATES"
+      ],
+      "proposed_label": "20_Action_Team",
+      "extracted_matter_number": "01-01",
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc3806e23fb801",
+      "subject": "Notification: LLA I @ Fri Mar 6, 2026 10:15am - 10:45am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA I Review Matter List, Act on Priority Matter(s) Start to Docket; Review Task List; Activities End - Great You have an upcoming event LLA I Friday Mar 6, 2026 \u22c5 10:15am \u2013 10:45am (Eastern Time -",
+      "current_labels": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19ca17f20943f27e",
+      "subject": "Hello",
+      "sender": "Matthew Levine <matthew@levinelegal.ca>",
+      "snippet": "Hi Hernany What is your best email? I&#39;ll email you from Sidera. Look forward to working together. Best Matthew Matthew AJ Levine Barrister &amp; Solicitor 1235 Bay Street, Suite 700, TORONTO, M5R",
+      "current_labels": [
+        "SENT",
+        "INBOX",
+        "IMPORTANT",
+        "00_Triage",
+        "CATEGORY_PERSONAL"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc3738145d6f26",
+      "subject": "\ud83d\udcc5 You have 4 overdue tasks",
+      "sender": "Asana <no-reply@asana.com>",
+      "snippet": "It&#39;s time to catch up. 4 tasks from the past week are overdue Jump in and keep your team&#39;s work on track. levinelegal.ca Respond now Your overdue tasks between February 27 and March 6 Consider",
+      "current_labels": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc369a86bcd211",
+      "subject": "Notification: Open Office @ Fri Mar 6, 2026 9:50am - 9:55am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Open Office You have been invited by Matthew Levine to attend an event named Open Office on Friday Mar 6, 2026 \u22c5 9:50am \u2013 9:55am (Eastern Time - Toronto). You have an upcoming event Open Office Friday",
+      "current_labels": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc35571121091b",
+      "subject": "\ud83e\udd9e GPT-5.4 Push for OpenClaw",
+      "sender": "MyClaw Newsletter <MyClaw@aisecret.us>",
+      "snippet": "Run the GPT-5.4 Version of OpenClaw at 50% Off \u2014 for the first 48 hours only. \ud83e\udd9e GPT-5.4 Push for OpenClaw By MyClaw &amp; ClawWarrior \u2022 6 Mar 2026 Read Online | Sign Up | Advertise Read Online | Sign",
+      "current_labels": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc33e1a729480d",
+      "subject": "Dynamic Dashboard in SharePoint the Easy Way",
+      "sender": "Infowise Ultimate Forms <sales@infowisesolutions.com>",
+      "snippet": "Building meaningful dashboards in SharePoint does not have to be complicated. In our latest article, we show how to create a Dynamic Dashboard using Infowise Ultimate Forms to transform everyday list",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "80_Junk_to_Review",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc30a01f7e97d6",
+      "subject": "Your Power Automate per user plan subscription has expired",
+      "sender": "Microsoft <microsoft-noreply@microsoft.com>",
+      "snippet": "View the subscription for details. Your organization&#39;s Power Automate per user plan subscription has expired Your organization&#39;s subscription expired on March 6, 2026. Learn more about what",
+      "current_labels": [
+        "CATEGORY_PERSONAL",
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc2ce5a670e4ce",
+      "subject": "AI Agents: Complete Course | Marina Wyss in Data Science Collective",
+      "sender": "Medium Weekly Digest <noreply@medium.com>",
+      "snippet": "Matthew Stories for Matthew @matthew_53039\u00b7Become a member Medium weekly digest Today&#39;s highlights Marina Wyss Marina WyssinData Science Collective AI Agents: Complete Course AI Agents: Complete",
+      "current_labels": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc2c75e1281d8f",
+      "subject": "Your Microsoft Copilot Studio User License subscription has expired",
+      "sender": "Microsoft <microsoft-noreply@microsoft.com>",
+      "snippet": "View the subscription for details. Your organization&#39;s Microsoft Copilot Studio User License subscription has expired Your organization&#39;s subscription expired on March 6, 2026. Learn more abou",
+      "current_labels": [
+        "CATEGORY_PERSONAL",
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc2c301032e405",
+      "subject": "Newsletter: BTC rebounds to $74K as markets digest geopolitical shock",
+      "sender": "Bitget <notification@promo.bitget.com>",
+      "snippet": "Dear Bitget User, This week&#39;s market map: Crypto markets experienced high volatility this week, falling during geopolitical tensions before rebounding strongly. Bitcoin briefly reached about $74K,",
+      "current_labels": [
+        "INBOX",
+        "CATEGORY_UPDATES"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc2accb4fe13e0",
+      "subject": "Spreadsheet shared with you: \"Exporters JOY\"",
+      "sender": "\"Jocelyn Ong (via Google Sheets)\" <drive-shares-dm-noreply@google.com>",
+      "snippet": "Jocelyn Ong shared a spreadsheet Jocelyn Ong (jocelyn_ong@levinelegalservices.com) has invited you to edit the following spreadsheet: Hi Matthew, here&#39;s the gsheet version. Exporters JOY Jocelyn",
+      "current_labels": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc2aae93bab092",
+      "subject": "Spreadsheet shared with you: \"Exporters JOY.xlsx\"",
+      "sender": "\"Jocelyn Ong (via Google Sheets)\" <drive-shares-dm-noreply@google.com>",
+      "snippet": "Jocelyn Ong shared a spreadsheet Jocelyn Ong (jocelyn_ong@levinelegalservices.com) has invited you to edit the following spreadsheet: Hi Matthew, here&#39;s the file. Updated most of China&#39;s",
+      "current_labels": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc26366512d817",
+      "subject": "Reminder: Complete your TELUS account registration",
+      "sender": "My TELUS <donotreply@telus.com>",
+      "snippet": "Hi TELUS, Just a friendly reminder that you haven&#39;t completed your online registration for TELUS My Account. Complete my registration Once registered, you can easily: \u2022 View and pay your bills \u2022",
+      "current_labels": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "proposed_label": "20_Action_Team",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc24300b73980d",
+      "subject": "Your TD Wealth Financial Planning account statement(s) is/are available",
+      "sender": "TD <td.wealth@td.com>",
+      "snippet": "Your TD Wealth Financial Planning account statement(s) is/are available Dear MR MATTHEW AJ LEVINE, Your TD Wealth Financial Planning account statement(s) has/have been posted on eServices. To view you",
+      "current_labels": [
+        "INBOX",
+        "UNREAD",
+        "CATEGORY_UPDATES"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc1d1c3d9c612c",
+      "subject": "Trust Ledger Report \u2013 Current Month FAO CYU",
+      "sender": "Jocelyn Ong <Jocelyn_Ong@levinelegalservices.com>",
+      "snippet": "Hi Matthew, Please let me know if I can forward this to the client. Thanks! Re: Trust Ledger Report \u2013 Current Month Dear Client, Please find attached your latest Trust Ledger Report, including details",
+      "current_labels": [
+        "CATEGORY_PERSONAL",
+        "INBOX",
+        "UNREAD",
+        "IMPORTANT"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc1d00b881d583",
+      "subject": "Trust Ledger Report \u2013 Current Month FAO KALEMART",
+      "sender": "Jocelyn Ong <Jocelyn_Ong@levinelegalservices.com>",
+      "snippet": "Hi Matthew, Please let me know if I can forward this to the client. Thanks! Re: Trust Ledger Report \u2013 Current Month Dear Client, Please find attached your latest Trust Ledger Report, including details",
+      "current_labels": [
+        "CATEGORY_PERSONAL",
+        "INBOX",
+        "UNREAD",
+        "IMPORTANT"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cc1bd4c678c334",
+      "subject": "Trust Ledger Report \u2013 Current Month FAO THE KNOT",
+      "sender": "Jocelyn Ong <Jocelyn_Ong@levinelegalservices.com>",
+      "snippet": "Hi Matthew, Please let me know if I can forward this to the client. Thanks! Re: Trust Ledger Report \u2013 Current Month Dear Client, Please find attached your latest Trust Ledger Report, including details",
+      "current_labels": [
+        "CATEGORY_PERSONAL",
+        "INBOX",
+        "UNREAD",
+        "IMPORTANT"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    }
+  ]
+}

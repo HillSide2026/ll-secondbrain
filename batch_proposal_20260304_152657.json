@@ -1,0 +1,416 @@
+{
+  "batch_id": "20260304_152657",
+  "batch_size": 25,
+  "threads": [
+    {
+      "thread_id": "19cba814f66c6368",
+      "subject": "\ud83d\udce5 Lino assigned you a task: HANDLE: Re: Verto <> Stream <> Snowcap Financial [26-927-00004 - Stream Ventu\u2026]",
+      "sender": "Lino Bernal via Asana <no-reply@asana.com>",
+      "snippet": "Lino assigned a task to you Logo of Asana Lino assigned a task to you levinelegal.ca View task Subtask of 26-927-00004 - Stream Ventures Limited HANDLE: Re: Verto &lt;&gt; Stream &lt;&gt; Snowcap",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": "26-927-00004",
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba7e3f93f8ac5",
+      "subject": "Small business opportunities: funding, AI strategy, and events",
+      "sender": "Kelsey at Digital Main Street <kelsey@digitalmainstreet.ca>",
+      "snippet": "Apply for the Mastercard Small Business Fund before March 24, explore how AI is reshaping marketing, and register for Square&#39;s upcoming webinar. Digital Main Street Newsletter Banner News &amp;",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba744440c42e2",
+      "subject": "\ud83d\udce5 Lino assigned you a task: TRACK: Business License Issuance \u2013 Ref #20098208 [LL Operations]",
+      "sender": "Lino Bernal via Asana <no-reply@asana.com>",
+      "snippet": "Lino assigned a task to you Logo of Asana Lino assigned a task to you levinelegal.ca View task TRACK: Business License Issuance \u2013 Ref #20098208 Assigned to Matthew Levine Due date No due date Project",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba6fe669b6c20",
+      "subject": "Get in touch with us to help finance your business",
+      "sender": "TD Canada Trust <email@e.email-td.com>",
+      "snippet": "Learn how a Small Business Loan and Small Business Line of Credit can support your business. \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c \u034f\u200c",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba6fa02fd87d3",
+      "subject": "Notification: Meeting w/ Kellen Presley @ Wed Mar 4, 2026 4pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Meeting w/ Kellen Presley You have been invited by Matthew Levine to attend an event named Meeting w/ Kellen Presley on Wednesday Mar 4, 2026 \u22c5 4pm (Eastern Time - Toronto). You have an upcoming event",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba6f71cfb6fbc",
+      "subject": "Reminder: Meeting w/ Kellen Presley (Matthew Levine) @ Wed Mar 4, 2026 4pm - 5pm (EST) (Matthew AJ Levine)",
+      "sender": "\"kellen@rhizomecompliance.com (Google Calendar)\" <calendar-notification@google.com>",
+      "snippet": "You have an upcoming appointment with kellen@rhizomecompliance.com Join with Google Meet Meeting link meet.google.com/qhx-tods-qcs Test your setup any time before your appointment. New to Google Meet?",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19caed93543b5e39",
+      "subject": "Notification: Matthew/Lino Touchbase @ Mon Mar 2, 2026 10am - 10:30am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Matthew/Lino Touchbase Join with Google Meet \u2013 You have been invited by Lino Bernal to attend an event named Matthew/Lino Touchbase on Monday Mar 2, 2026 \u22c5 10am \u2013 10:30am (Eastern Time - Toronto). You",
+      "current_labels": [
+        "SENT",
+        "INBOX",
+        "CATEGORY_PERSONAL",
+        "UNREAD",
+        "IMPORTANT",
+        "90_Archive"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba6344f124164",
+      "subject": "Appointment Rescheduled: Ali Khan on Thursday, March 5, 2026 12:45 PM (EST)",
+      "sender": "noreply@donotreply.soulpepper.com",
+      "snippet": "Hi, Your appointment with Ali Khan has been rescheduled. Below are the updated details: Appointment Title: Ali Khan New Date and Time: Thursday, March 5, 2026 12:45 PM (EST) Meeting Link / Location:",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "20_Action_Team",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba61a42c472aa",
+      "subject": "Notification: LLA 4 @ Thu Mar 5, 2026 2:45pm - 3:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 4 Must docket at least .1Review RM Inbox? Review Matter List, - filter RM Matters- filter Active1- identify priority Matter (&quot;Priority Matter&quot;)For Priority Matter- Review Task List; -",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba6159c22a573",
+      "subject": "\ud83d\udce5 Lino assigned you a task: REVIEW: Custom Records [LL Operations]",
+      "sender": "Lino Bernal via Asana <no-reply@asana.com>",
+      "snippet": "Lino assigned a task to you Logo of Asana Lino assigned a task to you levinelegal.ca View task REVIEW: Custom Records Assigned to Matthew Levine Due date Mar 6 Project LL Operations Collaborators Lino",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba611becf61d7",
+      "subject": "Accepted: Appointment with Matthew Levine @ Thu Mar 5, 2026 12:45pm - 1pm (EST) (matthew@levinelegal.ca)",
+      "sender": "Ali Khan <ali.khan.j49x@gmail.com>",
+      "snippet": "Appointment with Matthew Levine Ali Khan has accepted this invitation. Join with Google Meet Meeting link meet.google.com/znc-wimq-yds Join by phone (CA) +1 778-728-9893 PIN: 865523326 More phone",
+      "current_labels": [
+        "IMPORTANT",
+        "INBOX",
+        "CATEGORY_PERSONAL",
+        "UNREAD"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": "778-728",
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba540bf5e2885",
+      "subject": "Notification: LLA 5 @ Wed Mar 4, 2026 3:30pm - 4pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 5 Review Matter List, Act on Priority Matter(s) Start to Docket; Review Task List; Activities End - Great You have an upcoming event LLA 5 Wednesday Mar 4, 2026 \u22c5 3:30pm \u2013 4pm (Eastern Time -",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba4f5785639ac",
+      "subject": "Invitation: SP/Levine Law  @ Thu Mar 5, 2026 4pm - 5pm (EST) (matthew@levinelegal.ca)",
+      "sender": "Robyn Deen <robyn@soulpepper.com>",
+      "snippet": "SP/Levine Law Join with Google Meet \u2013 You have been invited by Robyn Deen to attend an event named SP/Levine Law on Thursday Mar 5, 2026 \u22c5 4pm \u2013 5pm (Eastern Time - Toronto). Join with Google Meet",
+      "current_labels": [
+        "IMPORTANT",
+        "INBOX",
+        "CATEGORY_PERSONAL",
+        "UNREAD"
+      ],
+      "proposed_label": "20_Action_Team",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb9e27da4beaed",
+      "subject": "hi",
+      "sender": "Matthew Levine <matthew@levinelegal.ca>",
+      "snippet": "Hi Isaac I have a question about potentially moving more money over to Baskin. Its a chicken and the egg thing because i&#39;m not in a position to invest the money, at least not immediately, as i&#39",
+      "current_labels": [
+        "IMPORTANT",
+        "SENT",
+        "INBOX",
+        "CATEGORY_PERSONAL"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba4b5c23f9ec2",
+      "subject": "[Barberismo] Some plugins were automatically updated",
+      "sender": "WordPress <wordpress@barberismo.com>",
+      "snippet": "Howdy! Some plugins have automatically updated to their latest versions on your site at https://barberismo.com. No further action is needed on your part. These plugins are now up to date: - Rank Math",
+      "current_labels": [
+        "INBOX",
+        "CATEGORY_PERSONAL",
+        "UNREAD"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb993cd189388b",
+      "subject": "Notification: Affidafit @ Wed Mar 4, 2026 12pm - 1pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Affidafit You have been invited by Matthew Levine to attend an event named Affidafit on Wednesday Mar 4, 2026 \u22c5 12pm \u2013 1pm (Eastern Time - Toronto). You have an upcoming event Affidafit Wednesday Mar ",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb993c9376f019",
+      "subject": "Notification: LLA 2 @ Thu Mar 5, 2026 11am - 11:45am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 2 Review Inbox &amp; Emails, Identify priority response Send priority response Review Matter List, Act on Priority Matter(s) Start to Docket; Review Task List; Activities End - Great You have an",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb991655f510ac",
+      "subject": "Wednesday - tasks due soon: 2, tasks assigned: 3 -  levinelegal.ca",
+      "sender": "Asana <no-reply@asana.com>",
+      "snippet": "Hi Matthew, here&#39;s your daily update of Asana tasks: BMO BANK \u2013 Trust, Operating Account, and Savings, TD BANK \u2013 Checking, Visa, and USD Account, Payment execution\u2026 Wednesday: tasks assigned to yo",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb98a47a5e83a1",
+      "subject": "Smart ways to send this spring",
+      "sender": "Canada Post <donotreply-nepasrepondre@communications.canadapost-postescanada.ca>",
+      "snippet": "Get easy sending solutions plus postage-paid envelopes and this year&#39;s Flower stamp issue. Canada Post - Postes Canada Browser view Smart ways to send this spring Fleeting beauties of spring Day o",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb9884312b427c",
+      "subject": "Invitation: Stream & Marble - Fraud & AML transaction monitoring  @ Wed 11 Mar 2026 11am - 11:50am (EDT) (matthew@stream.money)",
+      "sender": "Vivien Ruivaco <vivien@checkmarble.com>",
+      "snippet": "Stream &amp; Marble - Fraud &amp; AML transaction monitoring Join with Google Meet \u2013 Hi Vivien, Thank you for the helpful insights you&#39;ve shared this morning, much appreciated. Apologies, Harry wa",
+      "current_labels": [
+        "IMPORTANT",
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "INBOX",
+        "CATEGORY_PERSONAL"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb9879ace74b3e",
+      "subject": "Your TD statement is now available",
+      "sender": "TD.eStatementNoReplyAccount@td.com",
+      "snippet": "Dear MATTHEW AJ LEVINE, Your Account statement for the account ending in 1420 is now available for viewing. To view your statement, simply log in using your username or access card number and password",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "CATEGORY_PERSONAL",
+        "UNREAD"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb986f9376ca3f",
+      "subject": "New voicemail from (416) 921-2600",
+      "sender": "Google Voice <voice-noreply@google.com>",
+      "snippet": "Google Voice hi Matthew its Jay calling from TV hope youre doing well please give me a call back 4169212600 sending you another email if need a verbal confirmation to move the funds to your bank",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": "921-2600",
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb965f5ab7a384",
+      "subject": "Own a $260K EBITDA Franchise Built by Pro Sports Surgeon",
+      "sender": "BizBuySell <news@bizbuysell.com>",
+      "snippet": "This Franchise Delivers $250/Session Services \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f ",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX",
+        "SENT"
+      ],
+      "proposed_label": "80_Junk_to_Review",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb95d1934a2dae",
+      "subject": "Notification: Weekly Legal & Compliance call @ Wed Mar 4, 2026 11am - 12pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Weekly Legal &amp; Compliance call Join with Google Meet \u2013 Weekly catch up all matters related to compliance and legal. You have an upcoming event Join with Google Meet Meeting link meet.google.com/ku",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb95ce213f3c1b",
+      "subject": "Notification: LLA 1 @ Thu Mar 5, 2026 10am - 10:30am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 1 Review to do list confirm priority task do priority task You have an upcoming event LLA 1 Thursday Mar 5, 2026 \u22c5 10am \u2013 10:30am (Eastern Time - Toronto) Review to do list confirm priority task d",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    }
+  ]
+}

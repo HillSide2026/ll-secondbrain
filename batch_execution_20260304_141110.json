@@ -1,0 +1,18 @@
+{
+  "batch_id": "20260304_141110",
+  "executed_count": 25,
+  "archived_count": 16,
+  "errors": [],
+  "halted": false,
+  "state_transition_counts": {
+    "(none)\u219200_Triage": 5,
+    "(none)\u219250_Calendar": 7,
+    "(none)\u219220_Action_Team": 8,
+    "(none)\u219210_Action_Matthew": 4,
+    "(none)\u219260_Filing": 1
+  },
+  "matter_outcome_counts": {
+    "none": 25
+  },
+  "matter_failures": []
+}

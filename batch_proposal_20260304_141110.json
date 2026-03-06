@@ -1,0 +1,413 @@
+{
+  "batch_id": "20260304_141110",
+  "batch_size": 25,
+  "threads": [
+    {
+      "thread_id": "19cba3c1722376f3",
+      "subject": "Chance to win 1 million Points, out of the Blue!",
+      "sender": "BMO Bank of Montreal <DoNotReply@e-news.bmo.com>",
+      "snippet": "A new credit card rewards program is on the way \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c ",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba387d84c014b",
+      "subject": "Notification: LL LUNCH @ Thu Mar 5, 2026 2pm - 2:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LL LUNCH You have been invited by Matthew Levine to attend an event named LL LUNCH on Thursday Mar 5, 2026 \u22c5 2pm \u2013 2:30pm (Eastern Time - Toronto). You have an upcoming event LL LUNCH Thursday Mar 5,",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "UNREAD",
+        "INBOX"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba2ad77947c10",
+      "subject": "Notification: LLA 4 @ Wed Mar 4, 2026 2:45pm - 3:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 4 Must docket at least .1Review RM Inbox? Review Matter List, - filter RM Matters- filter Active1- identify priority Matter (&quot;Priority Matter&quot;)For Priority Matter- Review Task List; -",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "UNREAD",
+        "INBOX"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba224564d1084",
+      "subject": "Re: Background Points",
+      "sender": "Grace Mendoza <grace@levine-law.ca>",
+      "snippet": "Hi Ali, This email confirms your upcoming appointment with Matthew Levine. Meeting Details Date: Thursday, March 5, 2026 Time: 12:45 PM Platform: Google Meet Next Steps: I will be sending over a",
+      "current_labels": [
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "proposed_label": "20_Action_Team",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba1722504332a",
+      "subject": "[studentrights.site] Some plugins were automatically updated",
+      "sender": "WordPress <wordpress@studentrights.site>",
+      "snippet": "Howdy! Some plugins have automatically updated to their latest versions on your site at https://studentrights.site. No further action is needed on your part. These plugins are now up to date: - Jetpac",
+      "current_labels": [
+        "CATEGORY_PERSONAL",
+        "UNREAD",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba10c15ef9fe1",
+      "subject": "Missed Call",
+      "sender": "Matthew Levine <matthew+levinelegal.ca@donotreply.soulpepper.com>",
+      "snippet": "You have a missed call from (416) 388-0289. Please reach out to them ASAP before the lead gets cold! If you no longer wish to receive these emails you may unsubscribe",
+      "current_labels": [
+        "IMPORTANT",
+        "SENT",
+        "CATEGORY_UPDATES",
+        "CATEGORY_PERSONAL",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "20_Action_Team",
+      "extracted_matter_number": "388-0289",
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba07d3b620617",
+      "subject": "New Client Inquiry: Ali Khan (Shareholder Dispute)",
+      "sender": "Grace Mendoza <grace@levine-law.ca>",
+      "snippet": "Hi Matthew, I just finished an intake call with a potential client, Ali Khan. Here are the details regarding his matter: Client Information Name: Ali Khan Phone: 416-388-3889 Email: ali.khan.j49x@gmai",
+      "current_labels": [
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "proposed_label": "20_Action_Team",
+      "extracted_matter_number": "416-388",
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba05361e91c1c",
+      "subject": "Pricing Information",
+      "sender": "Tulika Dhar <tulika.d@stream.money>",
+      "snippet": "Hi Jay and Lena, Thank you for walking us through the use cases this afternoon. Could you please share details about your pricing structure, available plans, and any applicable minimum commitments wit",
+      "current_labels": [
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cba01ea293002b",
+      "subject": "Notification: LL LUNCH @ Wed Mar 4, 2026 2pm - 2:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LL LUNCH You have been invited by Matthew Levine to attend an event named LL LUNCH on Wednesday Mar 4, 2026 \u22c5 2pm \u2013 2:30pm (Eastern Time - Toronto). You have an upcoming event LL LUNCH Wednesday Mar 4",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "UNREAD",
+        "INBOX"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb9eb9545272f0",
+      "subject": "New email from Ali Khan",
+      "sender": "noreply@donotreply.soulpepper.com",
+      "snippet": "Hello Matthew Levine, You have received a new email from Ali Khan. Click here to view the chat details. Thank you.",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "20_Action_Team",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb9e386e217431",
+      "subject": "New message from Ali Khan",
+      "sender": "noreply@donotreply.soulpepper.com",
+      "snippet": "Hello Matthew Levine, You have received a new message from Ali Khan. Click here to view the chat details. Thank you.",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "IMPORTANT",
+        "UNREAD",
+        "INBOX"
+      ],
+      "proposed_label": "20_Action_Team",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb9e2e6dcd8fff",
+      "subject": "LL Inquiries: New missed call from +1 416-388-0289",
+      "sender": "Google Workspace Alerts <google-workspace-alerts-noreply@google.com>",
+      "snippet": "Google Voice The ring group &quot;LL Inquiries&quot; missed a call from +1 416-388-0289 To avoid missing calls on the web, keep Google Voice open in your browser. Call back YOUR ACCOUNT HELP CENTER",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "UNREAD",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": "416-388",
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb9d9a76a4ea1e",
+      "subject": "Document shared with you: \u2018Stream.Money_ ABC Policy_Group level_v0.1\u2019",
+      "sender": "\"Tulika Dhar (via Google Docs)\" <drive-shares-dm-noreply@google.com>",
+      "snippet": "Tulika Dhar shared a document Tulika Dhar (tulika.d@stream.money) has invited you to view the following document: Stream.Money_ ABC Policy_Group level_v0.1 Open Google LLC, 1600 Amphitheatre Parkway,",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "INBOX"
+      ],
+      "proposed_label": "60_Filing",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb9d175b2cb5fd",
+      "subject": "Your document copy",
+      "sender": "DocuSeal <info@docuseal.com>",
+      "snippet": "Hi there, Please check the copy of your &quot;Affidavit of J Talsky for signing&quot; in the email attachments. Alternatively, you can review and download your copy using the link below: Affidavit of ",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb9cd853c33628",
+      "subject": "You are invited to sign a document",
+      "sender": "DocuSeal <info@docuseal.com>",
+      "snippet": "Hello, You have been invited to sign the &quot;Affidavit of J Talsky for signing&quot;. Please DO NOT SIGN anything until we are on our virtual call. Kindly keep this email and link handy for the",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb9caf8a58a902",
+      "subject": "Notification: Oren / Matthew @ Wed Mar 4, 2026 1pm - 2pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Oren / Matthew You have been invited by Matthew Levine to attend an event named Oren / Matthew on Wednesday Mar 4, 2026 \u22c5 1pm \u2013 2pm (Eastern Time - Toronto). You have an upcoming event Oren / Matthew",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "UNREAD",
+        "INBOX"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb9cae39095e38",
+      "subject": "Notification: LLA 3 @ Thu Mar 5, 2026 12pm - 12:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 3 Review Matter List, Act on Priority Matter(s) Start to Docket; Input activities End - Great You have an upcoming event LLA 3 Thursday Mar 5, 2026 \u22c5 12pm \u2013 12:30pm (Eastern Time - Toronto) Review",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "UNREAD",
+        "INBOX"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb9c4fcbf5f9fd",
+      "subject": "Meet with Matthew",
+      "sender": "Jordana Talsky <jtalsky@cestlavielaw.ca>",
+      "snippet": "________________________________________________________________________________ Microsoft Teams meeting Join: https://teams.microsoft.com/meet/24683722751760?p=zVawZ1h4g4dGqnfNkO Meeting ID: 246 837",
+      "current_labels": [
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb9c1fccbe91fe",
+      "subject": "New message from Melanda Joseph",
+      "sender": "noreply@donotreply.soulpepper.com",
+      "snippet": "Hello Matthew Levine, You have received a new message from Melanda Joseph. Click here to view the chat details. Thank you.",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "proposed_label": "20_Action_Team",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb9c0934957f98",
+      "subject": "Delivery estimate update for your Amazon.ca order #702-3780287-7370664",
+      "sender": "\"Amazon.ca\" <order-update@amazon.ca>",
+      "snippet": "Amazon.ca Hello, We now have a delivery estimate for your Amazon order. As soon as your items ship, we&#39;ll send you an email confirmation. To view the status of your order or make changes, please g",
+      "current_labels": [
+        "IMPORTANT",
+        "HillSide/eComm/Amazon",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "20_Action_Team",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb9c07e694f462",
+      "subject": "Confirmed \u2013 your new interest rate is now active",
+      "sender": "BMO Bank of Montreal <DoNotReply@e-news.bmo.com>",
+      "snippet": "Thanks for accepting your new interest rate. We confirm that the new interest rate of 9.99% will be applied \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c ",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb9bbd4cc0e875",
+      "subject": "AI Call Recap: Melanda Joseph",
+      "sender": "reply@donotreply.soulpepper.com",
+      "snippet": "Your AI Employee has handled another call for Levine Law! Call details below: Caller&#39;s Name: Melanda Joseph Caller&#39;s Number: +14164026424 Number Called: +18777805906 Call Duration: 203 seconds",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "proposed_label": "20_Action_Team",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb0efe28296894",
+      "subject": "Corporate law firm",
+      "sender": "Matthew Levine <matthew@levinelegal.ca>",
+      "snippet": "Hello Negar thank you for talking with me earlier. I&#39;m attaching the relevant identification forms. If you will be the only instructing officer then kindly ignore the grey fields. Please do send",
+      "current_labels": [
+        "IMPORTANT",
+        "SENT",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb9941bac4c651",
+      "subject": "Notification: Meet with Matthew  @ Wed Mar 4, 2026 12pm - 12:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Meet with Matthew You have an upcoming event Meet with Matthew Wednesday Mar 4, 2026 \u22c5 12pm \u2013 12:30pm (Eastern Time - Toronto) Guests jtalsky@cestlavielaw.ca - organizer Matthew Levine - creator View",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "UNREAD",
+        "INBOX"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb994175963dec",
+      "subject": "Notification: LLA 3 @ Wed Mar 4, 2026 12pm - 12:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 3 Review Matter List, Act on Priority Matter(s) Start to Docket; Input activities End - Great You have an upcoming event LLA 3 Wednesday Mar 4, 2026 \u22c5 12pm \u2013 12:30pm (Eastern Time - Toronto) Revie",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "UNREAD",
+        "INBOX"
+      ],
+      "proposed_label": "50_Calendar",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    }
+  ]
+}

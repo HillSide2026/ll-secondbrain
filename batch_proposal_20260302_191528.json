@@ -1,0 +1,410 @@
+{
+  "batch_id": "20260302_191528",
+  "batch_size": 25,
+  "threads": [
+    {
+      "thread_id": "19cac6a6b80deb02",
+      "subject": "[Barberismo] Please moderate: \"Barber Style: Top Tips for Short Hair\"",
+      "sender": "WordPress <wordpress@barberismo.com>",
+      "snippet": "A new comment on the post &quot;Barber Style: Top Tips for Short Hair&quot; is waiting for your approval https://barberismo.com/barber-style-top-tips-for-short-hair/ Author: Kevinvet (IP address:",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_PERSONAL",
+        "INBOX",
+        "10_Action_Matthew"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb0fe6128a77f4",
+      "subject": "Your document has been signed by all signers.",
+      "sender": "Clio Team <notifications@clio.com>",
+      "snippet": "Clio - Practice Management Simplified Hi Matthew, YCI Exit - Authorizing_or_Cancelling_a_Representative 02_03_2026-Signed.pdf has been signed by all signers. The document has been uploaded into Clio",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb0fe45e3c464d",
+      "subject": "You just signed YCI Exit - Authorizing_or_Cancelling_a_Representative 02_03_2026.pdf",
+      "sender": "Dropbox Sign <noreply@mail.hellosign.com>",
+      "snippet": "Dropbox Sign You have successfully signed your document Document YCI Exit - Authorizing_or_Cancelling_a_Representative 02_03_2026.pdf You can view the document as an attachment below (if it&#39;s unde",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb0fd8a688dad7",
+      "subject": "YCI Exit - Authorizing_or_Cancelling_a_Representative 02_03_2026.pdf - Signature requested by Matthew Levine",
+      "sender": "Matthew Levine <noreply@mail.hellosign.com>",
+      "snippet": "Dropbox Sign ACTION REQUESTED Matthew Levine (matthew@levinelegal.ca) has requested a signature Review &amp; sign Document YCI Exit - Authorizing_or_Cancelling_a_Representative 02_03_2026.pdf Message",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19ca455efe1428e0",
+      "subject": "Consolidated Statement of Legal Costs",
+      "sender": "Jocelyn Ong <Jocelyn_Ong@levinelegalservices.com>",
+      "snippet": "Hi Zelko, As requested, please find attached a consolidated statement for your review. For quick reference, the key figures are summarized below: Description Amount (CAD) Total funds received in trust",
+      "current_labels": [
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": "25-1318",
+      "proposed_matter_label": "LL/1./1.2 - Strategic/25-1318 -- Zelko",
+      "matter_resolution_status": "matched",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb0c78ce046c0b",
+      "subject": "Notification: Commute @ Tue Mar 3, 2026 6pm - 6:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Commute You have been invited by Matthew Levine to attend an event named Commute on Tuesday Mar 3, 2026 \u22c5 6pm \u2013 6:30pm (Eastern Time - Toronto). You have an upcoming event Commute Tuesday Mar 3, 2026 ",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb090a58828965",
+      "subject": "Notification: Commute @ Mon Mar 2, 2026 6pm - 6:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Commute You have been invited by Matthew Levine to attend an event named Commute on Monday Mar 2, 2026 \u22c5 6pm \u2013 6:30pm (Eastern Time - Toronto). You have an upcoming event Commute Monday Mar 2, 2026 \u22c5",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19ca10001c5e3505",
+      "subject": "Voice AI Pricing + LinkedIn Research & 2026 Strategy",
+      "sender": "Robyn Deen <robyn@soulpepper.com>",
+      "snippet": "Hi Matthew, Thank you so much for trialing Voice AI and working with us to get it up and running. Just wanted to update you on pricing as we discussed during our last call. As Kevin mentioned when we",
+      "current_labels": [
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb0b9d94518097",
+      "subject": "Notification: Close Office @ Tue Mar 3, 2026 5:45pm - 6pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Close Office Close Office Protocol You have an upcoming event Close Office Tuesday Mar 3, 2026 \u22c5 5:45pm \u2013 6pm (Eastern Time - Toronto) Close Office Protocol Organizer Matthew Levine matthew@levinelega",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb0833e0912e04",
+      "subject": "Notification: Close Office @ Mon Mar 2, 2026 5:45pm - 6pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Close Office Close Office Protocol You have an upcoming event Close Office Monday Mar 2, 2026 \u22c5 5:45pm \u2013 6pm (Eastern Time - Toronto) Close Office Protocol Organizer Matthew Levine matthew@levinelegal",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb094fc0ac6769",
+      "subject": "A new perspective on growth, innovation, and what\u2019s next for your firm",
+      "sender": "8am <experts@8am.pro>",
+      "snippet": "\u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c ",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "UNREAD",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb090f3841bddd",
+      "subject": "Notification: Firm Management @ Tue Mar 3, 2026 5pm - 5:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Firm Management You have been invited by Matthew Levine to attend an event named Firm Management on Tuesday Mar 3, 2026 \u22c5 5pm \u2013 5:30pm (Eastern Time - Toronto). You have an upcoming event Firm",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb059d6ea69f05",
+      "subject": "Notification: Firm Management @ Mon Mar 2, 2026 5pm - 5:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Firm Management You have been invited by Matthew Levine to attend an event named Firm Management on Monday Mar 2, 2026 \u22c5 5pm \u2013 5:30pm (Eastern Time - Toronto). You have an upcoming event Firm",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb07fd0a33d62f",
+      "subject": "Automatic reply: Contract review and advice [Hamlins-DMS.S0184991.5]",
+      "sender": "Marianna Foerg <marianna.foerg@hamlins.com>",
+      "snippet": "I am out of office returning on Monday, 16 March 2026. I will be monitoring my inbox but my responses may be delayed. For anything urgent please contact Matthew Pryke (matthew.pryke@hamlins.com)",
+      "current_labels": [
+        "UNREAD",
+        "IMPORTANT",
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": "25-927",
+      "proposed_matter_label": "LL/1./1.1 - Essential/25-927 -- Stream",
+      "matter_resolution_status": "matched",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb075420582485",
+      "subject": "Notification: LLA VI  @ Tue Mar 3, 2026 4:30pm - 5pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA VI You have been invited by Matthew Levine to attend an event named LLA VI on Tuesday Mar 3, 2026 \u22c5 4:30pm \u2013 5pm (Eastern Time - Toronto). You have an upcoming event LLA VI Tuesday Mar 3, 2026 \u22c5 4",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb071deb2033f1",
+      "subject": "Authorized Representative changed - Canada Revenue Agency / Changement du repr\u00e9sentant autoris\u00e9 - Agence du revenu du Canada",
+      "sender": "\"Canada Revenue Agency / Agence du Revenu du Canada\" <do_not_reply-ne_pas_repondre@cra-arc.gc.ca>",
+      "snippet": "English version *** La version fran\u00e7aise suit *** Dear MATTHEW LEVINE: Your authorized representative with the Canada Revenue Agency (CRA) has been changed. You can view the authorized representative",
+      "current_labels": [
+        "UNREAD",
+        "IMPORTANT",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb070f82ee8c37",
+      "subject": "#td-secure - docs for new purchase - prequalification",
+      "sender": "\"Szalai, Robert A\" <robert.szalai@td.com>",
+      "snippet": "English (United States) | fran\u00e7ais (Canada) | \u21e7 TD Secure Email At TD, we appreciate your business and the security of your personal information is our top priority. One of the ways we keep your",
+      "current_labels": [
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb03e332aa56e6",
+      "subject": "Notification: LLA 6 @ Mon Mar 2, 2026 4:30pm - 5:15pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 6 Review Matter List, Act on Priority Matter(s) Start to Docket; Review Task List; Activities End - Great You have an upcoming event LLA 6 Monday Mar 2, 2026 \u22c5 4:30pm \u2013 5:15pm (Eastern Time -",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb046ba2a3991f",
+      "subject": "printer",
+      "sender": "Matthew Levine <matthew@levinelegal.ca>",
+      "snippet": "Hello the printer on flr 7is out of order Matthew AJ Levine Barrister &amp; Solicitor 1235 Bay Street, Suite 700, TORONTO, M5R 3K4 T: +1 (647) 598-2598 This message may contain confidential and / or",
+      "current_labels": [
+        "SENT"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": "598-2598",
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19bb97cfd74760e2",
+      "subject": "Social Event -March 12, 2026",
+      "sender": "Sandra Albia <Sandra@rousseaumazzuca.com>",
+      "snippet": "It&#39;s that time to plan our first Social Event for 2026. We have chosen a place called ACTIVATE at the Toronto Stockyards on Thursday, March 12 th . A calendar invite has been sent. If you decline",
+      "current_labels": [
+        "UNREAD",
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb03e6d6331e15",
+      "subject": "Notification: LLA 5 @ Tue Mar 3, 2026 3:30pm - 4pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 5 Review Matter List, Act on Priority Matter(s) Start to Docket; Review Task List; Activities End - Great You have an upcoming event LLA 5 Tuesday Mar 3, 2026 \u22c5 3:30pm \u2013 4pm (Eastern Time - Toront",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb00769842774d",
+      "subject": "Notification: LLA 5 @ Mon Mar 2, 2026 3:30pm - 4pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 5 Review Matter List, Act on Priority Matter(s) Start to Docket; Review Task List; Activities End - Great You have an upcoming event LLA 5 Monday Mar 2, 2026 \u22c5 3:30pm \u2013 4pm (Eastern Time - Toronto",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb029b5d1d2c45",
+      "subject": "Get ready for your first bill",
+      "sender": "TELUS Business <telus@connect.telus.com>",
+      "snippet": "Set up notifications, learn what to expect and where you can view your bill. \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "UNREAD",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb0298b94e00b4",
+      "subject": "Ordered: \"Ceramic Cookware Nonstick...\" and 3 more items",
+      "sender": "\"Amazon.ca\" <auto-confirm@amazon.ca>",
+      "snippet": "Ordered: &quot;Ceramic Cookware Nonstick...&quot; and 3 more items\u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f ",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "HillSide/eComm/Amazon",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb0197ceee76f0",
+      "subject": "Website disclaime... - @matthew@stream.money @harry@stream.m...",
+      "sender": "\"Harry B (Google Docs)\" <comments-noreply@docs.google.com>",
+      "snippet": "Tulika Dhar (tulika.d@stream.money) mentioned you in an action item in the following document Website disclaimer &amp; proposed FAQs 1 comment Q5. Does Stream.Monety charge me any fees ? Tulika Dhar \u2022",
+      "current_labels": [
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": "25-927",
+      "proposed_matter_label": "LL/1./1.1 - Essential/25-927 -- Stream",
+      "matter_resolution_status": "matched",
+      "ambiguous_matches": []
+    }
+  ]
+}

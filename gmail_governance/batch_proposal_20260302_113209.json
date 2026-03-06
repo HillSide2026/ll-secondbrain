@@ -1,0 +1,316 @@
+{
+  "batch_id": "20260302_113209",
+  "batch_size": 25,
+  "threads": [
+    {
+      "thread_id": "19caf61212c6e649",
+      "subject": "Tulika - stream (Legal and Complian... and 2 others sent you messages",
+      "sender": "\"STREAM.MONEY (via Slack)\" <notification@slack.com>",
+      "snippet": "STREAM.MONEY 18 members \ud83d\udd25Your team has sent 178 messages recently View all unread messages New messages from @Tulika - stream (Legal and Compliance) Tulika - stream (Legal and Compliance)February 27th",
+      "current_labels": [
+        "UNREAD",
+        "IMPORTANT",
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19caf593f77c406e",
+      "subject": "Invoice 1889 from DM Law Clerk Solutions Inc.",
+      "sender": "\"DM Law Clerk Solutions Inc.\" <quickbooks@notification.intuit.com>",
+      "snippet": "INVOICE 1889 DETAILS DM Law Clerk Solutions Inc. DUE 03/02/2026 $811.07 Review and pay Powered by QuickBooks Dear Matthew J. Levine, We appreciate your business. Please find your invoice details here.",
+      "current_labels": [
+        "UNREAD",
+        "IMPORTANT",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19caf50b312bd23d",
+      "subject": "Quick Update and a Few Questions",
+      "sender": "Laura Hinton <laura@levine-law.ca>",
+      "snippet": "Hi Matthew, I hope you had a great weekend. Just wanted to touch base regarding a few things. 1. I have to update my business relationship on LSO connects to reflect that I am now working with you. Ca",
+      "current_labels": [
+        "UNREAD",
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19caf471cbd3d94b",
+      "subject": "Notification: LLA 2 @ Tue Mar 3, 2026 11am - 11:45am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 2 Review Inbox &amp; Emails, Identify priority response Send priority response Review Matter List, Act on Priority Matter(s) Start to Docket; Review Task List; Activities End - Great You have an",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19caf471ca349e10",
+      "subject": "Notification: LLA 3 @ Mon Mar 2, 2026 12pm - 12:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 3 Review Matter List, Act on Priority Matter(s) Start to Docket; Input activities End - Great You have an upcoming event LLA 3 Monday Mar 2, 2026 \u22c5 12pm \u2013 12:30pm (Eastern Time - Toronto) Review",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19c8b8ea305bd473",
+      "subject": "Website disclaimer",
+      "sender": "\"Tulika Dhar (Google Docs)\" <comments-noreply@docs.google.com>",
+      "snippet": "New activity in the following document Website disclaimer 8 resolved Suggestions Matthew Levine \u2022 16:05, 23 Feb (GMT) Replace: \u201cltd\u201d with \u201cLimited\u201d Tulika Dhar \u2022 17:26, 23 Feb (GMT) New Accepted",
+      "current_labels": [
+        "IMPORTANT",
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19caf44ace194659",
+      "subject": "Monday - tasks due soon: 2, tasks assigned: 3 -  levinelegal.ca",
+      "sender": "Asana <no-reply@asana.com>",
+      "snippet": "Hi Matthew, here&#39;s your daily update of Asana tasks: BMO BANK \u2013 Trust, Operating Account, and Savings, TD BANK \u2013 Checking, Visa, and USD Account, Payment execution\u2026 Monday: tasks assigned to you",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19caf40fe845ee37",
+      "subject": "AI Call Recap",
+      "sender": "reply@donotreply.soulpepper.com",
+      "snippet": "Your AI Employee has handled another call for Levine Law! Call details below: Caller&#39;s Number: +16477121079 Number Called: +18777805906 Call Duration: 42 seconds AI Agent Name: Lexi Call Summary:",
+      "current_labels": [
+        "UNREAD",
+        "IMPORTANT",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19caf4064fe6fa5a",
+      "subject": "Document shared with you: \u2018Website disclaimer & proposed FAQs\u2019",
+      "sender": "\"Tulika Dhar (via Google Docs)\" <drive-shares-dm-noreply@google.com>",
+      "snippet": "Tulika Dhar shared a document Tulika Dhar (tulika.d@stream.money) has invited you to edit the following document: Hi all, suggested few FAQs, please review and amend as deemed relevant and necessary.",
+      "current_labels": [
+        "UNREAD",
+        "IMPORTANT",
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19caf1025cf25634",
+      "subject": "Notification: LLA 2 @ Mon Mar 2, 2026 11am - 11:45am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 2 Review Inbox &amp; Emails, Identify priority response Send priority response Review Matter List, Act on Priority Matter(s) Start to Docket; Review Task List; Activities End - Great You have an",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19caf3b12806678e",
+      "subject": "Website disclaimer - @matthew@stream.money @harry@stream.m...",
+      "sender": "\"Tulika Dhar (Google Docs)\" <comments-noreply@docs.google.com>",
+      "snippet": "Tulika Dhar (tulika.d@stream.money) assigned you an action item in the following document Website disclaimer 1 comment Q5. Does Stream.Monety charge me any fees ? Tulika Dhar \u2022 10:41, 2 Mar (GMT-05:00",
+      "current_labels": [
+        "UNREAD",
+        "IMPORTANT",
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19caf17f8cee973b",
+      "subject": "Payment submitted for trust request 2761",
+      "sender": "Clio Team <notifications@clio.com>",
+      "snippet": "Confirmation #4N2V86BM Payment notification A payment was submitted for Stream Ventures Limited. It will be available in Clio and your merchant account within 2-3 business days. Learn more about",
+      "current_labels": [
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19cac6a6b80deb02",
+      "subject": "[Barberismo] Please moderate: \"Barber Style: Top Tips for Short Hair\"",
+      "sender": "WordPress <wordpress@barberismo.com>",
+      "snippet": "A new comment on the post &quot;Barber Style: Top Tips for Short Hair&quot; is waiting for your approval https://barberismo.com/barber-style-top-tips-for-short-hair/ Author: Kevinvet (IP address:",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19caf26373264b75",
+      "subject": "New missed call from (647) 616-4968.",
+      "sender": "Google Voice <voice-noreply@google.com>",
+      "snippet": "Google Voice Hello Matthew Levine, You missed a call from (647) 616-4968. To avoid missing calls on the web, keep Google Voice open in your browser. call back YOUR ACCOUNT HELP CENTER HELP FORUM This",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19c8c79a0e68cb95",
+      "subject": "Website disclaimer - is this final ? can we put it live al...",
+      "sender": "\"Gevork Grigorian (Google Docs)\" <comments-noreply@docs.google.com>",
+      "snippet": "Gevork Grigorian added a comment to the following document Website disclaimer 1 comment Stream Money is a trading name used by Stream Ventures Ltd (UK, Co. No. 13560798, ICO ZB980797), StreamDigital s",
+      "current_labels": [
+        "IMPORTANT",
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19c9a08fda2dfc4d",
+      "subject": "Resubmission of Trust Request TR2761",
+      "sender": "Jocelyn Ong <Jocelyn_Ong@levinelegalservices.com>",
+      "snippet": "Dear Sonia, Please find attached the Trust Request (TR2761) previously sent for your reference. We have also resent the request via Clio (notifications@clio.com). You may access the QR code provided",
+      "current_labels": [
+        "IMPORTANT",
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19caf1dc223b9b3d",
+      "subject": "High Level Regulatory Gap Analysis _ Initial Assessment S...",
+      "sender": "\"Tulika Dhar (Google Docs)\" <comments-noreply@docs.google.com>",
+      "snippet": "New activity in the following document High Level Regulatory Gap Analysis _ Initial Assessment Summary 14 resolved Suggestions Matthew Levine \u2022 07:06, 20 Feb (GMT-05:00) Add paragraph (7 times) Tulika",
+      "current_labels": [
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19caed93543b5e39",
+      "subject": "Notification: Matthew/Lino Touchbase @ Mon Mar 2, 2026 10am - 10:30am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Matthew/Lino Touchbase Join with Google Meet \u2013 You have been invited by Lino Bernal to attend an event named Matthew/Lino Touchbase on Monday Mar 2, 2026 \u22c5 10am \u2013 10:30am (Eastern Time - Toronto). You",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19caee6d80145a58",
+      "subject": "Notification: LLA I @ Mon Mar 2, 2026 10:15am - 10:45am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA I Review Matter List, Act on Priority Matter(s) Start to Docket; Review Task List; Activities End - Great You have an upcoming event LLA I Monday Mar 2, 2026 \u22c5 10:15am \u2013 10:45am (Eastern Time -",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19caf1016dc7f748",
+      "subject": "Notification: LLA 1 @ Tue Mar 3, 2026 10am - 10:30am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 1 Review to do list confirm priority task do priority task You have an upcoming event LLA 1 Tuesday Mar 3, 2026 \u22c5 10am \u2013 10:30am (Eastern Time - Toronto) Review to do list confirm priority task do",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19ae1cd3e17af12c",
+      "subject": "My Matter: 24-682-00002",
+      "sender": "Matthew Levine <matthew@levinelegal.ca>",
+      "snippet": "Hi Dina I want you to please Register SnowCap Financial Limited in Ontario using my office address. (Next week is fine.) Do the maintenance for SnowCap and input it into Minutebox. (Week after next is",
+      "current_labels": [
+        "SENT"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19caf073b4169cce",
+      "subject": "Notification: Open Office @ Tue Mar 3, 2026 9:50am - 9:55am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Open Office You have been invited by Matthew Levine to attend an event named Open Office on Tuesday Mar 3, 2026 \u22c5 9:50am \u2013 9:55am (Eastern Time - Toronto). You have an upcoming event Open Office",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19caf064c6cbd32d",
+      "subject": "FW: Action Required / Action requise KRONOS COMMUNICATIONS INC. (1001468505) Initial Return is Due by / Rapport initial \u00e0 d\u00e9poser par March 21, 2026",
+      "sender": "Dina Moore <dina@dmlawclerks.com>",
+      "snippet": "Hi Matthew \u2013 has the initial return been signed? Can I file it? Sincerely, Dina Moore Corporate Law Clerk dina@dmlawclerks.com www.dmlawclerks.com We value and respect flexible work arrangements.",
+      "current_labels": [
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19caed00dbd047bb",
+      "subject": "Notification: Open Office @ Mon Mar 2, 2026 9:50am - 9:55am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Open Office You have been invited by Matthew Levine to attend an event named Open Office on Monday Mar 2, 2026 \u22c5 9:50am \u2013 9:55am (Eastern Time - Toronto). You have an upcoming event Open Office Monday",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19caefc8b76b151d",
+      "subject": "Updated invitation: Stream Money / Elliptic - Mid Trial Check in @ Wed 4 Mar 2026 10am - 10:30am (EST) (matthew@stream.money)",
+      "sender": "Jay Unalkat <jay.unalkat@elliptic.co>",
+      "snippet": "Stream Money / Elliptic - Mid Trial Check in You have been invited by Jay Unalkat to attend an event named Stream Money / Elliptic - Mid Trial Check in on Wednesday 4 Mar 2026 \u22c5 10am \u2013 10:30am (Easter",
+      "current_labels": [
+        "IMPORTANT",
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    }
+  ]
+}

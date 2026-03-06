@@ -1,0 +1,11 @@
+{
+  "batch_id": "20260301_175920",
+  "executed_count": 9,
+  "archived_count": 0,
+  "errors": [
+    {
+      "thread_id": "19cab93abcfeacba",
+      "error": "<HttpError 400 when requesting https://gmail.googleapis.com/gmail/v1/users/me/threads/19cab93abcfeacba/modify?alt=json returned \"Cannot both add and remove the same label\". Details: \"[{'message': 'Cannot both add and remove the same label', 'domain': 'global', 'reason': 'invalidArgument'}]\">"
+    }
+  ]
+}

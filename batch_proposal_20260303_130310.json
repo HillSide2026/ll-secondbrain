@@ -1,0 +1,424 @@
+{
+  "batch_id": "20260303_130310",
+  "batch_size": 25,
+  "threads": [
+    {
+      "thread_id": "19cb4d5696072ffd",
+      "subject": "New message from Ali Khan",
+      "sender": "noreply@donotreply.soulpepper.com",
+      "snippet": "Hello Matthew Levine, You have received a new message from Ali Khan. Click here to view the chat details. Thank you.",
+      "current_labels": [
+        "INBOX",
+        "IMPORTANT",
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "CATEGORY_PERSONAL"
+      ],
+      "proposed_label": "20_Action_Team",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb4dc0f733368e",
+      "subject": "New conversation assigned with Ali Khan",
+      "sender": "noreply@donotreply.soulpepper.com",
+      "snippet": "Hello Matthew Levine, A new chat conversation has been assigned to you with Ali Khan, by Staff. Click here to view the chat details. Thank you.",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "20_Action_Team",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb4db4c6f98b14",
+      "subject": "Notification: LL LUNCH @ Tue Mar 3, 2026 2pm - 2:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LL LUNCH You have been invited by Matthew Levine to attend an event named LL LUNCH on Tuesday Mar 3, 2026 \u22c5 2pm \u2013 2:30pm (Eastern Time - Toronto). You have an upcoming event LL LUNCH Tuesday Mar 3,",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19c1ec6b1456c80e",
+      "subject": "legal matters",
+      "sender": "Matthew Levine <matthew@levinelegal.ca>",
+      "snippet": "Hi Jordana how are you? hope you are having a good winter. (!) i have a couple of matters where your family and estate law experience would be really valuable. may I just ask, what is your 2026 rate",
+      "current_labels": [
+        "INBOX",
+        "IMPORTANT",
+        "SENT",
+        "LL/1./1.2 - Strategic/24-336 -- Mascore",
+        "CATEGORY_PERSONAL"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb4c5ecec9af71",
+      "subject": "New missed call from Jordana Talsky.",
+      "sender": "Google Voice <voice-noreply@google.com>",
+      "snippet": "Google Voice Hello Matthew Levine, You missed a call from Jordana Talsky (416) 899-1992. To avoid missing calls on the web, keep Google Voice open in your browser. call back YOUR ACCOUNT HELP CENTER",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": "899-1992",
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb402aa834d765",
+      "subject": "Re: Contract review and advice (1x clean, 2 x redline) [Hamlins-DMS.S0184991.5]",
+      "sender": "Harmony Kennedy <Harmony.Kennedy@hamlins.com>",
+      "snippet": "Hi Matthew, Thank you for this. We&#39;ve incorporated your amendments and attached both clean and redline versions for sharing with Equals Money. We&#39;ve also included a further redline reflecting ",
+      "current_labels": [
+        "CATEGORY_PERSONAL",
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19c7228f919e0b8d",
+      "subject": "TELUS Business",
+      "sender": "Nima Niakan <nima.niakan@telus.com>",
+      "snippet": "Hi Matthew, I was nice talking to you today, I will send you some information regarding business connect soon. Kind regards, Nima Niakan Account Manager, SMB TELUS Business M +1 647 277 3554 Refer-a-",
+      "current_labels": [
+        "CATEGORY_PERSONAL",
+        "INBOX",
+        "SENT",
+        "IMPORTANT"
+      ],
+      "proposed_label": "20_Action_Team",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb4a4bf31f6cf7",
+      "subject": "Updated invitation: Stream x Innowise @ Weekly from 7am to 8am on Monday, Thursday from Thu 26 Feb to Wed 4 Mar (EST) (matthew@stream.money)",
+      "sender": "Andrei Piuniuk <andrei.piuniuk@innowise.com>",
+      "snippet": "Stream x Innowise Join with Google Meet \u2013 You have been invited by Andrei Piuniuk to attend an event named Stream x Innowise on Weekly from 7am to 8am on Monday, Thursday from Thursday 26 Feb to",
+      "current_labels": [
+        "CATEGORY_PERSONAL",
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "UNREAD",
+        "INBOX"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb4a45fd0e39f4",
+      "subject": "Notification: LLA 3 @ Wed Mar 4, 2026 12pm - 12:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 3 Review Matter List, Act on Priority Matter(s) Start to Docket; Input activities End - Great You have an upcoming event LLA 3 Wednesday Mar 4, 2026 \u22c5 12pm \u2013 12:30pm (Eastern Time - Toronto) Revie",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb46d7d1574df5",
+      "subject": "Notification: LLA 3 @ Tue Mar 3, 2026 12pm - 12:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 3 Review Matter List, Act on Priority Matter(s) Start to Docket; Input activities End - Great You have an upcoming event LLA 3 Tuesday Mar 3, 2026 \u22c5 12pm \u2013 12:30pm (Eastern Time - Toronto) Review",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cac6a6b80deb02",
+      "subject": "[Barberismo] Please moderate: \"Barber Style: Top Tips for Short Hair\"",
+      "sender": "WordPress <wordpress@barberismo.com>",
+      "snippet": "A new comment on the post &quot;Barber Style: Top Tips for Short Hair&quot; is waiting for your approval https://barberismo.com/barber-style-top-tips-for-short-hair/ Author: Kevinvet (IP address:",
+      "current_labels": [
+        "CATEGORY_PERSONAL",
+        "INBOX",
+        "UNREAD",
+        "10_Action_Matthew"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb48ad7ca6eeac",
+      "subject": "Action Required: One-time Verification Code / Mesure requise : Code de v\u00e9rification \u00e0 usage unique",
+      "sender": "\"No Reply [My Ontario Account | Compte My Ontario]\" <noreply@signin.ontario.ca>",
+      "snippet": "Un message en fran\u00e7ais suit. Hi, You are receiving this email because a request was made for a one-time code. Please enter the following code for verification: 098047 This code will expire in 30",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "IMPORTANT"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb46dbb0868bc8",
+      "subject": "Notification: Weekly Legal & Compliance call @ Wed Mar 4, 2026 11am - 12pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Weekly Legal &amp; Compliance call Join with Google Meet \u2013 Weekly catch up all matters related to compliance and legal. You have an upcoming event Join with Google Meet Meeting link meet.google.com/ku",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "UNREAD",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb46dab3a38603",
+      "subject": "Notification: LLA 2 @ Wed Mar 4, 2026 11am - 11:45am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 2 Review Inbox &amp; Emails, Identify priority response Send priority response Review Matter List, Act on Priority Matter(s) Start to Docket; Review Task List; Activities End - Great You have an",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb46b08f5d5bb3",
+      "subject": "Tuesday - tasks due soon: 2, tasks assigned: 3 -  levinelegal.ca",
+      "sender": "Asana <no-reply@asana.com>",
+      "snippet": "Hi Matthew, here&#39;s your daily update of Asana tasks: BMO BANK \u2013 Trust, Operating Account, and Savings, TD BANK \u2013 Checking, Visa, and USD Account, Payment execution\u2026 Tuesday: tasks assigned to you",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb436995bde10c",
+      "subject": "Notification: LLA 2 @ Tue Mar 3, 2026 11am - 11:45am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 2 Review Inbox &amp; Emails, Identify priority response Send priority response Review Matter List, Act on Priority Matter(s) Start to Docket; Review Task List; Activities End - Great You have an",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb45f8814d7faf",
+      "subject": "Notification: LLA I Espresso Riviera  @ Wed Mar 4, 2026 10:45am - 11am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA I Espresso Riviera You have been invited by Matthew Levine to attend an event named LLA I Espresso Riviera on Wednesday Mar 4, 2026 \u22c5 10:45am \u2013 11am (Eastern Time - Toronto). You have an upcoming",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19ca455efe1428e0",
+      "subject": "Consolidated Statement of Legal Costs",
+      "sender": "Jocelyn Ong <Jocelyn_Ong@levinelegalservices.com>",
+      "snippet": "Hi Zelko, As requested, please find attached a consolidated statement for your review. For quick reference, the key figures are summarized below: Description Amount (CAD) Total funds received in trust",
+      "current_labels": [
+        "INBOX",
+        "IMPORTANT",
+        "SENT",
+        "DRAFT",
+        "LL/1./1.2 - Strategic/25-1318 -- Zelko",
+        "CATEGORY_PERSONAL"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19c9f639faa3d8a7",
+      "subject": "Fw: AML Policy Request",
+      "sender": "James Hayes <jamesh@stream.money>",
+      "snippet": "Hi Matthew, Please see response from Equals in regards to the AML Policy request. James Hayes Head of Banking &amp; Expansion Stream Ventures jamesh@get-stream.com +44 7743 643549 From: Hannah Leslie",
+      "current_labels": [
+        "INBOX",
+        "UNREAD",
+        "IMPORTANT",
+        "LL/1./1.1 - Essential/25-927 -- Stream",
+        "CATEGORY_PERSONAL"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb43adae070a5e",
+      "subject": "google review",
+      "sender": "Ashley Barnett <ashley@prosperlyinnovation.com>",
+      "snippet": "hey Matthew, I saw you&#39;re at about 4 google reviews while Axess Law sits at 2306 - probably not by accident. Most people without a referral, choose their lawyer based on online information, with",
+      "current_labels": [
+        "CATEGORY_PERSONAL",
+        "INBOX",
+        "IMPORTANT"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb42fd49478673",
+      "subject": "AI Call Recap",
+      "sender": "reply@donotreply.soulpepper.com",
+      "snippet": "Your AI Employee has handled another call for Levine Law! Call details below: Caller&#39;s Number: +16476189922 Number Called: +18777805906 Call Duration: 16 seconds AI Agent Name: Lexi Call Summary:",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "IMPORTANT"
+      ],
+      "proposed_label": "20_Action_Team",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb42d8cdc40627",
+      "subject": "Notification: Open Office @ Wed Mar 4, 2026 9:50am - 9:55am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Open Office You have been invited by Matthew Levine to attend an event named Open Office on Wednesday Mar 4, 2026 \u22c5 9:50am \u2013 9:55am (Eastern Time - Toronto). You have an upcoming event Open Office",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb3ff7aa860960",
+      "subject": "Notification: LLA 1 @ Tue Mar 3, 2026 10am - 10:30am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "LLA 1 Review to do list confirm priority task do priority task You have an upcoming event LLA 1 Tuesday Mar 3, 2026 \u22c5 10am \u2013 10:30am (Eastern Time - Toronto) Review to do list confirm priority task do",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "19cb3f696c6737e7",
+      "subject": "Notification: Open Office @ Tue Mar 3, 2026 9:50am - 9:55am (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Open Office You have been invited by Matthew Levine to attend an event named Open Office on Tuesday Mar 3, 2026 \u22c5 9:50am \u2013 9:55am (Eastern Time - Toronto). You have an upcoming event Open Office",
+      "current_labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "proposed_label": "00_Triage",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    },
+    {
+      "thread_id": "197a22de20792bd4",
+      "subject": "Prenuptial Agreement",
+      "sender": "Max Hill <mhill@mascore.ca>",
+      "snippet": "Hi Matthew, Are you able to help me with a Prenuptial Agreement? Max Hill, CET Mascore Helical Piles 905-807-4389",
+      "current_labels": [
+        "LL/1./1.2 - Strategic/24-336-00004 -- Mascore Helical Piles",
+        "INBOX",
+        "IMPORTANT",
+        "YELLOW_STAR",
+        "SENT",
+        "LL/1./1.2 - Strategic/24-336 -- Mascore",
+        "CATEGORY_PERSONAL",
+        "STARRED"
+      ],
+      "proposed_label": "10_Action_Matthew",
+      "extracted_matter_number": "905-807",
+      "proposed_matter_label": null,
+      "matter_resolution_status": "none_found",
+      "ambiguous_matches": []
+    }
+  ]
+}

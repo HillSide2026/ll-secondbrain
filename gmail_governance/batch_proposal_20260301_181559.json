@@ -1,0 +1,70 @@
+{
+  "batch_id": "20260301_181559",
+  "batch_size": 5,
+  "threads": [
+    {
+      "thread_id": "19caba185afc0756",
+      "subject": "Notification: Commute @ Mon Mar 2, 2026 6pm - 6:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Commute You have been invited by Matthew Levine to attend an event named Commute on Monday Mar 2, 2026 \u22c5 6pm \u2013 6:30pm (Eastern Time - Toronto). You have an upcoming event Commute Monday Mar 2, 2026 \u22c5",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19cab93abcfeacba",
+      "subject": "Notification: Close Office @ Mon Mar 2, 2026 5:45pm - 6pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Close Office Close Office Protocol You have an upcoming event Close Office Monday Mar 2, 2026 \u22c5 5:45pm \u2013 6pm (Eastern Time - Toronto) Close Office Protocol Organizer Matthew Levine matthew@levinelegal",
+      "current_labels": [
+        "UNREAD",
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19cab7b2bad5ba49",
+      "subject": "\ud83d\udc49 You have unread notifications",
+      "sender": "Asana <no-reply@asana.com>",
+      "snippet": "Check out the latest from your team. Your unread notifications Get caught up levinelegal.ca View in Asana Lino Bernal assigned to JOCELYN ONG INQUIRY: Engagement Agreement JO JOCELYN ONG No due date",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "10_Action_Matthew"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    },
+    {
+      "thread_id": "19cab6a5b02da934",
+      "subject": "Notification: Firm Management @ Mon Mar 2, 2026 5pm - 5:30pm (EST) (Matthew AJ Levine)",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "snippet": "Firm Management You have been invited by Matthew Levine to attend an event named Firm Management on Monday Mar 2, 2026 \u22c5 5pm \u2013 5:30pm (Eastern Time - Toronto). You have an upcoming event Firm",
+      "current_labels": [
+        "UNREAD",
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "proposed_label": "00_Triage"
+    },
+    {
+      "thread_id": "19cab5e2267bfc6d",
+      "subject": "\ud83d\udce5 Lino assigned you a task: CREATE: Custom Records in Clio [25-1318-00001 - Zelko Culibrk]",
+      "sender": "Lino Bernal via Asana <no-reply@asana.com>",
+      "snippet": "Lino assigned a task to you Logo of Asana Lino assigned a task to you levinelegal.ca View task Subtask of 25-1318-00001 - Zelko Culibrk CREATE: Custom Records in Clio Assigned to Matthew Levine Due",
+      "current_labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "10_Action_Matthew"
+      ],
+      "proposed_label": "10_Action_Matthew"
+    }
+  ]
+}
