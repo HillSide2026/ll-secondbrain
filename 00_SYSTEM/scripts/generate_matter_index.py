@@ -18,8 +18,52 @@ from pathlib import Path
 from datetime import datetime
 from collections import defaultdict
 
-MATTERS_ROOT = Path(__file__).parent.parent / '05_MATTERS'
+MATTERS_ROOT = Path(__file__).resolve().parents[2] / '05_MATTERS'
 OUTPUT_FILE = MATTERS_ROOT / 'INDEX.md'
+
+DELIVERY_ACTIVE_RULE = {
+    "status": {"open", "pending"},
+    "delivery_status": {"essential", "strategic", "standard"},
+    "fulfillment_status": {"urgent", "active"},
+}
+DELIVERY_WATCH_RULE = {
+    "status": {"open", "pending"},
+    "delivery_status": {"parked"},
+    "fulfillment_status": {"keep in view", "active", "urgent"},
+}
+
+
+def normalize_token(value: str) -> str:
+    return str(value or "").strip().lower()
+
+
+def classify_category(matter: dict) -> str:
+    status = normalize_token(matter.get("status"))
+    delivery = normalize_token(matter.get("delivery_status", matter.get("folder", "")))
+    fulfillment = normalize_token(matter.get("fulfillment_status"))
+
+    if (
+        status in DELIVERY_ACTIVE_RULE["status"]
+        and delivery in DELIVERY_ACTIVE_RULE["delivery_status"]
+        and fulfillment in DELIVERY_ACTIVE_RULE["fulfillment_status"]
+    ):
+        return "ML Active"
+    if (
+        status in DELIVERY_WATCH_RULE["status"]
+        and delivery in DELIVERY_WATCH_RULE["delivery_status"]
+        and fulfillment in DELIVERY_WATCH_RULE["fulfillment_status"]
+    ):
+        return "ML Watch"
+    return "Other"
+
+
+def service_count(matter: dict) -> int:
+    total = 0
+    for field in ("services", "solutions", "strategies"):
+        value = matter.get(field)
+        if isinstance(value, list):
+            total += len(value)
+    return total
 
 
 def load_matter(matter_path: Path) -> dict:
@@ -29,7 +73,7 @@ def load_matter(matter_path: Path) -> dict:
 
     data = {
         'matter_id': matter_path.name,
-        'path': str(matter_path.relative_to(MATTERS_ROOT.parent)),
+        'path': str(matter_path.relative_to(MATTERS_ROOT)),
         'folder': matter_path.parent.name,
     }
 
@@ -91,8 +135,8 @@ def generate_index(matters: list) -> str:
 
         lines.append(f"## {status} ({len(status_matters)})")
         lines.append("")
-        lines.append("| Matter ID | Client/Name | Status | Fulfillment |")
-        lines.append("|-----------|-------------|--------|-------------|")
+        lines.append("| Matter ID | Client/Name | Status | Category | Fulfillment | Services |")
+        lines.append("|-----------|-------------|--------|----------|-------------|----------|")
 
         # Sort by matter_id
         status_matters.sort(key=lambda x: x.get('matter_id', ''))
@@ -101,12 +145,14 @@ def generate_index(matters: list) -> str:
             matter_id = m.get('matter_id', '?')
             name = m.get('matter_name', '?')
             clio_status = m.get('status', '?')
+            category = classify_category(m)
             fulfillment = m.get('fulfillment_status', '?')
+            services = service_count(m)
             path = m.get('path', '')
 
             # Create link
             link = f"[{matter_id}]({path}/README.md)"
-            lines.append(f"| {link} | {name} | {clio_status} | {fulfillment} |")
+            lines.append(f"| {link} | {name} | {clio_status} | {category} | {fulfillment} | {services} |")
 
         lines.append("")
 
@@ -119,6 +165,15 @@ def generate_index(matters: list) -> str:
 
     for status, count in sorted(fulfillment_counts.items()):
         lines.append(f"- **{status}:** {count}")
+    lines.append("")
+
+    lines.append("## Summary by Delivery Category")
+    lines.append("")
+    category_counts = defaultdict(int)
+    for m in matters:
+        category_counts[classify_category(m)] += 1
+    for category, count in sorted(category_counts.items()):
+        lines.append(f"- **{category}:** {count}")
     lines.append("")
 
     # Recent matters (by created_date if available)

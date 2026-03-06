@@ -5,7 +5,7 @@ title: 05_MATTERS
 owner: ML1
 status: draft
 created_date: 2026-01-30
-last_updated: 2026-01-30
+last_updated: 2026-03-06
 tags: [matter]
 ---
 
@@ -15,7 +15,7 @@ tags: [matter]
 
 This directory contains matter-level information organized by **Delivery Status** (lawyer attention priority).
 
-Folder placement reflects `delivery_status` only. The other two fields (`status`, `fulfillment_status`) are metadata stored in each matter's `MATTER.yaml`.
+Folder placement reflects `delivery_status` only. The other fields (`status`, `fulfillment_status`, `services`) are metadata stored in each matter's `MATTER.yaml`.
 
 ---
 
@@ -86,6 +86,26 @@ Folder placement reflects `delivery_status` only. The other two fields (`status`
 |-------|---------|--------|--------|
 | `status` | Metadata | Clio | Open \| Pending \| Closed |
 | `delivery_status` | Directory | ML1 | Essential \| Strategic \| Standard \| Parked |
-| `fulfillment_status` | Metadata | Admin | urgent \| active \| keep in view \| dormant |
+| `fulfillment_status` | Metadata | Admin | urgent \| active \| keep in view \| dormant \| inactive \| pausing |
+| `services` | Metadata | ML1/Admin | Canonical service list (`solution` and `strategy` types) |
 
 **Non-inference rule:** Do not infer any field from any other.
+
+## Derived Categories
+
+- `ML Active` (computed, not stored):
+  - `status` in `Open|Pending`
+  - `delivery_status` in `Essential|Strategic|Standard`
+  - `fulfillment_status` in `urgent|active`
+- `ML Watch` (computed, not stored):
+  - `status` in `Open|Pending`
+  - `delivery_status` = `Parked`
+  - `fulfillment_status` in `keep in view|active|urgent`
+
+## Services Model
+
+Use `services` as the canonical umbrella for both playbook concepts:
+- `service_type: solution`
+- `service_type: strategy`
+
+Legacy fields (`solutions`, `strategies`) may exist and are normalized into `services` at runtime.

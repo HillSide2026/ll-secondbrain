@@ -17,22 +17,22 @@ steps:
   - id: build_matter_index
     action: agent_matter_index
     outputs:
-      - path: 06_DASHBOARDS/MATTER_INDEX.md
+      - path: 05_MATTERS/DASHBOARDS/MATTER_INDEX.md
         label: DERIVED_ARTIFACT
   - id: route_inbox_threads
     action: agent_inbox_router
     outputs:
-      - path: 06_DASHBOARDS/INBOX_UNMAPPED.md
+      - path: 05_MATTERS/DASHBOARDS/INBOX_UNMAPPED.md
         label: DERIVED_ARTIFACT
   - id: compile_digest
     action: agent_digest_compiler
     outputs:
-      - path: 06_DASHBOARDS/MATTER_DIGEST.md
+      - path: 05_MATTERS/DASHBOARDS/MATTER_DIGEST.md
         label: DERIVED_ARTIFACT
   - id: compile_sharepoint_gaps
     action: agent_document_delta
     outputs:
-      - path: 06_DASHBOARDS/SHAREPOINT_GAPS.md
+      - path: 05_MATTERS/DASHBOARDS/SHAREPOINT_GAPS.md
         label: DERIVED_ARTIFACT
 run_logging:
   runlog: 06_RUNS/logs/matter_admin/runlog.md

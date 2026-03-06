@@ -1,0 +1,53 @@
+id: 00_system__config__matter_delivery_taxonomy
+title: Matter Delivery Taxonomy
+owner: ML1
+status: draft
+created_date: 2026-03-06
+last_updated: 2026-03-06
+
+delivery_categories:
+  delivery_active:
+    label: ML Active
+    definition: Matter currently in active legal service delivery.
+    status_include:
+      - Open
+      - Pending
+    delivery_status_include:
+      - Essential
+      - Strategic
+      - Standard
+    fulfillment_status_include:
+      - urgent
+      - active
+  delivery_watch:
+    label: ML Watch
+    definition: Parked matter that stays visible but is not in active delivery.
+    status_include:
+      - Open
+      - Pending
+    delivery_status_include:
+      - Parked
+    fulfillment_status_include:
+      - keep in view
+      - active
+      - urgent
+
+service_model:
+  canonical_field: services
+  definition: >
+    "services" is the canonical umbrella for both playbook "solutions" and
+    playbook "strategies".
+  accepted_service_types:
+    - solution
+    - strategy
+  legacy_alias_fields:
+    solutions: solution
+    strategies: strategy
+  required_fields:
+    - service_type
+    - service_name
+  optional_fields:
+    - service_id
+    - status
+    - playbook_ref
+    - notes

@@ -24,7 +24,7 @@ Build the authoritative active-matter list for Matter Command and Control runs.
 - Optional local matter metadata for folder-path reconciliation
 
 ## Outputs
-- `06_DASHBOARDS/MATTER_INDEX.md`
+- `05_MATTERS/DASHBOARDS/MATTER_INDEX.md`
 
 ## Rules
 - Primary key is Clio matter number.

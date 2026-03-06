@@ -26,7 +26,7 @@ Assign Gmail threads to matters using deterministic routing rules and isolate un
 - Gmail label rules (`00_SYSTEM/CONFIG/gmail_label_rules.yml`)
 
 ## Outputs
-- `06_DASHBOARDS/INBOX_UNMAPPED.md`
+- `05_MATTERS/DASHBOARDS/INBOX_UNMAPPED.md`
 - `05_MATTERS/<tier>/<matter_id>/MATTER_STATUS.md`
 
 ## Routing Order

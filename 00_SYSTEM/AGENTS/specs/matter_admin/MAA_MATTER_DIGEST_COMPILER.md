@@ -27,7 +27,7 @@ Compile a concise firm-wide morning brief from matter index, comm routing, and d
 - Prior run state
 
 ## Outputs
-- `06_DASHBOARDS/MATTER_DIGEST.md`
+- `05_MATTERS/DASHBOARDS/MATTER_DIGEST.md`
 
 ## Required Sections
 - Needs ML1 review today

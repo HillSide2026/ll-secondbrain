@@ -26,7 +26,7 @@ Extract explicit commitments and date-bearing obligations from routed communicat
 
 ## Outputs
 - `05_MATTERS/<tier>/<matter_id>/DEADLINES.md`
-- `06_DASHBOARDS/DEADLINE_RADAR.md`
+- `05_MATTERS/DASHBOARDS/DEADLINE_RADAR.md`
 
 ## Classification
 - Hard deadline

@@ -24,3 +24,4 @@ runs:
 
 digest:
   stalled_days: 14
+  active_window_days: 7

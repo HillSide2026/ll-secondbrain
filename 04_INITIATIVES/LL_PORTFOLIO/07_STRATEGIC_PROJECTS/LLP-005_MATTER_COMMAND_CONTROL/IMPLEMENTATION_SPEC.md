@@ -18,9 +18,9 @@
 
 Active implementation paths:
 
-- `06_DASHBOARDS/MATTER_DIGEST.md`
-- `06_DASHBOARDS/MATTER_INDEX.md`
-- `06_DASHBOARDS/INBOX_UNMAPPED.md`
+- `05_MATTERS/DASHBOARDS/MATTER_DIGEST.md`
+- `05_MATTERS/DASHBOARDS/MATTER_INDEX.md`
+- `05_MATTERS/DASHBOARDS/INBOX_UNMAPPED.md`
 - `05_MATTERS/<tier>/<matter_id>/MATTER_STATUS.md` (generated for routed matters)
 - `cache/*.json` snapshots for connector normalization and run state
 

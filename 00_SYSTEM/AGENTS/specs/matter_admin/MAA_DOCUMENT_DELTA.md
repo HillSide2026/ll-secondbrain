@@ -27,7 +27,7 @@ Track SharePoint matter-file inventory and deterministic deltas versus previous 
 ## Outputs
 - `05_MATTERS/<tier>/<matter_id>/DOC_INDEX.md`
 - `05_MATTERS/<tier>/<matter_id>/DOC_DELTAS.md`
-- `06_DASHBOARDS/SHAREPOINT_GAPS.md`
+- `05_MATTERS/DASHBOARDS/SHAREPOINT_GAPS.md`
 
 ## Delta Model
 - Added items

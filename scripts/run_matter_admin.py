@@ -34,7 +34,7 @@ import yaml
 REPO_ROOT = Path(__file__).resolve().parent.parent
 CONFIG_DIR = REPO_ROOT / "00_SYSTEM" / "CONFIG"
 MATTERS_ROOT = REPO_ROOT / "05_MATTERS"
-DASHBOARD_DIR = REPO_ROOT / "06_DASHBOARDS"
+DASHBOARD_DIR = REPO_ROOT / "05_MATTERS" / "DASHBOARDS"
 RUN_LOG_DIR = REPO_ROOT / "06_RUNS" / "logs" / "matter_admin"
 CACHE_DIR = REPO_ROOT / "cache"
 
@@ -48,6 +48,7 @@ DEFAULT_SHAREPOINT_METADATA_ROOT = (
 )
 DEFAULT_MATTER_SHAREPOINT_MAP = REPO_ROOT / "05_MATTERS" / "_REGISTRY" / "matter_sharepoint_map.yml"
 DEFAULT_MATTER_FOLDER_RULES = CONFIG_DIR / "matter_folder_rules.yml"
+DEFAULT_MATTER_DELIVERY_TAXONOMY = CONFIG_DIR / "matter_delivery_taxonomy.yml"
 DEFAULT_DISCOVERY_GAPS = REPO_ROOT / "09_INBOX" / "_sources" / "sharepoint" / "discovery" / "gaps.md"
 
 MATTER_INDEX_PATH = DASHBOARD_DIR / "MATTER_INDEX.md"
@@ -59,11 +60,22 @@ MATTER_TIERS = ("ESSENTIAL", "STRATEGIC", "STANDARD", "PARKED")
 
 
 @dataclass(frozen=True)
+class ServiceRef:
+    service_type: str
+    service_name: str
+    status: str
+    playbook_ref: str
+
+
+@dataclass(frozen=True)
 class MatterRef:
     clio_matter_id: str
     matter_number: str
     name: str
     status: str
+    delivery_status: str
+    fulfillment_status: str
+    services: Tuple[ServiceRef, ...]
     responsible: str
     client: str
     source_pointer: str
@@ -92,6 +104,32 @@ class DocRef:
     drive_id: str
     is_folder: bool
     source_pointer: str
+
+
+DEFAULT_DELIVERY_TAXONOMY: Dict[str, Any] = {
+    "delivery_categories": {
+        "delivery_active": {
+            "label": "ML Active",
+            "status_include": ["Open", "Pending"],
+            "delivery_status_include": ["Essential", "Strategic", "Standard"],
+            "fulfillment_status_include": ["urgent", "active"],
+        },
+        "delivery_watch": {
+            "label": "ML Watch",
+            "status_include": ["Open", "Pending"],
+            "delivery_status_include": ["Parked"],
+            "fulfillment_status_include": ["keep in view", "active", "urgent"],
+        },
+    },
+    "service_model": {
+        "canonical_field": "services",
+        "accepted_service_types": ["solution", "strategy"],
+        "legacy_alias_fields": {
+            "solutions": "solution",
+            "strategies": "strategy",
+        },
+    },
+}
 
 
 def utc_now() -> datetime:
@@ -168,6 +206,202 @@ def display_path(path: Path) -> str:
         return str(path)
 
 
+def normalize_token(value: str) -> str:
+    return str(value or "").strip().lower()
+
+
+def merge_delivery_taxonomy(raw_config: Dict[str, Any]) -> Dict[str, Any]:
+    merged = json.loads(json.dumps(DEFAULT_DELIVERY_TAXONOMY))
+    if not isinstance(raw_config, dict):
+        return merged
+
+    for section_key in ("delivery_categories", "service_model"):
+        section = raw_config.get(section_key)
+        if not isinstance(section, dict):
+            continue
+        target = merged.setdefault(section_key, {})
+        for key, value in section.items():
+            if isinstance(value, dict) and isinstance(target.get(key), dict):
+                target[key].update(value)
+            else:
+                target[key] = value
+    return merged
+
+
+def service_alias_map(delivery_taxonomy: Dict[str, Any]) -> Dict[str, str]:
+    model = delivery_taxonomy.get("service_model") if isinstance(delivery_taxonomy, dict) else {}
+    legacy = model.get("legacy_alias_fields") if isinstance(model, dict) else {}
+    if not isinstance(legacy, dict):
+        legacy = {}
+
+    normalized = {str(field): str(service_type) for field, service_type in legacy.items()}
+    if not normalized:
+        normalized = {"solutions": "solution", "strategies": "strategy"}
+    return normalized
+
+
+def accepted_service_types(delivery_taxonomy: Dict[str, Any]) -> set[str]:
+    model = delivery_taxonomy.get("service_model") if isinstance(delivery_taxonomy, dict) else {}
+    raw_types = model.get("accepted_service_types") if isinstance(model, dict) else []
+    if not isinstance(raw_types, list):
+        raw_types = []
+    normalized = {normalize_token(entry) for entry in raw_types if str(entry).strip()}
+    if not normalized:
+        normalized = {"solution", "strategy"}
+    return normalized
+
+
+def normalize_services(raw: Dict[str, Any], delivery_taxonomy: Dict[str, Any]) -> Tuple[ServiceRef, ...]:
+    alias_fields = service_alias_map(delivery_taxonomy)
+    valid_types = accepted_service_types(delivery_taxonomy)
+    entries: List[ServiceRef] = []
+
+    def parse_entry(entry: Any, default_type: str) -> Optional[ServiceRef]:
+        if isinstance(entry, dict):
+            service_type = str(entry.get("service_type") or entry.get("type") or default_type).strip().lower()
+            service_name = str(entry.get("service_name") or entry.get("name") or entry.get("id") or "").strip()
+            status = str(entry.get("status") or "active").strip().lower()
+            playbook_ref = str(entry.get("playbook_ref") or entry.get("playbook") or "").strip()
+        elif isinstance(entry, str):
+            service_type = default_type.strip().lower()
+            service_name = entry.strip()
+            status = "active"
+            playbook_ref = ""
+        else:
+            return None
+
+        if not service_name:
+            return None
+        if valid_types and service_type not in valid_types:
+            service_type = default_type.strip().lower() or "solution"
+        if service_type not in valid_types:
+            service_type = "solution"
+
+        return ServiceRef(
+            service_type=service_type,
+            service_name=service_name,
+            status=status or "active",
+            playbook_ref=playbook_ref,
+        )
+
+    canonical_field = str(
+        ((delivery_taxonomy.get("service_model") or {}).get("canonical_field"))
+        or "services"
+    )
+    raw_services = raw.get(canonical_field)
+    if isinstance(raw_services, list):
+        for entry in raw_services:
+            parsed = parse_entry(entry, "solution")
+            if parsed:
+                entries.append(parsed)
+
+    for field_name, forced_type in alias_fields.items():
+        raw_field = raw.get(field_name)
+        if not isinstance(raw_field, list):
+            continue
+        for entry in raw_field:
+            parsed = parse_entry(entry, forced_type)
+            if parsed:
+                entries.append(parsed)
+
+    deduped: Dict[Tuple[str, str, str, str], ServiceRef] = {}
+    for entry in entries:
+        key = (
+            normalize_token(entry.service_type),
+            normalize_token(entry.service_name),
+            normalize_token(entry.status),
+            normalize_token(entry.playbook_ref),
+        )
+        deduped[key] = entry
+
+    return tuple(
+        sorted(
+            deduped.values(),
+            key=lambda ref: (
+                ref.service_type.lower(),
+                ref.service_name.lower(),
+                ref.status.lower(),
+                ref.playbook_ref.lower(),
+            ),
+        )
+    )
+
+
+def merge_services(*service_groups: Tuple[ServiceRef, ...]) -> Tuple[ServiceRef, ...]:
+    deduped: Dict[Tuple[str, str, str, str], ServiceRef] = {}
+    for group in service_groups:
+        for service in group:
+            key = (
+                normalize_token(service.service_type),
+                normalize_token(service.service_name),
+                normalize_token(service.status),
+                normalize_token(service.playbook_ref),
+            )
+            deduped[key] = service
+    return tuple(
+        sorted(
+            deduped.values(),
+            key=lambda ref: (
+                ref.service_type.lower(),
+                ref.service_name.lower(),
+                ref.status.lower(),
+                ref.playbook_ref.lower(),
+            ),
+        )
+    )
+
+
+def service_summary(services: Tuple[ServiceRef, ...], max_items: int = 3) -> str:
+    if not services:
+        return "0"
+
+    labels = [f"{entry.service_type}:{entry.service_name}" for entry in services]
+    shown = labels[:max_items]
+    suffix = ""
+    if len(labels) > max_items:
+        suffix = f"; +{len(labels) - max_items} more"
+    return f"{len(labels)} ({'; '.join(shown)}{suffix})"
+
+
+def matter_matches_rule(matter: MatterRef, rule: Dict[str, Any]) -> bool:
+    def _as_set(name: str) -> set[str]:
+        raw_values = rule.get(name)
+        if not isinstance(raw_values, list):
+            return set()
+        return {normalize_token(value) for value in raw_values if str(value).strip()}
+
+    status_set = _as_set("status_include")
+    delivery_set = _as_set("delivery_status_include")
+    fulfillment_set = _as_set("fulfillment_status_include")
+
+    status_value = normalize_token(matter.status)
+    delivery_value = normalize_token(matter.delivery_status)
+    fulfillment_value = normalize_token(matter.fulfillment_status)
+
+    if status_set and status_value not in status_set:
+        return False
+    if delivery_set and delivery_value not in delivery_set:
+        return False
+    if fulfillment_set and fulfillment_value not in fulfillment_set:
+        return False
+    return True
+
+
+def classify_delivery_category(matter: MatterRef, delivery_taxonomy: Dict[str, Any]) -> Tuple[str, str]:
+    categories = delivery_taxonomy.get("delivery_categories") if isinstance(delivery_taxonomy, dict) else {}
+    if not isinstance(categories, dict):
+        categories = {}
+
+    for category_key, category_rule in categories.items():
+        if not isinstance(category_rule, dict):
+            continue
+        if matter_matches_rule(matter, category_rule):
+            label = str(category_rule.get("label") or category_key).strip() or category_key
+            return category_key, label
+
+    return "other", "Other"
+
+
 def extract_participants(raw_participants: Any, fallback_from: str = "", fallback_to: str = "") -> Tuple[str, ...]:
     participants: List[str] = []
 
@@ -212,7 +446,39 @@ def discover_local_matter_paths() -> Dict[str, Path]:
     return mapping
 
 
-def normalize_matter_record(raw: Dict[str, Any], source_pointer: str) -> Optional[MatterRef]:
+def load_local_matter_overlay(delivery_taxonomy: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
+    """Load local matter metadata from MATTER.yaml for deterministic enrichment."""
+    overlay: Dict[str, Dict[str, Any]] = {}
+
+    for matter_yaml in sorted(MATTERS_ROOT.glob("*/**/MATTER.yaml")):
+        if matter_yaml.parent.parent.name not in MATTER_TIERS:
+            continue
+        data = yaml.safe_load(matter_yaml.read_text(encoding="utf-8")) or {}
+        matter_number = str(data.get("matter_id") or matter_yaml.parent.name).strip()
+        if not matter_number:
+            continue
+
+        name = str(data.get("matter_name") or data.get("name") or matter_yaml.parent.name).strip() or matter_number
+        status = str(data.get("status") or "unknown").strip()
+        delivery_status = str(data.get("delivery_status") or matter_yaml.parent.parent.name.title()).strip()
+        fulfillment_status = str(data.get("fulfillment_status") or "unknown").strip()
+        services = normalize_services(data, delivery_taxonomy)
+        source_pointer = f"repo://{display_path(matter_yaml)}"
+
+        overlay[matter_number] = {
+            "name": name,
+            "status": status,
+            "delivery_status": delivery_status,
+            "fulfillment_status": fulfillment_status,
+            "services": services,
+            "client": name,
+            "source_pointer": source_pointer,
+        }
+
+    return overlay
+
+
+def normalize_matter_record(raw: Dict[str, Any], source_pointer: str, delivery_taxonomy: Dict[str, Any]) -> Optional[MatterRef]:
     matter_number = str(
         raw.get("matter_number")
         or raw.get("display_number")
@@ -226,6 +492,9 @@ def normalize_matter_record(raw: Dict[str, Any], source_pointer: str) -> Optiona
     clio_matter_id = str(raw.get("clio_matter_id") or raw.get("id") or matter_number).strip()
     name = str(raw.get("name") or raw.get("description") or raw.get("matter_name") or "").strip() or matter_number
     status = str(raw.get("status") or "unknown").strip()
+    delivery_status = str(raw.get("delivery_status") or "unknown").strip()
+    fulfillment_status = str(raw.get("fulfillment_status") or "unknown").strip()
+    services = normalize_services(raw, delivery_taxonomy)
     responsible = str(raw.get("responsible") or raw.get("responsible_attorney") or "unassigned").strip()
     client = str(raw.get("client") or raw.get("matter_name") or name).strip()
 
@@ -234,15 +503,19 @@ def normalize_matter_record(raw: Dict[str, Any], source_pointer: str) -> Optiona
         matter_number=matter_number,
         name=name,
         status=status,
+        delivery_status=delivery_status,
+        fulfillment_status=fulfillment_status,
+        services=services,
         responsible=responsible,
         client=client,
         source_pointer=source_pointer,
     )
 
 
-def load_clio_matters(clio_cache_path: Path, write_cache: bool) -> Tuple[List[MatterRef], str]:
+def load_clio_matters(clio_cache_path: Path, write_cache: bool, delivery_taxonomy: Dict[str, Any]) -> Tuple[List[MatterRef], str]:
     """Load normalized MatterRef records from cache or repo fallback."""
     matters: List[MatterRef] = []
+    local_overlay = load_local_matter_overlay(delivery_taxonomy)
     cache_payload = load_json(clio_cache_path)
 
     if cache_payload is not None:
@@ -252,10 +525,14 @@ def load_clio_matters(clio_cache_path: Path, write_cache: bool) -> Tuple[List[Ma
                 if not isinstance(record, dict):
                     continue
                 pointer = str(record.get("source_pointer") or f"cache://clio_matters.json#{idx}")
-                normalized = normalize_matter_record(record, pointer)
+                normalized = normalize_matter_record(record, pointer, delivery_taxonomy)
                 if normalized:
                     matters.append(normalized)
         source = f"cache:{display_path(clio_cache_path)}"
+        if isinstance(cache_payload, dict):
+            declared_source = str(cache_payload.get("source") or "").strip()
+            if declared_source:
+                source = f"{source} ({declared_source})"
     else:
         # Repo fallback: derive MatterRef from local MATTER.yaml files.
         for matter_yaml in sorted(MATTERS_ROOT.glob("*/**/MATTER.yaml")):
@@ -263,7 +540,7 @@ def load_clio_matters(clio_cache_path: Path, write_cache: bool) -> Tuple[List[Ma
                 continue
             data = yaml.safe_load(matter_yaml.read_text(encoding="utf-8")) or {}
             pointer = f"repo://{display_path(matter_yaml)}"
-            normalized = normalize_matter_record(data, pointer)
+            normalized = normalize_matter_record(data, pointer, delivery_taxonomy)
             if normalized:
                 matters.append(normalized)
         source = "repo_fallback:05_MATTERS"
@@ -278,6 +555,17 @@ def load_clio_matters(clio_cache_path: Path, write_cache: bool) -> Tuple[List[Ma
                         "matter_number": m.matter_number,
                         "name": m.name,
                         "status": m.status,
+                        "delivery_status": m.delivery_status,
+                        "fulfillment_status": m.fulfillment_status,
+                        "services": [
+                            {
+                                "service_type": service.service_type,
+                                "service_name": service.service_name,
+                                "status": service.status,
+                                "playbook_ref": service.playbook_ref,
+                            }
+                            for service in m.services
+                        ],
                         "responsible": m.responsible,
                         "client": m.client,
                         "source_pointer": m.source_pointer,
@@ -293,7 +581,41 @@ def load_clio_matters(clio_cache_path: Path, write_cache: bool) -> Tuple[List[Ma
         deduped[matter.matter_number] = matter
 
     ordered = sorted(deduped.values(), key=lambda m: (m.matter_number, m.clio_matter_id))
-    return ordered, source
+    enriched: List[MatterRef] = []
+    for matter in ordered:
+        overlay = local_overlay.get(matter.matter_number, {})
+        overlay_name = str(overlay.get("name") or "").strip()
+        overlay_status = str(overlay.get("status") or "").strip()
+        overlay_delivery = str(overlay.get("delivery_status") or "").strip()
+        overlay_fulfillment = str(overlay.get("fulfillment_status") or "").strip()
+        overlay_services = overlay.get("services") if isinstance(overlay.get("services"), tuple) else tuple()
+        overlay_client = str(overlay.get("client") or "").strip()
+        overlay_pointer = str(overlay.get("source_pointer") or "").strip()
+
+        enriched.append(
+            MatterRef(
+                clio_matter_id=matter.clio_matter_id,
+                matter_number=matter.matter_number,
+                name=(matter.name if matter.name and matter.name != matter.matter_number else overlay_name or matter.name),
+                status=(matter.status if matter.status and matter.status.lower() != "unknown" else overlay_status or matter.status),
+                delivery_status=(
+                    matter.delivery_status
+                    if matter.delivery_status and matter.delivery_status.lower() != "unknown"
+                    else overlay_delivery or matter.delivery_status
+                ),
+                fulfillment_status=(
+                    matter.fulfillment_status
+                    if matter.fulfillment_status and matter.fulfillment_status.lower() != "unknown"
+                    else overlay_fulfillment or matter.fulfillment_status
+                ),
+                services=merge_services(matter.services, overlay_services),
+                responsible=matter.responsible,
+                client=(matter.client if matter.client and matter.client != matter.name else overlay_client or matter.client),
+                source_pointer=overlay_pointer or matter.source_pointer,
+            )
+        )
+
+    return enriched, source
 
 
 def normalize_cached_threads(raw_threads: Iterable[Any], default_pointer_prefix: str) -> List[ThreadRef]:
@@ -946,12 +1268,23 @@ def format_table(headers: List[str], rows: List[List[str]]) -> str:
     return "\n".join(out)
 
 
-def write_matter_index(markdown_path: Path, matters: List[MatterRef], source: str, generated_at: str, dry_run: bool) -> None:
+def write_matter_index(
+    markdown_path: Path,
+    matters: List[MatterRef],
+    source: str,
+    generated_at: str,
+    delivery_taxonomy: Dict[str, Any],
+    dry_run: bool,
+) -> None:
     rows = [
         [
             matter.matter_number,
             matter.name,
             matter.status,
+            classify_delivery_category(matter, delivery_taxonomy)[1],
+            matter.delivery_status,
+            matter.fulfillment_status,
+            service_summary(matter.services),
             matter.responsible,
             matter.client,
             matter.source_pointer,
@@ -968,7 +1301,18 @@ def write_matter_index(markdown_path: Path, matters: List[MatterRef], source: st
     ]
 
     table = format_table(
-        ["Matter Number", "Name", "Status", "Responsible", "Client", "Source Pointer"],
+        [
+            "Matter Number",
+            "Name",
+            "Status",
+            "Category",
+            "Delivery",
+            "Fulfillment",
+            "Services",
+            "Responsible",
+            "Client",
+            "Source Pointer",
+        ],
         rows,
     )
     if table:
@@ -1033,8 +1377,11 @@ def write_matter_status_files(
         matter = matter_lookup.get(matter_number)
         name = matter.name if matter else matter_number
         status = matter.status if matter else "unknown"
+        delivery_status = matter.delivery_status if matter else "unknown"
+        fulfillment_status = matter.fulfillment_status if matter else "unknown"
         responsible = matter.responsible if matter else "unassigned"
         client = matter.client if matter else name
+        services = matter.services if matter else tuple()
 
         lines = [
             f"# Matter Status — {matter_number}",
@@ -1044,6 +1391,9 @@ def write_matter_status_files(
             "## Snapshot",
             f"- Matter: {name}",
             f"- Clio status: {status}",
+            f"- Delivery status: {delivery_status}",
+            f"- Fulfillment status: {fulfillment_status}",
+            f"- Services: {service_summary(services, max_items=5)}",
             f"- Responsible: {responsible}",
             f"- Client: {client}",
             "",
@@ -1548,6 +1898,8 @@ def build_digest(
     run_state: Dict[str, Any],
     generated_at: str,
     stalled_days: int,
+    active_window_days: int,
+    delivery_taxonomy: Dict[str, Any],
     sharepoint_summary: Optional[Dict[str, Any]] = None,
     sharepoint_ambiguous_count: int = 0,
     sharepoint_unmapped_count: int = 0,
@@ -1560,6 +1912,8 @@ def build_digest(
     current_latest: Dict[str, str] = {}
     moved: List[str] = []
     waiting_external: List[str] = []
+    matter_lookup = {matter.matter_number: matter for matter in matters}
+    inbox_signal_rows: List[Dict[str, str]] = []
 
     for matter_number, rows in mapped.items():
         if not rows:
@@ -1575,6 +1929,27 @@ def build_digest(
         subject = rows[0].get("subject", "").lower()
         if any(token in subject for token in ("waiting", "awaiting", "pending", "hold")):
             waiting_external.append(matter_number)
+
+        latest_dt = parse_timestamp(latest)
+        if not latest_dt:
+            continue
+
+        age_days = max(0, (now - latest_dt).days)
+        if age_days > active_window_days:
+            continue
+
+        matter = matter_lookup.get(matter_number)
+        inbox_signal_rows.append(
+            {
+                "matter_number": matter_number,
+                "matter_name": (matter.name if matter else matter_number),
+                "thread_count": str(len(rows)),
+                "last_activity_at": utc_iso(latest_dt),
+                "age_days": str(age_days),
+                "latest_subject": (rows[0].get("subject") or "(no subject)"),
+                "source_pointer": rows[0].get("source_pointer") or "",
+            }
+        )
 
     matter_numbers = [matter.matter_number for matter in matters]
     stalled: List[str] = []
@@ -1594,6 +1969,72 @@ def build_digest(
     moved = sorted(set(moved))
     stalled = sorted(set(stalled))
     waiting_external = sorted(set(waiting_external))
+    inbox_signal_rows = sorted(
+        inbox_signal_rows,
+        key=lambda row: (row["last_activity_at"], row["matter_number"]),
+        reverse=True,
+    )
+
+    delivery_priority = {
+        "essential": 0,
+        "strategic": 1,
+        "standard": 2,
+        "parked": 3,
+    }
+    fulfillment_priority = {
+        "urgent": 0,
+        "active": 1,
+        "keep in view": 2,
+        "unknown": 3,
+        "paused": 4,
+        "pausing": 4,
+        "inactive": 5,
+        "dormant": 6,
+    }
+
+    categories = delivery_taxonomy.get("delivery_categories") if isinstance(delivery_taxonomy, dict) else {}
+    categories = categories if isinstance(categories, dict) else {}
+    active_category_key = "delivery_active"
+    watch_category_key = "delivery_watch"
+    active_label = str(((categories.get(active_category_key) or {}).get("label")) or "ML Active")
+    watch_label = str(((categories.get(watch_category_key) or {}).get("label")) or "ML Watch")
+
+    delivery_active_rows: List[Dict[str, str]] = []
+    delivery_watch_rows: List[Dict[str, str]] = []
+
+    for matter in matters:
+        category_key, category_label = classify_delivery_category(matter, delivery_taxonomy)
+        delivery_value = matter.delivery_status.strip() or "unknown"
+        fulfillment_value = matter.fulfillment_status.strip() or "unknown"
+        services_value = service_summary(matter.services, max_items=4)
+
+        row = {
+            "matter_number": matter.matter_number,
+            "matter_name": matter.name,
+            "status": matter.status or "unknown",
+            "delivery_status": delivery_value,
+            "fulfillment_status": fulfillment_value,
+            "category_label": category_label,
+            "service_count": str(len(matter.services)),
+            "services": services_value,
+            "source_pointer": matter.source_pointer,
+        }
+
+        if category_key == active_category_key:
+            delivery_active_rows.append(row)
+        elif category_key == watch_category_key:
+            delivery_watch_rows.append(row)
+
+    def _delivery_sort(row: Dict[str, str]) -> Tuple[int, int, str]:
+        return (
+            delivery_priority.get(str(row.get("delivery_status") or "").lower(), 9),
+            fulfillment_priority.get(str(row.get("fulfillment_status") or "").lower(), 9),
+            str(row.get("matter_number") or ""),
+        )
+
+    delivery_active_rows = sorted(delivery_active_rows, key=_delivery_sort)
+    delivery_watch_rows = sorted(delivery_watch_rows, key=_delivery_sort)
+    active_service_gaps = [row for row in delivery_active_rows if int(row.get("service_count") or "0") == 0]
 
     lines = [
         "# Firm Matter Digest",
@@ -1602,6 +2043,10 @@ def build_digest(
         "",
         "## Summary",
         f"- Moved matters: {len(moved)}",
+        f"- {active_label} matters: {len(delivery_active_rows)}",
+        f"- {active_label} matters with zero services: {len(active_service_gaps)}",
+        f"- {watch_label} matters: {len(delivery_watch_rows)}",
+        f"- Inbox-linked active matters (last {active_window_days} days): {len(inbox_signal_rows)}",
         f"- Stalled matters: {len(stalled)}",
         "- Due soon: 0 (Deadline Extractor not active in Slice 1)",
         f"- Unmapped inbox threads: {len(unmapped)}",
@@ -1615,12 +2060,111 @@ def build_digest(
             lines.append(f"- Fallback-routed threads requiring review: {len(review_required)}")
         if unmapped:
             lines.append(f"- Unmapped threads requiring routing decision: {len(unmapped)}")
+        if active_service_gaps:
+            lines.append(f"- {active_label} matters missing service definitions: {len(active_service_gaps)}")
         if sharepoint_ambiguous_count:
             lines.append(f"- SharePoint ambiguous mapping items: {sharepoint_ambiguous_count}")
         if sharepoint_unmapped_count:
             lines.append(f"- SharePoint unmapped items: {sharepoint_unmapped_count}")
     else:
         lines.append("- None")
+
+    lines.extend(
+        [
+            "",
+            f"## LL Working On (Signal 1: {active_label} Delivery Status)",
+            f"- Taxonomy contract: `repo://{display_path(DEFAULT_MATTER_DELIVERY_TAXONOMY)}`",
+            "",
+            f"### {active_label} Queue",
+        ]
+    )
+    if delivery_active_rows:
+        rows = [
+            [
+                row["matter_number"],
+                row["matter_name"],
+                row["category_label"],
+                row["delivery_status"],
+                row["fulfillment_status"],
+                row["services"],
+                row["status"],
+                row["source_pointer"],
+            ]
+            for row in delivery_active_rows
+        ]
+        lines.append(
+            format_table(
+                ["Matter Number", "Matter", "Category", "Delivery", "Fulfillment", "Services", "Status", "Source Pointer"],
+                rows,
+            )
+        )
+    else:
+        lines.append(f"- No {active_label.lower()} matters found.")
+
+    lines.extend(["", f"### {watch_label} Queue"])
+    if delivery_watch_rows:
+        rows = [
+            [
+                row["matter_number"],
+                row["matter_name"],
+                row["category_label"],
+                row["delivery_status"],
+                row["fulfillment_status"],
+                row["services"],
+                row["status"],
+                row["source_pointer"],
+            ]
+            for row in delivery_watch_rows
+        ]
+        lines.append(
+            format_table(
+                ["Matter Number", "Matter", "Category", "Delivery", "Fulfillment", "Services", "Status", "Source Pointer"],
+                rows,
+            )
+        )
+    else:
+        lines.append("- None")
+
+    lines.extend(["", f"### {active_label} Service Coverage Gaps"])
+    if active_service_gaps:
+        for row in active_service_gaps:
+            lines.append(
+                f"- {row['matter_number']} :: {row['matter_name']} "
+                f"(services={row['service_count']}; {row['source_pointer']})"
+            )
+    else:
+        lines.append("- None")
+
+    lines.extend(["", f"## Inbox Signal (Signal 2: Matter-Linked Comms, Last {active_window_days} Days)"])
+    if inbox_signal_rows:
+        rows = [
+            [
+                row["matter_number"],
+                row["matter_name"],
+                row["thread_count"],
+                row["last_activity_at"],
+                row["age_days"],
+                row["latest_subject"],
+                row["source_pointer"],
+            ]
+            for row in inbox_signal_rows
+        ]
+        lines.append(
+            format_table(
+                [
+                    "Matter Number",
+                    "Matter",
+                    "Routed Threads",
+                    "Last Activity (UTC)",
+                    "Age (days)",
+                    "Latest Subject",
+                    "Source Pointer",
+                ],
+                rows,
+            )
+        )
+    else:
+        lines.append("- No matter-linked comms activity in this time window.")
 
     lines.extend(["", "## Waiting External"])
     if waiting_external:
@@ -1636,13 +2180,13 @@ def build_digest(
     lines.append(f"- SharePoint unmapped items: {sharepoint_unmapped_count}")
     lines.append(f"- Matters with zero mapped SharePoint items: {matters_without_sharepoint}")
 
-    lines.extend(["", "## Stalled"])
+    lines.extend(["", "## Stalled (Inbox Signal)"])
     if stalled:
         lines.extend([f"- {matter_number}" for matter_number in stalled])
     else:
         lines.append("- None")
 
-    lines.extend(["", "## New Intake"])
+    lines.extend(["", "## Unmapped Comms Intake"])
     if unmapped:
         for row in unmapped[:20]:
             lines.append(f"- {row['thread_id']} :: {row['subject']} ({row['source_pointer']})")
@@ -1655,6 +2199,15 @@ def build_digest(
         "last_run_at": generated_at,
         "matter_latest_thread_at": current_latest,
         "unmapped_thread_count": len(unmapped),
+        "delivery_summary": {
+            "active_matters": len(delivery_active_rows),
+            "parked_watch_matters": len(delivery_watch_rows),
+            "active_without_services": len(active_service_gaps),
+            "active_category_key": active_category_key,
+            "active_category_label": active_label,
+            "watch_category_key": watch_category_key,
+            "watch_category_label": watch_label,
+        },
         "sharepoint_summary": {
             "current_items": int(sharepoint_summary.get("current_items") or 0),
             "mapped_items": int(sharepoint_summary.get("mapped_items") or 0),
@@ -1702,7 +2255,9 @@ def main() -> int:
     # Load config contracts.
     gmail_label_rules = load_yaml(CONFIG_DIR / "gmail_label_rules.yml")
     run_schedule = load_yaml(CONFIG_DIR / "run_schedule.yml")
+    delivery_taxonomy = merge_delivery_taxonomy(load_yaml(DEFAULT_MATTER_DELIVERY_TAXONOMY))
     stalled_days = int((run_schedule.get("digest") or {}).get("stalled_days") or 14)
+    active_window_days = int((run_schedule.get("digest") or {}).get("active_window_days") or 7)
 
     matter_pattern = compile_matter_regex(gmail_label_rules)
 
@@ -1711,7 +2266,11 @@ def main() -> int:
     run_state_path = Path(args.run_state)
     gmail_fallback = Path(args.gmail_fallback)
 
-    matters, clio_source = load_clio_matters(clio_cache, write_cache=args.write_cache)
+    matters, clio_source = load_clio_matters(
+        clio_cache,
+        write_cache=args.write_cache,
+        delivery_taxonomy=delivery_taxonomy,
+    )
     threads, gmail_source = load_gmail_threads(
         gmail_cache,
         gmail_fallback,
@@ -1742,7 +2301,14 @@ def main() -> int:
     local_matter_paths = discover_local_matter_paths()
 
     # Agent 1 output: matter index
-    write_matter_index(MATTER_INDEX_PATH, matters, clio_source, generated_at, dry_run=args.dry_run)
+    write_matter_index(
+        MATTER_INDEX_PATH,
+        matters,
+        clio_source,
+        generated_at,
+        delivery_taxonomy=delivery_taxonomy,
+        dry_run=args.dry_run,
+    )
 
     # Agent 2 output: unmapped dashboard + per-matter thread status
     write_unmapped_dashboard(INBOX_UNMAPPED_PATH, unmapped, generated_at, dry_run=args.dry_run)
@@ -1830,6 +2396,8 @@ def main() -> int:
         run_state=prior_state,
         generated_at=generated_at,
         stalled_days=stalled_days,
+        active_window_days=active_window_days,
+        delivery_taxonomy=delivery_taxonomy,
         sharepoint_summary=sharepoint_summary,
         sharepoint_ambiguous_count=len(sharepoint_ambiguous),
         sharepoint_unmapped_count=len(sharepoint_unmapped),
@@ -1871,6 +2439,9 @@ def main() -> int:
         },
         "counts": {
             "matters": len(matters),
+            "delivery_active_matters": int((next_state.get("delivery_summary") or {}).get("active_matters") or 0),
+            "delivery_watch_matters": int((next_state.get("delivery_summary") or {}).get("parked_watch_matters") or 0),
+            "delivery_active_without_services": int((next_state.get("delivery_summary") or {}).get("active_without_services") or 0),
             "threads": len(threads),
             "mapped_threads": sum(len(rows) for rows in mapped.values()),
             "unmapped_threads": len(unmapped),

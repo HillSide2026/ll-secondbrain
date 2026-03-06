@@ -36,8 +36,104 @@ REQUIRED_FIELDS = {
 STATUS_VALUES = ['Open', 'Pending', 'Closed']
 DELIVERY_STATUS_VALUES = ['Essential', 'Strategic', 'Standard', 'Parked']
 FULFILLMENT_STATUS_VALUES = ['urgent', 'active', 'keep in view', 'dormant', 'inactive', 'pausing']
+SERVICE_TYPE_VALUES = ['solution', 'strategy']
+LEGACY_SERVICE_FIELDS = {'solutions': 'solution', 'strategies': 'strategy'}
 
 MATTERS_ROOT = Path(__file__).parent.parent / '05_MATTERS'
+
+
+def normalize_token(value: str) -> str:
+    return str(value or '').strip().lower()
+
+
+def validate_services(data: dict, result: dict):
+    """Validate canonical services model and legacy aliases."""
+    services = data.get('services')
+    if services is not None and not isinstance(services, list):
+        result['valid'] = False
+        result['errors'].append("services must be a list when present")
+        services = []
+
+    normalized_services = 0
+    if isinstance(services, list):
+        for idx, entry in enumerate(services):
+            if isinstance(entry, str):
+                if not entry.strip():
+                    result['warnings'].append(f"services[{idx}] is empty string")
+                else:
+                    result['warnings'].append(
+                        f"services[{idx}] is shorthand string; use object with service_type/service_name"
+                    )
+                    normalized_services += 1
+                continue
+
+            if not isinstance(entry, dict):
+                result['valid'] = False
+                result['errors'].append(f"services[{idx}] must be a map or string")
+                continue
+
+            service_type = str(entry.get('service_type') or entry.get('type') or '').strip().lower()
+            service_name = str(entry.get('service_name') or entry.get('name') or '').strip()
+            if not service_type:
+                result['valid'] = False
+                result['errors'].append(f"services[{idx}].service_type is required")
+            elif service_type not in SERVICE_TYPE_VALUES:
+                result['valid'] = False
+                result['errors'].append(
+                    f"services[{idx}].service_type '{service_type}' not in {SERVICE_TYPE_VALUES}"
+                )
+
+            if not service_name:
+                result['valid'] = False
+                result['errors'].append(f"services[{idx}].service_name is required")
+            else:
+                normalized_services += 1
+
+    legacy_count = 0
+    for field_name, forced_type in LEGACY_SERVICE_FIELDS.items():
+        raw = data.get(field_name)
+        if raw is None:
+            continue
+        if not isinstance(raw, list):
+            result['valid'] = False
+            result['errors'].append(f"{field_name} must be a list when present")
+            continue
+
+        legacy_count += len(raw)
+        for idx, entry in enumerate(raw):
+            if isinstance(entry, str):
+                if not entry.strip():
+                    result['warnings'].append(f"{field_name}[{idx}] is empty string")
+                continue
+            if not isinstance(entry, dict):
+                result['valid'] = False
+                result['errors'].append(f"{field_name}[{idx}] must be a map or string")
+                continue
+            service_name = str(entry.get('service_name') or entry.get('name') or '').strip()
+            if not service_name:
+                result['valid'] = False
+                result['errors'].append(f"{field_name}[{idx}] missing service_name/name")
+            service_type = str(entry.get('service_type') or entry.get('type') or forced_type).strip().lower()
+            if service_type != forced_type:
+                result['warnings'].append(
+                    f"{field_name}[{idx}] service_type '{service_type}' normalized to '{forced_type}'"
+                )
+
+    if legacy_count and services is None:
+        result['warnings'].append("Legacy service fields present without canonical services field")
+
+    status = normalize_token(data.get('status', ''))
+    delivery_status = normalize_token(data.get('delivery_status', ''))
+    fulfillment_status = normalize_token(data.get('fulfillment_status', ''))
+    is_delivery_active = (
+        status in {'open', 'pending'}
+        and delivery_status in {'essential', 'strategic', 'standard'}
+        and fulfillment_status in {'urgent', 'active'}
+    )
+
+    service_total = normalized_services + legacy_count
+    if is_delivery_active and service_total == 0:
+        result['warnings'].append("ML Active matter has no services defined")
 
 
 def validate_matter(matter_path: Path) -> dict:
@@ -106,6 +202,8 @@ def validate_matter(matter_path: Path) -> dict:
     # Check matter_id matches folder name
     if 'matter_id' in data and data['matter_id'] != matter_path.name:
         result['warnings'].append(f"matter_id '{data['matter_id']}' != folder name '{matter_path.name}'")
+
+    validate_services(data, result)
 
     return result
 

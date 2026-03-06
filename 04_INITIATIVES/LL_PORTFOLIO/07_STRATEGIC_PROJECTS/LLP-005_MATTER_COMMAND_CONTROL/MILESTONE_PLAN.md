@@ -7,9 +7,9 @@
 - Matter Digest (minimal morning brief)
 
 Outputs:
-- `06_DASHBOARDS/MATTER_INDEX.md`
-- `06_DASHBOARDS/INBOX_UNMAPPED.md`
-- `06_DASHBOARDS/MATTER_DIGEST.md`
+- `05_MATTERS/DASHBOARDS/MATTER_INDEX.md`
+- `05_MATTERS/DASHBOARDS/INBOX_UNMAPPED.md`
+- `05_MATTERS/DASHBOARDS/MATTER_DIGEST.md`
 - Routed matter status files
 
 ## Slice 2

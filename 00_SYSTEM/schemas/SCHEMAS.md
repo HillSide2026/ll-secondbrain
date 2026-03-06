@@ -4,7 +4,7 @@ title: Artifact Schemas
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-24
+last_updated: 2026-03-06
 tags: []
 ---
 
@@ -63,13 +63,29 @@ fulfillment_status: enum # Required. Admin workload state
 created_date: date       # Required. Date matter was created
 ```
 
+### Optional Fields
+
+```yaml
+services:                # Optional. Canonical service list for active delivery.
+  - service_type: enum   # solution | strategy
+    service_name: string # Human label for the service on this matter
+    status: string       # Optional service status
+    playbook_ref: string # Optional playbook pointer
+```
+
+Legacy compatibility:
+- `solutions` MAY be present and is normalized to `services` with `service_type=solution`
+- `strategies` MAY be present and is normalized to `services` with `service_type=strategy`
+- New authoring should use `services` only
+
 ### Field Enums
 
 | Field | Allowed Values |
 |-------|----------------|
 | `status` | `Open` \| `Pending` \| `Closed` |
 | `delivery_status` | `Essential` \| `Strategic` \| `Standard` \| `Parked` |
-| `fulfillment_status` | `urgent` \| `active` \| `keep in view` \| `dormant` |
+| `fulfillment_status` | `urgent` \| `active` \| `keep in view` \| `dormant` \| `inactive` \| `pausing` |
+| `services[].service_type` | `solution` \| `strategy` |
 
 ### Non-Inference Rule
 
@@ -77,6 +93,18 @@ These three fields are independent. Do not infer any field from any other:
 - `status` (Clio) does not imply `delivery_status` or `fulfillment_status`
 - `delivery_status` (ML1) does not imply `status` or `fulfillment_status`
 - `fulfillment_status` (Admin) does not imply `status` or `delivery_status`
+
+### Derived Category: ML Active
+
+`ML Active` is a computed category (not a stored field) defined by:
+- `status` in `Open|Pending`
+- `delivery_status` in `Essential|Strategic|Standard`
+- `fulfillment_status` in `urgent|active`
+
+`ML Watch` is a computed category for parked matters kept visible:
+- `status` in `Open|Pending`
+- `delivery_status` = `Parked`
+- `fulfillment_status` in `keep in view|active|urgent`
 
 ### Example
 
@@ -87,6 +115,14 @@ status: "Open"
 delivery_status: "Essential"
 fulfillment_status: "urgent"
 created_date: "2025-09-27"
+services:
+  - service_type: "solution"
+    service_name: "shareholder_agreement"
+    status: "active"
+    playbook_ref: "02_PLAYBOOKS/CORPORATE/WORKFLOWS/solutions/shareholder_agreement"
+  - service_type: "strategy"
+    service_name: "closing_negotiation"
+    status: "active"
 ```
 
 ### Directory Mapping
