@@ -4,6 +4,7 @@ Generates state and matter classification proposals for inbox threads (no execut
 """
 
 import json
+from pathlib import Path
 from state_enforcement import get_gmail_service, CANONICAL_LABELS
 from matter_enforcement import (
     extract_matter_number,
@@ -320,7 +321,9 @@ if __name__ == "__main__":
 
     print(json.dumps(batch, indent=2))
 
-    output_filename = f"batch_proposal_{batch['batch_id']}.json"
+    _proposals_dir = Path(__file__).resolve().parents[1] / "06_RUNS" / "batch" / "proposals"
+    _proposals_dir.mkdir(parents=True, exist_ok=True)
+    output_filename = _proposals_dir / f"batch_proposal_{batch['batch_id']}.json"
     with open(output_filename, 'w') as f:
         json.dump(batch, f, indent=2)
 

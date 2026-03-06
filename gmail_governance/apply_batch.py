@@ -8,6 +8,7 @@ import collections
 import json
 import os
 import datetime
+from pathlib import Path
 from state_enforcement import apply_state, get_gmail_service, get_label_id_map, CANONICAL_LABELS
 from matter_enforcement import (
     apply_matter_label,
@@ -17,6 +18,8 @@ from matter_enforcement import (
 )
 
 
+_REPO_ROOT = Path(__file__).resolve().parents[1]
+_EXECUTIONS_DIR = _REPO_ROOT / "06_RUNS" / "batch" / "executions"
 EXECUTION_LOG_PATH = os.path.join(os.path.dirname(__file__), 'execution_log.json')
 
 
@@ -413,7 +416,8 @@ if __name__ == "__main__":
     result = apply_approved_batch(batch_data, batch_id)
 
     # Save execution summary
-    summary_file = f"batch_execution_{batch_id}.json"
+    _EXECUTIONS_DIR.mkdir(parents=True, exist_ok=True)
+    summary_file = _EXECUTIONS_DIR / f"batch_execution_{batch_id}.json"
     with open(summary_file, 'w') as f:
         json.dump(result, f, indent=2)
 
