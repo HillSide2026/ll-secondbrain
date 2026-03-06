@@ -1,6 +1,20 @@
 matter_id: "24-845-00001"
 matter_name: "STAR 333 SPORTS INC."
+matter_description: "Corporate Governance"
 status: "Open"
 delivery_status: "Standard"
 fulfillment_status: "active"
 created_date: "2025-01-01"
+services:
+  - service_type: solution
+    service_name: "Organization of already established/incorporated company"
+  - service_type: solution
+    service_name: "Drafting and finalization of shareholder agreement"
+  - service_type: solution
+    service_name: "Preparation of investment agreement"
+  - service_type: solution
+    service_name: "Preparation of subsequent investment agreement"
+  - service_type: solution
+    service_name: "Negotiation with minority shareholder"
+  - service_type: solution
+    service_name: "Addition of second director"

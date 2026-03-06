@@ -1,8 +1,14 @@
+# DEPRECATED — use 00_SYSTEM/integrations/sharepoint/sharepoint_sources.yaml as canonical source.
+# This file is kept for script compatibility only. Do not edit drive_ids here.
 sources:
   - name: legalmatters_library
     site_host: levinellp.sharepoint.com
     site_path: /sites/LegalMatters
-    drive_id: b!h1ZUioTppUufgSXSnMchs-6DFb1C5YNCsdfy7k-ghh0WiwXFZMfpQ76cRS11GoNU
+    site_id: levinellp.sharepoint.com,8a545687-e984-4ba5-9f81-25d29cc721b3,b91583ee-e542-4283-b1d7-f2ee4fa08613
+    drive_id: b!h1ZUioTppUufgSXSnMchs-6DFblC5YNCsdfy7k-ghhOWiwXFZMfpQ76cRS11GoNU
+    drive_name: Working Files
+    write_policy: PROHIBITED
+    verified: 2026-03-06
     raw_dir: 09_INBOX/_sources/sharepoint/raw/legalmatters_library
     meta_dir: 09_INBOX/_sources/sharepoint/metadata/legalmatters_library
     state_file: 09_INBOX/_sources/sharepoint/state/legalmatters_library.json

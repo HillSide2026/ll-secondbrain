@@ -1,0 +1,543 @@
+[
+  {
+    "tier": "LL Matters (Essential)",
+    "matter_number": "25-1024-00001",
+    "sp_folder_name": "25-1024-00001 -- AllPro",
+    "subfolders": [
+      "01_Admin_",
+      "02_Corporate_Records _",
+      "03_Transaction_Documents _",
+      "04_Diligence _",
+      "05_Research_",
+      "06_Post_Closing"
+    ],
+    "file_count_at_root": 0,
+    "model_hits": 5,
+    "filing_structure_implemented": true
+  },
+  {
+    "tier": "LL Matters (Essential)",
+    "matter_number": "25-1603-00001",
+    "sp_folder_name": "25-1603-00001 -- Iberbanco",
+    "subfolders": [
+      "Admin",
+      "AML Policy Review",
+      "Clients Compliance Documents re Nov 26, 2025 Order 8Jan2026",
+      "Compliance Documents",
+      "Litigation",
+      "STR Report"
+    ],
+    "file_count_at_root": 6,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Essential)",
+    "matter_number": "25-927-00003",
+    "sp_folder_name": "25-927-00003 -- Stream",
+    "subfolders": [
+      "24-682-00001 incorporation and registration of Maple Wave",
+      "24-682-00002 Acquisition of Stream",
+      "25-927-00003 SnowCap CAMLO Operations",
+      "25-927-00004 Stream Counsel"
+    ],
+    "file_count_at_root": 0,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Essential)",
+    "matter_number": null,
+    "sp_folder_name": "Andersen",
+    "subfolders": [
+      "26-1639-00001 Relationship Management"
+    ],
+    "file_count_at_root": 0,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Strategic)",
+    "matter_number": "24-256",
+    "sp_folder_name": "24-256 --  Aspire",
+    "subfolders": [
+      "00001 Leadership Team",
+      "00002 Corporate",
+      "00003 - Marketing Related Matters",
+      "00004 - Product & Personnel Matters",
+      "00005 - Legal Strategy aka Legal Function",
+      "re-org",
+      "Sy Umachandran"
+    ],
+    "file_count_at_root": 2,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Strategic)",
+    "matter_number": "24-336",
+    "sp_folder_name": "24-336 -- Mascore",
+    "subfolders": [
+      "Corporate Transaction",
+      "family matters",
+      "Product Risk",
+      "Reorg"
+    ],
+    "file_count_at_root": 11,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Strategic)",
+    "matter_number": "25-1318",
+    "sp_folder_name": "25-1318 -- Zeljko 1716867 Ontario Inc",
+    "subfolders": [
+      "Admin",
+      "Client Production",
+      "Transaction Documents"
+    ],
+    "file_count_at_root": 0,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Strategic)",
+    "matter_number": "25-1553",
+    "sp_folder_name": "25-1553 -- Christian Yu",
+    "subfolders": [
+      "01_Admin_",
+      "02_Corporate_Records _",
+      "03_Transaction_Documents _",
+      "04_Diligence _",
+      "05_Research_",
+      "06_Post_Closing"
+    ],
+    "file_count_at_root": 1,
+    "model_hits": 5,
+    "filing_structure_implemented": true
+  },
+  {
+    "tier": "LL Matters (Strategic)",
+    "matter_number": "25-1571",
+    "sp_folder_name": "25-1571 -- Kishmish",
+    "subfolders": [
+      "01_Admin_",
+      "02_Corporate_Records _",
+      "03_Transaction_Documents _",
+      "04_Diligence _",
+      "05_Research_",
+      "06_Post_Closing"
+    ],
+    "file_count_at_root": 0,
+    "model_hits": 5,
+    "filing_structure_implemented": true
+  },
+  {
+    "tier": "LL Matters (Strategic)",
+    "matter_number": "25-1593",
+    "sp_folder_name": "25-1593 -- Kale Mart",
+    "subfolders": [
+      "01_Admin_",
+      "02_Client Provided Documents_",
+      "03_Transaction_Documents _",
+      "04_Diligence _",
+      "05_Research_",
+      "06_Post_Closing"
+    ],
+    "file_count_at_root": 0,
+    "model_hits": 6,
+    "filing_structure_implemented": true
+  },
+  {
+    "tier": "LL Matters (Strategic)",
+    "matter_number": "26-1633",
+    "sp_folder_name": "26-1633 -- Marjan",
+    "subfolders": [
+      "01_Admin",
+      "02_Client Provided Documents",
+      "03_Transaction_Documents",
+      "04_Diligence",
+      "05_Research",
+      "06_Post_Closing"
+    ],
+    "file_count_at_root": 3,
+    "model_hits": 6,
+    "filing_structure_implemented": true
+  },
+  {
+    "tier": "LL Matters (Strategic)",
+    "matter_number": null,
+    "sp_folder_name": "subway franchisee",
+    "subfolders": [
+      "01_Admin",
+      "02_Client Provided Documents",
+      "03_Transaction_Documents",
+      "04_Diligence",
+      "05_Research",
+      "06_Post_Closing"
+    ],
+    "file_count_at_root": 4,
+    "model_hits": 6,
+    "filing_structure_implemented": true
+  },
+  {
+    "tier": "LL Matters (Strategic)",
+    "matter_number": null,
+    "sp_folder_name": "Tint Express",
+    "subfolders": [],
+    "file_count_at_root": 2,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Standard)",
+    "matter_number": "23-194-00013",
+    "sp_folder_name": "23-194-00013 RM - Legacy",
+    "subfolders": [
+      "archive",
+      "archive2",
+      "December 2024 onwards",
+      "Keelan's Work Product",
+      "secondary transaction"
+    ],
+    "file_count_at_root": 4,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Standard)",
+    "matter_number": "23-235-00001",
+    "sp_folder_name": "23-235-00001 - Baobab",
+    "subfolders": [
+      "Work In Progress Folder"
+    ],
+    "file_count_at_root": 5,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Standard)",
+    "matter_number": "24-194-00057",
+    "sp_folder_name": "24-194-00057 RM -  Chris Strong",
+    "subfolders": [
+      "carpenters",
+      "file",
+      "HabCo",
+      "Shareholder Agreement"
+    ],
+    "file_count_at_root": 15,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Standard)",
+    "matter_number": "24-347-00002",
+    "sp_folder_name": "24-347-00002 BrandButter Damiano",
+    "subfolders": [
+      "StartUp Slang"
+    ],
+    "file_count_at_root": 0,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Standard)",
+    "matter_number": "24-845-00001",
+    "sp_folder_name": "24-845-00001 - STAR 333 SPORTS INC",
+    "subfolders": [
+      "24-845-00001 - Corporate Governance",
+      "24-845-00002 - League Operations",
+      "Portal",
+      "stakeholder management"
+    ],
+    "file_count_at_root": 0,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Standard)",
+    "matter_number": "25-1185-00001",
+    "sp_folder_name": "25-1185-00001 - Klys",
+    "subfolders": [
+      "1. Admin",
+      "2. Client Provided Information including Corporate Records",
+      "3. Transaction Documents",
+      "4. Diligence",
+      "5. Research",
+      "6. Post-Closing"
+    ],
+    "file_count_at_root": 0,
+    "model_hits": 6,
+    "filing_structure_implemented": true
+  },
+  {
+    "tier": "LL Matters (Standard)",
+    "matter_number": "25-1192-00001",
+    "sp_folder_name": "25-1192-00001 Knot Churros",
+    "subfolders": [
+      "Franchise Agreement"
+    ],
+    "file_count_at_root": 26,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Standard)",
+    "matter_number": "25-1231-00001",
+    "sp_folder_name": "25-1231-00001 - CSpiteri DOWNGRADED",
+    "subfolders": [
+      "01_Admin",
+      "02_Corporate_Records",
+      "03_Transaction_Documents",
+      "04_Diligence",
+      "05_Research",
+      "06_Post_Closing"
+    ],
+    "file_count_at_root": 1,
+    "model_hits": 5,
+    "filing_structure_implemented": true
+  },
+  {
+    "tier": "LL Matters (Standard)",
+    "matter_number": "25-1363-00001",
+    "sp_folder_name": "25-1363-00001 - Chungchun",
+    "subfolders": [
+      "01_Admin_",
+      "02_Corporate_Records _",
+      "03_Transaction_Documents _",
+      "04_Diligence _",
+      "05_Research_",
+      "06_Post_Closing"
+    ],
+    "file_count_at_root": 0,
+    "model_hits": 5,
+    "filing_structure_implemented": true
+  },
+  {
+    "tier": "LL Matters (Standard)",
+    "matter_number": "25-1525-00001",
+    "sp_folder_name": "25-1525-00001 - Kleenup",
+    "subfolders": [
+      "Transaction Documents"
+    ],
+    "file_count_at_root": 0,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Standard)",
+    "matter_number": "25-1538-00001",
+    "sp_folder_name": "25-1538-00001 - Nicoara",
+    "subfolders": [
+      "01_Admin_",
+      "02_Corporate_Records (AKA Client Provided Information)",
+      "03_Transaction_Documents _",
+      "04_Diligence _",
+      "05_Research_",
+      "06_Post_Closing"
+    ],
+    "file_count_at_root": 2,
+    "model_hits": 6,
+    "filing_structure_implemented": true
+  },
+  {
+    "tier": "LL Matters (Standard)",
+    "matter_number": "25-1588-00001",
+    "sp_folder_name": "25-1588-00001 - GregPop",
+    "subfolders": [],
+    "file_count_at_root": 6,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Standard)",
+    "matter_number": "25-194-00060",
+    "sp_folder_name": "25-194-00060 - RM Partner LawCorps",
+    "subfolders": [
+      "Mandarino Minutebook docs",
+      "Mandarino Minutebook docs 2"
+    ],
+    "file_count_at_root": 11,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Standard)",
+    "matter_number": "25-822-00001",
+    "sp_folder_name": "25-822-00001 - Pacifico Seaweed",
+    "subfolders": [
+      "9. EDGAR ACQUISITION",
+      "Settlement",
+      "SPA -"
+    ],
+    "file_count_at_root": 4,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Standard)",
+    "matter_number": null,
+    "sp_folder_name": "Newmarket accountant",
+    "subfolders": [],
+    "file_count_at_root": 5,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Standard)",
+    "matter_number": null,
+    "sp_folder_name": "shareholder review",
+    "subfolders": [],
+    "file_count_at_root": 2,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Standard Cash Cows)",
+    "matter_number": "22-194-00006",
+    "sp_folder_name": "22-194-00006 RM - Carpenters Leasing",
+    "subfolders": [
+      "July15 rd2",
+      "July16 rd3",
+      "land acquisition",
+      "Rent Arrears",
+      "Reporting",
+      "waiver"
+    ],
+    "file_count_at_root": 49,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Standard Cash Cows)",
+    "matter_number": "24-194-000",
+    "sp_folder_name": "24-194-000xx - RM - Carpenters Training",
+    "subfolders": [
+      "Admin",
+      "Diligence",
+      "LOI",
+      "PSA"
+    ],
+    "file_count_at_root": 1,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Parked)",
+    "matter_number": "24-586",
+    "sp_folder_name": "24-586 Levchuk Agency KIV",
+    "subfolders": [
+      "24-586-00001",
+      "24-586-00002",
+      "Jury",
+      "resources",
+      "subcontractor",
+      "Templates"
+    ],
+    "file_count_at_root": 0,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Parked)",
+    "matter_number": "25-1150-00001",
+    "sp_folder_name": "25-1150-00001 Admiral",
+    "subfolders": [
+      "Brokerlink - Gore",
+      "Cease and Desist",
+      "S Toomey",
+      "Services Agreement"
+    ],
+    "file_count_at_root": 2,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Parked)",
+    "matter_number": "25-1210-00001",
+    "sp_folder_name": "25-1210-00001 Aldameri re Commerzeo",
+    "subfolders": [
+      "Client Productions",
+      "July4"
+    ],
+    "file_count_at_root": 10,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Parked)",
+    "matter_number": "25-1277-00001",
+    "sp_folder_name": "25-1277-00001 Hanze Guo shelfGenie",
+    "subfolders": [],
+    "file_count_at_root": 6,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Parked)",
+    "matter_number": "25-1511-00001",
+    "sp_folder_name": "25-1511-00001 - Nabil",
+    "subfolders": [
+      "01_Admin_",
+      "02_Corporate_Records _",
+      "03_Transaction_Documents _",
+      "04_Diligence _",
+      "05_Research_",
+      "06_Post_Closing"
+    ],
+    "file_count_at_root": 1,
+    "model_hits": 5,
+    "filing_structure_implemented": true
+  },
+  {
+    "tier": "LL Matters (Parked)",
+    "matter_number": null,
+    "sp_folder_name": "Ali & Ali",
+    "subfolders": [
+      "14680634 Canada Inc  - PropertyCorp",
+      "Client Productions",
+      "Delivery Documents - delivery 1",
+      "Delivery Documents - delivery 2",
+      "research  and drafts"
+    ],
+    "file_count_at_root": 1,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Parked)",
+    "matter_number": null,
+    "sp_folder_name": "APA",
+    "subfolders": [],
+    "file_count_at_root": 3,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Parked)",
+    "matter_number": null,
+    "sp_folder_name": "LearnFormula",
+    "subfolders": [],
+    "file_count_at_root": 2,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Parked)",
+    "matter_number": null,
+    "sp_folder_name": "LearnFormula to archive",
+    "subfolders": [],
+    "file_count_at_root": 2,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  },
+  {
+    "tier": "LL Matters (Parked)",
+    "matter_number": null,
+    "sp_folder_name": "Stack Overflow",
+    "subfolders": [],
+    "file_count_at_root": 2,
+    "model_hits": 0,
+    "filing_structure_implemented": false
+  }
+]

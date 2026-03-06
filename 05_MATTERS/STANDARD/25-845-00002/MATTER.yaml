@@ -1,6 +1,16 @@
 matter_id: "25-845-00002"
 matter_name: "STAR 333 SPORTS INC."
+matter_description: "League Operations"
 status: "Open"
 delivery_status: "Standard"
 fulfillment_status: "active"
 created_date: "2025-01-01"
+services:
+  - service_type: solution
+    service_name: "Franchise agreement(s)"
+  - service_type: solution
+    service_name: "Venue agreement"
+  - service_type: solution
+    service_name: "White Rock franchise debt collection"
+  - service_type: solution
+    service_name: "Master license agreement with Cricket Canada"
