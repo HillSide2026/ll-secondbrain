@@ -1,0 +1,21 @@
+schema_version: 0.1
+id: matter_admin_one
+name: Matter Admin One Matter
+description: On-demand Matter Command and Control run scoped to a single matter number.
+bundle: matter_admin_one
+gates:
+  - ml1_approval_required
+  - no_source_writeback
+  - citation_pointer_required
+steps:
+  - id: load_clio_matter
+    action: connector_clio_read
+  - id: load_gmail_threads
+    action: connector_gmail_read
+  - id: route_for_matter
+    action: agent_inbox_router_scoped
+  - id: compile_matter_status
+    action: agent_matter_digest_scoped
+run_logging:
+  runlog: 06_RUNS/logs/matter_admin/runlog.md
+  provenance: 06_RUNS/logs/matter_admin/provenance.json

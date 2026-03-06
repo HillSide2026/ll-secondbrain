@@ -1,7 +1,7 @@
 # Project Stage Gate Checklist
 
-- Generated: 2026-03-05T03:35:53+00:00
-- Run ID: RUN-2026-03-05-LL-PORTFOLIO-AGENTS-033553Z
+- Generated: 2026-03-05T04:00:00+00:00
+- Run ID: RUN-2026-03-05-LL-PORTFOLIO-AGENTS-040000Z
 
 > Advisory output. ML1 approval remains required for decisions.
 ## Stage Gate Snapshot
@@ -19,6 +19,11 @@
 - `LLP-002_CORPORATE_CLERK`: stage=2, health=watch, relevant gaps=8 (SCOPE_DEFINITION.md, WORKPLAN.md, MILESTONES.md, RESOURCE_PLAN.md, ASSUMPTIONS_CONSTRAINTS.md, DEPENDENCIES.md, RISK_REGISTER.md, COMMUNICATION_PLAN.md)
 - `LLP-003_ASSOCIATE_LAWYER`: stage=2, health=watch, relevant gaps=8 (SCOPE_DEFINITION.md, WORKPLAN.md, MILESTONES.md, RESOURCE_PLAN.md, ASSUMPTIONS_CONSTRAINTS.md, DEPENDENCIES.md, RISK_REGISTER.md, COMMUNICATION_PLAN.md)
 - `LLP-004_PARTNER_SUPERVISION`: stage=2, health=watch, relevant gaps=8 (SCOPE_DEFINITION.md, WORKPLAN.md, MILESTONES.md, RESOURCE_PLAN.md, ASSUMPTIONS_CONSTRAINTS.md, DEPENDENCIES.md, RISK_REGISTER.md, COMMUNICATION_PLAN.md)
+
+## Notes
+
+- LLP-001 has additional research artifacts (TIER1_SOLUTIONS_SUBSTANCE_REVIEW.md, FIRST_RUN_CORPORATE_SOLUTIONS_ARTIFACT_OPINION.md) that may inform SCOPE_DEFINITION once ML1 authorizes planning advancement.
+- All 4 projects share identical planning artifact gaps. Batch closure of SCOPE_DEFINITION, WORKPLAN, and MILESTONES across all projects would be the highest-leverage ML1 decision point.
 
 ## ML1 Action Queue
 

@@ -18,7 +18,7 @@ This is a **planning artifact** only. It does not authorize execution.
 ## Preconditions
 - SYS‑001 decision recorded (Claude Code agents)
 - SMA‑001..SMA‑005 agent definitions present in `00_SYSTEM/AGENTS/`
-- Write-back policy reviewed (`01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`)
+- Write-back policy reviewed (`01_DOCTRINE/02_POLICIES/WRITE_BACK_POLICY.md`)
 - Stage 2/3 dependencies confirmed
 
 ## Proposed Sequence (Consolidated)

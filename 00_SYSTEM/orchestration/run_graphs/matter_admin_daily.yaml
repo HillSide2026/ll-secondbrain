@@ -1,0 +1,39 @@
+schema_version: 0.1
+id: matter_admin_daily
+name: Matter Admin Daily
+description: Daily Matter Command and Control run (index + routing + SharePoint deltas + digest).
+bundle: matter_admin_daily
+gates:
+  - ml1_approval_required
+  - no_source_writeback
+  - citation_pointer_required
+steps:
+  - id: load_clio_matters
+    action: connector_clio_read
+  - id: load_gmail_threads
+    action: connector_gmail_read
+  - id: load_sharepoint_docs
+    action: connector_sharepoint_read
+  - id: build_matter_index
+    action: agent_matter_index
+    outputs:
+      - path: 06_DASHBOARDS/MATTER_INDEX.md
+        label: DERIVED_ARTIFACT
+  - id: route_inbox_threads
+    action: agent_inbox_router
+    outputs:
+      - path: 06_DASHBOARDS/INBOX_UNMAPPED.md
+        label: DERIVED_ARTIFACT
+  - id: compile_digest
+    action: agent_digest_compiler
+    outputs:
+      - path: 06_DASHBOARDS/MATTER_DIGEST.md
+        label: DERIVED_ARTIFACT
+  - id: compile_sharepoint_gaps
+    action: agent_document_delta
+    outputs:
+      - path: 06_DASHBOARDS/SHAREPOINT_GAPS.md
+        label: DERIVED_ARTIFACT
+run_logging:
+  runlog: 06_RUNS/logs/matter_admin/runlog.md
+  provenance: 06_RUNS/logs/matter_admin/provenance.json

@@ -1,0 +1,27 @@
+id: 00_system__config__deadline_taxonomy
+title: Deadline Taxonomy
+owner: ML1
+status: draft
+created_date: 2026-03-04
+last_updated: 2026-03-04
+
+deadline_types:
+  - id: HARD_DEADLINE
+    label: Hard deadline
+    definition: Contractual, regulatory, statutory, or closing date.
+    risk_level: high
+  - id: SOFT_DEADLINE
+    label: Soft deadline
+    definition: Requested turnaround or expected delivery date.
+    risk_level: medium
+  - id: INTERNAL_TARGET
+    label: Internal target
+    definition: Internal planning milestone.
+    risk_level: low
+
+escalation:
+  overdue_hard_deadline: immediate_ml1_flag
+  due_within_days:
+    hard: 3
+    soft: 2
+    internal: 1

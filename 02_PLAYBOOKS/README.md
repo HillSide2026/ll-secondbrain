@@ -6,7 +6,7 @@ status: draft
 version: 1.0
 supersedes:
 created_date: 2026-01-25
-last_updated: 2026-02-25
+last_updated: 2026-03-05
 tags: []
 ---
 
@@ -29,15 +29,24 @@ Acceptance Criteria: TBD
 
 Repeatable workflows and SOPs derived from doctrine.
 
-## Service Architecture (Practice Areas)
+## Service Architecture (Canonical)
 
-Practice-area containers include both Strategies and Solutions, plus shared execution artifacts:
+Top-level structure:
 
 ```
-02_PLAYBOOKS/<PRACTICE_AREA>/
-├── STRATEGIES/    # High-value engagement architectures
-├── SOLUTIONS/     # Productized solution frames
-├── (shared execution artifacts)
+02_PLAYBOOKS/
+├── LL_OPERATIONS/        # Firm operations playbooks
+├── CONTRACTS/            # Contract practice area
+├── CORPORATE/            # Corporate practice area
+├── FINANCIAL_SERVICES/   # Financial services practice area
+├── _ASSETS/              # Reusable non-workflow assets
+└── _REGISTRY/            # Indexes, policy, and structure controls
+```
+
+Practice area playbooks are organized under:
+
+```
+02_PLAYBOOKS/<PRACTICE_AREA>/WORKFLOWS/
 ```
 
 Strategies require ML1 approval to create. Each strategy folder must include:
@@ -50,33 +59,39 @@ Strategies require ML1 approval to create. Each strategy folder must include:
 
 Strategies are not playbooks. Playbooks remain the execution layer.
 
-## Taxonomy
+## Metadata Taxonomy
 
-- `core/`: lifecycle backbone workflows (intake/triage/scaffold/extract/update).
-- `substantive/`: legal-work workflows (review/draft/file/analyze) regardless of domain.
-- `execution/`: deliverable-generation workflows (emails, memos, escalation packets).
-- `system/`: meta-workflows that modify ML2 itself (doctrine/policy/template processes).
-- `_registry/`: navigation + status registry only (no workflows).
-- `_assets/`: reusable assets (schemas, rubrics, worksheets, formats) used by playbooks.
+`CORE`, `SUBSTANTIVE`, `EXECUTION`, and `SYSTEM` are metadata categories, not directories.
 
-## SYSTEM PLAYBOOKS
+Each workflow should encode taxonomy in metadata (for example `category` in `metadata.yaml`):
+- `core`: lifecycle backbone workflows (intake/triage/scaffold/extract/update)
+- `substantive`: legal-work workflows (review/draft/file/analyze)
+- `execution`: deliverable-generation workflows (emails, memos, escalation packets)
+- `system`: meta-workflows that modify ML2 itself
 
-These are non-practice playbooks outside the practice-area service architecture, grouped here for clarity only (no restructure).
+Operational workflows live under:
+- `02_PLAYBOOKS/LL_OPERATIONS/`
 
-System Core: `02_PLAYBOOKS/core/`, `02_PLAYBOOKS/system/`
-Execution and QA: `02_PLAYBOOKS/EXECUTION/`, `02_PLAYBOOKS/STAGE3/`
-Operations Workflows: `02_PLAYBOOKS/INBOX_TRIAGE/`, `02_PLAYBOOKS/MATTER_DASHBOARD/`
-Infrastructure and Support: `02_PLAYBOOKS/_assets/`, `02_PLAYBOOKS/_registry/`
+Practice workflows live under:
+- `02_PLAYBOOKS/CONTRACTS/WORKFLOWS/`
+- `02_PLAYBOOKS/CORPORATE/WORKFLOWS/`
+- `02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/`
+
+Legacy migration folders retained under `LL_OPERATIONS/`:
+- `INBOX_TRIAGE_LEGACY/`
+- `MATTER_DASHBOARD_LEGACY/`
+- `STAGE3_LEGACY/`
 
 Rules:
 - Must include YAML frontmatter per `/00_SYSTEM/schemas/SCHEMAS.md`
 - `version` and `supersedes` live in YAML frontmatter; Playbook Header `Version` must match `version`
 - May reference doctrine IDs
 - If a playbook conflicts with doctrine, doctrine wins
-- Folders under `core/`, `substantive/`, `execution/`, and `system/` must be workflows and must include `README.md`, `metadata.yaml`, `steps.yaml`, and `acceptance.md`; otherwise place them under `_assets/`.
-- Anything that is not a repeatable workflow does not belong in `core/`, `substantive/`, `execution/`, or `system/`.
+- Workflow folders should include `README.md`, `metadata.yaml`, `steps.yaml`, and `acceptance.md`.
+- Non-workflow material belongs in `02_PLAYBOOKS/_ASSETS/`.
+- `02_PLAYBOOKS/_REGISTRY/` contains policy, index, and migration records; no runnable workflows.
 
-Registry: `02_PLAYBOOKS/_registry/README.md`
-Playbook index: `02_PLAYBOOKS/_registry/PLAYBOOK_INDEX.md`
-Status manifests (derived views): `02_PLAYBOOKS/_registry/ACTIVE_INDEX.md`, `02_PLAYBOOKS/_registry/DRAFT_INDEX.md`
-Structure policy: `02_PLAYBOOKS/_registry/STRUCTURE_POLICY.md`
+Registry: `02_PLAYBOOKS/_REGISTRY/README.md`
+Playbook index: `02_PLAYBOOKS/_REGISTRY/PLAYBOOK_INDEX.md`
+Status manifests (derived views): `02_PLAYBOOKS/_REGISTRY/ACTIVE_INDEX.md`, `02_PLAYBOOKS/_REGISTRY/DRAFT_INDEX.md`
+Structure policy: `02_PLAYBOOKS/_REGISTRY/STRUCTURE_POLICY.md`

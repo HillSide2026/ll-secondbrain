@@ -62,7 +62,7 @@ steps:
     agent: SAA_REGISTRY_SYNC
     inputs:
       - path: ${run_root}/inventory.json
-      - path: 02_PLAYBOOKS/_registry/PLAYBOOK_INDEX.md
+      - path: 02_PLAYBOOKS/_REGISTRY/PLAYBOOK_INDEX.md
       - path: 00_SYSTEM/AGENTS/specs/system_admin/SAA_OUTPUT_CONTRACT.md
       - path: 00_SYSTEM/AGENTS/specs/system_admin/_shared/findings.schema.json
     outputs:

@@ -10,7 +10,7 @@ tags: []
 ---
 
 # Change Note
-Moved from `01_DOCTRINE/01_invariants/` to `01_DOCTRINE/02_interpretive/` on 2026-02-13 to reflect interpretive scope.
+Moved from `01_DOCTRINE/01_INVARIANTS/` to `01_DOCTRINE/02_interpretive/` on 2026-02-13 to reflect interpretive scope.
 
 # Second Brain System Model
 

@@ -1,0 +1,13 @@
+id: 05_matters__registry__matter_sharepoint_map
+title: Matter to SharePoint Map
+owner: ML1
+status: draft
+created_date: 2026-03-04
+last_updated: 2026-03-04
+
+mappings: []
+# Example:
+# - matter_number: 25-1234-00001
+#   drive_item_id: 01ABCDEF...
+#   web_url: https://...
+#   path: LL Matters (Strategic)/25-1234-00001 - Client Name

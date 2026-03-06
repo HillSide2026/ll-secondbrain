@@ -168,7 +168,7 @@ If no convention exists, propose a minimal convention labeled:
 
 #### Doctrine
 Default location:
-- `01_DOCTRINE/01_invariants/` for hard constraints / invariants
+- `01_DOCTRINE/01_INVARIANTS/` for hard constraints / invariants
 - else `01_DOCTRINE/<category>/` where category exists
 
 Filename pattern (if present in repo):
@@ -299,7 +299,7 @@ The agent must stop and escalate if:
 
 ## Write-Back Policy Reference
 
-This agent operates under `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`:
+This agent operates under `01_DOCTRINE/02_POLICIES/WRITE_BACK_POLICY.md`:
 - Local-first: all work lands in repo first
 - External tool writes are disallowed in Stage 2.1
 - External writes require ML1 approval (future stages)

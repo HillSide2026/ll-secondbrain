@@ -306,16 +306,16 @@ notes: Pilot run outcome recorded by runner
 Pilot inbox triage classification outputs and summary.
 
 ## Candidate target
-- 02_PLAYBOOKS/core/inbox_triage/ (update playbook or taxonomy if warranted)
+- 02_PLAYBOOKS/LL_OPERATIONS/inbox_triage/ (update playbook or taxonomy if warranted)
 
 ## Blocking questions
 - Are classification rules producing acceptable placements?
 - Do confidence thresholds need calibration?
 
 ## Canon refs
-- 02_PLAYBOOKS/core/inbox_triage/README.md
-- 02_PLAYBOOKS/core/inbox_triage/TAXONOMY.md
-- 02_PLAYBOOKS/core/inbox_triage/LOGGING_SPEC.md
+- 02_PLAYBOOKS/LL_OPERATIONS/inbox_triage/README.md
+- 02_PLAYBOOKS/LL_OPERATIONS/inbox_triage/TAXONOMY.md
+- 02_PLAYBOOKS/LL_OPERATIONS/inbox_triage/LOGGING_SPEC.md
 \"\"\",
                 encoding="utf-8",
             )

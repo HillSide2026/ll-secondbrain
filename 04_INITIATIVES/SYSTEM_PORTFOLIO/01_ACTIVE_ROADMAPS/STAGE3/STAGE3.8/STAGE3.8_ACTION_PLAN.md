@@ -114,7 +114,7 @@ Lifecycle transitions must be:
 
 ## 5.3 Template Registry
 
-File: `02_PLAYBOOKS/_assets/execution/reference/TEMPLATE_REGISTRY.json`
+File: `02_PLAYBOOKS/_ASSETS/execution/reference/TEMPLATE_REGISTRY.json`
 
 Must include per template:
 
@@ -246,7 +246,7 @@ Discovery output stored under: `09_INBOX/_sources/sharepoint/discovery/`
 | Item | Status | Notes |
 |------|--------|-------|
 | Execution governance document | ✅ | `STAGE3.8_EXECUTION_GOVERNANCE_DOC.md` |
-| Template registry | ✅ | `02_PLAYBOOKS/_assets/execution/reference/TEMPLATE_REGISTRY.json` (delivered Phase 2) |
+| Template registry | ✅ | `02_PLAYBOOKS/_ASSETS/execution/reference/TEMPLATE_REGISTRY.json` (delivered Phase 2) |
 | Content control validation spec | ✅ | `STAGE3.8_CONTENT_CONTROL_VALIDATION_SPEC.md` |
 | Content control validation impl | ✅ | Phase 4 (registry) + Phase 7 (OpenXML introspection) in bridge |
 

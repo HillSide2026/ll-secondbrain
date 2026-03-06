@@ -15,7 +15,7 @@ Verify that playbook registry entries reflect actual playbooks.
 
 ## Scope
 This agent applies only to ML2 governed artifacts as defined in the
-ML2 Ontology Boundary invariant: `01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md`
+ML2 Ontology Boundary invariant: `01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md`
 
 In-scope artifacts include:
 
@@ -32,13 +32,13 @@ Out-of-scope artifacts include:
 - Secrets and credentials
 - CI or tooling config
 
-Boundary Reference: INV-ML2-BOUNDARY (01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md)
+Boundary Reference: INV-ML2-BOUNDARY (01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md)
 
 ## Authority
 None. Advisory/draft output only.
 
 ## Inputs
-- `02_PLAYBOOKS/_registry/PLAYBOOK_INDEX.md`
+- `02_PLAYBOOKS/_REGISTRY/PLAYBOOK_INDEX.md`
 - `02_PLAYBOOKS/**/metadata.yaml`
 - Repo file tree under `02_PLAYBOOKS/`
 
@@ -59,10 +59,10 @@ Report produced listing missing registry entries, ghost entries, and status mism
 ## Operational Spec (Upgraded)
 
 ### Required Inputs
-- `02_PLAYBOOKS/_registry/PLAYBOOK_INDEX.md`
+- `02_PLAYBOOKS/_REGISTRY/PLAYBOOK_INDEX.md`
 - `02_PLAYBOOKS/**/metadata.yaml`
 - Repository file tree under `02_PLAYBOOKS/`
-- `01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md`
+- `01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md`
 
 ### Deterministic Checks
 1. **Registry parse check** — PLAYBOOK_INDEX.md is readable.
@@ -106,7 +106,7 @@ tags: [system-admin, registry]
 1. ...
 
 ## Evidence
-- Registry: 02_PLAYBOOKS/_registry/PLAYBOOK_INDEX.md
+- Registry: 02_PLAYBOOKS/_REGISTRY/PLAYBOOK_INDEX.md
 - Path: <path>
 ```
 
@@ -119,8 +119,8 @@ tags: [system-admin, registry]
 Invoke SAA_REGISTRY_SYNC to reconcile playbook registry.
 
 Inputs:
-- Registry: 02_PLAYBOOKS/_registry/PLAYBOOK_INDEX.md
-- Boundary: 01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md
+- Registry: 02_PLAYBOOKS/_REGISTRY/PLAYBOOK_INDEX.md
+- Boundary: 01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md
 
 Scope: playbooks only
 Context: weekly system admin sweep

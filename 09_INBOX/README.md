@@ -219,7 +219,7 @@ Until execution stages are authorized, items remain here as proposals.
 
 ## References
 
-- Taxonomy: `02_PLAYBOOKS/core/inbox_triage/TAXONOMY.md`
-- Classifier Interface: `02_PLAYBOOKS/core/inbox_triage/CLASSIFIER_INTERFACE.md`
-- Logging Spec: `02_PLAYBOOKS/core/inbox_triage/LOGGING_SPEC.md`
+- Taxonomy: `02_PLAYBOOKS/LL_OPERATIONS/inbox_triage/TAXONOMY.md`
+- Classifier Interface: `02_PLAYBOOKS/LL_OPERATIONS/inbox_triage/CLASSIFIER_INTERFACE.md`
+- Logging Spec: `02_PLAYBOOKS/LL_OPERATIONS/inbox_triage/LOGGING_SPEC.md`
 - Draft Placement Plan Schema: `00_SYSTEM/schemas/SCHEMAS_INBOX_TRIAGE.md`

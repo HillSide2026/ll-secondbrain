@@ -1,0 +1,50 @@
+id: 00_system__config__systems_of_record
+title: Systems of Record Contract
+owner: ML1
+status: draft
+created_date: 2026-03-04
+last_updated: 2026-03-04
+
+systems:
+  clio:
+    role: matter_registry
+    authoritative_fields:
+      - matter_id
+      - matter_number
+      - status
+      - responsible_attorney
+      - client
+    write_policy: read_only
+  sharepoint:
+    role: document_truth
+    authoritative_fields:
+      - drive_item_id
+      - path
+      - modified_at
+      - web_url
+    write_policy: read_only
+  gmail:
+    role: comms_truth
+    authoritative_fields:
+      - thread_id
+      - message_ids
+      - participants
+      - last_message_at
+      - labels
+    write_policy: read_only
+
+ml2_storage_boundary:
+  allowed:
+    - derived_admin_artifacts
+    - source_pointers
+    - normalized_snapshots
+  prohibited:
+    - source_of_truth_overrides
+    - unbounded_shadow_database
+
+assertion_policy:
+  citation_required: true
+  required_pointer_fields:
+    - source_system
+    - object_id
+    - pointer

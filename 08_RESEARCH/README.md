@@ -121,7 +121,7 @@ next_actions:
 `08_RESEARCH` is exploratory, provisional, and evolving.
 
 Corporate law research must live under:
-`08_RESEARCH/Corporate Law/`
+`08_RESEARCH/CORPORATE_LAW/`
 
 ---
 

@@ -15,7 +15,7 @@ Compare `FOLDER_MAP.md` to actual repo structure and report drift.
 
 ## Scope
 This agent applies only to ML2 governed artifacts as defined in the
-ML2 Ontology Boundary invariant: `01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md`
+ML2 Ontology Boundary invariant: `01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md`
 
 In-scope artifacts include:
 
@@ -32,7 +32,7 @@ Out-of-scope artifacts include:
 - Secrets and credentials
 - CI or tooling config
 
-Boundary Reference: INV-ML2-BOUNDARY (01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md)
+Boundary Reference: INV-ML2-BOUNDARY (01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md)
 
 ## Authority
 None. Advisory/draft output only.
@@ -62,7 +62,7 @@ Report produced with mapped vs actual counts, deltas, and recommended map update
 
 ### Required Inputs
 - `00_SYSTEM/architecture/FOLDER_MAP.md` (canonical map)
-- `01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md` (boundary definition)
+- `01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md` (boundary definition)
 - Repository filesystem tree (paths only)
 - Prior drift report (most recent in `06_RUNS/`)
 
@@ -132,7 +132,7 @@ Invoke SAA_FOLDER_MAP_DRIFT to audit repo structure.
 
 Inputs:
 - FOLDER_MAP.md: 00_SYSTEM/architecture/FOLDER_MAP.md
-- Boundary: 01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md
+- Boundary: 01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md
 - Repo root: .
 
 Scope: governed roots only

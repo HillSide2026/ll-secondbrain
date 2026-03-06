@@ -1,0 +1,24 @@
+id: 00_system__config__matter_folder_rules
+title: Matter Folder Resolution Rules
+owner: ML1
+status: draft
+created_date: 2026-03-04
+last_updated: 2026-03-04
+
+sharepoint_mapping:
+  primary_rule:
+    name: folder_prefix_matter_number
+    description: Folder name starts with canonical matter number.
+    regex: '(?P<matter_number>\b\d{2}-\d{3,4}-\d{5}\b)'
+  fallback_rule:
+    name: explicit_map_file
+    map_file: 05_MATTERS/_REGISTRY/matter_sharepoint_map.yml
+
+local_matter_paths:
+  root: 05_MATTERS
+  expected_matter_file: MATTER.yaml
+  tiers:
+    - ESSENTIAL
+    - STRATEGIC
+    - STANDARD
+    - PARKED

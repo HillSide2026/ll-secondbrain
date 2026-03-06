@@ -70,7 +70,7 @@ Impact:
 
 Corporate content exists in:
 - `02_PLAYBOOKS/CORPORATE/...`
-- `02_PLAYBOOKS/substantive/corporate/...`
+- `02_PLAYBOOKS/CORPORATE/WORKFLOWS/...`
 
 Impact:
 - drift risk

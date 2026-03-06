@@ -25,10 +25,10 @@ Execute a structurally complex OBCA incorporation as a D4 deliverable with full 
 - Any deviation from structured write path
 
 ## Inputs & Dependencies
-- `02_PLAYBOOKS/_assets/execution/rubrics/quality_rubric/README.md`
-- `02_PLAYBOOKS/execution/supervised_execution_runbook/README.md`
-- `02_PLAYBOOKS/_assets/execution/worksheets/ml1_approval_worksheet/README.md`
-- `02_PLAYBOOKS/_assets/execution/schemas/action_proposal_schema/README.md`
+- `02_PLAYBOOKS/_ASSETS/execution/rubrics/quality_rubric/README.md`
+- `02_PLAYBOOKS/LL_OPERATIONS/supervised_execution_runbook/README.md`
+- `02_PLAYBOOKS/_ASSETS/execution/worksheets/ml1_approval_worksheet/README.md`
+- `02_PLAYBOOKS/_ASSETS/execution/schemas/action_proposal_schema/README.md`
 
 ## Workflow Summary
 Classify D4 → Structured drafting → QA scoring → Approval artifact → Diff preview → Supervised execution → Verification → Log

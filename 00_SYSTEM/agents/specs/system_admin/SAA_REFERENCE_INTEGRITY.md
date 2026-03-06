@@ -15,7 +15,7 @@ Detect broken internal links, stale file references, and orphaned docs.
 
 ## Scope
 This agent applies only to ML2 governed artifacts as defined in the
-ML2 Ontology Boundary invariant: `01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md`
+ML2 Ontology Boundary invariant: `01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md`
 
 In-scope artifacts include:
 
@@ -32,7 +32,7 @@ Out-of-scope artifacts include:
 - Secrets and credentials
 - CI or tooling config
 
-Boundary Reference: INV-ML2-BOUNDARY (01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md)
+Boundary Reference: INV-ML2-BOUNDARY (01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md)
 
 ## Authority
 None. Advisory/draft output only.
@@ -40,7 +40,7 @@ None. Advisory/draft output only.
 ## Inputs
 - Repo file tree
 - Markdown files and link targets
-- `02_PLAYBOOKS/_registry/PLAYBOOK_INDEX.md`
+- `02_PLAYBOOKS/_REGISTRY/PLAYBOOK_INDEX.md`
 
 ## Outputs
 - One integrity report under `06_RUNS/` listing failures and suggested fixes
@@ -62,8 +62,8 @@ Report produced with dead links, stale references, missing assets, and orphaned 
 ### Required Inputs
 - Repository file tree (paths only)
 - Markdown files under governed layers
-- `02_PLAYBOOKS/_registry/PLAYBOOK_INDEX.md` (if present)
-- `01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md`
+- `02_PLAYBOOKS/_REGISTRY/PLAYBOOK_INDEX.md` (if present)
+- `01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md`
 
 ### Deterministic Checks
 1. **Broken relative links** — target path does not exist.
@@ -120,8 +120,8 @@ tags: [system-admin, references]
 Invoke SAA_REFERENCE_INTEGRITY to validate internal links.
 
 Inputs:
-- Boundary: 01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md
-- Playbook index: 02_PLAYBOOKS/_registry/PLAYBOOK_INDEX.md
+- Boundary: 01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md
+- Playbook index: 02_PLAYBOOKS/_REGISTRY/PLAYBOOK_INDEX.md
 
 Scope: governed markdown only
 Context: weekly system admin sweep

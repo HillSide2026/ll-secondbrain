@@ -4,7 +4,7 @@ title: Agent Typology
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-27
+last_updated: 2026-03-05
 tags: []
 ---
 
@@ -36,7 +36,7 @@ This document reflects the current state of the system and explicitly identifies
 
 ## Agents Index (Derived from AGENTS.md)
 
-Generated on 2026-02-26.
+Generated on 2026-03-05.
 
 ### System Management Agents (SMA)
 
@@ -70,16 +70,29 @@ Generated on 2026-02-26.
 | Proto-Agent Charter - Registry Sync | SAA | Active | `00_SYSTEM/AGENTS/specs/system_admin/SAA_REGISTRY_SYNC.md` |  |
 | Proto-Agent Charter - Repo Linter | SAA | Active | `00_SYSTEM/AGENTS/specs/system_admin/SAA_REPO_LINTER.md` |  |
 
+### Matter Administration Agents (MAA)
+
+Canonical folder: `00_SYSTEM/AGENTS/specs/matter_admin/README.md`
+
+| Agent | Class | Status | Path | Notes |
+| --- | --- | --- | --- | --- |
+| Matter Index Agent | MAA | Active | `00_SYSTEM/AGENTS/specs/matter_admin/MAA_MATTER_INDEX.md` | bound action: `agent_matter_index` |
+| Inbox Router Agent | MAA | Active | `00_SYSTEM/AGENTS/specs/matter_admin/MAA_INBOX_ROUTER.md` | bound actions: `agent_inbox_router`, `agent_inbox_router_scoped` |
+| Document Delta Agent | MAA | Active | `00_SYSTEM/AGENTS/specs/matter_admin/MAA_DOCUMENT_DELTA.md` | bound action: `agent_document_delta` |
+| Matter Digest Compiler Agent | MAA | Active | `00_SYSTEM/AGENTS/specs/matter_admin/MAA_MATTER_DIGEST_COMPILER.md` | bound actions: `agent_digest_compiler`, `agent_matter_digest_scoped` |
+| Deadline Extractor Agent | MAA | Planned | `00_SYSTEM/AGENTS/specs/matter_admin/MAA_DEADLINE_EXTRACTOR.md` | Slice 3 |
+| Comms Drafter Agent | MAA | Planned | `00_SYSTEM/AGENTS/specs/matter_admin/MAA_COMMS_DRAFTER.md` | Slice 4 |
+
 ### Practice Area Master Agents
 
 | Agent | Class | Status | Path | Canonical Path Confirmed (Y/N) | Notes |
 | --- | --- | --- | --- | --- | --- |
 | Contracts Master Agent — Expert Spec (Ontario) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/CONTRACTS/AGENTS/CONTRACTS_MASTER_AGENT.md` | Y | canonical |
-| (duplicate) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/substantive/contracts/agents/CONTRACTS_MASTER_AGENT.md` | N | duplicate path (invalid until resolved) |
+| (duplicate) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/CONTRACTS/WORKFLOWS/agents/CONTRACTS_MASTER_AGENT.md` | N | duplicate path (invalid until resolved) |
 | Corporate Law Master Agent — Expert Spec (Ontario) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/CORPORATE/AGENTS/CORPORATE_LAW_MASTER_AGENT.md` | Y | canonical |
-| (duplicate) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/substantive/corporate/agents/CORPORATE_LAW_MASTER_AGENT.md` | N | duplicate path (invalid until resolved) |
+| (duplicate) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/CORPORATE/WORKFLOWS/agents/CORPORATE_LAW_MASTER_AGENT.md` | N | duplicate path (invalid until resolved) |
 | Payment Services Master Agent — Expert Spec (Canada) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/AGENTS/PAYMENTSERVICES_MASTER_AGENT.md` | Y | canonical |
-| (duplicate) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/substantive/financial_services/payments/agents/PAYMENTSERVICES_MASTER_AGENT.md` | N | duplicate path (invalid until resolved) |
+| (duplicate) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/payments/agents/PAYMENTSERVICES_MASTER_AGENT.md` | N | duplicate path (invalid until resolved) |
 
 ### Other Agent Specs
 
@@ -125,7 +138,7 @@ System Agents perform **infrastructure, operational, and coordination functions*
 
 ### Governing Doctrine
 
-- [DOCTRINE-AGENTS-0001](../../01_DOCTRINE/01_invariants/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md)
+- [DOCTRINE-AGENTS-0001](../../01_DOCTRINE/01_INVARIANTS/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md)
 - [AGENT-CAPABILITY-PROFILE-0001](../../01_DOCTRINE/03_capability_profiles/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md)
 
 ---
@@ -320,9 +333,9 @@ To be implemented. Instantiation pattern TBD — expected to require:
 
 | Agent | Class | Practice Area | Location | Status |
 |-------|-------|---------------|----------|--------|
-| CORPORATE_LAW_MASTER_AGENT | PRACTICE_MASTER | Corporate (Ontario) | 02_PLAYBOOKS/substantive/corporate/agents/ | Active |
-| CONTRACTS_MASTER_AGENT | PRACTICE_MASTER | Contracts | 02_PLAYBOOKS/substantive/contracts/agents/ | Active |
-| PAYMENTSERVICES_MASTER_AGENT | PRACTICE_MASTER | Payments | 02_PLAYBOOKS/substantive/financial_services/payments/agents/ | Active |
+| CORPORATE_LAW_MASTER_AGENT | PRACTICE_MASTER | Corporate (Ontario) | 02_PLAYBOOKS/CORPORATE/WORKFLOWS/agents/ | Active |
+| CONTRACTS_MASTER_AGENT | PRACTICE_MASTER | Contracts | 02_PLAYBOOKS/CONTRACTS/WORKFLOWS/agents/ | Active |
+| PAYMENTSERVICES_MASTER_AGENT | PRACTICE_MASTER | Payments | 02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/payments/agents/ | Active |
 
 ### Type 3 Agents
 

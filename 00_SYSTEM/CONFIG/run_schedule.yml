@@ -1,0 +1,26 @@
+id: 00_system__config__run_schedule
+title: Matter Admin Run Schedule
+owner: ML1
+status: draft
+created_date: 2026-03-04
+last_updated: 2026-03-05
+
+runs:
+  daily:
+    run_id: RUN_MATTER_ADMIN_DAILY
+    enabled: true
+    timezone: America/Toronto
+    schedule_local: '06:30'
+    scope:
+      gmail_query: in:inbox
+      include_labels: true
+      include_sharepoint: true
+      include_deadline_extractor: false
+      include_comms_drafts: false
+  one_matter:
+    run_id: RUN_MATTER_ADMIN_ONE
+    enabled: true
+    requires_matter_number: true
+
+digest:
+  stalled_days: 14

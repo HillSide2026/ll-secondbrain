@@ -1,0 +1,25 @@
+id: 00_system__config__gmail_label_rules
+title: Gmail Label Routing Rules
+owner: ML1
+status: draft
+created_date: 2026-03-04
+last_updated: 2026-03-04
+
+routing_order:
+  - label_path_contains_matter_number
+  - subject_or_snippet_contains_matter_number
+
+label_rules:
+  canonical_prefixes:
+    - LL/
+  matter_number_regex: '\b\d{2}-\d{3,4}-\d{5}\b'
+
+fallback_rules:
+  enabled: true
+  min_confidence: high
+  require_single_match: true
+  mark_for_ml1_review: true
+
+unmapped_policy:
+  output_file: 06_DASHBOARDS/INBOX_UNMAPPED.md
+  include_reasons: true

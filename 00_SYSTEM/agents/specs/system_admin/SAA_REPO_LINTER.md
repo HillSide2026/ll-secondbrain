@@ -15,7 +15,7 @@ Detect structural, schema, and naming violations.
 
 ## Scope
 This agent applies only to ML2 governed artifacts as defined in the
-ML2 Ontology Boundary invariant: `01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md`
+ML2 Ontology Boundary invariant: `01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md`
 
 In-scope artifacts include:
 
@@ -32,7 +32,7 @@ Out-of-scope artifacts include:
 - Secrets and credentials
 - CI or tooling config
 
-Boundary Reference: INV-ML2-BOUNDARY (01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md)
+Boundary Reference: INV-ML2-BOUNDARY (01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md)
 
 ## Authority
 None. Advisory/draft output only.
@@ -63,7 +63,7 @@ Report produced with violations categorized, safe fixes listed, and ML1 question
 ### Required Inputs
 - `00_SYSTEM/architecture/FOLDER_MAP.md`
 - `00_SYSTEM/schemas/SCHEMAS.md`
-- `01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md`
+- `01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md`
 - Repository filesystem tree
 
 ### Deterministic Checks
@@ -124,7 +124,7 @@ Invoke SAA_REPO_LINTER to lint governed repo structure.
 Inputs:
 - Folder map: 00_SYSTEM/architecture/FOLDER_MAP.md
 - Schemas: 00_SYSTEM/schemas/SCHEMAS.md
-- Boundary: 01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md
+- Boundary: 01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md
 
 Scope: governed roots only
 Context: weekly system admin sweep

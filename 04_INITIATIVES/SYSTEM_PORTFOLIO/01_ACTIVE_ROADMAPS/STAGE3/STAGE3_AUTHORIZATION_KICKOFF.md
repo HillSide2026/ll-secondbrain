@@ -519,4 +519,4 @@ Stage 3 is complete when:
 
 - Stage 2.6 Closure: `STAGE2/STAGE2.6/STAGE2.6_CLOSURE_RECOMMENDATION.md`
 - Classifier (v0.3): `00_SYSTEM/scripts/inbox_classifier.py`
-- Calibration Log: `02_PLAYBOOKS/_assets/execution/log_formats/calibration_log/README.md`
+- Calibration Log: `02_PLAYBOOKS/_ASSETS/execution/log_formats/calibration_log/README.md`

@@ -31,3 +31,4 @@ sharepoint_sources.yaml
 # Runtime artifacts
 state/
 06_RUNS/ops/gmail_fetch_latest.json
+cache/*.json

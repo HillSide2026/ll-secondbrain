@@ -289,8 +289,8 @@ All outputs must follow the Standard Output Format and be stored in approved loc
 ## References
 
 - Stage 2 Authorization: `01_ACTIVE_ROADMAPS/STAGE2/STAGE2_AUTHORIZATION_KICKOFF.md`
-- Write-Back Policy: `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`
-- ML1 Approval Boundaries: `01_DOCTRINE/02_policies/ML1_APPROVAL_BOUNDARIES.md`
+- Write-Back Policy: `01_DOCTRINE/02_POLICIES/WRITE_BACK_POLICY.md`
+- ML1 Approval Boundaries: `01_DOCTRINE/02_POLICIES/ML1_APPROVAL_BOUNDARIES.md`
 - Credential Inventory: `00_SYSTEM/security/CREDENTIAL_INVENTORY.md`
 - Agent Deployment Guide: `00_SYSTEM/agents/deployment/AGENT_DEPLOYMENT_GUIDE.md`
 - **Multi-Source Inbox Architecture: `09_INBOX/README.md`**
