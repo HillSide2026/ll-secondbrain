@@ -2,7 +2,7 @@
 id: llp-012_funnel2_management__readme_md
 title: LLP-012_FUNNEL2_MANAGEMENT — Project (Placeholder)
 owner: ML1
-status: draft
+status: on track
 created_date: 2026-02-26
 last_updated: 2026-02-26
 tags: []

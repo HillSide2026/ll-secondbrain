@@ -2,7 +2,7 @@
 id: 04_initiatives__ll_portfolio__03_firm_operations__portfolio_management__readme_md
 title: PORTFOLIO_MANAGEMENT — Portfolio Flow Coordination
 owner: ML1
-status: draft
+status: on track
 created_date: 2026-02-26
 last_updated: 2026-02-26
 tags: []

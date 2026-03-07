@@ -2,7 +2,7 @@
 id: llp-018_financial_risk__readme_md
 title: LLP-018_FINANCIAL_RISK — Project (Placeholder)
 owner: ML1
-status: draft
+status: on track
 created_date: 2026-02-26
 last_updated: 2026-02-26
 tags: []

@@ -20,6 +20,7 @@ This directory contains all strategic initiatives and projects, organized by por
 
 ```
 04_INITIATIVES/
+├── HillSide_PORTFOLIO/     # HillSide portfolio initiatives
 ├── SYSTEM_PORTFOLIO/       # ML2 system development
 │   ├── 00_DRAFT_ROADMAPS/
 │   ├── 01_ACTIVE_ROADMAPS/
@@ -62,6 +63,14 @@ This directory contains all strategic initiatives and projects, organized by por
 **Governance:** Follows controlled registry model with explicit ML2 function authorization.
 
 See: `LL_PORTFOLIO/README.md` for detailed governance rules.
+
+---
+
+## HillSide_PORTFOLIO
+
+**Purpose:** Initiatives whose primary beneficiary is HillSide and related entities.
+
+**Beneficiary:** HillSide portfolio operations and governance.
 
 ---
 

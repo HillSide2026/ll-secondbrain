@@ -40,7 +40,8 @@ LL_PORTFOLIO/
 ├── 05_MATTER_DOCKETING/         # Delivery overlay for matters
 ├── 06_FINANCIAL_PORTFOLIO/      # Models & constraints (not decisions)
 ├── 07_STRATEGIC_INITIATIVES/    # Change and evolution
-└── 08_MARKETING/                # Pre-matter pipeline (leads → onboarding)
+├── 08_MARKETING/                # Pre-matter pipeline (leads → onboarding)
+└── 09_SERVICE_MANAGEMENT/       # Service tier management across matters
 ```
 
 **This structure is LOCKED unless explicitly changed by ML1.**
@@ -174,6 +175,18 @@ You must not infer, reorder, merge, or repurpose these folders.
 
 ---
 
+### 09_SERVICE_MANAGEMENT
+
+**Purpose:** Service-tier control map used to classify and monitor service posture.
+
+| ALLOWED | PROHIBITED |
+|---------|------------|
+| Tier classification and service status tracking | Replacing matter/source-of-truth records |
+| Cross-matter service visibility | Autonomously changing legal strategy |
+| Escalation signaling for ML1 review | Publishing unapproved client-facing outputs |
+
+---
+
 ## README Requirement (Mandatory)
 
 Each folder under LL_PORTFOLIO must contain a README.md stating:
@@ -205,3 +218,4 @@ If authorization is unclear:
 - 04_INITIATIVES Overview: `../README.md`
 - Folder Map: `00_SYSTEM/architecture/FOLDER_MAP.md`
 - Authority Hierarchy: `01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0002-authority-hierarchy-ml1-ml2-ll.md`
+- LL Project Digest (27 projects): `LL_PROJECT_DIGEST.md`
