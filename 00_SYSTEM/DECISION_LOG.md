@@ -30,21 +30,21 @@ This log records all system-level decisions affecting the Second Brain.
 
 **Decision:** Approved foundational doctrine defining what constitutes authoritative doctrine  
 **Approved by:** ML1  
-**Artifacts impacted:** /01_DOCTRINE/DOCTRINE-2026-001-what-qualifies-as-doctrine.md  
+**Artifacts impacted:** /01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0001-what-qualifies-as-doctrine.md  
 **Notes:** Establishes authority criteria and prevents implicit or automated doctrine creation
 
 ## 2026-01-04 — Approve Doctrine 2026-002 (Authority Hierarchy)
 
 **Decision:** Approved doctrine defining authority hierarchy between ML1, ML2, and LL  
 **Approved by:** ML1  
-**Artifacts impacted:** /01_DOCTRINE/DOCTRINE-2026-002-authority-hierarchy-ml1-ml2-ll.md  
+**Artifacts impacted:** /01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0002-authority-hierarchy-ml1-ml2-ll.md  
 **Notes:** Establishes non-delegable human authority and execution-only role of LL
 
 ## 2026-01-04 — Approve Doctrine 2026-003 (Promotion Rules)
 
 **Decision:** Approved doctrine defining promotion lifecycle from Inbox to Research to Doctrine  
 **Approved by:** ML1  
-**Artifacts impacted:** /01_DOCTRINE/DOCTRINE-2026-003-promotion-rules.md  
+**Artifacts impacted:** /01_DOCTRINE/04_PROCEDURAL/DOCTRINE-OPERATIONS-0002-promotion-rules.md  
 **Notes:** Establishes controlled pathway for authority creation and prevents implicit promotion
 
 ## 2026-01-25 — Close Stage 1 (System Discovery & Readiness Baseline)
@@ -58,14 +58,14 @@ This log records all system-level decisions affecting the Second Brain.
 
 **Decision:** Approved doctrine defining canonical constraints for agent operation in the Second Brain system  
 **Approved by:** ML1  
-**Artifacts impacted:** /01_DOCTRINE/02_POLICIES/DOCTRINE-2026-007-canonical-agent-doctrine.md  
+**Artifacts impacted:** /01_DOCTRINE/02_POLICIES/DOCTRINE-AGENTS-0002-canonical-agent-doctrine.md  
 **Notes:** Establishes binding constraints on agent authority, scope, attribution, and non-simulation requirements. Renumbered from DOCTRINE-2026-004 on 2026-02-19 to resolve ID collision.
 
 ## 2026-02-19 — Approve Doctrine 2026-008 (Run Outcome Rules)
 
 **Decision:** Approved procedural doctrine requiring a single run outcome (Promote / Park / Archive) with explicit recording  
 **Approved by:** ML1  
-**Artifacts impacted:** `01_DOCTRINE/04_PROCEDURAL/DOCTRINE-2026-008-run-outcome-rules.md`  
+**Artifacts impacted:** `01_DOCTRINE/04_PROCEDURAL/DOCTRINE-OPERATIONS-0003-run-outcome-rules.md`  
 **Notes:** Establishes mandatory outcome recording and ties Park outcomes to the distill queue
 
 ## 2026-02-19 — Approve Policy POL-012 (Canon-Referenced Automation Commands)

@@ -16,7 +16,7 @@ current repo state and report drift.
 
 ## Scope
 This agent applies only to ML2 governed artifacts as defined in the
-ML2 Ontology Boundary invariant: `01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md`
+ML2 Ontology Boundary invariant: `01_DOCTRINE/01_INVARIANTS/INV-0001-ml2-boundary.md`
 
 In-scope artifacts include:
 
@@ -35,7 +35,7 @@ Out-of-scope artifacts include:
 - CI or tooling config
 - Drafts outside governed layers
 
-Boundary Reference: INV-ML2-BOUNDARY (01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md)
+Boundary Reference: INV-0001-ml2-boundary (01_DOCTRINE/01_INVARIANTS/INV-0001-ml2-boundary.md)
 
 ## Authority
 None. Advisory/draft output only.
@@ -70,7 +70,7 @@ actionable update notes.
 
 ### Required Inputs
 - `00_SYSTEM/AGENTS/specs/AGENT_TYPOLOGY.md`
-- `01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md`
+- `01_DOCTRINE/01_INVARIANTS/INV-0001-ml2-boundary.md`
 - Agent directories:
   - `00_SYSTEM/AGENTS/`
   - `00_SYSTEM/AGENTS/specs/system_admin/`
@@ -139,7 +139,7 @@ Invoke SAA_AGENT_INDEX_RECONCILER to validate agent index.
 
 Inputs:
 - Agent typology: 00_SYSTEM/AGENTS/specs/AGENT_TYPOLOGY.md
-- Boundary: 01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md
+- Boundary: 01_DOCTRINE/01_INVARIANTS/INV-0001-ml2-boundary.md
 
 Scope: governed agent specs only
 Context: weekly system admin sweep

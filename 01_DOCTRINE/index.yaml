@@ -17,67 +17,67 @@ constitution:
 principles:
 - id: 01_doctrine__01_principles__doctrine-2026-006-decision-principles_md
   title: DOCTRINE 2026 006 decision principles
-  path: 01_DOCTRINE/01_PRINCIPLES/DOCTRINE-2026-006-decision-principles.md
+  path: 01_DOCTRINE/01_PRINCIPLES/DOCTRINE-PRINCIPLES-0001-decision-principles.md
   version: '1.0'
   status: draft
   history: []
 - id: PRN-001
   title: Human Primacy
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-001_Human_Primacy.md
+  path: 01_DOCTRINE/01_PRINCIPLES/PRN-001-human-primacy.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-002
   title: Auditability
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-002_Auditability.md
+  path: 01_DOCTRINE/01_PRINCIPLES/PRN-002-auditability.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-003
   title: Non-Autonomy
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-003_Non_Autonomy.md
+  path: 01_DOCTRINE/01_PRINCIPLES/PRN-003-non-autonomy.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-004
   title: Explicit Scope
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-004_Explicit_Scope.md
+  path: 01_DOCTRINE/01_PRINCIPLES/PRN-004-explicit-scope.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-005
   title: Drift Intolerance
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-005_Drift_Intolerance.md
+  path: 01_DOCTRINE/01_PRINCIPLES/PRN-005-drift-intolerance.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-006
   title: Interpretive Integrity
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-006_Interpretive_Integrity.md
+  path: 01_DOCTRINE/01_PRINCIPLES/PRN-006-interpretive-integrity.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-007
   title: Traceable Reasoning
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-007_Traceable_Reasoning.md
+  path: 01_DOCTRINE/01_PRINCIPLES/PRN-007-traceable-reasoning.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-008
   title: Structural Coherence
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-008_Structural_Coherence.md
+  path: 01_DOCTRINE/01_PRINCIPLES/PRN-008-structural-coherence.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-009
   title: Repeatable Excellence
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-009_Repeatable_Excellence.md
+  path: 01_DOCTRINE/01_PRINCIPLES/PRN-009-repeatable-excellence.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-010
   title: Steal Man
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-010_Steal_Man.md
+  path: 01_DOCTRINE/01_PRINCIPLES/PRN-010-steal-man.md
   version: '1.0'
   status: active
   history: []
@@ -90,7 +90,7 @@ principles:
 policies:
 - id: 01_doctrine__02_policies__doctrine-2026-005-no_fictional_execution_constructs_md
   title: No Fictional Execution Constructs
-  path: 01_DOCTRINE/02_POLICIES/DOCTRINE-2026-005-NO_FICTIONAL_EXECUTION_CONSTRUCTS.md
+  path: 01_DOCTRINE/02_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md
   version: '1.0'
   status: draft
   history: []
@@ -180,7 +180,7 @@ policies:
   history: []
 - id: 01_doctrine__02_policies__doctrine-2026-007-canonical-agent-doctrine_md
   title: Canonical Agent Doctrine
-  path: 01_DOCTRINE/02_POLICIES/DOCTRINE-2026-007-canonical-agent-doctrine.md
+  path: 01_DOCTRINE/02_POLICIES/DOCTRINE-AGENTS-0002-canonical-agent-doctrine.md
   version: '1.0'
   status: approved
   history: []
@@ -297,67 +297,67 @@ protocols:
 doctrine:
 - id: DOCTRINE-2026-001
   title: What Qualifies as Doctrine
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-2026-001-what-qualifies-as-doctrine.md
+  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0001-what-qualifies-as-doctrine.md
   version: '1.0'
   status: approved
   history: []
 - id: DOCTRINE-2026-002
   title: Authority Hierarchy (ML1 / ML2 / LL)
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-2026-002-authority-hierarchy-ml1-ml2-ll.md
+  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0002-authority-hierarchy-ml1-ml2-ll.md
   version: '1.0'
   status: approved
   history: []
 - id: DOCTRINE-2026-003
   title: LL-SB Architecture Doctrine
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-2026-003-LL-SB-ARCHITECTURE.md
+  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0003-ll-sb-architecture.md
   version: '1.0'
   status: draft
   history: []
 - id: DOCTRINE-2026-008
   title: Integration Doctrine (External Platform Governance)
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-2026-008-INTEGRATION-DOCTRINE.md
+  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-INTEGRATIONS-0001-integration-doctrine.md
   version: '1.0'
   status: draft
   history: []
 - id: DOCTRINE-RISK_MODEL-0001
   title: Risk Model Doctrine (Economic, Execution, Relationship)
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK_MODEL-0001.md
+  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK-0001-risk-model.md
   version: '1.0'
   status: draft
   history: []
 - id: DOCTRINE-MATTERS-0001
   title: Matter Stages Doctrine
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-MATTERS-0001-MATTER_STAGES.md
+  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-MATTERS-0001-matter-stages.md
   version: '1.0'
   status: draft
   history: []
 - id: DOCTRINE-MATTERS-0002
   title: Matter Solutions Doctrine
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-MATTERS-0002-MATTER_SOLUTIONS.md
+  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-MATTERS-0002-matter-solutions.md
   version: '1.0'
   status: draft
   history: []
 - id: DOCTRINE-MATTERS-0003
   title: Matter Summary Doctrine
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-MATTERS-0003-MATTER_SUMMARY.md
+  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-MATTERS-0003-matter-summary.md
   version: '1.0'
   status: draft
   history: []
 - id: DOCTRINE-OPS-0001
   title: Office Day Model Doctrine
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-OPS-0001-OFFICE_DAY_MODEL.md
+  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-OPERATIONS-0001-office-day-model.md
   version: '1.0'
   status: draft
   history: []
 - id: 01_doctrine__01_invariants__doctrine-2026-004-stage_phase_numbering_md
   title: Canonical Stage & Phase Numbering Doctrine
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-2026-004-STAGE_PHASE_NUMBERING.md
+  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0004-stage-phase-numbering.md
   version: '1.0'
   status: draft
   history: []
 - id: 01_doctrine__01_invariants__doctrine-agents-0001-second-brain_agent_authority_md
   title: 'DOCTRINE-AGENTS-0001: Second Brain Agent Authority'
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md
+  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-AGENTS-0001-second-brain-agent-authority.md
   version: '1.0'
   status: draft
   history: []
@@ -387,31 +387,31 @@ doctrine:
   history: []
 - id: 01_doctrine__03_capability_profiles__agent-capability-profile-0001-draft_write_access_md
   title: 'AGENT-CAPABILITY-PROFILE-0001: Draft Write Access'
-  path: 01_DOCTRINE/03_capability_profiles/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md
+  path: 01_DOCTRINE/03_CAPABILITY_PROFILES/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md
   version: '1.0'
   status: draft
   history: []
 - id: 01_doctrine__03_capability_profiles__readme_md
   title: Agent Capability Profiles
-  path: 01_DOCTRINE/03_capability_profiles/README.md
+  path: 01_DOCTRINE/03_CAPABILITY_PROFILES/README.md
   version: '1.0'
   status: draft
   history: []
 - id: 01_doctrine__03_capability_profiles___template_md
   title: 'AGENT-CAPABILITY-PROFILE-XXXX: [Profile Name]'
-  path: 01_DOCTRINE/03_capability_profiles/_TEMPLATE.md
+  path: 01_DOCTRINE/03_CAPABILITY_PROFILES/_TEMPLATE.md
   version: '1.0'
   status: draft
   history: []
 - id: DOCTRINE-2026-003
   title: "Promotion Rules (Inbox \u2192 Research \u2192 Doctrine)"
-  path: 01_DOCTRINE/04_PROCEDURAL/DOCTRINE-2026-003-promotion-rules.md
+  path: 01_DOCTRINE/04_PROCEDURAL/DOCTRINE-OPERATIONS-0002-promotion-rules.md
   version: '1.0'
   status: approved
   history: []
 - id: DOCTRINE-2026-008
   title: Run Outcome Rules (Promote / Park / Archive)
-  path: 01_DOCTRINE/04_PROCEDURAL/DOCTRINE-2026-008-run-outcome-rules.md
+  path: 01_DOCTRINE/04_PROCEDURAL/DOCTRINE-OPERATIONS-0003-run-outcome-rules.md
   version: '1.0'
   status: approved
   history: []
@@ -441,7 +441,7 @@ doctrine:
   history: []
 - id: inv-ml2-boundary
   title: ML2 Ontology Boundary
-  path: 01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md
+  path: 01_DOCTRINE/01_INVARIANTS/INV-0001-ml2-boundary.md
   version: '1.0'
   status: draft
   history: []

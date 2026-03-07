@@ -204,4 +204,4 @@ If authorization is unclear:
 
 - 04_INITIATIVES Overview: `../README.md`
 - Folder Map: `00_SYSTEM/architecture/FOLDER_MAP.md`
-- Authority Hierarchy: `01_DOCTRINE/DOCTRINE-2026-002-authority-hierarchy-ml1-ml2-ll.md`
+- Authority Hierarchy: `01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0002-authority-hierarchy-ml1-ml2-ll.md`

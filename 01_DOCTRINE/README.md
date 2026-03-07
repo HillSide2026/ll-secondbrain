@@ -13,33 +13,33 @@ tags: []
 
 Doctrine is the system's authoritative guidance. It is organized by type and aligned to the quality hierarchy.
 
-## 01_invariants (Level 1)
+## 01_INVARIANTS (Level 1)
 Structural properties that must remain true for system coherence and validity.
 If violated, system integrity is broken and formal amendment is required.
 
-## 02_interpretive
+## 02_INTERPRETIVE
 Clarifications and judgment guidance when binding doctrine does not uniquely determine an outcome.
 Interpretive doctrine does not override binding doctrine.
 
-## 03_capability_profiles
+## 03_CAPABILITY_PROFILES
 Opt-in profiles that grant scoped, revocable relaxations to default agent constraints.
 
-## 04_procedural
+## 04_PROCEDURAL
 Governance and change-control doctrine: how doctrine and system rules are reviewed, approved, versioned, deprecated, and migrated.
 
-## 01_principles (Level 2)
+## 01_PRINCIPLES (Level 2)
 Interpretive values that guide policy formation.
 
-## 02_policies (Level 3)
+## 02_POLICIES (Level 3)
 Binding constraints derived from principles.
 
-## 03_protocols (Level 4)
+## 03_PROTOCOLS (Level 4)
 Operational enforcement rules that implement policies as conditional logic.
 
-## rules
+## RULES
 Atomic, executable rule fragments used by protocols (reserved for Stage 5).
 
-## tests
+## TESTS
 Fixtures that validate rules and protocol behavior.
 
 ## Classification rule

@@ -27,7 +27,7 @@ It also records the current layered architecture and execution flow used by the 
 This document is architectural and interpretive.  
 Binding constraints on ML2 are defined in:
 
-`01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md`
+`01_DOCTRINE/01_INVARIANTS/INV-0001-ml2-boundary.md`
 
 ---
 
@@ -228,7 +228,7 @@ Run outcome recording (operational):
 - `06_RUNS/99_distill_queue/README.md`
 
 Binding promotion rules remain in:
-`01_DOCTRINE/04_PROCEDURAL/DOCTRINE-2026-003-promotion-rules.md`
+`01_DOCTRINE/04_PROCEDURAL/DOCTRINE-OPERATIONS-0002-promotion-rules.md`
 
 ---
 
@@ -296,4 +296,4 @@ Changes to this document require explicit ML1 review.
 
 Changes to ML2 boundaries must reference:
 
-`INV-ML2-BOUNDARY.md`
+`INV-0001-ml2-boundary.md`

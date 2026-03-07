@@ -277,5 +277,5 @@ This agent's scope ends at demand letter.
 ## 13. References
 
 - Generic Spec: [PRACTICE_AREA_MASTER_AGENT_SPEC](../../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
-- Agent Doctrine: [DOCTRINE-AGENTS-0001](../../../../01_DOCTRINE/01_INVARIANTS/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md)
+- Agent Doctrine: [DOCTRINE-AGENTS-0001](../../../../01_DOCTRINE/01_INVARIANTS/DOCTRINE-AGENTS-0001-second-brain-agent-authority.md)
 - Solutions: [solutions/](../solutions/)

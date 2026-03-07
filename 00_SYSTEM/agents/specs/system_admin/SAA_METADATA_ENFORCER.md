@@ -15,7 +15,7 @@ Ensure required frontmatter fields exist across governed artifact types.
 
 ## Scope
 This agent applies only to ML2 governed artifacts as defined in the
-ML2 Ontology Boundary invariant: `01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md`
+ML2 Ontology Boundary invariant: `01_DOCTRINE/01_INVARIANTS/INV-0001-ml2-boundary.md`
 
 In-scope artifacts include:
 
@@ -32,7 +32,7 @@ Out-of-scope artifacts include:
 - Secrets and credentials
 - CI or tooling config
 
-Boundary Reference: INV-ML2-BOUNDARY (01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md)
+Boundary Reference: INV-0001-ml2-boundary (01_DOCTRINE/01_INVARIANTS/INV-0001-ml2-boundary.md)
 
 ## Authority
 None. Advisory/draft output only.
@@ -62,7 +62,7 @@ Report produced listing missing or empty required fields (id, version, status, a
 ### Required Inputs
 - `00_SYSTEM/schemas/SCHEMAS.md`
 - `00_SYSTEM/schemas/SCHEMAS_INBOX_TRIAGE.md` (if applicable)
-- `01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md`
+- `01_DOCTRINE/01_INVARIANTS/INV-0001-ml2-boundary.md`
 - Governed markdown files under `01_DOCTRINE/`, `02_PLAYBOOKS/`, `00_SYSTEM/`, `04_INITIATIVES/`
 
 ### Deterministic Checks
@@ -121,7 +121,7 @@ Invoke SAA_METADATA_ENFORCER to audit frontmatter compliance.
 
 Inputs:
 - Schemas: 00_SYSTEM/schemas/SCHEMAS.md
-- Boundary: 01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md
+- Boundary: 01_DOCTRINE/01_INVARIANTS/INV-0001-ml2-boundary.md
 
 Scope: governed markdown only
 Context: weekly system admin sweep

@@ -3,14 +3,14 @@ Draft a single action proposal for ML1 review using the approved execution schem
 
 # Canonical Inputs (MUST USE)
 - 02_PLAYBOOKS/EXECUTION/ACTION_PROPOSAL_SCHEMA.md (current)
-- 01_DOCTRINE/02_policies/POL-001_Output_Labeling_Requirement.md (POL-001)
-- 01_DOCTRINE/02_policies/POL-002_Provenance_Requirement.md (POL-002)
-- 01_DOCTRINE/02_policies/POL-003_Novel_Policy_Prohibition.md (POL-003)
-- 01_DOCTRINE/02_policies/POL-004_External_Output_Approval_Requirement.md (POL-004)
-- 01_DOCTRINE/02_policies/POL-005_Low_Confidence_Escalation.md (POL-005)
-- 01_DOCTRINE/02_policies/POL-010_Maintainability_Versioning_Requirement.md (POL-010)
-- 01_DOCTRINE/02_policies/POL-011_Discoverability_Requirement.md (POL-011)
-- 01_DOCTRINE/02_policies/DOCTRINE-2026-005-NO_FICTIONAL_EXECUTION_CONSTRUCTS.md (DOCTRINE-2026-005)
+- 01_DOCTRINE/02_POLICIES/POL-001_Output_Labeling_Requirement.md (POL-001)
+- 01_DOCTRINE/02_POLICIES/POL-002_Provenance_Requirement.md (POL-002)
+- 01_DOCTRINE/02_POLICIES/POL-003_Novel_Policy_Prohibition.md (POL-003)
+- 01_DOCTRINE/02_POLICIES/POL-004_External_Output_Approval_Requirement.md (POL-004)
+- 01_DOCTRINE/02_POLICIES/POL-005_Low_Confidence_Escalation.md (POL-005)
+- 01_DOCTRINE/02_POLICIES/POL-010_Maintainability_Versioning_Requirement.md (POL-010)
+- 01_DOCTRINE/02_POLICIES/POL-011_Discoverability_Requirement.md (POL-011)
+- 01_DOCTRINE/02_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md (DOCTRINE-2026-005)
 
 # Steps
 1. Create or confirm the run folder `06_RUNS/<run_id>/` and record the run id.

@@ -92,7 +92,7 @@ Reference template:
 
 ## Relationship to Other Doctrine
 
-- Promotion rules are defined in `01_DOCTRINE/04_PROCEDURAL/DOCTRINE-2026-003-promotion-rules.md`.
+- Promotion rules are defined in `01_DOCTRINE/04_PROCEDURAL/DOCTRINE-OPERATIONS-0002-promotion-rules.md`.
 - Discoverability and versioning requirements apply when promotion occurs (POL-011, POL-010).
 
 ---

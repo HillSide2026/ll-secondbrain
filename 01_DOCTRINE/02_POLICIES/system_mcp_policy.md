@@ -37,7 +37,7 @@ This policy is the source-of-truth. Implementation (00_SYSTEM) must conform to t
 
 ### Orchestrator Responsibilities
 The Orchestrator MUST:
-- Validate requested actions against capability profiles in `01_DOCTRINE/03_capability_profiles`
+- Validate requested actions against capability profiles in `01_DOCTRINE/03_CAPABILITY_PROFILES`
 - Enforce boundary rules (allowlists, time windows)
 - Enforce approval modes (Auto / Propose / Manual)
 - Emit auditable run artifacts for every run (success/failure/blocked)
@@ -57,7 +57,7 @@ The Orchestrator MUST NOT:
    - No calendar edits/invites
    - No external task creation
    - Any attempt must be BLOCKED and logged
-   - See: `01_DOCTRINE/01_INVARIANTS/no_autonomous_publish.md`
+   - See: `01_DOCTRINE/01_INVARIANTS/INV-0002-no-autonomous-publish.md`
 
 2) **Least Privilege**
    - Gmail: `gmail.readonly` + `gmail.compose` only
@@ -155,7 +155,7 @@ All runs MUST be written into:
 ---
 
 ## References
-- Capability profiles: `01_DOCTRINE/03_capability_profiles/*`
+- Capability profiles: `01_DOCTRINE/03_CAPABILITY_PROFILES/*`
 - Runbooks: `02_PLAYBOOKS/LL_OPERATIONS/system_runbooks/*`
 - Schemas: `00_SYSTEM/schemas/*`
 - Security allowlists: `00_SYSTEM/security/*`
