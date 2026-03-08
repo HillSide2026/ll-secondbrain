@@ -688,7 +688,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_invariants/DOCTRINE-2026-001-what-qualifies-as-doctrine.md",
+    "path": "01_DOCTRINE/01_INVARIANTS/DOCTRINE-2026-001-what-qualifies-as-doctrine.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -696,7 +696,7 @@
     "last_modified": "2026-02-18T03:34:18+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_invariants/DOCTRINE-2026-002-authority-hierarchy-ml1-ml2-ll.md",
+    "path": "01_DOCTRINE/01_INVARIANTS/DOCTRINE-2026-002-authority-hierarchy-ml1-ml2-ll.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -704,7 +704,7 @@
     "last_modified": "2026-02-18T03:34:26+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_invariants/DOCTRINE-2026-004-STAGE_PHASE_NUMBERING.md",
+    "path": "01_DOCTRINE/01_INVARIANTS/DOCTRINE-2026-004-STAGE_PHASE_NUMBERING.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -712,7 +712,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_invariants/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md",
+    "path": "01_DOCTRINE/01_INVARIANTS/DOCTRINE-AGENTS-0001-SECOND-BRAIN_AGENT_AUTHORITY.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -720,7 +720,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_invariants/DOCTRINE-REPO-0001-no-toplevel-directories.md",
+    "path": "01_DOCTRINE/01_INVARIANTS/DOCTRINE-REPO-0001-no-toplevel-directories.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -728,7 +728,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_invariants/INV-ML2-BOUNDARY.md",
+    "path": "01_DOCTRINE/01_INVARIANTS/INV-ML2-BOUNDARY.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -736,7 +736,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_invariants/README.md",
+    "path": "01_DOCTRINE/01_INVARIANTS/README.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -744,7 +744,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_principles/DOCTRINE-2026-006-decision-principles.md",
+    "path": "01_DOCTRINE/02_PRINCIPLES/DOCTRINE-2026-006-decision-principles.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -752,7 +752,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_principles/PRN-001_Human_Primacy.md",
+    "path": "01_DOCTRINE/02_PRINCIPLES/PRN-001_Human_Primacy.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -760,7 +760,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_principles/PRN-002_Auditability.md",
+    "path": "01_DOCTRINE/02_PRINCIPLES/PRN-002_Auditability.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -768,7 +768,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_principles/PRN-003_Non_Autonomy.md",
+    "path": "01_DOCTRINE/02_PRINCIPLES/PRN-003_Non_Autonomy.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -776,7 +776,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_principles/PRN-004_Explicit_Scope.md",
+    "path": "01_DOCTRINE/02_PRINCIPLES/PRN-004_Explicit_Scope.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -784,7 +784,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_principles/PRN-005_Drift_Intolerance.md",
+    "path": "01_DOCTRINE/02_PRINCIPLES/PRN-005_Drift_Intolerance.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -792,7 +792,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_principles/PRN-006_Interpretive_Integrity.md",
+    "path": "01_DOCTRINE/02_PRINCIPLES/PRN-006_Interpretive_Integrity.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -800,7 +800,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_principles/PRN-007_Traceable_Reasoning.md",
+    "path": "01_DOCTRINE/02_PRINCIPLES/PRN-007_Traceable_Reasoning.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -808,7 +808,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_principles/PRN-008_Structural_Coherence.md",
+    "path": "01_DOCTRINE/02_PRINCIPLES/PRN-008_Structural_Coherence.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -816,7 +816,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_principles/PRN-009_Repeatable_Excellence.md",
+    "path": "01_DOCTRINE/02_PRINCIPLES/PRN-009_Repeatable_Excellence.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -824,7 +824,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_principles/PRN-010_Steal_Man.md",
+    "path": "01_DOCTRINE/02_PRINCIPLES/PRN-010_Steal_Man.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -832,7 +832,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/01_principles/README.md",
+    "path": "01_DOCTRINE/02_PRINCIPLES/README.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -840,7 +840,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_INTERPRETIVE/.gitkeep",
+    "path": "01_DOCTRINE/03_INTERPRETIVE/.gitkeep",
     "type_guess": "file",
     "category_guess": "doctrine",
     "exists": true,
@@ -848,7 +848,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_INTERPRETIVE/README.md",
+    "path": "01_DOCTRINE/01_INVARIANTS/README.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -856,7 +856,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_INTERPRETIVE/SECOND_BRAIN_MODEL.md",
+    "path": "01_DOCTRINE/01_INVARIANTS/SECOND_BRAIN_MODEL.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -864,7 +864,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_INTERPRETIVE/SYSTEM_IDENTITY.md",
+    "path": "01_DOCTRINE/01_INVARIANTS/SYSTEM_IDENTITY.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -872,7 +872,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_policies/DOCTRINE-2026-005-NO_FICTIONAL_EXECUTION_CONSTRUCTS.md",
+    "path": "01_DOCTRINE/03_POLICIES/DOCTRINE-2026-005-NO_FICTIONAL_EXECUTION_CONSTRUCTS.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -880,7 +880,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_policies/ML1_APPROVAL_BOUNDARIES.md",
+    "path": "01_DOCTRINE/03_POLICIES/ML1_APPROVAL_BOUNDARIES.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -888,7 +888,7 @@
     "last_modified": "2026-02-18T03:54:35+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_policies/POL-001_Output_Labeling_Requirement.md",
+    "path": "01_DOCTRINE/03_POLICIES/POL-001_Output_Labeling_Requirement.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -896,7 +896,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_policies/POL-002_Provenance_Requirement.md",
+    "path": "01_DOCTRINE/03_POLICIES/POL-002_Provenance_Requirement.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -904,7 +904,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_policies/POL-003_Novel_Policy_Prohibition.md",
+    "path": "01_DOCTRINE/03_POLICIES/POL-003_Novel_Policy_Prohibition.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -912,7 +912,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_policies/POL-004_External_Output_Approval_Requirement.md",
+    "path": "01_DOCTRINE/03_POLICIES/POL-004_External_Output_Approval_Requirement.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -920,7 +920,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_policies/POL-005_Low_Confidence_Escalation.md",
+    "path": "01_DOCTRINE/03_POLICIES/POL-005_Low_Confidence_Escalation.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -928,7 +928,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_policies/POL-006_Clarity_Single_Job_Requirement.md",
+    "path": "01_DOCTRINE/03_POLICIES/POL-006_Clarity_Single_Job_Requirement.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -936,7 +936,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_policies/POL-007_Consistency_Supersession_Requirement.md",
+    "path": "01_DOCTRINE/03_POLICIES/POL-007_Consistency_Supersession_Requirement.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -944,7 +944,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_policies/POL-008_Traceable_Reasoning_Requirement.md",
+    "path": "01_DOCTRINE/03_POLICIES/POL-008_Traceable_Reasoning_Requirement.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -952,7 +952,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_policies/POL-009_Testability_Requirement.md",
+    "path": "01_DOCTRINE/03_POLICIES/POL-009_Testability_Requirement.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -960,7 +960,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_policies/POL-010_Maintainability_Versioning_Requirement.md",
+    "path": "01_DOCTRINE/03_POLICIES/POL-010_Maintainability_Versioning_Requirement.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -968,7 +968,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_policies/POL-011_Discoverability_Requirement.md",
+    "path": "01_DOCTRINE/03_POLICIES/POL-011_Discoverability_Requirement.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -976,7 +976,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_policies/README.md",
+    "path": "01_DOCTRINE/03_POLICIES/README.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -984,7 +984,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md",
+    "path": "01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -992,7 +992,7 @@
     "last_modified": "2026-02-18T03:54:35+00:00"
   },
   {
-    "path": "01_DOCTRINE/03_CAPABILITY_PROFILES/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md",
+    "path": "01_DOCTRINE/04_CAPABILITY_PROFILES/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -1000,7 +1000,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/03_CAPABILITY_PROFILES/README.md",
+    "path": "01_DOCTRINE/04_CAPABILITY_PROFILES/README.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -1008,7 +1008,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/03_CAPABILITY_PROFILES/_TEMPLATE.md",
+    "path": "01_DOCTRINE/04_CAPABILITY_PROFILES/_TEMPLATE.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -1024,7 +1024,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/03_protocols/PRO-001_Enforce_Output_Labeling.md",
+    "path": "01_DOCTRINE/05_PROTOCOLS/PRO-001_Enforce_Output_Labeling.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -1032,7 +1032,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/03_protocols/PRO-002_Enforce_Provenance_Block.md",
+    "path": "01_DOCTRINE/05_PROTOCOLS/PRO-002_Enforce_Provenance_Block.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -1040,7 +1040,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/03_protocols/PRO-003_Novel_Policy_Gate.md",
+    "path": "01_DOCTRINE/05_PROTOCOLS/PRO-003_Novel_Policy_Gate.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -1048,7 +1048,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/03_protocols/PRO-004_External_Output_Gate.md",
+    "path": "01_DOCTRINE/05_PROTOCOLS/PRO-004_External_Output_Gate.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -1056,7 +1056,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/03_protocols/PRO-005_Classification_Confidence_Gate.md",
+    "path": "01_DOCTRINE/05_PROTOCOLS/PRO-005_Classification_Confidence_Gate.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -1064,7 +1064,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/03_protocols/PRO-006_Clarity_Scope_Check.md",
+    "path": "01_DOCTRINE/05_PROTOCOLS/PRO-006_Clarity_Scope_Check.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -1072,7 +1072,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/03_protocols/PRO-007_Coherence_Conflict_Check.md",
+    "path": "01_DOCTRINE/05_PROTOCOLS/PRO-007_Coherence_Conflict_Check.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -1080,7 +1080,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/03_protocols/PRO-008_Reasoning_Trace_Check.md",
+    "path": "01_DOCTRINE/05_PROTOCOLS/PRO-008_Reasoning_Trace_Check.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -1088,7 +1088,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/03_protocols/PRO-009_Testability_Check.md",
+    "path": "01_DOCTRINE/05_PROTOCOLS/PRO-009_Testability_Check.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -1096,7 +1096,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/03_protocols/PRO-010_Versioning_Check.md",
+    "path": "01_DOCTRINE/05_PROTOCOLS/PRO-010_Versioning_Check.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -1104,7 +1104,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/03_protocols/PRO-011_Discoverability_Check.md",
+    "path": "01_DOCTRINE/05_PROTOCOLS/PRO-011_Discoverability_Check.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -1112,7 +1112,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/03_protocols/PRO-012_Stage_Phase_Numbering_Enforcement.md",
+    "path": "01_DOCTRINE/05_PROTOCOLS/PRO-012_Stage_Phase_Numbering_Enforcement.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -1120,7 +1120,7 @@
     "last_modified": "2026-02-18T03:20:29+00:00"
   },
   {
-    "path": "01_DOCTRINE/03_protocols/README.md",
+    "path": "01_DOCTRINE/05_PROTOCOLS/README.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -1128,7 +1128,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/04_procedural/.gitkeep",
+    "path": "01_DOCTRINE/06_PROCEDURAL/.gitkeep",
     "type_guess": "file",
     "category_guess": "doctrine",
     "exists": true,
@@ -1136,7 +1136,7 @@
     "last_modified": "2026-02-17T01:55:01+00:00"
   },
   {
-    "path": "01_DOCTRINE/04_procedural/DOCTRINE-2026-003-promotion-rules.md",
+    "path": "01_DOCTRINE/06_PROCEDURAL/DOCTRINE-2026-003-promotion-rules.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,
@@ -1144,7 +1144,7 @@
     "last_modified": "2026-02-18T03:34:34+00:00"
   },
   {
-    "path": "01_DOCTRINE/04_procedural/README.md",
+    "path": "01_DOCTRINE/06_PROCEDURAL/README.md",
     "type_guess": "markdown",
     "category_guess": "doctrine",
     "exists": true,

@@ -9,6 +9,6 @@ Writing constraints:
 
 Tooling and execution constraints:
 - Do not hallucinate tools, files, or actions.
-- Ref: 01_DOCTRINE/02_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md (DOCTRINE-2026-005)
+- Ref: 01_DOCTRINE/03_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md (DOCTRINE-2026-005)
 
 If a relevant style playbook or template exists, apply it and cite the exact path; otherwise keep the draft neutral and minimal.

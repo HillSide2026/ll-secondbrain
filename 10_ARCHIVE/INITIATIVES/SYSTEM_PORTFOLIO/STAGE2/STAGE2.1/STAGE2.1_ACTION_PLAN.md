@@ -224,7 +224,7 @@ All agent-produced artifacts/reports MUST use this structure:
   - **External writes require ML1 approval**, change summary, and rollback plan (to be activated in later stage)
 - [ ] Add policy reference into each agent's Authority Scope section
 
-**Deliverable:** `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md` (or equivalent) and agent files updated to reference it
+**Deliverable:** `01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md` (or equivalent) and agent files updated to reference it
 
 ---
 
@@ -350,7 +350,7 @@ All agent-produced artifacts/reports MUST use this structure:
 | SYS-007 Integration Steward | ✅ | ✅ | v0.1 DRAFT |
 | SYS-008 Knowledge Curation | ✅ | ✅ | v0.1 DRAFT |
 | SYS-009 Runbook & QA | ✅ | ✅ | v0.1 DRAFT |
-| 2.6 Write-Back Policy | ✅ | — | 01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md |
+| 2.6 Write-Back Policy | ✅ | — | 01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md |
 | 2.7 Test Fixtures | ✅ | — | 03_TESTS/fixtures + golden_outputs |
 
 ### Phase 3: Testing

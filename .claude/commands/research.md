@@ -3,11 +3,11 @@ Produce a neutral, source-bound research summary suitable for ML1 review and dow
 
 # Canonical Inputs (MUST USE)
 - 03_TEMPLATES/STAGE3/NEUTRAL_SUMMARY_FORMAT.md (v1.0)
-- 01_DOCTRINE/02_POLICIES/POL-001_Output_Labeling_Requirement.md (POL-001)
-- 01_DOCTRINE/02_POLICIES/POL-002_Provenance_Requirement.md (POL-002)
-- 01_DOCTRINE/02_POLICIES/POL-003_Novel_Policy_Prohibition.md (POL-003)
-- 01_DOCTRINE/02_POLICIES/POL-005_Low_Confidence_Escalation.md (POL-005)
-- 01_DOCTRINE/02_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md (DOCTRINE-2026-005)
+- 01_DOCTRINE/03_POLICIES/POL-001_Output_Labeling_Requirement.md (POL-001)
+- 01_DOCTRINE/03_POLICIES/POL-002_Provenance_Requirement.md (POL-002)
+- 01_DOCTRINE/03_POLICIES/POL-003_Novel_Policy_Prohibition.md (POL-003)
+- 01_DOCTRINE/03_POLICIES/POL-005_Low_Confidence_Escalation.md (POL-005)
+- 01_DOCTRINE/03_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md (DOCTRINE-2026-005)
 
 # Steps
 1. Create or confirm the run folder `06_RUNS/<run_id>/` and record the run id.

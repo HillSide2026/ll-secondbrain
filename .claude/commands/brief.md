@@ -3,11 +3,11 @@ Draft a matter brief using the canonical matter brief template.
 
 # Canonical Inputs (MUST USE)
 - 03_TEMPLATES/MATTER_TEMPLATE/MATTER_BRIEF.md (v1.0)
-- 01_DOCTRINE/02_POLICIES/POL-001_Output_Labeling_Requirement.md (POL-001)
-- 01_DOCTRINE/02_POLICIES/POL-002_Provenance_Requirement.md (POL-002)
-- 01_DOCTRINE/02_POLICIES/POL-004_External_Output_Approval_Requirement.md (POL-004)
-- 01_DOCTRINE/02_POLICIES/POL-006_Clarity_Single_Job_Requirement.md (POL-006)
-- 01_DOCTRINE/02_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md (DOCTRINE-2026-005)
+- 01_DOCTRINE/03_POLICIES/POL-001_Output_Labeling_Requirement.md (POL-001)
+- 01_DOCTRINE/03_POLICIES/POL-002_Provenance_Requirement.md (POL-002)
+- 01_DOCTRINE/03_POLICIES/POL-004_External_Output_Approval_Requirement.md (POL-004)
+- 01_DOCTRINE/03_POLICIES/POL-006_Clarity_Single_Job_Requirement.md (POL-006)
+- 01_DOCTRINE/03_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md (DOCTRINE-2026-005)
 
 # Steps
 1. Create or confirm the run folder `06_RUNS/<run_id>/` and record the run id.

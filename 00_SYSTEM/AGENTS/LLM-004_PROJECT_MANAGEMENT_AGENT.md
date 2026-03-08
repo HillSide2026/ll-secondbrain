@@ -207,7 +207,7 @@ Rationale: <ML1 judgment>
 ## Dependencies (Required Inputs)
 
 LLM-004 must operate strictly from:
-- `01_DOCTRINE/02_POLICIES/FIRM_PROJECT_DOCTRINE.md`
+- `01_DOCTRINE/03_POLICIES/FIRM_PROJECT_DOCTRINE.md`
 - Portfolio boundary definitions in `04_INITIATIVES/LL_PORTFOLIO/README.md`
 - Each project’s current-stage artifacts, especially APPROVAL_RECORD.md and ML1_METRIC_APPROVAL.md
 - Change control logs (CHANGE_LOG.md) and decision logs (DECISION_LOG.md)

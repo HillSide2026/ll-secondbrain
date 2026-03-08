@@ -22,7 +22,7 @@
     "title": "Missing required frontmatter fields",
     "description": "Missing frontmatter in 0 files; missing required fields in 1 files.",
     "affected_paths": [
-      "01_DOCTRINE/04_procedural/DOCTRINE-2026-003-promotion-rules.md"
+      "01_DOCTRINE/06_PROCEDURAL/DOCTRINE-2026-003-promotion-rules.md"
     ],
     "suggested_fix": "Add YAML frontmatter with required fields per SCHEMAS.md.",
     "references": null,

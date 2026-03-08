@@ -44,7 +44,7 @@ This log records all system-level decisions affecting the Second Brain.
 
 **Decision:** Approved doctrine defining promotion lifecycle from Inbox to Research to Doctrine  
 **Approved by:** ML1  
-**Artifacts impacted:** /01_DOCTRINE/04_PROCEDURAL/DOCTRINE-OPERATIONS-0002-promotion-rules.md  
+**Artifacts impacted:** /01_DOCTRINE/06_PROCEDURAL/DOCTRINE-OPERATIONS-0002-promotion-rules.md  
 **Notes:** Establishes controlled pathway for authority creation and prevents implicit promotion
 
 ## 2026-01-25 — Close Stage 1 (System Discovery & Readiness Baseline)
@@ -58,19 +58,19 @@ This log records all system-level decisions affecting the Second Brain.
 
 **Decision:** Approved doctrine defining canonical constraints for agent operation in the Second Brain system  
 **Approved by:** ML1  
-**Artifacts impacted:** /01_DOCTRINE/02_POLICIES/DOCTRINE-AGENTS-0002-canonical-agent-doctrine.md  
+**Artifacts impacted:** /01_DOCTRINE/03_POLICIES/DOCTRINE-AGENTS-0002-canonical-agent-doctrine.md  
 **Notes:** Establishes binding constraints on agent authority, scope, attribution, and non-simulation requirements. Renumbered from DOCTRINE-2026-004 on 2026-02-19 to resolve ID collision.
 
 ## 2026-02-19 — Approve Doctrine 2026-008 (Run Outcome Rules)
 
 **Decision:** Approved procedural doctrine requiring a single run outcome (Promote / Park / Archive) with explicit recording  
 **Approved by:** ML1  
-**Artifacts impacted:** `01_DOCTRINE/04_PROCEDURAL/DOCTRINE-OPERATIONS-0003-run-outcome-rules.md`  
+**Artifacts impacted:** `01_DOCTRINE/06_PROCEDURAL/DOCTRINE-OPERATIONS-0003-run-outcome-rules.md`  
 **Notes:** Establishes mandatory outcome recording and ties Park outcomes to the distill queue
 
 ## 2026-02-19 — Approve Policy POL-012 (Canon-Referenced Automation Commands)
 
 **Decision:** Approved policy requiring automation commands to reference canonical inputs and doctrine by explicit path/id  
 **Approved by:** ML1  
-**Artifacts impacted:** `01_DOCTRINE/02_POLICIES/POL-012_Canon_Referenced_Automation_Commands.md`  
+**Artifacts impacted:** `01_DOCTRINE/03_POLICIES/POL-012_Canon_Referenced_Automation_Commands.md`  
 **Notes:** Ensures command definitions are reproducible and bound to canon

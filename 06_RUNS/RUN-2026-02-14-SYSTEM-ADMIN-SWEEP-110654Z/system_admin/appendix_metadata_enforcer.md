@@ -4,5 +4,5 @@
 Missing frontmatter in 0 files; missing required fields in 1 files.
 
 Affected paths:
-- 01_DOCTRINE/04_procedural/DOCTRINE-2026-003-promotion-rules.md
+- 01_DOCTRINE/06_PROCEDURAL/DOCTRINE-2026-003-promotion-rules.md
 

@@ -14,7 +14,7 @@ tags: []
 
 **System-level inventory summary (what exists / where it lives):**
 - **00_SYSTEM (governance docs):** Core governance artifacts present (README, glossary, schemas, decision log, system identity) plus an architecture subfolder containing an integration plan draft and a Stage 1 architecture map. Key files live directly under `00_SYSTEM/` with two items under `00_SYSTEM/architecture/`.
-- **01_DOCTRINE (taxonomy + key docs):** Doctrine root contains README plus three doctrine tiers (`01_BINDING`, `02_INTERPRETIVE`, `03_PROCEDURAL`) and three doctrine docs at the root.
+- **01_DOCTRINE (taxonomy + key docs):** Doctrine root contains README plus sequential doctrine tiers (`01_INVARIANTS`, `02_PRINCIPLES`, `03_INTERPRETIVE`, `04_POLICIES`, `05_CAPABILITY_PROFILES`, `06_PROTOCOLS`, `07_PROCEDURAL`) and supporting indices.
 - **02_PLAYBOOKS / 03_TEMPLATES:** Both folders exist with READMEs only.
 - **04_INITIATIVES (SYSTEM_PORTFOLIO structure):** `SYSTEM_PORTFOLIO` includes `00_DRAFT_ROADMAPS/` (draft roadmap + README) and `01_ACTIVE_ROADMAPS/` (README). `LL_PORTFOLIO` exists but is out of scope for system-level Stage 1 inventory.
 - **06_RUNS:** Folder exists but contains no files.
@@ -25,7 +25,7 @@ tags: []
 - `00_SYSTEM/architecture/FOLDER_MAP.md`
 - `00_SYSTEM/architecture/GLOSSARY.md`
 - `00_SYSTEM/schemas/SCHEMAS.md`
-- `01_DOCTRINE/02_interpretive/SYSTEM_IDENTITY.md`
+- `01_DOCTRINE/01_INVARIANTS/SYSTEM_IDENTITY.md`
 - `00_SYSTEM/logs/DECISION_LOG.md`
 - `00_SYSTEM/architecture/ARCH-2026-00X-integration-plan.md`
 - `00_SYSTEM/architecture/ARCH-2026-01X-stage1-architecture-map.md`

@@ -286,7 +286,7 @@ Log every classification decision:
 - Stage 2 Authorization: `01_ACTIVE_ROADMAPS/STAGE2/STAGE2_AUTHORIZATION_KICKOFF.md`
 - Gmail Integration (Phase 2.2.1): `01_ACTIVE_ROADMAPS/STAGE2/STAGE2.2/STAGE2.2_ACTION_PLAN.md`
 - Gmail Module: `scripts/gmail_integration.py`
-- Write-Back Policy: `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md`
+- Write-Back Policy: `01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md`
 
 ---
 

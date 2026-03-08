@@ -8,12 +8,12 @@
         "06_RUNS/**"
       ],
       "required_doctrine_refs": [
-        "01_DOCTRINE/02_POLICIES/POL-001_Output_Labeling_Requirement.md (POL-001)",
-        "01_DOCTRINE/02_POLICIES/POL-002_Provenance_Requirement.md (POL-002)",
-        "01_DOCTRINE/02_POLICIES/POL-004_External_Output_Approval_Requirement.md (POL-004)",
-        "01_DOCTRINE/02_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md (DOCTRINE-2026-005)"
+        "01_DOCTRINE/03_POLICIES/POL-001_Output_Labeling_Requirement.md (POL-001)",
+        "01_DOCTRINE/03_POLICIES/POL-002_Provenance_Requirement.md (POL-002)",
+        "01_DOCTRINE/03_POLICIES/POL-004_External_Output_Approval_Requirement.md (POL-004)",
+        "01_DOCTRINE/03_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md (DOCTRINE-2026-005)"
       ],
-      "capability_profile": "01_DOCTRINE/03_CAPABILITY_PROFILES/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md"
+      "capability_profile": "01_DOCTRINE/04_CAPABILITY_PROFILES/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md"
     },
     {
       "name": "research-summarizer",
@@ -22,12 +22,12 @@
         "06_RUNS/**"
       ],
       "required_doctrine_refs": [
-        "01_DOCTRINE/02_POLICIES/POL-001_Output_Labeling_Requirement.md (POL-001)",
-        "01_DOCTRINE/02_POLICIES/POL-002_Provenance_Requirement.md (POL-002)",
-        "01_DOCTRINE/02_POLICIES/POL-003_Novel_Policy_Prohibition.md (POL-003)",
-        "01_DOCTRINE/02_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md (DOCTRINE-2026-005)"
+        "01_DOCTRINE/03_POLICIES/POL-001_Output_Labeling_Requirement.md (POL-001)",
+        "01_DOCTRINE/03_POLICIES/POL-002_Provenance_Requirement.md (POL-002)",
+        "01_DOCTRINE/03_POLICIES/POL-003_Novel_Policy_Prohibition.md (POL-003)",
+        "01_DOCTRINE/03_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md (DOCTRINE-2026-005)"
       ],
-      "capability_profile": "01_DOCTRINE/03_CAPABILITY_PROFILES/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md"
+      "capability_profile": "01_DOCTRINE/04_CAPABILITY_PROFILES/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md"
     },
     {
       "name": "matter-brief-drafter",
@@ -36,12 +36,12 @@
         "06_RUNS/**"
       ],
       "required_doctrine_refs": [
-        "01_DOCTRINE/02_POLICIES/POL-001_Output_Labeling_Requirement.md (POL-001)",
-        "01_DOCTRINE/02_POLICIES/POL-002_Provenance_Requirement.md (POL-002)",
-        "01_DOCTRINE/02_POLICIES/POL-006_Clarity_Single_Job_Requirement.md (POL-006)",
-        "01_DOCTRINE/02_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md (DOCTRINE-2026-005)"
+        "01_DOCTRINE/03_POLICIES/POL-001_Output_Labeling_Requirement.md (POL-001)",
+        "01_DOCTRINE/03_POLICIES/POL-002_Provenance_Requirement.md (POL-002)",
+        "01_DOCTRINE/03_POLICIES/POL-006_Clarity_Single_Job_Requirement.md (POL-006)",
+        "01_DOCTRINE/03_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md (DOCTRINE-2026-005)"
       ],
-      "capability_profile": "01_DOCTRINE/03_CAPABILITY_PROFILES/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md"
+      "capability_profile": "01_DOCTRINE/04_CAPABILITY_PROFILES/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md"
     },
     {
       "name": "email-draft",
@@ -50,12 +50,12 @@
         "06_RUNS/**"
       ],
       "required_doctrine_refs": [
-        "01_DOCTRINE/02_POLICIES/POL-001_Output_Labeling_Requirement.md (POL-001)",
-        "01_DOCTRINE/02_POLICIES/POL-002_Provenance_Requirement.md (POL-002)",
-        "01_DOCTRINE/02_POLICIES/POL-004_External_Output_Approval_Requirement.md (POL-004)",
-        "01_DOCTRINE/02_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md (DOCTRINE-2026-005)"
+        "01_DOCTRINE/03_POLICIES/POL-001_Output_Labeling_Requirement.md (POL-001)",
+        "01_DOCTRINE/03_POLICIES/POL-002_Provenance_Requirement.md (POL-002)",
+        "01_DOCTRINE/03_POLICIES/POL-004_External_Output_Approval_Requirement.md (POL-004)",
+        "01_DOCTRINE/03_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md (DOCTRINE-2026-005)"
       ],
-      "capability_profile": "01_DOCTRINE/03_CAPABILITY_PROFILES/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md"
+      "capability_profile": "01_DOCTRINE/04_CAPABILITY_PROFILES/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md"
     }
   ]
 }

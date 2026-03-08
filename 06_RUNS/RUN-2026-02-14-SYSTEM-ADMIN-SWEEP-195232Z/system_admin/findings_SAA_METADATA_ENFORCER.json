@@ -8,9 +8,9 @@
     "description": "Missing frontmatter in 1 files; missing required fields in 12 files.",
     "affected_paths": [
       "00_SYSTEM/constitution.md",
-      "01_DOCTRINE/02_interpretive/SYSTEM_IDENTITY.md",
-      "01_DOCTRINE/02_policies/ML1_APPROVAL_BOUNDARIES.md",
-      "01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md",
+      "01_DOCTRINE/01_INVARIANTS/SYSTEM_IDENTITY.md",
+      "01_DOCTRINE/03_POLICIES/ML1_APPROVAL_BOUNDARIES.md",
+      "01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md",
       "03_TEMPLATES/LL_PORTFOLIO_ENTRY/README.md",
       "03_TEMPLATES/MATTER_TEMPLATE/00_META.md",
       "03_TEMPLATES/MATTER_TEMPLATE/FACTS_TIMELINE.md",

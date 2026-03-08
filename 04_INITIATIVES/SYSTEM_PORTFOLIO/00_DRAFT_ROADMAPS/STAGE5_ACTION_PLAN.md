@@ -72,7 +72,7 @@ Initial eligible solutions (per current directory set):
   - `02_PLAYBOOKS/CORPORATE/WORKFLOWS/solutions/shareholder_agreement/`
   - `02_PLAYBOOKS/CORPORATE/WORKFLOWS/solutions/shareholder_change/`
 - `02_PLAYBOOKS/CORPORATE/WORKFLOWS/solutions/README.md`
-- `01_DOCTRINE/02_POLICIES/WRITE_BACK_POLICY.md`
+- `01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md`
 - Stage 5 Authorization: `00_DRAFT_ROADMAPS/STAGE5_AUTHORIZATION_KICKOFF.md`
 
 ---
@@ -146,5 +146,5 @@ Initial eligible solutions (per current directory set):
 ## 9. References
 
 - `02_PLAYBOOKS/CORPORATE/WORKFLOWS/solutions/`
-- `01_DOCTRINE/02_POLICIES/WRITE_BACK_POLICY.md`
+- `01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md`
 - `00_DRAFT_ROADMAPS/STAGE5_AUTHORIZATION_KICKOFF.md`

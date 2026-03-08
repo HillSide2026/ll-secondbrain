@@ -33,7 +33,7 @@ Stage 2.1 (Agent Runtime Setup) has met all Definition of Done requirements. All
 | At least one handoff test passes | **PASS** | `03_TESTS/agent_outputs/PHASE3.1_HANDOFF_TEST_RESULTS.md` |
 | Failure-mode test caught and documented | **PASS** | `03_TESTS/agent_outputs/PHASE3.2_FAILURE_MODE_TEST.md` |
 | Documentation complete (deployment guide + credentials) | **PASS** | `00_SYSTEM/agents/deployment/AGENT_DEPLOYMENT_GUIDE.md`, `CREDENTIAL_INVENTORY.md` |
-| Write-back policy documented | **PASS** | `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md` |
+| Write-back policy documented | **PASS** | `01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md` |
 
 ---
 
@@ -59,8 +59,8 @@ Stage 2.1 (Agent Runtime Setup) has met all Definition of Done requirements. All
 | SYS-007 Integration Steward | ✓ v1.0 Active | `00_SYSTEM/agents/specs/system_management/SMA_INTEGRATION_STEWARD.md` |
 | SYS-008 Knowledge Curation | ✓ v1.0 Active | `00_SYSTEM/agents/specs/system_management/SMA_KNOWLEDGE_CURATION.md` |
 | SYS-009 Runbook & QA | ✓ v1.0 Active | `00_SYSTEM/agents/specs/system_management/SMA_RUNBOOK_QA.md` |
-| Write-Back Policy | ✓ | `01_DOCTRINE/02_policies/WRITE_BACK_POLICY.md` |
-| ML1 Approval Boundaries | ✓ | `01_DOCTRINE/02_policies/ML1_APPROVAL_BOUNDARIES.md` |
+| Write-Back Policy | ✓ | `01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md` |
+| ML1 Approval Boundaries | ✓ | `01_DOCTRINE/03_POLICIES/ML1_APPROVAL_BOUNDARIES.md` |
 | Test Fixtures | ✓ | `03_TESTS/fixtures/` |
 | Golden Outputs | ✓ | `03_TESTS/golden_outputs/` |
 
