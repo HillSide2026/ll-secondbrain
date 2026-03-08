@@ -35,7 +35,7 @@ import yaml
 # Paths (repo-relative)
 # =============================
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_OUTPUT_DIR = REPO_ROOT / "09_INBOX" / "_sources" / "sharepoint" / "discovery"
 CURRENT_CONFIG_PATH = REPO_ROOT / "00_SYSTEM" / "integrations" / "sharepoint" / "sharepoint_sources.yaml"
 CURRENT_CONFIG_ALT = (

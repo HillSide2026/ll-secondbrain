@@ -26,8 +26,10 @@ import msal
 import requests
 
 GRAPH_BASE = "https://graph.microsoft.com/v1.0"
-REPO_ROOT = Path(__file__).resolve().parents[1]
-REGISTRY_PATH = REPO_ROOT / "02_PLAYBOOKS" / "EXECUTION" / "TEMPLATE_REGISTRY.json"
+REPO_ROOT = Path(__file__).resolve().parents[2]
+REGISTRY_PATH = (
+    REPO_ROOT / "02_PLAYBOOKS" / "_ASSETS" / "execution" / "reference" / "TEMPLATE_REGISTRY.json"
+)
 
 # Namespaces used in .docx OpenXML
 NS = {

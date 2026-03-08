@@ -22,7 +22,7 @@ from dotenv import load_dotenv
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parents[2]
 OPS_DIR = REPO_ROOT / "06_RUNS" / "ops"
 AUDIT_LOG = OPS_DIR / "gmail_label_audit.ndjson"
 

@@ -36,7 +36,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from gmail_integration import GmailClient
 
 # Paths
-REPO_ROOT = Path(__file__).parent.parent
+REPO_ROOT = Path(__file__).resolve().parents[2]
 MATTERS_ROOT = REPO_ROOT / '05_MATTERS'
 OUTPUT_DIR = REPO_ROOT / '06_RUNS' / 'ops'
 HISTORY_STATE_PATH = OUTPUT_DIR / 'gmail_history_state.json'

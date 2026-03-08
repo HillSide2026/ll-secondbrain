@@ -53,8 +53,10 @@ import requests
 log = logging.getLogger(__name__)
 
 GRAPH_BASE = "https://graph.microsoft.com/v1.0"
-REPO_ROOT = Path(__file__).resolve().parents[1]
-TEMPLATE_REGISTRY_PATH = REPO_ROOT / "02_PLAYBOOKS" / "EXECUTION" / "TEMPLATE_REGISTRY.json"
+REPO_ROOT = Path(__file__).resolve().parents[2]
+TEMPLATE_REGISTRY_PATH = (
+    REPO_ROOT / "02_PLAYBOOKS" / "_ASSETS" / "execution" / "reference" / "TEMPLATE_REGISTRY.json"
+)
 
 WORD_NS = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 

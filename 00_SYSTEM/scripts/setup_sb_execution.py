@@ -35,7 +35,7 @@ import requests
 log = logging.getLogger(__name__)
 
 GRAPH_BASE = "https://graph.microsoft.com/v1.0"
-REPO_ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = REPO_ROOT / "09_INBOX" / "_sources" / "sharepoint" / "discovery"
 
 # Target drive — from Stage 3.8 action plan Fixed Target IDs

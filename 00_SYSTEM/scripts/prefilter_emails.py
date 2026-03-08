@@ -6,7 +6,7 @@ import re
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parents[2]
 INPUT_PATH = REPO_ROOT / "06_RUNS" / "ops" / "gmail_fetch_latest.json"
 OUTPUT_PATH = REPO_ROOT / "06_RUNS" / "ops" / "emails_prefiltered.json"
 

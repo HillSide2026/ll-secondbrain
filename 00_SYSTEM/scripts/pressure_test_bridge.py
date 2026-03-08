@@ -34,9 +34,9 @@ from sb_graph_bridge import (
 
 log = logging.getLogger(__name__)
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
-SCHEMA_PATH = REPO_ROOT / "scripts" / "sb_bridge_request.schema.json"
-REQUEST_PATH = REPO_ROOT / "scripts" / "request.json"
+REPO_ROOT = Path(__file__).resolve().parents[2]
+SCHEMA_PATH = REPO_ROOT / "00_SYSTEM" / "scripts" / "sb_bridge_request.schema.json"
+REQUEST_PATH = REPO_ROOT / "00_SYSTEM" / "scripts" / "request.json"
 
 
 def load_baseline() -> Tuple[dict, dict]:

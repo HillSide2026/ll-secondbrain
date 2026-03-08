@@ -45,7 +45,7 @@ from todo_rollup import (
 import prefilter_emails as prefilter
 
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parents[2]
 OPS_DIR = REPO_ROOT / "06_RUNS" / "ops"
 
 GMAIL_FETCH_PATH = OPS_DIR / "gmail_fetch_latest.json"
@@ -1013,7 +1013,7 @@ def main() -> int:
             else:
                 cmd = [
                     sys.executable,
-                    str(REPO_ROOT / "scripts" / "gmail_labeler.py"),
+                    str(REPO_ROOT / "00_SYSTEM" / "scripts" / "gmail_labeler.py"),
                     "--manifest",
                     str(LABEL_MANIFEST_PATH),
                     "--execute",

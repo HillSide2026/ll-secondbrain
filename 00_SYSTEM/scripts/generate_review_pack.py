@@ -18,7 +18,7 @@ from typing import Dict, List, Tuple
 import yaml
 from dotenv import load_dotenv
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parents[2]
 MATTERS_ROOT = REPO_ROOT / "05_MATTERS"
 LEDGER_PATH = REPO_ROOT / "06_RUNS" / "ops" / "MATTER_TODO_LEDGER.json"
 MAPPING_PATH = REPO_ROOT / "00_SYSTEM" / "participant_mapping.yaml"

@@ -285,22 +285,22 @@ def write_outcome(run_id: str, outcome: str = "PARK") -> None:
     DISTILL_DIR.mkdir(parents=True, exist_ok=True)
 
     date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    outcome_payload = f\"\"\"run_id: {run_id}
+    outcome_payload = f"""run_id: {run_id}
 date: {date_str}
 outcome: {outcome}
 promoted_to: []
 parked_items: []
 archive_reason: other
 notes: Pilot run outcome recorded by runner
-\"\"\"
+"""
     OUTCOME_PATH.write_text(outcome_payload, encoding="utf-8")
 
     if outcome == "PARK":
         slug = "inbox-triage-pilot"
-        stub_path = DISTILL_DIR / f\"{date_str}__{run_id}__{slug}.md\"
+        stub_path = DISTILL_DIR / f"{date_str}__{run_id}__{slug}.md"
         if not stub_path.exists():
             stub_path.write_text(
-                \"\"\"# Distill Stub
+                """# Distill Stub
 
 ## What to distill
 Pilot inbox triage classification outputs and summary.
@@ -316,7 +316,7 @@ Pilot inbox triage classification outputs and summary.
 - 02_PLAYBOOKS/LL_OPERATIONS/inbox_triage/README.md
 - 02_PLAYBOOKS/LL_OPERATIONS/inbox_triage/TAXONOMY.md
 - 02_PLAYBOOKS/LL_OPERATIONS/inbox_triage/LOGGING_SPEC.md
-\"\"\",
+""",
                 encoding="utf-8",
             )
 
