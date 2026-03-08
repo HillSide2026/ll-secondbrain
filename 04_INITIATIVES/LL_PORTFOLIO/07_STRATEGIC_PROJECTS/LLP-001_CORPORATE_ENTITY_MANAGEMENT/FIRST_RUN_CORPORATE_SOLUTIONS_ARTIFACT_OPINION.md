@@ -59,7 +59,7 @@ This is a non-authoritative working artifact for ML1 review.
 - `PROBLEM_STATEMENT.md`
 - `SUCCESS_CRITERIA.md`
 - `STAKEHOLDERS.md`
-- `RISKS_INITIAL.md`
+- `RISK_SCAN.md`
 - `APPROVAL_RECORD.md`
 
 ### Corporate first-run additions (recommended)
@@ -71,9 +71,7 @@ This is a non-authoritative working artifact for ML1 review.
 
 ### Doctrine-mandatory planning
 - `SCOPE_DEFINITION.md`
-- `WORKPLAN.md`
-- `MILESTONES.md`
-- `RESOURCE_PLAN.md`
+- `WORKPLAN.md` (includes milestone schedule and resource plan sections)
 - `ASSUMPTIONS_CONSTRAINTS.md`
 - `DEPENDENCIES.md`
 - `RISK_REGISTER.md`

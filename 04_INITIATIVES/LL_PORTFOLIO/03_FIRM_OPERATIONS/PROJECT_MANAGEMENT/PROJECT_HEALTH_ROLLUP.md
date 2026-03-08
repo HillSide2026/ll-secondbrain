@@ -1,34 +1,36 @@
 # Project Health Rollup
 
-- Generated: 2026-03-05T04:00:00+00:00
-- Run ID: RUN-2026-03-05-LL-PORTFOLIO-AGENTS-040000Z
+- Generated: 2026-03-08T16:39:30+00:00
+- Run ID: RUN-2026-03-08-LL-PORTFOLIO-AGENTS-163930Z
 
 > Advisory output. ML1 approval remains required for decisions.
 ## Project Health Rollup
 
 | Project | Health | Relevant Gate Gaps | Planning Gaps | Measurement Gaps |
 | --- | --- | --- | --- | --- |
-| LLP-001_CORPORATE_ENTITY_MANAGEMENT | watch | 8 | 8 | 0 |
-| LLP-002_CORPORATE_CLERK | watch | 8 | 8 | 0 |
-| LLP-003_ASSOCIATE_LAWYER | watch | 8 | 8 | 0 |
-| LLP-004_PARTNER_SUPERVISION | watch | 8 | 8 | 0 |
-
-## Health Criteria
-
-- **on-track**: All required stage artifacts present, ML1 approvals current, no open blockers.
-- **watch**: Missing required planning artifacts or approvals pending — no active failures, but advancement is blocked.
-- **at-risk**: Missing initiation artifacts, stale approvals, metric drift, or undocumented scope change detected.
+| 03_FIRM_OPERATIONS/LLP-006_MAINTENANCE/LLP-006_MATTER_MAINTENANCE/initiation | at-risk | 0 | 6 | 5 |
+| 03_FIRM_OPERATIONS/PORTFOLIO_MANAGEMENT | at-risk | 7 | 6 | 0 |
+| 04_RISK/LLP-017_STRATEGIC_RISK | at-risk | 7 | 6 | 0 |
+| 05_MATTER_DOCKETING/LLP-009_CLERK_SUPERVISION | at-risk | 7 | 6 | 0 |
+| 05_MATTER_DOCKETING/LLP-010_ASSOCIATE_SUPERVISION | at-risk | 7 | 6 | 0 |
+| 07_STRATEGIC_PROJECTS/LLP-001_CORPORATE_ENTITY_MANAGEMENT | at-risk | 7 | 6 | 0 |
+| 07_STRATEGIC_PROJECTS/LLP-002_CORPORATE_CLERK | at-risk | 7 | 6 | 0 |
+| 07_STRATEGIC_PROJECTS/LLP-003_ASSOCIATE_LAWYER | at-risk | 7 | 6 | 0 |
+| 07_STRATEGIC_PROJECTS/LLP-004_PARTNER_SUPERVISION | at-risk | 7 | 6 | 0 |
+| 07_STRATEGIC_PROJECTS/LLP-005_MATTER_COMMAND_CONTROL | at-risk | 1 | 6 | 5 |
+| 08_MARKETING/LLP-011_FUNNEL1_MANAGEMENT | on-track | 0 | 0 | 0 |
+| 08_MARKETING/LLP-012_FUNNEL2_MANAGEMENT | at-risk | 7 | 6 | 0 |
+| 08_MARKETING/LLP-013_FUNNEL3_MANAGEMENT | at-risk | 7 | 6 | 0 |
+| 09_SERVICE_MANAGEMENT/ESSENTIAL | at-risk | 7 | 6 | 0 |
+| 09_SERVICE_MANAGEMENT/PARKED | at-risk | 7 | 6 | 0 |
+| 09_SERVICE_MANAGEMENT | at-risk | 7 | 6 | 0 |
+| 09_SERVICE_MANAGEMENT/STANDARD | at-risk | 7 | 6 | 0 |
+| 09_SERVICE_MANAGEMENT/STRATEGIC | at-risk | 7 | 6 | 0 |
 
 ## Summary
 
-- Projects reviewed: 4
-- On-track: 0
-- Watch: 4
-- At-risk: 0
-- Average stage-2 readiness: 38%
-
-## Observation
-
-All 4 projects are held at "watch" status due to identical planning artifact gaps (8 missing Stage 2 planning documents per project). No at-risk conditions exist — initiation artifacts are complete and measurement architecture stubs are in place. The portfolio is structurally stalled pending ML1 authorization to advance planning work.
-
-LLP-001 is the most advanced project by artifact count (TIER1_SOLUTIONS_SUBSTANCE_REVIEW.md and FIRST_RUN_CORPORATE_SOLUTIONS_ARTIFACT_OPINION.md present), suggesting it may be closest to readiness for planning authorization.
+- Projects reviewed: 18
+- On-track: 1
+- Watch: 0
+- At-risk: 17
+- Average stage-2 readiness: 43%

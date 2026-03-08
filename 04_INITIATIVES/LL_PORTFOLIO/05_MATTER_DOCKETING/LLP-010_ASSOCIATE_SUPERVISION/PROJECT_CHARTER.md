@@ -2,7 +2,7 @@
 
 Project #: LLP-26-17
 Repo: 05_MATTER_DOCKETING/LLP-010_ASSOCIATE_SUPERVISION
-Project Type: LL Project
+Project Type: Operational Project
 Stage: Initiating
 
 ## 1. Purpose

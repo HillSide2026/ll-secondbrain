@@ -2,8 +2,8 @@
 
 Project #: LLP-26-24
 Repo: 08_MARKETING/LLP-011_FUNNEL1_MANAGEMENT
-Project Type: LL Project
-Stage: Initiating
+Project Type: Management Project
+Stage: Planning
 
 ## 1. Purpose
 Establish controlled execution governance for Funnel 01 as the current-state acquisition funnel.
@@ -30,4 +30,4 @@ Final approval authority: ML1.
 Execution is constrained by ML2 doctrine and approved funnel definitions.
 
 ## 6. Promotion Path
-Upon ML1 approval, advance to Planning for metric formalization, baseline capture, and validation criteria.
+Upon ML1 Planning -> Implementation approval, execute the approved workplan and measurement architecture.

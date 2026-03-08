@@ -210,7 +210,7 @@ It records **conditions**, not opinions.
   * Overlay for tracking delivery states and activity periods
   * Houses lawyer to-do protocol
 
-* **Risk & Compliance (`04_RISK_COMPLIANCE`)**
+* **Risk (`04_RISK`)**
 
   * May require checks at certain states
   * Cannot change states

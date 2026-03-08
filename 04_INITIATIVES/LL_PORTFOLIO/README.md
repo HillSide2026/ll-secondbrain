@@ -28,6 +28,30 @@ The LL Portfolio is a **governed, non-autonomous registry** where:
 
 ---
 
+## LL Work Type Taxonomy (Canonical)
+
+The LL system recognizes four work types:
+
+- Strategic projects
+- Management projects
+- Operational projects
+- Client matters (aka client projects)
+
+Definitions:
+
+- Strategic projects: firm-direction initiatives that define or materially change long-horizon operating posture.
+- Management projects: governance and control initiatives that coordinate, monitor, or optimize firm systems.
+- Operational projects: execution-focused initiatives that improve how defined workflows are carried out.
+- Client matters/client projects: client-specific legal work units governed by matter doctrine.
+
+Applicability:
+
+- The project stage-gate artifact lifecycle applies to strategic, management, and operational projects.
+- Client matters/client projects follow matter doctrine and matter-stage artifacts.
+- If project type classification is unclear, escalate to ML1 before stage advancement.
+
+---
+
 ## Canonical Structure (LOCKED)
 
 ```
@@ -36,10 +60,10 @@ LL_PORTFOLIO/
 ├── 01_ACCOUNTING/               # Historical fact
 ├── 02_PRACTICE_AREAS/           # Durable legal operating knowledge
 ├── 03_FIRM_OPERATIONS/          # How the firm runs
-├── 04_RISK_COMPLIANCE/          # Defensive clarity
+├── 04_RISK/                     # Defensive clarity
 ├── 05_MATTER_DOCKETING/         # Delivery overlay for matters
 ├── 06_FINANCIAL_PORTFOLIO/      # Models & constraints (not decisions)
-├── 07_STRATEGIC_INITIATIVES/    # Change and evolution
+├── 07_STRATEGIC_PROJECTS/       # Change and evolution
 ├── 08_MARKETING/                # Pre-matter pipeline (leads → onboarding)
 └── 09_SERVICE_MANAGEMENT/       # Service tier management across matters
 ```
@@ -93,7 +117,7 @@ You must not infer, reorder, merge, or repurpose these folders.
 
 ---
 
-### 04_RISK_COMPLIANCE
+### 04_RISK
 
 **Purpose:** Defensive clarity and audit readiness.
 
@@ -140,7 +164,7 @@ You must not infer, reorder, merge, or repurpose these folders.
 
 ---
 
-### 07_STRATEGIC_INITIATIVES
+### 07_STRATEGIC_PROJECTS
 
 **Purpose:** Change, experimentation, and future direction.
 
@@ -218,4 +242,4 @@ If authorization is unclear:
 - 04_INITIATIVES Overview: `../README.md`
 - Folder Map: `00_SYSTEM/architecture/FOLDER_MAP.md`
 - Authority Hierarchy: `01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0002-authority-hierarchy-ml1-ml2-ll.md`
-- LL Project Digest (27 projects): `LL_PROJECT_DIGEST.md`
+- LL Project Digest (32 projects): `LL_PROJECT_DIGEST.md`

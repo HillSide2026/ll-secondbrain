@@ -76,8 +76,10 @@ Structured legal function for growing Ontario businesses, providing ongoing gove
 ## Primary Metrics
 
 - cost_per_qualified_lead
+- lead_to_booked_rate
+- lead_to_retained_rate
 - consult_show_rate
-- retention_rate
+- consult_to_retained_rate
 
 ## KPI Targets (Must Map to Goals)
 

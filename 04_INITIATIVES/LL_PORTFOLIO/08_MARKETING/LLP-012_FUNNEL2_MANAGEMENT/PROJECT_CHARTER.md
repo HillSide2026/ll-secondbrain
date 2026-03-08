@@ -2,7 +2,7 @@
 
 Project #: LLP-26-25
 Repo: 08_MARKETING/LLP-012_FUNNEL2_MANAGEMENT
-Project Type: LL Project
+Project Type: Management Project
 Stage: Initiating
 
 ## 1. Purpose

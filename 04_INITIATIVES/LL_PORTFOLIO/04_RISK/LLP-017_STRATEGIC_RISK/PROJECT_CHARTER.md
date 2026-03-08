@@ -2,7 +2,7 @@
 
 Project #: LLP-26-13
 Repo: 04_RISK/LLP-017_STRATEGIC_RISK
-Project Type: LL Project
+Project Type: Management Project
 Stage: Initiating
 
 ## 1. Purpose

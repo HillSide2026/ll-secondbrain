@@ -2,7 +2,7 @@
 
 Project #: LLP-26-16
 Repo: 05_MATTER_DOCKETING/LLP-009_CLERK_SUPERVISION
-Project Type: LL Project
+Project Type: Operational Project
 Stage: Initiating
 
 ## 1. Purpose

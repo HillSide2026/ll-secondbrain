@@ -105,8 +105,7 @@ Produces (advisory to ML1 only):
 Must read:
 - All active project folders
 - Stage metadata
-- RESOURCE_PLAN.md
-- MILESTONES.md
+- WORKPLAN.md (including milestone schedule and resource plan sections)
 - DEPENDENCIES.md
 - Partner Supervision metrics
 - Baseline capacity data

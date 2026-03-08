@@ -2,7 +2,7 @@
 
 Project #: LLP-26-11
 Repo: 03_FIRM_OPERATIONS/PORTFOLIO_MANAGEMENT
-Project Type: LL Project
+Project Type: Management Project
 Stage: Initiating
 
 ## 1. Purpose

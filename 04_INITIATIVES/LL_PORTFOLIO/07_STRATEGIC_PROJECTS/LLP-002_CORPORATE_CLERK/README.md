@@ -53,6 +53,17 @@ ML2 must NOT:
 
 ## Planning (Stage 2) Artifacts
 
+Planning-stage artifacts are implementation-readiness controls used to authorize execution and achievement of project goals.
+
+Core planning:
+- `SCOPE_DEFINITION.md`
+- `WORKPLAN.md` (includes milestones and resource plan sections)
+- `ASSUMPTIONS_CONSTRAINTS.md`
+- `DEPENDENCIES.md`
+- `RISK_REGISTER.md`
+- `COMMUNICATION_PLAN.md`
+
+Measurement architecture:
 - `METRIC_DEFINITION.md`
 - `MEASUREMENT_METHOD.md`
 - `BASELINE_CAPTURE_PERIOD.md`

@@ -5,8 +5,8 @@ Repo: 08_MARKETING/LLP-011_FUNNEL1_MANAGEMENT
 
 The project will be successful if:
 
-1. Funnel 01 scope and authority boundaries are explicitly documented and ML1-approved.
-2. Campaign execution, asset QA, and distribution sequencing are operationally defined.
-3. Stage classification and conversion evidence requirements are applied consistently.
-4. Run artifacts are generated for governed funnel activity.
-5. Baseline metrics for qualified leads, consult flow, and retention conversion are ready for Planning stage formalization.
+1. Funnel 01 implementation scope and authority boundaries are explicit and enforced across the full lifecycle (`lead_captured -> retained`).
+2. Execution controls for qualification, QA, distribution sequencing, and conversion progression are implementation-ready.
+3. KPI architecture is operationally usable for tracking efficiency, throughput, and conversion goals.
+4. Execution risks (scope, schedule, budget, financial, strategic) are actively controlled with documented mitigations.
+5. ML1 authorizes Planning -> Implementation and execution begins under approved thresholds and controls.

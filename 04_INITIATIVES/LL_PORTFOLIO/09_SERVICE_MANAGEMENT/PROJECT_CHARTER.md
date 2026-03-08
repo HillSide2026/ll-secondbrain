@@ -2,7 +2,7 @@
 
 Project #: LLP-26-28
 Repo: 09_SERVICE_MANAGEMENT
-Project Type: LL Project
+Project Type: Management Project
 Stage: Initiating
 
 ## 1. Purpose

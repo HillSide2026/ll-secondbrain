@@ -2,7 +2,7 @@
 
 Project #: LLP-26-29
 Repo: 09_SERVICE_MANAGEMENT/ESSENTIAL
-Project Type: LL Project
+Project Type: Management Project
 Stage: Initiating
 
 ## 1. Purpose

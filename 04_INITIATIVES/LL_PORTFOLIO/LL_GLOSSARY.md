@@ -38,6 +38,37 @@ A Data Object that contains bounded legal relationship between LL and client.
 
 ---
 
+## Project Type
+A canonical classification for work in LL. Allowed types are:
+- Strategic project
+- Management project
+- Operational project
+- Client matter (aka client project)
+
+Project type determines which governance artifacts, risk categories, and lifecycle controls apply.
+
+---
+
+## Strategic Project
+A project focused on long-horizon firm direction, structural change, or strategic posture.
+
+---
+
+## Management Project
+A project focused on governance, control, coordination, visibility, or optimization of firm systems.
+
+---
+
+## Operational Project
+A project focused on execution performance of defined workflows, including process reliability, throughput, and quality.
+
+---
+
+## Client Matter (Client Project)
+A client-specific legal work unit governed by matter doctrine and matter-stage artifacts, not by the generic project stage-gate lifecycle.
+
+---
+
 ## Practice Area
 A domain of legal work organized around subject matter expertise.
 Current practice areas include:

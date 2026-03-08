@@ -14,15 +14,19 @@ from collections import Counter
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
+import re
 from typing import Dict, List, Tuple
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-PROJECTS_DIR = REPO_ROOT / "04_INITIATIVES" / "LL_PORTFOLIO" / "07_STRATEGIC_PROJECTS"
+LL_PORTFOLIO_DIR = REPO_ROOT / "04_INITIATIVES" / "LL_PORTFOLIO"
 
 PROJECT_MGMT_DIR = REPO_ROOT / "04_INITIATIVES" / "LL_PORTFOLIO" / "03_FIRM_OPERATIONS" / "PROJECT_MANAGEMENT"
 PORTFOLIO_MGMT_DIR = REPO_ROOT / "04_INITIATIVES" / "LL_PORTFOLIO" / "03_FIRM_OPERATIONS" / "PORTFOLIO_MANAGEMENT"
 PORTFOLIO_GOVERNANCE_DIR = REPO_ROOT / "04_INITIATIVES" / "LL_PORTFOLIO" / "03_FIRM_OPERATIONS" / "PORTFOLIO_GOVERNANCE"
+
+GOVERNED_PROJECT_TYPES = {"Strategic Project", "Management Project", "Operational Project"}
+PROJECT_TYPE_PATTERN = re.compile(r"(?im)^(?:\*\*Project Type:\*\*|Project Type:)\s*(.+?)\s*$")
 
 REQUIRED_STAGE1 = [
     "PROJECT_CHARTER.md",
@@ -43,9 +47,8 @@ REQUIRED_STAGE2_MEASUREMENT = [
 
 REQUIRED_STAGE2_PLANNING = [
     "SCOPE_DEFINITION.md",
+    # Consolidated planning artifact; includes milestone schedule and resource plan sections.
     "WORKPLAN.md",
-    "MILESTONES.md",
-    "RESOURCE_PLAN.md",
     "ASSUMPTIONS_CONSTRAINTS.md",
     "DEPENDENCIES.md",
     "RISK_REGISTER.md",
@@ -94,6 +97,7 @@ STAGE_REQUIREMENTS = {
 @dataclass
 class ProjectSnapshot:
     project_id: str
+    project_type: str
     files: set[str]
     inferred_stage: int
     missing_stage1: List[str]
@@ -181,18 +185,53 @@ def infer_stage(files: set[str]) -> int:
     return 0
 
 
+def normalize_project_type(raw_value: str) -> str:
+    value = raw_value.strip().strip("*").strip()
+    key = value.lower()
+    aliases = {
+        "strategic": "Strategic Project",
+        "strategic project": "Strategic Project",
+        "management": "Management Project",
+        "management project": "Management Project",
+        "operational": "Operational Project",
+        "operational project": "Operational Project",
+        "client matter": "Client Matter",
+        "client project": "Client Matter",
+        "client matters": "Client Matter",
+        "client projects": "Client Matter",
+    }
+    return aliases.get(key, value)
+
+
+def extract_project_type(charter_text: str) -> str | None:
+    match = PROJECT_TYPE_PATTERN.search(charter_text)
+    if not match:
+        return None
+    return normalize_project_type(match.group(1))
+
+
 def discover_projects() -> List[ProjectSnapshot]:
     projects: List[ProjectSnapshot] = []
-    if not PROJECTS_DIR.exists():
+    if not LL_PORTFOLIO_DIR.exists():
         return projects
 
-    for path in sorted(PROJECTS_DIR.iterdir(), key=lambda p: p.name):
-        if not path.is_dir() or not path.name.startswith("LLP-"):
+    for charter_path in sorted(LL_PORTFOLIO_DIR.rglob("PROJECT_CHARTER.md"), key=lambda p: p.as_posix()):
+        path = charter_path.parent
+        try:
+            charter_text = charter_path.read_text(encoding="utf-8", errors="ignore")
+        except OSError:
             continue
+
+        project_type = extract_project_type(charter_text)
+        if project_type not in GOVERNED_PROJECT_TYPES:
+            continue
+
         file_set = {p.name for p in path.glob("*.md")}
+        project_id = path.relative_to(LL_PORTFOLIO_DIR).as_posix()
         projects.append(
             ProjectSnapshot(
-                project_id=path.name,
+                project_id=project_id,
+                project_type=project_type,
                 files=file_set,
                 inferred_stage=infer_stage(file_set),
                 missing_stage1=[name for name in REQUIRED_STAGE1 if name not in file_set],
@@ -370,12 +409,6 @@ def llm_004_outputs(projects: List[ProjectSnapshot], run_id: str) -> Dict[str, s
     )
 
     write_markdown(
-        PROJECT_MGMT_DIR / "PROJECT_STAGE_GATE_CHECKLIST.md",
-        "Project Stage Gate Checklist",
-        run_id,
-        checklist_body,
-    )
-    write_markdown(
         PROJECT_MGMT_DIR / "PROJECT_HEALTH_ROLLUP.md",
         run_id=run_id,
         title="Project Health Rollup",
@@ -398,7 +431,7 @@ def llm_004_outputs(projects: List[ProjectSnapshot], run_id: str) -> Dict[str, s
             "",
             "## Outputs",
             "",
-            f"- {PROJECT_MGMT_DIR / 'PROJECT_STAGE_GATE_CHECKLIST.md'}",
+            f"- {PROJECT_MGMT_DIR / 'PROJECT_ARTIFACT_TEMPLATE.md'}",
             f"- {PROJECT_MGMT_DIR / 'PROJECT_HEALTH_ROLLUP.md'}",
         ]
     )

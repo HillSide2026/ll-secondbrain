@@ -26,11 +26,15 @@ This directory contains all strategic initiatives and projects, organized by por
 │   ├── 01_ACTIVE_ROADMAPS/
 │   └── BACKLOG.md
 └── LL_PORTFOLIO/           # Levine Law operational support
-    ├── 01_CLIENT_MATTERS/
+    ├── 01_ACCOUNTING/
     ├── 02_PRACTICE_AREAS/
     ├── 03_FIRM_OPERATIONS/
-    ├── 04_RISK_COMPLIANCE/
-    └── 05_STRATEGIC_INITIATIVES/
+    ├── 04_RISK/
+    ├── 05_MATTER_DOCKETING/
+    ├── 06_FINANCIAL_PORTFOLIO/
+    ├── 07_STRATEGIC_PROJECTS/
+    ├── 08_MARKETING/
+    └── 09_SERVICE_MANAGEMENT/
 ```
 
 ---
@@ -61,6 +65,15 @@ This directory contains all strategic initiatives and projects, organized by por
 > ML1 defines intent and priority. ML2 preserves scope, constraints, and state. LL consumes ONLY ML1-approved outputs, never raw reasoning.
 
 **Governance:** Follows controlled registry model with explicit ML2 function authorization.
+
+**Work Type Taxonomy (Canonical):**
+- Strategic projects
+- Management projects
+- Operational projects
+- Client matters (aka client projects)
+
+Strategic, management, and operational projects follow the project stage-gate artifact lifecycle.
+Client matters/client projects follow matter doctrine and matter-stage artifacts.
 
 See: `LL_PORTFOLIO/README.md` for detailed governance rules.
 
