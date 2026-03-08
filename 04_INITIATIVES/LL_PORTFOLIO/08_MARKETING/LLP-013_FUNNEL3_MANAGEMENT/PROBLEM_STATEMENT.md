@@ -4,10 +4,14 @@ Project #: LLP-26-26
 Repo: 08_MARKETING/LLP-013_FUNNEL3_MANAGEMENT
 
 ## Current Problem
-- To be defined by ML1.
+- Funnel 03 is active but initiation controls are still template-level placeholders.
+- Multi-offer payments funnel requires tighter execution governance and conversion signal quality.
 
 ## Impact
-- To be defined by ML1.
+- Higher risk of inconsistent execution across entry offers.
+- Reduced visibility into entry-offer-to-retainer conversion quality.
+- Greater compliance risk in regulated-market messaging.
 
 ## Why Now
-- To be defined by ML1.
+- Funnel 03 is live and strategically important for payments regulatory counsel growth.
+- Formal initiation controls are required before optimization and scale.

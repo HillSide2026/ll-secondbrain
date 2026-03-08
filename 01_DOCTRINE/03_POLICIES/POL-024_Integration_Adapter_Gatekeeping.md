@@ -1,0 +1,19 @@
+---
+id: POL-024
+title: Integration Adapter Gatekeeping
+owner: ML1
+status: active
+version: 1.0
+created_date: 2026-03-08
+last_updated: 2026-03-08
+tags: [policy, integrations, gatekeeping]
+---
+
+# POL-024 — Integration Adapter Gatekeeping
+
+Policy Statement: All external I/O must occur through approved integration adapters subject to applicable policies and protocols.
+Authority (Principles referenced): PRN-024, PRN-028
+Enforcement expectation: External I/O paths that bypass approved adapters or required policy/protocol gates are non-compliant and must be blocked.
+Supersedes: None
+Version: 1.0
+Status: Active

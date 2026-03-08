@@ -5,8 +5,8 @@ Repo: 08_MARKETING/LLP-013_FUNNEL3_MANAGEMENT
 
 The project will be successful if:
 
-1. Scope is explicitly defined and approved by ML1.
-2. Required planning artifacts are completed.
-3. Risk controls are documented.
-4. Approval and escalation boundaries are explicit.
-5. Stage advancement criteria are met.
+1. Funnel 03 scope and authority boundaries are explicit and ML1-approved.
+2. Entry-offer orchestration is documented and operationally coherent.
+3. QA and distribution controls are defined for regulated-domain messaging.
+4. Conversion and revenue-attribution tracking requirements are established.
+5. Market signal reporting produces clear refinement candidates for ML1 review.

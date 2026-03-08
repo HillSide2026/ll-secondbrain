@@ -7,7 +7,21 @@ Repo: 08_MARKETING/LLP-013_FUNNEL3_MANAGEMENT
 - ML1 (final decision-maker)
 
 ## Direct Stakeholders
-- To be defined.
+- CMO Agent (top-level orchestration)
+- Marketing Strategy Agent
+- Content Production Agent
+- Editorial QA Agent
+- Distribution Orchestration Agent
+- Market Signal Agent
+- Repository / Asset Governance Agent
+
+## Domain Stakeholders
+- Financial services / payments practice stakeholders
 
 ## Governance Stakeholders
-- To be defined.
+- ML2 doctrine and policy controls
+- Intake management operations (handoff boundary)
+
+## External Surfaces
+- Content channels
+- Go High Level (GHL)

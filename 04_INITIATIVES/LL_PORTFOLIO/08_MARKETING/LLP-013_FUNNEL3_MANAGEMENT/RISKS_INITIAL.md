@@ -4,16 +4,16 @@ Project #: LLP-26-26
 Repo: 08_MARKETING/LLP-013_FUNNEL3_MANAGEMENT
 
 ## 1. Primary Risk
-- To be defined by ML1.
+Regulatory-positioning risk: messaging drifts beyond approved counsel scope.
 
 ## 2. Control Risk
-- To be defined by ML1.
+Unauthorized claims or weak QA controls increase compliance exposure.
 
 ## 3. Execution Risk
-- To be defined by ML1.
+Multi-entry-offer complexity reduces operational consistency and conversion efficiency.
 
 ## 4. Governance Risk
-- To be defined by ML1.
+Insufficient evidence linkage between campaign actions and conversion attribution.
 
 ## 5. Residual Risk
-- To be defined by ML1.
+External market/regulatory changes may affect funnel economics despite controls.

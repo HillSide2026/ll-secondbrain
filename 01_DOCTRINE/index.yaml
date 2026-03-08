@@ -135,6 +135,54 @@ principles:
   version: '1.0'
   status: active
   history: []
+- id: PRN-022
+  title: Governed Orchestration
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-022-governed-orchestration.md
+  version: '1.0'
+  status: active
+  history: []
+- id: PRN-023
+  title: Bounded Execution
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-023-bounded-execution.md
+  version: '1.0'
+  status: active
+  history: []
+- id: PRN-024
+  title: Controlled Externality
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-024-controlled-externality.md
+  version: '1.0'
+  status: active
+  history: []
+- id: PRN-025
+  title: Output Authority
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-025-output-authority.md
+  version: '1.0'
+  status: active
+  history: []
+- id: PRN-026
+  title: Run-Centric Auditability
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-026-run-centric-auditability.md
+  version: '1.0'
+  status: active
+  history: []
+- id: PRN-027
+  title: Layer Fidelity
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-027-layer-fidelity.md
+  version: '1.0'
+  status: active
+  history: []
+- id: PRN-028
+  title: Capability Containment
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-028-capability-containment.md
+  version: '1.0'
+  status: active
+  history: []
+- id: PRN-029
+  title: Traceable Mediation
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-029-traceable-mediation.md
+  version: '1.0'
+  status: active
+  history: []
 - id: RN-013
   title: Reversibility
   path: 01_DOCTRINE/02_PRINCIPLES/RN-013-reversibility.md
@@ -298,6 +346,90 @@ policies:
   version: '1.0'
   status: active
   history: []
+- id: POL-020
+  title: Doctrine-Bound Runtime
+  path: 01_DOCTRINE/03_POLICIES/POL-020_Doctrine_Bound_Runtime.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-021
+  title: Agent Orchestration Requirement
+  path: 01_DOCTRINE/03_POLICIES/POL-021_Agent_Orchestration_Requirement.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-022
+  title: Worker Scope Limitation
+  path: 01_DOCTRINE/03_POLICIES/POL-022_Worker_Scope_Limitation.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-023
+  title: No Worker Output Authorization
+  path: 01_DOCTRINE/03_POLICIES/POL-023_No_Worker_Output_Authorization.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-024
+  title: Integration Adapter Gatekeeping
+  path: 01_DOCTRINE/03_POLICIES/POL-024_Integration_Adapter_Gatekeeping.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-025
+  title: No Direct External Access by Workers
+  path: 01_DOCTRINE/03_POLICIES/POL-025_No_Direct_External_Access_by_Workers.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-026
+  title: Agent Output Authority
+  path: 01_DOCTRINE/03_POLICIES/POL-026_Agent_Output_Authority.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-027
+  title: Run Record Requirement
+  path: 01_DOCTRINE/03_POLICIES/POL-027_Run_Record_Requirement.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-028
+  title: Auditable Tool Use
+  path: 01_DOCTRINE/03_POLICIES/POL-028_Auditable_Tool_Use.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-029
+  title: Output Provenance
+  path: 01_DOCTRINE/03_POLICIES/POL-029_Output_Provenance.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-030
+  title: Role Separation
+  path: 01_DOCTRINE/03_POLICIES/POL-030_Role_Separation.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-031
+  title: Escalation on Boundary Failure
+  path: 01_DOCTRINE/03_POLICIES/POL-031_Escalation_on_Boundary_Failure.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-032
+  title: Marketing Lifecycle Definition and Boundary
+  path: 01_DOCTRINE/03_POLICIES/POL-032_Marketing_Lifecycle_Definition_and_Boundary.md
+  version: '0.1'
+  status: draft
+  history: []
+- id: POL-033
+  title: Conversion Qualification and Revenue Trigger
+  path: 01_DOCTRINE/03_POLICIES/POL-033_Conversion_Qualification_and_Revenue_Trigger.md
+  version: '0.1'
+  status: draft
+  history: []
 - id: 01_doctrine__02_policies__firm_project_doctrine_md
   title: Firm Project Doctrine
   path: 01_DOCTRINE/03_POLICIES/FIRM_PROJECT_DOCTRINE.md
@@ -419,6 +551,13 @@ protocols:
   status: active
   policy: POL-007
   history: []
+- id: PRO-015
+  title: Marketing Stage Classification and Handoff
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-015_Marketing_Stage_Classification_and_Handoff.md
+  version: '0.1'
+  status: draft
+  policy: POL-032
+  history: []
 - id: 01_doctrine__protocols__readme_md
   title: Protocols (Level 4)
   path: 01_DOCTRINE/05_PROTOCOLS/README.md
@@ -494,31 +633,31 @@ doctrine:
   status: draft
   history: []
 - id: CAP-001
-  title: Capability Profile: ML1 (Human Authority Layer)
+  title: 'Capability Profile: ML1 (Human Authority Layer)'
   path: 01_DOCTRINE/04_CAPABILITY_PROFILES/CAP-001-ml1-human-authority-layer.md
   version: '1.0'
   status: active
   history: []
 - id: CAP-002
-  title: Capability Profile: ML2 (System-of-Record Layer)
+  title: 'Capability Profile: ML2 (System-of-Record Layer)'
   path: 01_DOCTRINE/04_CAPABILITY_PROFILES/CAP-002-ml2-system-of-record-layer.md
   version: '1.0'
   status: active
   history: []
 - id: CAP-003
-  title: Capability Profile: System (Execution Layer)
+  title: 'Capability Profile: System (Execution Layer)'
   path: 01_DOCTRINE/04_CAPABILITY_PROFILES/CAP-003-system-execution-layer.md
   version: '1.0'
   status: active
   history: []
 - id: CAP-004
-  title: Capability Profile: LL (Distribution Layer)
+  title: 'Capability Profile: LL (Distribution Layer)'
   path: 01_DOCTRINE/04_CAPABILITY_PROFILES/CAP-004-ll-distribution-layer.md
   version: '1.0'
   status: active
   history: []
 - id: CAP-005
-  title: Capability Profile: Execution Bridge (Integration Layer)
+  title: 'Capability Profile: Execution Bridge (Integration Layer)'
   path: 01_DOCTRINE/04_CAPABILITY_PROFILES/CAP-005-execution-bridge-integration-layer.md
   version: '1.0'
   status: active
@@ -588,6 +727,18 @@ doctrine:
   path: 01_DOCTRINE/01_INVARIANTS/INV-0003-matter-model-structural-invariants.md
   version: '1.0'
   status: draft
+  history: []
+- id: inv-worker-boundary-output-authority
+  title: Worker Boundary and Output Authority
+  path: 01_DOCTRINE/01_INVARIANTS/INV-0004-worker-boundary-and-output-authority.md
+  version: '1.0'
+  status: active
+  history: []
+- id: inv-runtime-authority-separation-output
+  title: Runtime Authority, Separation, and Output Invariants
+  path: 01_DOCTRINE/01_INVARIANTS/INV-0005-runtime-authority-separation-and-output-invariants.md
+  version: '1.0'
+  status: active
   history: []
 - id: 00_system__system_identity_md
   title: "System Identity \u2014 LL Second Brain (ML2)"

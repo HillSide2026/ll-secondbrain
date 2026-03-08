@@ -6,19 +6,30 @@ Project Type: LL Project
 Stage: Initiating
 
 ## 1. Purpose
-- To be defined by ML1.
+Initiate execution planning for Funnel 02 (preventative diagnostic entry model).
 
 ## 2. Nature of Project
-- To be defined by ML1.
+Marketing design-to-launch readiness project.
+No live deployment authorized at initiation stage.
 
 ## 3. Strategic Rationale
-- To be defined by ML1.
+- Transition from reactive acquisition to preventative, qualification-heavy intake.
+- Improve lead quality and conversion pathway coherence.
+- Align with objective mapping for structured governance and risk assessment entry.
 
 ## 4. High-Level Deliverable
-- To be defined by ML1.
+- Funnel 02 initiation package including:
+  - campaign and asset baseline,
+  - qualification gate implementation plan,
+  - website transition plan for `levine-law.ca`,
+  - website and landing-page associate listing plan (ML1-approved names/roles only),
+  - intake and onboarding metric definitions with ML1-supplied thresholds,
+  - launch readiness criteria,
+  - signal/reporting expectations.
 
 ## 5. Authority
 Final approval authority: ML1.
+All execution remains constrained by ML2 doctrine and approved funnel definitions.
 
 ## 6. Promotion Path
-- To be defined by ML1.
+Upon ML1 initiation approval, move to Planning for metrics, baseline collection, and go/no-go launch thresholds.

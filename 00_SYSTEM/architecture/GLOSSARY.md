@@ -49,6 +49,30 @@ An architectural responsibility boundary in the system model. A layer defines wh
 ## Component
 A concrete actor or subsystem that operates within a layer and executes specific responsibilities.
 
+## Agent
+An orchestrating component that governs workflows, applies doctrine gates, and invokes workers and tools within assigned capability boundaries.
+
+## Authorized Issuance Layer
+The authority scope permitted to classify an artifact as an Authorized Output. In this system, authorization requires ML1 and LL sign-off under governed workflow controls.
+
+## Worker
+A scoped task executor invoked by an orchestrating agent for bounded work (for example: classification, extraction, drafting, QA checks, formatting, and structured analysis). A worker does not orchestrate runs and may not issue Authorized Outputs.
+
+## Subagent
+Synonym for Worker. The canonical doctrine term is Worker.
+
+## Tool
+A callable capability exposed by an integration adapter for governed runtime use.
+
+## Integration Adapter (MCP)
+A component that connects the runtime to external systems and exposes approved tools for external I/O.
+
+## Run
+An execution container that records governed runtime activity, including orchestration, worker invocations, tool calls, artifacts, and outputs.
+
+## Artifact
+A recorded intermediate or final output produced during execution.
+
 ## Supporting Artifacts (Non-Doctrine)
 These may exist under `01_DOCTRINE` for governance support but are not doctrine classes:
 - Procedural

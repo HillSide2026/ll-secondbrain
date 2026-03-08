@@ -36,7 +36,7 @@ This document reflects the current state of the system and explicitly identifies
 
 ## Agents Index (Derived from AGENTS.md)
 
-Generated on 2026-03-05.
+Generated on 2026-03-08.
 
 ### System Management Agents (SMA)
 
@@ -82,6 +82,25 @@ Canonical folder: `00_SYSTEM/AGENTS/specs/matter_admin/README.md`
 | Matter Digest Compiler Agent | MAA | Active | `00_SYSTEM/AGENTS/specs/matter_admin/MAA_MATTER_DIGEST_COMPILER.md` | bound actions: `agent_digest_compiler`, `agent_matter_digest_scoped` |
 | Deadline Extractor Agent | MAA | Planned | `00_SYSTEM/AGENTS/specs/matter_admin/MAA_DEADLINE_EXTRACTOR.md` | Slice 3 |
 | Comms Drafter Agent | MAA | Planned | `00_SYSTEM/AGENTS/specs/matter_admin/MAA_COMMS_DRAFTER.md` | Slice 4 |
+
+### Marketing Agents (MKT)
+
+Canonical folder: `00_SYSTEM/AGENTS/specs/marketing/README.md`
+Skill map: `00_SYSTEM/AGENTS/specs/marketing/MARKETING_AGENT_SKILL_MAP.md`
+
+| Agent | Class | Status | Path | Notes |
+| --- | --- | --- | --- | --- |
+| Chief Marketing Officer Agent | MKT | Draft | `00_SYSTEM/AGENTS/specs/marketing/MKT_CHIEF_MARKETING_OFFICER_AGENT.md` | top-level orchestrator for ML2-approved funnel execution |
+| Marketing Strategy Agent | MKT | Draft | `00_SYSTEM/AGENTS/specs/marketing/MKT_MARKETING_STRATEGY_AGENT.md` | campaign and funnel orchestration |
+| Content Production Agent | MKT | Draft | `00_SYSTEM/AGENTS/specs/marketing/MKT_CONTENT_PRODUCTION_AGENT.md` | draft artifact generation |
+| Editorial QA Agent | MKT | Draft | `00_SYSTEM/AGENTS/specs/marketing/MKT_EDITORIAL_QA_AGENT.md` | doctrine and quality conformity checks |
+| Distribution Orchestration Agent | MKT | Draft | `00_SYSTEM/AGENTS/specs/marketing/MKT_DISTRIBUTION_ORCHESTRATION_AGENT.md` | channel packaging and release preparation |
+| Market Signal Agent | MKT | Draft | `00_SYSTEM/AGENTS/specs/marketing/MKT_MARKET_SIGNAL_AGENT.md` | operational signal collection and interpretation |
+| Repository and Asset Governance Agent | MKT | Draft | `00_SYSTEM/AGENTS/specs/marketing/MKT_REPOSITORY_ASSET_GOVERNANCE_AGENT.md` | lifecycle, provenance, and lineage controls |
+| SEO and Discoverability Agent | MKT | Planned | `00_SYSTEM/AGENTS/specs/marketing/MKT_SEO_DISCOVERABILITY_AGENT.md` | optional specialist |
+| Social Narrative Agent | MKT | Planned | `00_SYSTEM/AGENTS/specs/marketing/MKT_SOCIAL_NARRATIVE_AGENT.md` | optional specialist |
+| Offer and Funnel Agent | MKT | Planned | `00_SYSTEM/AGENTS/specs/marketing/MKT_OFFER_FUNNEL_AGENT.md` | optional specialist |
+| Competitive Positioning Agent | MKT | Planned | `00_SYSTEM/AGENTS/specs/marketing/MKT_COMPETITIVE_POSITIONING_AGENT.md` | optional specialist |
 
 ### Practice Area Master Agents
 
@@ -139,7 +158,7 @@ System Agents perform **infrastructure, operational, and coordination functions*
 ### Governing Doctrine
 
 - [DOCTRINE-AGENTS-0001](../../01_DOCTRINE/01_INVARIANTS/DOCTRINE-AGENTS-0001-second-brain-agent-authority.md)
-- [AGENT-CAPABILITY-PROFILE-0001](../../01_DOCTRINE/03_CAPABILITY_PROFILES/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md)
+- [AGENT-CAPABILITY-PROFILE-0001](../../01_DOCTRINE/04_CAPABILITY_PROFILES/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md)
 
 ---
 
