@@ -37,4 +37,4 @@ consumers:
 related_artifacts:
   - 00_SYSTEM/matters/matter_identity_map.yaml
 change_notes:
-  - participant_mapping.yaml remains at 00_SYSTEM/integrations/participant_mapping.yaml
+  - participant_mapping.yaml canonical path is 00_SYSTEM/participant_mapping.yaml

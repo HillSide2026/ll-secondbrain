@@ -5,7 +5,7 @@ status: draft
 version: 1.0
 created_date: 2026-02-15
 last_updated: 2026-02-15
-last_imported_from: 00_SYSTEM/integrations/participant_mapping.yaml
+last_imported_from: 00_SYSTEM/participant_mapping.yaml
 last_imported_date: '2026-02-15'
 import_notes: Initial import from participant_mapping.yaml (draft routing map).
 matters:

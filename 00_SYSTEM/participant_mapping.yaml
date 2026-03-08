@@ -1,5 +1,7 @@
 # Participant Mapping — Email Domain/Person → Matter ID
 #
+# Canonical path: 00_SYSTEM/participant_mapping.yaml
+#
 # Used by: scripts/todo_rollup.py
 # Purpose: Map email senders to matters for task extraction
 #

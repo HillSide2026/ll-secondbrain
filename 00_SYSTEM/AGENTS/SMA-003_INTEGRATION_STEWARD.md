@@ -25,7 +25,7 @@ Manage read-only integration specifications and maintain access boundaries.
 
 ## Derived From
 
-- Runbook: `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE1.3_RUNBOOK_INTEGRATION_STEWARD.md`
+- Runbook (archived): `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.3/STAGE1.3_RUNBOOK_INTEGRATION_STEWARD.md`
 
 ---
 

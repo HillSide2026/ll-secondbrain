@@ -4,7 +4,7 @@ title: Folder Map
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-27
+last_updated: 2026-03-08
 tags: []
 ---
 
@@ -26,6 +26,12 @@ tags: []
 
 ## Non-ML2 Root Folders (Non-Numbered)
 - scripts — Local tooling and operational scripts (non-ML2)
+- cache — Local integration/cache artifacts used by automation (non-ML2)
+- state — Local sync/runtime state snapshots (non-ML2)
+- gmail_governance — Standalone Gmail governance tooling workspace (non-ML2)
+- find — Local command shim/workspace folder (non-ML2)
+- mv — Local command shim/workspace folder (non-ML2)
+- rmdir — Local command shim/workspace folder (non-ML2)
 
 ## Non-ML2 Hidden Roots
 - .claude — Automation hub configuration (non-ML2, non-canon)

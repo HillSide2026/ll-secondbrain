@@ -25,7 +25,7 @@ Validate system compliance, review changes, and enforce governance rules.
 
 ## Derived From
 
-- Runbook: `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE1.3_RUNBOOK_SYSTEM_GOVERNANCE.md`
+- Runbook (archived): `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.3/STAGE1.3_RUNBOOK_SYSTEM_GOVERNANCE.md`
 
 ---
 
@@ -89,7 +89,7 @@ All outputs must follow the standard agent output format.
 ```
 Review artifact placement for compliance.
 Inputs:
-- Artifact: 04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE2/STAGE2.1_ACTION_PLAN.md
+- Artifact: 04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE2/STAGE2.13/STAGE2.13_ACTION_PLAN.md
 - Scope: full
 - Folder map: 00_SYSTEM/architecture/FOLDER_MAP.md
 Produce: Compliance report with pass/fail and recommendations.

@@ -25,7 +25,7 @@ Draft runbooks, validate artifact quality, and perform QA checks.
 
 ## Derived From
 
-- Runbook: `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE1.3_RUNBOOK_QA.md`
+- Runbook (archived): `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.3/STAGE1.3_RUNBOOK_QA.md`
 
 ---
 
@@ -57,7 +57,7 @@ Draft runbooks, validate artifact quality, and perform QA checks.
 | Workflow definitions | As provided |
 | Schemas | `00_SYSTEM/schemas/SCHEMAS.md` |
 | Draft artifacts | Submitted for review |
-| Handoff Map | `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE1.3_HANDOFF_MAP.md` |
+| Handoff Map | `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.3/STAGE1.3_HANDOFF_MAP.md` |
 
 ---
 

@@ -25,7 +25,7 @@ Organize, index, and maintain system knowledge artifacts.
 
 ## Derived From
 
-- Runbook: `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE1.3_RUNBOOK_KNOWLEDGE_CURATION.md`
+- Runbook (archived): `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.3/STAGE1.3_RUNBOOK_KNOWLEDGE_CURATION.md`
 
 ---
 

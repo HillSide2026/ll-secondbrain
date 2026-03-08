@@ -25,7 +25,7 @@ Manage roadmap sequencing, backlog prioritization, and stage transitions.
 
 ## Derived From
 
-- Runbook: `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE1.3_RUNBOOK_PORTFOLIO_PLANNING.md`
+- Runbook (archived): `10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.3/STAGE1.3_RUNBOOK_PORTFOLIO_PLANNING.md`
 
 ---
 
@@ -90,7 +90,7 @@ Review Stage 2.1 for closure readiness.
 Inputs:
 - Roadmap: 04_INITIATIVES/SYSTEM_PORTFOLIO/00_DRAFT_ROADMAPS/ROADMAP-SYSTEM-2026W05.md
 - Stage: 2.1 Agent Runtime Setup
-- DoD: 01_ACTIVE_ROADMAPS/STAGE2/STAGE5_AUTHORIZATION_KICKOFF.md (section 2.1)
+- DoD: 04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE2/STAGE2_AUTHORIZATION_KICKOFF.md (section 2.1)
 Produce: Stage closure recommendation with DoD evidence.
 ```
 

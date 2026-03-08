@@ -1,10 +1,20 @@
+---
+id: 00_system__agent_spec__matter_operations_queue_tracker_md
+title: Agent Spec — Matter Operations Queue Tracker
+owner: ML1
+status: draft
+created_date: 2026-03-08
+last_updated: 2026-03-08
+tags: [agent-spec, matter-operations]
+---
+
 # AGENT SPEC — Matter Operations Queue Tracker
 
 Agent Name: Matter Operations Queue Tracker  
 Agent ID: AGENT-MATTER-OPERATIONS-QUEUE-TRACKER-0001  
 Status: Draft for ML1 approval  
 Effective Date: TBD  
-Governing Doctrine: DOCTRINE-2026-006 (Agent Authority) + DOCTRINE-2026-005 (No Fictional Execution Constructs)
+Governing Doctrine: DOCTRINE-AGENTS-0001 (Agent Authority) + DOCTRINE-CORE-0005 (No Fictional Execution Constructs)
 
 ## 1) Role Purpose
 Maintain an accurate, inspectable view of the Matter Operations Queue by:
