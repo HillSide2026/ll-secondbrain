@@ -1,5 +1,5 @@
 schema_version: '1.0'
-last_updated: '2026-02-27'
+last_updated: '2026-03-08'
 rules_dir: 01_DOCTRINE/RULES
 tests_dir: 01_DOCTRINE/TESTS
 rules: []
@@ -15,281 +15,413 @@ constitution:
   status: Active
   history: []
 principles:
-- id: 01_doctrine__01_principles__doctrine-2026-006-decision-principles_md
-  title: DOCTRINE 2026 006 decision principles
-  path: 01_DOCTRINE/01_PRINCIPLES/DOCTRINE-PRINCIPLES-0001-decision-principles.md
+- id: PRN-001
+  title: Decision Principles
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-001-decision-principles.md
   version: '1.0'
   status: draft
   history: []
-- id: PRN-001
-  title: Human Primacy
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-001-human-primacy.md
-  version: '1.0'
-  status: active
-  history: []
 - id: PRN-002
-  title: Auditability
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-002-auditability.md
+  title: Human Primacy
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-002-human-primacy.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-003
-  title: Non-Autonomy
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-003-non-autonomy.md
+  title: Auditability
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-003-auditability.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-004
-  title: Explicit Scope
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-004-explicit-scope.md
+  title: Non-Autonomy
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-004-non-autonomy.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-005
-  title: Drift Intolerance
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-005-drift-intolerance.md
+  title: Explicit Scope
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-005-explicit-scope.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-006
-  title: Interpretive Integrity
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-006-interpretive-integrity.md
+  title: Drift Intolerance
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-006-drift-intolerance.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-007
-  title: Traceable Reasoning
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-007-traceable-reasoning.md
+  title: Interpretive Integrity
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-007-interpretive-integrity.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-008
-  title: Structural Coherence
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-008-structural-coherence.md
+  title: Traceable Reasoning
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-008-traceable-reasoning.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-009
-  title: Repeatable Excellence
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-009-repeatable-excellence.md
+  title: Structural Coherence
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-009-structural-coherence.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-010
-  title: Steal Man
-  path: 01_DOCTRINE/01_PRINCIPLES/PRN-010-steal-man.md
+  title: Repeatable Excellence
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-010-repeatable-excellence.md
+  version: '1.0'
+  status: active
+  history: []
+- id: PRN-012
+  title: Risk vs Uncertainty
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-012-risk-vs-uncertainty.md
+  version: '1.0'
+  status: active
+  history: []
+- id: PRN-013
+  title: Risk Lifecycle Governance
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-013-risk-lifecycle-governance.md
+  version: '1.0'
+  status: active
+  history: []
+- id: PRN-014
+  title: Deterministic Preference
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-014-deterministic-preference.md
+  version: '1.0'
+  status: active
+  history: []
+- id: PRN-015
+  title: Dependency Awareness
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-015-dependency-awareness.md
+  version: '1.0'
+  status: active
+  history: []
+- id: PRN-016
+  title: Minimal Structural Mutation
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-016-minimal-structural-mutation.md
+  version: '1.0'
+  status: active
+  history: []
+- id: PRN-017
+  title: Progressive Formalization
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-017-progressive-formalization.md
+  version: '1.0'
+  status: active
+  history: []
+- id: PRN-018
+  title: Stability Under Extension
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-018-stability-under-extension.md
+  version: '1.0'
+  status: active
+  history: []
+- id: PRN-019
+  title: Observable Drift
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-019-observable-drift.md
+  version: '1.0'
+  status: active
+  history: []
+- id: PRN-020
+  title: Authority-Boundary Clarity
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-020-authority-boundary-clarity.md
+  version: '1.0'
+  status: active
+  history: []
+- id: PRN-021
+  title: Layer Separation by Design
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-021-layer-separation-by-design.md
+  version: '1.0'
+  status: active
+  history: []
+- id: RN-013
+  title: Reversibility
+  path: 01_DOCTRINE/02_PRINCIPLES/RN-013-reversibility.md
   version: '1.0'
   status: active
   history: []
 - id: 01_doctrine__principles__readme_md
   title: Principles (Level 2)
-  path: 01_DOCTRINE/01_PRINCIPLES/README.md
+  path: 01_DOCTRINE/02_PRINCIPLES/README.md
   version: '1.0'
   status: draft
   history: []
 policies:
 - id: 01_doctrine__02_policies__doctrine-2026-005-no_fictional_execution_constructs_md
   title: No Fictional Execution Constructs
-  path: 01_DOCTRINE/02_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md
+  path: 01_DOCTRINE/03_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: DOCTRINE-MATTERS-0001
+  title: Matter Stages Doctrine
+  path: 01_DOCTRINE/03_POLICIES/DOCTRINE-MATTERS-0001-matter-stages.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: DOCTRINE-MATTERS-0002
+  title: Matter Solutions Doctrine
+  path: 01_DOCTRINE/03_POLICIES/DOCTRINE-MATTERS-0002-matter-solutions.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: DOCTRINE-MATTERS-0003
+  title: Matter Summary Doctrine
+  path: 01_DOCTRINE/03_POLICIES/DOCTRINE-MATTERS-0003-matter-summary.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: DOCTRINE-OPS-0001
+  title: Office Day Policy
+  path: 01_DOCTRINE/03_POLICIES/DOCTRINE-OPERATIONS-0001-office-day-policy.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: DOCTRINE-RISK-0002
+  title: Project Risk Artifact Lifecycle Policy
+  path: 01_DOCTRINE/03_POLICIES/DOCTRINE-RISK-0002-project-risk-artifact-lifecycle-policy.md
   version: '1.0'
   status: draft
   history: []
 - id: POL-001
   title: Output Labeling Requirement
-  path: 01_DOCTRINE/02_POLICIES/POL-001_Output_Labeling_Requirement.md
+  path: 01_DOCTRINE/03_POLICIES/POL-001_Output_Labeling_Requirement.md
   version: '1.0'
   status: active
   history: []
 - id: POL-002
   title: Provenance Requirement
-  path: 01_DOCTRINE/02_POLICIES/POL-002_Provenance_Requirement.md
+  path: 01_DOCTRINE/03_POLICIES/POL-002_Provenance_Requirement.md
   version: '1.0'
   status: active
   history: []
 - id: POL-003
   title: Novel Policy Prohibition
-  path: 01_DOCTRINE/02_POLICIES/POL-003_Novel_Policy_Prohibition.md
+  path: 01_DOCTRINE/03_POLICIES/POL-003_Novel_Policy_Prohibition.md
   version: '1.0'
   status: active
   history: []
 - id: POL-004
   title: External Output Approval Requirement
-  path: 01_DOCTRINE/02_POLICIES/POL-004_External_Output_Approval_Requirement.md
+  path: 01_DOCTRINE/03_POLICIES/POL-004_External_Output_Approval_Requirement.md
   version: '1.0'
   status: active
   history: []
 - id: POL-005
   title: Low Confidence Escalation
-  path: 01_DOCTRINE/02_POLICIES/POL-005_Low_Confidence_Escalation.md
+  path: 01_DOCTRINE/03_POLICIES/POL-005_Low_Confidence_Escalation.md
   version: '1.0'
   status: active
   history: []
 - id: POL-006
   title: Clarity & Single-Job Requirement
-  path: 01_DOCTRINE/02_POLICIES/POL-006_Clarity_Single_Job_Requirement.md
+  path: 01_DOCTRINE/03_POLICIES/POL-006_Clarity_Single_Job_Requirement.md
   version: '1.0'
   status: active
   history: []
 - id: POL-007
   title: Consistency & Supersession Requirement
-  path: 01_DOCTRINE/02_POLICIES/POL-007_Consistency_Supersession_Requirement.md
+  path: 01_DOCTRINE/03_POLICIES/POL-007_Consistency_Supersession_Requirement.md
   version: '1.0'
   status: active
   history: []
 - id: POL-008
   title: Traceable Reasoning Requirement
-  path: 01_DOCTRINE/02_POLICIES/POL-008_Traceable_Reasoning_Requirement.md
+  path: 01_DOCTRINE/03_POLICIES/POL-008_Traceable_Reasoning_Requirement.md
   version: '1.0'
   status: active
   history: []
 - id: POL-009
   title: Testability Requirement
-  path: 01_DOCTRINE/02_POLICIES/POL-009_Testability_Requirement.md
+  path: 01_DOCTRINE/03_POLICIES/POL-009_Testability_Requirement.md
   version: '1.0'
   status: active
   history: []
 - id: POL-010
   title: Maintainability & Versioning Requirement
-  path: 01_DOCTRINE/02_POLICIES/POL-010_Maintainability_Versioning_Requirement.md
+  path: 01_DOCTRINE/03_POLICIES/POL-010_Maintainability_Versioning_Requirement.md
   version: '1.0'
   status: active
   history: []
 - id: POL-011
   title: Discoverability Requirement
-  path: 01_DOCTRINE/02_POLICIES/POL-011_Discoverability_Requirement.md
+  path: 01_DOCTRINE/03_POLICIES/POL-011_Discoverability_Requirement.md
   version: '1.0'
   status: active
   history: []
 - id: POL-012
   title: Canon-Referenced Automation Commands
-  path: 01_DOCTRINE/02_POLICIES/POL-012_Canon_Referenced_Automation_Commands.md
+  path: 01_DOCTRINE/03_POLICIES/POL-012_Canon_Referenced_Automation_Commands.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-013
+  title: Steel Man Interpretation Requirement
+  path: 01_DOCTRINE/03_POLICIES/POL-013_Steel_Man_Interpretation_Requirement.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-014
+  title: Doctrine Residency Requirement
+  path: 01_DOCTRINE/03_POLICIES/POL-014_Doctrine_Residency_Requirement.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-015
+  title: Artifacts Residency Requirement
+  path: 01_DOCTRINE/03_POLICIES/POL-015_Artifacts_Residency_Requirement.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-016
+  title: System Authority Limit
+  path: 01_DOCTRINE/03_POLICIES/POL-016_System_Authority_Limit.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-017
+  title: Execution Authority Limit
+  path: 01_DOCTRINE/03_POLICIES/POL-017_Execution_Authority_Limit.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-018
+  title: Codified Distribution Requirement
+  path: 01_DOCTRINE/03_POLICIES/POL-018_Codified_Distribution_Requirement.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-019
+  title: Practice Area Tagging Requirement
+  path: 01_DOCTRINE/03_POLICIES/POL-019_Practice_Area_Tagging_Requirement.md
   version: '1.0'
   status: active
   history: []
 - id: 01_doctrine__02_policies__firm_project_doctrine_md
   title: Firm Project Doctrine
-  path: 01_DOCTRINE/02_POLICIES/FIRM_PROJECT_DOCTRINE.md
+  path: 01_DOCTRINE/03_POLICIES/FIRM_PROJECT_DOCTRINE.md
   version: '1.0'
   status: draft
   history: []
 - id: 01_doctrine__policies__readme_md
   title: Policies (Level 3)
-  path: 01_DOCTRINE/02_POLICIES/README.md
+  path: 01_DOCTRINE/03_POLICIES/README.md
   version: '1.0'
   status: draft
   history: []
 - id: 01_doctrine__02_policies__doctrine-2026-007-canonical-agent-doctrine_md
   title: Canonical Agent Doctrine
-  path: 01_DOCTRINE/02_POLICIES/DOCTRINE-AGENTS-0002-canonical-agent-doctrine.md
+  path: 01_DOCTRINE/03_POLICIES/DOCTRINE-AGENTS-0002-canonical-agent-doctrine.md
   version: '1.0'
   status: approved
   history: []
 - id: 00_system__ml1_approval_boundaries_md
   title: ML1 Approval Boundaries
-  path: 01_DOCTRINE/02_POLICIES/ML1_APPROVAL_BOUNDARIES.md
+  path: 01_DOCTRINE/03_POLICIES/ML1_APPROVAL_BOUNDARIES.md
   version: '1.0'
   status: draft
   history: []
 - id: 00_system__write_back_policy_md
   title: System Write-Back Policy
-  path: 01_DOCTRINE/02_POLICIES/WRITE_BACK_POLICY.md
+  path: 01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md
   version: '1.0'
   status: draft
   history: []
 - id: 01_doctrine__02_policies__integration_control_policy_md
   title: Integration Control Policy
-  path: 01_DOCTRINE/02_POLICIES/INTEGRATION_CONTROL_POLICY.md
+  path: 01_DOCTRINE/03_POLICIES/INTEGRATION_CONTROL_POLICY.md
   version: '1.0'
   status: draft
   history: []
 protocols:
 - id: PRO-001
   title: Enforce Output Labeling
-  path: 01_DOCTRINE/03_PROTOCOLS/PRO-001_Enforce_Output_Labeling.md
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-001_Enforce_Output_Labeling.md
   version: '1.0'
   status: active
   policy: POL-001
   history: []
 - id: PRO-002
   title: Enforce Provenance Block
-  path: 01_DOCTRINE/03_PROTOCOLS/PRO-002_Enforce_Provenance_Block.md
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-002_Enforce_Provenance_Block.md
   version: '1.0'
   status: active
   policy: POL-002
   history: []
 - id: PRO-003
   title: Novel Policy Gate
-  path: 01_DOCTRINE/03_PROTOCOLS/PRO-003_Novel_Policy_Gate.md
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-003_Novel_Policy_Gate.md
   version: '1.0'
   status: active
   policy: POL-003
   history: []
 - id: PRO-004
   title: External Output Gate
-  path: 01_DOCTRINE/03_PROTOCOLS/PRO-004_External_Output_Gate.md
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-004_External_Output_Gate.md
   version: '1.0'
   status: active
   policy: POL-004
   history: []
 - id: PRO-005
   title: Classification Confidence Gate
-  path: 01_DOCTRINE/03_PROTOCOLS/PRO-005_Classification_Confidence_Gate.md
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-005_Classification_Confidence_Gate.md
   version: '1.0'
   status: active
   policy: POL-005
   history: []
 - id: PRO-006
   title: Clarity & Scope Check
-  path: 01_DOCTRINE/03_PROTOCOLS/PRO-006_Clarity_Scope_Check.md
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-006_Clarity_Scope_Check.md
   version: '1.0'
   status: active
   policy: POL-006
   history: []
 - id: PRO-007
   title: Coherence Conflict Check
-  path: 01_DOCTRINE/03_PROTOCOLS/PRO-007_Coherence_Conflict_Check.md
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-007_Coherence_Conflict_Check.md
   version: '1.0'
   status: active
   policy: POL-007
   history: []
 - id: PRO-008
   title: Reasoning Trace Check
-  path: 01_DOCTRINE/03_PROTOCOLS/PRO-008_Reasoning_Trace_Check.md
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-008_Reasoning_Trace_Check.md
   version: '1.0'
   status: active
   policy: POL-008
   history: []
 - id: PRO-009
   title: Testability Check
-  path: 01_DOCTRINE/03_PROTOCOLS/PRO-009_Testability_Check.md
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-009_Testability_Check.md
   version: '1.0'
   status: active
   policy: POL-009
   history: []
 - id: PRO-010
   title: Versioning Check
-  path: 01_DOCTRINE/03_PROTOCOLS/PRO-010_Versioning_Check.md
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-010_Versioning_Check.md
   version: '1.0'
   status: active
   policy: POL-010
   history: []
 - id: PRO-011
   title: Discoverability Check
-  path: 01_DOCTRINE/03_PROTOCOLS/PRO-011_Discoverability_Check.md
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-011_Discoverability_Check.md
   version: '1.0'
   status: active
   policy: POL-011
   history: []
 - id: PRO-012
   title: Stage & Phase Numbering Enforcement
-  path: 01_DOCTRINE/03_PROTOCOLS/PRO-012_Stage_Phase_Numbering_Enforcement.md
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-012_Stage_Phase_Numbering_Enforcement.md
   version: '1.0'
   status: active
   policy: POL-007
   history: []
 - id: 01_doctrine__protocols__readme_md
   title: Protocols (Level 4)
-  path: 01_DOCTRINE/03_PROTOCOLS/README.md
+  path: 01_DOCTRINE/05_PROTOCOLS/README.md
   version: '1.0'
   status: draft
   policy: unknown
@@ -320,32 +452,8 @@ doctrine:
   status: draft
   history: []
 - id: DOCTRINE-RISK_MODEL-0001
-  title: Risk Model Doctrine (Economic, Execution, Relationship)
+  title: Risk Model Doctrine (Economic, Execution, Operational, Financial, Strategic)
   path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK-0001-risk-model.md
-  version: '1.0'
-  status: draft
-  history: []
-- id: DOCTRINE-MATTERS-0001
-  title: Matter Stages Doctrine
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-MATTERS-0001-matter-stages.md
-  version: '1.0'
-  status: draft
-  history: []
-- id: DOCTRINE-MATTERS-0002
-  title: Matter Solutions Doctrine
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-MATTERS-0002-matter-solutions.md
-  version: '1.0'
-  status: draft
-  history: []
-- id: DOCTRINE-MATTERS-0003
-  title: Matter Summary Doctrine
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-MATTERS-0003-matter-summary.md
-  version: '1.0'
-  status: draft
-  history: []
-- id: DOCTRINE-OPS-0001
-  title: Office Day Model Doctrine
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-OPERATIONS-0001-office-day-model.md
   version: '1.0'
   status: draft
   history: []
@@ -373,51 +481,75 @@ doctrine:
   version: '1.0'
   status: draft
   history: []
-- id: 01_doctrine__02_interpretive__readme_md
-  title: Interpretive Doctrine
-  path: 01_DOCTRINE/02_interpretive/README.md
-  version: '1.0'
-  status: draft
-  history: []
-- id: 01_doctrine__02_interpretive__second_brain_model_md
+- id: 01_doctrine__01_invariants__second_brain_model_md
   title: Second Brain System Model
-  path: 01_DOCTRINE/02_interpretive/SECOND_BRAIN_MODEL.md
+  path: 01_DOCTRINE/01_INVARIANTS/SECOND_BRAIN_MODEL.md
   version: '1.0'
   status: draft
   history: []
 - id: 01_doctrine__03_capability_profiles__agent-capability-profile-0001-draft_write_access_md
   title: 'AGENT-CAPABILITY-PROFILE-0001: Draft Write Access'
-  path: 01_DOCTRINE/03_CAPABILITY_PROFILES/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md
+  path: 01_DOCTRINE/04_CAPABILITY_PROFILES/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md
   version: '1.0'
   status: draft
   history: []
+- id: CAP-001
+  title: Capability Profile: ML1 (Human Authority Layer)
+  path: 01_DOCTRINE/04_CAPABILITY_PROFILES/CAP-001-ml1-human-authority-layer.md
+  version: '1.0'
+  status: active
+  history: []
+- id: CAP-002
+  title: Capability Profile: ML2 (System-of-Record Layer)
+  path: 01_DOCTRINE/04_CAPABILITY_PROFILES/CAP-002-ml2-system-of-record-layer.md
+  version: '1.0'
+  status: active
+  history: []
+- id: CAP-003
+  title: Capability Profile: System (Execution Layer)
+  path: 01_DOCTRINE/04_CAPABILITY_PROFILES/CAP-003-system-execution-layer.md
+  version: '1.0'
+  status: active
+  history: []
+- id: CAP-004
+  title: Capability Profile: LL (Distribution Layer)
+  path: 01_DOCTRINE/04_CAPABILITY_PROFILES/CAP-004-ll-distribution-layer.md
+  version: '1.0'
+  status: active
+  history: []
+- id: CAP-005
+  title: Capability Profile: Execution Bridge (Integration Layer)
+  path: 01_DOCTRINE/04_CAPABILITY_PROFILES/CAP-005-execution-bridge-integration-layer.md
+  version: '1.0'
+  status: active
+  history: []
 - id: 01_doctrine__03_capability_profiles__readme_md
-  title: Agent Capability Profiles
-  path: 01_DOCTRINE/03_CAPABILITY_PROFILES/README.md
+  title: Capability Profiles
+  path: 01_DOCTRINE/04_CAPABILITY_PROFILES/README.md
   version: '1.0'
   status: draft
   history: []
 - id: 01_doctrine__03_capability_profiles___template_md
   title: 'AGENT-CAPABILITY-PROFILE-XXXX: [Profile Name]'
-  path: 01_DOCTRINE/03_CAPABILITY_PROFILES/_TEMPLATE.md
+  path: 01_DOCTRINE/04_CAPABILITY_PROFILES/_TEMPLATE.md
   version: '1.0'
   status: draft
   history: []
 - id: DOCTRINE-2026-003
   title: "Promotion Rules (Inbox \u2192 Research \u2192 Doctrine)"
-  path: 01_DOCTRINE/04_PROCEDURAL/DOCTRINE-OPERATIONS-0002-promotion-rules.md
+  path: 01_DOCTRINE/06_PROCEDURAL/DOCTRINE-OPERATIONS-0002-promotion-rules.md
   version: '1.0'
   status: approved
   history: []
 - id: DOCTRINE-2026-008
   title: Run Outcome Rules (Promote / Park / Archive)
-  path: 01_DOCTRINE/04_PROCEDURAL/DOCTRINE-OPERATIONS-0003-run-outcome-rules.md
+  path: 01_DOCTRINE/06_PROCEDURAL/DOCTRINE-OPERATIONS-0003-run-outcome-rules.md
   version: '1.0'
   status: approved
   history: []
 - id: 01_doctrine__04_procedural__readme_md
   title: Procedural Doctrine
-  path: 01_DOCTRINE/04_PROCEDURAL/README.md
+  path: 01_DOCTRINE/06_PROCEDURAL/README.md
   version: '1.0'
   status: draft
   history: []
@@ -445,9 +577,21 @@ doctrine:
   version: '1.0'
   status: draft
   history: []
+- id: inv-no-autonomous-publish
+  title: No Autonomous Publish (Binding Invariant)
+  path: 01_DOCTRINE/01_INVARIANTS/INV-0002-no-autonomous-publish.md
+  version: '0.1'
+  status: draft
+  history: []
+- id: inv-matter-model-structural
+  title: Matter Model Structural Invariants
+  path: 01_DOCTRINE/01_INVARIANTS/INV-0003-matter-model-structural-invariants.md
+  version: '1.0'
+  status: draft
+  history: []
 - id: 00_system__system_identity_md
   title: "System Identity \u2014 LL Second Brain (ML2)"
-  path: 01_DOCTRINE/02_interpretive/SYSTEM_IDENTITY.md
+  path: 01_DOCTRINE/01_INVARIANTS/SYSTEM_IDENTITY.md
   version: '1.0'
   status: draft
   history: []

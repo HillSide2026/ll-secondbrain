@@ -17,7 +17,7 @@ tags: []
 **Authority:** ML1
 
 ## Change Note
-Enforcement responsibilities moved to `01_DOCTRINE/03_PROTOCOLS/PRO-012_Stage_Phase_Numbering_Enforcement.md` on 2026-02-13 to separate structural invariants from enforcement logic.
+Enforcement responsibilities moved to `01_DOCTRINE/05_PROTOCOLS/PRO-012_Stage_Phase_Numbering_Enforcement.md` on 2026-02-13 to separate structural invariants from enforcement logic.
 
 ---
 

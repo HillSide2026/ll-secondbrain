@@ -1,11 +1,11 @@
 ---
 id: DOCTRINE-RISK_MODEL-0001
-title: Risk Model Doctrine (Economic, Execution, Relationship)
+title: Risk Model Doctrine (Economic, Execution, Operational, Financial, Strategic)
 owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-24
-last_updated: 2026-02-24
+last_updated: 2026-03-08
 tags: [doctrine, risk]
 
 effective_date:
@@ -17,7 +17,7 @@ provenance:
   context:
 ---
 
-# Risk Model Doctrine (Economic, Execution, Relationship)
+# Risk Model Doctrine (Economic, Execution, Operational, Financial, Strategic)
 
 **Document ID:** DOCTRINE-RISK_MODEL-0001  
 **Status:** DRAFT  
@@ -36,7 +36,7 @@ Define a firm-wide risk model that:
 
 ## 2. Risk Axes
 
-Risk is decomposed into five axes. Not all axes apply to all work types — see Section 7 for the mapping.
+Risk is decomposed into five axes. Not all axes apply to all work types — see Section 6 for the mapping.
 
 ### A. Economic Risk (Derived — Portfolio Level)
 
@@ -142,72 +142,9 @@ The system produces:
 
 ---
 
-## 6. Project Risk Artifact Schemas
+## 6. Risk Axes by Work Type
 
-The following artifact schemas apply to firm projects across lifecycle stages. Which schemas are required for a given project depends on its type — see Section 7. These govern what LLM-004 produces and what ML1 reviews at each gate.
-
-### Stage 1 — Initiating: `RISK_SCAN.md`
-
-Purpose: Capture top risks and key assumptions before committing to the project. Culminates in an explicit ML1 go / no-go judgment.
-
-```
-## Top 5 Risks
-1. <Risk description>
-2.
-3.
-4.
-5.
-
-## Key Assumptions
-- <Assumption underpinning the project>
-
-## Go / No-Go Judgment
-Decision: [Proceed | Do Not Proceed | Proceed with Conditions]
-Rationale: <ML1 judgment — must be explicit, not inferred>
-```
-
-### Stage 2 — Planning: `RISK_REGISTER.md`
-
-Purpose: Decompose risks by category with likelihood, impact, and mitigation. Scope/schedule/budget are the required category axes.
-
-```
-| Risk | Category | Likelihood | Impact | Mitigation |
-|------|----------|------------|--------|------------|
-| <description> | Scope / Schedule / Budget | H / M / L | H / M / L | <action> |
-```
-
-### Stage 3 — Implementation: `ISSUE_LOG.md`
-
-Purpose: Track risks that materialized as real issues. Each row captures the original risk, what actually happened, the root cause, and the action taken.
-
-```
-| Risk | Issue | Cause | Action |
-|------|-------|-------|--------|
-| <original risk from RISK_SCAN or RISK_REGISTER> | <what materialized> | <root cause> | <resolution step> |
-```
-
-### Stage 5 — Closing: `LESSONS_LEARNED.md`
-
-Purpose: Capture durable insights for future projects. Three sections required; bullets only.
-
-```
-## What Worked
-- <bullet>
-
-## What Failed
-- <bullet>
-
-## What Should Change Next Time
-- <bullet>
-```
-
-**Authority note:** All four artifacts require ML1 review before the stage gate is closed. ML2 drafts; ML1 decides.
-
----
-
-## 7. Risk Axes by Work Type
-
-This section defines which risk axes apply to each work type and what artifact obligations follow.
+This section defines which risk axes apply to each work type.
 
 ### Work Type Definitions
 
@@ -228,17 +165,9 @@ This section defines which risk axes apply to each work type and what artifact o
 | D. Financial Risk | ✓ | ✓ | | |
 | E. Strategic Risk | ✓ | ✓ | | |
 
-### Artifact Obligations by Type
+## 7. Lifecycle Risk Artifacts and Gate Review (Policy Boundary)
 
-| Artifact | Strategic Project | Management Project | Operational Project | Legal Matter |
-|---|:---:|:---:|:---:|:---:|
-| RISK_SCAN.md (Initiating) | ✓ | ✓ | ✓ | — |
-| RISK_REGISTER.md (Planning) | ✓ | ✓ | ✓ | — |
-| ISSUE_LOG.md (Implementation) | ✓ | ✓ | ✓ | — |
-| LESSONS_LEARNED.md (Closing) | ✓ | ✓ | ✓ | — |
+Required lifecycle artifact schemas and stage-gate review requirements are defined in:
+- `01_DOCTRINE/03_POLICIES/DOCTRINE-RISK-0002-project-risk-artifact-lifecycle-policy.md`
 
-**Legal matters carry no project risk artifacts.** Risk is tracked continuously via the Section 2 axes (Economic, Execution, Operational) through the matter's active lifecycle.
-
-**RISK_REGISTER.md category axis by type:**
-- Strategic and Management Projects: Scope / Schedule / Budget / Financial / Strategic
-- Operational Projects: Scope / Schedule / Budget only
+This invariant remains limited to the risk model structure (axes, scoring boundaries, and output definitions).

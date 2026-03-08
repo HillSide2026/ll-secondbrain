@@ -1,0 +1,112 @@
+---
+id: DOCTRINE-RISK-0002
+title: Project Risk Artifact Lifecycle Policy
+owner: ML1
+status: draft
+version: 1.0
+created_date: 2026-03-08
+last_updated: 2026-03-08
+tags: [doctrine, policy, risk]
+---
+
+# DOCTRINE-RISK-0002 - PROJECT RISK ARTIFACT LIFECYCLE POLICY
+
+## 1. Scope
+
+This policy governs required risk artifacts across project lifecycle stages and gate-review requirements for project work.
+
+This policy applies to:
+- Strategic projects
+- Management projects
+- Operational projects
+
+This policy does not apply to legal matters.
+
+## 2. Required Lifecycle Artifacts
+
+### Stage 1 - Initiating: `RISK_SCAN.md`
+
+Purpose: Capture top risks and key assumptions before committing to the project.
+
+Required schema:
+```md
+## Top 5 Risks
+1. <Risk description>
+2.
+3.
+4.
+5.
+
+## Key Assumptions
+- <Assumption underpinning the project>
+
+## Go / No-Go Judgment
+Decision: [Proceed | Do Not Proceed | Proceed with Conditions]
+Rationale: <ML1 judgment - must be explicit, not inferred>
+```
+
+### Stage 2 - Planning: `RISK_REGISTER.md`
+
+Purpose: Decompose risks by category with likelihood, impact, and mitigation.
+
+Required schema:
+```md
+| Risk | Category | Likelihood | Impact | Mitigation |
+|------|----------|------------|--------|------------|
+| <description> | Scope / Schedule / Budget | H / M / L | H / M / L | <action> |
+```
+
+### Stage 3 - Implementation: `ISSUE_LOG.md`
+
+Purpose: Track risks that materialized as issues.
+
+Required schema:
+```md
+| Risk | Issue | Cause | Action |
+|------|-------|-------|--------|
+| <original risk from RISK_SCAN or RISK_REGISTER> | <what materialized> | <root cause> | <resolution step> |
+```
+
+### Stage 5 - Closing: `LESSONS_LEARNED.md`
+
+Purpose: Capture durable risk and control learning for future projects.
+
+Required schema:
+```md
+## What Worked
+- <bullet>
+
+## What Failed
+- <bullet>
+
+## What Should Change Next Time
+- <bullet>
+```
+
+## 3. Stage-Gate Review Requirement
+
+All four artifacts require ML1 review before a stage gate is closed.
+
+ML2 may draft and structure artifacts; ML1 decides gate closure.
+
+## 4. Artifact Obligations by Work Type
+
+| Artifact | Strategic Project | Management Project | Operational Project | Legal Matter |
+|---|:---:|:---:|:---:|:---:|
+| `RISK_SCAN.md` (Initiating) | ✓ | ✓ | ✓ | - |
+| `RISK_REGISTER.md` (Planning) | ✓ | ✓ | ✓ | - |
+| `ISSUE_LOG.md` (Implementation) | ✓ | ✓ | ✓ | - |
+| `LESSONS_LEARNED.md` (Closing) | ✓ | ✓ | ✓ | - |
+
+Legal matters carry no project risk artifacts under this policy.
+
+## 5. Category Axis Requirement by Work Type
+
+`RISK_REGISTER.md` must use:
+- Strategic and management projects: Scope / Schedule / Budget / Financial / Strategic
+- Operational projects: Scope / Schedule / Budget
+
+## 6. Related Doctrine
+
+- `01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK-0001-risk-model.md`
+- `01_DOCTRINE/02_PRINCIPLES/PRN-013-risk-lifecycle-governance.md`

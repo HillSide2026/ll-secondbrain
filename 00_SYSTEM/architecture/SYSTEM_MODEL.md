@@ -162,7 +162,7 @@ Configuration is version-controlled but is not itself ML2 canon.
 
 ## Layer 2 — AI Execution Layer
 
-Definition: The runtime intelligence engine (e.g., Claude Code) that reads from ML2 Core, executes commands, applies hooks, and generates outputs.
+Definition: The reasoning and execution engine that interprets stored knowledge, understands context, and performs tasks. It reads Layer-1 artifacts, applies commands and workflows, and produces outputs such as analysis, briefs, proposals, or communications.
 
 Characteristics:
 - Ephemeral runtime
@@ -228,7 +228,7 @@ Run outcome recording (operational):
 - `06_RUNS/99_distill_queue/README.md`
 
 Binding promotion rules remain in:
-`01_DOCTRINE/04_PROCEDURAL/DOCTRINE-OPERATIONS-0002-promotion-rules.md`
+`01_DOCTRINE/06_PROCEDURAL/DOCTRINE-OPERATIONS-0002-promotion-rules.md`
 
 ---
 

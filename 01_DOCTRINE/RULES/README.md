@@ -5,11 +5,17 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-13
-last_updated: 2026-02-13
+last_updated: 2026-03-08
 tags: [doctrine, rules]
 ---
 
 # Atomic Rules
 
 Definition: Executable rule fragments used by protocols to enforce policy checks.
+Rules are direct instructions and should be machine-checkable wherever possible.
 Boundary: Do not define policy intent or interpretive guidance; they implement checks.
+
+Typical examples:
+- All LL outputs must include required provenance metadata.
+- Doctrine files must include required metadata fields.
+- Playbooks must reference governing doctrine.
