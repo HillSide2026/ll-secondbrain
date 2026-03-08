@@ -40,7 +40,7 @@ None. Advisory/draft output only.
 ## Inputs
 - `00_SYSTEM/schemas/SCHEMAS.md`
 - `00_SYSTEM/schemas/SCHEMAS_INBOX_TRIAGE.md` (as applicable)
-- Artifact files under `01_DOCTRINE/`, `02_PLAYBOOKS/`, `03_TEMPLATES/`, `00_SYSTEM/agents/`
+- Artifact files under `01_DOCTRINE/`, `02_PLAYBOOKS/`, `03_TEMPLATES/`, `00_SYSTEM/AGENTS/`
 
 ## Outputs
 - One metadata compliance report under `06_RUNS/`

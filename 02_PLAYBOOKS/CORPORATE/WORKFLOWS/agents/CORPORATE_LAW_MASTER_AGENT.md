@@ -30,7 +30,7 @@ Acceptance Criteria: TBD
 **Role ID:** CORP-MASTER-001
 **Status:** DRAFT
 **Effective:** 2026-02-05
-**Instantiates:** [PRACTICE_AREA_MASTER_AGENT_SPEC v1.0](../../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
+**Instantiates:** [PRACTICE_AREA_MASTER_AGENT_SPEC v1.0](../../../../00_SYSTEM/AGENTS/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
 **Capability Profile:** AGENT-CAPABILITY-PROFILE-0001 (Draft Write Access)
 
 ---

@@ -140,7 +140,7 @@ Review backlog and prepare stage closure recommendation.
 
 Inputs:
 - Backlog: 04_INITIATIVES/SYSTEM_PORTFOLIO/BACKLOG.md
-- Stage artifacts: 04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE2/STAGE2.1/
+- Stage artifacts: 04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS/STAGE2/STAGE2.13/
 - DoD checklist: STAGE2_AUTHORIZATION_KICKOFF.md
 
 Scope: Stage 2.1 closure review
@@ -203,7 +203,7 @@ Validate artifact for schema compliance.
 Inputs:
 - Artifact: [path]
 - Schemas: 00_SYSTEM/schemas/SCHEMAS.md
-- Handoff map: 01_ACTIVE_ROADMAPS/STAGE1/STAGE1.3/STAGE1.3_HANDOFF_MAP.md
+- Handoff map (archived): 10_ARCHIVE/INITIATIVES/SYSTEM_PORTFOLIO/STAGE1/STAGE1.3/STAGE1.3_HANDOFF_MAP.md
 
 Scope: Full QA validation
 Context: Artifact review request

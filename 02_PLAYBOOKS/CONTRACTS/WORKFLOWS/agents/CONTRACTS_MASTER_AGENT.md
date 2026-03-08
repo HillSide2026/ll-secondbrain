@@ -30,7 +30,7 @@ Acceptance Criteria: TBD
 **Role ID:** CONTRACTS-MASTER-001
 **Status:** DRAFT
 **Effective:** 2026-02-06
-**Instantiates:** [PRACTICE_AREA_MASTER_AGENT_SPEC v1.0](../../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
+**Instantiates:** [PRACTICE_AREA_MASTER_AGENT_SPEC v1.0](../../../../00_SYSTEM/AGENTS/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
 
 ---
 
@@ -276,6 +276,6 @@ This agent's scope ends at demand letter.
 
 ## 13. References
 
-- Generic Spec: [PRACTICE_AREA_MASTER_AGENT_SPEC](../../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
+- Generic Spec: [PRACTICE_AREA_MASTER_AGENT_SPEC](../../../../00_SYSTEM/AGENTS/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md)
 - Agent Doctrine: [DOCTRINE-AGENTS-0001](../../../../01_DOCTRINE/01_INVARIANTS/DOCTRINE-AGENTS-0001-second-brain-agent-authority.md)
 - Solutions: [solutions/](../solutions/)
