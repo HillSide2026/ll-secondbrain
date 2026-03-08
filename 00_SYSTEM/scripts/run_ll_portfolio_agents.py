@@ -29,7 +29,7 @@ REQUIRED_STAGE1 = [
     "PROBLEM_STATEMENT.md",
     "SUCCESS_CRITERIA.md",
     "STAKEHOLDERS.md",
-    "RISKS_INITIAL.md",
+    "RISK_SCAN.md",
     "APPROVAL_RECORD.md",
 ]
 

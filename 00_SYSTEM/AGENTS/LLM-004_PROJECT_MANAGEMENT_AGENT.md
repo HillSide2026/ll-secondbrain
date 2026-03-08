@@ -100,8 +100,23 @@ All outputs live inside project folders under:
 - PROBLEM_STATEMENT.md
 - SUCCESS_CRITERIA.md
 - STAKEHOLDERS.md
-- RISKS_INITIAL.md
+- RISK_SCAN.md
 - APPROVAL_RECORD.md
+
+`RISK_SCAN.md` schema:
+```
+## Top 5 Risks
+1. <Risk description>
+...
+
+## Key Assumptions
+- <Assumption>
+...
+
+## Go / No-Go Judgment
+Decision: [Proceed / Do Not Proceed / Proceed with Conditions]
+Rationale: <ML1 judgment>
+```
 
 **Planning**
 - SCOPE_DEFINITION.md
@@ -112,6 +127,13 @@ All outputs live inside project folders under:
 - DEPENDENCIES.md
 - RISK_REGISTER.md
 - COMMUNICATION_PLAN.md
+
+`RISK_REGISTER.md` schema:
+```
+| Risk | Category | Likelihood | Impact | Mitigation |
+|------|----------|------------|--------|------------|
+| <description> | Scope / Schedule / Budget | H/M/L | H/M/L | <action> |
+```
 
 **Planning (Measurement Architecture)**
 - METRIC_DEFINITION.md
@@ -128,6 +150,13 @@ All outputs live inside project folders under:
 - DELIVERABLES_TRACKER.md
 - QA_CHECKLIST.md
 
+`ISSUE_LOG.md` schema:
+```
+| Risk | Issue | Cause | Action |
+|------|-------|-------|--------|
+| <original risk> | <what materialized> | <root cause> | <resolution step> |
+```
+
 **Monitoring**
 - STATUS_REPORT.md
 - KPI_DASHBOARD.md
@@ -141,6 +170,18 @@ All outputs live inside project folders under:
 - POST_IMPLEMENTATION_REVIEW.md
 - FINAL_STATUS_REPORT.md
 - ARCHIVE_INDEX.md
+
+`LESSONS_LEARNED.md` schema:
+```
+## What Worked
+- <bullet>
+
+## What Failed
+- <bullet>
+
+## What Should Change Next Time
+- <bullet>
+```
 
 ### Agent-Level Governance Artifacts
 - `04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/PROJECT_MANAGEMENT/PROJECT_STAGE_GATE_CHECKLIST.md`
