@@ -25,18 +25,18 @@ Generated at: 2026-03-06T16:08:18Z
 | Matter Number | Matter | Category | Delivery | Fulfillment | Services | Status | Source Pointer |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 25-927-00003 | Stream Ventures Limited | ML Active | Essential | urgent | 0 | Open | repo://05_MATTERS/ESSENTIAL/25-927-00003/MATTER.yaml |
-| 25-1603-00001 | IBERBANCO LTD | ML Active | Essential | active | 0 | Open | repo://05_MATTERS/ESSENTIAL/25-1603-00001/MATTER.yaml |
+| 25-1603-00001 | IBERBANCO LTD | ML Active | Essential | active | 0 | Open | repo://05_MATTERS/STANDARD/25-1603-00001/MATTER.yaml |
 | 24-336-00004 | Mascore Helical Piles | ML Active | Strategic | active | 0 | Open | repo://05_MATTERS/STRATEGIC/24-336-00004/MATTER.yaml |
 | 25-1231-00001 | Charmaine Spiteri | ML Active | Strategic | active | 0 | Open | repo://05_MATTERS/STRATEGIC/25-1231-00001/MATTER.yaml |
 | 25-1318-00001 | Zelko Culibrk | ML Active | Strategic | active | 0 | Open | repo://05_MATTERS/STRATEGIC/25-1318-00001/MATTER.yaml |
-| 25-1593-00001 | 1001162998 Ontario Corp. o/a KaleMart | ML Active | Strategic | active | 0 | Open | repo://05_MATTERS/STRATEGIC/25-1593-00001/MATTER.yaml |
+| 25-1593-00001 | 1001162998 Ontario Corp. o/a KaleMart | ML Active | Strategic | active | 0 | Open | repo://05_MATTERS/STANDARD/25-1593-00001/MATTER.yaml |
 | 25-256-00005 | Aspire Infusions Inc | ML Active | Strategic | active | 0 | Open | repo://05_MATTERS/STRATEGIC/25-256-00005/MATTER.yaml |
 | 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | ML Active | Strategic | active | 0 | Open | repo://05_MATTERS/STRATEGIC/26-1593-00002/MATTER.yaml |
 | 22-194-00006 | Rousseau Mazzuca LLP | ML Active | Standard | active | 0 | Open | repo://05_MATTERS/STANDARD/22-194-00006/MATTER.yaml |
 | 23-194-00013 | Rousseau Mazzuca LLP | ML Active | Standard | active | 0 | Open | repo://05_MATTERS/STANDARD/23-194-00013/MATTER.yaml |
 | 23-235-00001 | Baobab Energy Africa Ltd | ML Active | Standard | active | 0 | Open | repo://05_MATTERS/STANDARD/23-235-00001/MATTER.yaml |
 | 24-646-00001 | ByNature Design | ML Active | Standard | active | 0 | Open | repo://05_MATTERS/STANDARD/24-646-00001/MATTER.yaml |
-| 24-845-00001 | STAR 333 SPORTS INC. | ML Active | Standard | active | 0 | Open | repo://05_MATTERS/STANDARD/24-845-00001/MATTER.yaml |
+| 25-845-00001 | STAR 333 SPORTS INC. | ML Active | Standard | active | 0 | Open | repo://05_MATTERS/STANDARD/25-845-00001/MATTER.yaml |
 | 25-1185-00001 | Alexander Klys | ML Active | Standard | active | 0 | Open | repo://05_MATTERS/STANDARD/25-1185-00001/MATTER.yaml |
 | 25-1363-00001 | Raevan Joy Sambrano | ML Active | Standard | active | 0 | Open | repo://05_MATTERS/STANDARD/25-1363-00001/MATTER.yaml |
 | 25-1525-00001 | Kleenup Cleaning Services Inc. | ML Active | Standard | active | 0 | Open | repo://05_MATTERS/STANDARD/25-1525-00001/MATTER.yaml |
@@ -60,18 +60,18 @@ Generated at: 2026-03-06T16:08:18Z
 
 ### ML Active Service Coverage Gaps
 - 25-927-00003 :: Stream Ventures Limited (services=0; repo://05_MATTERS/ESSENTIAL/25-927-00003/MATTER.yaml)
-- 25-1603-00001 :: IBERBANCO LTD (services=0; repo://05_MATTERS/ESSENTIAL/25-1603-00001/MATTER.yaml)
+- 25-1603-00001 :: IBERBANCO LTD (services=0; repo://05_MATTERS/STANDARD/25-1603-00001/MATTER.yaml)
 - 24-336-00004 :: Mascore Helical Piles (services=0; repo://05_MATTERS/STRATEGIC/24-336-00004/MATTER.yaml)
 - 25-1231-00001 :: Charmaine Spiteri (services=0; repo://05_MATTERS/STRATEGIC/25-1231-00001/MATTER.yaml)
 - 25-1318-00001 :: Zelko Culibrk (services=0; repo://05_MATTERS/STRATEGIC/25-1318-00001/MATTER.yaml)
-- 25-1593-00001 :: 1001162998 Ontario Corp. o/a KaleMart (services=0; repo://05_MATTERS/STRATEGIC/25-1593-00001/MATTER.yaml)
+- 25-1593-00001 :: 1001162998 Ontario Corp. o/a KaleMart (services=0; repo://05_MATTERS/STANDARD/25-1593-00001/MATTER.yaml)
 - 25-256-00005 :: Aspire Infusions Inc (services=0; repo://05_MATTERS/STRATEGIC/25-256-00005/MATTER.yaml)
 - 26-1593-00002 :: 1001162998 Ontario Corp. o/a KaleMart (services=0; repo://05_MATTERS/STRATEGIC/26-1593-00002/MATTER.yaml)
 - 22-194-00006 :: Rousseau Mazzuca LLP (services=0; repo://05_MATTERS/STANDARD/22-194-00006/MATTER.yaml)
 - 23-194-00013 :: Rousseau Mazzuca LLP (services=0; repo://05_MATTERS/STANDARD/23-194-00013/MATTER.yaml)
 - 23-235-00001 :: Baobab Energy Africa Ltd (services=0; repo://05_MATTERS/STANDARD/23-235-00001/MATTER.yaml)
 - 24-646-00001 :: ByNature Design (services=0; repo://05_MATTERS/STANDARD/24-646-00001/MATTER.yaml)
-- 24-845-00001 :: STAR 333 SPORTS INC. (services=0; repo://05_MATTERS/STANDARD/24-845-00001/MATTER.yaml)
+- 25-845-00001 :: STAR 333 SPORTS INC. (services=0; repo://05_MATTERS/STANDARD/25-845-00001/MATTER.yaml)
 - 25-1185-00001 :: Alexander Klys (services=0; repo://05_MATTERS/STANDARD/25-1185-00001/MATTER.yaml)
 - 25-1363-00001 :: Raevan Joy Sambrano (services=0; repo://05_MATTERS/STANDARD/25-1363-00001/MATTER.yaml)
 - 25-1525-00001 :: Kleenup Cleaning Services Inc. (services=0; repo://05_MATTERS/STANDARD/25-1525-00001/MATTER.yaml)
@@ -109,7 +109,7 @@ Generated at: 2026-03-06T16:08:18Z
 - 24-601-00001
 - 24-646-00001
 - 24-682-00002
-- 24-845-00001
+- 25-845-00001
 - 25-1024-00001
 - 25-1185-00001
 - 25-1192-00001

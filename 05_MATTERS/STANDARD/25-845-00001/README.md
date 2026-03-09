@@ -1,30 +1,30 @@
 ---
-id: MATTER-25-1593-00001-README
+id: MATTER-25-845-00001-README
 
-title: 1001162998 Ontario Corp. o/a KaleMart
+title: STAR 333 SPORTS INC.
 owner: ML1
 status: draft
 created_date: 2026-02-02
 last_updated: 2026-02-02
-tags: [matter, 25-1593-00001]
+tags: [matter, 25-845-00001]
 practice_areas: [TBD]
 ---
 
-# 1001162998 Ontario Corp. o/a KaleMart
+# STAR 333 SPORTS INC.
 
 ## Matter ID
-`25-1593-00001`
+`25-845-00001`
 
 ## Status
 - **Clio Status:** Open
-- **Delivery Status:** Essential
+- **Delivery Status:** Standard
 - **Fulfillment Status:** active
 
 ## Client ID
-`2463515755`
+`2349162505`
 
 ## Description
-REVIEW BINDING RETAIL OFFER TO LEASE (601–603 Yonge Street, Toronto)
+Corporate / Commercial Matters
 
 ## Key Dates
 - **Opened:** 2025-01-01

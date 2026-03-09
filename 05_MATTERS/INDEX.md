@@ -1,28 +1,28 @@
 # Matter Index
 
-_Generated: 2026-03-06 11:08_
+_Generated: 2026-03-08 19:38_
 
-**Total Matters:** 35
+**Total Matters:** 37
 
-## Essential (2)
+## Essential (3)
 
 | Matter ID | Client/Name | Status | Category | Fulfillment | Services |
 |-----------|-------------|--------|----------|-------------|----------|
-| [25-1603-00001](ESSENTIAL/25-1603-00001/README.md) | IBERBANCO LTD | Open | ML Active | active | 0 |
 | [25-927-00003](ESSENTIAL/25-927-00003/README.md) | Stream Ventures Limited | Open | ML Active | urgent | 0 |
+| [26-1639-00001](ESSENTIAL/26-1639-00001/README.md) | Andersen | Open | ML Active | active | 0 |
+| [26-927-00004](ESSENTIAL/26-927-00004/README.md) | Stream Ventures Limited | Open | ML Active | active | 0 |
 
-## Strategic (6)
+## Strategic (5)
 
 | Matter ID | Client/Name | Status | Category | Fulfillment | Services |
 |-----------|-------------|--------|----------|-------------|----------|
 | [24-336-00004](STRATEGIC/24-336-00004/README.md) | Mascore Helical Piles | Open | ML Active | active | 0 |
 | [25-1231-00001](STRATEGIC/25-1231-00001/README.md) | Charmaine Spiteri | Open | ML Active | active | 0 |
 | [25-1318-00001](STRATEGIC/25-1318-00001/README.md) | Zelko Culibrk | Open | ML Active | active | 0 |
-| [25-1593-00001](STRATEGIC/25-1593-00001/README.md) | 1001162998 Ontario Corp. o/a KaleMart | Open | ML Active | active | 0 |
 | [25-256-00005](STRATEGIC/25-256-00005/README.md) | Aspire Infusions Inc | Open | ML Active | active | 0 |
 | [26-1593-00002](STRATEGIC/26-1593-00002/README.md) | 1001162998 Ontario Corp. o/a KaleMart | Open | ML Active | active | 0 |
 
-## Standard (16)
+## Standard (18)
 
 | Matter ID | Client/Name | Status | Category | Fulfillment | Services |
 |-----------|-------------|--------|----------|-------------|----------|
@@ -30,7 +30,6 @@ _Generated: 2026-03-06 11:08_
 | [23-194-00013](STANDARD/23-194-00013/README.md) | Rousseau Mazzuca LLP | Open | ML Active | active | 0 |
 | [23-235-00001](STANDARD/23-235-00001/README.md) | Baobab Energy Africa Ltd | Open | ML Active | active | 0 |
 | [24-646-00001](STANDARD/24-646-00001/README.md) | ByNature Design | Open | ML Active | active | 0 |
-| [24-845-00001](STANDARD/24-845-00001/README.md) | STAR 333 SPORTS INC. | Open | ML Active | active | 0 |
 | [25-1185-00001](STANDARD/25-1185-00001/README.md) | Alexander Klys | Open | ML Active | active | 0 |
 | [25-1363-00001](STANDARD/25-1363-00001/README.md) | Raevan Joy Sambrano | Open | ML Active | active | 0 |
 | [25-1525-00001](STANDARD/25-1525-00001/README.md) | Kleenup Cleaning Services Inc. | Open | ML Active | active | 0 |
@@ -38,9 +37,12 @@ _Generated: 2026-03-06 11:08_
 | [25-1553-00001](STANDARD/25-1553-00001/README.md) | 15652227 Canada Inc. | Open | ML Active | active | 0 |
 | [25-1571-00001](STANDARD/25-1571-00001/README.md) | Kishmish Inc. | Open | ML Active | active | 0 |
 | [25-1588-00001](STANDARD/25-1588-00001/README.md) | Gregory Popov | Open | ML Active | active | 0 |
+| [25-1593-00001](STANDARD/25-1593-00001/README.md) | 1001162998 Ontario Corp. o/a KaleMart | Open | ML Active | active | 0 |
+| [25-1603-00001](STANDARD/25-1603-00001/README.md) | IBERBANCO LTD | Open | ML Active | active | 0 |
 | [25-1614-00001](STANDARD/25-1614-00001/README.md) | HillSide | Open | ML Active | active | 0 |
 | [25-194-00059](STANDARD/25-194-00059/README.md) | Rousseau Mazzuca LLP | Open | ML Active | active | 0 |
-| [25-845-00002](STANDARD/25-845-00002/README.md) | STAR 333 SPORTS INC. | Open | ML Active | active | 0 |
+| [25-845-00001](STANDARD/25-845-00001/README.md) | STAR 333 SPORTS INC. | Open | ML Active | active | 6 |
+| [25-845-00002](STANDARD/25-845-00002/README.md) | STAR 333 SPORTS INC. | Open | ML Active | active | 4 |
 | [26-259-00003](STANDARD/26-259-00003/README.md) | LL Onboarding | Open | ML Active | active | 0 |
 
 ## Parked (11)
@@ -61,14 +63,14 @@ _Generated: 2026-03-06 11:08_
 
 ## Summary by Fulfillment Status
 
-- **active:** 27
+- **active:** 29
 - **inactive:** 6
 - **keep in view:** 1
 - **urgent:** 1
 
 ## Summary by Delivery Category
 
-- **ML Active:** 24
+- **ML Active:** 26
 - **ML Watch:** 5
 - **Other:** 6
 
@@ -76,12 +78,12 @@ _Generated: 2026-03-06 11:08_
 
 | Matter ID | Client/Name | Created |
 |-----------|-------------|---------|
+| 26-927-00004 | Stream Ventures Limited | 2026-02-26 |
+| 26-1639-00001 | Andersen | 2026-02-24 |
 | 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | 2026-01-01 |
 | 26-259-00003 | LL Onboarding | 2026-01-01 |
 | 25-927-00003 | Stream Ventures Limited | 2025-01-01 |
-| 25-1603-00001 | IBERBANCO LTD | 2025-01-01 |
 | 25-1318-00001 | Zelko Culibrk | 2025-01-01 |
-| 25-1593-00001 | 1001162998 Ontario Corp. o/a KaleMart | 2025-01-01 |
 | 25-256-00005 | Aspire Infusions Inc | 2025-01-01 |
 | 24-336-00004 | Mascore Helical Piles | 2025-01-01 |
 | 25-1231-00001 | Charmaine Spiteri | 2025-01-01 |

@@ -1,15 +1,15 @@
 ---
-id: MATTER-24-845-00001-MATTER_BRIEF
+id: MATTER-25-845-00001-MATTER_BRIEF
 
-title: Matter Brief — 24-845-00001 — STAR 333 SPORTS INC.
+title: Matter Brief — 25-845-00001 — STAR 333 SPORTS INC.
 owner: ML1
 status: draft
 created_date: 2026-01-31
 last_updated: 2026-01-31
-tags: [matter, 24-845-00001]
+tags: [matter, 25-845-00001]
 ---
 
-# Matter Brief — 24-845-00001 — STAR 333 SPORTS INC.
+# Matter Brief — 25-845-00001 — STAR 333 SPORTS INC.
 
 ## One-paragraph gist
 (Plain-language description of what this matter is about.)

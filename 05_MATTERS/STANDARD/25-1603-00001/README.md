@@ -17,7 +17,7 @@ practice_areas: [TBD]
 
 ## Status
 - **Clio Status:** Open
-- **Delivery Status:** Essential
+- **Delivery Status:** Standard
 - **Fulfillment Status:** active
 
 ## Key Dates

@@ -36,12 +36,20 @@ jamesh: "25-927-00003"
 fireblocks: "25-927-00003"
 fargent: "25-927-00003"
 
-# 25-1603-00001 — IBERBANCO LTD
+# 26-927-00004 — Stream Ventures Limited (counsel)
+streamcounsel: "26-927-00004"
+
+# 26-1639-00001 — Andersen
+andersen: "26-1639-00001"
+andersenconsulting: "26-1639-00001"
+andersenconsulting.com: "26-1639-00001"
+
+# 25-1603-00001 — IBERBANCO LTD (Standard)
 # Primary contacts: Amina, Oluwasayo
 iberbanco: "25-1603-00001"
 # TODO: Add specific contact emails when identified
 
-# 25-1593-00001 — 1001162998 Ontario Corp. o/a KaleMart
+# 25-1593-00001 — 1001162998 Ontario Corp. o/a KaleMart (Standard)
 # Primary contact: Chris Roop (601 Yonge Lease)
 kalemart: "25-1593-00001"
 chrisroop: "25-1593-00001"
@@ -148,11 +156,11 @@ rousseaumazzuca.com: "25-194-00059"
 baobab: "23-235-00001"
 baobabenergy: "23-235-00001"
 
-# 24-845-00001 — STAR 333 SPORTS INC.
+# 25-845-00001 — STAR 333 SPORTS INC.
 # Primary contact: Abhishek Shah
-star333: "24-845-00001"
-abhishek: "24-845-00001"
-abhishekshah: "24-845-00001"
+star333: "25-845-00001"
+abhishek: "25-845-00001"
+abhishekshah: "25-845-00001"
 
 # 25-845-00002 — STAR 333 SPORTS INC. (different matter)
 # Note: Same client, different matter - may need thread-based routing
@@ -340,8 +348,6 @@ ubcja.ca: "25-194-00059"
 aisecret: "25-927-00003"
 aisecret.us: "25-927-00003"
 alerts: "25-1318-00001"
-andersenconsulting: "25-927-00003"
-andersenconsulting.com: "25-927-00003"
 belmorelaw: "25-927-00003"
 belmorelaw.com: "25-927-00003"
 bmo: "25-1318-00001"
