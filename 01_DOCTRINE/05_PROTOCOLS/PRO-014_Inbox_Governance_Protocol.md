@@ -73,7 +73,8 @@ Exactly one state label must be applied to each thread. State labels are mutuall
 | `40_Replied_Awaiting_Response` | ML1 has replied; awaiting response. |
 | `50_Calendar` | Thread is calendar-related; no separate action. |
 | `60_Filing` | Thread requires filing in SharePoint or Clio; no separate action. |
-| `80_Junk_to_Review` | Suspected low-value or junk; flagged for ML1 review before archiving. |
+| `70_Filed` | Thread has been filed; no further action required. |
+| `80_Junk (Pending Review)` | Suspected low-value or junk; flagged for ML1 review before archiving. |
 | `90_Archive` | No further action required. |
 
 **Enforcement rule:** Any thread carrying more than one state label is in violation.
@@ -236,7 +237,7 @@ Out of scope (pending separate protocols or manual processes):
 |------|-------------|
 | NTD-1 | Confirm canonical list of `TEAM_SENDERS`, `LEGAL_SENDERS`, and `ADMIN_SENDERS` — current lists in `batch_classifier.py` are working drafts |
 | NTD-2 | Define handling rule for multi-matter threads |
-| NTD-3 | Confirm whether `80_Junk_to_Review` threads are auto-proposed for `90_Archive` or held for ML1 review |
+| NTD-3 | Confirm whether `80_Junk (Pending Review)` threads are auto-proposed for `90_Archive` or held for ML1 review |
 
 ---
 

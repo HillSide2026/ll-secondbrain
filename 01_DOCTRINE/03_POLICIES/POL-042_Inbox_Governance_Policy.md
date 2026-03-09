@@ -108,7 +108,8 @@ State labels are mutually exclusive.
 | `40_Replied_Awaiting_Response` | ML1 replied and awaiting response |
 | `50_Calendar` | Calendar-related thread |
 | `60_Filing` | Requires filing to document system |
-| `80_Junk_to_Review` | Suspected junk pending ML1 review |
+| `70_Filed` | Thread has been filed; no further action required |
+| `80_Junk (Pending Review)` | Suspected junk pending ML1 review |
 | `90_Archive` | No further action required |
 
 **Enforcement Rule:** A Gmail thread must not contain more than one state label.
@@ -231,7 +232,7 @@ These are defined in supporting protocols.
 |----|------|
 | NTD-1 | Confirm canonical sender domain lists |
 | NTD-2 | Define handling of multi-matter threads |
-| NTD-3 | Define archival behavior for `80_Junk_to_Review` |
+| NTD-3 | Define archival behavior for `80_Junk (Pending Review)` |
 
 ---
 
