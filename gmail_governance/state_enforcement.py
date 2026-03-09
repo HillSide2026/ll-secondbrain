@@ -13,15 +13,17 @@ from googleapiclient.discovery import build
 load_dotenv()
 
 # Canonical state labels (immutable)
+# Source of truth: POL-042 / PRO-014
 CANONICAL_LABELS = {
     "00_Triage",
-    "80_Junk_to_Review",
     "10_Action_Matthew",
     "20_Action_Team",
     "30_Waiting_External",
     "40_Replied_Awaiting_Response",
     "50_Calendar",
     "60_Filing",
+    "70_Filed",
+    "80_Junk (Pending Review)",
     "90_Archive"
 }
 
