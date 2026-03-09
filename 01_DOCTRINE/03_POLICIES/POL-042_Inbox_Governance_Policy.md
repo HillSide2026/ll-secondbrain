@@ -1,0 +1,242 @@
+---
+id: POL-042
+title: Inbox Governance Policy
+owner: ML1
+status: draft
+approval: pending
+approved_by: ~
+project: LLP-006
+version: 0.1
+created_date: 2026-03-09
+last_updated: 2026-03-09
+tags: [policy, gmail, inbox, labeling, classification, legalmatters, clio]
+---
+
+# POL-042 — Inbox Governance Policy
+
+Policy Statement: Gmail inbox classification must be governed by a canonical state label framework, matter label structure, and approval gate. No Gmail label may be written by an agent or script without prior ML1 approval. All matter labels must reference a valid Clio matter ID as the canonical matter identifier.
+
+Authority (Principles referenced): PRN-003, PRN-004, PRN-008, PRN-026
+
+Enforcement expectation: Violations of state exclusivity, unauthorized label writes, or matter labels referencing unknown matter IDs are non-compliant and must be flagged for ML1 remediation.
+
+Supersedes: None
+
+Enforcement Protocol: PRO-014
+
+---
+
+## 1. Policy Purpose
+
+This policy establishes the governance rules for Gmail inbox classification
+within the Levine Law Second Brain system.
+
+The policy defines:
+
+- The authoritative state label framework applied to Gmail threads.
+- The structure of matter labels linking emails to legal matters.
+- The approval controls required before Gmail labels are written.
+- The permitted data access scope for inbox classification agents.
+
+The policy ensures that inbox activity supports the matter-centric architecture
+of the system, in which each email thread related to legal work can be traced
+to a corresponding legal matter.
+
+Operational protocols implementing this policy are defined in PRO-014.
+
+---
+
+## 2. Policy Objective
+
+Inbox governance exists to ensure that all matter-related email is traceably
+linked to the corresponding legal matter object in ML2 and LL systems.
+
+The architecture operates in two phases.
+
+**Interim Phase (Current)**
+
+Emails remain in Gmail but are labeled to reflect:
+- thread action state
+- associated legal matter number (Clio matter ID)
+
+Matter labels serve as the cross-system reference key linking Gmail threads
+to Clio matters and ML2 matter records.
+
+**Future Phase**
+
+Emails may be routed or filed into the SharePoint LegalMatters
+structure once cross-system matter linking is implemented.
+Future integration is governed under LLP-005.
+
+---
+
+## 3. System Scope
+
+This policy applies only to Gmail inbox governance for:
+- `matthew@levinelegal.ca`
+- `matthew@levine-law.ca`
+
+The policy governs:
+- Gmail thread classification
+- Gmail label structure
+- Batch labeling controls
+- Approval requirements for label writes
+
+The policy does not govern:
+- Google Calendar
+- SharePoint document storage
+- Clio matter management
+- Cross-system document routing
+
+Those areas require separate policies or protocols.
+
+---
+
+## 4. Canonical State Label Framework
+
+Each Gmail thread must contain exactly one state label.
+
+State labels represent the operational status of the thread.
+State labels are mutually exclusive.
+
+| Label | Meaning |
+|-------|---------|
+| `00_Triage` | Thread received but not yet reviewed |
+| `10_Action_Matthew` | Thread requires ML1 action |
+| `20_Action_Team` | Delegated to team member |
+| `30_Waiting_External` | Waiting on external party |
+| `40_Replied_Awaiting_Response` | ML1 replied and awaiting response |
+| `50_Calendar` | Calendar-related thread |
+| `60_Filing` | Requires filing to document system |
+| `80_Junk_to_Review` | Suspected junk pending ML1 review |
+| `90_Archive` | No further action required |
+
+**Enforcement Rule:** A Gmail thread must not contain more than one state label.
+Detection of multiple state labels constitutes a policy violation and must be
+reported by enforcement scripts. Automatic resolution of such violations is
+prohibited without ML1 approval.
+
+---
+
+## 5. Matter Label Policy
+
+Matter labels create the link between a Gmail thread and a legal matter.
+
+The **canonical matter identifier** is the **Clio matter ID**, in the format:
+```
+\d{2}-\d{3,4}-\d{5}  (e.g., 25-1593-00001)
+```
+
+The canonical label hierarchy is:
+```
+LL/
+└── {tier_number}.
+    └── {tier_name}
+        └── {clio_matter_id}
+```
+
+Example: `LL/1./1.1 - Essential/25-1593-00001`
+
+**Policy rules:**
+- A thread may contain no more than one matter label.
+- Threads referencing multiple matters require ML1 assignment.
+- Matter labels must correspond to a valid Clio matter record.
+
+---
+
+## 6. Classification Governance
+
+Automated classification may generate proposed label assignments.
+
+These proposals must be based on deterministic signals such as:
+- Sender domain classification
+- Existing Gmail label paths
+- Presence of Clio matter IDs in subject or snippet
+
+Signal lists and classification logic are defined in PRO-014.
+
+**Automated classification does not authorize execution.**
+All classification results are proposals only.
+
+---
+
+## 7. Approval Gate Policy
+
+No Gmail labels may be written by agents or scripts unless
+ML1 approval has been recorded.
+
+An approval record must specify:
+- Batch file identifier or hash
+- Scope of approval
+- Date of approval
+- Any exclusions or overrides
+
+Execution scripts must verify the existence of a valid approval record
+before performing any Gmail write operation. If approval is not present,
+execution must halt.
+
+---
+
+## 8. Audit and Enforcement
+
+The system must provide enforcement checks for:
+
+**State Exclusivity:** Detect Gmail threads containing multiple state labels.
+
+**Matter Mapping:** Verify that applied matter labels correspond to known
+Clio matter identifiers.
+
+**Unmapped Threads:** Threads lacking matter assignment must be logged to:
+```
+05_MATTERS/DASHBOARDS/INBOX_UNMAPPED.md
+```
+The log is reviewed periodically by ML1.
+
+---
+
+## 9. Data Access Policy
+
+Inbox classification agents may access only the minimum data necessary
+for classification.
+
+| Data | Agent Read | External Citation |
+|------|-----------|-------------------|
+| Email subject | Permitted | Prohibited |
+| Email snippet | Permitted | Prohibited |
+| Sender metadata | Permitted | Prohibited |
+| Gmail label state | Permitted | Prohibited |
+| Email body | Prohibited unless ML1 explicitly authorizes | Prohibited |
+
+Email content must never appear in external outputs.
+
+---
+
+## 10. Policy Limitations
+
+This policy governs label classification only.
+
+It does not define:
+- Gmail execution scripts
+- Classification logic implementation
+- Clio integration
+- SharePoint document filing
+
+These are defined in supporting protocols.
+
+---
+
+## 11. Open Governance Items
+
+| ID | Item |
+|----|------|
+| NTD-1 | Confirm canonical sender domain lists |
+| NTD-2 | Define handling of multi-matter threads |
+| NTD-3 | Define archival behavior for `80_Junk_to_Review` |
+
+---
+
+## 12. Change Log
+
+| Version | Date | Change |
+|---------|------|--------|
+| 0.1 | 2026-03-09 | Initial policy. Derived from PRO-014 v0.2. |

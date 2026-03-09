@@ -6,13 +6,15 @@ status: draft
 approval: pending
 approved_by: ~
 project: LLP-006
-version: 0.1
+version: 0.2
 created_date: 2026-03-07
-last_updated: 2026-03-07
-tags: [protocol, gmail, inbox, labeling, classification, legalmatters]
+last_updated: 2026-03-09
+tags: [protocol, gmail, inbox, labeling, classification, legalmatters, clio]
 ---
 
 # PRO-014 — Inbox Governance Protocol
+
+Enforces Policy: POL-042
 
 > **DRAFT — PENDING ML1 APPROVAL.**
 > This protocol has not been approved and is not in effect.
@@ -30,8 +32,18 @@ This protocol defines:
 3. The approval gate required before any label is written to Gmail.
 4. The agent access rules that govern inbox data within secondbrain.
 
+**Objective:** The ultimate goal of inbox governance is to ensure that every matter-related
+email is linked to its corresponding legal matter — both as a Clio matter reference and,
+where applicable, as a SharePoint LegalMatters folder. This protocol operates in two phases:
+
+- **Interim (current):** Tag emails within Gmail with the relevant legal matter / Clio matter
+  number, using the label hierarchy defined in Section 4. This establishes a traceable
+  matter-thread link without moving or copying email content.
+- **Future:** Route or file emails from the inbox to the relevant matter record in SharePoint
+  LegalMatters, once cross-system linking is in scope (see LLP-005).
+
 The protocol applies to the Gmail account(s) associated with `matthew@levinelegal.ca`
-and `matthew@levine-law.ca`. It does not govern Google Calendar, Clio, or SharePoint
+and `matthew@levine-law.ca`. It does not govern Google Calendar or SharePoint directly
 (those systems are addressed in separate protocols or are pending).
 
 ---
@@ -72,16 +84,24 @@ but does not resolve them without ML1 approval.
 
 ## 4. Matter Label Structure
 
+The canonical matter identifier is the **Clio matter ID**, which takes the form:
+
+```
+\d{2}-\d{3,4}-\d{5}  (e.g., 25-1593-00001)
+```
+
+This ID is the authoritative cross-system reference key linking a Gmail thread to:
+- the corresponding Clio matter record, and
+- the corresponding SharePoint LegalMatters folder (where the filing structure has been implemented).
+
 Matter labels follow the hierarchy:
 
 ```
 LL/
 └── {tier_number}./ (e.g., 1. or 2.)
     └── {tier_name}/ (e.g., 1.1 - Essential)
-        └── {matter_id}  (e.g., 25-1593-00001)
+        └── {clio_matter_id}  (e.g., 25-1593-00001)
 ```
-
-The matter number format is: `\d{2}-\d{3,4}-\d{5}` (e.g., `25-1593-00001`).
 
 A thread may carry at most one matter label. If a thread relates to multiple matters,
 it is flagged for ML1 manual assignment.
@@ -220,19 +240,9 @@ Out of scope (pending separate protocols or manual processes):
 
 ---
 
-## 12. Approval Gate
-
-This protocol becomes active only after ML1 review and explicit approval.
-Upon approval:
-- Change `status` from `draft` to `active`
-- Change `version` from `0.1` to `1.0`
-- Update `last_updated`
-- Resolve NTD items before or concurrent with activation
-
----
-
-## 13. Change Log
+## 12. Change Log
 
 | Version | Date | Change |
 |---------|------|--------|
 | 0.1 | 2026-03-07 | Initial draft. Based on gmail_governance scripts and batch execution artifacts from 2026-02-09 to 2026-03-04. |
+| 0.2 | 2026-03-09 | Clarify purpose: interim Gmail tagging to legal matter / Clio matter; future filing to SharePoint LegalMatters. Remove duplicate Section 12. Add `clio` tag. Establish Clio matter ID as canonical matter identifier in Section 4. Add POL-042 reference. |
