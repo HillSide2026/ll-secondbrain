@@ -14,5 +14,6 @@ tags: [policy]
 Policy Statement: Active artifacts at the same layer must not conflict; supersession must be explicit and recorded.
 Authority (Principles referenced): PRN-008, PRN-005
 Enforcement expectation: Conflicts block promotion until resolved and supersession is documented.
+Supersedes: None
 Version: 1.0
 Status: Active

@@ -14,5 +14,6 @@ tags: [policy]
 Policy Statement: All outputs must include provenance identifying inputs, doctrine, and templates used.
 Authority (Principles referenced): PRN-002, PRN-005
 Enforcement expectation: Outputs without provenance are blocked from release or execution.
+Supersedes: None
 Version: 1.0
 Status: Active

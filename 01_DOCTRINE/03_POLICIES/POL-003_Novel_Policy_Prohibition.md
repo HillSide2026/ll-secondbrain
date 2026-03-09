@@ -14,5 +14,6 @@ tags: [policy]
 Policy Statement: ML2 must not create or modify firm policy without explicit ML1 authorization.
 Authority (Principles referenced): PRN-001, PRN-003, PRN-004
 Enforcement expectation: Any novel policy language triggers escalation and blocks release.
+Supersedes: None
 Version: 1.0
 Status: Active

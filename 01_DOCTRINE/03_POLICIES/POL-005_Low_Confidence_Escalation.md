@@ -14,5 +14,6 @@ tags: [policy]
 Policy Statement: Low-confidence classifications or decisions must be escalated to ML1 before action.
 Authority (Principles referenced): PRN-004, PRN-005, PRN-002
 Enforcement expectation: Any low-confidence case triggers a hard block and escalation.
+Supersedes: None
 Version: 1.0
 Status: Active

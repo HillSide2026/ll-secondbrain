@@ -14,5 +14,6 @@ tags: [policy, automation, canon]
 Policy Statement: Automation command definitions must explicitly list canonical inputs by exact repo path and include governing doctrine references by id/path. Commands may not rely on general instructions alone.
 Authority (Principles referenced): PRN-002, PRN-004, PRN-007
 Enforcement expectation: Command definitions lacking explicit canon inputs or doctrine references are non-compliant and must be revised before use.
+Supersedes: None
 Version: 1.0
 Status: Active

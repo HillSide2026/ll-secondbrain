@@ -14,5 +14,6 @@ tags: [policy]
 Policy Statement: Changes must be localized, versioned, and recorded with explicit supersession or change references.
 Authority (Principles referenced): PRN-009, PRN-005
 Enforcement expectation: Unversioned changes are flagged and cannot be promoted to Active status.
+Supersedes: None
 Version: 1.0
 Status: Active

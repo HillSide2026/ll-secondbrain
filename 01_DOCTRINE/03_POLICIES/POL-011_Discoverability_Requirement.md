@@ -14,5 +14,6 @@ tags: [policy]
 Policy Statement: Artifacts must be indexed and discoverable at their layer to support fast, reliable navigation.
 Authority (Principles referenced): PRN-002, PRN-009
 Enforcement expectation: Non-indexed artifacts are flagged and excluded from Active use until indexed.
+Supersedes: None
 Version: 1.0
 Status: Active

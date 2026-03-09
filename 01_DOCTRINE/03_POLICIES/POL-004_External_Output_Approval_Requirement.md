@@ -14,5 +14,6 @@ tags: [policy]
 Policy Statement: Any external or client-facing output requires explicit ML1 approval before release.
 Authority (Principles referenced): PRN-001, PRN-003, PRN-004
 Enforcement expectation: Outputs without ML1 approval are blocked from release.
+Supersedes: None
 Version: 1.0
 Status: Active

@@ -14,5 +14,6 @@ tags: [policy]
 Policy Statement: Each artifact must declare a single primary job and explicit scope; definitions must not blur across responsibilities.
 Authority (Principles referenced): PRN-006, PRN-004
 Enforcement expectation: Artifacts missing a clear purpose or scope are flagged and must be revised before promotion or external use.
+Supersedes: None
 Version: 1.0
 Status: Active

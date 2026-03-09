@@ -14,5 +14,6 @@ tags: [policy]
 Policy Statement: All externally relevant outputs must carry an explicit label indicating approval status.
 Authority (Principles referenced): PRN-002, PRN-004, PRN-005
 Enforcement expectation: Outputs lacking labels are blocked from release or execution.
+Supersedes: None
 Version: 1.0
 Status: Active

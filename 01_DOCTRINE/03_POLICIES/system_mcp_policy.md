@@ -1,6 +1,6 @@
 ---
-id: 01_doctrine__02_policies__system_mcp_policy_md
-title: System MCP Policy (v0.1)
+id: 01_doctrine__03_policies__system_mcp_policy_md
+title: System MCP Policy (v0.1) [Superseded by POL-035]
 owner: ML1
 status: draft
 version: 0.1
@@ -8,13 +8,16 @@ created_date: 2026-02-26
 last_updated: 2026-02-26
 tags: [policy, mcp, orchestrator]
 ---
-# System MCP Policy (v0.1)
+# System MCP Policy (v0.1) [Superseded]
+
+> Supersession Notice: This policy is superseded by `POL-035_Model_Context_Protocol_Governance.md` and retained for historical traceability only.
 
 ## Status
 - Type: Doctrine / Policy
 - Scope: MCP integrations + ML2 Orchestrator (Runner)
 - Effective: 2026-02-26
 - Owner: ML1 (final authority)
+- Superseded: 2026-03-09 by `POL-035_Model_Context_Protocol_Governance.md`
 
 ## Purpose
 Define the mandatory governance, boundaries, approval gates, and audit artifacts for any orchestrated MCP activity touching external systems (Gmail, SharePoint/Graph, Calendar).

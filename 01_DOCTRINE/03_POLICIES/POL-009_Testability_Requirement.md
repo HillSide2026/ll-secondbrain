@@ -14,5 +14,6 @@ tags: [policy]
 Policy Statement: Protocols and playbooks must include explicit checks or acceptance criteria that enable verification.
 Authority (Principles referenced): PRN-009, PRN-002
 Enforcement expectation: Artifacts lacking testability are not eligible for Active status.
+Supersedes: None
 Version: 1.0
 Status: Active

@@ -1,5 +1,5 @@
 ---
-id: 01_doctrine__02_policies__doctrine-2026-007-canonical-agent-doctrine_md
+id: 01_doctrine__03_policies__doctrine-2026-007-canonical-agent-doctrine_md
 title: Canonical Agent Doctrine
 owner: ML1
 status: approved

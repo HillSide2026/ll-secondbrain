@@ -14,5 +14,6 @@ tags: [policy]
 Policy Statement: Outputs must include references to the reasoning and doctrine that govern their content.
 Authority (Principles referenced): PRN-007, PRN-002
 Enforcement expectation: Outputs without traceable reasoning are flagged and blocked from external release until corrected.
+Supersedes: None
 Version: 1.0
 Status: Active
