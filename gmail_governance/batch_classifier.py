@@ -83,7 +83,9 @@ ARCHIVE_SUBJECT_SIGNALS = [
 ]
 
 # Gmail label prefix for matter labels
-MATTER_LABEL_PREFIX = 'LL/1./'
+# LL/1./ = Delivery (lawyer/legal work)
+# LL/2./ = Fulfillment (team admin and accounts related to matters)
+MATTER_LABEL_PREFIX = 'LL/'
 
 
 def is_matthew(sender):
@@ -251,7 +253,7 @@ def classify_thread(subject, sender, snippet, current_labels,
         current_labels: All Gmail label names on the thread
         last_sender: From header of last message in thread
         message_count: Total number of messages in thread
-        has_matter_label: True if thread already carries an LL/1./ matter label
+        has_matter_label: True if thread already carries an LL/ matter label (any tier)
 
     Returns:
         One of the 10 CANONICAL_LABELS strings

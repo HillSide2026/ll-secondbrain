@@ -238,6 +238,7 @@ Out of scope (pending separate protocols or manual processes):
 | NTD-1 | Confirm canonical list of `TEAM_SENDERS`, `LEGAL_SENDERS`, and `ADMIN_SENDERS` — current lists in `batch_classifier.py` are working drafts |
 | NTD-2 | Define handling rule for multi-matter threads |
 | NTD-3 | Confirm whether `80_Junk (Pending Review)` threads are auto-proposed for `90_Archive` or held for ML1 review |
+| NTD-4 | Document matter label tier structure: `LL/1./` = Delivery (lawyer/legal work); `LL/2./` = Fulfillment (team admin and accounts related to matters). Classification must match on `LL/` prefix across both tiers. |
 
 ---
 
