@@ -233,7 +233,7 @@ def classify_thread(subject, sender, snippet, current_labels,
     Classify a thread into one of 9 canonical state labels.
 
     Decision order:
-        1. Promotional / bulk mail                       → 80_Junk_to_Review
+        1. Promotional / bulk mail                       → 80_Junk (Pending Review)
         2. Calendar notifications                        → 50_Calendar
         3. Matter label + automated sender               → 60_Filing
         4. Matter label + human sender                   → 10_Action_Matthew
@@ -254,7 +254,7 @@ def classify_thread(subject, sender, snippet, current_labels,
         has_matter_label: True if thread already carries an LL/1./ matter label
 
     Returns:
-        One of the 9 CANONICAL_LABELS strings
+        One of the 10 CANONICAL_LABELS strings
     """
     subject_lower = (subject or '').lower()
     sender_lower = (sender or '').lower()
@@ -282,10 +282,10 @@ def classify_thread(subject, sender, snippet, current_labels,
             any(kw in subject_lower for kw in ADMIN_SUBJECT_KEYWORDS)):
         return '20_Action_Team'
 
-    # 6. Promotional / bulk → 80_Junk_to_Review
+    # 6. Promotional / bulk → 80_Junk (Pending Review)
     #    (after admin checks so known senders aren't caught by unsubscribe footers)
     if 'CATEGORY_PROMOTIONS' in current_labels or 'unsubscribe' in snippet_lower:
-        return '80_Junk_to_Review'
+        return '80_Junk (Pending Review)'
 
     # 7. Matthew sent the last message in a multi-message thread
     #    → waiting for external response → 40_Replied_Awaiting_Response
