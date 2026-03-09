@@ -4,7 +4,7 @@ title: Marketing Portfolio — Agent Roster
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-25
+last_updated: 2026-03-09
 tags: []
 ---
 
@@ -142,7 +142,7 @@ tags: []
 | Metric Category | Examples |
 |-----------------|----------|
 | Conversion metrics | *[Define: Stage-to-stage conversion rates]* |
-| Attribution | *[Define: Source → Lead → Intake → Onboarding]* |
+| Attribution | *[Define: Source -> Lead -> Intake -> Conversion -> Fulfillment Onboarding Handoff]* |
 | Drop-off analysis | *[Define: Where do leads exit the funnel?]* |
 
 ### Data Sources
@@ -153,7 +153,7 @@ tags: []
 |--------|-----------|
 | Google Ads | *[e.g., Click-through, cost-per-lead]* |
 | Landing pages | *[e.g., Form submissions, bounce rate]* |
-| GHL | *[e.g., Intake completion, onboarding status]* |
+| GHL | *[e.g., Intake completion, conversion status, fulfillment handoff status]* |
 | Book downloads | *[e.g., Download count, source attribution]* |
 | Blog | *[e.g., Pageviews, time on page, CTA clicks]* |
 
@@ -203,7 +203,7 @@ tags: []
 - Marketing promises specific turnaround times not codified in operations
 - Funnel promises scope beyond portfolio doctrine
 - Sales scripts commit to legal interpretations or outcomes
-- Marketing language blurs intake/onboarding with delivery or docketing
+- Marketing language blurs intake/conversion with fulfillment onboarding, delivery, or docketing
 
 ### Identity Anchors
 
@@ -335,16 +335,16 @@ tags: []
 **Role:** Handoff sentinel
 
 **Purpose:**
-- Monitor onboarding checklist completion
-- Signal "onboarding complete" as a suggestion
+- Monitor conversion evidence and fulfillment-onboarding handoff checklist completion
+- Signal "conversion complete / handoff ready" as a suggestion
 - Guard the Marketing → Matter Docketing boundary
 
 ### Scope
 
 | Task | Description |
 |------|-------------|
-| Checklist monitoring | *[Define: What items are on the onboarding checklist?]* |
-| Completion signal | Emit `onboarding.ready` when all items complete |
+| Checklist monitoring | *[Define: What items are on the conversion/handoff checklist?]* |
+| Completion signal | Emit `conversion.complete` and `handoff.onboarding_ready` when all items complete |
 | Handoff suggestion | Suggest handoff to Matter Docketing |
 
 ### Onboarding Checklist

@@ -1,15 +1,19 @@
 ---
 id: 00_system__glossary_md
-title: Glossary
+title: System Glossary
 owner: ML1
 status: draft
 created_date: 2026-01-25
-last_updated: 2026-03-08
+last_updated: 2026-03-09
 tags: []
 ---
 
-# Glossary
-Canonical definitions for terms used across the Second Brain.
+# System Glossary
+Canonical system-level definitions for terms used across the Second Brain.
+
+Scope boundary:
+- This document defines system and architecture terms.
+- LL portfolio/domain terms are defined in `04_INITIATIVES/LL_PORTFOLIO/LL_GLOSSARY.md`.
 
 ## Doctrine
 An artifact qualifies as doctrine when all criteria are met:
@@ -101,3 +105,9 @@ Distributed operational copy in external tools/suites. Published artifacts do no
 An open-ended service category used for market-facing delivery.
 It includes, but is not limited to, Solutions and Strategies.
 Additional service forms may exist where permitted by approved doctrine and capability profiles.
+
+## Conversion (Marketing Stage)
+The terminal stage of the marketing lifecycle. It is the marketing-language label used when objective conversion evidence is satisfied and recorded.
+
+## Onboarding (Fulfillment Stage)
+The first stage of the fulfillment lifecycle. It is the fulfillment-language label for the post-conversion handoff event and subsequent gate-controlled setup.

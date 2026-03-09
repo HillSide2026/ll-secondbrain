@@ -22,7 +22,7 @@ Stage: Planning
 ## Stage Mapping
 - Canonical progression: `lead_captured -> screened -> booked -> consult_complete -> retained`
 - Formula token `lead` corresponds to count of `lead_captured` events in the measurement window.
-- Lifecycle normalization alignment: `inquiry (intake)` and `conversion (onboarding)` references are preserved for reporting labels when required.
+- Lifecycle normalization alignment: `intake -> inquiry`; `conversion` remains the marketing terminal stage label; downstream fulfillment handoff is labeled `onboarding`.
 
 ## Target Status
 - Target thresholds are `TBD` pending ML1 metric approval for Planning -> Implementation gate authorization.

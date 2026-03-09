@@ -233,7 +233,7 @@ If the email explicitly directs action to a role/person/group, set lane/workstre
 | "Matt / Matthew / counsel / attorney" | LAWYER | DELIVERY |
 | "paralegal / assistant / team" | NON_LAWYER | DELIVERY |
 | "billing / invoice / payment / trust / retainer" | ADMIN_ACCOUNTS | FULFILLMENT |
-| "intake / onboarding / conflict check / engagement letter / consult scheduling" | INTAKE | MARKETING (or MANAGEMENT if internal ops) |
+| "intake / conversion / conflict check / engagement letter / consult scheduling" | INTAKE | MARKETING (or MANAGEMENT if internal ops) |
 | "internal firm ops / systems / staffing / policy" | (best-fit) | MANAGEMENT |
 
 `routing_reason` MUST cite the explicit phrase(s).
@@ -247,7 +247,7 @@ If no explicit addressee exists, infer routing from task type with MEDIUM confid
 | Contract / legal review / negotiation / legal advice / filings | LAWYER | DELIVERY |
 | Drafting routine documents / collecting signatures / assembling exhibits | NON_LAWYER | DELIVERY |
 | Paying, invoicing, retainer, trust, receipts, statements | ADMIN_ACCOUNTS | FULFILLMENT |
-| New client intake steps, consult booking, onboarding docs | INTAKE | MARKETING |
+| New client intake steps, consult booking, conversion evidence docs | INTAKE | MARKETING |
 | Internal coordination, staffing, process, tooling | UNROUTED (or best-fit lane if explicit) | MANAGEMENT |
 
 `routing_reason` MUST reference the task text and any supporting quote.
@@ -341,7 +341,7 @@ The report MUST follow this fixed structure:
   1. Delivery — Lawyer
   2. Delivery — Non-lawyer
   3. Fulfillment — Admin/Accounts
-  4. Marketing — Intake/Onboarding
+  4. Marketing — Intake/Conversion (handoff then enters fulfillment onboarding)
   5. Management
   6. Unrouted / Needs Triage
 - Within each section, MUST group tasks by matter

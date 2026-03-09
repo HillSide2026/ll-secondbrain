@@ -13,6 +13,6 @@ Notes:
 - Intake-stage targets proposed:
   - Leads worked within 24 hours of opt-in: `>= 90%`
   - Leads scheduled: `>= 30%`
-- Onboarding / conversion-stage targets proposed:
+- Conversion-stage targets proposed (handoff then enters fulfillment onboarding):
   - Consulting stage: instrumentation and reporting required
   - Closing (Engaging / Conversion): `>= 1/10` paid leads (`>= 10%`)

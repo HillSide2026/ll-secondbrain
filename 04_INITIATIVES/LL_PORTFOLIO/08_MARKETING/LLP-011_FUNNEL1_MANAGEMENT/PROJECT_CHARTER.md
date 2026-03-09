@@ -10,7 +10,11 @@ Establish controlled execution governance for Funnel 01 as the current-state acq
 
 ## 2. Nature of Project
 Marketing operations and orchestration project.
-Pre-matter lifecycle only (discovery through conversion/onboarding).
+Pre-matter lifecycle only (discovery through conversion).
+
+Terminology note:
+- `conversion` is the marketing-stage label.
+- `onboarding` is the fulfillment-stage label used after marketing handoff.
 
 ## 3. Strategic Rationale
 - Preserve qualified intake while preventative funnel capacity is built.

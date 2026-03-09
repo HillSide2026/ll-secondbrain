@@ -12,8 +12,8 @@ The project will be successful if:
 5. Intake-stage KPI targets are implemented in metric doctrine:
    - `>= 90%` leads worked within 24 hours of opt-in
    - `>= 30%` leads scheduled
-6. Onboarding/conversion-stage KPI targets are implemented in metric doctrine:
+6. Conversion-stage KPI targets are implemented in metric doctrine:
    - Consulting stage events are captured and reportable
    - Closing/Engaging (Conversion) achieves `>= 1/10` paid leads (`>= 10%`)
-7. Conversion evidence and reporting requirements are defined for governed runs.
+7. Conversion evidence and reporting requirements are defined for governed runs, with explicit handoff reference into fulfillment onboarding.
 8. ML1 approves promotion to Planning with clear launch-readiness criteria.

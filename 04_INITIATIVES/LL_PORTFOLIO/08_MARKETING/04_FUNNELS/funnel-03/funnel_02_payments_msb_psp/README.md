@@ -4,7 +4,7 @@ title: Funnel 02 — Payments / MSB / PSP
 owner: ML1
 status: draft
 created_date: 2026-02-15
-last_updated: 2026-02-15
+last_updated: 2026-03-09
 tags: [marketing, funnel]
 ---
 
@@ -18,7 +18,7 @@ This folder contains assets and workflows specific to Funnel 02 as defined in
 ## Operational Snapshot
 
 Acquisition: Book: "LL Funnel 2026 — Launch Your Payments Business in Canada", Blog / thought leadership (e.g., Stablecoins, payments regulation)  
-Intake & onboarding system: Go High Level (GHL)  
+Intake & conversion tracking system: Go High Level (GHL)  
 Entry offers:
 - MSB Registration
 - STR Playbook (Suspicious Transaction Reports)

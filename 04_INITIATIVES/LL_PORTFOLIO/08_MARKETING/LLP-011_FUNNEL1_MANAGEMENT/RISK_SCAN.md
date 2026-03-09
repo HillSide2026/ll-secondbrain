@@ -14,7 +14,7 @@ Stage: Initiating
 ## Key Assumptions
 - Funnel 01 remains a live, revenue-relevant intake source during initiation.
 - Google Ads and GHL integration surfaces remain operational and stable enough for governed execution.
-- Intake and onboarding events can be captured with sufficient timestamped evidence for audit use.
+- Intake and conversion events can be captured with sufficient timestamped evidence for audit use, including fulfillment-onboarding handoff reference.
 - ML1 review cadence can support initiation gate decisions without delaying urgent operational controls.
 - Funnel 01 scope remains pre-matter only and does not cross into legal delivery activities.
 

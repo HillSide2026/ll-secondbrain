@@ -23,7 +23,7 @@ No live deployment authorized at initiation stage.
   - qualification gate implementation plan,
   - website transition plan for `levine-law.ca`,
   - website and landing-page associate listing plan (ML1-approved names/roles only),
-  - intake and onboarding metric definitions with ML1-supplied thresholds,
+  - intake and conversion metric definitions with ML1-supplied thresholds,
   - launch readiness criteria,
   - signal/reporting expectations.
 

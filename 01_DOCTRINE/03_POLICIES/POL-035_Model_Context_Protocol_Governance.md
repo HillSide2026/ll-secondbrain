@@ -1,323 +1,188 @@
 ---
 id: POL-035
-title: Model Context Protocol Governance
-owner: ML1
+title: Tool Architecture and Governance Policy (Model Context Protocol)
+owner: ML2
 status: draft
-version: 0.1
+version: 0.2
 created_date: 2026-03-09
 last_updated: 2026-03-09
-tags: [policy, mcp, governance, context, tools, auditability]
+tags: [policy, mcp, tools, governance, runtime, auditability]
 ---
 
-# POL-035 — Model Context Protocol Governance
+# POL-035 — Tool Architecture and Governance Policy (Model Context Protocol)
 
-## 1. Policy Objective
+Status: Draft for ML1 Approval  
+Authority Flow: ML1 -> ML2 -> System -> LL
 
-Policy Statement: Model Context Protocol (MCP) is the mandatory governance layer for model context access and tool execution in ML2.
+## 1. Purpose
 
-This policy ensures that:
-- Context access is controlled and auditable.
-- Tool execution is constrained and permissioned.
-- Model interaction with external systems occurs only through structured interfaces.
-- ML2 remains the authoritative knowledge system.
-- LL consumes only approved outputs.
+Policy Statement: MCP is the mandatory governance layer for tool and context interaction between model reasoning and system execution.
 
-## 2. Foundational Principle
+This policy establishes the definition, structure, governance, and operational use of tools in ML2 so that:
+- external actions are executed by the System, not the model
+- operational capabilities remain governed and inspectable
+- interactions with external systems remain safe, deterministic, and auditable
 
-Models do not access systems directly.
-All external interaction must occur through MCP-mediated requests.
+Tools are the controlled boundary between model reasoning and real-world execution.
 
-Required outcomes:
-- Traceability
-- Reproducibility
-- Security boundaries
-- Deterministic workflows
+## 2. Definition of a Tool
 
-## 3. Architectural Position of MCP in ML2
+A tool is a formally declared capability that a model may request the host runtime to execute.
 
-Canonical stack:
-1. User / ML1
-2. Application Layer
-3. Agent / Orchestrator
-4. Language Model
-5. MCP (Context and Tool Protocol)
-6. Context Servers / Tool Servers / Data Stores / Integrations
+Key properties:
+- The model does not execute the operation directly.
+- The model emits a structured tool request.
+- The host runtime validates and executes the request.
+- Results are returned as structured data.
 
-Key rule:
-- Models cannot bypass MCP.
-- All context retrieval and tool invocation must pass through MCP.
+## 3. Execution Model
 
-## 4. MCP Governance Model
+Tool usage follows this pipeline:
 
-### Layer 1 — Context Governance
-Controls what knowledge the model can retrieve.
-
-Includes:
-- Documents
-- Files
-- Knowledge graphs
-- Structured records
-
-Rules:
-- Context must be retrieved through declared resources.
-- Raw prompt stuffing is prohibited.
-
-### Layer 2 — Tool Governance
-Controls what actions the model may request.
-
-Examples:
-- File read
-- SQL query
-- API call
-- Document generation
-- Report compilation
-
-Each tool must define:
-- Tool name
-- Description
-- Input schema
-- Output schema
-- Permission level
-- Execution environment
-
-Rule:
-- Tool execution occurs only through the host, never directly by the model.
-
-### Layer 3 — Permission Enforcement
-The MCP host enforces permissions for:
-- Resource access
-- Tool invocation
-- System modification
-
-Permission levels:
-- `Read`: Access context only
-- `Write`: Modify approved documents
-- `Execute`: Run defined tools
-- `Restricted`: ML1 approval required
-
-### Layer 4 — Auditability
-All MCP interactions must produce structured logs.
-
-Each interaction must record:
-- Timestamp
-- User request
-- Model prompt
-- Retrieved resources
-- Tool calls
-- Tool outputs
-- Final model output
-- System decisions
-
-Rule:
-- Logs must be persisted inside ML2.
-
-## 5. MCP Host Policy
-
-The MCP host is the model execution environment (for example: AI application, coding environment, document assistant, orchestration agent).
-
-The host must:
-- Enforce tool permissions
-- Validate schema inputs
-- Mediate tool execution
-- Maintain execution logs
-- Prevent direct system access by the model
-
-Rule:
-- The host is the policy enforcement layer for runtime behavior.
-
-## 6. MCP Server Policy
-
-MCP servers expose resources and tools.
-
-Each server must publish:
-- Server name
-- Capability type
-- Resource schemas
-- Tool schemas
-- Authentication requirements
-- Permission scope
-
-Server categories may include:
-- Document servers
-- File servers
-- Database servers
-- API servers
-- Tool servers
-
-Rule:
-- Servers must not expose unbounded capabilities.
-
-## 7. Context Resource Policy
-
-Resources are structured information sources (documents, repository files, datasets, knowledge graphs).
-
-Each resource must include metadata:
-- `resource_id`
-- `type`
-- `location`
-- `version`
-- `access_level`
-- `owner`
-- `last_modified`
-
-Resource retrieval must be:
-- Explicit
-- Deterministic
-- Logged
-
-Rule:
-- Blind prompt injection is prohibited.
-
-## 8. Tool Invocation Policy
-
-Tools are model-requested actions (for example: `read_file`, `run_query`, `generate_document`, `create_summary`, `run_script`).
-
-Every tool must define:
-- Name
-- Description
-- Input schema
-- Output schema
-- Execution environment
-- Permission level
-
-The model may:
-- Request tool usage
-- Propose parameters
-
-The host must:
-- Validate parameters
-- Enforce permissions
-- Execute tools
-- Return results through MCP
-
-## 9. Structured Output Policy
-
-MCP interactions must return structured response objects.
-
-Typical fields:
-- `model_output`
-- `retrieved_context`
-- `tool_calls`
-- `tool_results`
-- `execution_logs`
-- `confidence`
-
-Rule:
-- Opaque text-only outputs are discouraged for operational workflows.
-
-## 10. Security Policy
-
-MCP implementations must protect against:
-- Prompt injection
-- Capability escalation
-- Arbitrary code execution
-- Data leakage
-
-Hard requirements:
-- Untrusted context must not gain tool execution authority.
-- Models cannot invent or dynamically authorize new tools.
-- Only declared tools may be used.
-- Shell/scripting/system-modification tools must be sandboxed and permission-gated.
-- Sensitive resources require explicit access permissions.
-
-## 11. Interoperability Policy
-
-All external systems integrated into ML2 must expose capabilities through MCP-compatible interfaces.
-
-Examples:
-- Repositories
-- Document stores
-- Internal databases
-- Compliance APIs
-- Research databases
-
-Rule:
-- Heterogeneous integrations must conform to a consistent MCP access pattern.
-
-## 12. Relationship to Agents
-
-Separation of duties:
-- Agents determine task strategy and sequencing.
-- MCP governs context and system interaction.
-
-Stack:
-1. Application
-2. Agent
+1. User
+2. Application / Agent
 3. Model
-4. MCP
-5. Tools / Data
+4. Tool call (structured request)
+5. Host runtime (MCP server/host)
+6. Tool execution
+7. External systems
 
-Rules:
-- Agents may decide tasks and sequence operations.
-- Agents may not bypass MCP governance.
-- Agents may not directly execute uncontrolled system operations.
+Hard rules:
+- The model cannot directly access external systems.
+- All external actions occur through explicit tool requests.
+- The host validates permissions and arguments before execution.
+- Tool results return in structured form.
 
-## 13. Change Control for MCP Capabilities
+## 4. Tool Specification Structure
 
-All MCP capability changes are governed changes.
+Every tool must declare at minimum:
+- `name`
+- `description`
+- `input_schema`
+- `output_schema`
+- `permission_level`
+- `execution_environment`
 
-Change types include:
-- New tools
-- Schema modifications
-- New resource servers
-- Permission changes
+Example:
+- Tool: `read_file`
+- Purpose: retrieve file contents from a governed repository path
+- Input schema: object with required `path` string
 
-Each change requires:
-- Change description
-- Risk assessment
-- Impacted systems
-- Rollback plan
-- ML1 approval
+## 5. Tool Invocation Process
 
-## 14. LL Execution Boundary
+Standard sequence:
+1. Model identifies required external action.
+2. Model emits structured tool call.
+3. Host validates schema and permission.
+4. Host executes tool.
+5. Host returns structured result.
+6. Model continues reasoning from returned data.
 
-LL may consume outputs that are:
-- ML1-approved doctrine, or
-- Deterministically derived from approved templates and governed artifacts.
+## 6. Categories of Tools
 
-LL must not rely on:
-- Raw model output
-- Non-audited MCP interactions
-- Experimental tool use outside approved capability boundaries
+### 6.1 Retrieval Tools
+Purpose: expand model context from governed sources.
+Examples: `read_file`, `search_repository`, `query_database`, `retrieve_document`
 
-## 15. Known Risk Areas
+### 6.2 Action Tools
+Purpose: create or modify system artifacts under permission control.
+Examples: `create_document`, `send_email`, `create_ticket`, `update_database_record`
 
-ML2 must continuously monitor for:
-- Context drift
-- Unauthorized tool exposure
-- Schema inconsistency
-- Undocumented integrations
+### 6.3 Computational Tools
+Purpose: deterministic processing outside probabilistic model reasoning.
+Examples: `run_python`, `calculate_financial_metrics`, `parse_document`, `run_regulatory_analysis`
 
-Rule:
-- These risks must be recorded in the ML2 system risk register.
+### 6.4 Integration Tools
+Purpose: connect governed workflows to enterprise systems.
+Examples: CRM APIs, billing systems, compliance platforms, payment processors
 
-## 16. Operational Review
+## 7. Why Tools Matter
 
-MCP governance review cadence:
-- Weekly light review
-- Monthly full review
+Models are probabilistic reasoning systems. Tools add:
+- deterministic execution
+- controlled access to external data
+- governed interaction with software systems
+- persistent operational effects under system control
 
-Review topics:
-- New integrations
-- Security issues
-- Tool usage logs
-- Context retrieval accuracy
-- Schema drift
+## 8. Safety and Governance
 
-## 17. Alignment with Second Brain Architecture
+All tool execution is host-controlled.
 
-MCP governance supports Second Brain architecture by:
-- Preserving file-based knowledge authority
-- Maintaining inspectability and version control
-- Enforcing structured interaction between models and knowledge systems
+The host must enforce:
+- tool availability scope
+- argument/schema validation
+- permission constraints
+- execution policies
+- logging and audit requirements
+- rate limits and safety controls
 
-Target properties:
-- Deterministic
-- Auditable
-- Operator-controlled
+Security requirements:
+- sensitive systems remain permission-gated
+- actions remain traceable
+- prompt injection cannot elevate tool authority
+- models cannot invent undeclared tools
+- shell/scripting/system-modification tools must be sandboxed and explicitly gated
+
+## 9. Relationship to Agents
+
+Agents operate as a reasoning-and-tool loop:
+1. interpret goal
+2. plan steps
+3. invoke tools
+4. observe results
+5. continue or escalate
+
+Role boundary:
+- Agents may decide sequence and strategy.
+- Agents may not bypass MCP controls.
+- Tools execute actions; agents/models do not directly perform external I/O.
+
+## 10. Tool Design Principles
+
+### Narrow scope
+Each tool must perform one clearly defined function.
+
+### Deterministic outputs
+Tools should return predictable structured responses suitable for chaining.
+
+### Explicit access boundaries
+Each tool must declare system scope and permission boundary (read-only vs write vs restricted).
+
+## 11. Professional Implementation
+
+Typical operational tools include:
+- `retrieve_matter_documents`
+- `generate_proposal`
+- `run_compliance_check`
+- `extract_contract_terms`
+- `create_client_email`
+
+## 12. Change Control
+
+No tool may be deployed without ML1 authorization through ML2 change governance.
+
+Required change package:
+- tool specification draft
+- input/output schema
+- access boundary statement
+- security/execution rules
+- risk assessment and rollback plan
+- ML1 approval record
+
+## 13. Enforcement
+
+The System must enforce:
+- schema validation
+- access permissions
+- invocation logging
+- execution monitoring
+- escalation on boundary failure
+
+All tool activity must remain auditable, controlled, and attributable to governed runs.
 
 Authority (Principles referenced): PRN-020, PRN-022, PRN-024, PRN-026, PRN-028, PRN-029
 Enforcement expectation: Any runtime flow that bypasses MCP mediation, invokes undeclared tools, violates permission scope, or omits required audit logs is non-compliant and must be blocked or escalated to ML1.
+
 Supersedes: None
 Version: 0.1
 Status: Draft

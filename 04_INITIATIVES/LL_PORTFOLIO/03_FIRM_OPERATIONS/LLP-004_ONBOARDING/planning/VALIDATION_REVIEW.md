@@ -5,7 +5,7 @@ Project Path: 03_FIRM_OPERATIONS/LLP-004_ONBOARDING
 Stage: Planning
 
 ## Review Criteria
-- Conversion and 24-hour agreement SLA metrics are reproducible from source artifacts.
+- Engagement and 24-hour agreement SLA metrics are reproducible from source artifacts.
 - Denominators and inclusion rules are unambiguous.
 - Cycle-time and exception tracking support corrective action prioritization.
 - KPI package is sufficient for implementation authorization.

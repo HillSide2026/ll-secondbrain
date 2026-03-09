@@ -3,9 +3,9 @@ id: POL-032
 title: Marketing Lifecycle Definition and Boundary
 owner: ML1
 status: draft
-version: 0.1
+version: 0.2
 created_date: 2026-03-08
-last_updated: 2026-03-08
+last_updated: 2026-03-09
 tags: [policy, marketing, lifecycle, boundary]
 ---
 
@@ -18,9 +18,14 @@ Canonical marketing lifecycle:
 2. Interest
 3. Consideration
 4. Inquiry (also known as Intake)
-5. Conversion (also known as Onboarding)
+5. Conversion (marketing term)
 
-Boundary rule: Marketing ends at Conversion/Onboarding.
+Terminology rule:
+- `conversion` is the canonical marketing-stage label.
+- `onboarding` is the fulfillment-stage label for the downstream handoff event.
+
+Boundary rule: Marketing ends at the end of Conversion.
+Handoff rule: The completed Conversion event is handed off into fulfillment as `onboarding`.
 
 Post-conversion activities are not marketing and must be classified outside the marketing lifecycle, including:
 - Client Service
@@ -31,5 +36,5 @@ Post-conversion activities are not marketing and must be classified outside the 
 Authority (Principles referenced): PRN-020, PRN-021, PRN-027
 Enforcement expectation: Artifacts, runs, or workflows that classify non-marketing stages as marketing are non-compliant and must be reclassified with governance review.
 Supersedes: None
-Version: 0.1
+Version: 0.2
 Status: Draft

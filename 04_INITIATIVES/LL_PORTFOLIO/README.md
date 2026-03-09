@@ -4,7 +4,7 @@ title: LL_PORTFOLIO — Levine Law Workstream Registry
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-03-09
 tags: []
 ---
 
@@ -70,7 +70,7 @@ LL_PORTFOLIO/
 ├── 05_MATTER_DOCKETING/         # Delivery overlay for matters
 ├── 06_FINANCIAL_PORTFOLIO/      # Models & constraints (not decisions)
 ├── 07_STRATEGIC_PROJECTS/       # Change and evolution
-├── 08_MARKETING/                # Pre-matter pipeline (leads → onboarding)
+├── 08_MARKETING/                # Pre-matter pipeline (leads -> conversion; handoff enters fulfillment onboarding)
 └── 09_SERVICE_MANAGEMENT/       # Service tier management across matters
 ```
 
@@ -188,18 +188,19 @@ You must not infer, reorder, merge, or repurpose these folders.
 
 **Purpose:** Pre-matter pipeline for how potential work enters the firm.
 
-**Characteristics:** Pre-matter only, ends at matter opening, no delivery semantics
+**Characteristics:** Pre-matter only, ends at end of marketing conversion, no delivery semantics
 
 | ALLOWED | PROHIBITED |
 |---------|------------|
 | Lead capture and tracking | Legal delivery work |
 | Intake qualification | Docketing or capacity management |
-| Onboarding workflow | Modifying delivery states or periods |
+| Conversion workflow and fulfillment handoff package | Modifying delivery states or periods |
 | Conversion analytics | Billing, accounting, pricing decisions |
 | Handoff to Matter Docketing | Accepting/rejecting work autonomously |
 
 **Critical Boundary:**
-- Marketing ends when a matter is opened
+- Marketing ends at the end of Conversion (marketing term)
+- Fulfillment begins at Onboarding (fulfillment term)
 - Matter Docketing begins when a matter exists
 - **They must not overlap.**
 

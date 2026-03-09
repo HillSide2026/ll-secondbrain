@@ -4,7 +4,7 @@ title: Marketing Portfolio
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-03-09
 tags: []
 ---
 
@@ -25,7 +25,7 @@ Marketing governs:
 * Visibility
 * Lead capture
 * Qualification
-* Onboarding (closing)
+* Conversion (closing; marketing term)
 
 Marketing does NOT govern:
 
@@ -47,7 +47,7 @@ Once a matter is opened in Clio, responsibility transfers immediately and exclus
 
 * Qualification standards
 * Acceptance or rejection of work
-* Onboarding approval
+* Conversion approval and handoff authorization
 
 **ML2** may:
 
@@ -62,7 +62,7 @@ Once a matter is opened in Clio, responsibility transfers immediately and exclus
 * Open matters in Clio
 * Infer delivery priority or scope
 
-**Clio** is the system of record once onboarding completes.
+**Clio** is the fulfillment system of record once the conversion handoff enters fulfillment onboarding.
 
 ---
 
@@ -76,7 +76,7 @@ Each funnel conforms to a **macro model** with three stages:
 
 1. Ads / Lead Capture
 2. Intake (Qualification)
-3. Onboarding (Closing)
+3. Conversion (Closing)
 
 Detailed, funnel-specific pipeline stages are defined in each funnel spec under
 `04_INITIATIVES/LL_PORTFOLIO/08_MARKETING/04_FUNNELS/`.
@@ -90,7 +90,7 @@ Detailed, funnel-specific pipeline stages are defined in each funnel spec under
 | Field | Value |
 |-------|-------|
 | Acquisition | Google Ads → Landing Page |
-| Intake & Onboarding System | Go High Level (GHL) |
+| Intake & Conversion Tracking System | Go High Level (GHL) |
 
 **Offers:**
 
@@ -110,7 +110,7 @@ Detailed, funnel-specific pipeline stages are defined in each funnel spec under
 | Field | Value |
 |-------|-------|
 | Acquisition | Book: "LL Funnel 2026 — Launch Your Payments Business in Canada", Blog / thought leadership (e.g., Stablecoins, payments regulation) |
-| Intake & Onboarding System | Go High Level (GHL) |
+| Intake & Conversion Tracking System | Go High Level (GHL) |
 
 **Offer Ladder (Marketing Classification Only):**
 
@@ -200,9 +200,9 @@ Offers:
 
 ---
 
-### 6.3 Onboarding (Closing)
+### 6.3 Conversion (Closing)
 
-**Purpose:** Convert a qualified intake into an active engagement.
+**Purpose:** Convert a qualified intake into a conversion-complete handoff event.
 
 **Characteristics:**
 
@@ -213,11 +213,12 @@ Offers:
 
 * Engagement confirmation
 * Required information collection
-* Setup prerequisites
+* Conversion evidence capture
+* Fulfillment handoff package preparation
 
 **Terminal Condition:**
 
-* Stage ENDS only when a matter is opened in Clio
+* Stage ENDS only when conversion evidence is complete and the handoff enters fulfillment onboarding.
 
 ---
 
@@ -226,9 +227,9 @@ Offers:
 The ONLY valid handoff from Marketing is:
 
 ```
-Onboarding complete
-→ Matter opened in Clio
-→ Control transfers to Matter Docketing
+Conversion complete
+→ Handoff enters Fulfillment Onboarding
+→ Downstream matter opening and docketing proceed under fulfillment controls
 ```
 
 **Marketing MUST NOT:**
@@ -264,11 +265,11 @@ ML2 must refuse to:
 * Treat offers as delivery workflows
 * Treat the value ladder as a delivery roadmap
 * Auto-advance clients between offers
-* Create a matter without explicit onboarding completion
+* Create a matter without explicit conversion completion and fulfillment handoff authorization
 * Merge funnel analytics with delivery metrics
 * Infer pricing or scope from offers
 * Track billing or accounting activity
-* Advance work past onboarding without Clio matter creation
+* Advance work past conversion boundary without governed fulfillment handoff
 
 ---
 
@@ -277,7 +278,7 @@ ML2 must refuse to:
 ML1 is the sole authority for:
 - Qualification standards
 - Acceptance or rejection of work
-- Onboarding approval
+- Conversion approval and fulfillment handoff authorization
 - Defining new funnels
 - Modifying the canonical offer list
 
@@ -291,7 +292,7 @@ ML2 must NOT:
 - Treat the value ladder as a delivery roadmap
 - Auto-advance clients between offers
 - Merge funnels or infer funnel membership
-- Track activity beyond onboarding completion
+- Track activity beyond conversion completion as if it were still marketing
 
 ## Approval State
 

@@ -3,7 +3,7 @@ id: POL-034
 title: Fulfillment Lifecycle Definition and Authority Boundary
 owner: ML1
 status: draft
-version: 0.1
+version: 0.2
 created_date: 2026-03-09
 last_updated: 2026-03-09
 tags: [policy, fulfillment, lifecycle, authority, gates]
@@ -12,6 +12,10 @@ tags: [policy, fulfillment, lifecycle, authority, gates]
 # POL-034 — Fulfillment Lifecycle Definition and Authority Boundary
 
 Policy Statement: Fulfillment is the governed administrative system that begins at Onboarding and ends at Closing. Fulfillment is not legal delivery and must operate within explicit gate, scope, and authority boundaries.
+
+Terminology rule:
+- `onboarding` is the canonical fulfillment-stage label.
+- `conversion` is a marketing-stage label and is not a fulfillment stage.
 
 Canonical fulfillment lifecycle:
 1. Onboarding (`LLP-004`) — Fulfillment start (pre-signature setup and engagement packet control)
@@ -33,7 +37,7 @@ Gate and status transition rules:
 
 Boundary rules:
 - Fulfillment governs administrative execution only; it must not perform legal judgment, legal strategy, or substantive delivery decisions.
-- Marketing ends at Conversion/Onboarding per `POL-032` and `POL-033`; fulfillment begins at Onboarding.
+- Marketing ends at the end of Conversion per `POL-032` and `POL-033`; fulfillment begins at Onboarding.
 - Maintenance outputs do not authorize doctrine changes or gate overrides.
 - Closing may occur only after fulfillment closure preconditions are satisfied and explicitly approved under ML1 authority.
 
@@ -44,5 +48,5 @@ Authority rules:
 Authority (Principles referenced): PRN-020, PRN-021, PRN-027, PRN-028
 Enforcement expectation: Any run, artifact, or workflow that misclassifies fulfillment stages, skips gates, or performs out-of-scope legal-delivery actions is non-compliant and must be blocked or escalated to ML1.
 Supersedes: None
-Version: 0.1
+Version: 0.2
 Status: Draft

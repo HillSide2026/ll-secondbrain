@@ -4,7 +4,7 @@ title: LL Marketing System
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-03-09
 tags: []
 ---
 
@@ -14,17 +14,17 @@ tags: []
 Manage firm-wide marketing activities from lead generation through lead nurture.
 
 ## Scope
-Covers pre-engagement activities prior to formal onboarding.
+Covers pre-engagement activities through marketing conversion.
 
 ## What This System Owns
 - Lead generation and capture
 - Inquiry handling
 - Lead nurture workflows
 - Lead Conversion
-- Lead Onboarding
+- Fulfillment handoff package creation
 
 ## What This System Does NOT Own
-- Engagement onboarding
+- Fulfillment onboarding execution
 - Legal advice or analysis
 - Pricing or commercial negotiation
 - Matter execution
@@ -45,7 +45,7 @@ Primary agents:
 Sub-agents:
 - Lead Capture Monitor — inbound signal telemetry
 - Intake Summary Agent — summarization and flagging
-- Onboarding Tracker — handoff sentinel
+- Onboarding Tracker — conversion-to-fulfillment handoff sentinel
 
 ## Funnels & Initiatives
 The authoritative funnel definitions and marketing initiatives live in:

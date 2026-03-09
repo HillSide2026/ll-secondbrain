@@ -4,7 +4,7 @@ title: 03_FIRM_OPERATIONS — How the Firm Runs
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-03-09
 tags: []
 ---
 
@@ -42,7 +42,7 @@ These are firm-wide and not practice-area specific.
 3. LL Marketing System
    - Lead Generation & Capture
    - Lead Nurture (Inquiries)
-   - Lead Conversion (Onboarding)
+   - Lead Conversion (marketing term; handoff enters fulfillment onboarding)
 4. LL Sales System (to be defined)
 5. LL Management System
    - Accounting

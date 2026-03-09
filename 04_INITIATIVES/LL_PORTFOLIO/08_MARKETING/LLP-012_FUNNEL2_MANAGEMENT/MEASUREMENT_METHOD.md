@@ -5,8 +5,8 @@ Project Path: 08_MARKETING/LLP-012_FUNNEL2_MANAGEMENT
 Stage: Planning
 
 ## Method
-- Capture intake-stage events and onboarding-stage events from governed funnel artifacts.
-- Normalize stage aliases: `intake -> inquiry`, `onboarding -> conversion` in canonical fields while preserving operational labels for reporting.
+- Capture intake-stage events and conversion-stage events from governed funnel artifacts.
+- Normalize stage aliases: `intake -> inquiry`. Treat `conversion` as the canonical marketing terminal stage label and `onboarding` as the downstream fulfillment handoff label.
 - Record stage transitions with timestamped evidence references.
 - Measure against ML1-approved thresholds when provided.
 
@@ -20,9 +20,9 @@ Stage: Planning
   Denominator: count of opt-in leads in the measurement window.
   Target: `>= 30%`.
 
-## Onboarding / Conversion KPI Calculation Rules
+## Conversion KPI Calculation Rules
 - `consulting_stage_tracking`
-  Requirement: consulting-stage events must be captured for onboarding leads.
+  Requirement: consulting-stage events must be captured for conversion-qualified leads and handoff records.
   Target: instrumentation complete and reportable.
 - `paid_lead_to_engaged_conversion_rate`
   Numerator: count of paid leads that reach closing/engaged conversion.
@@ -37,5 +37,5 @@ Stage: Planning
 ## Data Sources (If Any)
 - Website and landing-page conversion instrumentation (`levine-law.ca`)
 - Funnel intake forms / booking events
-- Onboarding evidence artifacts (engagement signed, retainer received, or invoice paid)
+- Conversion evidence artifacts (engagement signed, retainer received, or invoice paid), with handoff reference to fulfillment onboarding
 - Governed run artifacts and signal reports

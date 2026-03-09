@@ -421,12 +421,36 @@ policies:
 - id: POL-032
   title: Marketing Lifecycle Definition and Boundary
   path: 01_DOCTRINE/03_POLICIES/POL-032_Marketing_Lifecycle_Definition_and_Boundary.md
-  version: '0.1'
+  version: '0.2'
   status: draft
   history: []
 - id: POL-033
   title: Conversion Qualification and Revenue Trigger
   path: 01_DOCTRINE/03_POLICIES/POL-033_Conversion_Qualification_and_Revenue_Trigger.md
+  version: '0.2'
+  status: draft
+  history: []
+- id: POL-034
+  title: Fulfillment Lifecycle Definition and Authority Boundary
+  path: 01_DOCTRINE/03_POLICIES/POL-034_Fulfillment_Lifecycle_Definition_and_Authority_Boundary.md
+  version: '0.2'
+  status: draft
+  history: []
+- id: POL-035
+  title: Tool Architecture and Governance Policy (Model Context Protocol)
+  path: 01_DOCTRINE/03_POLICIES/POL-035_Model_Context_Protocol_Governance.md
+  version: '0.2'
+  status: draft
+  history: []
+- id: POL-036
+  title: Context Classification Policy
+  path: 01_DOCTRINE/03_POLICIES/POL-036_Context_Classification_Policy.md
+  version: '0.1'
+  status: draft
+  history: []
+- id: POL-037
+  title: External System Integration Policy
+  path: 01_DOCTRINE/03_POLICIES/POL-037_External_System_Integration_Policy.md
   version: '0.1'
   status: draft
   history: []
@@ -551,12 +575,33 @@ protocols:
   status: active
   policy: POL-007
   history: []
+- id: PRO-013
+  title: Matter Filing Protocol
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-013_Matter_Filing_Protocol.md
+  version: '0.4'
+  status: draft
+  policy: unknown
+  history: []
+- id: PRO-014
+  title: Inbox Governance Protocol
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-014_Inbox_Governance_Protocol.md
+  version: '0.1'
+  status: draft
+  policy: unknown
+  history: []
 - id: PRO-015
   title: Marketing Stage Classification and Handoff
   path: 01_DOCTRINE/05_PROTOCOLS/PRO-015_Marketing_Stage_Classification_and_Handoff.md
-  version: '0.1'
+  version: '0.2'
   status: draft
   policy: POL-032
+  history: []
+- id: PRO-016
+  title: Fulfillment Stage Classification and Handoff
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-016_Fulfillment_Stage_Classification_and_Handoff.md
+  version: '0.2'
+  status: draft
+  policy: POL-034
   history: []
 - id: 01_doctrine__protocols__readme_md
   title: Protocols (Level 4)

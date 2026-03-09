@@ -11,12 +11,12 @@ Stage: Planning
 | 3.3 Intake | Welcoming | Call out within 24 hours of opt-in | Leads worked within 24 hours | `>= 90%` |
 | 3.4 Intake | Scheduling | N/A | Leads scheduled | `>= 30%` |
 
-## Onboarding / Conversion Stage Metrics (ML1 Targets)
+## Conversion Stage Metrics (ML1 Targets)
 
 | Process | Step | SLA | KPI | Target |
 | --- | --- | --- | --- | --- |
-| 3.5 Onboarding | Consulting | N/A | Consulting stage tracking | Instrumentation required |
-| 3.6 Onboarding | Closing (aka Engaging / Conversion) | N/A | Paid lead to engaged conversion | `>= 1/10` paid leads (`>= 10%`) |
+| 3.5 Conversion | Consulting | N/A | Consulting stage tracking | Instrumentation required |
+| 3.6 Conversion | Closing (aka Engaging) | N/A | Paid lead to engaged conversion | `>= 1/10` paid leads (`>= 10%`) |
 
 ## Metric Definitions
 - `leads_worked_within_24h_rate`
@@ -33,8 +33,9 @@ Stage: Planning
 ## Scope Notes
 - Intake-stage metrics apply to pre-conversion funnel behavior.
 - Intake aliases to `inquiry` in canonical lifecycle normalization.
+- `conversion` is the marketing-stage label; post-conversion handoff enters fulfillment as `onboarding`.
 
 ## Notes
 - Intake targets above were provided by ML1.
-- Onboarding conversion target above was provided by ML1.
+- Conversion target above was provided by ML1.
 - Consulting-stage KPI target is currently instrumentation-only until ML1 sets a numeric threshold.

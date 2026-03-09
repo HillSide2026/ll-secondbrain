@@ -117,7 +117,7 @@ version: "3.0"
 
 ### Delivery — Non-lawyer
 ### Fulfillment — Admin/Accounts
-### Marketing — Intake/Onboarding
+### Marketing — Intake/Conversion (fulfillment handoff follows as onboarding)
 ### Management
 ### Unrouted / Needs Triage
 ```
