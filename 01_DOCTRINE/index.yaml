@@ -454,6 +454,24 @@ policies:
   version: '0.1'
   status: draft
   history: []
+- id: POL-038
+  title: Module Policy
+  path: 01_DOCTRINE/03_POLICIES/POL-038_Module_Policy.md
+  version: '0.1'
+  status: draft
+  history: []
+- id: POL-039
+  title: Solution Policy
+  path: 01_DOCTRINE/03_POLICIES/POL-039_Solution_Policy.md
+  version: '0.1'
+  status: draft
+  history: []
+- id: POL-040
+  title: Workflow Policy
+  path: 01_DOCTRINE/03_POLICIES/POL-040_Workflow_Policy.md
+  version: '0.1'
+  status: draft
+  history: []
 - id: 01_doctrine__02_policies__firm_project_doctrine_md
   title: Firm Project Doctrine
   path: 01_DOCTRINE/03_POLICIES/FIRM_PROJECT_DOCTRINE.md
