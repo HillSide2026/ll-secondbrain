@@ -1,7 +1,7 @@
 # Project Charter
 
-Project #: LLP-26-28
-Repo: 09_SERVICE_MANAGEMENT
+Project ID: LLP-26-28
+Project Path: 09_SERVICE_MANAGEMENT
 Project Type: Management Project
 Stage: Initiating
 

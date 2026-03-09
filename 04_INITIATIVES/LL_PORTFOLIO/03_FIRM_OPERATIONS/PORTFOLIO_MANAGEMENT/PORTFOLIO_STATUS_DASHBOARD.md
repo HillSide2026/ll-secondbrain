@@ -8,7 +8,7 @@
 
 | Project | Stage | Health | Relevant Open Gates | Stage 2 Readiness |
 | --- | --- | --- | --- | --- |
-| 03_FIRM_OPERATIONS/LLP-006_MAINTENANCE/LLP-006_MATTER_MAINTENANCE/initiation | 1 | at-risk | 0 | n/a |
+| 03_FIRM_OPERATIONS/LLP-006_MAINTENANCE/initiation | 1 | at-risk | 0 | n/a |
 | 03_FIRM_OPERATIONS/PORTFOLIO_MANAGEMENT | 2 | at-risk | 7 | 45% |
 | 04_RISK/LLP-017_STRATEGIC_RISK | 2 | at-risk | 7 | 45% |
 | 05_MATTER_DOCKETING/LLP-009_CLERK_SUPERVISION | 2 | at-risk | 7 | 45% |
@@ -17,7 +17,7 @@
 | 07_STRATEGIC_PROJECTS/LLP-002_CORPORATE_CLERK | 2 | at-risk | 7 | 45% |
 | 07_STRATEGIC_PROJECTS/LLP-003_ASSOCIATE_LAWYER | 2 | at-risk | 7 | 45% |
 | 07_STRATEGIC_PROJECTS/LLP-004_PARTNER_SUPERVISION | 2 | at-risk | 7 | 45% |
-| 07_STRATEGIC_PROJECTS/LLP-005_MATTER_COMMAND_CONTROL | 1 | at-risk | 1 | n/a |
+| 07_STRATEGIC_PROJECTS/LLP-023_MATTER_COMMAND_CONTROL | 1 | at-risk | 1 | n/a |
 | 08_MARKETING/LLP-011_FUNNEL1_MANAGEMENT | 2 | on-track | 0 | 100% |
 | 08_MARKETING/LLP-012_FUNNEL2_MANAGEMENT | 2 | at-risk | 7 | 45% |
 | 08_MARKETING/LLP-013_FUNNEL3_MANAGEMENT | 2 | at-risk | 7 | 45% |

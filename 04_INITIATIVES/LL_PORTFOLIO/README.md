@@ -26,6 +26,12 @@ The LL Portfolio is a **governed, non-autonomous registry** where:
 - **ML2** preserves structure, scope, constraints, and state
 - **LL** consumes ONLY ML1-approved outputs
 
+## Project Identity (Canonical)
+
+- Every project has one canonical identifier: `Project ID` (globally unique).
+- `Project Path` is a storage/location key and must not be treated as identity.
+- Folder labels in paths (for example `LLP-004_ONBOARDING`) are legacy slugs and non-authoritative for identity.
+
 ---
 
 ## LL Work Type Taxonomy (Canonical)

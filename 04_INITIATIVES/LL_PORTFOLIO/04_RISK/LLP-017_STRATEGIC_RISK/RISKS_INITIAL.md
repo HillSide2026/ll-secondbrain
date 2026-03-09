@@ -1,7 +1,7 @@
 # Initial Risk Assessment
 
-Project #: LLP-26-13
-Repo: 04_RISK/LLP-017_STRATEGIC_RISK
+Project ID: LLP-26-13
+Project Path: 04_RISK/LLP-017_STRATEGIC_RISK
 
 ## 1. Primary Risk
 - To be defined by ML1.

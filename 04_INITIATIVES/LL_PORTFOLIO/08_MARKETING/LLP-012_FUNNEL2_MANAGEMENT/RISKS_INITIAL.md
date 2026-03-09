@@ -1,7 +1,7 @@
 # Initial Risk Assessment
 
-Project #: LLP-26-25
-Repo: 08_MARKETING/LLP-012_FUNNEL2_MANAGEMENT
+Project ID: LLP-26-25
+Project Path: 08_MARKETING/LLP-012_FUNNEL2_MANAGEMENT
 
 ## 1. Primary Risk
 Positioning-transition risk: preventative funnel fails to attract intended maturity profile.

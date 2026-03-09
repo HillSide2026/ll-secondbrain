@@ -1,7 +1,7 @@
 # ML1 Metric Approval
 
-Project #: LLP-26-13
-Repo: 04_RISK/LLP-017_STRATEGIC_RISK
+Project ID: LLP-26-13
+Project Path: 04_RISK/LLP-017_STRATEGIC_RISK
 Stage: Planning
 
 Approval Status: Proposed

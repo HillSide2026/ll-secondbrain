@@ -1,6 +1,6 @@
 ---
 id: 04_initiatives__ll_portfolio__07_strategic_projects__llp_005_matter_command_control__readme_md
-title: LLP-005 — Matter Command and Control
+title: LLP-023 — Matter Command and Control
 owner: ML1
 status: on track
 created_date: 2026-03-04
@@ -8,7 +8,7 @@ last_updated: 2026-03-04
 tags: [matter-operations, command-control]
 ---
 
-# LLP-005 — Matter Command and Control
+# LLP-023 — Matter Command and Control
 
 ## Purpose
 

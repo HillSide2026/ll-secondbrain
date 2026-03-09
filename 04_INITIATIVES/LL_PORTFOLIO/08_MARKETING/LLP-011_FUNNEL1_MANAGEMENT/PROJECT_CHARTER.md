@@ -1,7 +1,7 @@
 # Project Charter
 
-Project #: LLP-26-24
-Repo: 08_MARKETING/LLP-011_FUNNEL1_MANAGEMENT
+Project ID: LLP-26-24
+Project Path: 08_MARKETING/LLP-011_FUNNEL1_MANAGEMENT
 Project Type: Management Project
 Stage: Planning
 

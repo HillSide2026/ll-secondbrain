@@ -1,7 +1,7 @@
 # ML1 Metric Approval
 
-Project #: LLP-26-28
-Repo: 09_SERVICE_MANAGEMENT
+Project ID: LLP-26-28
+Project Path: 09_SERVICE_MANAGEMENT
 Stage: Planning
 
 Approval Status: Proposed

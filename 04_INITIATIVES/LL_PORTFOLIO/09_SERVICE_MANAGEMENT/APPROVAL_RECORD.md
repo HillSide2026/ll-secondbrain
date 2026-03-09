@@ -1,7 +1,7 @@
 # Approval Record
 
-Project #: LLP-26-28
-Repo: 09_SERVICE_MANAGEMENT
+Project ID: LLP-26-28
+Project Path: 09_SERVICE_MANAGEMENT
 Stage: Initiating
 
 Approval Status: Proposed

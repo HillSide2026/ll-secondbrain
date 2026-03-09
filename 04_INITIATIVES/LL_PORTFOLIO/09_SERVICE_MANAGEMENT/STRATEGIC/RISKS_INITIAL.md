@@ -1,7 +1,7 @@
 # Initial Risk Assessment
 
-Project #: LLP-26-30
-Repo: 09_SERVICE_MANAGEMENT/STRATEGIC
+Project ID: LLP-26-30
+Project Path: 09_SERVICE_MANAGEMENT/STRATEGIC
 
 ## 1. Primary Risk
 - To be defined by ML1.

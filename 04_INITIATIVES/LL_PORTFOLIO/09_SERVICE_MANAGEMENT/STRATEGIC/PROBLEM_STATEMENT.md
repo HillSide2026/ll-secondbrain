@@ -1,7 +1,7 @@
 # Problem Statement
 
-Project #: LLP-26-30
-Repo: 09_SERVICE_MANAGEMENT/STRATEGIC
+Project ID: LLP-26-30
+Project Path: 09_SERVICE_MANAGEMENT/STRATEGIC
 
 ## Current Problem
 - To be defined by ML1.

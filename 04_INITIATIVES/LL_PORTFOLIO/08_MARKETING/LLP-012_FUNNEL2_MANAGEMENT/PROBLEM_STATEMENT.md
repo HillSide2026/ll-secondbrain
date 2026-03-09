@@ -1,7 +1,7 @@
 # Problem Statement
 
-Project #: LLP-26-25
-Repo: 08_MARKETING/LLP-012_FUNNEL2_MANAGEMENT
+Project ID: LLP-26-25
+Project Path: 08_MARKETING/LLP-012_FUNNEL2_MANAGEMENT
 
 ## Current Problem
 - Funnel 02 is defined as planned future state but lacks finalized initiation execution controls.

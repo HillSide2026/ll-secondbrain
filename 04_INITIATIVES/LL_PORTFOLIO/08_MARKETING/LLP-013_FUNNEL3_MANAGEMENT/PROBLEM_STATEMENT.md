@@ -1,7 +1,7 @@
 # Problem Statement
 
-Project #: LLP-26-26
-Repo: 08_MARKETING/LLP-013_FUNNEL3_MANAGEMENT
+Project ID: LLP-26-26
+Project Path: 08_MARKETING/LLP-013_FUNNEL3_MANAGEMENT
 
 ## Current Problem
 - Funnel 03 is active but initiation controls are still template-level placeholders.

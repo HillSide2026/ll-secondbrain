@@ -1,7 +1,7 @@
 # Initial Risk Assessment
 
-Project #: LLP-26-26
-Repo: 08_MARKETING/LLP-013_FUNNEL3_MANAGEMENT
+Project ID: LLP-26-26
+Project Path: 08_MARKETING/LLP-013_FUNNEL3_MANAGEMENT
 
 ## 1. Primary Risk
 Regulatory-positioning risk: messaging drifts beyond approved counsel scope.

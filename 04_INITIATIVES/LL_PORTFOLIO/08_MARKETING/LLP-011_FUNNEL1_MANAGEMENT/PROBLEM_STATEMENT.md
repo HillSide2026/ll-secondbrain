@@ -1,7 +1,7 @@
 # Problem Statement
 
-Project #: LLP-26-24
-Repo: 08_MARKETING/LLP-011_FUNNEL1_MANAGEMENT
+Project ID: LLP-26-24
+Project Path: 08_MARKETING/LLP-011_FUNNEL1_MANAGEMENT
 
 ## Current Problem
 - Funnel 01 is live but managed without a complete initiation-stage governance package.

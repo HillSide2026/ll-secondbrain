@@ -8,8 +8,8 @@
 
 | Rank | Project | Priority Score | Health | Relevant Open Gates | Next Focus |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 07_STRATEGIC_PROJECTS/LLP-005_MATTER_COMMAND_CONTROL | 38 | at-risk | 1 | Complete stage-2 planning packet |
-| 2 | 03_FIRM_OPERATIONS/LLP-006_MAINTENANCE/LLP-006_MATTER_MAINTENANCE/initiation | 37 | at-risk | 0 | Complete stage-2 planning packet |
+| 1 | 07_STRATEGIC_PROJECTS/LLP-023_MATTER_COMMAND_CONTROL | 38 | at-risk | 1 | Complete stage-2 planning packet |
+| 2 | 03_FIRM_OPERATIONS/LLP-006_MAINTENANCE/initiation | 37 | at-risk | 0 | Complete stage-2 planning packet |
 | 3 | 03_FIRM_OPERATIONS/PORTFOLIO_MANAGEMENT | 29 | at-risk | 7 | Complete stage-2 planning packet |
 | 4 | 04_RISK/LLP-017_STRATEGIC_RISK | 29 | at-risk | 7 | Complete stage-2 planning packet |
 | 5 | 05_MATTER_DOCKETING/LLP-009_CLERK_SUPERVISION | 29 | at-risk | 7 | Complete stage-2 planning packet |

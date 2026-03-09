@@ -41,9 +41,14 @@ Required:
 Notes:
 - `RISK_SCAN.md` must include: Top 5 Risks, Key Assumptions, Go/No-Go Judgment.
 - `PROJECT_CHARTER.md` must include:
-  - `Project #` (canonical LL project number, e.g., `LLP-26-24`)
+  - `Project ID` (canonical globally unique identifier, e.g., `LLP-26-24`)
+  - `Project Path` (repository path key, e.g., `08_MARKETING/LLP-011_FUNNEL1_MANAGEMENT`)
   - `Project Type` (`Strategic`, `Management`, or `Operational`)
 - Stage advancement requires ML1 approval in `APPROVAL_RECORD.md`.
+
+Identity Rule:
+- `Project ID` is canonical.
+- Legacy folder labels (for example `LLP-004_ONBOARDING`) are location slugs only and are not valid identity fields.
 
 ## Stage 2 - Planning (Implementation Readiness)
 

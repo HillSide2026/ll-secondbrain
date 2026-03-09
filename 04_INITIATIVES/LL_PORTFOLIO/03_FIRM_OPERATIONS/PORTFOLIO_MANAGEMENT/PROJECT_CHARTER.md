@@ -1,7 +1,7 @@
 # Project Charter
 
-Project #: LLP-26-11
-Repo: 03_FIRM_OPERATIONS/PORTFOLIO_MANAGEMENT
+Project ID: LLP-26-11
+Project Path: 03_FIRM_OPERATIONS/PORTFOLIO_MANAGEMENT
 Project Type: Management Project
 Stage: Initiating
 
