@@ -1,0 +1,8 @@
+# MODULE_001_PRIMARY — MSB_INTAKE_AND_REGISTRATION
+
+Primary codified module for solution `MSB_INTAKE_AND_REGISTRATION`.
+
+Contains:
+- `WORKFLOWS/`
+- `TEMPLATES/`
+- `CHECKLISTS/`

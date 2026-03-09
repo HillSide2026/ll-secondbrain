@@ -1,0 +1,6 @@
+# MODULES — BANK_ONBOARD
+
+Module-layer container for solution `BANK_ONBOARD`.
+
+Canonical path pattern:
+`SOLUTIONS/BANK_ONBOARD/MODULES/<MODULE_ID>/{WORKFLOWS,TEMPLATES,CHECKLISTS}`

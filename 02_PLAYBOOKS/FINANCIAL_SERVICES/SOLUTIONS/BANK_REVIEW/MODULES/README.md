@@ -1,0 +1,6 @@
+# MODULES — BANK_REVIEW
+
+Module-layer container for solution `BANK_REVIEW`.
+
+Canonical path pattern:
+`SOLUTIONS/BANK_REVIEW/MODULES/<MODULE_ID>/{WORKFLOWS,TEMPLATES,CHECKLISTS}`

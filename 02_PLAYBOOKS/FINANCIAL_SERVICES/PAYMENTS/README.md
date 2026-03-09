@@ -4,7 +4,7 @@ title: Financial Services — Payments
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-25
+last_updated: 2026-03-09
 tags: []
 ---
 
@@ -24,11 +24,11 @@ High-value engagement architectures that may orchestrate multiple solutions. Str
 
 | # | Solution | Folder |
 |---|----------|--------|
-| 1 | MSB_INTAKE_AND_REGISTRATION | [SOLUTIONS/MSB_INTAKE_AND_REGISTRATION/](SOLUTIONS/MSB_INTAKE_AND_REGISTRATION/) |
-| 2 | MSB_REVIEW | [SOLUTIONS/MSB_REVIEW/](SOLUTIONS/MSB_REVIEW/) |
-| 3 | FINTRAC_RESPONSE | [SOLUTIONS/FINTRAC_RESPONSE/](SOLUTIONS/FINTRAC_RESPONSE/) |
-| 4 | RPAA_REGISTRATION | [SOLUTIONS/RPAA_REGISTRATION/](SOLUTIONS/RPAA_REGISTRATION/) |
-| 5 | RPAA_THREE_YEAR_REVIEW | [SOLUTIONS/RPAA_THREE_YEAR_REVIEW/](SOLUTIONS/RPAA_THREE_YEAR_REVIEW/) |
+| 1 | MSB_INTAKE_AND_REGISTRATION | [../SOLUTIONS/MSB_INTAKE_AND_REGISTRATION/MODULES/MODULE_001_PRIMARY/WORKFLOWS/](../SOLUTIONS/MSB_INTAKE_AND_REGISTRATION/MODULES/MODULE_001_PRIMARY/WORKFLOWS/) |
+| 2 | MSB_REVIEW | [../SOLUTIONS/MSB_REVIEW/MODULES/MODULE_001_PRIMARY/WORKFLOWS/](../SOLUTIONS/MSB_REVIEW/MODULES/MODULE_001_PRIMARY/WORKFLOWS/) |
+| 3 | FINTRAC_RESPONSE | [../SOLUTIONS/FINTRAC_RESPONSE/MODULES/MODULE_001_PRIMARY/WORKFLOWS/](../SOLUTIONS/FINTRAC_RESPONSE/MODULES/MODULE_001_PRIMARY/WORKFLOWS/) |
+| 4 | RPAA_REGISTRATION | [../SOLUTIONS/RPAA_REGISTRATION/MODULES/MODULE_001_PRIMARY/WORKFLOWS/](../SOLUTIONS/RPAA_REGISTRATION/MODULES/MODULE_001_PRIMARY/WORKFLOWS/) |
+| 5 | RPAA_THREE_YEAR_REVIEW | [../SOLUTIONS/RPAA_THREE_YEAR_REVIEW/MODULES/MODULE_001_PRIMARY/WORKFLOWS/](../SOLUTIONS/RPAA_THREE_YEAR_REVIEW/MODULES/MODULE_001_PRIMARY/WORKFLOWS/) |
 
 ---
 
@@ -55,7 +55,7 @@ Drafting and review of provider agreements lives in FINANCIAL_SERVICES/CONTRACTS
 | Directory / File | Purpose |
 |------------------|---------|
 | [STRATEGIES/](STRATEGIES/) | High-value engagement architectures |
-| [SOLUTIONS/](SOLUTIONS/) | Solution frames (5 solutions, 5-file packet each) |
+| [../SOLUTIONS/](../SOLUTIONS/) | Canonical solution packet structure for this practice area |
 | [OVERLAYS/](OVERLAYS/) | Shared overlay modules (AML/KYC, Rails, Crypto) |
 | [AGENTS/](AGENTS/) | Agent catalog, permissions, handoffs |
 | [DECISION_LENSES/](DECISION_LENSES/) | Analytical frameworks |
@@ -73,3 +73,9 @@ Drafting and review of provider agreements lives in FINANCIAL_SERVICES/CONTRACTS
 ## Operating Posture
 
 Containment over completeness; explicit exit states; no assumed ongoing representation.
+
+## Canonical Structure Note
+
+Solution packet artifacts are now organized under:
+
+`02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/[SPECIFIC_SOLUTION]/MODULES/[MODULE_ID]/{WORKFLOWS,TEMPLATES,CHECKLISTS}`

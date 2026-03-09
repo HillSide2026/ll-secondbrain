@@ -1,0 +1,8 @@
+# MODULE_001_PRIMARY — SOLUTION_PACKET_TEMPLATE
+
+Primary codified module for solution `SOLUTION_PACKET_TEMPLATE`.
+
+Contains:
+- `WORKFLOWS/`
+- `TEMPLATES/`
+- `CHECKLISTS/`

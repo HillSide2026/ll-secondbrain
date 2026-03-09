@@ -4,7 +4,7 @@ title: System Portfolio Backlog
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-10
+last_updated: 2026-03-09
 tags: []
 ---
 
@@ -37,6 +37,7 @@ inclusion in active roadmaps but do not authorize execution by themselves.
 | SMA-005 | Deploy and configure Runbook & QA Agent | Runbook & QA | SYS-001 | P1 | candidate |
 | SYS-010 | Execute first operating cycle (weekly cadence test) | All Agents | SMA-001 to SMA-005 | P2 | candidate |
 | SYS-011 | Archive completed Stage 3 + Stage 4 artifacts | Knowledge Curation | Stage closures approved | P2 | candidate |
+| SYS-012 | Standardize per-solution module taxonomy in `02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS` (define canonical module sets/names and replace placeholder `MODULE_001_PRIMARY`) | Playbook Governance | ML1 module architecture approval; existing solution packets | P1 | candidate |
 
 ---
 

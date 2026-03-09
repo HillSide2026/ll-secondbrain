@@ -6,7 +6,7 @@ status: draft
 version: 1.0
 supersedes:
 created_date: 2026-01-25
-last_updated: 2026-03-05
+last_updated: 2026-03-09
 tags: []
 ---
 
@@ -29,7 +29,7 @@ Acceptance Criteria: TBD
 
 Repeatable workflows and SOPs derived from doctrine.
 
-## Service Architecture (Canonical)
+## Module Architecture (Canonical)
 
 Top-level structure:
 
@@ -48,6 +48,23 @@ Practice area playbooks are organized under:
 ```
 02_PLAYBOOKS/<PRACTICE_AREA>/WORKFLOWS/
 ```
+
+Financial Services exception (approved structure target):
+
+```
+02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/[SPECIFIC_SOLUTION]/
+  MODULES/
+    [MODULE_ID]/
+      WORKFLOWS/
+      TEMPLATES/
+      CHECKLISTS/
+```
+
+Hierarchy semantics for this exception:
+- `Practice Area`: legal domain boundary
+- `Solution`: productized offering
+- `Module`: deliverable unit of work under a solution
+- `Workflow`: procedural production path for a module deliverable
 
 Strategies require ML1 approval to create. Each strategy folder must include:
 
@@ -75,7 +92,7 @@ Operational workflows live under:
 Practice workflows live under:
 - `02_PLAYBOOKS/CONTRACTS/WORKFLOWS/`
 - `02_PLAYBOOKS/CORPORATE/WORKFLOWS/`
-- `02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/`
+- `02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/[SPECIFIC_SOLUTION]/MODULES/[MODULE_ID]/WORKFLOWS/`
 
 Legacy migration folders retained under `LL_OPERATIONS/`:
 - `INBOX_TRIAGE_LEGACY/`

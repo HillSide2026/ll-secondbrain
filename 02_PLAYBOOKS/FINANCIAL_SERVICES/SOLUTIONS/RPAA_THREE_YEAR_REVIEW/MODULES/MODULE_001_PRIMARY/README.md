@@ -1,0 +1,8 @@
+# MODULE_001_PRIMARY — RPAA_THREE_YEAR_REVIEW
+
+Primary codified module for solution `RPAA_THREE_YEAR_REVIEW`.
+
+Contains:
+- `WORKFLOWS/`
+- `TEMPLATES/`
+- `CHECKLISTS/`

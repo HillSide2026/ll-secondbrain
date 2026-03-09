@@ -6,7 +6,7 @@ status: draft
 version: 1.0
 supersedes:
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-03-09
 tags: []
 ---
 
@@ -27,6 +27,11 @@ Acceptance Criteria: TBD
 
 # Financial Services — Payments
 
+Canonical location notice:
+Canonical solution packets are maintained under:
+`02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/[SPECIFIC_SOLUTION]/MODULES/[MODULE_ID]/{WORKFLOWS,TEMPLATES,CHECKLISTS}`.
+This payments workflow container does not store canonical solution packets.
+
 Architecture for payments advisory matters. This module defines solution frames, overlays, decision support, and agent infrastructure for the Payments practice area. It contains no legal or compliance analysis and no substantive requirements, thresholds, or procedures.
 
 ---
@@ -35,11 +40,11 @@ Architecture for payments advisory matters. This module defines solution frames,
 
 | # | Solution | Folder |
 |---|----------|--------|
-| 1 | MSB_INTAKE_AND_REGISTRATION | [solutions/msb_intake_and_registration/](solutions/msb_intake_and_registration/) |
-| 2 | MSB_REVIEW | [solutions/msb_review/](solutions/msb_review/) |
-| 3 | FINTRAC_RESPONSE | [solutions/fintrac_response/](solutions/fintrac_response/) |
-| 4 | RPAA_REGISTRATION | [solutions/rpaa_registration/](solutions/rpaa_registration/) |
-| 5 | RPAA_THREE_YEAR_REVIEW | [solutions/rpaa_three_year_review/](solutions/rpaa_three_year_review/) |
+| 1 | MSB_INTAKE_AND_REGISTRATION | [../../SOLUTIONS/MSB_INTAKE_AND_REGISTRATION/MODULES/MODULE_001_PRIMARY/WORKFLOWS/](../../SOLUTIONS/MSB_INTAKE_AND_REGISTRATION/MODULES/MODULE_001_PRIMARY/WORKFLOWS/) |
+| 2 | MSB_REVIEW | [../../SOLUTIONS/MSB_REVIEW/MODULES/MODULE_001_PRIMARY/WORKFLOWS/](../../SOLUTIONS/MSB_REVIEW/MODULES/MODULE_001_PRIMARY/WORKFLOWS/) |
+| 3 | FINTRAC_RESPONSE | [../../SOLUTIONS/FINTRAC_RESPONSE/MODULES/MODULE_001_PRIMARY/WORKFLOWS/](../../SOLUTIONS/FINTRAC_RESPONSE/MODULES/MODULE_001_PRIMARY/WORKFLOWS/) |
+| 4 | RPAA_REGISTRATION | [../../SOLUTIONS/RPAA_REGISTRATION/MODULES/MODULE_001_PRIMARY/WORKFLOWS/](../../SOLUTIONS/RPAA_REGISTRATION/MODULES/MODULE_001_PRIMARY/WORKFLOWS/) |
+| 5 | RPAA_THREE_YEAR_REVIEW | [../../SOLUTIONS/RPAA_THREE_YEAR_REVIEW/MODULES/MODULE_001_PRIMARY/WORKFLOWS/](../../SOLUTIONS/RPAA_THREE_YEAR_REVIEW/MODULES/MODULE_001_PRIMARY/WORKFLOWS/) |
 
 ---
 
@@ -65,7 +70,7 @@ Drafting and review of provider agreements lives in `02_PLAYBOOKS/CONTRACTS/WORK
 
 | Directory / File | Purpose |
 |------------------|---------|
-| [solutions/](solutions/) | Solution frames (5 solutions, 5-file packet each) |
+| [../../SOLUTIONS/](../../SOLUTIONS/) | Canonical solution packet structure |
 | [overlays/](overlays/) | Shared overlay modules (AML/KYC, Rails, Crypto) |
 | [agents/](agents/) | Agent catalog, permissions, handoffs |
 | [decision_lenses/](decision_lenses/) | Analytical frameworks |

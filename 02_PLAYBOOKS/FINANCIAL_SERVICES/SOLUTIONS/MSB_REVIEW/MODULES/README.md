@@ -1,0 +1,6 @@
+# MODULES — MSB_REVIEW
+
+Module-layer container for solution `MSB_REVIEW`.
+
+Canonical path pattern:
+`SOLUTIONS/MSB_REVIEW/MODULES/<MODULE_ID>/{WORKFLOWS,TEMPLATES,CHECKLISTS}`

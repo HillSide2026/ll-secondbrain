@@ -6,7 +6,7 @@ status: draft
 version: 1.0
 supersedes:
 created_date: 2026-02-14
-last_updated: 2026-02-14
+last_updated: 2026-03-09
 tags: []
 ---
 
@@ -27,6 +27,20 @@ Acceptance Criteria: TBD
 
 # Financial Services Playbooks
 
-TODO: Split into workflow-specific folders (e.g., `compliance_analysis/`, `registration/`).
+Canonical solution packet location is now:
 
-Practice-area playbooks for financial services work (currently payments-focused).
+`02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/`
+
+Each specific solution must use:
+
+```
+[SPECIFIC_SOLUTION]/
+  MODULES/
+    [MODULE_ID]/
+      WORKFLOWS/
+      TEMPLATES/
+      CHECKLISTS/
+```
+
+Practice-area playbooks are currently payments-focused.
+Canonical solution packets do not live in this directory; use `../SOLUTIONS/`.
