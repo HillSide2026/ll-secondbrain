@@ -4,7 +4,7 @@ title: Agent Typology
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-03-05
+last_updated: 2026-03-09
 tags: []
 ---
 
@@ -36,7 +36,7 @@ This document reflects the current state of the system and explicitly identifies
 
 ## Agents Index (Derived from AGENTS.md)
 
-Generated on 2026-03-08.
+Generated on 2026-03-09.
 
 ### System Management Agents (SMA)
 
@@ -58,6 +58,7 @@ Generated on 2026-03-08.
 | LLM-004 — Project Management Agent | LLM | draft | `00_SYSTEM/AGENTS/LLM-004_PROJECT_MANAGEMENT_AGENT.md` |  |
 | LLM-005 — Portfolio Management Agent | LLM | draft | `00_SYSTEM/AGENTS/LLM-005_PORTFOLIO_MANAGEMENT_AGENT.md` |  |
 | LLM-006 — Portfolio Governance Agent | LLM | draft | `00_SYSTEM/AGENTS/LLM-006_PORTFOLIO_GOVERNANCE_AGENT.md` |  |
+| LLM-007 — Fulfillment Orchestrator Agent | LLM | draft | `00_SYSTEM/AGENTS/LLM-007_FULFILLMENT_ORCHESTRATOR_AGENT.md` | fulfillment lifecycle orchestration (`LLP-004` to `LLP-008`) under `POL-034` |
 
 ### System Admin Agents (SAA)
 
