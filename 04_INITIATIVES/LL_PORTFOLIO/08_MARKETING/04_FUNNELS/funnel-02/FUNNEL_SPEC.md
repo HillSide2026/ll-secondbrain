@@ -42,6 +42,9 @@ It carries prospects from discovery through consideration and inquiry before con
 - Document-ready
 - Not in active crisis
 
+Secondary planning hypothesis (research only):
+- operators acquiring an existing operating business (independent or backed), pending cohort-comparison findings and ML1 approval.
+
 ## Entry Channel(s)
 
 - Content

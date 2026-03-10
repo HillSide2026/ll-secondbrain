@@ -39,6 +39,7 @@ Initiation artifacts drafted; awaiting ML1 initiation approval.
 Planning research note drafted: `STAGE2_PLANNING_RESEARCH_NOTE__MKT10_MKT11_MKT12_FIXES__2026-03-10.md`.
 Planning research note drafted: `STAGE2_PLANNING_RESEARCH_NOTE__MID_TICKET_SCAN__MKT10_MKT11_MKT12__2026-03-10.md`.
 Planning research note drafted: `STAGE2_PLANNING_RESEARCH_NOTE__MARKET_SIZE_VIABILITY_GATE__2026-03-10.md`.
+Planning research note drafted: `STAGE2_PLANNING_RESEARCH_NOTE__TARGET_SEGMENT_COMPARISON_EXISTING_OWNERS_VS_NEW_ENTRANTS__2026-03-10.md`.
 
 ## Last ML1 Review Date
 `2026-03-08`
