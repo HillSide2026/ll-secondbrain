@@ -2,6 +2,24 @@ tools:
   - ghl_form
   - voice_ai
   - sms_followup
+  - sdr_qualification_call
+qualification_flow:
+  gate_stage: intake_completed
+  mandatory_human_qualification_call: true
+  call_owner_role: SDR
+  escalation_role: ML1
+  qualification_call_sla_hours: 24
+  evidence_required:
+    - qualification_call_completed_at
+    - qualification_call_owner
+    - qualification_call_record_ref
+    - fit_decision
+    - buyer_role
+    - decision_authority_confirmed
+    - urgency_window
+    - budget_signal_paid_diagnostic
+    - paid_diagnostic_recommendation
+    - disqualification_reason_if_any
 gates:
   revenue_min: $1M
   employee_min: 5
@@ -9,8 +27,13 @@ gates:
   ontario_incorporation_required: true
   active_operating_business_required: true
   accountant_involved_required: true
-  document_readiness_required: true
-  document_list:
+  pre_conversion_minimum_readiness_required: true
+  pre_conversion_signals:
+    - core_entity_documents_confirmed
+    - shareholder_structure_status_captured
+    - core_contract_set_presence_confirmed
+  post_purchase_document_package_required: true
+  post_purchase_document_list:
     - articles and bylaws
     - shareholder agreement
     - director and officer registers
@@ -22,3 +45,4 @@ gates:
 routing:
   qualified: book_health_check
   unqualified: decline_or_refer
+  missing_evidence: hold_for_qualification_review

@@ -1,5 +1,5 @@
 schema_version: '1.0'
-last_updated: '2026-03-08'
+last_updated: '2026-03-10'
 rules_dir: 01_DOCTRINE/RULES
 tests_dir: 01_DOCTRINE/TESTS
 rules: []
@@ -469,6 +469,36 @@ policies:
 - id: POL-040
   title: Workflow Policy
   path: 01_DOCTRINE/03_POLICIES/POL-040_Workflow_Policy.md
+  version: '0.1'
+  status: draft
+  history: []
+- id: POL-041
+  title: Repository State Reporting Accuracy
+  path: 01_DOCTRINE/03_POLICIES/POL-041_Repository_State_Reporting_Accuracy.md
+  version: '1.0'
+  status: active
+  history: []
+- id: POL-042
+  title: Inbox Governance Policy
+  path: 01_DOCTRINE/03_POLICIES/POL-042_Inbox_Governance_Policy.md
+  version: '0.1'
+  status: draft
+  history: []
+- id: POL-043
+  title: Clio Matter ID Structure and Client-of-Record Identity
+  path: 01_DOCTRINE/03_POLICIES/POL-043_Clio_Matter_ID_Structure_and_Client_of_Record_Identity.md
+  version: '0.1'
+  status: draft
+  history: []
+- id: POL-044
+  title: SharePoint Matter Folder Access Staging Policy
+  path: 01_DOCTRINE/03_POLICIES/POL-044_SharePoint_Matter_Folder_Access_Staging_Policy.md
+  version: '0.1'
+  status: draft
+  history: []
+- id: POL-045
+  title: Asana Integration Safeguard Policy
+  path: 01_DOCTRINE/03_POLICIES/POL-045_Asana_Integration_Safeguard_Policy.md
   version: '0.1'
   status: draft
   history: []

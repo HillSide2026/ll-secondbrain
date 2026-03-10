@@ -1,11 +1,50 @@
 system: ghl
 stages:
-  - awareness
+  - awareness_discovery
+  - awareness_interest
   - lead_magnet_downloaded
-  - health_check_purchased
+  - inquiry_submitted
   - intake_completed
+  - health_check_purchased
   - review_in_progress
   - delivery_meeting
   - remediation_project
   - fractional_counsel_retainer
   - closed_lost
+
+stage_ownership:
+  awareness_discovery: marketing
+  awareness_interest: marketing
+  lead_magnet_downloaded: marketing
+  inquiry_submitted: marketing
+  intake_completed: marketing
+  health_check_purchased: shared_handoff
+  review_in_progress: fulfillment
+  delivery_meeting: fulfillment
+  remediation_project: fulfillment
+  fractional_counsel_retainer: fulfillment
+  closed_lost: shared_handoff
+
+lifecycle_boundary:
+  marketing_terminal_event: health_check_purchased
+  handoff_stage: health_check_purchased
+  pre_conversion_readiness_stage: intake_completed
+  fulfillment_entry_stage: review_in_progress
+  terminology_note: conversion is marketing language; onboarding is fulfillment language.
+
+lifecycle_mapping:
+  awareness_discovery:
+    canonical_stage: discovery
+  awareness_interest:
+    canonical_stage: interest
+  lead_magnet_downloaded:
+    canonical_stage: consideration
+  inquiry_submitted:
+    canonical_stage: inquiry
+    alias: intake
+  intake_completed:
+    canonical_stage: inquiry
+    subtype: intake_completed
+  health_check_purchased:
+    canonical_stage: conversion
+    boundary_note: marketing terminal event and fulfillment handoff state.

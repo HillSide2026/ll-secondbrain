@@ -24,13 +24,15 @@ _Last updated: 2026-02-25_
 
 ## Active Matters
 
-### Essential (3)
+### Essential (5)
 
 | Matter ID | Client | Fulfillment |
 |-----------|--------|-------------|
 | [25-927-00003](../05_MATTERS/ESSENTIAL/25-927-00003/README.md) | Stream Ventures Limited | urgent |
 | [26-927-00004](../05_MATTERS/ESSENTIAL/26-927-00004/README.md) | Stream Ventures Limited | active |
 | [26-1639-00001](../05_MATTERS/ESSENTIAL/26-1639-00001/README.md) | Andersen | active |
+| [26-1639-00002](../05_MATTERS/ESSENTIAL/26-1639-00002/README.md) | Andersen | active |
+| [26-1639-00003](../05_MATTERS/ESSENTIAL/26-1639-00003/README.md) | Andersen | active |
 
 ### Strategic (5)
 

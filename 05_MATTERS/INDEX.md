@@ -1,15 +1,17 @@
 # Matter Index
 
-_Generated: 2026-03-08 19:38_
+_Generated: 2026-03-09 22:38_
 
-**Total Matters:** 37
+**Total Matters:** 39
 
-## Essential (3)
+## Essential (5)
 
 | Matter ID | Client/Name | Status | Category | Fulfillment | Services |
 |-----------|-------------|--------|----------|-------------|----------|
 | [25-927-00003](ESSENTIAL/25-927-00003/README.md) | Stream Ventures Limited | Open | ML Active | urgent | 0 |
 | [26-1639-00001](ESSENTIAL/26-1639-00001/README.md) | Andersen | Open | ML Active | active | 0 |
+| [26-1639-00002](ESSENTIAL/26-1639-00002/README.md) | Andersen | Open | ML Active | active | 0 |
+| [26-1639-00003](ESSENTIAL/26-1639-00003/README.md) | Andersen | Open | ML Active | active | 0 |
 | [26-927-00004](ESSENTIAL/26-927-00004/README.md) | Stream Ventures Limited | Open | ML Active | active | 0 |
 
 ## Strategic (5)
@@ -63,14 +65,14 @@ _Generated: 2026-03-08 19:38_
 
 ## Summary by Fulfillment Status
 
-- **active:** 29
+- **active:** 31
 - **inactive:** 6
 - **keep in view:** 1
 - **urgent:** 1
 
 ## Summary by Delivery Category
 
-- **ML Active:** 26
+- **ML Active:** 28
 - **ML Watch:** 5
 - **Other:** 6
 
@@ -78,6 +80,8 @@ _Generated: 2026-03-08 19:38_
 
 | Matter ID | Client/Name | Created |
 |-----------|-------------|---------|
+| 26-1639-00003 | Andersen | 2026-03-09 |
+| 26-1639-00002 | Andersen | 2026-03-09 |
 | 26-927-00004 | Stream Ventures Limited | 2026-02-26 |
 | 26-1639-00001 | Andersen | 2026-02-24 |
 | 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | 2026-01-01 |
@@ -86,5 +90,3 @@ _Generated: 2026-03-08 19:38_
 | 25-1318-00001 | Zelko Culibrk | 2025-01-01 |
 | 25-256-00005 | Aspire Infusions Inc | 2025-01-01 |
 | 24-336-00004 | Mascore Helical Piles | 2025-01-01 |
-| 25-1231-00001 | Charmaine Spiteri | 2025-01-01 |
-| 25-1614-00001 | HillSide | 2025-01-01 |

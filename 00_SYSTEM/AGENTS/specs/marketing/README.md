@@ -4,7 +4,7 @@ title: Marketing Agents
 owner: ML1
 status: draft
 created_date: 2026-03-08
-last_updated: 2026-03-08
+last_updated: 2026-03-10
 tags: [marketing, agents, orchestration]
 ---
 
@@ -18,6 +18,7 @@ capture, and repository governance.
 - `MKT_CHIEF_MARKETING_OFFICER_AGENT`
 - `MKT_MARKETING_STRATEGY_AGENT`
 - `MKT_CONTENT_PRODUCTION_AGENT`
+- `MKT_DESIGN_PRODUCTION_AGENT`
 - `MKT_EDITORIAL_QA_AGENT`
 - `MKT_DISTRIBUTION_ORCHESTRATION_AGENT`
 - `MKT_MARKET_SIGNAL_AGENT`
@@ -38,10 +39,11 @@ capture, and repository governance.
 1. Chief Marketing Officer agent decomposes objective and sequences skills.
 2. Strategy agent defines campaign and funnel requirements.
 3. Content agent produces draft artifacts.
-4. Editorial QA agent validates strategy and doctrine alignment.
-5. Distribution orchestration agent packages approved assets by channel.
-6. Market signal agent reports market feedback as operational signals.
-7. Repository governance agent stores assets with lifecycle and provenance controls.
+4. Design Production agent creates governed design drafts from approved templates.
+5. Editorial QA agent validates strategy, doctrine, and policy alignment.
+6. Distribution orchestration agent prepares channel handoff and deployment packages.
+7. Market signal agent reports market feedback as operational signals.
+8. Repository governance agent stores assets with lifecycle and provenance controls.
 
 ## Meta-Execution Chain
 1. Objective

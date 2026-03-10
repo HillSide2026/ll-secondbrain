@@ -5,6 +5,18 @@ core_offer: Ontario Corporate Health Check
 category: Preventative structural review
 audience: $1M-$8M Ontario operating businesses
 price_positioning: Paid diagnostic (filters serious buyers)
+market_lane:
+  segment: mid_ticket_professional_services
+  this_is:
+    - structured fixed-fee diagnostic for scaling operators
+    - commercially grounded governance and risk review
+  not_this:
+    - commodity template service
+    - bespoke enterprise transformation program
+  buyer_expectations:
+    - clear scope before purchase
+    - concrete outputs
+    - defined next-step options
 outcome: Risk clarity and prioritized remediation roadmap
 identity_roles:
   - Risk stabilizer
@@ -139,6 +151,15 @@ outputs:
   - name: Governance Scorecard
     details:
       - one-page structural stability snapshot
+proof_architecture:
+  objective: Increase trust transfer for mid-ticket buyers before purchase.
+  required_proof_assets:
+    - sample_executive_risk_summary_outline
+    - sample_prioritized_action_plan_outline
+    - sample_governance_scorecard_outline
+    - anonymized_before_after_case_pattern
+    - turnaround_expectation_statement
+  location: PROOF_ARCHITECTURE.md
 pricing_strategy:
   range: $2,500-$4,500 fixed fee
   intent:

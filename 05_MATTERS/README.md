@@ -5,7 +5,7 @@ title: 05_MATTERS
 owner: ML1
 status: draft
 created_date: 2026-01-30
-last_updated: 2026-03-08
+last_updated: 2026-03-09
 tags: [matter]
 ---
 
@@ -37,6 +37,8 @@ Folder placement reflects `delivery_status` only. The other fields (`status`, `f
 |-----------|-------------|--------|-----------------|-------------------|------|
 | 25-927-00003 | Stream Ventures Limited | Open | Essential | urgent | `ESSENTIAL/25-927-00003/` |
 | 26-1639-00001 | Andersen | Open | Essential | active | `ESSENTIAL/26-1639-00001/` |
+| 26-1639-00002 | Andersen | Open | Essential | active | `ESSENTIAL/26-1639-00002/` |
+| 26-1639-00003 | Andersen | Open | Essential | active | `ESSENTIAL/26-1639-00003/` |
 | 26-927-00004 | Stream Ventures Limited | Open | Essential | active | `ESSENTIAL/26-927-00004/` |
 
 ---

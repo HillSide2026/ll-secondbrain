@@ -1,16 +1,16 @@
 meta:
   id: funnel-02
-  name: Funnel 01 Future State
+  name: Funnel 02 Future State
   status: planned
   owner: ML1
-  version: 3.0.1
-  last_updated: '2026-02-18'
+  version: 3.0.3
+  last_updated: '2026-03-10'
 lineage:
   type: state-of
   of: funnel-01
   state: future
-  renumbered_from: null
-  note: Future-state replacement spec for Funnel 01.
+  renumbered_from: funnel-01
+  note: Future-state spec normalized under canonical Funnel 02 naming.
 structure:
   positioning: positioning.yaml
   target: target.yaml
@@ -24,6 +24,8 @@ spec:
     entry_offer: Corporate Health Check (paid diagnostic)
     tagline: Structural Stability Audit for Growing Ontario Businesses
     description: Structured governance and risk exposure assessment for operating companies that have outgrown their original setup.
+  acquisition_mode: awareness_interest_to_conversion
+  awareness_role: primary
   positioning_intent:
     target_funnel_traits:
       - maturity-led
@@ -32,6 +34,14 @@ spec:
       - structured assessment entry point
     buyer_time_horizon: Operators thinking in quarters and years, not days.
 history:
+- v: 3.0.3
+  date: '2026-03-10'
+  by: ML1
+  change: Clarified Funnel 02 as primary awareness and interest funnel through conversion handoff.
+- v: 3.0.2
+  date: '2026-03-10'
+  by: ML1
+  change: Normalized metadata and canonical naming to Funnel 02.
 - v: 3.0.1
   date: '2026-02-18'
   by: ML1

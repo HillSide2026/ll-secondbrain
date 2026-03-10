@@ -4,7 +4,7 @@ title: Funnel Spec — Funnel 02
 owner: ML1
 status: planned
 created_date: 2026-02-25
-last_updated: 2026-02-25
+last_updated: 2026-03-10
 tags: []
 ---
 
@@ -19,11 +19,18 @@ tags: []
 
 Preventative, structured diagnostic entry point intended to replace reactive acquisition.
 
+## Funnel Distinction
+
+Funnel 02 is the primary awareness-and-interest building path.
+It carries prospects from discovery through consideration and inquiry before conversion handoff.
+
 ## Positioning Reference
 
 - 00_POSITIONING/MARKET_POSITIONING.md
 - ICP-01: Ontario Operating Company
 - Category: Fractional Counsel / Legal Function as a Service (preventative entry)
+- Competitive framing: `COMPETITIVE_DIFFERENTIATION_MATRIX.md`
+- Proof architecture: `PROOF_ARCHITECTURE.md`
 
 ## Target ICP (Must Match Positioning)
 
@@ -49,6 +56,7 @@ Preventative, structured diagnostic entry point intended to replace reactive acq
 - Go High Level (GHL) form
 - Voice AI
 - SMS follow-up
+- SDR qualification call (mandatory for `intake_completed`)
 
 ## Qualification Gates
 
@@ -58,7 +66,9 @@ Preventative, structured diagnostic entry point intended to replace reactive acq
 - ontario_incorporation_required: true
 - active_operating_business_required: true
 - accountant_involved_required: true
-- document_readiness_required: true
+- pre_conversion_minimum_readiness_required: true
+- post_purchase_document_package_required: true
+- qualification_call_evidence_required: true
 
 Required documents:
 - articles and bylaws
@@ -80,15 +90,28 @@ Structured governance and risk exposure assessment for operating companies that 
 
 ## Pipeline Stages
 
-- awareness
+- awareness_discovery
+- awareness_interest
 - lead_magnet_downloaded
-- health_check_purchased
+- inquiry_submitted
 - intake_completed
+- health_check_purchased
 - review_in_progress
 - delivery_meeting
 - remediation_project
 - fractional_counsel_retainer
 - closed_lost
+
+Stage ownership is governed in `pipeline.yaml` under `stage_ownership` and `lifecycle_boundary`.
+Canonical lifecycle mapping is governed in `pipeline.yaml` under `lifecycle_mapping`.
+
+Lifecycle interpretation:
+- `awareness_discovery` maps to `discovery`.
+- `awareness_interest` maps to `interest`.
+- `lead_magnet_downloaded` maps to `consideration`.
+- `inquiry_submitted` maps to `inquiry` (alias: `intake`).
+- `intake_completed` is an intake-readiness checkpoint within `inquiry`.
+- `health_check_purchased` maps to `conversion` and is the fulfillment handoff state.
 
 ## Primary Metrics
 

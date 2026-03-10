@@ -3,8 +3,8 @@ meta:
   name: Google Ads -> GHL Intake
   status: active
   owner: ML1
-  version: 1.2.2
-  last_updated: '2026-02-15'
+  version: 1.2.3
+  last_updated: '2026-03-10'
 lineage:
   type: state-of
   of: funnel-01
@@ -24,7 +24,13 @@ spec:
     entry_offer: None (paid consultation in backlog)
     description: Structured legal function for growing Ontario businesses, providing
       ongoing governance, contract, employment, and risk oversight.
+  acquisition_mode: warm_traffic_quick_conversion
+  awareness_role: secondary
 history:
+- v: 1.2.3
+  date: '2026-03-10'
+  by: ML1
+  change: Clarified Funnel 01 as warm-traffic quick-conversion path with secondary awareness role.
 - v: 1.2.2
   date: '2026-02-15'
   by: ML1

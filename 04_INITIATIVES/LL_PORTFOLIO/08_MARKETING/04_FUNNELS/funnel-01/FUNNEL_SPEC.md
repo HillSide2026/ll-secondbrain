@@ -4,7 +4,7 @@ title: Funnel Spec — Funnel 01
 owner: ML1
 status: active
 created_date: 2026-02-25
-last_updated: 2026-02-25
+last_updated: 2026-03-10
 tags: []
 ---
 
@@ -18,6 +18,11 @@ tags: []
 ## Purpose / Role
 
 Reactive acquisition for qualified Ontario operators while the preventative funnel is built.
+
+## Funnel Distinction
+
+Funnel 01 is a warm-traffic, quick-conversion path.
+It is not the primary awareness-building system.
 
 ## Positioning Reference
 

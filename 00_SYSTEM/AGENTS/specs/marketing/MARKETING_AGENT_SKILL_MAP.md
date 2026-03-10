@@ -4,7 +4,7 @@ title: Marketing Agent Skill Map
 owner: ML1
 status: draft
 created_date: 2026-03-08
-last_updated: 2026-03-08
+last_updated: 2026-03-10
 tags: [marketing, agents, skills, mapping]
 ---
 
@@ -13,9 +13,9 @@ tags: [marketing, agents, skills, mapping]
 Canonical mapping of marketing agents to their declared skill files.
 Skill files are stored under `00_SYSTEM/AGENTS/specs/marketing/skills/`.
 
-## Implementation Status (2026-03-08)
+## Implementation Status (2026-03-10)
 - Implemented meta-skill files for `MKT_CHIEF_MARKETING_OFFICER_AGENT`.
-- Implemented skill files: all six core agents (`MKT_MARKETING_STRATEGY_AGENT`, `MKT_CONTENT_PRODUCTION_AGENT`, `MKT_EDITORIAL_QA_AGENT`, `MKT_DISTRIBUTION_ORCHESTRATION_AGENT`, `MKT_MARKET_SIGNAL_AGENT`, `MKT_REPOSITORY_ASSET_GOVERNANCE_AGENT`).
+- Implemented skill files: all seven core agents (`MKT_MARKETING_STRATEGY_AGENT`, `MKT_CONTENT_PRODUCTION_AGENT`, `MKT_DESIGN_PRODUCTION_AGENT`, `MKT_EDITORIAL_QA_AGENT`, `MKT_DISTRIBUTION_ORCHESTRATION_AGENT`, `MKT_MARKET_SIGNAL_AGENT`, `MKT_REPOSITORY_ASSET_GOVERNANCE_AGENT`).
 - Implemented skill files: all optional specialist agent skills (`MKT_SEO_DISCOVERABILITY_AGENT`, `MKT_SOCIAL_NARRATIVE_AGENT`, `MKT_OFFER_FUNNEL_AGENT`, `MKT_COMPETITIVE_POSITIONING_AGENT`).
 - Remaining skill files: none in current map.
 
@@ -60,6 +60,19 @@ Meta-execution chain:
 - `landing_page_copywriting.skill.md`
 - `email_marketing_copy.skill.md`
 - `content_adaptation.skill.md`
+
+## MKT_DESIGN_PRODUCTION_AGENT
+- `design_brief_translation.skill.md`
+- `template_slot_selection.skill.md`
+- `canva_design_instantiation.skill.md`
+- `canva_autofill_binding.skill.md`
+- `brand_kit_enforcement.skill.md`
+- `legal_disclaimer_insertion.skill.md`
+- `banned_claims_guard.skill.md`
+- `design_variant_generation.skill.md`
+- `design_preflight_qc.skill.md`
+- `design_metadata_registration.skill.md`
+- `design_handoff_packet.skill.md`
 
 ## MKT_EDITORIAL_QA_AGENT
 - `brand_voice_validation.skill.md`

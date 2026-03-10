@@ -4,7 +4,7 @@ title: LLP-012_FUNNEL2_MANAGEMENT
 owner: ML1
 status: initiating
 created_date: 2026-02-26
-last_updated: 2026-03-09
+last_updated: 2026-03-10
 tags: [marketing, funnel-02, initiation]
 ---
 
@@ -36,6 +36,9 @@ ML1 is the sole authority for approval, activation, and promotion of this projec
 
 ## Approval State
 Initiation artifacts drafted; awaiting ML1 initiation approval.
+Planning research note drafted: `STAGE2_PLANNING_RESEARCH_NOTE__MKT10_MKT11_MKT12_FIXES__2026-03-10.md`.
+Planning research note drafted: `STAGE2_PLANNING_RESEARCH_NOTE__MID_TICKET_SCAN__MKT10_MKT11_MKT12__2026-03-10.md`.
+Planning research note drafted: `STAGE2_PLANNING_RESEARCH_NOTE__MARKET_SIZE_VIABILITY_GATE__2026-03-10.md`.
 
 ## Last ML1 Review Date
 `2026-03-08`

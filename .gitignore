@@ -33,6 +33,8 @@ state/
 06_RUNS/RUN-*/
 06_RUNS/ops/gmail_fetch_latest.json
 cache/*.json
+tokens.json
+oauth_state.json
 
 # Google OAuth secrets
 config/google_oauth_client.json

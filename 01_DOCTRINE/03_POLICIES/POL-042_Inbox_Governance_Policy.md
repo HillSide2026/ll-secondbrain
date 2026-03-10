@@ -128,6 +128,8 @@ The **canonical matter identifier** is the **Clio matter ID**, in the format:
 \d{2}-\d{3,4}-\d{5}  (e.g., 25-1593-00001)
 ```
 
+Identifier semantics (segment meaning and client-of-record identity constraints) are governed by `POL-043`.
+
 The canonical label hierarchy is:
 ```
 LL/

@@ -77,6 +77,12 @@ An execution container that records governed runtime activity, including orchest
 ## Artifact
 A recorded intermediate or final output produced during execution.
 
+## Contact
+An identity record that may exist independently of matter creation. A contact is not automatically a client.
+
+## Client
+A matter-bound role designation for a contact serving as client-of-record on at least one matter. Without a matter, there is no client designation.
+
 ## Supporting Artifacts (Non-Doctrine)
 These may exist under `01_DOCTRINE` for governance support but are not doctrine classes:
 - Procedural

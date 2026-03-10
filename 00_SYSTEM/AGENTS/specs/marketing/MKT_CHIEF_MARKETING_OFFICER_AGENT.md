@@ -4,7 +4,7 @@ title: Chief Marketing Officer Agent Charter
 owner: ML1
 status: draft
 created_date: 2026-03-08
-last_updated: 2026-03-08
+last_updated: 2026-03-10
 tags: [marketing, orchestration, cmo, funnels]
 ---
 
@@ -55,6 +55,7 @@ For each funnel:
 The CMO agent orchestrates:
 - Marketing Strategy Agent
 - Content Production Agent
+- Design Production Agent
 - Editorial QA Agent
 - Distribution Orchestration Agent
 - Market Signal Agent
@@ -101,10 +102,11 @@ The CMO agent interprets this structure and produces an execution plan.
 2. Generate campaign brief.
 3. Decompose required assets.
 4. Invoke content production.
-5. Invoke editorial QA.
-6. Invoke distribution orchestration.
-7. Monitor engagement signals.
-8. Generate operational reports.
+5. Invoke design production.
+6. Invoke editorial QA.
+7. Invoke distribution orchestration.
+8. Monitor engagement signals.
+9. Generate operational reports.
 
 ## Inputs
 Consumes from ML2:
