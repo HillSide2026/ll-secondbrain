@@ -13,6 +13,12 @@ What this does:
 SAFE BY DESIGN:
 - GET requests only
 - No write operations
+
+WRITE BOUNDARY NOTE:
+Write access to the Documentation/DRAFTS path
+(Doc Pro  In Tray/SB Execution/DRAFTS) is ML1-approved
+but is implemented in sharepoint_mcp_server.py, not here.
+This script remains read-only by design.
 """
 
 from __future__ import annotations

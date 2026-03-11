@@ -36,9 +36,10 @@ ingestion:
     - LegalMatters is read-only by policy; writes go to Documentation site only
 consumers:
   scripts:
-    - 00_SYSTEM/scripts/sharepoint_integration.py
+    - 00_SYSTEM/scripts/sharepoint_integration.py  # read-only batch enumeration
     - 00_SYSTEM/scripts/sharepoint_discovery.py
     - 00_SYSTEM/scripts/setup_sb_execution.py
+    - scripts/sharepoint_mcp_server.py  # MCP interface; holds the approved write path for Documentation/DRAFTS
   playbooks: []
   run_graphs: []
 related_artifacts:
@@ -47,6 +48,7 @@ change_notes:
   - Contract header populated; existing sharepoint config block preserved.
   - Added LegalMatters drive and multi-drive intake paths.
   - 2026-03-06: Drive IDs verified via live Graph API. Added site_ids. Updated LegalMatters drive name to "Working Files". Added Parked/StandardCashCows/DataManagement/ModelFile folders confirmed in root enumeration. Marked LegalMatters write_policy PROHIBITED.
+  - 2026-03-11: Write access to Documentation/DRAFTS is ML1-approved. Implemented in sharepoint_mcp_server.py (upload_draft tool). sharepoint_integration.py intentionally remains read-only.
 
 sharepoint:
   drives:
