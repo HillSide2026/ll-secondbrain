@@ -1,0 +1,24 @@
+---
+id: PRN-030
+title: Levine Law Brand Identity Signal Integrity
+owner: ML1
+status: draft
+version: 1.0
+created_date: 2026-03-10
+last_updated: 2026-03-10
+tags: [principle, brand, identity, canva, website, client-documents, social, pitch, reports]
+---
+
+# PRN-030 - Levine Law Brand Identity Signal Integrity
+
+Title: Levine Law Brand Identity Signal Integrity
+
+Statement:
+When creating, selecting, or revising Levine Law visual outputs, prefer choices that reinforce three signals at the same time: judgment authority, systemized precision, and calm competence.
+
+Rationale:
+The Levine Law brand should communicate senior legal judgment, structured and repeatable execution, and controlled clarity. The preferred visual posture is disciplined, technical, calm, deliberate, and restrained. Outputs should avoid trendy, playful, loud, or generic-corporate expression that weakens those signals.
+
+Supersedes: None
+Version: 1.0
+Status: Draft
