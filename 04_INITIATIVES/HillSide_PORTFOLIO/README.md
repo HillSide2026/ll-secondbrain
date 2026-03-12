@@ -4,7 +4,7 @@ title: HillSide Portfolio
 owner: ML1
 status: draft
 created_date: 2026-03-06
-last_updated: 2026-03-07
+last_updated: 2026-03-12
 tags: []
 ---
 
@@ -20,6 +20,7 @@ The purpose of this folder is to:
 - maintain governance records
 - track regulatory status
 - maintain links to operational documentation
+- track potential business initiatives for ownership-level decisioning
 
 This folder does **not** contain operational legal files or client matters. Those remain in the law firm systems.
 
@@ -32,7 +33,8 @@ HillSide_PORTFOLIO
 └── Matthew Holdings (17513721 Canada Inc)
    ├── Yellowbricks
    ├── Federal MSB (17409052 Canada Inc)
-   └── Ontario MSB Corp (1001494374 Ontario Corp)
+   ├── Ontario MSB Corp (1001494374 Ontario Corp)
+   └── Potential Business Initiatives
 ```
 
 ---
@@ -46,6 +48,7 @@ Each entity folder should contain:
 - regulatory status
 - strategic notes
 - links to external systems
+- potential business initiative pipeline (where applicable)
 
 Operational documents should not be duplicated here if they already exist in Clio, SharePoint, or other canonical systems.
 

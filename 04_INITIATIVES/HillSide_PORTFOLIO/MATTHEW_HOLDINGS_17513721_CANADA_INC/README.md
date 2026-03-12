@@ -4,7 +4,7 @@ title: Matthew Holdings (17513721 Canada Inc)
 owner: ML1
 status: draft
 created_date: 2026-03-06
-last_updated: 2026-03-07
+last_updated: 2026-03-12
 tags: []
 ---
 
@@ -36,7 +36,8 @@ Operating businesses are owned through this entity.
 Matthew Holdings
 ├── Yellowbricks
 ├── Federal MSB (17409052 Canada Inc)
-└── Ontario MSB Corp (1001494374 Ontario Corp)
+├── Ontario MSB Corp (1001494374 Ontario Corp)
+└── 1_POTENTIAL_BUSINESS_INITIATIVES
 ```
 
 ---
@@ -49,6 +50,7 @@ This entity manages:
 - strategic oversight of ventures
 - regulatory coordination where applicable
 - capital allocation across entities
+- evaluation pipeline for potential business initiatives
 
 ---
 
@@ -62,6 +64,14 @@ This folder may contain:
 - strategic portfolio planning
 
 Formal legal records remain in the firm's document management systems.
+
+## Potential Business Initiatives
+
+Potential ventures and strategic build opportunities are tracked in:
+
+- `1_POTENTIAL_BUSINESS_INITIATIVES/INITIATIVE_PIPELINE.md`
+
+This pipeline is for early-stage screening, decision support, and ownership-level prioritization.
 
 ## Corporate Identity Card
 
