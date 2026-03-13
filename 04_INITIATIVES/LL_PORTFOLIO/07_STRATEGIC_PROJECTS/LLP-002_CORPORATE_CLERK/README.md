@@ -54,7 +54,7 @@ The System must NOT:
 
 ## Planning (Stage 2) Artifacts
 
-Planning-stage artifacts are implementation-readiness controls used to authorize execution and achievement of project goals.
+Planning-stage artifacts are execution-readiness controls used to authorize execution and achievement of project goals.
 
 Core planning:
 - `SCOPE_DEFINITION.md`

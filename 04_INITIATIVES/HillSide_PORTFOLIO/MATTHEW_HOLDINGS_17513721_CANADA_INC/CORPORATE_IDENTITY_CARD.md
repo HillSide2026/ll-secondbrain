@@ -37,7 +37,7 @@ Matthew Holdings functions as the ownership and governance vehicle for HillSide 
 ## Commercial and Transaction Notes
 
 - 17513721 Canada Inc has received, and is expected to continue receiving, remaining revenue from Yellowbricks.
-- Sale of Yellowbricks is in post-closing stage.
+- Sale of Yellowbricks is in post-closing transaction status.
 - 17513721 Canada Inc holds a partnership agreement with Andersen Consulting.
 - The partnership agreement allows 17513721 Canada Inc to provide services to Andersen clients.
 

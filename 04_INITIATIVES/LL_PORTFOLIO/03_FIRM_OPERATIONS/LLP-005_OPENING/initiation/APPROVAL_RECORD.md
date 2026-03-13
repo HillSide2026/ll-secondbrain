@@ -45,12 +45,12 @@ Planning Stage Authorized: Yes
 | METRIC_DEFINITION.md | drafted | 2026-03-08 | Opening KPI set documented. |
 | MEASUREMENT_METHOD.md | drafted | 2026-03-08 | KPI measurement and evidence rules documented. |
 | BASELINE_CAPTURE_PERIOD.md | drafted | 2026-03-08 | Baseline window and inclusion rules defined. |
-| VALIDATION_REVIEW.md | drafted | 2026-03-08 | Implementation-readiness validation criteria documented. |
+| VALIDATION_REVIEW.md | drafted | 2026-03-08 | Execution-readiness validation criteria documented. |
 | ML1_METRIC_APPROVAL.md | proposed | 2026-03-08 | Threshold approval pending ML1. |
 
-Planning Gate Decision (Pending): [Approved to implement | Held | Rejected]
+Planning Gate Decision (Pending): [Approved to execute | Held | Rejected]
 Planning Approved By: ______________________
 Date: ______________________
 
 Notes:
-- Implementation remains gated until explicit ML1 Planning -> Executing approval.
+- Execution remains gated until explicit ML1 Planning -> Executing approval.

@@ -8,7 +8,7 @@ Stage: Planning
 - Intake, readiness, and Gate 3 metrics are reproducible from source artifacts.
 - Denominators and inclusion rules are unambiguous.
 - Exception tracking supports corrective action prioritization.
-- KPI package is sufficient for implementation authorization.
+- KPI package is sufficient for execution authorization.
 
 ## Review Owner
 - ML1

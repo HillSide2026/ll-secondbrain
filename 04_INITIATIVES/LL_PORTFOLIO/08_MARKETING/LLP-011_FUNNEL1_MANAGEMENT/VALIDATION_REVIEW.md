@@ -18,4 +18,4 @@ Stage: Planning
 
 ## Review Outcome
 Status: Proposed
-Notes: Pending ML1 validation and threshold approval for implementation authorization.
+Notes: Pending ML1 validation and threshold approval for execution authorization.

@@ -18,7 +18,7 @@ Stage: Planning
 - Availability of stage-event evidence for lead -> screened -> booked -> consult_complete -> retained
 
 ## Governance Dependencies
-- ML1 availability for implementation authorization and ongoing execution decisions
+- ML1 availability for execution authorization and ongoing execution decisions
 - CMO/marketing agent orchestration operating under current capability boundaries
 
 ## Dependency Risks

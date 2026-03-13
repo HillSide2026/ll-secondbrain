@@ -18,7 +18,7 @@ Date: ______________________
 
 ## Threshold Status
 - Threshold values are pending ML1 determination.
-- Once approved, thresholds become the governing baseline for implementation authorization and execution-goal review.
+- Once approved, thresholds become the governing baseline for execution authorization and execution-goal review.
 
 Notes:
 - Metric formulas and methods are defined in `METRIC_DEFINITION.md` and `MEASUREMENT_METHOD.md`.

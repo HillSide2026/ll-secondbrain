@@ -14,10 +14,10 @@ Project ID: LLP-26-07
 Project Path: 03_FIRM_OPERATIONS/LLP-006_MAINTENANCE
 Stage: Planning
 
-## Implementation Objective
-Prepare immediate implementation of a Sunday matter-reconciliation function across SB, Clio, SharePoint, and Asana.
+## Execution Objective
+Prepare immediate execution of a Sunday matter-reconciliation function across SB, Clio, SharePoint, and Asana.
 
-## Implementation Workstreams
+## Execution Workstreams
 
 | Workstream | Scope | Primary Owner | Outputs |
 | --- | --- | --- | --- |

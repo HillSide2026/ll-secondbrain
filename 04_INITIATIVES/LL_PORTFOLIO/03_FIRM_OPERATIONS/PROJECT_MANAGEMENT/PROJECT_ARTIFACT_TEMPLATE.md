@@ -85,6 +85,8 @@ Notes:
 - Stage 2 exists to prepare controlled execution, not to create standalone planning artifacts.
 - `METRICS.md` is the single canonical measurement document and must contain metric definitions, measurement method, baseline capture period, validation review, and ML1 threshold approval.
 - Executing must not begin until ML1 approves Planning -> Executing in `APPROVAL_RECORD.md` and threshold approval is recorded in `METRICS.md`.
+ - `METRICS.md` is the single canonical measurement document and must contain metric definitions, measurement method, baseline capture period, validation review, and ML1 threshold approval.
+ - Executing must not begin until ML1 approves Planning -> Executing in `APPROVAL_RECORD.md` and threshold approval is recorded in `METRICS.md`.
 
 Best-Practice Rules:
 - `SCOPE_DEFINITION.md`
@@ -101,7 +103,6 @@ Best-Practice Rules:
   Must be limited to decision loops, coordination points, and escalation triggers that the project actually needs.
 - `METRICS.md`
   Must be the single source for metric definitions, calculation method, baseline logic, validation rules, and ML1 threshold approval.
-
 ## Stage 3 - Executing
 
 Required:
@@ -119,6 +120,7 @@ Required:
 
 Notes:
 - `ISSUE_LOG.md` tracks materialized risks and corrective actions.
+- Executing includes active implementation plus increased monitoring while the work is live.
 
 ## Stage 4 - Closing
 

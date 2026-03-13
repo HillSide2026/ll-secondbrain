@@ -69,7 +69,7 @@ Category rule:
 
 ### Stage 3 - Executing: `ISSUE_LOG.md`
 
-Purpose: Track risks that materialized as issues.
+Purpose: Track risks that materialized as issues during active execution, including intensified monitoring while work is underway.
 
 Required schema:
 ```md
