@@ -45,6 +45,12 @@ Decision: [Proceed | Do Not Proceed | Proceed with Conditions]
 Rationale: <ML1 judgment - must be explicit, not inferred>
 ```
 
+Category rule:
+- `RISK_SCAN.md` may remain plain-language.
+- Each listed risk must still be classifiable under an allowed canonical category for that project type.
+- Operational projects: each risk must classify as `Scope`, `Schedule`, or `Budget`.
+- Strategic and management projects: each risk must classify as `Scope`, `Schedule`, `Budget`, `Financial`, or `Strategic`.
+
 ### Stage 2 - Planning: `RISK_REGISTER.md`
 
 Purpose: Decompose risks by category with likelihood, impact, and mitigation.
@@ -55,6 +61,11 @@ Required schema:
 |------|----------|------------|--------|------------|
 | <description> | Scope / Schedule / Budget | H / M / L | H / M / L | <action> |
 ```
+
+Category rule:
+- `RISK_REGISTER.md` must contain an explicit `Category` field.
+- Each risk row must be assigned exactly one canonical category.
+- Multi-axis risks must be decomposed into separate rows.
 
 ### Stage 3 - Executing: `ISSUE_LOG.md`
 
@@ -106,7 +117,16 @@ Legal matters carry no project risk artifacts under this policy.
 - Strategic and management projects: Scope / Schedule / Budget / Financial / Strategic
 - Operational projects: Scope / Schedule / Budget
 
-## 6. Related Doctrine
+## 6. Deprecated Risk Artifacts
+
+- `RISKS_INITIAL.md` is non-canonical and deprecated.
+- Existing `RISKS_INITIAL.md` files must be reconciled into canonical lifecycle artifacts.
+- Legacy labels such as `Primary`, `Control`, `Execution`, `Governance`, and `Residual` must not be used as substitute category systems going forward.
+
+## 7. Related Doctrine
 
 - `01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK-0001-risk-model.md`
+- `01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK-0005-risk-classification-invariants.md`
 - `01_DOCTRINE/02_PRINCIPLES/PRN-013-risk-lifecycle-governance.md`
+- `01_DOCTRINE/03_POLICIES/DOCTRINE-RISK-0003-ll-initiative-risk-policy.md`
+- `01_DOCTRINE/03_POLICIES/DOCTRINE-RISK-0004-matthew-holdings-initiative-risk-policy.md`
