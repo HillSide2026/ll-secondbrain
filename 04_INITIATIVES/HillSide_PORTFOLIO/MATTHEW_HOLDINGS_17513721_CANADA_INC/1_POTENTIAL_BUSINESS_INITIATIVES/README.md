@@ -24,4 +24,4 @@ Current tracked initiatives:
 - Sale of YellowBricks
 - Sale of Ontario MSBShellCo
 - Andersen Tie-Up
-- Micro SaaS build and sale
+- Micro SaaS build and launch (activated; see `../2D_MICRO_SAAS_BUILD_AND_SALE/`)
