@@ -22,6 +22,8 @@ Use this file to run reporting cadence and trigger escalation when scope, schedu
 
 ## Required Implementation Communications
 - Scope change requests and approval status
+- Jurisdiction coverage status for the six-jurisdiction MVP boundary
+- Tariff/agreement data-source status and refresh health
 - Milestone completion status (on-time, at-risk, delayed)
 - KPI snapshots against thresholds
 - Launch-readiness and post-launch stabilization progress
@@ -29,6 +31,7 @@ Use this file to run reporting cadence and trigger escalation when scope, schedu
 
 ## Escalation Triggers
 - Any scope expansion request outside frozen MVP
+- Any unresolved tariff-data source gap for an MVP jurisdiction
 - Any milestone slip > 5 days
-- Budget variance > 10% against approved envelope
+- Budget variance > 10% against approved envelope (currently `CAD 500`, threshold `CAD 50`)
 - Any critical blocker to launch readiness

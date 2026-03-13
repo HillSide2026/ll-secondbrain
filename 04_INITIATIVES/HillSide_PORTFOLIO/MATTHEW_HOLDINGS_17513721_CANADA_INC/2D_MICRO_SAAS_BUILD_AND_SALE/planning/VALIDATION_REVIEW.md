@@ -8,9 +8,11 @@ Stage: Planning
 Use this file to recommend approve/hold/reject for the Planning -> Implementation gate.
 
 ## Review Criteria
+- Target users, core problem, and MVP scope boundaries are explicit and frozen.
+- Jurisdiction list and minimum data requirements are explicit and feasible.
 - Metric formulas are reproducible from identified evidence sources.
 - Inclusion/exclusion rules are explicit for every KPI denominator.
-- Threshold set supports launch, traction, and stabilization decisions.
+- Threshold set supports launch, output reliability, and budget control decisions.
 - Planning artifact set is sufficient for implementation authorization.
 
 ## Review Owner
@@ -18,5 +20,5 @@ Use this file to recommend approve/hold/reject for the Planning -> Implementatio
 - Project Owner
 
 ## Review Outcome
-Status: Proposed
-Notes: Planning packet drafted and submitted for ML1 Planning -> Implementation gate review; metric thresholds pending explicit ML1 sign-off.
+Status: Finalized (Pending ML1 Decision)
+Notes: TariffLookup.ca planning packet is finalized and submitted for ML1 Planning -> Implementation gate review; metric thresholds and budget envelope pending explicit ML1 sign-off.

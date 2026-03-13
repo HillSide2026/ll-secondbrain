@@ -18,14 +18,21 @@ Use this file to confirm required dependencies are available before committing m
 
 ## Product / Delivery Dependencies
 - Product repository setup and access control
+- Frontend/backend application scaffold for MVP
 - Hosting/runtime environment
 - Analytics instrumentation and dashboard tooling
-- Pilot-user onboarding path (waitlist, direct outreach, or channel partner flow)
-- Support queue and issue-tracking process
+- Issue-tracking process and support queue
+
+## Data and Logic Dependencies
+- Tariff schedules by HS code for United States, European Union, United Kingdom, Japan, South Korea, and Australia
+- Preferential tariff schedules for relevant trade agreements by jurisdiction
+- Agreement eligibility rule definitions required to generate notes/conditions
+- HS code normalization and validation rules
+- Defined tariff-data refresh process with source timestamp tracking
 
 ## Launch / Adoption Dependencies
+- Pilot-user onboarding path for Canadian exporters and/or trade consultants
 - Initial launch checklist and release criteria
-- Onboarding flow for pilot users
 - Feedback capture loop for first 30 days
 - Issue triage and incident response workflow
 
@@ -35,6 +42,7 @@ Use this file to confirm required dependencies are available before committing m
 - Single source of truth for project artifacts in this folder
 
 ## Dependency Risks
-- Delayed environment setup can block MVP schedule.
-- Weak pilot-user access can delay traction evidence.
+- Gaps or delays in tariff/agreement data availability can block MVP launch.
+- Ambiguous agreement eligibility rules can degrade result quality.
+- Weak pilot-user access can delay validation evidence.
 - Missing launch-readiness artifacts can delay go-live.

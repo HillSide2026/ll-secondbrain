@@ -8,15 +8,17 @@ Stage: Planning
 Use this file to accept or reject planning moves that violate feasibility constraints before implementation starts.
 
 ## Assumptions
-- One ICP and one problem area can be identified and locked quickly.
-- A small MVP can be delivered with available internal capacity.
-- Initial user access for pilot validation is achievable without paid-scale acquisition.
-- Core legal and compliance requirements for build and launch can be satisfied with current support model.
-- Launch support capacity is available for stabilization during the first 30 days.
+- A focused set of Canadian exporter users can validate the tariff-lookup workflow quickly.
+- Required tariff and agreement data for the six initial jurisdictions is available in a usable format.
+- Core agreement eligibility logic can be encoded to support an MVP-level output note.
+- Initial pilot users can provide real HS-code lookup scenarios during validation.
+- Launch support capacity is available for first-30-day stabilization.
 
 ## Constraints
-- Scope must remain single-product and single-ICP until launch stabilization is complete.
-- Implementation cannot start before ML1 closes Planning -> Implementation approval.
-- No large custom features outside the frozen MVP boundary.
-- No unapproved budget expansion or contractor onboarding.
-- Launch-readiness documentation must be built in parallel with product execution.
+- Scope must remain one product and one core workflow until launch stabilization is complete.
+- Initial jurisdiction set is fixed to United States, European Union, United Kingdom, Japan, South Korea, and Australia.
+- MVP query model is one HS code + one destination at a time.
+- No implementation can start before ML1 closes Planning -> Implementation approval.
+- No feature expansion to market recommendations, non-tariff barriers, or landed-cost tooling in MVP.
+- Any data source/licensing cost increase outside approved budget requires ML1 approval.
+- Results must include eligibility notes and cannot be positioned as a substitute for formal legal advice.

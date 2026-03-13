@@ -11,11 +11,15 @@ Use this file to prioritize mitigation work and escalation before risks damage b
 
 | Risk | Category | Likelihood | Impact | Goal at Risk | Mitigation |
 | --- | --- | --- | --- | --- | --- |
-| Wrong ICP/problem selected for MVP | Scope | M | H | Build a launchable product | Require explicit ICP lock before implementation start |
-| Feature creep beyond small-project boundary | Scope | H | H | Fast launch and clear validation | Enforce frozen MVP scope and change-control review |
-| Product reliability gaps discovered post-launch | Scope | M | M | User confidence and retention | Define minimum quality checklist before launch |
-| MVP launch misses target date | Schedule | M | H | Launch objective and cadence | Timebox work and de-scope non-core features |
-| Pilot validation takes longer than expected | Schedule | H | M | Early traction evidence | Pre-commit pilot channels and weekly conversion checkpoints |
-| Launch stabilization issues remain unresolved | Schedule | M | H | Stable live operation | Define incident response SLA for first 30 days |
-| Budget overrun from tooling and ad hoc spend | Budget | M | M | Sustainable execution | Set spend envelope and weekly variance review |
-| Unplanned infrastructure costs after launch | Budget | M | M | Budget discipline | Define infrastructure ceiling and monitor weekly |
+| Target users do not adopt the lookup workflow as expected | Scope | M | H | Launch usable MVP for exporters | Validate with pilot interviews and test scenarios before build freeze |
+| Jurisdiction scope expands beyond initial six-country boundary | Scope | H | H | Fast launch and controllable MVP | Enforce scope lock and change-control approval |
+| Preferential eligibility logic is oversimplified and produces misleading notes | Scope | M | H | Reliable tariff guidance output | Define explicit rule boundaries and include eligibility caveats |
+| Tariff/agreement data acquisition is delayed for one or more jurisdictions | Schedule | M | H | On-time MVP release | Sequence build by jurisdiction priority and set fallback launch criteria |
+| Data refresh process is not operational before launch | Schedule | M | M | Output freshness and user trust | Define data refresh owner, cadence, and source timestamp checks |
+| Integration defects across frontend/backend/data delay release | Schedule | M | M | Launch on target date | Timebox integration milestones and run weekly defect burn-down |
+| Total project spend exceeds approved envelope (`CAD 500`) | Budget | M | H | Budget discipline and implementation continuity | Track weekly spend variance, require pre-approval for non-essential costs, freeze discretionary spend at 80% envelope until ML1 review |
+| Data-source or licensing costs exceed planned budget | Budget | M | M | Budget discipline | Pre-approve source options and enforce spend envelope reviews |
+| Post-launch infrastructure/API costs grow faster than expected | Budget | M | M | Sustainable operations after go-live | Set infrastructure ceiling and monitor weekly cost variance |
+
+## Escalation Rule
+Any High-impact risk without an active mitigation owner must be escalated to ML1 in the weekly review.

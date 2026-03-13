@@ -38,16 +38,16 @@ Planning Stage Authorized: Yes
 
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| SCOPE_DEFINITION.md | drafted | 2026-03-12 | Supplemental scope rationale documented. |
-| WORKPLAN.md | drafted | 2026-03-12 | Canonical project scope plus workstreams, sequence, milestones, and resource plan defined. |
-| ASSUMPTIONS_CONSTRAINTS.md | drafted | 2026-03-12 | Assumptions and hard constraints documented. |
-| DEPENDENCIES.md | drafted | 2026-03-12 | Governance, product, and launch dependencies documented. |
-| RISK_REGISTER.md | drafted | 2026-03-12 | Implementation risk register captured across scope/schedule/budget. |
-| COMMUNICATION_PLAN.md | drafted | 2026-03-12 | Cadence and escalation model documented. |
-| OKR.md | drafted | 2026-03-12 | KPI definitions, measurement method, and baseline capture consolidated. |
-| VALIDATION_REVIEW.md | drafted | 2026-03-12 | Planning validation criteria and proposed outcome documented. |
-| ML1_METRIC_APPROVAL.md | proposed | 2026-03-12 | Thresholds proposed; ML1 approval pending. |
-| implementation/WORKPLAN.md | drafted (pre-gate) | 2026-03-12 | Implementation sequence prepared; execution still gated pending ML1 decision. |
+| SCOPE_DEFINITION.md | finalized | 2026-03-12 | Supplemental scope rationale documented. |
+| WORKPLAN.md | finalized | 2026-03-12 | Canonical project scope plus workstreams, sequence, milestones, and resource plan defined. |
+| ASSUMPTIONS_CONSTRAINTS.md | finalized | 2026-03-12 | Assumptions and hard constraints documented. |
+| DEPENDENCIES.md | finalized | 2026-03-12 | Governance, product, and launch dependencies documented. |
+| RISK_REGISTER.md | finalized | 2026-03-12 | Implementation risk register captured across scope/schedule/budget. |
+| COMMUNICATION_PLAN.md | finalized | 2026-03-12 | Cadence and escalation model documented. |
+| OKR.md | finalized | 2026-03-12 | KPI definitions, measurement method, and budget envelope consolidated. |
+| VALIDATION_REVIEW.md | finalized | 2026-03-12 | Planning validation criteria and finalized outcome documented. |
+| ML1_METRIC_APPROVAL.md | submitted | 2026-03-12 | Thresholds and budget envelope submitted; ML1 approval pending. |
+| implementation/WORKPLAN.md | finalized (pre-gate) | 2026-03-12 | Implementation sequence prepared; execution still gated pending ML1 decision. |
 
 Planning Gate Decision (Pending): [Approved to implement | Held | Rejected]
 Planning Approved By: ______________________
@@ -56,4 +56,5 @@ Date: ______________________
 Notes:
 - Initiation stage is approved.
 - Baseline capture is defined in `planning/OKR.md`.
+- Planning artifact packet is finalized and submitted.
 - Implementation activity remains gated until Planning -> Implementation approval is recorded.
