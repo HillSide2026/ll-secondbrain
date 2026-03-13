@@ -25,7 +25,7 @@ Define and authorize a controlled implementation model to build, launch, and sta
 
 | Item | Owner | Due Date | Evidence |
 | --- | --- | --- | --- |
-| ICP and problem-definition freeze | Matthew | 2026-03-14 | `SCOPE_DEFINITION.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
+| ICP and problem-definition freeze | Matthew | 2026-03-14 | `WORKPLAN.md` (Project Scope), `ASSUMPTIONS_CONSTRAINTS.md` |
 | MVP scope and implementation sequence freeze | Levine Law + Matthew | 2026-03-16 | `WORKPLAN.md`, `DEPENDENCIES.md` |
 | Risk and communication model freeze | Matthew Holdings | 2026-03-18 | `RISK_REGISTER.md`, `COMMUNICATION_PLAN.md` |
 | Metric threshold packet submission | ML1 | 2026-03-19 | `ML1_METRIC_APPROVAL.md` |

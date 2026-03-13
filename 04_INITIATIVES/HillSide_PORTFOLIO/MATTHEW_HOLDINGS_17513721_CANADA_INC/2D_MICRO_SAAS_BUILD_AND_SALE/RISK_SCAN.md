@@ -35,7 +35,7 @@ Speed-first build creates reliability/security issues that require rework and de
 
 ### Budget
 
-5. Exit execution risk
+5. Launch cost overrun
 Infrastructure/tooling costs expand beyond plan during build and launch.
 
 ## Key Assumptions

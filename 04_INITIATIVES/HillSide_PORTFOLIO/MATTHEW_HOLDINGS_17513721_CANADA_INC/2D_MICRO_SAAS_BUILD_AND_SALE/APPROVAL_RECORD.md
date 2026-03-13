@@ -2,11 +2,11 @@
 id: 04_initiatives__hillside_portfolio__matthew_holdings__2d_micro_saas_build_and_sale__approval_record_md
 title: Micro SaaS Build and Launch - Approval Record
 owner: ML1
-status: approved
+status: in_progress
 project_type: strategic
 created_date: 2026-03-12
 last_updated: 2026-03-12
-tags: [micro-saas, initiation, approval]
+tags: [micro-saas, planning, approval]
 ---
 
 # Approval Record
@@ -38,9 +38,8 @@ Planning Stage Authorized: Yes
 
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| SCOPE_DEFINITION.md | drafted | 2026-03-12 | Scope boundaries and authorization criteria documented. |
-| SCOPE_STATEMENT.md | drafted | 2026-03-12 | Concise scope statement documented for execution control. |
-| WORKPLAN.md | drafted | 2026-03-12 | Workstreams, sequence, milestones, and resource plan defined. |
+| SCOPE_DEFINITION.md | drafted | 2026-03-12 | Supplemental scope rationale documented. |
+| WORKPLAN.md | drafted | 2026-03-12 | Canonical project scope plus workstreams, sequence, milestones, and resource plan defined. |
 | ASSUMPTIONS_CONSTRAINTS.md | drafted | 2026-03-12 | Assumptions and hard constraints documented. |
 | DEPENDENCIES.md | drafted | 2026-03-12 | Governance, product, and launch dependencies documented. |
 | RISK_REGISTER.md | drafted | 2026-03-12 | Implementation risk register captured across scope/schedule/budget. |

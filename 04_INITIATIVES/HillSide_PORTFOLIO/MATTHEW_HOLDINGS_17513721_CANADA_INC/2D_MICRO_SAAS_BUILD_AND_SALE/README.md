@@ -18,7 +18,7 @@ This project is an active venture build under Matthew Holdings.
 
 - Initiative source: `PBI-004` in `../1_POTENTIAL_BUSINESS_INITIATIVES/INITIATIVE_PIPELINE.md`
 - Activation decision: `approved` by ML1
-- Current state: active setup and execution
+- Current state: active setup and planning execution; implementation execution is gated pending ML1 Planning -> Implementation approval
 
 ---
 
@@ -51,7 +51,6 @@ Build and launch one small Micro SaaS product.
 
 - `planning/README.md`
 - `planning/SCOPE_DEFINITION.md`
-- `planning/SCOPE_STATEMENT.md`
 - `planning/WORKPLAN.md`
 - `planning/ASSUMPTIONS_CONSTRAINTS.md`
 - `planning/DEPENDENCIES.md`

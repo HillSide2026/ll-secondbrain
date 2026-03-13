@@ -26,10 +26,11 @@ Use this file weekly to decide if execution is on track for launch, early usage 
 | KPI | Definition | Formula | Decision Use |
 | --- | --- | --- | --- |
 | `mvp_launch_on_or_before_target` | Whether MVP goes live by approved launch date | `1 if mvp_launch_date <= target_launch_date else 0` | Launch discipline |
-| `pilot_activation_rate` | Share of onboarded pilot users reaching activation event | `(activated_pilot_users / onboarded_pilot_users) * 100` | Product value signal |
+| `pilot_activation_rate` | Share of eligible onboarded pilot users reaching activation event | `(activated_pilot_users / onboarded_pilot_users) * 100` | Product value signal |
 | `launch_exception_backlog` | Count of unresolved launch-blocking issues | `open_launch_blockers` | Launch stability control |
 | `week4_retention_rate` | Share of activated pilot users still active in week 4 | `(active_week4_users / activated_pilot_users) * 100` | Early usage durability |
 | `activated_pilot_users` | Count of pilot users reaching activation event | `count(activated_pilot_users)` | Early traction volume |
+| `onboarded_pilot_users` | Count of unique pilot users eligible for activation tracking | `count(unique pilot users with onboarding_completed_at in measurement window)` | Denominator for activation rate |
 | `project_budget_variance_pct` | Variance from approved budget envelope | `((actual_spend - planned_spend) / planned_spend) * 100` | Budget control |
 
 ## Measurement Method
@@ -40,6 +41,8 @@ Use this file weekly to decide if execution is on track for launch, early usage 
 
 ## Measurement Rules
 - `mvp_launch_on_or_before_target` is valid only when both target date and actual launch date are recorded.
+- `onboarded_pilot_users` counts unique pilot users with a completed onboarding event in the measurement window.
+- `pilot_activation_rate` is calculated only when `onboarded_pilot_users > 0`.
 - `activated_pilot_users` requires completion of defined activation event(s), not just signup.
 - `launch_exception_backlog` includes only unresolved severity-1 or severity-2 launch blockers.
 - `week4_retention_rate` includes only users who reached activation before week-4 measurement cut-off.

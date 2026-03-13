@@ -5,7 +5,7 @@ Project Path: 04_INITIATIVES/HillSide_PORTFOLIO/MATTHEW_HOLDINGS_17513721_CANADA
 Stage: Planning
 
 ## Decision Use
-Use this file to decide what planning work is authorized and what remains out of scope.
+Use this file for supplemental scope rationale; canonical project scope is maintained in `WORKPLAN.md`.
 
 ## Implementation Objective
 Stand up a small, tightly scoped Micro SaaS that can be built, launched, and stabilized as a repeatable capability practice project.
