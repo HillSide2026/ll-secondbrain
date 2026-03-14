@@ -78,11 +78,7 @@ This is a non-authoritative working artifact for ML1 review.
 - `COMMUNICATION_PLAN.md`
 
 ### Doctrine-mandatory measurement architecture
-- `METRIC_DEFINITION.md`
-- `MEASUREMENT_METHOD.md`
-- `BASELINE_CAPTURE_PERIOD.md`
-- `VALIDATION_REVIEW.md`
-- `ML1_METRIC_APPROVAL.md`
+- `METRICS.md`
 
 ### Corporate first-run additions (recommended)
 - `SOLUTION_PACKET_COMPLETENESS_MATRIX.md` (README/SCOPE/ASSEMBLY/ARTIFACTS/RISK completeness)

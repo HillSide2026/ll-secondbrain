@@ -64,11 +64,7 @@ Core planning:
 - `COMMUNICATION_PLAN.md`
 
 Measurement architecture:
-- `METRIC_DEFINITION.md`
-- `MEASUREMENT_METHOD.md`
-- `BASELINE_CAPTURE_PERIOD.md`
-- `VALIDATION_REVIEW.md`
-- `ML1_METRIC_APPROVAL.md`
+- `METRICS.md`
 
 ## Last ML1 Review Date
 

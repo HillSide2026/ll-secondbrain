@@ -4,7 +4,7 @@ title: Matthew Holdings (17513721 Canada Inc)
 owner: ML1
 status: draft
 created_date: 2026-03-06
-last_updated: 2026-03-12
+last_updated: 2026-03-14
 tags: []
 ---
 
@@ -12,9 +12,14 @@ tags: []
 
 17513721 Canada Inc
 
-Matthew Holdings is the primary holding company within the HillSide portfolio.
+Matthew Holdings is the primary holding company within the HillSide portfolio branch tracked here.
 
 It functions as the **ownership vehicle for operating companies and regulated entities** controlled by the portfolio.
+
+It is not the only holdco in the broader structure:
+
+- `Levine Holdings` separately owns `Levine Law`
+- capital sitting outside both holdcos is outside the scope of this entity folder until formally allocated
 
 ---
 
@@ -26,17 +31,19 @@ Matthew Holdings serves as:
 - governance layer for portfolio entities
 - strategic control entity
 
-Operating businesses are owned through this entity.
+Operating businesses in the HillSide branch are owned through this entity.
 
 ---
 
-## Subsidiaries
+## Entities and Initiatives
 
 ```text
 Matthew Holdings
 ├── Yellowbricks
 ├── Federal MSB (17409052 Canada Inc)
 ├── Ontario MSB Corp (1001494374 Ontario Corp)
+├── Micro SaaS Build and Launch
+├── Wealth Management
 └── 1_POTENTIAL_BUSINESS_INITIATIVES
 ```
 
@@ -51,6 +58,12 @@ This entity manages:
 - regulatory coordination where applicable
 - capital allocation across entities
 - evaluation pipeline for potential business initiatives
+
+This entity does not represent:
+
+- `Levine Holdings`
+- `Levine Law`
+- capital not yet placed into either holdco
 
 ---
 

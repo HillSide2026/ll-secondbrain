@@ -4,7 +4,7 @@ title: HillSide Portfolio
 owner: ML1
 status: draft
 created_date: 2026-03-06
-last_updated: 2026-03-12
+last_updated: 2026-03-14
 tags: []
 ---
 
@@ -12,7 +12,8 @@ tags: []
 
 This directory contains the corporate entities and investment vehicles owned or controlled through the HillSide structure.
 
-The HillSide portfolio represents the **ownership layer** of the system. It captures the legal entities through which assets, regulated activities, and ventures are operated.
+This folder does **not** represent the full ownership layer. It captures the
+**Matthew Holdings / HillSide branch** of the ownership structure only.
 
 The purpose of this folder is to:
 
@@ -23,6 +24,17 @@ The purpose of this folder is to:
 - track potential business initiatives for ownership-level decisioning
 
 This folder does **not** contain operational legal files or client matters. Those remain in the law firm systems.
+
+## Ownership Context
+
+Current high-level ownership map:
+
+- `Levine Holdings` -> owns `Levine Law`
+- `Matthew Holdings` -> owns the downstream HillSide entities and ventures tracked here
+- Approx. `$1.5M` of capital currently sits outside both holdcos and is not attributed to this folder as a controlled entity asset
+
+Accordingly, `HillSide_PORTFOLIO` should be read as the
+**Matthew Holdings branch map**, not as the complete enterprise ownership map.
 
 ---
 
@@ -35,6 +47,7 @@ HillSide_PORTFOLIO
    ├── Federal MSB (17409052 Canada Inc)
    ├── Ontario MSB Corp (1001494374 Ontario Corp)
    ├── Micro SaaS Build and Launch (Active Venture)
+   ├── Wealth Management (Initiating Project)
    └── Potential Business Initiatives
 ```
 
@@ -53,4 +66,4 @@ Each entity folder should contain:
 
 Operational documents should not be duplicated here if they already exist in Clio, SharePoint, or other canonical systems.
 
-This folder functions as the **strategic control map of the HillSide corporate structure**.
+This folder functions as the **strategic control map of the Matthew Holdings / HillSide branch**.

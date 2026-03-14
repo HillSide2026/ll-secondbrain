@@ -4,7 +4,7 @@ title: 04_INITIATIVES — Strategic Initiatives & Projects
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-03-14
 tags: []
 ---
 
@@ -81,9 +81,9 @@ See: `LL_PORTFOLIO/README.md` for detailed governance rules.
 
 ## HillSide_PORTFOLIO
 
-**Purpose:** Initiatives whose primary beneficiary is HillSide and related entities.
+**Purpose:** Initiatives whose primary beneficiary is the Matthew Holdings / HillSide ownership branch.
 
-**Beneficiary:** HillSide portfolio operations and governance.
+**Beneficiary:** Matthew Holdings entities, ventures, and branch-level governance tracked under `HillSide_PORTFOLIO`.
 
 ---
 

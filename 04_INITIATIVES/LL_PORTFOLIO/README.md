@@ -4,7 +4,7 @@ title: LL_PORTFOLIO — Levine Law Workstream Registry
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-03-09
+last_updated: 2026-03-14
 tags: []
 ---
 
@@ -55,6 +55,43 @@ Applicability:
 - The project stage-gate artifact lifecycle applies to strategic, management, and operational projects.
 - Client matters/client projects follow matter doctrine and matter-stage artifacts.
 - If project type classification is unclear, escalate to ML1 before stage advancement.
+
+## Planning Stage Standard (Canonical)
+
+For strategic, management, and operational projects, the `Planning` stage exists
+to prepare a clean implementation-authorization decision.
+
+Planning artifacts must be:
+
+- project-specific
+- decision-oriented
+- implementation-focused
+- as lean as possible while still supporting ML1 approval
+
+Planning artifacts must not become planning for the sake of planning.
+
+Required planning artifact set:
+
+- `SCOPE_DEFINITION.md`
+- `WORKPLAN.md`
+- `ASSUMPTIONS_CONSTRAINTS.md`
+- `DEPENDENCIES.md`
+- `RISK_REGISTER.md`
+- `COMMUNICATION_PLAN.md`
+- `METRICS.md`
+
+Planning best-practice rules:
+
+- `SCOPE_DEFINITION.md` locks the actual implementation boundary and exclusions.
+- `WORKPLAN.md` locks the project decisions, sequence, and gate-readiness path. It should not read like generic PM overhead.
+- `ASSUMPTIONS_CONSTRAINTS.md` captures the assumptions the project depends on and the limits it cannot cross.
+- `DEPENDENCIES.md` lists only dependencies that could materially affect implementation or authorization.
+- `RISK_REGISTER.md` tracks risks that matter to scope, schedule, budget, operating control, or gate readiness.
+- `COMMUNICATION_PLAN.md` should be minimal and limited to decision loops, coordination points, and escalation triggers.
+- `METRICS.md` is the single source for metric definitions, measurement method, baseline logic, validation rules, and ML1 threshold approval.
+
+If a planning artifact does not help lock scope, reduce uncertainty, or support
+the Planning -> Implementation gate decision, it should be merged or removed.
 
 ---
 

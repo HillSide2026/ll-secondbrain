@@ -4,7 +4,7 @@ title: Project Artifact Template
 owner: ML1
 status: draft
 created_date: 2026-03-08
-last_updated: 2026-03-08
+last_updated: 2026-03-14
 tags: [project-management, stage-gates, artifacts, template]
 ---
 
@@ -52,6 +52,16 @@ Identity Rule:
 
 ## Stage 2 - Planning (Implementation Readiness)
 
+Purpose:
+- Lock the implementation-ready shape of the specific project.
+- Reduce uncertainty before execution.
+- Prepare a clean ML1 gate decision.
+
+Anti-Bloat Rule:
+- Planning artifacts exist to support implementation authorization, not planning for the sake of planning.
+- If an artifact does not help lock scope, confirm dependencies, reduce risk, define controls, or support the gate decision, merge it or remove it.
+- Planning artifacts must use project-specific language. Avoid generic PM boilerplate that could apply to any project.
+
 ### Core Planning
 Required:
 - `SCOPE_DEFINITION.md`
@@ -63,15 +73,28 @@ Required:
 
 ### Measurement Architecture
 Required:
-- `METRIC_DEFINITION.md`
-- `MEASUREMENT_METHOD.md`
-- `BASELINE_CAPTURE_PERIOD.md`
-- `VALIDATION_REVIEW.md`
-- `ML1_METRIC_APPROVAL.md`
+- `METRICS.md`
 
 Notes:
 - Stage 2 exists to prepare controlled implementation, not to create standalone planning artifacts.
-- Implementation must not begin until ML1 approves Planning -> Implementation in `APPROVAL_RECORD.md` and metric thresholds in `ML1_METRIC_APPROVAL.md`.
+- `METRICS.md` is the single canonical measurement document and must contain metric definitions, measurement method, baseline capture period, validation review, and ML1 threshold approval.
+- Implementation must not begin until ML1 approves Planning -> Implementation in `APPROVAL_RECORD.md` and threshold approval is recorded in `METRICS.md`.
+
+Best-Practice Rules:
+- `SCOPE_DEFINITION.md`
+  Must define the real implementation boundary for the project, including explicit exclusions.
+- `WORKPLAN.md`
+  Must focus on the project decisions that still need to be locked for implementation. It must not become a generic project-management report.
+- `ASSUMPTIONS_CONSTRAINTS.md`
+  Must state the assumptions the project is relying on and the hard limits it cannot cross.
+- `DEPENDENCIES.md`
+  Must list only dependencies that could block or materially change implementation.
+- `RISK_REGISTER.md`
+  Must focus on risks that threaten scope, schedule, budget, operating control, or authorization readiness.
+- `COMMUNICATION_PLAN.md`
+  Must be limited to decision loops, coordination points, and escalation triggers that the project actually needs.
+- `METRICS.md`
+  Must be the single source for metric definitions, calculation method, baseline logic, validation rules, and ML1 threshold approval.
 
 ## Stage 3 - Implementation
 
