@@ -23,8 +23,9 @@ from pathlib import Path
 from typing import Optional, List, Dict, Any
 
 # Setup logging
-LOG_DIR = Path(__file__).parent.parent / "logs"
-LOG_DIR.mkdir(exist_ok=True)
+REPO_ROOT = Path(__file__).resolve().parents[2]
+LOG_DIR = REPO_ROOT / "06_RUNS" / "logs"
+LOG_DIR.mkdir(parents=True, exist_ok=True)
 
 # Audit log file
 AUDIT_LOG_FILE = LOG_DIR / "gmail_audit.log"
@@ -62,7 +63,7 @@ class GmailClient:
 
     Authority Constraints:
     - READ-ONLY: No send, modify, delete, or label operations
-    - All API calls are logged to logs/gmail_audit.log
+    - All API calls are logged to 06_RUNS/logs/gmail_audit.log
     - Scope: gmail.readonly only
     """
 

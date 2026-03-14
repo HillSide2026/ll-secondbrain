@@ -6,7 +6,7 @@ status: draft
 version: 1.0
 supersedes:
 created_date: 2026-02-14
-last_updated: 2026-03-09
+last_updated: 2026-03-14
 tags: [index, playbooks]
 ---
 
@@ -23,6 +23,7 @@ Canonical registry of playbook workflows.
 | execution | Review Ritual | draft | ML1 | 02_PLAYBOOKS/LL_OPERATIONS/review_ritual/README.md |
 | execution | Rollback Procedure | draft | ML1 | 02_PLAYBOOKS/LL_OPERATIONS/rollback_procedure/README.md |
 | execution | Supervised Execution Runbook | draft | ML1 | 02_PLAYBOOKS/LL_OPERATIONS/supervised_execution_runbook/README.md |
+| system | System Runbooks | draft | ML1 | 02_PLAYBOOKS/LL_OPERATIONS/system_runbooks/README.md |
 | substantive | [SOLUTION_NAME] | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/SOLUTION_PACKET_TEMPLATE/MODULES/MODULE_001_PRIMARY/WORKFLOWS/README.md |
 | substantive | Agents — Payments | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/payments/agents/README.md |
 | substantive | Business Acquisition | draft | ML1 | 02_PLAYBOOKS/CORPORATE/WORKFLOWS/solutions/business_acquisition/README.md |

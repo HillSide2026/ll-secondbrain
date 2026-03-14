@@ -4,7 +4,7 @@ title: Corporate Identity Card — Matthew Holdings (17513721 Canada Inc)
 owner: ML1
 status: draft
 created_date: 2026-03-07
-last_updated: 2026-03-07
+last_updated: 2026-03-14
 tags: [corporate-identity, governance, portfolio]
 ---
 
@@ -49,4 +49,4 @@ Matthew Holdings functions as the ownership and governance vehicle for HillSide 
 ## Source Record
 
 - ML1-provided portfolio update (2026-03-07)
-- [Matthew Holdings README](/Users/matthewlevine/Repos/ll-secondbrain_fresh/04_INITIATIVES/HillSide_PORTFOLIO/MATTHEW_HOLDINGS_17513721_CANADA_INC/README.md)
+- [Matthew Holdings README](README.md)

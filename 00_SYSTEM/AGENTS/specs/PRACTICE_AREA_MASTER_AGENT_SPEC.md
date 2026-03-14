@@ -4,7 +4,7 @@ title: Practice Area Master Agent — Spec v1.0
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-03-14
 tags: []
 ---
 
@@ -226,5 +226,5 @@ To create a Practice Area Master Agent for a specific domain:
 ## 13. References
 
 - Agent Typology: [AGENT_TYPOLOGY.md](AGENT_TYPOLOGY.md)
-- Agent Doctrine: [DOCTRINE-AGENTS-0001](../../01_DOCTRINE/01_INVARIANTS/DOCTRINE-AGENTS-0001-second-brain-agent-authority.md)
-- Capability Profiles: [03_capability_profiles](../../01_DOCTRINE/04_CAPABILITY_PROFILES/)
+- Agent Doctrine: [DOCTRINE-AGENTS-0001](../../../01_DOCTRINE/01_INVARIANTS/DOCTRINE-AGENTS-0001-second-brain-agent-authority.md)
+- Capability Profiles: [04_CAPABILITY_PROFILES](../../../01_DOCTRINE/04_CAPABILITY_PROFILES/README.md)

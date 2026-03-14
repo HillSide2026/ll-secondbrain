@@ -124,7 +124,7 @@ The repository is not the Second Brain as a conceptual architecture.
 The repository may contain:
 
 - Repo infrastructure (.gitignore, LICENSE, etc.)
-- Execution telemetry (logs/)
+- Execution telemetry (`06_RUNS/logs/`)
 - Scripts and tooling
 - Local configuration
 - CI configuration

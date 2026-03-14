@@ -4,7 +4,7 @@ title: Folder Map
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-03-08
+last_updated: 2026-03-14
 tags: []
 ---
 
@@ -18,7 +18,7 @@ tags: []
 - 04_INITIATIVES — Strategic initiatives and projects. Grouped by portfolio (SYSTEM vs LL) based on primary beneficiary.
   - System roadmaps live in 04_INITIATIVES/SYSTEM_PORTFOLIO/{00_DRAFT_ROADMAPS,01_ACTIVE_ROADMAPS}.
 - 05_MATTERS — Case-specific, stateful matter records. Each folder represents one distinct matter with its own lifecycle.
-- 06_RUNS — Execution runs and operational logs
+- 06_RUNS — Execution runs, operational logs, and runtime state snapshots
 - 07_REFERENCE — Stable reference material (external law/standards/vendors, internal definitions/models)
 - 08_RESEARCH — Working notes, explorations, and non-authoritative analysis
 - 09_INBOX — Unprocessed intake (must be triaged)
@@ -27,11 +27,7 @@ tags: []
 ## Non-ML2 Root Folders (Non-Numbered)
 - scripts — Local tooling and operational scripts (non-ML2)
 - cache — Local integration/cache artifacts used by automation (non-ML2)
-- state — Local sync/runtime state snapshots (non-ML2)
 - gmail_governance — Standalone Gmail governance tooling workspace (non-ML2)
-- find — Local command shim/workspace folder (non-ML2)
-- mv — Local command shim/workspace folder (non-ML2)
-- rmdir — Local command shim/workspace folder (non-ML2)
 
 ## Non-ML2 Hidden Roots
 - .claude — Automation hub configuration (non-ML2, non-canon)

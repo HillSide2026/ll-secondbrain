@@ -169,7 +169,7 @@ The Matter Summary must be recomputed on:
 
 Stored as:
 - 05_MATTERS/<matter_id>/matter_summary.json, or
-- central derived snapshot in state/
+- central derived snapshot in `06_RUNS/state/`
 
 Compatibility note:
 - Current scaffolds also produce matter_summary.md in run outputs (see new_matter_scaffold).

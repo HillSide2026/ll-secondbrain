@@ -40,7 +40,7 @@ REFRESH_TOKEN = os.environ["GMAIL_REFRESH_TOKEN"]
 HARD_LIMIT       = 100
 METADATA_HEADERS = ["From", "To", "Subject", "Date"]
 
-STATE_FILE  = REPO_ROOT / "state" / "gmail_sync_state.json"
+STATE_FILE  = REPO_ROOT / "06_RUNS" / "state" / "gmail_sync_state.json"
 OUTPUT_PATH = REPO_ROOT / "06_RUNS" / "ops" / "gmail_fetch_latest.json"
 
 
