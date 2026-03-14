@@ -8,9 +8,14 @@ import re
 from state_enforcement import get_gmail_service, get_label_id_map
 
 
-# Matter label pattern: LL/1./<priority>/<matter> -- <name>
+# Matter label pattern: LL/1./{tier}/{matter_id} -- {name}
+# Canonical format (v0.3+): LL/1./1.1/25-927-00003 -- Stream Ventures Limited
+# Tiers: 1.1 = Essential, 1.2 = Strategic, 1.3 = Standard, 1.4 = Parked
 MATTER_LABEL_PREFIX = "LL/1./"
+# Leaf = last path segment, must begin with a Clio matter ID
 MATTER_LEAF_PATTERN = re.compile(r"^(\d{2,3}-\d{2,5}(?:-\d{5})?)\b")
+# Canonical tier prefixes (used to distinguish matter labels from tier-parent labels)
+MATTER_TIER_PREFIXES = {"LL/1./1.1/", "LL/1./1.2/", "LL/1./1.3/", "LL/1./1.4/"}
 
 # Matter number extraction patterns
 BASE_MATTER_PATTERN = re.compile(r"\b(\d{2,3}-\d{2,5})\b")
@@ -94,13 +99,13 @@ def get_matter_labels(service):
     for label in all_labels:
         label_name = label['name']
 
-        # Check if label starts with LL/1./
-        if not label_name.startswith(MATTER_LABEL_PREFIX):
+        # Only match canonical-format matter labels (LL/1./1.x/{matter_id} -- {name})
+        if not any(label_name.startswith(p) for p in MATTER_TIER_PREFIXES):
             continue
 
         # Extract leaf (last part after final /)
         parts = label_name.split('/')
-        if len(parts) < 3:
+        if len(parts) < 4:
             continue
 
         leaf = parts[-1]
@@ -210,10 +215,10 @@ def apply_matter_label(thread_id, matter_label_id):
         if not label_name:
             continue
 
-        # Check if it's a matter label
-        if label_name.startswith(MATTER_LABEL_PREFIX):
+        # Check if it's a canonical-format matter label
+        if any(label_name.startswith(p) for p in MATTER_TIER_PREFIXES):
             parts = label_name.split('/')
-            if len(parts) >= 3:
+            if len(parts) >= 4:
                 leaf = parts[-1]
                 if MATTER_LEAF_PATTERN.match(leaf):
                     matter_labels_to_remove.append(label_id)
@@ -286,9 +291,9 @@ def validate_matter_exclusivity(thread_id):
         if not label_name:
             continue
 
-        if label_name.startswith(MATTER_LABEL_PREFIX):
+        if any(label_name.startswith(p) for p in MATTER_TIER_PREFIXES):
             parts = label_name.split('/')
-            if len(parts) >= 3:
+            if len(parts) >= 4:
                 leaf = parts[-1]
                 if MATTER_LEAF_PATTERN.match(leaf):
                     matter_labels.append(label_name)

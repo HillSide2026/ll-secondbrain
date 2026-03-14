@@ -3,7 +3,14 @@
     "sharepoint": {
       "command": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3",
       "args": [
-        "/Users/matthewajlevinelaw/Repos/ll-secondbrain/scripts/sharepoint_mcp_server.py"
+        "/Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/sharepoint_mcp_server.py"
+      ],
+      "env": {}
+    },
+    "gmail": {
+      "command": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3",
+      "args": [
+        "/Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/gmail_mcp_server.py"
       ],
       "env": {}
     }

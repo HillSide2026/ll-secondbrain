@@ -10,7 +10,9 @@ Produces:
 - Classification log entries
 - Pilot summary report
 
-NO EXECUTION. NO GMAIL WRITES. PROPOSALS ONLY.
+This pilot is non-destructive and proposal-first. It does not perform Gmail
+writes itself, but the broader system may perform controlled Gmail writes via
+separate approved execution paths.
 """
 
 import json
@@ -254,7 +256,7 @@ def generate_summary_report(stats: dict) -> str:
 
 ## Governance Notes
 
-- **No Gmail writes occurred** - All operations read-only
+- **No Gmail writes occurred in this pilot** - This run stayed non-destructive
 - **No message movement** - Proposals only
 - **No external system modifications** - Repo-local outputs only
 - **Audit log maintained** - NDJSON append-only format

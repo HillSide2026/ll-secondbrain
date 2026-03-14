@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """
 Gmail Integration Module
-Read-only Gmail API access with audit logging.
+Proposal-first Gmail API access with audit logging.
 
 This module provides:
 - Authenticated Gmail API client
-- Read-only message access
+- Read access used by inbox intelligence and rollups
+- Controlled-write support when explicitly enabled
 - Audit logging for all API calls
 
 Usage:
@@ -59,16 +60,17 @@ _configure_audit_logger()
 
 class GmailClient:
     """
-    Gmail API client with read-only access and audit logging.
+    Gmail API client with audit logging and explicit access modes.
 
     Authority Constraints:
-    - READ-ONLY: No send, modify, delete, or label operations
+    - DEFAULT MODE: Read-only operations only
+    - CONTROLLED WRITE MODE: Allows explicitly approved write methods
     - All API calls are logged to 06_RUNS/logs/gmail_audit.log
-    - Scope: gmail.readonly only
+    - OAuth scope is selected based on mode
     """
 
-    # Allowed read-only methods (explicit allowlist)
-    ALLOWED_METHODS = {
+    # Read methods used by inbox intelligence and rollups.
+    READ_METHODS = {
         'users.getProfile',
         'users.messages.list',
         'users.messages.get',
@@ -79,8 +81,8 @@ class GmailClient:
         'users.threads.get',
     }
 
-    # Explicitly prohibited methods (write operations)
-    PROHIBITED_METHODS = {
+    # Write methods that may be enabled explicitly for controlled execution paths.
+    WRITE_METHODS = {
         'users.messages.send',
         'users.messages.insert',
         'users.messages.modify',
@@ -97,13 +99,28 @@ class GmailClient:
         'users.labels.update',
         'users.labels.delete',
         'users.labels.patch',
+        'users.threads.modify',
     }
 
-    def __init__(self):
-        """Initialize Gmail client with credentials from .env"""
+    def __init__(self, mode: str = "read_only", allowed_write_methods: Optional[List[str]] = None):
+        """Initialize Gmail client with credentials from .env."""
+        if mode not in {"read_only", "controlled_write"}:
+            raise ValueError("mode must be 'read_only' or 'controlled_write'")
+
+        self.mode = mode
+        self.allowed_write_methods = set(allowed_write_methods or [])
+
+        unknown_write_methods = self.allowed_write_methods - self.WRITE_METHODS
+        if unknown_write_methods:
+            raise ValueError(f"Unknown write methods requested: {sorted(unknown_write_methods)}")
+
+        self.allowed_methods = set(self.READ_METHODS)
+        if self.mode == "controlled_write":
+            self.allowed_methods.update(self.allowed_write_methods or self.WRITE_METHODS)
+
         self._load_credentials()
         self._build_service()
-        self._log_audit("INIT", "Gmail client initialized (read-only mode)")
+        self._log_audit("INIT", f"Gmail client initialized (mode={self.mode})")
 
     def _load_credentials(self):
         """Load credentials from environment."""
@@ -124,13 +141,17 @@ class GmailClient:
         from google.oauth2.credentials import Credentials
         from googleapiclient.discovery import build
 
+        scopes = ['https://www.googleapis.com/auth/gmail.readonly']
+        if self.mode == "controlled_write":
+            scopes = ['https://www.googleapis.com/auth/gmail.modify']
+
         credentials = Credentials(
             token=None,
             refresh_token=self.refresh_token,
             token_uri="https://oauth2.googleapis.com/token",
             client_id=self.client_id,
             client_secret=self.client_secret,
-            scopes=['https://www.googleapis.com/auth/gmail.readonly']
+            scopes=scopes,
         )
 
         self.service = build('gmail', 'v1', credentials=credentials)
@@ -146,14 +167,19 @@ class GmailClient:
             audit_logger.warning(entry)
 
     def _check_method_allowed(self, method: str) -> bool:
-        """Verify method is in allowlist and not in blocklist."""
-        if method in self.PROHIBITED_METHODS:
-            self._log_audit("BLOCKED", f"Prohibited method attempted: {method}", success=False)
-            raise PermissionError(f"Method '{method}' is prohibited (write operation)")
-
-        if method not in self.ALLOWED_METHODS:
+        """Verify method is allowlisted for the current mode."""
+        known_methods = self.READ_METHODS | self.WRITE_METHODS
+        if method not in known_methods:
             self._log_audit("BLOCKED", f"Unknown method attempted: {method}", success=False)
             raise PermissionError(f"Method '{method}' is not in allowlist")
+
+        if method not in self.allowed_methods:
+            self._log_audit(
+                "BLOCKED",
+                f"Method not allowed in current mode: {method} (mode={self.mode})",
+                success=False,
+            )
+            raise PermissionError(f"Method '{method}' is not allowed in mode '{self.mode}'")
 
         return True
 
@@ -294,10 +320,10 @@ class GmailClient:
             raise
 
 
-def test_read_only_access():
-    """Test that read-only access works and write operations are blocked."""
+def test_client_access_modes():
+    """Test that read-only mode blocks writes and controlled-write mode can allow them."""
     print("=" * 60)
-    print("Gmail Integration Test - Read-Only Verification")
+    print("Gmail Integration Test - Access Mode Verification")
     print("=" * 60)
     print()
 
@@ -322,8 +348,8 @@ def test_read_only_access():
     print(f"  ✓ Found {len(labels)} labels")
     print()
 
-    # Test 4: Verify write methods are blocked
-    print("Test 4: Verify write operations are blocked...")
+    # Test 4: Verify write methods are blocked in read-only mode
+    print("Test 4: Verify write operations are blocked in read-only mode...")
     try:
         client._check_method_allowed('users.messages.send')
         print("  ✗ FAIL: Send should be blocked!")
@@ -342,12 +368,18 @@ def test_read_only_access():
     except PermissionError:
         print("  ✓ Draft creation correctly blocked")
 
+    # Test 5: Verify controlled-write mode can allow specific write methods
+    print("Test 5: Verify controlled-write mode can allow specific write methods...")
+    writer = GmailClient(mode="controlled_write", allowed_write_methods=['users.messages.modify'])
+    writer._check_method_allowed('users.messages.modify')
+    print("  ✓ users.messages.modify allowed in controlled-write mode")
+
     print()
     print("=" * 60)
-    print("All tests passed. Read-only access verified.")
+    print("All tests passed. Access mode policy verified.")
     print(f"Audit log: {AUDIT_LOG_FILE}")
     print("=" * 60)
 
 
 if __name__ == '__main__':
-    test_read_only_access()
+    test_client_access_modes()

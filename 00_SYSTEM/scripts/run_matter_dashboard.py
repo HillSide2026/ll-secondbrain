@@ -53,7 +53,7 @@ PREFILTER_PATH = OPS_DIR / "emails_prefiltered.json"
 ATTRIBUTED_PATH = OPS_DIR / "emails_attributed.json"
 LEDGER_PATH = OPS_DIR / "MATTER_TODO_LEDGER.json"
 REPORT_PATH = OPS_DIR / "MATTER_TODO_REPORT.md"
-LABEL_MANIFEST_PATH = OPS_DIR / "gmail_label_manifest_proposed.json"
+LABEL_MANIFEST_PATH = OPS_DIR / "gmail_label_manifest.json"
 
 PARTICIPANT_MAPPING_PATH = REPO_ROOT / "00_SYSTEM" / "participant_mapping.yaml"
 
@@ -774,9 +774,9 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Run Matter Dashboard daily cycle")
     parser.add_argument("--days", type=int, default=2, help="Email lookback window")
     parser.add_argument("--dry-run", action="store_true", help="Skip external I/O")
-    parser.add_argument("--label-manifest", action="store_true", help="Generate Gmail label manifest")
-    parser.add_argument("--label-execute", action="store_true", help="Execute Gmail labeling via gmail_labeler.py")
-    parser.add_argument("--approval-artifact", type=str, default="", help="Approval artifact path for labeling run")
+    parser.add_argument("--label-manifest", action="store_true", help="Generate Gmail label manifest artifact")
+    parser.add_argument("--label-execute", action="store_true", help="Execute controlled Gmail labeling via gmail_labeler.py")
+    parser.add_argument("--approval-artifact", type=str, default="", help="Approval artifact path for controlled labeling run")
     args = parser.parse_args()
 
     print("=" * 60)
@@ -1001,8 +1001,8 @@ def main() -> int:
     # Step 9b: Refresh the evergreen dashboard tab (index 0, overview)
     push_dashboard(ledger, matters, dry_run=args.dry_run)
 
-    # Step 10: Optional Gmail labeling manifest + execution
-    if args.label_manifest:
+    # Step 10: Optional Gmail labeling artifact + controlled execution
+    if args.label_manifest or args.label_execute:
         manifest = build_label_manifest(attributed, matters, args.approval_artifact)
         LABEL_MANIFEST_PATH.write_text(json.dumps(manifest, indent=2))
         print(f"Wrote Gmail label manifest: {LABEL_MANIFEST_PATH}")

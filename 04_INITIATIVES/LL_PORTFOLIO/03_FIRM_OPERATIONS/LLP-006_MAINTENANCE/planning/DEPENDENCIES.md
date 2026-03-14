@@ -9,7 +9,8 @@ Stage: Planning
 - `04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/LLP-006_MAINTENANCE/initiation/README.md`
 - Proposed protocols referenced by LLP-006 scope:
   - `PRO-013` Matter Filing Protocol
-  - `PRO-014` Inbox Governance Protocol
+  - `PRO-014` Inbox State and Matter Management Protocol
+  - `PRO-018` Inbox Soft Junk Cleanup Protocol
   - `PRO-015` Calendar Governance Protocol
   - `PRO-016` Clio Matter Sync Protocol
 

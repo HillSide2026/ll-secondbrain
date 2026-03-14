@@ -6,15 +6,15 @@ status: draft
 approval: pending
 approved_by: ~
 project: LLP-006
-version: 0.1
+version: 0.2
 created_date: 2026-03-09
-last_updated: 2026-03-09
-tags: [policy, gmail, inbox, labeling, classification, legalmatters, clio]
+last_updated: 2026-03-14
+tags: [policy, gmail, inbox, labeling, classification, legalmatters, clio, cleanup]
 ---
 
 # POL-042 — Inbox Governance Policy
 
-Policy Statement: Gmail inbox classification must be governed by a canonical state label framework, matter label structure, and approval gate. No Gmail label may be written by an agent or script without prior ML1 approval. All matter labels must reference a valid Clio matter ID as the canonical matter identifier.
+Policy Statement: Gmail inbox administration must distinguish between state-and-matter management and soft-junk cleanup. Gmail state or matter labels must be governed by a canonical framework and approval gate. Inbox cleanup actions must be governed by a separate cleanup protocol. No Gmail label may be written by an agent or script without prior ML1 approval unless the governing cleanup protocol expressly allows ML1-directed execution.
 
 Authority (Principles referenced): PRN-003, PRN-004, PRN-008, PRN-026
 
@@ -22,7 +22,7 @@ Enforcement expectation: Violations of state exclusivity, unauthorized label wri
 
 Supersedes: None
 
-Enforcement Protocol: PRO-014
+Enforcement Protocols: PRO-014, PRO-018
 
 ---
 
@@ -35,6 +35,7 @@ The policy defines:
 
 - The authoritative state label framework applied to Gmail threads.
 - The structure of matter labels linking emails to legal matters.
+- The separate cleanup lane for soft-junk inbox administration.
 - The approval controls required before Gmail labels are written.
 - The permitted data access scope for inbox classification agents.
 
@@ -42,7 +43,7 @@ The policy ensures that inbox activity supports the matter-centric architecture
 of the system, in which each email thread related to legal work can be traced
 to a corresponding legal matter.
 
-Operational protocols implementing this policy are defined in PRO-014.
+Operational protocols implementing this policy are defined in `PRO-014` and `PRO-018`.
 
 ---
 
@@ -81,6 +82,7 @@ The policy governs:
 - Gmail label structure
 - Batch labeling controls
 - Approval requirements for label writes
+- Inbox cleanup controls
 
 The policy does not govern:
 - Google Calendar
@@ -156,7 +158,8 @@ These proposals must be based on deterministic signals such as:
 - Existing Gmail label paths
 - Presence of Clio matter IDs in subject or snippet
 
-Signal lists and classification logic are defined in PRO-014.
+State and matter signal lists are defined in `PRO-014`.
+Soft-junk cleanup signals and confirmed cleanup sender lists are defined in `PRO-018`.
 
 **Automated classification does not authorize execution.**
 All classification results are proposals only.
@@ -234,7 +237,7 @@ These are defined in supporting protocols.
 |----|------|
 | NTD-1 | Confirm canonical sender domain lists |
 | NTD-2 | Define handling of multi-matter threads |
-| NTD-3 | Define archival behavior for `80_Junk (Pending Review)` |
+| NTD-3 | Confirm final operating boundary between `80_Junk (Pending Review)` and `PRO-018` cleanup actions |
 
 ---
 
@@ -243,3 +246,4 @@ These are defined in supporting protocols.
 | Version | Date | Change |
 |---------|------|--------|
 | 0.1 | 2026-03-09 | Initial policy. Derived from PRO-014 v0.2. |
+| 0.2 | 2026-03-14 | Distinguish inbox state-and-matter management from soft-junk cleanup. Add `PRO-018` as a separate enforcement protocol. |

@@ -631,9 +631,9 @@ protocols:
   policy: unknown
   history: []
 - id: PRO-014
-  title: Inbox Governance Protocol
+  title: Inbox State and Matter Management Protocol
   path: 01_DOCTRINE/05_PROTOCOLS/PRO-014_Inbox_Governance_Protocol.md
-  version: '0.1'
+  version: '0.4'
   status: draft
   policy: unknown
   history: []
@@ -650,6 +650,13 @@ protocols:
   version: '0.2'
   status: draft
   policy: POL-034
+  history: []
+- id: PRO-018
+  title: Inbox Soft Junk Cleanup Protocol
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-018_Inbox_Soft_Junk_Cleanup_Protocol.md
+  version: '0.1'
+  status: draft
+  policy: POL-042
   history: []
 - id: 01_doctrine__protocols__readme_md
   title: Protocols (Level 4)

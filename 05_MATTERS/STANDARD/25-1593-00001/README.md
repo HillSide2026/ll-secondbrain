@@ -5,7 +5,7 @@ title: 1001162998 Ontario Corp. o/a KaleMart
 owner: ML1
 status: draft
 created_date: 2026-02-02
-last_updated: 2026-02-02
+last_updated: 2026-03-14
 tags: [matter, 25-1593-00001]
 practice_areas: [TBD]
 ---
@@ -24,7 +24,7 @@ practice_areas: [TBD]
 `2463515755`
 
 ## Description
-REVIEW BINDING RETAIL OFFER TO LEASE (601–603 Yonge Street, Toronto)
+KaleMart lease letter of intent matter (601-603 Yonge Street, Toronto)
 
 ## Key Dates
 - **Opened:** 2025-01-01

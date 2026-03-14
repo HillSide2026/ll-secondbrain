@@ -4,7 +4,7 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-15
-last_updated: 2026-03-09
+last_updated: 2026-03-14
 last_imported_from: 00_SYSTEM/participant_mapping.yaml
 last_imported_date: '2026-02-15'
 import_notes: Initial import from participant_mapping.yaml (draft routing map).
@@ -237,6 +237,22 @@ matters:
   brief:
     matter_name: Georgiana Nicoară
     delivery_status: STANDARD
+- matter_id: 25-1553-00001
+  aliases:
+    email:
+      name_keys: []
+      domains: []
+      senders: []
+  review:
+    status: needs_ml1_review
+    notes: Added from matter folder canon; no validated sender aliases captured yet.
+  brief:
+    matter_name: 15652227 Canada Inc.
+    client:
+    - 15652227 Canada Inc.
+    summary: Open active matter. The repo currently identifies the client name but
+      does not yet capture validated contacts, counterparties, or scoped sender identities.
+    delivery_status: STANDARD
 - matter_id: 25-1571-00001
   aliases:
     email:
@@ -279,9 +295,15 @@ matters:
     notes: Imported from participant_mapping.yaml
   brief:
     matter_name: 1001162998 Ontario Corp. o/a KaleMart
+    summary: KaleMart lease letter of intent matter tied to the 601-603 Yonge Street
+      lease file. Repo evidence identifies Chris Roop as a key contact and points
+      to landlord / leasing-side participants in related email artifacts.
     client:
     - KaleMart (Franchisee)
     third_parties:
+    - Angel Developments Inc.
+    - Adam Steiner
+    - Jackson Turner (CBRE)
     - KaleMart (Franchisor)
     - Chris Roop
     delivery_status: STANDARD
@@ -495,6 +517,24 @@ matters:
   brief:
     matter_name: Andersen
     delivery_status: ESSENTIAL
+- matter_id: 26-1593-00002
+  aliases:
+    email:
+      name_keys: []
+      domains: []
+      senders: []
+  review:
+    status: needs_ml1_review
+    notes: Added from matter folder canon; kept alias-empty pending distinction from 25-1593-00001.
+  brief:
+    matter_name: 1001162998 Ontario Corp. o/a KaleMart
+    client:
+    - 1001162998 Ontario Corp. o/a KaleMart
+    summary: Open active KaleMart lease matter. This file is distinct from
+      25-1593-00001, which is the KaleMart lease letter of intent matter. The
+      repo confirms the client identity but does not yet capture validated routing
+      aliases or a fuller party map for this matter.
+    delivery_status: STRATEGIC
 - matter_id: 26-1630-00001
   aliases:
     email:

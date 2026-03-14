@@ -5,7 +5,7 @@ title: 1001162998 Ontario Corp. o/a KaleMart
 owner: ML1
 status: draft
 created_date: 2026-02-03
-last_updated: 2026-02-03
+last_updated: 2026-03-14
 tags: [matter, 26-1593-00002]
 practice_areas: [TBD]
 ---
@@ -19,6 +19,9 @@ practice_areas: [TBD]
 - **Clio Status:** Open
 - **Delivery Status:** Strategic
 - **Fulfillment Status:** active
+
+## Description
+KaleMart lease matter
 
 ## Key Dates
 - **Opened:** 2026-01-01

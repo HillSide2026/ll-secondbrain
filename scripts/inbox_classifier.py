@@ -4,12 +4,13 @@ Inbox Classifier Module
 Stage 2.3 / 2.4 — Inbox Intelligence Layer
 
 Deterministic inbox triage classifier that:
-- Reads Gmail messages (read-only)
+- Reads Gmail messages
 - Produces classification proposals
 - Logs every decision
 - Generates Draft Placement Plan artifacts
 
-NO EXECUTION. NO WRITES TO GMAIL. PROPOSALS ONLY.
+This module is proposal-generation only. Controlled Gmail writes are allowed
+elsewhere in the system when explicitly authorized through the execution path.
 
 Taxonomy v1.3 (2026-01-29)
 """
@@ -162,8 +163,9 @@ class InboxClassifier:
     Deterministic inbox classifier.
 
     Authority Constraints:
-    - READ-ONLY: No Gmail writes
-    - PROPOSALS ONLY: No execution
+    - CLASSIFICATION ONLY: Produces proposals and routing signals
+    - NO DIRECT EXECUTION: Does not apply Gmail writes itself
+    - CONTROLLED WRITES EXIST ELSEWHERE: Approved execution paths may apply labels
     - LOGGED: Every decision recorded
 
     Taxonomy: v1.3

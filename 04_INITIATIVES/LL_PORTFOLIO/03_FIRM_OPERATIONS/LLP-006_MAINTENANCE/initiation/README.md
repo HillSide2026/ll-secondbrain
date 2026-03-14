@@ -38,6 +38,7 @@ filed, and made accessible to agents and staff.
 | Protocol | Title | Status |
 |----------|-------|--------|
 | PRO-013 | Matter Filing Protocol | Draft — pending ML1 approval |
-| PRO-014 | Inbox Governance Protocol | Draft — pending ML1 approval |
+| PRO-014 | Inbox State and Matter Management Protocol | Draft — pending ML1 approval |
+| PRO-018 | Inbox Soft Junk Cleanup Protocol | Draft — pending ML1 approval |
 | PRO-015 | Calendar Governance Protocol | Proposed — not yet drafted |
 | PRO-016 | Clio Matter Sync Protocol | Proposed — not yet drafted |
