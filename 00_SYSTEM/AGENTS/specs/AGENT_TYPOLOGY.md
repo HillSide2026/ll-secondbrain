@@ -55,10 +55,10 @@ Generated on 2026-03-09.
 | --- | --- | --- | --- | --- |
 | LLM-001 — Chief of Staff | LLM | Planned | `00_SYSTEM/AGENTS/LLM-001_CHIEF_OF_STAFF.md` |  |
 | LLM-003 — CFO Agent | LLM | Planned | `00_SYSTEM/AGENTS/LLM-003_CFO_AGENT.md` |  |
-| LLM-004 — Project Management Agent | LLM | draft | `00_SYSTEM/AGENTS/LLM-004_PROJECT_MANAGEMENT_AGENT.md` |  |
-| LLM-005 — Portfolio Management Agent | LLM | draft | `00_SYSTEM/AGENTS/LLM-005_PORTFOLIO_MANAGEMENT_AGENT.md` |  |
-| LLM-006 — Portfolio Governance Agent | LLM | draft | `00_SYSTEM/AGENTS/LLM-006_PORTFOLIO_GOVERNANCE_AGENT.md` |  |
-| LLM-007 — Fulfillment Orchestrator Agent | LLM | draft | `00_SYSTEM/AGENTS/LLM-007_FULFILLMENT_ORCHESTRATOR_AGENT.md` | fulfillment lifecycle orchestration (`LLP-004` to `LLP-008`) under `POL-034` |
+| LLM-004 — Project Management Agent | LLM | Draft | `00_SYSTEM/AGENTS/LLM-004_PROJECT_MANAGEMENT_AGENT.md` |  |
+| LLM-005 — Portfolio Management Agent | LLM | Draft | `00_SYSTEM/AGENTS/LLM-005_PORTFOLIO_MANAGEMENT_AGENT.md` |  |
+| LLM-006 — Portfolio Governance Agent | LLM | Draft | `00_SYSTEM/AGENTS/LLM-006_PORTFOLIO_GOVERNANCE_AGENT.md` |  |
+| LLM-007 — Fulfillment Orchestrator Agent | LLM | Draft | `00_SYSTEM/AGENTS/LLM-007_FULFILLMENT_ORCHESTRATOR_AGENT.md` | fulfillment lifecycle orchestration (`LLP-004` to `LLP-008`) under `POL-034` |
 
 ### System Admin Agents (SAA)
 
@@ -107,27 +107,27 @@ Skill map: `00_SYSTEM/AGENTS/specs/marketing/MARKETING_AGENT_SKILL_MAP.md`
 
 | Agent | Class | Status | Path | Canonical Path Confirmed (Y/N) | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Contracts Master Agent — Expert Spec (Ontario) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/CONTRACTS/AGENTS/CONTRACTS_MASTER_AGENT.md` | Y | canonical |
-| (duplicate) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/CONTRACTS/WORKFLOWS/agents/CONTRACTS_MASTER_AGENT.md` | N | duplicate path (invalid until resolved) |
-| Corporate Law Master Agent — Expert Spec (Ontario) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/CORPORATE/AGENTS/CORPORATE_LAW_MASTER_AGENT.md` | Y | canonical |
-| (duplicate) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/CORPORATE/WORKFLOWS/agents/CORPORATE_LAW_MASTER_AGENT.md` | N | duplicate path (invalid until resolved) |
-| Payment Services Master Agent — Expert Spec (Canada) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/AGENTS/PAYMENTSERVICES_MASTER_AGENT.md` | Y | canonical |
-| (duplicate) | PRACTICE_MASTER | draft | `02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/payments/agents/PAYMENTSERVICES_MASTER_AGENT.md` | N | duplicate path (invalid until resolved) |
+| Contracts Master Agent — Expert Spec (Ontario) | PRACTICE_MASTER | Draft | `02_PLAYBOOKS/CONTRACTS/AGENTS/CONTRACTS_MASTER_AGENT.md` | Y | canonical |
+| (duplicate) | PRACTICE_MASTER | Draft | `02_PLAYBOOKS/CONTRACTS/WORKFLOWS/agents/CONTRACTS_MASTER_AGENT.md` | N | duplicate path (invalid until resolved) |
+| Corporate Law Master Agent — Expert Spec (Ontario) | PRACTICE_MASTER | Draft | `02_PLAYBOOKS/CORPORATE/AGENTS/CORPORATE_LAW_MASTER_AGENT.md` | Y | canonical |
+| (duplicate) | PRACTICE_MASTER | Draft | `02_PLAYBOOKS/CORPORATE/WORKFLOWS/agents/CORPORATE_LAW_MASTER_AGENT.md` | N | duplicate path (invalid until resolved) |
+| Payment Services Master Agent — Expert Spec (Canada) | PRACTICE_MASTER | Draft | `02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/AGENTS/PAYMENTSERVICES_MASTER_AGENT.md` | Y | canonical |
+| (duplicate) | PRACTICE_MASTER | Draft | `02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/payments/agents/PAYMENTSERVICES_MASTER_AGENT.md` | N | duplicate path (invalid until resolved) |
 
 ### Other Agent Specs
 
 | Agent | Class | Status | Path | Notes |
 | --- | --- | --- | --- | --- |
-| Matter Management Agent — Stage 2.11 | SMA | draft | `00_SYSTEM/AGENTS/specs/AGENT__MATTER_MANAGEMENT__STAGE_2_11.md` |  |
-| AGENT SPEC — Matter Operations Queue Tracker | SMA | draft | `00_SYSTEM/AGENT_SPEC-MATTER_OPERATIONS_QUEUE_TRACKER.md` |  |
-| AGENT SPEC — Matter Operations Queue Tracker | SMA | draft | `04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/AGENT_SPEC-MATTER_OPERATIONS_QUEUE_TRACKER.md` |  |
+| Matter Management Agent — Stage 2.11 | SMA | Draft | `00_SYSTEM/AGENTS/specs/AGENT__MATTER_MANAGEMENT__STAGE_2_11.md` |  |
+| AGENT SPEC — Matter Operations Queue Tracker | SMA | Draft | `00_SYSTEM/AGENT_SPEC-MATTER_OPERATIONS_QUEUE_TRACKER.md` |  |
+| AGENT SPEC — Matter Operations Queue Tracker | SMA | Draft | `04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/AGENT_SPEC-MATTER_OPERATIONS_QUEUE_TRACKER.md` |  |
 
 ### Agent Frameworks (Not Agents)
 
 | Document | Status | Path | Notes |
 | --- | --- | --- | --- |
-| Agent Typology | draft | `00_SYSTEM/AGENTS/specs/AGENT_TYPOLOGY.md` |  |
-| Practice Area Master Agent — Spec v1.0 | draft | `00_SYSTEM/AGENTS/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md` |  |
+| Agent Typology | Draft | `00_SYSTEM/AGENTS/specs/AGENT_TYPOLOGY.md` |  |
+| Practice Area Master Agent — Spec v1.0 | Draft | `00_SYSTEM/AGENTS/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md` |  |
 
 ### Referenced but Missing Specs
 

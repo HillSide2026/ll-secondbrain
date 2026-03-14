@@ -232,7 +232,7 @@ This is:
 * A planning reference for delivery capacity
 * Explicitly non-binding
 
-ML2 may **observe and report** against this intent but must not:
+The System may **observe and report** against this intent but must not:
 
 * Enforce it
 * Automatically move matters between states
@@ -264,7 +264,7 @@ ML1 is the sole authority for:
 
 ## Explicit Prohibitions
 
-ML2 must NOT:
+The System must NOT:
 - Evaluate matter performance
 - Judge delivery efficiency
 - Predict outcomes

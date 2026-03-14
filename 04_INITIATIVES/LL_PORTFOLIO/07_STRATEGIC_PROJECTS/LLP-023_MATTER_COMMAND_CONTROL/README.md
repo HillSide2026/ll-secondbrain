@@ -37,7 +37,7 @@ ML1 is the sole authority to approve rule changes, escalation policy, and promot
 
 ## Explicit Prohibitions
 
-ML2 must NOT:
+The System must NOT:
 
 - Treat ML2 artifacts as source-of-truth matter status
 - Persist full-source replicas beyond approved cache snapshots

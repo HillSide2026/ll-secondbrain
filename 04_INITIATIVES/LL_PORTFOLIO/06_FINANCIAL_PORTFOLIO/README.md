@@ -42,11 +42,11 @@ Financial visibility and modeling WITHOUT decision authority.
 
 ## ML1 Authority Statement
 
-ML1 is the sole authority for pricing decisions, discount approvals, and profitability declarations. ML2 may model scenarios but all outputs are advisory only.
+ML1 is the sole authority for pricing decisions, discount approvals, and profitability declarations. The System may model scenarios against ML2 canon, but all outputs are advisory only.
 
 ## Explicit Prohibitions
 
-ML2 must NOT:
+The System must NOT:
 
 - Set prices
 - Approve discounts

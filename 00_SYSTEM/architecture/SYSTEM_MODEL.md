@@ -17,7 +17,8 @@ This document defines the architectural model of the LL Second Brain environment
 
 It clarifies the distinction between:
 
-- ML1 (human authority)
+- ML1 (human authority outside the Second Brain)
+- The Second Brain (umbrella architecture)
 - ML2 (governed ontology)
 - The System (execution environment)
 - The Repository (transport container)
@@ -48,9 +49,24 @@ ML1 is not automated.
 
 ---
 
+## Second Brain - Umbrella Architecture
+
+The Second Brain is the umbrella architecture composed of:
+
+- ML2 (canonical memory and governed ontology)
+- The System (execution, enforcement, and runtime mechanisms)
+
+The Second Brain is governed by ML1.
+
+ML1 is not part of the Second Brain.
+
+---
+
 ## ML2 - Governed Ontology
 
-ML2 is the system-of-record for durable knowledge and its operating rules.
+ML2 is the canonical system-of-record for durable knowledge and its operating rules.
+
+ML2 preserves memory, structure, and approved operating logic.
 
 ML2 consists exclusively of governed artifacts defined by the ML2 Ontology Boundary invariant.
 
@@ -66,7 +82,7 @@ ML2 consists exclusively of governed artifacts defined by the ML2 Ontology Bound
 - Integration specifications (non-secret)
 
 ML2 is conceptual.  
-It is not defined by its storage medium.
+It is not defined by its storage medium or by the repository container.
 
 If the execution engine changes, ML2 artifacts remain authoritative.
 
@@ -74,12 +90,10 @@ If the execution engine changes, ML2 artifacts remain authoritative.
 
 ## The System - Execution of ML2
 
-The System is the operational environment that executes, enforces, and maintains ML2.
+The System is the operational environment that reads, executes, enforces, and maintains ML2.
 
 It consists of:
 
-- ML1 (authority)
-- ML2 (ontology)
 - Agents (system-management and domain agents)
 - Orchestration logic
 - Retrieval mechanisms
@@ -87,8 +101,8 @@ It consists of:
 - Runtime infrastructure
 - Validation and QA processes
 
-The System enforces ML2.  
-It is not itself ML2.
+The System operates against ML2 under ML1 authority.  
+It is not itself ML2 and does not include ML1.
 
 If the execution engine changes, the System may change.  
 ML2 must remain intact.
@@ -104,6 +118,8 @@ The repository is the current storage and execution container for:
 - Tooling and configuration
 
 The repository is not ML2.
+The repository is not the System.
+The repository is not the Second Brain as a conceptual architecture.
 
 The repository may contain:
 
@@ -281,8 +297,9 @@ Automation for these metrics is not required for this document to remain valid.
 
 # Layer Model (Stable Form)
 
-ML1 -> Authority  
-ML2 -> Ontology  
+ML1 -> External human authority over the Second Brain  
+Second Brain -> Umbrella architecture (ML2 + System)  
+ML2 -> Canonical memory / ontology  
 System -> Execution of ontology  
 Repository -> Transport container
 

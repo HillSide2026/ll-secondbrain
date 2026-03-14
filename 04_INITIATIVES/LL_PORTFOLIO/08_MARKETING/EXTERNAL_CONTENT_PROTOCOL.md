@@ -12,7 +12,7 @@ tags: []
 
 **Location:** `LL_PORTFOLIO/08_MARKETING/`
 
-**Applies to:** Second Brain (ML2)
+**Applies to:** System execution against ML2-governed marketing artifacts
 
 **Scope:** Book manuscript + Blog content (100% external to client matters)
 
@@ -22,7 +22,7 @@ tags: []
 
 ## 1. Purpose
 
-This protocol governs how the Second Brain (ML2) may **analyze, improve, and extend external-facing content**, including:
+This protocol governs how the System, operating against ML2-governed marketing artifacts, may **analyze, improve, and extend external-facing content**, including:
 
 * A draft book manuscript
 * A pre-planned blog content calendar (first 6 months)
@@ -47,7 +47,7 @@ All content covered by this protocol is:
 * Non-operational
 * Non-delivery
 
-ML2 must treat this content as:
+The System must treat this content as:
 
 * Educational
 * Thought leadership
@@ -74,9 +74,9 @@ ML2 must treat this content as:
 
 ---
 
-## 4. What ML2 Is Allowed to Do
+## 4. What the System Is Allowed to Do
 
-ML2 MAY:
+The System MAY:
 
 * Analyze drafts for:
 
@@ -116,9 +116,9 @@ ML2 MAY:
 
 ---
 
-## 5. What ML2 Is Explicitly Prohibited From Doing
+## 5. What the System Is Explicitly Prohibited From Doing
 
-ML2 MUST NOT:
+The System MUST NOT:
 
 * Provide legal advice
 * Tailor content to specific clients or fact patterns
@@ -128,13 +128,13 @@ ML2 MUST NOT:
 * Reference active or hypothetical matters
 * Convert content into delivery workflows
 
-> **Rule:** If a reader could reasonably treat the content as advice for their specific situation, ML2 must flag it for revision.
+> **Rule:** If a reader could reasonably treat the content as advice for their specific situation, the System must flag it for revision.
 
 ---
 
 ## 6. Improvement Workflow (Book)
 
-For the book manuscript, ML2 operates in **editorial mode**, not author mode.
+For the book manuscript, the System operates in **editorial mode**, not author mode.
 
 ### Step 1: Structural Review
 
@@ -165,16 +165,16 @@ All changes are **proposed**, not applied, until approved by ML1.
 
 ## 7. Improvement Workflow (Blog)
 
-For the blog, ML2 operates against the **existing content calendar**.
+For the blog, the System operates against the **existing content calendar**.
 
-ML2 MAY:
+The System MAY:
 
 * Improve outlines
 * Suggest angles or reframing
 * Strengthen introductions and conclusions
 * Ensure continuity across posts
 
-ML2 MUST:
+The System MUST:
 
 * Respect the calendar sequence
 * Avoid introducing delivery or matter-level specificity
@@ -195,20 +195,20 @@ All content should:
 ## 9. Approval & Versioning
 
 * All edits are drafts until ML1 approval
-* ML2 must preserve original versions
+* The System must preserve original versions
 * Changes must be attributable and reviewable
 
 ---
 
 ## 10. Escalation Rule
 
-If ML2 encounters:
+If the System encounters:
 
 * unclear legal boundaries
 * jurisdiction-specific risk
 * content that could be misconstrued as advice
 
-ML2 must:
+The System must:
 
 > Stop. Flag. Request ML1 guidance.
 
@@ -224,7 +224,7 @@ ML1 is the sole authority for:
 
 ## Explicit Prohibitions
 
-ML2 must NOT:
+The System must NOT:
 - Provide legal advice
 - Tailor content to specific clients or fact patterns
 - Promise outcomes or draft engagement language

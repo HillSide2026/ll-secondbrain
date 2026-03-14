@@ -1,3 +1,13 @@
+---
+id: llp-005_opening__planning__workplan
+title: LLP-005 Planning Workplan
+owner: ML1
+status: draft
+created_date: 2026-03-08
+last_updated: 2026-03-14
+tags: [llp-005, opening, planning, workplan]
+---
+
 # Workplan
 
 Project ID: LLP-26-06
@@ -46,7 +56,7 @@ Prepare immediate implementation of Opening from Gate 2 (engagement signed) to G
 - Clio (matter state + required opening fields)
 - Asana (Opening task flow)
 - SharePoint (opening documents and structure)
-- ML2 repository artifacts
+- ML2-governed repository artifacts
 
 ## Completion Condition
 Planning is complete when Opening implementation can start with approved intake/checklist rules, approved readiness requirements, approved KPI thresholds, and ML1 stage-gate authorization.

@@ -14,7 +14,7 @@ tags: [stage3, roadmap, sharepoint, execution, bridge]
 
 - **Status:** ✅ COMPLETE
 - **Owner:** ML1
-- **Authority Gate:** ML1 sole approval authority; ML2 executes only upon explicit ML1 trigger
+- **Authority Gate:** ML1 sole approval authority; the System executes only upon explicit ML1 trigger
 
 ---
 
@@ -69,7 +69,7 @@ Stage 3.8 closes only when execution is:
 # 3. Hard Constraints
 
 1. ML1 retains sole authority for promotion.
-2. ML2 may generate drafts only via validated bridge request.
+2. The System may generate drafts only via validated bridge request.
 3. DRAFTS are write-once.
 4. FINAL is append-only.
 5. Every execution produces a durable run log.

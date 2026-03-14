@@ -1,3 +1,13 @@
+---
+id: llp-011_funnel1_management__planning__workplan
+title: LLP-011 Planning Workplan
+owner: ML1
+status: draft
+created_date: 2026-03-08
+last_updated: 2026-03-14
+tags: [llp-011, marketing, funnel1, planning, workplan]
+---
+
 # Workplan
 
 Project ID: LLP-26-24
@@ -57,7 +67,7 @@ Notes:
 ### Systems / Tools
 - Google Ads (acquisition channel)
 - Go High Level (intake and scheduling flow)
-- ML2 repository artifacts for doctrine and funnel specifications
+- ML2-governed repository artifacts for doctrine and funnel specifications
 
 ### Capacity Notes
 - Implementation may proceed only after explicit ML1 Planning -> Implementation approval.

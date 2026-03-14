@@ -31,7 +31,7 @@ ML1 is the sole authority to define, approve, and activate this project.
 
 ## Explicit Prohibitions
 
-ML2 must NOT:
+The System must NOT:
 
 - Execute work under this project without ML1 approval
 - Publish outputs as firm policy

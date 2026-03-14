@@ -54,11 +54,11 @@ These are firm-wide and not practice-area specific.
 
 ## ML1 Authority Statement
 
-ML1 makes all policy decisions. ML2 may document processes but must not enforce rules without ML1 sign-off.
+ML1 makes all policy decisions. The System may document processes against ML2 canon but must not enforce rules without ML1 sign-off.
 
 ## Explicit Prohibitions
 
-ML2 must NOT:
+The System must NOT:
 
 - Make policy decisions
 - Enforce rules without ML1 approval

@@ -39,16 +39,16 @@ ML1 may:
 - Reject promotion
 - Halt execution pipeline
 
-### ML2 — Execution Agent
+### System — Execution Layer
 
-ML2 may:
+The System may:
 
 - Generate DRAFT documents
 - Execute promotion only upon explicit ML1 trigger
 - Set metadata only within defined schema contract
 - Write run logs
 
-ML2 may NOT:
+The System may NOT:
 
 - Promote without ML1 trigger
 - Modify FINAL documents

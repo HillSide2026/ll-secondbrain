@@ -260,7 +260,7 @@ Marketing MUST NOT include or model:
 
 ## 9. Refusal Rules (Mandatory)
 
-ML2 must refuse to:
+The System must refuse to:
 
 * Treat offers as delivery workflows
 * Treat the value ladder as a delivery roadmap
@@ -284,7 +284,7 @@ ML1 is the sole authority for:
 
 ## Explicit Prohibitions
 
-ML2 must NOT:
+The System must NOT:
 - Accept or reject work autonomously
 - Open matters in Clio
 - Infer delivery priority or scope

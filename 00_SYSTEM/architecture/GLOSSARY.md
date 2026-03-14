@@ -90,13 +90,19 @@ These may exist under `01_DOCTRINE` for governance support but are not doctrine 
 - Tests
 
 ## ML1
-Human authority component (Matthew Levine) in the authority layer. Sole source of final judgment, approval, and exceptions.
+Human authority component (Matthew Levine) in the authority layer. Sole source of final judgment, approval, and exceptions. ML1 governs the Second Brain but is not a component within it.
 
 ## ML2
-Canonical, versioned system-of-record component in the record layer for governed knowledge artifacts.
+Canonical, versioned system-of-record component in the record layer for governed knowledge artifacts. ML2 preserves durable memory and operating rules. It is not the storage container.
 
 ## System
-Operational reasoning and runtime component in the execution layer that applies doctrine, enforces controls, detects drift, and produces diagnostics. It does not originate doctrine.
+Operational reasoning and runtime component in the execution layer that reads and executes ML2, applies doctrine, enforces controls, detects drift, and produces diagnostics. It does not originate doctrine and does not include ML1.
+
+## Second Brain
+Umbrella architecture composed of ML2 and the System. It is governed by ML1 but does not include ML1 as a component.
+
+## Repository
+Current transport and storage container for ML2 artifacts, system implementation components, tooling, and configuration. The repository is not identical to ML2, the System, or the Second Brain as a conceptual model.
 
 ## LL
 Human distribution component (Levine Law personnel) in the distribution layer. Delivers authorized services from approved outputs and provides operational signals.

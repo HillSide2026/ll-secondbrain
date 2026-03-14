@@ -1,3 +1,13 @@
+---
+id: llp-006_maintenance__planning__workplan
+title: LLP-006 Planning Workplan
+owner: ML1
+status: draft
+created_date: 2026-03-08
+last_updated: 2026-03-14
+tags: [llp-006, maintenance, planning, workplan]
+---
+
 # Workplan
 
 Project ID: LLP-26-07
@@ -52,7 +62,7 @@ Prepare immediate implementation of a Sunday matter-reconciliation function acro
 - Clio
 - SharePoint
 - Asana
-- ML2 repository (`05_MATTERS`, `00_SYSTEM` mappings)
+- Repository artifacts under ML2 governance (`05_MATTERS`, `00_SYSTEM` mappings)
 
 ### Capacity Notes
 - Sunday run must complete with run log and exception output each cycle.

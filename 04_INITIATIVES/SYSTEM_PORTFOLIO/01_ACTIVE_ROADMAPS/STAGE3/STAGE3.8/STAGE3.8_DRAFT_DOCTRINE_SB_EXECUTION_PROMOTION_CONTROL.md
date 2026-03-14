@@ -31,7 +31,7 @@ It does not define technical implementation details (see Draft Spec).
 ## 2. Hierarchy Enforcement
 
 - ML1 retains sole authority to approve publication.
-- ML2 may generate drafts and execute promotion only upon ML1 trigger.
+- The System may generate drafts and execute promotion only upon ML1 trigger.
 - LL consumes FINAL outputs only; drafts are non-authoritative.
 - No automation may substitute for ML1 approval.
 
@@ -39,7 +39,7 @@ It does not define technical implementation details (see Draft Spec).
 
 ## 3. Scope Boundary (Execution Enclave)
 
-ML2 write authority is strictly limited to:
+System write authority is strictly limited to:
 
 ```
 SB Execution/
@@ -49,7 +49,7 @@ SB Execution/
     TEMPLATES/
 ```
 
-ML2 may not:
+The System may not:
 
 - Modify content outside this subtree
 - Overwrite any existing file in DRAFTS

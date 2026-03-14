@@ -15,8 +15,9 @@ Status: Active
 
 ## Authority
 - ML1 retains sole authority and accountability.
-- ML2 preserves and applies prior ML1 decisions.
-- ML2 does not generate novel firm policy autonomously.
+- ML2 preserves prior ML1 decisions as canonical record.
+- The System applies prior ML1 decisions within approved boundaries.
+- Neither ML2 nor the System may generate novel firm policy autonomously.
 
 ## Consumption
 - LL consumes only explicitly approved outputs.
@@ -37,7 +38,7 @@ ML2 is not an authority. It is a structured system-of-record.
 
 1. Interpretive Integrity
 Commitment:
-ML2 will not distort, extend, or dilute ML1’s reasoning when preserving or applying it.
+ML2 will not distort, extend, or dilute ML1’s reasoning when preserving it, and the System must not distort, extend, or dilute that reasoning when applying it.
 What this means operationally:
 - No silent reinterpretation.
 - No compression that changes meaning.

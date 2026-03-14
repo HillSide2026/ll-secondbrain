@@ -22,7 +22,7 @@ tags: [stage5, roadmap, delegated-execution, corporate-solutions]
 
 ## Stage 5 Core Question
 
-> Can ML2 execute **corporate solution workflows** deterministically using the approved solution frames in `02_PLAYBOOKS/CORPORATE/WORKFLOWS/solutions/`, without introducing new judgment or exporting drafts to external systems?
+> Can the System execute **corporate solution workflows** deterministically against approved ML2 canon using the solution frames in `02_PLAYBOOKS/CORPORATE/WORKFLOWS/solutions/`, without introducing new judgment or exporting drafts to external systems?
 
 **Stage 5 succeeds if solution execution is repeatable, auditable, and entirely bounded by existing doctrine.**
 

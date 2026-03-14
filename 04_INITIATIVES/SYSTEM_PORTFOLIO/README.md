@@ -11,7 +11,7 @@ tags: []
 # SYSTEM_PORTFOLIO
 
 ## Purpose
-Initiatives whose primary purpose is to improve, extend, or harden the Second Brain system itself (architecture, governance, schemas, tooling, automation).
+Initiatives whose primary purpose is to improve, extend, or harden the Second Brain system itself, including ML2 canon and the System execution layer (architecture, governance, schemas, tooling, automation).
 
 ## Examples
 - Folder contract and structure refactors

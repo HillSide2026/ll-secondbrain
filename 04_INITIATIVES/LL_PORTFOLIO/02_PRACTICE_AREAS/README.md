@@ -43,11 +43,11 @@ Durable legal operating knowledge by domain.
 
 ## ML1 Authority Statement
 
-ML1 approves all doctrine. ML2 may maintain playbooks, checklists, and standards but must not update doctrine without formal change control.
+ML1 approves all doctrine. The System may maintain playbooks, checklists, and standards under ML2 governance but must not update doctrine without formal change control.
 
 ## Explicit Prohibitions
 
-ML2 must NOT:
+The System must NOT:
 
 - Store client-specific material here
 - Include pricing information

@@ -244,7 +244,7 @@ ML1 is the sole authority for:
 
 ## Explicit Prohibitions
 
-ML2 must NOT:
+The System must NOT:
 - Auto-apply Activity Period transitions without authorization
 - Process excluded email categories as delivery signals
 - Infer matter associations without explicit identifiers

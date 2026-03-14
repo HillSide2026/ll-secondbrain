@@ -1,3 +1,13 @@
+---
+id: llp-004_onboarding__planning__workplan
+title: LLP-004 Planning Workplan
+owner: ML1
+status: draft
+created_date: 2026-03-08
+last_updated: 2026-03-14
+tags: [llp-004, onboarding, planning, workplan]
+---
+
 # Workplan
 
 Project ID: LLP-26-05
@@ -45,7 +55,7 @@ Prepare immediate implementation of a bounded onboarding function that reliably 
 - Intake/consult records
 - Engagement agreement workflow
 - Clio (`Pending` setup)
-- ML2 repository artifacts
+- ML2-governed repository artifacts
 
 ## Completion Condition
 Planning is complete when onboarding implementation can start with an approved boundary/handoff spec, approved engagement and pending-readiness plans, approved KPI thresholds, and ML1 stage-gate authorization.

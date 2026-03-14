@@ -21,7 +21,7 @@ This directory contains all strategic initiatives and projects, organized by por
 ```
 04_INITIATIVES/
 ├── HillSide_PORTFOLIO/     # HillSide portfolio initiatives
-├── SYSTEM_PORTFOLIO/       # ML2 system development
+├── SYSTEM_PORTFOLIO/       # Second Brain system development
 │   ├── 00_DRAFT_ROADMAPS/
 │   ├── 01_ACTIVE_ROADMAPS/
 │   └── BACKLOG.md
@@ -41,7 +41,7 @@ This directory contains all strategic initiatives and projects, organized by por
 
 ## SYSTEM_PORTFOLIO
 
-**Purpose:** Initiatives that improve the Second Brain system itself (ML2).
+**Purpose:** Initiatives that improve the Second Brain system itself (ML2 and the System that executes it).
 
 **Beneficiary:** The system's ability to support ML1 and LL.
 

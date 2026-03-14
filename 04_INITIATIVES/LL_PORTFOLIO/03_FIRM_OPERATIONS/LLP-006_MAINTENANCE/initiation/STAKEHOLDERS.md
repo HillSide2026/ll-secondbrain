@@ -5,6 +5,7 @@ owner: ML1
 status: draft
 created_date: 2026-03-07
 last_updated: 2026-03-07
+tags: [llp-006, maintenance, stakeholders]
 ---
 
 # Stakeholders
@@ -16,7 +17,7 @@ last_updated: 2026-03-07
 | Role | Party | Responsibility |
 |------|-------|----------------|
 | Approval Authority | ML1 | Approves scope, exceptions, maintenance rules, and promotion to operations |
-| System Operator | ML2 | Runs maintenance cycles, produces exception lists, maintains artifacts |
+| System Operator | System | Runs maintenance cycles, produces exception lists, and maintains governed artifacts |
 | Source of Record — Matters | Clio | Matter IDs, status, responsible lawyer, next action fields |
 | Source of Record — Documents | SharePoint | Folder structure linked to matter IDs |
 | Source of Record — Communications | Gmail | Thread labels keyed by matter number |

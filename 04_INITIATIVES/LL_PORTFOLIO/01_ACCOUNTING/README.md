@@ -42,7 +42,7 @@ ML1 is the sole authority for any interpretation or decision derived from accoun
 
 ## Explicit Prohibitions
 
-ML2 must NOT:
+The System must NOT:
 
 - Generate forecasts from accounting data
 - Model scenarios using historical figures

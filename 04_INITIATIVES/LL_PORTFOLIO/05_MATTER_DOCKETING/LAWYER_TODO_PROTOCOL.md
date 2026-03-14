@@ -167,13 +167,13 @@ The Lawyer To-Do List MUST NOT be used to:
 
 ## 9. ML2 Automation Guardrails
 
-ML2 may:
+The System may:
 
 * Suggest to-dos based on operations queue state and email events
 * De-duplicate similar tasks
 * Surface overdue or blocked items
 
-ML2 must NOT:
+The System must NOT:
 
 * Create to-dos without a matter_id
 * Assign priorities beyond explicit signals
@@ -203,12 +203,12 @@ Then:
 ML1 is the sole authority for:
 - Approving to-do creation rules and constraints
 - Defining valid delivery Activity Periods for to-do linkage
-- Authorizing any ML2 automation beyond suggestion
+- Authorizing any System automation beyond suggestion
 - Interpreting ambiguous to-do categorization
 
 ## Explicit Prohibitions
 
-ML2 must NOT:
+The System must NOT:
 - Create to-dos without a valid matter_id
 - Complete or close to-dos autonomously
 - Use to-dos to track billing, admin, or accounting work

@@ -157,7 +157,7 @@ ML1 is the sole authority for:
 
 ## Explicit Prohibitions
 
-ML2 must NOT:
+The System must NOT:
 - Replace or modify Clio source-of-truth fields
 - Create authoritative status
 - Make or enforce decisions

@@ -19,7 +19,7 @@ tags: [stage5, roadmap, delegated-execution, guardrails]
 ---
 
 ## Purpose
-Stage 5 authorizes **delegated execution**: ML2 can execute repeatable work on ML1’s behalf **without making new judgments**.
+Stage 5 authorizes **delegated execution**: the System can execute repeatable work against approved ML2 canon on ML1’s behalf **without making new judgments**.
 
 **Core intent:** “Do exactly what I’ve already approved — faster, more consistently, and with an audit trail.”
 
@@ -34,7 +34,7 @@ Stage 5 is **guardrailed autonomy** with zero new judgment:
 - Outputs are deterministic given inputs
 - Human judgment is upstream, not embedded mid-process
 
-### What ML2 Can Do
+### What the System Can Do
 - Generate drafts
 - Populate templates
 - Run checklists
@@ -42,7 +42,7 @@ Stage 5 is **guardrailed autonomy** with zero new judgment:
 - Flag violations
 - Execute multi-step workflows
 
-### What ML2 Cannot Do
+### What the System Cannot Do
 - Decide *what* to do
 - Invent new rules
 - Resolve ambiguity
