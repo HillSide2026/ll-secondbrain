@@ -1,8 +1,8 @@
 {
   "run_id": "20260314_223654Z",
-  "source_report": "06_RUNS/ops/soft_junk_review_20260314_181534Z.json",
+  "source_report": "06_RUNS/INBOX_GOVERNANCE/PRO-018_SOFT_JUNK/reviews/soft_junk_review_20260314_181534Z.json",
   "approved_by": "ML1 (Matthew Levine)",
-  "approval_artifact": "/Users/matthewlevine/Repos/ll-secondbrain_fresh/06_RUNS/approvals/APPROVAL-2026-03-14-pro018-soft-junk-selected-archive.md",
+  "approval_artifact": "06_RUNS/INBOX_GOVERNANCE/PRO-018_SOFT_JUNK/approvals/APPROVAL-2026-03-14-pro018-soft-junk-selected-archive.md",
   "reason": "Archive approved PRO-018 soft-junk cleanup candidates from the clean 1000-thread review slice",
   "execute": true,
   "approved_sender_count": 37,

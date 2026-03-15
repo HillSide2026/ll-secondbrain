@@ -3,7 +3,7 @@
 - Date: 2026-03-14
 - Approved by: ML1 (Matthew Levine)
 - Protocol lane: `PRO-018`
-- Source review: `06_RUNS/ops/soft_junk_review_20260314_181534Z.json`
+- Source review: `06_RUNS/INBOX_GOVERNANCE/PRO-018_SOFT_JUNK/reviews/soft_junk_review_20260314_181534Z.json`
 - Action: archive approved soft-junk cleanup candidates by removing `INBOX` only
 
 Approved selection basis:

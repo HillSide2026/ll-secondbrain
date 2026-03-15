@@ -188,6 +188,8 @@ Such operations must be logged to:
 
 - `06_RUNS/logs/inbox_cleanup.log`
 - any applicable Gmail audit artifact for the execution path used
+- substantive review / approval / execution artifacts under
+  `06_RUNS/INBOX_GOVERNANCE/PRO-018_SOFT_JUNK/`
 
 ---
 
@@ -199,6 +201,12 @@ Cleanup reviews should retain:
 - the candidate set generated
 - the approval reference, if execution occurred
 - the execution counts for trash/archive actions
+
+Canonical storage location for substantive `PRO-018` artifacts:
+
+- `06_RUNS/INBOX_GOVERNANCE/PRO-018_SOFT_JUNK/reviews/`
+- `06_RUNS/INBOX_GOVERNANCE/PRO-018_SOFT_JUNK/approvals/`
+- `06_RUNS/INBOX_GOVERNANCE/PRO-018_SOFT_JUNK/executions/`
 
 If a thread later proves to belong to a matter, cleanup routing must stop and the
 thread must be handled under `PRO-014`.
