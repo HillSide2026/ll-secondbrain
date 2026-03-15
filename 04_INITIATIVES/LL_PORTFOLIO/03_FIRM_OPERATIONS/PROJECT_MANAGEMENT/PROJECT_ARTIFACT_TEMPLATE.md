@@ -15,7 +15,7 @@ tags: [project-management, stage-gates, artifacts, template]
 Define the canonical artifact set required per project stage.
 
 This template is subordinate to
-`01_DOCTRINE/03_POLICIES/FIRM_PROJECT_DOCTRINE.md`.
+`01_DOCTRINE/03_POLICIES/FIRM_PROJECT_POLICY.md`.
 
 Planning-stage artifacts are execution-readiness controls used to authorize execution and achievement of project goals.
 
@@ -33,13 +33,16 @@ Applicability:
 
 ## Stage 1 - Initiating
 
-Required:
+Required (all projects):
 - `PROJECT_CHARTER.md`
 - `PROBLEM_STATEMENT.md`
 - `SUCCESS_CRITERIA.md`
 - `STAKEHOLDERS.md`
 - `RISK_SCAN.md`
 - `APPROVAL_RECORD.md`
+
+Required (strategic projects only):
+- `BUSINESS_CASE.md`
 
 Notes:
 - `RISK_SCAN.md` must include: Top 5 Risks, Key Assumptions, Go/No-Go Judgment.

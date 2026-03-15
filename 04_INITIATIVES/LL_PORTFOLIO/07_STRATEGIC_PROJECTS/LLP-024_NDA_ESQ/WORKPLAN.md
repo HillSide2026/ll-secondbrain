@@ -38,7 +38,7 @@ Prepare a decision-ready implementation packet for NDA Esq by locking:
 | WS-02 Build Readiness | Confirm the stack, integrations, and sequence needed to deliver the MVP inside the target window | Product Lead (TBD) | `DEPENDENCIES.md`, `RISK_REGISTER.md` |
 | WS-03 Acquisition Plan Lock | Confirm pricing assumptions, launch channels, funnel assets, and early CAC discipline | Growth Lead (TBD) | `WORKPLAN.md`, `COMMUNICATION_PLAN.md`, `RISK_REGISTER.md` |
 | WS-04 Operations Control Lock | Confirm billing, support, dashboard visibility, and optional lawyer-review escalation rules | Operations Lead (TBD) | `METRICS.md`, `COMMUNICATION_PLAN.md` |
-| WS-05 Gate Packet | Assemble the Planning -> Implementation submission for ML1 | Project Owner | `METRICS.md`, updated `APPROVAL_RECORD.md` |
+| WS-05 Gate Packet | Assemble the Planning -> Executing submission for ML1 | Project Owner | `METRICS.md`, updated `APPROVAL_RECORD.md` |
 
 ## Execution Sequence
 
@@ -46,7 +46,7 @@ Prepare a decision-ready implementation packet for NDA Esq by locking:
 2. Lock the build dependencies and delivery sequence.
 3. Lock the launch channels, pricing assumptions, and operating controls.
 4. Lock the metrics, baseline logic, validation rules, and proposed thresholds.
-5. Submit the Planning -> Implementation gate packet to ML1.
+5. Submit the Planning -> Executing gate packet to ML1.
 
 ## Milestones
 
@@ -57,7 +57,7 @@ Prepare a decision-ready implementation packet for NDA Esq by locking:
 | M3 - Build and launch dependencies locked | 2026-03-18 | planned | `DEPENDENCIES.md`, `RISK_REGISTER.md` |
 | M4 - Metrics and operating controls locked | 2026-03-19 | planned | `METRICS.md`, `COMMUNICATION_PLAN.md` |
 | M5 - Threshold proposal submitted to ML1 | 2026-03-20 | planned | `METRICS.md` |
-| M6 - Planning -> Implementation gate packet submitted | 2026-03-20 | planned | updated `APPROVAL_RECORD.md` |
+| M6 - Planning -> Executing gate packet submitted | 2026-03-20 | planned | updated `APPROVAL_RECORD.md` |
 
 ## Resource Plan
 
@@ -73,7 +73,7 @@ Prepare a decision-ready implementation packet for NDA Esq by locking:
 
 ## Boundary Notes
 
-- No implementation or launch activity is authorized until ML1 closes the Planning -> Implementation gate.
+- No implementation or launch activity is authorized until ML1 closes the Planning -> Executing gate.
 - The initial product must remain bounded to NDA review only.
 - Any human-review path must remain optional and separately controlled.
 - If the 60-day MVP target is not credible under the locked scope, escalate before requesting implementation approval.

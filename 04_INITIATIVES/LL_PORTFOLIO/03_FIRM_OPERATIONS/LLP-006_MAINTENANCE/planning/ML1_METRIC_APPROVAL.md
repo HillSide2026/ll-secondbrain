@@ -20,7 +20,7 @@ Date: ______________________
 
 ## Threshold Status
 - Threshold values are pending ML1 decision.
-- Approved thresholds become mandatory controls for Planning -> Implementation authorization and weekly operating review.
+- Approved thresholds become mandatory controls for Planning -> Executing authorization and weekly operating review.
 
 ## Notes
 - Definitions are in `METRIC_DEFINITION.md`.

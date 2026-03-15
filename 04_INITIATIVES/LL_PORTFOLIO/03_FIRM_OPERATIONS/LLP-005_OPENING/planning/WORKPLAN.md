@@ -31,7 +31,7 @@ Prepare immediate implementation of Opening from Gate 2 (engagement signed) to G
 2. Finalize financial readiness requirements and evidence standards.
 3. Finalize record/metadata readiness and system-of-record consistency rules.
 4. Finalize Gate 3 packet requirements and KPI threshold package.
-5. Submit Planning -> Implementation gate packet.
+5. Submit Planning -> Executing gate packet.
 
 ## Milestones
 
@@ -41,7 +41,7 @@ Prepare immediate implementation of Opening from Gate 2 (engagement signed) to G
 | M2 - Intake + checklist specification finalized | 2026-03-11 | planned | `SCOPE_DEFINITION.md`, `DEPENDENCIES.md` |
 | M3 - Financial + records readiness specification finalized | 2026-03-12 | planned | `ASSUMPTIONS_CONSTRAINTS.md`, `COMMUNICATION_PLAN.md`, `RISK_REGISTER.md` |
 | M4 - Gate 3 packet + KPI thresholds finalized | 2026-03-13 | planned | KPI artifacts + `ML1_METRIC_APPROVAL.md` |
-| M5 - Planning -> Implementation packet submitted | 2026-03-14 | planned | Updated approval records |
+| M5 - Planning -> Executing packet submitted | 2026-03-14 | planned | Updated approval records |
 
 ## Resource Plan
 

@@ -30,6 +30,6 @@ Stage: Planning
 - No full-service legal consultation is included unless separately approved by ML1 as an add-on.
 - Initial acquisition channels are limited to Google Ads, LinkedIn Ads, SEO/content, outreach, referrals, and lifecycle email.
 - No broad untargeted social campaigns or enterprise sales buildout are allowed in the initial stage.
-- Implementation, live launch, and paid-channel activation remain blocked until ML1 approves the Planning -> Implementation gate.
+- Implementation, live launch, and paid-channel activation remain blocked until ML1 approves the Planning -> Executing gate.
 - Any material change to customer segment, scope, pricing model, or product boundary requires ML1 approval.
 - Threshold approval in `METRICS.md` is required before implementation begins.

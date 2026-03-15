@@ -146,7 +146,7 @@ as the first reference point for post-launch optimization.
 
 Status: Proposed
 Notes: Planning packet drafted; implementation remains gated pending ML1 review
-of thresholds and final Planning -> Implementation approval.
+of thresholds and final Planning -> Executing approval.
 
 ## ML1 Metric Approval
 

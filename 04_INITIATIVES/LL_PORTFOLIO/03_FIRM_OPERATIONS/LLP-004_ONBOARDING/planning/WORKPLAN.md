@@ -31,7 +31,7 @@ Prepare immediate implementation of a bounded onboarding function that reliably 
 2. Lock engagement workflow and 24-hour agreement-send rule.
 3. Finalize pending-matter readiness checklist and ownership.
 4. Finalize KPI package and ML1 threshold approvals.
-5. Submit Planning -> Implementation gate packet.
+5. Submit Planning -> Executing gate packet.
 
 ## Milestones
 
@@ -41,7 +41,7 @@ Prepare immediate implementation of a bounded onboarding function that reliably 
 | M2 - Boundary and handoff spec finalized | 2026-03-11 | planned | `SCOPE_DEFINITION.md`, `DEPENDENCIES.md` |
 | M3 - Engagement + pending readiness plan finalized | 2026-03-12 | planned | `COMMUNICATION_PLAN.md`, `RISK_REGISTER.md` |
 | M4 - KPI package and thresholds finalized | 2026-03-13 | planned | KPI artifacts + `ML1_METRIC_APPROVAL.md` |
-| M5 - Planning -> Implementation packet submitted | 2026-03-14 | planned | Updated approval records |
+| M5 - Planning -> Executing packet submitted | 2026-03-14 | planned | Updated approval records |
 
 ## Resource Plan
 

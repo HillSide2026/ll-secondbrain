@@ -32,7 +32,7 @@ Date: 2026-03-08
 
 Planning Stage Authorized: Yes
 
-## Stage Gate: Planning -> Implementation
+## Stage Gate: Planning -> Executing
 
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
@@ -53,4 +53,4 @@ Planning Approved By: ______________________
 Date: ______________________
 
 Notes:
-- Implementation artifacts are prepared in `implementation/`, but runtime execution remains gated by explicit ML1 Planning -> Implementation approval.
+- Implementation artifacts are prepared in `implementation/`, but runtime execution remains gated by explicit ML1 Planning -> Executing approval.

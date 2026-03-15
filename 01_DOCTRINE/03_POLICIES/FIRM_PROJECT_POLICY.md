@@ -1,15 +1,15 @@
 ---
-id: 01_doctrine__02_policies__firm_project_doctrine_md
-title: Firm Project Doctrine
+id: 01_doctrine__02_policies__firm_project_policy_md
+title: Firm Project Policy
 owner: ML1
 status: draft
-version: '1.0'
+version: '1.1'
 created_date: 2026-03-14
 last_updated: 2026-03-14
 tags: [doctrine, policy, projects, stage-gates]
 ---
 
-# Firm Project Doctrine
+# Firm Project Policy
 
 ## 1. Purpose
 
@@ -84,7 +84,7 @@ ML1 alone decides stage advancement.
 
 ### Stage 1 - Initiating
 
-Required:
+Required (all projects):
 
 - `PROJECT_CHARTER.md`
 - `PROBLEM_STATEMENT.md`
@@ -92,6 +92,10 @@ Required:
 - `STAKEHOLDERS.md`
 - `RISK_SCAN.md`
 - `APPROVAL_RECORD.md`
+
+Required (strategic projects only):
+
+- `BUSINESS_CASE.md`
 
 ### Stage 2 - Planning
 

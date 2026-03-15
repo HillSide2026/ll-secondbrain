@@ -49,6 +49,7 @@ The System must NOT:
 - `STAKEHOLDERS.md`
 - `RISK_SCAN.md`
 - `APPROVAL_RECORD.md`
+- `BUSINESS_CASE.md` *(strategic projects only)*
 
 
 ## Planning (Stage 2) Artifacts

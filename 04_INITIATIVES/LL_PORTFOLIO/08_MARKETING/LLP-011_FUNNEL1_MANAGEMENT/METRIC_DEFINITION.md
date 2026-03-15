@@ -25,7 +25,7 @@ Stage: Planning
 - Lifecycle normalization alignment: `intake -> inquiry`; `conversion` remains the marketing terminal stage label; downstream fulfillment handoff is labeled `onboarding`.
 
 ## Target Status
-- Target thresholds are `TBD` pending ML1 metric approval for Planning -> Implementation gate authorization.
+- Target thresholds are `TBD` pending ML1 metric approval for Planning -> Executing gate authorization.
 
 ## Measurement Cadence
 - Weekly operational review

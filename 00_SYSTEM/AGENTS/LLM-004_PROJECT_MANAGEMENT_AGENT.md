@@ -100,13 +100,16 @@ Enforce Levine Law’s Project Management Doctrine, ensure stage-gate compliance
 All outputs live inside project folders under:
 `04_INITIATIVES/LL_PORTFOLIO/07_STRATEGIC_PROJECTS/<PROJECT_ID>/`
 
-**Initiation**
+**Initiation (all projects)**
 - PROJECT_CHARTER.md
 - PROBLEM_STATEMENT.md
 - SUCCESS_CRITERIA.md
 - STAKEHOLDERS.md
 - RISK_SCAN.md
 - APPROVAL_RECORD.md
+
+**Initiation (strategic projects only)**
+- BUSINESS_CASE.md
 
 `RISK_SCAN.md` schema:
 ```
@@ -211,7 +214,7 @@ Rationale: <ML1 judgment>
 ## Dependencies (Required Inputs)
 
 LLM-004 must operate strictly from:
-- `01_DOCTRINE/03_POLICIES/FIRM_PROJECT_DOCTRINE.md`
+- `01_DOCTRINE/03_POLICIES/FIRM_PROJECT_POLICY.md`
 - Portfolio boundary definitions in `04_INITIATIVES/LL_PORTFOLIO/README.md`
 - Each project’s current-stage artifacts, especially APPROVAL_RECORD.md and METRICS.md
 - Change control logs (CHANGE_LOG.md) and decision logs (DECISION_LOG.md)

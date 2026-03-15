@@ -47,14 +47,10 @@ ML1 is the sole authority for approval, activation, and promotion of this projec
 - `DEPENDENCIES.md`
 - `RISK_REGISTER.md`
 - `COMMUNICATION_PLAN.md`
-- `METRIC_DEFINITION.md`
-- `MEASUREMENT_METHOD.md`
-- `BASELINE_CAPTURE_PERIOD.md`
-- `VALIDATION_REVIEW.md`
-- `ML1_METRIC_APPROVAL.md`
+- `METRICS.md`
 
 ## Approval State
-Implementation-readiness artifacts drafted; awaiting ML1 Planning -> Implementation gate decision.
+Execution-readiness artifacts drafted; awaiting ML1 Planning -> Executing gate decision.
 
 ## Last ML1 Review Date
 `2026-03-08`

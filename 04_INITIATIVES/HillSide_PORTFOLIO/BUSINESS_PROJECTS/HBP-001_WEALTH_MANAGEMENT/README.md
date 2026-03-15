@@ -52,6 +52,7 @@ scope, regulatory posture, capital model, and execution path.
 - `PROBLEM_STATEMENT.md`
 - `RISK_SCAN.md`
 - `APPROVAL_RECORD.md`
+- `BUSINESS_CASE.md` *(strategic projects only)*
 
 ---
 

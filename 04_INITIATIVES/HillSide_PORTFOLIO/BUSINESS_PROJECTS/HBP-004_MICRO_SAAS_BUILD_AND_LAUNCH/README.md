@@ -46,6 +46,7 @@ Build and launch one small Micro SaaS product.
 - `STAKEHOLDERS.md`
 - `RISK_SCAN.md`
 - `APPROVAL_RECORD.md`
+- `BUSINESS_CASE.md` *(strategic projects only)*
 
 ## Planning Artifacts
 

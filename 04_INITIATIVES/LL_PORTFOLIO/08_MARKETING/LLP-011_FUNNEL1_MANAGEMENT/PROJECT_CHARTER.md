@@ -34,4 +34,4 @@ Final approval authority: ML1.
 Execution is constrained by ML2 doctrine and approved funnel definitions.
 
 ## 6. Promotion Path
-Upon ML1 Planning -> Implementation approval, execute the approved workplan and measurement architecture.
+Upon ML1 Planning -> Executing approval, execute the approved workplan and measurement architecture.

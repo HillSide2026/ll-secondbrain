@@ -502,10 +502,10 @@ policies:
   version: '0.1'
   status: draft
   history: []
-- id: 01_doctrine__02_policies__firm_project_doctrine_md
-  title: Firm Project Doctrine
-  path: 01_DOCTRINE/03_POLICIES/FIRM_PROJECT_DOCTRINE.md
-  version: '1.0'
+- id: 01_doctrine__02_policies__firm_project_policy_md
+  title: Firm Project Policy
+  path: 01_DOCTRINE/03_POLICIES/FIRM_PROJECT_POLICY.md
+  version: '1.1'
   status: draft
   history: []
 - id: 01_doctrine__policies__readme_md

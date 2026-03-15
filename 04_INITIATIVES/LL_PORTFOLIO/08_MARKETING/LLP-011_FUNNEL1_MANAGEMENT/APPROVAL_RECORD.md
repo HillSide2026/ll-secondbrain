@@ -22,25 +22,21 @@ Initiation Approved By: ML1
 Date: 2026-03-08
 Planning Stage Authorized: Yes
 
-## Stage Gate: Planning -> Implementation
+## Stage Gate: Planning -> Executing
 
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| SCOPE_DEFINITION.md | drafted | 2026-03-08 | Implementation scope and boundaries documented |
-| WORKPLAN.md | drafted | 2026-03-08 | Implementation workstreams, milestones, and resource plan documented |
-| ASSUMPTIONS_CONSTRAINTS.md | drafted | 2026-03-08 | Implementation assumptions and hard constraints documented |
+| SCOPE_DEFINITION.md | drafted | 2026-03-08 | Execution scope and boundaries documented |
+| WORKPLAN.md | drafted | 2026-03-08 | Execution workstreams, milestones, and resource plan documented |
+| ASSUMPTIONS_CONSTRAINTS.md | drafted | 2026-03-08 | Execution assumptions and hard constraints documented |
 | DEPENDENCIES.md | drafted | 2026-03-08 | Doctrine, platform, and governance dependencies for execution documented |
-| RISK_REGISTER.md | drafted | 2026-03-08 | Implementation risks by category documented |
+| RISK_REGISTER.md | drafted | 2026-03-08 | Execution risks by category documented |
 | COMMUNICATION_PLAN.md | drafted | 2026-03-08 | Execution communication cadence and escalation paths documented |
-| METRIC_DEFINITION.md | drafted | 2026-03-08 | KPI definitions and goal alignment documented |
-| MEASUREMENT_METHOD.md | drafted | 2026-03-08 | KPI operation and evidence method documented |
-| BASELINE_CAPTURE_PERIOD.md | drafted | 2026-03-08 | Pre-change baseline window and inclusion rules defined |
-| VALIDATION_REVIEW.md | drafted | 2026-03-08 | Implementation-readiness validation criteria documented |
-| ML1_METRIC_APPROVAL.md | proposed | 2026-03-08 | Implementation threshold approval pending ML1 |
+| METRICS.md | proposed | 2026-03-08 | Consolidated metric definitions, measurement method, baseline, validation, and threshold proposal pending ML1 approval |
 
-Planning Gate Decision (Pending): [Approved to implement | Held | Rejected]
+Planning Gate Decision (Pending): [Approved to execute | Held | Rejected]
 Planning Approved By: ______________________
 Date: ______________________
 
 Notes:
-- Funnel 01 remains active; implementation changes require explicit ML1 Planning -> Implementation approval.
+- Funnel 01 remains active; execution changes require explicit ML1 Planning -> Executing approval.

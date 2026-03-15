@@ -32,7 +32,7 @@ Date: 2026-03-08
 
 Planning Stage Authorized: Yes
 
-## Stage Gate: Planning -> Implementation
+## Stage Gate: Planning -> Executing
 
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
@@ -53,4 +53,4 @@ Planning Approved By: ______________________
 Date: ______________________
 
 Notes:
-- Implementation remains gated until explicit ML1 Planning -> Implementation approval.
+- Implementation remains gated until explicit ML1 Planning -> Executing approval.

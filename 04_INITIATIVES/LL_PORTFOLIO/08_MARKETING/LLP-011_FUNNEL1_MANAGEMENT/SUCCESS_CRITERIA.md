@@ -9,4 +9,4 @@ The project will be successful if:
 2. Execution controls for qualification, QA, distribution sequencing, and conversion progression are implementation-ready.
 3. KPI architecture is operationally usable for tracking efficiency, throughput, and conversion goals.
 4. Execution risks (scope, schedule, budget, financial, strategic) are actively controlled with documented mitigations.
-5. ML1 authorizes Planning -> Implementation and execution begins under approved thresholds and controls.
+5. ML1 authorizes Planning -> Executing and execution begins under approved thresholds and controls.

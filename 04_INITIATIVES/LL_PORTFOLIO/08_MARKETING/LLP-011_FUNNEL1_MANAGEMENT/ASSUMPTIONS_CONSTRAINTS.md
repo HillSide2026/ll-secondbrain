@@ -9,7 +9,7 @@ Stage: Planning
 - Google Ads and GHL remain available for lifecycle execution from lead capture through retained conversion.
 - Stage events across the full lifecycle (`lead_captured -> screened -> booked -> consult_complete -> retained`) can be captured with reliable timestamps.
 - Qualification gates can be enforced operationally without redesigning funnel architecture.
-- ML1 review cadence is available to approve thresholds and authorize Planning -> Implementation transition.
+- ML1 review cadence is available to approve thresholds and authorize Planning -> Executing transition.
 
 ## Constraints
 - Work must remain bounded to Funnel 01 and pre-matter lifecycle execution only.

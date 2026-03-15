@@ -17,7 +17,7 @@ Stage: Planning
 ## Purpose
 
 Keep communication limited to what NDA Esq needs to reach a clean
-Planning -> Implementation decision.
+Planning -> Executing decision.
 
 ## Required Communication Loops
 

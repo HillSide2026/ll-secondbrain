@@ -10,7 +10,7 @@ Stage: Planning
 - Exception classes are severity-labeled and source-attributed.
 - Weekly run completeness can be verified from run artifacts.
 - No metric depends on hidden inference or non-governed data.
-- Validation checks are sufficient for Planning -> Implementation decisioning.
+- Validation checks are sufficient for Planning -> Executing decisioning.
 
 ## Review Owner
 - ML1 (approval authority)

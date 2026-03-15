@@ -91,7 +91,7 @@ Planning best-practice rules:
 - `METRICS.md` is the single source for metric definitions, measurement method, baseline logic, validation rules, and ML1 threshold approval.
 
 If a planning artifact does not help lock scope, reduce uncertainty, or support
-the Planning -> Implementation gate decision, it should be merged or removed.
+the Planning -> Executing gate decision, it should be merged or removed.
 
 ---
 

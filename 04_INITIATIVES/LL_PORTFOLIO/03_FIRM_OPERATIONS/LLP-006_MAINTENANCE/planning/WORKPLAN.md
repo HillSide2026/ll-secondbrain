@@ -32,7 +32,7 @@ Prepare immediate implementation of a Sunday matter-reconciliation function acro
 2. Finalize mapping/identity dependencies for SB, Clio, SharePoint, and Asana.
 3. Define exception taxonomy and risk controls.
 4. Finalize KPI formulas and baseline capture method.
-5. Submit Planning -> Implementation gate packet for ML1 decision.
+5. Submit Planning -> Executing gate packet for ML1 decision.
 
 ## Milestones
 
@@ -43,7 +43,7 @@ Prepare immediate implementation of a Sunday matter-reconciliation function acro
 | M3 - Risk and escalation model finalized | 2026-03-11 | planned | `RISK_REGISTER.md`, `COMMUNICATION_PLAN.md` |
 | M4 - Measurement architecture finalized | 2026-03-12 | planned | `METRIC_DEFINITION.md`, `MEASUREMENT_METHOD.md`, `VALIDATION_REVIEW.md` |
 | M5 - Baseline window and thresholds submitted to ML1 | 2026-03-13 | planned | `BASELINE_CAPTURE_PERIOD.md`, `ML1_METRIC_APPROVAL.md` |
-| M6 - Planning -> Implementation gate decision | 2026-03-14 | planned | Updated initiation `APPROVAL_RECORD.md` |
+| M6 - Planning -> Executing gate decision | 2026-03-14 | planned | Updated initiation `APPROVAL_RECORD.md` |
 
 ## Resource Plan
 

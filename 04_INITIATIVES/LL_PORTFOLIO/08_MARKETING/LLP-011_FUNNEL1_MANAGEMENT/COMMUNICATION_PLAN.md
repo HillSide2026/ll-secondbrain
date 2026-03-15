@@ -20,7 +20,7 @@ Stage: Planning
 - Lifecycle control confirmation across `lead_captured -> retained`
 - Risk and dependency control status for current execution window
 - KPI and baseline operating status against implementation goals
-- Planning -> Implementation gate packet for ML1 authorization decision
+- Planning -> Executing gate packet for ML1 authorization decision
 
 ## Escalation Triggers
 - Any scope boundary breach candidate
