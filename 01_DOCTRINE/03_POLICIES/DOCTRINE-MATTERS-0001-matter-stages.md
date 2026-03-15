@@ -1,11 +1,11 @@
 ---
 id: DOCTRINE-MATTERS-0001
-title: Matter Stages Doctrine
+title: Matter Delivery Status Doctrine
 owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-24
-last_updated: 2026-03-08
+last_updated: 2026-03-15
 tags: [doctrine, matters]
 
 effective_date:
@@ -17,7 +17,7 @@ provenance:
   context:
 ---
 
-# Matter Stages Doctrine
+# Matter Delivery Status Doctrine
 
 **Document ID:** DOCTRINE-MATTERS-0001  
 **Status:** DRAFT  
@@ -27,10 +27,25 @@ provenance:
 ---
 
 ## Purpose
-This policy defines `delivery_status` as the economic/control state of the client engagement, not the work being performed.
+This policy defines `delivery_status` as the economic/control state of the
+client engagement, not the top-level matter `status` and not the work being
+performed.
 
 Top-level matter `status` (`open` / `pending` / `closed`) and single-field cardinality constraints are governed by:
 - `01_DOCTRINE/01_INVARIANTS/INV-0003-matter-model-structural-invariants.md`
+
+This file does not redefine matter `status`.
+
+Current rule:
+- matter `status` is limited to `pending`, `open`, or `closed`
+- `delivery_status` is a separate control-state field
+- recurring advisory or subscription economics do not create a separate matter
+  status
+- `Ongoing Advisory` is not a canonical matter status or delivery_status label
+  in current doctrine
+- if a recurring advisory classification is needed, it belongs in a matter-type
+  or service-type vocabulary such as a possible future `Subscription` type, not
+  in this status policy
 
 It answers:
 - Is revenue secured?
@@ -50,11 +65,17 @@ Solution and strategy activity do not define top-level matter status. Economic/c
 
 ## Canonical Delivery Status States
 
+Mapping rule:
+- `Prospective` normally pairs with matter `status = pending`
+- active control states normally pair with matter `status = open`
+- `Closed` normally pairs with matter `status = closed`
+
 ### 1. Prospective
 Engagement not executed. No secured revenue.
 
 Entry:
-- Matter opened pre-engagement.
+- Matter record created pre-engagement.
+- Top-level matter status is `pending`.
 
 Exit:
 - Engagement letter executed -> Engaged - Active
@@ -65,6 +86,7 @@ Engagement executed. Work progressing. No material decision or external constrai
 
 Entry:
 - Engagement signed.
+- Top-level matter status is `open`.
 - No defined stall condition.
 
 Exit:
@@ -102,14 +124,7 @@ Exit:
 - Payment received -> Pending Close or Closed
 - Payment delay beyond threshold -> At-Risk
 
-### 6. Ongoing Advisory
-Standing engagement with recurring or episodic revenue. No defined end state. This is not an active project; it is a persistent advisory container.
-
-Exit:
-- Terminated -> Pending Close
-- Revenue instability -> At-Risk
-
-### 7. At-Risk
+### 6. At-Risk
 Economic or relational instability.
 
 Triggers may include:
@@ -123,7 +138,7 @@ Exit:
 - Risk resolved -> prior appropriate state
 - Engagement terminated -> Pending Close
 
-### 8. Dormant
+### 7. Dormant
 Engaged but no material movement beyond defined inactivity threshold. No active blocker recorded.
 
 Dormant is decay. It must be time-triggered.
@@ -132,11 +147,11 @@ Exit:
 - Activity resumes -> Engaged - Active
 - Termination -> Pending Close
 
-### 9. Pending Close
+### 8. Pending Close
 Work complete. Administrative close-out pending.
 
 Exit:
 - Closed
 
-### 10. Closed
+### 9. Closed
 No further economic activity expected. Immutable state.

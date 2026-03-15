@@ -1,5 +1,5 @@
 schema_version: '1.0'
-last_updated: '2026-03-10'
+last_updated: '2026-03-15'
 rules_dir: 01_DOCTRINE/RULES
 tests_dir: 01_DOCTRINE/TESTS
 rules: []
@@ -502,6 +502,12 @@ policies:
   version: '0.1'
   status: draft
   history: []
+- id: 01_doctrine__03_policies__project_policy_md
+  title: Repository Project Policy
+  path: 01_DOCTRINE/03_POLICIES/PROJECT_POLICY.md
+  version: '1.0'
+  status: draft
+  history: []
 - id: 01_doctrine__02_policies__firm_project_policy_md
   title: Firm Project Policy
   path: 01_DOCTRINE/03_POLICIES/FIRM_PROJECT_POLICY.md
@@ -666,6 +672,12 @@ protocols:
   policy: unknown
   history: []
 doctrine:
+- id: 01_doctrine__01_invariants__doctrine-projects-0001-project-structural-boundaries_md
+  title: Project Structural Boundaries
+  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-PROJECTS-0001-project-structural-boundaries.md
+  version: '1.0'
+  status: draft
+  history: []
 - id: DOCTRINE-2026-001
   title: What Qualifies as Doctrine
   path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0001-what-qualifies-as-doctrine.md

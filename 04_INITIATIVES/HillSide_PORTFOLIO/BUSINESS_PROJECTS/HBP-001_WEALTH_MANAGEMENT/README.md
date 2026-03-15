@@ -4,7 +4,7 @@ title: Wealth Management
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-14
+last_updated: 2026-03-15
 tags: [wealth-management, venture, initiating]
 ---
 
@@ -23,7 +23,7 @@ This project is an initiating-stage venture/project under Matthew Holdings.
 ## Current State
 
 - Ownership branch: `Matthew Holdings / HillSide`
-- Initiation artifact set created
+- Required initiation packet drafted
 - Planning not yet authorized
 
 ---
@@ -45,14 +45,16 @@ scope, regulatory posture, capital model, and execution path.
 
 ---
 
-## Initiation Artifacts
+## Required Initiation Packet
 
-- `README.md`
+- `README.md` *(supporting folder overview; not a stage-gate artifact)*
 - `PROJECT_CHARTER.md`
 - `PROBLEM_STATEMENT.md`
+- `SUCCESS_CRITERIA.md`
+- `STAKEHOLDERS.md`
 - `RISK_SCAN.md`
 - `APPROVAL_RECORD.md`
-- `BUSINESS_CASE.md` *(strategic projects only)*
+- `BUSINESS_CASE.md` *(required for strategic projects)*
 
 ---
 

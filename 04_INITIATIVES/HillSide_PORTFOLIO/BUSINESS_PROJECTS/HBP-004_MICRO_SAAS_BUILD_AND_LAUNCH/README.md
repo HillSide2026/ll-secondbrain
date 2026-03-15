@@ -4,7 +4,7 @@ title: Micro SaaS Build and Launch
 owner: ML1
 status: active
 created_date: 2026-03-12
-last_updated: 2026-03-14
+last_updated: 2026-03-15
 tags: [micro-saas, venture, active]
 ---
 
@@ -47,6 +47,9 @@ Build and launch one small Micro SaaS product.
 - `RISK_SCAN.md`
 - `APPROVAL_RECORD.md`
 - `BUSINESS_CASE.md` *(strategic projects only)*
+
+`README.md` remains supporting folder documentation and is not part of the
+Initiating -> Planning gate checklist.
 
 ## Planning Artifacts
 

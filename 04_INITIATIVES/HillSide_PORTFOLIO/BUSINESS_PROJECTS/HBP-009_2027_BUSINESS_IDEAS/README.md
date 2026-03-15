@@ -4,7 +4,7 @@ title: 2027 Business Ideas
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-14
+last_updated: 2026-03-15
 tags: [2027-business-ideas, hillside, initiating]
 ---
 
@@ -23,7 +23,7 @@ This project is an initiating-stage HillSide business project.
 ## Current State
 
 - HillSide business project shell created
-- initiation artifact set created
+- initiation packet started; required artifact set not yet complete
 - planning not yet authorized
 
 ---
@@ -46,14 +46,22 @@ committed.
 
 ---
 
-## Initiation Artifacts
+## Required Initiation Packet
 
-- `README.md`
+- `README.md` *(supporting folder overview; not a stage-gate artifact)*
 - `PROJECT_CHARTER.md`
 - `PROBLEM_STATEMENT.md`
+- `SUCCESS_CRITERIA.md`
+- `STAKEHOLDERS.md`
 - `RISK_SCAN.md`
 - `APPROVAL_RECORD.md`
-- `IDEA_BACKLOG.md`
+- `BUSINESS_CASE.md` *(required for strategic projects)*
+
+Current packet gaps:
+
+- `SUCCESS_CRITERIA.md` not yet drafted
+- `STAKEHOLDERS.md` not yet drafted
+- `BUSINESS_CASE.md` not yet drafted
 
 ---
 
@@ -61,6 +69,9 @@ committed.
 
 Use `IDEA_BACKLOG.md` to capture the current 2027 idea set before ideas are
 screened, grouped, or narrowed.
+
+`IDEA_BACKLOG.md` is a supplemental working-capture artifact and does not
+replace required initiation-stage gate artifacts.
 
 ---
 

@@ -4,7 +4,7 @@ title: Wealth Management - Approval Record
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-14
+last_updated: 2026-03-15
 tags: [wealth-management, approval, initiating]
 ---
 
@@ -19,10 +19,13 @@ Approval Status: Initiation In Progress
 
 | Item | Status | Date | Notes |
 | --- | --- | --- | --- |
-| `README.md` | drafted | 2026-03-14 | Project shell and activation state recorded |
 | `PROJECT_CHARTER.md` | drafted | 2026-03-14 | Charter created for initiation-stage framing |
 | `PROBLEM_STATEMENT.md` | drafted | 2026-03-14 | Core problem framing captured |
+| `SUCCESS_CRITERIA.md` | drafted | 2026-03-15 | Initiation-stage outcomes and readiness criteria drafted |
+| `STAKEHOLDERS.md` | drafted | 2026-03-15 | Stakeholder map and provisional roles recorded |
 | `RISK_SCAN.md` | drafted | 2026-03-14 | First-pass scope, schedule, and budget risk view recorded |
+| `APPROVAL_RECORD.md` | drafted | 2026-03-14 | Gate log opened for initiation-stage tracking |
+| `BUSINESS_CASE.md` | drafted | 2026-03-15 | Strategic rationale and candidate path options recorded |
 
 ML1 Decision: Pending  
 ML1 Signature: ______________________  
@@ -32,5 +35,6 @@ Planning Stage Authorized: No
 ## Notes
 
 - Project folder created under the Matthew Holdings / HillSide branch.
+- `README.md` exists as supporting folder documentation and is not a stage-gate artifact.
 - Planning and executing remain unauthorized until ML1 records approval.
 - Additional planning artifacts will be created only after the gate is opened.

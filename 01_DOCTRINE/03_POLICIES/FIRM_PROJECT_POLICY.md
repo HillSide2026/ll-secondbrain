@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 version: '1.1'
 created_date: 2026-03-14
-last_updated: 2026-03-14
+last_updated: 2026-03-15
 tags: [doctrine, policy, projects, stage-gates]
 ---
 
@@ -13,156 +13,71 @@ tags: [doctrine, policy, projects, stage-gates]
 
 ## 1. Purpose
 
-This doctrine is the canonical policy source for governed project stages,
-stage-gate rules, and required project artifacts.
+This policy is the Levine Law subsidiary project policy.
 
-Its purpose is to eliminate persistent drift between templates, agent specs,
-project packets, and portfolio summaries.
+Canonical repository-level project stages, stage-gate rules, and baseline
+artifact requirements are defined in
+`01_DOCTRINE/03_POLICIES/PROJECT_POLICY.md`.
 
-## 2. Scope
+This policy applies that repository-level project policy to Levine Law project
+governance and defines the Levine Law-specific scope for its use.
 
-This doctrine applies directly to Levine Law strategic, management, and
+## 2. Policy Hierarchy
+
+`01_DOCTRINE/03_POLICIES/PROJECT_POLICY.md` is the top-level project policy for
+the repository.
+
+This policy is explicitly subordinate to that repo-level project policy.
+
+This policy may add Levine Law-specific application rules, but it may not
+replace the canonical delivery stages, ML1 stage-gate authority, or baseline
+artifact requirements defined at the repo level.
+
+## 3. Scope
+
+This policy applies directly to Levine Law strategic, management, and
 operational projects.
 
-It may also be adopted by other repo-governed project systems, including
-HillSide project packets, unless a portfolio-specific doctrine explicitly
-overrides it.
+This policy does not apply to HillSide project packets, which require their own
+subsidiary portfolio-specific policy under the repo-level project policy.
 
-This doctrine does not apply to legal matter stages, which are governed by
+This policy does not apply to legal matter stages, which are governed by
 matter doctrine.
 
-## 3. Canonical Delivery Stages
+## 4. Adoption of Repo-Level Project Rules
 
-The canonical project delivery stages are:
+Levine Law projects adopt the canonical repository-level project rules defined
+in `01_DOCTRINE/03_POLICIES/PROJECT_POLICY.md`, including:
 
-1. `Initiating`
-2. `Planning`
-3. `Executing`
-4. `Closing`
+- delivery stages: `Initiating`, `Planning`, `Executing`, `Closing`
+- separation of delivery stages from register-level decision lifecycles
+- ML1-only stage-gate advancement authority
+- baseline stage artifact requirements
+- planning-discipline rules
 
-Rules:
+## 5. Levine Law Application Rules
 
-- `Monitoring` is not a separate project stage.
-- Monitoring and reporting artifacts belong inside `Executing`.
-- `Implementation` is a deprecated stage label and must not be used as the
-  canonical stage name going forward.
-- Historical references to `Implementation` or `Monitoring` should be treated
-  as legacy until migrated.
+For Levine Law specifically:
 
-## 4. Decision Lifecycle Is Separate
+- project governance under this policy applies to Levine Law project packets and
+  project-management structures under `04_INITIATIVES/LL_PORTFOLIO`
+- LL client matters remain governed by matter doctrine, not project doctrine
+- Levine Law project templates, summaries, and agent specifications must conform
+  first to the repo-level project policy, then to this Levine Law subsidiary
+  policy
 
-Delivery stages must not be confused with register-level decision tracking.
+## 6. Drift Control
 
-Where needed, a separate decision lifecycle may be used for project register
-management, for example:
+If a Levine Law template, agent specification, README, or portfolio summary
+conflicts with the repo-level project policy, the repo-level project policy
+governs.
 
-- `idea`
-- `screening`
-- `validating`
-- `modeling`
-- `deciding`
-- `approved`
-- `rejected`
+If a Levine Law-specific project artifact conflicts with this subsidiary policy,
+this policy governs, subject always to the repo-level project policy.
 
-Decision lifecycles do not replace delivery stages.
+## 7. Related Artifacts
 
-## 5. Stage-Gate Authority
-
-No project stage advancement is valid without explicit ML1 approval recorded in
-project artifacts.
-
-Required gate sequence:
-
-- `Initiating -> Planning`
-- `Planning -> Executing`
-- `Executing -> Closing`
-
-ML2 may draft artifacts, structure options, and prepare packets.
-ML1 alone decides stage advancement.
-
-## 6. Canonical Artifact Set
-
-### Stage 1 - Initiating
-
-Required (all projects):
-
-- `PROJECT_CHARTER.md`
-- `PROBLEM_STATEMENT.md`
-- `SUCCESS_CRITERIA.md`
-- `STAKEHOLDERS.md`
-- `RISK_SCAN.md`
-- `APPROVAL_RECORD.md`
-
-Required (strategic projects only):
-
-- `BUSINESS_CASE.md`
-
-### Stage 2 - Planning
-
-Required:
-
-- `SCOPE_DEFINITION.md`
-- `WORKPLAN.md`
-- `ASSUMPTIONS_CONSTRAINTS.md`
-- `DEPENDENCIES.md`
-- `RISK_REGISTER.md`
-- `COMMUNICATION_PLAN.md`
-- `METRICS.md`
-
-### Stage 3 - Executing
-
-Required:
-
-- `EXECUTION_LOG.md`
-- `DECISION_LOG.md`
-- `CHANGE_LOG.md`
-- `ISSUE_LOG.md`
-- `DELIVERABLES_TRACKER.md`
-- `QA_CHECKLIST.md`
-- `STATUS_REPORT.md`
-- `KPI_DASHBOARD.md`
-- `VARIANCE_REPORT.md`
-- `RISK_UPDATES.md`
-- `STAKEHOLDER_UPDATES.md`
-
-### Stage 4 - Closing
-
-Required:
-
-- `DELIVERABLE_ACCEPTANCE.md`
-- `LESSONS_LEARNED.md`
-- `POST_EXECUTION_REVIEW.md`
-- `FINAL_STATUS_REPORT.md`
-- `ARCHIVE_INDEX.md`
-
-## 7. Planning Discipline
-
-Planning exists to support execution readiness, not planning for planning's
-sake.
-
-Rules:
-
-- Planning artifacts must be project-specific.
-- Planning artifacts must help lock scope, dependencies, controls, or gate
-  readiness.
-- Abstract or duplicative planning artifacts should be merged or removed.
-- `METRICS.md` is the single canonical measurement artifact.
-
-## 8. Drift Control
-
-This doctrine overrides conflicting project-stage language in:
-
-- templates
-- agent specifications
-- project README files
-- portfolio summaries
-- project packet placeholders
-
-If any lower-level project-governance artifact conflicts with this doctrine,
-this doctrine governs.
-
-## 9. Related Artifacts
-
+- `01_DOCTRINE/03_POLICIES/PROJECT_POLICY.md`
 - `04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/PROJECT_MANAGEMENT/PROJECT_ARTIFACT_TEMPLATE.md`
 - `00_SYSTEM/AGENTS/LLM-004_PROJECT_MANAGEMENT_AGENT.md`
 - `01_DOCTRINE/03_POLICIES/DOCTRINE-RISK-0002-project-risk-artifact-lifecycle-policy.md`

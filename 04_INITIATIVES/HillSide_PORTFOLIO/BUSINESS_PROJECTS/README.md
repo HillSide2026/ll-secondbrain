@@ -4,7 +4,7 @@ title: Business Projects
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-14
+last_updated: 2026-03-15
 tags: [hillside, business-projects]
 ---
 
@@ -15,6 +15,10 @@ This program contains HillSide business projects.
 Canonical register:
 
 - `PROJECT_REGISTER.md`
+
+Canonical artifact policy:
+
+- `PROJECT_ARTIFACT_POLICY.md`
 
 Current folder-backed projects:
 
@@ -30,3 +34,9 @@ Current folder-backed projects:
 
 Each HillSide business project now has a numbered folder starting with its
 canonical `HBP-###` label.
+
+Business-project folders may exist as shells while a project is still in `idea`
+or `screening`.
+
+Once a HillSide project enters `Initiating` or a packet starts to form, the
+required artifact set is governed by `PROJECT_ARTIFACT_POLICY.md`.
