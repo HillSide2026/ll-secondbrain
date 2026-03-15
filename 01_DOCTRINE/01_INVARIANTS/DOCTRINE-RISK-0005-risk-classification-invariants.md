@@ -19,7 +19,7 @@ Define non-negotiable invariants for how risks are classified, labeled, and deco
 
 1. Every canonical risk statement must be assignable to exactly one canonical category.
 2. Canonical categories are limited to `Scope`, `Schedule`, `Budget`, `Financial`, and `Strategic`, subject to portfolio and work-type applicability rules.
-3. A risk statement must describe the exposure itself, not the mitigation, owner, or control response.
+3. A risk statement must describe the exposure itself, not merely the mitigation, owner, or control response.
 4. If one sentence contains more than one category, it must be split into separate risk statements.
 5. `RISK_SCAN.md` may be narrative, but each listed risk must still classify cleanly.
 6. `RISK_REGISTER.md` must assign one explicit category to each risk row.

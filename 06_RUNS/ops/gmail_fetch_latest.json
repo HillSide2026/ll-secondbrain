@@ -1,15 +1,15 @@
 {
-  "fetched_at": "2026-03-05T05:00:07.052006+00:00",
+  "fetched_at": "2026-03-15T23:28:13.219843+00:00",
   "mode": "sync",
-  "emails_count": 6,
+  "emails_count": 41,
   "emails": [
     {
-      "message_id": "19cbc2eb05527536",
-      "internal_date": "1772683702000",
-      "date": "Thu, 05 Mar 2026 04:08:22 +0000",
-      "from": "donotreply@upwork.com",
+      "message_id": "19cf3c448e011251",
+      "internal_date": "1773616251000",
+      "date": "Sun, 15 Mar 2026 23:10:51 +0000",
+      "from": "Brilliant <notifications@account.brilliant.org>",
       "to": "matthew@levinelegal.ca",
-      "subject": "Invitation to Interview for: Family Trust Advisor",
+      "subject": "Matthew, time for another streak!",
       "labels": [
         "UNREAD",
         "CATEGORY_UPDATES",
@@ -18,12 +18,239 @@
       "body": null
     },
     {
-      "message_id": "19cbc278e9a83941",
-      "internal_date": "1772683233000",
-      "date": "Thu, 5 Mar 2026 12:00:33 +0800 (CST)",
-      "from": "Bitget <notification@promo1.bitget.com>",
+      "message_id": "19cf38ef1487ae3f",
+      "internal_date": "1773612742000",
+      "date": "Mon, 16 Mar 2026 07:12:22 +0900",
+      "from": "Ayako Yamaguchi <japan@ayakoyamaguchi.com>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "Re: Nikko",
+      "labels": [
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf38375ebfded0",
+      "internal_date": "1773612004000",
+      "date": "Sun, 15 Mar 2026 22:00:04 +0000",
+      "from": "Google Calendar <calendar-notification@google.com>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "Notification: Commute @ Mon Mar 16, 2026 6pm - 6:30pm (EDT) (Matthew AJ Levine)",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf375daa7a2822",
+      "internal_date": "1773611112000",
+      "date": "Sun, 15 Mar 2026 21:45:12 +0000",
+      "from": "Google Calendar <calendar-notification@google.com>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "Notification: Close Office @ Mon Mar 16, 2026 5:45pm - 6pm (EDT) (Matthew AJ Levine)",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf362d2b60f904",
+      "internal_date": "1773609862000",
+      "date": "Sun, 15 Mar 2026 17:24:22 -0400 (EDT)",
+      "from": "\"Szalai, Robert A\" <robert.szalai@td.com>",
       "to": "matthew@levinelegal.ca",
-      "subject": "Make your first purchase on our P2P platform and pay up to 20% less",
+      "subject": "#td-secure - docs for new purchase - prequalification",
+      "labels": [
+        "UNREAD",
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf34c60432286f",
+      "internal_date": "1773608394000",
+      "date": "Sun, 15 Mar 2026 20:59:54 +0000",
+      "from": "Google Calendar <calendar-notification@google.com>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "Notification: Firm Management @ Mon Mar 16, 2026 5pm - 5:30pm (EDT) (Matthew AJ Levine)",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf330f24c208f6",
+      "internal_date": "1773606596000",
+      "date": "Sun, 15 Mar 2026 20:29:56 +0000",
+      "from": "Google Calendar <calendar-notification@google.com>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "Notification: LLA 6 @ Mon Mar 16, 2026 4:30pm - 5:15pm (EDT) (Matthew AJ Levine)",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf316b79d4c770",
+      "internal_date": "1773604865000",
+      "date": "Sun, 15 Mar 2026 20:01:05 +0000",
+      "from": "Harry Bedi <harry@stream.money>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "Re: [Ext Sender] commercial bank account",
+      "labels": [
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX",
+        "Label_68"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf315c9d054e91",
+      "internal_date": "1773604800000",
+      "date": "Sun, 15 Mar 2026 20:00:00 +0000",
+      "from": "Harry Bedi <harry@stream.money>",
+      "to": "Matthew Levine <matthew@stream.money>",
+      "subject": "Re: Synology App",
+      "labels": [
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX",
+        "Label_68"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf2fa308cf00cc",
+      "internal_date": "1773603008000",
+      "date": "Sun, 15 Mar 2026 19:30:08 +0000",
+      "from": "Google Calendar <calendar-notification@google.com>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "Notification: LLA 5 @ Mon Mar 16, 2026 3:30pm - 4pm (EDT) (Matthew AJ Levine)",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf2f3d9c2a1f01",
+      "internal_date": "1773602589000",
+      "date": "Sun, 15 Mar 2026 19:23:09 +0000",
+      "from": "Slack <feedback@slack.com>",
+      "to": "matthew@get-stream.com",
+      "subject": "Katta Srinivas just joined your workspace!",
+      "labels": [
+        "IMPORTANT",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf2e9c049572f4",
+      "internal_date": "1773601918000",
+      "date": "Sun, 15 Mar 2026 19:11:58 +0000",
+      "from": "Harry Bedi <harry@stream.money>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "Re: [Ext Sender] commercial bank account",
+      "labels": [
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX",
+        "Label_68"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf2e4148d7daf3",
+      "internal_date": "1773601557000",
+      "date": "Sun, 15 Mar 2026 19:05:57 +0000",
+      "from": "WordPress <wordpress@levinelegalservices.com>",
+      "to": "accounts@matthewajlevine.com",
+      "subject": "[LLS] Please moderate: \"Hello world!\"",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf2d0b2d0baad8",
+      "internal_date": "1773600289000",
+      "date": "Sun, 15 Mar 2026 18:44:49 +0000",
+      "from": "Google Calendar <calendar-notification@google.com>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "Notification: LLA 4 @ Mon Mar 16, 2026 2:45pm - 3:30pm (EDT) (Matthew AJ Levine)",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf2c2623670762",
+      "internal_date": "1773599288000",
+      "date": "Sun, 15 Mar 2026 18:28:08 +0000",
+      "from": "WordPress <wordpress@studentrights.site>",
+      "to": "Matthew@matthewajlevine.com",
+      "subject": "[studentrights.site] Some plugins and themes have automatically updated",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf2a7878ea1075",
+      "internal_date": "1773597590000",
+      "date": "Sun, 15 Mar 2026 17:59:50 +0000",
+      "from": "Google Calendar <calendar-notification@google.com>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "Notification: LL LUNCH @ Mon Mar 16, 2026 2pm - 2:30pm (EDT) (Matthew AJ Levine)",
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf239cfc0c0493",
+      "internal_date": "1773590400000",
+      "date": "Sun, 15 Mar 2026 16:00:00 +0000",
+      "from": "Google Calendar <calendar-notification@google.com>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "Notification: LLA 3 @ Mon Mar 16, 2026 12pm - 12:30pm (EDT) (Matthew AJ Levine)",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf232a4092ac82",
+      "internal_date": "1773589930000",
+      "date": "Sun, 15 Mar 2026 15:52:10 +0000 (GMT)",
+      "from": "David Aderman <david.a@plantationsinternational.com>",
+      "to": "matthew@matthewajlevine.com",
+      "subject": "Matthew, You need to read this ASAP",
       "labels": [
         "CATEGORY_PROMOTIONS",
         "UNREAD",
@@ -32,42 +259,12 @@
       "body": null
     },
     {
-      "message_id": "19cbc1ec63a11987",
-      "internal_date": "1772682649000",
-      "date": "Thu, 5 Mar 2026 03:50:49 +0000",
-      "from": "Jocelyn Ong <Jocelyn_Ong@levinelegalservices.com>",
+      "message_id": "19cf202caceb5462",
+      "internal_date": "1773586794000",
+      "date": "Sun, 15 Mar 2026 14:59:54 +0000",
+      "from": "Google Calendar <calendar-notification@google.com>",
       "to": "Matthew Levine <matthew@levinelegal.ca>",
-      "subject": "Re: Outstanding credit REGUS RENT",
-      "labels": [
-        "UNREAD",
-        "IMPORTANT",
-        "CATEGORY_PERSONAL",
-        "INBOX"
-      ],
-      "body": null
-    },
-    {
-      "message_id": "19cbbe2198583039",
-      "internal_date": "1772678678000",
-      "date": "Thu, 5 Mar 2026 02:44:38 +0000",
-      "from": "Jocelyn Ong <Jocelyn_Ong@levinelegalservices.com>",
-      "to": "Matthew Levine <matthew@levinelegal.ca>",
-      "subject": "Re: Tax Implication of Shareholder Distributions",
-      "labels": [
-        "UNREAD",
-        "IMPORTANT",
-        "CATEGORY_PERSONAL",
-        "INBOX"
-      ],
-      "body": null
-    },
-    {
-      "message_id": "19cbbad1f7269a9f",
-      "internal_date": "1772675210000",
-      "date": "Thu, 05 Mar 2026 01:46:50 +0000",
-      "from": "Upwork Notification <donotreply@upwork.com>",
-      "to": "Matthew Levine <matthew@levinelegal.ca>",
-      "subject": "Manual time was added",
+      "subject": "Notification: LLA 2 @ Mon Mar 16, 2026 11am - 11:45am (EDT) (Matthew AJ Levine)",
       "labels": [
         "UNREAD",
         "CATEGORY_UPDATES",
@@ -76,12 +273,311 @@
       "body": null
     },
     {
-      "message_id": "19cbba71918a97a6",
-      "internal_date": "1772674815000",
-      "date": "Thu, 05 Mar 2026 01:40:15 +0000",
+      "message_id": "19cf1d9d5bf98180",
+      "internal_date": "1773584110000",
+      "date": "Sun, 15 Mar 2026 14:15:10 +0000",
+      "from": "Google Calendar <calendar-notification@google.com>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "Notification: LLA I @ Mon Mar 16, 2026 10:15am - 10:45am (EDT) (Matthew AJ Levine)",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf1cbcaf7fc027",
+      "internal_date": "1773583190000",
+      "date": "Sun, 15 Mar 2026 13:59:50 +0000",
+      "from": "Google Calendar <calendar-notification@google.com>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "Notification: Matthew/Lino Touchbase @ Mon Mar 16, 2026 10am - 10:30am (EDT) (Matthew AJ Levine)",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf1c2af3971247",
+      "internal_date": "1773582593000",
+      "date": "Sun, 15 Mar 2026 13:49:53 +0000",
+      "from": "Google Calendar <calendar-notification@google.com>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "Notification: Open Office @ Mon Mar 16, 2026 9:50am - 9:55am (EDT) (Matthew AJ Levine)",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf1b535b609cee",
+      "internal_date": "1773581709000",
+      "date": "Sun, 15 Mar 2026 13:35:09 +0000",
+      "from": "Google Calendar <calendar-notification@google.com>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "Notification: C117- 2 Day Generative AI Mastermind  @ Sun Mar 15, 2026 9:45am - 7pm (EDT) (Matthew AJ Levine)",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf187294b5b864",
+      "internal_date": "1773578692000",
+      "date": "Sun, 15 Mar 2026 12:44:52 +0000",
+      "from": "Google Calendar <calendar-notification@google.com>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "Notification: C117- 2 Day Generative AI Mastermind  @ Sun Mar 15, 2026 9:45am - 7pm (EDT) (Matthew AJ Levine)",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf15e4c2ce2d70",
+      "internal_date": "1773576014000",
+      "date": "Sun, 15 Mar 2026 12:00:14 +0000",
+      "from": "Google Calendar <calendar-notification@google.com>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "Notification: Stream x Innowise @ Mon Mar 16, 2026 8am - 9am (EDT) (Matthew AJ Levine)",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "Label_68"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf1265b65ff67a",
+      "internal_date": "1773572342000",
+      "date": "Sun, 15 Mar 2026 10:59:02 +0000",
+      "from": "\"Chen | Clearsky Network\" <Chen.Ben@clearsky-network.com>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "RE: Yellowbricks Capital Incorporatd - Post Closing",
+      "labels": [
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf118985c85410",
+      "internal_date": "1773571445000",
+      "date": "Sun, 15 Mar 2026 10:44:05 +0000 (UTC)",
+      "from": "\"DoNotReply@regus.com\" <donotreply@regus.com>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>",
+      "subject": "CARD TRANSACTION CONFIRMATION",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf10991dd2374f",
+      "internal_date": "1773570460000",
+      "date": "Sun, 15 Mar 2026 10:27:40 +0000",
+      "from": "bmoalerts@bmo.com",
+      "to": "MATTHEW@matthewajlevine.com",
+      "subject": "Your BMO Credit Card statement is ready",
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf0b17cb53b289",
+      "internal_date": "1773564689000",
+      "date": "Sun, 15 Mar 2026 08:51:29 +0000",
+      "from": "JOCELYN ONG via Asana <no-reply@asana.com>",
+      "to": "matthew@levinelegal.ca",
+      "subject": "📥 JOCELYN assigned you a task: INQUIRY: BMO bank feed [LLS – Accounting & Bookkeep…]",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf0aa1b687c9ab",
+      "internal_date": "1773564205000",
+      "date": "Sun, 15 Mar 2026 08:43:25 +0000",
+      "from": "\"Amazon.ca\" <shipment-tracking@amazon.ca>",
+      "to": "matthew@matthewajlevine.com",
+      "subject": "Shipped: \"Learning Resources Canadian...\" and 2 more items",
+      "labels": [
+        "UNREAD",
+        "IMPORTANT",
+        "CATEGORY_UPDATES",
+        "Label_8077664839768793771",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf07cc1a14ad1e",
+      "internal_date": "1773561233000",
+      "date": "Sun, 15 Mar 2026 07:53:53 +0000",
+      "from": "JOCELYN ONG via Asana <no-reply@asana.com>",
+      "to": "matthew@levinelegal.ca",
+      "subject": "📥 JOCELYN assigned you a task: REVIEW: Invoice 2025-497 from AzPerLegal Services Inc. [LL Operations]",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf06a8c0434ed9",
+      "internal_date": "1773560028000",
+      "date": "Sun, 15 Mar 2026 07:33:48 +0000",
+      "from": "Jocelyn Ong <Jocelyn_Ong@levinelegalservices.com>",
+      "to": "Matthew Levine <matthew@levinelegal.ca>, ops <ops@levinelegal.ca>, Lino Bernal <Lino@levinelegalservices.com>",
+      "subject": "Quick Check on Shared Mailbox Rules",
+      "labels": [
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cf0512e0b113bf",
+      "internal_date": "1773558376000",
+      "date": "Sun, 15 Mar 2026 07:06:16 +0000",
+      "from": "\"Jocelyn Ong (via Google Sheets)\" <drive-shares-dm-noreply@google.com>",
+      "to": "matthew@levinelegal.ca",
+      "subject": "Spreadsheet shared with you: \"LL - Billable Expense Tracker 2026.xlsx\"",
+      "labels": [
+        "UNREAD",
+        "IMPORTANT",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cefb66ff95679b",
+      "internal_date": "1773548235000",
+      "date": "Sun, 15 Mar 2026 04:17:15 +0000",
+      "from": "JOCELYN ONG via Asana <no-reply@asana.com>",
+      "to": "matthew@levinelegal.ca",
+      "subject": "📥 JOCELYN assigned you a task: REVIEW: Urgent Communication re: Regus Payment [LL Operations]",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cefae2809d613c",
+      "internal_date": "1773547693000",
+      "date": "Sun, 15 Mar 2026 04:08:13 +0000",
+      "from": "JOCELYN ONG via Asana <no-reply@asana.com>",
+      "to": "matthew@levinelegal.ca",
+      "subject": "📥 JOCELYN assigned you a task: Inquiry: Invoice 28630 [STORE: 2026-02-28 Invoice]",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cef91ffd453b51",
+      "internal_date": "1773545847000",
+      "date": "Sun, 15 Mar 2026 03:37:27 +0000",
+      "from": "Supabase <welcome@supabase.com>",
+      "to": "matthew@levinelegal.ca",
+      "subject": "Welcome to Supabase",
+      "labels": [
+        "UNREAD",
+        "IMPORTANT",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cef918a7521a24",
+      "internal_date": "1773545818000",
+      "date": "Sat, 14 Mar 2026 20:36:58 -0700",
+      "from": "GitHub <noreply@github.com>",
+      "to": "HillSide2026 <matthew@levinelegal.ca>",
+      "subject": "[GitHub] A third-party OAuth application has been added to your account",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cef76b8fbe77f6",
+      "internal_date": "1773544060000",
+      "date": "Sun, 15 Mar 2026 03:07:40 +0000",
+      "from": "\"Amazon.ca\" <auto-confirm@amazon.ca>",
+      "to": "matthew@matthewajlevine.com",
+      "subject": "Ordered: \"Learning Resources Canadian...\" and 4 more items",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "Label_8077664839768793771",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cef42a6f7a5372",
+      "internal_date": "1773540647000",
+      "date": "Sun, 15 Mar 2026 02:10:47 +0000",
+      "from": "Brilliant <notifications@account.brilliant.org>",
+      "to": "matthew@levinelegal.ca",
+      "subject": "👋 It’s Koji",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cef3e9aae0d8f4",
+      "internal_date": "1773540382000",
+      "date": "Sun, 15 Mar 2026 02:06:22 +0000",
+      "from": "donotreply@upwork.com",
+      "to": "matthew@levinelegal.ca",
+      "subject": "Contract rate increased: Accounting - Senior Manager",
+      "labels": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "body": null
+    },
+    {
+      "message_id": "19cef2b4118fcb80",
+      "internal_date": "1773539113000",
+      "date": "Sun, 15 Mar 2026 01:45:13 +0000",
       "from": "Upwork Notification <donotreply@upwork.com>",
       "to": "Matthew Levine <matthew@levinelegal.ca>",
-      "subject": "Khanh N. has started working. Review work done.",
+      "subject": "Manual time was added",
       "labels": [
         "UNREAD",
         "CATEGORY_UPDATES",

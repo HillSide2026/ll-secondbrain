@@ -26,6 +26,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from dotenv import load_dotenv
+from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 
@@ -33,27 +34,26 @@ from googleapiclient.discovery import build
 REPO_ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(REPO_ROOT / ".env", override=True)
 
-CLIENT_ID     = os.environ["GMAIL_CLIENT_ID"]
-CLIENT_SECRET = os.environ["GMAIL_CLIENT_SECRET"]
-REFRESH_TOKEN = os.environ["GMAIL_REFRESH_TOKEN"]
-
 HARD_LIMIT       = 100
 METADATA_HEADERS = ["From", "To", "Subject", "Date"]
 
 STATE_FILE  = REPO_ROOT / "06_RUNS" / "state" / "gmail_sync_state.json"
 OUTPUT_PATH = REPO_ROOT / "06_RUNS" / "ops" / "gmail_fetch_latest.json"
 
+_TOKEN_PATH = REPO_ROOT / os.environ.get("GOOGLE_OAUTH_TOKEN_PATH", "config/google_oauth_tokens.json")
+
 
 # ── Auth ────────────────────────────────────────────────────────────────────
 def get_gmail_service():
-    creds = Credentials(
-        token=None,
-        refresh_token=REFRESH_TOKEN,
-        token_uri="https://oauth2.googleapis.com/token",
-        client_id=CLIENT_ID,
-        client_secret=CLIENT_SECRET,
-        scopes=["https://www.googleapis.com/auth/gmail.modify"],
-    )
+    if not _TOKEN_PATH.exists():
+        raise FileNotFoundError(
+            f"Gmail OAuth token not found at {_TOKEN_PATH}. "
+            "Set GOOGLE_OAUTH_TOKEN_PATH or run the Gmail OAuth setup."
+        )
+    creds = Credentials.from_authorized_user_info(json.loads(_TOKEN_PATH.read_text()))
+    if creds.expired and creds.refresh_token:
+        creds.refresh(Request())
+        _TOKEN_PATH.write_text(creds.to_json())
     return build("gmail", "v1", credentials=creds)
 
 
