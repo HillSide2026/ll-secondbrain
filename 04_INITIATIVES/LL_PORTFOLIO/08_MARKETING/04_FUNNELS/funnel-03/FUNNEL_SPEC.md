@@ -4,7 +4,7 @@ title: Funnel Spec — Funnel 03
 owner: ML1
 status: active
 created_date: 2026-02-25
-last_updated: 2026-02-25
+last_updated: 2026-03-15
 tags: []
 ---
 
@@ -101,9 +101,13 @@ Specialized payments and stablecoin regulatory counsel for operators making stru
 - Strategy folder: 02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/STRATEGIES/PAYMENTS_MSB_PSP_REGULATORY_COUNSEL/
 - Entry offers:
   - MSB Registration Mandate
-  - Suspicious Transaction Triage and STR Filing
+  - Suspicious Transaction Triage & STR Filing
   - AML Health Check
-- Core offer: Ongoing AML Counsel Retainer
+- Core offers:
+  - Suspicious Transaction Reporting Triage & Playbook
+  - MSB Effectiveness Review
+  - RPAA Reporting
+  - Ongoing AML Counsel Retainer
 - Solutions (as applicable):
   - MSB_INTAKE_AND_REGISTRATION
   - FINTRAC_RESPONSE

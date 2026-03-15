@@ -4,7 +4,7 @@ title: Funnel Spec — Funnel 02
 owner: ML1
 status: planned
 created_date: 2026-02-25
-last_updated: 2026-03-10
+last_updated: 2026-03-15
 tags: []
 ---
 
@@ -17,12 +17,14 @@ tags: []
 
 ## Purpose / Role
 
-Preventative, structured diagnostic entry point intended to replace reactive acquisition.
+Corporate-law acquisition path for growing businesses with more than `$1M`
+annual cash flow, using a preventative paid diagnostic as the entry point.
 
 ## Funnel Distinction
 
-Funnel 02 is the primary awareness-and-interest building path.
-It carries prospects from discovery through consideration and inquiry before conversion handoff.
+Funnel 02 is the primary awareness-and-interest building path for growth-stage
+corporate-law demand. It carries prospects from discovery through
+consideration and inquiry before conversion handoff.
 
 ## Positioning Reference
 
@@ -35,7 +37,7 @@ It carries prospects from discovery through consideration and inquiry before con
 ## Target ICP (Must Match Positioning)
 
 - Ontario-based operating businesses
-- $1M-$8M revenue
+- more than `$1M` annual cash flow
 - 5-30 employees
 - 2+ years in operation
 - Accountant involved
@@ -49,10 +51,15 @@ Secondary planning hypothesis (research only):
 
 - Content
 - Google Ads
+- `levine-law.ca`
+- overlapping NDA Esq landing-page acquisition surface on `levine-law.ca`
 
 ## Traffic / Acquisition
 
 - Lead magnet: Growth Without Structural Drift (TM)
+- higher-quality, higher-cost Google Ads traffic is allowed where it improves fit and downstream economics
+- authority content / SEO is a core acquisition lane
+- NDA Esq may act as a supplementary traffic and lead source for Funnel 02 where the acquisition surface overlaps, without changing project boundaries
 
 ## Intake Mechanism
 
@@ -60,10 +67,11 @@ Secondary planning hypothesis (research only):
 - Voice AI
 - SMS follow-up
 - SDR qualification call (mandatory for `intake_completed`)
+- setter-supported qualification and scheduling
 
 ## Qualification Gates
 
-- revenue_min: $1M
+- annual_cash_flow_min: $1M
 - employee_min: 5
 - years_in_operation_min: 2
 - ontario_incorporation_required: true
@@ -85,7 +93,8 @@ Required documents:
 
 ## Core Narrative / Promise
 
-Structured governance and risk exposure assessment for operating companies that have outgrown their original setup.
+Structured corporate-law and governance assessment for operating companies that
+have outgrown their original setup.
 
 ## Conversion Event Definition
 
@@ -121,6 +130,9 @@ Lifecycle interpretation:
 - paid_health_check_conversion_rate
 - remediation_project_conversion_rate
 - retainer_conversion_rate
+- lead_response_time
+- scheduled_consult_rate
+- intake_reporting_completeness
 
 ## KPI Targets (Must Map to Goals)
 

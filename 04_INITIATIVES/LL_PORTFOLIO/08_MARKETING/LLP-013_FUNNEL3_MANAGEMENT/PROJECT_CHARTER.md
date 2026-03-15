@@ -17,9 +17,13 @@ Pre-matter lifecycle only.
 - Build authority and conversion for payments/MSB/PSP counsel.
 - Improve consistency across multiple entry offers.
 - Strengthen conversion attribution and market signal clarity.
+- make the full Funnel 03 offer stack explicit so entry offers and core offers
+  are governed as one coherent regulated-market acquisition system.
 
 ## 4. High-Level Deliverable
 - Funnel 03 initiation package including:
+  - canonical entry-offer map,
+  - canonical core-offer map,
   - entry-offer orchestration plan,
   - networking business development plan,
   - asset and QA control plan,

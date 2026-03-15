@@ -4,7 +4,7 @@ title: NDA Esq - Scope Definition
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-14
+last_updated: 2026-03-15
 tags: [nda-esq, strategic-project, planning, scope]
 ---
 
@@ -17,7 +17,7 @@ Stage: Planning
 ## Implementation Objective
 
 Define the controlled implementation scope required to launch NDA Esq as an
-AI-powered NDA review SaaS with three coordinated workstreams:
+AI-powered NDA review SaaS project with three coordinated workstreams:
 
 - Product Development
 - Customer Acquisition
@@ -55,6 +55,8 @@ AI-powered NDA review SaaS with three coordinated workstreams:
 - The base offer is NDA review only.
 - Human lawyer review, if offered, is an optional premium escalation and not the default product path.
 - Product, acquisition, and operations workstreams must remain synchronized to the approved roadmap.
+- overlap with Funnel 02 may exist at the customer-acquisition surface, but
+  `LLP-024_NDA_ESQ` remains a standalone project with separate stage governance
 - Any expansion in offer type, channel mix, or customer segment requires ML1 approval before implementation.
 
 ## Implementation Readiness Deliverables

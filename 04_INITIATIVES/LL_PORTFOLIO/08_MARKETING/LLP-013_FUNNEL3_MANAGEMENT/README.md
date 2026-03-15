@@ -4,7 +4,7 @@ title: LLP-013_FUNNEL3_MANAGEMENT
 owner: ML1
 status: initiating
 created_date: 2026-02-26
-last_updated: 2026-03-14
+last_updated: 2026-03-15
 tags: [marketing, funnel-03, initiation]
 ---
 
@@ -18,9 +18,11 @@ business development lane.
 ## Scope
 ### In Scope
 - Funnel 03 execution governance and signal framework.
-- Entry-offer orchestration and conversion tracking.
+- canonical entry-offer and core-offer orchestration.
+- conversion tracking and revenue-attribution design.
 - Asset, distribution, and QA controls.
 - Networking-based business development planning and controlled follow-up.
+- payments / MSB / PSP / RPAA authority positioning.
 
 ### Out of Scope
 - Doctrine changes.
@@ -32,6 +34,12 @@ ML1 is the sole authority for approval, activation, and promotion of this projec
 
 ## Approval State
 Initiation artifacts drafted; awaiting ML1 initiation approval.
+Draft planning-stage documents may exist in this folder for early structuring,
+but they do not imply promotion to `Planning` or planning-stage authorization.
+
+Canonical offer map:
+- Entry offers: `MSB Registration Mandate`, `Suspicious Transaction Triage & STR Filing`, `AML Health Check`
+- Core offers: `Suspicious Transaction Reporting Triage & Playbook`, `MSB Effectiveness Review`, `RPAA Reporting`, `Ongoing AML Counsel Retainer`
 
 ## Supporting Funnel Assets
 

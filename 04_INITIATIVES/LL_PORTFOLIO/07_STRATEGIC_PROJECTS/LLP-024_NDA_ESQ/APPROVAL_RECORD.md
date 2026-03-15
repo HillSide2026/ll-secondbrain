@@ -4,7 +4,7 @@ title: NDA Esq - Approval Record
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-14
+last_updated: 2026-03-15
 tags: [nda-esq, strategic-project, approval]
 ---
 
@@ -23,7 +23,7 @@ Status: Planning Authorized
 - Product Development scope drafted
 - Customer Acquisition scope drafted
 - Operations and Performance Monitoring scope drafted
-- Program roadmap drafted
+- Workstream roadmap drafted
 - Initiation approved by ML1
 - Planning authorized by ML1
 - Planning artifacts drafted
@@ -33,12 +33,14 @@ Status: Planning Authorized
 
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| `PROJECT_CHARTER.md` | approved | 2026-03-14 | Program purpose, structure, and authority defined |
+| `PROJECT_CHARTER.md` | approved | 2026-03-14 | Project purpose, workstream structure, and authority defined |
 | `PROBLEM_STATEMENT.md` | approved | 2026-03-14 | Market and operating problem defined |
 | `SUCCESS_CRITERIA.md` | approved | 2026-03-14 | Product, growth, and operations targets documented |
 | `STAKEHOLDERS.md` | approved | 2026-03-14 | Authority and workstream stakeholders recorded |
-| `RISKS_INITIAL.md` | approved | 2026-03-14 | Initiating-stage risk set captured |
+| `RISKS_INITIAL.md` | approved | 2026-03-14 | Legacy initiating-stage risk set captured before repo-level policy alignment |
+| `RISK_SCAN.md` | drafted | 2026-03-15 | Canonical initiation risk artifact added to align the packet with repo-level project policy |
 | `APPROVAL_RECORD.md` | approved | 2026-03-14 | ML1 stage-gate decisions recorded |
+| `BUSINESS_CASE.md` | drafted | 2026-03-15 | Strategic-project initiation artifact added to align the packet with repo-level project policy |
 
 ML1 Decision: Approved to advance
 Initiation Approved By: ML1
@@ -61,7 +63,7 @@ Planning Stage Authorized: Yes
 
 | Date | Decision | Authority | Notes |
 |------|----------|-----------|-------|
-| 2026-03-14 | Initiation approved for NDA Esq | ML1 | Program structure, scope boundaries, roadmap, and success metrics approved at initiation stage. |
+| 2026-03-14 | Initiation approved for NDA Esq | ML1 | Project workstream structure, scope boundaries, roadmap, and success metrics approved at initiation stage. |
 | 2026-03-14 | Planning authorized for NDA Esq | ML1 | Planning-stage artifacts may now be developed for product, acquisition, and operations workstreams. |
 
 Initiation Approved By: ML1 (Matthew Levine)
@@ -70,6 +72,7 @@ Date: 2026-03-14
 Planning Stage Authorized: Yes
 
 Notes:
-- Initiation approval confirms scope and program framing only.
+- Initiation approval confirms scope and project framing only.
 - Planning artifacts are now authorized.
 - Execution remains subject to separate ML1 approval.
+- `RISK_SCAN.md` and `BUSINESS_CASE.md` were added on 2026-03-15 to align the packet with current repo-level initiation requirements; no separate ML1 approval is recorded for those two artifacts yet.

@@ -4,7 +4,7 @@ title: NDA Esq - Initial Risk Assessment
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-14
+last_updated: 2026-03-15
 tags: [nda-esq, strategic-project, risk]
 ---
 
@@ -22,7 +22,7 @@ trust before the target accuracy threshold is met.
 
 ## 3. Scope Creep Risk
 
-The program could sprawl into manual drafting, full-service legal consulting, or
+The project could sprawl into manual drafting, full-service legal consulting, or
 overbroad acquisition channels that slow MVP execution.
 
 ## 4. Acquisition Economics Risk

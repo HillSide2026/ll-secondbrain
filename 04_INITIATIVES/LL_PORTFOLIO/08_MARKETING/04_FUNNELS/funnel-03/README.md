@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 project_stage: initiating
 created_date: 2026-03-07
-last_updated: 2026-03-14
+last_updated: 2026-03-15
 tags: [marketing, funnel-03, networking]
 ---
 
@@ -19,11 +19,13 @@ content plus controlled networking-based business development.
 ## Scope
 
 ### In Scope
+- canonical entry-offer and core-offer definition for Funnel 03
 - entry offers and lead magnets
 - content-driven acquisition
 - networking-based business development
 - consult conversion tracking
 - governed follow-up into intake
+- regulated-domain offer orchestration across payments, MSB, PSP, RPAA, and AML-adjacent surfaces
 
 ### Out of Scope
 - legal advice before engagement
@@ -42,6 +44,19 @@ ML1 approval is required for scope, changes, and any execution commitments.
 ## Approval State
 
 `draft`
+
+## Canonical Offer Map
+
+Entry offers:
+- `MSB Registration Mandate`
+- `Suspicious Transaction Triage & STR Filing`
+- `AML Health Check`
+
+Core offers:
+- `Suspicious Transaction Reporting Triage & Playbook`
+- `MSB Effectiveness Review`
+- `RPAA Reporting`
+- `Ongoing AML Counsel Retainer`
 
 ## Last ML1 Review Date
 

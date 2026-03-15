@@ -1,19 +1,27 @@
 ---
 id: 04_initiatives__ll_portfolio__08_marketing__funnel_02_payments_msb_psp__readme_md
-title: Funnel 02 — Payments / MSB / PSP
+title: Legacy Funnel 02 Payments Folder
 owner: ML1
 status: draft
 created_date: 2026-02-15
-last_updated: 2026-03-09
-tags: [marketing, funnel]
+last_updated: 2026-03-15
+tags: [marketing, funnel, legacy]
 ---
 
-# Funnel 02 — Payments / MSB / PSP
+# Legacy Funnel 02 Payments Folder
 
 **Parent:** `04_INITIATIVES/LL_PORTFOLIO/08_MARKETING/`
 
-This folder contains assets and workflows specific to Funnel 02 as defined in
-`04_INITIATIVES/LL_PORTFOLIO/08_MARKETING/README.md`.
+This folder name reflects an older funnel numbering model.
+
+Current canonical rule:
+- Funnel 02 = corporate law services for growing businesses with more than
+  `$1M` annual cash flow
+- Funnel 03 = payments / MSB / PSP regulatory counsel
+
+So the assets in this folder should now be interpreted as legacy
+payments-regulatory material aligned to Funnel 03, not as the canonical
+definition of Funnel 02.
 
 ## Operational Snapshot
 

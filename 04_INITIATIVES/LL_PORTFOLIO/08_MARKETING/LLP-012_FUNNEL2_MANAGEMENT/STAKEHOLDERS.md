@@ -14,12 +14,19 @@ Project Path: 08_MARKETING/LLP-012_FUNNEL2_MANAGEMENT
 - Distribution Orchestration Agent
 - Market Signal Agent
 - Repository / Asset Governance Agent
+- Website / domain implementation owner
+- Setter / appointment-setting role
+- Senior lawyer for Funnel 02 legal delivery
+- NDA Esq acquisition-surface coordination owner
 
 ## Governance Stakeholders
 - ML2 doctrine and policy controls
 - Intake management operations (handoff boundary)
+- fulfillment onboarding and legal-delivery handoff owners
 
 ## External Surfaces
 - Content channels
 - Google Ads
 - Go High Level (GHL)
+- `levine-law.ca`
+- NDA Esq landing page on `levine-law.ca`

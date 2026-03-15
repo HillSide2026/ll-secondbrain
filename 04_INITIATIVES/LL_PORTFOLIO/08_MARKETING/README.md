@@ -105,21 +105,48 @@ Detailed, funnel-specific pipeline stages are defined in each funnel spec under
 
 ---
 
-### Funnel 2: Payments / MSB / PSP
+### Funnel 2: Corporate Law Services For Growing Businesses
 
 | Field | Value |
 |-------|-------|
-| Acquisition | Book: "LL Funnel 2026 — Launch Your Payments Business in Canada", Blog / thought leadership (e.g., Stablecoins, payments regulation) |
+| Target | Growing Ontario businesses with more than `$1M` annual cash flow |
+| Acquisition | `levinelegal.ca` -> `levine-law.ca` migration, higher-quality Google Ads, authority content / SEO, and overlapping traffic capture through the NDA Esq landing page on `levine-law.ca` |
 | Intake & Conversion Tracking System | Go High Level (GHL) |
 
-**Offer Ladder (Marketing Classification Only):**
+**Offers:**
 
-| Tier | Offer |
-|------|-------|
-| Entry | Launch |
-| Core | Grow |
-| Expansion | Scale |
-| Exit | Exit |
+| Offer |
+|-------|
+| Corporate Health Check |
+| Remediation |
+| Fractional Counsel |
+
+---
+
+### Funnel 3: Payments / MSB / PSP
+
+| Field | Value |
+|-------|-------|
+| Target | Payments, MSB, PSP, stablecoin, and adjacent regulated operators with Canada exposure |
+| Acquisition | Book: "LL Funnel 2026 — Launch Your Payments Business in Canada", blog / thought leadership, and networking-led business development |
+| Intake & Conversion Tracking System | Go High Level (GHL) |
+
+**Entry Offers:**
+
+| Offer |
+|-------|
+| MSB Registration Mandate |
+| Suspicious Transaction Triage & STR Filing |
+| AML Health Check |
+
+**Core Offers:**
+
+| Offer |
+|-------|
+| Suspicious Transaction Reporting Triage & Playbook |
+| MSB Effectiveness Review |
+| RPAA Reporting |
+| Ongoing AML Counsel Retainer |
 
 ---
 
@@ -138,7 +165,7 @@ Offers:
 
 * **"New Shareholder" is NOT a standalone offer.**
 * All shareholder admissions fall under **"Shareholder Change"**.
-* The value ladder (Launch → Grow → Scale → Exit) is a marketing classification only.
+* Any funnel-specific value ladder is a marketing classification only.
 * Clients do NOT auto-advance between offers.
 
 ---

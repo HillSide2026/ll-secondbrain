@@ -4,7 +4,7 @@ title: LLP-024 — NDA Esq
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-14
+last_updated: 2026-03-15
 tags: [nda-esq, strategic-project]
 ---
 
@@ -12,13 +12,13 @@ tags: [nda-esq, strategic-project]
 
 ## Purpose
 
-Define and launch an AI-powered NDA review SaaS program that allows users to
+Define and launch an AI-powered NDA review SaaS project that allows users to
 upload NDAs, receive AI-generated risk analysis, and optionally access human
 lawyer review.
 
-## Program Structure
+## Workstream Structure
 
-NDA Esq is structured as three coordinated projects:
+NDA Esq is one project structured around three coordinated workstreams:
 
 1. `Product Development`
    Build and launch the NDA review application, AI review engine, payments, and user dashboard.
@@ -26,6 +26,11 @@ NDA Esq is structured as three coordinated projects:
    Drive traffic, conversions, and revenue through focused acquisition channels.
 3. `Operations and Performance Monitoring`
    Track revenue, usage, retention, support, and operating performance.
+
+Boundary note:
+`LLP-024_NDA_ESQ` is a standalone project.
+Its customer-acquisition workstream may overlap with Funnel 02 marketing
+surfaces, but the project is not subordinate to `LLP-012_FUNNEL2_MANAGEMENT`.
 
 ## 1. Product Development
 
@@ -143,7 +148,7 @@ The System must NOT:
 - Merge this project into operations without explicit authorization
 - Treat the base product as approved legal consultation
 
-## Program Roadmap
+## Workstream Roadmap
 
 - `Phase 1 (0-60 days)` - Product Development: MVP build and pre-sales
 - `Phase 2 (60-120 days)` - Customer Acquisition: marketing launch and paid traffic
@@ -159,8 +164,14 @@ The System must NOT:
 - `PROBLEM_STATEMENT.md`
 - `SUCCESS_CRITERIA.md`
 - `STAKEHOLDERS.md`
-- `RISKS_INITIAL.md`
+- `RISK_SCAN.md`
 - `APPROVAL_RECORD.md`
+- `BUSINESS_CASE.md`
+
+Legacy note:
+`RISKS_INITIAL.md` remains in the folder as the earlier initiation-stage risk
+artifact, but `RISK_SCAN.md` is now the canonical initiation risk document for
+alignment with the repo-level project policy.
 
 ## Planning Artifacts
 

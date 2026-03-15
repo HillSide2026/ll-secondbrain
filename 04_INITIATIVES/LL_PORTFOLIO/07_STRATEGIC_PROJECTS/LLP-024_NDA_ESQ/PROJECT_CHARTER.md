@@ -4,7 +4,7 @@ title: NDA Esq - Project Charter
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-14
+last_updated: 2026-03-15
 tags: [nda-esq, strategic-project, charter]
 ---
 
@@ -25,15 +25,20 @@ review.
 
 ## 2. Nature of Project
 
-Strategic product program with three coordinated projects:
+Strategic product project with three coordinated workstreams:
 
 - Product Development
 - Customer Acquisition
 - Operations and Performance Monitoring
 
-The program is initiation-defined but not yet authorized for Planning or launch.
+The project is initiation-defined but not yet authorized for Planning or launch.
 The base offer is NDA review only, not manual drafting or full-service legal
 consultation.
+
+Boundary rule:
+- `LLP-024_NDA_ESQ` remains a standalone project
+- overlap between its customer-acquisition workstream and Funnel 02 does not
+  collapse project identity or stage governance
 
 ## 3. Strategic Rationale
 
@@ -45,7 +50,7 @@ consultation.
 
 ## 4. Deliverable (High-Level)
 
-Program deliverables include:
+Project deliverables include:
 
 - landing page
 - NDA review web application

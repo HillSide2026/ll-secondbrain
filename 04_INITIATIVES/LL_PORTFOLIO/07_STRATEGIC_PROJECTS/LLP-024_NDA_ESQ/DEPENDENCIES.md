@@ -4,7 +4,7 @@ title: NDA Esq - Dependencies
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-14
+last_updated: 2026-03-15
 tags: [nda-esq, strategic-project, planning, dependencies]
 ---
 
@@ -47,6 +47,8 @@ Stage: Planning
 - SEO/content publishing workflow
 - outreach tooling and list-building process
 - referral and affiliate program structure
+- coordination with Funnel 02 only where customer-acquisition surfaces overlap,
+  without subordinating `LLP-024_NDA_ESQ` to `LLP-012_FUNNEL2_MANAGEMENT`
 
 ## Operations Dependencies
 

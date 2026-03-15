@@ -4,7 +4,7 @@ title: NDA Esq - Metrics
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-14
+last_updated: 2026-03-15
 tags: [nda-esq, strategic-project, planning, metrics]
 ---
 
@@ -103,7 +103,7 @@ Stage: Planning
 
 ### Purpose
 
-NDA Esq is a greenfield program, so there is no legacy operating baseline. The
+NDA Esq is a greenfield project, so there is no legacy operating baseline. The
 baseline will therefore be captured from the controlled launch period and used
 as the first reference point for post-launch optimization.
 

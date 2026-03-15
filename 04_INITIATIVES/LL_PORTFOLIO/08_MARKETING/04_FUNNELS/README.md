@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 project_stage: TBD
 created_date: 2026-03-07
-last_updated: 2026-03-07
+last_updated: 2026-03-15
 tags: []
 ---
 
@@ -13,15 +13,21 @@ tags: []
 
 ## Purpose
 
-TBD.
+Summarize the canonical Levine Law marketing funnels and preserve their
+distinct positioning boundaries.
 
 ## Scope
 
 ### In Scope
-- TBD.
+- Funnel 01 reference boundary
+- Funnel 02 reference boundary
+- Funnel 03 reference boundary
+- links to funnel-specific specifications and assets
 
 ### Out of Scope
-- TBD.
+- campaign execution
+- doctrine changes outside explicit ML1 instruction
+- legal delivery after conversion
 
 ## ML1 Authority Statement
 
@@ -35,6 +41,16 @@ ML1 approval is required for scope, changes, and any execution commitments.
 ## Approval State
 
 `draft`
+
+## Canonical Funnel Map
+
+- `Funnel 01`: reactive Toronto corporate-law intake
+- `Funnel 02`: corporate law services for growing businesses with more than
+  `$1M` annual cash flow
+- `Funnel 03`: payments / MSB / PSP regulatory counsel
+
+Each funnel must remain structurally distinct even where assets, channels, or
+qualification logic overlap.
 
 ## Last ML1 Review Date
 

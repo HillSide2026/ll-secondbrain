@@ -4,13 +4,13 @@ title: NDA Esq - Success Criteria
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-14
+last_updated: 2026-03-15
 tags: [nda-esq, strategic-project, success]
 ---
 
 # Success Criteria
 
-The program will be successful if it meets the following targets, subject to
+The project will be successful if it meets the following targets, subject to
 ML1 approval and later measurement definition:
 
 ## 1. Product Development

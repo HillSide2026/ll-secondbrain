@@ -27,6 +27,7 @@ PORTFOLIO_GOVERNANCE_DIR = REPO_ROOT / "04_INITIATIVES" / "LL_PORTFOLIO" / "03_F
 
 GOVERNED_PROJECT_TYPES = {"Strategic Project", "Management Project", "Operational Project"}
 PROJECT_TYPE_PATTERN = re.compile(r"(?im)^(?:\*\*Project Type:\*\*|Project Type:)\s*(.+?)\s*$")
+APPROVAL_STAGE_PATTERN = re.compile(r"(?im)^Stage:\s*(.+?)\s*$")
 
 REQUIRED_STAGE1 = [
     "PROJECT_CHARTER.md",
@@ -100,6 +101,8 @@ class ProjectSnapshot:
     project_type: str
     files: set[str]
     inferred_stage: int
+    stage_label: str
+    stage_source: str
     missing_stage1: List[str]
     missing_stage2_measurement: List[str]
     missing_stage2_planning: List[str]
@@ -109,7 +112,11 @@ class ProjectSnapshot:
 
     @property
     def approvals_present(self) -> bool:
-        return "APPROVAL_RECORD.md" in self.files and "ML1_METRIC_APPROVAL.md" in self.files
+        if "APPROVAL_RECORD.md" not in self.files:
+            return False
+        if self.inferred_stage < 2:
+            return True
+        return "ML1_METRIC_APPROVAL.md" in self.files or "METRICS.md" in self.files
 
     @property
     def stage1_complete(self) -> bool:
@@ -150,6 +157,14 @@ class ProjectSnapshot:
         return int(round((present / len(required)) * 100))
 
     @property
+    def relevant_stage2_measurement_gaps(self) -> List[str]:
+        return self.missing_stage2_measurement if self.inferred_stage >= 2 else []
+
+    @property
+    def relevant_stage2_planning_gaps(self) -> List[str]:
+        return self.missing_stage2_planning if self.inferred_stage >= 2 else []
+
+    @property
     def missing_for_current_stage(self) -> List[str]:
         if self.inferred_stage <= 0:
             return list(REQUIRED_STAGE1)
@@ -183,6 +198,50 @@ def infer_stage(files: set[str]) -> int:
     if any(name in files for name in REQUIRED_STAGE1):
         return 1
     return 0
+
+
+def stage_label_from_index(index: int) -> str:
+    if index <= 0:
+        return "Unstaged"
+    if index == 1:
+        return "Initiating"
+    if index == 2:
+        return "Planning"
+    if index in {3, 4}:
+        return "Executing"
+    return "Closing"
+
+
+def normalize_stage(raw_value: str) -> Tuple[str, int] | None:
+    value = raw_value.strip().strip("*").strip()
+    key = value.lower()
+    aliases = {
+        "initiating": ("Initiating", 1),
+        "initiation": ("Initiating", 1),
+        "planning": ("Planning", 2),
+        "executing": ("Executing", 4),
+        "execution": ("Executing", 4),
+        "monitoring": ("Executing", 4),
+        "implementation": ("Executing", 4),
+        "closing": ("Closing", 5),
+        "closed": ("Closing", 5),
+        "stage 1": ("Initiating", 1),
+        "stage 2": ("Planning", 2),
+        "stage 3": ("Executing", 4),
+        "stage 4": ("Closing", 5),
+        "1": ("Initiating", 1),
+        "2": ("Planning", 2),
+        "3": ("Executing", 4),
+        "4": ("Closing", 5),
+    }
+    return aliases.get(key)
+
+
+def extract_recorded_stage(approval_text: str) -> Tuple[str, int] | None:
+    match = APPROVAL_STAGE_PATTERN.search(approval_text)
+    if not match:
+        return None
+    return normalize_stage(match.group(1))
 
 
 def normalize_project_type(raw_value: str) -> str:
@@ -227,13 +286,30 @@ def discover_projects() -> List[ProjectSnapshot]:
             continue
 
         file_set = {p.name for p in path.glob("*.md")}
+        recorded_stage = None
+        approval_path = path / "APPROVAL_RECORD.md"
+        if approval_path.exists():
+            try:
+                approval_text = approval_path.read_text(encoding="utf-8", errors="ignore")
+            except OSError:
+                approval_text = ""
+            recorded_stage = extract_recorded_stage(approval_text) if approval_text else None
+        if recorded_stage:
+            stage_label, stage_index = recorded_stage
+            stage_source = "approval_record"
+        else:
+            stage_index = infer_stage(file_set)
+            stage_label = stage_label_from_index(stage_index)
+            stage_source = "artifacts"
         project_id = path.relative_to(LL_PORTFOLIO_DIR).as_posix()
         projects.append(
             ProjectSnapshot(
                 project_id=project_id,
                 project_type=project_type,
                 files=file_set,
-                inferred_stage=infer_stage(file_set),
+                inferred_stage=stage_index,
+                stage_label=stage_label,
+                stage_source=stage_source,
                 missing_stage1=[name for name in REQUIRED_STAGE1 if name not in file_set],
                 missing_stage2_measurement=[name for name in REQUIRED_STAGE2_MEASUREMENT if name not in file_set],
                 missing_stage2_planning=[name for name in REQUIRED_STAGE2_PLANNING if name not in file_set],
@@ -274,8 +350,8 @@ def project_priority_score(project: ProjectSnapshot) -> int:
     return (
         (10 if project.project_health == "at-risk" else 0)
         + (5 if project.project_health == "watch" else 0)
-        + (3 * len(project.missing_stage2_measurement))
-        + (2 * len(project.missing_stage2_planning))
+        + (3 * len(project.relevant_stage2_measurement_gaps))
+        + (2 * len(project.relevant_stage2_planning_gaps))
         + len(project.missing_for_current_stage)
     )
 
@@ -305,9 +381,9 @@ def llm_004_outputs(projects: List[ProjectSnapshot], run_id: str) -> Dict[str, s
         blocker_types = []
         if p.missing_stage1:
             blocker_types.append("stage1")
-        if p.missing_stage2_measurement:
+        if p.inferred_stage >= 2 and p.missing_stage2_measurement:
             blocker_types.append("measurement")
-        if p.missing_stage2_planning:
+        if p.inferred_stage >= 2 and p.missing_stage2_planning:
             blocker_types.append("planning")
         if not p.approvals_present:
             blocker_types.append("approval")
@@ -315,7 +391,7 @@ def llm_004_outputs(projects: List[ProjectSnapshot], run_id: str) -> Dict[str, s
         stage_rows.append(
             [
                 p.project_id,
-                str(p.inferred_stage),
+                p.stage_label,
                 p.project_health,
                 str(p.open_gate_count),
                 f"{p.stage2_completion_pct}%" if p.inferred_stage >= 2 else "n/a",
@@ -329,8 +405,8 @@ def llm_004_outputs(projects: List[ProjectSnapshot], run_id: str) -> Dict[str, s
                 p.project_id,
                 p.project_health,
                 str(p.open_gate_count),
-                str(len(p.missing_stage2_planning)),
-                str(len(p.missing_stage2_measurement)),
+                str(len(p.relevant_stage2_planning_gaps)),
+                str(len(p.relevant_stage2_measurement_gaps)),
             ]
         )
 
@@ -341,9 +417,16 @@ def llm_004_outputs(projects: List[ProjectSnapshot], run_id: str) -> Dict[str, s
         )
 
     for p in ranked:
-        action = "Close stage-2 planning artifacts before any stage advancement."
-        if p.missing_stage2_measurement:
+        if p.inferred_stage < 2 and p.missing_stage1:
+            action = "Complete the initiation packet before ML1 initiation review."
+        elif p.inferred_stage < 2:
+            action = "Keep the project in Initiating until ML1 authorizes Planning; draft planning artifacts remain non-authoritative."
+        elif p.missing_stage2_measurement:
             action = "Complete measurement artifacts and secure ML1 metric confirmation."
+        elif p.missing_stage2_planning:
+            action = "Close stage-2 planning artifacts before any stage advancement."
+        else:
+            action = "Maintain current stage controls and prepare the next gated packet."
         if not p.approvals_present:
             action = "Record missing ML1 approvals in APPROVAL_RECORD/ML1_METRIC_APPROVAL."
         action_rows.append([p.project_id, str(project_priority_score(p)), action])
@@ -422,8 +505,8 @@ def llm_004_outputs(projects: List[ProjectSnapshot], run_id: str) -> Dict[str, s
             "",
             f"- Projects reviewed: {len(projects)}",
             f"- Watch/at-risk projects: {sum(1 for p in projects if p.project_health != 'on-track')}",
-            f"- Stage-2 planning gaps: {sum(len(p.missing_stage2_planning) for p in projects)}",
-            f"- Stage-2 measurement gaps: {sum(len(p.missing_stage2_measurement) for p in projects)}",
+            f"- Stage-2 planning gaps: {sum(len(p.missing_stage2_planning) for p in projects if p.inferred_stage >= 2)}",
+            f"- Stage-2 measurement gaps: {sum(len(p.missing_stage2_measurement) for p in projects if p.inferred_stage >= 2)}",
             "",
             "## Top ML1 Actions",
             "",
@@ -441,8 +524,9 @@ def llm_004_outputs(projects: List[ProjectSnapshot], run_id: str) -> Dict[str, s
 def llm_005_outputs(projects: List[ProjectSnapshot], run_id: str) -> Dict[str, str]:
     stage_counts = Counter(p.inferred_stage for p in projects)
     health_counts = Counter(p.project_health for p in projects)
-    planning_freq = missing_frequency(projects, "missing_stage2_planning")
-    measurement_freq = missing_frequency(projects, "missing_stage2_measurement")
+    stage2_projects = [p for p in projects if p.inferred_stage >= 2]
+    planning_freq = missing_frequency(stage2_projects, "missing_stage2_planning")
+    measurement_freq = missing_frequency(stage2_projects, "missing_stage2_measurement")
 
     ranked = sorted(
         projects,
@@ -452,7 +536,7 @@ def llm_005_outputs(projects: List[ProjectSnapshot], run_id: str) -> Dict[str, s
     dashboard_rows = [
         [
             p.project_id,
-            str(p.inferred_stage),
+            p.stage_label,
             p.project_health,
             str(p.open_gate_count),
             f"{p.stage2_completion_pct}%" if p.inferred_stage >= 2 else "n/a",
@@ -467,7 +551,15 @@ def llm_005_outputs(projects: List[ProjectSnapshot], run_id: str) -> Dict[str, s
             str(project_priority_score(p)),
             p.project_health,
             str(p.open_gate_count),
-            "Complete stage-2 planning packet" if p.missing_stage2_planning else "Advance to next gated artifact set",
+            (
+                "Complete initiation packet"
+                if p.inferred_stage < 2 and p.missing_stage1
+                else "Hold in Initiating until ML1 review"
+                if p.inferred_stage < 2
+                else "Complete stage-2 planning packet"
+                if p.missing_stage2_planning
+                else "Advance to next gated artifact set"
+            ),
         ]
         for i, p in enumerate(ranked, start=1)
     ] or [["-", "none", "-", "-", "-", "-"]]
@@ -477,10 +569,15 @@ def llm_005_outputs(projects: List[ProjectSnapshot], run_id: str) -> Dict[str, s
         sequencing_lines.append("1. No active projects detected.")
     else:
         for i, project in enumerate(ranked[:4], start=1):
-            sequencing_lines.append(
-                f"{i}. `{project.project_id}` first focus: close {len(project.missing_stage2_planning)} planning and "
-                f"{len(project.missing_stage2_measurement)} measurement gaps."
-            )
+            if project.inferred_stage < 2:
+                sequencing_lines.append(
+                    f"{i}. `{project.project_id}` first focus: close {len(project.missing_stage1)} initiation gaps and keep planning drafts non-authoritative pending ML1 review."
+                )
+            else:
+                sequencing_lines.append(
+                    f"{i}. `{project.project_id}` first focus: close {len(project.missing_stage2_planning)} planning and "
+                    f"{len(project.missing_stage2_measurement)} measurement gaps."
+                )
 
     collisions = [p.project_id for p in projects if p.inferred_stage == 2]
     collision_artifacts = sorted(
@@ -500,9 +597,16 @@ def llm_005_outputs(projects: List[ProjectSnapshot], run_id: str) -> Dict[str, s
     capacity_rows: List[List[str]] = []
     total_capacity_units = 0
     for p in projects:
-        load_units = (len(p.missing_stage2_planning) * 2) + (len(p.missing_stage2_measurement) * 3)
+        if p.inferred_stage >= 2:
+            planning_gap_count = len(p.missing_stage2_planning)
+            measurement_gap_count = len(p.missing_stage2_measurement)
+            load_units = (planning_gap_count * 2) + (measurement_gap_count * 3)
+        else:
+            planning_gap_count = 0
+            measurement_gap_count = 0
+            load_units = len(p.missing_stage1)
         total_capacity_units += load_units
-        capacity_rows.append([p.project_id, str(load_units), str(len(p.missing_stage2_planning)), str(len(p.missing_stage2_measurement))])
+        capacity_rows.append([p.project_id, str(load_units), str(planning_gap_count), str(measurement_gap_count)])
 
     top_bottlenecks = planning_freq.most_common(3) + measurement_freq.most_common(2)
     bottleneck_lines = [f"- `{name}` missing in {count} project(s)." for name, count in top_bottlenecks]
@@ -595,8 +699,8 @@ def llm_005_outputs(projects: List[ProjectSnapshot], run_id: str) -> Dict[str, s
             f"- Projects reviewed: {len(projects)}",
             f"- Stage 2 concentration: {stage_counts.get(2, 0)}",
             f"- At-risk projects: {health_counts.get('at-risk', 0)}",
-            f"- Planning backlog volume: {sum(len(p.missing_stage2_planning) for p in projects)}",
-            f"- Measurement backlog volume: {sum(len(p.missing_stage2_measurement) for p in projects)}",
+            f"- Planning backlog volume: {sum(len(p.missing_stage2_planning) for p in stage2_projects)}",
+            f"- Measurement backlog volume: {sum(len(p.missing_stage2_measurement) for p in stage2_projects)}",
             "",
             "## Top Sequencing Moves",
             "",
@@ -632,8 +736,9 @@ def llm_006_outputs(projects: List[ProjectSnapshot], run_id: str) -> Dict[str, s
         elif project.missing_stage2_planning:
             severity_counts["medium"] += 1
 
-    planning_drift_freq = missing_frequency(projects, "missing_stage2_planning")
-    measurement_drift_freq = missing_frequency(projects, "missing_stage2_measurement")
+    stage2_projects = [p for p in projects if p.inferred_stage >= 2]
+    planning_drift_freq = missing_frequency(stage2_projects, "missing_stage2_planning")
+    measurement_drift_freq = missing_frequency(stage2_projects, "missing_stage2_measurement")
 
     files_to_body = {
         "GOVERNANCE_COMPLIANCE_AUDIT.md": "\n".join(
