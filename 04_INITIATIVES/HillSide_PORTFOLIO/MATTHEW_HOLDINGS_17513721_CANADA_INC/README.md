@@ -35,17 +35,26 @@ Operating businesses in the HillSide branch are owned through this entity.
 
 ---
 
-## Entities and Initiatives
+## Entities
 
 ```text
 Matthew Holdings
 ├── Yellowbricks
 ├── Federal MSB (17409052 Canada Inc)
 ├── Ontario MSB Corp (1001494374 Ontario Corp)
-├── Micro SaaS Build and Launch
-├── Wealth Management
-└── 1_POTENTIAL_BUSINESS_INITIATIVES
+└── CORPORATE_IDENTITY_CARD.md
 ```
+
+## HillSide Program Linkage
+
+HillSide projects are not stored in the Matthew Holdings entity folder.
+They are tracked at the portfolio level under:
+
+- `../BUSINESS_PROJECTS/`
+- `../PERSONAL_PROJECTS/`
+
+Projects can still be sponsored by, linked to, or economically related to
+Matthew Holdings.
 
 ---
 
@@ -57,7 +66,7 @@ This entity manages:
 - strategic oversight of ventures
 - regulatory coordination where applicable
 - capital allocation across entities
-- evaluation pipeline for potential business initiatives
+- coordination with HillSide business and personal project programs
 
 This entity does not represent:
 
@@ -77,14 +86,6 @@ This folder may contain:
 - strategic portfolio planning
 
 Formal legal records remain in the firm's document management systems.
-
-## Potential Business Initiatives
-
-Potential ventures and strategic build opportunities are tracked in:
-
-- `1_POTENTIAL_BUSINESS_INITIATIVES/INITIATIVE_PIPELINE.md`
-
-This pipeline is for early-stage screening, decision support, and ownership-level prioritization.
 
 ## Corporate Identity Card
 

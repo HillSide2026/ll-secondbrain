@@ -6,7 +6,8 @@ Project Type: Management Project
 Stage: Initiating
 
 ## 1. Purpose
-Initiate governed execution and optimization planning for Funnel 03.
+Initiate governed execution and optimization planning for Funnel 03, including
+networking as a controlled business development channel.
 
 ## 2. Nature of Project
 Marketing operations and conversion optimization project in a regulated advisory domain.
@@ -20,6 +21,7 @@ Pre-matter lifecycle only.
 ## 4. High-Level Deliverable
 - Funnel 03 initiation package including:
   - entry-offer orchestration plan,
+  - networking business development plan,
   - asset and QA control plan,
   - distribution and signal tracking model,
   - conversion-attribution baseline requirements.

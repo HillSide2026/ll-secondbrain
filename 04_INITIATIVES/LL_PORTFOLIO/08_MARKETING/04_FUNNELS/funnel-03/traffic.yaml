@@ -1,9 +1,15 @@
 channels:
 - content
+- networking
 lead_magnets:
   - funnel3_entryoffer1_leadmagnet_v1.md
   - funnel3_entryoffer2_leadmagnet_v3.md
   - funnel3_entryoffer3_leadmagnet_v1.md
+networking_sources:
+  - industry_events
+  - direct_introductions
+  - referral_relationships
+  - curated_one_to_one_outreach
 keywords: []
 budget_owner: ML1
 optimization_goal: Qualified consults

@@ -10,3 +10,4 @@ The project will be successful if:
 3. QA and distribution controls are defined for regulated-domain messaging.
 4. Conversion and revenue-attribution tracking requirements are established.
 5. Market signal reporting produces clear refinement candidates for ML1 review.
+6. A networking-based business development lane is documented, bounded, and attributable inside Funnel 03.

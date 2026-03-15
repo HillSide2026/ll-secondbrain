@@ -505,5 +505,93 @@ Use: "Your program may be compliant -- but is it defensible?"
 
 ## Core Offers
 
-### Core 1: Ongoing AML Counsel Retainer
-TBD
+### Core 1: Suspicious Transaction Reporting Triage & Playbook
+
+Strategic role:
+
+- convert one-off suspicious transaction response work into a repeatable,
+  defensible compliance product
+
+Typical scope:
+
+- suspicious transaction threshold assessment
+- STR decision support and narrative logic
+- escalation-path design
+- internal reporting protocol refinement
+- playbook development for repeat incidents
+
+Positioning:
+
+- not just emergency filing help
+- a structured reporting and escalation discipline product for operating MSBs
+  and PSPs
+
+Natural conversion sources:
+
+- Entry 2: Suspicious Transaction Triage & STR Filing
+- AML Health Check findings
+- existing operators with recurring reporting uncertainty
+
+### Core 2: MSB Effectiveness Review
+
+Strategic role:
+
+- productize the periodic review layer between AML setup and full retainer work
+
+Typical scope:
+
+- effectiveness review of the MSB compliance program
+- testing of how the program operates in practice
+- review of documentation, controls, and escalation logic
+- gap analysis and remediation roadmap
+
+Positioning:
+
+- not just a health check
+- a defensibility and readiness review for an operating MSB
+
+Natural conversion sources:
+
+- Entry 1: MSB Registration Mandate
+- Entry 3: AML Health Check
+- existing MSB clients needing periodic review
+
+### Core 3: RPAA Reporting
+
+Strategic role:
+
+- provide recurring or periodic support after RPAA registration / preparation
+
+Typical scope:
+
+- reporting-obligation mapping
+- support for recurring RPAA reporting discipline
+- change-event and update analysis
+- regulator-facing reporting support
+
+Positioning:
+
+- practical post-registration operating support
+- designed for companies that need more than a memo but less than a major-firm
+  regulatory team
+
+Natural conversion sources:
+
+- RPAA preparation work
+- international fintech entry into Canada
+- operators with live payment functionality and ongoing Bank of Canada-facing
+  obligations
+
+### Core 4: Ongoing AML Counsel Retainer
+
+Purpose:
+
+- provide recurring AML, reporting, and governance support after an operator is
+  registered or already live
+
+Typical scope:
+
+- ongoing AML question support
+- reporting and escalation judgment support
+- periodic policy and control updates
+- regulator- and bank-readiness guidance

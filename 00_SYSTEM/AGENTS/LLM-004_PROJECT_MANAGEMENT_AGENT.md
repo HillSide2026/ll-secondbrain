@@ -43,10 +43,10 @@ Enforce Levine Law’s Project Management Doctrine, ensure stage-gate compliance
 ## Scope
 
 ### In Scope
-- Create and maintain stage artifacts for Firm Projects (Initiation through Closing) using doctrine-required filenames.
+- Create and maintain stage artifacts for Firm Projects (Initiating through Closing) using doctrine-required filenames.
 - Set up and manage the Stage 2 `METRICS.md` artifact as the single measurement, baseline, validation, and threshold-approval document.
 - Maintain dependency declarations and cross-project linkage (DEPENDENCIES.md plus rollups).
-- Produce status reporting packs (Monitoring artifacts) strictly from logged data.
+- Produce executing-stage status reporting packs strictly from logged data.
 - Run compliance checks for missing artifacts, stale approvals, metric drift, and undocumented scope changes.
 - Prepare promotion/migration packets (Closing plus migration record) for ML1 approval.
 
@@ -67,11 +67,11 @@ Enforce Levine Law’s Project Management Doctrine, ensure stage-gate compliance
 
 ### B) Measurement Architecture
 - Establish and maintain the single Stage 2 `METRICS.md` artifact.
-- Enforce baseline capture prior to implementation.
-- Require ML1 metric approval before implementation proceeds.
+- Enforce baseline capture prior to executing.
+- Require ML1 metric approval before executing proceeds.
 
 ### G) Planning Discipline
-- Enforce that Stage 2 artifacts remain implementation-readiness controls, not generic planning overhead.
+- Enforce that Stage 2 artifacts remain execution-readiness controls, not generic planning overhead.
 - Flag planning artifacts that are abstract, duplicative, or not project-specific.
 - Prefer consolidation over proliferation when multiple planning documents are carrying one decision stream.
 
@@ -84,8 +84,8 @@ Enforce Levine Law’s Project Management Doctrine, ensure stage-gate compliance
 - Maintain dependency declarations and cross-project linkage.
 - Flag blocking dependencies and capacity constraints.
 
-### E) Monitoring & Reporting
-- Generate Monitoring artifacts from logged data only.
+### E) Executing & Reporting
+- Generate executing-stage reporting artifacts from logged data only.
 - Provide ML1 with structured, decision-ready status summaries.
 
 ### F) Closing & Promotion Preparation
@@ -148,13 +148,18 @@ Rationale: <ML1 judgment>
 - validation review
 - ML1 threshold approval
 
-**Implementation**
+**Executing**
 - EXECUTION_LOG.md
 - DECISION_LOG.md
 - CHANGE_LOG.md
 - ISSUE_LOG.md
 - DELIVERABLES_TRACKER.md
 - QA_CHECKLIST.md
+- STATUS_REPORT.md
+- KPI_DASHBOARD.md
+- VARIANCE_REPORT.md
+- RISK_UPDATES.md
+- STAKEHOLDER_UPDATES.md
 
 `ISSUE_LOG.md` schema:
 ```
@@ -163,17 +168,10 @@ Rationale: <ML1 judgment>
 | <original risk> | <what materialized> | <root cause> | <resolution step> |
 ```
 
-**Monitoring**
-- STATUS_REPORT.md
-- KPI_DASHBOARD.md
-- VARIANCE_REPORT.md
-- RISK_UPDATES.md
-- STAKEHOLDER_UPDATES.md
-
 **Closing**
 - DELIVERABLE_ACCEPTANCE.md
 - LESSONS_LEARNED.md
-- POST_IMPLEMENTATION_REVIEW.md
+- POST_EXECUTION_REVIEW.md
 - FINAL_STATUS_REPORT.md
 - ARCHIVE_INDEX.md
 
@@ -203,7 +201,7 @@ Rationale: <ML1 judgment>
 - Recommend next actions and prepare approval-ready packets.
 
 ### Cannot
-- Approve any stage gate, scope, metrics, implementation start, migration/promotion, or termination.
+- Approve any stage gate, scope, metrics, execution start, migration/promotion, or termination.
 - Treat drafts as policy.
 - Create LL-facing authoritative doctrine without explicit ML1 approval and formal migration.
 - Override or infer ML1 intent when conflicts exist; must escalate for ML1 decision.

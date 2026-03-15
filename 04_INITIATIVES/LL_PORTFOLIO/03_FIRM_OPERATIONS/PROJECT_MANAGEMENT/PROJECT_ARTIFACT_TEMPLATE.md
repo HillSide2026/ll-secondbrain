@@ -14,7 +14,10 @@ tags: [project-management, stage-gates, artifacts, template]
 
 Define the canonical artifact set required per project stage.
 
-Planning-stage artifacts are implementation-readiness controls used to authorize execution and achievement of project goals.
+This template is subordinate to
+`01_DOCTRINE/03_POLICIES/FIRM_PROJECT_DOCTRINE.md`.
+
+Planning-stage artifacts are execution-readiness controls used to authorize execution and achievement of project goals.
 
 ## Project Types
 
@@ -50,15 +53,15 @@ Identity Rule:
 - `Project ID` is canonical.
 - Legacy folder labels (for example `LLP-004_ONBOARDING`) are location slugs only and are not valid identity fields.
 
-## Stage 2 - Planning (Implementation Readiness)
+## Stage 2 - Planning (Execution Readiness)
 
 Purpose:
-- Lock the implementation-ready shape of the specific project.
+- Lock the execution-ready shape of the specific project.
 - Reduce uncertainty before execution.
 - Prepare a clean ML1 gate decision.
 
 Anti-Bloat Rule:
-- Planning artifacts exist to support implementation authorization, not planning for the sake of planning.
+- Planning artifacts exist to support execution authorization, not planning for the sake of planning.
 - If an artifact does not help lock scope, confirm dependencies, reduce risk, define controls, or support the gate decision, merge it or remove it.
 - Planning artifacts must use project-specific language. Avoid generic PM boilerplate that could apply to any project.
 
@@ -76,19 +79,19 @@ Required:
 - `METRICS.md`
 
 Notes:
-- Stage 2 exists to prepare controlled implementation, not to create standalone planning artifacts.
+- Stage 2 exists to prepare controlled execution, not to create standalone planning artifacts.
 - `METRICS.md` is the single canonical measurement document and must contain metric definitions, measurement method, baseline capture period, validation review, and ML1 threshold approval.
-- Implementation must not begin until ML1 approves Planning -> Implementation in `APPROVAL_RECORD.md` and threshold approval is recorded in `METRICS.md`.
+- Executing must not begin until ML1 approves Planning -> Executing in `APPROVAL_RECORD.md` and threshold approval is recorded in `METRICS.md`.
 
 Best-Practice Rules:
 - `SCOPE_DEFINITION.md`
-  Must define the real implementation boundary for the project, including explicit exclusions.
+  Must define the real execution boundary for the project, including explicit exclusions.
 - `WORKPLAN.md`
-  Must focus on the project decisions that still need to be locked for implementation. It must not become a generic project-management report.
+  Must focus on the project decisions that still need to be locked for execution. It must not become a generic project-management report.
 - `ASSUMPTIONS_CONSTRAINTS.md`
   Must state the assumptions the project is relying on and the hard limits it cannot cross.
 - `DEPENDENCIES.md`
-  Must list only dependencies that could block or materially change implementation.
+  Must list only dependencies that could block or materially change execution.
 - `RISK_REGISTER.md`
   Must focus on risks that threaten scope, schedule, budget, operating control, or authorization readiness.
 - `COMMUNICATION_PLAN.md`
@@ -96,7 +99,7 @@ Best-Practice Rules:
 - `METRICS.md`
   Must be the single source for metric definitions, calculation method, baseline logic, validation rules, and ML1 threshold approval.
 
-## Stage 3 - Implementation
+## Stage 3 - Executing
 
 Required:
 - `EXECUTION_LOG.md`
@@ -105,25 +108,21 @@ Required:
 - `ISSUE_LOG.md`
 - `DELIVERABLES_TRACKER.md`
 - `QA_CHECKLIST.md`
-
-Notes:
-- `ISSUE_LOG.md` tracks materialized risks and corrective actions.
-
-## Stage 4 - Monitoring
-
-Required:
 - `STATUS_REPORT.md`
 - `KPI_DASHBOARD.md`
 - `VARIANCE_REPORT.md`
 - `RISK_UPDATES.md`
 - `STAKEHOLDER_UPDATES.md`
 
-## Stage 5 - Closing
+Notes:
+- `ISSUE_LOG.md` tracks materialized risks and corrective actions.
+
+## Stage 4 - Closing
 
 Required:
 - `DELIVERABLE_ACCEPTANCE.md`
 - `LESSONS_LEARNED.md`
-- `POST_IMPLEMENTATION_REVIEW.md`
+- `POST_EXECUTION_REVIEW.md`
 - `FINAL_STATUS_REPORT.md`
 - `ARCHIVE_INDEX.md`
 

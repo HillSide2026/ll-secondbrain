@@ -56,7 +56,7 @@ Required schema:
 | <description> | Scope / Schedule / Budget | H / M / L | H / M / L | <action> |
 ```
 
-### Stage 3 - Implementation: `ISSUE_LOG.md`
+### Stage 3 - Executing: `ISSUE_LOG.md`
 
 Purpose: Track risks that materialized as issues.
 
@@ -67,7 +67,7 @@ Required schema:
 | <original risk from RISK_SCAN or RISK_REGISTER> | <what materialized> | <root cause> | <resolution step> |
 ```
 
-### Stage 5 - Closing: `LESSONS_LEARNED.md`
+### Stage 4 - Closing: `LESSONS_LEARNED.md`
 
 Purpose: Capture durable risk and control learning for future projects.
 
@@ -95,7 +95,7 @@ ML2 may draft and structure artifacts; ML1 decides gate closure.
 |---|:---:|:---:|:---:|:---:|
 | `RISK_SCAN.md` (Initiating) | ✓ | ✓ | ✓ | - |
 | `RISK_REGISTER.md` (Planning) | ✓ | ✓ | ✓ | - |
-| `ISSUE_LOG.md` (Implementation) | ✓ | ✓ | ✓ | - |
+| `ISSUE_LOG.md` (Executing) | ✓ | ✓ | ✓ | - |
 | `LESSONS_LEARNED.md` (Closing) | ✓ | ✓ | ✓ | - |
 
 Legal matters carry no project risk artifacts under this policy.

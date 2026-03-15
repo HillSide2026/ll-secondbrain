@@ -17,6 +17,7 @@ Project Path: 08_MARKETING/LLP-013_FUNNEL3_MANAGEMENT
 
 ## Domain Stakeholders
 - Financial services / payments practice stakeholders
+- Networking and referral relationship surfaces in the payments/MSB/PSP market
 
 ## Governance Stakeholders
 - ML2 doctrine and policy controls
@@ -24,4 +25,6 @@ Project Path: 08_MARKETING/LLP-013_FUNNEL3_MANAGEMENT
 
 ## External Surfaces
 - Content channels
+- Industry events and networking venues
+- Referral and introduction sources
 - Go High Level (GHL)

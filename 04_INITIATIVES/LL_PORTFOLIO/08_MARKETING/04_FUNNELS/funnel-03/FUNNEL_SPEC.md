@@ -39,6 +39,7 @@ Excludes:
 ## Entry Channel(s)
 
 - Content
+- Networking
 
 ## Traffic / Acquisition
 
@@ -46,6 +47,11 @@ Excludes:
   - funnel3_entryoffer1_leadmagnet_v1.md
   - funnel3_entryoffer2_leadmagnet_v3.md
   - funnel3_entryoffer3_leadmagnet_v1.md
+- Networking lane:
+  - curated industry networking
+  - direct introductions
+  - referral relationships
+  - event-driven follow-up
 
 ## Intake Mechanism
 
