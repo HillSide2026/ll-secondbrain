@@ -28,11 +28,13 @@ not the delivery-stage lifecycle inside an active project packet.
 | HBP-006 | Sale Micro SaaS | MICRO_SAAS_BUILD_AND_SALE | idea | Monetize the Micro SaaS asset after validation and recycle capital | Insufficient traction, weak buyer demand, timing mismatch | pending | TBD | 2026-03-14 |
 | HBP-007 | Levine Law 2026 | Levine Law | idea | Track and govern the 2026 Levine Law strategic program as a HillSide project | Scope ambiguity, sequencing overload, resource allocation drift | pending | ML1 | 2026-03-14 |
 | HBP-008 | Levine Law 2027 | Levine Law | idea | Track and govern the 2027 Levine Law strategic program as a HillSide project | Premature planning assumptions, sequencing risk, resource allocation drift | pending | ML1 | 2026-03-14 |
+| HBP-009 | 2027 Business Ideas | 2027_BUSINESS_IDEAS | screening | Create a controlled HillSide project for capturing, screening, and prioritizing 2027 business ideas | Scope drift, screening delay, premature spend | pending | ML1 | 2026-03-14 |
 
 ## Folder Coverage
 
 - `HBP-001` currently has folder coverage in `WEALTH_MANAGEMENT/`.
 - `HBP-004` currently has folder coverage in `MICRO_SAAS_BUILD_AND_SALE/`.
+- `HBP-009` currently has folder coverage in `2027_BUSINESS_IDEAS/`.
 
 ## Decision Lifecycle Reference
 

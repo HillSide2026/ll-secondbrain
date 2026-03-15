@@ -75,11 +75,13 @@ HillSide projects use the `HBP-###` series.
 - `HBP-006` -> Sale Micro SaaS
 - `HBP-007` -> Levine Law 2026
 - `HBP-008` -> Levine Law 2027
+- `HBP-009` -> `2027_BUSINESS_IDEAS`
 
 Projects with dedicated folders currently include:
 
 - `HBP-001` -> `BUSINESS_PROJECTS/WEALTH_MANAGEMENT`
 - `HBP-004` -> `BUSINESS_PROJECTS/MICRO_SAAS_BUILD_AND_SALE`
+- `HBP-009` -> `BUSINESS_PROJECTS/2027_BUSINESS_IDEAS`
 
 The HillSide decision lifecycle reference is maintained in:
 

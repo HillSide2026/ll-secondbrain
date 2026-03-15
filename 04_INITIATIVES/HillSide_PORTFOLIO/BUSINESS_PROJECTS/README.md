@@ -20,6 +20,7 @@ Current folder-backed projects:
 
 - `HBP-001` -> `WEALTH_MANAGEMENT`
 - `HBP-004` -> `MICRO_SAAS_BUILD_AND_SALE`
+- `HBP-009` -> `2027_BUSINESS_IDEAS`
 
 Other numbered HillSide business projects remain tracked in
 `PROJECT_REGISTER.md` until dedicated folders are created.
