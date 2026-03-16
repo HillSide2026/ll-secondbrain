@@ -4,19 +4,19 @@ Project ID: LLP-26-05
 Project Path: 03_FIRM_OPERATIONS/LLP-004_ONBOARDING
 Stage: Planning
 
-Approval Status: Proposed
+Approval Status: Approved
 
-Approved By: ______________________
-Date: ______________________
+Approved By: ML1
+Date: 2026-03-16
 
-## Metrics Submitted for Approval
+## Metrics Approved
 - `onboarding_engagement_rate`
 - `agreement_sent_within_24h_rate`
 - `onboarding_cycle_time_days`
 - `onboarding_exception_backlog`
 
-## Penciled Thresholds (Draft)
-| KPI | Direction | Penciled Threshold |
+## Approved Thresholds
+| KPI | Direction | Approved Threshold |
 | --- | --- | --- |
 | `onboarding_engagement_rate` | Higher is better | `>= 60%` |
 | `agreement_sent_within_24h_rate` | Higher is better | `>= 90%` |
@@ -24,4 +24,4 @@ Date: ______________________
 | `onboarding_exception_backlog` | Lower is better | `<= 3 open` |
 
 ## Threshold Status
-- Draft thresholds penciled in; pending explicit ML1 approval.
+- Thresholds approved. These are active execution controls effective from Planning -> Executing gate authorization.

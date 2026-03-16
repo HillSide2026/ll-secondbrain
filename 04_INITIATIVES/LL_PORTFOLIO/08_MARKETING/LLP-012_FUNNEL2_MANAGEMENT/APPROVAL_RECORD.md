@@ -25,10 +25,10 @@ Approval Status: Proposed (Initiation Not Yet Approved)
 | `RISK_SCAN.md` | drafted | 2026-03-15 | Canonical initiating-stage risk artifact added |
 | `APPROVAL_RECORD.md` | drafted | 2026-03-15 | Stage gate record opened |
 
-ML1 Decision (Pending): [Approve to advance | Hold | Reject]
-Initiation Approved By: ______________________
-Date: ______________________
-Planning Stage Authorized: No
+ML1 Decision: Approved to advance
+Initiation Approved By: ML1
+Date: 2026-03-16
+Planning Stage Authorized: Yes
 
 ## Draft Planning Artifacts Present (Non-Authoritative)
 

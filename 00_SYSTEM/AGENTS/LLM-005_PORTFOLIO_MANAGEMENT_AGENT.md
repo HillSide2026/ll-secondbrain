@@ -11,9 +11,10 @@ tags: []
 # Agent Definition
 **Agent:** LLM-005 — Portfolio Management Agent
 
-**Version:** v1.0
+**Version:** v1.1
 **Layer:** 01_SYSTEM
 **Status:** Draft (pending ML1 approval)
+**Agent file:** `.claude/agents/llm-005-portfolio-management.md`
 
 ---
 

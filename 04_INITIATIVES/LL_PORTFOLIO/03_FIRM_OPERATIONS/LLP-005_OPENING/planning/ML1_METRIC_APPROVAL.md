@@ -4,12 +4,12 @@ Project ID: LLP-26-06
 Project Path: 03_FIRM_OPERATIONS/LLP-005_OPENING
 Stage: Planning
 
-Approval Status: Proposed
+Approval Status: Approved
 
-Approved By: ______________________
-Date: ______________________
+Approved By: ML1
+Date: 2026-03-16
 
-## Metrics Submitted for Approval
+## Metrics Approved
 - `gate2_intake_accept_rate`
 - `opening_checklist_completion_rate`
 - `financial_readiness_within_2d_rate`
@@ -17,8 +17,8 @@ Date: ______________________
 - `opening_exception_backlog`
 - `premature_handoff_count`
 
-## Anticipated Thresholds (Draft)
-| KPI | Direction | Anticipated Threshold |
+## Approved Thresholds
+| KPI | Direction | Approved Threshold |
 | --- | --- | --- |
 | `gate2_intake_accept_rate` | Higher is better | `>= 95%` |
 | `opening_checklist_completion_rate` | Higher is better | `>= 95%` |
@@ -28,4 +28,5 @@ Date: ______________________
 | `premature_handoff_count` | Lower is better | `= 0` |
 
 ## Threshold Status
-- Draft anticipated thresholds penciled in; pending explicit ML1 approval.
+- Thresholds approved. These are active execution controls effective from Planning -> Executing gate authorization.
+- Note: LLP-005 Opening execution is sequentially dependent on LLP-004 Onboarding reaching Executing first.

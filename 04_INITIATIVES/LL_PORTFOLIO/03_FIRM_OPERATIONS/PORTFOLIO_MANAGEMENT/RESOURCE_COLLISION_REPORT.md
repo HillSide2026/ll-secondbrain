@@ -1,11 +1,29 @@
-# RESOURCE COLLISION REPORT
+# Resource Collision Report
 
-- Generated: 2026-03-16T02:59:02+00:00
-- Run ID: RUN-2026-03-16-LL-PORTFOLIO-AGENTS-025902Z
+- Generated: 2026-03-16T18:00:00Z
+- Agent: LLM-005 Portfolio Management Agent (via LLM-001 Chief of Staff)
 
-> Advisory output. ML1 approval remains required for decisions.
-## Resource Collision Signals
+> Advisory output. ML1 approval required before any action is taken.
 
-- Projects in planning/measurement stage: 9
-- Potential coordination set: 03_FIRM_OPERATIONS/LLP-004_ONBOARDING/initiation, 03_FIRM_OPERATIONS/LLP-005_OPENING/initiation, 07_STRATEGIC_PROJECTS/LLP-001_CORPORATE_ENTITY_MANAGEMENT, 07_STRATEGIC_PROJECTS/LLP-002_CORPORATE_CLERK, 07_STRATEGIC_PROJECTS/LLP-003_ASSOCIATE_LAWYER, 07_STRATEGIC_PROJECTS/LLP-004_PARTNER_SUPERVISION, 07_STRATEGIC_PROJECTS/LLP-024_NDA_ESQ, 08_MARKETING/LLP-011_FUNNEL1_MANAGEMENT, 08_MARKETING/LLP-013_FUNNEL3_MANAGEMENT
-- Shared missing planning artifacts (portfolio-wide): ASSUMPTIONS_CONSTRAINTS.md, COMMUNICATION_PLAN.md, DEPENDENCIES.md, RISK_REGISTER.md, SCOPE_DEFINITION.md, WORKPLAN.md
+## Simultaneous Stage Concentrations
+
+- Projects in Stage 2 (Planning) simultaneously: 4 — LLP-004_ONBOARDING, LLP-005_OPENING, LLP-024_NDA_ESQ, LLP-011_FUNNEL1_MANAGEMENT
+- Projects in Stage 3 (Executing) simultaneously: 0 — no projects have reached Executing
+- Projects in Stage 1 (Initiating) simultaneously: 17 — includes 9 placeholder shells
+
+## Collision Risk Assessment
+
+The 4 simultaneous Stage 2 projects create a concentrated ML1 approval demand: all four require metric threshold sign-off before they can advance. This is structurally a single-bottleneck problem — ML1 is the only authority who can unblock any of them, and they are all waiting on the same type of approval. If ML1 approves all four metric packages in a single session, the entire Planning cohort advances simultaneously to Executing, which then creates a different collision risk: 4 projects entering Executing at the same time with no execution governance currently in place (Stage 3 artifacts are not yet drafted for any of them).
+
+The Stage 1 backlog of 17 projects is not an immediate collision risk — most are either placeholder shells or substantive projects waiting for a single approval signature. However, the volume creates queue depth that could overwhelm ML1 review bandwidth if not managed through batching or consolidation.
+
+## Shared Missing Artifacts (Portfolio-Wide)
+
+| Artifact | Missing In N Projects |
+|----------|-----------------------|
+| ML1 metric threshold approval | 4 (all Stage 2 projects) |
+| APPROVAL_RECORD.md (signed) | 16 |
+| SCOPE_DEFINITION.md | 1 (LLP-013) |
+| WORKPLAN.md | 1 (LLP-013) |
+| RISK_REGISTER.md | 1 (LLP-013) |
+| Canonical METRICS.md (vs split schema) | 5 |

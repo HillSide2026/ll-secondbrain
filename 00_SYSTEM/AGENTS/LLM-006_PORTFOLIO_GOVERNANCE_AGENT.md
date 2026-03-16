@@ -11,9 +11,10 @@ tags: []
 # Agent Definition
 **Agent:** LLM-006 — Portfolio Governance Agent
 
-**Version:** v1.0
+**Version:** v1.1
 **Layer:** 01_SYSTEM
 **Status:** Draft (pending ML1 approval)
+**Agent file:** `.claude/agents/llm-006-portfolio-governance.md`
 
 ---
 

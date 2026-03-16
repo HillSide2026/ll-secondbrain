@@ -194,7 +194,7 @@ Rules:
 - Planning artifacts must help lock scope, dependencies, controls, or gate
   readiness.
 - Abstract or duplicative planning artifacts should be merged or removed.
-- `METRICS.md` is the single canonical measurement artifact.
+- `METRICS.md` is the single canonical measurement artifact. The split-file schema (`METRIC_DEFINITION.md`, `MEASUREMENT_METHOD.md`, `BASELINE_CAPTURE_PERIOD.md`, `VALIDATION_REVIEW.md`) is non-compliant and deprecated. Existing projects using the split schema must consolidate into `METRICS.md` before their Planning → Executing gate is closed. New projects must not use the split schema.
 - Decision projects should use the lightest planning packet that still supports
   the ML1 decision at hand.
 - For decision projects, `PROJECT_PLAN.md` is the canonical consolidated

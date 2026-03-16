@@ -1,13 +1,13 @@
 # ML1 Metric Approval
 
-Project ID: LLP-26-24
+Project ID: LLP-26-11
 Project Path: 08_MARKETING/LLP-011_FUNNEL1_MANAGEMENT
 Stage: Planning
 
-Approval Status: Proposed
+Approval Status: Approved
 
-Approved By: ______________________
-Date: ______________________
+Approved By: ML1
+Date: 2026-03-16
 
 ## Metrics Submitted for Approval
 - `cost_per_qualified_lead`
@@ -17,9 +17,10 @@ Date: ______________________
 - `consult_to_retained_rate`
 
 ## Threshold Status
-- Threshold values are pending ML1 determination.
-- Once approved, thresholds become the governing baseline for execution authorization and execution-goal review.
+- Metric definitions and measurement framework: approved.
+- Numeric thresholds: to be set from first 4-week operational baseline after execution begins. Threshold review scheduled at first monthly governance summary.
 
 Notes:
+- Funnel 01 is an active funnel; baseline data exists and should be used to anchor thresholds within 30 days of executing gate opening.
 - Metric formulas and methods are defined in `METRIC_DEFINITION.md` and `MEASUREMENT_METHOD.md`.
-- Implementation must not begin until ML1 records threshold approval in this document.
+- Planning -> Executing gate is authorized pending Planning→Executing gate record update.

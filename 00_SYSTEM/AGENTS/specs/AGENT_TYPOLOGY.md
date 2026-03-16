@@ -53,11 +53,11 @@ Generated on 2026-03-09.
 
 | Agent | Class | Status | Path | Notes |
 | --- | --- | --- | --- | --- |
-| LLM-001 — Chief of Staff | LLM | Planned | `00_SYSTEM/AGENTS/LLM-001_CHIEF_OF_STAFF.md` |  |
+| LLM-001 — Chief of Staff | LLM | Draft | `00_SYSTEM/AGENTS/LLM-001_CHIEF_OF_STAFF.md` | inputs: LLM-004/005/006 outputs; outputs: COS_BRIEF.md, ML1_DECISION_QUEUE.md, CROSS_AGENT_CONFLICTS.md |
 | LLM-003 — CFO Agent | LLM | Planned | `00_SYSTEM/AGENTS/LLM-003_CFO_AGENT.md` |  |
-| LLM-004 — Project Management Agent | LLM | Draft | `00_SYSTEM/AGENTS/LLM-004_PROJECT_MANAGEMENT_AGENT.md` |  |
-| LLM-005 — Portfolio Management Agent | LLM | Draft | `00_SYSTEM/AGENTS/LLM-005_PORTFOLIO_MANAGEMENT_AGENT.md` |  |
-| LLM-006 — Portfolio Governance Agent | LLM | Draft | `00_SYSTEM/AGENTS/LLM-006_PORTFOLIO_GOVERNANCE_AGENT.md` |  |
+| LLM-004 — Project Management Agent | LLM | Draft | `00_SYSTEM/AGENTS/LLM-004_PROJECT_MANAGEMENT_AGENT.md` | agent file: `.claude/agents/llm-004-project-management.md` |
+| LLM-005 — Portfolio Management Agent | LLM | Draft | `00_SYSTEM/AGENTS/LLM-005_PORTFOLIO_MANAGEMENT_AGENT.md` | agent file: `.claude/agents/llm-005-portfolio-management.md` |
+| LLM-006 — Portfolio Governance Agent | LLM | Draft | `00_SYSTEM/AGENTS/LLM-006_PORTFOLIO_GOVERNANCE_AGENT.md` | agent file: `.claude/agents/llm-006-portfolio-governance.md` |
 | LLM-007 — Fulfillment Orchestrator Agent | LLM | Draft | `00_SYSTEM/AGENTS/LLM-007_FULFILLMENT_ORCHESTRATOR_AGENT.md` | fulfillment lifecycle orchestration (`LLP-004` to `LLP-008`) under `POL-034` |
 
 ### System Admin Agents (SAA)

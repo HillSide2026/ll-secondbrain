@@ -10,7 +10,7 @@ tags: [llp-011, marketing, funnel1, planning, workplan]
 
 # Workplan
 
-Project ID: LLP-26-24
+Project ID: LLP-26-11
 Project Path: 08_MARKETING/LLP-011_FUNNEL1_MANAGEMENT
 Stage: Planning
 

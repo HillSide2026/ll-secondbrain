@@ -46,11 +46,11 @@ Planning Stage Authorized: Yes
 | MEASUREMENT_METHOD.md | drafted | 2026-03-08 | KPI measurement rules and evidence method defined. |
 | BASELINE_CAPTURE_PERIOD.md | drafted | 2026-03-08 | Baseline window and inclusion criteria defined. |
 | VALIDATION_REVIEW.md | drafted | 2026-03-08 | Readiness validation criteria documented. |
-| ML1_METRIC_APPROVAL.md | proposed | 2026-03-08 | Thresholds pending explicit ML1 approval. |
+| ML1_METRIC_APPROVAL.md | approved | 2026-03-16 | Thresholds approved by ML1. |
 
-Planning Gate Decision (Pending): [Approved to execute | Held | Rejected]
-Planning Approved By: ______________________
-Date: ______________________
+Planning Gate Decision: Approved to execute
+Planning Approved By: ML1
+Date: 2026-03-16
 
 Notes:
 - Execution artifacts are prepared in `implementation/`, but runtime execution remains gated by explicit ML1 Planning -> Executing approval.

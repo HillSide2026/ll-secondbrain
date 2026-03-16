@@ -39,10 +39,11 @@ REQUIRED_STAGE1 = [
 ]
 
 REQUIRED_STAGE2_MEASUREMENT = [
-    "METRIC_DEFINITION.md",
-    "MEASUREMENT_METHOD.md",
-    "BASELINE_CAPTURE_PERIOD.md",
-    "VALIDATION_REVIEW.md",
+    # METRICS.md is the single canonical measurement artifact per PROJECT_POLICY.md §8.
+    # The four-file split schema (METRIC_DEFINITION.md, MEASUREMENT_METHOD.md,
+    # BASELINE_CAPTURE_PERIOD.md, VALIDATION_REVIEW.md) is deprecated and non-compliant.
+    # Existing projects using the split schema must consolidate into METRICS.md.
+    "METRICS.md",
     "ML1_METRIC_APPROVAL.md",
 ]
 
