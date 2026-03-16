@@ -31,9 +31,15 @@ Current folder-backed projects:
 - `HBP-007` -> `HBP-007_LEVINE_LAW_2026`
 - `HBP-008` -> `HBP-008_LEVINE_LAW_2027`
 - `HBP-009` -> `HBP-009_2027_BUSINESS_IDEAS`
+- `HBP-010` -> `HBP-010_RHIZOME_WHITE_LABEL`
+- `HBP-011` -> `HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY`
 
 Each HillSide business project now has a numbered folder starting with its
 canonical `HBP-###` label.
+
+HillSide currently uses both `Strategic` and `Decision` project packets.
+Decision projects remain governed projects and do not replace the separate
+register-level decision lifecycle.
 
 Business-project folders may exist as shells while a project is still in `idea`
 or `screening`.

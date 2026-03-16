@@ -4,7 +4,7 @@ title: HillSide Project Register
 owner: ML1
 status: draft
 created_date: 2026-03-12
-last_updated: 2026-03-14
+last_updated: 2026-03-16
 tags: [hillside, projects, register]
 ---
 
@@ -29,6 +29,8 @@ not the delivery-stage lifecycle inside an active project packet.
 | HBP-007 | Levine Law 2026 | Levine Law | idea | Track and govern the 2026 Levine Law strategic program as a HillSide project | Scope ambiguity, sequencing overload, resource allocation drift | pending | ML1 | 2026-03-14 |
 | HBP-008 | Levine Law 2027 | Levine Law | idea | Track and govern the 2027 Levine Law strategic program as a HillSide project | Premature planning assumptions, sequencing risk, resource allocation drift | pending | ML1 | 2026-03-14 |
 | HBP-009 | 2027 Business Ideas | HBP-009_2027_BUSINESS_IDEAS | screening | Create a controlled HillSide project for capturing, screening, and prioritizing 2027 business ideas | Scope drift, screening delay, premature spend | pending | ML1 | 2026-03-14 |
+| HBP-010 | Rhizome White Label | HBP-010_RHIZOME_WHITE_LABEL | approved | Create a controlled HillSide decision project to determine whether a Rhizome-linked white-label path should advance, be restructured, or be declined | Partner misalignment, single-channel dependency, integration sprawl | approved | ML1 | 2026-03-16 |
+| HBP-011 | Payments Regulatory & Compliance Consulting Agency | HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY | approved | Create a controlled HillSide decision project to determine whether a standalone payments regulatory and compliance consulting agency should be built under Matthew Holdings | Weak differentiation, slow revenue ramp, execution sprawl | approved | ML1 | 2026-03-16 |
 
 ## Folder Coverage
 
@@ -41,6 +43,8 @@ not the delivery-stage lifecycle inside an active project packet.
 - `HBP-007` currently has folder coverage in `HBP-007_LEVINE_LAW_2026/`.
 - `HBP-008` currently has folder coverage in `HBP-008_LEVINE_LAW_2027/`.
 - `HBP-009` currently has folder coverage in `HBP-009_2027_BUSINESS_IDEAS/`.
+- `HBP-010` currently has folder coverage in `HBP-010_RHIZOME_WHITE_LABEL/`.
+- `HBP-011` currently has folder coverage in `HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY/`.
 
 ## Decision Lifecycle Reference
 

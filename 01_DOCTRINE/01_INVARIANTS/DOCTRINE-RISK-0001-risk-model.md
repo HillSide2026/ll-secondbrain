@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-24
-last_updated: 2026-03-08
+last_updated: 2026-03-15
 tags: [doctrine, risk]
 
 effective_date:
@@ -93,7 +93,7 @@ Components:
 
 ### D. Financial Risk (Project Investment Level)
 
-Financial risk tracks the firm's capital exposure to a specific project or initiative. Applies to strategic and management projects only.
+Financial risk tracks the firm's capital exposure to a specific project or initiative. Applies to strategic, management, and decision projects only.
 
 Components:
 - Project cost overrun vs approved budget
@@ -102,7 +102,7 @@ Components:
 
 ### E. Strategic Risk (Direction and Positioning)
 
-Strategic risk tracks whether the initiative remains aligned with firm direction and whether execution could create structural problems. Applies to strategic and management projects only.
+Strategic risk tracks whether the initiative remains aligned with firm direction and whether execution could create structural problems. Applies to strategic, management, and decision projects only.
 
 Components:
 - Strategy drift (project no longer serves original intent)
@@ -153,17 +153,18 @@ This section defines which risk axes apply to each work type.
 | Strategic Project | Long-horizon firm capability build. Novel, multi-stage, full governance. | LLP-001 through LLP-005 |
 | Management Project | Internal firm ops and portfolio governance. Process/recurring. | Portfolio Management, Governance Audit |
 | Operational Project | Bounded technical or integration build. Specific deliverable, time-limited. | SharePoint-Clio integration, Gmail governance |
+| Decision Project | Bounded option-framing work intended to support a go / hold / no-go or reclassification decision. | Rhizome white-label evaluation, agency go/no-go framing |
 | Legal Matter | Client delivery work. Governed by matter doctrine, not project doctrine. | All active matters in Clio |
 
 ### Risk Axes by Type
 
-| Risk Axis | Strategic Project | Management Project | Operational Project | Legal Matter |
-|---|:---:|:---:|:---:|:---:|
-| A. Economic Risk | | | | ✓ |
-| B. Execution Risk (incl. Relationship) | | | | ✓ |
-| C. Operational Risk (scope/schedule/budget) | ✓ | ✓ | ✓ | ✓ |
-| D. Financial Risk | ✓ | ✓ | | |
-| E. Strategic Risk | ✓ | ✓ | | |
+| Risk Axis | Strategic Project | Management Project | Operational Project | Decision Project | Legal Matter |
+|---|:---:|:---:|:---:|:---:|:---:|
+| A. Economic Risk | | | | | ✓ |
+| B. Execution Risk (incl. Relationship) | | | | | ✓ |
+| C. Operational Risk (scope/schedule/budget) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| D. Financial Risk | ✓ | ✓ | | ✓ | |
+| E. Strategic Risk | ✓ | ✓ | | ✓ | |
 
 ## 7. Lifecycle Risk Artifacts and Gate Review (Policy Boundary)
 

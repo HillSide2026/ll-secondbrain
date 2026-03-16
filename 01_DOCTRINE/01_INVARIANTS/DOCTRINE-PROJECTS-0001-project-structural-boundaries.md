@@ -101,6 +101,7 @@ The canonical project types are:
 - `Strategic`
 - `Management`
 - `Operational`
+- `Decision`
 
 #### Strategic Project
 
@@ -118,6 +119,18 @@ domains.
 
 An operational project is a bounded execution-focused initiative that improves,
 implements, or stabilizes how defined work is carried out.
+
+#### Decision Project
+
+A decision project is a bounded option-framing initiative used to structure,
+compare, and decide whether a proposed build, partnership, divestiture, or new
+venture path should advance, be reclassified, or be closed.
+
+A decision project:
+
+- is evaluation-first, not execution-first
+- exists to produce a clear ML1 go / hold / no-go or reclassification decision
+- may conclude by closing or by being reclassified into another project type
 
 Each project must use one canonical project type for governance purposes.
 
@@ -213,6 +226,9 @@ Project delivery stages are a distinct system from:
 - matter delivery-status states
 
 These systems must not be collapsed into one vocabulary.
+
+`Decision Project` is a canonical project type inside the project system. It is
+not the same thing as a register-level decision lifecycle.
 
 ## Identity Rule
 

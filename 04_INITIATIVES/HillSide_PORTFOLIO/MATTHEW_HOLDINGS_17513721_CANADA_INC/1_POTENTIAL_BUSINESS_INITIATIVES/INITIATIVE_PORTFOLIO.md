@@ -4,7 +4,7 @@ title: Initiative Portfolio
 owner: ML1
 status: draft
 created_date: 2026-03-12
-last_updated: 2026-03-12
+last_updated: 2026-03-16
 tags: [hillside, initiatives, portfolio]
 ---
 
@@ -20,8 +20,13 @@ Use this table to track the Matthew Holdings initiative portfolio.
 | PBI-004 | Build & Launch | New Venture under Matthew Holdings | executing | - | Build and launch a digital asset. Initiation and planning are complete; execution now follows an eight-step roadmap. | Strategic risk: product-market fit may not validate quickly enough for the intended launch path. Financial risk: launch economics may be weaker than expected. Scope risk: build requirements may expand beyond the intended lightweight product scope. Schedule risk: build and launch may take longer than planned. | pending | TBD | 2026-03-12 |
 | PBI-005 | Sale of Micro SaaS | New Venture under Matthew Holdings | initiating | - | Evaluate and pursue a sale process for the micro SaaS asset once commercially ready. | Financial risk: buyer demand or exit value may be weaker than expected. Schedule risk: sale timing may not align with preferred exit timing. Scope risk: transaction work may expand beyond the intended sale process. Strategic risk: exit timing may conflict with broader portfolio priorities. | pending | TBD | 2026-03-12 |
 | PBI-006 | B2C Micro SaaS | New Venture under Matthew Holdings | initiating | - | Explore a direct-to-consumer micro SaaS model as a distinct venture path. | Strategic risk: the B2C model may not fit the portfolio's strengths or channel advantages. Financial risk: customer acquisition economics may be weaker than expected. Scope risk: product and support requirements may expand beyond the intended lightweight model. Schedule risk: validation and launch timing may take longer than planned. | pending | TBD | 2026-03-12 |
-| PBI-007 | Rhizome White Label | Cross-Portfolio Strategic Partnership | initiating | - | Evaluate a white-label build or distribution path tied to Rhizome. | Strategic risk: partner objectives or commercial incentives may become misaligned. Strategic risk: the white-label model may create dependency on a single external channel. Scope risk: integration and customization demands may expand beyond the intended structure. Schedule risk: partner coordination may delay launch or delivery. | pending | TBD | 2026-03-12 |
-| PBI-008 | Payments Regulatory & Compliance Consulting Agency | New Venture under Matthew Holdings | initiating | - | Build a consulting agency focused on payments regulatory and compliance services. | Strategic risk: service positioning may not differentiate clearly enough in the target market. Financial risk: revenue ramp may lag behind capability-building cost. Scope risk: service delivery requirements may expand beyond the intended agency model. Schedule risk: launch readiness may take longer than planned due to capability and regulatory complexity. | pending | TBD | 2026-03-12 |
+| PBI-007 | Rhizome White Label | Cross-Portfolio Strategic Partnership | planning | - | Evaluate a white-label build or distribution path tied to Rhizome. | Strategic risk: partner objectives or commercial incentives may become misaligned. Strategic risk: the white-label model may create dependency on a single external channel. Scope risk: integration and customization demands may expand beyond the intended structure. Schedule risk: partner coordination may delay launch or delivery. | approved | ML1 | 2026-03-16 |
+| PBI-008 | Payments Regulatory & Compliance Consulting Agency | New Venture under Matthew Holdings | planning | - | Build a consulting agency focused on payments regulatory and compliance services. | Strategic risk: service positioning may not differentiate clearly enough in the target market. Financial risk: revenue ramp may lag behind capability-building cost. Scope risk: service delivery requirements may expand beyond the intended agency model. Schedule risk: launch readiness may take longer than planned due to capability and regulatory complexity. | approved | ML1 | 2026-03-16 |
+
+## Admitted HillSide Projects
+
+- `PBI-007` is currently progressing through planning in `HBP-010_RHIZOME_WHITE_LABEL`.
+- `PBI-008` is currently progressing through planning in `HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY`.
 
 ## Stage Definitions
 

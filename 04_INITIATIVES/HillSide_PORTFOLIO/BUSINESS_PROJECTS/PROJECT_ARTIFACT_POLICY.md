@@ -42,6 +42,16 @@ This policy does not govern:
 - LL client matters
 - non-project reference material
 
+## Decision Project Rule
+
+HillSide may use `Decision` projects for bounded ownership-level evaluation
+work where the main objective is an ML1 go / hold / no-go or reclassification
+decision.
+
+Decision projects remain projects under the canonical project delivery-stage
+system. They do not replace the HillSide decision lifecycle used in project
+registers.
+
 ## Pre-Initiation Shells
 
 A HillSide project may exist as a folder shell with only:
@@ -57,8 +67,8 @@ should be shown as pending, not implied complete.
 
 ## Stage 1 - Initiating
 
-Required stage-gate artifacts for all HillSide business projects in
-`Initiating`:
+Required stage-gate artifacts for HillSide strategic, management, and
+operational projects in `Initiating`:
 
 - `PROJECT_CHARTER.md`
 - `PROBLEM_STATEMENT.md`
@@ -71,6 +81,24 @@ Required for strategic projects only:
 
 - `BUSINESS_CASE.md`
 
+Required for decision projects only:
+
+- `PROJECT_CHARTER.md`
+- `PROBLEM_STATEMENT.md`
+- `RISK_SCAN.md`
+- `APPROVAL_RECORD.md`
+
+For HillSide decision projects, `PROJECT_CHARTER.md` should explicitly state:
+
+- what exactly is being decided
+- which real options are under consideration
+- which criteria will be used to evaluate those options
+
+Optional for decision projects, only if ML1 wants them:
+
+- `SUCCESS_CRITERIA.md`
+- `STAKEHOLDERS.md`
+
 Supporting but non-gate artifacts:
 
 - `README.md`
@@ -78,6 +106,24 @@ Supporting but non-gate artifacts:
 
 Supporting artifacts may coexist with the initiation packet, but they do not
 replace required stage-gate artifacts.
+
+## Stage 2 - Planning for Decision Projects
+
+If a HillSide `Decision` project is authorized into `Planning`, the minimum
+planning artifact set is:
+
+- `DECISION_FRAME.md`
+- `PROJECT_PLAN.md`
+- `ASSUMPTIONS_CONSTRAINTS.md`
+- `DEPENDENCIES.md`
+- `RISK_REGISTER.md`
+- `METRICS.md`
+
+`PROJECT_PLAN.md` should consolidate, as needed:
+
+- workplan and sequencing
+- scope framing
+- planning boundary
 
 ## Stage-Gate Rule
 

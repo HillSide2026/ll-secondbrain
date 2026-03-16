@@ -15,7 +15,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 PROJECTS_DIR = REPO_ROOT / "04_INITIATIVES" / "HillSide_PORTFOLIO" / "BUSINESS_PROJECTS"
-CORE_INITIATION = [
+FULL_INITIATION = [
     "PROJECT_CHARTER.md",
     "PROBLEM_STATEMENT.md",
     "SUCCESS_CRITERIA.md",
@@ -23,7 +23,13 @@ CORE_INITIATION = [
     "RISK_SCAN.md",
     "APPROVAL_RECORD.md",
 ]
-PACKET_STARTERS = set(CORE_INITIATION + ["BUSINESS_CASE.md"])
+DECISION_INITIATION = [
+    "PROJECT_CHARTER.md",
+    "PROBLEM_STATEMENT.md",
+    "RISK_SCAN.md",
+    "APPROVAL_RECORD.md",
+]
+PACKET_STARTERS = set(FULL_INITIATION + DECISION_INITIATION + ["BUSINESS_CASE.md"])
 PROJECT_TYPE_PATTERN = re.compile(r"(?im)^(?:\*\*Project Type:\*\*|Project Type:)\s*(.+?)\s*$")
 
 
@@ -51,6 +57,17 @@ def packet_started(file_names: set[str]) -> bool:
     return any(name in file_names for name in PACKET_STARTERS)
 
 
+def required_type_specific_artifacts(project_type: str | None) -> list[str]:
+    if not project_type:
+        return list(FULL_INITIATION)
+    normalized = project_type.strip().lower()
+    if normalized.startswith("strategic"):
+        return list(FULL_INITIATION) + ["BUSINESS_CASE.md"]
+    if normalized.startswith("decision"):
+        return list(DECISION_INITIATION)
+    return list(FULL_INITIATION)
+
+
 def main() -> int:
     args = parse_args()
     findings = []
@@ -67,9 +84,10 @@ def main() -> int:
             shell_only.append(project_dir.name)
             continue
 
-        missing = [name for name in CORE_INITIATION if name not in file_names]
-        if project_type and project_type.lower().startswith("strategic") and "BUSINESS_CASE.md" not in file_names:
-            missing.append("BUSINESS_CASE.md")
+        missing = []
+        for artifact_name in required_type_specific_artifacts(project_type):
+            if artifact_name not in file_names:
+                missing.append(artifact_name)
 
         if missing:
             findings.append((project_dir.name, project_type or "Unknown", missing))

@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-03-08
-last_updated: 2026-03-08
+last_updated: 2026-03-15
 tags: [doctrine, policy, risk]
 ---
 
@@ -19,6 +19,7 @@ This policy applies to:
 - Strategic projects
 - Management projects
 - Operational projects
+- Decision projects
 
 This policy does not apply to legal matters.
 
@@ -49,7 +50,7 @@ Category rule:
 - `RISK_SCAN.md` may remain plain-language.
 - Each listed risk must still be classifiable under an allowed canonical category for that project type.
 - Operational projects: each risk must classify as `Scope`, `Schedule`, or `Budget`.
-- Strategic and management projects: each risk must classify as `Scope`, `Schedule`, `Budget`, `Financial`, or `Strategic`.
+- Strategic, management, and decision projects: each risk must classify as `Scope`, `Schedule`, `Budget`, `Financial`, or `Strategic`.
 
 ### Stage 2 - Planning: `RISK_REGISTER.md`
 
@@ -102,19 +103,19 @@ ML2 may draft and structure artifacts; ML1 decides gate closure.
 
 ## 4. Artifact Obligations by Work Type
 
-| Artifact | Strategic Project | Management Project | Operational Project | Legal Matter |
-|---|:---:|:---:|:---:|:---:|
-| `RISK_SCAN.md` (Initiating) | ✓ | ✓ | ✓ | - |
-| `RISK_REGISTER.md` (Planning) | ✓ | ✓ | ✓ | - |
-| `ISSUE_LOG.md` (Executing) | ✓ | ✓ | ✓ | - |
-| `LESSONS_LEARNED.md` (Closing) | ✓ | ✓ | ✓ | - |
+| Artifact | Strategic Project | Management Project | Operational Project | Decision Project | Legal Matter |
+|---|:---:|:---:|:---:|:---:|:---:|
+| `RISK_SCAN.md` (Initiating) | ✓ | ✓ | ✓ | ✓ | - |
+| `RISK_REGISTER.md` (Planning) | ✓ | ✓ | ✓ | ✓ | - |
+| `ISSUE_LOG.md` (Executing) | ✓ | ✓ | ✓ | ✓ | - |
+| `LESSONS_LEARNED.md` (Closing) | ✓ | ✓ | ✓ | ✓ | - |
 
 Legal matters carry no project risk artifacts under this policy.
 
 ## 5. Category Axis Requirement by Work Type
 
 `RISK_REGISTER.md` must use:
-- Strategic and management projects: Scope / Schedule / Budget / Financial / Strategic
+- Strategic, management, and decision projects: Scope / Schedule / Budget / Financial / Strategic
 - Operational projects: Scope / Schedule / Budget
 
 ## 6. Deprecated Risk Artifacts

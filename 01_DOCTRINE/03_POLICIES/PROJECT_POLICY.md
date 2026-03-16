@@ -26,6 +26,7 @@ This policy applies to all repo-governed:
 - strategic projects
 - management projects
 - operational projects
+- decision projects
 
 This policy does not apply to legal matter stages, which remain governed by
 matter doctrine.
@@ -83,6 +84,9 @@ management, for example:
 
 Decision lifecycles do not replace delivery stages.
 
+`Decision Project` is a project type, not a substitute for register-level
+decision tracking.
+
 ## 6. Stage-Gate Authority
 
 No project stage advancement is valid without explicit ML1 approval recorded in
@@ -101,7 +105,7 @@ ML1 alone decides stage advancement.
 
 ### Stage 1 - Initiating
 
-Required (all projects):
+Required for strategic, management, and operational projects:
 
 - `PROJECT_CHARTER.md`
 - `PROBLEM_STATEMENT.md`
@@ -114,9 +118,27 @@ Required (strategic projects only):
 
 - `BUSINESS_CASE.md`
 
+Required (decision projects only):
+
+- `PROJECT_CHARTER.md`
+- `PROBLEM_STATEMENT.md`
+- `RISK_SCAN.md`
+- `APPROVAL_RECORD.md`
+
+For decision projects, `PROJECT_CHARTER.md` should explicitly state:
+
+- what exactly is being decided
+- which real options are under consideration
+- which criteria will be used to evaluate those options
+
+Optional for decision projects, only if ML1 wants them:
+
+- `SUCCESS_CRITERIA.md`
+- `STAKEHOLDERS.md`
+
 ### Stage 2 - Planning
 
-Required:
+Required for strategic, management, and operational projects:
 
 - `SCOPE_DEFINITION.md`
 - `WORKPLAN.md`
@@ -124,6 +146,15 @@ Required:
 - `DEPENDENCIES.md`
 - `RISK_REGISTER.md`
 - `COMMUNICATION_PLAN.md`
+- `METRICS.md`
+
+Required (decision projects only):
+
+- `DECISION_FRAME.md`
+- `PROJECT_PLAN.md`
+- `ASSUMPTIONS_CONSTRAINTS.md`
+- `DEPENDENCIES.md`
+- `RISK_REGISTER.md`
 - `METRICS.md`
 
 ### Stage 3 - Executing
@@ -164,6 +195,15 @@ Rules:
   readiness.
 - Abstract or duplicative planning artifacts should be merged or removed.
 - `METRICS.md` is the single canonical measurement artifact.
+- Decision projects should use the lightest planning packet that still supports
+  the ML1 decision at hand.
+- For decision projects, `PROJECT_PLAN.md` is the canonical consolidated
+  planning artifact and should absorb scope, framing, and sequencing content as
+  needed without creating separate `SCOPE_DEFINITION.md` or
+  `COMMUNICATION_PLAN.md` files by default.
+
+Decision projects may close after ML1 reaches a go / hold / no-go decision, or
+may be reclassified into another project type before material execution begins.
 
 ## 9. Relation to Other Stage Systems
 
