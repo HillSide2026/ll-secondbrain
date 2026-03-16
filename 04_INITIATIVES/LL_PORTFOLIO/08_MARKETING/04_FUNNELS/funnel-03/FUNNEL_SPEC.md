@@ -2,7 +2,7 @@
 id: 04_initiatives__ll_portfolio__08_marketing__funnels__funnel_03__funnel_spec_md
 title: Funnel Spec — Funnel 03
 owner: ML1
-status: active
+status: planned
 created_date: 2026-02-25
 last_updated: 2026-03-15
 tags: []
@@ -13,7 +13,7 @@ tags: []
 ## Funnel ID + Status
 
 - funnel_id: funnel-03
-- status: active
+- status: planned
 
 ## Purpose / Role
 
@@ -119,6 +119,7 @@ Specialized payments and stablecoin regulatory counsel for operators making stru
 
 - Marketing only; no legal advice or acceptance decisions
 - ML1 approval required for acceptance
+- Activation remains gated pending ML1-approved planning-stage controls
 
 ## Owner + Review Cadence
 

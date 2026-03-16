@@ -1,10 +1,10 @@
 meta:
   id: funnel-03
   name: Book + Blog -> GHL Intake
-  status: active
+  status: planned
   owner: ML1
-  version: 2.1.0
-  last_updated: '2026-02-16'
+  version: 2.1.1
+  last_updated: '2026-03-15'
 lineage:
   type: independent
   of: null
@@ -28,6 +28,10 @@ spec:
     core_offers:
       - Ongoing AML Counsel Retainer
 history:
+- v: 2.1.1
+  date: '2026-03-15'
+  by: ML1
+  change: Reclassified Funnel 03 from active to planned pending ML1-approved activation and planning-stage control completion.
 - v: 2.1.0
   date: '2026-02-16'
   by: ML1
