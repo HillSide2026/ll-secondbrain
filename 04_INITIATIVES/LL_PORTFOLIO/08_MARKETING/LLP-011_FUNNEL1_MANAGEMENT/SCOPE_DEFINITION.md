@@ -40,3 +40,19 @@ Implementation scope must cover the full funnel lifecycle from lead capture thro
 - Implementation-readiness artifacts are complete and internally consistent.
 - KPI definitions and measurement method are implementation-ready.
 - Risk register and mitigations are documented for scope, schedule, budget, financial, and strategic execution risk.
+
+---
+
+## Stage 2 Scope (Planning Horizon — Not Yet Authorized for Execution)
+
+The following items are in scope for planning-stage design and are defined in the WORKPLAN Stage 2 section. They extend Funnel 01 beyond its current reactive-acquisition state. None may be executed without a separate ML1 Stage 2 authorization.
+
+| Item | Description | Dependency |
+|---|---|---|
+| S2-WS-01 Intake gate hardwiring | Embed qualification questions into opt-in/booking button so the ICP-01 gate cannot be bypassed | ML1 threshold confirmation |
+| S2-WS-02 Lead magnet | All F01 leads receive a Structuring-aligned lead magnet at intake; filters for ICP-01 and warms non-bookers | Lead magnet content created and ML1-approved |
+| S2-WS-03 Structuring keywords | Add Structuring keyword cluster to Google Ads alongside existing reactive keywords; separate ad group for measurement | Keyword shortlist from LLP-025 IMP-05 SEO research; ML1 approval |
+| S2-WS-04 Setter role | Setter handles lead qualification follow-up, consult booking, and pre-consult screening; frees ML1 capacity | Role definition, compensation model, GHL workflow — all ML1-approved |
+| S2-WS-05 Senior lawyer delivery | Senior lawyer handles matter execution for F01 retained clients; ML1 retains oversight and relationship | Role definition, matter eligibility list, supervision model — all ML1-approved |
+
+**Stage 2 is explicitly out of scope for Stage 1 execution.** These items appear here for planning continuity, not as authorized work.

@@ -18,19 +18,19 @@ preventative paid diagnostic as the entry point.
 ## Scope
 ### In Scope
 - Funnel 02 readiness planning.
-- Entry offer and qualification-gate operationalization.
-- Asset, distribution, and signal model definition.
-- relocation from `levinelegal.ca` to `levine-law.ca` for Funnel 02 positioning and routing.
-- higher-quality and more expensive Google Ads traffic for better-fit leads.
-- authority content creation and SEO for growth-stage corporate-law demand.
-- acquisition of traffic and leads through NDA Esq surfaces, including the NDA Esq landing page on `levine-law.ca`, where Funnel 2 overlap exists.
-- Listing associate(s) on website and Funnel 02 landing page where approved by ML1.
-- more consistent intake reporting.
-- improvement of intake metrics.
-- intake-stage and conversion-stage metric framework setup (thresholds to be provided by ML1).
-- bringing in a setter as part of the acquisition and intake model.
-- bringing in a more senior lawyer to do the legal work as part of staffing and operating design.
-- explicit target-boundary definition for growth-stage corporate-law demand.
+- Entry offer definition: Corporate Health Check (name confirmed) — scope, price, deliverable format, ML1 delivery time, monthly capacity ceiling.
+- Accountant referral network build: primary ICP-01 distribution channel (see Section 5 of PROJECT_CHARTER.md for adopted decisions).
+- ICP-01 intake gate: three pre-booking questions enforcing revenue, employee, and accountant filters in GHL.
+- Landing page build on `levine-law.ca` with GHL paid booking form.
+- Capacity constraint definitions (active matter ceiling, matter value floor, practice area exclusions) — required before launch.
+- Relocation from `levinelegal.ca` to `levine-law.ca` for F02 positioning and routing.
+- Authority content and SEO for Structuring keyword cluster (secondary to referral channel — not activated until Health Check landing page is live).
+- Acquisition of traffic and leads through NDA Esq surfaces where F02 overlap exists.
+- Listing associate(s) on website and F02 landing page where approved by ML1.
+- Intake reporting and conversion metric framework setup (thresholds from ML1).
+- Setter role definition and handoff model.
+- Senior lawyer staffing and legal-delivery readiness plan.
+- Explicit ICP boundary: businesses with more than $1M annual cash flow, 5+ employees, accountant involved, not in crisis.
 
 ### Out of Scope
 - Live launch without ML1 approval.
@@ -61,4 +61,4 @@ Planning research note drafted: `STAGE2_PLANNING_RESEARCH_NOTE__MARKET_SIZE_VIAB
 Planning research note drafted: `STAGE2_PLANNING_RESEARCH_NOTE__TARGET_SEGMENT_COMPARISON_EXISTING_OWNERS_VS_NEW_ENTRANTS__2026-03-10.md`.
 
 ## Last ML1 Review Date
-`2026-03-08`
+`2026-03-17`

@@ -43,9 +43,32 @@ execution.
   - signal/reporting expectations,
   - explicit ICP boundary for businesses with more than `$1M` annual cash flow.
 
-## 5. Authority
+## 5. Adopted Decisions (from LLM-001 COS Review, 2026-03-17 — adopted by ML1)
+
+The following decisions are adopted into F02 scope from the LLP-025 marketing strategy review:
+
+**Channel decision**: Accountant referral network is the primary F02 distribution channel for ICP-01 acquisition. LinkedIn is secondary. Google Ads is not the primary F02 acquisition channel. ICP-01 operators ($1M–$8M, accountant involved) are not search-intent-driven — their accountant is the gatekeeper.
+- Target: 10–15 Ontario accounting firms serving the $1M–$8M operator segment (mid-market CA firms, not Big Four)
+- Referral mechanic: accountants refer clients directly to the Corporate Health Check product
+
+**Entry offer framing**: Corporate Health Check (confirmed). "Premium Consultation" and "Strategic Consultation" are not the framing.
+- Price: ML1 to define ($1,500–$2,500 target range)
+- Scope: ML1 to define (what is reviewed, what the client receives, how long it takes to deliver)
+- Monthly delivery capacity ceiling: ML1 to define before launch
+
+**ICP-01 intake gate** (three pre-booking questions, enforced in GHL):
+1. Business annual revenue — disqualify below $1M
+2. Number of employees — disqualify below 5
+3. Whether they work with an accountant — disqualify if no
+
+**Capacity constraints** (ML1 decisions required before F02 launch):
+- Maximum active matter count
+- Minimum projected matter value floor for new corporate work
+- Practice area categories to stop accepting to protect capacity
+
+## 6. Authority
 Final approval authority: ML1.
 All execution remains constrained by ML2 doctrine and approved funnel definitions.
 
-## 6. Promotion Path
+## 7. Promotion Path
 Upon ML1 initiation approval, move to Planning for metrics, baseline collection, and go/no-go launch thresholds.

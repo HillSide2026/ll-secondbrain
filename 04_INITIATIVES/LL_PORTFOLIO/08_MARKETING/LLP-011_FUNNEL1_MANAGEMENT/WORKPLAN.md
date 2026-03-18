@@ -76,3 +76,83 @@ Notes:
 
 ## Completion Condition
 Workplan is complete when execution mobilization artifacts are complete, internally aligned, and approved for Planning -> Executing gate decision by ML1.
+
+---
+
+## Stage 2 — Funnel 1 Future State (Planning Horizon, Not Yet Authorized)
+
+These items represent the planned evolution of Funnel 01 beyond the current execution scope. They are in-scope for planning-stage design but require a separate ML1 authorization before execution begins. They do not modify the current Stage 1 execution scope.
+
+### S2-WS-01 — Intake Gate Hardwiring
+
+**Problem**: The GHL qualification questionnaire exists but is not being sent consistently. Leads are entering the funnel without passing the ICP-01 filter.
+
+**Task**: Hardwire the qualification questions directly into the opt-in / booking button on the F01 landing page so the gate cannot be bypassed. Questions:
+1. Business annual revenue (disqualify < $1M)
+2. Number of employees (disqualify < 5)
+3. Whether they work with an accountant (disqualify if no)
+
+**Why Stage 2**: Configuration change to live GHL flow. Requires ML1 sign-off on disqualification thresholds before implementation.
+
+### S2-WS-02 — Lead Magnet for All Leads
+
+**Scope**: All F01 leads receive a lead magnet at intake — prior to or concurrent with consult booking. The lead magnet serves two purposes: (1) filters for ICP-01 by topic specificity (operators who download a governance or structuring guide self-select as the right audience), and (2) warms leads who don't immediately book.
+
+**Requirements**:
+- Lead magnet topic must align with Structuring keyword cluster (e.g., shareholder governance checklist, executive compensation overview, corporate structure review guide) — not a generic legal resource
+- Delivered automatically via GHL on opt-in
+- ML1 must approve content before deployment
+
+**Why Stage 2**: Lead magnet must be created and approved before GHL automation can be configured.
+
+### S2-WS-03 — Structuring Keywords Added to Google Ads
+
+**Scope**: Add Structuring keyword cluster to the F01 Google Ads campaign alongside existing reactive keywords. Target keywords to include candidates from the LLP-025 SEO research (e.g., "shareholder agreement review Ontario," "executive compensation lawyer Toronto," "corporate governance review Ontario").
+
+**Rationale**: Current F01 keyword "toronto corporate lawyer" attracts reactive, crisis-driven leads. Structuring keywords attract operators building governance systems — closer to ICP-01. This does not replace the current campaign; it supplements it with higher-fit traffic.
+
+**Requirements**:
+- Keyword shortlist approved by ML1 (delegated to SEO Metrics Master Agent for research; ML1 approves final list)
+- Separate ad group or campaign to isolate Structuring traffic for measurement
+- Conversion tracking for Structuring keywords must be confirmed before spend is allocated
+
+**Why Stage 2**: Requires keyword research output from LLP-025 WS-05 / IMP-05 before implementation.
+
+### S2-WS-04 — Setter Role
+
+**Scope**: Add a setter to the F01 intake and booking flow. The setter handles:
+- Initial lead qualification follow-up
+- Consult booking and confirmation
+- Pre-consult screening and no-show reduction
+- Handoff to ML1 for consult
+
+**Rationale**: Currently ML1 handles all intake operations. A setter frees ML1 capacity for legal work and improves contact rates at the Lead → Consult stage (currently the primary drop-off point at 70–75% of leads not booking).
+
+**Requirements**:
+- Setter role definition: scope, script, qualification authority, escalation triggers
+- Compensation model (ML1 to define)
+- GHL workflow updated for setter hand-off
+- ML1 retains decision authority on all retentions
+
+**Why Stage 2**: Staffing decision requiring ML1 approval. Cannot be activated without role definition and compensation model.
+
+### S2-WS-05 — Senior Lawyer Delivery
+
+**Scope**: Add a senior lawyer to handle matter delivery for F01 retained clients. ML1 retains client relationship and strategic oversight; senior lawyer handles execution.
+
+**Rationale**: As F01 volume grows (and as F02 and F03 add intake), ML1 delivery capacity becomes the constraint. A senior lawyer on delivery extends capacity without compromising relationship or oversight quality.
+
+**Requirements**:
+- Role definition: matter types in scope, supervision model, ML1 handoff protocol
+- Compensation and engagement model (ML1 to define)
+- Matter type eligibility list (which F01 matters are appropriate for delegation)
+- QA and oversight process
+
+**Why Stage 2**: Staffing decision requiring ML1 approval and matter-type eligibility scoping before any delegation occurs.
+
+### Stage 2 Gate Criteria
+
+Stage 2 work may not begin until:
+- Stage 1 (current execution) is authorized and operational
+- ML1 provides explicit Stage 2 authorization
+- Each workstream above has a separate ML1-approved scope before execution
