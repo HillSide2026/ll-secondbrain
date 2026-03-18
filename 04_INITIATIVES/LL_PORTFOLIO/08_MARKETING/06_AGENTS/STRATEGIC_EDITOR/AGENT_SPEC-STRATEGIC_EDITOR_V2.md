@@ -6,9 +6,10 @@ artifact_name: AGENT_SPEC_SE-01
 version: v0.1
 layer: ML2
 owner: ML1
-status: draft — awaiting ML1 approval
-activation_status: first — no dependencies; activate before F02
+status: active
+activation_status: active — lightweight mode
 activation_mode: lightweight (manual invocation per output)
+activated_date: 2026-03-18
 created_date: 2026-03-18
 last_updated: 2026-03-18
 supersedes: AGENT_SPEC-STRATEGIC_EDITOR_AGENT_V1.md
@@ -20,7 +21,7 @@ tags: [strategic-editor, governance, coherence-gate, ml2]
 **Agent ID**: SE-01
 **Classification**: Governance Agent — Coherence Gate
 **Layer**: ML2 (System-of-Record)
-**Status**: Draft — for ML1 approval
+**Status**: Active — lightweight mode (ML1 approved 2026-03-18)
 
 ---
 
@@ -307,12 +308,12 @@ Purpose: drift detection, agent performance tracking, doctrine gap identificatio
 
 **Initial Mode**: Lightweight — manual invocation per output. No automation loops. No batch processing.
 
-**Required for activation**:
-- ML1 approval of this spec
-- ML1 approval of positioning doctrine reference set:
-  - `MARKET_POSITIONING.md`
-  - `MARKETING_STRATEGY.md`
-  - `FIRM_STRATEGY.md` (LLP-030)
+**Activation approved**: 2026-03-18 by ML1
+
+**Active doctrine reference set**:
+- `LLP-025_MARKETING_STRATEGY/MARKET_POSITIONING.md`
+- `LLP-025_MARKETING_STRATEGY/MARKETING_STRATEGY.md`
+- `LLP-030_FIRM_STRATEGY/FIRM_STRATEGY.md`
 
 ---
 

@@ -3,8 +3,9 @@ id: agent_spec_seo_metrics_master_v2
 title: AGENT SPEC — SEO_METRICS_MASTER V2
 agent_id: SEO-01
 owner: ML1
-status: draft
-activation_status: limited — keyword research only (IMP-05)
+status: active
+activation_status: active — limited to keyword research (IMP-05)
+activated_date: 2026-03-18
 created_date: 2026-03-17
 last_updated: 2026-03-17
 supersedes: AGENT_SPEC-SEO_METRICS_MASTER_V1.md
@@ -15,7 +16,7 @@ tags: [seo, metrics, keyword-research, analytical-agent]
 
 **Agent ID**: SEO-01
 **Classification**: Analytical Agent
-**Status**: Draft → Limited activation (keyword research only)
+**Status**: Active — limited to keyword research (IMP-05) (ML1 approved 2026-03-18)
 
 ---
 
