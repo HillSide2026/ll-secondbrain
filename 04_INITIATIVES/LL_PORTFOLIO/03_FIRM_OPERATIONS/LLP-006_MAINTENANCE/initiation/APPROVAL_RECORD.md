@@ -39,14 +39,23 @@ last_updated: 2026-03-07
 | DEPENDENCIES.md | approved | 2026-03-16 | Cross-project dependencies declared |
 | RISK_REGISTER.md | approved | 2026-03-16 | Execution risks documented |
 | COMMUNICATION_PLAN.md | approved | 2026-03-16 | Communication cadence documented |
-| METRICS.md / ML1_METRIC_APPROVAL.md | pending | | Metric thresholds proposed but not yet ML1-approved — see planning/ML1_METRIC_APPROVAL.md |
+| METRICS.md / ML1_METRIC_APPROVAL.md | approved | 2026-03-18 | Metric thresholds retroactively approved by ML1. |
 
-**Outstanding before Planning → Executing gate can close:**
-- ML1 must review and approve metric threshold values in `planning/METRIC_DEFINITION.md` and record approval in `planning/ML1_METRIC_APPROVAL.md`
-- Split metric schema (METRIC_DEFINITION.md, MEASUREMENT_METHOD.md, BASELINE_CAPTURE_PERIOD.md, VALIDATION_REVIEW.md) should be consolidated into a single `planning/METRICS.md` per PROJECT_POLICY.md §8
+**Planning Gate Decision:** Approved to execute (retroactive authorization)
 
-**Planning Gate Decision (Pending):** [Approved to execute | Held | Rejected]
+**Planning Approved By:** ML1
 
-**Planning Approved By:** _______________
+**Date:** 2026-03-18
 
-**Date:** _______________
+**Notes on retroactive authorization:**
+- Execution artifacts (EXECUTION_LOG.md, DECISION_LOG.md, DELIVERABLES_TRACKER.md, QA_CHECKLIST.md, ISSUE_LOG.md, CHANGE_LOG.md) were produced prior to formal gate authorization.
+- ML1 reviewed the situation on 2026-03-18 and retroactively authorized the existing execution artifacts and scope.
+- All prior execution work is considered formally sanctioned as of 2026-03-18.
+- Split metric schema (METRIC_DEFINITION.md etc.) to be consolidated into canonical METRICS.md in a future governance cleanup pass — does not block execution continuation.
+
+## Approval Log
+
+| Date | Decision | Authority | Notes |
+|------|----------|-----------|-------|
+| 2026-03-16 | Initiating→Planning approved | ML1 | All initiation artifacts approved; Planning stage authorized. |
+| 2026-03-18 | Planning→Executing approved (retroactive) | ML1 | ML1 retroactively authorized existing execution-stage artifacts. Project is now formally in Executing. |

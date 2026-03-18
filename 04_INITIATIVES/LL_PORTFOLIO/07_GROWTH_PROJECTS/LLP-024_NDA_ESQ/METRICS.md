@@ -2,7 +2,7 @@
 id: 04_initiatives__ll_portfolio__07_strategic_projects__llp_024_nda_esq__metrics_md
 title: NDA Esq - Metrics
 owner: ML1
-status: draft
+status: approved
 created_date: 2026-03-14
 last_updated: 2026-03-15
 tags: [nda-esq, strategic-project, planning, metrics]

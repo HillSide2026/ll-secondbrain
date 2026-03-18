@@ -2,7 +2,7 @@
 id: 04_initiatives__ll_portfolio__07_strategic_projects__llp_024_nda_esq__approval_record_md
 title: NDA Esq - Approval Record
 owner: ML1
-status: draft
+status: approved
 created_date: 2026-03-14
 last_updated: 2026-03-15
 tags: [nda-esq, strategic-project, approval]
@@ -57,7 +57,13 @@ Planning Stage Authorized: Yes
 | `DEPENDENCIES.md` | drafted | 2026-03-14 | Governance, product, growth, and operations dependencies documented |
 | `RISK_REGISTER.md` | drafted | 2026-03-14 | Implementation risks and mitigations documented |
 | `COMMUNICATION_PLAN.md` | drafted | 2026-03-14 | Planning and escalation cadence documented |
-| `METRICS.md` | proposed | 2026-03-14 | Consolidated metric definition, measurement method, baseline, validation review, and threshold proposal documented |
+| `METRICS.md` | approved | 2026-03-18 | Metric thresholds approved by ML1. Planning→Executing gate authorized. |
+
+**Planning Gate Decision:** Approved to execute
+
+**Planning Approved By:** ML1
+
+**Date:** 2026-03-18
 
 ## Approval Log
 
@@ -65,14 +71,18 @@ Planning Stage Authorized: Yes
 |------|----------|-----------|-------|
 | 2026-03-14 | Initiation approved for NDA Esq | ML1 | Project workstream structure, scope boundaries, roadmap, and success metrics approved at initiation stage. |
 | 2026-03-14 | Planning authorized for NDA Esq | ML1 | Planning-stage artifacts may now be developed for product, acquisition, and operations workstreams. |
+| 2026-03-18 | Planning→Executing gate approved | ML1 | Metric thresholds in METRICS.md approved. All planning artifacts reviewed. NDA Esq authorized to advance to Executing. |
 
 Initiation Approved By: ML1 (Matthew Levine)
 Date: 2026-03-14
 
 Planning Stage Authorized: Yes
 
+Executing Stage Authorized: Yes
+Date: 2026-03-18
+
 Notes:
 - Initiation approval confirms scope and project framing only.
 - Planning artifacts are now authorized.
-- Execution remains subject to separate ML1 approval.
+- Execution authorized 2026-03-18 by ML1.
 - `RISK_SCAN.md` and `BUSINESS_CASE.md` were added on 2026-03-15 to align the packet with current repo-level initiation requirements; no separate ML1 approval is recorded for those two artifacts yet.

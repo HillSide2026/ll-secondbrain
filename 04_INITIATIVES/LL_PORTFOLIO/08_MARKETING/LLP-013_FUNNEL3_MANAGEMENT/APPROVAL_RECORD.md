@@ -35,13 +35,13 @@ Planning Stage Authorized: Yes
 
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| `SCOPE_DEFINITION.md` | pending | 2026-03-15 | Canonical planning scope artifact still to be drafted |
-| `WORKPLAN.md` | pending | 2026-03-15 | Canonical planning workplan still to be drafted |
-| `ASSUMPTIONS_CONSTRAINTS.md` | pending | 2026-03-15 | Canonical assumptions/constraints artifact still to be drafted |
-| `DEPENDENCIES.md` | pending | 2026-03-15 | Canonical dependency artifact still to be drafted |
-| `RISK_REGISTER.md` | pending | 2026-03-15 | Canonical planning risk register still to be drafted |
-| `COMMUNICATION_PLAN.md` | pending | 2026-03-15 | Canonical planning communication artifact still to be drafted |
-| `METRICS.md` | pending | 2026-03-15 | Canonical consolidated metrics artifact still to be drafted |
+| `SCOPE_DEFINITION.md` | drafted | 2026-03-18 | ICP-02, positioning, channel architecture, entry offer, core offer map, and completion condition defined |
+| `WORKPLAN.md` | drafted | 2026-03-18 | Four workstreams (positioning, assets, channel activation, signal tracking) with milestones and resource plan |
+| `ASSUMPTIONS_CONSTRAINTS.md` | drafted | 2026-03-18 | Market, operational, and conversion assumptions; hard and soft constraints documented |
+| `DEPENDENCIES.md` | drafted | 2026-03-18 | Agent dependencies (SE-01, SEO-01, BSE-01, SPE-01) and cross-project dependencies (F01, F02, LLP-025, LLP-030) documented |
+| `RISK_REGISTER.md` | drafted | 2026-03-18 | 10 risks identified with likelihood/impact/mitigation; escalation conditions defined |
+| `COMMUNICATION_PLAN.md` | drafted | 2026-03-18 | Review cadence, approval routing, escalation path, and agent communication protocol defined |
+| `METRICS.md` | proposed | 2026-03-18 | 7 KPIs with definitions, proposed thresholds, baseline capture period, and validation review gates. Pending ML1 threshold approval. |
 | `METRIC_DEFINITION.md` | drafted | 2026-03-15 | Legacy planning measurement draft retained for consolidation into `METRICS.md` |
 | `MEASUREMENT_METHOD.md` | drafted | 2026-03-15 | Legacy planning measurement draft retained for consolidation into `METRICS.md` |
 | `BASELINE_CAPTURE_PERIOD.md` | drafted | 2026-03-15 | Legacy planning measurement draft retained for consolidation into `METRICS.md` |
