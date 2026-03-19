@@ -1,77 +1,163 @@
+---
+title: Approval Gap Report
+generated: 2026-03-18T00:00:00Z
+agent: LLM-006 Portfolio Governance Agent
+---
+
 # Approval Gap Report
 
-- Generated: 2026-03-16T18:00:00Z
-- Agent: LLM-006 Portfolio Governance Agent (via LLM-001 Chief of Staff)
+- Generated: 2026-03-18T00:00:00Z
+- Agent: LLM-006 Portfolio Governance Agent
 
 > Advisory output. ML1 approval required before any action is taken.
 
+---
+
 ## Approval Gaps
 
-### 07_STRATEGIC_PROJECTS/LLP-024_NDA_ESQ
-- APPROVAL_RECORD.md present: yes | Stage field: Planning (authorized 2026-03-14)
-- ML1_METRIC_APPROVAL.md: effectively absent as standalone — metric thresholds proposed but unsigned within METRICS.md
-- Gap type: Missing metric threshold approval — blocks Planning→Executing gate
-- Recommended ML1 action: Sign metric thresholds in METRICS.md before 2026-03-20
+### LLP-26-11 / PORTFOLIO_MANAGEMENT
+- APPROVAL_RECORD.md present: Yes
+- Stage field in APPROVAL_RECORD: "Initiating" — "Proposed"
+- ML1_METRIC_APPROVAL.md present: Yes / not yet required (Stage 1)
+- Gap type: No approval record — "Initiation Approved By" field is blank; no ML1 signature or date recorded
+- Recommended ML1 action: Record a signed initiation approval or formally park the project.
 
-### 08_MARKETING/LLP-011_FUNNEL1_MANAGEMENT
-- APPROVAL_RECORD.md present: yes | Stage field: Planning (authorized 2026-03-08)
-- ML1_METRIC_APPROVAL.md: present but unsigned
-- Gap type: Missing metric threshold approval — blocks Planning→Executing gate (overdue)
-- Recommended ML1 action: Sign ML1_METRIC_APPROVAL.md immediately
+---
 
-### 03_FIRM_OPERATIONS/LLP-004_ONBOARDING
-- APPROVAL_RECORD.md present: yes | Stage field: Planning (authorized 2026-03-08)
-- ML1_METRIC_APPROVAL.md: present but unsigned
-- Gap type: Missing metric threshold approval
-- Recommended ML1 action: Sign ML1_METRIC_APPROVAL.md
+### LLP-26-28 / 09_SERVICE_MANAGEMENT
+- APPROVAL_RECORD.md present: Yes
+- Stage field in APPROVAL_RECORD: "Initiating" — "Proposed"
+- ML1_METRIC_APPROVAL.md present: Yes / not yet required (Stage 1)
+- Gap type: No approval record — blank signature
+- Recommended ML1 action: Record a signed initiation approval or formally park.
 
-### 03_FIRM_OPERATIONS/LLP-005_OPENING
-- APPROVAL_RECORD.md present: yes | Stage field: Planning (authorized 2026-03-08)
-- ML1_METRIC_APPROVAL.md: present but unsigned
-- Gap type: Missing metric threshold approval; sequentially follows LLP-004
-- Recommended ML1 action: Sign ML1_METRIC_APPROVAL.md after LLP-004 gate decision
+---
 
-### 03_FIRM_OPERATIONS/LLP-006_MAINTENANCE
-- APPROVAL_RECORD.md present: yes | Stage field: all items "pending"; no ML1 decision recorded
-- ML1_METRIC_APPROVAL.md: not yet required (initiation not approved)
-- Gap type: No ML1 approval at any stage; Stage 3 artifacts present (governance hold)
-- Recommended ML1 action: Governance investigation before any approval action
+### LLP-26-29 / 09_SERVICE_MANAGEMENT/ESSENTIAL
+- APPROVAL_RECORD.md present: Yes
+- Stage field in APPROVAL_RECORD: "Initiating" — "Proposed"
+- ML1_METRIC_APPROVAL.md present: Yes / not yet required (Stage 1)
+- Gap type: No approval record — blank signature
+- Recommended ML1 action: Record a signed initiation approval or formally park.
 
-### 07_STRATEGIC_PROJECTS/LLP-001_CORPORATE_ENTITY_MANAGEMENT
-- APPROVAL_RECORD.md present: yes | Stage field: Proposed (unsigned)
-- Gap type: Initiation not approved; substantive artifacts complete
-- Recommended ML1 action: Sign APPROVAL_RECORD.md to authorize Planning
+---
 
-### 07_STRATEGIC_PROJECTS/LLP-002_CORPORATE_CLERK
-- APPROVAL_RECORD.md present: yes | Stage field: Proposed (unsigned)
-- Gap type: Initiation not approved; prerequisite for LLP-009
-- Recommended ML1 action: Sign APPROVAL_RECORD.md
+### LLP-26-30 / 09_SERVICE_MANAGEMENT/STRATEGIC
+- APPROVAL_RECORD.md present: Yes
+- Stage field in APPROVAL_RECORD: "Initiating" — "Proposed"
+- ML1_METRIC_APPROVAL.md present: Yes / not yet required (Stage 1)
+- Gap type: No approval record — blank signature
+- Recommended ML1 action: Record a signed initiation approval or formally park.
 
-### 07_STRATEGIC_PROJECTS/LLP-003_ASSOCIATE_LAWYER
-- APPROVAL_RECORD.md present: yes | Stage field: Proposed (unsigned)
-- Gap type: Initiation not approved; prerequisite for LLP-010
-- Recommended ML1 action: Sign APPROVAL_RECORD.md
+---
 
-### 07_STRATEGIC_PROJECTS/LLP-004_PARTNER_SUPERVISION
-- APPROVAL_RECORD.md present: yes | Stage field: Proposed (unsigned)
-- Gap type: Initiation not approved
-- Recommended ML1 action: Sign APPROVAL_RECORD.md
+### LLP-26-31 / 09_SERVICE_MANAGEMENT/STANDARD
+- APPROVAL_RECORD.md present: Yes
+- Stage field in APPROVAL_RECORD: "Initiating" — "Proposed"
+- ML1_METRIC_APPROVAL.md present: Yes / not yet required (Stage 1)
+- Gap type: No approval record — blank signature
+- Recommended ML1 action: Record a signed initiation approval or formally park.
 
-### 08_MARKETING/LLP-012_FUNNEL2_MANAGEMENT
-- APPROVAL_RECORD.md present: yes | Stage field: Proposed ("Approve to advance | Hold | Reject")
-- Gap type: Initiation gate decision pending
-- Recommended ML1 action: Make initiation decision
+---
 
-### Placeholder shell projects (9 projects)
-PORTFOLIO_MANAGEMENT, LLP-017, LLP-009, LLP-010, 09_SERVICE_MANAGEMENT (×5)
-- APPROVAL_RECORD.md present: yes (all) | Stage field: Proposed (all unsigned)
-- Gap type: Initiation not approved; no substantive content to approve
-- Recommended ML1 action: Batch consolidation/park decision rather than individual approvals
+### LLP-26-32 / 09_SERVICE_MANAGEMENT/PARKED
+- APPROVAL_RECORD.md present: Yes
+- Stage field in APPROVAL_RECORD: "Initiating" — "Proposed"
+- ML1_METRIC_APPROVAL.md present: Yes / not yet required (Stage 1)
+- Gap type: No approval record — blank signature
+- Recommended ML1 action: Record a signed initiation approval or formally park.
+
+---
+
+### LLP-26-13 / LLP-017_STRATEGIC_RISK
+- APPROVAL_RECORD.md present: Yes
+- Stage field in APPROVAL_RECORD: "Initiating" — "Proposed"
+- ML1_METRIC_APPROVAL.md present: Yes / not yet required (Stage 1)
+- Gap type: No approval record — blank signature
+- Recommended ML1 action: Record a signed initiation approval or formally park.
+
+---
+
+### LLP-26-16 / LLP-009_CLERK_SUPERVISION
+- APPROVAL_RECORD.md present: Yes
+- Stage field in APPROVAL_RECORD: "Initiating" — "Proposed"
+- ML1_METRIC_APPROVAL.md present: Yes / not yet required (Stage 1)
+- Gap type: No approval record — blank signature
+- Recommended ML1 action: Record a signed initiation approval or formally park.
+
+---
+
+### LLP-26-17 / LLP-010_ASSOCIATE_SUPERVISION
+- APPROVAL_RECORD.md present: Yes
+- Stage field in APPROVAL_RECORD: "Initiating" — "Proposed"
+- ML1_METRIC_APPROVAL.md present: Yes / not yet required (Stage 1)
+- Gap type: No approval record — blank signature
+- Recommended ML1 action: Record a signed initiation approval or formally park.
+
+---
+
+### LLP-26-19 / LLP-001_CORPORATE_ENTITY_MANAGEMENT
+- APPROVAL_RECORD.md present: Yes
+- Stage field in APPROVAL_RECORD: "Proposed" — Status: "Proposed"
+- ML1_METRIC_APPROVAL.md present: Yes / not yet required (Stage 1)
+- Gap type: No approval record — blank signature
+- Recommended ML1 action: Complete BUSINESS_CASE.md (required for Strategic Project at Stage 1), then record a signed initiation approval.
+
+---
+
+### LLP-26-20 / LLP-002_CORPORATE_CLERK
+- APPROVAL_RECORD.md present: Yes
+- Stage field in APPROVAL_RECORD: "Proposed"
+- ML1_METRIC_APPROVAL.md present: Yes / not yet required (Stage 1)
+- Gap type: No approval record — blank signature
+- Recommended ML1 action: Complete BUSINESS_CASE.md (required for Strategic Project), then record a signed initiation approval.
+
+---
+
+### LLP-26-21 / LLP-003_ASSOCIATE_LAWYER
+- APPROVAL_RECORD.md present: Yes
+- Stage field in APPROVAL_RECORD: "Proposed"
+- ML1_METRIC_APPROVAL.md present: Yes / not yet required (Stage 1)
+- Gap type: No approval record — blank signature
+- Recommended ML1 action: Complete BUSINESS_CASE.md (required for Strategic Project), then record a signed initiation approval.
+
+---
+
+### LLP-26-22 / LLP-004_PARTNER_SUPERVISION
+- APPROVAL_RECORD.md present: Yes
+- Stage field in APPROVAL_RECORD: "Proposed"
+- ML1_METRIC_APPROVAL.md present: Yes / not yet required (Stage 1)
+- Gap type: No approval record — blank signature
+- Recommended ML1 action: Complete BUSINESS_CASE.md (required for Strategic Project), then record a signed initiation approval.
+
+---
+
+### LLP-030 / LLP-030_FIRM_STRATEGY
+- APPROVAL_RECORD.md present: Yes
+- Stage field in APPROVAL_RECORD: "Initiation — Pending ML1 approval"
+- ML1_METRIC_APPROVAL.md present: No / not yet required (Stage 1)
+- Gap type: Initiation pending — initiation packet drafted, gate decision not yet recorded
+- Recommended ML1 action: Review initiation packet and record a signed gate decision.
+
+---
+
+## Closed Gaps Since Prior Audit (2026-03-16)
+
+The following gaps recorded in the prior audit have been resolved and are not carried forward:
+
+- LLP-006_MAINTENANCE: No ML1 approval at any stage — RESOLVED. ML1 retroactively authorized Planning→Executing gate on 2026-03-18.
+- LLP-024_NDA_ESQ: Missing metric threshold approval — RESOLVED. ML1 approved Planning→Executing gate on 2026-03-18.
+- LLP-011_FUNNEL1_MANAGEMENT: Missing metric threshold approval — RESOLVED. ML1_METRIC_APPROVAL.md approved 2026-03-16.
+- LLP-004_ONBOARDING: Missing metric threshold approval — RESOLVED. ML1_METRIC_APPROVAL.md approved 2026-03-16.
+- LLP-005_OPENING: Missing metric threshold approval — RESOLVED. ML1_METRIC_APPROVAL.md approved 2026-03-16.
+- LLP-012_FUNNEL2_MANAGEMENT: Initiation gate pending — RESOLVED. ML1 approved Initiating→Planning on 2026-03-16.
+- LLP-025_MARKETING_STRATEGY: New project, initiation approved 2026-03-17.
+
+---
 
 ## Summary
 
-- Total projects with approval gaps: 16
-- Metric threshold approval gaps (Stage 2): 4
-- Initiation approval gaps (substantive projects): 4
-- Initiation approval gaps (placeholder shells): 9
-- Governance hold (do not approve until investigated): 1 (LLP-006_MAINTENANCE)
+- Total projects with open approval gaps: 14
+- No approval record (blank signature, Stage 1): 13 (includes 6 shell projects and 4 strategic initiation-stage projects)
+- Initiation gate pending (new project): 1 (LLP-030)
+- Stage 2+ metric approval gaps: 0 (all resolved since prior audit)
