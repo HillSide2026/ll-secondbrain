@@ -25,11 +25,13 @@ PROJECT_MGMT_DIR = REPO_ROOT / "04_INITIATIVES" / "LL_PORTFOLIO" / "03_FIRM_OPER
 PORTFOLIO_MGMT_DIR = REPO_ROOT / "04_INITIATIVES" / "LL_PORTFOLIO" / "03_FIRM_OPERATIONS" / "PORTFOLIO_MANAGEMENT"
 PORTFOLIO_GOVERNANCE_DIR = REPO_ROOT / "04_INITIATIVES" / "LL_PORTFOLIO" / "03_FIRM_OPERATIONS" / "PORTFOLIO_GOVERNANCE"
 
-GOVERNED_PROJECT_TYPES = {"Strategic Project", "Management Project", "Operational Project"}
+GOVERNED_PROJECT_TYPES = {"Strategic Project", "Management Project", "Operational Project", "Decision Project"}
 PROJECT_TYPE_PATTERN = re.compile(r"(?im)^(?:\*\*Project Type:\*\*|Project Type:)\s*(.+?)\s*$")
 APPROVAL_STAGE_PATTERN = re.compile(r"(?im)^Stage:\s*(.+?)\s*$")
+PROJECT_ID_PATTERN = re.compile(r"(?im)^Project ID:\s*(LLP-\d+)\s*$")
+STAGE_DIR_NAMES = {"initiation", "planning", "implementation", "monitoring", "closing"}
 
-REQUIRED_STAGE1 = [
+COMMON_STAGE1 = [
     "PROJECT_CHARTER.md",
     "PROBLEM_STATEMENT.md",
     "SUCCESS_CRITERIA.md",
@@ -38,23 +40,53 @@ REQUIRED_STAGE1 = [
     "APPROVAL_RECORD.md",
 ]
 
+STRATEGIC_STAGE1_EXTRA = [
+    "BUSINESS_CASE.md",
+]
+
+DECISION_STAGE1 = [
+    "PROJECT_CHARTER.md",
+    "PROBLEM_STATEMENT.md",
+    "RISK_SCAN.md",
+    "APPROVAL_RECORD.md",
+]
+
 REQUIRED_STAGE2_MEASUREMENT = [
     # METRICS.md is the single canonical measurement artifact per PROJECT_POLICY.md §8.
     # The four-file split schema (METRIC_DEFINITION.md, MEASUREMENT_METHOD.md,
     # BASELINE_CAPTURE_PERIOD.md, VALIDATION_REVIEW.md) is deprecated and non-compliant.
-    # Existing projects using the split schema must consolidate into METRICS.md.
+    # ML1 threshold approval is recorded inside METRICS.md, not in a separate
+    # ML1_METRIC_APPROVAL.md file.
     "METRICS.md",
-    "ML1_METRIC_APPROVAL.md",
 ]
 
-REQUIRED_STAGE2_PLANNING = [
+PLANNING_PLAN_ARTIFACT = "PROJECT_PLAN.md"
+PLANNING_PLAN_ALIASES = {PLANNING_PLAN_ARTIFACT, "WORKPLAN.md"}
+
+STRATEGIC_MANAGEMENT_STAGE2_PLANNING = [
     "SCOPE_DEFINITION.md",
-    # Consolidated planning artifact; includes milestone schedule and resource plan sections.
-    "WORKPLAN.md",
+    # PROJECT_PLAN.md is preferred. Legacy WORKPLAN.md remains accepted for compatibility.
+    PLANNING_PLAN_ARTIFACT,
     "ASSUMPTIONS_CONSTRAINTS.md",
     "DEPENDENCIES.md",
     "RISK_REGISTER.md",
     "COMMUNICATION_PLAN.md",
+]
+
+OPERATIONAL_STAGE2_PLANNING = [
+    "SCOPE_DEFINITION.md",
+    # PROJECT_PLAN.md is preferred. Legacy WORKPLAN.md remains accepted for compatibility.
+    PLANNING_PLAN_ARTIFACT,
+    "DEPENDENCIES.md",
+    "RISK_REGISTER.md",
+]
+
+DECISION_STAGE2_PLANNING = [
+    "DECISION_FRAME.md",
+    PLANNING_PLAN_ARTIFACT,
+    "ASSUMPTIONS_CONSTRAINTS.md",
+    "DEPENDENCIES.md",
+    "RISK_REGISTER.md",
 ]
 
 REQUIRED_STAGE3 = [
@@ -82,23 +114,11 @@ REQUIRED_STAGE5 = [
     "ARCHIVE_INDEX.md",
 ]
 
-STAGE_REQUIREMENTS = {
-    1: REQUIRED_STAGE1,
-    2: REQUIRED_STAGE1 + REQUIRED_STAGE2_PLANNING + REQUIRED_STAGE2_MEASUREMENT,
-    3: REQUIRED_STAGE1 + REQUIRED_STAGE2_PLANNING + REQUIRED_STAGE2_MEASUREMENT + REQUIRED_STAGE3,
-    4: REQUIRED_STAGE1 + REQUIRED_STAGE2_PLANNING + REQUIRED_STAGE2_MEASUREMENT + REQUIRED_STAGE3 + REQUIRED_STAGE4,
-    5: REQUIRED_STAGE1
-    + REQUIRED_STAGE2_PLANNING
-    + REQUIRED_STAGE2_MEASUREMENT
-    + REQUIRED_STAGE3
-    + REQUIRED_STAGE4
-    + REQUIRED_STAGE5,
-}
-
 
 @dataclass
 class ProjectSnapshot:
     project_id: str
+    project_path: str
     project_type: str
     files: set[str]
     inferred_stage: int
@@ -113,11 +133,7 @@ class ProjectSnapshot:
 
     @property
     def approvals_present(self) -> bool:
-        if "APPROVAL_RECORD.md" not in self.files:
-            return False
-        if self.inferred_stage < 2:
-            return True
-        return "ML1_METRIC_APPROVAL.md" in self.files or "METRICS.md" in self.files
+        return has_requirement(self.files, "APPROVAL_RECORD.md")
 
     @property
     def stage1_complete(self) -> bool:
@@ -153,8 +169,8 @@ class ProjectSnapshot:
     def stage2_completion_pct(self) -> int:
         if self.inferred_stage < 2:
             return 0
-        required = REQUIRED_STAGE2_PLANNING + REQUIRED_STAGE2_MEASUREMENT
-        present = sum(1 for name in required if name in self.files)
+        required = stage2_planning_requirements(self.project_type) + REQUIRED_STAGE2_MEASUREMENT
+        present = sum(1 for name in required if has_requirement(self.files, name))
         return int(round((present / len(required)) * 100))
 
     @property
@@ -166,11 +182,15 @@ class ProjectSnapshot:
         return self.missing_stage2_planning if self.inferred_stage >= 2 else []
 
     @property
+    def display_name(self) -> str:
+        return f"{self.project_id} ({self.project_path})"
+
+    @property
     def missing_for_current_stage(self) -> List[str]:
         if self.inferred_stage <= 0:
-            return list(REQUIRED_STAGE1)
-        required = STAGE_REQUIREMENTS.get(self.inferred_stage, STAGE_REQUIREMENTS[5])
-        return [name for name in required if name not in self.files]
+            return stage1_requirements(self.project_type)
+        required = stage_requirements(self.project_type, self.inferred_stage)
+        return missing_requirements(self.files, required)
 
 
 def utc_now() -> str:
@@ -187,16 +207,60 @@ def generate_run_id() -> str:
     return f"RUN-{date}-LL-PORTFOLIO-AGENTS-{stamp}"
 
 
-def infer_stage(files: set[str]) -> int:
-    if any(name in files for name in REQUIRED_STAGE5):
+def requirement_aliases(name: str) -> set[str]:
+    if name == PLANNING_PLAN_ARTIFACT:
+        return set(PLANNING_PLAN_ALIASES)
+    return {name}
+
+
+def has_requirement(files: set[str], name: str) -> bool:
+    return any(alias in files for alias in requirement_aliases(name))
+
+
+def missing_requirements(files: set[str], required: List[str]) -> List[str]:
+    return [name for name in required if not has_requirement(files, name)]
+
+
+def stage1_requirements(project_type: str) -> List[str]:
+    if project_type == "Strategic Project":
+        return COMMON_STAGE1 + STRATEGIC_STAGE1_EXTRA
+    if project_type == "Decision Project":
+        return list(DECISION_STAGE1)
+    return list(COMMON_STAGE1)
+
+
+def stage2_planning_requirements(project_type: str) -> List[str]:
+    if project_type == "Decision Project":
+        return list(DECISION_STAGE2_PLANNING)
+    if project_type == "Operational Project":
+        return list(OPERATIONAL_STAGE2_PLANNING)
+    return list(STRATEGIC_MANAGEMENT_STAGE2_PLANNING)
+
+
+def stage_requirements(project_type: str, stage_index: int) -> List[str]:
+    stage1 = stage1_requirements(project_type)
+    stage2 = stage2_planning_requirements(project_type) + REQUIRED_STAGE2_MEASUREMENT
+    if stage_index <= 1:
+        return stage1
+    if stage_index == 2:
+        return stage1 + stage2
+    if stage_index == 3:
+        return stage1 + stage2 + REQUIRED_STAGE3
+    if stage_index == 4:
+        return stage1 + stage2 + REQUIRED_STAGE3 + REQUIRED_STAGE4
+    return stage1 + stage2 + REQUIRED_STAGE3 + REQUIRED_STAGE4 + REQUIRED_STAGE5
+
+
+def infer_stage(files: set[str], project_type: str) -> int:
+    if any(has_requirement(files, name) for name in REQUIRED_STAGE5):
         return 5
-    if any(name in files for name in REQUIRED_STAGE4):
+    if any(has_requirement(files, name) for name in REQUIRED_STAGE4):
         return 4
-    if any(name in files for name in REQUIRED_STAGE3):
+    if any(has_requirement(files, name) for name in REQUIRED_STAGE3):
         return 3
-    if any(name in files for name in (REQUIRED_STAGE2_MEASUREMENT + REQUIRED_STAGE2_PLANNING)):
+    if any(has_requirement(files, name) for name in (REQUIRED_STAGE2_MEASUREMENT + stage2_planning_requirements(project_type))):
         return 2
-    if any(name in files for name in REQUIRED_STAGE1):
+    if any(has_requirement(files, name) for name in stage1_requirements(project_type)):
         return 1
     return 0
 
@@ -220,20 +284,22 @@ def normalize_stage(raw_value: str) -> Tuple[str, int] | None:
         "initiating": ("Initiating", 1),
         "initiation": ("Initiating", 1),
         "planning": ("Planning", 2),
-        "executing": ("Executing", 4),
-        "execution": ("Executing", 4),
+        "executing": ("Executing", 3),
+        "execution": ("Executing", 3),
         "monitoring": ("Executing", 4),
-        "implementation": ("Executing", 4),
+        "implementation": ("Executing", 3),
         "closing": ("Closing", 5),
         "closed": ("Closing", 5),
         "stage 1": ("Initiating", 1),
         "stage 2": ("Planning", 2),
-        "stage 3": ("Executing", 4),
-        "stage 4": ("Closing", 5),
+        "stage 3": ("Executing", 3),
+        "stage 4": ("Executing", 4),
+        "stage 5": ("Closing", 5),
         "1": ("Initiating", 1),
         "2": ("Planning", 2),
-        "3": ("Executing", 4),
-        "4": ("Closing", 5),
+        "3": ("Executing", 3),
+        "4": ("Executing", 4),
+        "5": ("Closing", 5),
     }
     return aliases.get(key)
 
@@ -255,6 +321,8 @@ def normalize_project_type(raw_value: str) -> str:
         "management project": "Management Project",
         "operational": "Operational Project",
         "operational project": "Operational Project",
+        "decision": "Decision Project",
+        "decision project": "Decision Project",
         "client matter": "Client Matter",
         "client project": "Client Matter",
         "client matters": "Client Matter",
@@ -270,56 +338,183 @@ def extract_project_type(charter_text: str) -> str | None:
     return normalize_project_type(match.group(1))
 
 
+def safe_read_text(path: Path) -> str:
+    try:
+        return path.read_text(encoding="utf-8", errors="ignore")
+    except OSError:
+        return ""
+
+
+def is_relative_to(path: Path, parent: Path) -> bool:
+    try:
+        path.relative_to(parent)
+        return True
+    except ValueError:
+        return False
+
+
+def canonical_id_from_dirname(path: Path) -> str | None:
+    if path.name.startswith("LLP-"):
+        return path.name.split("_", 1)[0]
+    return None
+
+
+def extract_project_id_from_text(text: str) -> str | None:
+    match = PROJECT_ID_PATTERN.search(text)
+    if not match:
+        return None
+    return match.group(1)
+
+
+def extract_canonical_id_from_readme(text: str) -> str | None:
+    marker = "## Canonical Project ID"
+    if marker not in text:
+        return None
+    tail = text.split(marker, 1)[1]
+    match = re.search(r"`?(LLP-\d+)`?", tail)
+    if not match:
+        return None
+    return match.group(1)
+
+
+def infer_project_type_from_path(relative_path: str) -> str | None:
+    if relative_path.startswith("07_GROWTH_PROJECTS/") or relative_path.startswith("02_PRACTICE_AREAS/"):
+        return "Strategic Project"
+    if (
+        relative_path.startswith("04_RISK/")
+        or relative_path.startswith("06_FINANCIAL_PORTFOLIO/")
+        or relative_path.startswith("08_MARKETING/")
+        or relative_path.startswith("09_SERVICE_MANAGEMENT")
+        or relative_path == "03_FIRM_OPERATIONS/PORTFOLIO_MANAGEMENT"
+        or relative_path == "03_FIRM_OPERATIONS/PROJECT_MANAGEMENT"
+    ):
+        return "Management Project"
+    if (
+        relative_path.startswith("01_ACCOUNTING/")
+        or relative_path.startswith("03_FIRM_OPERATIONS/")
+        or relative_path.startswith("05_MATTER_DOCKETING/")
+    ):
+        return "Operational Project"
+    return None
+
+
+def is_project_root(path: Path) -> bool:
+    if not path.is_dir():
+        return False
+    if path.name in STAGE_DIR_NAMES:
+        return False
+    if path == LL_PORTFOLIO_DIR:
+        return False
+    if canonical_id_from_dirname(path):
+        return True
+    if (path / "PROJECT_CHARTER.md").exists() or (path / "initiation" / "PROJECT_CHARTER.md").exists():
+        return True
+    readme_path = path / "README.md"
+    if readme_path.exists():
+        return extract_canonical_id_from_readme(safe_read_text(readme_path)) is not None
+    return False
+
+
+def discover_project_roots() -> List[Path]:
+    roots: List[Path] = []
+    for path in sorted(
+        (p for p in LL_PORTFOLIO_DIR.rglob("*") if p.is_dir()),
+        key=lambda p: (len(p.relative_to(LL_PORTFOLIO_DIR).parts), p.as_posix()),
+    ):
+        if is_project_root(path):
+            roots.append(path)
+    return roots
+
+
+def collect_project_markdown_paths(project_root: Path, project_roots: List[Path]) -> List[Path]:
+    nested_roots = [root for root in project_roots if root != project_root and is_relative_to(root, project_root)]
+    markdown_paths: List[Path] = []
+    for md_path in sorted(project_root.rglob("*.md"), key=lambda p: p.as_posix()):
+        if any(is_relative_to(md_path, nested_root) for nested_root in nested_roots):
+            continue
+        markdown_paths.append(md_path)
+    return markdown_paths
+
+
+def extract_project_id_for_root(project_root: Path, markdown_paths: List[Path]) -> str:
+    for name in ("APPROVAL_RECORD.md", "PROJECT_CHARTER.md"):
+        for md_path in markdown_paths:
+            if md_path.name != name:
+                continue
+            project_id = extract_project_id_from_text(safe_read_text(md_path))
+            if project_id:
+                return project_id
+    readme_path = project_root / "README.md"
+    if readme_path.exists():
+        project_id = extract_canonical_id_from_readme(safe_read_text(readme_path))
+        if project_id:
+            return project_id
+    dirname_id = canonical_id_from_dirname(project_root)
+    if dirname_id:
+        return dirname_id
+    return project_root.relative_to(LL_PORTFOLIO_DIR).as_posix()
+
+
+def extract_project_type_for_root(project_root: Path, markdown_paths: List[Path]) -> str | None:
+    for md_path in markdown_paths:
+        if md_path.name != "PROJECT_CHARTER.md":
+            continue
+        project_type = extract_project_type(safe_read_text(md_path))
+        if project_type in GOVERNED_PROJECT_TYPES:
+            return project_type
+    return infer_project_type_from_path(project_root.relative_to(LL_PORTFOLIO_DIR).as_posix())
+
+
 def discover_projects() -> List[ProjectSnapshot]:
     projects: List[ProjectSnapshot] = []
     if not LL_PORTFOLIO_DIR.exists():
         return projects
 
-    for charter_path in sorted(LL_PORTFOLIO_DIR.rglob("PROJECT_CHARTER.md"), key=lambda p: p.as_posix()):
-        path = charter_path.parent
-        try:
-            charter_text = charter_path.read_text(encoding="utf-8", errors="ignore")
-        except OSError:
-            continue
-
-        project_type = extract_project_type(charter_text)
+    project_roots = discover_project_roots()
+    for project_root in project_roots:
+        markdown_paths = collect_project_markdown_paths(project_root, project_roots)
+        project_type = extract_project_type_for_root(project_root, markdown_paths)
         if project_type not in GOVERNED_PROJECT_TYPES:
             continue
 
-        file_set = {p.name for p in path.glob("*.md")}
+        file_set = {p.name for p in markdown_paths}
         recorded_stage = None
-        approval_path = path / "APPROVAL_RECORD.md"
-        if approval_path.exists():
-            try:
-                approval_text = approval_path.read_text(encoding="utf-8", errors="ignore")
-            except OSError:
-                approval_text = ""
+        approval_candidates = [p for p in markdown_paths if p.name == "APPROVAL_RECORD.md"]
+        if approval_candidates:
+            approval_path = sorted(
+                approval_candidates,
+                key=lambda p: (0 if p.parent == project_root else 1, len(p.relative_to(project_root).parts), p.as_posix()),
+            )[0]
+            approval_text = safe_read_text(approval_path)
             recorded_stage = extract_recorded_stage(approval_text) if approval_text else None
         if recorded_stage:
             stage_label, stage_index = recorded_stage
             stage_source = "approval_record"
         else:
-            stage_index = infer_stage(file_set)
+            stage_index = infer_stage(file_set, project_type)
             stage_label = stage_label_from_index(stage_index)
             stage_source = "artifacts"
-        project_id = path.relative_to(LL_PORTFOLIO_DIR).as_posix()
+        project_id = extract_project_id_for_root(project_root, markdown_paths)
+        required_stage1 = stage1_requirements(project_type)
+        required_stage2_planning = stage2_planning_requirements(project_type)
         projects.append(
             ProjectSnapshot(
                 project_id=project_id,
+                project_path=project_root.relative_to(LL_PORTFOLIO_DIR).as_posix(),
                 project_type=project_type,
                 files=file_set,
                 inferred_stage=stage_index,
                 stage_label=stage_label,
                 stage_source=stage_source,
-                missing_stage1=[name for name in REQUIRED_STAGE1 if name not in file_set],
-                missing_stage2_measurement=[name for name in REQUIRED_STAGE2_MEASUREMENT if name not in file_set],
-                missing_stage2_planning=[name for name in REQUIRED_STAGE2_PLANNING if name not in file_set],
-                missing_stage3=[name for name in REQUIRED_STAGE3 if name not in file_set],
-                missing_stage4=[name for name in REQUIRED_STAGE4 if name not in file_set],
-                missing_stage5=[name for name in REQUIRED_STAGE5 if name not in file_set],
+                missing_stage1=missing_requirements(file_set, required_stage1),
+                missing_stage2_measurement=missing_requirements(file_set, REQUIRED_STAGE2_MEASUREMENT),
+                missing_stage2_planning=missing_requirements(file_set, required_stage2_planning),
+                missing_stage3=missing_requirements(file_set, REQUIRED_STAGE3),
+                missing_stage4=missing_requirements(file_set, REQUIRED_STAGE4),
+                missing_stage5=missing_requirements(file_set, REQUIRED_STAGE5),
             )
         )
-    return projects
+    return sorted(projects, key=lambda p: (p.project_path, p.project_id))
 
 
 def write_markdown(path: Path, title: str, run_id: str, body: str) -> None:
@@ -423,13 +618,13 @@ def llm_004_outputs(projects: List[ProjectSnapshot], run_id: str) -> Dict[str, s
         elif p.inferred_stage < 2:
             action = "Keep the project in Initiating until ML1 authorizes Planning; draft planning artifacts remain non-authoritative."
         elif p.missing_stage2_measurement:
-            action = "Complete measurement artifacts and secure ML1 metric confirmation."
+            action = "Complete METRICS.md and record ML1 threshold approval inside it."
         elif p.missing_stage2_planning:
             action = "Close stage-2 planning artifacts before any stage advancement."
         else:
             action = "Maintain current stage controls and prepare the next gated packet."
         if not p.approvals_present:
-            action = "Record missing ML1 approvals in APPROVAL_RECORD/ML1_METRIC_APPROVAL."
+            action = "Record the missing ML1 approval in APPROVAL_RECORD.md."
         action_rows.append([p.project_id, str(project_priority_score(p)), action])
 
     checklist_body = "\n".join(
@@ -807,9 +1002,7 @@ def llm_006_outputs(projects: List[ProjectSnapshot], run_id: str) -> Dict[str, s
                 "",
                 *(
                     [
-                        f"- `{p.project_id}` missing one or more ML1 approvals "
-                        f"(APPROVAL_RECORD.md present={ 'yes' if 'APPROVAL_RECORD.md' in p.files else 'no' }, "
-                        f"ML1_METRIC_APPROVAL.md present={ 'yes' if 'ML1_METRIC_APPROVAL.md' in p.files else 'no' })."
+                        f"- `{p.project_id}` missing `APPROVAL_RECORD.md`."
                         for p in approval_gaps
                     ]
                     or ["- None."]

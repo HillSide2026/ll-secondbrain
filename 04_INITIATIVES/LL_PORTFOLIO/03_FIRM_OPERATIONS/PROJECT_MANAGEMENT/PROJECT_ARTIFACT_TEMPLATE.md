@@ -10,6 +10,9 @@ tags: [project-management, stage-gates, artifacts, template]
 
 # Project Artifact Template
 
+Governing Project ID: `LLP-043`
+Project Path: `03_FIRM_OPERATIONS/PROJECT_MANAGEMENT`
+
 ## Purpose
 
 Define the canonical artifact set required per project stage.
@@ -72,12 +75,22 @@ Anti-Bloat Rule:
 - Planning artifacts must use project-specific language. Avoid generic PM boilerplate that could apply to any project.
 
 ### Core Planning
-Required:
+Required for strategic and management projects:
 - `SCOPE_DEFINITION.md`
-- `WORKPLAN.md` (must include workstreams, execution sequence, milestones, resource plan, completion condition)
+- `PROJECT_PLAN.md` (must include workstreams, execution sequence, milestones, resource plan, completion condition; legacy `WORKPLAN.md` remains acceptable during transition)
 - `ASSUMPTIONS_CONSTRAINTS.md`
 - `DEPENDENCIES.md`
 - `RISK_REGISTER.md`
+- `COMMUNICATION_PLAN.md`
+
+Required for operational projects:
+- `SCOPE_DEFINITION.md`
+- `PROJECT_PLAN.md` (must include workstreams, execution sequence, milestones, resource plan, completion condition; legacy `WORKPLAN.md` remains acceptable during transition)
+- `DEPENDENCIES.md`
+- `RISK_REGISTER.md`
+
+Optional for operational projects, when the project actually needs them:
+- `ASSUMPTIONS_CONSTRAINTS.md`
 - `COMMUNICATION_PLAN.md`
 
 ### Measurement Architecture
@@ -100,7 +113,7 @@ Notes:
 Best-Practice Rules:
 - `SCOPE_DEFINITION.md`
   Must define the real execution boundary for the project, including explicit exclusions.
-- `WORKPLAN.md`
+- `PROJECT_PLAN.md`
   Must focus on the project decisions that still need to be locked for execution. It must not become a generic project-management report.
 - `ASSUMPTIONS_CONSTRAINTS.md`
   Must state the assumptions the project is relying on and the hard limits it cannot cross.
@@ -109,7 +122,7 @@ Best-Practice Rules:
 - `RISK_REGISTER.md`
   Must focus on risks that threaten scope, schedule, budget, operating control, or authorization readiness.
 - `COMMUNICATION_PLAN.md`
-  Must be limited to decision loops, coordination points, and escalation triggers that the project actually needs.
+  Must be limited to decision loops, coordination points, and escalation triggers that the project actually needs. It is expected by default for strategic and management projects and optional for operational projects unless coordination complexity warrants it.
 - `METRICS.md`
   Must be the single source for metric definitions, calculation method, baseline logic, validation rules, and ML1 threshold approval.
 ## Stage 3 - Executing

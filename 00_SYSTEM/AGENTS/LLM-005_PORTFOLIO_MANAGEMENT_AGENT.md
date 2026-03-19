@@ -106,11 +106,15 @@ Produces (advisory to ML1 only):
 Must read:
 - All active project folders
 - Stage metadata
-- WORKPLAN.md (including milestone schedule and resource plan sections)
+- PROJECT_PLAN.md (including milestone schedule and resource plan sections; legacy WORKPLAN.md remains acceptable during transition)
 - DEPENDENCIES.md
 - Partner Supervision metrics
 - Baseline capacity data
 - STATUS_REPORT.md
+
+Interpret planning requirements by project type:
+- strategic and management projects use the fuller planning baseline
+- operational projects use the lean operational baseline unless added coordination/control artifacts are actually needed
 
 Without capacity data, its models are advisory only.
 

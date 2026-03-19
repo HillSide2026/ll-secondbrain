@@ -58,8 +58,8 @@ Applicability:
 
 ## Planning Stage Standard (Canonical)
 
-For strategic, management, and operational projects, the `Planning` stage exists
-to prepare a clean implementation-authorization decision.
+For governed LL projects, the `Planning` stage exists to prepare a clean
+implementation-authorization decision.
 
 Planning artifacts must be:
 
@@ -72,23 +72,38 @@ Planning artifacts must not become planning for the sake of planning.
 
 Required planning artifact set:
 
+Strategic and management projects:
+
 - `SCOPE_DEFINITION.md`
-- `WORKPLAN.md`
+- `PROJECT_PLAN.md`
 - `ASSUMPTIONS_CONSTRAINTS.md`
 - `DEPENDENCIES.md`
 - `RISK_REGISTER.md`
 - `COMMUNICATION_PLAN.md`
 - `METRICS.md`
 
+Operational projects:
+
+- `SCOPE_DEFINITION.md`
+- `PROJECT_PLAN.md`
+- `DEPENDENCIES.md`
+- `RISK_REGISTER.md`
+- `METRICS.md`
+
+Operational projects may add these when the work actually needs them:
+
+- `ASSUMPTIONS_CONSTRAINTS.md`
+- `COMMUNICATION_PLAN.md`
+
 Planning best-practice rules:
 
 - `SCOPE_DEFINITION.md` locks the actual implementation boundary and exclusions.
-- `WORKPLAN.md` locks the project decisions, sequence, and gate-readiness path. It should not read like generic PM overhead.
+- `PROJECT_PLAN.md` locks the project decisions, sequence, and gate-readiness path. It should not read like generic PM overhead. Legacy `WORKPLAN.md` files remain acceptable during transition and should be normalized on next edit.
 - `ASSUMPTIONS_CONSTRAINTS.md` captures the assumptions the project depends on and the limits it cannot cross.
 - `DEPENDENCIES.md` lists only dependencies that could materially affect implementation or authorization.
 - `RISK_REGISTER.md` tracks risks that matter to scope, schedule, budget, operating control, or gate readiness.
-- `COMMUNICATION_PLAN.md` should be minimal and limited to decision loops, coordination points, and escalation triggers.
-- `METRICS.md` is the single source for metric definitions, measurement method, baseline logic, validation rules, and ML1 threshold approval.
+- `COMMUNICATION_PLAN.md` should be minimal and limited to decision loops, coordination points, and escalation triggers. It is expected by default for strategic and management projects and optional for operational projects unless coordination complexity warrants it.
+- `METRICS.md` is the single source for metric definitions, measurement method, baseline logic, validation rules, and ML1 threshold approval. `ML1_METRIC_APPROVAL.md` is legacy and should not be created for new work.
 
 If a planning artifact does not help lock scope, reduce uncertainty, or support
 the Planning -> Executing gate decision, it should be merged or removed.

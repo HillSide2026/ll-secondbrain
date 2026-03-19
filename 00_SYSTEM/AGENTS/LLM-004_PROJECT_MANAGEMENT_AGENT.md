@@ -4,7 +4,7 @@ title: Agent Definition
 owner: ML1
 status: draft
 created_date: 2026-02-26
-last_updated: 2026-03-14
+last_updated: 2026-03-19
 tags: []
 ---
 
@@ -127,12 +127,22 @@ Decision: [Proceed / Do Not Proceed / Proceed with Conditions]
 Rationale: <ML1 judgment>
 ```
 
-**Planning**
+**Planning (strategic and management projects)**
 - SCOPE_DEFINITION.md
-- WORKPLAN.md (must include milestone schedule and resource plan sections)
+- PROJECT_PLAN.md (must include milestone schedule and resource plan sections; legacy WORKPLAN.md remains acceptable during transition)
 - ASSUMPTIONS_CONSTRAINTS.md
 - DEPENDENCIES.md
 - RISK_REGISTER.md
+- COMMUNICATION_PLAN.md
+
+**Planning (operational baseline)**
+- SCOPE_DEFINITION.md
+- PROJECT_PLAN.md (must include milestone schedule and resource plan sections; legacy WORKPLAN.md remains acceptable during transition)
+- DEPENDENCIES.md
+- RISK_REGISTER.md
+
+**Planning (operational, only when needed)**
+- ASSUMPTIONS_CONSTRAINTS.md
 - COMMUNICATION_PLAN.md
 
 `RISK_REGISTER.md` schema:
@@ -151,6 +161,9 @@ Rationale: <ML1 judgment>
 - baseline capture period
 - validation review
 - ML1 threshold approval
+
+`ML1_METRIC_APPROVAL.md` is legacy and non-canonical. Threshold approval is
+recorded inside `METRICS.md`.
 
 **Executing**
 - EXECUTION_LOG.md

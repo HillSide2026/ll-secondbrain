@@ -3,9 +3,9 @@ id: 01_doctrine__03_policies__project_policy_md
 title: Repository Project Policy
 owner: ML1
 status: draft
-version: '1.0'
+version: '1.1'
 created_date: 2026-03-15
-last_updated: 2026-03-15
+last_updated: 2026-03-19
 tags: [doctrine, policy, projects, stage-gates]
 ---
 
@@ -149,15 +149,28 @@ Optional for decision projects, only if ML1 wants them:
 
 ### Stage 2 - Planning
 
-Required for strategic, management, and operational projects:
+Required for strategic and management projects:
 
 - `SCOPE_DEFINITION.md`
-- `WORKPLAN.md`
+- `PROJECT_PLAN.md`
 - `ASSUMPTIONS_CONSTRAINTS.md`
 - `DEPENDENCIES.md`
 - `RISK_REGISTER.md`
 - `COMMUNICATION_PLAN.md`
 - `METRICS.md`
+
+Required for operational projects:
+
+- `SCOPE_DEFINITION.md`
+- `PROJECT_PLAN.md`
+- `DEPENDENCIES.md`
+- `RISK_REGISTER.md`
+- `METRICS.md`
+
+Optional for operational projects, only when the project actually needs them:
+
+- `ASSUMPTIONS_CONSTRAINTS.md`
+- `COMMUNICATION_PLAN.md`
 
 Required (decision projects only):
 
@@ -205,7 +218,11 @@ Rules:
 - Planning artifacts must help lock scope, dependencies, controls, or gate
   readiness.
 - Abstract or duplicative planning artifacts should be merged or removed.
+- `PROJECT_PLAN.md` is the canonical planning-sequence artifact for strategic,
+  management, operational, and decision projects. Existing `WORKPLAN.md` files
+  are legacy-compatible during transition and should be normalized on next edit.
 - `METRICS.md` is the single canonical measurement artifact. The split-file schema (`METRIC_DEFINITION.md`, `MEASUREMENT_METHOD.md`, `BASELINE_CAPTURE_PERIOD.md`, `VALIDATION_REVIEW.md`) is non-compliant and deprecated. Existing projects using the split schema must consolidate into `METRICS.md` before their Planning → Executing gate is closed. New projects must not use the split schema.
+- `ML1_METRIC_APPROVAL.md` is deprecated and non-compliant. ML1 threshold approval belongs inside `METRICS.md`, not in a separate file.
 - Decision projects should use the lightest planning packet that still supports
   the ML1 decision at hand.
 - For decision projects, `PROJECT_PLAN.md` is the canonical consolidated
