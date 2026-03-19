@@ -4,7 +4,7 @@ title: HillSide Portfolio
 owner: ML1
 status: draft
 created_date: 2026-03-06
-last_updated: 2026-03-15
+last_updated: 2026-03-16
 tags: []
 ---
 
@@ -62,6 +62,7 @@ HillSide currently has two programs:
 Current personal project folders include:
 
 - `PERSONAL_PROJECTS/DECISION_MAKING`
+- `PERSONAL_PROJECTS/TO_DO_LIST`
 
 HillSide business-project artifact rules are maintained in:
 
@@ -100,6 +101,10 @@ Projects with dedicated folders currently include:
 The HillSide decision lifecycle reference is maintained in:
 
 - `PERSONAL_PROJECTS/DECISION_MAKING`
+
+The HillSide personal task list reference is maintained in:
+
+- `PERSONAL_PROJECTS/TO_DO_LIST`
 
 ---
 

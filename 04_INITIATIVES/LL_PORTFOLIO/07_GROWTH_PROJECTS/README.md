@@ -1,41 +1,30 @@
 ---
-id: 04_initiatives_ll_portfolio_07_strategic_projects_readme_md
-title: 07 STRATEGIC PROJECTS
+id: 04_initiatives_ll_portfolio_07_growth_projects_readme_md
+title: 07 GROWTH PROJECTS
 owner: ML1
-status: draft
-project_stage: TBD
+status: active
+project_stage: active
 created_date: 2026-03-07
-last_updated: 2026-03-07
-tags: []
+last_updated: 2026-03-17
+tags: [growth, strategy, business-plan]
 ---
 
-# 07 STRATEGIC PROJECTS
+# 07 GROWTH PROJECTS
 
 ## Purpose
 
-TBD.
+Houses projects related to Levine Law's strategic growth: firm strategy, business planning, financial modeling, and long-horizon initiatives that define where the firm is going and how it gets there.
 
-## Scope
+## Projects
 
-### In Scope
-- TBD.
-
-### Out of Scope
-- TBD.
+| Project | Name | Status |
+|---|---|---|
+| LLP-030 | Firm Strategy and Business Plan | Initiating |
 
 ## ML1 Authority Statement
 
 ML1 approval is required for scope, changes, and any execution commitments.
 
-## Explicit Prohibitions
-
-- Do not treat this stub as approved operating instruction.
-- Do not execute external actions based on this stub.
-
-## Approval State
-
-`draft`
-
 ## Last ML1 Review Date
 
-`2026-03-07`
+`2026-03-17`
