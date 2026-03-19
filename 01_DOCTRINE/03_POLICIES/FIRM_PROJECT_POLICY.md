@@ -55,6 +55,15 @@ in `01_DOCTRINE/03_POLICIES/PROJECT_POLICY.md`, including:
 - baseline stage artifact requirements
 - planning-discipline rules
 
+## 4a. Project Identity — Levine Law Application
+
+Levine Law projects apply the repo-level Project Identity Rule (§6a of `PROJECT_POLICY.md`) as follows:
+
+- All LL Portfolio projects use the `LLP-NNN` format (e.g. `LLP-024`).
+- The number is unique across the entire `04_INITIATIVES/LL_PORTFOLIO/` tree — not per portfolio area (not per `03_FIRM_OPERATIONS/`, `08_MARKETING/`, etc.).
+- Before creating any new LL project folder, check the full list of existing `LLP-NNN` folders under `04_INITIATIVES/LL_PORTFOLIO/` to confirm the chosen number is unused.
+- The deprecated `LLP-26-XX` year-prefixed format must not be used in any LL project artifact.
+
 ## 5. Levine Law Application Rules
 
 For Levine Law specifically:

@@ -101,6 +101,17 @@ Required gate sequence:
 ML2 may draft artifacts, structure options, and prepare packets.
 ML1 alone decides stage advancement.
 
+## 6a. Project Identity Rule
+
+Every project governed by this policy must have a globally unique Project ID.
+
+- **Format:** `LLP-NNN` (e.g. `LLP-024`), where NNN is a zero-padded integer.
+- **Project ID equals folder name.** The folder slug and the Project ID are the same string. There is no separate registry sequence.
+- **Global uniqueness.** The number must be unique across the entire repository — not per portfolio area. Before creating a new project folder, verify the number is unused across all existing LLP-NNN folders.
+- **Deprecated format.** The year-prefixed format `LLP-YY-NN` (e.g. `LLP-26-24`) is retired and must not appear in any new artifact. Existing occurrences must be corrected on next edit.
+- `PROJECT_CHARTER.md` must declare the Project ID in the header.
+- `APPROVAL_RECORD.md` must repeat the same Project ID.
+
 ## 7. Canonical Baseline Artifact Set
 
 ### Stage 1 - Initiating
