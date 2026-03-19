@@ -10,7 +10,7 @@ tags: [nda-esq, strategic-project, approval]
 
 # Approval Record
 
-Project ID: LLP-26-24
+Project ID: LLP-024
 Project Path: 04_INITIATIVES/LL_PORTFOLIO/07_STRATEGIC_PROJECTS/LLP-024_NDA_ESQ
 Stage: Planning
 

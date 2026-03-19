@@ -9,7 +9,7 @@ last_updated: 2026-03-08
 
 # Approval Record
 
-Project: LLP-26-06 - Opening
+Project: LLP-005 - Opening
 Stage: Planning
 
 Approval Status: Planning In Progress (Initiation Approved)

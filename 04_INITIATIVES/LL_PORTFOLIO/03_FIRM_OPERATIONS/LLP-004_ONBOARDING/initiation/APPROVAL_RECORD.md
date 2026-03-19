@@ -9,7 +9,7 @@ last_updated: 2026-03-08
 
 # Approval Record
 
-Project: LLP-26-05 - Onboarding
+Project: LLP-004 - Onboarding
 Stage: Planning
 
 Approval Status: Planning In Progress (Initiation Approved)

@@ -47,14 +47,17 @@ Required (strategic projects only):
 Notes:
 - `RISK_SCAN.md` must include: Top 5 Risks, Key Assumptions, Go/No-Go Judgment.
 - `PROJECT_CHARTER.md` must include:
-  - `Project ID` (canonical globally unique identifier, e.g., `LLP-26-24`)
+  - `Project ID` (canonical globally unique identifier, e.g., `LLP-024`)
   - `Project Path` (repository path key, e.g., `08_MARKETING/LLP-011_FUNNEL1_MANAGEMENT`)
   - `Project Type` (`Strategic`, `Management`, or `Operational`)
 - Stage advancement requires ML1 approval in `APPROVAL_RECORD.md`.
 
 Identity Rule:
-- `Project ID` is canonical.
-- Legacy folder labels (for example `LLP-004_ONBOARDING`) are location slugs only and are not valid identity fields.
+- Project ID is the folder slug: LLP-NNN (e.g. LLP-024).
+- Project ID and folder name are identical. They are the same thing.
+- The folder number is globally unique across the entire LL Portfolio — not per-area.
+- The deprecated LLP-26-XX registry format (year-prefixed) must not be used in any new or existing project artifact.
+- When a new project is created, check the full portfolio folder list to confirm the chosen number is unused before creating the folder.
 
 ## Stage 2 - Planning (Execution Readiness)
 

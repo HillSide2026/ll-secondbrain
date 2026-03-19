@@ -12,8 +12,8 @@ last_updated: 2026-03-08
 
 > ML2 DRAFT - Awaiting ML1 review and approval.
 
-Project: LLP-26-06 - Opening
-Project ID: LLP-26-06
+Project: LLP-005 - Opening
+Project ID: LLP-005
 Project Type: Operational
 Stage: Initiating
 

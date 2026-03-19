@@ -1,6 +1,6 @@
 # Project Charter
 
-Project ID: LLP-26-12
+Project ID: LLP-012
 Project Path: 08_MARKETING/LLP-012_FUNNEL2_MANAGEMENT
 Project Type: Management Project
 Stage: Planning

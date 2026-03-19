@@ -12,8 +12,8 @@ last_updated: 2026-03-08
 
 > ML2 DRAFT - Awaiting ML1 review and approval.
 
-Project: LLP-26-05 - Onboarding
-Project ID: LLP-26-05
+Project: LLP-004 - Onboarding
+Project ID: LLP-004
 Project Type: Operational
 Stage: Initiating
 
