@@ -4,15 +4,15 @@ title: LLP-005 Approval Record
 owner: ML1
 status: approved
 created_date: 2026-03-08
-last_updated: 2026-03-08
+last_updated: 2026-03-19
 ---
 
 # Approval Record
 
 Project: LLP-005 - Opening
-Stage: Planning
+Stage: Executing
 
-Approval Status: Planning In Progress (Initiation Approved)
+Approval Status: Executing Authorized
 
 ## Stage Gate: Initiating -> Planning
 
@@ -36,16 +36,16 @@ Planning Stage Authorized: Yes
 
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| SCOPE_DEFINITION.md | drafted | 2026-03-08 | Opening scope and Gate 2->3 boundary defined. |
-| WORKPLAN.md | drafted | 2026-03-08 | Planning-stage execution map documented. |
-| ASSUMPTIONS_CONSTRAINTS.md | drafted | 2026-03-08 | Operating assumptions and hard limits defined. |
-| DEPENDENCIES.md | drafted | 2026-03-08 | Lifecycle/system dependencies documented. |
-| RISK_REGISTER.md | drafted | 2026-03-08 | Scope/schedule/budget risks documented. |
-| COMMUNICATION_PLAN.md | drafted | 2026-03-08 | Daily/weekly communication cadence defined. |
-| METRIC_DEFINITION.md | drafted | 2026-03-08 | Opening KPI set documented. |
-| MEASUREMENT_METHOD.md | drafted | 2026-03-08 | KPI measurement and evidence rules documented. |
-| BASELINE_CAPTURE_PERIOD.md | drafted | 2026-03-08 | Baseline window and inclusion rules defined. |
-| VALIDATION_REVIEW.md | drafted | 2026-03-08 | Execution-readiness validation criteria documented. |
+| SCOPE_DEFINITION.md | approved | 2026-03-16 | Opening scope and Gate 2->3 boundary accepted for execution. |
+| WORKPLAN.md | approved | 2026-03-16 | Planning-stage execution map accepted for execution. |
+| ASSUMPTIONS_CONSTRAINTS.md | approved | 2026-03-16 | Operating assumptions and hard limits accepted for execution. |
+| DEPENDENCIES.md | approved | 2026-03-16 | Lifecycle/system dependencies accepted for execution. |
+| RISK_REGISTER.md | approved | 2026-03-16 | Scope/schedule/budget risks accepted for execution. |
+| COMMUNICATION_PLAN.md | approved | 2026-03-16 | Daily/weekly communication cadence accepted for execution. |
+| METRIC_DEFINITION.md | approved | 2026-03-16 | Opening KPI set accepted for execution. |
+| MEASUREMENT_METHOD.md | approved | 2026-03-16 | KPI measurement and evidence rules accepted for execution. |
+| BASELINE_CAPTURE_PERIOD.md | approved | 2026-03-16 | Baseline window and inclusion rules accepted for execution. |
+| VALIDATION_REVIEW.md | approved | 2026-03-16 | Execution-readiness validation accepted for execution. |
 | ML1_METRIC_APPROVAL.md | approved | 2026-03-16 | Thresholds approved by ML1. |
 
 Planning Gate Decision: Approved to execute
@@ -53,4 +53,5 @@ Planning Approved By: ML1
 Date: 2026-03-16
 
 Notes:
-- Execution remains gated until explicit ML1 Planning -> Executing approval.
+- Canonical stage-3 execution artifacts were established in `implementation/` on 2026-03-19 to align the packet with ML1's 2026-03-16 authorization.
+- First live opening-cycle activity should now be logged in `implementation/EXECUTION_LOG.md`.

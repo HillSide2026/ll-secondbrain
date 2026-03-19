@@ -2,10 +2,10 @@
 id: llp-011_funnel1_management__readme_md
 title: LLP-011_FUNNEL1_MANAGEMENT
 owner: ML1
-status: planning
+status: executing
 created_date: 2026-02-26
-last_updated: 2026-03-08
-tags: [marketing, funnel-01, planning]
+last_updated: 2026-03-19
+tags: [marketing, funnel-01, executing]
 ---
 
 # LLP-011_FUNNEL1_MANAGEMENT
@@ -29,28 +29,41 @@ Mobilize governed implementation, measurement, and goal control for Funnel 01 (G
 ML1 is the sole authority for approval, activation, and promotion of this project.
 
 ## Initiation Artifacts
-- `PROJECT_CHARTER.md`
-- `PROBLEM_STATEMENT.md`
-- `SUCCESS_CRITERIA.md`
-- `STAKEHOLDERS.md`
-- `RISK_SCAN.md`
-- `APPROVAL_RECORD.md`
+- `initiation/PROJECT_CHARTER.md`
+- `initiation/PROBLEM_STATEMENT.md`
+- `initiation/SUCCESS_CRITERIA.md`
+- `initiation/STAKEHOLDERS.md`
+- `initiation/RISK_SCAN.md`
+- `initiation/APPROVAL_RECORD.md`
 
 ## Initiation Stage Packet Status
-- Required initiation artifacts are present in this folder.
+- Required initiation artifacts are present in `initiation/`.
 - Initiating -> Planning gate approved by ML1 on `2026-03-08`.
 
 ## Planning Artifacts
-- `SCOPE_DEFINITION.md`
-- `WORKPLAN.md`
-- `ASSUMPTIONS_CONSTRAINTS.md`
-- `DEPENDENCIES.md`
-- `RISK_REGISTER.md`
-- `COMMUNICATION_PLAN.md`
-- `METRICS.md`
+- `planning/SCOPE_DEFINITION.md`
+- `planning/WORKPLAN.md`
+- `planning/ASSUMPTIONS_CONSTRAINTS.md`
+- `planning/DEPENDENCIES.md`
+- `planning/RISK_REGISTER.md`
+- `planning/COMMUNICATION_PLAN.md`
+- `planning/METRIC_DEFINITION.md`
+- `planning/MEASUREMENT_METHOD.md`
+- `planning/BASELINE_CAPTURE_PERIOD.md`
+- `planning/VALIDATION_REVIEW.md`
+- `planning/ML1_METRIC_APPROVAL.md`
+
+## Implementation Artifacts
+- `implementation/EXECUTION_LOG.md`
+- `implementation/DECISION_LOG.md`
+- `implementation/CHANGE_LOG.md`
+- `implementation/ISSUE_LOG.md`
+- `implementation/DELIVERABLES_TRACKER.md`
+- `implementation/QA_CHECKLIST.md`
 
 ## Approval State
-Execution-readiness artifacts drafted; awaiting ML1 Planning -> Executing gate decision.
+Planning -> Executing was approved by ML1 on `2026-03-16`.
+The canonical executing-stage packet was established in `implementation/` on `2026-03-19`.
 
 ## Last ML1 Review Date
-`2026-03-08`
+`2026-03-16`

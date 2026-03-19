@@ -1,8 +1,12 @@
-# LLP-005_OPENING / implementation
+# LLP-005 Opening / implementation
 
-Stage folder placeholder for LLP-005_OPENING.
+This folder is the canonical executing-stage packet for LLP-005.
 
-Required artifacts for this stage are defined in:
-- `04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/PROJECT_MANAGEMENT/PROJECT_ARTIFACT_TEMPLATE.md`
+Planning -> Executing was approved by ML1 on `2026-03-16`.
+Stage-3 governance artifacts were formalized on `2026-03-19`.
 
-No stage advancement is valid without explicit ML1 approval in project artifacts.
+Use this folder to record:
+- opening-cycle execution activity,
+- Gate 3 packet decisions,
+- readiness exceptions,
+- handoff completion to LLP-006 Maintenance.

@@ -2,20 +2,20 @@
 id: llp-005_opening__project_charter
 title: LLP-005 Project Charter
 owner: ML1
-status: draft
+status: active
 project_type: operational
 created_date: 2026-03-08
-last_updated: 2026-03-08
+last_updated: 2026-03-19
 ---
 
 # Project Charter
 
-> ML2 DRAFT - Awaiting ML1 review and approval.
+> ML1-approved project packet. Current stage: Executing.
 
 Project: LLP-005 - Opening
 Project ID: LLP-005
 Project Type: Operational
-Stage: Initiating
+Stage: Executing
 
 ## 1. Purpose
 

@@ -2,20 +2,20 @@
 id: llp-006__project_charter
 title: LLP-006 Project Charter
 owner: ML1
-status: draft
+status: active
 project_type: operational
 created_date: 2026-03-07
-last_updated: 2026-03-07
+last_updated: 2026-03-19
 ---
 
 # Project Charter
 
-> **ML2 DRAFT — Awaiting ML1 review and approval.**
+> **ML1-approved project packet. Current stage: Executing.**
 
 **Project:** LLP-006 — Matter Maintenance
 **Project ID:** LLP-006
 **Project Type:** Operational
-**Stage:** Initiating
+**Stage:** Executing
 
 ## 1. Purpose
 

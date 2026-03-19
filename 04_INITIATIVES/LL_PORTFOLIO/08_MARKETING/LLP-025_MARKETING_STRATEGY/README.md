@@ -33,22 +33,22 @@ Consolidated project governing Levine Law's market positioning, objectives, goal
 | File | Description |
 |---|---|
 **Initiation Artifacts**
-| `PROJECT_CHARTER.md` | ICP, objectives, funnel portfolio, constraints, agent architecture |
-| `PROBLEM_STATEMENT.md` | Current state, core problem (ICP-01 channel gap, F02 unbuilt), desired state |
-| `STAKEHOLDERS.md` | Stakeholder map and authority assignments |
-| `SUCCESS_CRITERIA.md` | Project-level success criteria and F01→F02 transition milestone |
-| `RISK_SCAN.md` | Initiation-stage risk scan; Go decision recorded |
-| `APPROVAL_RECORD.md` | Stage gate record — initiation approved; planning authorized |
+| `initiation/PROJECT_CHARTER.md` | ICP, objectives, funnel portfolio, constraints, agent architecture |
+| `initiation/PROBLEM_STATEMENT.md` | Current state, core problem (ICP-01 channel gap, F02 unbuilt), desired state |
+| `initiation/STAKEHOLDERS.md` | Stakeholder map and authority assignments |
+| `initiation/SUCCESS_CRITERIA.md` | Project-level success criteria and F01→F02 transition milestone |
+| `initiation/RISK_SCAN.md` | Initiation-stage risk scan; Go decision recorded |
+| `initiation/APPROVAL_RECORD.md` | Stage gate record — initiation approved; planning authorized |
 
 **Planning Artifacts**
-| `OPEN_QUESTIONS.md` | Open research and decision questions blocking the planning gate |
-| `SCOPE_DEFINITION.md` | Execution scope, deliverables, and gate criteria |
-| `WORKPLAN.md` | Workstreams, milestones, resource plan |
-| `ASSUMPTIONS_CONSTRAINTS.md` | Execution assumptions and hard constraints |
-| `DEPENDENCIES.md` | Doctrine, downstream project, platform, and governance dependencies |
-| `RISK_REGISTER.md` | Strategic, execution, capacity, and financial risks with mitigations |
-| `COMMUNICATION_PLAN.md` | Review cadence, escalation protocol, communication boundaries |
-| `METRIC_FRAMEWORK.md` | KPI definitions, measurement method, and ML1 approval record (combined) |
+| `planning/OPEN_QUESTIONS.md` | Open research and decision questions blocking the planning gate |
+| `planning/SCOPE_DEFINITION.md` | Execution scope, deliverables, and gate criteria |
+| `planning/WORKPLAN.md` | Workstreams, milestones, resource plan |
+| `planning/ASSUMPTIONS_CONSTRAINTS.md` | Execution assumptions and hard constraints |
+| `planning/DEPENDENCIES.md` | Doctrine, downstream project, platform, and governance dependencies |
+| `planning/RISK_REGISTER.md` | Strategic, execution, capacity, and financial risks with mitigations |
+| `planning/COMMUNICATION_PLAN.md` | Review cadence, escalation protocol, communication boundaries |
+| `planning/METRIC_FRAMEWORK.md` | KPI definitions, measurement method, and ML1 approval record (combined) |
 
 **Doctrine Artifacts**
 | `MARKET_POSITIONING.md` | Market positioning doctrine (ICP, differentiation, brand posture) |
@@ -71,7 +71,8 @@ ML1 approval is required for scope, changes, and any execution commitments.
 
 ## Approval State
 
-`draft`
+Planning in progress.
+Initiating -> Planning was approved by ML1 on `2026-03-17`.
 
 ## Last ML1 Review Date
 

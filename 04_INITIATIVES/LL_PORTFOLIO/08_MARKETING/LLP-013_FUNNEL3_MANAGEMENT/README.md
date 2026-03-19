@@ -53,25 +53,23 @@ Canonical offer map:
 
 ## Initiation Packet Status
 
-- Required initiation artifacts are present in this folder.
+- Required initiation artifacts are present in `initiation/`.
 - Initiating -> Planning gate approved by ML1 on `2026-03-15`.
 
 ## Planning Packet Status
 
-- Measurement-package drafts are present:
-  - `METRIC_DEFINITION.md`
-  - `MEASUREMENT_METHOD.md`
-  - `BASELINE_CAPTURE_PERIOD.md`
-  - `VALIDATION_REVIEW.md`
-  - `ML1_METRIC_APPROVAL.md`
-- Canonical planning artifacts still to be completed:
-  - `SCOPE_DEFINITION.md`
-  - `WORKPLAN.md`
-  - `ASSUMPTIONS_CONSTRAINTS.md`
-  - `DEPENDENCIES.md`
-  - `RISK_REGISTER.md`
-  - `COMMUNICATION_PLAN.md`
-  - `METRICS.md`
+- Planning artifacts now live in `planning/`.
+- Current measurement documents are:
+  - `planning/METRICS.md`
+  - `planning/METRICS_LEGACY_DRAFT.md`
+  - `planning/ML1_METRIC_APPROVAL.md`
+- Core planning packet is drafted in:
+  - `planning/SCOPE_DEFINITION.md`
+  - `planning/WORKPLAN.md`
+  - `planning/ASSUMPTIONS_CONSTRAINTS.md`
+  - `planning/DEPENDENCIES.md`
+  - `planning/RISK_REGISTER.md`
+  - `planning/COMMUNICATION_PLAN.md`
 
 ## Last ML1 Review Date
 `2026-03-15`

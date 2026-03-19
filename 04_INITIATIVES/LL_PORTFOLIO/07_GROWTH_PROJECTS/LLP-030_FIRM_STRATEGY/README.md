@@ -51,7 +51,10 @@ ML1 is the sole authority for all Firm Strategy and Business Plan decisions, app
 
 ## Approval State
 
-Initiation artifacts drafted; awaiting ML1 initiation approval.
+Initiation was approved by ML1 on `2026-03-19`.
+Stage-gate artifacts now live in `initiation/`.
+`FIRM_STRATEGY.md`, `BUSINESS_PLAN.md`, and `FINANCIAL_MODEL.md` remain at the
+project root as governed project components.
 
 ## Last ML1 Review Date
 `2026-03-17`

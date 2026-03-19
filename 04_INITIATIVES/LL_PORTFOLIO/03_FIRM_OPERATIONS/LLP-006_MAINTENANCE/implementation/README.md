@@ -1,8 +1,12 @@
-# LLP-006_MAINTENANCE / implementation
+# LLP-006 Matter Maintenance / implementation
 
-Stage folder placeholder for LLP-006_MAINTENANCE.
+This folder is the canonical executing-stage packet for LLP-006.
 
-Required artifacts for this stage are defined in:
-- `04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/PROJECT_MANAGEMENT/PROJECT_ARTIFACT_TEMPLATE.md`
+Planning -> Executing was retroactively approved by ML1 on `2026-03-18`.
+Stage-3 governance artifacts were formalized on `2026-03-19`.
 
-No stage advancement is valid without explicit ML1 approval in project artifacts.
+Use this folder to record:
+- each maintenance-cycle run,
+- decisions and exceptions,
+- sanctioned retrospective notes tied to the retroactive authorization,
+- ongoing reconciliation deliverables and QA evidence.

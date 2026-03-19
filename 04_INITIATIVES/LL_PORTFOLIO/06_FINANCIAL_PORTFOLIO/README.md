@@ -4,7 +4,7 @@ title: 06_FINANCIAL_PORTFOLIO — Models & Constraints
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-03-19
 tags: []
 ---
 
@@ -58,7 +58,7 @@ The System must NOT:
 
 ## Approval State
 
-**READ-ONLY** — Awaiting ML1 population
+**ACTIVE** — Budget modeling artifacts exist and the governed packet formalization is underway.
 
 ## Last ML1 Review Date
 

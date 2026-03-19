@@ -1,6 +1,6 @@
 ---
-id: 04_initiatives__ll_portfolio__07_strategic_projects__llp_002_corporate_clerk__readme_md
-title: LLP-002 — Corporate Clerk
+id: 04_initiatives__ll_portfolio__07_strategic_projects__llp_032_corporate_clerk__readme_md
+title: LLP-032 — Corporate Clerk
 owner: ML1
 status: draft
 created_date: 2026-02-26
@@ -8,7 +8,7 @@ last_updated: 2026-02-26
 tags: []
 ---
 
-# LLP-002 — Corporate Clerk
+# LLP-032 — Corporate Clerk
 
 ## Purpose
 
@@ -43,13 +43,13 @@ The System must NOT:
 
 ## Initiation Artifacts
 
-- `PROJECT_CHARTER.md`
-- `PROBLEM_STATEMENT.md`
-- `SUCCESS_CRITERIA.md`
-- `STAKEHOLDERS.md`
-- `RISK_SCAN.md`
-- `APPROVAL_RECORD.md`
-- `BUSINESS_CASE.md` *(strategic projects only)*
+- `initiation/PROJECT_CHARTER.md`
+- `initiation/PROBLEM_STATEMENT.md`
+- `initiation/SUCCESS_CRITERIA.md`
+- `initiation/STAKEHOLDERS.md`
+- `initiation/RISK_SCAN.md`
+- `initiation/APPROVAL_RECORD.md`
+- `initiation/BUSINESS_CASE.md` *(strategic projects only)*
 
 
 ## Planning (Stage 2) Artifacts
@@ -66,6 +66,8 @@ Core planning:
 
 Measurement architecture:
 - `METRICS.md`
+
+Current placeholder planning measurement artifacts live in `planning/`.
 
 ## Last ML1 Review Date
 

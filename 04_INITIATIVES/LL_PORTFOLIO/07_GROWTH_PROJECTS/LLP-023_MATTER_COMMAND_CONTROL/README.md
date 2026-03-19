@@ -1,5 +1,5 @@
 ---
-id: 04_initiatives__ll_portfolio__07_strategic_projects__llp_005_matter_command_control__readme_md
+id: 04_initiatives__ll_portfolio__07_strategic_projects__llp_023_matter_command_control__readme_md
 title: LLP-023 — Matter Command and Control
 owner: ML1
 status: on track
@@ -47,12 +47,18 @@ The System must NOT:
 
 **SLICE IMPLEMENTATION AUTHORIZED (draft)** — Thin vertical slice in progress.
 
-## Artifacts
+## Artifact Layout
 
-- `PROJECT_CHARTER.md`
-- `PROBLEM_STATEMENT.md`
-- `SUCCESS_CRITERIA.md`
-- `STAKEHOLDERS.md`
-- `RISK_SCAN.md`
-- `IMPLEMENTATION_SPEC.md`
-- `APPROVAL_RECORD.md`
+Initiation artifacts live in `initiation/`:
+
+- `initiation/PROJECT_CHARTER.md`
+- `initiation/PROBLEM_STATEMENT.md`
+- `initiation/SUCCESS_CRITERIA.md`
+- `initiation/STAKEHOLDERS.md`
+- `initiation/RISK_SCAN.md`
+- `initiation/APPROVAL_RECORD.md`
+
+Current planning/control artifacts live in `planning/`:
+
+- `planning/IMPLEMENTATION_SPEC.md`
+- `planning/MILESTONE_PLAN.md`

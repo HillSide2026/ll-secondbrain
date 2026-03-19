@@ -1,6 +1,6 @@
 ---
-id: 04_initiatives__ll_portfolio__07_strategic_projects__llp_004_partner_supervision__readme_md
-title: LLP-004 — Partner Supervision
+id: 04_initiatives__ll_portfolio__07_strategic_projects__llp_034_partner_supervision__readme_md
+title: LLP-034 — Partner Supervision
 owner: ML1
 status: draft
 created_date: 2026-02-26
@@ -8,7 +8,7 @@ last_updated: 2026-02-26
 tags: []
 ---
 
-# LLP-004 — Partner Supervision
+# LLP-034 — Partner Supervision
 
 ## Purpose
 
@@ -45,12 +45,12 @@ The System must NOT:
 
 ## Initiation Artifacts
 
-- `PROJECT_CHARTER.md`
-- `PROBLEM_STATEMENT.md`
-- `SUCCESS_CRITERIA.md`
-- `STAKEHOLDERS.md`
-- `RISK_SCAN.md`
-- `APPROVAL_RECORD.md`
+- `initiation/PROJECT_CHARTER.md`
+- `initiation/PROBLEM_STATEMENT.md`
+- `initiation/SUCCESS_CRITERIA.md`
+- `initiation/STAKEHOLDERS.md`
+- `initiation/RISK_SCAN.md`
+- `initiation/APPROVAL_RECORD.md`
 
 
 ## Planning (Stage 2) Artifacts
@@ -67,6 +67,8 @@ Core planning:
 
 Measurement architecture:
 - `METRICS.md`
+
+Current placeholder planning measurement artifacts live in `planning/`.
 
 ## Last ML1 Review Date
 

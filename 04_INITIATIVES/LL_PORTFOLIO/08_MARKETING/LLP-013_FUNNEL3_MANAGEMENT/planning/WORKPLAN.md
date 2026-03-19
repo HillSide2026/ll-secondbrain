@@ -10,7 +10,7 @@ tags: [funnel-03, marketing, planning, workplan]
 
 # Workplan
 
-Project ID: LLP-26-26
+Project ID: LLP-013
 Project Path: 08_MARKETING/LLP-013_FUNNEL3_MANAGEMENT
 Stage: Planning
 

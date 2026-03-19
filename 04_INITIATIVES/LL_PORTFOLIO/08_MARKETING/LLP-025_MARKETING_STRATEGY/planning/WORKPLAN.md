@@ -10,7 +10,7 @@ tags: [llp-025, marketing, strategy, planning, workplan]
 
 # Workplan
 
-Project ID: LLP-26-25
+Project ID: LLP-025
 Project Path: 08_MARKETING/LLP-025_MARKETING_STRATEGY
 Stage: Planning
 

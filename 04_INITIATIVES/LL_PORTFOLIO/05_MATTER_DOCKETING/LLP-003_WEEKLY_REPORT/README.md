@@ -1,19 +1,42 @@
 ---
 id: llp-003_weekly_report__readme_md
-title: LLP-003_WEEKLY_REPORT — Project (Placeholder)
+title: LLP-003_WEEKLY_REPORT — Weekly Matter Docketing Report
 owner: ML1
 status: on track
 created_date: 2026-02-26
-last_updated: 2026-02-26
+last_updated: 2026-03-19
 tags: []
 ---
 
-# LLP-003_WEEKLY_REPORT — Project (Placeholder)
+# LLP-003_WEEKLY_REPORT — Weekly Matter Docketing Report
 
 ## Purpose
 
-Placeholder project container. Awaiting ML1-defined scope and intent.
+Govern the weekly delivery-facing matter report so ML1 receives a consistent, bounded summary of docketing state, activity periods, blockers, and next actions without altering the source-of-truth systems.
+
+## Scope
+
+### In Scope
+
+- Weekly matter-docketing summary structure and cadence
+- Delivery-state visibility, blockers, and escalations
+- Read-only aggregation from existing matter systems
+
+### Out of Scope
+
+- Modifying Clio source-of-truth fields
+- Billing, accounting, intake, or marketing reporting
+- Autonomous prioritization or matter acceptance decisions
+
+## Relevant Artifacts
+
+- `initiation/PROJECT_CHARTER.md`
+- `initiation/PROBLEM_STATEMENT.md`
+- `initiation/SUCCESS_CRITERIA.md`
+- `initiation/STAKEHOLDERS.md`
+- `initiation/RISK_SCAN.md`
+- `initiation/APPROVAL_RECORD.md`
 
 ## Approval State
 
-**READ-ONLY** — Awaiting ML1 definition
+**INITIATING** — The weekly-report packet now has a canonical initiation set.

@@ -156,32 +156,35 @@ The System must NOT:
 
 ## Approval State
 
-**PLANNING AUTHORIZED** — Project scope is approved at initiation stage and Planning is authorized. Execution remains pending separate ML1 authorization.
+**EXECUTING AUTHORIZED** — Initiation was approved on `2026-03-14`, the
+Planning -> Executing gate was approved by ML1 on `2026-03-18`, and live
+execution artifacts now sit in `implementation/`.
 
 ## Initiation Artifacts
 
-- `PROJECT_CHARTER.md`
-- `PROBLEM_STATEMENT.md`
-- `SUCCESS_CRITERIA.md`
-- `STAKEHOLDERS.md`
-- `RISK_SCAN.md`
-- `APPROVAL_RECORD.md`
-- `BUSINESS_CASE.md`
+- `initiation/PROJECT_CHARTER.md`
+- `initiation/PROBLEM_STATEMENT.md`
+- `initiation/SUCCESS_CRITERIA.md`
+- `initiation/STAKEHOLDERS.md`
+- `initiation/RISK_SCAN.md`
+- `initiation/APPROVAL_RECORD.md`
+- `initiation/BUSINESS_CASE.md`
 
 Legacy note:
-`RISKS_INITIAL.md` remains in the folder as the earlier initiation-stage risk
+`initiation/RISKS_INITIAL.md` remains in the folder as the earlier
+initiation-stage risk
 artifact, but `RISK_SCAN.md` is now the canonical initiation risk document for
 alignment with the repo-level project policy.
 
 ## Planning Artifacts
 
-- `SCOPE_DEFINITION.md`
-- `WORKPLAN.md`
-- `ASSUMPTIONS_CONSTRAINTS.md`
-- `DEPENDENCIES.md`
-- `RISK_REGISTER.md`
-- `COMMUNICATION_PLAN.md`
-- `METRICS.md`
+- `planning/SCOPE_DEFINITION.md`
+- `planning/WORKPLAN.md`
+- `planning/ASSUMPTIONS_CONSTRAINTS.md`
+- `planning/DEPENDENCIES.md`
+- `planning/RISK_REGISTER.md`
+- `planning/COMMUNICATION_PLAN.md`
+- `planning/METRICS.md`
 
 ## Last ML1 Review Date
 
