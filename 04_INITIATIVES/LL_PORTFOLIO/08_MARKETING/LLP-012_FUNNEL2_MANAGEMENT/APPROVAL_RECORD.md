@@ -1,8 +1,8 @@
 # Approval Record
 
-Project ID: LLP-26-25
+Project ID: LLP-26-12
 Project Path: 08_MARKETING/LLP-012_FUNNEL2_MANAGEMENT
-Stage: Initiating
+Stage: Planning
 
 Approval Status: Proposed (Initiation Not Yet Approved)
 

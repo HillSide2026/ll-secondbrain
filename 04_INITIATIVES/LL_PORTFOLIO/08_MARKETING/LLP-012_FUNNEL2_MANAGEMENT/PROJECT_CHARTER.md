@@ -1,9 +1,9 @@
 # Project Charter
 
-Project ID: LLP-26-25
+Project ID: LLP-26-12
 Project Path: 08_MARKETING/LLP-012_FUNNEL2_MANAGEMENT
 Project Type: Management Project
-Stage: Initiating
+Stage: Planning
 
 ## 1. Purpose
 Initiate execution planning for Funnel 02 as the corporate-law services funnel

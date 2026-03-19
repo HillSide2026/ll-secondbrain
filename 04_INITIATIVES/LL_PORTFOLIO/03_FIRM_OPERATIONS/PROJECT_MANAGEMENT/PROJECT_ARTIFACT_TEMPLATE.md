@@ -4,7 +4,7 @@ title: Project Artifact Template
 owner: ML1
 status: draft
 created_date: 2026-03-08
-last_updated: 2026-03-14
+last_updated: 2026-03-19
 tags: [project-management, stage-gates, artifacts, template]
 ---
 
@@ -81,12 +81,18 @@ Required:
 Required:
 - `METRICS.md`
 
+**DEPRECATED — do not create these files:**
+- `METRIC_DEFINITION.md` — non-compliant; content belongs in `METRICS.md`
+- `MEASUREMENT_METHOD.md` — non-compliant; content belongs in `METRICS.md`
+- `BASELINE_CAPTURE_PERIOD.md` — non-compliant; content belongs in `METRICS.md`
+- `VALIDATION_REVIEW.md` — non-compliant; content belongs in `METRICS.md`
+- `ML1_METRIC_APPROVAL.md` — non-compliant; ML1 threshold approval is recorded inside `METRICS.md`, not in a separate file
+
+Any project that has these files must consolidate them into `METRICS.md` before the Planning→Executing gate is closed. Any agent, playbook, or process that scaffolds these files for a new project is in violation of this template.
+
 Notes:
-- Stage 2 exists to prepare controlled execution, not to create standalone planning artifacts.
-- `METRICS.md` is the single canonical measurement document and must contain metric definitions, measurement method, baseline capture period, validation review, and ML1 threshold approval.
-- Executing must not begin until ML1 approves Planning -> Executing in `APPROVAL_RECORD.md` and threshold approval is recorded in `METRICS.md`.
- - `METRICS.md` is the single canonical measurement document and must contain metric definitions, measurement method, baseline capture period, validation review, and ML1 threshold approval.
- - Executing must not begin until ML1 approves Planning -> Executing in `APPROVAL_RECORD.md` and threshold approval is recorded in `METRICS.md`.
+- `METRICS.md` is the single canonical measurement document. It must contain: metric definitions, measurement method, baseline capture period, validation review criteria, and ML1 threshold approval.
+- Executing must not begin until ML1 approves Planning→Executing in `APPROVAL_RECORD.md` and threshold approval is recorded in `METRICS.md`.
 
 Best-Practice Rules:
 - `SCOPE_DEFINITION.md`
