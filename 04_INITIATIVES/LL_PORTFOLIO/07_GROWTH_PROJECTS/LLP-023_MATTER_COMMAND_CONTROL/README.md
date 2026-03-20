@@ -4,7 +4,7 @@ title: LLP-023 — Matter Command and Control
 owner: ML1
 status: on track
 created_date: 2026-03-04
-last_updated: 2026-03-04
+last_updated: 2026-03-20
 tags: [matter-operations, command-control]
 ---
 
@@ -57,6 +57,7 @@ Initiation artifacts live in `initiation/`:
 - `initiation/STAKEHOLDERS.md`
 - `initiation/RISK_SCAN.md`
 - `initiation/APPROVAL_RECORD.md`
+- `initiation/BUSINESS_CASE.md`
 
 Current planning/control artifacts live in `planning/`:
 

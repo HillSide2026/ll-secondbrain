@@ -1,19 +1,20 @@
 ---
 id: llp-007_admin__readme_md
-title: LLP-007_ADMIN — Operations Risk Management (Placeholder)
+title: LLP-007_ADMIN
 owner: ML1
 status: on track
 created_date: 2026-02-26
-last_updated: 2026-02-26
+last_updated: 2026-03-20
 tags: []
 ---
 
-# LLP-007_ADMIN — Operations Risk Management (Placeholder)
+# LLP-007_ADMIN
 
 ## Purpose
 
-Placeholder project container. Awaiting ML1-defined scope and intent.
+Initiation-stage project folder for the admin cross-cutting control layer in
+firm operations.
 
 ## Approval State
 
-**READ-ONLY** — Awaiting ML1 definition
+**INITIATING** — Initiation artifacts in development

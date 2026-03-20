@@ -7,6 +7,7 @@
 ## Current State
 
 - Charter: drafted
+- Business case: drafted
 - Config contracts: drafted
 - Slice 1 script: implemented
 - Production governance: pending ML1 approval

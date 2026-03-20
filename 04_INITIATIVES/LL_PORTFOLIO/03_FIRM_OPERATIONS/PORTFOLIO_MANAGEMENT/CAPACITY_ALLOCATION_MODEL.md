@@ -1,7 +1,7 @@
 # CAPACITY ALLOCATION MODEL
 
-- Generated: 2026-03-19T21:27:07+00:00
-- Run ID: RUN-2026-03-19-LL-PORTFOLIO-AGENTS-212707Z
+- Generated: 2026-03-20T02:27:05+00:00
+- Run ID: RUN-2026-03-20-LL-PORTFOLIO-AGENTS-022705Z
 
 > Advisory output. ML1 approval remains required for decisions.
 ## Capacity Allocation Model (Advisory)
@@ -15,9 +15,9 @@
 | LLP-004 | 3 | 0 | 1 |
 | LLP-005 | 3 | 0 | 1 |
 | LLP-006 | 0 | 0 | 0 |
-| LLP-007 | 6 | 0 | 0 |
-| LLP-008 | 6 | 0 | 0 |
-| LLP-016 | 6 | 0 | 0 |
+| LLP-007 | 1 | 0 | 0 |
+| LLP-008 | 1 | 0 | 0 |
+| LLP-016 | 1 | 0 | 0 |
 | LLP-042 | 0 | 0 | 0 |
 | LLP-043 | 6 | 0 | 0 |
 | LLP-017 | 0 | 0 | 0 |
@@ -26,13 +26,13 @@
 | LLP-009 | 0 | 0 | 0 |
 | LLP-010 | 0 | 0 | 0 |
 | LLP-002 | 0 | 0 | 0 |
-| LLP-023 | 1 | 0 | 0 |
+| LLP-023 | 0 | 0 | 0 |
 | LLP-024 | 0 | 0 | 0 |
 | LLP-030 | 1 | 0 | 0 |
 | LLP-031 | 1 | 0 | 0 |
 | LLP-032 | 1 | 0 | 0 |
 | LLP-033 | 1 | 0 | 0 |
-| LLP-034 | 1 | 0 | 0 |
+| LLP-034 | 0 | 0 | 0 |
 | LLP-011 | 3 | 0 | 1 |
 | LLP-012 | 12 | 6 | 0 |
 | LLP-013 | 0 | 0 | 0 |
@@ -48,9 +48,9 @@
 | LLP-040 | 0 | 0 | 0 |
 | LLP-039 | 0 | 0 | 0 |
 
-- Stage 1 load: 19
+- Stage 1 load: 22
 - Stage 2 load: 5
 - Stage 3+ load: 3
-- Total estimated capacity units to close current stage-2 gaps: 105
+- Total estimated capacity units to close current stage-2 gaps: 88
 
 - Recommendation: prioritize Stage 2 closure to reduce planning backlog.

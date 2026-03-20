@@ -4,7 +4,7 @@ title: LLP-034 — Partner Supervision
 owner: ML1
 status: draft
 created_date: 2026-02-26
-last_updated: 2026-02-26
+last_updated: 2026-03-20
 tags: []
 ---
 
@@ -51,6 +51,7 @@ The System must NOT:
 - `initiation/STAKEHOLDERS.md`
 - `initiation/RISK_SCAN.md`
 - `initiation/APPROVAL_RECORD.md`
+- `initiation/BUSINESS_CASE.md`
 
 
 ## Planning (Stage 2) Artifacts
