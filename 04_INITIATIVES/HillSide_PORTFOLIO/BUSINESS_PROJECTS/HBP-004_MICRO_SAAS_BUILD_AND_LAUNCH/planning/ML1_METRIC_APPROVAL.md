@@ -4,7 +4,7 @@ title: Micro SaaS Build and Launch - ML1 Metric Approval
 owner: ML1
 status: active
 created_date: 2026-03-12
-last_updated: 2026-03-14
+last_updated: 2026-03-20
 tags: [micro-saas, planning, metrics]
 ---
 
@@ -17,10 +17,10 @@ Stage: Planning
 ## Decision Use
 Use this file for the explicit ML1 threshold decision that gates Planning -> Executing authorization.
 
-Approval Status: Submitted (Pending ML1 Sign-off)
+Approval Status: Approved
 
 Approved By: ML1
-Date: pending
+Date: 2026-03-20
 
 ## Budget Envelope Submitted for Approval
 - Currency: `CAD`
@@ -53,4 +53,4 @@ Metric formulas and rules are defined in `OKR.md`.
 | `project_budget_variance_pct` | Lower is better | `<= 10%` |
 
 ## Threshold Status
-- Thresholds and budget envelope are submitted and not yet active until ML1 approval is recorded.
+- Thresholds and budget envelope are approved and active as of 2026-03-20.

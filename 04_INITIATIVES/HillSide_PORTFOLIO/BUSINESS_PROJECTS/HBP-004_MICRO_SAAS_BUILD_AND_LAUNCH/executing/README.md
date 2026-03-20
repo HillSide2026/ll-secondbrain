@@ -4,7 +4,7 @@ title: Micro SaaS Build and Launch - Executing
 owner: ML1
 status: active
 created_date: 2026-03-12
-last_updated: 2026-03-14
+last_updated: 2026-03-20
 tags: [micro-saas, executing]
 ---
 
@@ -18,7 +18,16 @@ Stage: Executing
 Execute the approved build-launch-stabilize plan for one Micro SaaS asset.
 
 ## Stage Authority
-Executing remains gated until ML1 records Planning -> Executing approval in `../APPROVAL_RECORD.md`.
+Executing is authorized. Planning -> Executing approval was recorded in `../APPROVAL_RECORD.md` on 2026-03-20.
 
 ## Core Artifact
 - `WORKPLAN.md`
+- `tarifflookup_site/`
+
+## Deployable Site Bundle
+- `tarifflookup_site/index.html`
+- `tarifflookup_site/styles.css`
+- `tarifflookup_site/privacy.html`
+- `tarifflookup_site/robots.txt`
+- `tarifflookup_site/sitemap.xml`
+- `tarifflookup_site/README.md`

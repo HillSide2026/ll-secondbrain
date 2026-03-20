@@ -4,7 +4,7 @@ title: Micro SaaS Build and Launch - Planning Workplan
 owner: ML1
 status: active
 created_date: 2026-03-12
-last_updated: 2026-03-14
+last_updated: 2026-03-20
 tags: [micro-saas, planning, workplan]
 ---
 
@@ -87,8 +87,8 @@ Any scope expansion requires explicit ML1 approval before execution.
 | M2 - User/problem lock complete | 2026-03-14 | finalized | `WORKPLAN.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
 | M3 - Data/rule and MVP scope freeze complete | 2026-03-16 | finalized | `SCOPE_DEFINITION.md`, `DEPENDENCIES.md` |
 | M4 - Risk and communication model finalized | 2026-03-18 | finalized | `RISK_REGISTER.md`, `COMMUNICATION_PLAN.md` |
-| M5 - Metric threshold packet submitted | 2026-03-19 | submitted | `ML1_METRIC_APPROVAL.md`, `OKR.md` |
-| M6 - Planning -> Executing gate decision | 2026-03-20 | pending approval | Updated `../APPROVAL_RECORD.md` |
+| M5 - Metric threshold packet submitted | 2026-03-19 | approved | `ML1_METRIC_APPROVAL.md`, `OKR.md` |
+| M6 - Planning -> Executing gate decision | 2026-03-20 | approved | Updated `../APPROVAL_RECORD.md` |
 
 ## Immediate Planning Sprint (2026-03-12 to 2026-03-20)
 

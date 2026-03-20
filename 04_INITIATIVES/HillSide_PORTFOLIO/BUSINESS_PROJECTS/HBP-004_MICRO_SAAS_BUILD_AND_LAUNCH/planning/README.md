@@ -4,7 +4,7 @@ title: Micro SaaS Build and Launch - Planning
 owner: ML1
 status: active
 created_date: 2026-03-12
-last_updated: 2026-03-14
+last_updated: 2026-03-20
 tags: [micro-saas, planning]
 ---
 
@@ -26,16 +26,17 @@ Define and authorize a controlled executing model for TariffLookup.ca under Matt
 - Output: MFN tariff, preferential tariff (if applicable), agreement basis, and eligibility notes
 - Initial jurisdiction scope: United States, European Union, United Kingdom, Japan, South Korea, Australia
 
-## Planning Status (2026-03-12)
+## Planning Status (2026-03-20)
 - Initiation gate is approved and planning is authorized.
-- TariffLookup.ca planning artifact set is finalized and ready for execution-readiness review.
-- No executing is authorized until ML1 closes Planning -> Executing approval.
+- TariffLookup.ca planning artifact set is finalized.
+- Metric thresholds are approved.
+- Planning -> Executing approval is closed and execution is authorized.
 
-## Current Planning Focus
-1. Lock exporter user scope and core tariff-lookup workflow.
-2. Lock jurisdiction/data/rule boundaries for the six-jurisdiction MVP.
-3. Lock risk, communication, and measurement model for reliable output and launch control.
-4. Submit Planning -> Executing gate packet to ML1.
+## Planning Outcome
+1. Exporter user scope and core tariff-lookup workflow are frozen.
+2. Jurisdiction, data, and rule boundaries for the six-jurisdiction MVP are frozen.
+3. Risk, communication, and measurement controls are frozen.
+4. Planning -> Executing approval is recorded in `../APPROVAL_RECORD.md`.
 
 ## Immediate Planning Sprint (2026-03-12 to 2026-03-20)
 

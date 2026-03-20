@@ -1,0 +1,1281 @@
+# Soft Junk Review 20260314_181225Z
+
+- Query: `in:inbox (category:promotions OR category:social OR category:forums)`
+- Threads scanned: `7310`
+- Fetch errors: `6054`
+- Matter matched: `10`
+- Matter ambiguous: `0`
+- Matter review required: `5`
+- Soft-junk cleanup candidates: `1246`
+- Ready matter-label adds: `0`
+- Ready state-label adds: `0`
+
+## Matter-associated threads
+
+- `19cbfb7b96379cda` | `25-194-00059` | matter_actions=not_applicable | state_actions=not_applicable | subject=Let’s continue the conversation in person
+- `19c94d9312f82cca` | `25-927-00003` | matter_actions=already_present | state_actions=already_present | subject=Stream Confirmation - Send Mail as f.t.m@stream.money
+- `19c94d57ea7f7b6c` | `25-927-00003` | matter_actions=already_present | state_actions=already_present | subject=Stream Confirmation - Send Mail as onboarding@stream.money
+- `19c941bb26ebaf1e` | `25-927-00003` | matter_actions=already_present | state_actions=already_present | subject=Action Required: GCEX Onboarding Assessment Completion
+- `19c94198f29279a4` | `25-927-00003` | matter_actions=already_present | state_actions=already_present | subject=GCEX Online Application for Digital Assets (UAE Entity)
+- `19c909858970fc63` | `25-927-00003` | matter_actions=already_present | state_actions=already_present | subject=Stream Confirmation - Send Mail as onboarding@stream.money
+- `192685ba620afa22` | `25-256-00005` | matter_actions=not_applicable | state_actions=not_applicable | subject=🌱 Becoming Who We Aspire To Be
+- `18d474821dfe3e12` | `25-1318-00001` | matter_actions=not_applicable | state_actions=not_applicable | subject=Natasha's Rave Review: LawKPIs - Your Game-Changer in Family Law Reporting!
+- `18d13442c1930c33` | `25-194-00059` | matter_actions=not_applicable | state_actions=not_applicable | subject=Solve Your Process Pain Points With New Web Automations 🦾
+- `173529996bf0685a` | `25-927-00003` | matter_actions=not_applicable | state_actions=not_applicable | subject=🎉 John Vervaeke just shared: "Join discord server for meditation live stream today"
+
+## Matter review required
+
+- `19cbfb7b96379cda` | signal=identity_name_key | confidence=medium | subject=Let’s continue the conversation in person
+- `192685ba620afa22` | signal=identity_name_key | confidence=medium | subject=🌱 Becoming Who We Aspire To Be
+- `18d474821dfe3e12` | signal=identity_name_key | confidence=medium | subject=Natasha's Rave Review: LawKPIs - Your Game-Changer in Family Law Reporting!
+- `18d13442c1930c33` | signal=identity_name_key | confidence=medium | subject=Solve Your Process Pain Points With New Web Automations 🦾
+- `173529996bf0685a` | signal=identity_name_key | confidence=medium | subject=🎉 John Vervaeke just shared: "Join discord server for meditation live stream today"
+
+## Soft-junk cleanup candidates
+
+- `19ced5d28cf79d59` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Ready to elevate your practice?
+- `19ce8cfd25050487` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, Blue Dot Days are here
+- `19ce79be95369e67` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Latest News For You
+- `19ce765b5ea71603` | categories=CATEGORY_PROMOTIONS | signal=none | subject=CPD on April 16: Litigation Pressure Points
+- `19ce74525877349d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Seven Must Have Phone Friendly Forms
+- `19ce611214725f37` | categories=CATEGORY_PROMOTIONS | signal=none | subject=March 2026: Western Canadian Guide to a Successful Business Sale
+- `19ce295068584363` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Good news: More great events await
+- `19ce259580154795` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How was it? Rate Bitcoin & Digital Asset Summit!
+- `19ce1edd5fb5327b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🦞 2026 AI Skills List
+- `19ce03c9717c95db` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Make your first purchase on our P2P platform and pay up to 20% less
+- `19cded5f33a01e97` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Great meeting you at RC Show | KioCafé
+- `19cdd3c1f6b23499` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[LAWPRO] In-person CPD in Toronto on April 21
+- `19cdd382e65a0496` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your first trade could win you 1000 USDT
+- `19cd7ce3c8e43084` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Something That Changed My Seder + A Special Men’s Night
+- `19cd03b22c68f1b7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Tell Us About Your Hiring Experience
+- `19ccf2a52688a908` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Download the desktop app
+- `19cc4681e71398b9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get the latest tech and set your team up for success
+- `19cbfef14df733a4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Included in your monthly plan: TELUS Health Virtual Care
+- `19cbc278e9a83941` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Make your first purchase on our P2P platform and pay up to 20% less
+- `19cbac3b841a380e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Visit Us at RC Show – Booth #5208 | KioCafé
+- `19cbaacd540bae5b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get your tickets for Bitcoin & Digital Asset Summit
+- `19cba93d87cf5a27` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Events worth stepping outside for.
+- `19cb8faa23d299a4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Start trading and get 50 USDT, are you in?
+- `19caee19edb1d79e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Don’t Just Watch. RACE for 120,000 USDT!
+- `19c9fe1db3c9018b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=A personal message about my Passover Seder
+- `19c981b32bba8348` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Make your first purchase on our P2P platform and pay up to 20% less
+- `19c97436d42b2d9b` | categories=CATEGORY_FORUMS | signal=none | subject=test
+- `19c96f11f6c1844a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Galaxy S26 Ultra pre-order starts NOW
+- `19c964b59ce1965a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Optimizing the Modern Firm: Portals, COOs, and Downtime
+- `19c95f1b218fc801` | categories=CATEGORY_PROMOTIONS | signal=none | subject=💥 3 forces that determine your energy 
+- `19c95a2c6e0ab983` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your Feedback + ChatPRD = 🚀
+- `19c920addb1f555f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Join Us at RC Show 2026 | KioCafé
+- `19c90acca188f363` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Join Us for a Special Family Shabbat with Rabbi B. at The Village Shul
+- `19c8dad08121c1f5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Congratulations! You've been selected as a lucky user!
+- `19c8bff5ddd249c8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Upcoming CLE] What if your practice software could drive more profit?
+- `19c8bcbe5b635cab` | categories=CATEGORY_PROMOTIONS | signal=none | subject=We Did It - Thank you!
+- `19c8b723f8667c4f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Free Webinar: Bringing Clarity to Succession Planning
+- `19c888e355d2d6ef` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Beginner Special: Final Chance to Claim $10 gift!
+- `19c86be92cb15569` | categories=CATEGORY_PROMOTIONS | signal=none | subject=😱 What if you set a goal so big it scares you? 
+- `19c862f93df3bfce` | categories=CATEGORY_PROMOTIONS | signal=none | subject=3 steps to get the most out of ChatPRD
+- `19c8111ba6d6b972` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get inspired with these resources from Riverside
+- `19c7e43c243e54f2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Buy BTC with CAD and Get 5 USDT!
+- `19c7be2eda81d16e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Why I built ChatPRD
+- `19c7b296e0d396f8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Learn Faster with Ultimate Forms Webinars
+- `19c78598a2a20d28` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Earn CLE credits when it works for you
+- `19c77bb659dd3900` | categories=CATEGORY_PROMOTIONS | signal=none | subject=We Did It - Now Let’s Go Further!
+- `19c76bc6f9b6a99b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Video: How I use ChatPRD to speed up my work
+- `19c73f68b772dcd8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Beginner Special: Get Started and 5 BGB Today!
+- `19c725cd6e384b64` | categories=CATEGORY_PROMOTIONS | signal=none | subject=36 Hours. $360,000. Every Dollar Matched
+- `19c6fa7830cafdeb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Here's 40% off ChatPRD basic or pro
+- `19c6e523592b7388` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You're on a 1 Day Streak, Moosepresso! 🔥
+- `19c6d33699532c50` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Latest News For You
+- `19c6bec10806561d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=2026 Law Firm Predictions. Explore now!
+- `19c69c28c224e0bf` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Deposit and trade to win up to 10 USDT!
+- `19c69c236cb93a88` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Complete identity verification and start your Bitget experience
+- `19c69a9547dcbbd8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Congratulations! You've been selected as a lucky user!
+- `19c66f9106835bea` | categories=CATEGORY_PROMOTIONS | signal=none | subject=RSVP To Event Next Week
+- `19c63bffab6c323e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Clio - Tell us what you think in just 1 minute!
+- `19c5d8ae31e4b303` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Our app lets you...
+- `19c5c37f866f89cb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Vaclav is streaming LIVE in 2.5 hours!
+- `19c5782132c4a573` | categories=CATEGORY_PROMOTIONS | signal=none | subject=When Power BI Is Too Much (And What to Do Instead)
+- `19c541170f4b0fd0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=$0 enrolment for your family — ends Feb 17!
+- `19c4ef0b41a0e58e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Our fundraiser takes place next Wednesday, February 18th
+- `19c49183995b903d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Purim at The Village Shul – Celebrate with Us! 🎭
+- `19c33b44351790f9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Item IDs as Business Reference Numbers
+- `19c33415a092d15a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Webinar Invitation] Before You Automate: What Most Law Firms Miss
+- `19c32a5bc011cc6c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=4 Days Left To Apply For Our Global MBA | BBS
+- `19c3281841662cb3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=High-Impact Vehicle Graphics that Drive Leads!
+- `19c269f318f734c7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Expand your reach — get your Replit App on mobile app stores
+- `19c2076c033c660e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Opening Doors to Meaningful Career Opportunities
+- `19c120339bbbb0a5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Share your app online & choose your web address
+- `19c0f91d0daf4d22` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Turn filings into an ongoing managed service with the eCore® x Unity® Entity Management integration
+- `19c0f289a2ea1774` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Mobile SharePoint Forms Made Easy
+- `19c0a78099e03441` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Maximize your Zoom experience: Join our February customer success live sessions 🚀
+- `19c066035f713752` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Three Weeks to Strengthen Our Village Shul Community
+- `19c00e9b77fe33bf` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get Your App Ready for Real Users
+- `19c0075be8f5f805` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Big-business AI, small-business price
+- `19c006cf84201433` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Register: Zoom Workplace Updates — Simplified UI, AI Companion 3.0 and Hub
+- `19bfb4516b6412b7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Connect with 84,000 legal professionals through Ontario Reports
+- `19bee0505b651943` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get Your App Ready for Real Users
+- `19beb2a491647ab3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=New Counter Web Part Released for SharePoint
+- `19be8198b55a7e1a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Build AI agents with the new GitHub Copilot SDK
+- `19be1850db054076` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The AI Debate, Tech for TV Legal Pros, and The 2030 Paralegal
+- `19be1558560ffa1b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Powered by progress: Our 2025 year in review
+- `19be14147afa9da4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=One Month Until Our Annual Fundraiser: A Stronger Jewish Tomorrow Starts Now
+- `19bd410759697bff` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Learn to make the most of Replit Agent
+- `19bc8626d116471b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Share Your Replit Apps Securely — Preview & Feedback Tools
+- `19bc2046869570a7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=One thing I keep noticing
+- `19bb9754a2dcd454` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Register for the Free CPD Webinar: Modernizing Administrative Justice Webinar Part 1 of 3 / Inscrivez-vous au webinaire de formation continue gratuit :  Moderniser la justice administrative – Partie 1 sur 3
+- `19bb46f08a3e3b7d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Front Desk Check-in System for SharePoint
+- `19bb44ca37c52e18` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Resources to Help You Maximize Your Job Search
+- `19bb35b894372ffe` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Share Your Thoughts and Enjoy Starbucks on Us
+- `19bad92616d059f9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=3 things to try before your trial ends.
+- `19baadcd499aa6af` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⚡ Limited Time Offer + Create Your Dream App
+- `19baa356366f935f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Unlock Replit Agent's Full Potential — Visual Editing
+- `19ba4587a728078e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=If you're skeptical about vibe coding
+- `19ba3eae443a2093` | categories=CATEGORY_PROMOTIONS | signal=none | subject=I built you a calculator
+- `19ba35634bc68519` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Comments Control in Modern SharePoint Forms
+- `19ba31331a1a6688` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The database of verified startup revenues (8h left)
+- `19ba2a64bb256f2f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=I'm removing you, Matthew
+- `19ba1c7c733f377e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew - why we built this
+- `19ba158ffa4dce6d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=I stayed up until 2am waiting for you...
+- `19ba02cf263cf9f2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Read this first] Idea to app, faster than ever
+- `19b9f40478283b99` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Free Webinar: Martin vs. Murray Navigating Liability & Liberty in the Age of AI
+- `19b9ec4996561266` | categories=CATEGORY_PROMOTIONS | signal=none | subject=I built you a calculator
+- `19b94ebe6184026f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Expert Corporate Legal Services for Entrepreneurs, Executives, and Investors in Ontario
+- `19b2cb83fadd71ba` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Automation mode: activated 🤖
+- `19b14b89f81fec33` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Season's Greetings from Terra Law Corporation
+- `19b0e496f002f433` | categories=CATEGORY_PROMOTIONS | signal=none | subject=8 Quick Actions to Get Holiday-Ready with Clover
+- `19b09a35d18f62f3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Asana Subprocessor Notice
+- `19b04db73f2270bb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Reminder! Conviction in Quality - Barry, Benjamin & Ernest will be hosting a webinar December 11, 2025 at 7:00PM
+- `19b007461e3181e9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Schedule a meeting with Pipedrive
+- `19afe7b9b9dbd9b8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Microsoft Copilot with Microsoft Excel
+- `19aef43a95153262` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Protect Your Business: Free Cybersecurity Resources from Clover & Mastercard
+- `19aeb4369ecde910` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Reminder! Conviction in Quality - Barry, Benjamin & Ernest will be hosting a webinar December 11, 2025 at 7:00PM
+- `19aea5e65261cf20` | categories=CATEGORY_PROMOTIONS | signal=none | subject=One day left: 40% off Standard and Business Pro annual plans
+- `19ae5db2de751923` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Exclusive invitation: Shape Intuit's Products & earn $200 per session (Toronto Council)
+- `19ae4f501a6ae2bb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Event Next Week🇮🇱
+- `19ae19fbf0fa9e8b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Time-Sensitive: Access a special code to unlock Cyber Week
+- `19ad65b9665552dc` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your FREE shipping ends tonight!
+- `19ad60282b1b579d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Secondhand Sunday top finds
+- `19ad59b98a4112a2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Discounted shipping EXPIRES TONIGHT
+- `19ac83ae156240b2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=2025 Men's Scotch, Steak & Study - Thursday, december 11th
+- `19ac4b3e820c4732` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Clio - Tell us what you think in just 1 minute!
+- `19ac11ed403b3a88` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your trial has ended: Get up to 44% OFF with annual billing
+- `19ac109f097cd601` | categories=CATEGORY_PROMOTIONS | signal=none | subject=macushlaw @ Housing Central 2025
+- `19abef1c8351cc26` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Jonathan Salak shared confidentiality-agreement - Jonathan Salak.pdf with you
+- `19abc72eb28b5d13` | categories=CATEGORY_PROMOTIONS | signal=none | subject=13 Amazing Deals for Writers This Black Friday 🎁
+- `19abc63c82f77970` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Event In Two Weeks
+- `19abbfcc702d536a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=eBay curious, Mathew? Snag the best deals on your first purchase. 🤑
+- `19ab83360c298887` | categories=CATEGORY_PROMOTIONS | signal=none | subject=#10 Own an Investment Property? Now What?
+- `19ab711e87cde422` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon Business wants to hear from you
+- `19ab661f49d05749` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Elevate Your Investing Knowledge with RealAlt's Exclusive Insights
+- `19ab64a066176aa1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Last Chance | Join TCAE x CISC Program
+- `19aaadbaa6b110a6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Thanksgiving Requires Caviar
+- `19aa7894b6ebaa4e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🖤 Black Friday starts NOW 🖤
+- `19aa2c0c08f701bc` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Dabble's Black Friday Sale is Coming Back! 👀
+- `19aa2463c64f6d1e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Gifts for everyone you cherish ❤️
+- `19a9d11353168656` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your trial ends soon: Explore saving up to 44% with annual billing
+- `19a9d10fe15ae654` | categories=CATEGORY_PROMOTIONS | signal=none | subject=As a reminder, Upwork would love to hear about your recent experience
+- `19a9426cfb170700` | categories=CATEGORY_PROMOTIONS | signal=none | subject=#9 Offer Accepted? Steps to Close the Deal (Inside)
+- `19a9248c2bef5923` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Thank you for your interest in Chainalysis
+- `19a89740e7ef6439` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You are invited to BCN HOLIDAY PARTY! @ Parr Business Law, sponsored by Clio!
+- `19a834fc93bbed96` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Want to sign & send docs on the go?
+- `19a82d190402d6c5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You are Part of NihonPolitics now!
+- `19a7e7dfd899343c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Monthly Newsletter:  Hello November
+- `19a7e6612d3ccda7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Invitation | OPPI & WeirFoulds Seminar | December 12, 2025
+- `19a7e422420f85f3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your holiday gift guide is here 🎁
+- `19a7dd28a9a02a41` | categories=CATEGORY_PROMOTIONS | signal=none | subject=December 10th Event Announced🚨🚨
+- `19a7947731b8c549` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get inspired by Google Canada highlights and protect your business
+- `19a7849d4e18da0f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Elevate Your Crypto Compliance Skills with CISC – Are You Ready?
+- `19a73dd58f63ff60` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Hi matthew, want to prepare documents faster?
+- `19a701a43b021f79` | categories=CATEGORY_PROMOTIONS | signal=none | subject=#8 Let’s Talk Loans…
+- `19a6e80501fa3c75` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Tell us: How was your setup experience in Online Banking for Business?
+- `19a6e63329fd9d35` | categories=CATEGORY_PROMOTIONS | signal=none | subject=We’d still love your input on AI — survey closing soon!
+- `19a6469602225984` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get access to Google & Microsoft integrations
+- `19a603dafc8621e9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Intimidation Meets Resilience | CAEF Bulletin, Nov 7, 2025
+- `19a5ea00d77ddd0d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Don’t forget to share your feedback
+- `19a5b02d82ca51db` | categories=CATEGORY_PROMOTIONS | signal=none | subject=OneKeyCashの現在のポイント残高 :￥792
+- `19a5a3daedb18764` | categories=CATEGORY_PROMOTIONS | signal=none | subject=A chance to shop *and* give back? Yep 🤩
+- `19a5a1d58aa0f6d1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Got a minute? Your feedback is important to us
+- `19a552f28de783a1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, take control of your home Wi-Fi with the Bell Wi-Fi app
+- `19a4c0db2dd0bf92` | categories=CATEGORY_PROMOTIONS | signal=none | subject=#7 You Ran the Numbers—Now Let’s Make an Offer
+- `19a4aab4e784ebff` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Watch CAEF Web Talk with Dr. Brian Crowley, “Canada: Promised Land or Broken Promise", then register for more CAEF programs
+- `19a433697c24c7a6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Final Reminder: Want your acquisition plan?
+- `19a3a5cc3e12dc6b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Don’t forget to share your feedback
+- `19a32578b654a115` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You’re Invited! Celebrating Five Years of Macushlaw
+- `19a30ea179969831` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Stay Ahead of the Curve: Smart Insights for Small Businesses
+- `19a30462d4ece5f3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🗓  Join live: Customize your workflows for maximum efficiency.
+- `19a2e9ced956c2de` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your EPICFit™ Scorecard Is Here
+- `19a280124161a44b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=#6 Why You're Missing Great Deals (And How to Fix It)
+- `19a27e67a608c807` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Want to hit 50K in November? Join our FREE sprints!
+- `19a279e297b45370` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Hi matthew, discover how Docusign can work for your business.
+- `19a262fb0200c647` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🗓  Join live: Customize your workflows for maximum efficiency.
+- `19a1cbe76f8f8088` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Join us: Structure work that aligns to your organization's objectives
+- `19a15a938b4bec4e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Earn $25 by sharing your opinion of Asana
+- `199fd9c3dddbf0fa` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You just created a team. Here are the next steps.
+- `199ed61741bcc504` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Clio - Tell us what you think in just 1 minute!
+- `199ed5c5c7849245` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Essential Cyber-security Tips + Clover Upgrades You’ll Love
+- `199e86a50e77b467` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Still want our emails? Open to keep getting them, Mathew📬
+- `199dfe802cb27ec5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=#4 You NEED these People on Your Real Estate Team
+- `199ddb101df38b15` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Reminder! Tell us about your Google Ads experience
+- `199cae074b073a4b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your Google Ads Account: Complimentary Support Extension + Critical Optimization Review
+- `199c9eca471736c2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Monthly Newsletter: No More Bar Exams? Hello October
+- `199c9c0f2835d2ae` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You're invited to a free Automation in a Day workshop
+- `199c4655e0433686` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Resources for small business momentum this fall
+- `199bf1b7d2af7022` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Wrk - October Newsletter 2025
+- `199bc1eb1b9f7157` | categories=CATEGORY_PROMOTIONS | signal=none | subject=お祝い旅行が 25% 以上 OFF
+- `199b9adb09de74e9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How is AI working for your business? Let us know!
+- `199b9aab64bbf2ad` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Is Google Ads working for you? Please let us know.
+- `199ae5b5e70f25cc` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, welcome to Microsoft Copilot Studio
+- `199a051ebc16343c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Happy Small Business Month 2025!
+- `1999a80c573c3236` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Ready to write your novel? The (free!) 60-Day Challenge starts tomorrow!
+- `1999a4c40162004e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Last chance to register for our upcoming event
+- `19999a0607d283da` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Fresh Canadian Caviar
+- `19998115d32dcfd5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=近場の旅行を計画中の方に。今なら 25% 以上 OFF
+- `1999637a877d6ce4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Mercor: Looking for Norwegian Lawyers ($180.00/hr)
+- `1997b643657234d7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Invite] Join us live to accelerate your work
+- `19977a2aa5828e22` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Notion 3.0: Agents
+- `1997739a49bcd50c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, your experience matters. Please complete a short survey.
+- `19976b726fdc894c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=FINTRAC imposes an administrative monetary penalty on Spence Diamonds Ltd. / CANAFE impose une pénalité administrative pécuniaire à Spence Diamonds Ltd.
+- `19973c25cf520869` | categories=CATEGORY_PROMOTIONS | signal=none | subject= #1 Start Crafting a Winning Real Estate Investment Strategy 
+- `1995dc4f0e88ef11` | categories=CATEGORY_PROMOTIONS | signal=none | subject=📆 1 Week Left! Register for 'Rebuilding Confidence after Setbacks ' Free CPD Webinar
+- `1995d9087d17f080` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Reminder: 360° Law Firm Analysis with SMB Team on September 19, 2025 12:00 PM EDT
+- `1995a81efc97bb3a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=25% 以上 OFF — 会員限定
+- `19958a515316498a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⚖️ #20.1 - BCN UPDATED Event Details
+- `1994fb5cfe76e349` | categories=CATEGORY_PROMOTIONS | signal=none | subject=#0 Your Path Starts Here
+- `1994be978a7343b0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, Your September 2025 Update
+- `1993e9904fcead09` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[LAWPRO Reminder] Monday is the deadline to apply for the LAWPRO Risk Management Credit. Save on your 2026 premium
+- `199397f03c940d4e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=levinelegal.co is on auction.
+- `1993538b8d4b60ad` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Reminder: 360° Law Firm Analysis with SMB Team on September 11, 2025 4:00 PM EDT
+- `1992fa40c1cdb53f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Monthly Newsletter: Process Updates, Free CPD and More
+- `1992c0a6c0595477` | categories=CATEGORY_PROMOTIONS | signal=none | subject=都市滞在型の休暇で最大 62,208 円 OFF
+- `1991508e343240ed` | categories=CATEGORY_PROMOTIONS | signal=none | subject=REMINDER: Take part in our Practical Guidance survey to receive $5 USD Starbucks gift card
+- `1991462faef2f890` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Tell us about your experience with Clio!
+- `1990bcf7c041b31a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Take part in our Practical Guidance survey to receive $5 USD Starbucks gift card
+- `19907f934eaa4a03` | categories=CATEGORY_PROMOTIONS | signal=none | subject=お得な 情報 ! 15,000 円以下で泊まれる人気都市のホテル
+- `198f2df42c39c0f9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=One Key にようこそ
+- `198d41b64f503aac` | categories=CATEGORY_PROMOTIONS | signal=none | subject=トロントへの旅行の準備は万端
+- `198382ff08df82fa` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Register now—new topics unveiled for Microsoft Ignite
+- `19837afc260dfb14` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Strategies for your business to survive (and succeed) this summer!
+- `1982f04e8ca6c5cf` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Nikko Discovery - Hero Section
+- `1982ef71fbabfbc5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Turtle Island  (250 x 150 px)
+- `1981d2404a11f938` | categories=CATEGORY_PROMOTIONS | signal=none | subject=We are updating our Privacy Policy and Terms of Service
+- `197f333f902285ea` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Where Should You Park Your Cash?
+- `197e7e9569b234b1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Welcome to Databutton 💜
+- `197cb734c50aabe5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⚖️ #18 - BCN July Edition
+- `197a9384bd824111` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Confirm Your Email
+- `19761344960819e0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew Levine wants to access 'Documentation'
+- `197576e7e60b7db1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Wind From Turtle Island
+- `19721ed048d272b2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You’re invited: Legalboards Masterclass on AI Workflows (Free + Live Q&A)
+- `196da7df0f753915` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Coursera Learner Outcome Survey: You could win a $25 gift card
+- `196cfe23b50295ca` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Stand out and succeed: Opportunities inside
+- `196cf20684bb4ce2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Webinar] Join us tomorrow to get tips from Agile coaches
+- `196ae7b2014a6dea` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🛎️ Top FAQs Before Starting Your Business
+- `1965eb6af453577f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Global leadership starts here – learn about Rotman’s GEMBA program.
+- `19644193f2f86493` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Invite] Check out Lucid’s Azure DevOps integration
+- `19610e8314c7eb82` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your Event This Week
+- `195fcd506182252f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew A J Levine Law Could Be Featured in Our Collaboration with Google Canada!
+- `195f62bfbc886361` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Last chance to join us for big announcements
+- `195f3abb1acceb25` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Earn $25 by sharing your opinion of Asana
+- `195e4398da4f5bd2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You just created a team. Here are the next steps.
+- `195e234f354f51d0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What's new? Custom tasks that work the way you do.
+- `195d3cee2d8da154` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Docket: March 2025.
+- `195d360e5b2c9e00` | categories=CATEGORY_PROMOTIONS | signal=none | subject=PaperOS for Founders - 1-Minute Explainer
+- `195d21f4e8505499` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Be the first to see our newest product updates
+- `195be02702574ac9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Mary Casipong shared a Loom with you
+- `195b90ff2ee8efe4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=We Need Your Expertise! (2-Min Survey)
+- `195a4a51e0347a09` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Reminder for feedback on your experience
+- `195861582893c497` | categories=CATEGORY_PROMOTIONS | signal=none | subject=     Looks better. Sounds better. Plays better. ​
+- `19580ca4106ef943` | categories=CATEGORY_PROMOTIONS | signal=none | subject=no-credit-check business loans
+- `1956ccb6c03f2ce5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Level up your March break with Xbox
+- `1956786431267af5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=5 ways to beat the attention recession
+- `19543a33f1b13c49` | categories=CATEGORY_PROMOTIONS | signal=none | subject=MATTHEW would you like help finding a space?
+- `1954333ca3628a21` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get started with Spacelist - Temporary Password
+- `1953f0bb89c8ba07` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What’s new in Asana? Our February release
+- `19538f9b506091ad` | categories=CATEGORY_PROMOTIONS | signal=none | subject=     Experience Avowed on a new Xbox Series X|S console​
+- `195297dc2ae0ca09` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What’s new: February 2025
+- `19524808def23b5a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Save on industry-leading AI with Surface Laptop, Copilot+ PC
+- `1951f80f859f6635` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Access Powerful Insights About Your Customer
+- `195059c2e965d4b7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Meet your match
+- `194fb41b1b2d0104` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Microsoft 365 Now Includes AI
+- `194e15b1c7bfc8e1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Important information about enhanced Acrobat file sharing features
+- `194dbdc83026f7e7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Webinar] Stay in sync with Jira and Azure DevOps
+- `194bcebe4a73b541` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Book your Ontario Reports ads in colour and pay the b&w rate
+- `194b828ab46e17a7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Last chance for up to 40% off select packages
+- `194b2c8b80cd5b7b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=In need of a sunny escape? Your next getaway could earn you up to 2x the Aeroplan points.
+- `194b29e17278fe80` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Join us tomorrow and learn how to set up teams in Lucid
+- `194a87a84e75b66b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Gear up for gaming
+- `19499e20a2c0438d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Docket: January 2025.
+- `19493b9c9a76b60c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Webinar] How to set up and manage teams in Lucid
+- `1946c14823ff7b19` | categories=CATEGORY_PROMOTIONS | signal=none | subject=We want to hear from you
+- `1946076cac63014b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Don't Miss Out - New Year Accessory Offer Ends Soon!
+- `1945f8d3f7dabcae` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Last call for worldwide flight savings and 1.5X the Aeroplan points
+- `1944bf8307f293fb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Start the year fresh with a new Surface
+- `1944b84b5ecc5d32` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Help us beat the competition ✊
+- `19445cc7a64eaa7f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Worldwide savings are still here, but not for long!
+- `1943c4b3fcfe9072` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Complete your setup with top accessories
+- `1943b7f58e8e36e4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=A new year and a new world of savings start now!
+- `193df70cf4310650` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Admin notice] New Asana desktop app version is here.
+- `193d06e676dbcd8c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How are we doing?
+- `193b6e46802f45b2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Redefine Gifting – My Gift To You
+- `19385f5f87c38216` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Cyber Monday Sale. ALL destinations. Today only.
+- `1937872e7f8e56cf` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Black Friday: enjoy savings on Surface Copilot+ PCs, Xbox, and more
+- `19373c9f11c400b5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Black Friday deals are going fast
+- `1936ee9672d58e24` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Save big on the latest Surface Copilot+ PCs, Xbox games, and more
+- `1936ee214beab86f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Happy Thanksgiving from the Virtual Latinos Team! 🦃🍂
+- `1936edec3d0f0f8a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=33 Holiday Marketing Ideas To Sell More This Season
+- `193694c71cd5322b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Webinar reminder – Technology contracts: Key considerations for AI and data | Rappel du webinaire – Contrats liés à la technologie : aspects clés à prendre en compte pour l’IA et les données
+- `19364840ddc94e5a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=November’s almost over…
+- `1936470ee1e1bfa4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=     Xbox: 2024’s must-have gifts
+- `193635a13ba37522` | categories=CATEGORY_PROMOTIONS | signal=none | subject=doors open
+- `1936333814385369` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Our Black Friday sale is here! Grab these savings before they take off.
+- `1935c33c78fdab72` | categories=CATEGORY_PROMOTIONS | signal=none | subject=sneak peek
+- `193540141a043499` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Our Black Friday worldwide seat sale is here! Plus, 75 million bonus points to be shared.
+- `193507d7b523e18b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=📨 Business Insights: Streamline Your Operations
+- `1935058904ba9ecc` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Power your AI Chatbot with 2,500+ Pre-Built Actions, or your Own
+- `1934afbacae578b2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Gift with confidence: extended price protection
+- `1934a992a94c320c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Learn about University of Toronto's MBA programs
+- `1934a22fe675f68c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Join us tomorrow to make work visible and align teams
+- `19349e50f7724dd7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What’s new in Asana? Our fall release 🍁
+- `19349e0ad6bf6572` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your next trip awaits. Find your fare and get going.
+- `19347ed9389bdd00` | categories=CATEGORY_PROMOTIONS | signal=none | subject=โปรโมชั่นพิเศษสำหรับลูกค้าเก่าของ THAC  ส่วนลด 10 %
+- `19345f7a8720b85d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=CPD Package: CPA Ethical Leadership (2024)
+- `1934592257679f0d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Black Friday savings start now
+- `19344f5e33fe4b6b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Make 2025 planning a breeze with our goal setting checklist
+- `19342d642dea6760` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Make money from your art
+- `1934071b64d20ffc` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Last Chance to Register—20+ MS Word Tips and Tricks
+- `1933f9a3ec9c1092` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Live online: Microsoft Ignite
+- `1933cafaf6e35d26` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Nov intake - 2 spots
+- `193366fb99cb9e0e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What’s new: November 2024
+- `19330fb8edb9c04b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Xbox, a gift to impress them all
+- `1932ea0f104c0f79` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Why You Need a LinkedIn Newsletter
+- `1932e3283a461ce2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Arbitration in Thailand and Germany: Key Insights for the Resolution of Energy and Cross-Border Disputes
+- `1932be99bd1db7e5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Wrap up the power of AI
+- `1932bdab41739a71` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Unlock 20+ Time-Saving MS Word Tips for Legal Drafting
+- `1932ac3e7651cb1b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Webinar] Boost transparency for your Agile team
+- `1932ac332ca49f08` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Triennial CPD Package: Verifiable CPD For Proactive CPAs
+- `193294748707b772` | categories=CATEGORY_PROMOTIONS | signal=none | subject=There’s still time to attend Microsoft Ignite online
+- `19327faa3551c192` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Say hi!
+- `19326bddd6a2e343` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Black Friday is almost here! Are you ready?
+- `1932678dc8aa9545` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Give More, Get More—Earn $200 for Every LawPay Referral!
+- `193263c6267aaa58` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Recommending Levine Law
+- `19325d4422add08c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Sale on now! 15% off: Canada and select U.S. destinations
+- `19325bef91b72b1b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Mike Roston at AbroadWorks Inc.
+- `19324aa39455e36c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Arbitration in Thailand and Germany: Key Insights for the Resolution of Energy and Cross-Border Disputes
+- `193211b61e1db76c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[LAST CALL] Webinar with Garabyte
+- `1932076a54d38b41` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Early Bird CPD Offer: Tax Updates for CPAs (2024-2025)
+- `193194d32024fbad` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Welcome to Lumin
+- `1931227ed48e8e5b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Try Copilot, your holiday AI companion
+- `19301c88048e986e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=There’s no time like go time. Grab your fare and take off!
+- `192de7d12f93f54a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Resource round-up: your key to small business success!
+- `192dbd0c01610b67` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Plan your event experience for Microsoft Ignite
+- `192d92948a025a2d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Final Reminder] Keep Your Firm’s Financial Health on Track
+- `192d7eeea67dd1f9` | categories=CATEGORY_PROMOTIONS | signal=none | subject="In Clio Draft, I generate everything in 20 minutes tops."
+- `192c9e1db53e1a34` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Take a tour of Clio Draft  this weekend
+- `192c4b84453482c1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Customize your Xbox Series X with a console wrap
+- `192c4a0ae89544b6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Up to 30% off sunny packages
+- `192c472f0bdc840a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Don’t Miss Out] Keep Your Firm’s Financial Health on Track
+- `192be318249e67ab` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Limited-time SALE! Mexico, the Caribbean, and select destinations within Canada and in the U.S.
+- `192b9f5e48223af0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Legal Ledger October 2024
+- `192b9e65d22a679d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Ending soon! Save on select destinations within Canada and in the U.S.
+- `192b97a1c4aa5589` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Elevate your law firm with automation—and Clio Draft
+- `192b63ec4b5be59b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Thank you for taking action
+- `192b4bfa5b8c1190` | categories=CATEGORY_PROMOTIONS | signal=none | subject=2025 EUROPE SALE
+- `192afc9d4f4b1e3b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Free Webinar Series] Keep Your Firm’s Financial Health on Track
+- `192ab880670151e2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Microsoft Ignite session catalog is live: register now
+- `19298dc31ffbbc04` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Meet Us at Law-Di-Gras: special invitation!
+- `19296e0c0a121c6c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Transform your old devices into cash
+- `192956d60ae3ba14` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How does unwinding under the sun sound?
+- `1929241a44a41af5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How to set up document automation at your firm
+- `1927767a59332cd1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Ready to Go Global? Here's How to Build a Top-Tier Team!
+- `192735213729dd7a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, view your October Nordy Club summary now.
+- `19272a8495c29f51` | categories=CATEGORY_PROMOTIONS | signal=none | subject=💡 Mastering Your Schedule Without Discipline
+- `192725399b9bed43` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Unlock, Start and Level up Your Crypto Compliance Journey
+- `192715f3a86f8647` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Rake up the savings! Canada, U.S., Mexico and the Caribbean
+- `1926d81c7c16700c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=💼 Rule of 100 for Client Acquisition
+- `1926d1678f49d4ae` | categories=CATEGORY_PROMOTIONS | signal=none | subject=matthew, check out this guide: Future-proofing Your Law Firm
+- `1926cf8730fbe2de` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Save now. No membership required.
+- `19269002aae803e5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get up to 20% off select destinations within Canada and in the U.S.
+- `1925e0ddc0c9be76` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🚫 Red Flags in Hiring Remote Employees
+- `1925955cdda8b905` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Last Call for Your Free Clio Cloud Conference Pass, matthew!
+- `19258e9589d2cbf3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Transforming your legal practice with tech 🚀
+- `19258e840512875c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🛡️ Navigating Through Hater Response
+- `19257d76071da5d5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Take Your Legal Practice to New Heights at Clio Cloud Conference 2024 
+- `19253c146fbe6144` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🐾 Creating a Culture of Intrinsic Motivation
+- `1924f32b6bc45653` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Access legal’s #1 conference, for free
+- `1924e9ad9f7ce08d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🚀 Transforming Onboarding Boosts Revenue
+- `1924d549153fe3b5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Last day to save on Europe! Secure your seat
+- `192499c22c178a5f` | categories=CATEGORY_FORUMS | signal=none | subject=International law mentor recruitment by Sunday the 6th
+- `1924974aaca46766` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🏠 Millionaire Lessons from My 20s
+- `19242d22c7fe22fd` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Webinar] Agile capabilities for every team
+- `1923f27c76c52265` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🎯 Essential Insights for Business Owners
+- `1923a015d07b981f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=💰 Effective Audience Monetization Strategies 2024
+- `1923571fa1a1990f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=SALE ON NOW: up to 20% off select destinations within Canada and in the U.S.
+- `1923532168682846` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What’s new: September 2024
+- `19234db7cf5b25c3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🎭 CEO Insights on Privacy and Culture
+- `1923048e4cc462c4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Important Changes to Your Loom Free Plan
+- `1922fb4d9ae52d1f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=💰 Real-World Money Lessons Explained
+- `1922aa0eccc6d555` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Reminder] Stay Competitive In The Legal Landscape
+- `1922a9c71966b3b5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🏆 High-Performing Teams with Effective Leadership
+- `1922a7d0c9df5247` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Notion 2.45
+- `192294503bad94de` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Save on flights and earn bonus points for Europe!
+- `19225685c6b5effa` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🤝 Selecting Mentors: Integrity and Skill
+- `19223f1cf6f5746a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Webinar] New Lucid capabilities for Agile teams
+- `19215f4e53163e04` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🌱 Effective Strategies for Achieving Goals
+- `19211278f0e99145` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Why Do I Feel Like I'm Cheating on Upwork? 😱
+- `19210cec2ad06259` | categories=CATEGORY_PROMOTIONS | signal=none | subject=👍 Focus on Product Quality for Business Growth
+- `19210654fc94fda3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get your 2ⁿᵈ package at up to 50% off
+- `192101c71e5d9b14` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Zoomtopia keynote: the future of AI and work, announcements, and more
+- `1920ba83ca293e69` | categories=CATEGORY_PROMOTIONS | signal=none | subject=😱 Overcoming Fear to Unstick Your Life
+- `19206ef73c098620` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🗓  You're invited: Customize your workflow, your way.
+- `192053908c2bd041` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Reminder: Two Questions About Your Amex Merchant Relationship
+- `19205065642677b6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Webinar] Be the first to preview solutions for Agile teams
+- `19204ce1cc069c9f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=ENDING SOON | 25% off select base fares worldwide and 2,500 bonus points
+- `192015bcac1fddb8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🚀 Essential Hiring Skills for Business Success
+- `19200c50f89f85df` | categories=CATEGORY_PROMOTIONS | signal=snippet_matter_number | subject=Webinar: Considering EOS for your Law Firm?
+- `191fa804d68b4516` | categories=CATEGORY_PROMOTIONS | signal=none | subject=FLASH SALE | Get your deal and bonus points on destinations worldwide
+- `191ec54925c3ee86` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew: Intuit is hiring bilingual tax experts in Canada like you!
+- `191ec088e93d7e46` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Save the date! Join us for Rotman Open House on Oct 26 or Oct 27
+- `191ebf8e6a8e26cc` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Virtual Event Reminder] Innovation Awaits At Our Virtual Legal Seminar
+- `191e6f0aa528b72a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Live event coming soon!
+- `191e1df44a923be5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, you’re invited to our new event!
+- `191e1a60ce3b1669` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Inter Alias: Make Primafact Title Aliases your BFF For Purposeful Review and Export
+- `191e16a927586d7e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Webinar tomorrow: Our favorite non-technical use cases for Lucid
+- `191dce8ea84a204e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Now available: Copilot+ PCs from Surface for Business
+- `191dc7b3653017a5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Legal Ledger September 2024
+- `191d6559e36029de` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, view your September Nordy Club summary now.
+- `1919500a145d442b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You’re Invited — Maximize Efficiency with Our Upcoming Webinars
+- `191636d81cbb8f83` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Only a few hours left...
+- `19161b64119a252f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=💰 Money Beliefs Impacting Financial Growth
+- `19153af21904b766` | categories=CATEGORY_PROMOTIONS | signal=none | subject=A FREE BOOK for You Matthew
+- `191517825ae7a607` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Navigating Economic Pressures as a Law Firm Owner
+- `1914d99514d7cd97` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Don’t miss out] Setting the Stage for Firm Financial Wellness Webinar
+- `1914d40ff9ca5f5c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Save now on back-to-school tech
+- `1914b340b912d132` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Booking 1326512620] Final Reminder: Would you recommend APA Hotel Asakusa-Ekimae?
+- `1914a5d008b56ca6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Booking 1328979956] 💬💰 Save up to 18% by rating your stay
+- `191463f0ea2010f7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Gold-medal savings on 180+ destinations worldwide
+- `1914531626d0bf17` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Booking 1326672700] 💬💰 Save up to 18% by rating your stay
+- `191443c00dbc03d3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=This Myth Drives Me Insane...
+- `1913c4d91a4739a1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, fancy extending your trip?
+- `1913791790e44dde` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Call for Articles: The Impact of Technology on Law – Ontario Reports
+- `19134c8d181f89c6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Less Time Losing Things, More Time Writing.
+- `19132d09c0bb208b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Organic or Paid Marketing for Law Firms, Which Performs Better?
+- `1913256124c5f1ba` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Webinar] The art of facilitating Agile retrospectives
+- `19132129bb1d74db` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Max Attract Your Ideal Buyer:
+- `1912e0ccc403b274` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Shop Xbox Series X|S consoles for your study breaks
+- `1912e0047512529f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🎁 Summer Just Got Hotter: Score Big with Clio Draft’s Weekly Giveaways & Grand Prize! 🎁
+- `1912dd7a71eb265d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your Holiday Marketing Plan Starts Here!
+- `1912d67a0fbd5e7d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Under Wraps: Hide Annotations when Screen-Sharing at Discovery
+- `1912cee75200d843` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Ready, set, save: Canada, U.S. and sun destinations.
+- `1912a46a4e3905eb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your July Loom Review 💜
+- `19122002b8881b48` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Booking 1314031652] Final Reminder: Would you recommend APA Hotel Asakusa-Ekimae?
+- `191143c9097741b5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=In Case You Missed It: The Top 5 Trending Articles
+- `19113ea0763d3661` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Pre-order now: Copilot+PCs from Surface for Business
+- `1910ffd52347e5b1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Back-to-school shopping made easy
+- `1910e82302d4385f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Know any legal tech entrepreneurs looking to launch their startup?
+- `1910cec097e118a9` | categories=CATEGORY_PROMOTIONS | signal=none | subject= [You are Invited] Join the Sleek Singapore Entrepreneurs Community
+- `1910c8d841981110` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Booking 1314031652] 💬💰 Save up to 18% by rating your stay
+- `191080c690bf169a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Would you recommend APA Hotel Asakusa-Ekimae to a friend?
+- `190e4d3bce338384` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Nurturing the Next Generation: A Guide to Successful Family Business Succession
+- `190e2264507908d8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Exciting News: We’re Moving to a New Office!
+- `190cb83f55112f7c` | categories=CATEGORY_PROMOTIONS | signal=snippet_matter_number | subject=Get ready for the Xmas rush with a new store!
+- `190bcc5489df7a21` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Save now. No membership required.
+- `190a82e1288aabb8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Productivity that is accessible for all
+- `1909d35541f7694b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Take Charge of Your Undertakings with Primafact 6
+- `190991a356ae6ec5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, This is your Last Chance to Register | Combating CSAM
+- `19098e826c2a4982` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Democrats' Pressing Problem and Next Steps
+- `1909613e115afeab` | categories=CATEGORY_PROMOTIONS | signal=none | subject=👉You got questions? We got answers!
+- `19094831cc01f818` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Save 25% on all destinations within Canada, in the U.S., Mexico and the Caribbean.
+- `19092dd06a0bc49f` | categories=CATEGORY_PROMOTIONS | signal=snippet_matter_number | subject=[SALE] Holiday prep starts now!!
+- `19092c7ebf355338` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What do you think of Asana?
+- `1907baea1321743c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=We've corrected the Aeroplan 40th anniversary link: Grab these fares fast. Last day to save!
+- `1907a39539ffe923` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Free Webinar Series] Unlock Financial Success for Your Firm
+- `19079f352d8649e2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Wrk - Introducing Over 1,000 New App Connectors to Supercharge Your Automation
+- `19078b0cef2ef2e7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Grab these fares fast. Last day to save!
+- `190750adde258e53` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Art of Delegation: A Key to Thriving Law Firms
+- `1907438b5f2cfe39` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Newsletter: LSA Leads No Longer Disputable July 1st
+- `1906fc632123e96b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Combatting CSAM & FI's Roles | TCAE Knowledge Series
+- `19064ba618dad6f1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Re: In case you missed it - Watch How Law Firms Use Clio Draft
+- `1905fc53039cf0f4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Don't Forget | Tickets Increase Tonight – Register Today!
+- `19055b7d11c04bf2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=😊 Bid Upgrade Alert: You're advised to check out this opportunity to upgrade your upcoming flight(s)
+- `1904aeee29f07498` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Grow your ideas with Sticky Notes
+- `1903a744908347e0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Is your work still on track?
+- `19036dc975db8ae0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Wrk is now HIPAA-Compliant - Automate any process in < 24 hours for < $1000
+- `190364693cc387d5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Boost your visibility and grow as professional with Vexxit!  
+- `190362ac318b8f19` | categories=CATEGORY_PROMOTIONS | signal=snippet_matter_number | subject=Vroom! Drive traffic to your site.
+- `19035f65292d070f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Last chance to save $1,000 per family
+- `19035bb7759072be` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Tax Time for Triumph! Navigating Tax Implications When Selling Your Business
+- `1903118a706cf006` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Legal Ledger June 2024
+- `190305f9248a1a11` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Start California dreaming
+- `1902c320e897e49c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Conquering Stress: A Lawyer's Guide to Staying Balanced
+- `1902617a3fa61e14` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Join us tomorrow for our product launch!
+- `19025dad8ddc2599` | categories=CATEGORY_PROMOTIONS | signal=none | subject=3 ways to boost your productivity at work
+- `19025a53ce023258` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Our Father’s Day Sale ends today: don’t wait to lock in these savings!
+- `1901f174ca529963` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Email marketing: win hearts, minds + wallets
+- `19017c402417fb1d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Webinar: Faster, clearer documentation with Loom AI
+- `190177c125195994` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🎁Summer Just Got Hotter: Score Big with Clio Draft's Weekly Giveaways & Grand Prize!🎁
+- `190177b8e420e26a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, invite your team to Slack
+- `19015a33479e0f67` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Made you look 🥰
+- `190123a3959225df` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Take it from Jim: Consultations pay off! 
+- `1901222550eebe0b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Unlock the Power of CaseMap® Cloud this summer
+- `190121e07349f453` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[SALE] Act Fast! Father's Day Deals Ending Soon!
+- `19011b0896b167cf` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Negotiation Ninja: Mastering the Art of the Deal for Your Canadian Business
+- `1900f1942fbe0cfd` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What do you think of Asana?
+- `1900d06568666a6c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Simplify Document Exports with Primafact 6 Portal Uploads
+- `1900c924e89d858c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your guide to getting started in Slack
+- `1900bf4f989264bb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Father’s Day savings are still on! Don’t wait, book now.
+- `1900930ce1947525` | categories=CATEGORY_PROMOTIONS | signal=none | subject=     Find the best gift for Father’s Day
+- `19004ac1cbe25850` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What john and the printing press have in common
+- `19003269b8f80c4b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Important: You’re now part of the free Starter Plan
+- `190031e75b9ee570` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Book your Ontario Reports ads in colour and pay the b&w rate
+- `19002b7315020679` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Please take this quick survey from LawPay
+- `19002aafd14abad8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[SALE] Skyrocket Your Sales This Father's Day!
+- `18ff5122845e2b93` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Pre-order the new Surface Pro
+- `18fdf1d590aff297` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Finish up your travel plans to Tokyo
+- `18fc5c9549a1da54` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Science Behind the Art of Marketing - What you need to know!
+- `18fc5aeb319c4361` | categories=CATEGORY_PROMOTIONS | signal=none | subject=New: Xbox Wireless Controller - Fire Vapor Special Edition
+- `18fc5065b4e1af02` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your Invited: The LIZ Summer Social 🥂
+- `18fbff07701cfadd` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Revolutionize Your Practice: The power of Technology in Law
+- `18fbad3128a3d536` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, are your looms looking blah?
+- `18fbabd58d1262b0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=It’s time for your plans to Tokyo to really take off!
+- `18fac3fa694df68d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Save 20% on Xbox Series S (Certified Refurbished)
+- `18fa0d24fedf9c94` | categories=CATEGORY_PROMOTIONS | signal=snippet_matter_number | subject=[SALE] Gator Sized Savings...
+- `18f9daf5fa1affcf` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Introducing new Copilot+ PCs from Surface
+- `18f9cdff9ecf7040` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Ask us anything at the upcoming Coffee with LawPay!
+- `18f9bf134d8f6601` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Create a Positive Culture and Watch Your Firm Thrive
+- `18f9bb8cc3b9530d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What's New in Legalboards 🌟
+- `18f9b7d7d8aa9136` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Last chance to register for Canva Create 📣
+- `18f86cca5a47f77f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Docket: May 2024
+- `18f86c19753f85be` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How is the US Doing? The Big Dichotomies
+- `18f83e03e9892ef6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Keep your Mother's Day memories safe
+- `18f83df7471f37fb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Celebrate Global Accessibility Awareness Day with Microsoft
+- `18f82253390d4aa5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How to build trust in dataspaces
+- `18f820bd151a7ce0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=MAP Lifelines Newsletter - May 2024
+- `18f818273cfb32c9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Ready to Hang Up Your Hard Hat & Grab a Maple Mai Tai?
+- `18f7cd30ff4649fc` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Build business process diagrams with Lucid pros
+- `18f74ce4078ab413` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Effortlessly map out your flowcharts with Quick Flow
+- `18f72bae5f55be53` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Legal Ledger May 2024
+- `18f6298668579b9f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Max Discover Financial Fitness for Business Sale Success!
+- `18f5e64fc2eab4ec` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Introducing Fund Administration by PaperOS
+- `18f5dff3a8b63b22` | categories=CATEGORY_FORUMS | signal=none | subject=MAY 14 2024 CBA ILS Climate Disclosure Symposium - REGISTER NOW
+- `18f5ddfd1cabd67b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[50% Off Online Store] Hurry up to help your customers and your profits!
+- `18f5dbbfe27b46f0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Discover how to build effective business process diagrams
+- `18f5965ab0c251ed` | categories=CATEGORY_FORUMS | signal=none | subject=REGISTER NOW: CBA - How Can the Trade Commissioner Service Help You and Your Clients? May 15th
+- `18f588520b316c84` | categories=CATEGORY_PROMOTIONS | signal=none | subject=5 ways Clio Draft saves you time
+- `18f53e65c222158f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Family or Law Firm Leadership? Can't You Do Both?
+- `18f4065141a4bece` | categories=CATEGORY_PROMOTIONS | signal=none | subject=matthew, Take your SharePoint skills to new heights
+- `18f3ee0fedd005a0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=New AI & Legal Tech Section  |  Ontario Reports
+- `18f3557eb958dbcf` | categories=CATEGORY_PROMOTIONS | signal=snippet_matter_number | subject=[Limited Time] Save money on a website analysis for Small Bussiness Week!
+- `18f34f4577c4cda1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Inside: Competitors Leveraging Your Brand to Build Their Business.... 
+- `18f34c4a6227e9a7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Will private equity deals rebound this year?
+- `18f3477dbc52e5ad` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Managing change and successfully onboarding new technology
+- `18f2b0b408ed0d68` | categories=CATEGORY_PROMOTIONS | signal=snippet_matter_number | subject=[25% OFF] Celebrate Small Business Week with a website analysis!
+- `18f1abfcd25bd3c8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[LAST CHANCE] This month's referral offer is about to expire
+- `18f168c4add9798c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=LAWPRO 2023 Year in Review
+- `18f158112db7b9ac` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What’s new: April 2024
+- `18f15581e2813243` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Due Diligence Efficiency Check: Streamlining Your Operations for Top Dollar
+- `18f106bc570baa8f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Efficiency, unlocked: Hidden MS Word tips for lawyers
+- `18f0c6dec641546b` | categories=CATEGORY_FORUMS | signal=none | subject=CBA WEBINAR - AI: Its Uses, Pitfalls and Everything in Between, for Health Care Professionals
+- `18f0bdac040e9371` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Unleash Your Potential: Essential Branding Strategies for Law Professionals
+- `18f0bb08981e7a60` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, here's your weekly Pocketed updates!
+- `18f0b5af8500ef17` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Embracing technology to grow your practice 📈
+- `18f0ad4383a56306` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You're invited to Asana events in Toronto
+- `18f07050ece3bf35` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Celebrate Earth Day with savings
+- `18ef74eb725c0c47` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Flash sale: Double your Clio referral bonus!
+- `18ef261f5ab263fe` | categories=CATEGORY_PROMOTIONS | signal=none | subject=CPD on May 2: Unlocking Real Estate Wisdom
+- `18eec6000f4fb5aa` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, feeling stressed? You’re not alone.
+- `18edd49194ca6975` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Fact v. Fiction
+- `18ecdd53048df27c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=LIZ Newsletter: April 11, 2024
+- `18ecd1b0a68612b3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Max Unlock Your Business's Full Potential
+- `18ec9476fb387024` | categories=CATEGORY_PROMOTIONS | signal=none | subject=New Surface for Business devices are here
+- `18ec892aa9b6d4fd` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Keep Teams Focused with Primafact 6 Document Discussions
+- `18ec8523ed9fc841` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Increase profitability with legal document automation
+- `18ec62e6ced12d5b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=     Don’t forget to back up your devices
+- `18ebfc4dd55a00ca` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Spring Sale deals on now
+- `18ebe7127c19d70d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What’s new in Clio, you ask?
+- `18ebce2da6ff7169` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Important] Dear customer  your recent Amazon order 701-2285632-5722639
+- `18eae9db0f941ec4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Design and launch unique websites in minutes
+- `18ea9d8a3288b684` | categories=CATEGORY_PROMOTIONS | signal=none | subject=See who’s taking the stage at the #1 conference in legal
+- `18ea523fde4047b7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=📣 Introducing Calendly’s first Masterclass Series: The Art of ‘Cold to Closed’
+- `18ea4f6de1ed590a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get the Latest Small Business Insights
+- `18ea446ddd68077e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What law firms gain from document automation
+- `18e9f8d407523467` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Answer to Why I Invest in China
+- `18e8b5eef5bfd6e9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Insights on the TikTok Ban, Legal Tech Startups, & Public Relations
+- `18e8b4576bc592a6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Calendly Product Update –  March 2024
+- `18e8594c3f223e0f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How to access your referral link—and earn rewards!
+- `18e855fd18edd3cc` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Businesses For Sale
+- `18e8541ebb2a7dd1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What’s new: March 2024
+- `18e8526afdc4f852` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Due Diligence Deep Dive:
+- `18e8087a55fee295` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get PitchBook's guide to sourcing deals
+- `18e803de329a4ff5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Ready to hear from Issa Rae at Canva Create? 🤯
+- `18e7f77664540de5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Newsletter] Collaboration equity for everyone, everywhere
+- `18e7e61df3e30765` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Maxx
+- `18e76d1b6a96cae5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The truth about mental health in the legal profession / La vérité sur la santé mentale dans la profession juridique
+- `18e745a4407abaa1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=marketing template [new version]
+- `18e716a63310bef3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Discover the Articles on My Website
+- `18e6752854e49e4c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Legal Content Writing and Operations Tips, and Motion to Dismiss Strategies
+- `18e671c2cb96a276` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Earn $250 for every referral!
+- `18e665b6556c01c0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Docket: March 2024
+- `18e63e57acee8a6f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Microsoft 365 Copilot: Your Gateway to Modern Work!
+- `18e6234916cefc7e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=CPD on April 4: Succession planning for your legal practice
+- `18e6152ea487a6a8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Take our annual customer survey and you could win $1000
+- `18e611b46f137730` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Big 6 of Due Diligence:
+- `18e5d3d652a17c7a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Round up Your Friends for a Group Experience!
+- `18e5c4f35a25519a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🎁 A Gift from YNAB: here’s your extended free trial!
+- `18e5c2dac2b8a610` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Cut waste, boost productivity: Resources for A+ efficiency
+- `18e57d25b082b1d3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[LAWPRO Magazine] Survival tips to prevent fraud
+- `18e57817c694b54a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You’re about to be so much more productive
+- `18e5705da3ede9e3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Unlock success: A guide to effective legaltech adoption
+- `18e5213608f7fbb3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=😀 $100 Off on Tax Filing with Vexxit's TAXTIME100 Promotion! 👀
+- `18e47fe4c478aac1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=👕👀 YOUR 2024 Kits Are Here!
+- `18e43dcc4b6ac705` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Stop Giving Away Your Expertise for Free: Master Paid Consultations (Exclusive Strategies)
+- `18e4345bd3f78194` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Unlock Insights: Partner Earnings, Expert Witnesses, & Legal Software Evaluation
+- `18e3ed052442d4cc` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Join us for the next Coffee with LawPay
+- `18e3eaea5db7ea28` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Upcoming tax deadline...
+- `18e3e9b4bfc96519` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You're Invited!
+- `18e3e3a366605e4d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=LIZ Newsletter: March 14, 2024
+- `18e3d46357abc82d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=We would love your feedback
+- `18e3a8125d012efc` | categories=CATEGORY_PROMOTIONS | signal=none | subject=First UNRWA, now this? | D’abord l’UNRWA, et maintenant ça?
+- `18e3979fd79f4d2f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Find your perfect device
+- `18e385642910f8e1` | categories=CATEGORY_PROMOTIONS | signal=snippet_matter_number | subject=Better rankings in a snap!
+- `18e3831bde3dc841` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Unlock $100 Off on Tax Filing with Vexxit's TAXTIME100 Promotion!
+- `18e37e9d5b4ed1a1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, you have two days left to apply for a Reisman Award!
+- `18e3778566680cd5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Tell us about your experience with Clio!
+- `18e33a15a56e372b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Webinar] Stop Giving Away Your Expertise for Free: Master the Art of Paid Consultations
+- `18e3367ad7af8318` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⏱ Time is running out to save $1000 on your ClioCon pass
+- `18e2e985e6be819c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Unleash the Power of Microsoft 365 Copilot: Transform Your Work Today!
+- `18e2dcda4664cf8a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Save big this tax season with Vexxit's TAXTIME100 campaign!
+- `18e295059c917494` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Boost Your Productivity: Master the Pomodoro and Flowmodoro Techniques
+- `18e2026db508a426` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Updates to Splunk’s Privacy Policy
+- `18e1f700398606a8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Legal & Financial Mastery: PI Demand Letters, Journal Entries, & Paralegal Checklists
+- `18e1f396edbb64ec` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Apply for a Reisman Award—and a chance at a $15K prize package
+- `18e1f1f3eb8c18ce` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Google Now Charging for Your Brand in LSAs 
+- `18e1f039a53d17ec` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Unlock the Door to U.S. Credit – A Guide for Non-Residents!
+- `18e1e9f32d845b33` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Celebrating the voice of female lawyers / Célébrer la voix des femmes travaillant dans le domaine juridique
+- `18e19a7e0b1f59e2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Clio Brief: Your guide to client collaboration
+- `18e19477946b8c79` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The votes are in! 🎉
+- `18e19445ee4afb9b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Max Demystifying Business Valuation - Know Your Worth!
+- `18e14fba498923de` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Convert Customers with Email Lists & Brand Awareness
+- `18e147f2ad2de428` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🎟 Flex Your Way Through The 2024 Season!
+- `18e0f653be51ac09` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You're Invited: LIZ March Social - Farewell, Hersh ✨
+- `18e0a6d221237d6b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Thanks for trying YNAB
+- `18e0a6a5240f4901` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How Non-Residents Are Getting Rich Starting SMMA's
+- `18e0a338a5f1581f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🥁 …the ClioCon agenda & After Dark venues are here!
+- `18dfb7800b1c5253` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Upwork Values Your Feedback
+- `18dfb637c120cdc5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Elevate Your Legal Practice: E-Signatures, Law Clerk Insights, and Court Motion Mastery Await!
+- `18dfafbae3e02c29` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Non-Residents Must Stop Doing This To Pay 0% TAX
+- `18df6f0cd1a04d81` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Calendly Product Update – February 2024
+- `18df6618d4e08ed7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Unlock tax season savings with Surface for Business
+- `18df5b3d6ccbda6a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=LIZ Newsletter, Feb 29th: Hersh Departing After Nearly 10 Years, Last Chance to Apply for Concept Framework & More
+- `18df59a937e6bd60` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, earn $400 and recognition
+- `18df546160136aa6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What’s new: February 2024
+- `18df530b13c43e98` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Canva Create 2024 is coming 🤩
+- `18df1c5758904173` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Introduction - Ontario Commercial Group
+- `18df1a468dcaaeed` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Tell your MP to keep the Jewish Community Safe from Online Hate | Dites à votre député de protéger la communauté juive contre la haine en lign
+- `18df0a9db71fdd48` | categories=CATEGORY_PROMOTIONS | signal=none | subject=This Closes 90% of Non-Resident's U.S. Bank Accounts
+- `18df0763f504377a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Alert! Your private info is exposed!
+- `18df042a454484a6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Businesses For Sale
+- `18df03e60f811fd4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, don't miss this month's CLE and product webinars!
+- `18de6d3c719810af` | categories=CATEGORY_PROMOTIONS | signal=none | subject=New Year, New Look  |  Ontario Reports
+- `18de136ccc274c2d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Elevate Your Meeting Game: My Ultimate Guide to Effective Meeting Notes
+- `18dd1cc6e640c3db` | categories=CATEGORY_PROMOTIONS | signal=none | subject=A new topic has been created in Solo Lawyers
+- `18da8adb301a335e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Newsletter] Welcome to the February LawPay Letter!
+- `18da62332d4a5c8a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Hello from OpenCorporates - The world’s most trusted source of Legal-Entity data
+- `18d9e46c96bed1ba` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Tomorrow’s webinar: Hit your numbers with the right Calendly plan
+- `18d9e0fa12d0622d` | categories=CATEGORY_PROMOTIONS | signal=snippet_matter_number | subject=SALE! Save money and heartache with a custom site!
+- `18d895dbd0e74d24` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You have one life. Spend it the way you want.
+- `18d85297a88d1005` | categories=CATEGORY_PROMOTIONS | signal=snippet_matter_number | subject=All the goods in one place!
+- `18d841faadae2543` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, don’t miss this limited-time offer
+- `18d7fdb25451fb54` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You’re invited: Find the right Calendly plan to hit your revenue goals
+- `18d7f28b5c565faf` | categories=CATEGORY_PROMOTIONS | signal=snippet_matter_number | subject=Vroom! Drive traffic to your site.
+- `18d7f10fd4c40d77` | categories=CATEGORY_PROMOTIONS | signal=none | subject=There’s no future in fearing your finances
+- `18d7ec446f488b66` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Time is running out 📣
+- `18d7ad490ada9a84` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Want more Canva tricks for your Presentations?
+- `18d7ab3fc0abc233` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Enjoy exclusive savings on Surface Laptop Go 3
+- `18d7a02078f8c376` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Now available: Lucidchart for mobile and tablets
+- `18d74c41e0331d83` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Imagine being ready for sneak-attack expenses…
+- `18d6adaa2cfdf129` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Elevate your Xbox setup
+- `18d6a76d417dc05b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Show your money who’s boss
+- `18d65ae470e7c6a0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Webinar] Is your firm recession ready?
+- `18d601257841ce0b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Hear how much this firm saves in monthly fees
+- `18d5fe90d6cb0d85` | categories=CATEGORY_PROMOTIONS | signal=none | subject=✉️ [Webinar] Product Leaders Roundtable: Insights and Predictions for 2024 and Byeond
+- `18d5c46b071f91c4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Webinar] How to use automation to reduce stress and increase your billables
+- `18d5acb331218696` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Meet LawKPIs at ABA Tech Show 2024!
+- `18d5a843e685dfd7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Can you believe it? You’ve created 1000 Canva designs! 🤯🥳
+- `18d56cfeafd5fd9b` | categories=CATEGORY_PROMOTIONS | signal=snippet_matter_number | subject=We build it. You sell it.
+- `18d564040a50b4af` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Missed Our Webinar? Dive into the Insights Now!
+- `18d54e47ab421a81` | categories=CATEGORY_PROMOTIONS | signal=none | subject=👋 Welcome! 3 Steps to Start
+- `18d4769154653b43` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Calendly Product Update – January 2024
+- `18d46cd38d01685d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Peak performance on a laptop like no other
+- `18d4102ae0168828` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What’s new: January 2024
+- `18d3d62d0691ae8c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=First Mining Files Final Base Shelf Prospectus and  Registration Statement
+- `18d3ca35c9eea9fc` | categories=CATEGORY_PROMOTIONS | signal=none | subject=2024 Strategies, Trends, Tips and Tricks!
+- `18d3c34fce73743d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Are you ready for Data Privacy Day?
+- `18d3c03c64afc17f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, here’s what you’re missing out on
+- `18d36ac09a0abd4b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Legal Odyssey: Your Path to Prosperity Begins with the Right Business Structure!
+- `18d369fa65a75538` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Fastest & most accurate way to draft legal documents
+- `18d2e7a30d40d153` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Only one day left to complete your Asana survey!
+- `18d1df85bb37411d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Elevating Legal Practice: Key Reports and KPIs for Small and Mid-Size Law Firm Excellence
+- `18d1dcb9538ba091` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Collect your print orders in store
+- `18d1d53eb0d87196` | categories=CATEGORY_PROMOTIONS | signal=none | subject=From Chaos to Clarity: Unlock Efficiency in 2024 with CaseMap Cloud
+- `18d1d44fe717b773` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⏰ Extended free trial alert: Try the new Loom AI
+- `18d18ea5ccf09dc8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=With LawKPIs: Elevate Your Practice, Liberate Your Time!
+- `18d187911cefdf87` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Mockingbird Newsletter: Welcome Changes to LSA Reporting
+- `18d1833546392d9e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Binders Made Better in Primafact 6
+- `18d17f6c072019f1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=No credit card fees for 3 months, only with Clio
+- `18d17be73b244f29` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Webinar] Join us tomorrow to increase team participation!
+- `18d129b8014e6199` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Elevating Legal Practice: Key Reports and KPIs for Small and Mid-Size Law Firm Exellence
+- `18d0c7dd4420d590` | categories=CATEGORY_PROMOTIONS | signal=none | subject=my year in review - 2023
+- `18cfa6b9c6d17ccf` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Level up your productivity this year
+- `18cf9cb3fd856b12` | categories=CATEGORY_PROMOTIONS | signal=none | subject=New! Ownr Insurance: Get Protection for Your Business
+- `18cf8f1f5a1fade6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Social Media and Law: Your Key to Client Engagement and Visibility!
+- `18cf8dabf15a8eda` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Promote team engagement with Visual Activities!
+- `18cf48b35d95dac5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=5 easy ways to turn holiday successes into wins this year
+- `18cf3c34e83cc0b7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Docket: January 2024.
+- `18cf02f0be2347d8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Happy New Year from FIPA. Here is your your roundup for a look ahead.
+- `18cf006dd87bb40f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How was your Vexxit support experience?
+- `18cee963328e4147` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Let’s give it up for our finalists 👏
+- `18cead798a1ebcde` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Elevating Legal Practice: Key Reports and KPIs for Small and Mid-Size Law Firm Excellence
+- `18cea3c4290017e1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How do you work?
+- `18cda8d04c5ad055` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Here's your guide on mission statements
+- `18cda8b639d868cb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Here are your Positioning Statement Templates
+- `18cd60ff17b174d4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Announcing the Arrival of Juan Córdova to York United FC
+- `18cd5e5713353723` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Elevating Law Firm Marketing ROI: Insights and Strategies for Success
+- `18cd5bb21ae2c0d2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Updated | OPPI & WeirFoulds LLP Annual Seminar Reference Material
+- `18cd59efd5a9fc22` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Run your Whiteboard sessions with a Timer
+- `18cd534e18b2f202` | categories=CATEGORY_PROMOTIONS | signal=none | subject=2024 is here, is your firm prepared?
+- `18cd1bc2c640d574` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Organize and prioritize customer requests using Tickets
+- `18cd0d93af1c209a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Salanović Signs: York United FC Newest Player
+- `18ccf1b0de175c91` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Newsletter] Lucid’s best of 2023
+- `18ccc142bb49059c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your December Loom Review 💜
+- `18cc76f6a236fc3e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=📈 Onboarding Action Step: Create your first report 
+- `18cbef6d1ea1ada3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=downhill momentum [....fyi, closing today]
+- `18cb6955bdd4e204` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Last chance: Boxing Week Sale ends soon
+- `18cb620ad007001d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🚨 We Miss You at Leads and Buyers - Let’s Fix That!
+- `18cb1cd7984c4fc0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Guide: Automating document drafting with Lawyaw
+- `18cac39f7bc13539` | categories=CATEGORY_PROMOTIONS | signal=none | subject=See the Difference: Enhance Your Skills with Visual Thinking
+- `18ca76cd2eccb993` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Boxing Week Sale starts now
+- `18ca6dafacc7ed65` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Our End of Year Sale is happening! 🚨
+- `18ca6ad77ad8f92c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Reminder: 1 day left for Leads and Buyers Trial
+- `18ca689bcd5dca9f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⏳ Hurry! Only First 100 Users: Year-End Offer on Financial Modeling & Valuation Awaits!
+- `18ca66d2cea177da` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Don't Miss Out on York United's Exclusive Boxing Day Deals ⚽🎁
+- `18ca4241a46b0647` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get the most out of your Canva presentation
+- `18c9c5756dac62cc` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Happy Holidays from York United FC ⛄⚽
+- `18c976cfd347db22` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your Skillshare account is scheduled for deactivation
+- `18c9316a1149cfa6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Happy Holidays from the team at Vexxit ❄️☃️😊
+- `18c92af617d270f2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Exciting News: York United FC's Roster Update ⚽
+- `18c92891468e35f2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Unwrap the magic of a Microsoft gift card
+- `18c91f1cd0ae2268` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Wishing You a Joyful Holiday Season and Prosperous New Year 2024!
+- `18c8e7ba1dc6796d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=First Mining Files Preliminary Base Shelf Prospectus and Registration Statement
+- `18c8e2ba651ecc53` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get started on your next design
+- `18c8db64049965a4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Fourth Big Force: Climate Change
+- `18c8ce6f637c0fb5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get started with Medium
+- `18c8ccd5917cc030` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Unlock Financial Clarity with LawKPIs YoY Billed and Collection Report!
+- `18c89444f53a8ee1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Personalize Your Legal Learning Experience with Our Latest Website Upgrades!
+- `18c8919d411811dc` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Look at all you've done this year in Jasper!
+- `18c88026525bbf3b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Happy Holidays From the LIZ
+- `18c87d44e0151627` | categories=CATEGORY_PROMOTIONS | signal=none | subject=OPPI & WeirFoulds LLP Annual Seminar Reference Material
+- `18c849741b079eed` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Perfect printing, every time
+- `18c8397f91771908` | categories=CATEGORY_PROMOTIONS | signal=none | subject=No named plaintiff, no case
+- `18c8229e54bb437b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=In 12 days the LSO is mandating virtual verification of client identity 🧑‍💻
+- `18c7f14922b650db` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Considering HubSpot? 🙂
+- `18c7e33846a1a202` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Announcing our new range of consultation products
+- `18c7df13df27ac2e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get prepped for the holidays
+- `18c78526b71dd577` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Hypocrisy in Action
+- `18c73d95a0f96e06` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⚫️ Plan your next year in minutes (not hours)
+- `18c6f9381523e966` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Wrap up your holiday shopping
+- `18c6f1e57e7a857e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=3 key moments to follow up on tracked emails 📫
+- `18c6e6fc9ced3445` | categories=CATEGORY_PROMOTIONS | signal=none | subject=ONE400 December Newsletter - Happy Holidays!
+- `18c6e077c2a0a544` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Last Chance: Launch Special Ends Sunday!
+- `18c6dc5a14cd1834` | categories=CATEGORY_PROMOTIONS | signal=none | subject=MAP Lifelines Newsletter - December 2023
+- `18c69b4a991c225c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The secret to document drafting used by thousands of lawyers
+- `18c68ba4075416e2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=It’s not too late! Free express shipping on Canva Print products
+- `18c68b7a582868ac` | categories=CATEGORY_PROMOTIONS | signal=none | subject=2023 Year in Review: Documenting the delightful
+- `18c654a5c23ccf96` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Bring holiday magic to your workplace #CanvaDesignChallenge
+- `18c64dcb63176044` | categories=CATEGORY_SOCIAL | signal=none | subject=Happy holidays from your friends at Osler!
+- `18c64b36078ad569` | categories=CATEGORY_PROMOTIONS | signal=none | subject=We found something you might like
+- `18c64ac8abed48c9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What our customers are saying about Streak AI
+- `18c6452f81c116b1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=My favorite holiday gift—and a chance to win $5,000 to give to a charity of your choice
+- `18c60dd526538462` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Update from Seller on Order ID 701-8308441-1697036
+- `18c605488c39d17d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=It's not too late for your holiday email marketing
+- `18c5faa65ec7fc76` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Submit your Canva Wishlist 🎁
+- `18c5f61310fda66b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Keynote Recording "How to break out of your AI Pilot Phase"
+- `18c5e2097da5478f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏️💎💰 What do mining companies say about Tesla's Master Plan?
+- `18c5a9393f85f766` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Curious kid?
+- `18c597cc92634cca` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Decoding Free Cash Flows to Firm (FCFF): Your Comprehensive Guide
+- `18c594c4bf54cd04` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Beyond Data: Transforming Legal Management with LawKPIs Attorney Capacity Insights!
+- `18c58fc2566fc2f4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏️💎💰 Get ready for an event-filled week!
+- `18c55f84cc58e607` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The tool that took them from $1M to $100M in ~ 3 years
+- `18c4acdadb4fc6a7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Make drafting documents a breeze in 2024
+- `18c465aa2e120d76` | categories=CATEGORY_PROMOTIONS | signal=none | subject=First Mining Closes Final Tranche of Upsized $10.8 Million Equity Financing
+- `18c4650df90bb3fe` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Intersection of Family and Criminal Law | Unlock the LexisNexis® Canada Special Year-End Promo
+- `18c453c8b37f225c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=This happened while I was walking down the aisle (wild story!)
+- `18c3fde8b705516e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=MS Word Lunch Hour Series: create document templates faster
+- `18c3b12cdebbea19` | categories=CATEGORY_PROMOTIONS | signal=none | subject=We found something you might like
+- `18c3af3364862d64` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Tomorrow: Join ONE400 & CollBox's Financial Mastery Webinar
+- `18c3a72ea66dca4b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=First Mining Discovers New High-Grade Gold Occurrences  at its Birch-Uchi Greenstone Belt Project
+- `18c3a15da472f711` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏️💎💰 First Mining - Looking back at 2023  
+- `18c3a0a9e4d9660a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your Gift Makes a Difference Nourishing Those in Need
+- `18c361bfd75451a2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Design and launch a professional Website in minutes.
+- `18c2c2db63cd98db` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your Amazon Prime membership
+- `18c2242cd00a37d0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Calendly Product Update –  November 2023
+- `18c2210d64e04f2b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=4 ways to get around the Gmail file size limit
+- `18c21725499552a6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=We found something you might like
+- `18c212f618c5a6b2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Webinar] Uncover the secrets of your colleagues' success
+- `18c1d59ac8a59151` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⚫️  Going going gone (free 4-day pass)
+- `18c1c1bd50986fc1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=We found something you might like
+- `18c1b2ec655c7573` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Mastering KPI Tracking with LawKPIs and Clio
+- `18c1152512d92582` | categories=CATEGORY_PROMOTIONS | signal=none | subject=There’s still time to share your product management experience! You can complete our survey in just five minutes
+- `18c0c337439ba69a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=All in together. For the hostages. For the people of Israel. For the safety of Jewish Canadians.
+- `18c03255e4cf0498` | categories=CATEGORY_PROMOTIONS | signal=none | subject=51%-off the BEST Sponsorships System today
+- `18bfd230c6ce6974` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Why The Digital Architect is Right For You
+- `18bfc494b8d3f133` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏️💎💰 Will you be the one to save Canadian mining? + more events
+- `18bf973558a69b80` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Reminder: Black Friday Deals just dropped
+- `18bf8a04085e9da7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=oops forgot to tell you about this bonus!
+- `18bf83aa63381f01` | categories=CATEGORY_PROMOTIONS | signal=none | subject=First Mining Closes First Tranche of Upsized Equity Financing
+- `18bf78b85fdf6884` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Don’t forget—assign your first task!
+- `18bf723a7f8bedab` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Do you know what the lithium triangle is?
+- `18bf34a91dfe5bba` | categories=CATEGORY_PROMOTIONS | signal=none | subject=List your Practice for Sale/Practice Wanted in Ontario Reports
+- `18bf3267c63a3095` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How to dream big while not setting yourself up for failure
+- `18bf2a7d72769d70` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Notion 2.35: AI Q&A
+- `18bee3aadb0f699f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=LawKPIs Exclusive Thanksgiving Offer- 15% Off Annual Subscription Fees! - Act Now
+- `18bed3eceb78a8ef` | categories=CATEGORY_PROMOTIONS | signal=none | subject=See which projects your team is working on.
+- `18becd741a11a01d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Liven your week with these panels!
+- `18bec7f046146af3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🚨BLACK FRIDAY SALE🚨 Save 50% on my Upwork Proposal Writing Bootcamp
+- `18be82e2dbe7b05d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Dive into Investment Banking with Our FREE Exclusive Video Series 🚀
+- `18be827c16b95430` | categories=CATEGORY_PROMOTIONS | signal=none | subject=It's not too much to ask, is it?
+- `18be38682712cf69` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🤖 Document your processes using AI
+- `18be37390fa58055` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Xbox Black Friday savings are here
+- `18bdf81b259dba05` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🚨BLACK FRIDAY SALE🚨 Save 50% on my Upwork Proposal Writing Bootcamp
+- `18bdf5c61269b909` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Webinar] Transform Your Law Firm Receivables
+- `18bdf4e8bc1a157d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Want to 2-3x Your Profits and Work Less? Let's Make It Happen!
+- `18bd9222c89315db` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Did your recent Amazon order meet your expectations? Review it on Amazon
+- `18bd3c2fde80f5a5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Power Up Your Litigation Case Prep - Introducing Primafact 6
+- `18bb58a9d2c58446` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Empower Your Firm with LawKPIs Custom Fee Allocation by Origination Report - Know-How?
+- `18bb5237df5d9d49` | categories=CATEGORY_PROMOTIONS | signal=none | subject=BEAUTURAL Electric Nail Drill,...
+- `18bb27db3e8647b4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Traffic light insights: Fast track your growth 🚦
+- `18bb07ec21c002f0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get started with Asana Enterprise
+- `18bb049caee21ee5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Recommended for you on Prime Video
+- `18bb033e89f02d32` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Lawei 6 Pack Tea Tins Canister...
+- `18bb01e0d9c7dd6d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Unlock the power of “social-led” marketing for astronomical growth
+- `18bafe17aeca6051` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The most important piece of advice I’ve EVER received
+- `18bad55eb3128f1e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Uncover the secrets of conversion success 🕵️
+- `18bab4698a1a45ea` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your Opinion Counts in Spotlight Branding's Legal Trends Survey
+- `18bab22824b8fb91` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Why improving your negotiation skills is so worth your time
+- `18bab1b92e7e364d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "Kindness Makes Me Stronger:..." and more
+- `18baacac21cc419e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=In 55 days the LSO is Mandating Virtual Verification of Client Identity 🧑‍💻
+- `18baa8bd5f5ccf0c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Jasper's November Updates 🔥
+- `18ba9e5cfe86b017` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Today's event is 'From Mines to Megawatts: Reaching U.S. Energy Independence'
+- `18ba82f2552ba23e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Time-saving visual reports? Yes, please! ⏱️
+- `18ba6686ace40531` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "Jan & Jul Fleece Winter..." and more
+- `18ba627fe705f9c1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=10+ Must-Have Workflows for Your Legal Operations 
+- `18ba4fcbfdb0b5eb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Connect Streak and Slack 🔗
+- `18ba07b8bf9d525a` | categories=CATEGORY_PROMOTIONS | signal=none | subject="Mini Cordless Nail Drill, KUIIYER..." and more
+- `18b90d88ce13b744` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "Eat Wholesome Organic Coconut..." and more
+- `18b905b2e4dd0c99` | categories=CATEGORY_PROMOTIONS | signal=none | subject=There's still time to join our annual planning webinar on November 9th!
+- `18b90222c85a94ca` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get the Streak mobile app
+- `18b8e379f88457c9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your secret weapon for marketing strategy 🎯
+- `18b8c8fa8b6f7c06` | categories=CATEGORY_PROMOTIONS | signal=none | subject=New from Turing Tumble: Spintronics
+- `18b8c5c6c85d22b1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "OXO Good Grips Silicone Drain..." and more
+- `18b8be953d6e028e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Last chance to register] TOMORROW is Coffee with LawPay
+- `18b8ac9ead0a442d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=October recap: Don't say goodbye just yet
+- `18b898c2e7b01f4a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Nov 2023 Planner + Noosa Tri bucket list
+- `18b891122c8489cb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew take these 100+ funnel templates 📚
+- `18b876b627231b0a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Binchotan Charcoal from Kishu,...
+- `18b8702b8b104409` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Simplify Your Law Practice with LawKPIs: Watch the Demo Now
+- `18b85656f5651be6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=YOU ARE INVITED to Thailand ADR Week 2023 and RAIF Conference 2023
+- `18b7ec45f8a4d1b2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=14-day FREE trial + exclusive bonuses 🚀
+- `18b7c5455ad03186` | categories=CATEGORY_PROMOTIONS | signal=none | subject=BNV Kids Sneakers Unisex Boys...
+- `18b777fd365dea6f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your Amazon Prime membership
+- `18b730b6b066e9f7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Unwrap savings and find the perfect Surface
+- `18b72facac0191c8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=100 Pack Blank White Cards and...
+- `18b7106784946ec9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Did you miss this week's top event?
+- `18b6dc7d226763be` | categories=CATEGORY_PROMOTIONS | signal=none | subject=2019 NBA Finals Champions...
+- `18b6daaf9ed9b8e9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, Every successful marketing strategy starts with this...
+- `18b6d96c7a3e7b50` | categories=CATEGORY_PROMOTIONS | signal=none | subject=First Mining Announces $5 Million Equity Financing
+- `18b6cc4a9d8befd8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Register] Join us for Coffee with LawPay
+- `18b6cb8fc3d67def` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The thing about Complexity
+- `18b6c8127c3abb73` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Reminder! Fill Out Our Year-End Survey!
+- `18b6c4dfaea6d70a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=✅ Save your Spot! Join us on November 9th!
+- `18b688bac18815bf` | categories=CATEGORY_PROMOTIONS | signal=none | subject="mi nature Henna Powder (LAWSONIA..." and more
+- `18b6769ceb14b2db` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Expert Tips, SEO Strategies, and More!
+- `18b6354aee57df50` | categories=CATEGORY_PROMOTIONS | signal=none | subject=            Yoto Starter Pack – 7 Kids...
+- `18b5dc30b9cde72b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Video tutorial: send personalized mail merges
+- `18b5d141d2fec8c7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew - It's about TIME
+- `18b5d0d22506bf58` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Make your voice heard: 2023 Year End Survey!
+- `18b58bf4e8ad895b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Perplexus GO! Spiral, Compact...
+- `18b4e744ee406aa2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew Levine, will you rate your transaction at Amazon.ca?
+- `18b4d6346417998b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How to keep valuable prospects
+- `18b48b7b5f01b647` | categories=CATEGORY_PROMOTIONS | signal=none | subject=LIZ Newsletter Oct 19th: Save The Date! LIZ Announces AI & Tech in Law Event
+- `18b3894cd3c02b5a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Automatically add emails to your box 💫
+- `18b34df45aee17b2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Do you have questions about HubSpot?
+- `18b3411e9c0c8953` | categories=CATEGORY_PROMOTIONS | signal=none | subject=10 Proven Strategies to Conquer Inbox  Overload
+- `18b2faccea87348b` | categories=CATEGORY_PROMOTIONS | signal=none | subject="Andake Kids Ski Mittens Winter Warm..." and more
+- `18b2a495e148e191` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Watch on demand | Remote working and jurisdictional issues for Canadian employers
+- `18b25d36a086fc59` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What can you do with your new box?
+- `18b25386aa413f14` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Need help with Streak? [ACTIONABLE]
+- `18b20beb7bdeceae` | categories=CATEGORY_PROMOTIONS | signal=snippet_matter_number | subject=NEW 10-Day CEO Upgrade 🎉
+- `18b2050aa06491b3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The LSO is Mandating Virtual Verification of Client Identity 🧑‍💻
+- `18b1fa4967cb176a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Invitation | Webinar: 2023 Technology, Privacy and Cybersecurity Summit
+- `18b1f5d83793804b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Elevate Your Small Business with Tech: Tips and Resources Inside!
+- `18b1b5c6fa59ce3c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=A new Forza Motorsport is here
+- `18b1b2caa70b9ff1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "KAMUGO Kids Bike Helmet,..." and more
+- `18b1ade6a233e1f5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Final Reminder - Tomorrow @12pm ET: International Patent Law for In-House Counsel
+- `18b1a37e429ecd14` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Updates to our Terms of Service and Privacy Policy
+- `18b197b66a16b1ef` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏💎💰 Want More News?
+- `18b1050d9a97df9a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Maxjuli 3 Pack Blue Light...
+- `18b0cc370791350e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Israel is at war
+- `18b0b22642964dbb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=MOLSHINE Double Glasses...
+- `18b09e21216eb129` | categories=CATEGORY_PROMOTIONS | signal=none | subject=“What's been working well for me this year?"
+- `18b081ff70c2c911` | categories=CATEGORY_PROMOTIONS | signal=none | subject=We’re updating our Terms of Service
+- `18b0663a2a135a9f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Stonz Winter Toddler Booties -...
+- `18b065d3b020fcdb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Investor Newsletter – Events | Media | News
+- `18b0146ffd80ef09` | categories=CATEGORY_PROMOTIONS | signal=none | subject=TONWHAR Baby Boy's Girl's...
+- `18b00833af587c16` | categories=CATEGORY_PROMOTIONS | signal=none | subject=LIZ Newsletter: October 5th
+- `18affbc22b5fbee3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏💎💰 What Influenced Your View?
+- `18afd401d6de35b6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=They didn’t just face antisemitism. They fought it.
+- `18afc37d0814ac62` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "Sandwich Cutter and Sealer -..." and more
+- `18afbfcd48a2a1ae` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Recommended for you on Prime Video
+- `18afbe5f65f08b1b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Free Checklist: 10 Steps to Assess Contract Risk
+- `18afbc4861fb83c3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=✨Kickstart Small Business Month with these exciting opportunities
+- `18afbabe3337c23f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Accelerate Your Legal Success with CaseMap® Cloud
+- `18afb400e5b2d9b2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Introducing Coda 4.0!
+- `18afb39fbbf1994a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Join us at ClioCon next week in Nashville
+- `18afa943f03a763e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏💎💰 Favourite Commodities Revealed
+- `18af776c17dc0fed` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Reminder: Please participate in our compensation survey!
+- `18af76f0452d17e8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Ready to shop: new Surface Laptop Studio 2
+- `18af6fbbc6708dad` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "Eat Wholesome Organic Italian..." and more
+- `18af6b79654ce8c7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How AI is transforming productivity
+- `18af6b71adbf3361` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Final Reminder! Tomorrow @12pm ET: Leveraging AI for In-House Investigations: Learn How to Streamline Internal Investigations with Clearbrief AI
+- `18af572972418c25` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏💎💰 Calling All Mining Enthusiasts!
+- `18af24c7f78bc16e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Sign up for IHC Virtual Networking Sessions!
+- `18af21a0a22bbfaf` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Admin Notice: Asana Intelligence AI features + new admin controls
+- `18ae218e3388b8ec` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Next week: Leveraging AI for In-House Investigations: Learn How to Streamline Internal Investigations with Clearbrief AI
+- `18add850eda1b87d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Grow your Law Firm with Norm Bacal: A Free BCSOS Webinar
+- `18add7fe6c27e667` | categories=CATEGORY_PROMOTIONS | signal=none | subject=SoCozy Kids Swim 3-in-1...
+- `18add3763d9ac411` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Free eBook — How to Automate Your Law Firm with Lawyaw
+- `18add121792a9c13` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Help us create transparency in compensation for legal roles
+- `18adcfb3bc5bd1fc` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Sneak peek of San Francisco ProductCon Speakers 👀
+- `18adcdd113b4949d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Exclusive pre-order savings at Microsoft Store
+- `18adbae982d8d8db` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏💎💰 Discover New Mining Experts From Your Peers
+- `18ad97f4cb94f363` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Did your recent Amazon order meet your expectations? Review it on Amazon
+- `18ad93296abc93bc` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What better way to start 5784
+- `18ad8286c909a944` | categories=CATEGORY_PROMOTIONS | signal=none | subject=LEGO City Police Station Chase...
+- `18ad7f04ae9d37e7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Final Reminder - Tomorrow @12pm ET! CLM for Small Law Departments: How to Manage Contracts Without Expensive CLM Technology
+- `18ad73e299fe6264` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Register] Join us for Coffee with LawPay TOMORROW
+- `18ad72c58dde1cb7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Countdown is on for Marketing Success Season 2023: Turn Clustomers into Customers
+- `18ad6a60b6881e97` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Newsletter] Productivity you can see
+- `18ad6886fb3363df` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏💎💰 Share Your Top Mining Expert With Us!
+- `18ad2b3a22667b74` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Join the waitlist: Calendly’s AI solutions
+- `18ad2b31d1a7cdcf` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Final Reminder - Tomorrow @12pm ET: Generative AI for In-House Counsel: Lessons Learned and Practical Applications
+- `18ad258aacddca98` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Band-Aid Brand Adhesive...
+- `18ad1e9ceb6cee98` | categories=CATEGORY_PROMOTIONS | signal=none | subject=All about work-life balance
+- `18ad1e08d66820c4` | categories=CATEGORY_SOCIAL | signal=none | subject=Your Osler.com subscription preferences
+- `18ad160485ec90d6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏💎💰 Junior Silver Hunt: Your Winning Choice
+- `18ace2cdb97f3cc0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Mailchimp’s 150+ new features can help grow your business
+- `18acd83b1ebc23c4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Final Reminder - Tomorrow @12pm ET: Evolving PFAS Trends and Industry Impacts: What In-House Counsel Need to Know
+- `18acca42e7e297cd` | categories=CATEGORY_PROMOTIONS | signal=none | subject=1 page marketing strategy
+- `18acc393dae86e87` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏💎💰 Shine a Spotlight: Your Preferred Junior Silver Miner?
+- `18ac89af8c53ec82` | categories=CATEGORY_PROMOTIONS | signal=none | subject=HOVERFLY KH1 Kick Scooter, PU...
+- `18ac3908aeaffb54` | categories=CATEGORY_PROMOTIONS | signal=none | subject="BROTOU 2 Pack Snowproof Backpack..." and more
+- `18abe1252792d49b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=FREE Resources to Help You Land Your First PM Job 🎯
+- `18abd31e72a12d57` | categories=CATEGORY_PROMOTIONS | signal=none | subject=50+ marketing template library (---> bookmark this page)
+- `18ab98e03a6f4a50` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get leads to buy FASTER
+- `18ab8eeac9473359` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Next week! Generative AI for In-House Counsel: Lessons Learned and Practical Applications
+- `18ab8d915ac7fc92` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Notion 2.33
+- `18ab8b396ebc1ac1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Final day to join us
+- `18ab7e4f45c039c7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏💎💰 An Overhyped Commodity?
+- `18ab40c5cfd0a28d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Free tickets to ‘Gen V’ screening in theaters
+- `18ab3dcfcd6125c7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Ultimate Guide to Your Digital Marketing Strategy
+- `18ab3d61b27f1c85` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Next week: Evolving PFAS Trends and Industry Impacts: What In-House Counsel Need to Know
+- `18ab2fffb9b03886` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The knowledge you need to succeed this selling season—a free virtual session
+- `18ab27b2d5c11584` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Join us next week!
+- `18ab098dcad14ae6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew Levine, will you rate your transaction at Amazon.ca?
+- `18aae9948c23790a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Final Reminder! Tomorrow @12pm ET: CLM Fundamentals for In-House Counsel: Key Considerations When Evaluating CLM Solutions
+- `18aad5462617c40b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏💎💰 Beaver Creek: What Caught Your Attention
+- `18aacef265c162bb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Exciting News to Share With You!
+- `18aab66b333873db` | categories=CATEGORY_PROMOTIONS | signal=none | subject=I think you need this, Maxx...
+- `18aaa29c73a878a0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew L., a fellow customer has a question on  HOXHA Kitchen 1.5 Quart and 2...
+- `18aa925475b7a543` | categories=CATEGORY_PROMOTIONS | signal=none | subject=TONWHAR Unisex-Baby Costume...
+- `18aa82b500dd21fe` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏💎💰 Gold's Future in a Changing Financial Landscape: Your Vision?
+- `18aa4626f7410060` | categories=CATEGORY_PROMOTIONS | signal=none | subject=            Anita’s Organic Mill - Organic...
+- `18a9a89a1863083b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Shop Xbox, Surface, accessories, and more
+- `18a9a2aed0e2a9b7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Webinar Invite: Clio's Joshua Lenon Talks Legal Trends...  
+- `18a99efaf4b66163` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🤩 One payment. Lifetime access. 70% off. ENDS TOMORROW ⏳
+- `18a99430b522631e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Did your recent Amazon order meet your expectations? Review it on Amazon
+- `18a957490ee224ed` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Pure Organic Herbal Heena...
+- `18a94ef6f148d134` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew Levine, will you rate your transaction at Amazon.ca?
+- `18a94a44b605eb0c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Open new doors with $100 off Coursera Plus
+- `18a945ecd5358cf5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⏰ 70% OFF - Lingopie Exclusive Offer 👇
+- `18a9394f172ecdfb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏💎💰 Reminiscing Your Mine(d) Love
+- `18a92925bdbfbef9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How likely
+- `18a90e288e10b211` | categories=CATEGORY_PROMOTIONS | signal=none | subject=National Post Signs on as Media Partner for Antisemitism: Face It, Fight It
+- `18a8fbabcf2456dc` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Bike Cable Locks
+- `18a8fa35af127707` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Recommended for you on Prime Video
+- `18a8e6ebb8a0d226` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏💎💰 Your First Love in Mining
+- `18a8b201a2c38e73` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "Carson Dellosa | Spring..." and more
+- `18a8a6f589fee22c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Discover the Power of Centralized Case Management with CaseMap® Cloud
+- `18a89ff3378a3ef6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Using AI to improve your marketing—a free virtual session
+- `18a89ecc73281886` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Sponsorships Webinar - we start in 3 hours!
+- `18a894b0bf8df2e6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏💎💰 Catch Up on the News
+- `18a8420adf2ef447` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏💎💰 Market Shake-Up: Did Recent News Affect Your Portfolio?
+- `18a80a2c8d4bc43a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Compostable Trash Bags, 2.6...
+- `18a75842be3c1ccf` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Newsletter] Welcome to the September LawPay Letter!
+- `18a708f8dab74edf` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Chart your career course: $100 off Coursera Plus
+- `18a701eb9134bd47` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your free sponsorships guide
+- `18a6fd89df992cee` | categories=CATEGORY_PROMOTIONS | signal=none | subject=First Mining Announces Positive Preliminary Economic Assessment  for the Duparquet Gold Project, Quebec, Canada
+- `18a6ba34272cd160` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Recommended for you on Prime Video
+- `18a6a637a43a80eb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏💎💰 Setting Foot in Junior Mining
+- `18a658b5e978f938` | categories=CATEGORY_PROMOTIONS | signal=none | subject=✉️ [Webinar] Prioritizing Outcomes with Your Product Strategy
+- `18a4208d4aa6b371` | categories=CATEGORY_PROMOTIONS | signal=none | subject=New and improved: Calendly Routing
+- `18a41a00be4e656b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=*CORRECTION* ⛏💎💰 Is There Ever Too Much?
+- `18a416ada14e9743` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Docket: August 2023
+- `18a4134dcd3505b7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏💎💰 Is There Ever Too Much?
+- `18a3d30f21143f4d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Share your expertise for a survey on Lawyers, Artificial Intelligence, and Technology
+- `18a3c0b80957f37d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=⛏💎💰 Mapped Attraction: Junior Mining Nations by You
+- `18a3341f30c5d124` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew’s last chance…[VIP Bonuses]
+- `18a32edc6d81a865` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Ravensburger Map of Canada...
+- `18a2b2458a9d9e9c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Last chance to secure your YouTube success
+- `18a293b5d32dda1b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Enjoy 25% off Surface Pro 7+ bundle
+- `18a2930c4bd27e17` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The YouTube secrets vault is closing today
+- `18a2928c64bc7793` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Canada Activity and Fact Book:...
+- `18a28cb221cb247a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Limited time offer] Get MyCase with no monthly fee
+- `18a28a4fcc7929ee` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Product management is changing—are you ready?
+- `18a2662b54e0654a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Working smarter with AI
+- `18a2379c7dacbd40` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Opportunities for online merchants and holiday shopping insights
+- `18a1eb2623575583` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Loom AI Suite is launching next week 🚀
+- `18a1e70fc9e6ee1e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🚨 Wait, something's missing Matthew...
+- `18a13e95e4a4a7a1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Sunlight 2457633 Sunlight...
+- `18a0a1c8dfd35121` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Ace the semester with Microsoft 365
+- `18a0930a011dca06` | categories=CATEGORY_PROMOTIONS | signal=none | subject=ProCourse #2 - What kind of VA (OFS) should you hire first?
+- `18a04ee6ca370f51` | categories=CATEGORY_PROMOTIONS | signal=none | subject=SUNDHED Sea Salt Coarse, 750 Gram
+- `18a0003044bd480d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Webinar: Integrating Document Automation into Your Firm's Workflows
+- `189b233010c2e293` | categories=CATEGORY_PROMOTIONS | signal=none | subject=ONE400 Perspectives - July 2023
+- `189a42de7e48c245` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your block limit is only the tip of the iceberg
+- `189a35ac52589ac2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "INVIHUG, 25 Pack, Disposable..." and more
+- `18998aefbd6f63dd` | categories=CATEGORY_PROMOTIONS | signal=none | subject=50 Custom Stickers with Name...
+- `18997990cf4f9a75` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Notion for operations teams (7/7):
+- `18992bec518fe62c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[REMINDER] LawPay: Your feedback requested
+- `1898e379b20c04cb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How are lawyers getting paid in 2023?
+- `1898d4c50e254136` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Notion for operations teams (5/7):
+- `1898d0b3fba84179` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get a big-picture view of every big decision
+- `189895f42c978cbe` | categories=CATEGORY_PROMOTIONS | signal=none | subject="UltraSwim Chlorine Removal Shampoo,..." and more
+- `1898825f4e8a784a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Notion for operations teams (4/7):
+- `18983f40c1d2d62f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Yupik Mediterranean Coarse Sea...
+- `189837f631cfd1e0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Prioritize Tasks: 4 Strategies for Boosting Productivity
+- `1897f0fee167e90c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Ultimate Game Sale is on now
+- `1897e705967886e5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Ultimate Book of Water
+- `18979e6c6a8454f0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=(Madeleine) - Webake Silicone...
+- `18977b209b0b04cc` | categories=CATEGORY_PROMOTIONS | signal=none | subject=ขอเชิญเข้าร่วม "หลักสูตรการบริหารจัดการความขัดแย้ง ครั้งที่ 14"
+- `18974efbf53756d3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Water to Go Water Purifier...
+- `189739c9e1f5a0e6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[TODAY] Mastering the 4th Industrial Revolution
+- `1896f91163c82077` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "A First Sudoku for Kids Ages..." and more
+- `1896a2da0df40d34` | categories=CATEGORY_PROMOTIONS | signal=none | subject=In Hot Pursuit Of ISO? Or Want To Hop On Our Tour?
+- `1896a1166f6fd99a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=TRISWIM Kids Conditioner for...
+- `18965525785c1087` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Sinceroduct puffy stickers for...
+- `1895fdbfc8f09ef1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Watch 'Jack Ryan - Season 4' - All episodes are now available on Prime Video
+- `1895036a9746960d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=New at Zoom: Continuous meeting chat, generative AI, and more
+- `1894ba92c4b4a66f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Dreamforce early bird pricing ends today!
+- `1894b44de25a1e25` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "Crayola Ultra Clean Washable..." and more
+- `18940c18968cc351` | categories=CATEGORY_PROMOTIONS | signal=none | subject=HARDY BOYS STARTER SET, The...
+- `189408a845c35b85` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew Levine: you have an unused Prime benefit
+- `1893bf50e0213b43` | categories=CATEGORY_PROMOTIONS | signal=none | subject=BELEEV Scooters for Kids 3...
+- `1892e365b39f8376` | categories=CATEGORY_PROMOTIONS | signal=none | subject=24 hrs left 🎁 (to use your discount)
+- `189290ff7e63a3ca` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Sale Inside: Up to 40% off for all plans 🎁
+- `18922f5f4b96b0ec` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You're in! Welcome to Asana
+- `1892243202219b8c` | categories=CATEGORY_PROMOTIONS | signal=none | subject="Fawn Toys 3-Wheel Junior Kick..." and more
+- `1891cf4d4fb75a02` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How Salesforce Sales Leaders Use GPT to Accelerate Growth
+- `189176c355e22b76` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "Sudoku for Kids: 4x4, 6x6,..." and more
+- `1890dad2452772dc` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Learn to Read: A Magical Sight...
+- `189080a2bf27b665` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Coming Soon to Prime Video
+- `189030df10de1387` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Dreamforce early bird pricing ends soon
+- `188fda03a95e83e7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "Amazon Basics D-Ring Binder -..." and more
+- `188fbc14ca287b02` | categories=CATEGORY_PROMOTIONS | signal=none | subject=ขอเชิญเข้าร่วม "หลักสูตรการบริหารจัดการความขัดแย้ง ครั้งที่ 14"
+- `188d840b05c0d0ae` | categories=CATEGORY_PROMOTIONS | signal=none | subject=It's our 20th birthday. Time to celebrate…you!
+- `188d51554d09785f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "Mountain Warehouse Exodus Kids..." and more
+- `188d294fc064824e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Webinar: Do More with Less in the New Era of Work
+- `188ab6b6fb14b9c8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=ToBeInStyle Women's...
+- `188a687f92d950b2` | categories=CATEGORY_PROMOTIONS | signal=none | subject="Baby Car Seat Neck Cover, Car Seat..." and more
+- `188a61bf3d5f17f5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew Levine,  see what's new
+- `18895ad602bac515` | categories=CATEGORY_PROMOTIONS | signal=none | subject=New Lucid features to streamline visual collaboration
+- `18882bc518ce4905` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "GoBIO! Organic Beef Bouillon..." and more
+- `188782805ac0d948` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get on privacy’s practical side with CIPM training
+- `18872fda4d4c0b6e` | categories=CATEGORY_PROMOTIONS | signal=none | subject="Sistema to Go Collection Salad..." and more
+- `188728dc7c36b101` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Discover skill solutions for businesses, universities, and governments
+- `1886e42c65afdf5f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Updates to our Privacy Policy
+- `1886dfe30352a367` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Popsicle Molds, BPA Free Food...
+- `1886dde4d3ac5a33` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Creating a more accessible world
+- `1886da16433560b1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=ONE400 Newsletter May 2023
+- `1886a589079e781f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "Nite Ize LSBA3-29BG-R6 S-Biner..." and more
+- `1886808dea542653` | categories=CATEGORY_PROMOTIONS | signal=none | subject=It’ll Soon Be Gone Forever.
+- `1885dfe48441f801` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "Cardinal 3 Ring Binders, 1.5..." and more
+- `1885d8aed28f2843` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your recent order from Merzan (Amazon order: 702-5289363-9538634)
+- `18858deebbde8b42` | categories=CATEGORY_PROMOTIONS | signal=none | subject=View this week's top deals
+- `188585ee08940047` | categories=CATEGORY_PROMOTIONS | signal=none | subject=New for you: Deploying the circular economy within organisations
+- `187ec396c3a4a7d8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=New for you: Monday for Beginners: Create a project
+- `187e983438a091ad` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew Levine, will you rate your transaction at Amazon.ca?
+- `187e8bf242bd5ee9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "Trivial Pursuit Decades 2010..." and more
+- `187e7f32c887214f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Be ready with answers when tech and privacy meet
+- `187e7c52e7107fec` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Save on productivity powerhouses
+- `187e70554f263b00` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Early Bird Registration: Risks and Opportunities in Your Deals
+- `187e31ddfef97744` | categories=CATEGORY_PROMOTIONS | signal=none | subject="Neutrogena T/Sal Therapeutic..." and more
+- `187e302f2268a739` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Don’t miss your chance to win Canada Post's Small Business Tales of Triumph Contest!
+- `187e28282e090654` | categories=CATEGORY_PROMOTIONS | signal=none | subject=We’ve updated our Terms and Privacy Policy
+- `187e25a479f59fe9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You’ve completed Foundations of Project Management
+- `187de1c1e5195b55` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Indoor Swing by DreamGYM -...
+- `187dce2dfbaeb714` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Learn from Google, IBM, Meta, and more
+- `187dc5e9c75487d8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Integrate Lucid into your favorite apps
+- `187da9e8d5a8ab39` | categories=CATEGORY_PROMOTIONS | signal=none | subject=ขอเชิญร่วมงานสัมมนา "ผลักดันธุรกิจ E-commerce ไทยไปไกลระดับโลกด้วย ADR"
+- `187d94c73e987264` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Schwinn Perla Womens Beach...
+- `187d622568dba1e4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=White paper: Six steps to build an effective hybrid work strategy
+- `187d32900221e3c3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=ASUS L203MA-DS04, Intel...
+- `187ce85ecf13ac56` | categories=CATEGORY_PROMOTIONS | signal=none | subject="Ziploc Large Food Storage Freezer..." and more
+- `187cdd08d8e3cf61` | categories=CATEGORY_PROMOTIONS | signal=none | subject=View this week's top deals
+- `187c9cbc54829a17` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Did you know your certificate can help you earn a degree?
+- `187c9c98da380e77` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get started with these free courses
+- `187c93d9ee9459d2` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Now streaming on Prime Video: Citadel - Season 1
+- `187c85332e0aae41` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Participate and get the EDC’s Trade Confidence Index insights!
+- `187c6d14dc0dd753` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Hey Matthew, check out the top travel deals for this week!
+- `187c4198e2d2899f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Outsunny 84.75" Trampoline for...
+- `187c3d78f9d22e68` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Asana + OpenAI: New Subprocessor & Opt-In Beta Program
+- `187c375be4041fda` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Discover how this small business transformed their collaboration
+- `187c303d078ad7a5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=REMINDER: Take part in our Lexis Advance® Quicklaw® survey to receive $5 USD Starbucks gift card
+- `187c18b64e238f65` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Evaluate your technology strategy to deliver better ROI
+- `187be56768a90448` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Last chance: 2 months free from Audible
+- `187bd667a08a531d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Stop looking for “a time that works”
+- `187ba20f63f91171` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Backyard Discovery Buckley...
+- `187b9cc3dd0b97f3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Take part in our Lexis Advance® Quicklaw® survey to receive $5 USD Starbucks gift card
+- `187b95e022a383a3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Experience Luxury Living at Its Finest in the Humber Valley Neighborhood
+- `187af4a62b447df3` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Amazon recommends "HBN51 | Minecraft 12" Basic..." and more
+- `187a910db34b7723` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Hill 💬
+- `187a51d82ff7330e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Clarks womens LaurieannStyle...
+- `1879fde0ee58df3b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Canadian privacy pros, quiz your colleagues
+- `1879f2f971e04cc1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You're Invited to Brews and Bytes with Fivetran and Friends
+- `1879b035c12fa0a7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Ziploc Extra Large Food...
+- `187958fc9f755463` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Here’s your mid-week coupon, but you have to use it soon!
+- `18795374cec53170` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Steal The Keys and Unlock Hidden Revenue
+- `1879443171064844` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Collaboration made simple
+- `187913bd55461025` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Last chance to register: Solo and Small Firm Virtual Summit
+- `18790cf5c8ed6073` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Tax Season 2023 - There's still time! (for an extension)
+- `187902c4bcef6822` | categories=CATEGORY_PROMOTIONS | signal=none | subject=$5000 Cash Incentive & Unparalleled Amenities Await
+- `1878e0bc8bc31811` | categories=CATEGORY_PROMOTIONS | signal=none | subject=E-book: Making Hybrid Work Work with Microsoft 365
+- `1878b80e3413746a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Here’s a free coupon to start off your week, expiring soon!
+- `1878461c3f7c5ccb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Would you recommend Pearl Hotel Shinjuku Akebonobashi to a friend?
+- `18780d925f38727e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Zoom is Updating its Terms of Service and Privacy Statement
+- `1878080e09e9176c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew Levine: you have an unused Prime benefit
+- `18747de0aa1278f9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Make the most of your Prime membership!
+- `18718e01fa9ebd7b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Hill 💬
+- `18674de2d3682259` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Masterclass] Drive Business Growth with Lead and Intake Management
+- `1864d38fa1b26383` | categories=CATEGORY_PROMOTIONS | signal=none | subject=You received a direct message from a client
+- `186462c43ffd33c5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Conversations worth having
+- `1863d1c63b1041e7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=S-ZONE PU Leather RFID...
+- `1839a1dd11dca10c` | categories=CATEGORY_SOCIAL | signal=none | subject=George Easton invited you to follow a page in the past week
+- `18396792a05b63ee` | categories=CATEGORY_SOCIAL | signal=none | subject=George Easton invited you to follow ion8
+- `18393a6e7928d749` | categories=CATEGORY_PROMOTIONS | signal=none | subject=The Hill 💬
+- `1838ffe831908309` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Funnel Vision 18: Black Friday, influencers, and mailbox marketing!
+- `1838fd13554ce7b2` | categories=CATEGORY_SOCIAL | signal=none | subject=Andrew Bowyer recently invited you to attend an event
+- `1838f68083eef8aa` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Your Invitation] Now generate marketing images with AI. 😱
+- `1838be252914e6a5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=This #CanvaDesignChallenge is bear-y cute 🐼
+- `1838a33a3c6e79f1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Clio’s must-attend CLE webinars and virtual events
+- `18384d5a23ee1621` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get ready, get set, get organized
+- `18384ae1bdabb311` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Register for tomorrow’s episode of Coffee with LawPay!
+- `183801f2d9804f5e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Upcoming free digital workshops for small businesses
+- `1837fa05e6e0d6e5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How to Create Radically Simpler Security Integration with APIs
+- `1837b724aa139fec` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Ooops, we messed up! 😔
+- `1837aedcd28a5b46` | categories=CATEGORY_PROMOTIONS | signal=none | subject=🗓  Sep 28 - VIP INVITATION: Ask a SOC 2 expert any compliance questions you have (no charge!)
+- `1837acc107939898` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Starts next week! Affidavit Basics and Affidavit Secrets
+- `1837a36230a469b9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, ready to claim your innovation tax credits?
+- `18375cb85617ab01` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Stonz Winter Baby Booties -...
+- `183753ea13b11f59` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your Prime Membership: Matthew Levine, discover the latest in deals and entertainment included with Prime
+- `18370d856a7fffc0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Montessori Early Learning...
+- `18365f71698438dd` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Enrich your work with inclusive imagery
+- `1833787830102c85` | categories=CATEGORY_PROMOTIONS | signal=none | subject={Business Insights} The State of Email Security 2022
+- `18337614ee0dd9b9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[PDF CHECKLIST] More clients for Matthewajlevine in 7 steps
+- `183375f657196595` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Free Cybersecurity webinar series
+- `18337274eee9cb2b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Reminder: Join Us for the Midwest User Group!
+- `18333af0535d7ae6` | categories=CATEGORY_FORUMS | signal=none | subject=RE: CBA Intervention Proposal – Procureur général du Québec, et al. v. H.V.
+- `18332a653ab1a8aa` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Dealing with High Conflict Personalities & Mediating High Conflict Disputes | Last chance for Early Bird pricing!
+- `183323e7f81d118e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, Buy more, save more with Quantity Discounts
+- `1833156fce3c2fb4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Mediation TrainingProgramme in Bangkok, Thailand
+- `1832dcb63eef58a9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your Prime Membership: Matthew Levine, discover the latest in deals and entertainment included with Prime
+- `1832563f06a94d82` | categories=CATEGORY_PROMOTIONS | signal=none | subject=We’re updating our privacy policy and terms of service
+- `18323697b05cd6c9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your ClioCon Guide to the Top Spots in Nashville
+- `1831f29b80b4e963` | categories=CATEGORY_PROMOTIONS | signal=none | subject=This week’s #CanvaDesignChallenge? It’s Corn 🌽
+- `17e9cdbb3bd7fa5d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Thanks for Attending our Legal Tech Series with 4L Academy!
+- `17e9cbff7477dc7f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Get smart in US privacy with Feb.-May classes
+- `17e9cbe2cbd61c9c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Welcome to Athennian, Matthew
+- `17e9c1013b818a7f` | categories=CATEGORY_PROMOTIONS | signal=snippet_matter_number | subject=Guide to the PS Forum + Early Bird Ends Jan 31
+- `179f118805868a14` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What would you do with 10 more hours every month?
+- `179f0456df1d689c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Turn spreadsheets from “Huh?” to “A-ha!”
+- `179eda462e4960d5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=matthew, still trying to make sense of privacy law?
+- `179ecfe8698e47ff` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Law firm growth, marketing, and management in a "new normal" - LexText June 2021 - Week 1
+- `179ec07d077f84cb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Call for Speakers: P+S Forum Fall 2021
+- `179ebed9ff3d262d` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Exclusive Webinar] Ask an Expert: Managing a Post-Pandemic Law Office
+- `179e7b3e631d39cc` | categories=CATEGORY_SOCIAL | signal=none | subject=A new topic has been created in Solo Lawyers
+- `179e76d34c2f1df7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Scaling ABM at Snowflake
+- `179e6fcae13ece04` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Help us bring legal tech products to the market!
+- `179e6d445d777e33` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Castleview] New User Registration
+- `179e6c9101c0afb6` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Learn trends and opportunities for your practice area
+- `178cc4e38fbf0f4b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=KYC Compliance in Online Investigations: Case Study
+- `178cbc369699184e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[CLE-Eligible Webinar] Improving Law Firm Communication
+- `178cbbe8246aecf7` | categories=CATEGORY_PROMOTIONS | signal=none | subject=This month in CBA National
+- `178cbad59d4a42db` | categories=CATEGORY_PROMOTIONS | signal=none | subject=ISO's Game Changing Compliance Standard is Being Released Today!
+- `17352fdda085aafb` | categories=CATEGORY_PROMOTIONS | signal=snippet_matter_number | subject=Atelier Munro Custom-Made Event: Tailoring Starting at $590
+- `17352859546ca457` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Book your summer travel or plan ahead and save 15% on fall travel within Canada
+- `16c4ed8d2f0ebc80` | categories=CATEGORY_PROMOTIONS | signal=none | subject=PacNet #46 – China-Russia Cooperation: Three Implications for America's China Policy Debate
+- `16c4e5b3f5ab1eac` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Achieve more with your Dynamics ERP - Learn How
+- `16c4dc7e26bf4bc4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Finding New Customers with Postcards and Facebook Ads
+- `16c4a50ad7b0f5de` | categories=CATEGORY_PROMOTIONS | signal=none | subject=PacNet #45 - The China Paradox
+- `16a16fb643d21854` | categories=CATEGORY_PROMOTIONS | signal=none | subject=I can answer your question this morning
+- `16a13306a75fafd0` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Which platform drives more social traffic? (pic inside)
+- `16a122baf5eb4873` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Is your review strategy putting your Amazon account at risk?
+- `16a0f3db3e77af50` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, create a post for people visiting "Tokyo Ramen"
+- `16881f779f3de066` | categories=CATEGORY_PROMOTIONS | signal=none | subject=A new Google proposal could render ad blockers useless
+- `1687b4f931efe73f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=DMR: A-TeamInsight.com coming soon, Fenergo self-service solution, OpenFin apps deployment, Refinitiv government affairs
+- `1687a984b68569df` | categories=CATEGORY_SOCIAL | signal=none | subject=UK Bribery Act: 2018 in review, and a few predictions
+- `168442f57c03d52f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Matthew, create a post for people visiting "Tokyo Ramen"
+- `167563f4d4309de1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=ClickFunnels Training and Education Special Offer
+- `167563995f5957e9` | categories=CATEGORY_SOCIAL | signal=none | subject=Four more convictions in SFO investigation into FH Bertling freight contracts
+- `16755c4c893e0094` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Thanks for signing up
+- `16755b6ec86ec60a` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Website Appraisal - A Free Resource for You
+- `16755595dcb4451e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Your input matters: Take our customer survey!
+- `167551300b8f848b` | categories=CATEGORY_SOCIAL | signal=none | subject=Are U.S. colleges and universities complying with the FCPA?
+- `16754a64979e55db` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Operational Change Management Under Brexit
+- `1674f7fd2b4a2ffb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=More great DMR webinars: FRTB, data management across multiple regulations
+- `16746cb8a4c40d84` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Alert: 1 ClickStart Coaching Spot Open Today
+- `16741f9c2ef1725f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Thank new customers with a first-purchase automation
+- `1673dad03f14f0f4` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Request #2008763: How would you rate the support you received?
+- `1673b893b09c331c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=FCA Study: Millions of Brits are too timid to complain
+- `1673785cb622a588` | categories=CATEGORY_PROMOTIONS | signal=none | subject=ClickFunnels Trial ends tomorrow
+- `16728491e517bf39` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Project 3: basic design elements
+- `16736e5e9991f36f` | categories=CATEGORY_SOCIAL | signal=none | subject=Good Business: Should proxy advisers be regulated?
+- `16736e2a91a59392` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Managing 2 businesses with 2 different audiences
+- `16736b1b90085160` | categories=CATEGORY_PROMOTIONS | signal=none | subject=DMR: Fenergo partners Salesforce, OFR promotes data standards, LSE appoints Tom Dunlap
+- `167364cefd4588ce` | categories=CATEGORY_SOCIAL | signal=none | subject=SEC receives 202 FCPA whistleblower tips FY2018
+- `1673142e3c247299` | categories=CATEGORY_SOCIAL | signal=none | subject=SocGen pays $1.3 billion to resolve sanction offenses
+- `16730fe1adf98cce` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Here's what you missed: Client Communication Best Practices for Law Firms
+- `1672e17ddbe3d183` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Request received] end preview: how do i terminate subscription
+- `1671840e19417bb2` | categories=CATEGORY_SOCIAL | signal=none | subject=OFAC adds 17 Saudis to Magnitsky sanctions list
+- `16712e5cbc0e08ea` | categories=CATEGORY_SOCIAL | signal=none | subject=Good Business: Wildfires put the heat on utilities
+- `1670d6b1ba15a61f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=RegTech Summit NYC: 2 days and counting! Full speaker line up announced
+- `166ee103e0873532` | categories=CATEGORY_SOCIAL | signal=none | subject=Conference: The Transnationalization of Anti-Corruption Law (Paris - December 6-7)
+- `166e95ed34a258f1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Join the community of practitioners managing regulatory change at RegTech New York
+- `166e880f582223f9` | categories=CATEGORY_PROMOTIONS | signal=none | subject=DMR Webinars: Don't miss upcoming data management initiatives, and FRTB discussions
+- `166e53e36e862b26` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Pop-up forms when and where you need them
+- `166dab0da5216393` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Grow your audience with Facebook and Instagram Ads
+- `166d111ed32aed42` | categories=CATEGORY_PROMOTIONS | signal=none | subject=5 Tips to Remain Compliant & Profitable with CosmoLex
+- `166d0e685c9d22b1` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[IMPORTANT] Timeline to move users to new Google Contacts and shut down old Contacts
+- `166d019dc5825ef8` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How Reach Records Uses Automation to Succeed
+- `166cec08b3333f8c` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Join us for more great discussions on the latest in Data Management across multiple regulations
+- `166ca775176e3590` | categories=CATEGORY_PROMOTIONS | signal=none | subject=DMR: Data governance, Brexit, MiFID II compliance, financial crime
+- `166c656ce42f4d4e` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Welcome your new subscribers
+- `166c55034edd1d65` | categories=CATEGORY_PROMOTIONS | signal=none | subject=This year's RegTech Summit New York will be here before you know it
+- `166c5167abe0c9a5` | categories=CATEGORY_PROMOTIONS | signal=none | subject=How to speak so your boss really listens
+- `166c4ea7a38d30cb` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Scary good advice for your law firm
+- `166bf4dba165dc29` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Minimising Market Manipulation False Positives: The Trick is in the Data
+- `166bc9a3f17d2d4f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=It started as an online gaming prank. Then someone got shot
+- `166b37d42c969e40` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Thank you for subscribing
+- `166ab4f686134e52` | categories=CATEGORY_PROMOTIONS | signal=none | subject=Here's your video: Client lifecycle management: faster Onboarding, KYC, AML and GDPR processing
+- `16646ab68eb8c33f` | categories=CATEGORY_PROMOTIONS | signal=none | subject=We're So Glad You're Here
+- `1663a04ac4f5a34b` | categories=CATEGORY_PROMOTIONS | signal=none | subject=What You Need To Know About Writing SEO Copy
+- `16636be5ba74ac5d` | categories=CATEGORY_SOCIAL | signal=none | subject=contract and ABAC
+- `16637433d8dc22a2` | categories=CATEGORY_SOCIAL | signal=none | subject=Fwd: 10 Traits of a Strong Culture of Compliance
+- `1661b5e5ec016d95` | categories=CATEGORY_PROMOTIONS | signal=none | subject=[Discover] Top Sellers from September 🏅🏅
+- `165cb7e510ab11c0` | categories=CATEGORY_SOCIAL | signal=none | subject=Debt Crises PDF Orders: Please Confirm Subscription

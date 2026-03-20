@@ -1,0 +1,1912 @@
+{
+  "run_id": "20260314_175012Z",
+  "query": "in:inbox (category:promotions OR category:social OR category:forums)",
+  "summary": {
+    "threads_scanned": 50,
+    "matter_matched": 6,
+    "matter_ambiguous": 0,
+    "matter_review_required": 1,
+    "soft_junk_archive_candidates": 44,
+    "ready_matter_label_adds": 5,
+    "ready_state_label_adds": 5,
+    "blocked_matter_conflicts": 0,
+    "blocked_state_conflicts": 0
+  },
+  "execution": {
+    "executed_count": 5,
+    "executed_threads": [
+      {
+        "thread_id": "19c94d9312f82cca",
+        "added_labels": [
+          "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+          "10_Action_Matthew"
+        ],
+        "approved_by": "ML1 (Matthew Levine)",
+        "approval_artifact": "06_RUNS/approvals/APPROVAL-2026-03-14-soft-junk-matter-labeling.md",
+        "reason": "Apply add-only matter and state labels for high-confidence matter-associated category threads; report soft-junk only"
+      },
+      {
+        "thread_id": "19c94d57ea7f7b6c",
+        "added_labels": [
+          "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+          "10_Action_Matthew"
+        ],
+        "approved_by": "ML1 (Matthew Levine)",
+        "approval_artifact": "06_RUNS/approvals/APPROVAL-2026-03-14-soft-junk-matter-labeling.md",
+        "reason": "Apply add-only matter and state labels for high-confidence matter-associated category threads; report soft-junk only"
+      },
+      {
+        "thread_id": "19c941bb26ebaf1e",
+        "added_labels": [
+          "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+          "10_Action_Matthew"
+        ],
+        "approved_by": "ML1 (Matthew Levine)",
+        "approval_artifact": "06_RUNS/approvals/APPROVAL-2026-03-14-soft-junk-matter-labeling.md",
+        "reason": "Apply add-only matter and state labels for high-confidence matter-associated category threads; report soft-junk only"
+      },
+      {
+        "thread_id": "19c94198f29279a4",
+        "added_labels": [
+          "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+          "10_Action_Matthew"
+        ],
+        "approved_by": "ML1 (Matthew Levine)",
+        "approval_artifact": "06_RUNS/approvals/APPROVAL-2026-03-14-soft-junk-matter-labeling.md",
+        "reason": "Apply add-only matter and state labels for high-confidence matter-associated category threads; report soft-junk only"
+      },
+      {
+        "thread_id": "19c909858970fc63",
+        "added_labels": [
+          "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+          "10_Action_Matthew"
+        ],
+        "approved_by": "ML1 (Matthew Levine)",
+        "approval_artifact": "06_RUNS/approvals/APPROVAL-2026-03-14-soft-junk-matter-labeling.md",
+        "reason": "Apply add-only matter and state labels for high-confidence matter-associated category threads; report soft-junk only"
+      }
+    ]
+  },
+  "threads": [
+    {
+      "thread_id": "19ced5d28cf79d59",
+      "subject": "Ready to elevate your practice?",
+      "sender": "Jordy Atin from eState Planner <jordan@e-stateplanner.com>",
+      "last_sender": "Jordy Atin from eState Planner <jordan@e-stateplanner.com>",
+      "message_count": 1,
+      "snippet": "Thanks for watching our on-demand webinars. To help your practice this year, we have the right resources for you. White logo Ready to elevate your practice? Hello Mathew, Thank you for watching our CP",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19ce8cfd25050487",
+      "subject": "Matthew, Blue Dot Days are here",
+      "sender": "Bell <info@comms.bell.ca>",
+      "last_sender": "Bell <info@comms.bell.ca>",
+      "message_count": 1,
+      "snippet": "Amazing offers spotted. \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f ",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19ce79be95369e67",
+      "subject": "The Latest News For You",
+      "sender": "\"Portage M&A Advisory\" <inquiries-portagemaadvisory.ca@shared1.ccsend.com>",
+      "last_sender": "\"Portage M&A Advisory\" <inquiries-portagemaadvisory.ca@shared1.ccsend.com>",
+      "message_count": 1,
+      "snippet": "You Don&#39;t Want To Miss This. Available Sell-Side Opportunities We represent high-performing founder-owned businesses that are now ready for new ownership. Each opportunity has been thoroughly",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19ce765b5ea71603",
+      "subject": "CPD on April 16: Litigation Pressure Points",
+      "sender": "\"communications@lawpro.ca\" <communications@lawpro.ca>",
+      "last_sender": "\"communications@lawpro.ca\" <communications@lawpro.ca>",
+      "message_count": 1,
+      "snippet": "Dismissals, Settlements, Releases, and File Transfers Please add @lawpro.ca to your safe senders list. Read it online Improve your practice with our free online CPD programs presented by LAWPRO and th",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19ce74525877349d",
+      "subject": "Seven Must Have Phone Friendly Forms",
+      "sender": "Infowise Ultimate Forms <sales@infowisesolutions.com>",
+      "last_sender": "Infowise Ultimate Forms <sales@infowisesolutions.com>",
+      "message_count": 1,
+      "snippet": "Modern work rarely happens at a desk. Employees collect information in the field, customers submit requests from their phones, and staff often need to record information quickly while walking through",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19ce611214725f37",
+      "subject": "March 2026: Western Canadian Guide to a Successful Business Sale",
+      "sender": "Kingston Investments <support@ontario-commercial.com>",
+      "last_sender": "Kingston Investments <support@ontario-commercial.com>",
+      "message_count": 1,
+      "snippet": "Learn key steps to prepare and sell your business with confidence. March 2026 | Guidance for selling your business in Western Canada. View in browser March 2026: Your Western Canadian Guide to a",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19ce2ac32b92240c",
+      "subject": "How ChatPRD is helping PMs get things done without losing their minds",
+      "sender": "ChatPRD <hello@chatprd.ai>",
+      "last_sender": "ChatPRD <hello@chatprd.ai>",
+      "message_count": 1,
+      "snippet": "You&#39;ve been hearing from me a lot - but really you want to hear from your peers. How are other PMs and builders using ChatPRD? Here&#39;s a few things our users tell us: &quot;I can&#39;t say",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19ce295068584363",
+      "subject": "Good news: More great events await",
+      "sender": "Eventbrite <marketing@plans.eventbrite.com>",
+      "last_sender": "Eventbrite <marketing@plans.eventbrite.com>",
+      "message_count": 1,
+      "snippet": "Discover more new to do. \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19ce259580154795",
+      "subject": "How was it? Rate Bitcoin & Digital Asset Summit!",
+      "sender": "Eventbrite <marketing@plans.eventbrite.com>",
+      "last_sender": "Eventbrite <marketing@plans.eventbrite.com>",
+      "message_count": 1,
+      "snippet": "Mathew, we want your feedback. \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19ce1edd5fb5327b",
+      "subject": "\ud83e\udd9e 2026 AI Skills List",
+      "sender": "MyClaw Newsletter <MyClaw@aisecret.us>",
+      "last_sender": "MyClaw Newsletter <MyClaw@aisecret.us>",
+      "message_count": 1,
+      "snippet": "Plus: OpenClaw Builds Pok\u00e9mon Platform, China&#39;s OpenClaw Gold Rush \ud83e\udd9e 2026 AI Skills List By MyClaw &amp; ClawWarrior \u2022 12 Mar 2026 Read Online | Sign Up | Advertise Read Online | Sign Up |",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19ce03c9717c95db",
+      "subject": "Make your first purchase on our P2P platform and pay up to 20% less",
+      "sender": "Bitget <notification@promo1.bitget.com>",
+      "last_sender": "Bitget <notification@promo1.bitget.com>",
+      "message_count": 1,
+      "snippet": "Dear Bitget user, If you&#39;re a new user and haven&#39;t made your first deposit on Bitget yet, this promotion is for you. Promotion period: From January 28, 2026, 8:00 AM (UTC) onwards (long-term)",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19cded5f33a01e97",
+      "subject": "Great meeting you at RC Show | KioCaf\u00e9",
+      "sender": "\"KIOCAF\u00c9\" <marketing@kiocafe.com>",
+      "last_sender": "\"KIOCAF\u00c9\" <marketing@kiocafe.com>",
+      "message_count": 1,
+      "snippet": "\u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c ",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19cdd3c1f6b23499",
+      "subject": "[LAWPRO] In-person CPD in Toronto on April 21",
+      "sender": "\"communications@lawpro.ca\" <communications@lawpro.ca>",
+      "last_sender": "\"communications@lawpro.ca\" <communications@lawpro.ca>",
+      "message_count": 1,
+      "snippet": "Join us live: LAWPRO&#39;S in-person CPD is coming to Toronto Limited seats available Join us for a full day of practical insights at the OBA Conference Centre. Learn about your LAWPRO coverage, when",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19cdd382e65a0496",
+      "subject": "Your first trade could win you 1000 USDT",
+      "sender": "Bitget <notification@promo.bitget.com>",
+      "last_sender": "Bitget <notification@promo.bitget.com>",
+      "message_count": 1,
+      "snippet": "Hey Bitget user, The market is showing signs of recovery, and trading opportunities are returning. Now is the perfect time to start your trading journey. Simply make your first deposit and trade to",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19cd7ce3c8e43084",
+      "subject": "Something That Changed My Seder + A Special Men\u2019s Night",
+      "sender": "Rabbi Tzvi Sytner <tsytner@villageshul.com>",
+      "last_sender": "Rabbi Tzvi Sytner <tsytner@villageshul.com>",
+      "message_count": 1,
+      "snippet": "Hi Everyone, As we get closer to Pesach, we are hosting two special events at The Village Shul to help prepare, connect, and enjoy time together as a community before the holiday. 1.Break Free The",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19cd2e0742ef3ba0",
+      "subject": "SharePoint Asset Tracking Made Easy",
+      "sender": "Infowise Webinars <sales@infowisesolutions.com>",
+      "last_sender": "Infowise Webinars <sales@infowisesolutions.com>",
+      "message_count": 1,
+      "snippet": "Webinar: March 12th, 11:00 AM Eastern SharePoint Asset Tracking Made Easy Register and Save Your Spot Managing technology assets like laptops, monitors, phones, and printers requires more than a simpl",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19cd03b22c68f1b7",
+      "subject": "Tell Us About Your Hiring Experience",
+      "sender": "Mercor <no-reply@mercor.com>",
+      "last_sender": "Mercor <no-reply@mercor.com>",
+      "message_count": 1,
+      "snippet": "We&#39;d love to hear your feedback \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f ",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19ccf2a52688a908",
+      "subject": "Download the desktop app",
+      "sender": "Slack <no-reply@slack.com>",
+      "last_sender": "Slack <no-reply@slack.com>",
+      "message_count": 1,
+      "snippet": "Save yourself a browser tab \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c ",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19cc4681e71398b9",
+      "subject": "Get the latest tech and set your team up for success",
+      "sender": "TELUS Business <telus@connect.telus.com>",
+      "last_sender": "TELUS Business <telus@connect.telus.com>",
+      "message_count": 1,
+      "snippet": "Tech Upgrade Deals on now. \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19cbfef14df733a4",
+      "subject": "Included in your monthly plan: TELUS Health Virtual Care",
+      "sender": "TELUS Business <telus@connect.telus.com>",
+      "last_sender": "Matthew Levine <matthew@levinelegal.ca>",
+      "message_count": 2,
+      "snippet": "24/7 Virtual health care for you and your employees \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c ",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX",
+        "SENT"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19cbfb7b96379cda",
+      "subject": "Let\u2019s continue the conversation in person",
+      "sender": "Brittany Hoffmann from 8am LawPay <experts@lawpay.info>",
+      "last_sender": "Brittany Hoffmann from 8am LawPay <experts@lawpay.info>",
+      "message_count": 1,
+      "snippet": "If you enjoy our webinars,\ufeff you&#39;ll love 8am Kaleidoscope\ufeff. \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": false,
+      "review_required_matter_candidate": true,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "matched",
+      "matter_resolution_signal": "identity_name_key",
+      "matter_resolution_confidence": "medium",
+      "extracted_matter_number": "25-194-00059",
+      "proposed_matter_label": "LL/1./1.3/25-194-00059 -- Rousseau Mazzuca LLP",
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19cbc278e9a83941",
+      "subject": "Make your first purchase on our P2P platform and pay up to 20% less",
+      "sender": "Bitget <notification@promo1.bitget.com>",
+      "last_sender": "Bitget <notification@promo1.bitget.com>",
+      "message_count": 1,
+      "snippet": "Dear Bitget user, If you&#39;re a new user and haven&#39;t made your first deposit on Bitget yet, this promotion is for you. Promotion period: From January 28, 2026, 8:00 AM (UTC) onwards (long-term)",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19cbac3b841a380e",
+      "subject": "Visit Us at RC Show \u2013 Booth #5208 | KioCaf\u00e9",
+      "sender": "\"KIOCAF\u00c9\" <marketing@kiocafe.com>",
+      "last_sender": "\"KIOCAF\u00c9\" <marketing@kiocafe.com>",
+      "message_count": 1,
+      "snippet": "\u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c ",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19cbaacd540bae5b",
+      "subject": "Get your tickets for Bitcoin & Digital Asset Summit",
+      "sender": "Eventbrite <marketing@plans.eventbrite.com>",
+      "last_sender": "Eventbrite <marketing@plans.eventbrite.com>",
+      "message_count": 1,
+      "snippet": "Access your tickets in the Eventbrite App and have them in your pocket ready to go. \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f ",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19cba93d87cf5a27",
+      "subject": "Events worth stepping outside for.",
+      "sender": "Eventbrite <marketing@plans.eventbrite.com>",
+      "last_sender": "Eventbrite <marketing@plans.eventbrite.com>",
+      "message_count": 1,
+      "snippet": "Find your reason to get out and explore. \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c \ufeff \u034f \u200c",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19cb8faa23d299a4",
+      "subject": "Start trading and get 50 USDT, are you in?",
+      "sender": "Bitget <notification@promo.bitget.com>",
+      "last_sender": "Bitget <notification@promo.bitget.com>",
+      "message_count": 1,
+      "snippet": "Dear Bitget user, Gold and crude oil are rising as geopolitical tensions drive fresh volatility across global markets. Momentum is building \u2014 and opportunities are opening. Get 50 USDT when you make",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19caee19edb1d79e",
+      "subject": "Don\u2019t Just Watch. RACE for 120,000 USDT!",
+      "sender": "Bitget <notification@promo.bitget.com>",
+      "last_sender": "Bitget <notification@promo.bitget.com>",
+      "message_count": 1,
+      "snippet": "Dear Bitget user, The Smarter Speed Challenge 2026 is here! IT IS NOT JUST A GAME. It&#39;s a race for real rewards. We&#39;ve turned the market into a racetrack. Speed through lanes of Crypto, US",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19ca515233cd5ec7",
+      "subject": "Using custom templates to generate product docs",
+      "sender": "ChatPRD <hello@chatprd.ai>",
+      "last_sender": "ChatPRD <hello@chatprd.ai>",
+      "message_count": 1,
+      "snippet": "The #1 feature product managers love on ChatPRD is custom templates - where you can save your PRD or other template to generate perfect documents in just a few seconds. We have tons of out of the box",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19c9fe1db3c9018b",
+      "subject": "A personal message about my Passover Seder",
+      "sender": "Rabbi Tzvi Sytner <tsytner@villageshul.com>",
+      "last_sender": "Rabbi Tzvi Sytner <tsytner@villageshul.com>",
+      "message_count": 1,
+      "snippet": "Hi Everyone, In full transparency, my Passover Seders used to be mediocre. I always found it difficult to keep the kids, teens, and adults engaged for hours on end, while also trying to go through the",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19c981b32bba8348",
+      "subject": "Make your first purchase on our P2P platform and pay up to 20% less",
+      "sender": "Bitget <notification@promo1.bitget.com>",
+      "last_sender": "Bitget <notification@promo1.bitget.com>",
+      "message_count": 1,
+      "snippet": "Dear Bitget user, If you&#39;re a new user and haven&#39;t made your first deposit on Bitget yet, this promotion is for you. Promotion period: From January 28, 2026, 8:00 AM (UTC) onwards (long-term)",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19c97436d42b2d9b",
+      "subject": "test",
+      "sender": "Matthew Levine <matthew@levinelegal.ca>",
+      "last_sender": "Jocelyn Ong <Jocelyn_Ong@levinelegalservices.com>",
+      "message_count": 6,
+      "snippet": "test Lino (and Joy if you see this), pls view: https://us06web.zoom.us/clips/share/-oZxXPEeTJGmhdv1IIHTHg Matthew AJ Levine Barrister &amp; Solicitor 1235 Bay Street, Suite 700, TORONTO, M5R 3K4 T: +1",
+      "current_labels": [
+        "CATEGORY_FORUMS",
+        "CATEGORY_PERSONAL",
+        "IMPORTANT",
+        "INBOX",
+        "SENT"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_FORUMS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19c96f9d1793d3a7",
+      "subject": "Purim 5786 Schedule and much more",
+      "sender": "The Village Shul <office@villageshul.com>",
+      "last_sender": "The Village Shul <office@villageshul.com>",
+      "message_count": 1,
+      "snippet": "Shalom, Purim is a joyful time of the year and a really fun time at the Village Shul. We hope to see you over Purim and joining us in the Mitzvos of the Day. Charity: There is a tradition before the",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19c96f11f6c1844a",
+      "subject": "Galaxy S26 Ultra pre-order starts NOW",
+      "sender": "TELUS Business <telus@connect.telus.com>",
+      "last_sender": "TELUS Business <telus@connect.telus.com>",
+      "message_count": 1,
+      "snippet": "PLUS, get Galaxy Watch8 on us. \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c \u200c",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19c964b59ce1965a",
+      "subject": "Optimizing the Modern Firm: Portals, COOs, and Downtime",
+      "sender": "Appara <marketing@getappara.ai>",
+      "last_sender": "Appara <marketing@getappara.ai>",
+      "message_count": 1,
+      "snippet": "Client collaboration upgrades, the rising need for a Legal COO, and top lawyer video games for your downtime. \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f ",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19c95f1b218fc801",
+      "subject": "\ud83d\udca5 3 forces that determine your energy\u00a0",
+      "sender": "Team Tony Robbins <teamtonyrobbins@tonyrobbins.com>",
+      "last_sender": "Team Tony Robbins <teamtonyrobbins@tonyrobbins.com>",
+      "message_count": 1,
+      "snippet": "Create sustainable vitality and momentum the way Tony does \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19c95a2c6e0ab983",
+      "subject": "Your Feedback + ChatPRD = \ud83d\ude80",
+      "sender": "ChatPRD <hello@chatprd.ai>",
+      "last_sender": "Matthew Levine <matthew@levinelegal.ca>",
+      "message_count": 2,
+      "snippet": "Hey Thanks for trying out ChatPRD. My goal is to help product managers &amp; other builders maximize their impact with the best AI product copilot out there. I&#39;m curious: Was ChatPRD helpful in",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "DRAFT",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19c94d9312f82cca",
+      "subject": "Stream Confirmation - Send Mail as f.t.m@stream.money",
+      "sender": "\"'Stream Team' via Fraud & Transaction Monitoring\" <f.t.m@stream.money>",
+      "last_sender": "\"'Stream Team' via Fraud & Transaction Monitoring\" <f.t.m@stream.money>",
+      "message_count": 1,
+      "snippet": "You have requested to add ftm@stream.money to your Stream account. Before you can send mail from ftm@stream.money using your Stream account (tulika.d@stream.money), please click the link below to",
+      "current_labels": [
+        "CATEGORY_FORUMS",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_FORUMS"
+      ],
+      "soft_junk_archive_candidate": false,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": true,
+      "matter_resolution_status": "matched",
+      "matter_resolution_signal": "identity_domain",
+      "matter_resolution_confidence": "high",
+      "extracted_matter_number": "25-927-00003",
+      "proposed_matter_label": "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+      "proposed_state_label": "10_Action_Matthew",
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "ready_add"
+      ],
+      "state_actions": [
+        "ready_add"
+      ],
+      "add_label_names": [
+        "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+        "10_Action_Matthew"
+      ],
+      "add_label_ids": [
+        "Label_68",
+        "Label_5008073959869895698"
+      ]
+    },
+    {
+      "thread_id": "19c94d57ea7f7b6c",
+      "subject": "Stream Confirmation - Send Mail as onboarding@stream.money",
+      "sender": "\"'Stream Team' via Onboarding Stream Money\" <onboarding@stream.money>",
+      "last_sender": "\"'Stream Team' via Onboarding Stream Money\" <onboarding@stream.money>",
+      "message_count": 1,
+      "snippet": "You have requested to add onboarding@stream.money to your Stream account. Before you can send mail from onboarding@stream.money using your Stream account (tulika.d@stream.money), please click the link",
+      "current_labels": [
+        "CATEGORY_FORUMS",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_FORUMS"
+      ],
+      "soft_junk_archive_candidate": false,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": true,
+      "matter_resolution_status": "matched",
+      "matter_resolution_signal": "identity_domain",
+      "matter_resolution_confidence": "high",
+      "extracted_matter_number": "25-927-00003",
+      "proposed_matter_label": "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+      "proposed_state_label": "10_Action_Matthew",
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "ready_add"
+      ],
+      "state_actions": [
+        "ready_add"
+      ],
+      "add_label_names": [
+        "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+        "10_Action_Matthew"
+      ],
+      "add_label_ids": [
+        "Label_68",
+        "Label_5008073959869895698"
+      ]
+    },
+    {
+      "thread_id": "19c941bb26ebaf1e",
+      "subject": "Action Required: GCEX Onboarding Assessment Completion",
+      "sender": "\"'Olimpia Mikoda' via Onboarding Stream Money\" <onboarding@stream.money>",
+      "last_sender": "\"'Olimpia Mikoda' via Onboarding Stream Money\" <onboarding@stream.money>",
+      "message_count": 1,
+      "snippet": "Hi Team, As part of our onboarding process, we recently sent you an assessment from onboarding@gc.exchange . To move forward, please complete the online form at your earliest convenience. Please let u",
+      "current_labels": [
+        "CATEGORY_FORUMS",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_FORUMS"
+      ],
+      "soft_junk_archive_candidate": false,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": true,
+      "matter_resolution_status": "matched",
+      "matter_resolution_signal": "identity_domain",
+      "matter_resolution_confidence": "high",
+      "extracted_matter_number": "25-927-00003",
+      "proposed_matter_label": "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+      "proposed_state_label": "10_Action_Matthew",
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "ready_add"
+      ],
+      "state_actions": [
+        "ready_add"
+      ],
+      "add_label_names": [
+        "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+        "10_Action_Matthew"
+      ],
+      "add_label_ids": [
+        "Label_68",
+        "Label_5008073959869895698"
+      ]
+    },
+    {
+      "thread_id": "19c94198f29279a4",
+      "subject": "GCEX Online Application for Digital Assets (UAE Entity)",
+      "sender": "\"'Pass' via Onboarding Stream Money\" <onboarding@stream.money>",
+      "last_sender": "\"'Pass' via Onboarding Stream Money\" <onboarding@stream.money>",
+      "message_count": 1,
+      "snippet": "Dear Sir/ Madam, We would kindly invite you to take the following assessment in order to assess whether we can serve you as a client. Please click on following link and complete the assessment as per",
+      "current_labels": [
+        "CATEGORY_FORUMS",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_FORUMS"
+      ],
+      "soft_junk_archive_candidate": false,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": true,
+      "matter_resolution_status": "matched",
+      "matter_resolution_signal": "identity_domain",
+      "matter_resolution_confidence": "high",
+      "extracted_matter_number": "25-927-00003",
+      "proposed_matter_label": "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+      "proposed_state_label": "10_Action_Matthew",
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "ready_add"
+      ],
+      "state_actions": [
+        "ready_add"
+      ],
+      "add_label_names": [
+        "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+        "10_Action_Matthew"
+      ],
+      "add_label_ids": [
+        "Label_68",
+        "Label_5008073959869895698"
+      ]
+    },
+    {
+      "thread_id": "19c920addb1f555f",
+      "subject": "Join Us at RC Show 2026 | KioCaf\u00e9",
+      "sender": "KIOCAFE <marketing@kiocafe.com>",
+      "last_sender": "KIOCAFE <marketing@kiocafe.com>",
+      "message_count": 1,
+      "snippet": "\u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c \u034f \u200c ",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX",
+        "STARRED",
+        "YELLOW_STAR"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19c90acca188f363",
+      "subject": "Join Us for a Special Family Shabbat with Rabbi B. at The Village Shul",
+      "sender": "The Village Shul <office@villageshul.com>",
+      "last_sender": "The Village Shul <office@villageshul.com>",
+      "message_count": 1,
+      "snippet": "DearMathew, We are so excited to invite you to a very special Family Shabbat with Rabbi B. at The Village Shul! Get ready for an uplifting and memorable Shabbat filled with music, energy, connection,",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19c909858970fc63",
+      "subject": "Stream Confirmation - Send Mail as onboarding@stream.money",
+      "sender": "\"'Stream Team' via Onboarding Stream Money\" <onboarding@stream.money>",
+      "last_sender": "\"'Stream Team' via Onboarding Stream Money\" <onboarding@stream.money>",
+      "message_count": 1,
+      "snippet": "You have requested to add onboarding@stream.money to your Stream account. Before you can send mail from onboarding@stream.money using your Stream account (harry@stream.money), please click the link",
+      "current_labels": [
+        "CATEGORY_FORUMS",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_FORUMS"
+      ],
+      "soft_junk_archive_candidate": false,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": true,
+      "matter_resolution_status": "matched",
+      "matter_resolution_signal": "identity_domain",
+      "matter_resolution_confidence": "high",
+      "extracted_matter_number": "25-927-00003",
+      "proposed_matter_label": "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+      "proposed_state_label": "10_Action_Matthew",
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "ready_add"
+      ],
+      "state_actions": [
+        "ready_add"
+      ],
+      "add_label_names": [
+        "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+        "10_Action_Matthew"
+      ],
+      "add_label_ids": [
+        "Label_68",
+        "Label_5008073959869895698"
+      ]
+    },
+    {
+      "thread_id": "19c8dad08121c1f5",
+      "subject": "Congratulations! You've been selected as a lucky user!",
+      "sender": "Bitget <notification@promo1.bitget.com>",
+      "last_sender": "Bitget <notification@promo1.bitget.com>",
+      "message_count": 1,
+      "snippet": "Hi, Congrats! You&#39;ve received an exclusive 200 USDT! Complete the task to claim it now! Go to Coupon Center page Best regards, The Bitget Team Any question or in need of help? You can refer to Hel",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX",
+        "STARRED",
+        "YELLOW_STAR"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19c8bff5ddd249c8",
+      "subject": "[Upcoming CLE] What if your practice software could drive more profit?",
+      "sender": "8am LawPay <experts@lawpay.info>",
+      "last_sender": "8am LawPay <experts@lawpay.info>",
+      "message_count": 1,
+      "snippet": "This live CLE breaks down three-way reconciliation step by step so your firm stays compliant and confident\ufeff. \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d\u034f \u034f \u200d",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19c8bcbe5b635cab",
+      "subject": "We Did It - Thank you!",
+      "sender": "The Village Shul <office@villageshul.com>",
+      "last_sender": "The Village Shul <office@villageshul.com>",
+      "message_count": 1,
+      "snippet": "Dear Village Shul Community, As we reflect on the success of last week&#39;s campaign we are filled with immense gratitude and pride. Together, we set out to raise 360000, and together, we raised over",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19c8b723f8667c4f",
+      "subject": "Free Webinar:\u00a0Bringing Clarity to Succession Planning",
+      "sender": "Kelsey at Digital Main Street <kelsey@digitalmainstreet.ca>",
+      "last_sender": "Kelsey at Digital Main Street <kelsey@digitalmainstreet.ca>",
+      "message_count": 1,
+      "snippet": "A candid, practical session on succession planning for Canadian business owners. Across Canada, many small business owners are approaching an important crossroads. Whether retirement is a few years",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19c899e0aea43785",
+      "subject": "Invest in Success: Canada's Top Private Business Sales Digest - February Edition",
+      "sender": "support@ontario-commercial.com",
+      "last_sender": "support@ontario-commercial.com",
+      "message_count": 1,
+      "snippet": "View this email in browser February 2026 Issue LED Lighting Design and Manufacture Asking Price $3000000 SDE $674349 Gross Revenue: $1992867 Location: GTA Learn more Crete a listing add thumbnail imag",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19c888e355d2d6ef",
+      "subject": "Beginner Special: Final Chance to Claim $10 gift!",
+      "sender": "Bitget <notification@promo1.bitget.com>",
+      "last_sender": "Bitget <notification@promo1.bitget.com>",
+      "message_count": 1,
+      "snippet": "Dear Bitgetter, We&#39;d like to offer you a final chance to claim your 10 USDT trading bonus as a beginner gift! Complete your first trade within the next 24 hours to secure your beginner gift. Trade",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    },
+    {
+      "thread_id": "19c86be92cb15569",
+      "subject": "\ud83d\ude31 What if you set a goal so big it scares you?\u00a0",
+      "sender": "Team Tony Robbins <teamtonyrobbins@tonyrobbins.com>",
+      "last_sender": "Team Tony Robbins <teamtonyrobbins@tonyrobbins.com>",
+      "message_count": 1,
+      "snippet": "Moonshot goals are roadmaps to real achievement. Learn how to set yours. \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f \u034f",
+      "current_labels": [
+        "CATEGORY_PROMOTIONS",
+        "INBOX"
+      ],
+      "existing_state_labels": [],
+      "existing_matter_labels": [],
+      "soft_junk_gmail_categories": [
+        "CATEGORY_PROMOTIONS"
+      ],
+      "soft_junk_archive_candidate": true,
+      "review_required_matter_candidate": false,
+      "auto_route_matter_association": false,
+      "matter_resolution_status": "none_found",
+      "matter_resolution_signal": "none",
+      "matter_resolution_confidence": "none",
+      "extracted_matter_number": null,
+      "proposed_matter_label": null,
+      "proposed_state_label": null,
+      "ambiguous_matches": [],
+      "matter_actions": [
+        "not_applicable"
+      ],
+      "state_actions": [
+        "not_applicable"
+      ],
+      "add_label_names": [],
+      "add_label_ids": []
+    }
+  ]
+}

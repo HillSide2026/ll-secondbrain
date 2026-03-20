@@ -32,7 +32,7 @@ The firm is built on three principles:
 **Rationale**
 - Aligns with HillSide baseline production target ($250K–$300K)
 - Forces early discipline in acquisition and execution
-- Creates sufficient retained earnings to fund 2027 scale (HoldCo layer)
+- Creates sufficient retained earnings to fund 2027 growth
 
 **Timeline**
 
