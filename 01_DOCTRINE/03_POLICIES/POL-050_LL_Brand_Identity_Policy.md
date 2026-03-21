@@ -5,9 +5,9 @@ owner: ML1
 status: draft
 approval: pending
 approved_by: ~
-version: 0.3
+version: 0.4
 created_date: 2026-03-10
-last_updated: 2026-03-10
+last_updated: 2026-03-20
 tags: [policy, brand, design, visual-system, canva, website, documents]
 ---
 
@@ -68,6 +68,22 @@ Each designed output must reinforce:
 - Maintain generous margins and consistent vertical rhythm.
 - Preserve meaningful whitespace.
 - Avoid clutter, dense paragraph walls, and decorative shapes.
+
+### 4.3a Logo Clear-Space Rule (Binding)
+
+All logo variants in all formats must maintain a minimum proportional clear space of **12% of the relevant canvas dimension on each side**.
+
+| Format | Canvas | Minimum clear space |
+|---|---|---|
+| Rectangle | 1080 × 600 px | L/R ≥ 130px · T/B ≥ 72px |
+| Square | 500 × 500 px | All sides ≥ 60px |
+
+Additional requirements:
+- The logo text element must be **horizontally centered** on the canvas. Left-aligned positioning is non-compliant.
+- Vertical positioning must be optically centered (text block positioned at approximately 29% from top in square format; 15–17% from top in rectangle format).
+- Zero-padding variants (text element touching or spanning canvas edges) are non-compliant and must be corrected before any asset is authorized for distribution.
+
+Audit basis: pixel measurement of Canva files `DAGSe6P3mMQ` (Rectangle) and `DAGTI22kQ0M` (Square), 2026-03-20. Pages requiring correction: Rectangle pages 7, 8 (zero padding); all rectangle pages 1–6, 12 (centering correction, X = 190px).
 
 ### 4.4 Image Style
 

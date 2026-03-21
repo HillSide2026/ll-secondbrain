@@ -5,9 +5,9 @@ owner: ML1
 status: draft
 approval: pending
 approved_by: ~
-version: 0.3
+version: 0.4
 created_date: 2026-03-10
-last_updated: 2026-03-10
+last_updated: 2026-03-20
 tags: [policy, brand, color, palette, canva, templates]
 ---
 
@@ -87,13 +87,31 @@ If an asset includes colors outside the approved palette:
 
 ---
 
-## 6. Governance and Storage
+## 6. B&W Print Exception
+
+A gray variant is permitted exclusively for assets produced for black-and-white print output (e.g., printed documents without color printing capability).
+
+Two gray values are observed in the current Canva logo files (audit 2026-03-20):
+- `#7E7E7E` — darker gray (Rectangle Set page 8)
+- `#B4BABA` — lighter gray (Rectangle Set page 12)
+
+**Open item — ML1 decision required:** One of these must be declared the canonical B&W print gray. The other must be retired. Until ML1 decides:
+- Both are provisionally permitted for B&W print use only.
+- Neither is permitted for color digital outputs.
+- `#B4BABA` is the recommended canonical candidate (lighter value, provides adequate contrast for white text, prints with clear differentiation from white).
+
+Once ML1 selects the canonical value, add it to the Present State secondary palette and remove the other from production.
+
+---
+
+## 7. Governance and Storage
 
 Canonical palette values must be stored in ML2 brand doctrine and referenced by approved templates and template usage rules.
 
 ---
 
-## 7. Summary
+## 8. Summary
 
-LL color usage is governed by an active-state palette model with a documented future target state.  
+LL color usage is governed by an active-state palette model with a documented future target state.
 Non-palette colors require correction or explicit ML1 approval.
+B&W print gray is a provisionally permitted exception pending ML1 canonicalization.
