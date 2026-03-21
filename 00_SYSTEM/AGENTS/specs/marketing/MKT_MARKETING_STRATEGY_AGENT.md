@@ -2,9 +2,10 @@
 id: mkt_marketing_strategy_agent
 title: Marketing Strategy Agent Charter
 owner: ML1
-status: draft
+status: active
 created_date: 2026-03-08
-last_updated: 2026-03-08
+last_updated: 2026-03-21
+activated_date: 2026-03-21
 tags: [marketing, strategy, orchestration]
 ---
 

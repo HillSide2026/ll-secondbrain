@@ -4,7 +4,7 @@ title: LLP-013 Funnel 3 — Dependencies
 owner: ML1
 status: draft
 created_date: 2026-03-18
-last_updated: 2026-03-18
+last_updated: 2026-03-21
 tags: [funnel-03, marketing, planning, dependencies]
 ---
 
@@ -35,7 +35,7 @@ Stage: Planning
 
 | Dependency | Type | Required By | Notes |
 |------------|------|-------------|-------|
-| levine-law.ca (website platform) | External — ML1-controlled | WS-2 M2.3 (Payments page live) | Website update is prerequisite for LinkedIn Ads activation. Requires ML1 to execute or direct execution. |
+| levine-law.ca (website platform) | External — ML1-controlled | WS-2 M2.3 (Payments page live) | Website update is prerequisite for LinkedIn Ads activation. MKT_WEBSITE_IMPLEMENTATION_AGENT owns implementation prep and repo-side fixes; live publish still requires ML1 to execute or direct execution. |
 | LinkedIn Ads platform | External | WS-3 M3.2 (campaign launch) | Requires campaign manager access and approved budget. LinkedIn Ads minimum daily budget ~$10/day CAD. |
 | BetaKit (media outlet) | External | WS-3 M3.3 | Editorial or sponsorship inquiry required. Pricing unknown — must be investigated before budget commitment. |
 | RPAA regulatory calendar | External — regulatory | WS-3 M3.5 (RPAA content) | RPAA registration deadline 2026-03-31 is a buying trigger, not a dependency. Content publication window closes when deadline passes. |

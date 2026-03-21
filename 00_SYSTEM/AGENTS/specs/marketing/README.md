@@ -2,17 +2,22 @@
 id: 00_system__agents__specs__marketing__readme_md
 title: Marketing Agents
 owner: ML1
-status: draft
+status: active
 created_date: 2026-03-08
-last_updated: 2026-03-10
+last_updated: 2026-03-21
 tags: [marketing, agents, orchestration]
 ---
 
 # Marketing Agents
 
 This folder defines the LL Marketing Agent Suite for governed campaign strategy,
-content production, quality control, distribution preparation, market-signal
-capture, and repository governance.
+content production, website implementation, quality control, distribution
+preparation, market-signal capture, and repository governance.
+
+## Activation Status
+- Core suite activated by ML1 on `2026-03-21` for governed internal execution, draft generation, QA, implementation, and release preparation.
+- Optional specialist agents remain separately gated and are not activated by default.
+- Final outward publishing still remains subject to `INV-0002` and explicit ML1 action.
 
 ## Core Agents
 - `MKT_CHIEF_MARKETING_OFFICER_AGENT`
@@ -20,6 +25,7 @@ capture, and repository governance.
 - `MKT_CONTENT_PRODUCTION_AGENT`
 - `MKT_DESIGN_PRODUCTION_AGENT`
 - `MKT_EDITORIAL_QA_AGENT`
+- `MKT_WEBSITE_IMPLEMENTATION_AGENT`
 - `MKT_DISTRIBUTION_ORCHESTRATION_AGENT`
 - `MKT_MARKET_SIGNAL_AGENT`
 - `MKT_REPOSITORY_ASSET_GOVERNANCE_AGENT`
@@ -41,9 +47,10 @@ capture, and repository governance.
 3. Content agent produces draft artifacts.
 4. Design Production agent creates governed design drafts from approved templates.
 5. Editorial QA agent validates strategy, doctrine, and policy alignment.
-6. Distribution orchestration agent prepares channel handoff and deployment packages.
-7. Market signal agent reports market feedback as operational signals.
-8. Repository governance agent stores assets with lifecycle and provenance controls.
+6. Website Implementation agent assembles approved website changes, local patch sets, and WIP deployment packets.
+7. Distribution orchestration agent prepares channel handoff and deployment packages.
+8. Market signal agent reports market feedback as operational signals.
+9. Repository governance agent stores assets with lifecycle and provenance controls.
 
 ## Meta-Execution Chain
 1. Objective

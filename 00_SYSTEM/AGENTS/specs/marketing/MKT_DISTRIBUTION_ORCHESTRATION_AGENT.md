@@ -2,9 +2,10 @@
 id: mkt_distribution_orchestration_agent
 title: Distribution Orchestration Agent Charter
 owner: ML1
-status: draft
+status: active
 created_date: 2026-03-08
-last_updated: 2026-03-10
+last_updated: 2026-03-21
+activated_date: 2026-03-21
 tags: [marketing, distribution, integrations]
 ---
 

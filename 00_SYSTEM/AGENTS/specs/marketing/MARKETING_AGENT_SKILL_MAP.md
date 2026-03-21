@@ -4,7 +4,7 @@ title: Marketing Agent Skill Map
 owner: ML1
 status: draft
 created_date: 2026-03-08
-last_updated: 2026-03-10
+last_updated: 2026-03-21
 tags: [marketing, agents, skills, mapping]
 ---
 
@@ -15,9 +15,10 @@ Skill files are stored under `00_SYSTEM/AGENTS/specs/marketing/skills/`.
 
 ## Implementation Status (2026-03-10)
 - Implemented meta-skill files for `MKT_CHIEF_MARKETING_OFFICER_AGENT`.
-- Implemented skill files: all seven core agents (`MKT_MARKETING_STRATEGY_AGENT`, `MKT_CONTENT_PRODUCTION_AGENT`, `MKT_DESIGN_PRODUCTION_AGENT`, `MKT_EDITORIAL_QA_AGENT`, `MKT_DISTRIBUTION_ORCHESTRATION_AGENT`, `MKT_MARKET_SIGNAL_AGENT`, `MKT_REPOSITORY_ASSET_GOVERNANCE_AGENT`).
+- Implemented skill files: all eight core agents (`MKT_MARKETING_STRATEGY_AGENT`, `MKT_CONTENT_PRODUCTION_AGENT`, `MKT_DESIGN_PRODUCTION_AGENT`, `MKT_EDITORIAL_QA_AGENT`, `MKT_WEBSITE_IMPLEMENTATION_AGENT`, `MKT_DISTRIBUTION_ORCHESTRATION_AGENT`, `MKT_MARKET_SIGNAL_AGENT`, `MKT_REPOSITORY_ASSET_GOVERNANCE_AGENT`).
 - Implemented skill files: all optional specialist agent skills (`MKT_SEO_DISCOVERABILITY_AGENT`, `MKT_SOCIAL_NARRATIVE_AGENT`, `MKT_OFFER_FUNNEL_AGENT`, `MKT_COMPETITIVE_POSITIONING_AGENT`).
 - Remaining skill files: none in current map.
+- Runtime activation approved by ML1 on `2026-03-21` for the core suite: `MKT_CHIEF_MARKETING_OFFICER_AGENT`, `MKT_MARKETING_STRATEGY_AGENT`, `MKT_CONTENT_PRODUCTION_AGENT`, `MKT_DESIGN_PRODUCTION_AGENT`, `MKT_EDITORIAL_QA_AGENT`, `MKT_WEBSITE_IMPLEMENTATION_AGENT`, `MKT_DISTRIBUTION_ORCHESTRATION_AGENT`, `MKT_MARKET_SIGNAL_AGENT`, and `MKT_REPOSITORY_ASSET_GOVERNANCE_AGENT`.
 
 ## MKT_CHIEF_MARKETING_OFFICER_AGENT
 - `task_decomposition.skill.md`
@@ -80,6 +81,15 @@ Meta-execution chain:
 - `factual_claim_validation.skill.md`
 - `marketing_policy_compliance.skill.md`
 - `editorial_quality_review.skill.md`
+
+## MKT_WEBSITE_IMPLEMENTATION_AGENT
+- `landing_page_copywriting.skill.md`
+- `conversion_path_design.skill.md`
+- `landing_flow_optimization.skill.md`
+- `on_page_optimization.skill.md`
+- `brand_kit_enforcement.skill.md`
+- `integration_workflow_execution.skill.md`
+- `asset_format_transformation.skill.md`
 
 ## MKT_DISTRIBUTION_ORCHESTRATION_AGENT
 - `channel_asset_packaging.skill.md`

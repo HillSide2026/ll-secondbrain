@@ -2,9 +2,10 @@
 id: mkt_design_production_agent
 title: Design Production Agent Charter
 owner: ML1
-status: draft
+status: active
 created_date: 2026-03-10
-last_updated: 2026-03-10
+last_updated: 2026-03-21
+activated_date: 2026-03-21
 tags: [marketing, design, canva, production]
 ---
 

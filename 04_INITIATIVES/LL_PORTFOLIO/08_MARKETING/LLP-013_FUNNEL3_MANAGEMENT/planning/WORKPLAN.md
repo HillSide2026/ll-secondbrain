@@ -4,7 +4,7 @@ title: LLP-013 Funnel 3 — Workplan
 owner: ML1
 status: draft
 created_date: 2026-03-18
-last_updated: 2026-03-18
+last_updated: 2026-03-21
 tags: [funnel-03, marketing, planning, workplan]
 ---
 
@@ -41,7 +41,7 @@ Stage: Planning
 
 | ID | Milestone | Owner | Target | Gate |
 |----|-----------|-------|--------|------|
-| M2.1 | Website: Payments/MSB/Fintech page drafted | System | 2026-04-04 | SE-01 review required |
+| M2.1 | Website: Payments/MSB/Fintech page drafted | MKT_WEBSITE_IMPLEMENTATION_AGENT | 2026-04-04 | SE-01 review required |
 | M2.2 | Website page SE-01 reviewed and ML1 approved | ML1 | 2026-04-11 | Required before WS-3 |
 | M2.3 | Website page live on levine-law.ca | ML1 | 2026-04-18 | Hard gate for LinkedIn Ads activation |
 | M2.4 | LinkedIn profile positioning language updated | ML1 | 2026-04-11 | Required before WS-3 |
@@ -91,7 +91,7 @@ Note: RPAA registration deadline is 2026-03-31. Organic RPAA content should be p
 | Resource | Allocation | Notes |
 |----------|-----------|-------|
 | ML1 (Matthew Levine) | ~2 hrs/week planning; ~3 hrs/week executing | Positioning, approval, and channel decisions require ML1 |
-| System agents (SE-01, SEO-01) | On-demand | SE-01 reviews all outward-facing content; SEO-01 not activated for F3 until website live |
+| System agents (SE-01, SEO-01, MKT_WEBSITE_IMPLEMENTATION_AGENT) | On-demand | SE-01 reviews all outward-facing content; SEO-01 not activated for F3 until website live; Website Implementation Agent owns page implementation work |
 | LinkedIn Ads budget | TBD — ML1 to approve | Soulpepper benchmark: $1,500–$3,000/month to generate meaningful signal |
 | BetaKit | TBD — editorial or sponsorship | Pricing inquiry required |
 

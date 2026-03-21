@@ -14,7 +14,7 @@ Project Path: 08_MARKETING/LLP-012_FUNNEL2_MANAGEMENT
 - Distribution Orchestration Agent
 - Market Signal Agent
 - Repository / Asset Governance Agent
-- Website / domain implementation owner
+- MKT_WEBSITE_IMPLEMENTATION_AGENT (website / domain implementation owner)
 - Setter / appointment-setting role
 - Senior lawyer for Funnel 02 legal delivery
 - NDA Esq acquisition-surface coordination owner

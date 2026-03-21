@@ -2,9 +2,10 @@
 id: mkt_chief_marketing_officer_agent
 title: Chief Marketing Officer Agent Charter
 owner: ML1
-status: draft
+status: active
 created_date: 2026-03-08
-last_updated: 2026-03-10
+last_updated: 2026-03-21
+activated_date: 2026-03-21
 tags: [marketing, orchestration, cmo, funnels]
 ---
 
@@ -57,6 +58,7 @@ The CMO agent orchestrates:
 - Content Production Agent
 - Design Production Agent
 - Editorial QA Agent
+- Website Implementation Agent
 - Distribution Orchestration Agent
 - Market Signal Agent
 - Repository Governance Agent
@@ -104,9 +106,10 @@ The CMO agent interprets this structure and produces an execution plan.
 4. Invoke content production.
 5. Invoke design production.
 6. Invoke editorial QA.
-7. Invoke distribution orchestration.
-8. Monitor engagement signals.
-9. Generate operational reports.
+7. Invoke website implementation.
+8. Invoke distribution orchestration.
+9. Monitor engagement signals.
+10. Generate operational reports.
 
 ## Inputs
 Consumes from ML2:
