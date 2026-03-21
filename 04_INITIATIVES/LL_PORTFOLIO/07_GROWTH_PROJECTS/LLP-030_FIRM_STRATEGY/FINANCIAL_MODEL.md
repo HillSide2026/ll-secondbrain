@@ -4,7 +4,7 @@ title: Levine Law — Financial Model
 owner: ML1
 status: stub
 created_date: 2026-03-17
-last_updated: 2026-03-17
+last_updated: 2026-03-20
 tags: [llp-030, financial-model, doctrine]
 ---
 
@@ -30,15 +30,14 @@ This document will contain a P&L projection linking:
 | Owner salary | $72,000 | Fixed | Yes |
 | Overhead | $40,000–$50,000/year | Budget Scenario 1 | Yes |
 
-### 2. P&L Projection by Scenario
+### 2. P&L Projection by Target / Reference Case
 
-Three scenarios from LLP-002:
+Reference cases for planning:
 
-| Scenario | Target Revenue | Marketing Spend | Owner Salary | Overhead | Projected Margin |
+| Case | Target Revenue | Marketing Spend | Owner Salary | Overhead | Projected Margin |
 |---|---|---|---|---|---|
-| Scenario 1 | $200,000 | TBD | $72,000 | $40–50k | TBD |
-| Scenario 2 | $225,000 | TBD | $72,000 | $40.5–54k | TBD |
-| Scenario 3 | $250,000 | TBD | $72,000 | $45–60k | TBD |
+| Reference floor | $200,000 | TBD | $72,000 | $40–50k | TBD |
+| Current operating target | $240,000 | TBD | $72,000 | TBD | TBD |
 
 ### 3. Staffing Impact Model
 

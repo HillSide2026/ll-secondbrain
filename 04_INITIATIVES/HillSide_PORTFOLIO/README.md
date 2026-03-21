@@ -77,7 +77,7 @@ HillSide projects use the `HBP-###` series.
 - `HBP-003` -> Sale of YellowBricks
 - `HBP-004` -> `HBP-004_MICRO_SAAS_BUILD_AND_LAUNCH`
 - `HBP-005` -> Sale of Ontario MSBShellCo
-- `HBP-006` -> Sale Micro SaaS
+- `HBP-006` -> Sale Micro SaaS (TariffLookup.ca)
 - `HBP-007` -> Levine Law 2026
 - `HBP-008` -> Levine Law 2027
 - `HBP-009` -> `HBP-009_2027_BUSINESS_IDEAS`

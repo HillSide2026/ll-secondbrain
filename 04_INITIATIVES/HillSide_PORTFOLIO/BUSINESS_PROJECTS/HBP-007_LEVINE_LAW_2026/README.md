@@ -16,20 +16,26 @@ This project is an initiating-stage HillSide strategic-program project.
 
 ## Current State
 
-- folder created
-- initiation packet not yet built
+- initiation packet drafted
+- ML1 initiation review pending
 - planning not yet authorized
 
 ## Objective
 
-Track and govern the 2026 Levine Law strategic program as a HillSide project.
+Define and govern the 2026 Levine Law operating program as a controlled
+HillSide oversight project with a target of collecting at least CAD 240,000 of
+banked cash by `2026-12-31`, while governing margin, capacity, and client-
+quality controls and staying inside approved Levine Law practice areas,
+approved solution frames, and approved strategy.
 
 ## Notes
 
 - This is a HillSide business-project record, not the full Levine Law operating
   portfolio.
-- Additional artifacts should be added if the 2026 program is developed here
-  in more detail.
+- This project does not govern underlying Levine Law execution work.
+- The initiation packet now exists in this folder for ML1 review.
+- The packet now treats the 2026 program as a cash-flow and expertise-building
+  year, not as an abstract strategic wrapper.
 
 ## Required Initiation Packet
 
@@ -43,5 +49,15 @@ Use the standard HillSide initiation packet defined in
 - `RISK_SCAN.md`
 - `APPROVAL_RECORD.md`
 - `BUSINESS_CASE.md` if the project is classified as `Strategic`
+
+Current packet status:
+
+- `PROJECT_CHARTER.md` drafted
+- `PROBLEM_STATEMENT.md` drafted
+- `SUCCESS_CRITERIA.md` drafted
+- `STAKEHOLDERS.md` drafted
+- `RISK_SCAN.md` drafted
+- `APPROVAL_RECORD.md` drafted
+- `BUSINESS_CASE.md` drafted
 
 `README.md` remains the folder shell and is not itself a stage-gate artifact.

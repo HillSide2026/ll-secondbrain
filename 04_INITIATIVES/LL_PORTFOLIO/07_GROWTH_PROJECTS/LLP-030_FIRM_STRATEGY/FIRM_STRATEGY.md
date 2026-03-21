@@ -4,7 +4,7 @@ title: Levine Law — Firm Strategy
 owner: ML1
 status: draft
 created_date: 2026-03-17
-last_updated: 2026-03-17
+last_updated: 2026-03-20
 tags: [llp-030, firm-strategy, doctrine]
 ---
 
@@ -37,7 +37,7 @@ Listed in priority order. Where trade-offs arise, higher-ranked priorities win.
 
 3. **Per-client economics** — Revenue per matter and revenue per hour must trend upward. F01 at current matter value mix is not the target state; it is the funding source for getting to it.
 
-4. **Revenue growth** — Target is Scenario 2 ($225k) as the operating baseline, with Scenario 3 ($250k) as the 3-year horizon. Growth is through F02 and F03, not by increasing F01 volume.
+4. **Revenue growth** — Target is CAD 240k of 2026 banked cash as the current operating baseline. Growth is through F02 and F03, not by increasing F01 volume.
 
 5. **Transferable value and reputation** — The practice should be buildable toward an asset that could be sold or handed off. This requires client relationships that are not entirely ML1-personal, documented systems, and authority positioning in defined verticals. This is a background priority that influences architecture decisions; it does not override 1–4.
 
@@ -102,10 +102,10 @@ These goals are targets for planning; they are not approved KPI baselines (that 
 
 | Area | Goal |
 |---|---|
-| Revenue | Reach and sustain Scenario 2 ($225k/year) by end of 2026; target Scenario 3 ($250k/year) by end of 2027 |
+| Revenue | Reach and sustain CAD 240k/year by end of 2026; extend from that base in later planning periods |
 | Funnel mix | F02 is the primary new-client acquisition channel by Q4 2026; F01 is secondary |
 | Client quality | ≥75% of new matters aligned with ICP-01 or ICP-02 by end of 2026 |
-| Margin | Net margin ≥15% of revenue ($33k+ at $225k; $37k+ at $250k) after owner salary |
+| Margin | Net margin ≥15% of revenue ($36k+ at $240k) after owner salary |
 | Capacity | Workload does not require sustained weeks above 20 billable hours/week (ML1 current ceiling) |
 | Staffing | Setter active by the time F02 generates ≥ 10 leads/month; senior lawyer defined before matter volume exceeds ML1 delivery ceiling |
 | Authority | F03 entry offer live and generating first engagements by end of 2027 |

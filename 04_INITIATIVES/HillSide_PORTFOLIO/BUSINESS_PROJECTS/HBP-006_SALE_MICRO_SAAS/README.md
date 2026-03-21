@@ -1,6 +1,6 @@
 ---
 id: 04_initiatives__hillside_portfolio__business_projects__hbp_006_sale_micro_saas__readme_md
-title: Sale Micro SaaS
+title: Sale Micro SaaS (TariffLookup.ca)
 owner: ML1
 status: draft
 created_date: 2026-03-14
@@ -8,7 +8,7 @@ last_updated: 2026-03-20
 tags: [micro-saas, sale, hillside, project, initiating]
 ---
 
-# Sale Micro SaaS
+# Sale Micro SaaS (TariffLookup.ca)
 
 **Project ID:** `HBP-006`
 
@@ -22,12 +22,13 @@ This project is an initiating-stage HillSide sale project.
 
 ## Objective
 
-Evaluate and eventually pursue monetization of the Micro SaaS asset after
+Evaluate and eventually pursue monetization of TariffLookup.ca after
 validation.
 
 ## Notes
 
 - This project is related to, but distinct from, `HBP-004`.
+- TariffLookup.ca is the in-scope asset for this sale track.
 - Sale-stage artifacts should be developed here if monetization becomes active.
 
 ## Required Initiation Packet

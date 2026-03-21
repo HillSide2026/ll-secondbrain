@@ -4,7 +4,7 @@ title: LLP-030 Problem Statement
 owner: ML1
 status: draft
 created_date: 2026-03-17
-last_updated: 2026-03-17
+last_updated: 2026-03-20
 tags: [llp-030, firm-strategy, business-plan, problem-statement]
 ---
 
@@ -30,7 +30,7 @@ Without these three documents, the firm is executing tactics without a strategy.
 
 - **Active projects** (LLP-011, LLP-012, LLP-025) are making real decisions about channel investment, funnel architecture, and ICP definition — but without a governing frame specifying what the firm is optimizing for.
 - **"Strategic projects"** folder contains projects that are treated as optional or secondary rather than as execution of a deliberate plan.
-- **2026 budget** models three revenue scenarios ($200k / $225k / $250k) and a fixed owner salary ($72k) — but does not answer: what scenario are we targeting, what must happen to reach it, and what does margin look like at each stage?
+- **2026 target** is now CAD 240,000 of banked cash, with a fixed owner salary ($72k) — but the plan still does not answer what must happen to reach it, and what margin looks like at each stage.
 - **Staffing decisions** (setter, senior lawyer) are modeled in LLP-012 and LLP-011 but have no firm-level capacity plan or financial impact model to anchor them.
 - **ICP definitions** (ICP-01, ICP-02) exist in the marketing strategy — but there is no firm-level positioning statement that ICP definitions are derived from.
 
@@ -52,7 +52,7 @@ The Firm Strategy must answer:
 ### 2. Business Plan
 
 The Business Plan must answer:
-- What revenue scenario is the firm targeting (Scenario 1/2/3), and over what timeline?
+- What 2026 operating target is the firm actually governing against, and over what timeline?
 - What is the acquisition architecture (F01 → F02 → F03) and how does it generate that revenue?
 - What is the capacity model — how many matters can ML1 carry, and when does staffing (setter, senior lawyer) become necessary?
 - What is the staffing and resourcing roadmap?

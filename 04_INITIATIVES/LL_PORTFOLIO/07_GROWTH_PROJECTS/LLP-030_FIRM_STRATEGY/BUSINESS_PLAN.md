@@ -4,7 +4,7 @@ title: Levine Law — Business Plan
 owner: ML1
 status: draft
 created_date: 2026-03-17
-last_updated: 2026-03-17
+last_updated: 2026-03-20
 tags: [llp-030, business-plan, doctrine]
 ---
 
@@ -25,12 +25,12 @@ The firm is built on three principles:
 
 ---
 
-## 2. Target Scenario
+## 2. 2026 Operating Target
 
-**Selected Scenario: Scenario 3 — $250K**
+**Current 2026 Operating Target: $240K**
 
 **Rationale**
-- Aligns with HillSide baseline production target ($250K–$300K)
+- Aligns LLP-030 with the current HillSide oversight target for Levine Law 2026
 - Forces early discipline in acquisition and execution
 - Creates sufficient retained earnings to fund 2027 growth
 
