@@ -3,9 +3,9 @@ id: DOCTRINE-2026-003
 title: LL-SB Architecture Doctrine
 owner: ML1
 status: draft
-version: 1.0
+version: 1.1
 created_date: 2026-02-27
-last_updated: 2026-02-27
+last_updated: 2026-03-21
 tags: [architecture, governance, authority]
 
 effective_date:
@@ -98,7 +98,8 @@ The Execution Bridge connects ML2 to:
 - Office 365
 - Google Workspace
 
-External platforms are execution surfaces. They are not authoritative repositories.
+External platforms become governed execution surfaces for the System when explicitly integrated through the Execution Bridge.
+They are not authoritative repositories.
 
 ### 2.5 LL - Human Execution Layer
 

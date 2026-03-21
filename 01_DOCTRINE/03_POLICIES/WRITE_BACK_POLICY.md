@@ -3,9 +3,9 @@ id: 00_system__write_back_policy_md
 title: System Write-Back Policy
 owner: ML1
 status: draft
-version: 1.0
+version: 1.1
 created_date: 2026-02-09
-last_updated: 2026-02-27
+last_updated: 2026-03-21
 tags: []
 ---
 
@@ -36,7 +36,7 @@ This policy remains authoritative for repository write permissions and for expli
 The **system** includes the ML2 repository **plus explicitly incorporated integration surfaces** (e.g., Gmail, Calendar, SharePoint) governed by ML2 policy.
 
 - The repo remains the system of record.
-- Integrated surfaces are external execution surfaces governed by ML2.
+- Explicitly integrated surfaces are inside the governed operating stack as execution surfaces for the System, connected through the Execution Bridge.
 - Integration does not grant write authority; all write-backs remain approval-gated.
 
 ### 1. Local-First

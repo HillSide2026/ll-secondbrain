@@ -1,11 +1,11 @@
 ---
-id: DOCTRINE-2026-008
+id: DOCTRINE-INTEGRATIONS-0001
 title: Integration Doctrine (External Platform Governance)
 owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-27
-last_updated: 2026-02-27
+last_updated: 2026-03-21
 tags: [integration, governance, execution]
 
 effective_date:
@@ -19,7 +19,7 @@ provenance:
 
 # Integration Doctrine
 
-**Document ID:** DOCTRINE-2026-008  
+**Document ID:** DOCTRINE-INTEGRATIONS-0001  
 **Status:** DRAFT  
 **Authority:** ML1
 

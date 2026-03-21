@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-13
-last_updated: 2026-03-08
+last_updated: 2026-03-21
 tags: [doctrine, invariants]
 ---
 
@@ -35,7 +35,7 @@ Classification:
 - If it defines enforcement logic, it belongs in Protocols.
 - If it defines interpretive posture, it belongs in Principles.
 
-Typical examples in the ML1/ML2/LL model:
+Typical examples in the ML1/ML2/System/LL model:
 - ML1 retains final judgment authority.
 - ML2 is a system of record, not an autonomous actor.
 - LL consumes only ML1-approved outputs.

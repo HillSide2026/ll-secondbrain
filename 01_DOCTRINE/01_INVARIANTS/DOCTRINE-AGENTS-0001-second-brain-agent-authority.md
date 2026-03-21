@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-03-21
 tags: []
 ---
 
@@ -127,4 +127,4 @@ When in doubt, the agent defaults to:
 ## References
 
 - `DOCTRINE-2026-001` — What Qualifies as Doctrine
-- `DOCTRINE-2026-002` — Authority Hierarchy (ML1/ML2/LL)
+- `DOCTRINE-2026-002` — Authority Hierarchy (ML1/ML2/System/LL)

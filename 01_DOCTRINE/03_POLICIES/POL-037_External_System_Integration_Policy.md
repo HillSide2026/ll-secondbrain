@@ -3,9 +3,9 @@ id: POL-037
 title: External System Integration Policy
 owner: ML2
 status: draft
-version: 0.1
+version: 0.2
 created_date: 2026-03-09
-last_updated: 2026-03-09
+last_updated: 2026-03-21
 tags: [policy, integrations, external-systems, mcp, governance]
 ---
 
@@ -38,6 +38,8 @@ External systems may expose read access, write access, and structured API operat
 ## 3. Architectural Role
 
 External integrations exist in the System execution layer.
+
+Once explicitly integrated, an external platform becomes a governed execution surface for the System through the Execution Bridge. It does not become a new authority source and does not displace ML2 as canon.
 
 Canonical flow:
 - ML1 approves policy and integrations

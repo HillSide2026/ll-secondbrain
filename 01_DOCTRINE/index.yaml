@@ -463,7 +463,7 @@ policies:
 - id: POL-037
   title: External System Integration Policy
   path: 01_DOCTRINE/03_POLICIES/POL-037_External_System_Integration_Policy.md
-  version: '0.1'
+  version: '0.2'
   status: draft
   history: []
 - id: POL-038
@@ -547,7 +547,7 @@ policies:
 - id: 00_system__write_back_policy_md
   title: System Write-Back Policy
   path: 01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md
-  version: '1.0'
+  version: '1.1'
   status: draft
   history: []
 - id: 01_doctrine__02_policies__integration_control_policy_md
@@ -697,18 +697,18 @@ doctrine:
   status: approved
   history: []
 - id: DOCTRINE-2026-002
-  title: Authority Hierarchy (ML1 / ML2 / LL)
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0002-authority-hierarchy-ml1-ml2-ll.md
-  version: '1.0'
+  title: Authority Hierarchy (ML1 / ML2 / System / LL)
+  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0002-authority-hierarchy-ml1-ml2-system-ll.md
+  version: '2.0'
   status: approved
   history: []
 - id: DOCTRINE-2026-003
   title: LL-SB Architecture Doctrine
   path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0003-ll-sb-architecture.md
-  version: '1.0'
+  version: '1.1'
   status: draft
   history: []
-- id: DOCTRINE-2026-008
+- id: DOCTRINE-INTEGRATIONS-0001
   title: Integration Doctrine (External Platform Governance)
   path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-INTEGRATIONS-0001-integration-doctrine.md
   version: '1.0'
@@ -804,13 +804,13 @@ doctrine:
   version: '1.0'
   status: draft
   history: []
-- id: DOCTRINE-2026-003
+- id: DOCTRINE-OPERATIONS-0002
   title: "Promotion Rules (Inbox \u2192 Research \u2192 Doctrine)"
   path: 01_DOCTRINE/06_PROCEDURAL/DOCTRINE-OPERATIONS-0002-promotion-rules.md
   version: '1.0'
   status: approved
   history: []
-- id: DOCTRINE-2026-008
+- id: DOCTRINE-OPERATIONS-0003
   title: Run Outcome Rules (Promote / Park / Archive)
   path: 01_DOCTRINE/06_PROCEDURAL/DOCTRINE-OPERATIONS-0003-run-outcome-rules.md
   version: '1.0'

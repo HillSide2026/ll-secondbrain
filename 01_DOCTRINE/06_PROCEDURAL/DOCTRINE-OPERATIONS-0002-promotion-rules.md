@@ -1,5 +1,5 @@
 ---
-id: DOCTRINE-2026-003
+id: DOCTRINE-OPERATIONS-0002
 title: Promotion Rules (Inbox → Research → Doctrine)
 owner: ML1
 status: approved
@@ -7,7 +7,7 @@ version: 1.0
 effective_date: 2026-01-04
 supersedes:
 created_date: 2026-01-04
-last_updated: 2026-02-14
+last_updated: 2026-03-21
 tags: [promotion, workflow, governance]
 
 provenance:
@@ -21,7 +21,7 @@ Moved from `01_DOCTRINE/01_INVARIANTS/` to `01_DOCTRINE/06_PROCEDURAL/` on 2026-
 
 # Promotion Rules (Inbox → Research → Doctrine)
 
-**Document ID:** DOCTRINE-2026-003
+**Document ID:** DOCTRINE-OPERATIONS-0002
 **Status:** APPROVED
 **Effective:** 2026-01-04
 **Authority:** ML1

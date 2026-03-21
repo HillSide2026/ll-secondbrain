@@ -1,12 +1,12 @@
 ---
-id: DOCTRINE-2026-008
+id: DOCTRINE-OPERATIONS-0003
 title: Run Outcome Rules (Promote / Park / Archive)
 owner: ML1
 status: approved
 version: 1.0
 effective_date: 2026-02-19
 created_date: 2026-02-19
-last_updated: 2026-02-19
+last_updated: 2026-03-21
 tags: [runs, outcomes, procedural, governance]
 
 supersedes:
@@ -18,7 +18,7 @@ provenance:
 
 # Run Outcome Rules (Promote / Park / Archive)
 
-**Document ID:** DOCTRINE-2026-008
+**Document ID:** DOCTRINE-OPERATIONS-0003
 **Status:** APPROVED
 **Effective:** 2026-02-19
 **Authority:** ML1

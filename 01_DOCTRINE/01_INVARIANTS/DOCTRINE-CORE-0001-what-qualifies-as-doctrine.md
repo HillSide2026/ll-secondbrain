@@ -5,7 +5,7 @@ owner: ML1
 status: approved
 version: 1.0
 created_date: 2026-01-04
-last_updated: 2026-01-04
+last_updated: 2026-03-21
 tags: [doctrine, authority, governance]
 
 effective_date:
@@ -77,7 +77,7 @@ Only explicit ML1 approval creates doctrine.
 ## Authority Model
 
 - **ML1** is the sole authority empowered to approve doctrine.
-- ML2 (the Second Brain system) records and enforces approved doctrine.
+- ML2 (the Second Brain system) records approved doctrine; the System applies it at runtime.
 - LL and other execution environments may consume doctrine but may not create it.
 
 No agent, workflow, or downstream system may:

@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-01-25
-last_updated: 2026-02-19
+last_updated: 2026-03-21
 tags: []
 ---
 
@@ -21,7 +21,7 @@ It contains:
 - auditable outputs derived from approved artifacts
 - automation configuration in `.claude/` that governs execution (version-controlled, non-canon)
 
-ML2 exists to preserve, apply, and enforce ML1's decisions consistently over time.
+ML2 exists to preserve and govern ML1's decisions consistently over time; the System applies them during runtime.
 
 ## What This Repository Is Not
 This repository is **not**:
