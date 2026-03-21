@@ -29,8 +29,7 @@ Operationalize a narrow payment services compliance service under
 4. determine whether the business should also offer a second,
    infrastructure-focused service model where the client's in-house personnel
    acts as CAMLO
-5. assess and structure the Rhizome white-label path
-6. align business-name decision and go-to-market framing around FinSure
+5. align business-name decision and go-to-market framing around FinSure
 
 ## Immediate Workstreams
 
@@ -40,11 +39,12 @@ Operationalize a narrow payment services compliance service under
 | EW-02 Pricing Design | Produce a first-pass pricing model | pricing options and assumptions documented |
 | EW-03 Scope Control | Define exclusions and non-go areas clearly | inclusion / exclusion sheet |
 | EW-04 Second-Model Decision | Decide whether the infrastructure-focused CAMLO-support model should exist | explicit ML1 yes/no decision |
-| EW-05 Product and White-Label Alignment | Connect FinSure entry offer and Rhizome white-label assumptions into one coherent service path | operating model note or partnership/service design memo |
+| EW-05 FinSure Positioning | Align business-name decision and entry-offer framing around FinSure | naming and go-to-market note |
 
 ## Control Notes
 
 - The approved path is narrower than the original broad agency concept.
 - FinSure is approved as the entry offer, not proof of a full agency model.
+- Rhizome white-label or partner implementation work is outside `HBP-011`.
 - Any move beyond the initial service model should be treated as a scoped
   decision, not implied by the proceed approval.

@@ -2,7 +2,7 @@
 id: 04_initiatives__hillside_portfolio__business_projects__hbp_011_payments_regulatory_compliance_agency__planning__assumptions_constraints_md
 title: Payments Regulatory & Compliance Consulting Agency - Assumptions and Constraints
 owner: ML1
-status: active
+status: approved
 created_date: 2026-03-16
 last_updated: 2026-03-20
 tags: [payments-regulatory-compliance-agency, planning, assumptions, constraints]
@@ -36,6 +36,7 @@ Currently locked:
 - operate through `17513721 Canada Inc`
 - use the FinSure product as the entry offer
 - start with program design and CAMLO services
+- keep Rhizome white-label work outside `HBP-011`
 
 Still not locked:
 

@@ -4,8 +4,8 @@ title: Potential Business Initiatives
 owner: ML1
 status: draft
 created_date: 2026-03-12
-last_updated: 2026-03-12
-tags: [hillside, portfolio, initiatives]
+last_updated: 2026-03-20
+tags: [hillside, initiatives]
 ---
 
 # Potential Business Initiatives
@@ -13,12 +13,12 @@ tags: [hillside, portfolio, initiatives]
 This folder tracks potential business initiatives under Matthew Holdings.
 
 Purpose:
-- maintain the current Matthew Holdings initiative portfolio
-- evaluate strategic fit with portfolio entities
+- maintain a current list of Matthew Holdings initiatives and venture paths
+- evaluate strategic fit with Matthew Holdings operating entities
 - support ownership-level prioritization and decision-making
 
 Primary tracking artifact:
-- `INITIATIVE_PORTFOLIO.md`
+- `INITIATIVE_LIST.md`
 
 Current tracked initiatives:
 - Sale of YellowBricks

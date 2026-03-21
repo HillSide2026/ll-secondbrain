@@ -117,7 +117,7 @@ Each entity folder should contain:
 - regulatory status
 - strategic notes
 - links to external systems
-- initiative portfolio (where applicable)
+- initiative list (where applicable)
 
 Operational documents should not be duplicated here if they already exist in Clio, SharePoint, or other canonical systems.
 

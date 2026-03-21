@@ -32,7 +32,6 @@ Approved now:
 - FinSure as the entry-offer wedge
 - program design services
 - CAMLO services
-- Rhizome white-label path under evaluation as part of the service model
 
 Not yet locked:
 
@@ -40,6 +39,12 @@ Not yet locked:
 - final in-scope and out-of-scope exclusions
 - whether to offer a second, infrastructure-focused model where the client's
   in-house personnel acts as CAMLO
+- final business-name decision and go-to-market framing around FinSure
+
+Not included now:
+
+- Rhizome white-label negotiation or implementation
+- separate partner or distribution project work
 
 ## Core Artifact
 

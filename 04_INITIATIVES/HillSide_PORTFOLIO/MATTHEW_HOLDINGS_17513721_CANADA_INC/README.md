@@ -67,7 +67,7 @@ This entity manages:
 - regulatory coordination where applicable
 - capital allocation across entities
 - coordination with HillSide business and personal project programs
- - initiative portfolio management across current and prospective ventures
+- maintenance of the current initiative list across prospective ventures
 
 This entity does not represent:
 
@@ -92,9 +92,9 @@ Formal legal records remain in the firm's document management systems.
 
 Potential ventures and strategic build opportunities are tracked in:
 
-- `1_POTENTIAL_BUSINESS_INITIATIVES/INITIATIVE_PORTFOLIO.md`
+- `1_POTENTIAL_BUSINESS_INITIATIVES/INITIATIVE_LIST.md`
 
-This portfolio tracks active and prospective Matthew Holdings initiatives for ownership-level prioritization and decision support.
+This list tracks active and prospective Matthew Holdings initiatives for ownership-level prioritization and decision support.
 
 ## Corporate Identity Card
 

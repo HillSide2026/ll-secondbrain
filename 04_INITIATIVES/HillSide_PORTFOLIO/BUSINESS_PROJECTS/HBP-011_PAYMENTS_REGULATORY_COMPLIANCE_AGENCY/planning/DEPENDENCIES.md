@@ -2,7 +2,7 @@
 id: 04_initiatives__hillside_portfolio__business_projects__hbp_011_payments_regulatory_compliance_agency__planning__dependencies_md
 title: Payments Regulatory & Compliance Consulting Agency - Dependencies
 owner: ML1
-status: active
+status: approved
 created_date: 2026-03-16
 last_updated: 2026-03-20
 tags: [payments-regulatory-compliance-agency, planning, dependencies]
@@ -21,9 +21,11 @@ Stage: `Planning`
 | Minimum operating model | Operational | Needed to judge whether the concept is proportionate to the upside | unresolved |
 | Differentiation thesis | Strategic | Needed to avoid launching an undifferentiated consulting concept | unresolved |
 | Productized signal quality | Strategic / product | Needed to judge whether FinSure is a credible wedge for a narrower payment services compliance service or only an internal experiment | in progress |
+| Separation from non-`HBP-011` partner work | Governance | Needed to keep Rhizome or other partnership work out of the approved service packet | locked |
 
 ## Dependency Rule
 
-No go-forward recommendation should be made while the service boundary, buyer
-path, minimum operating model, or FinSure signal quality remain too vague to
-compare credibly.
+No execution recommendation should blur the approved payment-services packet
+with separate partner or Rhizome work, and no go-forward recommendation should
+be treated as clean while the service boundary, buyer path, minimum operating
+model, or FinSure signal quality remain too vague to compare credibly.

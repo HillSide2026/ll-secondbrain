@@ -67,10 +67,14 @@ Decision details:
 - the service will operate through `17513721 Canada Inc`
 - `FinSure` will be considered as the business name
 - the FinSure product will serve as the entry offer
-- the business plans to pursue a white-label path for Rhizome software
 - the initial approved service model is:
   - program design
   - CAMLO services
+
+Excluded from `HBP-011`:
+
+- Rhizome white-label negotiation or implementation
+- separate partner or distribution project work
 
 Still unresolved:
 

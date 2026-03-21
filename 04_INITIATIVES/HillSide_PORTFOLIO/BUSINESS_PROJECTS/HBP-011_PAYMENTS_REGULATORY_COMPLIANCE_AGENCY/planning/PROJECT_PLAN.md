@@ -2,7 +2,7 @@
 id: 04_initiatives__hillside_portfolio__business_projects__hbp_011_payments_regulatory_compliance_agency__planning__project_plan_md
 title: Payments Regulatory & Compliance Consulting Agency - Project Plan
 owner: ML1
-status: active
+status: approved
 created_date: 2026-03-16
 last_updated: 2026-03-20
 tags: [payments-regulatory-compliance-agency, planning, project-plan]
@@ -77,10 +77,14 @@ Authorized direction:
 - operate through `17513721 Canada Inc`
 - use FinSure as the entry-offer wedge
 - consider `FinSure` as the business name
-- pursue Rhizome white-labeling as part of the operating model
 - start with:
   - program design
   - CAMLO services
+
+Excluded from `HBP-011`:
+
+- Rhizome white-label negotiation or implementation
+- separate partner or distribution project work
 
 Execution-stage refinement still required:
 
@@ -88,3 +92,4 @@ Execution-stage refinement still required:
 - exact service inclusions and exclusions
 - decision on whether a second, infrastructure-focused model should be offered
   where the client's in-house personnel acts as CAMLO
+- business-name decision and go-to-market framing around FinSure
