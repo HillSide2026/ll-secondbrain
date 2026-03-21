@@ -1,0 +1,40 @@
+id: 00_system__integrations__canva__sources_yaml
+title: Canva Sources
+owner: ML1
+status: initiated
+version: 1.0
+created_date: 2026-03-21
+last_updated: 2026-03-21
+sources:
+  - source_id: CANVA_DESIGNS
+    description: Canva design objects accessible through the Canva REST API.
+    location: Canva workspace via OAuth app configured in .env
+    authority: unknown
+    classification: execution_artifact
+    ingestion: Accessed via canva_bridge.py MCP tools using governed OAuth tokens
+  - source_id: CANVA_BRAND_TEMPLATES
+    description: Canva templates and brand-linked design surfaces used for LL asset production.
+    location: Canva workspace via OAuth app configured in .env
+    authority: unknown
+    classification: execution_artifact
+    ingestion: Referenced by Canva MCP workflows; template approval remains governed outside Canva
+ingestion:
+  triggers:
+    - MCP tool calls via canva_bridge.py
+    - Browser-based OAuth consent initiated by start_oauth
+  notes:
+    - Audit entries are appended to 06_RUNS/ops/canva_mcp_audit.ndjson
+    - Token state is stored in files referenced by CANVA_TOKEN_FILE and CANVA_STATE_FILE
+consumers:
+  scripts:
+    - canva_bridge.py
+  playbooks:
+    - 00_SYSTEM/AGENTS/specs/marketing/skills/canva_design_instantiation.skill.md
+    - 00_SYSTEM/AGENTS/specs/marketing/skills/canva_autofill_binding.skill.md
+  run_graphs: []
+related_artifacts:
+  - README_canva_bridge.md
+  - 01_DOCTRINE/03_POLICIES/POL-046_Canva_Template_Enforcement_Policy.md
+  - 01_DOCTRINE/03_POLICIES/POL-047_LL_Brand_Governance_and_ML2_Custody_Policy.md
+change_notes:
+  - v1.0 2026-03-21: Initial Canva integration contract created alongside the persistent MCP server.

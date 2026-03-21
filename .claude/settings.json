@@ -13,6 +13,13 @@
         "/Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/gmail_mcp_server.py"
       ],
       "env": {}
+    },
+    "canva": {
+      "command": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3",
+      "args": [
+        "/Users/matthewlevine/Repos/ll-secondbrain_fresh/canva_bridge.py"
+      ],
+      "env": {}
     }
   }
 }

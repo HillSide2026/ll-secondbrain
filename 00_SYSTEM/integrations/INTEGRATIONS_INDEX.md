@@ -3,9 +3,9 @@ id: 00_system__integrations__index_md
 title: Integrations Index
 owner: ML1
 status: draft
-version: 1.0
+version: 1.1
 created_date: 2026-02-15
-last_updated: 2026-02-15
+last_updated: 2026-03-21
 tags: [integrations, index]
 ---
 
@@ -21,3 +21,4 @@ tags: [integrations, index]
 | onedrive | OneDrive | draft | ML1 | 00_SYSTEM/integrations/onedrive/onedrive_sources.yaml | 00_SYSTEM/architecture/ARCH-2026-00X-integration-plan.md<br>00_SYSTEM/architecture/ARCH-2026-01X-stage1-architecture-map.md |  | Plan-level only; no implementation evidence. |
 | google_calendar | Google Calendar | draft | ML1 | 00_SYSTEM/integrations/google_calendar/google_calendar_sources.yaml | 00_SYSTEM/architecture/ARCH-2026-00X-integration-plan.md<br>00_SYSTEM/architecture/ARCH-2026-01X-stage1-architecture-map.md |  | Plan-level only; no implementation evidence. |
 | clio | Clio | draft | ML1 | 00_SYSTEM/integrations/clio/clio_sources.yaml | 00_SYSTEM/architecture/ARCH-2026-00X-integration-plan.md<br>00_SYSTEM/architecture/ARCH-2026-01X-stage1-architecture-map.md |  | Plan-level only; no implementation evidence. Uses 00_SYSTEM/matters/matter_identity_map.yaml for matter_id aliasing/routing. |
+| canva | Canva | initiated | ML1 | 00_SYSTEM/integrations/canva/canva_sources.yaml | canva_bridge.py<br>README_canva_bridge.md<br>00_SYSTEM/integrations/canva/canva_sources.yaml | canva_bridge.py<br>00_SYSTEM/AGENTS/specs/marketing/skills/canva_design_instantiation.skill.md<br>00_SYSTEM/AGENTS/specs/marketing/skills/canva_autofill_binding.skill.md | Persistent MCP server implemented and registered. OAuth bootstrap still requires one browser consent step. No publish/delete surface exposed. |

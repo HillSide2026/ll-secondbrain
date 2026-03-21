@@ -1,26 +1,42 @@
 #!/usr/bin/env python3
 """
-Minimal Canva OAuth bridge (Authorization Code + PKCE).
+Canva MCP Server — LL Second Brain
+==================================
+Persistent stdio MCP server for governed Canva access.
 
-Routes:
-  GET /
-  GET /oauth/start
-  GET /oauth/callback
-  GET /design/:id
+This replaces the old one-shot OAuth proof bridge with tool-callable endpoints
+that Claude can invoke during a session once OAuth credentials exist.
+
+PERMITTED OPERATIONS:
+  1. auth_status  — inspect OAuth/token readiness
+  2. start_oauth  — start one-time OAuth bootstrap and return the Canva auth URL
+  3. list_designs — list Canva designs using the REST API
+  4. get_design   — fetch one design by id
+  5. create_design — create a draft design from a minimal preset payload or
+                     caller-supplied JSON body
+
+Python 3.9 compatible. No external MCP SDK required.
+Implements MCP JSON-RPC 2.0 stdio transport manually.
 """
+
+from __future__ import annotations
 
 import base64
 import hashlib
 import html
 import json
+import logging
 import os
 import secrets
+import sys
+import threading
 import time
+from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
-from typing import Dict, Optional, Tuple
+from typing import Any, Dict, Optional, Tuple
 from urllib.error import HTTPError, URLError
-from urllib.parse import parse_qs, quote, urlencode, urlparse, unquote
+from urllib.parse import parse_qs, quote, urlencode, urlparse
 from urllib.request import Request, urlopen
 
 
@@ -30,6 +46,7 @@ DESIGNS_URL = "https://api.canva.com/rest/v1/designs"
 
 DEFAULT_REDIRECT_URI = "http://127.0.0.1:3000/oauth/callback"
 DEFAULT_SCOPES = "design:content:read design:content:write design:meta:read"
+TOKEN_REFRESH_SKEW_SECONDS = 60
 
 
 def load_env_file(env_path: Path) -> None:
@@ -60,11 +77,12 @@ def create_pkce_pair() -> Tuple[str, str]:
     return code_verifier, code_challenge
 
 
-def save_json(path: Path, payload: Dict) -> None:
+def save_json(path: Path, payload: Dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-def load_json(path: Path) -> Optional[Dict]:
+def load_json(path: Path) -> Optional[Dict[str, Any]]:
     if not path.exists():
         return None
     try:
@@ -80,14 +98,20 @@ def remove_file(path: Path) -> None:
         return
 
 
-def request_json(method: str, url: str, headers: Optional[Dict] = None,
-                 form_data: Optional[Dict] = None, json_data: Optional[Dict] = None,
-                 timeout: int = 30) -> Tuple[int, Dict]:
+def request_json(
+    method: str,
+    url: str,
+    headers: Optional[Dict[str, str]] = None,
+    form_data: Optional[Dict[str, Any]] = None,
+    json_data: Optional[Dict[str, Any]] = None,
+    timeout: int = 30,
+) -> Tuple[int, Dict[str, Any]]:
     hdrs = dict(headers or {})
     body = None
 
     if form_data is not None:
-        body = urlencode(form_data).encode("utf-8")
+        form_payload = {key: value for key, value in form_data.items() if value is not None}
+        body = urlencode(form_payload).encode("utf-8")
         hdrs.setdefault("Content-Type", "application/x-www-form-urlencoded")
     elif json_data is not None:
         body = json.dumps(json_data).encode("utf-8")
@@ -110,8 +134,8 @@ def request_json(method: str, url: str, headers: Optional[Dict] = None,
         return 0, {"error": "network_error", "message": str(exc)}
 
 
-def extract_design_id(payload: Dict) -> Optional[str]:
-    candidate = payload
+def extract_design_id(payload: Dict[str, Any]) -> Optional[str]:
+    candidate: Any = payload
     if isinstance(candidate, dict) and "data" in candidate:
         candidate = candidate["data"]
     if isinstance(candidate, dict) and "design" in candidate:
@@ -123,8 +147,8 @@ def extract_design_id(payload: Dict) -> Optional[str]:
     return candidate.get("id") or candidate.get("design_id") or candidate.get("gid")
 
 
-def extract_urls(payload: Dict) -> Tuple[Optional[str], Optional[str]]:
-    candidate = payload
+def extract_urls(payload: Dict[str, Any]) -> Tuple[Optional[str], Optional[str]]:
+    candidate: Any = payload
     if isinstance(candidate, dict) and "data" in candidate:
         candidate = candidate["data"]
     if isinstance(candidate, dict) and "design" in candidate:
@@ -143,42 +167,198 @@ def extract_urls(payload: Dict) -> Tuple[Optional[str], Optional[str]]:
     return edit_url, view_url
 
 
-def json_pretty(payload: Dict) -> str:
+def json_pretty(payload: Dict[str, Any]) -> str:
     return json.dumps(payload, indent=2, ensure_ascii=False)
+
+
+def build_url(base: str, params: Optional[Dict[str, Any]] = None) -> str:
+    if not params:
+        return base
+    filtered = {key: value for key, value in params.items() if value not in (None, "", [])}
+    if not filtered:
+        return base
+    return f"{base}?{urlencode(filtered)}"
 
 
 ROOT = Path(__file__).resolve().parent
 load_env_file(ROOT / ".env")
 
+
+def _resolve_env_path(env_key: str, default_relative: str) -> Path:
+    configured = os.getenv(env_key, "").strip() or default_relative
+    path = Path(configured)
+    if not path.is_absolute():
+        path = ROOT / path
+    return path
+
+
 CANVA_CLIENT_ID = os.getenv("CANVA_CLIENT_ID", "").strip()
 CANVA_CLIENT_SECRET = os.getenv("CANVA_CLIENT_SECRET", "").strip()
 CANVA_REDIRECT_URI = os.getenv("CANVA_REDIRECT_URI", DEFAULT_REDIRECT_URI).strip()
 CANVA_SCOPES = os.getenv("CANVA_SCOPES", DEFAULT_SCOPES).strip() or DEFAULT_SCOPES
-SESSION_SECRET = os.getenv("SESSION_SECRET", "")
-PORT = int(os.getenv("PORT", "3000"))
-CANVA_TOKEN_FILE = Path(os.getenv("CANVA_TOKEN_FILE", "./tokens.json"))
-CANVA_STATE_FILE = Path(os.getenv("CANVA_STATE_FILE", "./oauth_state.json"))
+CANVA_TOKEN_FILE = _resolve_env_path("CANVA_TOKEN_FILE", "./tokens.json")
+CANVA_STATE_FILE = _resolve_env_path("CANVA_STATE_FILE", "./oauth_state.json")
+
+OPS_DIR = ROOT / "06_RUNS" / "ops"
+AUDIT_LOG = OPS_DIR / "canva_mcp_audit.ndjson"
 
 REDIRECT_PARSED = urlparse(CANVA_REDIRECT_URI)
-HOST = REDIRECT_PARSED.hostname or "127.0.0.1"
+CALLBACK_HOST = REDIRECT_PARSED.hostname or "127.0.0.1"
+CALLBACK_PORT = REDIRECT_PARSED.port or 3000
+CALLBACK_PATH = REDIRECT_PARSED.path or "/oauth/callback"
 
 
-class CanvaBridgeHandler(BaseHTTPRequestHandler):
-    server_version = "CanvaBridge/0.2"
+logging.basicConfig(
+    stream=sys.stderr,
+    level=logging.INFO,
+    format="%(asctime)sZ [%(levelname)s] canva-mcp: %(message)s",
+    datefmt="%Y-%m-%dT%H:%M:%S",
+)
+log = logging.getLogger("canva_mcp")
 
-    def log_message(self, fmt, *args):
-        return
 
-    def _send_json(self, code: int, payload: Dict):
-        body = json.dumps(payload, indent=2, ensure_ascii=False).encode("utf-8")
-        self.send_response(code)
-        self.send_header("Content-Type", "application/json; charset=utf-8")
-        self.send_header("Content-Length", str(len(body)))
-        self.end_headers()
-        self.wfile.write(body)
+def _now_iso() -> str:
+    return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
-    def _send_html(self, code: int, title: str, body_html: str):
-        doc = f"""<!doctype html>
+
+def _append_audit(entry: Dict[str, Any]) -> None:
+    OPS_DIR.mkdir(parents=True, exist_ok=True)
+    with AUDIT_LOG.open("a", encoding="utf-8") as handle:
+        handle.write(json.dumps(entry, ensure_ascii=False) + "\n")
+
+
+def _audit_tool(tool_name: str, ok: bool, details: Optional[Dict[str, Any]] = None) -> None:
+    payload = {
+        "ts": _now_iso(),
+        "tool": tool_name,
+        "ok": ok,
+    }
+    if details:
+        payload["details"] = details
+    _append_audit(payload)
+
+
+def _require_canva_config() -> None:
+    missing = []
+    if not CANVA_CLIENT_ID:
+        missing.append("CANVA_CLIENT_ID")
+    if not CANVA_CLIENT_SECRET:
+        missing.append("CANVA_CLIENT_SECRET")
+    if missing:
+        raise RuntimeError(f"Missing Canva config: {', '.join(missing)}")
+
+
+def _basic_auth_headers() -> Dict[str, str]:
+    _require_canva_config()
+    client_pair = f"{CANVA_CLIENT_ID}:{CANVA_CLIENT_SECRET}".encode("utf-8")
+    basic_auth = base64.b64encode(client_pair).decode("ascii")
+    return {
+        "Accept": "application/json",
+        "Authorization": f"Basic {basic_auth}",
+    }
+
+
+def _persist_token_payload(token_payload: Dict[str, Any], previous: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+    expires_in = int(token_payload.get("expires_in", 0) or 0)
+    refresh_token = token_payload.get("refresh_token") or (previous or {}).get("refresh_token")
+    record = {
+        "access_token": token_payload.get("access_token"),
+        "refresh_token": refresh_token,
+        "expires_in": expires_in,
+        "expires_at": int(time.time()) + expires_in if expires_in > 0 else None,
+        "scope": token_payload.get("scope") or (previous or {}).get("scope") or CANVA_SCOPES,
+        "saved_at": int(time.time()),
+        "token_type": token_payload.get("token_type"),
+    }
+    save_json(CANVA_TOKEN_FILE, record)
+    return record
+
+
+def _load_token_record() -> Optional[Dict[str, Any]]:
+    return load_json(CANVA_TOKEN_FILE)
+
+
+def _exchange_authorization_code(code: str, code_verifier: str) -> Dict[str, Any]:
+    status, payload = request_json(
+        "POST",
+        TOKEN_URL,
+        headers=_basic_auth_headers(),
+        form_data={
+            "grant_type": "authorization_code",
+            "code": code,
+            "redirect_uri": CANVA_REDIRECT_URI,
+            "code_verifier": code_verifier,
+            "client_id": CANVA_CLIENT_ID,
+        },
+    )
+    if status != 200:
+        raise RuntimeError(f"Canva token exchange failed ({status}): {json_pretty(payload)}")
+    if not payload.get("access_token"):
+        raise RuntimeError("Canva token exchange succeeded but access_token was missing.")
+    return _persist_token_payload(payload)
+
+
+def _refresh_access_token(refresh_token: str) -> Dict[str, Any]:
+    if not refresh_token:
+        raise RuntimeError("No Canva refresh_token is available.")
+    status, payload = request_json(
+        "POST",
+        TOKEN_URL,
+        headers=_basic_auth_headers(),
+        form_data={
+            "grant_type": "refresh_token",
+            "refresh_token": refresh_token,
+            "client_id": CANVA_CLIENT_ID,
+        },
+    )
+    if status != 200:
+        raise RuntimeError(f"Canva token refresh failed ({status}): {json_pretty(payload)}")
+    if not payload.get("access_token"):
+        raise RuntimeError("Canva token refresh succeeded but access_token was missing.")
+    previous = _load_token_record()
+    return _persist_token_payload(payload, previous=previous)
+
+
+def _ensure_access_token() -> str:
+    token_record = _load_token_record()
+    if not token_record:
+        raise RuntimeError(
+            f"No Canva token file found at {CANVA_TOKEN_FILE}. Call start_oauth first."
+        )
+
+    access_token = token_record.get("access_token")
+    refresh_token = token_record.get("refresh_token")
+    expires_at = token_record.get("expires_at")
+    now = int(time.time())
+
+    if not access_token:
+        if refresh_token:
+            token_record = _refresh_access_token(refresh_token)
+            access_token = token_record.get("access_token")
+        else:
+            raise RuntimeError("Canva token record is missing access_token and refresh_token.")
+
+    if isinstance(expires_at, int) and now >= (expires_at - TOKEN_REFRESH_SKEW_SECONDS):
+        if not refresh_token:
+            raise RuntimeError(
+                "Canva access token is expired or near expiry and no refresh_token is available. "
+                "Call start_oauth to re-authorize."
+            )
+        token_record = _refresh_access_token(refresh_token)
+        access_token = token_record.get("access_token")
+
+    if not access_token:
+        raise RuntimeError("Unable to obtain a valid Canva access token.")
+
+    return access_token
+
+
+class _ReusableHTTPServer(HTTPServer):
+    allow_reuse_address = True
+
+
+def _html_doc(title: str, body_html: str) -> bytes:
+    doc = f"""<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -194,322 +374,525 @@ class CanvaBridgeHandler(BaseHTTPRequestHandler):
     {body_html}
   </body>
 </html>"""
-        raw = doc.encode("utf-8")
-        self.send_response(code)
-        self.send_header("Content-Type", "text/html; charset=utf-8")
-        self.send_header("Content-Length", str(len(raw)))
-        self.end_headers()
-        self.wfile.write(raw)
+    return doc.encode("utf-8")
 
-    def _redirect(self, location: str):
-        self.send_response(302)
-        self.send_header("Location", location)
-        self.end_headers()
 
-    def _render_error_html(self, title: str, status: int, payload: Dict):
-        escaped = html.escape(json_pretty(payload))
-        body = (
-            f"<p>Status: <strong>{status}</strong></p>"
-            f"<pre>{escaped}</pre>"
-        )
-        self._send_html(502, title, body)
+class _OAuthManager:
+    def __init__(self) -> None:
+        self._lock = threading.Lock()
+        self._server: Optional[_ReusableHTTPServer] = None
+        self._thread: Optional[threading.Thread] = None
+        self._last_status: Dict[str, Any] = {"state": "idle"}
 
-    def do_GET(self):
-        parsed = urlparse(self.path)
-        path = parsed.path
+    def _ensure_server(self) -> None:
+        with self._lock:
+            if self._thread and self._thread.is_alive():
+                return
+            try:
+                self._server = _ReusableHTTPServer((CALLBACK_HOST, CALLBACK_PORT), CanvaOAuthCallbackHandler)
+            except OSError as exc:
+                raise RuntimeError(
+                    f"Unable to start Canva OAuth callback server on {CALLBACK_HOST}:{CALLBACK_PORT}: {exc}"
+                ) from exc
+            self._thread = threading.Thread(
+                target=self._server.serve_forever,
+                daemon=True,
+                name="canva-oauth-callback",
+            )
+            self._thread.start()
+            log.info("Canva OAuth callback server listening on %s:%s%s", CALLBACK_HOST, CALLBACK_PORT, CALLBACK_PATH)
 
-        if path == "/":
-            self.handle_root()
-            return
-
-        if path == "/oauth/start":
-            self.handle_oauth_start()
-            return
-
-        if path == "/oauth/callback":
-            self.handle_oauth_callback(parsed.query)
-            return
-
-        if path.startswith("/design/") and len(path) > len("/design/"):
-            design_id = unquote(path[len("/design/"):])
-            self.handle_design_route(design_id)
-            return
-
-        self._send_json(404, {"error": "not_found", "path": path})
-
-    def handle_root(self):
-        body = (
-            "<p>Canva OAuth bridge is running.</p>"
-            "<p><a href=\"/oauth/start\">Start Canva OAuth</a></p>"
-            "<p>Route format for design metadata: <code>/design/:id</code></p>"
-        )
-        self._send_html(200, "Canva Bridge", body)
-
-    def handle_oauth_start(self):
-        if not CANVA_CLIENT_ID or not CANVA_CLIENT_SECRET:
-            self._send_json(500, {
-                "error": "missing_config",
-                "message": "CANVA_CLIENT_ID and CANVA_CLIENT_SECRET are required."
-            })
-            print("[FAIL] Missing Canva credentials in environment.")
-            return
+    def start(self, force_reauth: bool = False) -> Dict[str, Any]:
+        _require_canva_config()
+        if force_reauth:
+            remove_file(CANVA_TOKEN_FILE)
 
         code_verifier, code_challenge = create_pkce_pair()
         state = secrets.token_urlsafe(32)
-
         oauth_state_payload = {
             "state": state,
             "code_verifier": code_verifier,
             "created_at": int(time.time()),
-            "session_secret_present": bool(SESSION_SECRET),
-        }
-        save_json(CANVA_STATE_FILE, oauth_state_payload)
-
-        query = urlencode({
-            "response_type": "code",
-            "client_id": CANVA_CLIENT_ID,
             "redirect_uri": CANVA_REDIRECT_URI,
             "scope": CANVA_SCOPES,
-            "state": state,
-            "code_challenge": code_challenge,
-            "code_challenge_method": "S256",
-        })
-        auth_redirect = f"{AUTH_URL}?{query}"
-        print("[OK] /oauth/start generated PKCE + state and wrote oauth_state.json")
-        self._redirect(auth_redirect)
+        }
+        save_json(CANVA_STATE_FILE, oauth_state_payload)
+        self._ensure_server()
 
-    def handle_oauth_callback(self, query_string: str):
+        auth_url = build_url(
+            AUTH_URL,
+            {
+                "response_type": "code",
+                "client_id": CANVA_CLIENT_ID,
+                "redirect_uri": CANVA_REDIRECT_URI,
+                "scope": CANVA_SCOPES,
+                "state": state,
+                "code_challenge": code_challenge,
+                "code_challenge_method": "S256",
+            },
+        )
+
+        self._last_status = {
+            "state": "awaiting_user_authorization",
+            "started_at": _now_iso(),
+            "authorization_url": auth_url,
+            "callback_url": CANVA_REDIRECT_URI,
+            "callback_server_running": self.is_server_running(),
+        }
+        return {
+            "authorization_url": auth_url,
+            "callback_url": CANVA_REDIRECT_URI,
+            "callback_server_running": self.is_server_running(),
+            "next_step": (
+                "Open the authorization_url in a browser, complete Canva consent, "
+                "then call auth_status until authenticated becomes true."
+            ),
+        }
+
+    def complete(self, query_string: str) -> Tuple[int, str, str]:
         params = parse_qs(query_string)
         code = (params.get("code") or [None])[0]
         state = (params.get("state") or [None])[0]
         oauth_error = (params.get("error") or [None])[0]
 
         if oauth_error:
-            payload = {
-                "error": "oauth_error",
-                "message": oauth_error,
-                "details": (params.get("error_description") or [""])[0],
+            message = (params.get("error_description") or [""])[0]
+            self._last_status = {
+                "state": "oauth_error",
+                "error": oauth_error,
+                "message": message,
+                "updated_at": _now_iso(),
             }
-            self._render_error_html("Canva OAuth Failed", 400, payload)
-            print(f"[FAIL] OAuth error returned by Canva: {oauth_error}")
-            return
+            _audit_tool("oauth_callback", False, {"error": oauth_error, "message": message})
+            body = (
+                f"<p>OAuth error: <strong>{html.escape(oauth_error)}</strong></p>"
+                f"<pre>{html.escape(message)}</pre>"
+            )
+            return 400, "Canva OAuth Failed", body
 
         if not code or not state:
-            payload = {"error": "missing_code_or_state"}
-            self._render_error_html("Canva OAuth Failed", 400, payload)
-            print("[FAIL] Callback missing code or state.")
-            return
+            self._last_status = {
+                "state": "oauth_error",
+                "error": "missing_code_or_state",
+                "updated_at": _now_iso(),
+            }
+            _audit_tool("oauth_callback", False, {"error": "missing_code_or_state"})
+            return 400, "Canva OAuth Failed", "<p>Missing code or state.</p>"
 
         local_state = load_json(CANVA_STATE_FILE)
         if not local_state:
-            payload = {"error": "missing_local_state"}
-            self._render_error_html("Canva OAuth Failed", 400, payload)
-            print("[FAIL] oauth_state.json missing or invalid.")
-            return
+            self._last_status = {
+                "state": "oauth_error",
+                "error": "missing_local_state",
+                "updated_at": _now_iso(),
+            }
+            _audit_tool("oauth_callback", False, {"error": "missing_local_state"})
+            return 400, "Canva OAuth Failed", "<p>Local OAuth state file is missing or invalid.</p>"
 
         if state != local_state.get("state"):
-            payload = {"error": "state_mismatch"}
-            self._render_error_html("Canva OAuth Failed", 400, payload)
-            print("[FAIL] State mismatch in OAuth callback.")
-            return
+            self._last_status = {
+                "state": "oauth_error",
+                "error": "state_mismatch",
+                "updated_at": _now_iso(),
+            }
+            _audit_tool("oauth_callback", False, {"error": "state_mismatch"})
+            return 400, "Canva OAuth Failed", "<p>State mismatch.</p>"
 
-        client_pair = f"{CANVA_CLIENT_ID}:{CANVA_CLIENT_SECRET}".encode("utf-8")
-        basic_auth = base64.b64encode(client_pair).decode("ascii")
-        token_headers = {
-            "Accept": "application/json",
-            "Authorization": f"Basic {basic_auth}",
+        try:
+            token_record = _exchange_authorization_code(code, str(local_state.get("code_verifier", "")))
+            remove_file(CANVA_STATE_FILE)
+        except Exception as exc:
+            self._last_status = {
+                "state": "oauth_error",
+                "error": str(exc),
+                "updated_at": _now_iso(),
+            }
+            _audit_tool("oauth_callback", False, {"error": str(exc)})
+            return 500, "Canva OAuth Failed", f"<pre>{html.escape(str(exc))}</pre>"
+
+        self._last_status = {
+            "state": "authenticated",
+            "updated_at": _now_iso(),
+            "expires_at": token_record.get("expires_at"),
+            "scope": token_record.get("scope"),
         }
-        token_form = {
-            "grant_type": "authorization_code",
-            "code": code,
-            "redirect_uri": CANVA_REDIRECT_URI,
-            "code_verifier": local_state.get("code_verifier", ""),
-            "client_id": CANVA_CLIENT_ID,
-        }
-        token_status, token_payload = request_json(
-            "POST", TOKEN_URL, headers=token_headers, form_data=token_form
+        _audit_tool("oauth_callback", True, {"expires_at": token_record.get("expires_at")})
+        body = (
+            "<p><strong>Canva OAuth completed successfully.</strong></p>"
+            "<p>You can return to Claude and call Canva MCP tools now.</p>"
         )
+        return 200, "Canva OAuth Complete", body
 
-        if token_status != 200:
-            print("[FAIL] Token exchange failed.")
-            print(json_pretty(token_payload))
-            self._render_error_html("Canva Token Exchange Failed", token_status, token_payload)
-            return
-
-        access_token = token_payload.get("access_token")
-        refresh_token = token_payload.get("refresh_token")
-        expires_in = int(token_payload.get("expires_in", 0) or 0)
-        expires_at = int(time.time()) + expires_in if expires_in > 0 else None
-        returned_scope = token_payload.get("scope") or CANVA_SCOPES
-
-        token_record = {
-            "access_token": access_token,
-            "refresh_token": refresh_token,
-            "expires_in": expires_in,
+    def status(self) -> Dict[str, Any]:
+        token_record = _load_token_record()
+        state_record = load_json(CANVA_STATE_FILE)
+        now = int(time.time())
+        expires_at = token_record.get("expires_at") if token_record else None
+        authenticated = bool(token_record and token_record.get("access_token"))
+        expired = bool(isinstance(expires_at, int) and now >= expires_at) if token_record else False
+        return {
+            "configured": bool(CANVA_CLIENT_ID and CANVA_CLIENT_SECRET),
+            "token_file": str(CANVA_TOKEN_FILE),
+            "token_file_exists": CANVA_TOKEN_FILE.exists(),
+            "state_file": str(CANVA_STATE_FILE),
+            "pending_oauth": bool(state_record),
+            "authenticated": authenticated and not expired,
+            "expired": expired,
             "expires_at": expires_at,
-            "scope": returned_scope,
-            "saved_at": int(time.time()),
-        }
-        save_json(CANVA_TOKEN_FILE, token_record)
-        remove_file(CANVA_STATE_FILE)
-
-        if not access_token:
-            payload = {"error": "missing_access_token", "token_response": token_payload}
-            self._render_error_html("Canva Token Exchange Failed", 502, payload)
-            print("[FAIL] Token payload missing access_token.")
-            return
-
-        if expires_at and int(time.time()) >= expires_at:
-            payload = {"error": "expired_token_after_exchange", "token_response": token_payload}
-            self._render_error_html("Canva Token Exchange Failed", 401, payload)
-            print("[FAIL] Access token already expired.")
-            return
-
-        api_headers = {
-            "Authorization": f"Bearer {access_token}",
-            "Accept": "application/json",
+            "scope": token_record.get("scope") if token_record else None,
+            "callback_server_running": self.is_server_running(),
+            "last_status": self._last_status,
         }
 
+    def is_server_running(self) -> bool:
+        return bool(self._thread and self._thread.is_alive())
+
+
+_OAUTH_MANAGER = _OAuthManager()
+
+
+class CanvaOAuthCallbackHandler(BaseHTTPRequestHandler):
+    server_version = "CanvaMCPCallback/1.0"
+
+    def log_message(self, fmt: str, *args: Any) -> None:
+        return
+
+    def do_GET(self) -> None:
+        parsed = urlparse(self.path)
+        if parsed.path != CALLBACK_PATH:
+            body = _html_doc("Not Found", "<p>Unknown path.</p>")
+            self.send_response(404)
+            self.send_header("Content-Type", "text/html; charset=utf-8")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            return
+
+        status, title, body_html = _OAUTH_MANAGER.complete(parsed.query)
+        body = _html_doc(title, body_html)
+        self.send_response(status)
+        self.send_header("Content-Type", "text/html; charset=utf-8")
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
+
+
+def _canva_headers(access_token: str) -> Dict[str, str]:
+    return {
+        "Authorization": f"Bearer {access_token}",
+        "Accept": "application/json",
+    }
+
+
+def tool_auth_status(args: Dict[str, Any]) -> str:
+    del args
+    payload = _OAUTH_MANAGER.status()
+    _audit_tool("auth_status", True, {"authenticated": payload.get("authenticated")})
+    return json_pretty(payload)
+
+
+def tool_start_oauth(args: Dict[str, Any]) -> str:
+    force_reauth = bool(args.get("force_reauth", False))
+    payload = _OAUTH_MANAGER.start(force_reauth=force_reauth)
+    _audit_tool("start_oauth", True, {"force_reauth": force_reauth})
+    return json_pretty(payload)
+
+
+def tool_list_designs(args: Dict[str, Any]) -> str:
+    access_token = _ensure_access_token()
+    params: Dict[str, Any] = {}
+    if "page_size" in args and args.get("page_size") is not None:
+        params["page_size"] = int(args["page_size"])
+    if args.get("continuation"):
+        params["continuation"] = str(args["continuation"])
+
+    status, payload = request_json(
+        "GET",
+        build_url(DESIGNS_URL, params),
+        headers=_canva_headers(access_token),
+    )
+    if status not in (200, 201):
+        raise RuntimeError(f"Canva list_designs failed ({status}): {json_pretty(payload)}")
+
+    _audit_tool("list_designs", True, {"status": status})
+    return json_pretty(payload)
+
+
+def tool_get_design(args: Dict[str, Any]) -> str:
+    design_id = str(args.get("design_id", "")).strip()
+    if not design_id:
+        raise ValueError("get_design requires 'design_id'.")
+
+    access_token = _ensure_access_token()
+    status, payload = request_json(
+        "GET",
+        f"{DESIGNS_URL}/{quote(design_id, safe='')}",
+        headers=_canva_headers(access_token),
+    )
+    if status not in (200, 201):
+        raise RuntimeError(f"Canva get_design failed ({status}): {json_pretty(payload)}")
+
+    edit_url, view_url = extract_urls(payload)
+    result = {
+        "design_id": design_id,
+        "edit_url": edit_url,
+        "view_url": view_url,
+        "response": payload,
+    }
+    _audit_tool("get_design", True, {"design_id": design_id})
+    return json_pretty(result)
+
+
+def tool_create_design(args: Dict[str, Any]) -> str:
+    access_token = _ensure_access_token()
+    raw_payload = args.get("payload")
+
+    if raw_payload is not None:
+        if not isinstance(raw_payload, dict):
+            raise ValueError("create_design 'payload' must be an object when provided.")
+        create_body = raw_payload
+    else:
+        title = str(args.get("title", "")).strip() or "SB Draft Design"
+        design_type_name = str(args.get("design_type_name", "")).strip() or "presentation"
         create_body = {
-            "title": "Phase 1 Test Design",
+            "title": title,
             "design_type": {
                 "type": "preset",
-                "name": "presentation",
+                "name": design_type_name,
             },
         }
-        create_headers = dict(api_headers)
-        create_headers["Content-Type"] = "application/json"
-        create_status, create_payload = request_json(
-            "POST",
-            DESIGNS_URL,
-            headers=create_headers,
-            json_data=create_body,
-        )
 
-        if create_status not in (200, 201):
-            print("[FAIL] Canva design creation failed.")
-            print(json_pretty(create_payload))
-            self._render_error_html("Canva Design Creation Failed", create_status, create_payload)
-            return
+    headers = _canva_headers(access_token)
+    headers["Content-Type"] = "application/json"
+    status, payload = request_json(
+        "POST",
+        DESIGNS_URL,
+        headers=headers,
+        json_data=create_body,
+    )
+    if status not in (200, 201):
+        raise RuntimeError(f"Canva create_design failed ({status}): {json_pretty(payload)}")
 
-        design_id = extract_design_id(create_payload if isinstance(create_payload, dict) else {})
-        if not design_id:
-            payload = {
-                "error": "missing_design_id",
-                "create_response": create_payload,
-            }
-            self._render_error_html("Canva Design Creation Failed", 502, payload)
-            print("[FAIL] Canva create response missing design ID.")
-            return
+    design_id = extract_design_id(payload)
+    edit_url, view_url = extract_urls(payload)
+    result: Dict[str, Any] = {
+        "design_id": design_id,
+        "edit_url": edit_url,
+        "view_url": view_url,
+        "create_response": payload,
+    }
 
+    if design_id and bool(args.get("fetch_metadata", True)):
         metadata_status, metadata_payload = request_json(
             "GET",
             f"{DESIGNS_URL}/{quote(design_id, safe='')}",
-            headers=api_headers,
+            headers=_canva_headers(access_token),
         )
-        if metadata_status not in (200, 201):
-            print("[FAIL] Canva design metadata fetch failed.")
-            print(json_pretty(metadata_payload))
-            self._render_error_html("Canva Design Metadata Fetch Failed", metadata_status, metadata_payload)
-            return
+        result["metadata_status"] = metadata_status
+        result["metadata_response"] = metadata_payload
+        if metadata_status in (200, 201):
+            meta_edit_url, meta_view_url = extract_urls(metadata_payload)
+            result["edit_url"] = meta_edit_url or result["edit_url"]
+            result["view_url"] = meta_view_url or result["view_url"]
 
-        edit_url, view_url = extract_urls(metadata_payload)
-        metadata_json = html.escape(json_pretty(metadata_payload))
-        edit_link = (
-            f'<a href="{html.escape(edit_url)}" target="_blank">{html.escape(edit_url)}</a>'
-            if edit_url else "not available"
-        )
-        view_link = (
-            f'<a href="{html.escape(view_url)}" target="_blank">{html.escape(view_url)}</a>'
-            if view_url else "not available"
-        )
-
-        body = (
-            "<p><strong>Design created</strong></p>"
-            f"<p>Design ID: <code>{html.escape(design_id)}</code></p>"
-            f"<p>Edit URL: {edit_link}</p>"
-            f"<p>View URL: {view_link}</p>"
-            f"<h2>Metadata JSON</h2><pre>{metadata_json}</pre>"
-        )
-        self._send_html(200, "Design created", body)
-
-        print("[OK] Design created.")
-        print(f"Design ID: {design_id}")
-        print(f"Edit URL: {edit_url or 'not available'}")
-        print(f"View URL: {view_url or 'not available'}")
-
-    def handle_design_route(self, design_id: str):
-        token_data = load_json(CANVA_TOKEN_FILE)
-        if not token_data:
-            payload = {"error": "missing_token_file", "token_file": str(CANVA_TOKEN_FILE)}
-            self._render_error_html("Canva Design Lookup Failed", 401, payload)
-            return
-
-        access_token = token_data.get("access_token")
-        expires_at = token_data.get("expires_at")
-        if not access_token:
-            payload = {"error": "missing_access_token", "token_file": str(CANVA_TOKEN_FILE)}
-            self._render_error_html("Canva Design Lookup Failed", 401, payload)
-            return
-
-        if isinstance(expires_at, int) and time.time() >= expires_at:
-            payload = {
-                "error": "expired_token",
-                "expires_at": expires_at,
-                "now": int(time.time()),
-            }
-            self._render_error_html("Canva Design Lookup Failed", 401, payload)
-            return
-
-        headers = {"Authorization": f"Bearer {access_token}", "Accept": "application/json"}
-        status, payload = request_json(
-            "GET",
-            f"{DESIGNS_URL}/{quote(design_id, safe='')}",
-            headers=headers,
-        )
-        if status not in (200, 201):
-            self._render_error_html("Canva Design Lookup Failed", status, payload)
-            return
-
-        edit_url, view_url = extract_urls(payload)
-        edit_link = (
-            f'<a href="{html.escape(edit_url)}" target="_blank">{html.escape(edit_url)}</a>'
-            if edit_url else "not available"
-        )
-        view_link = (
-            f'<a href="{html.escape(view_url)}" target="_blank">{html.escape(view_url)}</a>'
-            if view_url else "not available"
-        )
-        body = (
-            f"<p>Design ID: <code>{html.escape(design_id)}</code></p>"
-            f"<p>Edit URL: {edit_link}</p>"
-            f"<p>View URL: {view_link}</p>"
-            f"<h2>Metadata JSON</h2><pre>{html.escape(json_pretty(payload))}</pre>"
-        )
-        self._send_html(200, f"Design {design_id}", body)
+    _audit_tool("create_design", True, {"design_id": design_id})
+    return json_pretty(result)
 
 
-def main():
-    if not CANVA_CLIENT_ID or not CANVA_CLIENT_SECRET:
-        print("[WARN] CANVA_CLIENT_ID or CANVA_CLIENT_SECRET is missing. Set them in .env.")
+_TOOLS = [
+    {
+        "name": "auth_status",
+        "description": (
+            "Inspect Canva OAuth readiness, token presence, expiry, and callback "
+            "server status."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {},
+        },
+    },
+    {
+        "name": "start_oauth",
+        "description": (
+            "Start the one-time Canva OAuth bootstrap. Returns an authorization URL "
+            "to open in a browser while the MCP server listens for the callback."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "force_reauth": {
+                    "type": "boolean",
+                    "description": "When true, clear the current token file before starting a new OAuth flow.",
+                },
+            },
+        },
+    },
+    {
+        "name": "list_designs",
+        "description": "List Canva designs using the current OAuth token.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "page_size": {
+                    "type": "integer",
+                    "description": "Optional page size forwarded to the Canva designs API.",
+                },
+                "continuation": {
+                    "type": "string",
+                    "description": "Optional continuation cursor forwarded to the Canva designs API.",
+                },
+            },
+        },
+    },
+    {
+        "name": "get_design",
+        "description": "Fetch one Canva design by id and return metadata plus edit/view URLs when available.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "design_id": {
+                    "type": "string",
+                    "description": "Canva design id.",
+                },
+            },
+            "required": ["design_id"],
+        },
+    },
+    {
+        "name": "create_design",
+        "description": (
+            "Create a Canva draft design. Either provide a full payload object or "
+            "use the minimal title + design_type_name preset form."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "description": "Design title when using the minimal preset payload.",
+                },
+                "design_type_name": {
+                    "type": "string",
+                    "description": "Canva preset design type name, e.g. 'presentation'.",
+                },
+                "payload": {
+                    "type": "object",
+                    "description": "Optional raw Canva create-design JSON payload to send directly.",
+                },
+                "fetch_metadata": {
+                    "type": "boolean",
+                    "description": "When true, fetch design metadata after creation if an id is returned.",
+                },
+            },
+        },
+    },
+]
 
-    print("Starting Canva bridge...")
-    print(f"Redirect URI: {CANVA_REDIRECT_URI}")
-    print(f"Scopes: {CANVA_SCOPES}")
-    print(f"Listening on: http://{HOST}:{PORT}")
-    print("Routes:")
-    print("  GET /")
-    print("  GET /oauth/start")
-    print("  GET /oauth/callback")
-    print("  GET /design/:id")
+_TOOL_FN_MAP = {
+    "auth_status": tool_auth_status,
+    "start_oauth": tool_start_oauth,
+    "list_designs": tool_list_designs,
+    "get_design": tool_get_design,
+    "create_design": tool_create_design,
+}
 
-    server = HTTPServer((HOST, PORT), CanvaBridgeHandler)
+
+def _write(msg: Dict[str, Any]) -> None:
+    line = json.dumps(msg, separators=(",", ":"))
+    sys.stdout.write(line + "\n")
+    sys.stdout.flush()
+
+
+def _ok(request_id: Any, result: Any) -> None:
+    _write({"jsonrpc": "2.0", "id": request_id, "result": result})
+
+
+def _err(request_id: Any, code: int, message: str) -> None:
+    _write({
+        "jsonrpc": "2.0",
+        "id": request_id,
+        "error": {"code": code, "message": message},
+    })
+
+
+def _handle(msg: Dict[str, Any]) -> None:
+    method = msg.get("method", "")
+    request_id = msg.get("id")
+
+    if request_id is None:
+        log.debug("notification: %s", method)
+        return
+
     try:
-        server.serve_forever()
-    except KeyboardInterrupt:
-        print("\nStopping Canva bridge.")
-    finally:
-        server.server_close()
+        if method == "initialize":
+            _ok(request_id, {
+                "protocolVersion": "2024-11-05",
+                "capabilities": {"tools": {}},
+                "serverInfo": {
+                    "name": "canva-ll",
+                    "version": "1.0.0",
+                    "description": (
+                        "Canva MCP — LL Second Brain. Draft-design access with "
+                        "one-time OAuth bootstrap and governed runtime calls."
+                    ),
+                },
+            })
+        elif method == "tools/list":
+            _ok(request_id, {"tools": _TOOLS})
+        elif method == "tools/call":
+            params = msg.get("params", {})
+            tool_name = params.get("name", "")
+            arguments = params.get("arguments", {})
+
+            if tool_name not in _TOOL_FN_MAP:
+                _err(request_id, -32601, f"Unknown tool: '{tool_name}'")
+                return
+
+            log.info("tools/call name=%s", tool_name)
+            try:
+                text = _TOOL_FN_MAP[tool_name](arguments)
+                _ok(request_id, {
+                    "content": [{"type": "text", "text": text}],
+                    "isError": False,
+                })
+            except (PermissionError, ValueError, RuntimeError) as exc:
+                log.warning("tool error [%s]: %s", tool_name, exc)
+                _audit_tool(tool_name, False, {"error": str(exc)})
+                _ok(request_id, {
+                    "content": [{"type": "text", "text": f"ERROR: {exc}"}],
+                    "isError": True,
+                })
+            except Exception as exc:
+                log.error("tool exception [%s]: %s", tool_name, exc, exc_info=True)
+                _audit_tool(tool_name, False, {"error": str(exc)})
+                _ok(request_id, {
+                    "content": [{"type": "text", "text": f"ERROR: {exc}"}],
+                    "isError": True,
+                })
+        else:
+            _err(request_id, -32601, f"Method not found: '{method}'")
+    except Exception as exc:
+        log.error("handler exception: %s", exc, exc_info=True)
+        _err(request_id, -32603, f"Internal error: {exc}")
+
+
+def main() -> None:
+    log.info("Canva MCP server starting. OAuth callback: %s", CANVA_REDIRECT_URI)
+    for line in sys.stdin:
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            msg = json.loads(line)
+        except json.JSONDecodeError as exc:
+            log.error("JSON parse error: %s | input: %.200s", exc, line)
+            _write({
+                "jsonrpc": "2.0",
+                "id": None,
+                "error": {"code": -32700, "message": f"Parse error: {exc}"},
+            })
+            continue
+        _handle(msg)
 
 
 if __name__ == "__main__":

@@ -1,19 +1,25 @@
-# Canva Bridge (Python, OAuth + PKCE)
+# Canva MCP Server (Python, OAuth + PKCE)
 
-This bridge proves local Canva connectivity by:
-1. Completing OAuth 2.0 Authorization Code flow with PKCE
-2. Calling `GET https://api.canva.com/rest/v1/designs`
-3. Calling `POST https://api.canva.com/rest/v1/designs` to create a test design titled **SB Connection Test**
+`canva_bridge.py` now runs as a persistent stdio MCP server.
 
-The server exposes exactly two routes:
-- `GET /oauth/start`
-- `GET /oauth/callback`
+It supports:
+1. One-time OAuth bootstrap with PKCE
+2. Token reuse and automatic refresh for normal tool calls
+3. Tool-callable Canva operations for design listing, lookup, and draft creation
+
+Primary MCP tools:
+- `auth_status`
+- `start_oauth`
+- `list_designs`
+- `get_design`
+- `create_design`
 
 ## Files
 - `canva_bridge.py`
 - `.env` (local, not committed)
 - `tokens.json` (generated after successful callback)
 - `oauth_state.json` (temporary state/verifier file)
+- `.claude/settings.json` (project-level MCP registration)
 
 ## Environment
 Use these variables in `.env`:
@@ -33,39 +39,27 @@ Important:
 - In Canva developer settings, the redirect URI must exactly match:
   - `http://127.0.0.1:3000/oauth/callback`
 
-## Run Instructions
+## Runtime Model
+
+The server is registered in `.claude/settings.json` as the `canva` MCP server.
+Claude starts it as a persistent background process and calls tools over stdio.
+
+## OAuth Bootstrap
+
+Initial auth still requires one browser consent step.
 
 1. Ensure `.env` contains valid Canva client credentials.
-2. Start the bridge:
+2. Start Claude in this repo so the `canva` MCP server is available.
+3. Call the `start_oauth` tool.
+4. Open the returned `authorization_url` in a browser.
+5. Complete Canva consent.
+6. Canva redirects to `CANVA_REDIRECT_URI`, and the running MCP server exchanges the code and stores tokens in `tokens.json`.
+7. Call `auth_status` until `authenticated` is `true`.
 
-```bash
-python3 canva_bridge.py
-```
+After that, normal Canva tool calls should work without repeating manual consent unless the refresh token becomes invalid.
 
-3. In browser, open:
+## Notes
 
-```text
-http://127.0.0.1:3000/oauth/start
-```
-
-4. Complete Canva consent in the browser.
-5. Canva redirects to `/oauth/callback`, which automatically:
-   - exchanges code for tokens
-   - stores tokens in `tokens.json`
-   - calls `GET /rest/v1/designs`
-   - calls `POST /rest/v1/designs`
-   - prints API responses, design ID, and edit URL (if returned)
-
-## Terminal Output
-
-On success, terminal output includes:
-- token exchange success
-- full JSON result for `GET /rest/v1/designs`
-- full JSON result for `POST /rest/v1/designs`
-- created design ID and edit URL (if available)
-
-On failure, terminal output includes clear errors for:
-- state mismatch
-- failed token exchange
-- expired/unauthorized token responses
-- non-200 API responses
+- `start_oauth` starts a local callback listener at `CANVA_REDIRECT_URI`.
+- `create_design` defaults to creating a draft preset design using `presentation` unless a raw payload is supplied.
+- All tool calls append lightweight audit entries to `06_RUNS/ops/canva_mcp_audit.ndjson`.
