@@ -4,7 +4,7 @@ title: Marketing Portfolio
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-03-09
+last_updated: 2026-03-21
 tags: []
 ---
 
@@ -63,6 +63,18 @@ Once a matter is opened in Clio, responsibility transfers immediately and exclus
 * Infer delivery priority or scope
 
 **Clio** is the fulfillment system of record once the conversion handoff enters fulfillment onboarding.
+
+## Website Structure Note
+
+Canonical Levine Law website hierarchy is defined in:
+
+`01_DOCTRINE/03_POLICIES/POL-051_LL_Website_Information_Architecture_Policy.md`
+
+That policy governs:
+- homepage role
+- Level 2 pages (`Industries / Industries Served`, `Services / How We Help`, `Inquiries`)
+- Level 3 industry / client-profile / service-specific soft landing pages
+- routing relationship between pillar pages and opt-in pages
 
 ---
 
