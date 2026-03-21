@@ -4,13 +4,13 @@ title: Wealth Management
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-15
-tags: [wealth-management, venture, initiating]
+last_updated: 2026-03-20
+tags: [wealth-management, strategic, planning]
 ---
 
 # Wealth Management
 
-This project is an initiating-stage venture/project under Matthew Holdings.
+This project is a planning-stage strategic project under Matthew Holdings.
 
 ---
 
@@ -23,42 +23,50 @@ This project is an initiating-stage venture/project under Matthew Holdings.
 ## Current State
 
 - Ownership branch: `Matthew Holdings / HillSide`
-- Required initiation packet drafted
-- Planning not yet authorized
+- Primary target documented: consolidated net worth of at least CAD 2,000,000 by `2030-12-31`
+- Initiating -> Planning gate approved on `2026-03-20`
+- Planning packet opened in `planning/`
+- Executing not yet authorized
 
 ---
 
 ## Objective
 
-Define a controlled wealth management project under Matthew Holdings, including
-scope, regulatory posture, capital model, and execution path.
+Define the internal wealth-management strategy under Matthew Holdings needed to
+reach consolidated net worth of at least CAD 2,000,000 by `2030-12-31`, when
+Matthew is 50.
 
 ---
 
-## Initial Workstreams
+## Current Planning Workstreams
 
-- define project scope and target model
-- clarify regulatory and licensing boundary
-- define capital allocation and operating structure
-- determine external partner/platform requirements
-- prepare planning gate packet for ML1 decision
+- establish the opening consolidated net-worth baseline and valuation rule
+- quantify the gap to target and the required annual accumulation rate
+- define capital-allocation, liquidity, and risk guardrails
+- define the quarterly review cadence and annual reforecast rule
+- prepare the `Planning -> Executing` gate packet for ML1
+
+## Notes
+
+- This is an internal wealth-management and capital-stewardship project.
+- It is not a public-facing wealth-management offering.
 
 ---
 
-## Required Initiation Packet
+## Planning Packet
 
-- `README.md` *(supporting folder overview; not a stage-gate artifact)*
-- `PROJECT_CHARTER.md`
-- `PROBLEM_STATEMENT.md`
-- `SUCCESS_CRITERIA.md`
-- `STAKEHOLDERS.md`
-- `RISK_SCAN.md`
-- `APPROVAL_RECORD.md`
-- `BUSINESS_CASE.md` *(required for strategic projects)*
+- `planning/README.md`
+- `planning/SCOPE_DEFINITION.md`
+- `planning/PROJECT_PLAN.md`
+- `planning/ASSUMPTIONS_CONSTRAINTS.md`
+- `planning/DEPENDENCIES.md`
+- `planning/RISK_REGISTER.md`
+- `planning/COMMUNICATION_PLAN.md`
+- `planning/METRICS.md`
 
 ---
 
 ## Stage Gate
 
-Planning may begin only after ML1 approves transition from `Initiating` to
-`Planning` in `APPROVAL_RECORD.md`.
+Executing may begin only after ML1 approves transition from `Planning` to
+`Executing` in `APPROVAL_RECORD.md`.

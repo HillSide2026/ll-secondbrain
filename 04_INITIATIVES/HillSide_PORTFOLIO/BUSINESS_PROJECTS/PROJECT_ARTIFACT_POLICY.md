@@ -4,7 +4,7 @@ title: HillSide Business Project Artifact Policy
 owner: ML1
 status: draft
 created_date: 2026-03-15
-last_updated: 2026-03-15
+last_updated: 2026-03-20
 tags: [hillside, business-projects, stage-gates, artifacts]
 ---
 
@@ -49,17 +49,18 @@ work where the main objective is an ML1 go / hold / no-go or reclassification
 decision.
 
 Decision projects remain projects under the canonical project delivery-stage
-system. They do not replace the HillSide decision lifecycle used in project
-registers.
+system. They do not replace the canonical HillSide project stages defined in
+`STAGE_REFERENCE.md`.
 
-## Pre-Initiation Shells
+## Early Initiating Shells
 
 A HillSide project may exist as a folder shell with only:
 
 - `README.md`
 - a project-register entry
 
-This is acceptable while the project remains at `idea` or `screening`.
+This is acceptable during early `initiating` work before the full initiation
+packet is complete.
 
 Once a project packet is started or a project is described as `Initiating`, the
 required initiation artifact set must be represented explicitly. Missing items

@@ -4,13 +4,13 @@ title: Cash Flow
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-15
-tags: [cash-flow, hillside, strategic, initiating]
+last_updated: 2026-03-20
+tags: [cash-flow, hillside, strategic, planning]
 ---
 
 # Cash Flow
 
-This project is an initiating-stage HillSide strategic project.
+This project is a planning-stage HillSide strategic project.
 
 ---
 
@@ -20,38 +20,42 @@ This project is an initiating-stage HillSide strategic project.
 
 ## Current State
 
-- Initiation packet drafted
+- Approximate initiation baseline: CAD 1.6M in cash and securities under Matthew Holdings
+- One in-scope security is 100% equity in Levine Law
+- Initiating -> Planning gate approved on `2026-03-20`
 - Project classified as `Strategic`
-- Planning not yet authorized
-- register stage: `screening`
+- Planning packet opened in `planning/`
+- Executing not yet authorized
 
 ## Objective
 
-Improve visibility, control, and planning discipline around HillSide branch
-cash generation and deployment.
+Create a CPA-quality cash-flow reporting and control project for Matthew
+Holdings that measures monthly portfolio cash flow and free cash flow, plus
+entity-level cash flow and free cash flow for Levine Law and other
+Matthew-established businesses.
 
 ---
 
-## Initial Workstreams
+## Current Planning Workstreams
 
-- define the cash-flow reporting boundary
-- identify current-state source systems and reporting gaps
-- define the minimum viable forecast and review cadence
-- clarify who supplies inputs and who reviews outputs
-- prepare planning gate packet for ML1 decision
+- define the reporting boundary across portfolio assets and operating businesses
+- define cash-flow and free-cash-flow formulas, inclusions, exclusions, and source records
+- map the in-scope entities, including Levine Law, `175 / FinSure`, and YellowBricks close-out activity
+- define the monthly close cadence, review owner, and variance process
+- prepare the `Planning -> Executing` gate packet for ML1 decision
 
 ---
 
-## Required Initiation Packet
+## Planning Packet
 
-- `README.md` *(supporting folder overview; not a stage-gate artifact)*
-- `PROJECT_CHARTER.md`
-- `PROBLEM_STATEMENT.md`
-- `SUCCESS_CRITERIA.md`
-- `STAKEHOLDERS.md`
-- `RISK_SCAN.md`
-- `APPROVAL_RECORD.md`
-- `BUSINESS_CASE.md`
+- `planning/README.md`
+- `planning/SCOPE_DEFINITION.md`
+- `planning/PROJECT_PLAN.md`
+- `planning/ASSUMPTIONS_CONSTRAINTS.md`
+- `planning/DEPENDENCIES.md`
+- `planning/RISK_REGISTER.md`
+- `planning/COMMUNICATION_PLAN.md`
+- `planning/METRICS.md`
 
 ---
 
@@ -60,3 +64,5 @@ cash generation and deployment.
 - This project is currently tracked in the HillSide project register.
 - This is a strategic internal-control project, not a venture build or external offering.
 - The strategic rationale is stronger cash-flow visibility, reporting discipline, and capital-allocation control.
+- `METRICS.md` remains the initiation-stage source for core metric definitions.
+- `planning/` now holds the active execution-readiness packet.

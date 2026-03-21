@@ -4,7 +4,7 @@ title: Cash Flow - Risk Scan
 owner: ML1
 status: draft
 created_date: 2026-03-15
-last_updated: 2026-03-15
+last_updated: 2026-03-20
 tags: [cash-flow, initiation, risk]
 ---
 
@@ -16,11 +16,12 @@ Project: `HBP-002` - Cash Flow
 
 - The project may sprawl from cash-flow control into broader accounting, treasury, or entity-management redesign.
 - The reporting boundary may stay too vague to produce decision-useful outputs.
+- Portfolio flows, operating flows, and one-time exit proceeds may be mixed inconsistently.
 
 ## Schedule Risks
 
 - Planning authorization may slip if source systems and current-state data are harder to map than expected.
-- Forecast design may stall if the project tries to solve long-range modeling before near-term control needs are locked.
+- Free-cash-flow design may stall if working-capital, tax, or sustaining-spend rules are not fixed early.
 
 ## Budget Risks
 
@@ -31,8 +32,10 @@ Project: `HBP-002` - Cash Flow
 - the project is still in definition mode and is not yet implementing a permanent system
 - current data sources are imperfect but sufficient to support an initiation-stage framing exercise
 - the first useful outcome is management visibility and decision discipline, not accounting-system replacement
+- Matthew Holdings currently has an approximate initiation baseline of CAD 1.6M in cash and securities
+- Levine Law, `175 / FinSure`, and YellowBricks cash events can be classified consistently enough for planning
 
 ## Go / No-Go Judgment
 
 Proceed to Planning only if the reporting boundary, minimum viable cadence, and
-decision use cases can be narrowed enough to justify a controlled next stage.
+metric definitions can be narrowed enough to justify a controlled next stage.

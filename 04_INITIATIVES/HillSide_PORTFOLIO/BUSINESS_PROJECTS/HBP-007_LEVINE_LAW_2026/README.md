@@ -4,22 +4,21 @@ title: Levine Law 2026
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-15
-tags: [levine-law, 2026, hillside, project]
+last_updated: 2026-03-20
+tags: [levine-law, 2026, hillside, project, initiating]
 ---
 
 # Levine Law 2026
 
 **Project ID:** `HBP-007`
 
-This folder is the canonical project home for the HillSide Levine Law 2026
-project.
+This project is an initiating-stage HillSide strategic-program project.
 
 ## Current State
 
 - folder created
-- project packet not yet built
-- register stage: `idea`
+- initiation packet not yet built
+- planning not yet authorized
 
 ## Objective
 
@@ -32,7 +31,7 @@ Track and govern the 2026 Levine Law strategic program as a HillSide project.
 - Additional artifacts should be added if the 2026 program is developed here
   in more detail.
 
-## When Initiation Starts
+## Required Initiation Packet
 
 Use the standard HillSide initiation packet defined in
 `../PROJECT_ARTIFACT_POLICY.md`:

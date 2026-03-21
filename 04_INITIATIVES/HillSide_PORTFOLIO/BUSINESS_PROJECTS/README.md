@@ -4,7 +4,7 @@ title: Business Projects
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-15
+last_updated: 2026-03-20
 tags: [hillside, business-projects]
 ---
 
@@ -38,11 +38,15 @@ Each HillSide business project now has a numbered folder starting with its
 canonical `HBP-###` label.
 
 HillSide currently uses both `Strategic` and `Decision` project packets.
-Decision projects remain governed projects and do not replace the separate
-register-level decision lifecycle.
+Decision projects remain governed projects under the same canonical HillSide
+stage model.
 
-Business-project folders may exist as shells while a project is still in `idea`
-or `screening`.
+Canonical HillSide project stages are defined in:
+
+- `STAGE_REFERENCE.md`
+
+Business-project folders may exist as shells during early `initiating` work
+before a full initiation packet is complete.
 
 Once a HillSide project enters `Initiating` or a packet starts to form, the
 required artifact set is governed by `PROJECT_ARTIFACT_POLICY.md`.

@@ -1,6 +1,6 @@
 ---
 id: 04_initiatives__hillside_portfolio__business_projects__hbp_004_micro_saas_build_and_launch__stakeholders_md
-title: Micro SaaS Build and Launch - Stakeholders
+title: Develop and Launch Micro SaaS (TariffLookup.ca) - Stakeholders
 owner: ML1
 status: draft
 project_type: strategic
@@ -11,7 +11,7 @@ tags: [micro-saas, initiation, stakeholders]
 
 # Stakeholders
 
-Project: HBP-004 - Micro SaaS Build and Launch
+Project: HBP-004 - Develop and Launch Micro SaaS (TariffLookup.ca)
 
 | Stakeholder | Role | Responsibility |
 |---|---|---|

@@ -4,45 +4,36 @@ title: Sale of YellowBricks
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-15
-tags: [yellowbricks, sale, hillside, project]
+last_updated: 2026-03-20
+tags: [yellowbricks, sale, hillside, project, closing]
 ---
 
 # Sale of YellowBricks
 
 **Project ID:** `HBP-003`
 
-This folder is the canonical project home for the HillSide YellowBricks sale
-project.
+This project is a closing-stage HillSide sale project.
 
 ## Current State
 
-- folder created
-- project packet not yet built
-- register stage: `idea`
+- YellowBricks sale is in post-closing handling
+- residual collection and follow-through remain active
+- closing-stage artifacts are not yet normalized in this folder
 
 ## Objective
 
-Pursue a potential liquidity event and capital-recycling transaction for
-YellowBricks.
+Complete post-closing handling and capital-recycling follow-through for the
+YellowBricks sale.
 
 ## Notes
 
 - This project is linked to the YellowBricks entity branch.
-- Additional transaction artifacts should be added here if the project moves
-  beyond idea stage.
+- Additional close-out artifacts should be added here while post-closing work
+  remains active.
 
-## When Initiation Starts
+## Closing Artifact Rule
 
-Use the standard HillSide initiation packet defined in
-`../PROJECT_ARTIFACT_POLICY.md`:
+Use this folder for closing-stage and post-closing materials as they are added.
 
-- `PROJECT_CHARTER.md`
-- `PROBLEM_STATEMENT.md`
-- `SUCCESS_CRITERIA.md`
-- `STAKEHOLDERS.md`
-- `RISK_SCAN.md`
-- `APPROVAL_RECORD.md`
-- `BUSINESS_CASE.md` if the project is classified as `Strategic`
-
-`README.md` remains the folder shell and is not itself a stage-gate artifact.
+`README.md` remains a supporting folder overview and is not itself a
+stage-gate artifact.

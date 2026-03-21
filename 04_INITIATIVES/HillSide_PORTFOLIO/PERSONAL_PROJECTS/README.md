@@ -4,7 +4,7 @@ title: Personal Projects
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-16
+last_updated: 2026-03-20
 tags: [hillside, personal-projects]
 ---
 
@@ -20,8 +20,10 @@ Current personal projects:
 ## Decision-Making
 
 - [DECISION_MAKING/README.md](DECISION_MAKING/README.md) records the HillSide
-  decision lifecycle:
-  `idea -> screening -> validating -> decision -> approved -> rejected`
+  personal concept and triage queues.
+- It does not define authoritative HillSide business-project stages.
+- Authoritative `HBP` stages are maintained in
+  [../BUSINESS_PROJECTS/STAGE_REFERENCE.md](../BUSINESS_PROJECTS/STAGE_REFERENCE.md).
 
 ## To-Do List
 

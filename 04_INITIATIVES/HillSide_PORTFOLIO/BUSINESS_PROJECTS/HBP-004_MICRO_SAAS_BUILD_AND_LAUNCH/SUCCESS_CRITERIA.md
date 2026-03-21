@@ -1,6 +1,6 @@
 ---
 id: 04_initiatives__hillside_portfolio__business_projects__hbp_004_micro_saas_build_and_launch__success_criteria_md
-title: Micro SaaS Build and Launch - Success Criteria
+title: Develop and Launch Micro SaaS (TariffLookup.ca) - Success Criteria
 owner: ML1
 status: draft
 project_type: strategic
@@ -11,7 +11,7 @@ tags: [micro-saas, project, success]
 
 # Success Criteria
 
-Project: HBP-004 - Micro SaaS Build and Launch
+Project: HBP-004 - Develop and Launch Micro SaaS (TariffLookup.ca)
 
 ## Criteria
 

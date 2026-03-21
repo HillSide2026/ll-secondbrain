@@ -4,7 +4,7 @@ title: Wealth Management - Problem Statement
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-14
+last_updated: 2026-03-20
 tags: [wealth-management, initiation, problem]
 ---
 
@@ -14,24 +14,24 @@ Project: `HBP-001` - Wealth Management
 
 ## Problem
 
-There is interest in a wealth management initiative under Matthew Holdings, but
-the project does not yet have a defined scope, operating model, or regulatory
-path.
+Matthew has a real wealth objective, but there is no approved baseline,
+quantified path, or governance model for reaching it under Matthew Holdings.
 
 Current gaps:
 
-- no clear boundary between internal capital deployment and external-facing service
-- no defined licensing / regulatory model
-- no approved capital structure or execution model
-- no decision-ready plan for whether this should be built, partnered, or deferred
+- no approved consolidated net-worth baseline
+- no quantified path to at least CAD 2,000,000 by `2030-12-31`
+- no documented capital-allocation, liquidity, or risk rules
+- no regular review cadence or decision triggers tied to the target
 
 ## Proposed Solution
 
-Stand up a controlled initiation-stage project to define the target model,
-clarify constraints, and produce a planning-ready decision packet for ML1.
+Stand up a controlled initiation-stage project to define the net-worth baseline,
+the gap to the `2030-12-31` target, the governing capital rules, and the
+planning-ready decision packet for ML1.
 
 ## Impact of Not Solving
 
-- capital may remain strategically under-deployed
-- effort may be wasted on an invalid or over-broad model
-- regulatory exposure could increase if the initiative is scoped informally
+- the `2030-12-31` target may be missed without a measured path
+- capital may remain under-deployed or misallocated relative to the goal
+- decision-making may remain reactive because no review cadence or trigger set exists

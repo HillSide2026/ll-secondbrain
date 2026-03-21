@@ -4,7 +4,7 @@ title: HillSide Portfolio
 owner: ML1
 status: draft
 created_date: 2026-03-06
-last_updated: 2026-03-16
+last_updated: 2026-03-20
 tags: []
 ---
 
@@ -98,11 +98,15 @@ Projects with dedicated folders currently include:
 - `HBP-010` -> `BUSINESS_PROJECTS/HBP-010_RHIZOME_WHITE_LABEL`
 - `HBP-011` -> `BUSINESS_PROJECTS/HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY`
 
-The HillSide decision lifecycle reference is maintained in:
+The canonical HillSide business-project stage reference is maintained in:
+
+- `BUSINESS_PROJECTS/STAGE_REFERENCE.md`
+
+The HillSide personal concept-queue workspace is maintained in:
 
 - `PERSONAL_PROJECTS/DECISION_MAKING`
 
-The HillSide personal task list reference is maintained in:
+The HillSide personal task-list reference is maintained in:
 
 - `PERSONAL_PROJECTS/TO_DO_LIST`
 

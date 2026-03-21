@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 project_type: strategic
 created_date: 2026-03-15
-last_updated: 2026-03-15
+last_updated: 2026-03-20
 tags: [wealth-management, initiation, business-case]
 ---
 
@@ -15,68 +15,74 @@ Project: `HBP-001` - Wealth Management
 
 ## Opportunity
 
-Matthew Holdings may benefit from a more deliberate wealth-management strategy,
-but the initiative currently spans multiple possible models with very different
-regulatory, operating, and capital implications.
+Matthew needs a measurable wealth-management objective rather than a general
+ambition. The immediate opportunity is to manage Matthew Holdings against a
+clear target of consolidated net worth of at least CAD 2,000,000 by
+`2030-12-31`.
 
-The business case for initiation is not that the end-state model is already
-proven. It is that a controlled definition effort is warranted before capital
-is committed or a public-facing structure is explored.
+The business case for initiation is not that the full strategy is already
+finalized. It is that a controlled definition effort is warranted before
+capital-allocation decisions continue without an approved baseline, target gap,
+or governance model.
 
 ## Strategic Rationale
 
-- capital allocation decisions may improve if internal deployment options are evaluated systematically
-- a wealth-management capability could become an important control layer for long-term capital stewardship
-- early clarification may prevent wasted effort on an invalid regulatory or operating model
+- abstract wealth ambition becomes a dated, measurable target
+- capital-allocation decisions can be judged against a real gap-to-target
+- one internal wealth-management lens can be applied across portfolio assets and business equity
+- disciplined measurement reduces the chance of drifting into opportunistic but off-target deployments
 
-## Candidate Paths
+## Primary Wealth Levers
 
-### Option 1
+### Lever 1
 
-Internal capital-management discipline only.
+Liquid portfolio income and compounding.
 
-- Focus: portfolio governance, capital deployment rules, and advisor/platform selection for internal use
-- Upside: lowest regulatory complexity
-- Main limitation: no external service or revenue model
+- Focus: treasury discipline, portfolio yield, and compounding from liquid assets
+- Upside: easier measurement and faster control feedback
+- Main limitation: may not be sufficient alone to close the gap to target
 
-### Option 2
+### Lever 2
 
-External-facing wealth-management offering.
+Operating-business earnings, distributions, and equity appreciation.
 
-- Focus: serving outside clients or investors
-- Upside: potential new revenue stream
-- Main limitation: highest regulatory, licensing, and operating complexity
+- Focus: Levine Law and other Matthew-built businesses as wealth engines
+- Upside: may drive larger step-changes in net worth
+- Main limitation: higher execution variability and concentration risk
 
-### Option 3
+### Lever 3
 
-Hybrid path.
+Selective redeployment, acquisitions, or dispositions.
 
-- Focus: start with internal discipline, preserve option value for later external expansion
-- Upside: controlled sequencing and lower premature commitment risk
-- Main limitation: may delay clarity if boundaries are not fixed tightly
+- Focus: moving capital between holdings when hurdle rates justify it
+- Upside: preserves flexibility to accelerate the path to target
+- Main limitation: requires tight governance to avoid reactive or thesis-light moves
 
 ## Initial View
 
-The strongest current case is for a controlled internal-first or hybrid path,
-not an immediate external-facing offering.
+A blended internal wealth-management model is the strongest current case.
+That means disciplined measurement of current net worth, active management of
+liquid assets, and explicit treatment of business equity as part of the path to
+the `2030-12-31` target.
 
 That view is based on:
 
-- unresolved regulatory boundary questions
-- unclear execution-partner requirements
-- lack of an approved capital envelope
-- the need to prove operating discipline before expanding scope
+- the need for a single approved baseline before further optimization
+- the likelihood that both liquid assets and operating businesses matter to the target
+- the absence of explicit capital-allocation and liquidity rules today
+- the value of measuring progress quarterly rather than managing by intuition
 
 ## Constraints
 
-- no external offering should be assumed or implied at initiation stage
+- this project is an internal wealth-management program, not an external offering
 - no capital deployment is authorized by this business case alone
-- regulatory and licensing exposure must be treated as a front-end design constraint
+- the target must be measured on a consistent consolidated basis
+- planning should not assume a new public-facing wealth-management business
 
 ## Decision Standard
 
 Proceed to Planning only if ML1 concludes that:
 
-- one target model is more credible than the alternatives
-- the regulatory boundary can be framed at decision-ready level
-- the next stage can be scoped without premature capital or partner lock-in
+- the opening net-worth baseline is credible enough to manage
+- the gap to the `2030-12-31` target is quantified clearly
+- the next stage can define capital-allocation and review rules without scope drift

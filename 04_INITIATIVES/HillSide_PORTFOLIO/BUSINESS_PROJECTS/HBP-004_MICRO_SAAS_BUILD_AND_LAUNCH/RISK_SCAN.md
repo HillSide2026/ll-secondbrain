@@ -1,6 +1,6 @@
 ---
 id: 04_initiatives__hillside_portfolio__business_projects__hbp_004_micro_saas_build_and_launch__risk_scan_md
-title: Micro SaaS Build and Launch - Risk Scan
+title: Develop and Launch Micro SaaS (TariffLookup.ca) - Risk Scan
 owner: ML1
 status: draft
 project_type: strategic
@@ -12,7 +12,7 @@ tags: [micro-saas, initiation, risk]
 
 # Risk Scan
 
-Project: HBP-004 - Micro SaaS Build and Launch
+Project: HBP-004 - Develop and Launch Micro SaaS (TariffLookup.ca)
 Project Type: Strategic (tracked with scope/schedule/budget controls)
 
 ## Top 5 Risks (Grouped)

@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 project_type: strategic
 created_date: 2026-03-15
-last_updated: 2026-03-15
+last_updated: 2026-03-20
 tags: [cash-flow, initiation, stakeholders]
 ---
 
@@ -17,8 +17,10 @@ Project: `HBP-002` - Cash Flow
 | --- | --- | --- |
 | ML1 | Decision authority | Approves scope, reporting boundary, and stage-gate advancement |
 | Matthew Holdings / HillSide | Ownership and operating context | Provides the business context for which cash sources, obligations, and deployment decisions matter |
-| Accounting / bookkeeping support | Data-source contributor | May help confirm source-system completeness and reporting feasibility |
-| Entity or asset operators | Input owners | May supply current-state information about timing, commitments, and cash events affecting forecast reliability |
+| Accounting / bookkeeping / CPA support | Source-data and method assurance | Confirms source-system completeness, chart-of-accounts mapping, and treatment of taxes, capex, and working capital |
+| Levine Law | Major in-scope operating business | Supplies entity-level cash activity and validates business free-cash-flow adjustments |
+| `175 / FinSure` | Emerging in-scope operating business | Supplies entity-level cash activity and validates current reporting assumptions |
+| YellowBricks close-out records | Historical realized cash-event source | Captures sale proceeds, post-closing costs, residual collections, and any remaining close-out obligations |
 
 ## Notes
 

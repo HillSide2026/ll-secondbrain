@@ -4,22 +4,21 @@ title: Sale of Ontario MSBShellCo
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-15
-tags: [ontario-msbshellco, sale, hillside, project]
+last_updated: 2026-03-20
+tags: [ontario-msbshellco, sale, hillside, project, initiating]
 ---
 
 # Sale of Ontario MSBShellCo
 
 **Project ID:** `HBP-005`
 
-This folder is the canonical project home for the HillSide Ontario MSBShellCo
-sale project.
+This project is an initiating-stage HillSide sale project.
 
 ## Current State
 
 - folder created
-- project packet not yet built
-- register stage: `idea`
+- initiation packet not yet built
+- planning not yet authorized
 
 ## Objective
 
@@ -29,9 +28,10 @@ recycle capital.
 ## Notes
 
 - This project is linked to the Ontario MSB Corp entity branch.
-- Additional artifacts should be added here if the sale project advances.
+- Additional initiation and sale artifacts should be added here as the project
+  is formalized.
 
-## When Initiation Starts
+## Required Initiation Packet
 
 Use the standard HillSide initiation packet defined in
 `../PROJECT_ARTIFACT_POLICY.md`:

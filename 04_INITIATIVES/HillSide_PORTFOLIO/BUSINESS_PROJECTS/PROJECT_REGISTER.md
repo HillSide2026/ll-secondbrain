@@ -4,7 +4,7 @@ title: HillSide Project Register
 owner: ML1
 status: draft
 created_date: 2026-03-12
-last_updated: 2026-03-16
+last_updated: 2026-03-20
 tags: [hillside, projects, register]
 ---
 
@@ -15,22 +15,22 @@ Use this table to track HillSide business projects across the HillSide branch.
 `HBP-###` is the canonical project numbering series for HillSide projects,
 whether or not a dedicated project folder already exists.
 
-The `Stage` column in this register tracks the HillSide decision lifecycle,
-not the delivery-stage lifecycle inside an active project packet.
+The `Stage` column in this register tracks the canonical HillSide project stage
+defined in `STAGE_REFERENCE.md`.
 
 | Project ID | Project Name | Portfolio Fit | Stage | Strategic Rationale | Key Risks | ML1 Decision | Owner | Last Updated |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| HBP-001 | Wealth Management | HBP-001_WEALTH_MANAGEMENT | screening | Define a controlled wealth management strategy and operating model under Matthew Holdings | Scope ambiguity, planning delay, budget exposure | pending | ML1 | 2026-03-14 |
-| HBP-002 | Cash Flow | Matthew Holdings / HillSide | screening | Improve visibility, control, and planning discipline around branch cash generation and deployment | Scope ambiguity, data quality, execution discipline | pending | ML1 | 2026-03-14 |
-| HBP-003 | Sale of YellowBricks | 2A_YELLOWBRICKS | idea | Potential liquidity event and capital recycling | Valuation discount, buyer concentration, execution timing | pending | TBD | 2026-03-14 |
-| HBP-004 | Develop and Launch Micro SaaS | HBP-004_MICRO_SAAS_BUILD_AND_LAUNCH | approved | Build and launch a small digital product to develop repeatable software execution capability | Product-market risk, build capacity, launch stability risk | approved | ML1 | 2026-03-14 |
-| HBP-005 | Sale of Ontario MSBShellCo | 2C_ONTARIO_MSB_CORP_1001494374_ONTARIO_CORP | idea | Divest non-core regulated shell to simplify structure | Regulatory transfer constraints, counterparty quality, timeline slippage | pending | TBD | 2026-03-14 |
-| HBP-006 | Sale Micro SaaS | HBP-006_SALE_MICRO_SAAS | idea | Monetize the Micro SaaS asset after validation and recycle capital | Insufficient traction, weak buyer demand, timing mismatch | pending | TBD | 2026-03-14 |
-| HBP-007 | Levine Law 2026 | Levine Law | idea | Track and govern the 2026 Levine Law strategic program as a HillSide project | Scope ambiguity, sequencing overload, resource allocation drift | pending | ML1 | 2026-03-14 |
-| HBP-008 | Levine Law 2027 | Levine Law | idea | Track and govern the 2027 Levine Law strategic program as a HillSide project | Premature planning assumptions, sequencing risk, resource allocation drift | pending | ML1 | 2026-03-14 |
-| HBP-009 | 2027 Business Ideas | HBP-009_2027_BUSINESS_IDEAS | screening | Create a controlled HillSide project for capturing, screening, and prioritizing 2027 business ideas | Scope drift, screening delay, premature spend | pending | ML1 | 2026-03-14 |
-| HBP-010 | Rhizome White Label | HBP-010_RHIZOME_WHITE_LABEL | approved | Create a controlled HillSide decision project to determine whether a Rhizome-linked white-label path should advance, be restructured, or be declined | Partner misalignment, single-channel dependency, integration sprawl | approved | ML1 | 2026-03-16 |
-| HBP-011 | Payments Regulatory & Compliance Consulting Agency | HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY | approved | Create a controlled HillSide decision project to determine whether a standalone payments regulatory and compliance consulting agency should be built under Matthew Holdings | Weak differentiation, slow revenue ramp, execution sprawl | approved | ML1 | 2026-03-16 |
+| HBP-001 | Wealth Management | HBP-001_WEALTH_MANAGEMENT | planning | Define the wealth-management model and governance path needed to reach consolidated net worth of at least CAD 2,000,000 by `2030-12-31` | Baseline reliability, planning sprawl, capital-governance clarity | approved | ML1 | 2026-03-20 |
+| HBP-002 | Cash Flow | Matthew Holdings / HillSide | planning | Build the planning packet for CPA-quality portfolio and business cash-flow / free-cash-flow reporting under Matthew Holdings | Source-data quality, definition drift, close-process discipline | approved | ML1 | 2026-03-20 |
+| HBP-003 | Sale of YellowBricks | 2A_YELLOWBRICKS | closing | Complete post-closing handling and capital-recycling follow-through for the YellowBricks sale | Residual collection risk, counterparty follow-through, close-out timing | approved | ML1 | 2026-03-20 |
+| HBP-004 | Develop and Launch Micro SaaS (TariffLookup.ca) | HBP-004_MICRO_SAAS_BUILD_AND_LAUNCH | executing | Build and launch the TariffLookup.ca micro SaaS product to develop repeatable software execution capability | Product-market risk, build capacity, launch stability risk | approved | ML1 | 2026-03-20 |
+| HBP-005 | Sale of Ontario MSBShellCo | 2C_ONTARIO_MSB_CORP_1001494374_ONTARIO_CORP | initiating | Divest non-core regulated shell to simplify structure | Regulatory transfer constraints, counterparty quality, timeline slippage | pending | TBD | 2026-03-20 |
+| HBP-006 | Sale Micro SaaS | HBP-006_SALE_MICRO_SAAS | initiating | Monetize the Micro SaaS asset after validation and recycle capital | Insufficient traction, weak buyer demand, timing mismatch | pending | TBD | 2026-03-20 |
+| HBP-007 | Levine Law 2026 | Levine Law | initiating | Track and govern the 2026 Levine Law strategic program as a HillSide project | Scope ambiguity, sequencing overload, resource allocation drift | pending | ML1 | 2026-03-20 |
+| HBP-008 | Levine Law 2027 | Levine Law | initiating | Track and govern the 2027 Levine Law strategic program as a HillSide project | Premature planning assumptions, sequencing risk, resource allocation drift | pending | ML1 | 2026-03-20 |
+| HBP-009 | 2027 Business Ideas | HBP-009_2027_BUSINESS_IDEAS | initiating | Create a controlled HillSide project for capturing, shaping, and prioritizing 2027 business ideas | Scope drift, planning delay, premature spend | pending | ML1 | 2026-03-20 |
+| HBP-010 | Rhizome White Label | HBP-010_RHIZOME_WHITE_LABEL | executing | Execute the approved Rhizome services-led wrapper path under a bounded implementation scope | Partner misalignment, single-channel dependency, integration sprawl | approved | ML1 | 2026-03-20 |
+| HBP-011 | Payments Regulatory & Compliance Consulting Agency | HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY | executing | Stand up the approved payment services compliance service under `17513721 Canada Inc` using FinSure as the entry offer | Weak differentiation, slow revenue ramp, execution sprawl | approved | ML1 | 2026-03-20 |
 
 ## Folder Coverage
 
@@ -46,26 +46,20 @@ not the delivery-stage lifecycle inside an active project packet.
 - `HBP-010` currently has folder coverage in `HBP-010_RHIZOME_WHITE_LABEL/`.
 - `HBP-011` currently has folder coverage in `HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY/`.
 
-## Decision Lifecycle Reference
+## Stage Reference
 
-Decision-stage definitions are maintained in
-`../PERSONAL_PROJECTS/DECISION_MAKING/README.md`.
+Canonical HillSide project stage definitions are maintained in:
 
-- `idea`: captured concept, not yet screened
-- `screening`: initial fit and risk review in progress
-- `validating`: evidence-gathering and model testing in progress
-- `decision`: ready for ML1 go/hold/no-go determination
-- `approved`: approved by ML1 to move forward
-- `rejected`: closed, not moving forward
+- `STAGE_REFERENCE.md`
 
-## Early Stage Ideas
+## Unadmitted Concepts
 
-Use this section to capture early-stage ideas that are not yet admitted into
+Use this section to capture early-stage concepts that are not yet admitted into
 the numbered `HBP-###` project register.
 
-Assign an `HBP` number only after ML1 decides the idea should become a tracked
+Assign an `HBP` number only after ML1 decides the concept should become a tracked
 HillSide project.
 
-| Idea | Notes | Owner | Last Updated |
+| Concept | Notes | Owner | Last Updated |
 | --- | --- | --- | --- |
 | _None currently recorded_ |  |  |  |

@@ -4,22 +4,21 @@ title: Sale Micro SaaS
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-15
-tags: [micro-saas, sale, hillside, project]
+last_updated: 2026-03-20
+tags: [micro-saas, sale, hillside, project, initiating]
 ---
 
 # Sale Micro SaaS
 
 **Project ID:** `HBP-006`
 
-This folder is the canonical project home for the HillSide Micro SaaS sale
-project.
+This project is an initiating-stage HillSide sale project.
 
 ## Current State
 
 - folder created
-- project packet not yet built
-- register stage: `idea`
+- initiation packet not yet built
+- planning not yet authorized
 
 ## Objective
 
@@ -31,7 +30,7 @@ validation.
 - This project is related to, but distinct from, `HBP-004`.
 - Sale-stage artifacts should be developed here if monetization becomes active.
 
-## When Initiation Starts
+## Required Initiation Packet
 
 Use the standard HillSide initiation packet defined in
 `../PROJECT_ARTIFACT_POLICY.md`:

@@ -1,6 +1,6 @@
 ---
 id: 04_initiatives__hillside_portfolio__business_projects__hbp_004_micro_saas_build_and_launch__planning__risk_register_md
-title: Micro SaaS Build and Launch - Risk Register
+title: Develop and Launch Micro SaaS (TariffLookup.ca) - Risk Register
 owner: ML1
 status: active
 created_date: 2026-03-12

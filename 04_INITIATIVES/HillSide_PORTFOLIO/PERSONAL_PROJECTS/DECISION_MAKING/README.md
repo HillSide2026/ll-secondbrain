@@ -4,36 +4,41 @@ title: Decision-Making
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-14
+last_updated: 2026-03-20
 tags: [hillside, personal-projects, decision-making]
 ---
 
 # Decision-Making
 
-This personal project records the HillSide decision lifecycle used to track
-whether a project has moved from concept to approval or rejection.
+This personal project records HillSide concept queues and ML1 decision-support
+working lists.
 
 ## Purpose
 
-Use this project as the reference point for decision-stage tracking across the
-HillSide branch.
+Use this project for concept capture, triage, modeling, and approval/rejection
+working lists across the HillSide branch.
 
-This lifecycle is separate from delivery-stage project management such as
-`Initiating`, `Planning`, `Executing`, and `Closing`.
+This folder is not the authoritative source for HillSide `HBP` project stages.
 
-## Decision Lifecycle
+Authoritative project stages are defined in:
 
-- `idea`: captured concept, not yet screened
-- `screening`: initial fit and risk review in progress
-- `validating`: evidence-gathering and model testing in progress
-- `decision`: ready for ML1 go/hold/no-go determination
-- `approved`: approved by ML1 to move forward
-- `rejected`: closed and not moving forward
+- `../../BUSINESS_PROJECTS/STAGE_REFERENCE.md`
+
+## Concept Queue Rule
+
+Queue names used in this folder are working labels for concept flow only.
+
+Do not use queue labels from this folder as project-stage labels in:
+
+- `BUSINESS_PROJECTS/PROJECT_REGISTER.md`
+- `BUSINESS_PROJECTS/HBP-*/APPROVAL_RECORD.md`
+- `BUSINESS_PROJECTS/HBP-*/README.md`
 
 ## Usage
 
-- Use this lifecycle for HillSide register-level decision tracking.
-- Use project-packet stages for active project execution and delivery.
+- Use this folder for concept capture, triage, and ML1 review support.
+- Use `BUSINESS_PROJECTS/STAGE_REFERENCE.md` and project approval records for
+  actual HillSide project stage tracking.
 
 ## Working Artifacts
 
@@ -58,3 +63,6 @@ Use the following documents to manage the decision flow:
   go/hold/no-go review.
 - Approved items are recorded in `APPROVED_REGISTER.md`.
 - Rejected items are recorded in `REJECTED_REGISTER.md`.
+
+These queue labels are historical working labels and are not authoritative
+HillSide project stages.

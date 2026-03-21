@@ -1,6 +1,6 @@
 ---
 id: 04_initiatives__hillside_portfolio__business_projects__hbp_004_micro_saas_build_and_launch__approval_record_md
-title: Micro SaaS Build and Launch - Approval Record
+title: Develop and Launch Micro SaaS (TariffLookup.ca) - Approval Record
 owner: ML1
 status: approved
 project_type: strategic
@@ -11,7 +11,7 @@ tags: [micro-saas, planning, approval]
 
 # Approval Record
 
-Project: HBP-004 - Micro SaaS Build and Launch
+Project: HBP-004 - Develop and Launch Micro SaaS (TariffLookup.ca)
 Stage: Executing
 
 Approval Status: Executing Authorized

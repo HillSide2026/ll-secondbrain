@@ -4,7 +4,7 @@ title: Cash Flow - Project Charter
 owner: ML1
 status: draft
 created_date: 2026-03-15
-last_updated: 2026-03-15
+last_updated: 2026-03-20
 tags: [cash-flow, charter, hillside]
 ---
 
@@ -22,35 +22,45 @@ ML1 (Matthew Holdings / HillSide)
 
 ## Mission
 
-Create a controlled strategic cash-flow project that improves visibility,
-forecasting, and decision discipline around HillSide cash generation,
-commitments, and capital deployment.
+Create a CPA-quality cash-flow control system for Matthew Holdings that
+produces monthly portfolio and entity-level cash flow and free cash flow for
+capital-allocation decisions.
+
+## Primary SMART Goal
+
+By `2026-06-30`, Matthew Holdings has a monthly management-reporting pack,
+closed and reviewed within 10 business days of month-end, that reports:
+
+- portfolio cash flow
+- portfolio free cash flow
+- entity-level cash flow and free cash flow for Levine Law, `175 / FinSure`, and any additional Matthew-established businesses
+- realized YellowBricks sale proceeds and any residual post-closing cash movements until fully settled
 
 ## Success Criteria
 
-- current-state cash sources and uses are documented clearly enough for review
-- one governed reporting view for HillSide cash movement is defined
-- near-term forecast and control requirements are specified at planning-ready level
-- ML1 receives a planning-ready packet for whether a fuller cash-management system should be built
+- the in-scope reporting boundary is fixed across portfolio assets and operating businesses
+- cash-flow and free-cash-flow definitions are documented clearly enough to support CPA-style review
+- the monthly close, review, and variance process is defined at planning-ready level
+- ML1 receives a planning-ready packet for whether a fuller reporting/control build should begin
 
 ## Stage Plan
 
-1. define the cash-flow scope and reporting boundary
-2. identify the most relevant current-state cash inputs and outputs
-3. define the control model for reporting cadence, forecast horizon, and review loop
+1. define the reporting boundary across holdings, portfolio assets, and operating businesses
+2. define the metric formulas, source records, and consolidation rules
+3. define the control model for monthly close, review cadence, and variance handling
 4. prepare planning authorization packet for ML1
 
 ## Immediate Next Actions
 
 - define which entities, accounts, and cash categories are in scope
-- identify the current systems or manual sources that hold the needed data
-- determine the minimum viable reporting cadence and forecast horizon
-- clarify which decisions the project is supposed to improve
+- identify the records that support portfolio cash flow and entity-level free cash flow
+- define how intercompany flows, owner distributions, and realized sale proceeds are treated
+- clarify the month-end close timeline and who reviews the pack
 
 ## Risks
 
 - scope drift if the project expands into full accounting-system redesign
-- weak decision value if the reporting boundary is not defined tightly
+- weak decision value if portfolio and operating-business flows are mixed inconsistently
 - execution drag if source data quality is worse than expected
 
 ## Governance

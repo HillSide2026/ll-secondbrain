@@ -1,6 +1,6 @@
 ---
 id: 04_initiatives__hillside_portfolio__business_projects__hbp_004_micro_saas_build_and_launch__project_charter_md
-title: Micro SaaS Build and Launch - Project Charter
+title: Develop and Launch Micro SaaS (TariffLookup.ca) - Project Charter
 owner: ML1
 status: active
 created_date: 2026-03-12
@@ -10,7 +10,7 @@ tags: [micro-saas, charter, venture]
 
 # Project Charter
 
-**Project:** Micro SaaS Build and Launch
+**Project:** Develop and Launch Micro SaaS (TariffLookup.ca)
 **Project ID:** HBP-004
 **Project Path:** 04_INITIATIVES/HillSide_PORTFOLIO/BUSINESS_PROJECTS/HBP-004_MICRO_SAAS_BUILD_AND_LAUNCH
 **Project Type:** Strategic

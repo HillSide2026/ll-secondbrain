@@ -1,6 +1,6 @@
 ---
 id: 04_initiatives__hillside_portfolio__business_projects__hbp_004_micro_saas_build_and_launch__planning__validation_review_md
-title: Micro SaaS Build and Launch - Validation Review
+title: Develop and Launch Micro SaaS (TariffLookup.ca) - Validation Review
 owner: ML1
 status: active
 created_date: 2026-03-12
