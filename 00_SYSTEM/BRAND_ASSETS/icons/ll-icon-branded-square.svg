@@ -1,0 +1,12 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" width="500" height="500">
+  <!-- LL Double Chevron Mark — white on navy square — Levine Law brand icon -->
+  <rect width="500" height="500" fill="#1D4771"/>
+  <!-- Upper chevron -->
+  <polyline points="90,135 250,295 410,135"
+            fill="none" stroke="#FFFFFF" stroke-width="35"
+            stroke-linejoin="miter" stroke-miterlimit="10" stroke-linecap="butt"/>
+  <!-- Lower chevron -->
+  <polyline points="90,205 250,365 410,205"
+            fill="none" stroke="#FFFFFF" stroke-width="35"
+            stroke-linejoin="miter" stroke-miterlimit="10" stroke-linecap="butt"/>
+</svg>
