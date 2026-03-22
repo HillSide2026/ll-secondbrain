@@ -244,6 +244,52 @@ Principle: tools must support throughput, not complexity.
 
 ---
 
+## 7A. Service Offer Stack
+
+### Hourly Rates
+| Type | Rate |
+|---|---|
+| Standard (corporate/commercial) | $480/hour |
+| Specialist (regulatory/payments/MSB) | $550/hour |
+
+Overage on all fractional tiers billed at applicable rate. Unused hours do not roll over. Minimum 3-month commitment on all tiers.
+
+---
+
+### F02 — Corporate Health Check (Entry Offer)
+
+| Tier | Name | Price | ML1 Time | Entry via | Conversion target |
+|---|---|---|---|---|---|
+| V1 | Entry Level | $2,000 | 4–5h | Accountant referral | Remediation |
+| V2 | Growth Health Check | $3,500 | 8–10h | Accountant + direct | Remediation → fractional counsel over time |
+| V3 | Pre-Event Health Check | $6,000 | 14–18h | Direct / event-triggered | Full remediation program → fractional counsel over time |
+
+Conversion logic: ICP-01 clients act on findings before committing to ongoing counsel. Remediation is the primary immediate conversion. Fractional counsel develops after trust is established through remediation delivery.
+
+---
+
+### Fractional Corporate Counsel
+
+| Tier | Name | Price | Monthly scope | Response | Target client |
+|---|---|---|---|---|---|
+| V1 | Foundations | $1,500/mo | 2 hours — contract reviews, governance questions, employment basics, ad hoc advice calls | 48h | Stable SMB, low transaction volume, needs a lawyer on call but rarely activates |
+| V2 | Active | $2,750/mo | 4 hours — ongoing contracts, shareholder matters, employment issues, corporate housekeeping, 1 priority matter/month | 24h | Growing business with regular legal needs — new hires, vendor agreements, governance events |
+| V3 | Growth | $4,500/mo | 7 hours — complex commercial contracts, equity arrangements, multi-party matters, active M&A or financing support | 24h | Business in active transition including: growth, capital raise, ownership change, or building toward a transaction |
+
+---
+
+### Fractional Regulatory Counsel (Payments / MSB / Fintech — ICP-02)
+
+| Tier | Name | Price | Monthly scope | Response | Target client |
+|---|---|---|---|---|---|
+| V1 | Compliance Monitor | $2,500/mo | 2 hours — regulatory calendar management, FINTRAC obligation monitoring, basic compliance questions, flagging regulatory changes that affect the business | 48h | Registered MSB with a working compliance program, needs ongoing monitoring and a regulatory touchpoint |
+| V2 | Active Regulatory | $4,500/mo | 5 hours — AML/ATF program support, FINTRAC guidance and STR review, policy and procedure updates, RPAA compliance, incident triage | 24h | Active payments operator with ongoing regulatory exposure — product changes, new corridors, exam exposure |
+| V3 | Regulatory Partner | $7,500/mo | 9 hours — comprehensive regulatory program ownership, exam or audit preparation, cross-border and multi-regulator exposure, complex structuring questions, regulatory risk sign-off on new products or business model changes | Same day | Fintech or MSB scaling into new markets, preparing for a FINTRAC exam, or operating at the edge of regulatory perimeter |
+
+V3 Regulatory includes a quarterly regulatory status memo suitable for board or investor reporting.
+
+---
+
 ## 8. Operating Doctrine
 
 Levine Law is not built as a traditional law firm. It is a controlled production system focused on repeatable legal work, designed for predictable revenue generation and structured to scale only after stability is established.

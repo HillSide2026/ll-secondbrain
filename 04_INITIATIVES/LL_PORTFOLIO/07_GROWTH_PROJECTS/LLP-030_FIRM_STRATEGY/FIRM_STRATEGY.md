@@ -93,11 +93,13 @@ The service model is NOT:
 - Hourly billing without defined engagement scope
 
 The service model IS moving toward:
-- Corporate Health Check as the core entry offer
+- Corporate Health Check as the core entry offer (three tiers: $2,000 / $3,500 / $6,000)
 - Fixed-fee diagnostics and scoped engagement packages
 - Bounded regulatory review inside the Health Check where client facts require it
-- Blended fractional counsel as the primary ongoing relationship layer
-- Repeat revenue from a defined client portfolio, including payments-specific ongoing counsel where relevant
+- Remediation work as the primary immediate conversion from Health Check findings
+- Fractional corporate counsel as the ongoing relationship layer for ICP-01 (three tiers: $1,500 / $2,750 / $4,500/month)
+- Fractional regulatory counsel as the ongoing relationship layer for ICP-02 (three tiers: $2,500 / $4,500 / $7,500/month)
+- Repeat revenue from a defined client portfolio at standard ($480/hr) and specialist ($550/hr) overage rates
 
 ---
 
