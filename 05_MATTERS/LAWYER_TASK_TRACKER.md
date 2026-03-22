@@ -4,8 +4,8 @@ _Governed by the system subject to ML1 override._
 
 ## Open Tasks
 
-| Matter ID | Client | Service | Task | Status | Due |
-|---|---|---|---|---|---|
+| Matter ID | Client | Delivery Status | Service | Task | Status | Due |
+|---|---|---|---|---|---|---|
 
 ---
 
