@@ -95,14 +95,20 @@ The firm operates three acquisition channels (funnel definitions are canonical a
 
 ### F02 — Corporate Health Check → ICP-01 Acquisition
 
-- Paid diagnostic entry offer ($1,500–$2,500)
-- Distributed primarily through accountant referral network
-- ICP-01 qualified leads only; intake gate enforced at booking
-- Health Check findings convert into remediation and blended fractional counsel
-- The review may include bounded regulatory analysis where the client's business model or industry exposure makes that necessary
+Three-tier fixed-fee diagnostic offer. ICP-01 qualified leads only; intake gate enforced at booking. Health Check findings convert into remediation work and blended fractional counsel.
 
-**Role**: Primary corporate acquisition channel once operational; the core
-2026 entry offer and the primary bridge into ongoing fractional counsel
+| Tier | Name | Price | Scope | Deliverable | Entry via | ML1 Time | Conversion target |
+|---|---|---|---|---|---|---|---|
+| V1 | Entry Level | $2,000 | Corporate structure, shareholder agreement, employment baseline, top 1–2 commercial contracts, corporate records compliance | Findings report (critical / should-fix / advisory) + 45-min debrief | Accountant referral | 4–5h | Remediation work |
+| V2 | Growth Health Check | $3,500 | V1 + compensation and owner extraction structure, financing and personal guarantees, top 3–5 commercial contracts, regulatory exposure scan | Findings report + 60-min debrief + 30-day remediation roadmap with cost estimates | Accountant + direct | 8–10h | Remediation work → fractional counsel over time |
+| V3 | Pre-Event Health Check | $6,000 | V2 + full cap table and ownership structure, exit and transferability readiness, key employee legal infrastructure (IP assignments, non-solicitation, non-competition), cross-border or regulated-activity exposure | Findings report + 90-min debrief + prioritized remediation plan with cost estimates | Direct / event-triggered | 14–18h | Full remediation program → fractional counsel over time |
+
+**Conversion logic**: ICP-01 clients act on findings before committing to ongoing counsel. Remediation is the primary immediate conversion. Fractional counsel develops after trust is established through remediation delivery — it is not a direct Health Check output.
+
+**V1 rationale**: signals quality without sticker shock in an accountant referral channel; sits below the "requires partner approval" threshold most $2M–$5M operators have.
+**V3 target**: businesses preparing for a financing round, bringing in a partner, planning an exit in 2–3 years, or with regulatory exposure not yet formally assessed.
+
+**Role**: Primary corporate acquisition channel once operational; the core 2026 entry offer and the primary bridge into ongoing fractional counsel.
 
 **Contribution target**
 - Q2: early launch, minimal contribution
@@ -173,7 +179,7 @@ Permitted support: ad hoc contractors (admin, formatting, filings). No fixed emp
 
 **Setter (Acquisition Role)**
 - Function: qualify and book leads; reduce ML1 intake burden
-- Trigger: [X] consecutive months at $20K+/month with intake as the identifiable constraint
+- Trigger: **2 consecutive months at $20K+/month** with intake as the identifiable constraint
 - Gate: role definition, script, and GHL handoff workflow must be ML1-approved before activation
 
 **Senior Lawyer (Delivery Role)**
@@ -181,7 +187,7 @@ Permitted support: ad hoc contractors (admin, formatting, filings). No fixed emp
 - Trigger: sustained capacity breach at $300K+ annualized revenue with persistent overflow work
 - Gate: matter eligibility list, supervision model, and compensation structure ML1-approved before activation
 
-**Staffing Doctrine**: Hiring is triggered by constraint, funded by existing revenue, and justified by throughput gain.
+**Staffing Doctrine**: Hiring is triggered by constraint, funded by existing revenue, and justified by throughput gain. From 2027 onwards, delegation of billable execution is a strategic priority (Firm Strategy, priority 5) — delivery systems and templates built in 2026 must be designed to support supervised handoff.
 
 ---
 

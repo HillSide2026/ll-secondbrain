@@ -39,13 +39,13 @@ This document will contain a P&L projection linking:
 | F01 Google Ads spend | $1,500/month | Current | Yes |
 | Lead → consult conversion | 25–30% | Estimated | No — needs 30-day data |
 | Consult → retained conversion | 40–50% | Estimated | No |
-| Average matter value (F01) | Unknown | — | Required — open item |
+| Average matter value (F01) | Unknown — soft floor set at $1,000 | LLP-030 decision 2026-03-22 | Floor confirmed; average TBD — needs 30-day data |
 | Average matter value (F02) | $1,500–$2,500 (Health Check entry) | Hypothesis | Not yet launched |
 | Owner salary | $72,000 | LLP-002 `BUDGET_2026.md` | Yes |
 | Owner bonus target | $8,000 | LLP-002 `BUDGET_2026.md` | Yes |
 | Total owner compensation | $80,000 | LLP-002 `BUDGET_2026.md` | Yes |
 | Overhead | $40,000–$50,000/year | Budget Scenario 1 | Yes |
-| Andersen direct revenue credit | Excluded by default | Cross-entity rule | Yes — unless ML1 changes policy |
+| Andersen direct revenue credit | **Backlog** — assigned to LLP-001 (Accounting) | Cross-entity rule | No — pending LLP-001 resolution; excluded from model until decided |
 
 ### 2. P&L Projection by Target / Reference Case
 

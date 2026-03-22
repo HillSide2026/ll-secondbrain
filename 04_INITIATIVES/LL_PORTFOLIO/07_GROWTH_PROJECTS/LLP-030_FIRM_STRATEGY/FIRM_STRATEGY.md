@@ -37,7 +37,7 @@ The medium-term planning arc is:
 
 Listed in priority order. Where trade-offs arise, higher-ranked priorities win.
 
-1. **Capacity and sustainability** — Workload must stay within bounds ML1 can maintain without quality or health risk. This is the core bottleneck: ML1 struggles to docket 20 billable hours per week. At current matter mix, that ceiling is frequently breached or the work is compressed into lower quality. Growth that requires exceeding that ceiling is not authorized until staffing (setter, senior lawyer) is in place to absorb the load.
+1. **Capacity and sustainability** — Workload must stay within bounds ML1 can maintain without quality or health risk. This is the core bottleneck: ML1 ceiling is ~20 billable hours per week. At current matter mix, that ceiling is frequently breached or the work is compressed into lower quality. Growth that requires exceeding that ceiling is not authorized until staffing (setter, senior lawyer) is in place to absorb the load.
 
 2. **Client quality** — Matters must align with ICP-01 or ICP-02. Low-fit, high-friction, or low-value work is excluded regardless of short-term revenue need. This is the primary lever for improving per-hour economics.
 
@@ -45,7 +45,9 @@ Listed in priority order. Where trade-offs arise, higher-ranked priorities win.
 
 4. **Revenue growth** — Target is CAD 240k of 2026 banked cash as the current operating baseline. Growth is through F02 and F03, not by increasing F01 volume.
 
-5. **Transferable value and reputation** — The practice should be buildable toward an asset that could be sold or handed off. This requires client relationships that are not entirely ML1-personal, documented systems, and authority positioning in defined verticals. This is a background priority that influences architecture decisions; it does not override 1–4.
+5. **Delegation of billable work** — From 2027 onwards, ML1 must be able to delegate billable execution to a senior lawyer or supervised delivery resource. This is a medium-term priority: it does not override 1–4 in 2026, but it is a required precondition for scaling beyond the ML1 capacity ceiling without degrading client quality or economics. The architecture of delivery systems, templates, and supervision protocols built in 2026 must be designed with delegation in mind.
+
+6. **Transferable value and reputation** — The practice should be buildable toward an asset that could be sold or handed off. This requires client relationships that are not entirely ML1-personal, documented systems, and authority positioning in defined verticals. This is a background priority that influences architecture decisions; it does not override 1–5.
 
 ---
 
@@ -103,7 +105,7 @@ The service model IS moving toward:
 
 These are non-negotiable constraints, not aspirational targets.
 
-- **No matters below the matter value floor** — floor is an open item to be defined as part of this project; target number is unknown and requires data from current matter mix before it can be set
+- **No matters below the matter value floor** — soft floor set at **$1,000**. Matters below this threshold require explicit ML1 exception. Floor is soft pending financial model validation against actual matter mix data.
 - **No clients below ICP thresholds**: revenue < $1M, employees < 5, no accountant, or in acute crisis
 - **No commodity work**: simple incorporations, one-off NDA reviews, or matters that are purely transaction-fee work with no advisory potential
 - **No growth that exceeds capacity before staffing is in place**: adding a setter or senior lawyer is a precondition for volume growth, not a response to it
