@@ -4,7 +4,7 @@ title: Website Implementation Agent Charter
 owner: ML1
 status: active
 created_date: 2026-03-21
-last_updated: 2026-03-21
+last_updated: 2026-03-22
 tags: [marketing, website, implementation, landing-pages, domain]
 ---
 
@@ -25,6 +25,9 @@ and domain transitions.
 - `brand_kit_enforcement.skill.md`
 - `integration_workflow_execution.skill.md`
 - `asset_format_transformation.skill.md`
+- `wordpress_page_setup.skill.md`
+- `accessibility_audit_and_remediation.skill.md`
+- `design_to_implementation_handoff.skill.md`
 
 ## Responsibilities
 - Audit website and landing-page issues across copy, layout, CTA flow, forms,

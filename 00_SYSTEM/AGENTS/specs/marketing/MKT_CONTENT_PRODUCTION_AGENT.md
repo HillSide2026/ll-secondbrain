@@ -4,7 +4,7 @@ title: Content Production Agent Charter
 owner: ML1
 status: active
 created_date: 2026-03-08
-last_updated: 2026-03-21
+last_updated: 2026-03-22
 activated_date: 2026-03-21
 tags: [marketing, content, drafting]
 ---
@@ -23,6 +23,11 @@ Creation of draft marketing content based on approved strategy.
 - `landing_page_copywriting.skill.md`
 - `email_marketing_copy.skill.md`
 - `content_adaptation.skill.md`
+- `short_form_narrative_structuring.skill.md`
+- `platform_voice_calibration.skill.md`
+- `cta_design.skill.md`
+- `lead_magnet_structuring.skill.md`
+- `brand_voice_validation.skill.md`
 
 ## Responsibilities
 - Generate draft marketing artifacts including articles, social posts, newsletters, landing pages, email copy, scripts, and outlines.

@@ -4,7 +4,7 @@ title: Marketing Strategy Agent Charter
 owner: ML1
 status: active
 created_date: 2026-03-08
-last_updated: 2026-03-21
+last_updated: 2026-03-22
 activated_date: 2026-03-21
 tags: [marketing, strategy, orchestration]
 ---
@@ -25,6 +25,9 @@ Campaign and funnel orchestration within approved doctrine.
 - `campaign_brief_generation.skill.md`
 - `offer_engineering.skill.md`
 - `demand_capture.skill.md`
+- `market_position_mapping.skill.md`
+- `competitor_message_analysis.skill.md`
+- `differentiation_detection.skill.md`
 
 ## Responsibilities
 - Translate approved doctrine and positioning into executable marketing strategy for specific initiatives or campaigns.

@@ -4,7 +4,7 @@ title: Marketing Agents
 owner: ML1
 status: active
 created_date: 2026-03-08
-last_updated: 2026-03-21
+last_updated: 2026-03-22
 tags: [marketing, agents, orchestration]
 ---
 
@@ -34,6 +34,7 @@ preparation, market-signal capture, and repository governance.
 
 ## Skill Mapping
 - Canonical map: `00_SYSTEM/AGENTS/specs/marketing/MARKETING_AGENT_SKILL_MAP.md`
+- Consolidated one-layer operating view: `00_SYSTEM/AGENTS/specs/marketing/SINGLE_LAYER_MARKETING_AGENT_STACK.md`
 - Agent-level bindings are listed in each charter under `Relevant Skills`.
 - Skill files location: `00_SYSTEM/AGENTS/specs/marketing/skills/`
 

@@ -4,7 +4,7 @@ title: Thrive Themes Implementation Agent Charter
 owner: ML1
 status: active
 created_date: 2026-03-21
-last_updated: 2026-03-21
+last_updated: 2026-03-22
 tags: [marketing, website, thrive, wordpress, implementation, cms]
 ---
 
@@ -36,6 +36,8 @@ MKT_WEBSITE_IMPLEMENTATION_AGENT     →  MKT_THRIVE_THEMES_AGENT
 - `thrive_template_config.skill.md`
 - `wordpress_page_setup.skill.md`
 - `thrive_audit.skill.md`
+- `design_to_implementation_handoff.skill.md`
+- `platform_aware_design_constraints.skill.md`
 
 ## Responsibilities
 - Map approved content and wireframe specs to Thrive Architect elements.

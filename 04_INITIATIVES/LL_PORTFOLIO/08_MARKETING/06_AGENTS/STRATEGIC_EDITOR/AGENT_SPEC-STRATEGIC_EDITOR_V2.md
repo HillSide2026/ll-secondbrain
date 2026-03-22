@@ -11,7 +11,7 @@ activation_status: active — lightweight mode
 activation_mode: lightweight (manual invocation per output)
 activated_date: 2026-03-18
 created_date: 2026-03-18
-last_updated: 2026-03-18
+last_updated: 2026-03-22
 supersedes: AGENT_SPEC-STRATEGIC_EDITOR_AGENT_V1.md
 tags: [strategic-editor, governance, coherence-gate, ml2]
 ---
@@ -49,6 +49,19 @@ It has override authority over all downstream agents.
 > **Alignment > Optimization**
 
 If an output improves SEO, CTR, or conversion — but weakens positioning → must be rejected.
+
+## Relevant Skills
+
+- `doctrine_alignment_check.skill.md`
+- `brand_voice_validation.skill.md`
+- `editorial_quality_review.skill.md`
+- `factual_claim_validation.skill.md`
+- `marketing_policy_compliance.skill.md`
+- `positioning_drift_detection.skill.md`
+- `differentiation_detection.skill.md`
+- `market_position_mapping.skill.md`
+- `audience_segmentation.skill.md`
+- `banned_claims_guard.skill.md`
 
 ---
 

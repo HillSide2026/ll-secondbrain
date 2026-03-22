@@ -7,7 +7,7 @@ status: active
 activation_status: active — limited to keyword research (IMP-05)
 activated_date: 2026-03-18
 created_date: 2026-03-17
-last_updated: 2026-03-17
+last_updated: 2026-03-22
 supersedes: AGENT_SPEC-SEO_METRICS_MASTER_V1.md
 tags: [seo, metrics, keyword-research, analytical-agent]
 ---
@@ -40,6 +40,19 @@ Analytical engine for:
 - Keyword discovery
 - Traffic modeling
 - Conversion baseline measurement
+
+## Relevant Skills
+
+- `keyword_mapping.skill.md`
+- `search_intent_clustering.skill.md`
+- `seo_gap_analysis.skill.md`
+- `on_page_optimization.skill.md`
+- `market_feedback_analysis.skill.md`
+- `performance_signal_reporting.skill.md`
+- `revenue_attribution.skill.md`
+- `audience_segmentation.skill.md`
+- `competitor_message_analysis.skill.md`
+- `campaign_brief_generation.skill.md`
 
 ---
 

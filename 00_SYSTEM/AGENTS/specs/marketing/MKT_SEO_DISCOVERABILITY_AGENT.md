@@ -4,7 +4,7 @@ title: SEO and Discoverability Agent Charter
 owner: ML1
 status: planned
 created_date: 2026-03-08
-last_updated: 2026-03-08
+last_updated: 2026-03-22
 tags: [marketing, seo, discoverability]
 ---
 
@@ -21,6 +21,12 @@ Specialized discoverability analysis for search channels.
 - `search_intent_clustering.skill.md`
 - `seo_gap_analysis.skill.md`
 - `on_page_optimization.skill.md`
+- `competitor_message_analysis.skill.md`
+- `performance_signal_reporting.skill.md`
+- `audience_segmentation.skill.md`
+- `market_feedback_analysis.skill.md`
+- `revenue_attribution.skill.md`
+- `campaign_brief_generation.skill.md`
 
 ## Responsibilities
 - Perform keyword mapping and search-intent clustering.

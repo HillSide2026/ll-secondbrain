@@ -4,7 +4,7 @@ title: Repository and Asset Governance Agent Charter
 owner: ML1
 status: active
 created_date: 2026-03-08
-last_updated: 2026-03-21
+last_updated: 2026-03-22
 activated_date: 2026-03-21
 tags: [marketing, governance, repository]
 ---
@@ -22,6 +22,12 @@ System-of-record management for marketing artifacts.
 - `asset_version_management.skill.md`
 - `artifact_state_management.skill.md`
 - `marketing_repository_indexing.skill.md`
+- `design_metadata_registration.skill.md`
+- `artifact_promotion.skill.md`
+- `execution_validation.skill.md`
+- `context_assembly.skill.md`
+- `marketing_policy_compliance.skill.md`
+- `integration_workflow_execution.skill.md`
 
 ## Responsibilities
 - Classify and store approved marketing assets.

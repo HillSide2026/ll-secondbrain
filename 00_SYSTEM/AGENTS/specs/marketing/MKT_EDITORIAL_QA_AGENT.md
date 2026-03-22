@@ -4,7 +4,7 @@ title: Editorial QA Agent Charter
 owner: ML1
 status: active
 created_date: 2026-03-08
-last_updated: 2026-03-21
+last_updated: 2026-03-22
 activated_date: 2026-03-21
 tags: [marketing, qa, compliance]
 ---
@@ -23,6 +23,11 @@ Quality assurance and doctrinal conformity.
 - `factual_claim_validation.skill.md`
 - `marketing_policy_compliance.skill.md`
 - `editorial_quality_review.skill.md`
+- `banned_claims_guard.skill.md`
+- `positioning_drift_detection.skill.md`
+- `differentiation_detection.skill.md`
+- `audience_segmentation.skill.md`
+- `brand_kit_enforcement.skill.md`
 
 ## Responsibilities
 - Review drafts for voice and tone consistency, positioning alignment, factual accuracy, and policy/compliance conformity.

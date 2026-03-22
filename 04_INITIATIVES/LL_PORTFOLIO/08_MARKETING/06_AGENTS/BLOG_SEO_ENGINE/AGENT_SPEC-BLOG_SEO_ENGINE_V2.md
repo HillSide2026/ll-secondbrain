@@ -6,7 +6,7 @@ owner: ML1
 status: draft
 activation_status: blocked — requires Health Check landing page live
 created_date: 2026-03-17
-last_updated: 2026-03-17
+last_updated: 2026-03-22
 supersedes: AGENT_SPEC-BLOG_SEO_ENGINE_V1.md
 tags: [seo, content, blog, authority, funnel-02, funnel-03]
 ---
@@ -37,6 +37,19 @@ Content production for:
 - F03 (Payments/MSB) authority building
 
 This agent is a structured SEO authority engine, not a content factory. Output is operator-level, positioning-consistent, and diagnostic-pathway-oriented.
+
+## Relevant Skills
+
+- `long_form_content_generation.skill.md`
+- `content_adaptation.skill.md`
+- `keyword_mapping.skill.md`
+- `search_intent_clustering.skill.md`
+- `on_page_optimization.skill.md`
+- `seo_gap_analysis.skill.md`
+- `brand_voice_validation.skill.md`
+- `doctrine_alignment_check.skill.md`
+- `editorial_quality_review.skill.md`
+- `cta_design.skill.md`
 
 ---
 

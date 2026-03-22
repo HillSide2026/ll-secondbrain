@@ -4,7 +4,7 @@ title: Distribution Orchestration Agent Charter
 owner: ML1
 status: active
 created_date: 2026-03-08
-last_updated: 2026-03-21
+last_updated: 2026-03-22
 activated_date: 2026-03-21
 tags: [marketing, distribution, integrations]
 ---
@@ -22,6 +22,12 @@ Channel handoff, packaging, and deployment preparation for approved marketing as
 - `distribution_schedule_design.skill.md`
 - `integration_workflow_execution.skill.md`
 - `asset_format_transformation.skill.md`
+- `content_adaptation.skill.md`
+- `platform_voice_calibration.skill.md`
+- `brand_kit_enforcement.skill.md`
+- `marketing_policy_compliance.skill.md`
+- `channel_strategy.skill.md`
+- `campaign_brief_generation.skill.md`
 
 ## Responsibilities
 - Package approved assets (including approved design artifacts) into channel-specific deliverables.

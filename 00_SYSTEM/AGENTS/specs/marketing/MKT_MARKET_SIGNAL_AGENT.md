@@ -4,7 +4,7 @@ title: Market Signal Agent Charter
 owner: ML1
 status: active
 created_date: 2026-03-08
-last_updated: 2026-03-21
+last_updated: 2026-03-22
 activated_date: 2026-03-21
 tags: [marketing, signals, analytics]
 ---
@@ -23,6 +23,11 @@ Observation and interpretation of market feedback.
 - `positioning_drift_detection.skill.md`
 - `performance_signal_reporting.skill.md`
 - `revenue_attribution.skill.md`
+- `audience_segmentation.skill.md`
+- `competitor_message_analysis.skill.md`
+- `market_position_mapping.skill.md`
+- `differentiation_detection.skill.md`
+- `keyword_mapping.skill.md`
 
 ## Responsibilities
 - Collect operational signals including engagement metrics, audience responses, performance patterns, and channel effectiveness.

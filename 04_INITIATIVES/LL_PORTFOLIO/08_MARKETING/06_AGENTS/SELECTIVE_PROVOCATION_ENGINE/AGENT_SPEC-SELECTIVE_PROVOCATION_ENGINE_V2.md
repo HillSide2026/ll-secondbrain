@@ -6,7 +6,7 @@ owner: ML1
 status: draft
 activation_status: blocked — requires ≥3 active accountant referral relationships
 created_date: 2026-03-17
-last_updated: 2026-03-17
+last_updated: 2026-03-22
 supersedes: AGENT_SPEC-SELECTIVE_PROVOCATION_ENGINE_V1.md
 tags: [top-of-funnel, linkedin, authority, content, analytical-agent]
 ---
@@ -36,6 +36,19 @@ Top-of-funnel authority generation via:
 - Outreach hooks
 
 This is not viral content. This is precision tension — attention that increases client quality, not volume.
+
+## Relevant Skills
+
+- `short_form_content_generation.skill.md`
+- `short_form_narrative_structuring.skill.md`
+- `social_thread_design.skill.md`
+- `platform_voice_calibration.skill.md`
+- `audience_segmentation.skill.md`
+- `demand_capture.skill.md`
+- `cta_design.skill.md`
+- `market_position_mapping.skill.md`
+- `differentiation_detection.skill.md`
+- `doctrine_alignment_check.skill.md`
 
 ---
 

@@ -4,7 +4,7 @@ title: UX Design Agent Charter
 owner: ML1
 status: active
 created_date: 2026-03-21
-last_updated: 2026-03-21
+last_updated: 2026-03-22
 tags: [marketing, website, ux, design, wireframe, layout, components]
 ---
 
@@ -29,11 +29,18 @@ MKT_DESIGN_PRODUCTION_AGENT                               →  MKT_WEBSITE_IMPLE
 
 ## Relevant Skills
 - `ux_audit.skill.md`
+- `information_architecture.skill.md`
+- `user_flow_design.skill.md`
 - `wireframe_production.skill.md`
 - `component_design.skill.md`
-- `layout_hierarchy_design.skill.md`
-- `interaction_pattern_design.skill.md`
-- `mobile_responsiveness_spec.skill.md`
+- `ui_pattern_selection.skill.md`
+- `visual_hierarchy_optimization.skill.md`
+- `interaction_and_state_specification.skill.md`
+- `responsive_design_specification.skill.md`
+- `forms_and_conversion_ux.skill.md`
+- `accessibility_audit_and_remediation.skill.md`
+- `platform_aware_design_constraints.skill.md`
+- `design_system_translation.skill.md`
 - `design_to_implementation_handoff.skill.md`
 
 ## Responsibilities

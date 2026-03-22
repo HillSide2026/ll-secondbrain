@@ -4,7 +4,7 @@ title: AGENT SPEC — CONVERSION_ARCHITECT_AGENT_V1
 owner: ML1
 status: draft
 created_date: 2026-02-25
-last_updated: 2026-02-25
+last_updated: 2026-03-22
 tags: []
 ---
 
@@ -38,6 +38,19 @@ Identifies:
 - CTA weakness
 
 Produces structured optimization proposals.
+
+## Relevant Skills
+
+- `conversion_path_design.skill.md`
+- `landing_flow_optimization.skill.md`
+- `demand_capture.skill.md`
+- `offer_engineering.skill.md`
+- `revenue_attribution.skill.md`
+- `performance_signal_reporting.skill.md`
+- `engagement_data_collection.skill.md`
+- `forms_and_conversion_ux.skill.md`
+- `cta_design.skill.md`
+- `landing_page_copywriting.skill.md`
 
 ---
 

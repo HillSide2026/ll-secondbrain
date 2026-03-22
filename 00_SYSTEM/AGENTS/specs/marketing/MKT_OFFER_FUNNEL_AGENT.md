@@ -4,7 +4,7 @@ title: Offer and Funnel Agent Charter
 owner: ML1
 status: planned
 created_date: 2026-03-08
-last_updated: 2026-03-08
+last_updated: 2026-03-22
 tags: [marketing, funnel, conversion]
 ---
 
@@ -23,6 +23,10 @@ Specialized conversion-path design for offers and funnel execution.
 - `landing_flow_optimization.skill.md`
 - `offer_engineering.skill.md`
 - `demand_capture.skill.md`
+- `campaign_design.skill.md`
+- `funnel_architecture.skill.md`
+- `audience_segmentation.skill.md`
+- `revenue_attribution.skill.md`
 
 ## Responsibilities
 - Design calls-to-action and conversion pathways.
