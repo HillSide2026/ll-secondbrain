@@ -4,7 +4,7 @@ title: 2A Yellowbricks
 owner: ML1
 status: draft
 created_date: 2026-03-06
-last_updated: 2026-03-07
+last_updated: 2026-03-22
 tags: []
 ---
 
@@ -17,6 +17,9 @@ Yellowbricks is an operating company within the Matthew Holdings portfolio.
 ## Role
 
 Yellowbricks is a licensed MSB, which we have sold and are collecting.
+
+Slightly more than CAD 27,000 has now been received from the sale, and that
+cash went into `17513721 Canada Inc`.
 
 ---
 

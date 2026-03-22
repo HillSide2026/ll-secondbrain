@@ -4,7 +4,7 @@ title: Cash Flow - Planning
 owner: ML1
 status: active
 created_date: 2026-03-20
-last_updated: 2026-03-20
+last_updated: 2026-03-22
 tags: [cash-flow, planning]
 ---
 
@@ -16,8 +16,10 @@ Stage: `Planning`
 
 ## Planning Objective
 
-Define an execution-ready monthly reporting and control model for portfolio and
-business cash flow / free cash flow under Matthew Holdings.
+Define an execution-ready monthly reporting and control model for all positive
+and negative cash flow between Matthew and Matthew Holdings
+(`17513721 Canada Inc`), YellowBricks, Federal MSB (`17409052 Canada Inc`),
+Ontario MSB Corp (`1001494374 Ontario Corp`), and Levine Law.
 
 ## Planning Status (2026-03-20)
 
@@ -27,10 +29,10 @@ business cash flow / free cash flow under Matthew Holdings.
 
 ## Planning Outcomes Required
 
-1. The reporting boundary is frozen across holdings, securities, businesses, and realized exit activity.
-2. Formula definitions and source-record mapping are fixed.
+1. The reporting boundary is frozen across Matthew and the five in-scope entities.
+2. Gross-inflow, gross-outflow, net-cash-flow definitions, and source-record mapping are fixed.
 3. The monthly close, review, and variance process is fixed.
-4. The management-pack structure is execution-ready.
+4. The management-pack structure is execution-ready for the Matthew-level view.
 5. The `Planning -> Executing` packet is ready for ML1.
 
 ## Immediate Planning Sprint

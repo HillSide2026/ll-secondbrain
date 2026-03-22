@@ -4,7 +4,7 @@ title: Matthew Holdings (17513721 Canada Inc)
 owner: ML1
 status: draft
 created_date: 2026-03-06
-last_updated: 2026-03-14
+last_updated: 2026-03-22
 tags: []
 ---
 
@@ -12,9 +12,11 @@ tags: []
 
 17513721 Canada Inc
 
-Matthew Holdings is the primary holding company within the HillSide portfolio branch tracked here.
+Matthew Holdings is the primary corporation within the HillSide portfolio
+branch tracked here.
 
-It functions as the **ownership vehicle for operating companies and regulated entities** controlled by the portfolio.
+It functions as both an **ownership vehicle for controlled entities** and a
+direct operating corporation for selected HillSide business lines.
 
 It is not the only holdco in the broader structure:
 
@@ -28,10 +30,27 @@ It is not the only holdco in the broader structure:
 Matthew Holdings serves as:
 
 - equity holding company
+- service-provider corporation for the Andersen Service Line
+- direct operating company for FinSure
 - governance layer for portfolio entities
 - strategic control entity
 
-Operating businesses in the HillSide branch are owned through this entity.
+YellowBricks, Federal MSB, and Ontario MSB Corp sit under this entity.
+
+## Current Lines of Business
+
+- Andersen Service Line
+- operation of FinSure
+- ownership of YellowBricks, Federal MSB (`17409052 Canada Inc`), and Ontario MSB Corp (`1001494374 Ontario Corp`)
+
+Under the Andersen Service Line, `17513721 Canada Inc` provides services to
+clients of Andersen Consulting and Andersen Consulting pays `17513721 Canada
+Inc`.
+
+Operational matters tied to the Andersen Service Line are tracked inside
+Levine Law. The Andersen Service Line continues to follow the Levine Law
+time-for-money delivery model, even though the Andersen fees are received by
+`17513721 Canada Inc`.
 
 ---
 
@@ -62,6 +81,7 @@ Matthew Holdings.
 
 This entity manages:
 
+- direct operating activity where work is run through 17513721 Canada Inc
 - ownership of subsidiary companies
 - strategic oversight of ventures
 - regulatory coordination where applicable

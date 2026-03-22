@@ -4,7 +4,7 @@ title: Levine Law — Business Plan
 owner: ML1
 status: draft
 created_date: 2026-03-17
-last_updated: 2026-03-20
+last_updated: 2026-03-22
 tags: [llp-030, business-plan, doctrine]
 ---
 
@@ -23,16 +23,38 @@ The firm is built on three principles:
 
 2026 is a production validation year, with no leverage beyond ML1. The objective is to establish stable revenue generation, validate acquisition channels, and define the operating ceiling of a single-lawyer platform.
 
+The current operating model remains time-for-money. Andersen-related
+operational matters are tracked inside Levine Law because they follow the same
+delivery model, even though Andersen fees are received by `17513721 Canada
+Inc`.
+
+This document is the `2026` operating expression of a broader `2026-2028`
+strategy: `2026` validates the platform, `2027` consolidates the payments
+specialty, and `2028` determines whether selective leverage or a partner layer
+can be added without breaking the firm's niche positioning or capacity
+discipline.
+
 ---
 
 ## 2. 2026 Operating Target
 
 **Current 2026 Operating Target: $240K**
 
+**Current 2026 Specialty Positioning Target:** launch F02 and F03 and
+establish Levine Law as a Tier 5 emerging specialist boutique in Ontario
+payments-services legal work
+
+**Current 2026 Core Offer Stack:** Corporate Health Check first, blended
+fractional counsel second. Fractional counsel is industry-agnostic in the
+first instance, with room for payments-specific ongoing counsel needs where
+the client relationship develops in that direction. The Health Check may also
+include bounded regulatory review where the client's facts require it.
+
 **Rationale**
 - Aligns LLP-030 with the current HillSide oversight target for Levine Law 2026
 - Forces early discipline in acquisition and execution
 - Creates sufficient retained earnings to fund 2027 growth
+- Builds the first credible layer of payments/MSB authority without requiring Levine Law to compete on full-service breadth
 
 **Timeline**
 
@@ -42,6 +64,14 @@ The firm is built on three principles:
 | Q2 | $15K–$18K | Channel validation |
 | Q3 | $20K–$22K | System stability |
 | Q4 | $22K–$25K | Target lock |
+
+## 2A. Medium-Term Planning Horizon
+
+| Year | Core question | Channel state | Payments-position objective | Staffing posture |
+|---|---|---|---|---|
+| `2026` | Can Levine Law launch F02 and F03 without destabilizing the core business? | F01 funds operations; F02 launches; F03 activates in early authority form | Reach Tier 5 emerging specialist standing in Ontario payments-services work | No core hires; only contractors and preparatory role definitions |
+| `2027` | Can the firm convert early authority into repeat specialist work and referrals? | F02 becomes the primary core-business engine; F03 becomes a functioning specialist channel | Become a recognized niche reference point for payments/MSB/RPAA/AML matters while remaining a solid Tier 5 boutique | Add leverage only if intake or delivery constraint is persistent and economically justified |
+| `2028` | Can the specialty platform support selective leverage without losing control? | F02 and F03 are repeatable; F01 is secondary or optional | Grow bigger and stronger inside Tier 5 with deeper authority and a more durable niche position | Decide whether a senior lawyer or partner layer should be activated while preserving Tier 5 focus |
 
 ---
 
@@ -68,9 +98,11 @@ The firm operates three acquisition channels (funnel definitions are canonical a
 - Paid diagnostic entry offer ($1,500–$2,500)
 - Distributed primarily through accountant referral network
 - ICP-01 qualified leads only; intake gate enforced at booking
-- Health Check findings convert to defined engagement scope
+- Health Check findings convert into remediation and blended fractional counsel
+- The review may include bounded regulatory analysis where the client's business model or industry exposure makes that necessary
 
-**Role**: Primary corporate acquisition channel once operational; replaces F01 as revenue anchor
+**Role**: Primary corporate acquisition channel once operational; the core
+2026 entry offer and the primary bridge into ongoing fractional counsel
 
 **Contribution target**
 - Q2: early launch, minimal contribution
@@ -85,7 +117,11 @@ The firm operates three acquisition channels (funnel definitions are canonical a
 - Entry offer: AML / MSB registration engagement
 - Longer build time; Blog/SEO engine does not activate until Health Check landing page is live
 
-**Role**: Vertical growth channel; authority-driven, longer conversion cycle
+**Role**: Vertical growth channel; authority-driven, longer conversion cycle;
+the main vehicle for establishing Tier 5 payments-services positioning and for
+feeding payments-specific work into the broader ongoing counsel layer when
+appropriate. F03 remains the specialist route for deeper or standalone
+payments/MSB regulatory entry work.
 
 **Contribution target**
 - Q3: 10–20% (early)
@@ -97,8 +133,8 @@ The firm operates three acquisition channels (funnel definitions are canonical a
 
 F01 → F02 → F03 is not simultaneous scaling:
 - F01 funds survival
-- F02 stabilizes flow with higher-quality clients
-- F03 introduces the vertical specialization layer
+- F02 stabilizes flow with higher-quality clients and anchors the core offer stack
+- F03 introduces the vertical specialization layer without replacing the Corporate Health Check → Fractional Counsel model
 
 ---
 
@@ -129,7 +165,7 @@ ML1 operates as the sole fee earner in 2026.
 
 ML1 remains sole operator.
 
-Permitted support: ad hoc contractors (admin, formatting, filings). No fixed salary commitments.
+Permitted support: ad hoc contractors (admin, formatting, filings). No fixed employee salary commitments beyond ML1 owner compensation.
 
 ---
 
@@ -161,18 +197,21 @@ Permitted support: ad hoc contractors (admin, formatting, filings). No fixed sal
 - Launch F02 (Health Check offer + accountant referral outreach)
 - Standardize templates and workflows
 - Improve conversion consistency
+- Define the initial proof set for Tier 5 payments-services positioning
 - Target: $15K–$18K/month exit
 
 **Q3 — Stabilization**
 - Activate F03 (Structuring keyword SEO + authority content, after Health Check landing page live)
 - Refine intake and scoping discipline
 - Reduce variance in delivery timelines
+- Win the first specialist matters or specialist-qualified opportunities tied to the payments/MSB thesis
 - Target: $20K–$22K/month exit
 
 **Q4 — Lock-In**
 - Achieve consistent run rate
 - Identify repeatable matter types
 - Prepare 2027 scale architecture
+- Confirm whether Levine Law has achieved practical Tier 5 footing in Ontario payments-services work
 - Target: $22K–$25K/month sustained
 
 ---
@@ -195,7 +234,7 @@ Permitted support: ad hoc contractors (admin, formatting, filings). No fixed sal
 
 Principle: tools must support throughput, not complexity.
 
-**Staffing Costs**: 2026 negligible (contract-only). No fixed payroll.
+**Staffing Costs**: 2026 negligible (contract-only). No fixed employee payroll beyond ML1 owner compensation.
 
 ---
 
@@ -205,13 +244,26 @@ Levine Law is not built as a traditional law firm. It is a controlled production
 
 ---
 
-## 9. End-State (2026)
+## 9. Horizon Outcomes
 
-By year-end, the firm should achieve:
-- Stable $22K–$25K monthly revenue
-- Defined acquisition channels (F01 active, F02 operational, F03 early-stage)
+### End of 2026
+
+- Stable `$22K-$25K` monthly revenue
+- Defined acquisition channels with F02 operational and F03 live
 - Documented workflows and templates
 - Clear capacity ceiling established for ML1
+- Practical Tier 5 footing in Ontario payments-services positioning
 - No operational chaos or backlog
 
-This creates the foundation for 2027 growth (increased throughput) and 2028 (bringing in a partner).
+### End of 2027
+
+- F02 is the primary core-business acquisition engine
+- F03 produces repeat specialist opportunities, referrals, and first ongoing counsel relationships
+- The payments/MSB practice is a recognized niche reference point rather than only a content experiment
+- The firm has enough operating proof to decide whether selective leverage should be activated
+
+### End of 2028
+
+- Levine Law operates as a partner-ready specialty platform rather than a pure solo practice
+- Payments positioning is stronger, deeper, and more durable within Tier 5
+- Any senior-lawyer or partner layer is justified by throughput, supervision readiness, and niche economics rather than by ambition alone

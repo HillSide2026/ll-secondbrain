@@ -4,7 +4,7 @@ title: Cash Flow - Scope Definition
 owner: ML1
 status: active
 created_date: 2026-03-20
-last_updated: 2026-03-20
+last_updated: 2026-03-22
 tags: [cash-flow, planning, scope]
 ---
 
@@ -16,23 +16,25 @@ Stage: `Planning`
 
 ## Planning Use
 
-Use this file to fix the reporting boundary for the Matthew Holdings
+Use this file to fix the reporting boundary for the Matthew-level
 cash-flow-control model and prevent scope drift into broad accounting-system
 redesign.
 
 ## In Scope
 
-- Matthew Holdings cash, cash equivalents, and securities
-- portfolio cash flow and portfolio free cash flow
-- Levine Law entity-level cash flow and free cash flow
-- `175 / FinSure` entity-level cash flow and free cash flow
-- additional Matthew-established businesses admitted during the planning horizon
-- YellowBricks realized sale proceeds and residual post-closing cash events
-- intercompany-flow treatment, source-record mapping, and monthly close design
+- all positive and negative cash flow between Matthew and Matthew Holdings (`17513721 Canada Inc`), including the Andersen Service Line and FinSure activity
+- all positive and negative cash flow between Matthew and YellowBricks, including residual post-closing cash events until final settlement
+- all positive and negative cash flow between Matthew and Federal MSB (`17409052 Canada Inc`), which is licensed but has no current operating activity
+- all positive and negative cash flow between Matthew and Ontario MSB Corp (`1001494374 Ontario Corp`), which is owned by 175 and being marketed for sale
+- all positive and negative cash flow between Matthew and Levine Law
+- reconciliation between Andersen cash receipts in `17513721 Canada Inc` and Andersen operational matter tracking inside Levine Law
+- cash-category taxonomy for distributions, compensation, reimbursements, loans, capital contributions, sale proceeds, post-closing obligations, taxes, and similar direct movements
+- source-record mapping, reconciliation rules, and monthly close design for the Matthew-level view
 
 ## Out of Scope
 
 - full accounting-system replacement
+- internal entity-performance dashboards that are not required to explain Matthew-level cash movement
 - annual tax-planning design beyond what is needed for metric treatment
 - unrealized valuation reporting as part of cash-flow metrics
 - broad finance-data automation or BI build before execution is authorized
@@ -41,14 +43,14 @@ redesign.
 ## Required Planning Outputs
 
 - frozen reporting boundary
-- frozen formula definitions and mapping rules
+- frozen cash-movement taxonomy, formula definitions, and mapping rules
 - execution-ready monthly close and review workflow
-- management-pack structure for execution
+- management-pack structure for Matthew-level execution
 - execution recommendation for the next stage
 
 ## Gate Criteria for Executing Authorization
 
-- the reporting boundary is explicit and reproducible
+- the reporting boundary is explicit and reproducible across Matthew and the five in-scope entities
 - formulas and source records are explicit enough for CPA-style review
 - the monthly close process can run within 10 business days of month-end
-- the execution scope stays tightly bounded to reporting and control
+- the execution scope stays tightly bounded to Matthew-level reporting and control

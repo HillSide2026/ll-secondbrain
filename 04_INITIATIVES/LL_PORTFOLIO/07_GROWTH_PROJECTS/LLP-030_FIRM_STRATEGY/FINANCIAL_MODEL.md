@@ -4,13 +4,27 @@ title: Levine Law — Financial Model
 owner: ML1
 status: stub
 created_date: 2026-03-17
-last_updated: 2026-03-20
+last_updated: 2026-03-22
 tags: [llp-030, financial-model, doctrine]
 ---
 
 # Levine Law — Financial Model
 
 **Status**: Stub — not yet drafted. Requires matter value floor and conversion rate data validation.
+
+This document consumes the current owner compensation target defined in
+`04_INITIATIVES/LL_PORTFOLIO/06_FINANCIAL_PORTFOLIO/LLP-002_BUDGETING/BUDGET_2026.md`.
+
+Operational Andersen matters are tracked inside Levine Law because they follow
+the same time-for-money model, but Andersen fee receipts land in
+`17513721 Canada Inc` and therefore require separate cross-entity treatment
+from direct Levine Law cash receipts.
+
+Unless ML1 explicitly approves a separate crediting rule, Andersen fee
+receipts are excluded from direct Levine Law revenue in this model. A live
+planning risk is that Levine Law may need Andersen Service Line economics to
+be credited to the firm in order to support the current `CAD 80,000` owner
+compensation target.
 
 This document will contain a P&L projection linking:
 
@@ -27,17 +41,20 @@ This document will contain a P&L projection linking:
 | Consult → retained conversion | 40–50% | Estimated | No |
 | Average matter value (F01) | Unknown | — | Required — open item |
 | Average matter value (F02) | $1,500–$2,500 (Health Check entry) | Hypothesis | Not yet launched |
-| Owner salary | $72,000 | Fixed | Yes |
+| Owner salary | $72,000 | LLP-002 `BUDGET_2026.md` | Yes |
+| Owner bonus target | $8,000 | LLP-002 `BUDGET_2026.md` | Yes |
+| Total owner compensation | $80,000 | LLP-002 `BUDGET_2026.md` | Yes |
 | Overhead | $40,000–$50,000/year | Budget Scenario 1 | Yes |
+| Andersen direct revenue credit | Excluded by default | Cross-entity rule | Yes — unless ML1 changes policy |
 
 ### 2. P&L Projection by Target / Reference Case
 
 Reference cases for planning:
 
-| Case | Target Revenue | Marketing Spend | Owner Salary | Overhead | Projected Margin |
+| Case | Target Revenue | Marketing Spend | Owner Compensation | Overhead | Projected Margin |
 |---|---|---|---|---|---|
-| Reference floor | $200,000 | TBD | $72,000 | $40–50k | TBD |
-| Current operating target | $240,000 | TBD | $72,000 | TBD | TBD |
+| Reference floor | $200,000 | TBD | $80,000 | $40–50k | TBD |
+| Current operating target | $240,000 | TBD | $80,000 | TBD | TBD |
 
 ### 3. Staffing Impact Model
 

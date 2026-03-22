@@ -4,7 +4,7 @@ title: Cash Flow - Project Plan
 owner: ML1
 status: active
 created_date: 2026-03-20
-last_updated: 2026-03-20
+last_updated: 2026-03-22
 tags: [cash-flow, planning, project-plan]
 ---
 
@@ -16,13 +16,14 @@ Stage: `Planning`
 
 ## Planning Objective
 
-Turn the approved initiation framing into an execution-ready monthly reporting
-model capable of supporting the `2026-06-30` SMART goal.
+Turn the approved initiation framing into an execution-ready monthly
+Matthew-level reporting model capable of supporting the `2026-06-30` SMART
+goal.
 
 ## Current Planning Focus
 
-1. freeze the reporting boundary across holdings and businesses
-2. freeze formula definitions and source records
+1. freeze the reporting boundary across Matthew and the five in-scope entities
+2. freeze cash-movement definitions and source records
 3. define the month-end close, review, and variance process
 4. assemble a clean `Planning -> Executing` packet for ML1
 
@@ -31,7 +32,7 @@ model capable of supporting the `2026-06-30` SMART goal.
 | Workstream | Objective | Primary Output |
 | --- | --- | --- |
 | WS-01 Boundary and Sources | Fix the in-scope entities, accounts, and source records | `SCOPE_DEFINITION.md`, `DEPENDENCIES.md` |
-| WS-02 Formula and Treatment Rules | Lock the portfolio and business cash-flow / free-cash-flow definitions | `METRICS.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
+| WS-02 Formula and Treatment Rules | Lock the Matthew-level inflow, outflow, and net-cash-flow definitions | `METRICS.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
 | WS-03 Close and Review Model | Define the monthly close, review owner, variance process, and pack structure | `PROJECT_PLAN.md`, `COMMUNICATION_PLAN.md` |
 | WS-04 Gate Packet Assembly | Prepare the execution-readiness recommendation for ML1 | `RISK_REGISTER.md`, `../APPROVAL_RECORD.md` |
 
@@ -47,8 +48,9 @@ model capable of supporting the `2026-06-30` SMART goal.
 
 ## Immediate Planning Sprint
 
-- confirm all in-scope entities, holdings, and residual exit-cash events
-- lock the treatment of intercompany flows, owner distributions, and reserve funding
+- confirm all in-scope entities and residual YellowBricks cash events
+- lock the treatment of distributions, compensation, reimbursements, loans, capital contributions, and intercompany flows
+- encode the current Levine Law -> Matthew compensation target (`CAD 72,000` salary + `CAD 8,000` bonus) into the pack structure and category mapping
 - map the primary record set for each metric family
 - define the close calendar needed to deliver the pack within 10 business days of month-end
 - define the minimum viable management pack for execution

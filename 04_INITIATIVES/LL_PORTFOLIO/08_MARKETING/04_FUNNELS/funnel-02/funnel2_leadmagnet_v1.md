@@ -119,6 +119,9 @@ It evaluates:
 - Authority documentation
 - Capital readiness
 
+Where the business model or industry context requires it, the review can also
+include bounded regulatory questions as part of the same diagnostic.
+
 It does not rewrite your company.
 
 It assesses whether your structure reflects how you actually operate.

@@ -4,7 +4,7 @@ title: 2B Federal MSB (17409052 Canada Inc)
 owner: ML1
 status: draft
 created_date: 2026-03-06
-last_updated: 2026-03-07
+last_updated: 2026-03-22
 tags: []
 ---
 
@@ -12,13 +12,20 @@ tags: []
 
 17409052 Canada Inc
 
-Federal MSB is a federally incorporated entity intended to operate within the financial services sector.
+Federal MSB is a federally incorporated MSB entity within the Matthew
+Holdings structure.
 
 ---
 
 ## Role
 
-This entity is structured to operate as a **Money Services Business (MSB)** under Canadian federal regulation.
+This entity is structured as a **Money Services Business (MSB)** under
+Canadian federal regulation.
+
+Current operating activity: none.
+
+FinSure is not operated through this entity. FinSure is run by
+`17513721 Canada Inc`.
 
 Activities may include:
 
@@ -60,4 +67,5 @@ This folder may contain:
 - regulatory status notes
 - strategic development plans
 
-Fintrac registration is pending.
+This entity is the licensed / regulated MSB vehicle in the current HillSide
+structure, but it has no current operating activity.

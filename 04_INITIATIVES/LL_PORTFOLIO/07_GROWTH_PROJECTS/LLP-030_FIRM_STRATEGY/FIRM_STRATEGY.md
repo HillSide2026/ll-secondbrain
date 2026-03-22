@@ -4,7 +4,7 @@ title: Levine Law — Firm Strategy
 owner: ML1
 status: draft
 created_date: 2026-03-17
-last_updated: 2026-03-20
+last_updated: 2026-03-22
 tags: [llp-030, firm-strategy, doctrine]
 ---
 
@@ -24,6 +24,12 @@ The structural shift the firm must execute to get there:
 > **To**: Preventative, diagnostic-led acquisition (Corporate Health Check → retained operator clients)
 
 This shift is not complete. F01 is the current primary channel. F02 does not yet exist. The strategy governs the sequencing of that transition.
+
+The medium-term planning arc is:
+
+- `2026`: launch F02 and F03 while establishing Levine Law as a Tier 5 emerging specialist boutique in Ontario payments-services legal work
+- `2027`: consolidate specialist authority so F03 produces repeat matters, referrals, and ongoing counsel for defined payments/MSB operators
+- `2028`: convert that authority into a larger, stronger Tier 5 specialty platform with selective leverage, documented systems, and deeper market credibility inside the same tier
 
 ---
 
@@ -71,7 +77,13 @@ The firm operates two modes in parallel during the transition period:
 
 **Current mode (F01-driven)**: Reactive intake. Leads come through Google Ads with varying quality. Work is transaction-by-transaction. This mode funds operations and continues until F02 generates sufficient volume to replace it.
 
-**Target mode (F02/F03-driven)**: Diagnostic-first. The entry point is a paid Corporate Health Check ($1,500–$2,500). The Health Check surfaces structural gaps and converts to defined engagement scope. Ongoing advisory and fractional counsel are the retention vehicle.
+**Target mode (F02/F03-driven)**: Diagnostic-first. In `2026`, the core
+offering remains a paid Corporate Health Check (`$1,500-$2,500`). The Health
+Check surfaces structural gaps and may include bounded regulatory review where
+the client's business model or industry exposure requires it. It then converts
+into blended fractional counsel. That ongoing counsel layer is
+industry-agnostic in the first instance, with room to absorb payments-specific
+ongoing counsel needs when they arise.
 
 The service model is NOT:
 - High-volume, commoditized legal work
@@ -79,9 +91,11 @@ The service model is NOT:
 - Hourly billing without defined engagement scope
 
 The service model IS moving toward:
+- Corporate Health Check as the core entry offer
 - Fixed-fee diagnostics and scoped engagement packages
-- Ongoing advisory for ICP-aligned operators
-- Repeat revenue from a defined client portfolio
+- Bounded regulatory review inside the Health Check where client facts require it
+- Blended fractional counsel as the primary ongoing relationship layer
+- Repeat revenue from a defined client portfolio, including payments-specific ongoing counsel where relevant
 
 ---
 
@@ -96,19 +110,25 @@ These are non-negotiable constraints, not aspirational targets.
 
 ---
 
-## 6. 3-Year Goals
+## 6. Strategic Horizon (2026-2028)
 
-These goals are targets for planning; they are not approved KPI baselines (that is the job of FINANCIAL_MODEL.md and METRIC_FRAMEWORK.md in LLP-025).
+These horizon statements are planning targets, not approved KPI baselines
+(that is the job of `FINANCIAL_MODEL.md` and `METRIC_FRAMEWORK.md` in
+`LLP-025`).
 
-| Area | Goal |
-|---|---|
-| Revenue | Reach and sustain CAD 240k/year by end of 2026; extend from that base in later planning periods |
-| Funnel mix | F02 is the primary new-client acquisition channel by Q4 2026; F01 is secondary |
-| Client quality | ≥75% of new matters aligned with ICP-01 or ICP-02 by end of 2026 |
-| Margin | Net margin ≥15% of revenue ($36k+ at $240k) after owner salary |
-| Capacity | Workload does not require sustained weeks above 20 billable hours/week (ML1 current ceiling) |
-| Staffing | Setter active by the time F02 generates ≥ 10 leads/month; senior lawyer defined before matter volume exceeds ML1 delivery ceiling |
-| Authority | F03 entry offer live and generating first engagements by end of 2027 |
+| Year | Strategic posture | Market-position target | Channel objective | Operating objective |
+|---|---|---|---|---|
+| `2026` | Build the controlled platform and launch the specialty layer | Establish Levine Law as a Tier 5 emerging specialist boutique in Ontario payments-services legal work | Launch F02 and F03 while F01 continues funding operations | Reach and sustain `CAD 240k` annualized revenue, keep workload within ML1 capacity, and maintain margin discipline after `CAD 80,000` owner compensation |
+| `2027` | Consolidate authority and deepen the specialist book | Become a recognized specialist reference point for defined payments/MSB/RPAA/AML matters in the target market while remaining a solid Tier 5 boutique | F02 becomes the primary core-business acquisition engine; F03 produces repeat matters, referral flow, and first ongoing specialist relationships | Formalize delivery standards, narrow the matter mix further, and activate leverage only if the bottleneck is persistent and economics justify it |
+| `2028` | Convert specialist credibility into a larger, stronger Tier 5 platform | Deepen Levine Law's specialist standing, authority, and durability inside Tier 5 | F02 and F03 are both repeatable channels; F01 is secondary or optional rather than the growth engine | Decide whether selective leverage, including a senior lawyer or partner layer, can be added without breaking capacity discipline, niche positioning, or Tier 5 focus |
+
+Working payments market ladder used in this strategy:
+
+- Tier 1: national market leaders
+- Tier 2: major financial-services firms with strong payments capability
+- Tier 3: credible full-service firms with active payments/fintech teams
+- Tier 4: sector-active but less dominant firms
+- Tier 5: emerging specialist boutiques
 
 ---
 

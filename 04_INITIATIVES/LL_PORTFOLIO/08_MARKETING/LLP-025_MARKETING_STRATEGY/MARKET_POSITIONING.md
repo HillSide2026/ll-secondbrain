@@ -4,7 +4,7 @@ title: Market Positioning
 owner: ML1
 status: draft
 created_date: 2026-02-25
-last_updated: 2026-02-25
+last_updated: 2026-03-22
 tags: []
 ---
 
@@ -35,6 +35,11 @@ Primary Category:
 Secondary Category:
 - Payments/MSB/PSP Regulatory Counsel (Canada exposure)
 
+Core 2026 Offer Stack:
+- Corporate Health Check as the core entry offer, with bounded regulatory review where relevant
+- Fractional counsel as the primary ongoing relationship layer
+- Payments-specific ongoing counsel fits inside that ongoing layer where relevant
+
 Core Market Definition:
 - Ontario-based operating businesses ($1M-$8M revenue, 5-30 employees)
 - Fintech / payments / MSB / PSP operators with Canadian exposure
@@ -45,13 +50,14 @@ Core Market Definition:
 - Structural review orientation
 - Regulatory systems literacy
 - Operator-aligned counsel
-- Productized entry points (Health Check, MSB registration, AML health check)
+- Corporate Health Check as the core productized entry point into fractional counsel, with bounded regulatory review where client facts require it
+- MSB registration and AML health check as vertical entry points where payments-specific facts require deeper or standalone regulatory work
 
 ## Why LL Wins
 
 - Preventative, systems-oriented counsel for operators
 - Governance clarity and regulatory stability focus
-- Structured entry points that filter for fit
+- Structured entry points that filter for fit and lead into ongoing counsel
 
 ## What LL Is NOT
 
@@ -65,6 +71,7 @@ Core Market Definition:
 
 - Paid diagnostics and entry services (used to filter for fit)
 - Productized entry points prior to broader engagements
+- Fractional counsel as the principal ongoing relationship model
 
 ## Risk Posture
 

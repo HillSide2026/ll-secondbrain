@@ -4,7 +4,7 @@ title: Marketing Objectives
 owner: ML1
 status: draft
 created_date: 2026-02-25
-last_updated: 2026-02-25
+last_updated: 2026-03-22
 tags: []
 ---
 
@@ -16,7 +16,7 @@ Marketing is responsible for:
 - Acquiring qualified, maturity-filtered operator clients
 - Transitioning reactive acquisition toward preventative diagnostics
 - Establishing authority in Canadian payments/MSB regulatory counsel
-- Feeding strategy-level engagements (Fractional Counsel; AML Retainer)
+- Feeding strategy-level engagements (Fractional Counsel; payments-specific ongoing counsel where relevant)
 
 ## Objective List
 
@@ -32,7 +32,7 @@ Owned Metric Family:
 
 Supported Service Layer (Strategy/Solution/Practice Area):
 - Strategy: Fractional Counsel / Legal Function as a Service
-- Solution: Corporate Health Check (entry diagnostic)
+- Solution: Corporate Health Check (entry diagnostic, with bounded regulatory review where relevant)
 - Practice Area: Corporate
 
 Exclusions:
@@ -53,7 +53,7 @@ Owned Metric Family:
 - Document readiness rate
 
 Supported Service Layer (Strategy/Solution/Practice Area):
-- Strategy: Corporate Health Check -> Remediation -> Fractional Counsel
+- Strategy: Corporate Health Check -> Remediation -> Fractional Counsel (industry-agnostic base layer, with bounded regulatory review where relevant)
 - Practice Area: Corporate
 
 Exclusions:
@@ -65,7 +65,7 @@ Exclusions:
 ### OBJ-03: Establish Regulatory Authority in Payments/MSB Space
 
 Description:
-- Build authority and conversion for payments/MSB regulatory work leading to ongoing AML counsel retainers.
+- Build authority and conversion for payments/MSB regulatory work leading to ongoing payments counsel within the firm's broader fractional counsel layer.
 
 Owned Metric Family:
 - Qualified consults
@@ -73,7 +73,7 @@ Owned Metric Family:
 - Retainer conversion rate
 
 Supported Service Layer (Strategy/Solution/Practice Area):
-- Strategy: Payments/MSB/PSP Regulatory Counsel
+- Strategy: Payments/MSB/PSP Regulatory Counsel within the broader Fractional Counsel platform
 - Solution: MSB and AML-related entry services
 - Practice Area: Financial Services (Payments)
 

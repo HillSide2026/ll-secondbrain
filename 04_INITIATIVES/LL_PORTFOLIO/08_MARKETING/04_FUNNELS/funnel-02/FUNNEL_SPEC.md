@@ -150,6 +150,7 @@ Lifecycle interpretation:
 - Strategy folder: 02_PLAYBOOKS/CORPORATE/STRATEGIES/CORPORATE_HEALTH_CHECK_REMEDIATION/
 - Entry offer: Corporate Health Check (paid diagnostic)
 - Core offer: Remediation + Fractional Counsel
+- Scope note: the Corporate Health Check may include bounded regulatory review where the client's business model or industry exposure requires it
 - Solutions: Corporate solution frames as indicated by remediation scope (TBD)
 
 ## Compliance Constraints / Disclaimers

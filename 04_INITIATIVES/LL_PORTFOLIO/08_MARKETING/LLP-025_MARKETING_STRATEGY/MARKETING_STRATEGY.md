@@ -4,7 +4,7 @@ title: Marketing Strategy
 owner: ML1
 status: draft
 created_date: 2026-02-25
-last_updated: 2026-02-25
+last_updated: 2026-03-22
 tags: []
 ---
 
@@ -13,8 +13,10 @@ tags: []
 ## Strategy Thesis
 
 - Funnel 01 is a temporary reactive acquisition channel.
-- Funnel 02 is the intended structural replacement: paid diagnostic, higher-quality clients, lower noise, greater strategic leverage.
-- Funnel 03 builds vertical authority in regulated payments space.
+- Funnel 02 is the intended structural replacement: paid Corporate Health Check diagnostic, higher-quality clients, lower noise, and greater strategic leverage.
+- The core 2026 offer stack is Corporate Health Check -> blended Fractional Counsel.
+- The Corporate Health Check may include bounded regulatory review where the client's facts require it.
+- Funnel 03 builds vertical authority in regulated payments space and should feed payments-specific matters into the same ongoing counsel layer where appropriate.
 
 ## Channel Strategy
 
@@ -31,14 +33,14 @@ tags: []
 | Funnel | Entry Offer | Core Offer |
 |--------|-------------|------------|
 | F01 | Fractional Counsel consult | Ongoing retainer |
-| F02 | Paid Corporate Health Check | Remediation + Fractional Counsel |
-| F03 | MSB/AML entry services | Ongoing AML Counsel |
+| F02 | Paid Corporate Health Check | Remediation + Fractional Counsel (industry-agnostic base layer, with bounded regulatory review where relevant) |
+| F03 | MSB/AML entry services | Ongoing payments counsel within broader Fractional Counsel layer for deeper or standalone regulatory matters |
 
 ## Funnel Portfolio Intent
 
 - F01 sustains qualified intake while transition to preventative positioning is built.
-- F02 becomes the primary corporate entry path through paid diagnostics.
-- F03 grows vertical authority and conversion for payments regulatory work.
+- F02 becomes the primary corporate entry path through paid diagnostics and anchors the core 2026 offer stack.
+- F03 grows vertical authority and conversion for payments regulatory work, feeding specialist matters into the broader ongoing counsel layer.
 
 ## Constraints
 

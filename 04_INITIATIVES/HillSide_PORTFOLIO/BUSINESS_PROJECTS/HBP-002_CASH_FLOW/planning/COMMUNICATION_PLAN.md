@@ -4,7 +4,7 @@ title: Cash Flow - Communication Plan
 owner: ML1
 status: active
 created_date: 2026-03-20
-last_updated: 2026-03-20
+last_updated: 2026-03-22
 tags: [cash-flow, planning, communications]
 ---
 
@@ -17,14 +17,16 @@ Stage: `Planning`
 ## Planning Use
 
 Use this file to run planning cadence and escalate blockers related to source
-records, formula design, and close-process readiness.
+records, Matthew-level cash classification, and close-process readiness.
 
 ## Audiences
 
 - ML1
 - accounting / bookkeeping / CPA support
+- Matthew Holdings (`17513721 Canada Inc`)
 - Levine Law
-- `175 / FinSure`
+- Federal MSB (`17409052 Canada Inc`)
+- Ontario MSB Corp (`1001494374 Ontario Corp`)
 
 ## Cadence
 
@@ -32,13 +34,15 @@ records, formula design, and close-process readiness.
 | --- | --- | --- | --- |
 | ML1 | Weekly | Planning status, decisions required, and risk updates | Project Owner |
 | Accounting / bookkeeping / CPA support | Weekly | Formula, source-record, and close-feasibility review | Project Owner |
+| Matthew Holdings (`17513721 Canada Inc`) | Bi-weekly or as needed | Entity-input and treatment sync | Project Owner |
 | Levine Law | Bi-weekly or as needed | Entity-input and treatment sync | Project Owner |
-| `175 / FinSure` | Bi-weekly or as needed | Entity-input and treatment sync | Project Owner |
+| Federal MSB (`17409052 Canada Inc`) | Bi-weekly or as needed | Entity-input and treatment sync | Project Owner |
+| Ontario MSB Corp (`1001494374 Ontario Corp`) | Bi-weekly or as needed | Entity-input and treatment sync | Project Owner |
 
 ## Escalation Triggers
 
 - any unresolved source-record gap for a required metric
-- any disagreement on cash-flow or free-cash-flow treatment
+- any disagreement on Matthew-level inflow, outflow, or net-cash-flow treatment
 - any delay that threatens the 10-business-day close target
 - any request to expand the project into a larger systems build
-- any unclassified business or exit-cash event proposed for inclusion
+- any unclassified in-scope cash movement to or from Matthew proposed for inclusion

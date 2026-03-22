@@ -180,6 +180,9 @@ It assesses:
 - Contract architecture consistency
 - Role clarity and accountability
 
+Where the business model or industry context requires it, the review can also
+include bounded regulatory questions inside the same diagnostic.
+
 It does not assume deficiency.
 
 It evaluates alignment.
