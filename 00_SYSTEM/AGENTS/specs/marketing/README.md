@@ -26,6 +26,8 @@ preparation, market-signal capture, and repository governance.
 - `MKT_DESIGN_PRODUCTION_AGENT`
 - `MKT_EDITORIAL_QA_AGENT`
 - `MKT_WEBSITE_IMPLEMENTATION_AGENT`
+- `MKT_UX_DESIGN_AGENT`
+- `MKT_THRIVE_THEMES_AGENT`
 - `MKT_DISTRIBUTION_ORCHESTRATION_AGENT`
 - `MKT_MARKET_SIGNAL_AGENT`
 - `MKT_REPOSITORY_ASSET_GOVERNANCE_AGENT`
@@ -47,10 +49,28 @@ preparation, market-signal capture, and repository governance.
 3. Content agent produces draft artifacts.
 4. Design Production agent creates governed design drafts from approved templates.
 5. Editorial QA agent validates strategy, doctrine, and policy alignment.
-6. Website Implementation agent assembles approved website changes, local patch sets, and WIP deployment packets.
-7. Distribution orchestration agent prepares channel handoff and deployment packages.
-8. Market signal agent reports market feedback as operational signals.
-9. Repository governance agent stores assets with lifecycle and provenance controls.
+6. UX Design agent translates approved content into wireframes, component specs,
+   interaction patterns, and implementation handoff packets.
+7. Thrive Themes agent translates wireframe specs into Thrive Architect build
+   packets for ML1 execution in WordPress.
+8. Website Implementation agent assembles approved website changes, local patch
+   sets, and WIP deployment packets.
+9. Distribution orchestration agent prepares channel handoff and deployment packages.
+10. Market signal agent reports market feedback as operational signals.
+11. Repository governance agent stores assets with lifecycle and provenance controls.
+
+## Website Build Chain (page production)
+```
+MKT_CONTENT_PRODUCTION_AGENT     (approved copy)
+MKT_MARKETING_STRATEGY_AGENT     (page purpose, ICP, funnel context)
+MKT_DESIGN_PRODUCTION_AGENT      (brand assets, palette)
+        ↓
+MKT_UX_DESIGN_AGENT              (wireframe spec, component definitions, handoff packet)
+        ↓
+MKT_THRIVE_THEMES_AGENT          (Thrive Architect build packet)
+        ↓
+ML1                              (executes build in WordPress; approves; publishes)
+```
 
 ## Meta-Execution Chain
 1. Objective

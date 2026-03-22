@@ -13,12 +13,14 @@ tags: [marketing, agents, skills, mapping]
 Canonical mapping of marketing agents to their declared skill files.
 Skill files are stored under `00_SYSTEM/AGENTS/specs/marketing/skills/`.
 
-## Implementation Status (2026-03-10)
+## Implementation Status (2026-03-21)
 - Implemented meta-skill files for `MKT_CHIEF_MARKETING_OFFICER_AGENT`.
-- Implemented skill files: all eight core agents (`MKT_MARKETING_STRATEGY_AGENT`, `MKT_CONTENT_PRODUCTION_AGENT`, `MKT_DESIGN_PRODUCTION_AGENT`, `MKT_EDITORIAL_QA_AGENT`, `MKT_WEBSITE_IMPLEMENTATION_AGENT`, `MKT_DISTRIBUTION_ORCHESTRATION_AGENT`, `MKT_MARKET_SIGNAL_AGENT`, `MKT_REPOSITORY_ASSET_GOVERNANCE_AGENT`).
-- Implemented skill files: all optional specialist agent skills (`MKT_SEO_DISCOVERABILITY_AGENT`, `MKT_SOCIAL_NARRATIVE_AGENT`, `MKT_OFFER_FUNNEL_AGENT`, `MKT_COMPETITIVE_POSITIONING_AGENT`).
-- Remaining skill files: none in current map.
-- Runtime activation approved by ML1 on `2026-03-21` for the core suite: `MKT_CHIEF_MARKETING_OFFICER_AGENT`, `MKT_MARKETING_STRATEGY_AGENT`, `MKT_CONTENT_PRODUCTION_AGENT`, `MKT_DESIGN_PRODUCTION_AGENT`, `MKT_EDITORIAL_QA_AGENT`, `MKT_WEBSITE_IMPLEMENTATION_AGENT`, `MKT_DISTRIBUTION_ORCHESTRATION_AGENT`, `MKT_MARKET_SIGNAL_AGENT`, and `MKT_REPOSITORY_ASSET_GOVERNANCE_AGENT`.
+- Implemented skill files: all original eight core agents.
+- Implemented skill files: all optional specialist agent skills.
+- Added 2026-03-21: `MKT_UX_DESIGN_AGENT` and `MKT_THRIVE_THEMES_AGENT` activated
+  as core agents with full skill files.
+- Runtime activation approved by ML1 on `2026-03-21` for full suite including
+  `MKT_UX_DESIGN_AGENT` and `MKT_THRIVE_THEMES_AGENT`.
 
 ## MKT_CHIEF_MARKETING_OFFICER_AGENT
 - `task_decomposition.skill.md`
@@ -109,6 +111,32 @@ Meta-execution chain:
 - `asset_version_management.skill.md`
 - `artifact_state_management.skill.md`
 - `marketing_repository_indexing.skill.md`
+
+## MKT_UX_DESIGN_AGENT
+- `information_architecture.skill.md`
+- `user_flow_design.skill.md`
+- `wireframe_production.skill.md`
+- `ui_pattern_selection.skill.md`
+- `visual_hierarchy_optimization.skill.md`
+- `responsive_design_specification.skill.md`
+- `interaction_and_state_specification.skill.md`
+- `forms_and_conversion_ux.skill.md`
+- `accessibility_audit_and_remediation.skill.md`
+- `platform_aware_design_constraints.skill.md`
+- `design_system_translation.skill.md`
+- `design_to_implementation_handoff.skill.md`
+- `ux_audit.skill.md`
+- `component_design.skill.md`
+
+## MKT_THRIVE_THEMES_AGENT
+- `thrive_element_mapping.skill.md`
+- `thrive_build_packet.skill.md`
+- `thrive_symbol_design.skill.md`
+- `thrive_css_override.skill.md`
+- `thrive_responsive_config.skill.md`
+- `thrive_template_config.skill.md`
+- `wordpress_page_setup.skill.md`
+- `thrive_audit.skill.md`
 
 ## Optional Specialists
 
