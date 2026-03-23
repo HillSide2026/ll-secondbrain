@@ -15,7 +15,7 @@ Stage: `Planning`
 
 ## Assumptions
 
-- the primary target remains consolidated net worth of at least CAD 2,000,000 by `2030-12-31`
+- two targets are fixed: consolidated net worth ≥ CAD 2,000,000 by `2030-12-31` and ≥ CAD 4,000,000 by `2040-12-31`
 - both liquid holdings and business equity matter to the path
 - the baseline can be measured consistently enough for management use even if some valuation judgment is required
 - quarterly review is frequent enough for governance without turning the project into noise
@@ -33,13 +33,13 @@ Stage: `Planning`
 Currently locked:
 
 - internal wealth-management only
-- target date of `2030-12-31`
-- minimum target of CAD 2,000,000 consolidated net worth
+- SG-01: consolidated net worth ≥ CAD 2,000,000 by `2030-12-31`
+- SG-02: consolidated net worth ≥ CAD 4,000,000 by `2040-12-31`
 - quarterly review and annual reforecast discipline
 
 Still not locked:
 
-- the opening baseline value
+- the opening baseline value is first-passed at CAD 1,600,000 (`2026-03-23`) — subject to valuation methodology confirmation
 - the exact balance between portfolio compounding and business-value creation
 - any threshold rules for redeployment, distributions, or liquidity reserves
 

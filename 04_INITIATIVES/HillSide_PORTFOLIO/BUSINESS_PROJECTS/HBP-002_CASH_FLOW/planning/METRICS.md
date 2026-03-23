@@ -37,6 +37,35 @@ monthly management-pack build.
 | Pack readiness | The minimum viable management-pack structure is explicit enough to build for the Matthew-level view | one execution-ready pack design and scope boundary | `PROJECT_PLAN.md`, planning folder |
 | ML1 gate readiness | The planning packet is complete enough for a `Planning -> Executing` decision | all required planning artifacts drafted and coherent | planning folder and `../APPROVAL_RECORD.md` |
 
+## 2027 Onwards — Net Savings Consideration
+
+The current 2026 compensation model (CAD 72,000 salary + CAD 8,000 bonus =
+CAD 80,000) approximately equals living costs. At this level, professional
+income covers expenses but generates no material net savings — wealth
+accumulation depends entirely on investment returns on the existing base.
+
+From 2027 onwards, the cash flow model must explicitly track and project
+**net savings**: income less living costs and taxes, available for wealth
+accumulation.
+
+| Threshold | Implication |
+|-----------|-------------|
+| ML revenue ~CAD 80,000 | Net savings ≈ CAD 0; wealth growth = investment returns only |
+| ML revenue ~CAD 130,000–150,000 | Net savings ~CAD 50,000–70,000/year; materially accelerates wealth accumulation and reduces dependence on hitting investment return targets |
+| ML revenue ~CAD 160,000+ | Net savings sufficient to noticeably compound the base and provide margin against return shortfalls |
+
+**Planning requirement from 2027:** The monthly management pack must include
+a net savings line — income less living costs and taxes — not just gross
+inflow. This is the metric that connects HBP-002 (Cash Flow) to HBP-001
+(Wealth Management) and to the revenue growth targets in HBP-008 (Levine
+Law 2027) and HBP-009 (2027 Business Ideas).
+
+Whether ML revenue reaches the $130–150K threshold depends on LL or other
+venture revenue growth from 2027 onward. Until it does, the net savings
+line will be near zero and should be reported as such — not assumed away.
+
+---
+
 ## Measurement Rule
 
 Planning is not complete when the formulas merely sound professional. Planning

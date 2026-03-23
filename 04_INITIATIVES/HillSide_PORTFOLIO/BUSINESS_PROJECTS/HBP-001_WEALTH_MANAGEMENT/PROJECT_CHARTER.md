@@ -23,14 +23,16 @@ ML1 (Matthew Holdings)
 ## Mission
 
 Build a disciplined internal wealth-management program under Matthew Holdings
-that can reach consolidated net worth of at least CAD 2,000,000 by
-`2030-12-31`, when Matthew is 50.
+that reaches consolidated net worth of at least CAD 2,000,000 by `2030-12-31`
+(when Matthew is 50) and at least CAD 4,000,000 by `2040-12-31` (when Matthew
+is 60).
 
-## Primary SMART Goal
+## SMART Goals
 
-By `2030-12-31`, reach consolidated net worth of at least CAD 2,000,000,
-measured as the fair value of in-scope assets less in-scope liabilities and
-reviewed at least quarterly against an approved baseline.
+| Goal | Target | Measurement |
+|------|--------|-------------|
+| SG-01 | Consolidated net worth ≥ CAD 2,000,000 by `2030-12-31` | Fair value of in-scope assets less in-scope liabilities, reviewed at least quarterly against an approved baseline |
+| SG-02 | Consolidated net worth ≥ CAD 4,000,000 by `2040-12-31` | Same measurement basis as SG-01; reviewed at least annually from 2031 onward |
 
 ## Success Criteria
 

@@ -23,7 +23,8 @@ This project is a planning-stage strategic project under Matthew Holdings.
 ## Current State
 
 - Ownership branch: `Matthew Holdings / HillSide`
-- Primary target documented: consolidated net worth of at least CAD 2,000,000 by `2030-12-31`
+- SG-01: consolidated net worth ≥ CAD 2,000,000 by `2030-12-31`
+- SG-02: consolidated net worth ≥ CAD 4,000,000 by `2040-12-31`
 - Initiating -> Planning gate approved on `2026-03-20`
 - Planning packet opened in `planning/`
 - Executing not yet authorized
@@ -33,8 +34,8 @@ This project is a planning-stage strategic project under Matthew Holdings.
 ## Objective
 
 Define the internal wealth-management strategy under Matthew Holdings needed to
-reach consolidated net worth of at least CAD 2,000,000 by `2030-12-31`, when
-Matthew is 50.
+reach consolidated net worth of at least CAD 2,000,000 by `2030-12-31` (Matthew
+at 50) and at least CAD 4,000,000 by `2040-12-31` (Matthew at 60).
 
 ---
 

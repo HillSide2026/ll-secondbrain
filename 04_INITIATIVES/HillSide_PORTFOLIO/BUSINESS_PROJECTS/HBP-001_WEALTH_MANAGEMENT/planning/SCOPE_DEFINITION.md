@@ -24,7 +24,7 @@ model and to prevent scope drift into unrelated businesses or public offerings.
 - consolidated net-worth measurement boundary for Matthew Holdings / HillSide
 - opening balance-sheet view of in-scope assets and liabilities
 - treatment of liquid holdings, securities, and business equity
-- target-gap calculation relative to CAD 2,000,000 by `2030-12-31`
+- target-gap calculation relative to CAD 2,000,000 by `2030-12-31` (SG-01) and CAD 4,000,000 by `2040-12-31` (SG-02)
 - capital-allocation guardrails and liquidity-reserve design
 - quarterly review cadence and annual reforecast logic
 - decision-useful scenario analysis for the main wealth engines
@@ -34,7 +34,7 @@ model and to prevent scope drift into unrelated businesses or public offerings.
 - public-facing wealth-management services
 - outside-client advisory offerings
 - legal, tax, or structuring implementation beyond planning assumptions
-- speculative venture incubation not tied to the 2030 target
+- speculative venture incubation not tied to the 2030 or 2040 targets
 - day-to-day operating management of each in-scope business
 
 ## Required Planning Outputs

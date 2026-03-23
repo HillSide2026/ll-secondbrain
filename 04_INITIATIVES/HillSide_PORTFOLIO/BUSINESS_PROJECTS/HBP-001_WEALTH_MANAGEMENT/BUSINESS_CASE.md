@@ -17,8 +17,8 @@ Project: `HBP-001` - Wealth Management
 
 Matthew needs a measurable wealth-management objective rather than a general
 ambition. The immediate opportunity is to manage Matthew Holdings against a
-clear target of consolidated net worth of at least CAD 2,000,000 by
-`2030-12-31`.
+two targets: consolidated net worth of at least CAD 2,000,000 by `2030-12-31`
+and at least CAD 4,000,000 by `2040-12-31`.
 
 The business case for initiation is not that the full strategy is already
 finalized. It is that a controlled definition effort is warranted before
@@ -63,7 +63,7 @@ Selective redeployment, acquisitions, or dispositions.
 A blended internal wealth-management model is the strongest current case.
 That means disciplined measurement of current net worth, active management of
 liquid assets, and explicit treatment of business equity as part of the path to
-the `2030-12-31` target.
+the `2030-12-31` and `2040-12-31` targets.
 
 That view is based on:
 
@@ -84,5 +84,5 @@ That view is based on:
 Proceed to Planning only if ML1 concludes that:
 
 - the opening net-worth baseline is credible enough to manage
-- the gap to the `2030-12-31` target is quantified clearly
+- the gap to the `2030-12-31` and `2040-12-31` targets is quantified clearly
 - the next stage can define capital-allocation and review rules without scope drift

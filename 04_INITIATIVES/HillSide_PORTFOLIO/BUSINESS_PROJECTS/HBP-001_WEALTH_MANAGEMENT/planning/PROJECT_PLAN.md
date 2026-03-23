@@ -18,7 +18,7 @@ Stage: `Planning`
 
 Translate the approved initiation goal into an execution-ready internal
 wealth-management model with a credible path to CAD 2,000,000 of consolidated
-net worth by `2030-12-31`.
+net worth by `2030-12-31` and CAD 4,000,000 by `2040-12-31`.
 
 ## Current Planning Focus
 
@@ -32,7 +32,7 @@ net worth by `2030-12-31`.
 | Workstream | Objective | Primary Output |
 | --- | --- | --- |
 | WS-01 Baseline Definition | Fix the in-scope asset, liability, and valuation boundary | `SCOPE_DEFINITION.md`, `METRICS.md` |
-| WS-02 Gap and Path Model | Quantify the baseline gap and required compounding path to `2030-12-31` | `PROJECT_PLAN.md`, `METRICS.md` |
+| WS-02 Gap and Path Model | Quantify the baseline gap and required compounding path to `2030-12-31` and `2040-12-31` | `PROJECT_PLAN.md`, `METRICS.md` |
 | WS-03 Capital Governance | Define liquidity reserve, deployment guardrails, and review cadence | `ASSUMPTIONS_CONSTRAINTS.md`, `RISK_REGISTER.md` |
 | WS-04 Gate Packet Assembly | Prepare the execution-readiness recommendation for ML1 | `COMMUNICATION_PLAN.md`, `../APPROVAL_RECORD.md` |
 
@@ -49,7 +49,7 @@ net worth by `2030-12-31`.
 ## Immediate Planning Sprint
 
 - lock the valuation rule for liquid assets, business equity, and liabilities
-- quantify the required annual delta from the opening baseline to `2030-12-31`
+- quantify the required annual delta from the opening baseline to `2030-12-31` and the implied continuation path to `2040-12-31`
 - define what proportion of the path must come from portfolio returns versus business cash generation and equity growth
 - define the liquidity floor and the triggers for hold, redeploy, or defer decisions
 - define the review cadence and escalation triggers for off-path performance
