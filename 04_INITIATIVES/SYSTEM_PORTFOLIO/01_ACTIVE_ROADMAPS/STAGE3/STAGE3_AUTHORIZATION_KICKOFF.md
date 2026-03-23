@@ -4,7 +4,7 @@ title: Stage 3 — Authorization Kickoff
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-12
+last_updated: 2026-03-23
 tags: []
 ---
 
@@ -507,7 +507,7 @@ Stage 3 is complete when:
 - [ ] Conflict surfacing works (read-only, no resolution)
 - [ ] Guardrails are not being triggered frequently
 - [ ] ML1 review time decreases measurably (not bypassed)
-- [ ] No unauthorized outputs have occurred
+- [ ] No final outputs have been issued by non-orchestrating components
 - [ ] All sub-stage exit gates passed
 - [ ] ML1 confirms: "I think faster, I communicate faster, I do not trust the system"
 - [ ] SMA-001 governance PASS

@@ -6,7 +6,7 @@ status: approved
 version: 1.0
 supersedes:
 created_date: 2026-02-08
-last_updated: 2026-02-11
+last_updated: 2026-03-23
 tags: []
 ---
 
@@ -30,7 +30,7 @@ Acceptance Criteria: Output includes 3–4 framing variants, schema fields for e
 ## Function
 Offer approach variants for communications — help choose *how* to communicate, not *what* to say.
 
-## Authorized Outputs
+## Permitted Outputs
 - Bullet-level framing options
 - Approach variants (direct, empathetic, procedural, informational)
 - Angle suggestions

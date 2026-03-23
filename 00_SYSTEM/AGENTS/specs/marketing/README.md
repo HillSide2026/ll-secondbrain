@@ -4,7 +4,7 @@ title: Marketing Agents
 owner: ML1
 status: active
 created_date: 2026-03-08
-last_updated: 2026-03-22
+last_updated: 2026-03-23
 tags: [marketing, agents, orchestration]
 ---
 
@@ -87,8 +87,9 @@ Operational skills (marketing, content, SEO, and competitive skills) plug into t
 ## Runtime and Authority Boundaries
 - Runtime actions must remain within ML2 doctrine and assigned capabilities.
 - Agents, workers, tools, integration adapters, and run containers do not create doctrine.
-- Workers and subagents do not issue Authorized Outputs.
-- Authorized Output status requires the authorized issuance layer under governed workflow controls.
+- Workers and subagents do not issue final outputs.
+- Final outputs may be issued only by the run's orchestrating agent under governed workflow controls.
+- Final-output issuance is distinct from ML1 approval, publication, and external distribution.
 - Ambiguity, scope uncertainty, or boundary failure requires escalation.
 
 ## Integration Surface

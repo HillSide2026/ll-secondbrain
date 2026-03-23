@@ -6,7 +6,7 @@ status: draft
 version: 1.0
 supersedes:
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-03-23
 tags: []
 ---
 
@@ -30,7 +30,7 @@ Acceptance Criteria: TBD
 ## Function
 Compress long documents into neutral summaries.
 
-## Authorized Outputs
+## Permitted Outputs
 - Section-by-section compression
 - Bullet summaries per section
 - Timeline if document is chronological

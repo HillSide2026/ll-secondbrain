@@ -6,7 +6,7 @@ status: draft
 version: 1.0
 supersedes:
 created_date: 2026-02-11
-last_updated: 2026-02-11
+last_updated: 2026-03-23
 tags: [stage3, draft, responses]
 ---
 
@@ -30,7 +30,7 @@ Acceptance Criteria: TBD
 ## Function
 Prepare internal-only draft response scaffolds that accelerate ML1 writing without external propagation.
 
-## Authorized Outputs
+## Permitted Outputs
 - Internal draft responses labeled as system-generated
 - Draft variants (optional)
 - Draft classification tag (required)

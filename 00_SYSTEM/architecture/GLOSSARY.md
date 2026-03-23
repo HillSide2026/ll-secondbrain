@@ -4,7 +4,7 @@ title: System Glossary
 owner: ML1
 status: draft
 created_date: 2026-01-25
-last_updated: 2026-03-09
+last_updated: 2026-03-23
 tags: []
 ---
 
@@ -54,13 +54,16 @@ An architectural responsibility boundary in the system model. A layer defines wh
 A concrete actor or subsystem that operates within a layer and executes specific responsibilities.
 
 ## Agent
-An orchestrating component that governs workflows, applies doctrine gates, and invokes workers and tools within assigned capability boundaries.
+A component that may orchestrate governed workflows, apply doctrine gates, and invoke workers and tools within assigned capability boundaries.
 
-## Authorized Issuance Layer
-The authority scope permitted to classify an artifact as an Authorized Output. In this system, authorization requires ML1 and LL sign-off under governed workflow controls.
+## Orchestrating Agent
+The agent assigned primary responsibility for a governed run. The orchestrating agent coordinates workers, tools, and any participating agents, and is the only runtime component permitted to issue the run's final output.
+
+## Final Output
+An artifact issued by the run's orchestrating agent as the terminal output of a governed run. Final-output issuance is distinct from ML1 approval, publication, distribution, or external delivery.
 
 ## Worker
-A scoped task executor invoked by an orchestrating agent for bounded work (for example: classification, extraction, drafting, QA checks, formatting, and structured analysis). A worker does not orchestrate runs and may not issue Authorized Outputs.
+A scoped task executor invoked by an orchestrating agent for bounded work (for example: classification, extraction, drafting, QA checks, formatting, and structured analysis). A worker does not orchestrate runs and may not issue final outputs.
 
 ## Subagent
 Synonym for Worker. The canonical doctrine term is Worker.
@@ -105,7 +108,7 @@ Umbrella architecture composed of ML2 and the System. It is governed by ML1 but 
 Current transport and storage container for ML2 artifacts, system implementation components, tooling, and configuration. The repository is not identical to ML2, the System, or the Second Brain as a conceptual model.
 
 ## LL
-Human distribution component (Levine Law personnel) in the distribution layer. Delivers authorized services from approved outputs and provides operational signals.
+Human distribution component (Levine Law personnel) in the distribution layer. Delivers market-facing services from final outputs and provides operational signals.
 
 ## Canonical
 Authoritative artifact state in ML2 that governs all downstream copies.

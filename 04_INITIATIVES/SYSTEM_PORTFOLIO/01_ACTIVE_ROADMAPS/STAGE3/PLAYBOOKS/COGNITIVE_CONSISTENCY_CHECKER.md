@@ -6,7 +6,7 @@ status: draft
 version: 1.0
 supersedes:
 created_date: 2026-02-11
-last_updated: 2026-02-11
+last_updated: 2026-03-23
 tags: [stage3, consistency, drift, read-only]
 ---
 
@@ -30,7 +30,7 @@ Acceptance Criteria: TBD
 ## Function
 Surface contradictions, drift, or gaps across artifacts **without resolving them**. Read-only flags only.
 
-## Authorized Outputs
+## Permitted Outputs
 - Flag list of inconsistencies or drift signals
 - Source references for each flag
 - Short, neutral description of the inconsistency

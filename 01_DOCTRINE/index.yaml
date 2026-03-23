@@ -1,5 +1,5 @@
 schema_version: '1.0'
-last_updated: '2026-03-21'
+last_updated: '2026-03-23'
 rules_dir: 01_DOCTRINE/RULES
 tests_dir: 01_DOCTRINE/TESTS
 rules: []
@@ -17,175 +17,211 @@ constitution:
 principles:
 - id: PRN-001
   title: Decision Principles
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-001-decision-principles.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-001_Decision_Principles.md
   version: '1.0'
   status: draft
   history: []
 - id: PRN-002
   title: Human Primacy
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-002-human-primacy.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-002_Human_Primacy.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-003
   title: Auditability
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-003-auditability.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-003_Auditability.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-004
   title: Non-Autonomy
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-004-non-autonomy.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-004_Non_Autonomy.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-005
   title: Explicit Scope
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-005-explicit-scope.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-005_Explicit_Scope.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-006
   title: Drift Intolerance
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-006-drift-intolerance.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-006_Drift_Intolerance.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-007
   title: Interpretive Integrity
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-007-interpretive-integrity.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-007_Interpretive_Integrity.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-008
   title: Traceable Reasoning
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-008-traceable-reasoning.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-008_Traceable_Reasoning.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-009
   title: Structural Coherence
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-009-structural-coherence.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-009_Structural_Coherence.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-010
   title: Repeatable Excellence
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-010-repeatable-excellence.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-010_Repeatable_Excellence.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-012
   title: Risk vs Uncertainty
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-012-risk-vs-uncertainty.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-012_Risk_Vs_Uncertainty.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-013
   title: Risk Lifecycle Governance
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-013-risk-lifecycle-governance.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-013_Risk_Lifecycle_Governance.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-014
   title: Deterministic Preference
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-014-deterministic-preference.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-014_Deterministic_Preference.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-015
   title: Dependency Awareness
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-015-dependency-awareness.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-015_Dependency_Awareness.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-016
   title: Minimal Structural Mutation
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-016-minimal-structural-mutation.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-016_Minimal_Structural_Mutation.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-017
   title: Progressive Formalization
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-017-progressive-formalization.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-017_Progressive_Formalization.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-018
   title: Stability Under Extension
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-018-stability-under-extension.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-018_Stability_Under_Extension.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-019
   title: Observable Drift
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-019-observable-drift.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-019_Observable_Drift.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-020
   title: Authority-Boundary Clarity
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-020-authority-boundary-clarity.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-020_Authority_Boundary_Clarity.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-021
   title: Layer Separation by Design
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-021-layer-separation-by-design.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-021_Layer_Separation_By_Design.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-022
   title: Governed Orchestration
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-022-governed-orchestration.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-022_Governed_Orchestration.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-023
   title: Bounded Execution
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-023-bounded-execution.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-023_Bounded_Execution.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-024
   title: Controlled Externality
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-024-controlled-externality.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-024_Controlled_Externality.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-025
-  title: Output Authority
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-025-output-authority.md
+  title: Final Output Issuance
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-025_Final_Output_Issuance.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-026
   title: Run-Centric Auditability
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-026-run-centric-auditability.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-026_Run_Centric_Auditability.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-027
   title: Layer Fidelity
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-027-layer-fidelity.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-027_Layer_Fidelity.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-028
   title: Capability Containment
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-028-capability-containment.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-028_Capability_Containment.md
   version: '1.0'
   status: active
   history: []
 - id: PRN-029
   title: Traceable Mediation
-  path: 01_DOCTRINE/02_PRINCIPLES/PRN-029-traceable-mediation.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-029_Traceable_Mediation.md
   version: '1.0'
   status: active
   history: []
-- id: RN-013
+- id: PRN-030
+  title: Levine Law Brand Identity Signal Integrity
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-030_LL_Brand_Identity.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: PRN-031
+  title: Levine Law Brand Personality Expression
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-031_LL_Brand_Personality.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: PRN-032
+  title: Levine Law Layout Discipline
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-032_LL_Layout_Discipline.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: PRN-033
+  title: Levine Law Image Style Restraint
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-033_LL_Image_Style_Restraint.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: PRN-034
+  title: Levine Law Voice and Copy Alignment
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-034_LL_Voice_And_Copy_Alignment.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: PRN-035
+  title: Off-Template Brand Conformity
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-035_Off_Template_Brand_Conformity.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: PRN-036
   title: Reversibility
-  path: 01_DOCTRINE/02_PRINCIPLES/RN-013-reversibility.md
+  path: 01_DOCTRINE/02_PRINCIPLES/PRN-036_Reversibility.md
   version: '1.0'
   status: active
   history: []
@@ -377,8 +413,8 @@ policies:
   status: active
   history: []
 - id: POL-023
-  title: No Worker Output Authorization
-  path: 01_DOCTRINE/03_POLICIES/POL-023_No_Worker_Output_Authorization.md
+  title: No Worker Final Output Issuance
+  path: 01_DOCTRINE/03_POLICIES/POL-023_No_Worker_Final_Output_Issuance.md
   version: '1.0'
   status: active
   history: []
@@ -395,8 +431,8 @@ policies:
   status: active
   history: []
 - id: POL-026
-  title: Agent Output Authority
-  path: 01_DOCTRINE/03_POLICIES/POL-026_Agent_Output_Authority.md
+  title: Orchestrating Agent Final Output Issuance
+  path: 01_DOCTRINE/03_POLICIES/POL-026_Orchestrating_Agent_Final_Output_Issuance.md
   version: '1.0'
   status: active
   history: []
@@ -865,13 +901,13 @@ doctrine:
   status: draft
   history: []
 - id: inv-worker-boundary-output-authority
-  title: Worker Boundary and Output Authority
+  title: Worker Boundary and Final Output Issuance
   path: 01_DOCTRINE/01_INVARIANTS/INV-0004-worker-boundary-and-output-authority.md
   version: '1.0'
   status: active
   history: []
 - id: inv-runtime-authority-separation-output
-  title: Runtime Authority, Separation, and Output Invariants
+  title: Runtime Authority, Separation, and Final Output Invariants
   path: 01_DOCTRINE/01_INVARIANTS/INV-0005-runtime-authority-separation-and-output-invariants.md
   version: '1.0'
   status: active

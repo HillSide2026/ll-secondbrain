@@ -4,7 +4,7 @@ title: Content Production Agent Charter
 owner: ML1
 status: active
 created_date: 2026-03-08
-last_updated: 2026-03-22
+last_updated: 2026-03-23
 activated_date: 2026-03-21
 tags: [marketing, content, drafting]
 ---
@@ -43,7 +43,7 @@ Creation of draft marketing content based on approved strategy.
 - Authorize publication.
 - Establish marketing strategy independently.
 - Deviate from approved campaign or doctrinal guidance.
-- Classify drafts as Authorized Outputs.
+- Classify drafts as final outputs.
 
 ## Definition of Done
 - Drafts satisfy strategy requirements and channel format constraints.

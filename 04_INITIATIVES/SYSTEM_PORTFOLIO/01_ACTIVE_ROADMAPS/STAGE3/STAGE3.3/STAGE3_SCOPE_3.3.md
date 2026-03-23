@@ -4,7 +4,7 @@ title: Stage 3.3 Scope Lock — Coverage & Brainstorm Lists
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-03-23
 tags: []
 ---
 
@@ -14,7 +14,7 @@ tags: []
 Stage 3.3 authorizes the system to generate list-based scaffolding to reduce omission risk.
 All outputs are non-authoritative thinking aids.
 
-## Authorized Output Classes
+## Permitted Output Classes
 - Points to cover
 - Questions to answer
 - Risks to flag

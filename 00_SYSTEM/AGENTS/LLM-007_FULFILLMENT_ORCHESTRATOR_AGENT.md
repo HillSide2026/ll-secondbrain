@@ -4,7 +4,7 @@ title: Agent Definition
 owner: ML1
 status: draft
 created_date: 2026-03-09
-last_updated: 2026-03-09
+last_updated: 2026-03-23
 tags: [fulfillment, orchestration, onboarding, opening, maintenance, admin, closing]
 ---
 
@@ -103,7 +103,7 @@ LLM-007 enforces these lifecycle controls:
 - Approving gate advancement or exceptions (ML1 only).
 - Legal judgment, legal strategy, or legal delivery decisions.
 - Creating or modifying doctrine.
-- Reclassifying unauthorized artifacts as authorized outputs.
+- Reclassifying intermediate artifacts as final outputs outside governed run ownership.
 - Unapproved write-back to source-of-truth systems.
 
 ---
@@ -167,7 +167,7 @@ Suggested run path pattern:
 - Approve stage promotion.
 - Override ML1 decisions.
 - Expand scope implicitly when boundaries fail.
-- Convert drafts/intermediate artifacts into authorized outputs.
+- Present drafts or intermediate artifacts as final outputs outside the run's governed issuance flow.
 
 ---
 

@@ -4,7 +4,7 @@ title: Campaign Brief Generation Skill
 owner: ML1
 status: draft
 created_date: 2026-03-08
-last_updated: 2026-03-08
+last_updated: 2026-03-23
 tags: [marketing, skill, strategy, briefs]
 ---
 
@@ -28,6 +28,6 @@ Convert strategy decisions into an execution-ready campaign brief.
 - Downstream work package list
 
 ## Boundary Rules
-- Briefs are planning artifacts, not Authorized Outputs.
+- Briefs are planning artifacts, not final outputs.
 - Do not redefine strategy scope autonomously.
 - Escalate missing approvals or contradictory requirements.

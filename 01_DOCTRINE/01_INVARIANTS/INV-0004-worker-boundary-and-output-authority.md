@@ -1,25 +1,25 @@
 ---
 id: inv-worker-boundary-output-authority
-title: Worker Boundary and Output Authority
+title: Worker Boundary and Final Output Issuance
 owner: ML1
 status: active
 version: 1.0
 created_date: 2026-03-08
-last_updated: 2026-03-08
+last_updated: 2026-03-23
 tags: [invariant, workers, agents, outputs, authority]
 ---
 
-# Worker Boundary and Output Authority (Binding Invariant)
+# Worker Boundary and Final Output Issuance (Binding Invariant)
 
 ## Invariant
 1. `Worker` is the canonical term for scoped task executors invoked by an orchestrating agent.
 2. `Subagent` is a synonym of `Worker` and does not define a separate authority class.
 3. Workers may perform only bounded tasks such as classification, extraction, drafting, QA checks, formatting, and structured analysis.
 4. Workers may not orchestrate runs.
-5. Workers may not issue Authorized Outputs.
+5. Workers may not issue final outputs.
 
 ## Implication
-Workers cannot authorize delivery status; final Authorized Output status is controlled by the authorized issuance layer under governed workflows and required ML1 and LL sign-off.
+Workers cannot issue the terminal output of a governed run. They may contribute intermediate artifacts only; final-output issuance belongs to the run's orchestrating agent.
 
 ## Boundary
 This invariant defines role identity and authority boundaries.

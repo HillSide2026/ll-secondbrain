@@ -6,7 +6,7 @@ status: draft
 version: 1.0
 supersedes:
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-03-23
 tags: []
 ---
 
@@ -30,7 +30,7 @@ Acceptance Criteria: TBD
 ## Function
 Compress multi-message threads or discussions into a neutral summary.
 
-## Authorized Outputs
+## Permitted Outputs
 - Neutral summary
 - Timeline (optional if requested)
 

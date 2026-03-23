@@ -4,7 +4,7 @@ title: Long Form Content Generation Skill
 owner: ML1
 status: draft
 created_date: 2026-03-08
-last_updated: 2026-03-08
+last_updated: 2026-03-23
 tags: [marketing, skill, content, long-form]
 ---
 
@@ -28,5 +28,5 @@ Generate structured long-form draft content aligned to approved strategy.
 
 ## Boundary Rules
 - Drafts remain intermediate artifacts until promoted.
-- Do not issue Authorized Outputs.
+- Do not issue final outputs.
 - Escalate if required claims cannot be supported.

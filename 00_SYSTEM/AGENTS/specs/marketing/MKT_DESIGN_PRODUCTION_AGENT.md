@@ -4,7 +4,7 @@ title: Design Production Agent Charter
 owner: ML1
 status: active
 created_date: 2026-03-10
-last_updated: 2026-03-21
+last_updated: 2026-03-23
 activated_date: 2026-03-21
 tags: [marketing, design, canva, production]
 ---
@@ -39,7 +39,7 @@ Create governed draft design assets from approved content and approved template 
 - Insert required legal disclaimer blocks for public-facing assets.
 - Screen design copy for banned claims and prohibited language patterns.
 - Generate bounded design variants where allowed by workflow.
-- Run design preflight checks before QA and authorization routing.
+- Run design preflight checks before QA and downstream governance routing.
 - Capture design metadata and provenance for repository governance.
 - Produce handoff packets for Editorial QA and Distribution Orchestration.
 
@@ -52,12 +52,12 @@ Create governed draft design assets from approved content and approved template 
 ## Does Not
 - Create or modify doctrine.
 - Approve or publish assets.
-- Reclassify outputs as Authorized Outputs.
+- Reclassify outputs as final outputs.
 - Bypass approved integration adapter pathways.
 - Perform channel deployment or transport operations (owned by Distribution Orchestration Agent).
 
 ## Definition of Done
 - Each design is traceable to source brief, template slot, and run context.
 - Required policy checks are complete (brand, disclaimer, banned claims).
-- Asset status is `draft` with `approval_status=draft`, `approver=null`, `authorized=false`.
+- Asset status is `draft` with `approval_status=draft`, `approver=null`, `final_output=false`.
 - Handoff packet is complete for downstream QA and distribution workflows.

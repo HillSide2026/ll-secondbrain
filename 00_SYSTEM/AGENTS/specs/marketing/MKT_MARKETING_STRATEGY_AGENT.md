@@ -4,7 +4,7 @@ title: Marketing Strategy Agent Charter
 owner: ML1
 status: active
 created_date: 2026-03-08
-last_updated: 2026-03-22
+last_updated: 2026-03-23
 activated_date: 2026-03-21
 tags: [marketing, strategy, orchestration]
 ---
@@ -47,7 +47,7 @@ Campaign and funnel orchestration within approved doctrine.
 - Publish or distribute content.
 - Create or modify doctrine.
 - Override governance or approval constraints.
-- Treat strategy artifacts as Authorized Outputs without required sign-off.
+- Present strategy artifacts as final outputs or externally ready deliverables outside the governing orchestration and approval flow.
 
 ## Definition of Done
 - Strategy packet is complete, doctrine-aligned, and traceable to initiative context.

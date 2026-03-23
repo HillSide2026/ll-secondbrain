@@ -4,7 +4,7 @@ title: Design Metadata Registration Skill
 owner: ML1
 status: draft
 created_date: 2026-03-10
-last_updated: 2026-03-10
+last_updated: 2026-03-23
 tags: [marketing, skill, governance, metadata]
 ---
 
@@ -21,7 +21,7 @@ Capture canonical metadata and provenance for each generated design artifact.
 ## Process
 1. Capture required metadata fields for each design.
 2. Link design record to run, campaign, and template version.
-3. Set governance defaults (`approval_status=draft`, `authorized=false`).
+3. Set governance defaults (`approval_status=draft`, `final_output=false`).
 4. Persist metadata for repository governance workflows.
 
 ## Outputs
@@ -36,4 +36,3 @@ Capture canonical metadata and provenance for each generated design artifact.
 
 ## Invocation
 Used after design creation and before distribution handoff.
-

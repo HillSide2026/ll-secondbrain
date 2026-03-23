@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-13
-last_updated: 2026-03-08
+last_updated: 2026-03-23
 tags: [doctrine, principles]
 ---
 
@@ -20,3 +20,15 @@ Typical examples:
 - Prefer inspectable systems over opaque automation.
 - Prefer reversible changes over irreversible ones.
 - Human authority overrides automated inference.
+
+Naming convention:
+- Canonical active principles in this folder should use `PRN-###_Descriptive_Name.md`.
+- `README.md` is the only non-`PRN` exception in the active principles layer.
+
+Frontmatter metadata convention:
+- Active principle files should carry a dedicated `applies_to` frontmatter field.
+- `applies_to` is separate from the flat `tags` list and uses controlled values: `ML2`, `System`, `LL`, `HillSide`.
+- More than one `applies_to` value may be selected when a principle spans multiple portfolios.
+
+Repository hygiene rule:
+- Legacy family prefixes should not remain in this folder once the principle has been normalized into the active `PRN` sequence.

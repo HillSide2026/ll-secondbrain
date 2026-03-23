@@ -4,7 +4,7 @@ title: Editorial QA Agent Charter
 owner: ML1
 status: active
 created_date: 2026-03-08
-last_updated: 2026-03-22
+last_updated: 2026-03-23
 activated_date: 2026-03-21
 tags: [marketing, qa, compliance]
 ---
@@ -43,7 +43,7 @@ Quality assurance and doctrinal conformity.
 - Rewrite doctrine.
 - Establish strategy.
 - Publish or distribute content.
-- Issue Authorized Outputs.
+- Issue final outputs when serving as a QA/contributing agent.
 
 ## Definition of Done
 - QA report provides deterministic findings with required remediations.

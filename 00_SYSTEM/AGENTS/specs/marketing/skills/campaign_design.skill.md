@@ -4,7 +4,7 @@ title: Campaign Design Skill
 owner: ML1
 status: draft
 created_date: 2026-03-08
-last_updated: 2026-03-08
+last_updated: 2026-03-23
 tags: [marketing, skill, strategy]
 ---
 
@@ -30,5 +30,5 @@ Design a structured marketing campaign from approved doctrine and positioning.
 
 ## Boundary Rules
 - Do not create or modify doctrine.
-- Do not authorize outputs for distribution.
+- Do not label outputs as final for distribution.
 - Escalate when scope or authority is ambiguous.
