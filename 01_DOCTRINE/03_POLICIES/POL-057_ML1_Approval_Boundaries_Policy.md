@@ -1,18 +1,18 @@
 ---
-id: 00_system__ml1_approval_boundaries_md
-title: ML1 Approval Boundaries
+id: POL-057
+title: ML1 Approval Boundaries Policy
 owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-08
-last_updated: 2026-02-08
-tags: []
+last_updated: 2026-03-23
+tags: [doctrine, policy, approvals, authority]
 ---
 
-# ML1 Approval Boundaries
+# ML1 Approval Boundaries Policy
 
 **Version:** 1.0
-**Last Updated:** 2026-01-27
+**Last Updated:** 2026-03-23
 **Status:** Active
 **Authority:** ML1 (Matthew Levine)
 
@@ -147,7 +147,7 @@ ML1 approvals should be recorded in the relevant artifact or closure document wi
 ## Cross-References
 
 - Agent Deployment Guide: `00_SYSTEM/AGENTS/deployment/AGENT_DEPLOYMENT_GUIDE.md`
-- Write-Back Policy: `01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md`
+- Write-Back Policy: `01_DOCTRINE/03_POLICIES/POL-058_System_Write_Back_Policy.md`
 - Agent Definitions: `00_SYSTEM/AGENTS/`
 - Doctrine: `01_DOCTRINE/`
 

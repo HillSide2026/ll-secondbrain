@@ -1,11 +1,11 @@
 ---
-id: 01_doctrine__03_policies__integration_control_policy_md
+id: POL-059
 title: Integration Control Policy
 owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-27
-last_updated: 2026-02-27
+last_updated: 2026-03-23
 tags: [integration, policy, control]
 ---
 
@@ -19,7 +19,7 @@ This is the enforceable layer.
 
 ## 0. Precedence
 
-For operational external writes, this policy **supersedes** `WRITE_BACK_POLICY.md`.
+For operational external writes, this policy **supersedes** `POL-058_System_Write_Back_Policy.md`.
 Only explicit hard prohibitions defined as invariants remain controlling.
 
 ---

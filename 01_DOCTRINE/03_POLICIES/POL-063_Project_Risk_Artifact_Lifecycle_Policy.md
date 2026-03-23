@@ -1,15 +1,15 @@
 ---
-id: DOCTRINE-RISK-0002
+id: POL-063
 title: Project Risk Artifact Lifecycle Policy
 owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-03-08
-last_updated: 2026-03-15
-tags: [doctrine, policy, risk]
+last_updated: 2026-03-23
+tags: [policy, risk]
 ---
 
-# DOCTRINE-RISK-0002 - PROJECT RISK ARTIFACT LIFECYCLE POLICY
+# POL-063 - PROJECT RISK ARTIFACT LIFECYCLE POLICY
 
 ## 1. Scope
 
@@ -129,5 +129,5 @@ Legal matters carry no project risk artifacts under this policy.
 - `01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK-0001-risk-model.md`
 - `01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK-0005-risk-classification-invariants.md`
 - `01_DOCTRINE/02_PRINCIPLES/PRN-013-risk-lifecycle-governance.md`
-- `01_DOCTRINE/03_POLICIES/DOCTRINE-RISK-0003-ll-initiative-risk-policy.md`
-- `01_DOCTRINE/03_POLICIES/DOCTRINE-RISK-0004-matthew-holdings-initiative-risk-policy.md`
+- `01_DOCTRINE/03_POLICIES/POL-064_Levine_Law_Initiative_Risk_Policy.md`
+- `01_DOCTRINE/03_POLICIES/POL-065_Matthew_Holdings_Initiative_Risk_Policy.md`

@@ -1,25 +1,25 @@
 ---
-id: 01_doctrine__03_policies__doctrine-2026-007-canonical-agent-doctrine_md
-title: Canonical Agent Doctrine
+id: POL-061
+title: Canonical Agent Policy
 owner: ML1
 status: approved
 version: 1.0
 created_date: 2026-02-03
-last_updated: 2026-02-19
-tags: [doctrine, policy, agents, authority]
+last_updated: 2026-03-23
+tags: [policy, agents, authority]
 ---
 
-# DOCTRINE-2026-007 — Canonical Agent Doctrine
+# POL-061 - Canonical Agent Policy
 
 Status: Policy (Binding)
 Authority: ML1
 Effective Date: 2026-02-03
 Scope: System-wide (ML2)
 
-Change Note: Renumbered from DOCTRINE-2026-004 on 2026-02-19 to resolve ID collision with Stage & Phase Numbering doctrine.
+Change Note: Renumbered from DOCTRINE-2026-004 on 2026-02-19 to DOCTRINE-AGENTS-0002, then normalized to POL-061 on 2026-03-23 for policy-layer naming consistency.
 
 ## Purpose
-This doctrine defines the canonical constraints for agents operating within the Second Brain system. It establishes authority boundaries, scope of action, and attribution requirements to ensure all agent output remains inspectable, attributable, and reversible.
+This policy defines the canonical constraints for agents operating within the Second Brain system. It establishes authority boundaries, scope of action, and attribution requirements to ensure all agent output remains inspectable, attributable, and reversible.
 
 ## I. Purpose
 Agents in the Second Brain system exist to augment human judgment, not to replace it.
@@ -97,6 +97,6 @@ When in doubt, the agent defaults to:
 - or declining the task
 
 ## Enforcement
-Violations of this doctrine constitute system breaches and require correction through the standard doctrine review process.
+Violations of this policy constitute system breaches and require correction through the standard policy review process.
 
-End of Doctrine
+End of Policy

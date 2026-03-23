@@ -116,10 +116,10 @@ echo ""
 # -----------------------------------------------------------------------------
 echo "Check 4: Write-back policy"
 
-if [ -f "01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md" ]; then
+if [ -f "01_DOCTRINE/03_POLICIES/POL-058_System_Write_Back_Policy.md" ]; then
     echo -e "${GREEN}PASS${NC}: Write-back policy exists"
 else
-    echo -e "${RED}FAIL${NC}: Missing 01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md"
+    echo -e "${RED}FAIL${NC}: Missing 01_DOCTRINE/03_POLICIES/POL-058_System_Write_Back_Policy.md"
     ERRORS=$((ERRORS + 1))
 fi
 

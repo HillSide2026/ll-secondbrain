@@ -156,7 +156,7 @@ The agent must stop and escalate if:
 
 ## Write-Back Policy Reference
 
-This agent operates under `01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md`:
+This agent operates under `01_DOCTRINE/03_POLICIES/POL-058_System_Write_Back_Policy.md`:
 - Local-first: all work lands in repo first
 - External tool writes are disallowed in Stage 2.1
 - External writes require ML1 approval (future stages)

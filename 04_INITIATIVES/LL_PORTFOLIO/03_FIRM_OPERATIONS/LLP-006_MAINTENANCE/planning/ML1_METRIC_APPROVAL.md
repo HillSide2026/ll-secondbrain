@@ -24,7 +24,7 @@ Date: 2026-03-16
 - LLP-006 Maintenance is a new repeating cycle; no prior baseline exists. Thresholds will be anchored to the first 4 Sunday run cycles.
 
 ## Note
-- Planning -> Executing gate requires a separate ML1 gate decision once metric schema is consolidated into canonical METRICS.md per PROJECT_POLICY.md §8.
+- Planning -> Executing gate requires a separate ML1 gate decision once metric schema is consolidated into canonical METRICS.md per `POL-055_Repository_Project_Policy.md` §8.
 
 ## Notes
 - Definitions are in `METRIC_DEFINITION.md`.

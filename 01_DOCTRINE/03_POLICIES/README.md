@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-13
-last_updated: 2026-03-08
+last_updated: 2026-03-23
 tags: [doctrine, policies]
 ---
 
@@ -19,3 +19,10 @@ Typical examples:
 - Output labels and provenance are mandatory where policy requires.
 - ML1-approved doctrine overrides lower-layer artifacts.
 - External integrations require explicit approvals where policy requires.
+
+Naming convention:
+- Canonical active policies in this folder should use `POL-###_Descriptive_Name.md`.
+- `README.md` and explicitly superseded historical artifacts are permitted exceptions.
+
+Repository hygiene rule:
+- Deprecated alias files should not remain in this folder once downstream references have been migrated.

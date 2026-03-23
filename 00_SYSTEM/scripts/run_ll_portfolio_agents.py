@@ -52,7 +52,8 @@ DECISION_STAGE1 = [
 ]
 
 REQUIRED_STAGE2_MEASUREMENT = [
-    # METRICS.md is the single canonical measurement artifact per PROJECT_POLICY.md §8.
+    # METRICS.md is the single canonical measurement artifact per
+    # POL-055_Repository_Project_Policy.md §8.
     # The four-file split schema (METRIC_DEFINITION.md, MEASUREMENT_METHOD.md,
     # BASELINE_CAPTURE_PERIOD.md, VALIDATION_REVIEW.md) is deprecated and non-compliant.
     # ML1 threshold approval is recorded inside METRICS.md, not in a separate

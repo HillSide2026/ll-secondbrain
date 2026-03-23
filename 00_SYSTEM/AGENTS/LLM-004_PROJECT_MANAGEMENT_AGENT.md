@@ -228,7 +228,7 @@ recorded inside `METRICS.md`.
 ## Dependencies (Required Inputs)
 
 LLM-004 must operate strictly from:
-- `01_DOCTRINE/03_POLICIES/FIRM_PROJECT_POLICY.md`
+- `01_DOCTRINE/03_POLICIES/POL-056_Firm_Project_Policy.md`
 - Portfolio boundary definitions in `04_INITIATIVES/LL_PORTFOLIO/README.md`
 - Each project’s current-stage artifacts, especially APPROVAL_RECORD.md and METRICS.md
 - Change control logs (CHANGE_LOG.md) and decision logs (DECISION_LOG.md)

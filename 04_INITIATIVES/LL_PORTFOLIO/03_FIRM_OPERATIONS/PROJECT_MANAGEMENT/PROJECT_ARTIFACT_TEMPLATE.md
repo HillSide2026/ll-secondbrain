@@ -18,7 +18,7 @@ Project Path: `03_FIRM_OPERATIONS/PROJECT_MANAGEMENT`
 Define the canonical artifact set required per project stage.
 
 This template is subordinate to
-`01_DOCTRINE/03_POLICIES/FIRM_PROJECT_POLICY.md`.
+`01_DOCTRINE/03_POLICIES/POL-056_Firm_Project_Policy.md`.
 
 Planning-stage artifacts are execution-readiness controls used to authorize execution and achievement of project goals.
 

@@ -1,12 +1,12 @@
 ---
 id: POL-054
-title: Matter Summary Doctrine
+title: Matter Summary Policy
 owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-24
-last_updated: 2026-03-08
-tags: [doctrine, matters]
+last_updated: 2026-03-23
+tags: [policy, matters]
 
 effective_date:
 supersedes:
@@ -17,7 +17,7 @@ provenance:
   context:
 ---
 
-# Matter Summary Doctrine
+# Matter Summary Policy
 
 **Document ID:** POL-054  
 **Status:** DRAFT  

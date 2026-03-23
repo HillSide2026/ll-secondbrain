@@ -1,11 +1,11 @@
 ---
-id: 01_doctrine__02_policies__firm_project_policy_md
+id: POL-056
 title: Firm Project Policy
 owner: ML1
 status: draft
 version: '1.1'
 created_date: 2026-03-14
-last_updated: 2026-03-15
+last_updated: 2026-03-23
 tags: [doctrine, policy, projects, stage-gates]
 ---
 
@@ -17,14 +17,14 @@ This policy is the Levine Law subsidiary project policy.
 
 Canonical repository-level project stages, stage-gate rules, and baseline
 artifact requirements are defined in
-`01_DOCTRINE/03_POLICIES/PROJECT_POLICY.md`.
+`01_DOCTRINE/03_POLICIES/POL-055_Repository_Project_Policy.md`.
 
 This policy applies that repository-level project policy to Levine Law project
 governance and defines the Levine Law-specific scope for its use.
 
 ## 2. Policy Hierarchy
 
-`01_DOCTRINE/03_POLICIES/PROJECT_POLICY.md` is the top-level project policy for
+`01_DOCTRINE/03_POLICIES/POL-055_Repository_Project_Policy.md` is the top-level project policy for
 the repository.
 
 This policy is explicitly subordinate to that repo-level project policy.
@@ -47,7 +47,7 @@ matter doctrine.
 ## 4. Adoption of Repo-Level Project Rules
 
 Levine Law projects adopt the canonical repository-level project rules defined
-in `01_DOCTRINE/03_POLICIES/PROJECT_POLICY.md`, including:
+in `01_DOCTRINE/03_POLICIES/POL-055_Repository_Project_Policy.md`, including:
 
 - delivery stages: `Initiating`, `Planning`, `Executing`, `Closing`
 - separation of delivery stages from register-level decision lifecycles
@@ -57,7 +57,7 @@ in `01_DOCTRINE/03_POLICIES/PROJECT_POLICY.md`, including:
 
 ## 4a. Project Identity — Levine Law Application
 
-Levine Law projects apply the repo-level Project Identity Rule (§6a of `PROJECT_POLICY.md`) as follows:
+Levine Law projects apply the repo-level Project Identity Rule (§6a of `POL-055_Repository_Project_Policy.md`) as follows:
 
 - All LL Portfolio projects use the `LLP-NNN` format (e.g. `LLP-024`).
 - The number is unique across the entire `04_INITIATIVES/LL_PORTFOLIO/` tree — not per portfolio area (not per `03_FIRM_OPERATIONS/`, `08_MARKETING/`, etc.).
@@ -86,7 +86,7 @@ this policy governs, subject always to the repo-level project policy.
 
 ## 7. Related Artifacts
 
-- `01_DOCTRINE/03_POLICIES/PROJECT_POLICY.md`
+- `01_DOCTRINE/03_POLICIES/POL-055_Repository_Project_Policy.md`
 - `04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/PROJECT_MANAGEMENT/PROJECT_ARTIFACT_TEMPLATE.md`
 - `00_SYSTEM/AGENTS/LLM-004_PROJECT_MANAGEMENT_AGENT.md`
-- `01_DOCTRINE/03_POLICIES/DOCTRINE-RISK-0002-project-risk-artifact-lifecycle-policy.md`
+- `01_DOCTRINE/03_POLICIES/POL-063_Project_Risk_Artifact_Lifecycle_Policy.md`

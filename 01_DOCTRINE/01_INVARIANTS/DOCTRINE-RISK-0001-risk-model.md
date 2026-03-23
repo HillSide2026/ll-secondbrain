@@ -169,6 +169,6 @@ This section defines which risk axes apply to each work type.
 ## 7. Lifecycle Risk Artifacts and Gate Review (Policy Boundary)
 
 Required lifecycle artifact schemas and stage-gate review requirements are defined in:
-- `01_DOCTRINE/03_POLICIES/DOCTRINE-RISK-0002-project-risk-artifact-lifecycle-policy.md`
+- `01_DOCTRINE/03_POLICIES/POL-063_Project_Risk_Artifact_Lifecycle_Policy.md`
 
 This invariant remains limited to the risk model structure (axes, scoring boundaries, and output definitions).

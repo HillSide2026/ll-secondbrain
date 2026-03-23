@@ -1,12 +1,12 @@
 ---
 id: POL-053
-title: Matter Solutions Doctrine
+title: Matter Solutions Policy
 owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-24
-last_updated: 2026-03-08
-tags: [doctrine, matters]
+last_updated: 2026-03-23
+tags: [policy, matters]
 
 effective_date:
 supersedes:
@@ -17,7 +17,7 @@ provenance:
   context:
 ---
 
-# Matter Solutions Doctrine
+# Matter Solutions Policy
 
 **Document ID:** POL-053  
 **Status:** DRAFT  

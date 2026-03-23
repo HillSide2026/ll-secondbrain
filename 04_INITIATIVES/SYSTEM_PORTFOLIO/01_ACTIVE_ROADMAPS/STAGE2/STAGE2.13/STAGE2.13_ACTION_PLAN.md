@@ -224,4 +224,4 @@ Until explicitly automated by ML1, every labeling run requires affirmative human
 
 - Stage 2.2 Action Plan: `STAGE2.2/STAGE2.2_ACTION_PLAN.md`
 - Stage 2.11 Action Plan: `STAGE2.11/STAGE2.11_ACTION_PLAN.md`
-- Write-Back Policy: `01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md`
+- Write-Back Policy: `01_DOCTRINE/03_POLICIES/POL-058_System_Write_Back_Policy.md`

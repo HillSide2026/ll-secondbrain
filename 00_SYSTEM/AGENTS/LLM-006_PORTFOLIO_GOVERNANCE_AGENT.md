@@ -108,7 +108,7 @@ All final authority remains ML1.
 ## Dependencies (Required Inputs)
 
 Must read:
-- `01_DOCTRINE/03_POLICIES/FIRM_PROJECT_POLICY.md`
+- `01_DOCTRINE/03_POLICIES/POL-056_Firm_Project_Policy.md`
 - All active project folders
 - Stage metadata
 - Approval records (APPROVAL_RECORD.md, ML1_METRIC_APPROVAL.md)

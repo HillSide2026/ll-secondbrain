@@ -1,12 +1,12 @@
 ---
-id: DOCTRINE-OPS-0001
+id: POL-062
 title: Office Day Policy
 owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-25
-last_updated: 2026-03-08
-tags: [doctrine, policy, ops]
+last_updated: 2026-03-23
+tags: [policy, ops]
 
 effective_date:
 supersedes:
@@ -17,7 +17,7 @@ provenance:
   context:
 ---
 
-# DOCTRINE-OPS-0001 - OFFICE DAY POLICY
+# POL-062 - OFFICE DAY POLICY
 
 ## 1. Purpose
 

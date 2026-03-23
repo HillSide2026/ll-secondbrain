@@ -38,13 +38,13 @@ Every canonical risk artifact must make it possible to answer:
 
 ## 4. Portfolio Applicability
 
-- Levine Law initiatives follow `DOCTRINE-RISK-0003`.
-- Matthew Holdings initiatives follow `DOCTRINE-RISK-0004`.
-- Generic lifecycle artifact requirements remain governed by `DOCTRINE-RISK-0002`.
+- Levine Law initiatives follow `POL-064`.
+- Matthew Holdings initiatives follow `POL-065`.
+- Generic lifecycle artifact requirements remain governed by `POL-063`.
 
 ## 5. Related Doctrine
 
 - `01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK-0001-risk-model.md`
-- `01_DOCTRINE/03_POLICIES/DOCTRINE-RISK-0002-project-risk-artifact-lifecycle-policy.md`
-- `01_DOCTRINE/03_POLICIES/DOCTRINE-RISK-0003-ll-initiative-risk-policy.md`
-- `01_DOCTRINE/03_POLICIES/DOCTRINE-RISK-0004-matthew-holdings-initiative-risk-policy.md`
+- `01_DOCTRINE/03_POLICIES/POL-063_Project_Risk_Artifact_Lifecycle_Policy.md`
+- `01_DOCTRINE/03_POLICIES/POL-064_Levine_Law_Initiative_Risk_Policy.md`
+- `01_DOCTRINE/03_POLICIES/POL-065_Matthew_Holdings_Initiative_Risk_Policy.md`

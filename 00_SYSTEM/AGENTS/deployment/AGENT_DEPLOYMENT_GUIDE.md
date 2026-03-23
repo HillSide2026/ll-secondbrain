@@ -162,7 +162,7 @@ Review integration spec for no-write-path compliance.
 
 Inputs:
 - Integration spec: [path]
-- Write-back policy: 01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md
+- Write-back policy: 01_DOCTRINE/03_POLICIES/POL-058_System_Write_Back_Policy.md
 
 Scope: Specified integration only
 Context: Stage 2.1 read-only validation
@@ -268,7 +268,7 @@ All agents must produce outputs using this structure:
 
 ## Write-Back Policy
 
-All agents operate under `01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md`:
+All agents operate under `01_DOCTRINE/03_POLICIES/POL-058_System_Write_Back_Policy.md`:
 
 1. **Local-first:** All work lands in repo first
 2. **No external writes:** External tool writes are disallowed in Stage 2.1
@@ -296,7 +296,7 @@ ML1 approval is required when:
 * An action would change agent authority or scope
 * An agent escalates uncertainty beyond defined rules
 
-Canonical reference: `01_DOCTRINE/03_POLICIES/ML1_APPROVAL_BOUNDARIES.md`
+Canonical reference: `01_DOCTRINE/03_POLICIES/POL-057_ML1_Approval_Boundaries_Policy.md`
 
 ---
 
@@ -402,8 +402,8 @@ This will:
 ## Related Documents
 
 * Agent Definitions: `00_SYSTEM/AGENTS/`
-* Write-Back Policy: `01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md`
-* ML1 Approval Boundaries: `01_DOCTRINE/03_POLICIES/ML1_APPROVAL_BOUNDARIES.md`
+* Write-Back Policy: `01_DOCTRINE/03_POLICIES/POL-058_System_Write_Back_Policy.md`
+* ML1 Approval Boundaries: `01_DOCTRINE/03_POLICIES/POL-057_ML1_Approval_Boundaries_Policy.md`
 * Folder Map: `00_SYSTEM/architecture/FOLDER_MAP.md`
 * Schemas: `00_SYSTEM/schemas/SCHEMAS.md`
 * Test Fixtures: `03_TESTS/fixtures/`

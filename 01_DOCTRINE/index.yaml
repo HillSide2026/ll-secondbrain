@@ -196,51 +196,51 @@ principles:
   status: draft
   history: []
 policies:
-- id: 01_doctrine__02_policies__doctrine-2026-005-no_fictional_execution_constructs_md
+- id: POL-060
   title: No Fictional Execution Constructs
-  path: 01_DOCTRINE/03_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md
+  path: 01_DOCTRINE/03_POLICIES/POL-060_No_Fictional_Execution_Constructs.md
   version: '1.0'
   status: draft
   history: []
 - id: POL-052
-  title: Matter Engagement Stage
-  path: 01_DOCTRINE/03_POLICIES/POL-052_Matter_Engagement_Stage.md
-  version: '1.0'
+  title: Client Engagement Stage Policy
+  path: 01_DOCTRINE/03_POLICIES/POL-052_Client_Engagement_Stage_Policy.md
+  version: '0.1'
   status: draft
   history: []
 - id: POL-053
-  title: Matter Solutions
+  title: Matter Solutions Policy
   path: 01_DOCTRINE/03_POLICIES/POL-053_Matter_Solutions.md
   version: '1.0'
   status: draft
   history: []
 - id: POL-054
-  title: Matter Summary
+  title: Matter Summary Policy
   path: 01_DOCTRINE/03_POLICIES/POL-054_Matter_Summary.md
   version: '1.0'
   status: draft
   history: []
-- id: DOCTRINE-OPS-0001
+- id: POL-062
   title: Office Day Policy
-  path: 01_DOCTRINE/03_POLICIES/DOCTRINE-OPERATIONS-0001-office-day-policy.md
+  path: 01_DOCTRINE/03_POLICIES/POL-062_Office_Day_Policy.md
   version: '1.0'
   status: draft
   history: []
-- id: DOCTRINE-RISK-0002
+- id: POL-063
   title: Project Risk Artifact Lifecycle Policy
-  path: 01_DOCTRINE/03_POLICIES/DOCTRINE-RISK-0002-project-risk-artifact-lifecycle-policy.md
+  path: 01_DOCTRINE/03_POLICIES/POL-063_Project_Risk_Artifact_Lifecycle_Policy.md
   version: '1.0'
   status: draft
   history: []
-- id: DOCTRINE-RISK-0003
+- id: POL-064
   title: Levine Law Initiative Risk Policy
-  path: 01_DOCTRINE/03_POLICIES/DOCTRINE-RISK-0003-ll-initiative-risk-policy.md
+  path: 01_DOCTRINE/03_POLICIES/POL-064_Levine_Law_Initiative_Risk_Policy.md
   version: '1.0'
   status: draft
   history: []
-- id: DOCTRINE-RISK-0004
+- id: POL-065
   title: Matthew Holdings Initiative Risk Policy
-  path: 01_DOCTRINE/03_POLICIES/DOCTRINE-RISK-0004-matthew-holdings-initiative-risk-policy.md
+  path: 01_DOCTRINE/03_POLICIES/POL-065_Matthew_Holdings_Initiative_Risk_Policy.md
   version: '1.0'
   status: draft
   history: []
@@ -514,15 +514,15 @@ policies:
   version: '0.1'
   status: draft
   history: []
-- id: 01_doctrine__03_policies__project_policy_md
+- id: POL-055
   title: Repository Project Policy
-  path: 01_DOCTRINE/03_POLICIES/PROJECT_POLICY.md
-  version: '1.0'
+  path: 01_DOCTRINE/03_POLICIES/POL-055_Repository_Project_Policy.md
+  version: '1.1'
   status: draft
   history: []
-- id: 01_doctrine__02_policies__firm_project_policy_md
+- id: POL-056
   title: Firm Project Policy
-  path: 01_DOCTRINE/03_POLICIES/FIRM_PROJECT_POLICY.md
+  path: 01_DOCTRINE/03_POLICIES/POL-056_Firm_Project_Policy.md
   version: '1.1'
   status: draft
   history: []
@@ -532,27 +532,27 @@ policies:
   version: '1.0'
   status: draft
   history: []
-- id: 01_doctrine__02_policies__doctrine-2026-007-canonical-agent-doctrine_md
-  title: Canonical Agent Doctrine
-  path: 01_DOCTRINE/03_POLICIES/DOCTRINE-AGENTS-0002-canonical-agent-doctrine.md
+- id: POL-061
+  title: Canonical Agent Policy
+  path: 01_DOCTRINE/03_POLICIES/POL-061_Canonical_Agent_Policy.md
   version: '1.0'
   status: approved
   history: []
-- id: 00_system__ml1_approval_boundaries_md
-  title: ML1 Approval Boundaries
-  path: 01_DOCTRINE/03_POLICIES/ML1_APPROVAL_BOUNDARIES.md
+- id: POL-057
+  title: ML1 Approval Boundaries Policy
+  path: 01_DOCTRINE/03_POLICIES/POL-057_ML1_Approval_Boundaries_Policy.md
   version: '1.0'
   status: draft
   history: []
-- id: 00_system__write_back_policy_md
+- id: POL-058
   title: System Write-Back Policy
-  path: 01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md
+  path: 01_DOCTRINE/03_POLICIES/POL-058_System_Write_Back_Policy.md
   version: '1.1'
   status: draft
   history: []
-- id: 01_doctrine__02_policies__integration_control_policy_md
+- id: POL-059
   title: Integration Control Policy
-  path: 01_DOCTRINE/03_POLICIES/INTEGRATION_CONTROL_POLICY.md
+  path: 01_DOCTRINE/03_POLICIES/POL-059_Integration_Control_Policy.md
   version: '1.0'
   status: draft
   history: []

@@ -1,17 +1,17 @@
 ---
-id: 00_system__write_back_policy_md
+id: POL-058
 title: System Write-Back Policy
 owner: ML1
 status: draft
 version: 1.1
 created_date: 2026-02-09
-last_updated: 2026-03-21
-tags: []
+last_updated: 2026-03-23
+tags: [doctrine, policy, write-back, integrations]
 ---
 
 # System Write-Back Policy
 
-**Version:** v1.0
+**Version:** 1.1
 **Status:** ACTIVE
 **Effective:** Stage 2.1 onwards
 
@@ -25,7 +25,7 @@ Define rules governing how agents write data to the repository and external syst
 
 ## Precedence
 
-For operational external writes, `01_DOCTRINE/03_POLICIES/INTEGRATION_CONTROL_POLICY.md` governs and supersedes this policy.
+For operational external writes, `01_DOCTRINE/03_POLICIES/POL-059_Integration_Control_Policy.md` governs and supersedes this policy.
 This policy remains authoritative for repository write permissions and for explicit constraints not overridden by Integration Control.
 
 ---

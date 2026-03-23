@@ -1,15 +1,15 @@
 ---
-id: DOCTRINE-RISK-0003
+id: POL-064
 title: Levine Law Initiative Risk Policy
 owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-03-13
-last_updated: 2026-03-13
-tags: [doctrine, policy, risk, ll-portfolio]
+last_updated: 2026-03-23
+tags: [policy, risk, ll-portfolio]
 ---
 
-# DOCTRINE-RISK-0003 - LEVINE LAW INITIATIVE RISK POLICY
+# POL-064 - LEVINE LAW INITIATIVE RISK POLICY
 
 ## 1. Scope
 
@@ -95,4 +95,4 @@ This policy governs internal Levine Law initiative work. It is not the policy fo
 
 - `01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK-0001-risk-model.md`
 - `01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK-0005-risk-classification-invariants.md`
-- `01_DOCTRINE/03_POLICIES/DOCTRINE-RISK-0002-project-risk-artifact-lifecycle-policy.md`
+- `01_DOCTRINE/03_POLICIES/POL-063_Project_Risk_Artifact_Lifecycle_Policy.md`

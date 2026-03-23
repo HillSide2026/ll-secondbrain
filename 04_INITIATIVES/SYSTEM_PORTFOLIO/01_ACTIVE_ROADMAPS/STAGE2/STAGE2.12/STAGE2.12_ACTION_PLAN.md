@@ -112,4 +112,4 @@ tags: [stage2, roadmap, matter-dashboard, calendar]
 ## References
 
 - Stage 2.11 Action Plan: `STAGE2.11/STAGE2.11_ACTION_PLAN.md`
-- Write-Back Policy: `01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md`
+- Write-Back Policy: `01_DOCTRINE/03_POLICIES/POL-058_System_Write_Back_Policy.md`

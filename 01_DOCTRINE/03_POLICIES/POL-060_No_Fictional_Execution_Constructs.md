@@ -1,20 +1,20 @@
 ---
-id: 01_doctrine__03_policies__doctrine-2026-005-no_fictional_execution_constructs_md
+id: POL-060
 title: No Fictional Execution Constructs
 owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-08
-last_updated: 2026-02-08
-tags: []
+last_updated: 2026-03-23
+tags: [policy]
 ---
 
 # Change Note
 Moved from `01_DOCTRINE/01_INVARIANTS/` to `01_DOCTRINE/03_POLICIES/` on 2026-02-13 to reflect behavioral constraints (policy).
 
-# No Fictional Execution Constructs
+# POL-060 - No Fictional Execution Constructs
 
-**Document ID:** DOCTRINE-2026-005
+**Document ID:** POL-060
 **Status:** BINDING
 **Effective:** 2026-02-02
 **Authority:** ML1
@@ -23,7 +23,7 @@ Moved from `01_DOCTRINE/01_INVARIANTS/` to `01_DOCTRINE/03_POLICIES/` on 2026-02
 
 ## 1. Scope
 
-This doctrine applies to The System / Second Brain and any reasoning system operating on its behalf.
+This policy applies to The System / Second Brain and any reasoning system operating on its behalf.
 
 ---
 

@@ -39,4 +39,4 @@ tags: [levine-law, 2026, assumptions, constraints, planning, hillside]
 | C-03 | HBP-007 does not govern Levine Law execution work directly — it is an oversight project only | `PROJECT_CHARTER.md`; `SCOPE_DEFINITION.md` |
 | C-04 | Changes to the approved practice area stack, solution frames, or governing strategy require ML1 approval before they are treated as in-scope | `SCOPE_DEFINITION.md` |
 | C-05 | Monthly oversight pack must cover all four dimensions: collections, margin, capacity, and client-quality — none may be deferred | `SUCCESS_CRITERIA.md` |
-| C-06 | Planning may not begin on any execution workstream that falls outside the approved scope without a separate ML1 gate decision | `PROJECT_POLICY.md` |
+| C-06 | Planning may not begin on any execution workstream that falls outside the approved scope without a separate ML1 gate decision | `POL-055_Repository_Project_Policy.md` |

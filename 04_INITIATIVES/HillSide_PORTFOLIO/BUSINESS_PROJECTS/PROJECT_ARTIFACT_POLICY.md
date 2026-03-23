@@ -16,14 +16,14 @@ Define the HillSide-specific project artifact requirements for HillSide
 business projects.
 
 This policy is explicitly subsidiary to
-`01_DOCTRINE/03_POLICIES/PROJECT_POLICY.md`.
+`01_DOCTRINE/03_POLICIES/POL-055_Repository_Project_Policy.md`.
 
 It applies the repository-level project policy to HillSide business-project
 packets and adds HillSide-specific packet rules where needed.
 
 ## Policy Hierarchy
 
-`01_DOCTRINE/03_POLICIES/PROJECT_POLICY.md` is the repository-level canonical
+`01_DOCTRINE/03_POLICIES/POL-055_Repository_Project_Policy.md` is the repository-level canonical
 project policy.
 
 This HillSide policy may add narrower portfolio-specific rules, but it may not

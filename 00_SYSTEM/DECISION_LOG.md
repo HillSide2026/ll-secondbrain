@@ -58,7 +58,7 @@ This log records all system-level decisions affecting the Second Brain.
 
 **Decision:** Approved doctrine defining canonical constraints for agent operation in the Second Brain system  
 **Approved by:** ML1  
-**Artifacts impacted:** /01_DOCTRINE/03_POLICIES/DOCTRINE-AGENTS-0002-canonical-agent-doctrine.md  
+**Artifacts impacted:** /01_DOCTRINE/03_POLICIES/POL-061_Canonical_Agent_Policy.md  
 **Notes:** Establishes binding constraints on agent authority, scope, attribution, and non-simulation requirements. Renumbered from DOCTRINE-2026-004 on 2026-02-19 to resolve ID collision.
 
 ## 2026-02-19 — Approve Doctrine 2026-008 (Run Outcome Rules)

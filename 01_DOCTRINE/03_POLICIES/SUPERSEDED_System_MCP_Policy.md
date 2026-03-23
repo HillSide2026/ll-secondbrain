@@ -1,14 +1,14 @@
 ---
-id: 01_doctrine__03_policies__system_mcp_policy_md
-title: System MCP Policy (v0.1) [Superseded by POL-035]
+id: 01_doctrine__03_policies__superseded_system_mcp_policy_md
+title: Superseded System MCP Policy (v0.1)
 owner: ML1
-status: draft
+status: superseded
 version: 0.1
 created_date: 2026-02-26
-last_updated: 2026-02-26
+last_updated: 2026-03-23
 tags: [policy, mcp, orchestrator]
 ---
-# System MCP Policy (v0.1) [Superseded]
+# Superseded System MCP Policy (v0.1)
 
 > Supersession Notice: This policy is superseded by `POL-035_Model_Context_Protocol_Governance.md` and retained for historical traceability only.
 
