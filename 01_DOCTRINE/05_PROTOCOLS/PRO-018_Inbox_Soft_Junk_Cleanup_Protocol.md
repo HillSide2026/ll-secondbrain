@@ -190,6 +190,22 @@ ML1 may authorize direct cleanup execution for:
 - confirmed noise senders
 - confirmed archive senders
 - explicitly approved soft-junk cleanup candidate sets
+- category sweep of pre-2026-01-01 inbox threads (via `execute_category_sweep`)
+
+### 5.4 Category sweep execution path
+
+`execute_category_sweep` is a governed bulk cleanup tool that:
+
+1. Queries inbox for threads before 2026-01-01 carrying `CATEGORY_PROMOTIONS`,
+   `CATEGORY_SOCIAL`, `CATEGORY_UPDATES`, or `CATEGORY_FORUMS`
+2. Skips any thread with a canonical matter label (matter-first rule)
+3. Archives all remaining threads (removes `INBOX`)
+4. Extracts sender email addresses from archived threads
+5. Appends new senders to §4.4 (archive-class) in this file
+6. Appends new senders to `ARCHIVE_QUERIES` in `scripts/gmail_mcp_server.py`
+
+Date cutoff (`before:2026/1/1`) is fixed by ML1 directive and must not be removed.
+The tool may be run multiple times to process batches of up to 500 threads.
 
 Such operations must be logged to:
 
@@ -233,3 +249,4 @@ thread must be handled under `PRO-014`.
 |---------|------|--------|
 | 0.1 | 2026-03-14 | Initial split-out protocol for inbox soft-junk cleanup. Separates category-driven cleanup and confirmed sender cleanup from `PRO-014`. |
 | 0.2 | 2026-03-23 | Added 4 trash-class senders (Bitget, Intuit talent, Audible, VibetToExit) and 3 archive-class senders (BigHand, Creme Digital, MyClaw) from promotions/updates scan. ML1 approved. |
+| 0.3 | 2026-03-23 | Added CATEGORY_UPDATES to §4.2 scope. Added §5.4 category sweep execution path. New `execute_category_sweep` tool: archives pre-2026/1/1 category-tagged non-matter inbox threads and auto-populates archive sender lists. |

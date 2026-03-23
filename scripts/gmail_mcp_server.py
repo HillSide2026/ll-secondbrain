@@ -123,6 +123,16 @@ ARCHIVE_QUERIES = [
     "in:inbox from:MyClaw@aisecret.us",
 ]
 
+# Category sweep — archives pre-2026 inbox threads with soft-junk category labels.
+# Date cutoff is fixed by ML1 directive. Do not remove.
+CATEGORY_SWEEP_QUERY = (
+    "in:inbox before:2026/1/1 "
+    "(category:promotions OR category:social OR category:updates OR category:forums)"
+)
+
+_FROM_ANGLE_RE = re.compile(r"<([^>]+@[^>]+)>")
+_EMAIL_RE = re.compile(r"[\w.+\-]+@[\w.\-]+")
+
 
 logging.basicConfig(
     stream=sys.stderr,
@@ -432,6 +442,62 @@ def _log_cleanup_event(message: str) -> None:
     cleanup_logger.info(message)
 
 
+def _extract_from_email(header_val: str) -> str:
+    m = _FROM_ANGLE_RE.search(header_val)
+    if m:
+        return m.group(1).lower().strip()
+    m2 = _EMAIL_RE.search(header_val)
+    if m2:
+        return m2.group(0).lower().strip()
+    return ""
+
+
+def _get_thread_from_email(thread: Dict[str, Any]) -> str:
+    messages = thread.get("messages", [])
+    if not messages:
+        return ""
+    headers = messages[0].get("payload", {}).get("headers", [])
+    for h in headers:
+        if h.get("name", "").lower() == "from":
+            return _extract_from_email(h.get("value", ""))
+    return ""
+
+
+def _existing_sender_emails() -> set:
+    emails: set = set()
+    for q in TRASH_QUERIES + ARCHIVE_QUERIES:
+        emails.update(m.lower() for m in _EMAIL_RE.findall(q))
+    return emails
+
+
+def _update_pro018_archive_senders(new_senders: List[str]) -> None:
+    pro018_path = (
+        _REPO_ROOT / "01_DOCTRINE" / "05_PROTOCOLS"
+        / "PRO-018_Inbox_Soft_Junk_Cleanup_Protocol.md"
+    )
+    content = pro018_path.read_text(encoding="utf-8")
+    new_lines = "\n".join(f"- `{s}`" for s in new_senders)
+    marker = "\n\n---\n\n## 5."
+    idx = content.find(marker)
+    if idx != -1:
+        content = content[:idx] + "\n" + new_lines + content[idx:]
+        pro018_path.write_text(content, encoding="utf-8")
+
+
+def _update_script_archive_queries(new_senders: List[str]) -> None:
+    script_path = Path(__file__).resolve()
+    content = script_path.read_text(encoding="utf-8")
+    new_entries = "\n".join(f'    "in:inbox from:{s}",' for s in new_senders)
+    pattern = re.compile(r"(^ARCHIVE_QUERIES\s*=\s*\[)(.*?)(\n\])", re.MULTILINE | re.DOTALL)
+
+    def replacer(m: re.Match) -> str:  # type: ignore[type-arg]
+        return m.group(1) + m.group(2) + "\n" + new_entries + m.group(3)
+
+    new_content, count = pattern.subn(replacer, content)
+    if count == 1:
+        script_path.write_text(new_content, encoding="utf-8")
+
+
 def tool_list_messages(args: Dict[str, Any]) -> str:
     service = _get_gmail_service()
     max_results = int(args.get("max_results", 10))
@@ -598,6 +664,83 @@ def tool_execute_inbox_cleanup(args: Dict[str, Any]) -> str:
         **result,
     })
     return json.dumps(result, indent=2)
+
+
+def tool_execute_category_sweep(args: Dict[str, Any]) -> str:
+    authorization = _require_cleanup_authorization(args, "execute_category_sweep")
+    max_threads = int(args.get("max_threads", 500))
+    if max_threads < 1 or max_threads > 2000:
+        raise ValueError("max_threads must be between 1 and 2000.")
+
+    service = _get_gmail_service()
+    labels = _list_all_labels(service)
+    label_id_to_name = _label_id_to_name(labels)
+
+    thread_ids = _collect_thread_ids_by_query(service, CATEGORY_SWEEP_QUERY)
+    if len(thread_ids) > max_threads:
+        thread_ids = thread_ids[:max_threads]
+
+    existing = _existing_sender_emails()
+    seen_senders: set = set()
+    new_sender_emails: List[str] = []
+    archived_ids: List[str] = []
+    archived_message_ids: List[str] = []
+    skipped_matter = 0
+    errors: List[str] = []
+
+    for thread_id in thread_ids:
+        try:
+            thread = service.users().threads().get(
+                userId="me",
+                id=thread_id,
+                format="metadata",
+                metadataHeaders=["From"],
+            ).execute()
+        except Exception as exc:
+            errors.append(f"{thread_id}: {exc}")
+            continue
+
+        thread_label_ids = _collect_thread_label_ids(thread)
+        if _find_existing_matter_label_ids(thread_label_ids, label_id_to_name):
+            skipped_matter += 1
+            continue
+
+        archived_ids.append(thread_id)
+        for msg in thread.get("messages", []):
+            if msg.get("id"):
+                archived_message_ids.append(msg["id"])
+
+        from_email = _get_thread_from_email(thread)
+        if from_email and from_email not in existing and from_email not in seen_senders:
+            seen_senders.add(from_email)
+            new_sender_emails.append(from_email)
+
+    if archived_message_ids:
+        _batch_modify_messages(service, archived_message_ids, [], ["INBOX"])
+
+    if new_sender_emails:
+        _update_pro018_archive_senders(new_sender_emails)
+        _update_script_archive_queries(new_sender_emails)
+
+    run_ts = _now_iso()
+    result = {
+        "executed_at": run_ts,
+        "query": CATEGORY_SWEEP_QUERY,
+        "threads_inspected": len(thread_ids),
+        "archived": len(archived_ids),
+        "skipped_matter": skipped_matter,
+        "new_senders_added": len(new_sender_emails),
+        "new_senders": new_sender_emails,
+        "errors": len(errors),
+        "approved_by": authorization["approved_by"],
+        "reason": authorization["reason"],
+    }
+    _log_cleanup_event(
+        f"execute_category_sweep | archived={result['archived']} | "
+        f"new_senders={result['new_senders_added']} | approved_by={authorization['approved_by']}"
+    )
+    _append_audit({"timestamp": run_ts, "tool": "execute_category_sweep", **result})
+    return json.dumps(result, ensure_ascii=False, indent=2)
 
 
 def tool_resolve_confirmed_junk_threads(args: Dict[str, Any]) -> str:
@@ -986,6 +1129,35 @@ _TOOLS = [
         },
     },
     {
+        "name": "execute_category_sweep",
+        "description": (
+            "Archive all inbox threads older than 2026-01-01 that carry a Gmail soft-junk "
+            "category label (PROMOTIONS, SOCIAL, UPDATES, or FORUMS) and have no matter label. "
+            "Extracts sender addresses from archived threads and appends new senders to the "
+            "PRO-018 archive-class list so future execute_inbox_cleanup runs will cover them. "
+            "ML1-directed. Requires approved_by and reason. "
+            "Date cutoff (before:2026/1/1) is fixed by ML1 directive."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "approved_by": {
+                    "type": "string",
+                    "description": "Approving human, typically ML1.",
+                },
+                "reason": {
+                    "type": "string",
+                    "description": "Short reason for the category sweep.",
+                },
+                "max_threads": {
+                    "type": "integer",
+                    "description": "Maximum threads to process per run. Range: 1-2000. Default: 500.",
+                },
+            },
+            "required": ["approved_by", "reason"],
+        },
+    },
+    {
         "name": "preview_garbage_candidates",
         "description": (
             "Run the PRO-014 state-and-matter classifier in proposal mode and return current "
@@ -1154,6 +1326,7 @@ _TOOL_FN_MAP = {
     "preview_inbox_cleanup": tool_preview_inbox_cleanup,
     "preview_garbage_candidates": tool_preview_garbage_candidates,
     "execute_inbox_cleanup": tool_execute_inbox_cleanup,
+    "execute_category_sweep": tool_execute_category_sweep,
     "resolve_confirmed_junk_threads": tool_resolve_confirmed_junk_threads,
     "apply_state_label": tool_apply_state_label,
     "apply_matter_label": tool_apply_matter_label,
