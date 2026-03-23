@@ -5,7 +5,7 @@ title: Matter Brief — 25-927-00003 — Stream Ventures Limited
 owner: ML1
 status: draft
 created_date: 2026-02-01
-last_updated: 2026-02-01
+last_updated: 2026-03-22
 tags: [matter, 25-927-00003]
 ---
 
@@ -37,26 +37,25 @@ Stream Ventures Limited is a payments/MSB client with active CAMLO (Chief AML Of
 - **State:** Docketing Active
 - **Primary Activity:** SnowCap CAMLO Operations / RPAA workstream
 - Active work on:
-  - RPAA - Payments Agreement (drafting)
-  - RPAA - Incident Risk Policy (finalizing)
-  - RPAA - Application (finalizing)
-  - AML-ATF Risk Assessment (pending client)
-  - Diameter Agreement (to send email)
-  - Wolfsberg FCCQ (pending client feedback)
+  - RPAA - Incident Risk Policy (in progress)
+  - RPAA - Application (in progress)
+- Pending:
+  - Meet with Equals
+  - Attend KYC analyst interview
+  - Follow up: Verto
 
 ## Near-term milestones
 
-- Complete RPAA deliverables (Payments Agreement, Incident Risk Policy, Application)
-- Obtain client approval on AML-ATF Risk Assessment
-- Send Diameter Agreement to client
-- Receive client feedback on Wolfsberg FCCQ
+- Complete RPAA Incident Risk Policy and Application
+- Meet with Equals
+- Attend KYC analyst interview
+- Follow up with Verto
 
 ## Open questions
 
-- Client feedback on AML-ATF Risk Assessment
-- Client instructions on Wolfsberg FCCQ
-- Diameter Agreement terms
+- Verto — nature and status of follow-up TBD
 
 ## Change log
 
 - 2026-02-01 — Brief populated from SharePoint metadata analysis
+- 2026-03-22 — Updated: AML-ATF Risk Assessment approval confirmed done; Wolfsberg FCCQ client feedback confirmed done; Diameter Agreement sent (done); RPAA Payments Agreement removed pending ML1 confirmation of status; Equals and Verto tasks added

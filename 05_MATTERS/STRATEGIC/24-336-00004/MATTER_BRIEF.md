@@ -12,31 +12,29 @@ tags: [matter, 24-336-00004]
 # Matter Brief -- 24-336-00004 -- Mascore Helical Piles
 
 ## One-paragraph gist
-Mascore Helical Piles (helical piles / construction) corporate client matter. Current work centers on a cohabitation agreement for business owner Max Hill, with independent legal advice (ILA) review by Dani Frodis (Frodis Family Law), plus a planned future discussion on wealth management/trusts.
+Mascore Helical Piles (helical piles / construction) corporate client matter. Current work centers on a cohabitation agreement for business owner Max Hill requiring ILA review by an independent family lawyer. Future discussion planned re: wealth management / trusts.
 
 ## Parties
 - Client: Mascore Helical Piles (business owner Max Hill)
-- Counterparties: Not specified
-- Key contacts: Max Hill; Dani Frodis (Frodis Family Law) for ILA review
+- Key contacts: Max Hill
 
 ## What's happened so far
-- Cohabitation agreement for Max Hill nearing completion.
-- Dani Frodis engaged for ILA review; conflicts cleared Feb 2.
-- Document needs minor edits before sending to family lawyer.
+- Cohabitation agreement for Max Hill drafted and nearly complete.
+- Prior ILA counsel (Dani Frodis) is no longer being used.
 - Future discussion planned re: trusts / wealth management for Max Hill.
 
 ## Current posture
-- Docketing Active; activity period "Finalizing".
-- Cohabitation agreement in final edits prior to ILA review.
+- Active. Cohabitation agreement requires final edits and referral to a new family lawyer for ILA review.
 
 ## Near-term milestones
-- Finalize minor edits to the cohabitation agreement.
-- Send to Dani Frodis for ILA review.
-- Schedule wealth management / trusts discussion (future).
+- Finalize cohabitation agreement.
+- Identify suitable family lawyer for ILA review.
+- Send agreement to that lawyer.
 
 ## Open questions
-- ILA review timing and return window.
+- Who is the replacement ILA counsel?
 - Scope and timing for trusts / wealth management discussion.
 
 ## Change log
 - 2026-02-16 -- Summary updated from README.
+- 2026-03-22 -- Removed Dani Frodis as ILA counsel; task updated to find replacement family lawyer.

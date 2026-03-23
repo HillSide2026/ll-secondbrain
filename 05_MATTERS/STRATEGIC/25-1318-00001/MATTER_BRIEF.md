@@ -12,28 +12,23 @@ tags: [matter, 25-1318-00001]
 # Matter Brief -- 25-1318-00001 -- Zelko Culibrk
 
 ## One-paragraph gist
-Corporate strategy matter for Zelko Culibrk. The file is open and active; detailed scope and current focus are not specified in the repo.
+Corporate strategy matter for Zelko Culibrk. Substantive work is complete. File closure pending.
 
 ## Parties
 - Client: Zelko Culibrk
-- Counterparties: Not specified
-- Key contacts: Not specified
 
 ## What's happened so far
-- Matter opened (2025-01-01).
-- No additional activity details captured in the repo.
+- Matter substantially complete as of 2026-03-22.
 
 ## Current posture
-- Open; Delivery Status: Strategic; Fulfillment Status: active.
-- Current focus not yet documented.
+- Closing. No open substantive tasks. File closure outstanding.
 
 ## Near-term milestones
-- Define current priority / next action.
-- Populate key deadlines.
+- Close file.
 
 ## Open questions
-- What is the current priority / next action?
-- Are there specific deadlines or deliverables?
+- None.
 
 ## Change log
 - 2026-02-16 -- Summary updated from README.
+- 2026-03-22 -- Updated: matter substantially done; file closure pending.

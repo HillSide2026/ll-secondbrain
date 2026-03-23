@@ -12,7 +12,7 @@ tags: [matter, 25-256-00005]
 # Matter Brief -- 25-256-00005 -- Aspire Infusions Inc
 
 ## One-paragraph gist
-Aspire Infusions Inc corporate/commercial matter for a cannabis brand client. Current work focuses on reviewing the Seeker Cannabis agreement (buying group representing 650+ retail stores) sent by Michael Bou Doumit.
+Aspire Infusions Inc corporate/commercial matter for a cannabis brand client. Seeker Cannabis agreement review is complete. Outstanding accounts receivable. Potential corp re-org steps may remain but status is unconfirmed.
 
 ## Parties
 - Client: Aspire Infusions Inc
@@ -20,21 +20,20 @@ Aspire Infusions Inc corporate/commercial matter for a cannabis brand client. Cu
 - Key contacts: Michael Bou Doumit
 
 ## What's happened so far
-- Seeker Cannabis agreement sent for review (Feb 2).
-- Agreement review requested; commercial terms to be assessed.
-- Activity period "Review" is active.
+- Seeker Cannabis agreement review completed and delivered.
+- Client has outstanding balance owing to LL.
+- Corp re-org steps discussed — status unconfirmed.
 
 ## Current posture
-- Docketing Active; fulfillment status active.
-- Agreement review in progress for Seeker Cannabis.
+- Active. AR collection outstanding. Corp re-org scope to be confirmed with client.
 
 ## Near-term milestones
-- Complete Seeker Cannabis agreement review.
-- Deliver comments / recommended changes to client.
+- Collect outstanding fees.
+- Confirm with client whether corp re-org steps are still proceeding.
 
 ## Open questions
-- Any firm deadlines for returning comments or signing?
-- Are there parallel supplier or retail partnership agreements in scope?
+- Are corp re-org steps still in scope and if so what remains?
 
 ## Change log
 - 2026-02-16 -- Summary updated from README.
+- 2026-03-22 -- Updated: Seeker review done; AR outstanding; corp re-org status unconfirmed.

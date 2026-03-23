@@ -69,7 +69,7 @@ access boundary and does not expand it.
 
 ## MCP Registration
 
-Registered in `.claude/settings.json` (project-level).
+Registered in `.mcp.json` (project root).
 Server process: `scripts/sharepoint_mcp_server.py` (Python 3.9, no external MCP SDK).
 Auth: Azure client credentials (AZURE_TENANT_ID, AZURE_CLIENT_ID, AZURE_CLIENT_SECRET from .env).
 

@@ -12,29 +12,24 @@ tags: [matter, 26-1593-00002]
 # Matter Brief -- 26-1593-00002 -- 1001162998 Ontario Corp. o/a KaleMart
 
 ## One-paragraph gist
-Open KaleMart lease matter (26-1593-00002). The repo distinguishes it from the earlier KaleMart lease letter of intent matter, but still does not fully specify the live scope, parties, or current focus.
+KaleMart lease matter (26-1593-00002), distinct from the earlier letter of intent matter (25-1593-00001). Substantive work is complete. File closure pending.
 
 ## Parties
 - Client: 1001162998 Ontario Corp. o/a KaleMart
-- Counterparties: Not specified
-- Key contacts: Not specified
 
 ## What's happened so far
-- Matter opened (2026-01-01).
-- The repo distinguishes this matter from 25-1593-00001, which is the KaleMart lease letter of intent matter.
+- Lease matter completed.
 
 ## Current posture
-- Open; Delivery Status: Strategic; Fulfillment Status: active.
-- Current focus is the KaleMart lease matter, but substantive detail is still sparse in the repo.
+- Closing. No open substantive tasks. File closure outstanding.
 
 ## Near-term milestones
-- Define the current priority / next action for the KaleMart lease matter.
-- Populate key deadlines.
+- Close file.
 
 ## Open questions
-- What is the precise scope of the KaleMart lease matter, as distinct from the letter of intent matter?
-- Are there active deadlines or deliverables?
+- None.
 
 ## Change log
 - 2026-02-16 -- Matter brief created from README.
 - 2026-03-14 -- Clarified this file as the KaleMart lease matter, distinct from 25-1593-00001.
+- 2026-03-22 -- Updated: matter finished; file closure pending.

@@ -63,9 +63,9 @@ not expand the Gmail access surface.
 
 ## Registration
 
-Registered in `.claude/settings.json` (project-level).
+Registered in `.mcp.json` (project root).
 Server process: `scripts/gmail_mcp_server.py`.
-Auth: Gmail OAuth credentials from `.env`.
+Auth: Gmail OAuth token from `00_SYSTEM/local_secrets/google_token.json`.
 
 ## Change Notes
 

@@ -6,17 +6,16 @@ _Generated: 2026-03-22_
 
 > Services column is unpopulated — known system gap pending ML2 resolution.
 
-## Essential (5)
+## Essential (4)
 
 | Matter ID | Client/Name | Clio Status | Delivery Status | Fulfillment Status | Services |
 |---|---|---|---|---|---|
-| [25-927-00003](ESSENTIAL/25-927-00003/README.md) | Stream Ventures Limited | Open | Essential | urgent | 0 |
 | [26-1639-00001](ESSENTIAL/26-1639-00001/README.md) | Andersen | Open | Essential | active | 0 |
 | [26-1639-00002](ESSENTIAL/26-1639-00002/README.md) | Andersen | Open | Essential | active | 0 |
 | [26-1639-00003](ESSENTIAL/26-1639-00003/README.md) | Andersen | Open | Essential | active | 0 |
 | [26-927-00004](ESSENTIAL/26-927-00004/README.md) | Stream Ventures Limited | Open | Essential | active | 0 |
 
-## Strategic (5)
+## Strategic (6)
 
 | Matter ID | Client/Name | Clio Status | Delivery Status | Fulfillment Status | Services |
 |---|---|---|---|---|---|
@@ -24,6 +23,7 @@ _Generated: 2026-03-22_
 | [25-1231-00001](STRATEGIC/25-1231-00001/README.md) | Charmaine Spiteri | Open | Strategic | active | 0 |
 | [25-1318-00001](STRATEGIC/25-1318-00001/README.md) | Zelko Culibrk | Open | Strategic | active | 0 |
 | [25-256-00005](STRATEGIC/25-256-00005/README.md) | Aspire Infusions Inc | Open | Strategic | active | 0 |
+| [25-927-00003](STRATEGIC/25-927-00003/README.md) | Stream Ventures Limited | Open | Strategic | urgent | 0 |
 | [26-1593-00002](STRATEGIC/26-1593-00002/README.md) | 1001162998 Ontario Corp. o/a KaleMart | Open | Strategic | active | 0 |
 
 ## Standard (18)
@@ -75,5 +75,5 @@ _Generated: 2026-03-22_
 
 - **Standard:** 18
 - **Parked:** 11
-- **Essential:** 5
-- **Strategic:** 5
+- **Strategic:** 6
+- **Essential:** 4

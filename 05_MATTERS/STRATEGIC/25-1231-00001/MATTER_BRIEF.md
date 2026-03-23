@@ -12,28 +12,29 @@ tags: [matter, 25-1231-00001]
 # Matter Brief -- 25-1231-00001 -- Charmaine Spiteri
 
 ## One-paragraph gist
-Corporate strategy matter for Charmaine Spiteri. The file is open and active; detailed scope and current focus are not specified in the repo.
+Corporate strategy matter for Charmaine Spiteri. Work involves her exit from multiple corporations. Resignations and releases for 1720388 Ontario Inc. and Terrastone Construction Inc. appear substantially complete (documents circulated). Exit from 1761859 remains pending. LL has registered as CRA representative for Spiteri; awaiting her authorization.
 
 ## Parties
 - Client: Charmaine Spiteri
-- Counterparties: Not specified
-- Key contacts: Not specified
+- Entities: 1720388 Ontario Inc.; 1761859 (numbered company); Terrastone Construction Inc.
 
 ## What's happened so far
-- Matter opened (2025-01-01).
-- No additional activity details captured in the repo.
+- Resignation and release documents drafted and circulated to client for 1720388 Ontario Inc., 1761859, and Terrastone Construction Inc.
+- PPSA work completed and circulated.
+- LL registered as CRA representative for Spiteri.
+- Exit from 1720388 and Terrastone appear substantially complete (in archive).
+- Exit from 1761859 remains pending.
 
 ## Current posture
-- Open; Delivery Status: Strategic; Fulfillment Status: active.
-- Current focus not yet documented.
+- Active. Waiting on client CRA authorization and completion of 1761859 exit.
 
 ## Near-term milestones
-- Define current priority / next action.
-- Populate key deadlines.
+- Client to authorize LL as CRA representative.
+- Complete exit from 1761859.
 
 ## Open questions
-- What is the current priority / next action?
-- Are there specific deadlines or deliverables?
+- Status of 1761859 exit documents — what remains outstanding?
 
 ## Change log
 - 2026-02-16 -- Summary updated from README.
+- 2026-03-22 -- Updated: CRA representative registration confirmed; 1761859 exit pending; scope clarified from SharePoint documents.
