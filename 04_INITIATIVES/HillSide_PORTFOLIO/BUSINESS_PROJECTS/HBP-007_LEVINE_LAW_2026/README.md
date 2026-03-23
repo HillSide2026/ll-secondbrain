@@ -23,9 +23,9 @@ This project is an initiating-stage HillSide strategic-program project.
 ## Objective
 
 Define and govern the 2026 Levine Law operating program as a controlled
-HillSide oversight project with a target of collecting at least CAD 240,000 of
-banked cash by `2026-12-31`, while governing margin, capacity, and client-
-quality controls and staying inside approved Levine Law practice areas,
+HillSide oversight project with two goals: cash collected by LL ≥ CAD 240,000
+and revenue to ML ≥ CAD 80,000, both by `2026-12-31`, while governing margin,
+capacity, and client-quality controls and staying inside approved Levine Law practice areas,
 approved solution frames, and approved strategy.
 
 ## Notes

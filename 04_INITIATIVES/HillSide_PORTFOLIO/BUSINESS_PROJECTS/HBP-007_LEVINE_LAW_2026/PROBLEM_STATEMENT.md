@@ -16,7 +16,7 @@ program.
 Right now, the project shell exists, but there is no single governed packet
 that answers the core initiation questions:
 
-- whether 2026 is being run against a real banked-cash target
+- whether 2026 is being run against defined cash-collected and ML-revenue targets
 - how monthly collections, margin, capacity, and client-quality controls are
   meant to be reviewed
 - how ML1-docketed fee collections are meant to be tracked separately

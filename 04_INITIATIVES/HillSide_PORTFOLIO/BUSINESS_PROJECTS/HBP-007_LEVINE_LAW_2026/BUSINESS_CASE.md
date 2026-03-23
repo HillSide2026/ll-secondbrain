@@ -58,10 +58,10 @@ The business case for HBP-007 is straightforward:
 - generate cash flow
 - continue to accrete experience and expertise
 
-More specifically, the governed 2026 objective is to collect at least
-CAD 240,000 of banked cash by `2026-12-31`, while tracking ML1-docketed fee
-collections separately and compounding practical expertise in Levine Law's
-approved work lanes.
+More specifically, the governed 2026 objectives are: cash collected by LL ≥ CAD 240,000 by
+`2026-12-31` and revenue to ML ≥ CAD 80,000 by `2026-12-31`, while tracking
+ML1-docketed fee collections separately and compounding practical expertise
+in Levine Law's approved work lanes.
 
 ## Approved Operating Stack for This Project
 
@@ -81,7 +81,7 @@ repo:
 
 ## Initial Program Themes to Test in Planning
 
-- monthly banked-cash path to CAD 240,000 by `2026-12-31`
+- monthly path to cash collected by LL ≥ CAD 240,000 and revenue to ML ≥ CAD 80,000 by `2026-12-31`
 - monthly margin, capacity, and client-quality control design
 - ML1-docketed fee-collection measurement, excluding fees billed for work done
   by other fee earners

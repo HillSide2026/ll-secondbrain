@@ -14,7 +14,7 @@ tags: [levine-law, 2026, success-criteria, hillside]
 
 | Criterion | Success Definition | Evidence |
 | --- | --- | --- |
-| Banked-cash target fixed | The project states a specific 2026 banked-cash target of at least CAD 240,000 by `2026-12-31`. | `PROJECT_CHARTER.md`, `BUSINESS_CASE.md` |
+| Goal targets fixed | The project states two specific 2026 goals: revenue to ML ≥ CAD 80,000 and cash collected by LL ≥ CAD 240,000, both by `2026-12-31`. | `PROJECT_CHARTER.md`, `BUSINESS_CASE.md` |
 | Monthly control set fixed | The project states that collections, margin, capacity, and client-quality controls are in scope and reviewed monthly. | `PROJECT_CHARTER.md`, `BUSINESS_CASE.md` |
 | ML1-docketed fee metric clarified | The project states that ML1-docketed fee collections are tracked separately, excluding fees billed for work done by other fee earners. | `PROJECT_CHARTER.md`, `PROBLEM_STATEMENT.md` |
 | Practice-area / solution / strategy boundary fixed | The project states that HBP-007 remains anchored to the current approved practice areas, approved solution frames, and approved Levine Law strategy unless ML1 approves change. | `PROJECT_CHARTER.md`, `BUSINESS_CASE.md` |
@@ -34,7 +34,8 @@ tags: [levine-law, 2026, success-criteria, hillside]
 
 | Metric | Working Rule |
 | --- | --- |
-| `ll_2026_banked_cash_total` | Must reach or exceed CAD 240,000 by `2026-12-31` |
+| `ll_2026_ml_revenue` | Must reach or exceed CAD 80,000 by `2026-12-31` |
+| `ll_2026_ll_cash_collected` | Must reach or exceed CAD 240,000 by `2026-12-31` |
 | `ll_2026_ml1_docketed_fee_collections` | Track monthly fee collections attributable to ML1-docketed time, excluding fees billed for work done by other fee earners |
 | `ll_2026_margin_review` | Must be reviewed monthly |
 | `ll_2026_capacity_review` | Must be reviewed monthly |

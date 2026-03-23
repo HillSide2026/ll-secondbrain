@@ -17,7 +17,7 @@ tags: [levine-law, 2026, risk-scan, hillside]
 - the project may try to govern Levine Law execution work instead of acting as
   a HillSide oversight project
 - the project may overlap with separate HillSide projects in an unmanaged way
-- the project may target banked cash without a controlled monthly review model
+- the project may target cash collected and ML revenue without a controlled monthly review model
 - the project may drift outside approved practice areas, approved solution
   frames, or approved Levine Law strategy
 
@@ -32,7 +32,7 @@ tags: [levine-law, 2026, risk-scan, hillside]
 - Levine Law management time may be diluted across too many strategic threads
 - other HillSide initiatives may compete for the same attention and decision
   capacity
-- ML1 capacity may be exceeded if the banked-cash target is pursued through
+- ML1 capacity may be exceeded if the cash-collected and ML-revenue targets are pursued through
   reactive or low-fit docket growth rather than approved lanes
 
 ## Governance Risks

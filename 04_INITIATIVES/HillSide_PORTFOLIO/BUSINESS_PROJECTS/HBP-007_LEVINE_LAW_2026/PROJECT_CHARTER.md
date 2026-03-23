@@ -23,7 +23,7 @@ ML1
 ## Mission
 
 Create a controlled HillSide project for defining the 2026 Levine Law program
-as the ML1-led operating year that generates banked cash, governs margin,
+as the ML1-led operating year that generates cash collected by LL and revenue to ML, governs margin,
 capacity, and client-quality controls, compounds experience and expertise, and
 stays within the already approved Levine Law practice-area, solution, and
 strategy stack.
@@ -32,10 +32,11 @@ strategy stack.
 
 | Goal ID | SMART Goal | Measurement |
 | --- | --- | --- |
-| SG-01 | By `2026-12-31`, Levine Law banks at least CAD 240,000. | Total 2026 banked cash >= CAD 240,000 |
-| SG-02 | During 2026, Levine Law maintains a monthly oversight pack covering collections, margin, capacity, and client-quality controls. | Monthly review evidence exists for each month in 2026 |
-| SG-03 | During 2026, Levine Law tracks the fee collections attributable to ML1-docketed time, excluding fees billed for work done by other fee earners. | Monthly control evidence separates ML1-docketed fee collections from other-fee-earner fees |
-| SG-04 | By `2026-12-31`, Levine Law has increased durable practical experience and expertise through repeated solutions in approved lanes rather than diffuse generalist intake. | Year-end review can identify repeated approved solutions and expertise accumulation in approved lanes |
+| SG-01 | By `2026-12-31`, revenue to ML reaches at least CAD 80,000. | Total 2026 revenue to ML >= CAD 80,000 |
+| SG-02 | By `2026-12-31`, cash collected by LL reaches at least CAD 240,000. | Total 2026 cash collected by LL >= CAD 240,000 |
+| SG-03 | During 2026, Levine Law maintains a monthly oversight pack covering collections, margin, capacity, and client-quality controls. | Monthly review evidence exists for each month in 2026 |
+| SG-04 | During 2026, Levine Law tracks the fee collections attributable to ML1-docketed time, excluding fees billed for work done by other fee earners. | Monthly control evidence separates ML1-docketed fee collections from other-fee-earner fees |
+| SG-05 | By `2026-12-31`, Levine Law has increased durable practical experience and expertise through repeated solutions in approved lanes rather than diffuse generalist intake. | Year-end review can identify repeated approved solutions and expertise accumulation in approved lanes |
 
 ## Program Definition
 
@@ -44,7 +45,7 @@ is:
 
 - operate Levine Law as a HillSide oversight project for Levine Law's 2026
   operating year
-- produce at least CAD 240,000 of banked cash by `2026-12-31`
+- collect at least CAD 240,000 by LL and generate at least CAD 80,000 revenue to ML, both by `2026-12-31`
 - maintain monthly controls over collections, margin, capacity, and
   client-quality
 - track ML1-docketed fee collections separately, excluding fees billed for work
@@ -78,16 +79,16 @@ is:
 
 ## Stage Plan
 
-1. define the 2026 Levine Law program boundary around banked cash, monthly
+1. define the 2026 Levine Law program boundary around cash collected by LL, revenue to ML, monthly
    oversight controls, and approved legal lanes
-2. lock the 2026 goal structure, including the CAD 240,000 banked-cash target
+2. lock the 2026 goal structure: cash collected by LL ≥ CAD 240,000 and revenue to ML ≥ CAD 80,000
 3. align the HillSide project with approved Levine Law practice areas,
    solution frames, strategy, and HBP-002 reporting discipline
 4. prepare the `Initiating -> Planning` gate packet for ML1
 
 ## Immediate Next Actions
 
-- confirm the exact 2026 banked-cash metric source and reporting method
+- confirm the exact 2026 cash-collected and ML-revenue metric sources and reporting methods
 - define how accounting support will report monthly collections, margin,
   capacity, and client-quality controls
 - define how ML1-docketed fee collections will be measured month by month,

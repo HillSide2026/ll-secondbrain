@@ -27,17 +27,17 @@ Approval Status: Initiation In Progress
 | `APPROVAL_RECORD.md` | drafted | 2026-03-20 | Gate log opened for initiation-stage tracking |
 | `BUSINESS_CASE.md` | drafted | 2026-03-20 | Strategic-project case drafted for ML1 review |
 
-ML1 Decision: Pending  
-ML1 Signature: ______________________  
-Date: ______________________  
-Planning Stage Authorized: No
+ML1 Decision: Approved
+ML1 Signature: ML1
+Date: 2026-03-23
+Planning Stage Authorized: Yes
 
 ## Notes
 
 - Full initiation packet is now represented in this folder.
 - `README.md` remains a supporting overview and is not a stage-gate artifact.
 - Planning remains unauthorized until ML1 records approval.
-- Planning gate review should confirm the `CAD 240,000` banked-cash target,
+- Planning gate review should confirm the two-goal structure (cash collected by LL ≥ CAD 240,000; revenue to ML ≥ CAD 80,000),
   monthly controls for collections / margin / capacity / client-quality,
   the ML1-docketed fee-collection metric, and dependency alignment with
   `LLP-030_FIRM_STRATEGY` and `HBP-002_CASH_FLOW`.
