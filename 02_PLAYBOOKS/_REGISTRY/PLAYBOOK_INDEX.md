@@ -27,6 +27,23 @@ Canonical registry of playbook workflows.
 | substantive | [SOLUTION_NAME] | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/SOLUTION_PACKET_TEMPLATE/MODULES/MODULE_001_PRIMARY/WORKFLOWS/README.md |
 | substantive | Agents — Payments | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/payments/agents/README.md |
 | substantive | Business Acquisition | draft | ML1 | 02_PLAYBOOKS/CORPORATE/WORKFLOWS/solutions/business_acquisition/README.md |
+| substantive | Suspicious Transaction Triage | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/SUSPICIOUS_TRANSACTION_TRIAGE/SOLUTION_SCOPE.md |
+| substantive | STR Filing | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/STR_FILING/SOLUTION_SCOPE.md |
+| substantive | CAMLO Services (Strategy — routes to FinSure) | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/STRATEGIES/CAMLO/STRATEGY_SCOPE.md |
+| substantive | Ongoing AML Counsel Retainer (Strategy) | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/STRATEGIES/ONGOING_AML_COUNSEL_RETAINER/STRATEGY_SCOPE.md |
+| substantive | CARF Program — Minimum Viable but Defensible (Strategy) | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/STRATEGIES/CARF_PROGRAM/STRATEGY_SCOPE.md |
+| substantive | CARF Governance | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/CARF_GOVERNANCE/SOLUTION_SCOPE.md |
+| substantive | CARF Scoping and Classification | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/CARF_SCOPING_AND_CLASSIFICATION/SOLUTION_SCOPE.md |
+| substantive | CARF Client Onboarding | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/CARF_CLIENT_ONBOARDING/SOLUTION_SCOPE.md |
+| substantive | CARF Due Diligence | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/CARF_DUE_DILIGENCE/SOLUTION_SCOPE.md |
+| substantive | CARF Transaction Classification | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/CARF_TRANSACTION_CLASSIFICATION/SOLUTION_SCOPE.md |
+| substantive | CARF Reporting Output | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/CARF_REPORTING_OUTPUT/SOLUTION_SCOPE.md |
+| substantive | CARF Recordkeeping | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/CARF_RECORDKEEPING/SOLUTION_SCOPE.md |
+| substantive | CARF AML/KYC Integration | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/CARF_AML_INTEGRATION/SOLUTION_SCOPE.md |
+| substantive | CARF Controls and Testing | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/CARF_CONTROLS_AND_TESTING/SOLUTION_SCOPE.md |
+| substantive | CARF Documentation | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/CARF_DOCUMENTATION/SOLUTION_SCOPE.md |
+| substantive | Ongoing Payments Counsel (Strategy) | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/STRATEGIES/ONGOING_PAYMENTS_COUNSEL/STRATEGY_SCOPE.md |
+| substantive | Corporate Health Check | draft | ML1 | 02_PLAYBOOKS/CORPORATE/SOLUTIONS/CORPORATE_HEALTH_CHECK/SOLUTION_SCOPE.md |
 | substantive | Contract Decision Lenses | draft | ML1 | 02_PLAYBOOKS/CONTRACTS/WORKFLOWS/decision_lenses/README.md |
 | substantive | Contract Failure Modes | draft | ML1 | 02_PLAYBOOKS/CONTRACTS/WORKFLOWS/failure_modes/README.md |
 | substantive | Contract Issue Maps | draft | ML1 | 02_PLAYBOOKS/CONTRACTS/WORKFLOWS/issue_maps/README.md |
@@ -36,6 +53,7 @@ Canonical registry of playbook workflows.
 | substantive | Contract Solutions | draft | ML1 | 02_PLAYBOOKS/CONTRACTS/WORKFLOWS/solutions/README.md |
 | substantive | Contracts Practice Area | draft | ML1 | 02_PLAYBOOKS/CONTRACTS/WORKFLOWS/README.md |
 | substantive | Corporate Advisory | draft | ML1 | 02_PLAYBOOKS/CORPORATE/WORKFLOWS/solutions/corporate_advisory/README.md |
+| substantive | Remediation (Strategy) | draft | ML1 | 02_PLAYBOOKS/CORPORATE/STRATEGIES/REMEDIATION/STRATEGY_SCOPE.md |
 | substantive | Corporate Failure Modes | draft | ML1 | 02_PLAYBOOKS/CORPORATE/WORKFLOWS/failure_modes/README.md |
 | substantive | Corporate Issue Maps | draft | ML1 | 02_PLAYBOOKS/CORPORATE/WORKFLOWS/issue_maps/README.md |
 | substantive | Corporate Playbook Agents | draft | ML1 | 02_PLAYBOOKS/CORPORATE/WORKFLOWS/agents/README.md |
@@ -69,6 +87,9 @@ Canonical registry of playbook workflows.
 | substantive | Regulatory Surfaces Templates | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/payments/regulatory_surfaces/templates/README.md |
 | substantive | Regulatory Surfaces — Payments | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/payments/regulatory_surfaces/README.md |
 | substantive | RPAA_REGISTRATION | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/RPAA_REGISTRATION/MODULES/MODULE_001_PRIMARY/WORKFLOWS/README.md |
+| substantive | PCMLTFA Effectiveness Review | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/PCMLTFA_EFFECTIVENESS_REVIEW/SOLUTION_SCOPE.md |
+| substantive | AML Health Check | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/AML_HEALTH_CHECK/SOLUTION_SCOPE.md |
+| substantive | RPAA Report | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/RPAA_REPORT/SOLUTION_SCOPE.md |
 | substantive | RPAA_THREE_YEAR_REVIEW | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/RPAA_THREE_YEAR_REVIEW/MODULES/MODULE_001_PRIMARY/WORKFLOWS/README.md |
 | substantive | Service Agreement | draft | ML1 | 02_PLAYBOOKS/CONTRACTS/WORKFLOWS/solutions/service_agreement/README.md |
 | substantive | Shareholder Agreement | draft | ML1 | 02_PLAYBOOKS/CORPORATE/WORKFLOWS/solutions/shareholder_agreement/README.md |

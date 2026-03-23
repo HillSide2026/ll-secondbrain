@@ -111,8 +111,9 @@ Skill map: `00_SYSTEM/AGENTS/specs/marketing/MARKETING_AGENT_SKILL_MAP.md`
 | (duplicate) | PRACTICE_MASTER | Draft | `02_PLAYBOOKS/CONTRACTS/WORKFLOWS/agents/CONTRACTS_MASTER_AGENT.md` | N | duplicate path (invalid until resolved) |
 | Corporate Law Master Agent — Expert Spec (Ontario) | PRACTICE_MASTER | Draft | `02_PLAYBOOKS/CORPORATE/AGENTS/CORPORATE_LAW_MASTER_AGENT.md` | Y | canonical |
 | (duplicate) | PRACTICE_MASTER | Draft | `02_PLAYBOOKS/CORPORATE/WORKFLOWS/agents/CORPORATE_LAW_MASTER_AGENT.md` | N | duplicate path (invalid until resolved) |
-| Payment Services Master Agent — Expert Spec (Canada) | PRACTICE_MASTER | Draft | `02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/AGENTS/PAYMENTSERVICES_MASTER_AGENT.md` | Y | canonical |
+| Payment Services Master Agent — Expert Spec (Canada) | PRACTICE_MASTER | Draft | `02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/AGENTS/PAYMENTSERVICES_MASTER_AGENT.md` | Y | canonical; execution management and solution routing |
 | (duplicate) | PRACTICE_MASTER | Draft | `02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/payments/agents/PAYMENTSERVICES_MASTER_AGENT.md` | N | duplicate path (invalid until resolved) |
+| Payment Services Domain Expert — Expert Legal Spec (Canada) | PRACTICE_DOMAIN_EXPERT | Draft | `02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/AGENTS/PAYMENTSERVICES_DOMAIN_EXPERT.md` | Y | canonical; deep legal analysis; five doctrine sources; peer to Master Agent |
 
 ### Other Agent Specs
 
