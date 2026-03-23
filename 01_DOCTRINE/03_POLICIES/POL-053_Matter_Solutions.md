@@ -1,5 +1,5 @@
 ---
-id: DOCTRINE-MATTERS-0002
+id: POL-053
 title: Matter Solutions Doctrine
 owner: ML1
 status: draft
@@ -19,7 +19,7 @@ provenance:
 
 # Matter Solutions Doctrine
 
-**Document ID:** DOCTRINE-MATTERS-0002  
+**Document ID:** POL-053  
 **Status:** DRAFT  
 **Effective:** TBD  
 **Authority:** ML1
@@ -80,8 +80,8 @@ Payment received. Terminal state.
 ## Matter-Solution Interaction Rules
 - A matter may not be Closed while any solution stage < collected.
 - Matter est_remaining_revenue = sum(solution_remaining_revenue).
-- Delivery status may be influenced by dominant solution condition, but delivery status is not identical to solution stage.
-- At-Risk can be triggered by:
+- Engagement stage may be influenced by dominant solution condition, but engagement stage is not identical to solution stage.
+- At-Risk (an engagement_stage value) can be triggered by:
   - Unpaid billed solutions
   - Stalled approved solutions
   - Identified but repeatedly unapproved high-value solutions
@@ -89,7 +89,7 @@ Payment received. Terminal state.
 ## Separation of State Systems
 Matter `status` answers: Is this matter open, pending, or closed?
 
-Delivery status answers: Is this engagement stable, monetizing, blocked, or deteriorating?
+Engagement stage answers: Is this engagement stable, monetizing, blocked, or deteriorating?
 
 Solution state answers: Where is each monetizable unit in its lifecycle?
 

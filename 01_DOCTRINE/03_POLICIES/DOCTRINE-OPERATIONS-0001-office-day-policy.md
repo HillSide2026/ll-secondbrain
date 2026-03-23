@@ -32,9 +32,9 @@ It answers, for each office day:
 
 This policy does not redefine matter structural invariants. It consumes and operationalizes:
 - INV-0003-matter-model-structural-invariants
-- DOCTRINE-MATTERS-0001
-- DOCTRINE-MATTERS-0002
-- DOCTRINE-MATTERS-0003
+- POL-052
+- POL-053
+- POL-054
 - DOCTRINE-RISK_MODEL-0001
 
 ---
@@ -67,8 +67,8 @@ No matter may be docketed without appearing in the Docket Queue.
 ### 2.3 Ready for Docketing
 
 A matter is Ready for Docketing only if:
-1. It has an assigned delivery_status under DOCTRINE-MATTERS-0001.
-2. It has at least one assigned solution under DOCTRINE-MATTERS-0002.
+1. It has an assigned engagement_stage under POL-052.
+2. It has at least one assigned solution under POL-053.
 3. The docket action is defined.
 4. There are no blocking conditions recorded.
 

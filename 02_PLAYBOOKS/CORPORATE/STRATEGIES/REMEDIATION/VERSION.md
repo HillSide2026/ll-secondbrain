@@ -1,5 +1,5 @@
 ---
-id: 02_playbooks__corporate__strategies__corporate_health_check_remediation__version_md
+id: 02_playbooks__corporate__strategies__remediation__version_md
 title: Strategy Version: Corporate Health Check -> Remediation -> Fractional Counsel
 owner: ML1
 status: draft

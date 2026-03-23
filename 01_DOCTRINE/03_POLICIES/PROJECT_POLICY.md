@@ -240,7 +240,7 @@ This project delivery-stage policy is distinct from:
 - roadmap stage/phase numbering governed by
   `01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0004-stage-phase-numbering.md`
 - matter stages governed by
-  `01_DOCTRINE/03_POLICIES/DOCTRINE-MATTERS-0001-matter-stages.md`
+  `01_DOCTRINE/03_POLICIES/POL-052_Matter_Delivery_Status.md`
 - register-level decision lifecycles used for portfolio triage or screening
 
 These systems must not be collapsed into one stage vocabulary.

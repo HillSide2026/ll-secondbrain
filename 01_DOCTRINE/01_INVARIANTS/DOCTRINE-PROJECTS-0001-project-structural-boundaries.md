@@ -252,7 +252,7 @@ No artifact may:
 ## Related Doctrine
 
 - `01_DOCTRINE/03_POLICIES/PROJECT_POLICY.md`
-- `01_DOCTRINE/03_POLICIES/DOCTRINE-MATTERS-0001-matter-stages.md`
+- `01_DOCTRINE/03_POLICIES/POL-052_Matter_Delivery_Status.md`
 - `01_DOCTRINE/03_POLICIES/POL-038_Module_Policy.md`
 - `01_DOCTRINE/03_POLICIES/POL-039_Solution_Policy.md`
 - `01_DOCTRINE/03_POLICIES/POL-040_Workflow_Policy.md`

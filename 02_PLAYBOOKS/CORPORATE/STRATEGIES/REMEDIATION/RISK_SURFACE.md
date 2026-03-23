@@ -1,5 +1,5 @@
 ---
-id: 02_playbooks__corporate__strategies__corporate_health_check_remediation__risk_surface_md
+id: 02_playbooks__corporate__strategies__remediation__risk_surface_md
 title: Risk Surface: Corporate Health Check -> Remediation -> Fractional Counsel
 owner: ML1
 status: draft

@@ -34,7 +34,8 @@ Central index of all reference material. Updated as items are added.
 
 | Item | Location | Jurisdiction | Source |
 |------|----------|--------------|--------|
-| — | — | — | — |
+| Financial Services Law | `FINANCIAL_SERVICES_LAW/` | CA — federal | PCMLTFA, RPAA, CARF, payment rail rules |
+| Corporate Law | `CORPORATE_LAW/` | ON | — |
 
 ---
 

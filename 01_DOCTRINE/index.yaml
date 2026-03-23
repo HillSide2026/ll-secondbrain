@@ -202,21 +202,21 @@ policies:
   version: '1.0'
   status: draft
   history: []
-- id: DOCTRINE-MATTERS-0001
-  title: Matter Stages Doctrine
-  path: 01_DOCTRINE/03_POLICIES/DOCTRINE-MATTERS-0001-matter-stages.md
+- id: POL-052
+  title: Matter Engagement Stage
+  path: 01_DOCTRINE/03_POLICIES/POL-052_Matter_Engagement_Stage.md
   version: '1.0'
   status: draft
   history: []
-- id: DOCTRINE-MATTERS-0002
-  title: Matter Solutions Doctrine
-  path: 01_DOCTRINE/03_POLICIES/DOCTRINE-MATTERS-0002-matter-solutions.md
+- id: POL-053
+  title: Matter Solutions
+  path: 01_DOCTRINE/03_POLICIES/POL-053_Matter_Solutions.md
   version: '1.0'
   status: draft
   history: []
-- id: DOCTRINE-MATTERS-0003
-  title: Matter Summary Doctrine
-  path: 01_DOCTRINE/03_POLICIES/DOCTRINE-MATTERS-0003-matter-summary.md
+- id: POL-054
+  title: Matter Summary
+  path: 01_DOCTRINE/03_POLICIES/POL-054_Matter_Summary.md
   version: '1.0'
   status: draft
   history: []

@@ -24,7 +24,7 @@ This is a non-authoritative working artifact for ML1 review.
 - `02_PLAYBOOKS/CORPORATE/SOLUTIONS/`
 - `00_SYSTEM/AGENTS/LLM-004_PROJECT_MANAGEMENT_AGENT.md`
 - `01_DOCTRINE/03_POLICIES/FIRM_PROJECT_POLICY.md`
-- `01_DOCTRINE/03_POLICIES/DOCTRINE-MATTERS-0002-matter-solutions.md`
+- `01_DOCTRINE/03_POLICIES/POL-053_Matter_Solutions.md`
 - `00_SYSTEM/schemas/SCHEMAS_SOLUTIONS.md`
 
 ## High-Confidence Findings

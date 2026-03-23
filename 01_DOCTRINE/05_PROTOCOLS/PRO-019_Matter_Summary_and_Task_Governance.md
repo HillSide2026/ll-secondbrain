@@ -30,13 +30,16 @@ This protocol governs:
 
 ## 2. Matter Status Fields
 
-Three status fields describe every matter. They are independent axes.
+Four fields describe every matter. They are independent axes.
 
-| Field | Source of truth | Permitted values | Who sets it |
-|-------|----------------|-----------------|-------------|
-| **Clio Status** | Clio (hardwired) | `Open`, `Closed`, `Pending` | Clio only |
-| **Delivery Status** | Matter folder location in repo | `Essential`, `Strategic`, `Standard`, `Parked` | ML1 only |
-| **Fulfillment Status** | MATTER.yaml in repo | `urgent`, `active`, `keep in view`, `closing` | ML1 only |
+| Field | Level | Source of truth | Permitted values | Who sets it |
+|-------|-------|----------------|-----------------|-------------|
+| **Clio Status** | Matter | Clio (hardwired) | `Open`, `Closed`, `Pending` | Clio only |
+| **Delivery Status** | Matter | Matter folder location in repo | `Essential`, `Strategic`, `Standard`, `Parked` | ML1 only |
+| **Fulfillment Stage** | Matter | MATTER.yaml in repo | `onboarding`, `opening`, `maintenance`, `pending_close`, `closed` | ML1 only |
+| **Fulfillment Status** | Matter | MATTER.yaml in repo | `urgent`, `active`, `keep in view`, `closing` | ML1 only |
+
+Note: `engagement_stage` is a client-level field (not a matter field) governed by POL-052. It does not appear in MATTER.yaml or any matter-level artifact.
 
 **Definitions:**
 
@@ -46,16 +49,23 @@ Three status fields describe every matter. They are independent axes.
   - `Standard` — ordinary active matters; billable but not disproportionately important
   - `Parked` — not currently active; monitoring only
 
-- **Fulfillment Status** reflects the administrative lifecycle of the matter.
+- **Fulfillment Stage** reflects the sequential administrative lifecycle position of the matter (governed by POL-034).
+  - `onboarding` — consult scheduled; engagement letter being prepared; `status = pending`
+  - `opening` — engagement signed; matter setup underway; `status = open`
+  - `maintenance` — necessary administration of matter; `status = open`
+  - `pending_close` — work complete; administrative file closure; `status = pending`
+  - `closed` — terminal; requires `close_reason` (`completed` / `declined` / `terminated`); `status = closed`
+
+- **Fulfillment Status** reflects the operational priority state of the matter within its current stage.
   - `urgent` — immediate action required; delivery or deadline pressure
   - `active` — normal active state; work proceeding
-  - `keep in view` — low/no immediate action; monitoring or prospective
-  - `closing` — work substantially complete; administrative closure pending
+  - `keep in view` — low or no immediate action; monitoring
+  - `closing` — matter winding down toward Pending Close
 
 **Rules:**
-- ML2 must never change Delivery Status or Fulfillment Status without explicit ML1 instruction.
-- `inactive` is not a valid value; use `keep in view`.
+- ML2 must never change any of these fields without explicit ML1 instruction.
 - Delivery Status is encoded in the matter's folder path (e.g., `05_MATTERS/ESSENTIAL/`). The folder is the source of truth — if MATTER.yaml disagrees with the folder, flag to ML1.
+- Fulfillment Stage and Fulfillment Status are independent — any combination is valid (e.g., `maintenance` / `urgent`).
 
 ---
 

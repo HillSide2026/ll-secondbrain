@@ -1,5 +1,5 @@
 ---
-id: DOCTRINE-MATTERS-0003
+id: POL-054
 title: Matter Summary Doctrine
 owner: ML1
 status: draft
@@ -19,7 +19,7 @@ provenance:
 
 # Matter Summary Doctrine
 
-**Document ID:** DOCTRINE-MATTERS-0003  
+**Document ID:** POL-054  
 **Status:** DRAFT  
 **Effective:** TBD  
 **Authority:** ML1
@@ -105,9 +105,9 @@ Purpose: show monetization structure.
 
 ### D. Control Snapshot
 - matter_status
-- delivery_status
+- engagement_stage
 - fulfillment_status
-- days_in_delivery_status
+- days_in_engagement_stage
 - next_decision_required
 - decision_age_days
 - blocking_actor (if any)
@@ -160,6 +160,7 @@ This is the only narrative field allowed.
 The Matter Summary must be recomputed on:
 - matter_status change
 - delivery_status change
+- engagement_stage change
 - fulfillment_status change
 - solution_stage change
 - billing update
