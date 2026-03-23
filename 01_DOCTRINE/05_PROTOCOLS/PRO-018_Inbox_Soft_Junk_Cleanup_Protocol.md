@@ -8,7 +8,7 @@ approved_by: ~
 project: LLP-006
 version: 0.1
 created_date: 2026-03-14
-last_updated: 2026-03-14
+last_updated: 2026-03-23
 tags: [protocol, gmail, inbox, cleanup, soft-junk]
 ---
 
@@ -97,7 +97,7 @@ thread has already been classified.
 If a thread is:
 
 - in `INBOX`
-- carries `CATEGORY_PROMOTIONS`, `CATEGORY_SOCIAL`, or `CATEGORY_FORUMS`
+- carries `CATEGORY_PROMOTIONS`, `CATEGORY_SOCIAL`, `CATEGORY_UPDATES`, or `CATEGORY_FORUMS`
 - and does not belong to a matter
 
 then it should be reported as a **soft-junk cleanup candidate**.
@@ -135,6 +135,10 @@ senders may be trashed during cleanup operations.
 - `noreply@youtube.com`
 - `no-reply@mail.instagram.com`
 - `TDSurvey@feedback-td.com`
+- `notification@promo.bitget.com`
+- `talent@eq.tm.intuit.com`
+- `newsletters@audible.com`
+- `vaclav@vibetoexit.com`
 
 ### 4.4 Confirmed archive senders (archive-class)
 
@@ -150,6 +154,9 @@ Emails from these senders may be archived during cleanup operations.
 - `jprekaski@fbc.ca`
 - `notifications-noreply@linkedin.com`, `linkedin@e.linkedin.com`,
   `messages-noreply@linkedin.com`, `jobs-listings@linkedin.com`
+- `hello@bighand.com`
+- `Jacob@updates.creme.digital`
+- `MyClaw@aisecret.us`
 
 ---
 
@@ -225,3 +232,4 @@ thread must be handled under `PRO-014`.
 | Version | Date | Change |
 |---------|------|--------|
 | 0.1 | 2026-03-14 | Initial split-out protocol for inbox soft-junk cleanup. Separates category-driven cleanup and confirmed sender cleanup from `PRO-014`. |
+| 0.2 | 2026-03-23 | Added 4 trash-class senders (Bitget, Intuit talent, Audible, VibetToExit) and 3 archive-class senders (BigHand, Creme Digital, MyClaw) from promotions/updates scan. ML1 approved. |
