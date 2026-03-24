@@ -38,7 +38,7 @@ Planning Stage Authorized: Yes
 
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| SCOPE_DEFINITION.md | finalized | 2026-03-12 | Supplemental scope rationale documented. |
+| SCOPE_STATEMENT.md | finalized | 2026-03-12 | Supplemental scope rationale documented. |
 | WORKPLAN.md | finalized | 2026-03-12 | Canonical project scope plus workstreams, sequence, milestones, and resource plan defined. |
 | ASSUMPTIONS_CONSTRAINTS.md | finalized | 2026-03-12 | Assumptions and hard constraints documented. |
 | DEPENDENCIES.md | finalized | 2026-03-12 | Governance, product, and launch dependencies documented. |

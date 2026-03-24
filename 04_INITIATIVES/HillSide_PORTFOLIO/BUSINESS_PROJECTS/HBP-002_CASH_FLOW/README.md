@@ -59,7 +59,7 @@ primary reporting boundary is Matthew-level cash movement.
 ## Planning Packet
 
 - `planning/README.md`
-- `planning/SCOPE_DEFINITION.md`
+- `planning/SCOPE_STATEMENT.md`
 - `planning/PROJECT_PLAN.md`
 - `planning/ASSUMPTIONS_CONSTRAINTS.md`
 - `planning/DEPENDENCIES.md`

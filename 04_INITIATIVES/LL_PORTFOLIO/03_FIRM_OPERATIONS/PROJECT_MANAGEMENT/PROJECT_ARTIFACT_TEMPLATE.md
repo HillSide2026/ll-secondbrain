@@ -76,7 +76,7 @@ Anti-Bloat Rule:
 
 ### Core Planning
 Required for strategic and management projects:
-- `SCOPE_DEFINITION.md`
+- `SCOPE_STATEMENT.md`
 - `PROJECT_PLAN.md` (must include workstreams, execution sequence, milestones, resource plan, completion condition; legacy `WORKPLAN.md` remains acceptable during transition)
 - `ASSUMPTIONS_CONSTRAINTS.md`
 - `DEPENDENCIES.md`
@@ -84,7 +84,7 @@ Required for strategic and management projects:
 - `COMMUNICATION_PLAN.md`
 
 Required for operational projects:
-- `SCOPE_DEFINITION.md`
+- `SCOPE_STATEMENT.md`
 - `PROJECT_PLAN.md` (must include workstreams, execution sequence, milestones, resource plan, completion condition; legacy `WORKPLAN.md` remains acceptable during transition)
 - `DEPENDENCIES.md`
 - `RISK_REGISTER.md`
@@ -111,7 +111,7 @@ Notes:
 - Executing must not begin until ML1 approves Planning→Executing in `APPROVAL_RECORD.md` and threshold approval is recorded in `METRICS.md`.
 
 Best-Practice Rules:
-- `SCOPE_DEFINITION.md`
+- `SCOPE_STATEMENT.md`
   Must define the real execution boundary for the project, including explicit exclusions.
 - `PROJECT_PLAN.md`
   Must focus on the project decisions that still need to be locked for execution. It must not become a generic project-management report.

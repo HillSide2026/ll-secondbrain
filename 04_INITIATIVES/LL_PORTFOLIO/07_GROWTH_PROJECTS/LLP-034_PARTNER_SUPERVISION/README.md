@@ -4,28 +4,31 @@ title: LLP-034 — Partner Supervision
 owner: ML1
 status: draft
 created_date: 2026-02-26
-last_updated: 2026-03-20
-tags: []
+last_updated: 2026-03-23
+tags: [partner-supervision, strategic-project]
 ---
 
 # LLP-034 — Partner Supervision
 
 ## Purpose
 
-Define Partner Supervision success metrics, establish monitoring of partner output, and enable the system to track managing lawyer capacity limits.
+Define the partner-supervision and capacity-control framework Levine Law needs
+before it adds more delegated delivery or non-lawyer leverage.
 
 ## Scope
 
 ### In Scope
 
-- Success metrics definition for managing partner output
-- Monitoring framework for partner output
-- Capacity limitation visibility for managing lawyer
+- supervision architecture for partner review and escalation
+- visibility into review load, approval load, and capacity constraints
+- control logic needed by dependent staffing and delegation projects
 
 ### Out of Scope
 
 - Execution without ML1 approval
-- Treating draft metrics as policy
+- treating draft metrics as policy
+- personnel performance management
+- automatic operational enforcement
 
 ## ML1 Authority Statement
 
@@ -41,7 +44,8 @@ The System must NOT:
 
 ## Approval State
 
-**READ-ONLY** — Awaiting ML1 definition
+**DRAFT / INITIATION OPEN** — Core project definition exists, but no ML1
+initiation approval or planning authorization is recorded yet.
 
 ## Initiation Artifacts
 
@@ -59,8 +63,8 @@ The System must NOT:
 Planning-stage artifacts are execution-readiness controls used to authorize execution and achievement of project goals.
 
 Core planning:
-- `SCOPE_DEFINITION.md`
-- `WORKPLAN.md` (includes milestones and resource plan sections)
+- `SCOPE_STATEMENT.md`
+- `PROJECT_PLAN.md`
 - `ASSUMPTIONS_CONSTRAINTS.md`
 - `DEPENDENCIES.md`
 - `RISK_REGISTER.md`
@@ -69,7 +73,7 @@ Core planning:
 Measurement architecture:
 - `METRICS.md`
 
-Current placeholder planning measurement artifacts live in `planning/`.
+Planning should open only after ML1 approves the initiation packet.
 
 ## Last ML1 Review Date
 

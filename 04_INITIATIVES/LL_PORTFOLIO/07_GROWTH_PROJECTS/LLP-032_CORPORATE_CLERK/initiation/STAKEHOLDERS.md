@@ -4,11 +4,17 @@
 ML1 – Final decision-maker
 
 ## Direct Stakeholders
-- Corporate Clerk (future role holder)
-- Associate Lawyer (supervisory interface)
+- future Corporate Clerk role holder
+- `LLP-031 Corporate Entity Management` as an operating-system dependency
+- `LLP-034 Partner Supervision` as a supervision dependency
 
 ## Governance Stakeholders
 - Risk & Compliance
 - Firm Operations
+- `LLP-033 Associate Lawyer` as a related leverage/staffing project
 
-Note: No client-facing authority granted at initiation stage.
+## Financial / Decision Support Stakeholders
+- `06_FINANCIAL_PORTFOLIO`
+- `LLM-003 CFO Agent` advisory lane for staffing-economics inputs
+
+Note: No client-facing authority is granted at initiation stage.

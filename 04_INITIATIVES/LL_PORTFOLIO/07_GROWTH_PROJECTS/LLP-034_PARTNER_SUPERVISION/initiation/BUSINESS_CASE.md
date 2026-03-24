@@ -16,22 +16,20 @@ Project Name: Partner Supervision
 
 ## Opportunity
 
-Levine Law currently depends heavily on managing-partner judgment and review
-capacity, but the supervision burden itself is not yet measured in a structured
-way.
+Levine Law currently depends heavily on managing-partner judgment, review, and
+escalation capacity, but the supervision burden itself is not yet defined or
+measured in a structured way.
 
-The strategic opportunity is to make partner oversight capacity visible before
-it becomes a hidden bottleneck that distorts project planning, staffing
-assumptions, and execution sequencing across the firm.
+The strategic opportunity is to define partner supervision as a control system
+before it becomes a hidden bottleneck that distorts staffing, sequencing, and
+delegation decisions across the firm.
 
 ## Strategic Rationale
 
 - expose real partner-capacity limits before they create downstream failure
-- improve planning accuracy across projects that rely on partner review or
-  escalation
+- support dependent projects such as `LLP-032` and `LLP-033`
 - distinguish measurable supervision load from informal perceptions of overload
-- create a governance basis for later capacity, delegation, and sequencing
-  decisions
+- create a governance basis for later delegation and staffing decisions
 
 ## Value Thesis
 
@@ -53,18 +51,18 @@ If this project succeeds, Levine Law should gain:
 
 ## Initial Recommendation
 
-Proceed as a strategic measurement and governance design project.
+Proceed as a strategic supervision and governance design project.
 
-The project should define the partner-capacity framework first, then decide
-whether any later operational or management project should consume that
-framework.
+The project should define the supervision framework first, then decide whether
+later operational or management projects should consume that framework.
 
 ## Decision Standard
 
 Proceed to the next gate only if ML1 concludes that:
 
 - the proposed metrics are actually measurable and decision-useful
-- the framework clarifies capacity rather than adding bureaucratic overhead
+- the framework clarifies supervision and capacity rather than adding
+  bureaucratic overhead
 - the outputs support planning and governance without collapsing into
   performance-management implementation
 - the value of better capacity visibility justifies continued work

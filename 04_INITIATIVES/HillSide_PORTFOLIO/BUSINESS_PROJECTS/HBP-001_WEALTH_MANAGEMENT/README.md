@@ -57,7 +57,7 @@ at 50) and at least CAD 4,000,000 by `2040-12-31` (Matthew at 60).
 ## Planning Packet
 
 - `planning/README.md`
-- `planning/SCOPE_DEFINITION.md`
+- `planning/SCOPE_STATEMENT.md`
 - `planning/PROJECT_PLAN.md`
 - `planning/ASSUMPTIONS_CONSTRAINTS.md`
 - `planning/DEPENDENCIES.md`

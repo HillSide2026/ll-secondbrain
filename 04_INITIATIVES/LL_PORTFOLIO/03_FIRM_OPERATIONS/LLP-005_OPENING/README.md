@@ -30,7 +30,7 @@ The canonical executing-stage packet now lives in `implementation/`.
 
 ## Planning Artifacts
 
-- `planning/SCOPE_DEFINITION.md`
+- `planning/SCOPE_STATEMENT.md`
 - `planning/WORKPLAN.md`
 - `planning/ASSUMPTIONS_CONSTRAINTS.md`
 - `planning/DEPENDENCIES.md`

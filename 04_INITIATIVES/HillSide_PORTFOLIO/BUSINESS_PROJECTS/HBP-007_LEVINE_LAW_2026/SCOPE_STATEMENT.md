@@ -1,6 +1,6 @@
 ---
 id: 04_initiatives__hillside_portfolio__business_projects__hbp_007_levine_law_2026__scope_definition_md
-title: Levine Law 2026 - Scope Definition
+title: Levine Law 2026 - Scope Statement
 owner: ML1
 status: draft
 created_date: 2026-03-23
@@ -8,7 +8,7 @@ last_updated: 2026-03-23
 tags: [levine-law, 2026, scope, planning, hillside]
 ---
 
-# Scope Definition
+# Scope Statement
 
 **Project:** Levine Law 2026
 **Project ID:** HBP-007

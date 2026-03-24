@@ -41,7 +41,7 @@ ML1 is the sole authority for approval, activation, and promotion of this projec
 - Initiating -> Planning gate approved by ML1 on `2026-03-08`.
 
 ## Planning Artifacts
-- `planning/SCOPE_DEFINITION.md`
+- `planning/SCOPE_STATEMENT.md`
 - `planning/WORKPLAN.md`
 - `planning/ASSUMPTIONS_CONSTRAINTS.md`
 - `planning/DEPENDENCIES.md`

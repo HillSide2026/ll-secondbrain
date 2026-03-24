@@ -31,7 +31,7 @@ goal.
 
 | Workstream | Objective | Primary Output |
 | --- | --- | --- |
-| WS-01 Boundary and Sources | Fix the in-scope entities, accounts, and source records | `SCOPE_DEFINITION.md`, `DEPENDENCIES.md` |
+| WS-01 Boundary and Sources | Fix the in-scope entities, accounts, and source records | `SCOPE_STATEMENT.md`, `DEPENDENCIES.md` |
 | WS-02 Formula and Treatment Rules | Lock the Matthew-level inflow, outflow, and net-cash-flow definitions | `METRICS.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
 | WS-03 Close and Review Model | Define the monthly close, review owner, variance process, and pack structure | `PROJECT_PLAN.md`, `COMMUNICATION_PLAN.md` |
 | WS-04 Gate Packet Assembly | Prepare the execution-readiness recommendation for ML1 | `RISK_REGISTER.md`, `../APPROVAL_RECORD.md` |
@@ -40,7 +40,7 @@ goal.
 
 | Milestone | Target Date | Evidence |
 | --- | --- | --- |
-| Reporting boundary fixed | 2026-03-24 | `SCOPE_DEFINITION.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
+| Reporting boundary fixed | 2026-03-24 | `SCOPE_STATEMENT.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
 | Formula and source-record map fixed | 2026-03-28 | `METRICS.md`, `DEPENDENCIES.md` |
 | Monthly close and review model drafted | 2026-04-02 | `COMMUNICATION_PLAN.md`, `PROJECT_PLAN.md` |
 | Risk and escalation model fixed | 2026-04-04 | `RISK_REGISTER.md`, `COMMUNICATION_PLAN.md` |

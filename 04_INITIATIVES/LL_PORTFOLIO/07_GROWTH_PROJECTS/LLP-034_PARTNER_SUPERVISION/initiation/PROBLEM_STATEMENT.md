@@ -8,7 +8,8 @@ The Managing Partner currently functions as:
 - Capacity bottleneck
 - Strategic decision-maker
 
-However, partner output and capacity limits are not formally measured.
+However, the supervision system around that role is not yet defined clearly
+enough for dependent staffing and delegation projects.
 
 This creates:
 
@@ -16,6 +17,8 @@ This creates:
 - Planning distortion
 - Overcommitment exposure
 - Escalation pile-up
-- Strategic misallocation
+- Weak downstream staffing logic
 
-Without measurement, capacity assumptions drive system design inaccurately.
+Without a defined supervision and capacity-control model, Levine Law cannot
+reliably decide how much work can be delegated, what review load ML1 can carry,
+or when staffing projects become safe to activate.

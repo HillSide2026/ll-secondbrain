@@ -47,7 +47,7 @@ The three-document set is structurally coherent on its core claims. Priority ord
 
 | Artifact | Status |
 |---|---|
-| SCOPE_DEFINITION.md | Missing |
+| SCOPE_STATEMENT.md | Missing |
 | WORKPLAN.md | Missing — milestones exist in BUSINESS_PLAN.md but no formal artifact |
 | ASSUMPTIONS_CONSTRAINTS.md | Missing |
 | DEPENDENCIES.md | Missing — dependencies named in README but not formally documented |

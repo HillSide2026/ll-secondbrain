@@ -4,7 +4,7 @@ title: Levine Law — Financial Model
 owner: ML1
 status: stub
 created_date: 2026-03-17
-last_updated: 2026-03-22
+last_updated: 2026-03-23
 tags: [llp-030, financial-model, doctrine]
 ---
 
@@ -26,6 +26,14 @@ planning risk is that Levine Law may need Andersen Service Line economics to
 be credited to the firm in order to support the current `CAD 80,000` owner
 compensation target.
 
+Historical channel note for downstream interpretation: ML1 reports that, with
+the specific exceptions of `Mascore` and `Stream`, `2025` matters originated
+through `F01 / Google Ads`. Directionally, `F01`-generated revenue in `2025`
+appears to have significantly exceeded `F01` spend. The strategic issue with
+`F01` is therefore not absence of revenue contribution, but that it produces
+more reactive, lower-fit, and less controllable demand than the desired future
+mix.
+
 This document will contain a P&L projection linking:
 
 **Marketing spend → matter volume → revenue → margin**
@@ -37,6 +45,7 @@ This document will contain a P&L projection linking:
 | Input | Current Value | Source | Validated? |
 |---|---|---|---|
 | F01 Google Ads spend | $1,500/month | Current | Yes |
+| 2025 F01 economic contribution | F01-generated revenue appears to have significantly exceeded F01 spend; almost all 2025 matters originated through F01 except `Mascore` and `Stream` | ML1 historical observation | Directionally yes — exact historical reconciliation still needed |
 | Lead → consult conversion | 25–30% | Estimated | No — needs 30-day data |
 | Consult → retained conversion | 40–50% | Estimated | No |
 | Average matter value (F01) | Unknown — soft floor set at $1,000 | LLP-030 decision 2026-03-22 | Floor confirmed; average TBD — needs 30-day data |

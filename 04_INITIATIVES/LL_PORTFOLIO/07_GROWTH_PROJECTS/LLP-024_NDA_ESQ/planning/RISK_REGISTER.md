@@ -24,7 +24,7 @@ Stage: Planning
 | AI, payment, auth, or storage integrations slip and delay the build | Schedule | M | H | MVP delivery on target date | Sequence integration dependencies early and escalate blockers in weekly review |
 | CAC exceeds the approved threshold and slows payback | Budget | H | H | Efficient customer acquisition and MRR growth | Limit early spend, review channel performance weekly, and prune low-performing segments quickly |
 | Revenue ramps more slowly than forecast because early conversion is weak | Budget | M | H | `$5,000+` MRR within 4 months | Maintain a controlled acquisition mix and adjust pricing or packaging only with ML1 approval |
-| Support, billing, or churn management load exceeds operating capacity post-launch | Operational | M | H | Retention and response-time targets | Define support workflow, escalation ownership, and dashboard visibility before launch |
+| Support, billing, or churn management load exceeds operating capacity post-launch | Strategic | M | H | Retention and response-time targets | Define support workflow, escalation ownership, and dashboard visibility before launch |
 | Acquisition channels underperform or become noisy | Strategic | M | M | User-growth and CAC targets | Use focused channel testing and stop untargeted expansion outside approved channels |
 
 ## Escalation Rule

@@ -1,18 +1,18 @@
 # Risk Scan
 
 ## Top 5 Risks
-1. Strategic risk: software workflow may dictate legal process before doctrine is formalized.
-2. Strategic risk: vendor dependency may create lock-in and reduce portability across systems.
-3. Strategic risk: software adoption may create false confidence about malpractice-control sufficiency.
-4. Financial risk: infrastructure investment may outpace validated service demand.
-5. Scope risk: task routing may drift into improper delegation to non-lawyer roles.
+1. Scope risk: the project may drift from a build-vs-buy decision into premature implementation design.
+2. Financial risk: procurement or build-cost assumptions may be too weak to support a reliable affordability judgment.
+3. Strategic risk: the selected option may not fit Levine Law's actual scale, service mix, or near-term revenue profile.
+4. Strategic risk: tooling may start dictating legal process before workflow doctrine and role boundaries are settled.
+5. Schedule risk: delay in the entity-management decision may block downstream staffing and supervision projects.
 
 ## Key Assumptions
-- Doctrine will be formalized before tooling is treated as authoritative process.
-- Any software selected can support required export, audit, and transition needs.
-- Users will treat software as a support layer rather than as a substitute for legal judgment.
-- Demand for the capability will justify infrastructure investment.
-- Role boundaries for lawyers and non-lawyers can be enforced operationally.
+- Levine Law can define a bounded requirements set before discussing tools in detail.
+- Real decision options are limited to buy, build, or defer rather than an open-ended solution search.
+- Entity-management capability should support legal workflow, not replace legal judgment.
+- Any chosen option will need to fit future role design and supervision controls.
+- ML1 wants a disciplined affordability and control analysis before authorizing implementation work.
 
 ## Go / No-Go Judgment
 Decision: [Proceed | Do Not Proceed | Proceed with Conditions]

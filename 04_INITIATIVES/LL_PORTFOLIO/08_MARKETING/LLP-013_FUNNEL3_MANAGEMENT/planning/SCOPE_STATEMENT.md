@@ -1,6 +1,6 @@
 ---
 id: llp-013__planning__scope_definition
-title: LLP-013 Funnel 3 — Scope Definition
+title: LLP-013 Funnel 3 — Scope Statement
 owner: ML1
 status: draft
 created_date: 2026-03-18
@@ -8,7 +8,7 @@ last_updated: 2026-03-18
 tags: [funnel-03, marketing, planning, scope]
 ---
 
-# Scope Definition
+# Scope Statement
 
 Project ID: LLP-013
 Project Path: 08_MARKETING/LLP-013_FUNNEL3_MANAGEMENT

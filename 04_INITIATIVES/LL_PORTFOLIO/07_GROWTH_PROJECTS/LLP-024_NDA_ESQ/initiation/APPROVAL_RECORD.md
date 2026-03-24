@@ -51,7 +51,7 @@ Planning Stage Authorized: Yes
 
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| `planning/SCOPE_DEFINITION.md` | drafted | 2026-03-14 | Controlled implementation scope documented across the three workstreams |
+| `planning/SCOPE_STATEMENT.md` | drafted | 2026-03-14 | Controlled implementation scope documented across the three workstreams |
 | `planning/WORKPLAN.md` | drafted | 2026-03-14 | Workstreams, milestones, resource plan, and completion condition documented |
 | `planning/ASSUMPTIONS_CONSTRAINTS.md` | drafted | 2026-03-14 | Operating assumptions and hard boundaries documented |
 | `planning/DEPENDENCIES.md` | drafted | 2026-03-14 | Governance, product, growth, and operations dependencies documented |

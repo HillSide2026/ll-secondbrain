@@ -11,7 +11,7 @@
 
 ## Top Portfolio Bottlenecks
 
-- `SCOPE_DEFINITION.md` missing in 1 project(s).
+- `SCOPE_STATEMENT.md` missing in 1 project(s).
 - `PROJECT_PLAN.md` missing in 1 project(s).
 - `ASSUMPTIONS_CONSTRAINTS.md` missing in 1 project(s).
 - `METRICS.md` missing in 4 project(s).

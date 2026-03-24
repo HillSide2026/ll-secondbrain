@@ -39,7 +39,7 @@ Ontario MSB Corp (`1001494374 Ontario Corp`), and Levine Law.
 
 | Item | Owner | Due Date | Evidence |
 | --- | --- | --- | --- |
-| Reporting boundary and entity list freeze | ML1 | 2026-03-24 | `SCOPE_DEFINITION.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
+| Reporting boundary and entity list freeze | ML1 | 2026-03-24 | `SCOPE_STATEMENT.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
 | Source-record and formula lock | ML1 + accounting support | 2026-03-28 | `METRICS.md`, `DEPENDENCIES.md` |
 | Close and review workflow design | ML1 | 2026-04-02 | `PROJECT_PLAN.md`, `COMMUNICATION_PLAN.md` |
 | Risk and escalation model lock | ML1 | 2026-04-04 | `RISK_REGISTER.md`, `COMMUNICATION_PLAN.md` |

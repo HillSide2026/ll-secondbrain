@@ -36,7 +36,7 @@ tags: [levine-law, 2026, assumptions, constraints, planning, hillside]
 |----|-----------|--------|
 | C-01 | HBP-007 must stay inside the approved practice areas: Corporate, Contracts, and Payment Services | `PROJECT_CHARTER.md`; `LLP-030_FIRM_STRATEGY` |
 | C-02 | All work must be delivered through approved solution frames; work outside approved frames requires ML1 approval | `PROJECT_CHARTER.md` |
-| C-03 | HBP-007 does not govern Levine Law execution work directly — it is an oversight project only | `PROJECT_CHARTER.md`; `SCOPE_DEFINITION.md` |
-| C-04 | Changes to the approved practice area stack, solution frames, or governing strategy require ML1 approval before they are treated as in-scope | `SCOPE_DEFINITION.md` |
+| C-03 | HBP-007 does not govern Levine Law execution work directly — it is an oversight project only | `PROJECT_CHARTER.md`; `SCOPE_STATEMENT.md` |
+| C-04 | Changes to the approved practice area stack, solution frames, or governing strategy require ML1 approval before they are treated as in-scope | `SCOPE_STATEMENT.md` |
 | C-05 | Monthly oversight pack must cover all four dimensions: collections, margin, capacity, and client-quality — none may be deferred | `SUCCESS_CRITERIA.md` |
 | C-06 | Planning may not begin on any execution workstream that falls outside the approved scope without a separate ML1 gate decision | `POL-055_Repository_Project_Policy.md` |

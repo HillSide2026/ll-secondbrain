@@ -151,7 +151,7 @@ Optional for decision projects, only if ML1 wants them:
 
 Required for strategic and management projects:
 
-- `SCOPE_DEFINITION.md`
+- `SCOPE_STATEMENT.md`
 - `PROJECT_PLAN.md`
 - `ASSUMPTIONS_CONSTRAINTS.md`
 - `DEPENDENCIES.md`
@@ -161,7 +161,7 @@ Required for strategic and management projects:
 
 Required for operational projects:
 
-- `SCOPE_DEFINITION.md`
+- `SCOPE_STATEMENT.md`
 - `PROJECT_PLAN.md`
 - `DEPENDENCIES.md`
 - `RISK_REGISTER.md`
@@ -227,7 +227,7 @@ Rules:
   the ML1 decision at hand.
 - For decision projects, `PROJECT_PLAN.md` is the canonical consolidated
   planning artifact and should absorb scope, framing, and sequencing content as
-  needed without creating separate `SCOPE_DEFINITION.md` or
+  needed without creating separate `SCOPE_STATEMENT.md` or
   `COMMUNICATION_PLAN.md` files by default.
 
 Decision projects may close after ML1 reaches a go / hold / no-go decision, or

@@ -21,7 +21,7 @@ Prepare immediate execution of a Sunday matter-reconciliation function across SB
 
 | Workstream | Scope | Primary Owner | Outputs |
 | --- | --- | --- | --- |
-| WS-01 Reconciliation Control Model | Define cycle boundaries, authoritative-field rules, and no-writeback controls | ML1 + Matter Maintenance Orchestrator | `SCOPE_DEFINITION.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
+| WS-01 Reconciliation Control Model | Define cycle boundaries, authoritative-field rules, and no-writeback controls | ML1 + Matter Maintenance Orchestrator | `SCOPE_STATEMENT.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
 | WS-02 Clio/SB Status Parity | Define deterministic parity checks for matter status and ownership fields | MAA_MATTER_INDEX | `DEPENDENCIES.md`, `RISK_REGISTER.md` |
 | WS-03 SharePoint Linkage Controls | Define folder/linkage and document-index exception rules | MAA_DOCUMENT_DELTA | `RISK_REGISTER.md`, `COMMUNICATION_PLAN.md` |
 | WS-04 Asana Reconciliation | Define matter-tag/task linkage checks and unresolved-work exceptions | MAA_ASANA_RECON (new worker) | `DEPENDENCIES.md`, `METRIC_DEFINITION.md` inputs |

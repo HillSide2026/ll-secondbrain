@@ -37,7 +37,7 @@ Planning Stage Authorized: Yes
 | Item | Status | Date | Notes |
 | --- | --- | --- | --- |
 | `planning/README.md` | drafted | 2026-03-20 | Planning index opened and current status recorded |
-| `planning/SCOPE_DEFINITION.md` | drafted | 2026-03-20 | Planning scope for the internal wealth-management model recorded |
+| `planning/SCOPE_STATEMENT.md` | drafted | 2026-03-20 | Planning scope for the internal wealth-management model recorded |
 | `planning/PROJECT_PLAN.md` | drafted | 2026-03-20 | Planning workstreams, milestones, and gate path recorded |
 | `planning/ASSUMPTIONS_CONSTRAINTS.md` | drafted | 2026-03-20 | Planning assumptions, constraints, and locked direction recorded |
 | `planning/DEPENDENCIES.md` | drafted | 2026-03-20 | Planning dependencies, including accounting inputs and `HBP-002` linkage, recorded |

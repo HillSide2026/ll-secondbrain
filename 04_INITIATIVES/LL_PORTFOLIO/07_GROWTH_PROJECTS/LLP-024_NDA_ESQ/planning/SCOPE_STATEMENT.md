@@ -1,6 +1,6 @@
 ---
 id: 04_initiatives__ll_portfolio__07_strategic_projects__llp_024_nda_esq__scope_definition_md
-title: NDA Esq - Scope Definition
+title: NDA Esq - Scope Statement
 owner: ML1
 status: draft
 created_date: 2026-03-14
@@ -8,7 +8,7 @@ last_updated: 2026-03-15
 tags: [nda-esq, strategic-project, planning, scope]
 ---
 
-# Scope Definition
+# Scope Statement
 
 Project ID: LLP-024
 Project Path: 04_INITIATIVES/LL_PORTFOLIO/07_STRATEGIC_PROJECTS/LLP-024_NDA_ESQ

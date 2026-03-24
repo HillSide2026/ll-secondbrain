@@ -1,28 +1,31 @@
 ---
-id: llp-004_partner_supervision__success_criteria
+id: llp-034_partner_supervision__success_criteria
 title: LLP-034 Partner Supervision Success Criteria
 owner: ML1
 status: draft
 created_date: 2026-03-08
-last_updated: 2026-03-14
+last_updated: 2026-03-23
 tags: [partner-supervision, success-criteria, strategic-projects]
 ---
 
 # Success Criteria
 
-The project will be successful if:
+Initiation will be considered successful if:
 
-1. Clear partner-level metrics are defined across:
-   - Quality
-   - Throughput
-   - Escalation volume
-   - Review/approval load
-   - Time allocation categories
+1. The project clearly defines what kind of supervision problem it is solving:
+   - review load
+   - escalation load
+   - capacity visibility
+   - dependency support for staffing decisions
 
-2. Monitoring cadence is documented.
+2. The packet is specific enough for ML1 to decide whether Planning should
+   proceed.
 
-3. Reporting outputs provide visibility without creating enforcement pressure.
+3. The project remains a supervision/control project rather than drifting into
+   performance management.
 
-4. The System can model partner capacity constraints for planning purposes.
+4. Dependent projects such as `LLP-032` and `LLP-033` can tell what they would
+   need from this project if it advances.
 
-5. ML1 formally approves the metrics framework.
+5. No artifact implies automatic monitoring enforcement or policy activation
+   without ML1 approval.

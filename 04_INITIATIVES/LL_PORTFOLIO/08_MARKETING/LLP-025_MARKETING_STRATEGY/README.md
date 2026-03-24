@@ -42,7 +42,7 @@ Consolidated project governing Levine Law's market positioning, objectives, goal
 
 **Planning Artifacts**
 | `planning/OPEN_QUESTIONS.md` | Open research and decision questions blocking the planning gate |
-| `planning/SCOPE_DEFINITION.md` | Execution scope, deliverables, and gate criteria |
+| `planning/SCOPE_STATEMENT.md` | Execution scope, deliverables, and gate criteria |
 | `planning/WORKPLAN.md` | Workstreams, milestones, resource plan |
 | `planning/ASSUMPTIONS_CONSTRAINTS.md` | Execution assumptions and hard constraints |
 | `planning/DEPENDENCIES.md` | Doctrine, downstream project, platform, and governance dependencies |

@@ -1,33 +1,40 @@
 # Project Charter
+
 Project ID: LLP-034
 Project Name: Partner Supervision
-Portfolio: 02_Levine_Law_Portfolio
+Project Path: 04_INITIATIVES/LL_PORTFOLIO/07_GROWTH_PROJECTS/LLP-034_PARTNER_SUPERVISION
 Project Type: Strategic Project
-Stage: Initiation
+Stage: Initiating
 
 ## 1. Purpose
-To define measurable success metrics for the Managing Partner, establish monitoring cadence, and provide ML2 visibility into real capacity constraints.
+
+Define the supervision and capacity-control framework Levine Law needs before
+adding more delegated work or additional delivery roles.
 
 ## 2. Nature of Project
-Governance instrumentation only.
-No enforcement authority.
-No performance management implementation.
-No operational changes without ML1 approval.
+
+Strategic governance and control project.
+No performance-management implementation.
+No operational enforcement.
+No operational change without ML1 approval.
 
 ## 3. Strategic Rationale
-- Prevent hidden capacity overload.
-- Reduce unmeasured escalation burden.
-- Improve planning accuracy across projects.
-- Surface throughput limits before failure occurs.
-- Separate perception of capacity from measurable output.
+
+- prevent hidden supervision overload
+- make review and escalation dependency visible before staffing decisions are made
+- support `LLP-032` and `LLP-033` with a real supervision model
+- improve planning accuracy across growth projects
+- separate perception of overload from explicit control logic
 
 ## 4. High-Level Deliverable
-A defined Partner Metrics Framework including:
-- Quality metrics
-- Throughput metrics
-- Escalation load metrics
-- Review/approval volume tracking
-- Capacity visibility dashboard design
+
+An ML1 decision packet covering:
+
+- partner-supervision model
+- review and escalation boundaries
+- measurable supervision and capacity indicators
+- dependent-project implications
+- recommendation on whether Planning should proceed
 
 ## 5. Authority
 Final approval authority: ML1.
@@ -37,5 +44,6 @@ Outputs may migrate to:
 - 03_FIRM_OPERATIONS (monitoring cadence)
 - 04_RISK (oversight controls)
 - 06_FINANCIAL_PORTFOLIO (capacity modeling inputs)
+- dependent staffing projects such as `LLP-032` and `LLP-033`
 
 No enforcement permitted without explicit ML1 approval.

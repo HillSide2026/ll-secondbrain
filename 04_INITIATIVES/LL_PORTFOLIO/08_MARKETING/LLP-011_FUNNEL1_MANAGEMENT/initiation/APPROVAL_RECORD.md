@@ -26,7 +26,7 @@ Planning Stage Authorized: Yes
 
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| `planning/SCOPE_DEFINITION.md` | approved | 2026-03-16 | Execution scope and boundaries accepted for live governance |
+| `planning/SCOPE_STATEMENT.md` | approved | 2026-03-16 | Execution scope and boundaries accepted for live governance |
 | `planning/WORKPLAN.md` | approved | 2026-03-16 | Execution workstreams, milestones, and resource plan accepted for live governance |
 | `planning/ASSUMPTIONS_CONSTRAINTS.md` | approved | 2026-03-16 | Execution assumptions and hard constraints accepted for live governance |
 | `planning/DEPENDENCIES.md` | approved | 2026-03-16 | Doctrine, platform, and governance dependencies accepted for live governance |

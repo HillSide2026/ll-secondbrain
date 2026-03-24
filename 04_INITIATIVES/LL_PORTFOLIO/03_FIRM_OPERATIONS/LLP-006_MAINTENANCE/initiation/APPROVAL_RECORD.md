@@ -34,7 +34,7 @@ Stage: Executing
 
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| SCOPE_DEFINITION.md | approved | 2026-03-16 | Execution scope documented |
+| SCOPE_STATEMENT.md | approved | 2026-03-16 | Execution scope documented |
 | WORKPLAN.md | approved | 2026-03-16 | Milestones and resource plan documented |
 | ASSUMPTIONS_CONSTRAINTS.md | approved | 2026-03-16 | Execution assumptions documented |
 | DEPENDENCIES.md | approved | 2026-03-16 | Cross-project dependencies declared |

@@ -1,19 +1,30 @@
 # Problem Statement
 
-Levine Law currently lacks a purpose-built, scalable system for:
+Levine Law currently lacks a reliable, scalable entity-management capability
+for recurring corporate records, deadline visibility, responsibility routing,
+and audit-ready control of entity obligations.
 
-- Tracking recurring corporate compliance obligations
-- Centralized multi-entity deadline visibility
-- Escalation controls for missed filings
-- Structured responsibility assignment
-- Audit-ready compliance documentation
+The firm therefore faces a strategic decision:
 
-This creates:
+- procure third-party entity-management software
+- build an internal system tailored to Levine Law
+- or defer investment and continue operating with lighter manual controls
 
-- Increased malpractice exposure
-- Manual tracking inefficiencies
-- Scalability constraints
-- Delegation limitations
-- Revenue opportunity leakage
+Today, that decision is not yet grounded in a clear requirements set, an
+affordability frame, or a defensible view of downstream role and supervision
+dependencies.
 
-Without infrastructure, recurring compliance services cannot be safely scaled.
+This creates five problems:
+
+- recurring entity obligations are managed with limited system discipline
+- the firm cannot yet tell whether external software cost is justified by
+  present or near-term demand
+- internal build options risk becoming open-ended technical work without a
+  narrow operating brief
+- downstream staffing projects such as `LLP-032` depend on capabilities that
+  are not yet decided
+- the firm risks either overbuying, overbuilding, or underserving the future
+  corporate maintenance opportunity
+
+Without a bounded build-vs-buy decision, Levine Law cannot responsibly plan
+entity-management operations, staffing, or service packaging.

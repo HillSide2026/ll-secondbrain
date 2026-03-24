@@ -4,7 +4,7 @@ title: Marketing Strategy
 owner: ML1
 status: draft
 created_date: 2026-02-25
-last_updated: 2026-03-22
+last_updated: 2026-03-23
 tags: []
 ---
 
@@ -12,7 +12,8 @@ tags: []
 
 ## Strategy Thesis
 
-- Funnel 01 is a temporary reactive acquisition channel.
+- Funnel 01 has generated real and likely positive revenue contribution, but remains a temporary reactive acquisition channel.
+- Funnel 01 is strategically inferior to the desired future mix because it produces more reactive, lower-fit, and less controllable demand.
 - Funnel 02 is the intended structural replacement: paid Corporate Health Check diagnostic, higher-quality clients, lower noise, and greater strategic leverage.
 - The core 2026 offer stack is Corporate Health Check -> blended Fractional Counsel.
 - The Corporate Health Check may include bounded regulatory review where the client's facts require it.
@@ -38,7 +39,7 @@ tags: []
 
 ## Funnel Portfolio Intent
 
-- F01 sustains qualified intake while transition to preventative positioning is built.
+- F01 sustains qualified intake and has already proven real revenue contribution, while the transition to preventative positioning is built.
 - F02 becomes the primary corporate entry path through paid diagnostics and anchors the core 2026 offer stack.
 - F03 grows vertical authority and conversion for payments regulatory work, feeding specialist matters into the broader ongoing counsel layer.
 

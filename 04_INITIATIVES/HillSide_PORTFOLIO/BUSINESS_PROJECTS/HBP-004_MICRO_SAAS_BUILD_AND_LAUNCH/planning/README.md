@@ -43,7 +43,7 @@ Define and authorize a controlled executing model for TariffLookup.ca under Matt
 | Item | Owner | Due Date | Evidence |
 | --- | --- | --- | --- |
 | User/problem and MVP workflow freeze | Matthew | 2026-03-14 | `WORKPLAN.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
-| Jurisdiction/data/rule model freeze | Levine Law + Matthew | 2026-03-16 | `SCOPE_DEFINITION.md`, `DEPENDENCIES.md` |
+| Jurisdiction/data/rule model freeze | Levine Law + Matthew | 2026-03-16 | `SCOPE_STATEMENT.md`, `DEPENDENCIES.md` |
 | Risk and communication model freeze | Matthew Holdings | 2026-03-18 | `RISK_REGISTER.md`, `COMMUNICATION_PLAN.md` |
 | Metric threshold packet submission | ML1 | 2026-03-19 | `OKR.md`, `ML1_METRIC_APPROVAL.md` |
 | Planning -> Executing gate packet assembly | Project Owner | 2026-03-20 | `VALIDATION_REVIEW.md`, `../APPROVAL_RECORD.md` |

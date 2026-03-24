@@ -7,7 +7,7 @@
 ## Doctrine Drift Report
 
 - Structural drift patterns detected from repeated missing artifacts:
-- Planning drift: `SCOPE_DEFINITION.md` missing in 1 project(s).
+- Planning drift: `SCOPE_STATEMENT.md` missing in 1 project(s).
 - Planning drift: `PROJECT_PLAN.md` missing in 1 project(s).
 - Planning drift: `ASSUMPTIONS_CONSTRAINTS.md` missing in 1 project(s).
 - Planning drift: `DEPENDENCIES.md` missing in 1 project(s).

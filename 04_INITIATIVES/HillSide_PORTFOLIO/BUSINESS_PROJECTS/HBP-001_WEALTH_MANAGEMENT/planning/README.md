@@ -38,7 +38,7 @@ CAD 2,000,000 by `2030-12-31` and at least CAD 4,000,000 by `2040-12-31`.
 
 | Item | Owner | Due Date | Evidence |
 | --- | --- | --- | --- |
-| Baseline boundary and valuation rule freeze | ML1 | 2026-03-24 | `SCOPE_DEFINITION.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
+| Baseline boundary and valuation rule freeze | ML1 | 2026-03-24 | `SCOPE_STATEMENT.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
 | Opening baseline and gap-to-target calculation | ML1 + accounting support | 2026-03-28 | `PROJECT_PLAN.md`, `METRICS.md` |
 | Capital-governance and liquidity framework draft | ML1 | 2026-04-02 | `ASSUMPTIONS_CONSTRAINTS.md`, `RISK_REGISTER.md` |
 | Dependency and review-model lock | ML1 | 2026-04-04 | `DEPENDENCIES.md`, `COMMUNICATION_PLAN.md` |

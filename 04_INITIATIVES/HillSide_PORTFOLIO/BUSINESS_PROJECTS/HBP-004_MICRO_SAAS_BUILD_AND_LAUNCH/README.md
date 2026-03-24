@@ -54,7 +54,7 @@ Initiating -> Planning gate checklist.
 ## Planning Artifacts
 
 - `planning/README.md`
-- `planning/SCOPE_DEFINITION.md`
+- `planning/SCOPE_STATEMENT.md`
 - `planning/WORKPLAN.md`
 - `planning/ASSUMPTIONS_CONSTRAINTS.md`
 - `planning/DEPENDENCIES.md`

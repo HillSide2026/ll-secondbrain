@@ -36,7 +36,7 @@ Planning Stage Authorized: Yes
 
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| SCOPE_DEFINITION.md | approved | 2026-03-16 | Opening scope and Gate 2->3 boundary accepted for execution. |
+| SCOPE_STATEMENT.md | approved | 2026-03-16 | Opening scope and Gate 2->3 boundary accepted for execution. |
 | WORKPLAN.md | approved | 2026-03-16 | Planning-stage execution map accepted for execution. |
 | ASSUMPTIONS_CONSTRAINTS.md | approved | 2026-03-16 | Operating assumptions and hard limits accepted for execution. |
 | DEPENDENCIES.md | approved | 2026-03-16 | Lifecycle/system dependencies accepted for execution. |

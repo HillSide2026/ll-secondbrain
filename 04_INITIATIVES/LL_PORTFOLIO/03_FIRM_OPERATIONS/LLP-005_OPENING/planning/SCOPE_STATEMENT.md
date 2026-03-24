@@ -1,4 +1,4 @@
-# Scope Definition
+# Scope Statement
 
 Project ID: LLP-005
 Project Path: 03_FIRM_OPERATIONS/LLP-005_OPENING

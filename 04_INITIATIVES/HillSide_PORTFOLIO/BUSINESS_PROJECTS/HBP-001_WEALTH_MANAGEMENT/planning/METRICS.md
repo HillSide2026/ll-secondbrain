@@ -17,7 +17,7 @@ Stage: `Planning`
 
 | Metric | Definition | Target | Evidence |
 | --- | --- | --- | --- |
-| Baseline completeness | Share of in-scope assets and liabilities classified under one approved methodology | all material in-scope items classified | `SCOPE_DEFINITION.md`, working baseline |
+| Baseline completeness | Share of in-scope assets and liabilities classified under one approved methodology | all material in-scope items classified | `SCOPE_STATEMENT.md`, working baseline |
 | Opening baseline | Consolidated net worth as at `2026-03-23` | CAD 1,600,000 (first-pass; subject to valuation confirmation) | ML1 |
 | Gap to SG-01 | CAD 2,000,000 − CAD 1,600,000 | CAD 400,000 remaining; requires ~4.8% CAGR on existing base over 4.75 years — path is primarily investment returns, not savings from income | `PROJECT_PLAN.md` |
 | Gap to SG-02 | CAD 4,000,000 − CAD 1,600,000 | CAD 2,400,000 remaining; requires ~6.4% CAGR over 14.75 years — at $2M in 2030, a further ~7.2% CAGR for 10 years reaches $4M | `PROJECT_PLAN.md` |

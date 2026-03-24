@@ -4,7 +4,7 @@ title: 06_FINANCIAL_PORTFOLIO — Models & Constraints
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-03-19
+last_updated: 2026-03-23
 tags: []
 ---
 
@@ -25,6 +25,7 @@ Financial visibility and modeling WITHOUT decision authority.
 - Cost models
 - Scenario and sensitivity analysis
 - Financial constraints (e.g., margin floors)
+- Advisory financial-modeling outputs produced by `LLM-003_CFO_AGENT`
 
 ### Out of Scope
 
@@ -59,6 +60,11 @@ The System must NOT:
 ## Approval State
 
 **ACTIVE** — Budget modeling artifacts exist and the governed packet formalization is underway.
+
+## Active Financial Modeling Homes
+
+- `LLP-002_BUDGETING/` — canonical Levine Law budgeting and scenario packet
+- `CFO/` — advisory output home for `LLM-003_CFO_AGENT`
 
 ## Last ML1 Review Date
 

@@ -29,6 +29,8 @@ Role: Bridge channel sustaining qualified intake while F02 is built
 | Ad spend | ~$1,500/month |
 | Target matters retained | 4/month |
 | Actual performance | Hitting 4/month in best months only; average is below target |
+| 2025 origin mix | Almost all `2025` matters originated through `F01`, with `Mascore` and `Stream` as explicit exceptions |
+| Economic contribution signal | `F01`-generated revenue in `2025` appears to have significantly exceeded `F01` spend |
 | Matter quality issue | A portion of retained matters are very low value — fees do not justify intake cost or ML1 time |
 | Implied CPM (cost per matter) at target | $375/matter ($1,500 ÷ 4) |
 | Implied CPM (actual) | Higher than $375 given below-target volume |
@@ -51,7 +53,7 @@ Role: Bridge channel sustaining qualified intake while F02 is built
 - The consult-to-close rate (40–50%) is respectable. The constraint is not ML1's ability to close — it is the volume and quality of leads reaching the consult stage.
 - "Paid project" is the output metric, not "retainer." A portion of these are single engagements, not ongoing relationships. This contributes to the low-value matter problem — single paid projects may be priced below the threshold that justifies F01 intake cost and ML1 time.
 
-**Core F01 problem**: The channel does not reliably generate enough leads to hit volume targets, and the matters that do convert include a meaningful share of very low value single engagements. The channel is simultaneously underperforming on volume and degrading on quality.
+**Core F01 problem**: The channel appears to be economically positive, but it does not reliably generate the volume and client-fit mix required by the future strategy. The matters that do convert include a meaningful share of very low value single engagements, which makes `F01` strategically inferior even though it has generated real revenue contribution.
 
 ### KPI Targets
 

@@ -1,4 +1,4 @@
-# Scope Definition
+# Scope Statement
 
 Project ID: LLP-011
 Project Path: 08_MARKETING/LLP-011_FUNNEL1_MANAGEMENT

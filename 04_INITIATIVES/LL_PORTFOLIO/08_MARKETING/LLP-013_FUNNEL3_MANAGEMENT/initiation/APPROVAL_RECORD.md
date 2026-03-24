@@ -35,7 +35,7 @@ Planning Stage Authorized: Yes
 
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| `planning/SCOPE_DEFINITION.md` | drafted | 2026-03-18 | ICP-02, positioning, channel architecture, entry offer, core offer map, and completion condition defined |
+| `planning/SCOPE_STATEMENT.md` | drafted | 2026-03-18 | ICP-02, positioning, channel architecture, entry offer, core offer map, and completion condition defined |
 | `planning/WORKPLAN.md` | drafted | 2026-03-18 | Four workstreams (positioning, assets, channel activation, signal tracking) with milestones and resource plan |
 | `planning/ASSUMPTIONS_CONSTRAINTS.md` | drafted | 2026-03-18 | Market, operational, and conversion assumptions; hard and soft constraints documented |
 | `planning/DEPENDENCIES.md` | drafted | 2026-03-18 | Agent dependencies (SE-01, SEO-01, BSE-01, SPE-01) and cross-project dependencies (F01, F02, LLP-025, LLP-030) documented |

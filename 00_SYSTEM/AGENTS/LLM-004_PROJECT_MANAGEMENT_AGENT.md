@@ -4,7 +4,7 @@ title: Agent Definition
 owner: ML1
 status: draft
 created_date: 2026-02-26
-last_updated: 2026-03-19
+last_updated: 2026-03-23
 tags: []
 ---
 
@@ -99,7 +99,7 @@ Enforce Levine Law’s Project Management Doctrine, ensure stage-gate compliance
 
 ### Project-Level Artifacts
 All outputs live inside project folders under:
-`04_INITIATIVES/LL_PORTFOLIO/07_STRATEGIC_PROJECTS/<PROJECT_ID>/`
+`04_INITIATIVES/LL_PORTFOLIO/07_GROWTH_PROJECTS/<PROJECT_ID>/`
 
 **Initiation (all projects)**
 - PROJECT_CHARTER.md
@@ -128,7 +128,7 @@ Rationale: <ML1 judgment>
 ```
 
 **Planning (strategic and management projects)**
-- SCOPE_DEFINITION.md
+- SCOPE_STATEMENT.md
 - PROJECT_PLAN.md (must include milestone schedule and resource plan sections; legacy WORKPLAN.md remains acceptable during transition)
 - ASSUMPTIONS_CONSTRAINTS.md
 - DEPENDENCIES.md
@@ -136,7 +136,7 @@ Rationale: <ML1 judgment>
 - COMMUNICATION_PLAN.md
 
 **Planning (operational baseline)**
-- SCOPE_DEFINITION.md
+- SCOPE_STATEMENT.md
 - PROJECT_PLAN.md (must include milestone schedule and resource plan sections; legacy WORKPLAN.md remains acceptable during transition)
 - DEPENDENCIES.md
 - RISK_REGISTER.md
@@ -161,6 +161,10 @@ Rationale: <ML1 judgment>
 - baseline capture period
 - validation review
 - ML1 threshold approval
+
+`SCOPE_STATEMENT.md` is the current canonical filename for scope in planning
+artifacts. `SCOPE_DEFINITION.md` is legacy and should be normalized on next
+edit.
 
 `ML1_METRIC_APPROVAL.md` is legacy and non-canonical. Threshold approval is
 recorded inside `METRICS.md`.

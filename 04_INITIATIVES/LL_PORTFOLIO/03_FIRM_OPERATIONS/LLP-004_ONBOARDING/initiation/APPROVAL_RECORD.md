@@ -36,7 +36,7 @@ Planning Stage Authorized: Yes
 
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
-| SCOPE_DEFINITION.md | drafted | 2026-03-08 | Gate boundaries and handoff spec documented. |
+| SCOPE_STATEMENT.md | drafted | 2026-03-08 | Gate boundaries and handoff spec documented. |
 | WORKPLAN.md | drafted | 2026-03-08 | Planning-stage execution map documented. |
 | ASSUMPTIONS_CONSTRAINTS.md | drafted | 2026-03-08 | Execution assumptions and hard limits defined. |
 | DEPENDENCIES.md | drafted | 2026-03-08 | System and process dependencies documented. |

@@ -1,43 +1,54 @@
 # Project Charter
+
 Project ID: LLP-031
-Project Name: Corporate Entity Management Infrastructure
-Portfolio: 02_Levine_Law_Portfolio
+Project Name: Corporate Entity Management
+Project Path: 04_INITIATIVES/LL_PORTFOLIO/07_GROWTH_PROJECTS/LLP-031_CORPORATE_ENTITY_MANAGEMENT
 Project Type: Strategic Project
-Stage: Initiation
+Stage: Initiating
 
 ## 1. Purpose
-To research, evaluate, and implement software infrastructure capable of supporting a future recurring corporate entity maintenance service line.
+
+Determine the preferred entity-management capability path for Levine Law:
+procure software, build internally, or defer.
 
 ## 2. Nature of Project
-Infrastructure development only.
-Non-client-facing.
-No service launch authorized at this stage.
+
+Strategic capability and decision-framing project.
+No software procurement, no internal build execution, and no client-facing
+service launch are authorized at this stage.
 
 ## 3. Strategic Rationale
-- Reduce compliance tracking risk.
-- Enable scalable entity maintenance capability.
-- Prepare for delegation (Clerk / Associate model).
-- Improve deadline visibility and audit defensibility.
+
+- reduce deadline, records, and responsibility-tracking fragility
+- create a defensible basis for future recurring entity-management services
+- support later staffing projects, especially `LLP-032 Corporate Clerk`
+- avoid uncontrolled spend or uncontrolled build work
+- improve audit defensibility and operating clarity before scaling
 
 ## 4. Deliverable (High-Level)
-A selected and implemented software system capable of:
-- Entity record management
-- Recurring compliance tracking
-- Deadline escalation
-- Responsibility assignment
-- Audit logging
+
+An ML1 decision packet covering:
+
+- the real capability requirements Levine Law needs
+- the viable option set: buy, build, or defer
+- the relative cost, control, and risk tradeoffs of each option
+- downstream dependencies on staffing, supervision, and operating doctrine
+- a recommendation for whether planning should proceed
 
 ## 5. Authority
-Final approval authority: ML1 (Matthew Levine)
+
+Final approval authority: ML1
 Non-authoritative until explicit ML1 approval.
 
 ## 6. Expected Duration
-TBD during Planning stage.
+
+To be set if ML1 approves movement into Planning.
 
 ## 7. Promotion Path
-Upon successful validation, outputs may migrate to:
-- 02_PRACTICE_AREAS
-- 03_FIRM_OPERATIONS
-- 04_RISK
-- 05_MATTER_DOCKETING
-- 08_MARKETING (only after doctrine approval)
+
+If ML1 approves a preferred path, downstream outputs may later inform:
+
+- `03_FIRM_OPERATIONS` for system and workflow design
+- `04_RISK` for deadline and control architecture
+- `LLP-032` for corporate-clerk operating design
+- `LLP-034` for supervision and escalation architecture

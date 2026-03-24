@@ -34,7 +34,7 @@ Prepare a decision-ready implementation packet for NDA Esq by locking:
 
 | Workstream | Decision To Lock | Primary Owner | Outputs |
 | --- | --- | --- | --- |
-| WS-01 Product Scope Lock | Confirm the MVP feature set: upload, AI review, dashboard, reports, accounts, and payment | ML1 + Product Lead (TBD) | `SCOPE_DEFINITION.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
+| WS-01 Product Scope Lock | Confirm the MVP feature set: upload, AI review, dashboard, reports, accounts, and payment | ML1 + Product Lead (TBD) | `SCOPE_STATEMENT.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
 | WS-02 Build Readiness | Confirm the stack, integrations, and sequence needed to deliver the MVP inside the target window | Product Lead (TBD) | `DEPENDENCIES.md`, `RISK_REGISTER.md` |
 | WS-03 Acquisition Plan Lock | Confirm pricing assumptions, launch channels, funnel assets, and early CAC discipline | Growth Lead (TBD) | `WORKPLAN.md`, `COMMUNICATION_PLAN.md`, `RISK_REGISTER.md` |
 | WS-04 Operations Control Lock | Confirm billing, support, dashboard visibility, and optional lawyer-review escalation rules | Operations Lead (TBD) | `METRICS.md`, `COMMUNICATION_PLAN.md` |
@@ -53,7 +53,7 @@ Prepare a decision-ready implementation packet for NDA Esq by locking:
 | Milestone | Target Date | Status | Evidence |
 | --- | --- | --- | --- |
 | M1 - Initiation approved and project advanced to Planning | 2026-03-14 | complete | `APPROVAL_RECORD.md` |
-| M2 - MVP scope locked | 2026-03-17 | planned | `SCOPE_DEFINITION.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
+| M2 - MVP scope locked | 2026-03-17 | planned | `SCOPE_STATEMENT.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
 | M3 - Build and launch dependencies locked | 2026-03-18 | planned | `DEPENDENCIES.md`, `RISK_REGISTER.md` |
 | M4 - Metrics and operating controls locked | 2026-03-19 | planned | `METRICS.md`, `COMMUNICATION_PLAN.md` |
 | M5 - Threshold proposal submitted to ML1 | 2026-03-20 | planned | `METRICS.md` |

@@ -178,7 +178,7 @@ alignment with the repo-level project policy.
 
 ## Planning Artifacts
 
-- `planning/SCOPE_DEFINITION.md`
+- `planning/SCOPE_STATEMENT.md`
 - `planning/WORKPLAN.md`
 - `planning/ASSUMPTIONS_CONSTRAINTS.md`
 - `planning/DEPENDENCIES.md`

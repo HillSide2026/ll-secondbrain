@@ -74,7 +74,7 @@ Required planning artifact set:
 
 Strategic and management projects:
 
-- `SCOPE_DEFINITION.md`
+- `SCOPE_STATEMENT.md`
 - `PROJECT_PLAN.md`
 - `ASSUMPTIONS_CONSTRAINTS.md`
 - `DEPENDENCIES.md`
@@ -84,7 +84,7 @@ Strategic and management projects:
 
 Operational projects:
 
-- `SCOPE_DEFINITION.md`
+- `SCOPE_STATEMENT.md`
 - `PROJECT_PLAN.md`
 - `DEPENDENCIES.md`
 - `RISK_REGISTER.md`
@@ -97,7 +97,7 @@ Operational projects may add these when the work actually needs them:
 
 Planning best-practice rules:
 
-- `SCOPE_DEFINITION.md` locks the actual implementation boundary and exclusions.
+- `SCOPE_STATEMENT.md` locks the actual implementation boundary and exclusions.
 - `PROJECT_PLAN.md` locks the project decisions, sequence, and gate-readiness path. It should not read like generic PM overhead. Legacy `WORKPLAN.md` files remain acceptable during transition and should be normalized on next edit.
 - `ASSUMPTIONS_CONSTRAINTS.md` captures the assumptions the project depends on and the limits it cannot cross.
 - `DEPENDENCIES.md` lists only dependencies that could materially affect implementation or authorization.
@@ -121,7 +121,7 @@ LL_PORTFOLIO/
 ├── 04_RISK/                     # Defensive clarity
 ├── 05_MATTER_DOCKETING/         # Delivery overlay for matters
 ├── 06_FINANCIAL_PORTFOLIO/      # Models & constraints (not decisions)
-├── 07_STRATEGIC_PROJECTS/       # Change and evolution
+├── 07_GROWTH_PROJECTS/          # Change and evolution
 ├── 08_MARKETING/                # Pre-matter pipeline (leads -> conversion; handoff enters fulfillment onboarding)
 └── 09_SERVICE_MANAGEMENT/       # Service tier management across matters
 ```
@@ -222,7 +222,7 @@ You must not infer, reorder, merge, or repurpose these folders.
 
 ---
 
-### 07_STRATEGIC_PROJECTS
+### 07_GROWTH_PROJECTS
 
 **Purpose:** Change, experimentation, and future direction.
 

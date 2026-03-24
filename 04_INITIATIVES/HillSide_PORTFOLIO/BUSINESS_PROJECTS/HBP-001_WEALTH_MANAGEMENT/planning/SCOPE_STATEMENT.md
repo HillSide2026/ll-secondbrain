@@ -1,6 +1,6 @@
 ---
 id: 04_initiatives__hillside_portfolio__business_projects__hbp_001_wealth_management__planning__scope_definition_md
-title: Wealth Management - Scope Definition
+title: Wealth Management - Scope Statement
 owner: ML1
 status: active
 created_date: 2026-03-20
@@ -8,7 +8,7 @@ last_updated: 2026-03-20
 tags: [wealth-management, planning, scope]
 ---
 
-# Scope Definition
+# Scope Statement
 
 Project ID: `HBP-001`
 Project Path: `04_INITIATIVES/HillSide_PORTFOLIO/BUSINESS_PROJECTS/HBP-001_WEALTH_MANAGEMENT`

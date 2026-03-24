@@ -26,7 +26,7 @@ Planning Stage Authorized: Yes
 
 | Item | Status | Date | Notes |
 |---|---|---|---|
-| `planning/SCOPE_DEFINITION.md` | drafted | 2026-03-17 | Execution scope and boundaries documented |
+| `planning/SCOPE_STATEMENT.md` | drafted | 2026-03-17 | Execution scope and boundaries documented |
 | `planning/WORKPLAN.md` | drafted | 2026-03-17 | Workstreams, milestones, resource plan documented |
 | `planning/ASSUMPTIONS_CONSTRAINTS.md` | drafted | 2026-03-17 | Execution assumptions and hard constraints documented |
 | `planning/DEPENDENCIES.md` | drafted | 2026-03-17 | Doctrine, platform, and governance dependencies documented |

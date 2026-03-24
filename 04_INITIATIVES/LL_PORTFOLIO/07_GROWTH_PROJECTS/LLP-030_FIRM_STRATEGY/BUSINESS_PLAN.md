@@ -4,7 +4,7 @@ title: Levine Law — Business Plan
 owner: ML1
 status: draft
 created_date: 2026-03-17
-last_updated: 2026-03-22
+last_updated: 2026-03-23
 tags: [llp-030, business-plan, doctrine]
 ---
 
@@ -27,6 +27,12 @@ The current operating model remains time-for-money. Andersen-related
 operational matters are tracked inside Levine Law because they follow the same
 delivery model, even though Andersen fees are received by `17513721 Canada
 Inc`.
+
+`F01` has generated real and likely positive revenue contribution for Levine
+Law. ML1 reports that, except for `Mascore` and `Stream`, `2025` matters were
+originated through `F01 / Google Ads`. The strategic problem with `F01` is not
+that it failed to generate revenue, but that it produces more reactive,
+lower-fit, and less controllable demand than the firm's desired future mix.
 
 This document is the `2026` operating expression of a broader `2026-2028`
 strategy: `2026` validates the platform, `2027` consolidates the payments
@@ -85,7 +91,10 @@ The firm operates three acquisition channels (funnel definitions are canonical a
 - Reactive, undifferentiated demand — matters vary in quality and fit
 - Qualification gate: revenue ≥ $1M, employees ≥ 5, accountant involved
 
-**Role**: Current primary revenue source; funds operations while F02 is built
+**Role**: Current primary revenue source and the dominant historical origin
+channel in `2025`; funds operations while F02 is built, but remains
+strategically transitional because the demand profile is more reactive,
+lower-fit, and less controllable than the desired future mix
 
 **Contribution target**
 - Q1–Q2: 70–80% of revenue
@@ -138,7 +147,7 @@ payments/MSB regulatory entry work.
 ### Channel Sequencing Logic
 
 F01 → F02 → F03 is not simultaneous scaling:
-- F01 funds survival
+- F01 has proven it can generate revenue and fund survival
 - F02 stabilizes flow with higher-quality clients and anchors the core offer stack
 - F03 introduces the vertical specialization layer without replacing the Corporate Health Check → Fractional Counsel model
 

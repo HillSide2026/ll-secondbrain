@@ -1,6 +1,6 @@
 ---
 id: 04_initiatives__hillside_portfolio__business_projects__hbp_002_cash_flow__planning__scope_definition_md
-title: Cash Flow - Scope Definition
+title: Cash Flow - Scope Statement
 owner: ML1
 status: active
 created_date: 2026-03-20
@@ -8,7 +8,7 @@ last_updated: 2026-03-22
 tags: [cash-flow, planning, scope]
 ---
 
-# Scope Definition
+# Scope Statement
 
 Project ID: `HBP-002`
 Project Path: `04_INITIATIVES/HillSide_PORTFOLIO/BUSINESS_PROJECTS/HBP-002_CASH_FLOW`

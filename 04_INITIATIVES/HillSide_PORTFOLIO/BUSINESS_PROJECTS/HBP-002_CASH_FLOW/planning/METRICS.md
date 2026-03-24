@@ -30,7 +30,7 @@ monthly management-pack build.
 
 | Metric | Definition | Target | Evidence |
 | --- | --- | --- | --- |
-| Boundary clarity | The reporting boundary is explicit across Matthew and the five in-scope entities | one frozen in-scope list with no material ambiguity | `SCOPE_DEFINITION.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
+| Boundary clarity | The reporting boundary is explicit across Matthew and the five in-scope entities | one frozen in-scope list with no material ambiguity | `SCOPE_STATEMENT.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
 | Formula clarity | Matthew-level gross-inflow, gross-outflow, and net-cash-flow formulas are explicit enough for CPA-style review | one approved formula set and treatment rule set | `../METRICS.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
 | Source-record completeness | Each in-scope entity and cash-movement family has a named primary source set | all core metric families mapped to source records | `DEPENDENCIES.md`, `../METRICS.md` |
 | Close-process readiness | The monthly close and review loop can deliver within 10 business days of month-end | one workable close calendar and review owner defined | `PROJECT_PLAN.md`, `COMMUNICATION_PLAN.md` |

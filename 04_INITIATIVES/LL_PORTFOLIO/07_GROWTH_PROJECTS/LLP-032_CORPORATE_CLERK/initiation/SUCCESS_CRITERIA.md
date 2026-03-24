@@ -1,16 +1,24 @@
 # Success Criteria
 
-The project will be successful if:
+Initiation will be considered successful if:
 
-1. A clear task classification system exists distinguishing:
-   - Clerk-permitted tasks
-   - Lawyer-only tasks
-   - Supervision-required tasks
+1. The role question is explicit:
+   - what a corporate clerk would do
+   - what a corporate clerk would not do
+   - when staffing the role would be justified
 
-2. A documented supervision and escalation protocol is defined.
+2. The packet identifies the decision-critical design areas:
+   - task boundary
+   - training model
+   - supervision dependency
+   - timing trigger
+   - economic logic
 
-3. Risk controls satisfy malpractice and unauthorized practice standards.
+3. The project is specific enough for ML1 to decide whether Planning should
+   proceed.
 
-4. ML1 formally approves the role doctrine prior to implementation.
+4. No artifact silently assumes that hiring, onboarding, or live delegation is
+   already approved.
 
-5. The role can operate within the selected Corporate Entity Management system.
+5. The project is framed in a way that can later integrate with `LLP-031` and
+   `LLP-034` rather than conflicting with them.

@@ -31,7 +31,7 @@ net worth by `2030-12-31` and CAD 4,000,000 by `2040-12-31`.
 
 | Workstream | Objective | Primary Output |
 | --- | --- | --- |
-| WS-01 Baseline Definition | Fix the in-scope asset, liability, and valuation boundary | `SCOPE_DEFINITION.md`, `METRICS.md` |
+| WS-01 Baseline Definition | Fix the in-scope asset, liability, and valuation boundary | `SCOPE_STATEMENT.md`, `METRICS.md` |
 | WS-02 Gap and Path Model | Quantify the baseline gap and required compounding path to `2030-12-31` and `2040-12-31` | `PROJECT_PLAN.md`, `METRICS.md` |
 | WS-03 Capital Governance | Define liquidity reserve, deployment guardrails, and review cadence | `ASSUMPTIONS_CONSTRAINTS.md`, `RISK_REGISTER.md` |
 | WS-04 Gate Packet Assembly | Prepare the execution-readiness recommendation for ML1 | `COMMUNICATION_PLAN.md`, `../APPROVAL_RECORD.md` |
@@ -40,7 +40,7 @@ net worth by `2030-12-31` and CAD 4,000,000 by `2040-12-31`.
 
 | Milestone | Target Date | Evidence |
 | --- | --- | --- |
-| Baseline boundary fixed | 2026-03-24 | `SCOPE_DEFINITION.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
+| Baseline boundary fixed | 2026-03-24 | `SCOPE_STATEMENT.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
 | Opening baseline and target gap quantified | 2026-03-28 | `METRICS.md`, `PROJECT_PLAN.md` |
 | Capital-governance model drafted | 2026-04-02 | `ASSUMPTIONS_CONSTRAINTS.md`, `RISK_REGISTER.md` |
 | Review and communication model fixed | 2026-04-04 | `COMMUNICATION_PLAN.md`, `DEPENDENCIES.md` |

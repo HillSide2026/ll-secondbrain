@@ -1,22 +1,29 @@
 # Success Criteria
 
-The project will be considered successful if:
+Initiation will be considered successful if:
 
-1. A software solution is selected that:
-   - Supports recurring compliance tracking
-   - Provides deadline escalation mechanisms
-   - Allows role-based access control
-   - Produces audit logs
-   - Integrates with existing firm workflows
+1. The real decision is explicit:
+   - buy
+   - build
+   - or defer
 
-2. A pilot test demonstrates:
-   - No missed deadlines during pilot
-   - Clear responsibility routing
-   - Acceptable usability
+2. Levine Law's minimum capability requirements are explicit enough to judge
+   those options coherently, including:
+   - entity record management
+   - recurring obligation tracking
+   - deadline escalation
+   - audit visibility
+   - responsibility routing
 
-3. Risk exposure is reduced relative to current state.
+3. The project identifies the decision-critical tradeoffs:
+   - cost
+   - control
+   - implementation burden
+   - downstream staffing implications
+   - risk posture
 
-4. ML1 formally approves:
-   - Tool selection
-   - Integration model
-   - Promotion pathway
+4. The packet is specific enough for ML1 to decide whether Planning should
+   proceed.
+
+5. No artifact silently assumes that procurement or build execution is already
+   authorized.

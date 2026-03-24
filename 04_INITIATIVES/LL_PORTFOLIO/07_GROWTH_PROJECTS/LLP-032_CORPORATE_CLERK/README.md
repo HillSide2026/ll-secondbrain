@@ -4,26 +4,33 @@ title: LLP-032 — Corporate Clerk
 owner: ML1
 status: draft
 created_date: 2026-02-26
-last_updated: 2026-02-26
-tags: []
+last_updated: 2026-03-23
+tags: [corporate-clerk, strategic-project]
 ---
 
 # LLP-032 — Corporate Clerk
 
 ## Purpose
 
-Placeholder project slot. Awaiting ML1-defined scope and intent.
+Determine how and when Levine Law should staff a reliable, reasonably
+well-trained corporate clerk.
 
 ## Scope
 
 ### In Scope
 
-- To be defined by ML1
+- role definition for a corporate clerk
+- staffing timing and activation logic
+- training, supervision, and quality-control framing
+- task-boundary design between clerk work and lawyer-only work
+- economic and operating readiness for staffing
 
 ### Out of Scope
 
-- Execution without ML1 approval
-- Treating placeholders as approved strategy
+- live hiring or onboarding without ML1 approval
+- unbounded delegation of legal work
+- treating draft role design as approved operating doctrine
+- staffing decisions disconnected from supervision and workload evidence
 
 ## ML1 Authority Statement
 
@@ -39,7 +46,8 @@ The System must NOT:
 
 ## Approval State
 
-**READ-ONLY** — Awaiting ML1 definition
+**DRAFT / INITIATION OPEN** — The core staffing question is now defined, but no
+ML1 initiation approval or planning authorization is recorded yet.
 
 ## Initiation Artifacts
 
@@ -49,7 +57,7 @@ The System must NOT:
 - `initiation/STAKEHOLDERS.md`
 - `initiation/RISK_SCAN.md`
 - `initiation/APPROVAL_RECORD.md`
-- `initiation/BUSINESS_CASE.md` *(strategic projects only)*
+- `initiation/BUSINESS_CASE.md`
 
 
 ## Planning (Stage 2) Artifacts
@@ -57,8 +65,8 @@ The System must NOT:
 Planning-stage artifacts are execution-readiness controls used to authorize execution and achievement of project goals.
 
 Core planning:
-- `SCOPE_DEFINITION.md`
-- `WORKPLAN.md` (includes milestones and resource plan sections)
+- `SCOPE_STATEMENT.md`
+- `PROJECT_PLAN.md`
 - `ASSUMPTIONS_CONSTRAINTS.md`
 - `DEPENDENCIES.md`
 - `RISK_REGISTER.md`
@@ -67,7 +75,7 @@ Core planning:
 Measurement architecture:
 - `METRICS.md`
 
-Current placeholder planning measurement artifacts live in `planning/`.
+Planning should open only after ML1 approves the initiation packet.
 
 ## Last ML1 Review Date
 

@@ -67,7 +67,7 @@ Any scope expansion requires explicit ML1 approval before execution.
 | Workstream | Scope | Primary Owner | Outputs |
 | --- | --- | --- | --- |
 | WS-01 User and Problem Lock | Freeze target user set and workflow problem for exporters | Matthew | `WORKPLAN.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
-| WS-02 Data and Rule Model Lock | Freeze jurisdiction list, tariff data requirements, and agreement-logic boundaries | Levine Law + Matthew | `SCOPE_DEFINITION.md`, `DEPENDENCIES.md` |
+| WS-02 Data and Rule Model Lock | Freeze jurisdiction list, tariff data requirements, and agreement-logic boundaries | Levine Law + Matthew | `SCOPE_STATEMENT.md`, `DEPENDENCIES.md` |
 | WS-03 MVP Solution Design | Freeze MVP feature boundary and technical architecture assumptions | Levine Law + Matthew | `executing/WORKPLAN.md`, `DEPENDENCIES.md` |
 | WS-04 Validation and Launch Model | Freeze pilot validation path, communication cadence, and risk controls | Matthew Holdings | `COMMUNICATION_PLAN.md`, `RISK_REGISTER.md`, `OKR.md` |
 | WS-05 Gate Packet Assembly | Finalize thresholds and gate recommendation package | Project Owner | `ML1_METRIC_APPROVAL.md`, `VALIDATION_REVIEW.md`, `../APPROVAL_RECORD.md` |
@@ -85,7 +85,7 @@ Any scope expansion requires explicit ML1 approval before execution.
 | --- | --- | --- | --- |
 | M1 - Product concept packet drafted | 2026-03-12 | finalized | Updated planning artifacts in `planning/` |
 | M2 - User/problem lock complete | 2026-03-14 | finalized | `WORKPLAN.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
-| M3 - Data/rule and MVP scope freeze complete | 2026-03-16 | finalized | `SCOPE_DEFINITION.md`, `DEPENDENCIES.md` |
+| M3 - Data/rule and MVP scope freeze complete | 2026-03-16 | finalized | `SCOPE_STATEMENT.md`, `DEPENDENCIES.md` |
 | M4 - Risk and communication model finalized | 2026-03-18 | finalized | `RISK_REGISTER.md`, `COMMUNICATION_PLAN.md` |
 | M5 - Metric threshold packet submitted | 2026-03-19 | approved | `ML1_METRIC_APPROVAL.md`, `OKR.md` |
 | M6 - Planning -> Executing gate decision | 2026-03-20 | approved | Updated `../APPROVAL_RECORD.md` |
@@ -95,7 +95,7 @@ Any scope expansion requires explicit ML1 approval before execution.
 | Item | Owner | Due Date | Evidence |
 | --- | --- | --- | --- |
 | Freeze target user set and workflow problem | Matthew | 2026-03-14 | `WORKPLAN.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
-| Freeze jurisdiction/data/rule model | Levine Law + Matthew | 2026-03-16 | `SCOPE_DEFINITION.md`, `DEPENDENCIES.md` |
+| Freeze jurisdiction/data/rule model | Levine Law + Matthew | 2026-03-16 | `SCOPE_STATEMENT.md`, `DEPENDENCIES.md` |
 | Freeze risk and communication controls | Matthew Holdings | 2026-03-18 | `RISK_REGISTER.md`, `COMMUNICATION_PLAN.md` |
 | Submit metric threshold proposal | ML1 | 2026-03-19 | `ML1_METRIC_APPROVAL.md`, `OKR.md` |
 | Assemble gate packet | Project Owner | 2026-03-20 | `VALIDATION_REVIEW.md`, `../APPROVAL_RECORD.md` |

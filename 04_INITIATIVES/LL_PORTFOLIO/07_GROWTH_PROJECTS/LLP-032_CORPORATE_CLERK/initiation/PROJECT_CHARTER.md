@@ -1,37 +1,50 @@
 # Project Charter
+
 Project ID: LLP-032
-Project Name: Corporate Clerk Role Architecture
-Portfolio: 02_Levine_Law_Portfolio
+Project Name: Corporate Clerk
+Project Path: 04_INITIATIVES/LL_PORTFOLIO/07_GROWTH_PROJECTS/LLP-032_CORPORATE_CLERK
 Project Type: Strategic Project
-Stage: Initiation
+Stage: Initiating
 
 ## 1. Purpose
-To design, define, and implement a Corporate Clerk role capable of executing defined non-lawyer corporate compliance tasks under structured supervision.
+
+Determine how and when Levine Law should staff a reliable, reasonably
+well-trained corporate clerk.
 
 ## 2. Nature of Project
-Role architecture and delegation framework development.
-No hiring required at initiation stage.
-No delegation authorized until doctrine is approved.
+
+Strategic staffing and role-architecture project.
+No hiring is authorized at this stage.
+No delegation is authorized at this stage.
 
 ## 3. Strategic Rationale
-- Increase execution capacity.
-- Reduce ML1 bottlenecks.
-- Enable scalable entity management services.
-- Improve cost efficiency through task stratification.
+
+- reduce ML1 bottlenecks in lower-level corporate execution work
+- create a safe non-lawyer leverage layer for recurring corporate services
+- support any future entity-management operating model
+- avoid role drift into unauthorized practice or weak supervision
+- decide timing based on workload and economics rather than intuition alone
 
 ## 4. High-Level Deliverable
-A formally defined Corporate Clerk role including:
-- Task taxonomy (allowed vs prohibited tasks)
-- Escalation matrix
-- Supervision protocol
-- SOP integration
-- Risk containment controls
+
+An ML1 decision packet covering:
+
+- role purpose and boundaries
+- likely task taxonomy
+- training and quality-control expectations
+- supervision and escalation dependencies
+- timing and activation conditions for staffing
+- whether planning should proceed
 
 ## 5. Authority
+
 Final approval authority: ML1.
 
 ## 6. Promotion Path
-Outputs migrate to:
-- 03_FIRM_OPERATIONS (role doctrine)
-- 04_RISK (delegation controls)
-- 02_PRACTICE_AREAS (if workflow doctrine modified)
+
+If approved, downstream outputs may later inform:
+
+- `03_FIRM_OPERATIONS` for onboarding and workflow design
+- `04_RISK` for role-boundary and escalation controls
+- `LLP-031` for system/process alignment
+- `LLP-034` for supervision architecture

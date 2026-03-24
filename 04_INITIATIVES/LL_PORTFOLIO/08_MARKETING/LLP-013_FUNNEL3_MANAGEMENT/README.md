@@ -64,7 +64,7 @@ Canonical offer map:
   - `planning/METRICS_LEGACY_DRAFT.md`
   - `planning/ML1_METRIC_APPROVAL.md`
 - Core planning packet is drafted in:
-  - `planning/SCOPE_DEFINITION.md`
+  - `planning/SCOPE_STATEMENT.md`
   - `planning/WORKPLAN.md`
   - `planning/ASSUMPTIONS_CONSTRAINTS.md`
   - `planning/DEPENDENCIES.md`

@@ -1,18 +1,18 @@
 # Risk Scan
 
 ## Top 5 Risks
-1. Strategic risk: the role design may permit unauthorized practice through improper delegation of legal judgment.
-2. Strategic risk: the supervision model may fail to maintain appropriate oversight.
-3. Strategic risk: work product standards may drift as the role expands.
-4. Strategic risk: role ambiguity may create cultural friction and internal misalignment.
-5. Financial risk: economic incentives may encourage inappropriate task transfer to lower-cost resources.
+1. Scope risk: the role boundary may drift into legal judgment or other lawyer-only work.
+2. Strategic risk: the firm may hire too early, before enough stable work exists to justify the role.
+3. Strategic risk: the training and supervision load may erase the capacity benefit the role is meant to create.
+4. Financial risk: the role may be uneconomic relative to the volume and value of work it is meant to absorb.
+5. Schedule risk: dependency on entity-management capability and supervision design may delay staffing readiness.
 
 ## Key Assumptions
-- The corporate clerk role can be bounded clearly enough to prevent legal-judgment drift.
-- Supervising lawyers will retain practical control over escalations and review.
-- Quality expectations can be defined and audited consistently.
-- The role will support firm operations without distorting team structure or accountability.
-- Economic pressure will not override role-boundary discipline.
+- a corporate clerk role can be bounded clearly enough to prevent legal-judgment drift
+- Levine Law can define a trainable body of work that is worth staffing
+- ML1 wants staffing timing to be driven by workload, supervision, and economics rather than intuition alone
+- role design can remain subordinate to supervision and risk doctrine
+- a clerk role, if ever activated, should strengthen rather than blur accountability
 
 ## Go / No-Go Judgment
 Decision: [Proceed | Do Not Proceed | Proceed with Conditions]

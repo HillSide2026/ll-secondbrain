@@ -1,4 +1,4 @@
-# Scope Definition
+# Scope Statement
 
 Project ID: LLP-006
 Project Path: 03_FIRM_OPERATIONS/LLP-006_MAINTENANCE
