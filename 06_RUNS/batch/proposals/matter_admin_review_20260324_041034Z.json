@@ -1,0 +1,565 @@
+{
+  "batch_id": "matter_admin_review_20260324_041034Z",
+  "generated_at": "2026-03-24T04:10:34Z",
+  "gmail_query": "in:inbox",
+  "project_id": "LLP-023",
+  "selection_summary": {
+    "inspected_threads": 44,
+    "listed_threads": 44,
+    "query": "in:inbox",
+    "reviewed_threads": 25
+  },
+  "single_matter_scope": "",
+  "threads": [
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-24T01:55:01Z",
+      "last_sender": "Upwork Notification <donotreply@upwork.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Upwork Notification <donotreply@upwork.com>",
+      "source_pointer": "gmail://thread/19d1d8d702cb44a2",
+      "state_signal_basis": "default_triage",
+      "subject": "Manual time was added",
+      "thread_id": "19d1d8d702cb44a2"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "last_message_at": "2026-03-23T22:52:48Z",
+      "last_sender": "Google Voice <voice-noreply@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Google Voice <voice-noreply@google.com>",
+      "source_pointer": "gmail://thread/19d1ce69c727bde3",
+      "state_signal_basis": "default_triage",
+      "subject": "New missed call from (647) 277-3554.",
+      "thread_id": "19d1ce69c727bde3"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_PERSONAL",
+        "IMPORTANT",
+        "INBOX",
+        "SENT"
+      ],
+      "last_message_at": "2026-03-23T19:41:29Z",
+      "last_sender": "Harry Bedi <harry@stream.money>",
+      "matter_number": "",
+      "message_count": 2,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Matthew Levine <matthew@levinelegal.ca>",
+      "source_pointer": "gmail://thread/19d07ea7b61a1153",
+      "state_signal_basis": "default_triage",
+      "subject": "Re: 1:1",
+      "thread_id": "19d07ea7b61a1153"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "STARRED",
+        "UNREAD",
+        "YELLOW_STAR"
+      ],
+      "last_message_at": "2026-03-23T18:05:40Z",
+      "last_sender": "Law Society Communication <do-not-reply@lso.ca>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Law Society Communication <do-not-reply@lso.ca>",
+      "source_pointer": "gmail://thread/19d1bf08339f1102",
+      "state_signal_basis": "default_triage",
+      "subject": "Reminder - Annual Report Must Be Filed by March 31/Rappel - La déclaration annuelle doit être déposée au plus tard le 31 mars",
+      "thread_id": "19d1bf08339f1102"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T18:15:53Z",
+      "last_sender": "Google Voice <voice-noreply@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Google Voice <voice-noreply@google.com>",
+      "source_pointer": "gmail://thread/19d1be91511ce06a",
+      "state_signal_basis": "default_triage",
+      "subject": "New voicemail from +52 33 2009 7759",
+      "thread_id": "19d1be91511ce06a"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T18:14:08Z",
+      "last_sender": "Google Voice <voice-noreply@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Google Voice <voice-noreply@google.com>",
+      "source_pointer": "gmail://thread/19d1be77a5c32341",
+      "state_signal_basis": "default_triage",
+      "subject": "New missed call from +52 33 2009 7759.",
+      "thread_id": "19d1be77a5c32341"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T17:39:49Z",
+      "last_sender": "\"FINTRAC-CANAFE / Supervision-Surveillance\" <noreply@event.eventbrite.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "\"FINTRAC-CANAFE / Supervision-Surveillance\" <noreply@event.eventbrite.com>",
+      "source_pointer": "gmail://thread/19d1bc82bbcac3be",
+      "state_signal_basis": "default_triage",
+      "subject": "Reminder for Industry Day",
+      "thread_id": "19d1bc82bbcac3be"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T17:33:08Z",
+      "last_sender": "Upwork Notification <donotreply@upwork.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Upwork Notification <donotreply@upwork.com>",
+      "source_pointer": "gmail://thread/19d1bc1f89ced48c",
+      "state_signal_basis": "default_triage",
+      "subject": "Payment Received - Thank You!",
+      "thread_id": "19d1bc1f89ced48c"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T17:49:57Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 2,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1ba3bab1aa530",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: Scaling fintechs with confidence @ Mon Mar 23, 2026 2pm - 3pm (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1ba3bab1aa530"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T17:50:02Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 2,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1ba39e11feafc",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: LL LUNCH @ Mon Mar 23, 2026 2pm - 2:30pm (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1ba39e11feafc"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T16:59:18Z",
+      "last_sender": "Asana <no-reply@asana.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "10_Action_Matthew",
+      "routing_rule": "",
+      "sender": "Asana <no-reply@asana.com>",
+      "source_pointer": "gmail://thread/19d1ba2fc42b8eeb",
+      "state_signal_basis": "legal_sender_signal",
+      "subject": "Monday - tasks due soon: 2, tasks assigned: 1 -  levinelegal.ca",
+      "thread_id": "19d1ba2fc42b8eeb"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T16:36:52Z",
+      "last_sender": "Google Voice <voice-noreply@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Google Voice <voice-noreply@google.com>",
+      "source_pointer": "gmail://thread/19d1b8e6f6e08f3b",
+      "state_signal_basis": "default_triage",
+      "subject": "New voicemail from (416) 421-2034",
+      "thread_id": "19d1b8e6f6e08f3b"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T16:33:07Z",
+      "last_sender": "Google Voice <voice-noreply@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Google Voice <voice-noreply@google.com>",
+      "source_pointer": "gmail://thread/19d1b8b03b4b90a7",
+      "state_signal_basis": "default_triage",
+      "subject": "New missed call from (416) 421-2034.",
+      "thread_id": "19d1b8b03b4b90a7"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T16:16:09Z",
+      "last_sender": "noreply@donotreply.soulpepper.com",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "20_Action_Team",
+      "routing_rule": "",
+      "sender": "noreply@donotreply.soulpepper.com",
+      "source_pointer": "gmail://thread/19d1b7b78beaf1e7",
+      "state_signal_basis": "admin_vendor_sender",
+      "subject": "New email from Tejvir Boparai",
+      "thread_id": "19d1b7b78beaf1e7"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T16:08:56Z",
+      "last_sender": "Artlist <team@mail.artlist.io>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "80_Junk (Pending Review)",
+      "routing_rule": "",
+      "sender": "Artlist <team@mail.artlist.io>",
+      "source_pointer": "gmail://thread/19d1b74e215983fe",
+      "state_signal_basis": "promotions_category",
+      "subject": "Welcome to Artlist",
+      "thread_id": "19d1b74e215983fe"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T16:06:23Z",
+      "last_sender": "Google Voice <voice-noreply@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Google Voice <voice-noreply@google.com>",
+      "source_pointer": "gmail://thread/19d1b7289710c44f",
+      "state_signal_basis": "default_triage",
+      "subject": "New missed call from (416) 961-1177.",
+      "thread_id": "19d1b7289710c44f"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T16:00:05Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1b6cc5d5c665d",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: LLA 3 @ Tue Mar 24, 2026 12pm - 12:30pm (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1b6cc5d5c665d"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T15:54:07Z",
+      "last_sender": "Upwork Notification <donotreply@upwork.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Upwork Notification <donotreply@upwork.com>",
+      "source_pointer": "gmail://thread/19d1b674b82ebb9f",
+      "state_signal_basis": "default_triage",
+      "subject": "Matthew, here is your weekly billing report",
+      "thread_id": "19d1b674b82ebb9f"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T15:49:53Z",
+      "last_sender": "Zoom Clips <no-reply@zoom.us>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Zoom Clips <no-reply@zoom.us>",
+      "source_pointer": "gmail://thread/19d1b6372995f501",
+      "state_signal_basis": "default_triage",
+      "subject": "Clips - your clip got its first view",
+      "thread_id": "19d1b6372995f501"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_PERSONAL",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "last_message_at": "2026-03-23T15:47:04Z",
+      "last_sender": "Tulika Dhar <tulika.d@stream.money>",
+      "matter_number": "",
+      "message_count": 2,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Vaida Watts <v.watts@equalsmoney.com>",
+      "source_pointer": "gmail://thread/19d1b3dfdd02da32",
+      "state_signal_basis": "default_triage",
+      "subject": "Re: Get Stream - Onboarding Guidance",
+      "thread_id": "19d1b3dfdd02da32"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T15:50:10Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 2,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1b35ed9f42e9e",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: LLA 3 @ Mon Mar 23, 2026 12pm - 12:30pm (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1b35ed9f42e9e"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T14:59:57Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1b35b3ef12f81",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: LLA 2 @ Tue Mar 24, 2026 11am - 11:45am (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1b35b3ef12f81"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T14:30:00Z",
+      "last_sender": "LSO CPD <CPD@lso.ca>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "LSO CPD <CPD@lso.ca>",
+      "source_pointer": "gmail://thread/19d1b20f8092220f",
+      "state_signal_basis": "default_triage",
+      "subject": "Upcoming live replays in April!",
+      "thread_id": "19d1b20f8092220f"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T14:05:06Z",
+      "last_sender": "Glassdoor <noreply@glassdoor.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Glassdoor <noreply@glassdoor.com>",
+      "source_pointer": "gmail://thread/19d1b0385a0c2bb3",
+      "state_signal_basis": "default_triage",
+      "subject": "One login to connect Glassdoor and Indeed",
+      "thread_id": "19d1b0385a0c2bb3"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T14:00:15Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1aff0e76468e5",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: LLA 1 @ Tue Mar 24, 2026 10am - 10:30am (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1aff0e76468e5"
+    }
+  ],
+  "threads_reviewed": 25
+}

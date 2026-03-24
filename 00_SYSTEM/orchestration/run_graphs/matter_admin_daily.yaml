@@ -1,11 +1,11 @@
 schema_version: 0.1
 id: matter_admin_daily
 name: Matter Admin Daily
-description: Daily Matter Command and Control run (index + routing + SharePoint deltas + digest).
+description: Daily Matter Command and Control run (25-thread review cap + routing + SharePoint deltas + digest).
 bundle: matter_admin_daily
 gates:
   - ml1_approval_required
-  - no_source_writeback
+  - no_unapproved_source_writeback
   - citation_pointer_required
 steps:
   - id: load_clio_matters
@@ -24,6 +24,11 @@ steps:
     outputs:
       - path: 05_MATTERS/DASHBOARDS/INBOX_UNMAPPED.md
         label: DERIVED_ARTIFACT
+  - id: review_gmail_threads
+    action: agent_inbox_state_review
+    outputs:
+      - path: 06_RUNS/batch/proposals/
+        label: BATCH_PROPOSAL
   - id: compile_digest
     action: agent_digest_compiler
     outputs:

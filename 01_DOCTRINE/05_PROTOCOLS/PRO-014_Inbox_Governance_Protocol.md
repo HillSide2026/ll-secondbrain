@@ -80,7 +80,7 @@ Exactly one state label must be applied to each thread. State labels are mutuall
 | `50_Calendar` | Thread is a Google Calendar notification; no separate action required. |
 | `60_Filing` | Thread requires filing in SharePoint or Clio; no separate action. |
 | `70_Filed` | Thread has been filed; no further action required. ML1-assigned only. |
-| `80_Junk (Pending Review)` | Suspected low-value or junk; flagged for ML1 review within the state-management lane. |
+| `80_Junk_to_Review` | Suspected low-value or junk; flagged for ML1 review within the state-management lane. |
 | `90_Archive` | No further action required. |
 
 **Enforcement rule:** Any thread carrying more than one state label is in violation.
@@ -213,7 +213,7 @@ determines the proposed state label.
 | 6 | ML1 sent last message AND thread has >= 2 messages | `40_Replied_Awaiting_Response` | ML1 is waiting for a response |
 | 7 | Subject contains an `ARCHIVE_SUBJECT_SIGNALS` keyword AND no matter label | `90_Archive` | Automated receipt or completion; no action needed |
 | 8 | Sender domain in `LEGAL_SENDERS` | `10_Action_Matthew` | Known legal service provider |
-| 9 | Snippet contains `unsubscribe` and no matter association is found | `80_Junk (Pending Review)` | Low-value bulk mail; keep for ML1 review |
+| 9 | Snippet contains `unsubscribe` and no matter association is found | `80_Junk_to_Review` | Low-value bulk mail; keep for ML1 review |
 | 10 | No condition matched | `00_Triage` | Default; requires manual review |
 
 Category-based inbox cleanup signals such as Gmail `CATEGORY_PROMOTIONS`,
@@ -248,7 +248,7 @@ Additional enforcement rules:
 
 ### 5.3 Junk resolution rule (NTD-3, resolved)
 
-Threads assigned `80_Junk (Pending Review)` are not auto-promoted. The batch proposal
+Threads assigned `80_Junk_to_Review` are not auto-promoted. The batch proposal
 includes them for ML1 review. ML1 may:
 - Approve promotion to `90_Archive` (standard outcome for confirmed junk)
 - Assign a different state label if the thread was misclassified

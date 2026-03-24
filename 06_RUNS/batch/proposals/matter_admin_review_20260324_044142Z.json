@@ -1,0 +1,600 @@
+{
+  "batch_id": "matter_admin_review_20260324_044142Z",
+  "generated_at": "2026-03-24T04:41:42Z",
+  "gmail_query": "in:inbox",
+  "project_id": "LLP-023",
+  "selection_summary": {
+    "inspected_threads": 52,
+    "listed_threads": 52,
+    "query": "in:inbox",
+    "reviewed_threads": 25
+  },
+  "single_matter_scope": "",
+  "threads": [
+    {
+      "confidence": "medium",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "IMPORTANT",
+        "INBOX",
+        "TRASH",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-24T04:35:48Z",
+      "last_sender": "\"JOCELYN ONG (Google Sheets)\" <comments-noreply@docs.google.com>",
+      "matter_number": "",
+      "message_count": 16,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "\"threcia@levinelegalser... (Google Sheets)\" <comments-noreply@docs.google.com>",
+      "source_pointer": "gmail://thread/196ff9e76761f782",
+      "state_signal_basis": "default_triage",
+      "subject": "LL - Accounts -  WIP INVOICING - CLIO  .xlsx",
+      "thread_id": "196ff9e76761f782"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-24T01:55:01Z",
+      "last_sender": "Upwork Notification <donotreply@upwork.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Upwork Notification <donotreply@upwork.com>",
+      "source_pointer": "gmail://thread/19d1d8d702cb44a2",
+      "state_signal_basis": "default_triage",
+      "subject": "Manual time was added",
+      "thread_id": "19d1d8d702cb44a2"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "last_message_at": "2026-03-23T22:52:48Z",
+      "last_sender": "Google Voice <voice-noreply@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Google Voice <voice-noreply@google.com>",
+      "source_pointer": "gmail://thread/19d1ce69c727bde3",
+      "state_signal_basis": "default_triage",
+      "subject": "New missed call from (647) 277-3554.",
+      "thread_id": "19d1ce69c727bde3"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_PERSONAL",
+        "IMPORTANT",
+        "INBOX",
+        "SENT"
+      ],
+      "last_message_at": "2026-03-23T19:41:29Z",
+      "last_sender": "Harry Bedi <harry@stream.money>",
+      "matter_number": "",
+      "message_count": 2,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Matthew Levine <matthew@levinelegal.ca>",
+      "source_pointer": "gmail://thread/19d07ea7b61a1153",
+      "state_signal_basis": "default_triage",
+      "subject": "Re: 1:1",
+      "thread_id": "19d07ea7b61a1153"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "STARRED",
+        "UNREAD",
+        "YELLOW_STAR"
+      ],
+      "last_message_at": "2026-03-23T18:05:40Z",
+      "last_sender": "Law Society Communication <do-not-reply@lso.ca>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Law Society Communication <do-not-reply@lso.ca>",
+      "source_pointer": "gmail://thread/19d1bf08339f1102",
+      "state_signal_basis": "default_triage",
+      "subject": "Reminder - Annual Report Must Be Filed by March 31/Rappel - La déclaration annuelle doit être déposée au plus tard le 31 mars",
+      "thread_id": "19d1bf08339f1102"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T18:15:53Z",
+      "last_sender": "Google Voice <voice-noreply@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Google Voice <voice-noreply@google.com>",
+      "source_pointer": "gmail://thread/19d1be91511ce06a",
+      "state_signal_basis": "default_triage",
+      "subject": "New voicemail from +52 33 2009 7759",
+      "thread_id": "19d1be91511ce06a"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T18:14:08Z",
+      "last_sender": "Google Voice <voice-noreply@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Google Voice <voice-noreply@google.com>",
+      "source_pointer": "gmail://thread/19d1be77a5c32341",
+      "state_signal_basis": "default_triage",
+      "subject": "New missed call from +52 33 2009 7759.",
+      "thread_id": "19d1be77a5c32341"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T17:39:49Z",
+      "last_sender": "\"FINTRAC-CANAFE / Supervision-Surveillance\" <noreply@event.eventbrite.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "\"FINTRAC-CANAFE / Supervision-Surveillance\" <noreply@event.eventbrite.com>",
+      "source_pointer": "gmail://thread/19d1bc82bbcac3be",
+      "state_signal_basis": "default_triage",
+      "subject": "Reminder for Industry Day",
+      "thread_id": "19d1bc82bbcac3be"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T17:33:08Z",
+      "last_sender": "Upwork Notification <donotreply@upwork.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Upwork Notification <donotreply@upwork.com>",
+      "source_pointer": "gmail://thread/19d1bc1f89ced48c",
+      "state_signal_basis": "default_triage",
+      "subject": "Payment Received - Thank You!",
+      "thread_id": "19d1bc1f89ced48c"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T16:36:52Z",
+      "last_sender": "Google Voice <voice-noreply@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Google Voice <voice-noreply@google.com>",
+      "source_pointer": "gmail://thread/19d1b8e6f6e08f3b",
+      "state_signal_basis": "default_triage",
+      "subject": "New voicemail from (416) 421-2034",
+      "thread_id": "19d1b8e6f6e08f3b"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T16:33:07Z",
+      "last_sender": "Google Voice <voice-noreply@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Google Voice <voice-noreply@google.com>",
+      "source_pointer": "gmail://thread/19d1b8b03b4b90a7",
+      "state_signal_basis": "default_triage",
+      "subject": "New missed call from (416) 421-2034.",
+      "thread_id": "19d1b8b03b4b90a7"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T16:06:23Z",
+      "last_sender": "Google Voice <voice-noreply@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Google Voice <voice-noreply@google.com>",
+      "source_pointer": "gmail://thread/19d1b7289710c44f",
+      "state_signal_basis": "default_triage",
+      "subject": "New missed call from (416) 961-1177.",
+      "thread_id": "19d1b7289710c44f"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T15:54:07Z",
+      "last_sender": "Upwork Notification <donotreply@upwork.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Upwork Notification <donotreply@upwork.com>",
+      "source_pointer": "gmail://thread/19d1b674b82ebb9f",
+      "state_signal_basis": "default_triage",
+      "subject": "Matthew, here is your weekly billing report",
+      "thread_id": "19d1b674b82ebb9f"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T15:49:53Z",
+      "last_sender": "Zoom Clips <no-reply@zoom.us>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Zoom Clips <no-reply@zoom.us>",
+      "source_pointer": "gmail://thread/19d1b6372995f501",
+      "state_signal_basis": "default_triage",
+      "subject": "Clips - your clip got its first view",
+      "thread_id": "19d1b6372995f501"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_PERSONAL",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "last_message_at": "2026-03-23T15:47:04Z",
+      "last_sender": "Tulika Dhar <tulika.d@stream.money>",
+      "matter_number": "",
+      "message_count": 2,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Vaida Watts <v.watts@equalsmoney.com>",
+      "source_pointer": "gmail://thread/19d1b3dfdd02da32",
+      "state_signal_basis": "default_triage",
+      "subject": "Re: Get Stream - Onboarding Guidance",
+      "thread_id": "19d1b3dfdd02da32"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T14:30:00Z",
+      "last_sender": "LSO CPD <CPD@lso.ca>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "LSO CPD <CPD@lso.ca>",
+      "source_pointer": "gmail://thread/19d1b20f8092220f",
+      "state_signal_basis": "default_triage",
+      "subject": "Upcoming live replays in April!",
+      "thread_id": "19d1b20f8092220f"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "no_change",
+      "existing_state_labels": [
+        "00_Triage"
+      ],
+      "labels": [
+        "00_Triage",
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T14:05:06Z",
+      "last_sender": "Glassdoor <noreply@glassdoor.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Glassdoor <noreply@glassdoor.com>",
+      "source_pointer": "gmail://thread/19d1b0385a0c2bb3",
+      "state_signal_basis": "default_triage",
+      "subject": "One login to connect Glassdoor and Indeed",
+      "thread_id": "19d1b0385a0c2bb3"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_PROMOTIONS",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T14:00:00Z",
+      "last_sender": "Jordan Atin from eState Planner <jordan@e-stateplanner.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "80_Junk_to_Review",
+      "routing_rule": "",
+      "sender": "Jordan Atin from eState Planner <jordan@e-stateplanner.com>",
+      "source_pointer": "gmail://thread/19d1afed0ef1f08a",
+      "state_signal_basis": "promotions_category",
+      "subject": "[CPD Webinar] Multiple Will Planning and Drafting Pt. 2",
+      "thread_id": "19d1afed0ef1f08a"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T14:49:54Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 2,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1afebb00b3420",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: LLA 2 @ Mon Mar 23, 2026 11am - 11:45am (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1afebb00b3420"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T13:59:07Z",
+      "last_sender": "Torys Seminars <Torys_Seminars@mail.torys.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Torys Seminars <Torys_Seminars@mail.torys.com>",
+      "source_pointer": "gmail://thread/19d1afe00cafacc5",
+      "state_signal_basis": "default_triage",
+      "subject": "Reminder: Scaling fintechs with confidence: how risk, governance and capital evolve with growth",
+      "thread_id": "19d1afe00cafacc5"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T13:50:05Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1af5bc84012ab",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: Open Office @ Tue Mar 24, 2026 9:50am - 9:55am (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1af5bc84012ab"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_PERSONAL",
+        "CATEGORY_UPDATES",
+        "IMPORTANT",
+        "INBOX",
+        "SENT",
+        "STARRED",
+        "YELLOW_STAR"
+      ],
+      "last_message_at": "2026-03-23T18:35:38Z",
+      "last_sender": "Grace Mendoza <grace@levine-law.ca>",
+      "matter_number": "",
+      "message_count": 4,
+      "proposed_state_label": "20_Action_Team",
+      "routing_rule": "",
+      "sender": "reply@donotreply.soulpepper.com",
+      "source_pointer": "gmail://thread/19d1adf874e3eafe",
+      "state_signal_basis": "admin_vendor_sender",
+      "subject": "Re: AI Call Recap",
+      "thread_id": "19d1adf874e3eafe"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T14:04:49Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 2,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1ad5acb1d8beb",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: LLA I @ Mon Mar 23, 2026 10:15am - 10:45am (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1ad5acb1d8beb"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T13:39:49Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 2,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1abee1ad3b617",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: Open Office @ Mon Mar 23, 2026 9:50am - 9:55am (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1abee1ad3b617"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T11:50:13Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 2,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1a59e31d11dce",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: Stream x Innowise @ Mon Mar 23, 2026 8am - 9am (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1a59e31d11dce"
+    }
+  ],
+  "threads_reviewed": 25
+}

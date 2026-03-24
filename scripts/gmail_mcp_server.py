@@ -66,8 +66,12 @@ CANONICAL_STATE_LABELS = {
     "50_Calendar",
     "60_Filing",
     "70_Filed",
-    "80_Junk (Pending Review)",
+    "80_Junk_to_Review",
     "90_Archive",
+}
+LEGACY_STATE_LABEL_ALIASES = {
+    "08_Junk_to_Review": "80_Junk_to_Review",
+    "80_Junk (Pending Review)": "80_Junk_to_Review",
 }
 
 MATTER_TIER_PREFIXES = {"LL/1./1.1/", "LL/1./1.2/", "LL/1./1.3/", "LL/1./1.4/"}
@@ -585,7 +589,7 @@ def tool_preview_garbage_candidates(args: Dict[str, Any]) -> str:
     import batch_classifier as governance_batch_classifier
 
     batch = governance_batch_classifier.generate_batch(batch_size)
-    candidate_labels = {"80_Junk (Pending Review)", "90_Archive"}
+    candidate_labels = {"80_Junk_to_Review", "90_Archive"}
     candidates = [
         thread
         for thread in batch.get("threads", [])
@@ -595,7 +599,7 @@ def tool_preview_garbage_candidates(args: Dict[str, Any]) -> str:
         "batch_id": batch.get("batch_id"),
         "batch_size": batch.get("batch_size", 0),
         "candidate_count": len(candidates),
-        "junk_count": sum(1 for item in candidates if item.get("proposed_label") == "80_Junk (Pending Review)"),
+        "junk_count": sum(1 for item in candidates if item.get("proposed_label") == "80_Junk_to_Review"),
         "archive_count": sum(1 for item in candidates if item.get("proposed_label") == "90_Archive"),
         "candidates": candidates,
     }
@@ -827,6 +831,7 @@ def tool_apply_state_label(args: Dict[str, Any]) -> str:
 
     if not thread_id:
         raise ValueError("'thread_id' is required.")
+    state_label = LEGACY_STATE_LABEL_ALIASES.get(state_label, state_label)
     if state_label not in CANONICAL_STATE_LABELS:
         raise ValueError(f"'state_label' must be one of {sorted(CANONICAL_STATE_LABELS)}.")
 
@@ -840,9 +845,10 @@ def tool_apply_state_label(args: Dict[str, Any]) -> str:
     thread = _get_thread(service, thread_id)
     thread_label_ids = _collect_thread_label_ids(thread)
 
+    state_label_names = sorted(set(CANONICAL_STATE_LABELS).union(LEGACY_STATE_LABEL_ALIASES.keys()))
     current_state_labels = [
         label_name
-        for label_name in CANONICAL_STATE_LABELS
+        for label_name in state_label_names
         if name_to_id.get(label_name) in thread_label_ids
     ]
     remove_label_ids = [
@@ -1161,7 +1167,7 @@ _TOOLS = [
         "name": "preview_garbage_candidates",
         "description": (
             "Run the PRO-014 state-and-matter classifier in proposal mode and return current "
-            "threads that would be marked as 80_Junk (Pending Review) or 90_Archive. "
+            "threads that would be marked as 80_Junk_to_Review or 90_Archive. "
             "This does not include PRO-018 soft-junk cleanup candidates."
         ),
         "inputSchema": {

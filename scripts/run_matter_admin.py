@@ -13,7 +13,8 @@ Slice 2 includes:
 
 Authority boundary:
 - Read connectors only
-- No writes to Clio/Gmail/SharePoint
+- No broad or unapproved writes to Clio/Gmail/SharePoint
+- Controlled Gmail state-label writes require explicit ML1 approval
 - ML2 stores derived artifacts and source pointers only
 """
 
@@ -22,9 +23,11 @@ from __future__ import annotations
 import argparse
 import json
 import re
-from collections import defaultdict
+import subprocess
+from collections import Counter, defaultdict
 from dataclasses import dataclass
 from datetime import datetime, timezone
+from functools import lru_cache
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
@@ -46,10 +49,18 @@ DEFAULT_GMAIL_FALLBACK = REPO_ROOT / "06_RUNS" / "ops" / "gmail_fetch_latest.jso
 DEFAULT_SHAREPOINT_METADATA_ROOT = (
     REPO_ROOT / "09_INBOX" / "_sources" / "sharepoint" / "metadata" / "legalmatters_library"
 )
+DEFAULT_SHAREPOINT_RAW_ROOT = REPO_ROOT / "09_INBOX" / "_sources" / "sharepoint" / "raw" / "legalmatters_library"
 DEFAULT_MATTER_SHAREPOINT_MAP = REPO_ROOT / "05_MATTERS" / "_REGISTRY" / "matter_sharepoint_map.yml"
+DEFAULT_MATTER_IDENTITY_MAP = REPO_ROOT / "00_SYSTEM" / "matters" / "matter_identity_map.yaml"
 DEFAULT_MATTER_FOLDER_RULES = CONFIG_DIR / "matter_folder_rules.yml"
 DEFAULT_MATTER_DELIVERY_TAXONOMY = CONFIG_DIR / "matter_delivery_taxonomy.yml"
 DEFAULT_DISCOVERY_GAPS = REPO_ROOT / "09_INBOX" / "_sources" / "sharepoint" / "discovery" / "gaps.md"
+DEFAULT_MAX_THREADS = 25
+DEFAULT_SHAREPOINT_SIGNAL_TEXT_EXTENSIONS = {".doc", ".docx", ".txt", ".md"}
+DEFAULT_SHAREPOINT_SIGNAL_TEXT_CHAR_LIMIT = 12000
+DEFAULT_SHAREPOINT_SIGNAL_TEXT_DOC_LIMIT = 12
+BATCH_PROPOSALS_DIR = REPO_ROOT / "06_RUNS" / "batch" / "proposals"
+BATCH_EXECUTIONS_DIR = REPO_ROOT / "06_RUNS" / "batch" / "executions"
 
 MATTER_INDEX_PATH = DASHBOARD_DIR / "MATTER_INDEX.md"
 INBOX_UNMAPPED_PATH = DASHBOARD_DIR / "INBOX_UNMAPPED.md"
@@ -57,6 +68,233 @@ MATTER_DIGEST_PATH = DASHBOARD_DIR / "MATTER_DIGEST.md"
 SHAREPOINT_GAPS_PATH = DASHBOARD_DIR / "SHAREPOINT_GAPS.md"
 
 MATTER_TIERS = ("ESSENTIAL", "STRATEGIC", "STANDARD", "PARKED")
+CANONICAL_STATE_LABELS = (
+    "00_Triage",
+    "10_Action_Matthew",
+    "20_Action_Team",
+    "30_Waiting_External",
+    "40_Replied_Awaiting_Response",
+    "50_Calendar",
+    "60_Filing",
+    "70_Filed",
+    "80_Junk_to_Review",
+    "90_Archive",
+)
+LEGACY_STATE_LABEL_ALIASES = {
+    "08_Junk_to_Review": "80_Junk_to_Review",
+    "80_Junk (Pending Review)": "80_Junk_to_Review",
+}
+MATTHEW_EMAILS = {"matthew@levinelegal.ca", "matthew@levine-law.ca"}
+TEAM_SIGNALS = {
+    "levinelegalservices.com",
+    "lino@levinelegal.ca",
+    "grace@levinelegal.ca",
+    "lino@levine-law.ca",
+    "grace@levine-law.ca",
+}
+ADMIN_SIGNALS = {
+    "telus.com",
+    "connect.telus.com",
+    "soulpepper.com",
+    "amazon.ca",
+    "amazon.com",
+    "regus.com",
+}
+LEGAL_SIGNALS = {
+    "cra-arc.gc.ca",
+    "hamlins.com",
+    "clio.com",
+    "mail.hellosign.com",
+    "dropbox.com",
+    "cassels.com",
+    "rousseaumazzuca.com",
+    "docuseal.com",
+    "cestlavielaw.ca",
+    "asana.com",
+}
+AUTOMATED_SENDER_SIGNALS = (
+    "noreply",
+    "no-reply",
+    "donotreply",
+    "do_not_reply",
+    "notifications@",
+    "automated@",
+    "system@",
+)
+CALENDAR_SENDER = "calendar-notification@google.com"
+DEFAULT_GMAIL_REVIEW_QUERY = "in:inbox"
+GENERIC_IDENTITY_KEYS = {
+    "alerts",
+    "archive",
+    "agreement",
+    "agreements",
+    "amendment",
+    "application",
+    "articles",
+    "authorizing",
+    "board",
+    "business",
+    "certificate",
+    "client",
+    "clients",
+    "closing",
+    "company",
+    "compliance",
+    "consent",
+    "construction",
+    "corporation",
+    "corporations",
+    "connect",
+    "delivery",
+    "director",
+    "directors",
+    "document",
+    "documents",
+    "docs",
+    "draft",
+    "drafts",
+    "email",
+    "filing",
+    "financial",
+    "forms",
+    "gmail",
+    "guidance",
+    "holdings",
+    "hello",
+    "info",
+    "inc",
+    "incorporated",
+    "incorporation",
+    "index",
+    "instructions",
+    "intent",
+    "limited",
+    "llp",
+    "matter",
+    "matters",
+    "marketing",
+    "matthew",
+    "matthewsimac",
+    "ml1",
+    "month",
+    "notice",
+    "ontario",
+    "operations",
+    "package",
+    "payment",
+    "payments",
+    "policy",
+    "purchase",
+    "register",
+    "registration",
+    "received",
+    "release",
+    "releaseagreement",
+    "report",
+    "reports",
+    "request",
+    "resignation",
+    "resolution",
+    "review",
+    "schedule",
+    "services",
+    "share",
+    "shareholder",
+    "shareholders",
+    "sharepurchase",
+    "sports",
+    "support",
+    "street",
+    "strategy",
+    "systems",
+    "text",
+    "today",
+    "true",
+    "updated",
+    "vendor",
+    "work",
+    "year",
+}
+TEXT_PHRASE_GENERIC_WORDS = {
+    "account",
+    "accounts",
+    "adjusted",
+    "admin",
+    "agreement",
+    "agreements",
+    "amount",
+    "analysis",
+    "ancillary",
+    "application",
+    "applications",
+    "approval",
+    "assessment",
+    "board",
+    "broker",
+    "business",
+    "centre",
+    "closing",
+    "comment",
+    "connect",
+    "date",
+    "days",
+    "director",
+    "directors",
+    "document",
+    "documents",
+    "draft",
+    "drafts",
+    "filing",
+    "filings",
+    "first",
+    "form",
+    "forms",
+    "guidance",
+    "incident",
+    "index",
+    "instructions",
+    "intent",
+    "monthly",
+    "notice",
+    "onboarding",
+    "operations",
+    "package",
+    "payment",
+    "payments",
+    "period",
+    "policy",
+    "program",
+    "questionnaire",
+    "register",
+    "registration",
+    "report",
+    "reports",
+    "request",
+    "response",
+    "review",
+    "risk",
+    "schedule",
+    "schedules",
+    "second",
+    "services",
+    "sheet",
+    "sheets",
+    "subject",
+    "supervision",
+    "system",
+    "third",
+    "this",
+    "training",
+    "transaction",
+    "transactions",
+    "update",
+    "updates",
+    "view",
+    "wire",
+}
+PROPER_PHRASE_PATTERN = re.compile(
+    r"\b(?:[A-Z][A-Za-z0-9&'.-]{2,}|[A-Z]{2,})(?:\s+(?:[A-Z][A-Za-z0-9&'.-]{2,}|[A-Z]{2,}|[0-9]{2,})){0,3}\b"
+)
 
 
 @dataclass(frozen=True)
@@ -90,6 +328,10 @@ class ThreadRef:
     labels: Tuple[str, ...]
     latest_snippet: str
     source_pointer: str
+    sender: str = ""
+    last_sender: str = ""
+    message_count: int = 0
+    state_labels: Tuple[str, ...] = tuple()
 
 
 @dataclass(frozen=True)
@@ -186,6 +428,413 @@ def load_json(path: Path) -> Any:
         return json.loads(path.read_text(encoding="utf-8"))
     except json.JSONDecodeError:
         return None
+
+
+def load_matter_identity_payload() -> Dict[str, Any]:
+    if not DEFAULT_MATTER_IDENTITY_MAP.exists():
+        return {}
+
+    with DEFAULT_MATTER_IDENTITY_MAP.open("r", encoding="utf-8") as handle:
+        raw = yaml.safe_load(handle) or {}
+    return raw if isinstance(raw, dict) else {}
+
+
+def normalize_identity_token(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", (value or "").lower())
+
+
+def is_viable_signal_token(token: str) -> bool:
+    if len(token) < 4:
+        return False
+    if token in GENERIC_IDENTITY_KEYS:
+        return False
+    if not re.search(r"[a-z]", token):
+        return False
+    if token.endswith(("doc", "docx", "pdf", "msg", "xlsx", "pptx")):
+        return False
+    return True
+
+
+def tokenize_identity_text(value: str) -> set[str]:
+    return {
+        token
+        for token in re.split(r"[^a-z0-9]+", (value or "").lower())
+        if token
+    }
+
+
+def extract_sender_email(sender: str) -> str:
+    sender_low = (sender or "").strip().lower()
+    match = re.search(r"[\w.+-]+@[\w.-]+\.\w+", sender_low)
+    return match.group(0) if match else ""
+
+
+def extract_sender_domain(sender: str) -> str:
+    email = extract_sender_email(sender)
+    if "@" not in email:
+        return ""
+    return email.split("@", 1)[1]
+
+
+def merge_identity_indexes(*indexes: Dict[str, Dict[str, set[str]]]) -> Dict[str, Dict[str, set[str]]]:
+    sender_map: Dict[str, set[str]] = {}
+    domain_map: Dict[str, set[str]] = {}
+    name_key_map: Dict[str, set[str]] = {}
+
+    for current in indexes:
+        for token, matters in (current.get("senders") or {}).items():
+            sender_map.setdefault(token, set()).update(matters)
+        for token, matters in (current.get("domains") or {}).items():
+            domain_map.setdefault(token, set()).update(matters)
+        for token, matters in (current.get("name_keys") or {}).items():
+            name_key_map.setdefault(token, set()).update(matters)
+
+    return {
+        "senders": sender_map,
+        "domains": domain_map,
+        "name_keys": name_key_map,
+    }
+
+
+@lru_cache(maxsize=1)
+def load_base_matter_identity_indexes() -> Dict[str, Dict[str, set[str]]]:
+    raw = load_matter_identity_payload()
+
+    sender_map: Dict[str, set[str]] = {}
+    domain_map: Dict[str, set[str]] = {}
+    name_key_map: Dict[str, set[str]] = {}
+
+    for matter in raw.get("matters", []):
+        matter_id = str(matter.get("matter_id") or "").strip()
+        if not matter_id:
+            continue
+        aliases = (((matter.get("aliases") or {}).get("email")) or {})
+
+        for sender in aliases.get("senders", []) or []:
+            sender_norm = str(sender).strip().lower()
+            if sender_norm:
+                sender_map.setdefault(sender_norm, set()).add(matter_id)
+
+        for domain in aliases.get("domains", []) or []:
+            domain_norm = str(domain).strip().lower()
+            if domain_norm:
+                domain_map.setdefault(domain_norm, set()).add(matter_id)
+
+        for name_key in aliases.get("name_keys", []) or []:
+            token = normalize_identity_token(str(name_key))
+            if token and token not in GENERIC_IDENTITY_KEYS:
+                name_key_map.setdefault(token, set()).add(matter_id)
+
+    return {
+        "senders": sender_map,
+        "domains": domain_map,
+        "name_keys": name_key_map,
+    }
+
+
+@lru_cache(maxsize=1)
+def load_brief_matter_signal_indexes() -> Dict[str, Dict[str, set[str]]]:
+    raw = load_matter_identity_payload()
+    name_key_map: Dict[str, set[str]] = defaultdict(set)
+
+    for matter in raw.get("matters", []):
+        if not isinstance(matter, dict):
+            continue
+        matter_id = str(matter.get("matter_id") or "").strip()
+        if not matter_id:
+            continue
+        brief = matter.get("brief") if isinstance(matter.get("brief"), dict) else {}
+        if not isinstance(brief, dict):
+            brief = {}
+
+        source_strings: List[str] = []
+        matter_name = str(brief.get("matter_name") or "").strip()
+        if matter_name:
+            source_strings.append(matter_name)
+
+        for list_key in ("client", "third_parties", "related_parties"):
+            raw_values = brief.get(list_key)
+            if not isinstance(raw_values, list):
+                continue
+            source_strings.extend(str(value).strip() for value in raw_values if str(value).strip())
+
+        for source in source_strings:
+            tokens = extract_path_signal_tokens(source)
+            tokens.update(extract_text_signal_tokens(source))
+            for token in tokens:
+                if is_viable_signal_token(token):
+                    name_key_map[token].add(matter_id)
+
+    return {
+        "senders": {},
+        "domains": {},
+        "name_keys": dict(name_key_map),
+    }
+
+
+def _add_signal_variants(target: set[str], raw_tokens: Iterable[str]) -> None:
+    normalized_words = [normalize_identity_token(raw) for raw in raw_tokens if normalize_identity_token(raw)]
+    filtered: List[str] = []
+    for raw in raw_tokens:
+        token = normalize_identity_token(raw)
+        if not is_viable_signal_token(token):
+            continue
+        filtered.append(token)
+        target.add(token)
+
+    for left, right in zip(normalized_words, normalized_words[1:]):
+        combo = normalize_identity_token(left + right)
+        if is_viable_signal_token(combo):
+            target.add(combo)
+
+    if len(filtered) >= 2:
+        combined = normalize_identity_token("".join(filtered))
+        if is_viable_signal_token(combined):
+            target.add(combined)
+
+
+def extract_path_signal_tokens(value: str) -> set[str]:
+    tokens: set[str] = set()
+    cleaned = re.sub(r"\b\d{2}-\d{3,4}-\d{5}\b", " ", value or "")
+    for phrase in PROPER_PHRASE_PATTERN.findall(cleaned):
+        words = re.findall(r"[A-Za-z0-9&'.-]+", phrase)
+        _add_signal_variants(tokens, words)
+    for piece in re.split(r"[^A-Za-z0-9]+", cleaned):
+        _add_signal_variants(tokens, [piece])
+    return tokens
+
+
+def extract_text_signal_tokens(value: str) -> set[str]:
+    tokens: set[str] = set()
+    cleaned = (value or "").replace("\u2028", " ").replace("\u2029", " ")
+    for phrase in PROPER_PHRASE_PATTERN.findall(cleaned):
+        words = re.findall(r"[A-Za-z0-9&'.-]+", phrase)
+        if len(words) == 1:
+            phrase_token = normalize_identity_token(words[0])
+            if not (phrase.isupper() or re.search(r"[a-z].*[A-Z]|[A-Z].*[a-z].*[A-Z]", phrase)):
+                continue
+            if not is_viable_signal_token(phrase_token):
+                continue
+            tokens.add(phrase_token)
+            continue
+
+        normalized_words = [
+            normalize_identity_token(word)
+            for word in words
+            if is_viable_signal_token(normalize_identity_token(word))
+        ]
+        if len(normalized_words) < 2:
+            continue
+
+        for left, right in zip(normalized_words, normalized_words[1:]):
+            combo = normalize_identity_token(left + right)
+            if is_viable_signal_token(combo):
+                tokens.add(combo)
+
+        full = normalize_identity_token("".join(normalized_words))
+        if is_viable_signal_token(full):
+            tokens.add(full)
+
+        if not any(word in TEXT_PHRASE_GENERIC_WORDS for word in normalized_words):
+            for word in normalized_words:
+                if is_viable_signal_token(word):
+                    tokens.add(word)
+    return tokens
+
+
+@lru_cache(maxsize=1)
+def load_matter_related_numbers() -> Dict[str, set[str]]:
+    matter_pattern = re.compile(r"\b\d{2}-\d{3,4}-\d{5}\b")
+    related: Dict[str, set[str]] = {}
+
+    for readme_path in MATTERS_ROOT.glob("**/README.md"):
+        matter_number = readme_path.parent.name
+        if not matter_pattern.fullmatch(matter_number):
+            continue
+        text = readme_path.read_text(encoding="utf-8")
+        references = set(extract_matter_numbers(text, matter_pattern))
+        references.discard(matter_number)
+        if references:
+            related[matter_number] = references
+
+    return related
+
+
+def extract_readme_description(text: str) -> str:
+    lines = text.splitlines()
+    for idx, line in enumerate(lines):
+        if line.strip() != "## Description":
+            continue
+        for candidate in lines[idx + 1 :]:
+            stripped = candidate.strip()
+            if not stripped:
+                continue
+            if stripped.startswith("## "):
+                return ""
+            return stripped
+    return ""
+
+
+@lru_cache(maxsize=1)
+def load_readme_matter_signal_indexes() -> Dict[str, Dict[str, set[str]]]:
+    name_key_map: Dict[str, set[str]] = defaultdict(set)
+    matter_pattern = re.compile(r"^\d{2}-\d{3,4}-\d{5}$")
+
+    for readme_path in MATTERS_ROOT.glob("**/README.md"):
+        matter_number = readme_path.parent.name
+        if not matter_pattern.fullmatch(matter_number):
+            continue
+
+        text = readme_path.read_text(encoding="utf-8")
+        title_match = re.search(r"(?m)^title:\s*(.+?)\s*$", text)
+        heading_match = re.search(r"(?m)^#\s+(.+?)\s*$", text)
+        description = extract_readme_description(text)
+
+        source_strings = [
+            value.strip()
+            for value in (
+                title_match.group(1) if title_match else "",
+                heading_match.group(1) if heading_match else "",
+                description,
+            )
+            if value and value.strip()
+        ]
+
+        for source in source_strings:
+            tokens = extract_path_signal_tokens(source)
+            tokens.update(extract_text_signal_tokens(source))
+            for token in tokens:
+                if is_viable_signal_token(token):
+                    name_key_map[token].add(matter_number)
+
+    return {
+        "senders": {},
+        "domains": {},
+        "name_keys": dict(name_key_map),
+    }
+
+
+@lru_cache(maxsize=512)
+def extract_sharepoint_text(path_str: str) -> str:
+    path = Path(path_str)
+    if not path.exists() or path.suffix.lower() not in DEFAULT_SHAREPOINT_SIGNAL_TEXT_EXTENSIONS:
+        return ""
+    try:
+        result = subprocess.run(
+            ["textutil", "-convert", "txt", "-stdout", str(path)],
+            check=False,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="ignore",
+        )
+    except Exception:
+        return ""
+    if result.returncode != 0:
+        return ""
+    return result.stdout[:DEFAULT_SHAREPOINT_SIGNAL_TEXT_CHAR_LIMIT]
+
+
+@lru_cache(maxsize=1)
+def load_sharepoint_signal_indexes() -> Dict[str, Dict[str, set[str]]]:
+    if not DEFAULT_SHAREPOINT_RAW_ROOT.exists():
+        return {"senders": {}, "domains": {}, "name_keys": {}}
+
+    raw = load_matter_identity_payload()
+    matters = [entry for entry in raw.get("matters", []) if isinstance(entry, dict)]
+    matter_numbers = {str(entry.get("matter_id") or "").strip() for entry in matters if str(entry.get("matter_id") or "").strip()}
+    if not matter_numbers:
+        return {"senders": {}, "domains": {}, "name_keys": {}}
+
+    base_indexes = load_base_matter_identity_indexes()
+    related_numbers = load_matter_related_numbers()
+    matter_pattern = re.compile(r"\b\d{2}-\d{3,4}-\d{5}\b")
+
+    alias_to_matters: Dict[str, set[str]] = defaultdict(set)
+    for matter_number in matter_numbers:
+        alias_to_matters[matter_number].add(matter_number)
+        for alias in related_numbers.get(matter_number, set()):
+            alias_to_matters[alias].add(matter_number)
+
+    path_counts: Dict[str, Counter[str]] = defaultdict(Counter)
+    text_counts: Dict[str, Counter[str]] = defaultdict(Counter)
+    text_docs_loaded: Dict[str, int] = defaultdict(int)
+
+    for raw_path in sorted(DEFAULT_SHAREPOINT_RAW_ROOT.rglob("*")):
+        if not raw_path.is_file():
+            continue
+
+        display = display_path(raw_path)
+        associated_matters: set[str] = set()
+        for alias in extract_matter_numbers(display, matter_pattern):
+            associated_matters.update(alias_to_matters.get(alias, set()))
+
+        path_tokens = extract_path_signal_tokens(display)
+        if not associated_matters and path_tokens:
+            matched_by_name_key = {
+                candidate
+                for token in path_tokens
+                for candidate in base_indexes["name_keys"].get(token, set())
+                if candidate in matter_numbers
+            }
+            if len(matched_by_name_key) == 1:
+                associated_matters = matched_by_name_key
+
+        if not associated_matters:
+            continue
+
+        for matter_number in associated_matters:
+            path_counts[matter_number].update(path_tokens)
+
+        if raw_path.suffix.lower() not in DEFAULT_SHAREPOINT_SIGNAL_TEXT_EXTENSIONS:
+            continue
+        if not any(text_docs_loaded[matter_number] < DEFAULT_SHAREPOINT_SIGNAL_TEXT_DOC_LIMIT for matter_number in associated_matters):
+            continue
+
+        doc_text = extract_sharepoint_text(str(raw_path))
+        if not doc_text.strip():
+            continue
+        text_tokens = extract_text_signal_tokens(doc_text)
+        if not text_tokens:
+            continue
+
+        for matter_number in associated_matters:
+            if text_docs_loaded[matter_number] >= DEFAULT_SHAREPOINT_SIGNAL_TEXT_DOC_LIMIT:
+                continue
+            text_counts[matter_number].update(text_tokens)
+            text_docs_loaded[matter_number] += 1
+
+    name_key_map: Dict[str, set[str]] = defaultdict(set)
+    for matter_number in matter_numbers:
+        selected_tokens = {
+            token
+            for token, count in path_counts[matter_number].items()
+            if count >= 1 and token not in GENERIC_IDENTITY_KEYS
+        }
+        selected_tokens.update(
+            token
+            for token, count in text_counts[matter_number].items()
+            if token not in GENERIC_IDENTITY_KEYS
+            and (count >= 2 or token in path_counts[matter_number])
+        )
+        for token in selected_tokens:
+            name_key_map[token].add(matter_number)
+
+    return {
+        "senders": {},
+        "domains": {},
+        "name_keys": dict(name_key_map),
+    }
+
+
+@lru_cache(maxsize=1)
+def load_matter_identity_indexes() -> Dict[str, Dict[str, set[str]]]:
+    return merge_identity_indexes(
+        load_base_matter_identity_indexes(),
+        load_brief_matter_signal_indexes(),
+        load_readme_matter_signal_indexes(),
+        load_sharepoint_signal_indexes(),
+    )
 
 
 def write_json(path: Path, payload: Any) -> None:
@@ -427,6 +1076,173 @@ def extract_participants(raw_participants: Any, fallback_from: str = "", fallbac
     return tuple(unique)
 
 
+def header_value(headers: Any, name: str) -> str:
+    if not isinstance(headers, list):
+        return ""
+    for header in headers:
+        if not isinstance(header, dict):
+            continue
+        if str(header.get("name") or "").lower() == name.lower():
+            return str(header.get("value") or "").strip()
+    return ""
+
+
+def derive_state_labels(labels: Iterable[str]) -> Tuple[str, ...]:
+    normalized = {
+        LEGACY_STATE_LABEL_ALIASES.get(label, label)
+        for label in labels
+    }
+    return tuple(sorted({label for label in normalized if label in CANONICAL_STATE_LABELS}))
+
+
+def is_automated_sender(sender: str) -> bool:
+    sender_low = sender.lower()
+    return any(signal in sender_low for signal in AUTOMATED_SENDER_SIGNALS)
+
+
+def classify_review_state(thread: ThreadRef, has_matter: bool) -> Tuple[str, str]:
+    sender_low = thread.sender.lower()
+    label_names_low = {label.lower() for label in thread.labels}
+
+    if CALENDAR_SENDER in sender_low:
+        return "50_Calendar", "calendar_sender"
+
+    if has_matter:
+        if is_automated_sender(thread.sender):
+            return "60_Filing", "matter_thread_automated_sender"
+        return "10_Action_Matthew", "matter_thread_human_sender"
+
+    if any(signal in sender_low for signal in TEAM_SIGNALS):
+        return "20_Action_Team", "team_sender"
+
+    if any(signal in sender_low for signal in ADMIN_SIGNALS):
+        return "20_Action_Team", "admin_vendor_sender"
+
+    if "category_promotions" in label_names_low:
+        return "80_Junk_to_Review", "promotions_category"
+
+    if thread.last_sender and thread.last_sender.lower() in MATTHEW_EMAILS and thread.message_count >= 2:
+        return "40_Replied_Awaiting_Response", "ml1_replied_last"
+
+    if any(signal in sender_low for signal in LEGAL_SIGNALS):
+        return "10_Action_Matthew", "legal_sender_signal"
+
+    return "00_Triage", "default_triage"
+
+
+def is_review_candidate(thread: ThreadRef) -> bool:
+    if len(thread.state_labels) > 1:
+        return True
+    if not thread.state_labels:
+        return True
+    return thread.state_labels == ("00_Triage",)
+
+
+def normalize_live_thread(thread: Dict[str, Any], label_id_to_name: Dict[str, str]) -> ThreadRef:
+    messages = thread.get("messages", []) if isinstance(thread.get("messages"), list) else []
+    first = messages[0] if messages else {}
+    last = messages[-1] if messages else {}
+    first_headers = ((first.get("payload") or {}).get("headers")) if isinstance(first, dict) else []
+    last_headers = ((last.get("payload") or {}).get("headers")) if isinstance(last, dict) else []
+
+    label_ids = set()
+    for message in messages:
+        if not isinstance(message, dict):
+            continue
+        for label_id in message.get("labelIds", []) or []:
+            label_ids.add(str(label_id))
+
+    label_names = tuple(sorted({label_id_to_name.get(label_id, label_id) for label_id in label_ids if label_id}))
+    subject = header_value(last_headers, "Subject") or header_value(first_headers, "Subject") or "(no subject)"
+    sender = header_value(first_headers, "From") or header_value(last_headers, "From")
+    last_sender = header_value(last_headers, "From") or sender
+    to_value = header_value(last_headers, "To") or header_value(first_headers, "To")
+    last_message_raw = ""
+    if isinstance(last, dict):
+        last_message_raw = str(last.get("internalDate") or "").strip()
+    last_message_at = utc_iso(parse_timestamp(last_message_raw)) if last_message_raw else ""
+
+    return ThreadRef(
+        thread_id=str(thread.get("id") or "").strip(),
+        subject=subject,
+        participants=extract_participants([], fallback_from=sender, fallback_to=to_value),
+        last_message_at=last_message_at,
+        labels=label_names,
+        latest_snippet=str(thread.get("snippet") or "").strip(),
+        source_pointer=f"gmail://thread/{str(thread.get('id') or '').strip()}",
+        sender=sender,
+        last_sender=last_sender,
+        message_count=len(messages),
+        state_labels=derive_state_labels(label_names),
+    )
+
+
+def load_live_gmail_threads(query: str, max_review_threads: int) -> Tuple[List[ThreadRef], str, Dict[str, Any]]:
+    from gmail_mcp_server import _get_gmail_service, _label_id_to_name, _list_all_labels
+
+    service = _get_gmail_service()
+    labels = _list_all_labels(service)
+    label_id_to_name = _label_id_to_name(labels)
+
+    selected: List[ThreadRef] = []
+    page_token: Optional[str] = None
+    listed_threads = 0
+    inspected_threads = 0
+    capped = max_review_threads > 0
+    max_inspected = max(max_review_threads * 10, 100) if capped else None
+
+    while True:
+        if max_inspected is not None and listed_threads >= max_inspected:
+            break
+
+        kwargs: Dict[str, Any] = {
+            "userId": "me",
+            "q": query,
+            "maxResults": min(((max_inspected - listed_threads) if max_inspected is not None else 100), 100),
+        }
+        if page_token:
+            kwargs["pageToken"] = page_token
+
+        response = service.users().threads().list(**kwargs).execute()
+        thread_stubs = response.get("threads", [])
+        if not thread_stubs:
+            break
+
+        for stub in thread_stubs:
+            thread_id = str(stub.get("id") or "").strip()
+            if not thread_id:
+                continue
+
+            listed_threads += 1
+            thread = service.users().threads().get(userId="me", id=thread_id).execute()
+            normalized = normalize_live_thread(thread, label_id_to_name)
+            inspected_threads += 1
+
+            if not is_review_candidate(normalized):
+                if capped and max_inspected is not None and listed_threads >= max_inspected:
+                    break
+                continue
+
+            selected.append(normalized)
+            if capped and len(selected) >= max_review_threads:
+                break
+
+        if capped and len(selected) >= max_review_threads:
+            break
+
+        page_token = response.get("nextPageToken")
+        if not page_token:
+            break
+
+    selection_summary = {
+        "query": query,
+        "listed_threads": listed_threads,
+        "inspected_threads": inspected_threads,
+        "reviewed_threads": len(selected),
+    }
+    return selected, f"live:{query}", selection_summary
+
+
 def discover_local_matter_paths() -> Dict[str, Path]:
     """Map matter number to local `05_MATTERS/<tier>/<matter>` path."""
     mapping: Dict[str, Path] = {}
@@ -644,6 +1460,7 @@ def normalize_cached_threads(raw_threads: Iterable[Any], default_pointer_prefix:
 
         latest_snippet = str(raw.get("latest_snippet") or raw.get("snippet") or "").strip()
         source_pointer = str(raw.get("source_pointer") or f"{default_pointer_prefix}#{thread_id or idx}")
+        state_labels = derive_state_labels(labels)
 
         threads.append(
             ThreadRef(
@@ -654,6 +1471,10 @@ def normalize_cached_threads(raw_threads: Iterable[Any], default_pointer_prefix:
                 labels=labels,
                 latest_snippet=latest_snippet,
                 source_pointer=source_pointer,
+                sender=str(raw.get("sender") or raw.get("from") or "").strip(),
+                last_sender=str(raw.get("last_sender") or raw.get("sender") or raw.get("from") or "").strip(),
+                message_count=int(raw.get("message_count") or 0),
+                state_labels=state_labels,
             )
         )
 
@@ -709,6 +1530,7 @@ def normalize_threads_from_email_dump(email_dump: Dict[str, Any], pointer_path: 
 
         dt = parse_timestamp(latest.get("internal_date") or latest.get("date"))
         last_message_at = utc_iso(dt) if dt else ""
+        state_labels = derive_state_labels(labels)
 
         threads.append(
             ThreadRef(
@@ -719,6 +1541,10 @@ def normalize_threads_from_email_dump(email_dump: Dict[str, Any], pointer_path: 
                 labels=tuple(sorted(set(labels))),
                 latest_snippet=str(latest.get("snippet") or latest.get("body") or "").strip(),
                 source_pointer=f"repo://{display_path(pointer_path)}#thread:{thread_id}",
+                sender=str(items_sorted[0].get("from") or "").strip(),
+                last_sender=str(latest.get("from") or "").strip(),
+                message_count=len(items_sorted),
+                state_labels=state_labels,
             )
         )
 
@@ -1173,6 +1999,101 @@ def extract_matter_numbers(text: str, pattern: re.Pattern[str]) -> List[str]:
     return ordered
 
 
+def resolve_thread_identity_matter(
+    thread: ThreadRef,
+    matter_numbers: set[str],
+) -> Tuple[str, str, str]:
+    indexes = load_matter_identity_indexes()
+
+    def scoped_candidates(values: Iterable[str], index: Dict[str, set[str]]) -> List[str]:
+        candidates: set[str] = set()
+        for value in values:
+            if not value:
+                continue
+            candidates.update(candidate for candidate in index.get(value, set()) if candidate in matter_numbers)
+        return sorted(candidates)
+
+    def decide(candidates: List[str], matched_by: str, ambiguous_by: str) -> Tuple[str, str, str]:
+        if len(candidates) == 1:
+            return candidates[0], matched_by, f"single matter matched by {matched_by}"
+        if len(candidates) > 1:
+            return "", "", f"ambiguous: multiple matter candidates found by {ambiguous_by}"
+        return "", "", ""
+
+    sender_candidates = scoped_candidates(
+        [extract_sender_email(thread.sender), extract_sender_email(thread.last_sender)],
+        indexes["senders"],
+    )
+    mapped_matter, routing_rule, reason = decide(
+        sender_candidates,
+        "identity_sender_exact",
+        "identity_sender_exact",
+    )
+    if mapped_matter or reason:
+        return mapped_matter, routing_rule, reason
+
+    participant_email_candidates = scoped_candidates(
+        [extract_sender_email(participant) for participant in thread.participants],
+        indexes["senders"],
+    )
+    mapped_matter, routing_rule, reason = decide(
+        participant_email_candidates,
+        "identity_participant_email_exact",
+        "identity_participant_email_exact",
+    )
+    if mapped_matter or reason:
+        return mapped_matter, routing_rule, reason
+
+    domain_candidates = scoped_candidates(
+        [extract_sender_domain(thread.sender), extract_sender_domain(thread.last_sender)],
+        indexes["domains"],
+    )
+    mapped_matter, routing_rule, reason = decide(
+        domain_candidates,
+        "identity_sender_domain",
+        "identity_sender_domain",
+    )
+    if mapped_matter or reason:
+        return mapped_matter, routing_rule, reason
+
+    participant_domain_candidates = scoped_candidates(
+        [extract_sender_domain(participant) for participant in thread.participants],
+        indexes["domains"],
+    )
+    mapped_matter, routing_rule, reason = decide(
+        participant_domain_candidates,
+        "identity_participant_domain",
+        "identity_participant_domain",
+    )
+    if mapped_matter or reason:
+        return mapped_matter, routing_rule, reason
+
+    token_sources = [
+        thread.subject,
+        thread.sender,
+        thread.last_sender,
+        thread.latest_snippet,
+        " ".join(thread.participants),
+    ]
+    matched_name_keys = {
+        candidate
+        for token_source in token_sources
+        for token in tokenize_identity_text(token_source)
+        for candidate in indexes["name_keys"].get(normalize_identity_token(token), set())
+        if candidate in matter_numbers
+    }
+    name_key_candidates = sorted(matched_name_keys)
+    mapped_matter, routing_rule, reason = decide(
+        name_key_candidates,
+        "identity_name_key",
+        "identity_name_key",
+    )
+    if mapped_matter or reason:
+        return mapped_matter, routing_rule, reason
+
+    return "", "", ""
+
+
 def route_threads_to_matters(
     threads: List[ThreadRef],
     matter_numbers: set[str],
@@ -1219,7 +2140,9 @@ def route_threads_to_matters(
             elif len(fallback_candidates) > 1:
                 reason = "ambiguous: multiple matter numbers found in subject/snippet"
             else:
-                reason = "no confident matter number match"
+                mapped_matter, routing_rule, reason = resolve_thread_identity_matter(thread, matter_numbers)
+                if not mapped_matter and not reason:
+                    reason = "no confident matter or identity match"
 
         if single_matter_scope and mapped_matter and mapped_matter != single_matter_scope:
             continue
@@ -1256,6 +2179,174 @@ def route_threads_to_matters(
         reverse=True,
     )
     return mapped, unmapped_sorted, review_sorted
+
+
+def build_state_review_batch(
+    threads: List[ThreadRef],
+    mapped: Dict[str, List[Dict[str, str]]],
+    generated_at: str,
+    gmail_query: str,
+    selection_summary: Dict[str, Any],
+    single_matter_scope: Optional[str],
+) -> Dict[str, Any]:
+    batch_stamp = generated_at.replace("-", "").replace(":", "").replace("T", "_")
+    batch_id = f"matter_admin_review_{batch_stamp}"
+
+    thread_to_matter: Dict[str, str] = {}
+    thread_to_routing_rule: Dict[str, str] = {}
+    for matter_number, rows in mapped.items():
+        for row in rows:
+            thread_id = str(row.get("thread_id") or "")
+            if not thread_id:
+                continue
+            thread_to_matter[thread_id] = matter_number
+            thread_to_routing_rule[thread_id] = str(row.get("routing_rule") or "")
+
+    review_rows: List[Dict[str, Any]] = []
+    for thread in threads:
+        mapped_matter = thread_to_matter.get(thread.thread_id, "")
+        proposed_state_label, signal_basis = classify_review_state(thread, has_matter=bool(mapped_matter))
+        current_state_labels = list(thread.state_labels)
+        disposition = "apply"
+        if len(current_state_labels) == 1 and current_state_labels[0] == proposed_state_label:
+            disposition = "no_change"
+
+        review_rows.append(
+            {
+                "thread_id": thread.thread_id,
+                "subject": thread.subject or "(no subject)",
+                "last_message_at": thread.last_message_at,
+                "sender": thread.sender,
+                "last_sender": thread.last_sender,
+                "message_count": thread.message_count,
+                "labels": list(thread.labels),
+                "existing_state_labels": current_state_labels,
+                "proposed_state_label": proposed_state_label,
+                "state_signal_basis": signal_basis,
+                "matter_number": mapped_matter,
+                "routing_rule": thread_to_routing_rule.get(thread.thread_id, ""),
+                "confidence": "high" if proposed_state_label != "00_Triage" or mapped_matter else "medium",
+                "disposition": disposition,
+                "source_pointer": thread.source_pointer,
+            }
+        )
+
+    return {
+        "batch_id": batch_id,
+        "project_id": "LLP-023",
+        "generated_at": generated_at,
+        "gmail_query": gmail_query,
+        "single_matter_scope": single_matter_scope or "",
+        "selection_summary": selection_summary,
+        "threads_reviewed": len(review_rows),
+        "threads": review_rows,
+    }
+
+
+def execute_state_review_batch(
+    batch_payload: Dict[str, Any],
+    approval_artifact_text: str,
+    approved_by: str,
+    reason: str,
+) -> Dict[str, Any]:
+    from gmail_mcp_server import (
+        _append_audit,
+        _apply_thread_modify,
+        _collect_thread_label_ids,
+        _get_gmail_service,
+        _get_thread,
+        _label_name_to_id,
+        _list_all_labels,
+        _now_iso,
+        _resolve_approval_artifact,
+    )
+
+    approval_artifact = _resolve_approval_artifact(approval_artifact_text)
+    if not approval_artifact.exists():
+        raise FileNotFoundError(f"approval_artifact not found: {approval_artifact}")
+
+    service = _get_gmail_service()
+    labels = _list_all_labels(service)
+    name_to_id = _label_name_to_id(labels)
+    state_label_names = tuple(
+        sorted(set(CANONICAL_STATE_LABELS).union(LEGACY_STATE_LABEL_ALIASES.keys()))
+    )
+
+    required_state_labels = sorted(
+        {
+            LEGACY_STATE_LABEL_ALIASES.get(
+                str(row.get("proposed_state_label") or "").strip(),
+                str(row.get("proposed_state_label") or "").strip(),
+            )
+            for row in batch_payload.get("threads", [])
+            if LEGACY_STATE_LABEL_ALIASES.get(
+                str(row.get("proposed_state_label") or "").strip(),
+                str(row.get("proposed_state_label") or "").strip(),
+            ) in CANONICAL_STATE_LABELS
+        }
+    )
+    missing_state_labels = [label for label in required_state_labels if label not in name_to_id]
+    if missing_state_labels:
+        raise RuntimeError(
+            f"Missing required state labels in Gmail for this batch: {missing_state_labels}"
+        )
+
+    executed_rows: List[Dict[str, Any]] = []
+    for row in batch_payload.get("threads", []):
+        thread_id = str(row.get("thread_id") or "").strip()
+        target_state_label = LEGACY_STATE_LABEL_ALIASES.get(
+            str(row.get("proposed_state_label") or "").strip(),
+            str(row.get("proposed_state_label") or "").strip(),
+        )
+        if not thread_id or target_state_label not in CANONICAL_STATE_LABELS:
+            continue
+
+        thread = _get_thread(service, thread_id)
+        thread_label_ids = _collect_thread_label_ids(thread)
+        current_state_labels = [
+            label_name
+            for label_name in state_label_names
+            if name_to_id.get(label_name) in thread_label_ids
+        ]
+        remove_label_ids = [
+            name_to_id[label_name]
+            for label_name in current_state_labels
+            if label_name in name_to_id
+        ]
+        target_label_id = name_to_id[target_state_label]
+
+        no_change = len(current_state_labels) == 1 and current_state_labels[0] == target_state_label
+        if not no_change:
+            _apply_thread_modify(service, thread_id, [target_label_id], remove_label_ids)
+
+        audit_row = {
+            "timestamp": _now_iso(),
+            "tool": "llp023_apply_state_label",
+            "thread_id": thread_id,
+            "prior_state_labels": current_state_labels,
+            "new_state_label": target_state_label,
+            "no_change": no_change,
+            "approved_by": approved_by,
+            "approval_artifact": str(approval_artifact),
+            "reason": reason,
+            "project_id": "LLP-023",
+            "batch_id": str(batch_payload.get("batch_id") or ""),
+        }
+        _append_audit(audit_row)
+        executed_rows.append(audit_row)
+
+    return {
+        "batch_id": str(batch_payload.get("batch_id") or ""),
+        "project_id": "LLP-023",
+        "executed_at": utc_iso(),
+        "approved_by": approved_by,
+        "approval_artifact": str(approval_artifact),
+        "reason": reason,
+        "thread_count": len(executed_rows),
+        "changed_count": sum(1 for row in executed_rows if not row.get("no_change")),
+        "no_change_count": sum(1 for row in executed_rows if row.get("no_change")),
+        "threads": executed_rows,
+    }
 
 
 def format_table(headers: List[str], rows: List[List[str]]) -> str:
@@ -2229,6 +3320,12 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run Matter Command and Control (Slice 1 + Slice 2)")
     parser.add_argument("--mode", choices=("daily", "one"), default="daily")
     parser.add_argument("--matter-number", help="Required for --mode one")
+    parser.add_argument("--live-gmail", action="store_true", help="Read live Gmail threads for the review pass instead of cache/fallback data.")
+    parser.add_argument("--gmail-query", default=DEFAULT_GMAIL_REVIEW_QUERY, help="Gmail query for the live review pass. Defaults to in:inbox.")
+    parser.add_argument("--execute-state-labels", action="store_true", help="Apply governed Gmail state labels for the reviewed threads.")
+    parser.add_argument("--approval-artifact", default="", help="Approval artifact required for --execute-state-labels.")
+    parser.add_argument("--approved-by", default="", help="Approver name required for --execute-state-labels.")
+    parser.add_argument("--reason", default="", help="Reason required for --execute-state-labels.")
     parser.add_argument("--clio-cache", default=str(DEFAULT_CLIO_CACHE))
     parser.add_argument("--gmail-cache", default=str(DEFAULT_GMAIL_CACHE))
     parser.add_argument("--sharepoint-cache", default=str(DEFAULT_SHAREPOINT_CACHE))
@@ -2240,7 +3337,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--write-cache", action="store_true", help="Write normalized cache snapshots")
     parser.add_argument("--dry-run", action="store_true", help="Compute outputs but do not write files")
     parser.add_argument("--strict", action="store_true", help="Exit non-zero if no connector records loaded")
-    parser.add_argument("--max-threads", type=int, default=0, help="Optional cap for threads in scope")
+    parser.add_argument(
+        "--max-threads",
+        type=int,
+        default=DEFAULT_MAX_THREADS,
+        help="Optional cap for threads in scope. Defaults to 25; set 0 for uncapped.",
+    )
     return parser.parse_args()
 
 
@@ -2249,6 +3351,18 @@ def main() -> int:
 
     if args.mode == "one" and not args.matter_number:
         raise SystemExit("--matter-number is required when --mode one is used")
+    if args.execute_state_labels and (not args.approval_artifact or not args.approved_by or not args.reason):
+        raise SystemExit(
+            "--execute-state-labels requires --approval-artifact, --approved-by, and --reason."
+        )
+    if args.execute_state_labels and args.dry_run:
+        raise SystemExit("--execute-state-labels cannot be combined with --dry-run.")
+    if args.execute_state_labels:
+        from gmail_mcp_server import _resolve_approval_artifact
+
+        approval_path = _resolve_approval_artifact(args.approval_artifact)
+        if not approval_path.exists():
+            raise SystemExit(f"approval_artifact not found: {approval_path}")
 
     generated_at = utc_iso()
 
@@ -2260,6 +3374,11 @@ def main() -> int:
     active_window_days = int((run_schedule.get("digest") or {}).get("active_window_days") or 7)
 
     matter_pattern = compile_matter_regex(gmail_label_rules)
+    gmail_query = str(
+        args.gmail_query
+        or (((run_schedule.get("runs") or {}).get("daily") or {}).get("scope") or {}).get("gmail_query")
+        or DEFAULT_GMAIL_REVIEW_QUERY
+    ).strip() or DEFAULT_GMAIL_REVIEW_QUERY
 
     clio_cache = Path(args.clio_cache)
     gmail_cache = Path(args.gmail_cache)
@@ -2271,14 +3390,27 @@ def main() -> int:
         write_cache=args.write_cache,
         delivery_taxonomy=delivery_taxonomy,
     )
-    threads, gmail_source = load_gmail_threads(
-        gmail_cache,
-        gmail_fallback,
-        write_cache=args.write_cache,
-    )
-
-    if args.max_threads > 0:
-        threads = threads[: args.max_threads]
+    live_gmail = bool(args.live_gmail or args.execute_state_labels)
+    thread_selection_summary: Dict[str, Any] = {}
+    if live_gmail:
+        threads, gmail_source, thread_selection_summary = load_live_gmail_threads(
+            query=gmail_query,
+            max_review_threads=args.max_threads,
+        )
+    else:
+        threads, gmail_source = load_gmail_threads(
+            gmail_cache,
+            gmail_fallback,
+            write_cache=args.write_cache,
+        )
+        if args.max_threads > 0:
+            threads = threads[: args.max_threads]
+        thread_selection_summary = {
+            "query": gmail_query,
+            "listed_threads": len(threads),
+            "inspected_threads": len(threads),
+            "reviewed_threads": len(threads),
+        }
 
     if args.strict and (not matters or not threads):
         print("Strict mode failure: missing matter or thread records")
@@ -2297,8 +3429,45 @@ def main() -> int:
         single_matter_scope=args.matter_number if args.mode == "one" else None,
     )
 
+    if args.mode == "one":
+        scoped_thread_ids = {
+            str(row.get("thread_id") or "")
+            for rows in mapped.values()
+            for row in rows
+        }
+        scoped_thread_ids.update(str(row.get("thread_id") or "") for row in unmapped)
+        scoped_thread_ids.update(str(row.get("thread_id") or "") for row in review_required)
+        threads = [thread for thread in threads if thread.thread_id in scoped_thread_ids]
+        thread_selection_summary["reviewed_threads"] = len(threads)
+
     matter_lookup = {matter.matter_number: matter for matter in matters}
     local_matter_paths = discover_local_matter_paths()
+    state_review_batch = build_state_review_batch(
+        threads=threads,
+        mapped=mapped,
+        generated_at=generated_at,
+        gmail_query=gmail_query,
+        selection_summary=thread_selection_summary,
+        single_matter_scope=args.matter_number if args.mode == "one" else None,
+    )
+    proposal_path: Optional[Path] = None
+    execution_path: Optional[Path] = None
+    state_review_execution: Dict[str, Any] = {}
+
+    if live_gmail:
+        proposal_path = BATCH_PROPOSALS_DIR / f"{state_review_batch['batch_id']}.json"
+    if proposal_path and not args.dry_run:
+        write_json(proposal_path, state_review_batch)
+    if args.execute_state_labels:
+        execution_path = BATCH_EXECUTIONS_DIR / f"{state_review_batch['batch_id']}.json"
+        state_review_execution = execute_state_review_batch(
+            batch_payload=state_review_batch,
+            approval_artifact_text=args.approval_artifact,
+            approved_by=args.approved_by,
+            reason=args.reason,
+        )
+        if execution_path and not args.dry_run:
+            write_json(execution_path, state_review_execution)
 
     # Agent 1 output: matter index
     write_matter_index(
@@ -2443,9 +3612,12 @@ def main() -> int:
             "delivery_watch_matters": int((next_state.get("delivery_summary") or {}).get("parked_watch_matters") or 0),
             "delivery_active_without_services": int((next_state.get("delivery_summary") or {}).get("active_without_services") or 0),
             "threads": len(threads),
+            "reviewed_threads": int(state_review_batch.get("threads_reviewed") or 0),
             "mapped_threads": sum(len(rows) for rows in mapped.values()),
             "unmapped_threads": len(unmapped),
             "review_required_threads": len(review_required),
+            "state_label_changed_threads": int(state_review_execution.get("changed_count") or 0),
+            "state_label_no_change_threads": int(state_review_execution.get("no_change_count") or 0),
             "missing_local_matter_paths": len(missing_matter_paths),
             "sharepoint_items": int(sharepoint_summary.get("current_items") or 0),
             "sharepoint_mapped_items": int(sharepoint_summary.get("mapped_items") or 0),
@@ -2461,6 +3633,8 @@ def main() -> int:
             "matter_digest": display_path(MATTER_DIGEST_PATH),
             "inbox_unmapped": display_path(INBOX_UNMAPPED_PATH),
             "sharepoint_gaps": display_path(SHAREPOINT_GAPS_PATH),
+            "state_review_batch": display_path(proposal_path) if proposal_path else "",
+            "state_review_execution": display_path(execution_path) if execution_path else "",
         },
     }
 
@@ -2471,7 +3645,9 @@ def main() -> int:
         "Matter admin run complete: "
         f"matters={len(matters)} "
         f"threads={len(threads)} "
+        f"reviewed={int(state_review_batch.get('threads_reviewed') or 0)} "
         f"unmapped={len(unmapped)} "
+        f"state_label_changes={int(state_review_execution.get('changed_count') or 0)} "
         f"sharepoint_items={int(sharepoint_summary.get('current_items') or 0)} "
         f"sharepoint_unmapped={len(sharepoint_unmapped)}"
     )

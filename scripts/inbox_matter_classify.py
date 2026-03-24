@@ -85,7 +85,7 @@ CANONICAL_STATE_LABELS = {
     "50_Calendar",
     "60_Filing",
     "70_Filed",
-    "80_Junk (Pending Review)",
+    "80_Junk_to_Review",
     "90_Archive",
 }
 
@@ -166,7 +166,7 @@ def classify_state(sender: str, last_sender: str, msg_count: int,
     # 6. Promotional
     labels_low = [l.lower() for l in current_label_names]
     if "category_promotions" in labels_low:
-        return "80_Junk (Pending Review)"
+        return "80_Junk_to_Review"
 
     # 7. ML1 replied last
     if last_sender and last_sender.lower() in MATTHEW_EMAILS and msg_count >= 2:

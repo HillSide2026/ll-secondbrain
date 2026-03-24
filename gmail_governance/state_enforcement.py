@@ -23,7 +23,7 @@ CANONICAL_LABELS = {
     "50_Calendar",
     "60_Filing",
     "70_Filed",
-    "80_Junk (Pending Review)",
+    "80_Junk_to_Review",
     "90_Archive"
 }
 

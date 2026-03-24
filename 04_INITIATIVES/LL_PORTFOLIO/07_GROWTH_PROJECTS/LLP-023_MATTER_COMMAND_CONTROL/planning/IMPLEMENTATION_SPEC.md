@@ -5,6 +5,13 @@
 - Firm Matter Digest: what moved, what is stuck, what is due
 - Per-matter Work Packet baseline (Slice 1 includes status + comm routing)
 - Exception lists: unmapped inbox, mapping gaps
+- Bounded Gmail review pass: review up to `25` threads and move each reviewed
+  thread into exactly one canonical state label through the governed label-write
+  path
+- Batch proposal artifact for the reviewed Gmail pass in
+  `06_RUNS/batch/proposals/`
+- Batch execution artifact in `06_RUNS/batch/executions/` when ML1 approval is
+  present and label execution is run
 
 ## 2) Canonical System Rules
 
@@ -22,6 +29,8 @@ Active implementation paths:
 - `05_MATTERS/DASHBOARDS/MATTER_INDEX.md`
 - `05_MATTERS/DASHBOARDS/INBOX_UNMAPPED.md`
 - `05_MATTERS/<tier>/<matter_id>/MATTER_STATUS.md` (generated for routed matters)
+- `06_RUNS/batch/proposals/*.json`
+- `06_RUNS/batch/executions/*.json`
 - `cache/*.json` snapshots for connector normalization and run state
 
 ## 4) Connector Normalization Contracts
@@ -61,6 +70,10 @@ SharePoint mapping:
 
 - `RUN_MATTER_ADMIN_DAILY`
 - `RUN_MATTER_ADMIN_ONE(matter_number)`
+
+Daily mode review cap:
+- default Gmail review scope is `25` threads per pass
+- set the runner cap explicitly only when ML1 wants a narrower or broader pass
 
 ## 8) Managed Config Files
 

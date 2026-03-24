@@ -4,7 +4,7 @@ title: LLP-023 — Matter Command and Control
 owner: ML1
 status: on track
 created_date: 2026-03-04
-last_updated: 2026-03-20
+last_updated: 2026-03-23
 tags: [matter-operations, command-control]
 ---
 
@@ -23,12 +23,17 @@ Stand up a deterministic matter command layer that uses Clio, SharePoint, and Gm
 - Exception lists (unmapped inbox, missing doc links, overdue work)
 - Read connectors for Clio, Gmail, and SharePoint
 - Deterministic routing keyed by Clio matter number
+- Bounded Gmail review passes of up to `25` threads per daily run
+- Controlled Gmail state labeling for reviewed threads through an ML1-approved,
+  audit-backed label-write path
+- Proposal-first Gmail review batches in `06_RUNS/batch/proposals/`, with
+  execution records in `06_RUNS/batch/executions/`
 - Citation-first assertions with source pointers
 
 ### Out of Scope
 
 - Replacing Clio, SharePoint, or Gmail records
-- Writing operational truth back to source systems
+- Broad or unapproved source-system mutation
 - Persistent shadow database of source records
 
 ## ML1 Authority Statement
@@ -45,7 +50,8 @@ The System must NOT:
 
 ## Approval State
 
-**SLICE IMPLEMENTATION AUTHORIZED (draft)** — Thin vertical slice in progress.
+**DRAFT / PLANNING PACKET OPEN** — Thin-slice work exists, but canonical
+planning now governs slice prioritization, deferrals, and promotion logic.
 
 ## Artifact Layout
 
@@ -59,7 +65,17 @@ Initiation artifacts live in `initiation/`:
 - `initiation/APPROVAL_RECORD.md`
 - `initiation/BUSINESS_CASE.md`
 
-Current planning/control artifacts live in `planning/`:
+Canonical planning artifacts live in `planning/`:
+
+- `planning/SCOPE_STATEMENT.md`
+- `planning/PROJECT_PLAN.md`
+- `planning/ASSUMPTIONS_CONSTRAINTS.md`
+- `planning/DEPENDENCIES.md`
+- `planning/RISK_REGISTER.md`
+- `planning/COMMUNICATION_PLAN.md`
+- `planning/METRICS.md`
+
+Technical support artifacts currently retained in `planning/`:
 
 - `planning/IMPLEMENTATION_SPEC.md`
 - `planning/MILESTONE_PLAN.md`

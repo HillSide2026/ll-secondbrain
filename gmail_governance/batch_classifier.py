@@ -475,7 +475,7 @@ def classify_thread(subject, sender, snippet, current_labels,
         6. Matthew replied last (multi-message thread)   → 40_Replied_Awaiting_Response
         7. Automated receipt / completion (no matter)    → 90_Archive
         8. Legal service sender                          → 10_Action_Matthew
-        9. Promotional footer only                       → 80_Junk (Pending Review)
+        9. Promotional footer only                       → 80_Junk_to_Review
        10. Default                                       → 00_Triage
 
     Args:
@@ -529,7 +529,7 @@ def classify_thread(subject, sender, snippet, current_labels,
 
     # 9. Promotional footer only → junk pending review
     if 'unsubscribe' in snippet_lower:
-        return '80_Junk (Pending Review)'
+        return '80_Junk_to_Review'
 
     # 10. Default: needs review
     return '00_Triage'

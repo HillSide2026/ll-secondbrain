@@ -1,0 +1,541 @@
+{
+  "batch_id": "matter_admin_review_20260324_031915Z",
+  "generated_at": "2026-03-24T03:19:15Z",
+  "gmail_query": "in:inbox",
+  "project_id": "LLP-023",
+  "selection_summary": {
+    "inspected_threads": 25,
+    "listed_threads": 25,
+    "query": "in:inbox",
+    "reviewed_threads": 25
+  },
+  "single_matter_scope": "",
+  "threads": [
+    {
+      "confidence": "medium",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-24T01:55:01Z",
+      "last_sender": "Upwork Notification <donotreply@upwork.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Upwork Notification <donotreply@upwork.com>",
+      "source_pointer": "gmail://thread/19d1d8d702cb44a2",
+      "state_signal_basis": "default_triage",
+      "subject": "Manual time was added",
+      "thread_id": "19d1d8d702cb44a2"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "last_message_at": "2026-03-23T22:52:48Z",
+      "last_sender": "Google Voice <voice-noreply@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Google Voice <voice-noreply@google.com>",
+      "source_pointer": "gmail://thread/19d1ce69c727bde3",
+      "state_signal_basis": "default_triage",
+      "subject": "New missed call from (647) 277-3554.",
+      "thread_id": "19d1ce69c727bde3"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T22:00:15Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1cb683ac8d73f",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: Commute @ Tue Mar 24, 2026 6pm - 6:30pm (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1cb683ac8d73f"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T21:44:52Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1ca86c4071e1a",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: Close Office @ Tue Mar 24, 2026 5:45pm - 6pm (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1ca86c4071e1a"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T21:50:01Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 2,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1c7f70cde8764",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: Commute @ Mon Mar 23, 2026 6pm - 6:30pm (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1c7f70cde8764"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T21:00:03Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1c7f654a9e321",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: Firm Management @ Tue Mar 24, 2026 5pm - 5:30pm (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1c7f654a9e321"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T21:34:57Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 2,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1c718093c9e09",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: Close Office @ Mon Mar 23, 2026 5:45pm - 6pm (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1c718093c9e09"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T20:30:02Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1c63e67de5494",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: LLA VI  @ Tue Mar 24, 2026 4:30pm - 5pm (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1c63e67de5494"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T20:00:03Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1c487680df7dc",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: Appointment with Matthew Levine @ Tue Mar 24, 2026 4pm - 4:15pm (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1c487680df7dc"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T20:50:02Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 2,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1c486dc25bede",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: Firm Management @ Mon Mar 23, 2026 5pm - 5:30pm (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1c486dc25bede"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_PERSONAL",
+        "IMPORTANT",
+        "INBOX",
+        "SENT"
+      ],
+      "last_message_at": "2026-03-23T19:41:29Z",
+      "last_sender": "Harry Bedi <harry@stream.money>",
+      "matter_number": "",
+      "message_count": 2,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Matthew Levine <matthew@levinelegal.ca>",
+      "source_pointer": "gmail://thread/19d07ea7b61a1153",
+      "state_signal_basis": "default_triage",
+      "subject": "Re: 1:1",
+      "thread_id": "19d07ea7b61a1153"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T20:19:57Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 2,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1c2cfd593415c",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: LLA 6 @ Mon Mar 23, 2026 4:30pm - 5:15pm (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1c2cfd593415c"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T19:29:57Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1c2ce5899152a",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: LLA 5 @ Tue Mar 24, 2026 3:30pm - 4pm (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1c2ce5899152a"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "IMPORTANT",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T19:11:10Z",
+      "last_sender": "noreply@donotreply.soulpepper.com",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "20_Action_Team",
+      "routing_rule": "",
+      "sender": "noreply@donotreply.soulpepper.com",
+      "source_pointer": "gmail://thread/19d1c1bb69cbfb69",
+      "state_signal_basis": "admin_vendor_sender",
+      "subject": "New email from Tracy Hanes",
+      "thread_id": "19d1c1bb69cbfb69"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX"
+      ],
+      "last_message_at": "2026-03-23T19:09:43Z",
+      "last_sender": "Clio Team <notifications@clio.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "10_Action_Matthew",
+      "routing_rule": "",
+      "sender": "Clio Team <notifications@clio.com>",
+      "source_pointer": "gmail://thread/19d1c1a6223c8926",
+      "state_signal_basis": "legal_sender_signal",
+      "subject": "Payment submitted for bill 2783",
+      "thread_id": "19d1c1a6223c8926"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T18:44:59Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1c03ba1ddf1fb",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: LLA 4 @ Tue Mar 24, 2026 2:45pm - 3:30pm (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1c03ba1ddf1fb"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_PERSONAL",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "last_message_at": "2026-03-23T18:37:18Z",
+      "last_sender": "Grace Mendoza <grace@levine-law.ca>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "20_Action_Team",
+      "routing_rule": "",
+      "sender": "Grace Mendoza <grace@levine-law.ca>",
+      "source_pointer": "gmail://thread/19d1bfcf38a3d3e7",
+      "state_signal_basis": "team_sender",
+      "subject": "Appointment with Matthew Levine",
+      "thread_id": "19d1bfcf38a3d3e7"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T19:19:57Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 2,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1bf61d8b8a021",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: LLA 5 @ Mon Mar 23, 2026 3:30pm - 4pm (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1bf61d8b8a021"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "IMPORTANT",
+        "INBOX"
+      ],
+      "last_message_at": "2026-03-23T18:24:37Z",
+      "last_sender": "noreply@donotreply.soulpepper.com",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "20_Action_Team",
+      "routing_rule": "",
+      "sender": "noreply@donotreply.soulpepper.com",
+      "source_pointer": "gmail://thread/19d1bf115265f27a",
+      "state_signal_basis": "admin_vendor_sender",
+      "subject": "New message from Shay Saar",
+      "thread_id": "19d1bf115265f27a"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T18:05:40Z",
+      "last_sender": "Law Society Communication <do-not-reply@lso.ca>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Law Society Communication <do-not-reply@lso.ca>",
+      "source_pointer": "gmail://thread/19d1bf08339f1102",
+      "state_signal_basis": "default_triage",
+      "subject": "Reminder - Annual Report Must Be Filed by March 31/Rappel - La déclaration annuelle doit être déposée au plus tard le 31 mars",
+      "thread_id": "19d1bf08339f1102"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T18:15:53Z",
+      "last_sender": "Google Voice <voice-noreply@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Google Voice <voice-noreply@google.com>",
+      "source_pointer": "gmail://thread/19d1be91511ce06a",
+      "state_signal_basis": "default_triage",
+      "subject": "New voicemail from +52 33 2009 7759",
+      "thread_id": "19d1be91511ce06a"
+    },
+    {
+      "confidence": "medium",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T18:14:08Z",
+      "last_sender": "Google Voice <voice-noreply@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "00_Triage",
+      "routing_rule": "",
+      "sender": "Google Voice <voice-noreply@google.com>",
+      "source_pointer": "gmail://thread/19d1be77a5c32341",
+      "state_signal_basis": "default_triage",
+      "subject": "New missed call from +52 33 2009 7759.",
+      "thread_id": "19d1be77a5c32341"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T18:00:08Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 1,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1bdaaceb9d92c",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: LL LUNCH @ Tue Mar 24, 2026 2pm - 2:30pm (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1bdaaceb9d92c"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T17:45:22Z",
+      "last_sender": "Asana <no-reply@asana.com>",
+      "matter_number": "25-1363-00001",
+      "message_count": 1,
+      "proposed_state_label": "60_Filing",
+      "routing_rule": "subject_or_snippet_contains_matter_number",
+      "sender": "Asana <no-reply@asana.com>",
+      "source_pointer": "gmail://thread/19d1bcd25fc6a5e7",
+      "state_signal_basis": "matter_thread_automated_sender",
+      "subject": "Matthew, did you forget to send your comment in DRAFT: 25-1363-00001 - Raevan Joy Sambrano Next Steps ?",
+      "thread_id": "19d1bcd25fc6a5e7"
+    },
+    {
+      "confidence": "high",
+      "disposition": "apply",
+      "existing_state_labels": [],
+      "labels": [
+        "CATEGORY_UPDATES",
+        "INBOX",
+        "UNREAD"
+      ],
+      "last_message_at": "2026-03-23T18:34:56Z",
+      "last_sender": "Google Calendar <calendar-notification@google.com>",
+      "matter_number": "",
+      "message_count": 2,
+      "proposed_state_label": "50_Calendar",
+      "routing_rule": "",
+      "sender": "Google Calendar <calendar-notification@google.com>",
+      "source_pointer": "gmail://thread/19d1bccf7f8d3a6e",
+      "state_signal_basis": "calendar_sender",
+      "subject": "Notification: LLA 4 @ Mon Mar 23, 2026 2:45pm - 3:30pm (EDT) (Matthew AJ Levine)",
+      "thread_id": "19d1bccf7f8d3a6e"
+    }
+  ],
+  "threads_reviewed": 25
+}
