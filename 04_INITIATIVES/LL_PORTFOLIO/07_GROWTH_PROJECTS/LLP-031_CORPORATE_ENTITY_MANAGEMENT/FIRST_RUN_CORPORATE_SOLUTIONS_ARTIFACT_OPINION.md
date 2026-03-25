@@ -70,7 +70,7 @@ This is a non-authoritative working artifact for ML1 review.
 ## Stage 2 — Planning
 
 ### Doctrine-mandatory planning
-- `SCOPE_DEFINITION.md`
+- `SCOPE_STATEMENT.md`
 - `WORKPLAN.md` (includes milestone schedule and resource plan sections)
 - `ASSUMPTIONS_CONSTRAINTS.md`
 - `DEPENDENCIES.md`
