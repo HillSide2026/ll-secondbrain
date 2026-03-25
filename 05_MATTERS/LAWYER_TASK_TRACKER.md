@@ -6,6 +6,9 @@ _Governed by the system subject to ML1 override._
 
 | Matter ID | Client | Delivery Status | Service | Task | Status | Due |
 |---|---|---|---|---|---|---|
+| 26-1631-00001 | 1713425 Ontario Inc. (Tejvir Boparai) | Strategic | Corporate | Review and action Subway Transfer Initiation Documents — ref #37499, forwarded by client March 24 | Open | |
+| 24-845-00001 | Star 333 | Standard | Corporate | Proceed with extra-provincial BC registration — address confirmed (Sharanjit Singh, 10993 Lyon Rd, Delta BC) | Open | |
+| 24-845-00002 | Star 333 | Standard | Litigation | Review Sonia's tracked changes to Notice of Arbitration and send | Open | |
 | 25-927-00003 | Stream Ventures | Essential | CAMLO | Meet with Equals | Open | |
 | 25-927-00003 | Stream Ventures | Essential | CAMLO | Attend KYC analyst interview | Open | |
 | 25-927-00003 | Stream Ventures | Essential | CAMLO | Follow up: Verto | Open | |
@@ -13,7 +16,7 @@ _Governed by the system subject to ML1 override._
 | 26-927-00004 | Stream Ventures | Essential | Counsel | RPAA registration | Open | |
 | 26-927-00004 | Stream Ventures | Essential | Counsel | Complete RPAA: Incident Risk Policy | In Progress | |
 | 26-927-00004 | Stream Ventures | Essential | Counsel | Complete RPAA Application | In Progress | |
-| 25-1231-00001 | Charmaine Spiteri | Strategic | Corporate | Client to authorize LL as CRA representative | Waiting | |
+| 25-1231-00001 | Charmaine Spiteri | Strategic | Corporate | Client to authorize LL as CRA representative | Waiting | Waiting on ML1 |
 | 25-1318-00001 | Zelko Culibrk | Strategic | Corporate | Close file | Open | |
 | 25-256-00005 | Aspire Infusions | Strategic | Corporate | Collect outstanding fees | Open | |
 | 25-256-00005 | Aspire Infusions | Strategic | Corporate | Confirm status of corp re-org steps with client | Open | |
