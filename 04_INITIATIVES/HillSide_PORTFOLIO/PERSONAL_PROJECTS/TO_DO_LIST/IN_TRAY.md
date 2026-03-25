@@ -1,6 +1,6 @@
 ---
-id: 04_initiatives__hillside_portfolio__personal_projects__to_do_list__inbox_md
-title: To-Do Inbox
+id: 04_initiatives__hillside_portfolio__personal_projects__to_do_list__in_tray_md
+title: To-Do In Tray
 owner: ML1
 status: draft
 created_date: 2026-03-16
@@ -8,7 +8,7 @@ last_updated: 2026-03-16
 tags: [hillside, personal-projects, to-do-list]
 ---
 
-# To-Do Inbox
+# To-Do In Tray
 
 Capture new or untriaged items here before they are prioritized.
 

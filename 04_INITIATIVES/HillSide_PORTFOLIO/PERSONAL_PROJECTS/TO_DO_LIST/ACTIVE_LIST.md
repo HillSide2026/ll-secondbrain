@@ -14,3 +14,4 @@ Track the current set of active personal tasks that require action.
 
 | Priority | Task | Next Action | Linked Project or Area | Due or Trigger | Status | Last Updated |
 | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Talk to doctor re blood pressure, nose, testosterone | Book appointment | Personal Health | — | Active | 2026-03-25 |

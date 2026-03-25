@@ -39,14 +39,14 @@ This project is not:
 
 Use the following documents to manage the list:
 
-- `INBOX.md`
+- `IN_TRAY.md`
 - `ACTIVE_LIST.md`
 - `WAITING_ON.md`
 - `COMPLETED_LOG.md`
 
 ## Flow
 
-- Capture new items in `INBOX.md`.
+- Capture new items in `IN_TRAY.md`.
 - Move active priorities into `ACTIVE_LIST.md`.
 - Move blocked or dependency-driven items into `WAITING_ON.md`.
 - Move finished items into `COMPLETED_LOG.md`.
