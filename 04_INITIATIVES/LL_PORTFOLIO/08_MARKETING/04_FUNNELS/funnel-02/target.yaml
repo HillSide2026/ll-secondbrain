@@ -1,63 +1,56 @@
-roles:
-  - Owner
-  - CEO
-  - CFO
-geography: Ontario
-revenue_range: $1M-$8M
-employee_range: 5-30
-business_profile:
-  in_operation_years: "2+"
-  accountant_involved: true
-  contracts_in_circulation: true
-  workforce:
-    employees_or_contractors: true
-state: Growing, not in crisis, but feeling structural exposure.
-psych_profile:
-  thoughts:
-    - We have grown beyond what we set up originally.
-    - I am not sure our agreements would hold up.
-    - If something goes wrong, we are exposed.
-    - I do not want to find out the hard way.
-  traits:
-    - commercial
-    - time-sensitive
-    - risk-aware
-    - protective of margin
-    - not shopping for the cheapest option
-  values:
-    - clarity
-    - structure
-    - prioritization
-    - calm authority
-  avoids:
-    - litigation theater
-    - alarmism
-    - legal lectures
-economic_buyer_threshold:
-  can:
-    - approve $10k remediation work without installment friction
-    - sustain a recurring fractional counsel relationship
-    - pay for prevention
-  cannot_be:
-    - cash-flow unstable
-    - insolvency-adjacent
-    - panic buyers seeking quick letters
-maturity_triggers:
-  - accountant flags governance risk
-  - investor discussion introduces scrutiny
-  - contractor to employee transition increases liability
-  - growth stresses original shareholder structure
-  - bank or partner requests updated documentation
-  - preparing for expansion or financing
-what_they_are_buying:
-  - structural stability
-  - governance confidence
-  - risk prioritization
-  - ongoing commercial legal partner
-excludes:
-  - pre-revenue startups
-  - $200k lifestyle businesses
-  - pure litigants
-  - send a demand letter shoppers
-  - one-off incorporation buyers
-  - installment negotiators
+# Ideal Client Profile — Funnel 02
+
+# ---
+# NOTE: This file contains ICP only.
+# Acquisition thesis (triggers, messaging, psychographic framing, what they're buying)
+# belongs in positioning.yaml and the funnel acquisition thesis document.
+# ---
+
+firmographics:
+  geography: Based in or operating in Ontario (or with legal exposure there)
+  revenue_range: $1M–$20M
+  structure: Incorporated, multiple shareholders
+  industry_focus:
+    - Consumer, Food & Agri-business
+    - Manufacturing, Wholesale & Distribution
+    - Professional Services & Healthcare
+
+operational_characteristics:
+  # These are the real qualification triggers — must meet these to qualify
+  contract_complexity:
+    - Multiple active supplier and/or customer agreements in circulation
+    - Custom contracts (not off-the-shelf templates)
+  cross_border_or_multi_jurisdiction:
+    - Selling into or buying from outside Canada
+    - Exposure to US or international law
+  no_full_inhouse_legal:
+    - May have a legal manager or coordinator
+    - Does not have a full in-house legal department
+  recurring_legal_needs:
+    - Not a one-time issue
+    - Ongoing contract review, negotiation, or disputes
+
+typical_legal_needs:
+  - Commercial contracts (supply, distribution, manufacturing)
+  - Cross-border agreements (Canada–US focus)
+  - Regulatory and compliance guidance
+  - Dispute prevention and resolution
+  - Corporate structuring and transactions
+
+decision_makers:
+  - Owner / Founder
+  - CEO / Managing Director
+  - CFO / Finance Director
+
+disqualifiers:
+  do_not_target:
+    - Individuals and personal legal matters
+    - Businesses under $1M revenue
+    - One-off legal issues with no ongoing need
+    - Price shoppers
+    - Startups without revenue
+  red_flags:
+    - No clear business model
+    - No decision-maker involved in the conversation
+    - Urgent timeline combined with low budget
+    - "Just need a quick template"
