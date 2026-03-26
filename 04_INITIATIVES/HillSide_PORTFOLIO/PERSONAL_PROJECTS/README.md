@@ -4,7 +4,7 @@ title: Personal Projects
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-20
+last_updated: 2026-03-26
 tags: [hillside, personal-projects]
 ---
 
@@ -16,6 +16,7 @@ Current personal projects:
 
 - `DECISION_MAKING`
 - `TO_DO_LIST`
+- `BUILD_MONEY_MACHINE`
 
 ## Decision-Making
 
@@ -30,3 +31,11 @@ Current personal projects:
 - [TO_DO_LIST/README.md](TO_DO_LIST/README.md) maintains a lightweight HillSide
   personal task flow using:
   `INBOX -> ACTIVE -> WAITING -> COMPLETED`
+
+## Build Money Machine
+
+- [BUILD_MONEY_MACHINE/README.md](BUILD_MONEY_MACHINE/README.md) is a staged
+  personal project for defining and running a repeatable money-building system.
+- It uses `Initiating -> Planning -> Executing` as its stage path inside
+  `PERSONAL_PROJECTS`.
+- It does not replace `BUSINESS_PROJECTS` governance for real HillSide ventures.
