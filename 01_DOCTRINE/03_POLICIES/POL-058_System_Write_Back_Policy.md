@@ -45,7 +45,7 @@ All agent work lands in the repository first. The repo is the system of record.
 ### 2. Read-Only External Access (Default)
 External integrations are **read-only** unless an operational write is authorized under the Integration Control Policy.
 - Gmail: Read emails only
-- SharePoint: Read documents only
+- SharePoint: Read-only by default except where a site-specific managed-workspace authorization is explicitly approved
 - Word/OneDrive: Read documents only
 
 No agent may write, create, update, or delete data in external systems unless allowed by Integration Control or an explicit write-back capability is approved.
@@ -54,6 +54,7 @@ No agent may write, create, update, or delete data in external systems unless al
 Write-back capabilities are **not** implied by system scope. The following high-risk write-backs remain explicitly gated and require ML1 approval per run:
 - Google Drive Ledger write-back (Stage 2.11)
 - Gmail matter labeling write-back (Stage 2.13)
+- SharePoint Documentation site managed-workspace authority (Stage 2.14)
 
 All other write-back capabilities remain prohibited unless explicitly added and approved, or permitted under Integration Control.
 
@@ -195,3 +196,63 @@ The agent MUST NOT:
 ### Audit Logging
 - All label writes must be logged in an append-only audit file
 - Each entry must include message_id, label, operation, timestamp, approving_human, and reason
+
+---
+
+## Stage 2.14 — SharePoint Documentation Site Authority
+
+### Purpose
+Define the system's approved operational authority for the SharePoint Documentation site as a managed workspace surface.
+
+### Authorized Surface
+- Site: `levinellp.sharepoint.com/sites/Documentation`
+- Scope: site-wide
+- Authority level: read, write, and manage for system operations authorized by ML2 playbooks, runbooks, and integration contracts
+
+### Authoritative Behavior
+- SharePoint Documentation is a managed external workspace, not canonical doctrine storage.
+- ML2 remains the system of record for:
+  - doctrine
+  - canonical templates
+  - governance artifacts
+  - approvals
+  - run evidence
+- Documentation may hold:
+  - working drafts
+  - collaboration copies
+  - execution workspaces
+  - template-distribution copies
+  - candidate-for-promotion artifacts
+
+### Permitted Operations
+The system MAY, within the Documentation site:
+- Read site, drive, library, folder, and file metadata
+- Read file contents where required by an approved workflow or capability
+- Create files and folders
+- Update or replace files
+- Move or copy files between approved workspace locations
+- Maintain system-managed metadata fields
+- Provision or repair approved execution/workspace structure
+
+### Prohibited Operations
+The system MUST NOT:
+- Treat Documentation as canonical doctrine storage
+- Modify ML2 canonical artifacts in place through SharePoint
+- Expand authority to other SharePoint sites by implication
+- Write to `LegalMatters` or any unapproved SharePoint site under this authorization
+- Alter permissions or sharing state unless and until a separate ML1 approval explicitly grants that class of action
+
+### Audit Requirements
+All Documentation-site write or manage actions must record:
+- run identifier
+- acting tool or agent
+- target site/drive/path
+- operation type
+- before/after reference where practical
+- success/failure state
+
+### Conflict Rule
+If a Documentation artifact conflicts with ML2 canonical content:
+- ML2 remains controlling
+- the conflict must be surfaced in run evidence
+- promotion or republishing must follow Integration Control rules

@@ -3,9 +3,9 @@ id: 00_system__integrations__sharepoint__readme_md
 title: SharePoint Integration
 owner: ML1
 status: active
-version: 2.0
+version: 2.1
 created_date: 2026-02-15
-last_updated: 2026-03-11
+last_updated: 2026-03-27
 tags: [integration, sharepoint, mcp]
 ---
 
@@ -26,12 +26,12 @@ Two access modes exist. Both are strictly bounded to the same access surface.
 The MCP server is a controlled replacement interface — it replicates the script's
 access boundary and does not expand it.
 
-## Drives and Permissions
+## Sites, Drives, and Permissions
 
-| Alias | Site | Drive | Write |
-|-------|------|-------|-------|
-| `legalmatters` | `/sites/LegalMatters` | Working Files | PROHIBITED |
-| `documentation` | `/sites/Documentation` | Doc Pro Workspace | PERMITTED (DRAFTS only) |
+| Alias | Site | Drive Scope | Authority |
+|-------|------|-------------|-----------|
+| `legalmatters` | `/sites/LegalMatters` | Working Files | READ ONLY |
+| `documentation` | `/sites/Documentation` | Site-wide across approved drives/libraries | READ / WRITE / MANAGE |
 
 ### legalmatters — Approved Read Paths (intake_paths only)
 - `LL Matters (Essential)`
@@ -45,9 +45,11 @@ access boundary and does not expand it.
 - `Data Management`
 - `Model File`
 
-### documentation — Approved Paths
-- Read: `Doc Pro  In Tray/SB Execution/DRAFTS`
-- Write: `Doc Pro  In Tray/SB Execution/DRAFTS` (filename only, no subdirectories)
+### documentation — Approved Site Authority
+- Site-wide read access for configured system operations
+- Site-wide write and manage access for approved workflows, runbooks, and capabilities
+- Remains a managed external workspace, not canonical doctrine storage
+- Canonical ML2 artifacts must still be promoted through ML2 and not treated as SharePoint-native truth
 
 ## MCP Tools
 
@@ -55,17 +57,18 @@ access boundary and does not expand it.
 |------|----------|-----------|
 | `list_folder` | both | Enumerate folder children (metadata only, no file content) |
 | `get_item` | both | Get metadata for one item by path |
-| `upload_draft` | documentation only | Upload file to DRAFTS; path hardcoded, filename only |
+| `upload_draft` | documentation only | Upload file to Documentation workspace surface |
 
 ## Operations NOT Permitted via MCP
 
 - File content reading (any drive)
 - Writes to `legalmatters`
-- Writes outside `Doc Pro  In Tray/SB Execution/DRAFTS`
 - Delete, move, copy, share, or permission operations
 - Site or drive enumeration/discovery
 - Cross-site search
 - Access to any site beyond the two configured drives
+
+Site-wide Documentation authority is approved in doctrine, but MCP/server implementation must still declare the exact tool surface it exposes. Broader site authority does not require exposing every possible Graph operation to every runtime tool.
 
 ## MCP Registration
 
@@ -78,3 +81,5 @@ Auth: Azure client credentials (AZURE_TENANT_ID, AZURE_CLIENT_ID, AZURE_CLIENT_S
 - v2.0 2026-03-11: MCP server implemented. Access boundary documented.
   MCP replaces script interface for Claude Code sessions; script retained for
   manual/automated runs. Access surface unchanged.
+- v2.1 2026-03-27: Documentation site elevated to managed-workspace authority
+  (site-wide read/write/manage) by ML1 direction. LegalMatters remains read-only.

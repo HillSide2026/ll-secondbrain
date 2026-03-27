@@ -3,7 +3,7 @@ id: POL-059
 title: Integration Control Policy
 owner: ML1
 status: draft
-version: 1.0
+version: 1.1
 created_date: 2026-02-27
 last_updated: 2026-03-23
 tags: [integration, policy, control]
@@ -67,6 +67,26 @@ All writes must:
 
 No direct writes into ML2 from external suites.
 
+### 3.1 SharePoint Site Classes
+
+SharePoint surfaces must be classified as one of:
+- `read_only_authority`
+- `managed_workspace`
+
+Current approved classes:
+- `levinellp.sharepoint.com/sites/LegalMatters` = `read_only_authority`
+- `levinellp.sharepoint.com/sites/Documentation` = `managed_workspace`
+
+### 3.2 Managed Workspace Rule
+
+For a site classified as `managed_workspace`, the system MAY perform read, write, and manage operations across the approved site when:
+- the site is explicitly named in ML2 integration contracts
+- the operation is invoked by an approved workflow, runbook, or capability
+- run evidence is emitted into ML2
+
+Managed-workspace authority does not convert that site into canonical storage.
+ML2 remains the authority for doctrine and governed canonical artifacts.
+
 ---
 
 ## 4. Folder & Site Segmentation
@@ -78,6 +98,10 @@ External platforms must maintain:
 - /Archive/
 
 No canonical artifacts stored outside ML2 repository.
+
+For SharePoint:
+- `Documentation` may implement this segmentation site-wide.
+- `LegalMatters` remains outside this write-capable segmentation model and stays read-only.
 
 ---
 

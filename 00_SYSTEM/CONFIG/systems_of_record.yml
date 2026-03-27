@@ -22,7 +22,10 @@ systems:
       - path
       - modified_at
       - web_url
-    write_policy: read_only
+    write_policy: mixed_by_site
+    site_classes:
+      legalmatters: read_only_authority
+      documentation: managed_workspace
   gmail:
     role: comms_truth
     authoritative_fields:

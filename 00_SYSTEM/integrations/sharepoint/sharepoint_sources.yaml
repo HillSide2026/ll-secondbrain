@@ -2,19 +2,20 @@ id: 00_system__integrations__sharepoint__sources_yaml
 title: SharePoint Sources
 owner: ML1
 status: verified
-version: 1.1
+version: 1.2
 created_date: 2026-02-15
-last_updated: 2026-03-06
+last_updated: 2026-03-27
 sources:
   - source_id: SP_DOCUMENTATION_SITE
-    description: SharePoint site used for discovery and SB Execution.
+    description: SharePoint site used as the system-managed workspace surface for documentation, drafting, and execution outputs.
     location: levinellp.sharepoint.com/sites/Documentation
     site_id: levinellp.sharepoint.com,8758ea69-efb5-462e-8940-52962f4ca105,da0c6d79-a438-4994-a523-cbf97fae67eb
     authority: confirmed
-    classification: external_reference
-    ingestion: Enumerated via sharepoint_discovery.py (read-only)
+    classification: managed_workspace
+    ingestion: Enumerated via sharepoint_discovery.py and used by write-capable execution tooling under ML2 policy
+    write_policy: SITE_WIDE_READ_WRITE_MANAGE
   - source_id: SP_SB_EXECUTION_DRAFTS
-    description: SB Execution intake path for drafts within the SharePoint drive.
+    description: Legacy SB Execution drafts intake path within the Documentation site. Retained as a known workspace location, but no longer the sole write boundary.
     location: Doc Pro  In Tray/SB Execution/DRAFTS (drive_id configured in this file)
     authority: confirmed
     classification: intake
@@ -29,17 +30,18 @@ sources:
     write_policy: PROHIBITED
 ingestion:
   triggers:
-    - Manual runs of sharepoint_integration.py (read-only scan)
+    - Manual runs of sharepoint_integration.py
     - Manual runs of sharepoint_discovery.py (read-only discovery)
   notes:
-    - No write operations; Graph access via client credentials
-    - LegalMatters is read-only by policy; writes go to Documentation site only
+    - Graph access via client credentials
+    - Documentation is an approved managed workspace with site-wide read/write/manage authority
+    - LegalMatters is read-only by policy
 consumers:
   scripts:
     - 00_SYSTEM/scripts/sharepoint_integration.py  # read-only batch enumeration
     - 00_SYSTEM/scripts/sharepoint_discovery.py
     - 00_SYSTEM/scripts/setup_sb_execution.py
-    - scripts/sharepoint_mcp_server.py  # MCP interface; holds the approved write path for Documentation/DRAFTS
+    - scripts/sharepoint_mcp_server.py  # MCP interface; currently narrower than the doctrine-level Documentation-site authority
   playbooks: []
   run_graphs: []
 related_artifacts:
@@ -49,6 +51,7 @@ change_notes:
   - Added LegalMatters drive and multi-drive intake paths.
   - 2026-03-06: Drive IDs verified via live Graph API. Added site_ids. Updated LegalMatters drive name to "Working Files". Added Parked/StandardCashCows/DataManagement/ModelFile folders confirmed in root enumeration. Marked LegalMatters write_policy PROHIBITED.
   - 2026-03-11: Write access to Documentation/DRAFTS is ML1-approved. Implemented in sharepoint_mcp_server.py (upload_draft tool). sharepoint_integration.py intentionally remains read-only.
+  - 2026-03-27: Documentation elevated to managed-workspace authority at the site level (read/write/manage). DRAFTS retained as a known workspace path, not the exclusive write surface.
 
 sharepoint:
   drives:
@@ -57,7 +60,9 @@ sharepoint:
       site_id: levinellp.sharepoint.com,8758ea69-efb5-462e-8940-52962f4ca105,da0c6d79-a438-4994-a523-cbf97fae67eb
       drive_id: b!aepYh7XvLkaJQFKWL0yhBXltDNo4pJRJpSPL-X-uZ-tNtZwBKQHoRYMyWJLL2q-P
       drive_name: Doc Pro Workspace
-      write_policy: PERMITTED
+      write_policy: SITE_WIDE_READ_WRITE_MANAGE
+      site_authority_class: managed_workspace
+      note: Documentation site is approved for read, write, and manage operations across approved system workflows. This drive remains a known execution workspace but does not exhaust Documentation-site authority.
       intake_paths:
         - "Doc Pro  In Tray/SB Execution/DRAFTS"
     - name: LegalMatters

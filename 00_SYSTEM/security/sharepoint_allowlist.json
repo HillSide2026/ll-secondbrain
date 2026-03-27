@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "notes": "Fill in real site/library IDs. Writes must land in allowlisted WIP destinations only.",
+  "notes": "Documentation is an approved managed workspace with site-wide read/write/manage authority. LegalMatters remains read-only. Tooling may still impose narrower runtime boundaries than the doctrine-level authorization.",
   "template_read_zones": [
     {
       "site_id": "SITE_ID_TEMPLATES_1",
@@ -8,11 +8,21 @@
       "folder_prefixes": ["/Templates"]
     }
   ],
+  "documentation_site_authority": {
+    "site": "levinellp.sharepoint.com/sites/Documentation",
+    "authority": "SITE_WIDE_READ_WRITE_MANAGE",
+    "site_id": "levinellp.sharepoint.com,8758ea69-efb5-462e-8940-52962f4ca105,da0c6d79-a438-4994-a523-cbf97fae67eb"
+  },
+  "legalmatters_site_authority": {
+    "site": "levinellp.sharepoint.com/sites/LegalMatters",
+    "authority": "READ_ONLY",
+    "site_id": "levinellp.sharepoint.com,8a545687-e984-4ba5-9f81-25d29cc721b3,b91583ee-e542-4283-b1d7-f2ee4fa08613"
+  },
   "wip_write_zones": [
     {
-      "site_id": "SITE_ID_WIP_1",
-      "library_id": "LIB_ID_WIP_1",
-      "folder_prefixes": ["/WIP"]
+      "site_id": "levinellp.sharepoint.com,8758ea69-efb5-462e-8940-52962f4ca105,da0c6d79-a438-4994-a523-cbf97fae67eb",
+      "library_id": "b!aepYh7XvLkaJQFKWL0yhBXltDNo4pJRJpSPL-X-uZ-tNtZwBKQHoRYMyWJLL2q-P",
+      "folder_prefixes": ["/Doc Pro  In Tray/SB Execution/DRAFTS"]
     }
   ]
 }

@@ -120,8 +120,15 @@ Located at: `.env.example`
 4. Create client secret → `AZURE_CLIENT_SECRET`
 
 **Required Permissions:**
-- `Sites.Read.All` (SharePoint)
-- `Files.Read` (OneDrive/Word)
+- `Sites.ReadWrite.All` (SharePoint)
+- `Sites.Manage.All` (SharePoint)
+- `Files.ReadWrite.All` (SharePoint/OneDrive/Word)
+
+**Declared Boundary Note:**
+- Azure permissions currently support Documentation site managed-workspace authority.
+- ML2 doctrine still requires the System to treat `Documentation` and `LegalMatters` differently:
+  - `Documentation` = approved managed workspace
+  - `LegalMatters` = read-only authority
 
 ---
 
