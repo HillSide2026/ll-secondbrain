@@ -3,9 +3,9 @@ id: POL-059
 title: Integration Control Policy
 owner: ML1
 status: draft
-version: 1.2
+version: 1.3
 created_date: 2026-02-27
-last_updated: 2026-03-27
+last_updated: 2026-03-28
 tags: [integration, policy, control]
 ---
 
@@ -78,6 +78,18 @@ Current approved classes:
 - `levinellp.sharepoint.com/sites/Documentation` = `managed_workspace`
 - `levinellp.sharepoint.com/sites/Clients` = `read_only_authority`
 
+### 3.1.1 Scoped Sub-Surface Exceptions
+
+ML1 may approve a narrower operational exception inside a site that otherwise remains
+`read_only_authority` when all of the following are true:
+- the exact site, library or list, and path scope are named in ML2 integration contracts
+- allowed tools and prohibited actions are explicitly listed
+- structure, permission, deletion, publication, and retention authority remain separately controlled
+- the action is invoked by an approved workflow, runbook, or capability when the exception permits writes
+- run evidence is emitted into ML2
+
+A scoped sub-surface exception does not reclassify the parent site.
+
 ### 3.2 Read-Only Authority Rule
 
 For a site classified as `read_only_authority`, the system MAY perform read-only
@@ -90,6 +102,34 @@ The system MUST NOT, for a `read_only_authority` site:
 - create, update, replace, move, or delete files or folders
 - alter permissions, sharing state, or site structure
 - infer write authority from visibility, existing credentials, or related site access
+
+### 3.2.1 Approved Clients SitePages Exception
+
+For `levinellp.sharepoint.com/sites/Clients`, the parent site remains
+`read_only_authority`.
+
+An ML1-approved scoped exception exists for `/sites/Clients/SitePages` only.
+
+Within this exception, the system MAY:
+- review existing `SitePages/*.aspx` pages for metadata, text content, supported web-part inventory, and link review
+- update page title, description, and existing text web part content on existing `SitePages/*.aspx` pages
+
+The Clients SitePages exception is valid only when:
+- the operation stays within the explicit `SitePages` scope declared in ML2 integration contracts
+- read actions satisfy Section 2 read controls
+- write actions are invoked by an approved workflow, runbook, or capability
+- write invariants in Section 3 are satisfied
+- run evidence is emitted into ML2
+
+The system MUST NOT under this exception:
+- create, delete, rename, move, publish, or demote pages
+- alter page layout, canvas structure, navigation, permissions, sharing, retention, or site settings
+- create, delete, or reposition web parts
+- infer authority over any non-`SitePages` Clients surface
+
+Any Clients SitePages structure change, navigation change, or other non-content
+change requires explicit ML1 approval per change batch recorded through an
+`approval_reference`.
 
 ### 3.3 Managed Workspace Rule
 
@@ -115,7 +155,8 @@ No canonical artifacts stored outside ML2 repository.
 
 For SharePoint:
 - `Documentation` may implement this segmentation site-wide.
-- `LegalMatters` and `Clients` remain outside this write-capable segmentation model and stay read-only.
+- `LegalMatters` remains outside this write-capable segmentation model and stays read-only.
+- `Clients` remains outside this write-capable segmentation model except for the approved `SitePages` page-review and page-content-update exception in Section 3.2.1.
 
 ---
 
@@ -141,6 +182,9 @@ System must retain:
 - Diff history for each promoted artifact
 - Approval reference ID
 - Agent version that executed action
+
+For the Clients SitePages exception, the retained audit trail must also make the
+page path and updated page-content targets reconstructable from the run record.
 
 ---
 

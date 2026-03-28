@@ -17,6 +17,8 @@ PERMITTED OPERATIONS:
   4. find_latest_template — search allowlisted Documentation template zones
   5. diff_docs            — diff allowlisted Documentation template/WIP documents
   6. copy_template_to_wip — copy allowlisted Documentation templates to WIP
+  7. review_site_page     — review one approved Clients SitePages page
+  8. update_site_page_content — update one approved Clients SitePages page content surface
 
 HARDCODED ACCESS BOUNDARY:
   Drive: legalmatters  (Working Files drive, /sites/LegalMatters)
@@ -39,6 +41,11 @@ HARDCODED ACCESS BOUNDARY:
     - clients_turtle_island         -> Turtle Island library, full library read
     - clients_our_sharepoint_test2  -> Our-SharePoint-Test2 library, full library read
     - clients_our_sharepoint_test   -> our-sharepoint test library, full library read
+    - EXCEPTION: /sites/Clients/SitePages/*.aspx
+      -> review existing page metadata, text web parts, and supported web part inventory
+      -> update title, description, and existing text web part innerHtml only
+      -> NO page create/delete/move/rename/publish, layout changes, navigation changes,
+         permission changes, or web part structural changes
 
 Python 3.9 compatible. No external MCP SDK required.
 Implements MCP JSON-RPC 2.0 stdio transport manually.
@@ -225,6 +232,19 @@ def _summarize_arguments(arguments: dict) -> dict:
         if key == "content" and isinstance(value, str):
             summary["content_length"] = len(value)
             continue
+        if key == "text_webparts" and isinstance(value, list):
+            summary["text_webparts"] = [
+                {
+                    "webpart_id": str(entry.get("webpart_id", "")).strip(),
+                    "content_length": (
+                        len(entry.get("inner_html"))
+                        if isinstance(entry, dict) and isinstance(entry.get("inner_html"), str)
+                        else None
+                    ),
+                }
+                for entry in value
+            ]
+            continue
         if isinstance(value, str) and len(value) > 256:
             summary[key] = value[:253] + "..."
             continue
@@ -257,6 +277,8 @@ def _response_payload(
 
 def _error_status_for_exception(exc: Exception) -> str:
     message = str(exc).lower()
+    if isinstance(exc, FileNotFoundError):
+        return "not_found"
     if isinstance(exc, EscalationRequiredError):
         return "escalation_required"
     if isinstance(exc, PermissionError):
@@ -520,6 +542,24 @@ def _graph_put(url: str, content: bytes, content_type: str = "application/octet-
     return r.json()
 
 
+def _graph_patch(url: str, payload: dict) -> dict:
+    token = _get_token()
+    r = requests.patch(
+        url,
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Content-Type": "application/json",
+        },
+        json=payload,
+        timeout=120,
+    )
+    if r.status_code >= 400:
+        raise RuntimeError(f"Graph API PATCH {r.status_code}: {r.text[:500]}")
+    if not r.text:
+        return {}
+    return r.json()
+
+
 def _graph_raw_get(url: str) -> requests.Response:
     token = _get_token()
     r = requests.get(
@@ -603,6 +643,18 @@ def _documentation_site_id() -> str:
     )
 
 
+def _clients_sitepages_surface() -> dict:
+    allowlist = _load_sharepoint_allowlist()
+    surface = dict(allowlist.get("clients_sitepages_surface", {}))
+    if not surface:
+        raise RuntimeError("Clients SitePages surface is not configured in sharepoint_allowlist.json.")
+    return surface
+
+
+def _clients_site_id() -> str:
+    return str(_clients_sitepages_surface().get("site_id") or "")
+
+
 def _require_managed_workspace_site(site_id: str) -> None:
     doc_site_id = _documentation_site_id()
     if not doc_site_id or site_id != doc_site_id:
@@ -613,6 +665,85 @@ def _require_managed_workspace_site(site_id: str) -> None:
 
 def _canonical_zone_path(prefix: str) -> str:
     return _normalize_drive_path("documentation", _normalize_path(prefix).lstrip("/"))
+
+
+def _escape_odata_string(value: str) -> str:
+    return value.replace("'", "''")
+
+
+def _normalize_etag(value: Any) -> str:
+    return str(value or "").strip().strip('"')
+
+
+def _normalize_clients_page_path(page_path: str) -> str:
+    surface = _clients_sitepages_surface()
+    root = _normalize_path(str(surface.get("page_root_path") or "SitePages"))
+    norm = _normalize_path(page_path)
+
+    if not norm:
+        raise ValueError("'page_path' is required.")
+    if "\\" in page_path or ".." in norm.split("/"):
+        raise ValueError("'page_path' must not contain backslashes or '..'.")
+
+    expected_pattern = rf"(?i)^{re.escape(root)}/[^/]+\.aspx$"
+    if not re.match(expected_pattern, norm):
+        raise PermissionError(
+            f"Page path '{page_path}' is outside the approved Clients SitePages surface. "
+            f"Expected '{root}/<page>.aspx'."
+        )
+
+    return f"{root}/{norm.split('/')[-1]}"
+
+
+def _resolve_clients_site_page(page_path: str) -> dict:
+    site_id = _clients_site_id()
+    if not site_id:
+        raise RuntimeError("Clients SitePages surface is missing a configured site_id.")
+
+    norm_path = _normalize_clients_page_path(page_path)
+    page_name = norm_path.rsplit("/", 1)[-1]
+    url = f"{GRAPH_BASE}/sites/{site_id}/pages/microsoft.graph.sitePage"
+    payload = _graph_get(
+        url,
+        params={"$filter": f"name eq '{_escape_odata_string(page_name)}'"},
+    )
+    pages = list(payload.get("value", []))
+    if not pages:
+        raise FileNotFoundError(
+            f"Site page '{norm_path}' was not found in the approved Clients SitePages surface."
+        )
+    if len(pages) > 1:
+        raise EscalationRequiredError(
+            f"Multiple site pages matched '{page_name}'. Resolve ambiguity before execution."
+        )
+
+    page = pages[0]
+    page_id = str(page.get("id") or "").strip()
+    if not page_id:
+        raise RuntimeError(f"Resolved site page '{norm_path}' is missing an id.")
+
+    detail = _graph_get(
+        f"{GRAPH_BASE}/sites/{site_id}/pages/{page_id}/microsoft.graph.sitePage"
+    )
+    return {
+        "site_id": site_id,
+        "page_id": page_id,
+        "page_path": norm_path,
+        "page": detail,
+    }
+
+
+def _list_site_page_webparts(site_id: str, page_id: str) -> List[dict]:
+    payload = _graph_get(
+        f"{GRAPH_BASE}/sites/{site_id}/pages/{page_id}/microsoft.graph.sitePage/webParts"
+    )
+    return list(payload.get("value", []))
+
+
+def _get_site_page_webpart(site_id: str, page_id: str, webpart_id: str) -> dict:
+    return _graph_get(
+        f"{GRAPH_BASE}/sites/{site_id}/pages/{page_id}/microsoft.graph.sitePage/webParts/{webpart_id}"
+    )
 
 
 def _require_write_context(
@@ -817,6 +948,76 @@ def _build_diff_summary(text_a: str, text_b: str, label_a: str, label_b: str) ->
     return "\n".join(summary_lines), counts
 
 
+def _slim_site_page(page: dict, page_path: str) -> dict:
+    return {
+        "id": page.get("id"),
+        "name": page.get("name"),
+        "path": page_path,
+        "title": page.get("title"),
+        "description": page.get("description"),
+        "pageLayout": page.get("pageLayout"),
+        "promotionKind": page.get("promotionKind"),
+        "publishingState": page.get("publishingState"),
+        "eTag": page.get("eTag"),
+        "createdDateTime": page.get("createdDateTime"),
+        "lastModifiedDateTime": page.get("lastModifiedDateTime"),
+        "webUrl": page.get("webUrl"),
+        "showComments": page.get("showComments"),
+        "showRecommendedPages": page.get("showRecommendedPages"),
+    }
+
+
+def _extract_html_links(html: str) -> List[str]:
+    seen = set()
+    links: List[str] = []
+    for match in re.finditer(r"""href\s*=\s*["']([^"']+)["']""", html, flags=re.IGNORECASE):
+        href = html_unescape(match.group(1).strip())
+        if href and href not in seen:
+            seen.add(href)
+            links.append(href)
+    return links
+
+
+def _summarize_site_page_webparts(webparts: List[dict]) -> dict:
+    text_webparts: List[dict] = []
+    standard_webparts: List[dict] = []
+    page_text_blocks: List[str] = []
+
+    for position, webpart in enumerate(webparts, start=1):
+        odata_type = str(webpart.get("@odata.type") or "").strip()
+        webpart_id = str(webpart.get("id") or "").strip()
+        if odata_type.lower().endswith("textwebpart"):
+            inner_html = str(webpart.get("innerHtml") or "")
+            plain_text = _strip_markup(inner_html)
+            text_webparts.append(
+                {
+                    "id": webpart_id,
+                    "position": position,
+                    "innerHtml": inner_html,
+                    "plainText": plain_text,
+                    "links": _extract_html_links(inner_html),
+                }
+            )
+            if plain_text:
+                page_text_blocks.append(plain_text)
+            continue
+
+        standard_webparts.append(
+            {
+                "id": webpart_id,
+                "position": position,
+                "type": odata_type or "#microsoft.graph.standardWebPart",
+                "webPartType": webpart.get("webPartType"),
+            }
+        )
+
+    return {
+        "text_webparts": text_webparts,
+        "standard_webparts": standard_webparts,
+        "page_text": "\n\n".join(page_text_blocks).strip(),
+    }
+
+
 # =============================================================================
 # Tool Implementations
 # =============================================================================
@@ -942,6 +1143,209 @@ def tool_get_item(args: dict) -> str:
         operation_id=operation_id,
         target_ref=target_ref,
         result_payload={"item": result},
+    )
+
+
+def tool_review_site_page(args: dict) -> str:
+    """
+    Review an approved Clients SitePages page, including text web parts.
+    """
+    page_path = str(args.get("page_path", "")).strip()
+    operation_id = _new_operation_id("review_site_page")
+
+    resolved = _resolve_clients_site_page(page_path)
+    site_id = resolved["site_id"]
+    page_id = resolved["page_id"]
+    norm_path = resolved["page_path"]
+    page = resolved["page"]
+    webparts = _list_site_page_webparts(site_id, page_id)
+    webpart_summary = _summarize_site_page_webparts(webparts)
+    warnings: List[str] = []
+    if not webpart_summary["text_webparts"]:
+        warnings.append("No text web parts were found on this page.")
+    if webpart_summary["standard_webparts"]:
+        warnings.append(
+            "Standard web parts are reported as inventory only; this tool flattens text web parts, not standard web part internals."
+        )
+
+    target_ref = _target_ref(site_id=site_id, page_id=page_id, page_path=norm_path)
+    _audit_log(
+        operation_id=operation_id,
+        tool_name="review_site_page",
+        actor_type="agent",
+        actor_id="sharepoint-mcp",
+        authorized_scope=f"site_id={site_id} page_scope=SitePages/*.aspx",
+        target_object=target_ref,
+        action_type="review_site_page",
+        output_status="success",
+        input_record={"page_path": norm_path},
+    )
+    return _response_payload(
+        status="success",
+        operation_id=operation_id,
+        target_ref=target_ref,
+        result_payload={
+            "page": _slim_site_page(page, norm_path),
+            "page_text": webpart_summary["page_text"],
+            "text_webparts": webpart_summary["text_webparts"],
+            "standard_webparts": webpart_summary["standard_webparts"],
+        },
+        warnings=warnings,
+    )
+
+
+def tool_update_site_page_content(args: dict) -> str:
+    """
+    Apply narrow, non-structural content changes to an approved Clients SitePages page.
+    """
+    page_path = str(args.get("page_path", "")).strip()
+    expected_e_tag = str(args.get("expected_e_tag", "")).strip()
+    title = args["title"] if "title" in args else None
+    description = args["description"] if "description" in args else None
+    text_webparts = args.get("text_webparts", [])
+    operation_id = _new_operation_id("update_site_page_content")
+
+    if not expected_e_tag:
+        raise ValueError("'expected_e_tag' is required.")
+    if title is not None and not isinstance(title, str):
+        raise ValueError("'title' must be a string when provided.")
+    if description is not None and not isinstance(description, str):
+        raise ValueError("'description' must be a string when provided.")
+    if text_webparts is None:
+        text_webparts = []
+    if not isinstance(text_webparts, list):
+        raise ValueError("'text_webparts' must be an array when provided.")
+    if title is None and description is None and not text_webparts:
+        raise ValueError(
+            "At least one of 'title', 'description', or 'text_webparts' must be provided."
+        )
+
+    write_context = _require_write_context(args)
+    resolved = _resolve_clients_site_page(page_path)
+    site_id = resolved["site_id"]
+    page_id = resolved["page_id"]
+    norm_path = resolved["page_path"]
+    current_page = resolved["page"]
+    current_e_tag = _normalize_etag(current_page.get("eTag"))
+    if current_e_tag and current_e_tag != _normalize_etag(expected_e_tag):
+        raise RuntimeError(
+            f"Version conflict: expected eTag '{expected_e_tag}' but found '{current_page.get('eTag')}'."
+        )
+
+    updated_fields: List[str] = []
+    updated_webparts: List[dict] = []
+    seen_webpart_ids = set()
+
+    if title is not None or description is not None:
+        payload = {"@odata.type": "#microsoft.graph.sitePage"}
+        if title is not None:
+            payload["title"] = title
+            updated_fields.append("title")
+        if description is not None:
+            payload["description"] = description
+            updated_fields.append("description")
+        _graph_patch(
+            f"{GRAPH_BASE}/sites/{site_id}/pages/{page_id}/microsoft.graph.sitePage",
+            payload,
+        )
+
+    for entry in text_webparts:
+        if not isinstance(entry, dict):
+            raise ValueError("Each 'text_webparts' entry must be an object.")
+        webpart_id = str(entry.get("webpart_id", "")).strip()
+        inner_html = entry.get("inner_html")
+        if not webpart_id:
+            raise ValueError("Each 'text_webparts' entry requires 'webpart_id'.")
+        if webpart_id in seen_webpart_ids:
+            raise ValueError(f"Duplicate webpart_id '{webpart_id}' in 'text_webparts'.")
+        if not isinstance(inner_html, str):
+            raise ValueError(
+                f"'inner_html' is required and must be a string for webpart '{webpart_id}'."
+            )
+        seen_webpart_ids.add(webpart_id)
+
+        current_webpart = _get_site_page_webpart(site_id, page_id, webpart_id)
+        odata_type = str(current_webpart.get("@odata.type") or "").strip().lower()
+        if not odata_type.endswith("textwebpart"):
+            raise PermissionError(
+                f"Web part '{webpart_id}' is not a text web part. Only existing text web parts may be updated by this tool."
+            )
+
+        _graph_patch(
+            f"{GRAPH_BASE}/sites/{site_id}/pages/{page_id}/microsoft.graph.sitePage/webParts/{webpart_id}",
+            {
+                "@odata.type": "#microsoft.graph.textWebPart",
+                "innerHtml": inner_html,
+            },
+        )
+        updated_webparts.append(
+            {
+                "webpart_id": webpart_id,
+                "content_length": len(inner_html),
+            }
+        )
+
+    final_page = _graph_get(
+        f"{GRAPH_BASE}/sites/{site_id}/pages/{page_id}/microsoft.graph.sitePage"
+    )
+    final_e_tag = str(final_page.get("eTag") or "")
+    target_ref = _target_ref(site_id=site_id, page_id=page_id, page_path=norm_path)
+    warnings = [
+        "This runtime validates artifact provenance inputs but does not persist them as SharePoint page metadata."
+    ]
+    _audit_log(
+        operation_id=operation_id,
+        tool_name="update_site_page_content",
+        actor_type="agent",
+        actor_id=write_context["actor_id"],
+        authorized_scope=f"site_id={site_id} page_scope=SitePages/*.aspx page_path={norm_path}",
+        target_object=target_ref,
+        action_type="update_site_page_content",
+        output_status="success",
+        input_record={
+            "page_path": norm_path,
+            "page_id": page_id,
+            "expected_e_tag": expected_e_tag,
+            "updated_fields": updated_fields,
+            "text_webparts": [
+                {
+                    "webpart_id": item["webpart_id"],
+                    "content_length": item["content_length"],
+                }
+                for item in updated_webparts
+            ],
+            "run_id": write_context["run_id"],
+            "workflow_ref": write_context["workflow_ref"],
+            "runbook_ref": write_context["runbook_ref"],
+            "capability_ref": write_context["capability_ref"],
+            "artifact_version_ref": write_context["artifact_version_ref"],
+            "provenance_label": write_context["provenance_label"],
+            "reason_code": write_context["reason_code"],
+            "upstream_artifact_ref": write_context["upstream_artifact_ref"],
+            "human_operator_id": write_context["human_operator_id"],
+            "approval_reference": write_context["approval_reference"],
+        },
+        version_before=str(current_page.get("eTag") or ""),
+        version_after=final_e_tag or None,
+        reason_code=write_context["reason_code"],
+        upstream_artifact_ref=write_context["upstream_artifact_ref"],
+        approval_reference=write_context["approval_reference"] or None,
+    )
+    return _response_payload(
+        status="success",
+        operation_id=operation_id,
+        target_ref=target_ref,
+        result_payload={
+            "page": _slim_site_page(final_page, norm_path),
+            "updated_fields": updated_fields,
+            "updated_webparts": updated_webparts,
+            "previous_e_tag": str(current_page.get("eTag") or ""),
+            "new_e_tag": final_e_tag,
+            "artifact_version_ref": write_context["artifact_version_ref"],
+            "provenance_label": write_context["provenance_label"],
+            "run_id": write_context["run_id"],
+        },
+        warnings=warnings,
     )
 
 
@@ -1372,6 +1776,133 @@ _TOOLS = [
         },
     },
     {
+        "name": "review_site_page",
+        "description": (
+            "Review one existing SharePoint site page within the approved Clients "
+            "SitePages exception surface. Returns page metadata, flattened text web "
+            "part content, and supported web part inventory. Only existing "
+            "`SitePages/*.aspx` pages in `/sites/Clients` are in scope."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "page_path": {
+                    "type": "string",
+                    "description": (
+                        "Path to the page within the approved Clients SitePages surface. "
+                        "Format: 'SitePages/<page>.aspx'. Example: 'SitePages/Home.aspx'."
+                    ),
+                },
+            },
+            "required": ["page_path"],
+        },
+    },
+    {
+        "name": "update_site_page_content",
+        "description": (
+            "Apply narrow, non-structural content updates to one existing Clients "
+            "SitePages page. Allowed mutations are limited to page title, page "
+            "description, and existing text web part innerHtml. This tool does not "
+            "create, delete, move, rename, publish, demote, or re-layout pages, and "
+            "it does not change navigation or site structure."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "page_path": {
+                    "type": "string",
+                    "description": (
+                        "Path to the target page within the approved Clients SitePages "
+                        "surface. Format: 'SitePages/<page>.aspx'."
+                    ),
+                },
+                "expected_e_tag": {
+                    "type": "string",
+                    "description": "Required current page eTag for version-safe update.",
+                },
+                "title": {
+                    "type": "string",
+                    "description": "Optional replacement page title.",
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Optional replacement page description.",
+                },
+                "text_webparts": {
+                    "type": "array",
+                    "description": "Optional list of existing text web parts to update.",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "webpart_id": {
+                                "type": "string",
+                                "description": "Identifier of an existing text web part on the page.",
+                            },
+                            "inner_html": {
+                                "type": "string",
+                                "description": "Replacement HTML for the existing text web part.",
+                            },
+                        },
+                        "required": ["webpart_id", "inner_html"],
+                    },
+                },
+                "run_id": {
+                    "type": "string",
+                    "description": "Required run identifier for write auditability.",
+                },
+                "workflow_ref": {
+                    "type": "string",
+                    "description": "Workflow reference. One of workflow_ref, runbook_ref, or capability_ref is required for writes.",
+                },
+                "runbook_ref": {
+                    "type": "string",
+                    "description": "Runbook reference. One of workflow_ref, runbook_ref, or capability_ref is required for writes.",
+                },
+                "capability_ref": {
+                    "type": "string",
+                    "description": "Capability reference. One of workflow_ref, runbook_ref, or capability_ref is required for writes.",
+                },
+                "artifact_version_ref": {
+                    "type": "string",
+                    "description": "Required artifact version reference for the page update.",
+                },
+                "provenance_label": {
+                    "type": "string",
+                    "description": "Required provenance label. Must begin with 'Derived from ML2 v'.",
+                },
+                "reason_code": {
+                    "type": "string",
+                    "description": "Required reason code for the write operation.",
+                },
+                "upstream_artifact_ref": {
+                    "type": "string",
+                    "description": "Required upstream artifact or prompt-chain reference.",
+                },
+                "approval_reference": {
+                    "type": "string",
+                    "description": "Optional ML1 approval reference for separately approved exception paths or change batches.",
+                },
+                "actor_id": {
+                    "type": "string",
+                    "description": "Optional initiating agent or operator identifier for audit logs.",
+                },
+                "human_operator_id": {
+                    "type": "string",
+                    "description": "Optional human operator identifier when the action is human-triggered.",
+                },
+            },
+            "required": [
+                "page_path",
+                "expected_e_tag",
+                "run_id",
+                "artifact_version_ref",
+                "provenance_label",
+                "reason_code",
+                "upstream_artifact_ref",
+            ],
+        },
+    },
+    {
         "name": "upload_draft",
         "description": (
             "Upload a file to the Documentation site DRAFTS folder. "
@@ -1602,6 +2133,8 @@ _TOOLS = [
 _TOOL_FN_MAP = {
     "list_folder":   tool_list_folder,
     "get_item":      tool_get_item,
+    "review_site_page": tool_review_site_page,
+    "update_site_page_content": tool_update_site_page_content,
     "upload_draft":  tool_upload_draft,
     "find_latest_template": tool_find_latest_template,
     "diff_docs": tool_diff_docs,
@@ -1648,7 +2181,7 @@ def _handle(msg: dict) -> None:
                 "capabilities": {"tools": {}},
                 "serverInfo": {
                     "name": "sharepoint-ll",
-                    "version": "1.3.0",
+                    "version": "1.4.0",
                     "description": (
                         "Bounded SharePoint MCP — LL Second Brain. "
                         "Access limited to the approved repo-declared SharePoint boundary."
@@ -1700,7 +2233,8 @@ def _handle(msg: dict) -> None:
 def main() -> None:
     log.info(
         "SharePoint MCP server starting. "
-        "Drives: %s. Policy: read-only for legalmatters and clients, DRAFTS-write for documentation.",
+        "Drives: %s. Policy: read-only for legalmatters, Documentation DRAFTS-write, "
+        "and a scoped Clients SitePages review/content-update exception.",
         list(_DRIVES),
     )
     for line in sys.stdin:

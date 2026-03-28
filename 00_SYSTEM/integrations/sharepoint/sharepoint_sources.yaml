@@ -2,9 +2,9 @@ id: 00_system__integrations__sharepoint__sources_yaml
 title: SharePoint Sources
 owner: ML1
 status: verified
-version: 1.6
+version: 1.7
 created_date: 2026-02-15
-last_updated: 2026-03-27
+last_updated: 2026-03-28
 sources:
   - source_id: SP_DOCUMENTATION_SITE
     description: SharePoint site used as the system-managed workspace surface for documentation, drafting, and execution outputs.
@@ -29,14 +29,32 @@ sources:
     ingestion: Enumerated via sharepoint_integration.py (read-only)
     write_policy: PROHIBITED
   - source_id: SP_CLIENTS_SITE
-    description: Clients site identified as the correct portal-linked SharePoint site. Recorded for clear in-repo reference, intended portal behavior capture, and source-pointer mapping; no doctrine-level workspace classification has been granted yet.
+    description: Clients site identified as the correct portal-linked SharePoint site. Recorded for clear in-repo reference, intended portal behavior capture, and source-pointer mapping. The parent site remains read-only except for the approved SitePages review and page-content-update exception documented below.
     location: levinellp.sharepoint.com/sites/Clients
     home_page: levinellp.sharepoint.com/sites/Clients/SitePages/Home.aspx
     site_id: levinellp.sharepoint.com,c4dc6167-79e8-4045-9019-74fea4fa848a,fbae25cc-c782-4d19-bbc5-7233dd58961a
     authority: confirmed
-    classification: client_portal_site_read_only
+    classification: read_only_authority
     ingestion: Resolved directly via live SharePoint connector and approved for repo MCP read-only access on 2026-03-27
     write_policy: PROHIBITED
+    approved_subsurfaces:
+      - surface_id: SP_CLIENTS_SITEPAGES
+        location: levinellp.sharepoint.com/sites/Clients/SitePages
+        classification: scoped_page_surface
+        authority: REVIEW_AND_PAGE_CONTENT_UPDATE_ONLY
+        page_scope:
+          - "SitePages/*.aspx"
+        allowed_operations:
+          - Review existing site pages
+          - Update title, description, and existing text web part content on existing pages
+        prohibited_operations:
+          - Create, delete, rename, move, publish, or demote pages
+          - Alter layout, navigation, permissions, sharing, retention, or site settings
+          - Create, delete, or reposition web parts
+        ml1_gated_operations:
+          - Site structure changes
+          - Navigation changes
+          - Non-content SitePages change batches
     intended_portal_pattern:
       - Branded sign-in page for credentialed client users
       - Shared home page accessible to all credentialed client users
@@ -77,7 +95,7 @@ sources:
       - "Work in Progress"
     notes:
       - Repo MCP runtime now permits read-only access to the configured Clients site libraries listed above.
-      - Home.aspx metadata confirms Tomas Hoskuldsson as last modifier, but page-content extraction remains outside the current MCP tool surface.
+      - Clients SitePages review and page-content updates are separately approved only within the explicit `SitePages/*.aspx` exception surface.
 ingestion:
   triggers:
     - Manual runs of sharepoint_integration.py
@@ -86,7 +104,7 @@ ingestion:
     - Graph access via client credentials
     - Documentation is an approved managed workspace with site-wide read/write/manage authority
     - LegalMatters is read-only by policy
-    - Clients is approved for repo MCP read-only access across the configured Clients site libraries
+    - Clients is approved for repo MCP read-only access across the configured Clients site libraries plus the scoped SitePages review/page-content-update exception
 consumers:
   scripts:
     - 00_SYSTEM/scripts/sharepoint_integration.py  # read-only batch enumeration
@@ -103,10 +121,11 @@ change_notes:
   - 2026-03-06: Drive IDs verified via live Graph API. Added site_ids. Updated LegalMatters drive name to "Working Files". Added Parked/StandardCashCows/DataManagement/ModelFile folders confirmed in root enumeration. Marked LegalMatters write_policy PROHIBITED.
   - 2026-03-11: Write access to Documentation/DRAFTS is ML1-approved. Implemented in sharepoint_mcp_server.py (upload_draft tool). sharepoint_integration.py intentionally remains read-only.
   - 2026-03-27: Documentation elevated to managed-workspace authority at the site level (read/write/manage). DRAFTS retained as a known workspace path, not the exclusive write surface.
-  - 2026-03-27: Added Clients site as an explicitly identified portal-linked SharePoint reference. Access confirmed via live connector; policy classification and runtime tooling scope remain pending.
+  - 2026-03-27: Added Clients site as an explicitly identified portal-linked SharePoint reference. Access confirmed via live connector.
   - "2026-03-27: Recorded the intended Clients portal pattern: branded sign-in, shared credentialed home page, client-specific navigation, and client-scoped library links."
   - "2026-03-27: Expanded the repo MCP runtime boundary to include read-only Clients site library aliases."
   - "2026-03-27: Expanded the Documentation MCP tool surface to include allowlisted template lookup, diffing, and template-to-WIP copy."
+  - "2026-03-28: Added the ML1-approved Clients SitePages exception for page review and existing-page content updates only. Site structure changes remain separately ML1-gated."
 
 sharepoint:
   drives:

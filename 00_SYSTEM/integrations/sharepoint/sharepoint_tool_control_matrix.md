@@ -2,16 +2,16 @@
 id: 00_system__integrations__sharepoint__tool_control_matrix_md
 title: SharePoint Tool Surface Control Matrix
 owner: ML2
-status: draft
-version: 1.0
+status: active
+version: 1.1
 created_date: 2026-03-28
 last_updated: 2026-03-28
 tags: [integration, sharepoint, governance, control-matrix]
 ---
 
-# SharePoint Tool Surface Control Matrix (v1.0)
+# SharePoint Tool Surface Control Matrix (v1.1)
 
-Status: Draft for ML1 approval
+Status: approved by ML1
 
 ## Purpose
 
@@ -36,7 +36,7 @@ Even when marked `ALLOWED`, read tools must:
 ### Allowed Write Tools
 
 Even when marked `ALLOWED`, write tools must:
-- target a site classified as `managed_workspace`
+- target either a site classified as `managed_workspace` or an explicitly approved ML1 sub-surface exception declared in integration contracts
 - be invoked by an approved workflow, runbook, or capability
 - write only to designated folders or sites
 - include artifact version reference
@@ -61,14 +61,17 @@ Tools in the `REQUIRES ML1 APPROVAL` class must include a valid `approval_refere
 | `sp_search_documents` | Read | `ALLOWED` | Must be bounded; no tenant-wide search |
 | `sp_list_folder` | Read | `ALLOWED` | Known folder or approved library scope only |
 | `sp_get_metadata` | Read | `ALLOWED` | Metadata only; no hidden inference |
+| `sp_get_site_page` | Read | `ALLOWED` | Explicit page path only; currently admitted for the Clients `SitePages/*.aspx` review surface |
 | `sp_get_version_history` | Diagnostic | `ALLOWED` | Metadata only |
 | `sp_inspect_library_schema` | Diagnostic | `ALLOWED` | Structure only; no modification |
 | `sp_create_draft_document` | Draft | `ALLOWED` | `managed_workspace` only; approved workflow, runbook, or capability required |
 | `sp_update_draft_document` | Draft | `ALLOWED` | `managed_workspace` only; draft-state only; version-safe update |
 | `sp_tag_document` | Draft | `ALLOWED` | `managed_workspace` only; metadata schema must validate |
+| `sp_update_site_page_content` | Controlled Update | `ALLOWED` | Existing pages only; currently admitted only for Clients `SitePages/*.aspx`; content-only mutations, approved workflow/runbook/capability, and version-safe write required |
 | `sp_move_document` | Controlled Update | `REQUIRES ML1 APPROVAL` | Cross-boundary risk; `approval_reference` required |
 | `(future) sp_publish_document` | Controlled Update | `REQUIRES ML1 APPROVAL` | Not admitted to v1 runtime; `approval_reference` required |
 | `(future) sp_bulk_update` | Controlled Update | `REQUIRES ML1 APPROVAL` | High blast radius; `approval_reference` required |
+| `(any) site-structure or navigation change batch` | Controlled Update | `REQUIRES ML1 APPROVAL` | Clients SitePages structure and navigation changes remain ML1-gated per batch |
 | `(any) delete operation` | Destructive | `PROHIBITED` | Removed in v1 |
 | `(any) permission modification` | Admin | `PROHIBITED` | Governance boundary |
 | `(any) tenant-wide search` | Read | `PROHIBITED` | Scope violation |
@@ -114,7 +117,7 @@ IF tool REQUIRES ML1 APPROVAL:
 IF tool is ALLOWED:
     IF scope invalid -> FAIL SAFE
     IF read tool and read controls not satisfied -> FAIL SAFE
-    IF write tool and site_class != managed_workspace -> FAIL SAFE
+    IF write tool and site_class != managed_workspace and no explicit ML1-approved sub-surface exception applies -> FAIL SAFE
     IF write tool and no approved workflow/runbook/capability ref -> FAIL SAFE
     IF write invariants or schema validation fail -> FAIL SAFE
     ELSE -> ALLOW
@@ -124,4 +127,4 @@ IF tool is ALLOWED:
 
 This matrix governs the abstract approved SharePoint tool surface.
 
-The current `scripts/sharepoint_mcp_server.py` runtime implements only a narrower subset. Abstract tools named here remain blocked until they are explicitly implemented and validated in the runtime.
+The current `scripts/sharepoint_mcp_server.py` runtime implements only a narrower subset. Abstract tools without explicit runtime implementation remain blocked until they are implemented and validated in the runtime.

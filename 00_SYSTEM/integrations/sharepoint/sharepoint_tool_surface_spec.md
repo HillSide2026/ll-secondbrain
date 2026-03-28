@@ -3,13 +3,13 @@ id: 00_system__integrations__sharepoint__tool_surface_spec_md
 title: SharePoint Tool Surface Spec
 owner: ML2
 status: active
-version: 1.0
+version: 1.1
 created_date: 2026-03-28
 last_updated: 2026-03-28
 tags: [integration, sharepoint, governance, mcp]
 ---
 
-# SharePoint Tool Surface Spec (v1.0)
+# SharePoint Tool Surface Spec (v1.1)
 
 Status: approved by ML1
 
@@ -73,6 +73,17 @@ SharePoint tool execution must inherit site classification from `POL-059_Integra
 - `read_only_authority` sites permit retrieval and diagnostic reads only, within explicitly approved site, library, and path scopes
 - `managed_workspace` sites permit read, write, and manage operations only when the site is explicitly named in integration contracts, the action is invoked by an approved workflow, runbook, or capability, and run evidence is emitted into ML2
 
+ML1 may also approve a narrower tool-specific sub-surface exception inside a
+`read_only_authority` site. Such an exception must be declared in integration
+contracts with:
+- exact site, path, and object scope
+- allowed tools
+- prohibited actions
+- escalation rules for any non-exception action
+
+The currently approved sub-surface exception is:
+- `/sites/Clients/SitePages` for page review and page-content updates on existing `SitePages/*.aspx` pages only
+
 Current approved site classes are defined in:
 - `00_SYSTEM/CONFIG/systems_of_record.yml`
 - `01_DOCTRINE/03_POLICIES/POL-059_Integration_Control_Policy.md`
@@ -127,6 +138,7 @@ Approved abstract tools:
 - `sp_search_documents`
 - `sp_list_folder`
 - `sp_get_metadata`
+- `sp_get_site_page`
 
 These tools are read-only and must remain bounded to approved scope.
 
@@ -143,8 +155,14 @@ These tools are allowed only on `managed_workspace` surfaces and only under appr
 
 Approved abstract tools:
 - `sp_move_document`
+- `sp_update_site_page_content`
 
-These tools are not generally allowed by default and require explicit ML1 approval-reference validation before execution.
+`sp_move_document` is not generally allowed by default and requires explicit ML1 approval-reference validation before execution.
+
+`sp_update_site_page_content` is allowed only within an ML1-approved sub-surface
+exception. It must remain limited to non-structural page-content changes on
+existing pages and must not create, delete, move, rename, publish, demote,
+re-layout, or reconfigure page structure.
 
 ### Diagnostic Tools
 
@@ -181,6 +199,10 @@ Write-capable tools must additionally carry:
 
 ML1-gated tools must additionally carry:
 - `approval_reference`
+
+Site-page content update tools must additionally carry:
+- page path
+- expected page version or eTag reference
 
 ## Output Contract Requirements
 
@@ -248,7 +270,11 @@ Current mapping:
 - `upload_draft` maps to a limited `sp_create_draft_document`
 - `copy_template_to_wip` maps to a limited managed-workspace draft-creation helper
 - `find_latest_template` and `diff_docs` are bounded Documentation-scoped helper tools
+- `review_site_page` maps to `sp_get_site_page`
+- `update_site_page_content` maps to `sp_update_site_page_content`
 
 Abstract tools named here remain blocked until both of the following are true:
 - they are admitted by the SharePoint control matrix
 - they are explicitly implemented in the runtime with schema, scope, and logging enforcement
+
+Until then, only the helper-mapped runtime tools actually exposed by `scripts/sharepoint_mcp_server.py` may execute.

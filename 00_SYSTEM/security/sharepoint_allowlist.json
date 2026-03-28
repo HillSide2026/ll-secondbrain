@@ -1,6 +1,6 @@
 {
-  "version": "0.2",
-  "notes": "Documentation is an approved managed workspace with site-wide read/write/manage authority. LegalMatters remains read-only. Runtime tooling may still impose narrower boundaries than doctrine. Template and WIP zones below are the active MCP allowlist for template lookup, diffing, and template-to-WIP copy operations.",
+  "version": "0.3",
+  "notes": "Documentation is an approved managed workspace with site-wide read/write/manage authority. LegalMatters remains read-only. Clients remains read-only except for the explicit SitePages page-review and page-content-update exception declared below. Runtime tooling may still impose narrower boundaries than doctrine. Template and WIP zones below are the active MCP allowlist for template lookup, diffing, and template-to-WIP copy operations.",
   "template_read_zones": [
     {
       "site_id": "levinellp.sharepoint.com,8758ea69-efb5-462e-8940-52962f4ca105,da0c6d79-a438-4994-a523-cbf97fae67eb",
@@ -18,6 +18,43 @@
     "site": "levinellp.sharepoint.com/sites/LegalMatters",
     "authority": "READ_ONLY",
     "site_id": "levinellp.sharepoint.com,8a545687-e984-4ba5-9f81-25d29cc721b3,b91583ee-e542-4283-b1d7-f2ee4fa08613"
+  },
+  "clients_sitepages_surface": {
+    "site": "levinellp.sharepoint.com/sites/Clients",
+    "site_id": "levinellp.sharepoint.com,c4dc6167-79e8-4045-9019-74fea4fa848a,fbae25cc-c782-4d19-bbc5-7233dd58961a",
+    "page_root_path": "SitePages",
+    "allowed_page_glob": "SitePages/*.aspx",
+    "allowed_tools": [
+      "review_site_page",
+      "update_site_page_content"
+    ],
+    "allowed_update_fields": [
+      "title",
+      "description",
+      "textWebPart.innerHtml"
+    ],
+    "prohibited_operations": [
+      "create_page",
+      "delete_page",
+      "rename_page",
+      "move_page",
+      "publish_page",
+      "demote_page",
+      "layout_change",
+      "navigation_change",
+      "permission_change",
+      "sharing_change",
+      "site_setting_change",
+      "webpart_create",
+      "webpart_delete",
+      "webpart_reposition",
+      "standard_webpart_mutation"
+    ],
+    "ml1_gated_operations": [
+      "site_structure_change",
+      "navigation_change_batch",
+      "non_content_sitepages_change_batch"
+    ]
   },
   "wip_write_zones": [
     {

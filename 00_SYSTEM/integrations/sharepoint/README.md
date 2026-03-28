@@ -3,7 +3,7 @@ id: 00_system__integrations__sharepoint__readme_md
 title: SharePoint Integration
 owner: ML1
 status: active
-version: 2.6
+version: 2.7
 created_date: 2026-02-15
 last_updated: 2026-03-28
 tags: [integration, sharepoint, mcp]
@@ -34,11 +34,11 @@ runtime boundary declared in this repo and does not act as a general SharePoint 
 |-------|------|-------------|-----------|
 | `legalmatters` | `/sites/LegalMatters` | Working Files | READ ONLY |
 | `documentation` | `/sites/Documentation` | Site-wide across approved drives/libraries | READ / WRITE / MANAGE |
-| `clients` | `/sites/Clients` | Configured read-only document-library scopes | READ ONLY |
+| `clients` | `/sites/Clients` | Configured read-only document-library scopes plus approved `SitePages` exception | READ ONLY + SCOPED SITEPAGES CONTENT |
 
 ## Clients Runtime Scope
 
-The `Clients` site is now part of the repo MCP runtime boundary as a read-only site surface. The current executable layer exposes the following read-only library aliases:
+The `Clients` site is part of the repo MCP runtime boundary as a read-only site surface with one separate ML1-approved `SitePages` exception. The current executable layer exposes the following read-only library aliases:
 
 - `clients_documents` -> Documents library, restricted to `Playbooks`, `Policies and Processes`, `Templates`, `Work in Progress`
 - `clients_master_client_library` -> Master Client Library, full library read
@@ -56,10 +56,12 @@ Home page reference: `/sites/Clients/SitePages/Home.aspx`
 - Client-specific pages link onward to document libraries scoped to that client
 
 ### clients — Current MCP Limits
-- Read-only metadata access only
-- No page-content extraction from SharePoint site pages
-- No writes to any Clients library
-- No access beyond the configured Clients library aliases
+- Read-only metadata access across the configured Clients document-library aliases
+- Read/review access for existing `SitePages/*.aspx` pages in `/sites/Clients`
+- Narrow page-content updates on existing `SitePages/*.aspx` pages only
+- No writes to any Clients document library outside the approved `SitePages` surface
+- No create, delete, rename, move, publish, or demote operations on Clients pages
+- No layout, navigation, permission, sharing, retention, or site-setting changes through the runtime
 
 ### legalmatters — Approved Read Paths (intake_paths only)
 - `LL Matters (Essential)`
@@ -94,6 +96,8 @@ Home page reference: `/sites/Clients/SitePages/Home.aspx`
 - `upload_draft` aligns to a limited `sp_create_draft_document`
 - `copy_template_to_wip` aligns to a limited managed-workspace draft-creation helper
 - `find_latest_template` and `diff_docs` are bounded helper tools inside the Documentation allowlist rather than tenant-general SharePoint tools
+- `review_site_page` aligns to `sp_get_site_page`
+- `update_site_page_content` aligns to `sp_update_site_page_content`
 
 ## MCP Tools
 
@@ -105,14 +109,17 @@ Home page reference: `/sites/Clients/SitePages/Home.aspx`
 | `diff_docs` | documentation allowlist only | Read allowlisted template/WIP file contents and generate a read-only diff summary |
 | `copy_template_to_wip` | documentation allowlist only | Copy an allowlisted template into an allowlisted Documentation WIP destination |
 | `upload_draft` | documentation only | Upload file to Documentation workspace surface |
+| `review_site_page` | clients SitePages exception only | Review one existing `SitePages/*.aspx` page, including text web parts and page metadata |
+| `update_site_page_content` | clients SitePages exception only | Update title, description, and existing text web part content on one existing `SitePages/*.aspx` page |
 
 ## Operations NOT Permitted via MCP
 
 - Arbitrary file-content reading outside the allowlisted Documentation template/WIP zones
 - Writes to `legalmatters`
-- Writes to `clients`
+- Writes to `clients` outside the approved `SitePages` content-update surface
 - Delete, move, share, or permission operations
 - Copy operations outside the allowlisted template-to-WIP flow
+- SitePages create, delete, rename, move, publish, demote, layout, navigation, or structure changes
 - Site or drive enumeration/discovery
 - Cross-site search
 - Access to any site or library beyond the configured `legalmatters`, `documentation`, and `clients` runtime scopes
@@ -137,3 +144,4 @@ Auth: Azure client credentials (AZURE_TENANT_ID, AZURE_CLIENT_ID, AZURE_CLIENT_S
 - v2.4 2026-03-27: Expanded the repo MCP runtime boundary to include read-only Clients site libraries and updated the documented runtime limits accordingly.
 - v2.5 2026-03-27: Added Documentation-scoped MCP tools for template lookup, allowlisted diffing, and template-to-WIP copy without widening LegalMatters access.
 - v2.6 2026-03-28: Added the abstract SharePoint tool-surface spec and control matrix, and clarified how the current MCP runtime maps to that narrower approved contract.
+- v2.7 2026-03-28: Added the ML1-approved Clients `SitePages` exception for page review and existing-page content updates only. Site-structure and navigation changes remain separately ML1-gated.
