@@ -548,6 +548,28 @@ matters:
   brief:
     matter_name: Marcela Hernandez
     delivery_status: PARKED
+- matter_id: 26-1631-00001
+  aliases:
+    email:
+      name_keys:
+      - teji12
+      - tejvirboparai
+      domains: []
+      senders:
+      - teji12@hotmail.com
+  review:
+    status: needs_ml1_review
+    notes: Added from lawyer task tracker and email-derived matter context.
+  brief:
+    matter_name: 1713425 Ontario Inc. (Tejvir Boparai)
+    client:
+    - 1713425 Ontario Inc.
+    - Tejvir Boparai
+    summary: Strategic corporate matter concerning the sale and transfer of a
+      Whitby Subway franchise business. Current file signals include asset purchase
+      agreement review, Subway transfer initiation documents, security-deposit
+      treatment, and PPSA / encumbrance follow-up.
+    delivery_status: STRATEGIC
 - matter_id: 26-259-00003
   aliases:
     email:

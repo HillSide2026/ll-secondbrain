@@ -41,3 +41,4 @@
 | 25-1318-00001 | Zelko Culibrk | Strategic |
 | 25-256-00005 | Aspire Infusions Inc | Strategic |
 | 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | Strategic |
+| 26-1631-00001 | 1713425 Ontario Inc. (Tejvir Boparai) | Strategic |

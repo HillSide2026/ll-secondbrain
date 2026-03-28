@@ -5,7 +5,7 @@ title: 05_MATTERS
 owner: ML1
 status: draft
 created_date: 2026-01-30
-last_updated: 2026-03-09
+last_updated: 2026-03-28
 tags: [matter]
 ---
 
@@ -52,6 +52,7 @@ Folder placement reflects `delivery_status` only. The other fields (`status`, `f
 | 25-1318-00001 | Zelko Culibrk | Open | Strategic | active | `STRATEGIC/25-1318-00001/` |
 | 25-256-00005 | Aspire Infusions Inc | Open | Strategic | active | `STRATEGIC/25-256-00005/` |
 | 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | Open | Strategic | active | `STRATEGIC/26-1593-00002/` |
+| 26-1631-00001 | 1713425 Ontario Inc. (Tejvir Boparai) | Open | Strategic | active | `STRATEGIC/26-1631-00001/` |
 
 ---
 

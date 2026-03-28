@@ -5,7 +5,7 @@ title: Andersen
 owner: ML1
 status: draft
 created_date: 2026-03-09
-last_updated: 2026-03-09
+last_updated: 2026-03-28
 tags: [matter, 26-1639-00003]
 practice_areas: [TBD]
 ---
@@ -29,3 +29,6 @@ Market Access
 
 ## Current Focus
 [What is the current priority/next action]
+
+## Working Artifacts
+- Local notes-to-file holding record: [`NOTES_TO_FILE.md`](NOTES_TO_FILE.md)

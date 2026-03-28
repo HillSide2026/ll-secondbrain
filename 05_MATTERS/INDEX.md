@@ -1,8 +1,8 @@
 # Matter Index
 
-_Generated: 2026-03-22_
+_Generated: 2026-03-28_
 
-**Total Matters:** 39
+**Total Matters:** 40
 
 > Services column is unpopulated — known system gap pending ML2 resolution.
 
@@ -15,7 +15,7 @@ _Generated: 2026-03-22_
 | [26-1639-00003](ESSENTIAL/26-1639-00003/README.md) | Andersen | Open | Essential | active | 0 |
 | [26-927-00004](ESSENTIAL/26-927-00004/README.md) | Stream Ventures Limited | Open | Essential | active | 0 |
 
-## Strategic (6)
+## Strategic (7)
 
 | Matter ID | Client/Name | Clio Status | Delivery Status | Fulfillment Status | Services |
 |---|---|---|---|---|---|
@@ -25,6 +25,7 @@ _Generated: 2026-03-22_
 | [25-256-00005](STRATEGIC/25-256-00005/README.md) | Aspire Infusions Inc | Open | Strategic | active | 0 |
 | [25-927-00003](STRATEGIC/25-927-00003/README.md) | Stream Ventures Limited | Open | Strategic | urgent | 0 |
 | [26-1593-00002](STRATEGIC/26-1593-00002/README.md) | 1001162998 Ontario Corp. o/a KaleMart | Open | Strategic | active | 0 |
+| [26-1631-00001](STRATEGIC/26-1631-00001/README.md) | 1713425 Ontario Inc. (Tejvir Boparai) | Open | Strategic | active | [{'service_type': 'solution', 'service_name': 'Asset purchase agreement review and negotiation'}, {'service_type': 'solution', 'service_name': 'Franchise transfer documentation review'}] |
 
 ## Standard (18)
 
@@ -67,7 +68,7 @@ _Generated: 2026-03-22_
 
 ## Summary by Fulfillment Status
 
-- **active:** 31
+- **active:** 32
 - **keep in view:** 7
 - **urgent:** 1
 
@@ -75,5 +76,5 @@ _Generated: 2026-03-22_
 
 - **Standard:** 18
 - **Parked:** 11
-- **Strategic:** 6
+- **Strategic:** 7
 - **Essential:** 4
