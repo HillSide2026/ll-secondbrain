@@ -3,9 +3,9 @@ id: 01_doctrine__03_capability_profiles__readme_md
 title: Capability Profiles
 owner: ML1
 status: draft
-version: 1.0
+version: 1.1
 created_date: 2026-02-08
-last_updated: 2026-03-08
+last_updated: 2026-03-28
 tags: []
 ---
 
@@ -77,8 +77,10 @@ For agent execution profiles, at no point does an agent: **decide**, **approve**
 | sharepoint.find_latest_template | Capability Profile: SharePoint.FindLatestTemplate | DRAFT | Template lookup |
 | sharepoint.diff_docs | Capability Profile: SharePoint.DiffDocs | DRAFT | Read-only comparison |
 | sharepoint.copy_template_to_wip | Capability Profile: SharePoint.CopyTemplateToWIP | DRAFT | WIP copy in allowlisted zones |
-| sharepoint.review_site_page | Capability Profile: SharePoint.ReviewSitePage | DRAFT | Clients SitePages review |
-| sharepoint.update_site_page_content | Capability Profile: SharePoint.UpdateSitePageContent | DRAFT | Clients SitePages content updates |
+| sharepoint.review_site_page | Capability Profile: SharePoint.ReviewSitePage | DRAFT | Clients site page review helper |
+| sharepoint.update_site_page_content | Capability Profile: SharePoint.UpdateSitePageContent | DRAFT | Clients site page update helper |
+| sharepoint.provision_client_workspace | Capability Profile: SharePoint.ProvisionClientWorkspace | DRAFT | Clients workspace provisioning helper |
+| sharepoint.manage_clients_site | Capability Profile: SharePoint.ManageClientsSite | DRAFT | Broad Clients site authority |
 | calendar.list_events | Capability Profile: Calendar.ListEvents | DRAFT | Read-only schedule retrieval |
 | calendar.generate_prep_packet | Capability Profile: Calendar.GeneratePrepPacket | DRAFT | Prep packet generation |
 

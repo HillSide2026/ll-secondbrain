@@ -3,13 +3,13 @@ id: 00_system__integrations__sharepoint__tool_surface_spec_md
 title: SharePoint Tool Surface Spec
 owner: ML2
 status: active
-version: 1.1
+version: 1.2
 created_date: 2026-03-28
 last_updated: 2026-03-28
 tags: [integration, sharepoint, governance, mcp]
 ---
 
-# SharePoint Tool Surface Spec (v1.1)
+# SharePoint Tool Surface Spec (v1.2)
 
 Status: approved by ML1
 
@@ -81,8 +81,12 @@ contracts with:
 - prohibited actions
 - escalation rules for any non-exception action
 
-The currently approved sub-surface exception is:
-- `/sites/Clients/SitePages` for page review and page-content updates on existing `SitePages/*.aspx` pages only
+The current repo also records implementation slices inside the broader Clients
+managed workspace:
+- `/sites/Clients/SitePages` current review/content helper tools
+- `/sites/Clients` current client-workspace provisioning helper
+
+These implementation slices do not cap the broader Clients site authority.
 
 Current approved site classes are defined in:
 - `00_SYSTEM/CONFIG/systems_of_record.yml`
@@ -156,13 +160,29 @@ These tools are allowed only on `managed_workspace` surfaces and only under appr
 Approved abstract tools:
 - `sp_move_document`
 - `sp_update_site_page_content`
+- `sp_provision_client_workspace`
+- `manage_clients_site`
 
 `sp_move_document` is not generally allowed by default and requires explicit ML1 approval-reference validation before execution.
 
-`sp_update_site_page_content` is allowed only within an ML1-approved sub-surface
-exception. It must remain limited to non-structural page-content changes on
-existing pages and must not create, delete, move, rename, publish, demote,
-re-layout, or reconfigure page structure.
+`sp_update_site_page_content` is an admitted helper tool inside the Clients
+managed workspace. The current helper implementation remains limited to
+page-content mutations on existing pages, but that tool-level limit does not
+imply broader Clients SitePages structural actions are prohibited by doctrine.
+
+`sp_provision_client_workspace` is an admitted helper tool inside the Clients
+managed workspace. It may create one client-specific page,
+create one client-specific library, apply explicit permissions to the created
+resources for existing principals only, and add one shared-home navigation
+entry. It must not create groups, invite guests, alter site-wide settings, or
+mutate arbitrary site structure.
+
+`manage_clients_site` is the governed broad wrapper for `/sites/Clients`.
+Its scope is hard-locked to that one site. It may perform page, library,
+folder, navigation, permission, and site-setting operations admitted by the
+Clients control matrix. Destructive, publication, home-page, and permission
+mutation operations may require `approval_token` even though the wrapper itself
+is site-scoped.
 
 ### Diagnostic Tools
 
@@ -175,10 +195,11 @@ These tools are read-only and must not mutate structure, permissions, or workflo
 ### Prohibited Tool Classes in v1
 
 The following remain prohibited in v1:
-- delete operations
-- permission modification
+- unscoped delete operations
+- unscoped permission modification
 - tenant-wide search
-- site or library creation
+- arbitrary cross-site site or library creation
+- group or tenant identity administration
 - retention or compliance modification
 - autonomous publication or finalization
 
@@ -197,8 +218,11 @@ Write-capable tools must additionally carry:
 - artifact version reference
 - provenance label or equivalent
 
+Exception:
+- `manage_clients_site` follows its own admitted `/sites/Clients` wrapper contract and may use `approval_token` plus explicit structured targets/options instead of the workflow/provenance bundle used by other SharePoint write tools.
+
 ML1-gated tools must additionally carry:
-- `approval_reference`
+- `approval_reference` or `approval_token`, depending on the admitted runtime contract
 
 Site-page content update tools must additionally carry:
 - page path

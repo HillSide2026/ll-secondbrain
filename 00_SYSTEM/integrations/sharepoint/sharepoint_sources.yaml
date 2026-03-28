@@ -2,7 +2,7 @@ id: 00_system__integrations__sharepoint__sources_yaml
 title: SharePoint Sources
 owner: ML1
 status: verified
-version: 1.7
+version: 1.8
 created_date: 2026-02-15
 last_updated: 2026-03-28
 sources:
@@ -29,32 +29,47 @@ sources:
     ingestion: Enumerated via sharepoint_integration.py (read-only)
     write_policy: PROHIBITED
   - source_id: SP_CLIENTS_SITE
-    description: Clients site identified as the correct portal-linked SharePoint site. Recorded for clear in-repo reference, intended portal behavior capture, and source-pointer mapping. The parent site remains read-only except for the approved SitePages review and page-content-update exception documented below.
+    description: Clients site identified as the correct portal-linked SharePoint site. Recorded for clear in-repo reference, intended portal behavior capture, and source-pointer mapping. The site is approved as a managed workspace with site-wide read, write, and manage authority, while current runtime tooling may still expose narrower helper slices.
     location: levinellp.sharepoint.com/sites/Clients
     home_page: levinellp.sharepoint.com/sites/Clients/SitePages/Home.aspx
     site_id: levinellp.sharepoint.com,c4dc6167-79e8-4045-9019-74fea4fa848a,fbae25cc-c782-4d19-bbc5-7233dd58961a
     authority: confirmed
-    classification: read_only_authority
-    ingestion: Resolved directly via live SharePoint connector and approved for repo MCP read-only access on 2026-03-27
-    write_policy: PROHIBITED
+    classification: managed_workspace
+    ingestion: Resolved directly via live SharePoint connector and approved for repo MCP managed-workspace use on 2026-03-28
+    write_policy: SITE_WIDE_READ_WRITE_MANAGE
     approved_subsurfaces:
       - surface_id: SP_CLIENTS_SITEPAGES
         location: levinellp.sharepoint.com/sites/Clients/SitePages
         classification: scoped_page_surface
-        authority: REVIEW_AND_PAGE_CONTENT_UPDATE_ONLY
+        authority: SITEPAGES_READ_WRITE_MANAGE_WITHIN_CLIENTS_MANAGED_WORKSPACE
         page_scope:
           - "SitePages/*.aspx"
         allowed_operations:
           - Review existing site pages
-          - Update title, description, and existing text web part content on existing pages
+          - Create, update, replace, move, rename, publish, demote, or delete site pages
+          - Alter page layout, canvas structure, title area structure, navigation, permissions, sharing, and supported web-part composition
+          - Create, delete, reposition, and configure web parts
         prohibited_operations:
-          - Create, delete, rename, move, publish, or demote pages
-          - Alter layout, navigation, permissions, sharing, retention, or site settings
-          - Create, delete, or reposition web parts
-        ml1_gated_operations:
-          - Site structure changes
-          - Navigation changes
-          - Non-content SitePages change batches
+          - Group creation or tenant identity administration
+          - Tenant-wide retention, compliance, or cross-site sharing-default changes
+          - Inferring authority outside the Clients site
+      - surface_id: SP_CLIENTS_WORKSPACE_PROVISIONING
+        location: levinellp.sharepoint.com/sites/Clients
+        classification: scoped_workspace_provisioning_surface
+        authority: CLIENT_WORKSPACE_BATCH_HELPER_WITHIN_CLIENTS_MANAGED_WORKSPACE
+        page_scope:
+          - "SitePages/*.aspx"
+        library_scope:
+          - "*-Documents"
+        allowed_operations:
+          - Create one client-specific page
+          - Create one client-specific document library
+          - Break inheritance and assign existing principals on the created page and created library
+          - Add one shared-home client navigation link pointing to the created client page or library
+        prohibited_operations:
+          - Group creation or tenant identity administration
+          - Tenant-wide retention, compliance, or cross-site sharing-default changes
+          - Inferring authority outside the Clients site
     intended_portal_pattern:
       - Branded sign-in page for credentialed client users
       - Shared home page accessible to all credentialed client users
@@ -94,8 +109,9 @@ sources:
       - "Templates"
       - "Work in Progress"
     notes:
-      - Repo MCP runtime now permits read-only access to the configured Clients site libraries listed above.
-      - Clients SitePages review and page-content updates are separately approved only within the explicit `SitePages/*.aspx` exception surface.
+      - Clients is approved as a managed workspace at the site level.
+      - The current MCP runtime still exposes only a narrower implemented subset of Clients tools and helper surfaces.
+      - Clients page/library provisioning currently uses a bounded helper with existing principals and shared-home navigation scope.
 ingestion:
   triggers:
     - Manual runs of sharepoint_integration.py
@@ -104,7 +120,8 @@ ingestion:
     - Graph access via client credentials
     - Documentation is an approved managed workspace with site-wide read/write/manage authority
     - LegalMatters is read-only by policy
-    - Clients is approved for repo MCP read-only access across the configured Clients site libraries plus the scoped SitePages review/page-content-update exception
+    - Clients is approved for repo MCP managed-workspace use across the site, while the current runtime still exposes a narrower implemented subset
+    - Clients permission, navigation, and broader site-management operations additionally depend on SharePoint REST authorization on `/sites/Clients`
 consumers:
   scripts:
     - 00_SYSTEM/scripts/sharepoint_integration.py  # read-only batch enumeration
@@ -126,6 +143,8 @@ change_notes:
   - "2026-03-27: Expanded the repo MCP runtime boundary to include read-only Clients site library aliases."
   - "2026-03-27: Expanded the Documentation MCP tool surface to include allowlisted template lookup, diffing, and template-to-WIP copy."
   - "2026-03-28: Added the ML1-approved Clients SitePages exception for page review and existing-page content updates only. Site structure changes remain separately ML1-gated."
+  - "2026-03-28: Added the ML1-gated Clients workspace provisioning exception for one-page, one-library, explicit-principal, shared-home-link batches."
+  - "2026-03-28: Elevated Clients to site-wide managed-workspace authority and retained existing SitePages/provisioning slices as current runtime helper surfaces."
 
 sharepoint:
   drives:

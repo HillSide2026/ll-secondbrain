@@ -3,15 +3,15 @@ id: POL-058
 title: System Write-Back Policy
 owner: ML1
 status: draft
-version: 1.1
+version: 1.2
 created_date: 2026-02-09
-last_updated: 2026-03-23
+last_updated: 2026-03-28
 tags: [doctrine, policy, write-back, integrations]
 ---
 
 # System Write-Back Policy
 
-**Version:** 1.1
+**Version:** 1.2
 **Status:** ACTIVE
 **Effective:** Stage 2.1 onwards
 
@@ -51,10 +51,11 @@ External integrations are **read-only** unless an operational write is authorize
 No agent may write, create, update, or delete data in external systems unless allowed by Integration Control or an explicit write-back capability is approved.
 
 ### 3. Explicit Authorization Required (Write-Back Capabilities)
-Write-back capabilities are **not** implied by system scope. The following high-risk write-backs remain explicitly gated and require ML1 approval per run:
+Write-back capabilities are **not** implied by system scope. The following high-risk write-backs remain explicitly gated and require ML1 approval per run unless a site-specific managed-workspace authority is already approved under Integration Control Policy:
 - Google Drive Ledger write-back (Stage 2.11)
 - Gmail matter labeling write-back (Stage 2.13)
 - SharePoint Documentation site managed-workspace authority (Stage 2.14)
+- SharePoint Clients site managed-workspace authority (Stage 2.15)
 
 All other write-back capabilities remain prohibited unless explicitly added and approved, or permitted under Integration Control.
 
@@ -241,6 +242,66 @@ The system MUST NOT:
 - Expand authority to other SharePoint sites by implication
 - Write to `LegalMatters` or any unapproved SharePoint site under this authorization
 - Alter permissions or sharing state unless and until a separate ML1 approval explicitly grants that class of action
+
+## Stage 2.15 — SharePoint Clients Site Authority
+
+### Purpose
+Define the system's approved operational authority for the SharePoint Clients site as a managed workspace surface.
+
+### Authorized Surface
+- Site: `levinellp.sharepoint.com/sites/Clients`
+- Scope: site-wide
+- Authority level: read, write, and manage for system operations authorized by ML2 playbooks, runbooks, and integration contracts
+
+### Authoritative Behavior
+- SharePoint Clients is a managed external workspace, not canonical doctrine storage.
+- ML2 remains the system of record for:
+  - doctrine
+  - canonical templates
+  - governance artifacts
+  - approvals
+  - run evidence
+- Clients may hold:
+  - shared portal pages
+  - client-specific workspace pages
+  - client-specific libraries
+  - navigation and routing surfaces
+  - working documents and collaboration copies
+
+### Permitted Operations
+The system MAY, within the Clients site:
+- Read site, page, library, folder, and file metadata
+- Read file contents where required by an approved workflow or capability
+- Create pages, folders, and libraries
+- Update or replace pages and files
+- Move or copy content between approved workspace locations
+- Maintain system-managed metadata fields
+- Provision or repair approved Clients workspace structure
+- Break inheritance and manage site-local permissions and sharing state
+- Create or update navigation and routing within the site
+
+### Prohibited Operations
+The system MUST NOT:
+- Treat Clients as canonical doctrine storage
+- Modify ML2 canonical artifacts in place through SharePoint
+- Expand authority to other SharePoint sites by implication
+- Write to `LegalMatters` or any unapproved SharePoint site under this authorization
+- Alter tenant-wide identity management, retention, or compliance settings unless separately approved
+
+### Audit Requirements
+All Clients-site write or manage actions must record:
+- run identifier
+- acting tool or agent
+- target site/page/library/path
+- operation type
+- before/after reference where practical
+- success/failure state
+
+### Conflict Rule
+If a Clients artifact conflicts with ML2 canonical content:
+- ML2 remains controlling
+- the conflict must be surfaced in run evidence
+- promotion or republishing must follow Integration Control rules
 
 ### Audit Requirements
 All Documentation-site write or manage actions must record:

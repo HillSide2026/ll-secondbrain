@@ -3,15 +3,15 @@ id: 01_doctrine__03_capability_profiles__sharepoint_review_site_page_md
 title: Capability Profile: SharePoint.ReviewSitePage
 owner: ML1
 status: draft
-version: 0.1
+version: 0.2
 created_date: 2026-03-28
 last_updated: 2026-03-28
 tags: [capability, sharepoint, mcp, sitepages]
 ---
-# Capability Profile: SharePoint.ReviewSitePage (v0.1)
+# Capability Profile: SharePoint.ReviewSitePage (v0.2)
 
 ## Purpose
-Review an existing SharePoint site page within the approved Clients `SitePages` surface.
+Review an existing SharePoint site page through the current Clients helper slice.
 
 ## Allowed Actions
 - Read metadata for existing `SitePages/*.aspx` pages in `/sites/Clients`
@@ -22,7 +22,7 @@ Review an existing SharePoint site page within the approved Clients `SitePages` 
 - Editing page content
 - Creating, deleting, moving, renaming, publishing, or demoting pages
 - Altering page layout, navigation, permissions, sharing, retention, or site settings
-- Inferring authority outside the approved Clients `SitePages` surface
+- Inferring authority outside the current helper slice
 
 ## Inputs (Typed)
 - page_path: string (`SitePages/<name>.aspx`)
@@ -47,7 +47,7 @@ Review an existing SharePoint site page within the approved Clients `SitePages` 
 - output status
 
 ## Approval Mode
-- Auto when the request satisfies `POL-059_Integration_Control_Policy.md` read controls and remains within the approved Clients `SitePages` surface.
+- Auto when the request satisfies `POL-059_Integration_Control_Policy.md` read controls and remains within the current helper slice.
 
 ## Boundary Rules
 - The request MUST target an existing `SitePages/*.aspx` page in `/sites/Clients`.

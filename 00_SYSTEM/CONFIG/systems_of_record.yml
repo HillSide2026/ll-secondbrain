@@ -26,13 +26,26 @@ systems:
     site_classes:
       legalmatters: read_only_authority
       documentation: managed_workspace
-      clients: read_only_authority
+      clients: managed_workspace
     approved_subsurfaces:
       clients_sitepages:
         parent_site: clients
         scope: SitePages/*.aspx
-        authority: page_review_and_page_content_update_only
-        structure_changes: requires_ml1_approval_per_change_batch
+        authority: sitepages_read_write_manage_within_clients_managed_workspace
+        approval_mode: standing_managed_workspace
+        constraints:
+          - within_clients_site_only
+          - no_tenant_identity_administration
+      clients_workspace_provisioning:
+        parent_site: clients
+        scope:
+          - SitePages/*.aspx
+          - "*-Documents"
+        authority: provisioning_helper_within_clients_managed_workspace
+        approval_mode: workflow_governed
+        constraints:
+          - existing_principals_only
+          - shared_home_navigation_only
   gmail:
     role: comms_truth
     authoritative_fields:

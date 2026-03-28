@@ -3,15 +3,16 @@ id: 01_doctrine__03_capability_profiles__sharepoint_update_site_page_content_md
 title: Capability Profile: SharePoint.UpdateSitePageContent
 owner: ML1
 status: draft
-version: 0.1
+version: 0.2
 created_date: 2026-03-28
 last_updated: 2026-03-28
 tags: [capability, sharepoint, mcp, sitepages]
 ---
-# Capability Profile: SharePoint.UpdateSitePageContent (v0.1)
+# Capability Profile: SharePoint.UpdateSitePageContent (v0.2)
 
 ## Purpose
-Apply narrow, non-structural content updates to an existing SharePoint site page within the approved Clients `SitePages` surface.
+Apply page updates through the current Clients helper slice. This profile describes
+the current helper implementation, not the full breadth of Clients site authority.
 
 ## Allowed Actions
 - Update page title
@@ -20,11 +21,11 @@ Apply narrow, non-structural content updates to an existing SharePoint site page
 - Execute only when invoked by an approved workflow, runbook, or capability and run evidence is emitted into ML2
 
 ## Disallowed Actions
-- Creating, deleting, renaming, moving, publishing, or demoting pages
-- Altering page layout, canvas structure, title area structure, navigation, permissions, sharing, retention, or site settings
-- Creating, deleting, or repositioning web parts
-- Updating standard web part configuration
-- Treating this exception as write authority over the broader `Clients` site
+- This capability itself does not create, delete, rename, move, publish, or demote pages
+- This capability itself does not alter layout, canvas structure, title area structure, navigation, permissions, sharing, retention, or site settings
+- This capability itself does not create, delete, or reposition web parts
+- This capability itself does not update standard web part configuration
+- This capability does not define the full extent of authority over the broader `Clients` site
 
 ## Inputs (Typed)
 - page_path: string (`SitePages/<name>.aspx`)
@@ -53,14 +54,13 @@ Apply narrow, non-structural content updates to an existing SharePoint site page
 - provenance label
 - reason code
 - upstream artifact reference
-- approval_reference when execution depends on an ML1-scoped exception
+- approval_reference when provided by the workflow governance layer
 
 ## Approval Mode
-- Auto when the request stays within the approved Clients `SitePages` surface, uses an approved workflow, runbook, or capability, and satisfies the active SharePoint write invariants.
-- Site-structure, navigation, or other non-content change batches require explicit ML1 approval recorded through an `approval_reference`.
+- Auto when the request stays within the current helper implementation, uses an approved workflow, runbook, or capability, and satisfies the active SharePoint write invariants.
 
 ## Boundary Rules
 - The request MUST target an existing `SitePages/*.aspx` page in `/sites/Clients`.
 - The request MUST include an expected page eTag for version-safe execution.
 - The request MUST include artifact version reference and `Derived from ML2 vX.Y` provenance labeling or equivalent governed marker.
-- The tool MUST NOT mutate page structure or any non-content Clients surface.
+- The capability profile does not limit the broader Clients site authority.

@@ -3,13 +3,13 @@ id: 00_system__integrations__sharepoint__tool_control_matrix_md
 title: SharePoint Tool Surface Control Matrix
 owner: ML2
 status: active
-version: 1.1
+version: 1.3
 created_date: 2026-03-28
 last_updated: 2026-03-28
 tags: [integration, sharepoint, governance, control-matrix]
 ---
 
-# SharePoint Tool Surface Control Matrix (v1.1)
+# SharePoint Tool Surface Control Matrix (v1.3)
 
 Status: approved by ML1
 
@@ -53,6 +53,9 @@ Tools in the `REQUIRES ML1 APPROVAL` class must include a valid `approval_refere
 - timestamp
 - expiry or scope notes when applicable
 
+Runtime-specific exception:
+- `manage_clients_site` uses `approval_token` for its ML1-gated `/sites/Clients` operations
+
 ## Control Matrix
 
 | Tool Name | Category | Control | Notes |
@@ -67,15 +70,17 @@ Tools in the `REQUIRES ML1 APPROVAL` class must include a valid `approval_refere
 | `sp_create_draft_document` | Draft | `ALLOWED` | `managed_workspace` only; approved workflow, runbook, or capability required |
 | `sp_update_draft_document` | Draft | `ALLOWED` | `managed_workspace` only; draft-state only; version-safe update |
 | `sp_tag_document` | Draft | `ALLOWED` | `managed_workspace` only; metadata schema must validate |
-| `sp_update_site_page_content` | Controlled Update | `ALLOWED` | Existing pages only; currently admitted only for Clients `SitePages/*.aspx`; content-only mutations, approved workflow/runbook/capability, and version-safe write required |
+| `sp_update_site_page_content` | Controlled Update | `ALLOWED` | Existing pages only; current helper admitted for Clients `SitePages/*.aspx`; this tool remains content-focused by implementation but does not cap broader Clients SitePages authority |
+| `sp_provision_client_workspace` | Controlled Update | `ALLOWED` | Clients managed-workspace helper; may create one page, create one `*-Documents` library, assign existing principals, and add one shared-home navigation link |
+| `manage_clients_site` | Controlled Update | `ALLOWED` / `REQUIRES ML1 APPROVAL` | `/sites/Clients` wrapper. Read, create, update, folder create/rename/move, library create/update, navigation upsert/reorder, and inspection operations are allowed without token. Publish, delete, set-home, permission mutation, inheritance changes, and folder/library/navigation delete require `approval_token`. |
 | `sp_move_document` | Controlled Update | `REQUIRES ML1 APPROVAL` | Cross-boundary risk; `approval_reference` required |
 | `(future) sp_publish_document` | Controlled Update | `REQUIRES ML1 APPROVAL` | Not admitted to v1 runtime; `approval_reference` required |
 | `(future) sp_bulk_update` | Controlled Update | `REQUIRES ML1 APPROVAL` | High blast radius; `approval_reference` required |
-| `(any) site-structure or navigation change batch` | Controlled Update | `REQUIRES ML1 APPROVAL` | Clients SitePages structure and navigation changes remain ML1-gated per batch |
-| `(any) delete operation` | Destructive | `PROHIBITED` | Removed in v1 |
-| `(any) permission modification` | Admin | `PROHIBITED` | Governance boundary |
+| `(any) unscoped delete operation` | Destructive | `PROHIBITED` | Removed in v1 outside explicitly admitted wrappers and scope locks |
+| `(any) unscoped permission modification` | Admin | `PROHIBITED` | Governance boundary outside an explicitly admitted tool and scope |
 | `(any) tenant-wide search` | Read | `PROHIBITED` | Scope violation |
-| `(any) site or library creation` | Admin | `PROHIBITED` | Out of scope |
+| `(any) arbitrary cross-site site or library creation` | Admin | `PROHIBITED` | Out of scope outside an explicitly admitted tool and scope |
+| `(any) group or tenant identity administration` | Admin | `PROHIBITED` | Out of scope |
 | `(any) retention or compliance change` | Admin | `PROHIBITED` | Legal and governance risk |
 | `(any) autonomous publish` | Workflow | `PROHIBITED` | Violates ML1 authority |
 
@@ -111,7 +116,7 @@ IF tool not in matrix -> BLOCK
 IF tool is PROHIBITED -> BLOCK + log
 
 IF tool REQUIRES ML1 APPROVAL:
-    IF valid approval_reference present and in scope -> ALLOW
+    IF valid approval_reference or runtime-specific approval token present and in scope -> ALLOW
     ELSE -> ESCALATE
 
 IF tool is ALLOWED:
@@ -127,4 +132,7 @@ IF tool is ALLOWED:
 
 This matrix governs the abstract approved SharePoint tool surface.
 
-The current `scripts/sharepoint_mcp_server.py` runtime implements only a narrower subset. Abstract tools without explicit runtime implementation remain blocked until they are implemented and validated in the runtime.
+The current `scripts/sharepoint_mcp_server.py` runtime now includes the broad
+`manage_clients_site` wrapper for `/sites/Clients` in addition to the narrower
+helper tools. Abstract tools without explicit runtime implementation remain
+blocked until they are implemented and validated in the runtime.

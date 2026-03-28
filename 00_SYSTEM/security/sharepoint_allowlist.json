@@ -1,6 +1,6 @@
 {
-  "version": "0.3",
-  "notes": "Documentation is an approved managed workspace with site-wide read/write/manage authority. LegalMatters remains read-only. Clients remains read-only except for the explicit SitePages page-review and page-content-update exception declared below. Runtime tooling may still impose narrower boundaries than doctrine. Template and WIP zones below are the active MCP allowlist for template lookup, diffing, and template-to-WIP copy operations.",
+  "version": "0.5",
+  "notes": "Documentation is an approved managed workspace with site-wide read/write/manage authority. LegalMatters remains read-only. Clients is also approved as a managed workspace with site-wide read/write/manage authority. The Clients surfaces declared below include both targeted helper slices and the broad manage_clients_site wrapper. Template and WIP zones below are the active MCP allowlist for template lookup, diffing, and template-to-WIP copy operations.",
   "template_read_zones": [
     {
       "site_id": "levinellp.sharepoint.com,8758ea69-efb5-462e-8940-52962f4ca105,da0c6d79-a438-4994-a523-cbf97fae67eb",
@@ -19,41 +19,126 @@
     "authority": "READ_ONLY",
     "site_id": "levinellp.sharepoint.com,8a545687-e984-4ba5-9f81-25d29cc721b3,b91583ee-e542-4283-b1d7-f2ee4fa08613"
   },
+  "clients_site_authority": {
+    "site": "levinellp.sharepoint.com/sites/Clients",
+    "authority": "SITE_WIDE_READ_WRITE_MANAGE",
+    "site_id": "levinellp.sharepoint.com,c4dc6167-79e8-4045-9019-74fea4fa848a,fbae25cc-c782-4d19-bbc5-7233dd58961a"
+  },
   "clients_sitepages_surface": {
     "site": "levinellp.sharepoint.com/sites/Clients",
     "site_id": "levinellp.sharepoint.com,c4dc6167-79e8-4045-9019-74fea4fa848a,fbae25cc-c782-4d19-bbc5-7233dd58961a",
     "page_root_path": "SitePages",
     "allowed_page_glob": "SitePages/*.aspx",
+    "runtime_scope_note": "Current runtime-admitted SitePages helper slice inside the broader Clients managed workspace.",
     "allowed_tools": [
       "review_site_page",
       "update_site_page_content"
     ],
-    "allowed_update_fields": [
+    "current_tool_update_fields": [
       "title",
       "description",
       "textWebPart.innerHtml"
     ],
-    "prohibited_operations": [
-      "create_page",
-      "delete_page",
-      "rename_page",
-      "move_page",
-      "publish_page",
-      "demote_page",
-      "layout_change",
-      "navigation_change",
-      "permission_change",
-      "sharing_change",
-      "site_setting_change",
-      "webpart_create",
-      "webpart_delete",
-      "webpart_reposition",
-      "standard_webpart_mutation"
+    "doctrine_prohibited_operations": [
+      "group_create",
+      "guest_invite",
+      "tenant_identity_admin",
+      "tenant_wide_retention_change",
+      "tenant_wide_compliance_change",
+      "cross_site_mutation"
+    ]
+  },
+  "clients_workspace_provisioning_surface": {
+    "site": "levinellp.sharepoint.com/sites/Clients",
+    "site_id": "levinellp.sharepoint.com,c4dc6167-79e8-4045-9019-74fea4fa848a,fbae25cc-c782-4d19-bbc5-7233dd58961a",
+    "page_root_path": "SitePages",
+    "site_pages_list_title": "Site Pages",
+    "allowed_page_glob": "SitePages/*.aspx",
+    "allowed_library_name_regex": "^[A-Za-z0-9][A-Za-z0-9 .&'_-]*-Documents$",
+    "allowed_tools": [
+      "provision_client_workspace"
     ],
-    "ml1_gated_operations": [
-      "site_structure_change",
-      "navigation_change_batch",
-      "non_content_sitepages_change_batch"
+    "runtime_scope_note": "Current runtime provisioning helper inside the broader Clients managed workspace.",
+    "required_approval_reference": false,
+    "allowed_role_definitions": [
+      "Read",
+      "Contribute",
+      "Edit"
+    ],
+    "allowed_navigation_locations": [
+      "TopNavigationBar"
+    ],
+    "allowed_navigation_target_globs": [
+      "SitePages/*.aspx",
+      "*-Documents"
+    ],
+    "prohibited_operations": [
+      "group_create",
+      "guest_invite",
+      "tenant_identity_admin",
+      "tenant_wide_sharing_default_change",
+      "tenant_wide_retention_change",
+      "tenant_wide_compliance_change",
+      "cross_site_mutation"
+    ]
+  },
+  "clients_site_management_surface": {
+    "site": "levinellp.sharepoint.com/sites/Clients",
+    "site_id": "levinellp.sharepoint.com,c4dc6167-79e8-4045-9019-74fea4fa848a,fbae25cc-c782-4d19-bbc5-7233dd58961a",
+    "page_root_path": "SitePages",
+    "site_pages_list_title": "Site Pages",
+    "allowed_page_glob": "SitePages/*.aspx",
+    "allowed_tools": [
+      "manage_clients_site"
+    ],
+    "runtime_scope_note": "Broad governed site-management wrapper for /sites/Clients only.",
+    "allowed_navigation_locations": [
+      "TopNavigationBar",
+      "QuickLaunch",
+      "Footer"
+    ],
+    "allowed_role_definitions": [
+      "Read",
+      "Contribute",
+      "Edit",
+      "Full Control"
+    ],
+    "allowed_without_ml1_token": [
+      "page.get",
+      "page.list",
+      "navigation.get",
+      "permissions.get",
+      "site.get_structure",
+      "site.get_settings",
+      "folder.create",
+      "folder.rename",
+      "folder.move",
+      "page.create",
+      "page.update",
+      "library.create",
+      "library.update",
+      "navigation.upsert",
+      "navigation.reorder"
+    ],
+    "requires_ml1_token": [
+      "page.publish",
+      "page.unpublish",
+      "page.set_home",
+      "page.delete",
+      "library.delete",
+      "folder.delete",
+      "navigation.delete",
+      "permissions.grant",
+      "permissions.revoke",
+      "permissions.break_inheritance",
+      "permissions.restore_inheritance"
+    ],
+    "hard_prohibited": [
+      "tenant_wide_search",
+      "cross_site_write",
+      "anonymous_sharing_enable",
+      "site_delete",
+      "owner_escalation_without_token"
     ]
   },
   "wip_write_zones": [
