@@ -48,17 +48,20 @@ from __future__ import annotations
 
 import base64
 import difflib
+import hashlib
 import json
 import logging
 import os
 import re
 import sys
 import zipfile
+from datetime import datetime, timezone
 from io import BytesIO
 from html import unescape as html_unescape
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 from urllib.parse import quote
+from uuid import uuid4
 from xml.etree import ElementTree as ET
 
 # ── Load .env from repo root ───────────────────────────────────────────────────
@@ -183,6 +186,159 @@ logging.basicConfig(
     datefmt="%Y-%m-%dT%H:%M:%S",
 )
 log = logging.getLogger("sharepoint_mcp")
+
+
+class EscalationRequiredError(RuntimeError):
+    """Raised when the request must escalate instead of executing."""
+
+
+def _utc_now_iso() -> str:
+    return (
+        datetime.now(timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z")
+    )
+
+
+def _new_operation_id(tool_name: str) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "_", tool_name.lower()).strip("_")
+    return f"{slug}_{uuid4().hex[:12]}"
+
+
+def _target_ref(**kwargs: Any) -> dict:
+    return {
+        key: value
+        for key, value in kwargs.items()
+        if value not in (None, "", [], {})
+    }
+
+
+def _hash_input_record(record: dict) -> str:
+    payload = json.dumps(record, sort_keys=True, separators=(",", ":"), default=str)
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+def _summarize_arguments(arguments: dict) -> dict:
+    summary: dict = {}
+    for key, value in arguments.items():
+        if key == "content" and isinstance(value, str):
+            summary["content_length"] = len(value)
+            continue
+        if isinstance(value, str) and len(value) > 256:
+            summary[key] = value[:253] + "..."
+            continue
+        summary[key] = value
+    return summary
+
+
+def _response_payload(
+    *,
+    status: str,
+    operation_id: str,
+    target_ref: dict,
+    result_payload: dict,
+    errors: Optional[List[dict]] = None,
+    warnings: Optional[List[str]] = None,
+) -> str:
+    return json.dumps(
+        {
+            "status": status,
+            "operation_id": operation_id,
+            "target_ref": target_ref,
+            "result_payload": result_payload,
+            "errors": errors or [],
+            "warnings": warnings or [],
+            "executed_at": _utc_now_iso(),
+        },
+        indent=2,
+    )
+
+
+def _error_status_for_exception(exc: Exception) -> str:
+    message = str(exc).lower()
+    if isinstance(exc, EscalationRequiredError):
+        return "escalation_required"
+    if isinstance(exc, PermissionError):
+        return "scope_denied"
+    if isinstance(exc, ValueError):
+        return "validation_failed"
+    if "graph api 404" in message:
+        return "not_found"
+    if "version conflict" in message:
+        return "version_conflict"
+    return "connector_error"
+
+
+def _error_payload(tool_name: str, exc: Exception, arguments: Optional[dict] = None) -> str:
+    operation_id = _new_operation_id(tool_name)
+    status = _error_status_for_exception(exc)
+    input_record = _summarize_arguments(arguments or {})
+    _audit_log(
+        operation_id=operation_id,
+        tool_name=tool_name,
+        actor_type="agent",
+        actor_id=str((arguments or {}).get("actor_id", "")).strip() or "sharepoint-mcp",
+        authorized_scope="error_path",
+        target_object=_target_ref(tool_name=tool_name),
+        action_type="tool_error",
+        output_status=status,
+        input_record=input_record or None,
+        reason_code=str((arguments or {}).get("reason_code", "")).strip() or None,
+        upstream_artifact_ref=str((arguments or {}).get("upstream_artifact_ref", "")).strip() or None,
+        approval_reference=str((arguments or {}).get("approval_reference", "")).strip() or None,
+        escalation_flag=(status == "escalation_required"),
+    )
+    return _response_payload(
+        status=status,
+        operation_id=operation_id,
+        target_ref=_target_ref(tool_name=tool_name),
+        result_payload={},
+        errors=[{"message": str(exc)}],
+    )
+
+
+def _audit_log(
+    *,
+    operation_id: str,
+    tool_name: str,
+    actor_type: str,
+    actor_id: str,
+    authorized_scope: str,
+    target_object: dict,
+    action_type: str,
+    output_status: str,
+    input_record: Optional[dict] = None,
+    version_before: Optional[str] = None,
+    version_after: Optional[str] = None,
+    reason_code: Optional[str] = None,
+    upstream_artifact_ref: Optional[str] = None,
+    approval_reference: Optional[str] = None,
+    escalation_flag: bool = False,
+) -> None:
+    payload = {
+        "operation_id": operation_id,
+        "tool_name": tool_name,
+        "timestamp": _utc_now_iso(),
+        "actor_type": actor_type,
+        "actor_id": actor_id,
+        "authorized_scope": authorized_scope,
+        "target_object": target_object,
+        "action_type": action_type,
+        "output_status": output_status,
+        "version_before": version_before,
+        "version_after": version_after,
+        "reason_code": reason_code,
+        "upstream_artifact_ref": upstream_artifact_ref,
+        "approval_reference": approval_reference,
+        "escalation_flag": escalation_flag,
+    }
+    if input_record is not None:
+        payload["input_hash"] = _hash_input_record(input_record)
+    log.info(
+        "audit_event=%s",
+        json.dumps(payload, sort_keys=True, separators=(",", ":"), default=str),
+    )
 
 
 # =============================================================================
@@ -440,8 +596,72 @@ def _wip_write_zones() -> List[dict]:
     return list(allowlist.get("wip_write_zones", []))
 
 
+def _documentation_site_id() -> str:
+    allowlist = _load_sharepoint_allowlist()
+    return str(
+        allowlist.get("documentation_site_authority", {}).get("site_id") or ""
+    )
+
+
+def _require_managed_workspace_site(site_id: str) -> None:
+    doc_site_id = _documentation_site_id()
+    if not doc_site_id or site_id != doc_site_id:
+        raise PermissionError(
+            "Write operations are permitted only on the Documentation managed_workspace site."
+        )
+
+
 def _canonical_zone_path(prefix: str) -> str:
     return _normalize_drive_path("documentation", _normalize_path(prefix).lstrip("/"))
+
+
+def _require_write_context(
+    args: dict,
+    *,
+    require_approval_reference: bool = False,
+) -> dict:
+    context = {
+        "run_id": str(args.get("run_id", "")).strip(),
+        "workflow_ref": str(args.get("workflow_ref", "")).strip(),
+        "runbook_ref": str(args.get("runbook_ref", "")).strip(),
+        "capability_ref": str(args.get("capability_ref", "")).strip(),
+        "artifact_version_ref": str(args.get("artifact_version_ref", "")).strip(),
+        "provenance_label": str(args.get("provenance_label", "")).strip(),
+        "reason_code": str(args.get("reason_code", "")).strip(),
+        "upstream_artifact_ref": str(args.get("upstream_artifact_ref", "")).strip(),
+        "actor_id": str(args.get("actor_id", "")).strip() or "sharepoint-mcp",
+        "approval_reference": str(args.get("approval_reference", "")).strip(),
+        "human_operator_id": str(args.get("human_operator_id", "")).strip(),
+    }
+
+    if not any(
+        context[key] for key in ("workflow_ref", "runbook_ref", "capability_ref")
+    ):
+        raise ValueError(
+            "One of 'workflow_ref', 'runbook_ref', or 'capability_ref' is required for write operations."
+        )
+
+    for field in (
+        "run_id",
+        "artifact_version_ref",
+        "provenance_label",
+        "reason_code",
+        "upstream_artifact_ref",
+    ):
+        if not context[field]:
+            raise ValueError(f"'{field}' is required for write operations.")
+
+    if not re.match(r"(?i)^derived from ml2 v\S+", context["provenance_label"]):
+        raise ValueError(
+            "'provenance_label' must begin with 'Derived from ML2 v'."
+        )
+
+    if require_approval_reference and not context["approval_reference"]:
+        raise EscalationRequiredError(
+            "This action requires a valid 'approval_reference'."
+        )
+
+    return context
 
 
 def _resolve_template_item(source_doc_id: str, template_library_id: Optional[str] = None) -> tuple[dict, dict]:
@@ -628,6 +848,7 @@ def tool_list_folder(args: dict) -> str:
     """
     drive_alias = args.get("drive", "").lower()
     path        = args.get("path", "").strip()
+    operation_id = _new_operation_id("list_folder")
 
     _require_valid_drive(drive_alias)
 
@@ -652,8 +873,24 @@ def tool_list_folder(args: dict) -> str:
         url = _drive_root_url(drive_id, "", "/children")
     items = _graph_paged_get(url)
     result = [_slim_item(i) for i in items]
-
-    return json.dumps(result, indent=2)
+    target_ref = _target_ref(drive=drive_alias, path=norm_path or "/")
+    _audit_log(
+        operation_id=operation_id,
+        tool_name="list_folder",
+        actor_type="agent",
+        actor_id="sharepoint-mcp",
+        authorized_scope=f"drive={drive_alias}",
+        target_object=target_ref,
+        action_type="list_folder",
+        output_status="success",
+        input_record={"drive": drive_alias, "path": norm_path or ""},
+    )
+    return _response_payload(
+        status="success",
+        operation_id=operation_id,
+        target_ref=target_ref,
+        result_payload={"entries": result},
+    )
 
 
 def tool_get_item(args: dict) -> str:
@@ -663,6 +900,7 @@ def tool_get_item(args: dict) -> str:
     """
     drive_alias = args.get("drive", "").lower()
     path        = args.get("path", "").strip()
+    operation_id = _new_operation_id("get_item")
 
     _require_valid_drive(drive_alias)
 
@@ -686,7 +924,25 @@ def tool_get_item(args: dict) -> str:
     else:
         url = _drive_root_url(drive_id)
     item = _graph_get(url)
-    return json.dumps(_slim_item(item), indent=2)
+    result = _slim_item(item)
+    target_ref = _target_ref(drive=drive_alias, path=norm_path or "/")
+    _audit_log(
+        operation_id=operation_id,
+        tool_name="get_item",
+        actor_type="agent",
+        actor_id="sharepoint-mcp",
+        authorized_scope=f"drive={drive_alias}",
+        target_object=target_ref,
+        action_type="get_item",
+        output_status="success",
+        input_record={"drive": drive_alias, "path": norm_path or ""},
+    )
+    return _response_payload(
+        status="success",
+        operation_id=operation_id,
+        target_ref=target_ref,
+        result_payload={"item": result},
+    )
 
 
 def tool_upload_draft(args: dict) -> str:
@@ -698,6 +954,7 @@ def tool_upload_draft(args: dict) -> str:
     filename    = args.get("filename", "").strip()
     content_str = args.get("content", "")
     encoding    = args.get("encoding", "utf-8")  # "utf-8" or "base64"
+    operation_id = _new_operation_id("upload_draft")
 
     if not filename:
         raise ValueError("'filename' is required.")
@@ -707,6 +964,7 @@ def tool_upload_draft(args: dict) -> str:
         raise ValueError(
             "'filename' must be a plain filename with no path separators or '..'."
         )
+    write_context = _require_write_context(args)
 
     drive_alias = "documentation"
     zones = _wip_write_zones()
@@ -714,6 +972,8 @@ def tool_upload_draft(args: dict) -> str:
         raise RuntimeError("No SharePoint WIP write zones are configured.")
     zone = zones[0]
     drive_id = str(zone["library_id"])
+    site_id = str(zone.get("site_id") or "")
+    _require_managed_workspace_site(site_id)
     target_folder_id = str(zone.get("folder_id") or "")
     if not target_folder_id:
         raise RuntimeError("Configured WIP write zone is missing folder_id.")
@@ -736,7 +996,56 @@ def tool_upload_draft(args: dict) -> str:
     encoded_filename = quote(filename, safe="")
     url = f"{GRAPH_BASE}/drives/{drive_id}/items/{target_folder_id}:/{encoded_filename}:/content"
     result = _graph_put(url, content_bytes)
-    return json.dumps(_slim_item(result), indent=2)
+    item = _slim_item(result)
+    target_ref = _target_ref(
+        site_id=site_id,
+        library_id=drive_id,
+        path=target_path,
+        filename=filename,
+    )
+    warnings = [
+        "This runtime validates artifact provenance inputs but does not persist them as SharePoint metadata."
+    ]
+    _audit_log(
+        operation_id=operation_id,
+        tool_name="upload_draft",
+        actor_type="agent",
+        actor_id=write_context["actor_id"],
+        authorized_scope=f"site_id={site_id} library_id={drive_id} path={_canonical_zone_path(zone['folder_prefixes'][0])}",
+        target_object=target_ref,
+        action_type="create_draft_document",
+        output_status="success",
+        input_record={
+            "filename": filename,
+            "encoding": encoding,
+            "content_length": len(content_bytes),
+            "run_id": write_context["run_id"],
+            "workflow_ref": write_context["workflow_ref"],
+            "runbook_ref": write_context["runbook_ref"],
+            "capability_ref": write_context["capability_ref"],
+            "artifact_version_ref": write_context["artifact_version_ref"],
+            "provenance_label": write_context["provenance_label"],
+            "reason_code": write_context["reason_code"],
+            "upstream_artifact_ref": write_context["upstream_artifact_ref"],
+            "human_operator_id": write_context["human_operator_id"],
+        },
+        version_after=str(item.get("id") or ""),
+        reason_code=write_context["reason_code"],
+        upstream_artifact_ref=write_context["upstream_artifact_ref"],
+        approval_reference=write_context["approval_reference"] or None,
+    )
+    return _response_payload(
+        status="success",
+        operation_id=operation_id,
+        target_ref=target_ref,
+        result_payload={
+            "item": item,
+            "artifact_version_ref": write_context["artifact_version_ref"],
+            "provenance_label": write_context["provenance_label"],
+            "run_id": write_context["run_id"],
+        },
+        warnings=warnings,
+    )
 
 
 def tool_find_latest_template(args: dict) -> str:
@@ -746,6 +1055,7 @@ def tool_find_latest_template(args: dict) -> str:
     template_key = str(args.get("template_key", "")).strip()
     template_library_id = str(args.get("template_library_id", "")).strip() or None
     max_results = int(args.get("max_results", 10))
+    operation_id = _new_operation_id("find_latest_template")
 
     if not template_key:
         raise ValueError("'template_key' is required.")
@@ -793,7 +1103,31 @@ def tool_find_latest_template(args: dict) -> str:
         len(templates[:max_results]),
         (templates[0]["doc_id"] if templates else "NONE"),
     )
-    return json.dumps({"templates": templates[:max_results]}, indent=2)
+    target_ref = _target_ref(
+        template_key=template_key,
+        template_library_id=template_library_id or "AUTO",
+    )
+    _audit_log(
+        operation_id=operation_id,
+        tool_name="find_latest_template",
+        actor_type="agent",
+        actor_id="sharepoint-mcp",
+        authorized_scope="template_read_zones",
+        target_object=target_ref,
+        action_type="find_latest_template",
+        output_status="success",
+        input_record={
+            "template_key": template_key,
+            "template_library_id": template_library_id or "",
+            "max_results": max_results,
+        },
+    )
+    return _response_payload(
+        status="success",
+        operation_id=operation_id,
+        target_ref=target_ref,
+        result_payload={"templates": templates[:max_results]},
+    )
 
 
 def tool_diff_docs(args: dict) -> str:
@@ -802,6 +1136,7 @@ def tool_diff_docs(args: dict) -> str:
     """
     doc_a_id = str(args.get("doc_a_id", "")).strip()
     doc_b_id = str(args.get("doc_b_id", "")).strip()
+    operation_id = _new_operation_id("diff_docs")
 
     if not doc_a_id or not doc_b_id:
         raise ValueError("'doc_a_id' and 'doc_b_id' are required.")
@@ -833,7 +1168,24 @@ def tool_diff_docs(args: dict) -> str:
         "doc_a": _slim_item_with_path(item_a),
         "doc_b": _slim_item_with_path(item_b),
     }
-    return json.dumps(result, indent=2)
+    target_ref = _target_ref(doc_a_id=doc_a_id, doc_b_id=doc_b_id)
+    _audit_log(
+        operation_id=operation_id,
+        tool_name="diff_docs",
+        actor_type="agent",
+        actor_id="sharepoint-mcp",
+        authorized_scope="template_read_zones+wip_write_zones(read-only)",
+        target_object=target_ref,
+        action_type="diff_docs",
+        output_status="success",
+        input_record={"doc_a_id": doc_a_id, "doc_b_id": doc_b_id},
+    )
+    return _response_payload(
+        status="success",
+        operation_id=operation_id,
+        target_ref=target_ref,
+        result_payload=result,
+    )
 
 
 def tool_copy_template_to_wip(args: dict) -> str:
@@ -846,6 +1198,7 @@ def tool_copy_template_to_wip(args: dict) -> str:
     dest_folder_path = str(args.get("dest_folder_path", "")).strip()
     new_name = str(args.get("new_name", "")).strip()
     overwrite = bool(args.get("overwrite", False))
+    operation_id = _new_operation_id("copy_template_to_wip")
 
     if not source_doc_id:
         raise ValueError("'source_doc_id' is required.")
@@ -857,13 +1210,18 @@ def tool_copy_template_to_wip(args: dict) -> str:
         raise ValueError("'new_name' is required.")
     if "/" in new_name or "\\" in new_name or ".." in new_name:
         raise ValueError("'new_name' must be a plain filename with no path separators or '..'.")
+    write_context = _require_write_context(
+        args,
+        require_approval_reference=overwrite,
+    )
     if overwrite:
-        raise PermissionError(
-            "overwrite=true requires Manual approval and is not supported by this MCP server."
+        raise EscalationRequiredError(
+            "overwrite=true is ML1-gated and not implemented by this MCP server; use an approved manual path referenced by 'approval_reference'."
         )
 
     zone, source_item = _resolve_template_item(source_doc_id)
     dest_zone = _resolve_wip_zone(dest_site_id, dest_library_id, dest_folder_path)
+    _require_managed_workspace_site(dest_site_id)
     normalized_dest_folder = _canonical_zone_path(dest_folder_path)
     target_path = f"{normalized_dest_folder}/{new_name}"
     log.info(
@@ -888,17 +1246,65 @@ def tool_copy_template_to_wip(args: dict) -> str:
     )
     upload_url = _drive_root_url(dest_library_id, target_path, ":/content")
     result = _graph_put(upload_url, content, content_type=content_type)
-
-    return json.dumps(
-        {
-            "new_doc_id": result.get("id"),
-            "new_url": result.get("webUrl"),
+    payload = {
+        "new_doc_id": result.get("id"),
+        "new_url": result.get("webUrl"),
+        "source_doc_id": source_doc_id,
+        "dest_site_id": dest_zone.get("site_id"),
+        "dest_library_id": dest_zone.get("library_id"),
+        "dest_folder_path": normalized_dest_folder,
+        "artifact_version_ref": write_context["artifact_version_ref"],
+        "provenance_label": write_context["provenance_label"],
+        "run_id": write_context["run_id"],
+    }
+    target_ref = _target_ref(
+        source_doc_id=source_doc_id,
+        dest_site_id=dest_zone.get("site_id"),
+        dest_library_id=dest_zone.get("library_id"),
+        dest_folder_path=normalized_dest_folder,
+        new_name=new_name,
+    )
+    warnings = [
+        "This runtime validates artifact provenance inputs but does not persist them as SharePoint metadata."
+    ]
+    _audit_log(
+        operation_id=operation_id,
+        tool_name="copy_template_to_wip",
+        actor_type="agent",
+        actor_id=write_context["actor_id"],
+        authorized_scope=f"site_id={dest_zone.get('site_id')} library_id={dest_zone.get('library_id')} path={normalized_dest_folder}",
+        target_object=target_ref,
+        action_type="copy_template_to_wip",
+        output_status="success",
+        input_record={
             "source_doc_id": source_doc_id,
-            "dest_site_id": dest_zone.get("site_id"),
-            "dest_library_id": dest_zone.get("library_id"),
+            "dest_site_id": dest_site_id,
+            "dest_library_id": dest_library_id,
             "dest_folder_path": normalized_dest_folder,
+            "new_name": new_name,
+            "run_id": write_context["run_id"],
+            "workflow_ref": write_context["workflow_ref"],
+            "runbook_ref": write_context["runbook_ref"],
+            "capability_ref": write_context["capability_ref"],
+            "artifact_version_ref": write_context["artifact_version_ref"],
+            "provenance_label": write_context["provenance_label"],
+            "reason_code": write_context["reason_code"],
+            "upstream_artifact_ref": write_context["upstream_artifact_ref"],
+            "human_operator_id": write_context["human_operator_id"],
+            "approval_reference": write_context["approval_reference"],
         },
-        indent=2,
+        version_before=source_doc_id,
+        version_after=str(result.get("id") or ""),
+        reason_code=write_context["reason_code"],
+        upstream_artifact_ref=write_context["upstream_artifact_ref"],
+        approval_reference=write_context["approval_reference"] or None,
+    )
+    return _response_payload(
+        status="success",
+        operation_id=operation_id,
+        target_ref=target_ref,
+        result_payload=payload,
+        warnings=warnings,
     )
 
 
@@ -972,7 +1378,8 @@ _TOOLS = [
             "Target is always the allowlisted Documentation WIP DRAFTS folder "
             "(`SB Execution/DRAFTS/{filename}` relative to the drive root). "
             "Only the filename is specified — the parent path is hardcoded and cannot "
-            "be changed. No writes are permitted to any other path. "
+            "be changed. Requires managed-workspace write context fields, provenance, "
+            "and audit identifiers. No writes are permitted to any other path. "
             "This is the only write operation this MCP server supports."
         ),
         "inputSchema": {
@@ -997,8 +1404,56 @@ _TOOLS = [
                     "enum": ["utf-8", "base64"],
                     "description": "Content encoding. Default: 'utf-8'.",
                 },
+                "run_id": {
+                    "type": "string",
+                    "description": "Required run identifier for write auditability.",
+                },
+                "workflow_ref": {
+                    "type": "string",
+                    "description": "Workflow reference. One of workflow_ref, runbook_ref, or capability_ref is required for writes.",
+                },
+                "runbook_ref": {
+                    "type": "string",
+                    "description": "Runbook reference. One of workflow_ref, runbook_ref, or capability_ref is required for writes.",
+                },
+                "capability_ref": {
+                    "type": "string",
+                    "description": "Capability reference. One of workflow_ref, runbook_ref, or capability_ref is required for writes.",
+                },
+                "artifact_version_ref": {
+                    "type": "string",
+                    "description": "Required artifact version reference for the generated draft.",
+                },
+                "provenance_label": {
+                    "type": "string",
+                    "description": "Required provenance label. Must begin with 'Derived from ML2 v'.",
+                },
+                "reason_code": {
+                    "type": "string",
+                    "description": "Required reason code for the write operation.",
+                },
+                "upstream_artifact_ref": {
+                    "type": "string",
+                    "description": "Required upstream artifact or prompt-chain reference.",
+                },
+                "actor_id": {
+                    "type": "string",
+                    "description": "Optional initiating agent or operator identifier for audit logs.",
+                },
+                "human_operator_id": {
+                    "type": "string",
+                    "description": "Optional human operator identifier when the action is human-triggered.",
+                },
             },
-            "required": ["filename", "content"],
+            "required": [
+                "filename",
+                "content",
+                "run_id",
+                "artifact_version_ref",
+                "provenance_label",
+                "reason_code",
+                "upstream_artifact_ref",
+            ],
         },
     },
     {
@@ -1053,7 +1508,8 @@ _TOOLS = [
         "description": (
             "Copy an allowlisted template document into an allowlisted SharePoint WIP "
             "destination for drafting. Overwrite is blocked by default and manual-approval "
-            "paths are not exposed through this MCP server."
+            "paths are not exposed through this MCP server. Requires managed-workspace "
+            "write context fields, provenance, and audit identifiers."
         ),
         "inputSchema": {
             "type": "object",
@@ -1082,6 +1538,50 @@ _TOOLS = [
                     "type": "boolean",
                     "description": "Whether to overwrite an existing file. Default false; true is blocked by this server.",
                 },
+                "run_id": {
+                    "type": "string",
+                    "description": "Required run identifier for write auditability.",
+                },
+                "workflow_ref": {
+                    "type": "string",
+                    "description": "Workflow reference. One of workflow_ref, runbook_ref, or capability_ref is required for writes.",
+                },
+                "runbook_ref": {
+                    "type": "string",
+                    "description": "Runbook reference. One of workflow_ref, runbook_ref, or capability_ref is required for writes.",
+                },
+                "capability_ref": {
+                    "type": "string",
+                    "description": "Capability reference. One of workflow_ref, runbook_ref, or capability_ref is required for writes.",
+                },
+                "artifact_version_ref": {
+                    "type": "string",
+                    "description": "Required artifact version reference for the copied draft.",
+                },
+                "provenance_label": {
+                    "type": "string",
+                    "description": "Required provenance label. Must begin with 'Derived from ML2 v'.",
+                },
+                "reason_code": {
+                    "type": "string",
+                    "description": "Required reason code for the copy operation.",
+                },
+                "upstream_artifact_ref": {
+                    "type": "string",
+                    "description": "Required upstream artifact or prompt-chain reference.",
+                },
+                "approval_reference": {
+                    "type": "string",
+                    "description": "Required only for ML1-gated exception paths such as overwrite requests.",
+                },
+                "actor_id": {
+                    "type": "string",
+                    "description": "Optional initiating agent or operator identifier for audit logs.",
+                },
+                "human_operator_id": {
+                    "type": "string",
+                    "description": "Optional human operator identifier when the action is human-triggered.",
+                },
             },
             "required": [
                 "source_doc_id",
@@ -1089,6 +1589,11 @@ _TOOLS = [
                 "dest_library_id",
                 "dest_folder_path",
                 "new_name",
+                "run_id",
+                "artifact_version_ref",
+                "provenance_label",
+                "reason_code",
+                "upstream_artifact_ref",
             ],
         },
     },
@@ -1143,7 +1648,7 @@ def _handle(msg: dict) -> None:
                 "capabilities": {"tools": {}},
                 "serverInfo": {
                     "name": "sharepoint-ll",
-                    "version": "1.2.0",
+                    "version": "1.3.0",
                     "description": (
                         "Bounded SharePoint MCP — LL Second Brain. "
                         "Access limited to the approved repo-declared SharePoint boundary."
@@ -1170,17 +1675,17 @@ def _handle(msg: dict) -> None:
                     "content": [{"type": "text", "text": text}],
                     "isError": False,
                 })
-            except (PermissionError, ValueError) as exc:
+            except (EscalationRequiredError, PermissionError, ValueError) as exc:
                 # Policy/validation errors — return as tool error (not JSON-RPC error)
                 log.warning("tool error [%s]: %s", tool_name, exc)
                 _ok(request_id, {
-                    "content": [{"type": "text", "text": f"ERROR: {exc}"}],
+                    "content": [{"type": "text", "text": _error_payload(tool_name, exc, arguments)}],
                     "isError": True,
                 })
             except Exception as exc:
                 log.error("tool exception [%s]: %s", tool_name, exc, exc_info=True)
                 _ok(request_id, {
-                    "content": [{"type": "text", "text": f"ERROR: {exc}"}],
+                    "content": [{"type": "text", "text": _error_payload(tool_name, exc, arguments)}],
                     "isError": True,
                 })
 
