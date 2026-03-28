@@ -3,12 +3,12 @@ id: 01_doctrine__03_capability_profiles__sharepoint_find_latest_template_md
 title: Capability Profile: SharePoint.FindLatestTemplate
 owner: ML1
 status: draft
-version: 0.1
+version: 0.2
 created_date: 2026-02-26
-last_updated: 2026-02-26
+last_updated: 2026-03-28
 tags: [capability, sharepoint, mcp]
 ---
-# Capability Profile: SharePoint.FindLatestTemplate (v0.1)
+# Capability Profile: SharePoint.FindLatestTemplate (v0.2)
 
 ## Purpose
 Find the latest template in an allowlisted Templates library.
@@ -41,7 +41,9 @@ Find the latest template in an allowlisted Templates library.
 - selected_doc_id (if any)
 
 ## Approval Mode
-- Auto
+- Auto when the read satisfies `POL-059_Integration_Control_Policy.md` Section 2 read controls and remains within the approved template scope.
 
 ## Boundary Rules
-- Read/search permitted only within allowlisted template sites/libraries from `00_SYSTEM/security/sharepoint_allowlist.json`.
+- Read and search are permitted only within allowlisted template sites or libraries from `00_SYSTEM/security/sharepoint_allowlist.json`.
+- Read authority remains bounded by the active site-class and read-control rules in `POL-059_Integration_Control_Policy.md`.
+- No write, publish, or permission-changing behavior is authorized by this capability.

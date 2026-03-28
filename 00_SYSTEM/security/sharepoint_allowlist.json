@@ -1,11 +1,12 @@
 {
-  "version": "0.1",
-  "notes": "Documentation is an approved managed workspace with site-wide read/write/manage authority. LegalMatters remains read-only. Tooling may still impose narrower runtime boundaries than the doctrine-level authorization.",
+  "version": "0.2",
+  "notes": "Documentation is an approved managed workspace with site-wide read/write/manage authority. LegalMatters remains read-only. Runtime tooling may still impose narrower boundaries than doctrine. Template and WIP zones below are the active MCP allowlist for template lookup, diffing, and template-to-WIP copy operations.",
   "template_read_zones": [
     {
-      "site_id": "SITE_ID_TEMPLATES_1",
-      "library_id": "LIB_ID_TEMPLATES_1",
-      "folder_prefixes": ["/Templates"]
+      "site_id": "levinellp.sharepoint.com,8758ea69-efb5-462e-8940-52962f4ca105,da0c6d79-a438-4994-a523-cbf97fae67eb",
+      "library_id": "b!aepYh7XvLkaJQFKWL0yhBXltDNo4pJRJpSPL-X-uZ-tNtZwBKQHoRYMyWJLL2q-P",
+      "folder_id": "017KHWIVG2MPDGE6XXL5BKG2IWATADMOPQ",
+      "folder_prefixes": ["/SB Execution/TEMPLATES"]
     }
   ],
   "documentation_site_authority": {
@@ -22,7 +23,8 @@
     {
       "site_id": "levinellp.sharepoint.com,8758ea69-efb5-462e-8940-52962f4ca105,da0c6d79-a438-4994-a523-cbf97fae67eb",
       "library_id": "b!aepYh7XvLkaJQFKWL0yhBXltDNo4pJRJpSPL-X-uZ-tNtZwBKQHoRYMyWJLL2q-P",
-      "folder_prefixes": ["/Doc Pro  In Tray/SB Execution/DRAFTS"]
+      "folder_id": "017KHWIVDDUFGTNSDDYJGZF2V5OXBVFLOI",
+      "folder_prefixes": ["/SB Execution/DRAFTS"]
     }
   ]
 }

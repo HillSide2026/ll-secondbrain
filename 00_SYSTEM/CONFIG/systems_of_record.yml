@@ -3,7 +3,7 @@ title: Systems of Record Contract
 owner: ML1
 status: draft
 created_date: 2026-03-04
-last_updated: 2026-03-04
+last_updated: 2026-03-27
 
 systems:
   clio:
@@ -26,6 +26,7 @@ systems:
     site_classes:
       legalmatters: read_only_authority
       documentation: managed_workspace
+      clients: read_only_authority
   gmail:
     role: comms_truth
     authoritative_fields:

@@ -1,16 +1,18 @@
 ---
 id: 01_doctrine__03_policies__superseded_system_mcp_policy_md
-title: Superseded System MCP Policy (v0.1)
+title: Superseded System MCP Policy (v0.2)
 owner: ML1
 status: superseded
-version: 0.1
+version: 0.2
 created_date: 2026-02-26
-last_updated: 2026-03-23
+last_updated: 2026-03-27
 tags: [policy, mcp, orchestrator]
 ---
-# Superseded System MCP Policy (v0.1)
+# Superseded System MCP Policy (v0.2)
 
 > Supersession Notice: This policy is superseded by `POL-035_Model_Context_Protocol_Governance.md` and retained for historical traceability only.
+> The requirements below are a historical snapshot and are not the current controlling boundary for MCP integrations.
+> Current SharePoint runtime/control doctrine lives in `POL-035_Model_Context_Protocol_Governance.md`, `POL-037_External_System_Integration_Policy.md`, `POL-059_Integration_Control_Policy.md`, and the active integration contracts under `00_SYSTEM/`.
 
 ## Status
 - Type: Doctrine / Policy
@@ -20,13 +22,13 @@ tags: [policy, mcp, orchestrator]
 - Superseded: 2026-03-09 by `POL-035_Model_Context_Protocol_Governance.md`
 
 ## Purpose
-Define the mandatory governance, boundaries, approval gates, and audit artifacts for any orchestrated MCP activity touching external systems (Gmail, SharePoint/Graph, Calendar).
+This historical policy defined the governance, boundaries, approval gates, and audit artifacts for orchestrated MCP activity touching external systems (Gmail, SharePoint/Graph, Calendar).
 
-This policy is the source-of-truth. Implementation (00_SYSTEM) must conform to this policy.
+It is no longer the source of truth. It is retained only as a historical record of an earlier boundary shape.
 
 ---
 
-## Runtime Shape (Required)
+## Runtime Shape (Historical Snapshot)
 ### Architecture
 - One MCP server per external system:
   - `mcp_gmail`
@@ -77,7 +79,7 @@ The Orchestrator MUST NOT:
 
 ---
 
-## Approval Modes
+## Approval Modes (Historical)
 ### Auto
 - Bounded read operations and locally-generated summaries/packs
 - No external writes
@@ -93,12 +95,14 @@ The Orchestrator MUST NOT:
 
 ---
 
-## Boundary Rules
+## Boundary Rules (Historical Snapshot; Non-Controlling)
 ### SharePoint / Graph
-- Writes are permitted ONLY to destinations allowlisted in:
-  - `00_SYSTEM/security/sharepoint_allowlist.json`
-- Reads/search are permitted only within allowlisted template sites/libraries as configured
-- Diff/compare is read-only
+- Historical boundary snapshot only. Do not use this section as the current SharePoint authority definition.
+- Current controlling SharePoint boundary is defined by:
+  - `01_DOCTRINE/03_POLICIES/POL-059_Integration_Control_Policy.md`
+  - `00_SYSTEM/integrations/sharepoint/sharepoint_sources.yaml`
+  - `00_SYSTEM/integrations/sharepoint/README.md`
+  - `00_SYSTEM/security/sharepoint_allowlist.json` where specifically applicable
 
 ### Gmail (Optional Domain Allowlist)
 - If `00_SYSTEM/security/gmail_domain_allowlist.json` is non-empty and `enabled=true`,
@@ -112,7 +116,7 @@ The Orchestrator MUST NOT:
 
 ---
 
-## Required Audit Artifacts (Runs)
+## Required Audit Artifacts (Historical)
 ### Output Root
 All runs MUST be written into:
 - `06_RUNS/EXECUTION/` (preferred), OR
@@ -132,7 +136,7 @@ All runs MUST be written into:
 
 ---
 
-## Logging Requirements
+## Logging Requirements (Historical)
 ### actions.jsonl Must Include
 - timestamp, action_id, capability
 - inputs_hash (redacted inputs summary lives in manifest)
@@ -148,7 +152,7 @@ All runs MUST be written into:
 
 ---
 
-## Enforcement Guidance
+## Enforcement Guidance (Historical)
 - Anything not explicitly allowed by a capability profile is disallowed.
 - Orchestrator must:
   1) fail closed,

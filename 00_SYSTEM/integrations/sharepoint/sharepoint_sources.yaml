@@ -2,7 +2,7 @@ id: 00_system__integrations__sharepoint__sources_yaml
 title: SharePoint Sources
 owner: ML1
 status: verified
-version: 1.2
+version: 1.6
 created_date: 2026-02-15
 last_updated: 2026-03-27
 sources:
@@ -28,6 +28,56 @@ sources:
     classification: external_reference
     ingestion: Enumerated via sharepoint_integration.py (read-only)
     write_policy: PROHIBITED
+  - source_id: SP_CLIENTS_SITE
+    description: Clients site identified as the correct portal-linked SharePoint site. Recorded for clear in-repo reference, intended portal behavior capture, and source-pointer mapping; no doctrine-level workspace classification has been granted yet.
+    location: levinellp.sharepoint.com/sites/Clients
+    home_page: levinellp.sharepoint.com/sites/Clients/SitePages/Home.aspx
+    site_id: levinellp.sharepoint.com,c4dc6167-79e8-4045-9019-74fea4fa848a,fbae25cc-c782-4d19-bbc5-7233dd58961a
+    authority: confirmed
+    classification: client_portal_site_read_only
+    ingestion: Resolved directly via live SharePoint connector and approved for repo MCP read-only access on 2026-03-27
+    write_policy: PROHIBITED
+    intended_portal_pattern:
+      - Branded sign-in page for credentialed client users
+      - Shared home page accessible to all credentialed client users
+      - Home page customized per client so each client sees links to client-specific pages
+      - Client-specific pages link onward to document libraries scoped to that client
+    mcp_runtime_aliases:
+      - alias: clients_documents
+        library: Documents
+        read_scope:
+          - "Playbooks"
+          - "Policies and Processes"
+          - "Templates"
+          - "Work in Progress"
+      - alias: clients_master_client_library
+        library: Master Client Library
+        read_scope:
+          - SITE_LIBRARY_ROOT
+      - alias: clients_yellowbricks_capital
+        library: Yellowbricks Capital
+        read_scope:
+          - SITE_LIBRARY_ROOT
+      - alias: clients_turtle_island
+        library: Turtle Island
+        read_scope:
+          - SITE_LIBRARY_ROOT
+      - alias: clients_our_sharepoint_test2
+        library: Our-SharePoint-Test2
+        read_scope:
+          - SITE_LIBRARY_ROOT
+      - alias: clients_our_sharepoint_test
+        library: our-sharepoint test
+        read_scope:
+          - SITE_LIBRARY_ROOT
+    top_level_folders_confirmed:
+      - "Playbooks"
+      - "Policies and Processes"
+      - "Templates"
+      - "Work in Progress"
+    notes:
+      - Repo MCP runtime now permits read-only access to the configured Clients site libraries listed above.
+      - Home.aspx metadata confirms Tomas Hoskuldsson as last modifier, but page-content extraction remains outside the current MCP tool surface.
 ingestion:
   triggers:
     - Manual runs of sharepoint_integration.py
@@ -36,12 +86,13 @@ ingestion:
     - Graph access via client credentials
     - Documentation is an approved managed workspace with site-wide read/write/manage authority
     - LegalMatters is read-only by policy
+    - Clients is approved for repo MCP read-only access across the configured Clients site libraries
 consumers:
   scripts:
     - 00_SYSTEM/scripts/sharepoint_integration.py  # read-only batch enumeration
     - 00_SYSTEM/scripts/sharepoint_discovery.py
     - 00_SYSTEM/scripts/setup_sb_execution.py
-    - scripts/sharepoint_mcp_server.py  # MCP interface; currently narrower than the doctrine-level Documentation-site authority
+    - scripts/sharepoint_mcp_server.py  # MCP interface; includes allowlisted template lookup, diff, and template-to-WIP copy within Documentation
   playbooks: []
   run_graphs: []
 related_artifacts:
@@ -52,6 +103,10 @@ change_notes:
   - 2026-03-06: Drive IDs verified via live Graph API. Added site_ids. Updated LegalMatters drive name to "Working Files". Added Parked/StandardCashCows/DataManagement/ModelFile folders confirmed in root enumeration. Marked LegalMatters write_policy PROHIBITED.
   - 2026-03-11: Write access to Documentation/DRAFTS is ML1-approved. Implemented in sharepoint_mcp_server.py (upload_draft tool). sharepoint_integration.py intentionally remains read-only.
   - 2026-03-27: Documentation elevated to managed-workspace authority at the site level (read/write/manage). DRAFTS retained as a known workspace path, not the exclusive write surface.
+  - 2026-03-27: Added Clients site as an explicitly identified portal-linked SharePoint reference. Access confirmed via live connector; policy classification and runtime tooling scope remain pending.
+  - "2026-03-27: Recorded the intended Clients portal pattern: branded sign-in, shared credentialed home page, client-specific navigation, and client-scoped library links."
+  - "2026-03-27: Expanded the repo MCP runtime boundary to include read-only Clients site library aliases."
+  - "2026-03-27: Expanded the Documentation MCP tool surface to include allowlisted template lookup, diffing, and template-to-WIP copy."
 
 sharepoint:
   drives:

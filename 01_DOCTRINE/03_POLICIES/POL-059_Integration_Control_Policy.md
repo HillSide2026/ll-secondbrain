@@ -3,9 +3,9 @@ id: POL-059
 title: Integration Control Policy
 owner: ML1
 status: draft
-version: 1.1
+version: 1.2
 created_date: 2026-02-27
-last_updated: 2026-03-23
+last_updated: 2026-03-27
 tags: [integration, policy, control]
 ---
 
@@ -76,8 +76,22 @@ SharePoint surfaces must be classified as one of:
 Current approved classes:
 - `levinellp.sharepoint.com/sites/LegalMatters` = `read_only_authority`
 - `levinellp.sharepoint.com/sites/Documentation` = `managed_workspace`
+- `levinellp.sharepoint.com/sites/Clients` = `read_only_authority`
 
-### 3.2 Managed Workspace Rule
+### 3.2 Read-Only Authority Rule
+
+For a site classified as `read_only_authority`, the system MAY perform read-only
+operations within the explicitly approved site, library, and path scope when:
+- the site is explicitly named in ML2 integration contracts
+- the operation satisfies Section 2 read controls
+- runtime boundaries restrict access to the approved read-only scope
+
+The system MUST NOT, for a `read_only_authority` site:
+- create, update, replace, move, or delete files or folders
+- alter permissions, sharing state, or site structure
+- infer write authority from visibility, existing credentials, or related site access
+
+### 3.3 Managed Workspace Rule
 
 For a site classified as `managed_workspace`, the system MAY perform read, write, and manage operations across the approved site when:
 - the site is explicitly named in ML2 integration contracts
@@ -101,7 +115,7 @@ No canonical artifacts stored outside ML2 repository.
 
 For SharePoint:
 - `Documentation` may implement this segmentation site-wide.
-- `LegalMatters` remains outside this write-capable segmentation model and stays read-only.
+- `LegalMatters` and `Clients` remain outside this write-capable segmentation model and stay read-only.
 
 ---
 

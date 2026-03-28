@@ -3,12 +3,12 @@ id: 01_doctrine__03_capability_profiles__sharepoint_diff_docs_md
 title: Capability Profile: SharePoint.DiffDocs
 owner: ML1
 status: draft
-version: 0.1
+version: 0.2
 created_date: 2026-02-26
-last_updated: 2026-02-26
+last_updated: 2026-03-28
 tags: [capability, sharepoint, mcp]
 ---
-# Capability Profile: SharePoint.DiffDocs (v0.1)
+# Capability Profile: SharePoint.DiffDocs (v0.2)
 
 ## Purpose
 Generate a read-only diff summary between two SharePoint documents.
@@ -38,7 +38,9 @@ Generate a read-only diff summary between two SharePoint documents.
 - method identifier (e.g., "text-diff-v1")
 
 ## Approval Mode
-- Auto
+- Auto when the underlying reads satisfy `POL-059_Integration_Control_Policy.md` Section 2 read controls.
 
 ## Boundary Rules
 - Read-only.
+- Reads are permitted only for documents inside the approved allowlisted comparison scope exposed by the active SharePoint integration contract.
+- This capability does not authorize publish, overwrite, move, or metadata updates.
