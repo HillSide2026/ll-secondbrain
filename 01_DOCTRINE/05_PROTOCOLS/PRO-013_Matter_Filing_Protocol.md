@@ -6,9 +6,9 @@ status: draft
 approval: pending
 approved_by: ~
 project: LLP-006
-version: 0.4
+version: 0.5
 created_date: 2026-03-07
-last_updated: 2026-03-09
+last_updated: 2026-03-28
 tags: [protocol, sharepoint, legalmatters, filing, provenance, classification]
 ---
 
@@ -51,13 +51,9 @@ classification until their filing structure is remediated.
 
 ## 3. Required Filing Structure
 
-The canonical structure is defined by the Model File at:
-
-```
-Working Files/Model File/
-```
-
-Reference document: `Doc Control - Client Files - Model File.pdf`
+The canonical filing structure for ML2 is defined in this protocol itself.
+Historical SharePoint "Model File" materials are not the governing source for
+ML2 and must not be treated as a required upstream dependency.
 
 Every matter folder must contain the following six numbered subfolders:
 
