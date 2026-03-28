@@ -23,6 +23,7 @@ _Generated: 2026-03-28_
 | [25-1231-00001](STRATEGIC/25-1231-00001/README.md) | Charmaine Spiteri | Open | Strategic | active | 0 |
 | [25-1318-00001](STRATEGIC/25-1318-00001/README.md) | Zelko Culibrk | Open | Strategic | active | 0 |
 | [25-256-00005](STRATEGIC/25-256-00005/README.md) | Aspire Infusions Inc | Open | Strategic | active | 0 |
+| [26-1631-00001](STRATEGIC/26-1631-00001/README.md) | 1713425 Ontario Inc. (Tejvir Boparai) | Open | Strategic | active | 0 |
 | [25-927-00003](STRATEGIC/25-927-00003/README.md) | Stream Ventures Limited | Open | Strategic | urgent | 0 |
 | [26-1593-00002](STRATEGIC/26-1593-00002/README.md) | 1001162998 Ontario Corp. o/a KaleMart | Open | Strategic | active | 0 |
 | [26-1631-00001](STRATEGIC/26-1631-00001/README.md) | 1713425 Ontario Inc. (Tejvir Boparai) | Open | Strategic | active | [{'service_type': 'solution', 'service_name': 'Asset purchase agreement review and negotiation'}, {'service_type': 'solution', 'service_name': 'Franchise transfer documentation review'}] |

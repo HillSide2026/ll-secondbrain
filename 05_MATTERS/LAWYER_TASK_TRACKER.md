@@ -6,7 +6,7 @@ _Governed by the system subject to ML1 override._
 
 | Matter ID | Client | Delivery Status | Service | Task | Status | Due |
 |---|---|---|---|---|---|---|
-| 26-1631-00001 | 1713425 Ontario Inc. (Tejvir Boparai) | Strategic | Corporate | Review and action Subway Transfer Initiation Documents — ref #37499, forwarded by client March 24 | Open | |
+| 26-1631-00001 | 1713425 Ontario Inc. (Tejvir Boparai) | Strategic | Corporate | Review and action Subway Transfer Initiation Documents — ref #37499, forwarded by client March 24 | In Progress | 2026-03-31 |
 | 24-845-00001 | Star 333 | Standard | Corporate | Proceed with extra-provincial BC registration — address confirmed (Sharanjit Singh, 10993 Lyon Rd, Delta BC) | Open | |
 | 24-845-00002 | Star 333 | Standard | Litigation | Review Sonia's tracked changes to Notice of Arbitration and send | Open | |
 | 25-927-00003 | Stream Ventures | Essential | CAMLO | Meet with Equals | Open | |
