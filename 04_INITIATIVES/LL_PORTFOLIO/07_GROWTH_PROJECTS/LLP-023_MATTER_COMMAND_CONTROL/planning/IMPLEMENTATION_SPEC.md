@@ -3,6 +3,11 @@
 ## 1) Target Daily Outputs
 
 - Firm Matter Digest: what moved, what is stuck, what is due
+- Firm Matter Digest split so it is clear:
+  - what remains visible to ML1
+  - what requires ML1 action now
+  - what remains delegated to fulfillment
+  - what counts as fulfillment escalation
 - Per-matter Work Packet baseline (Slice 1 includes status + comm routing)
 - Exception lists: unmapped inbox, mapping gaps
 - Bounded Gmail review pass: review up to `25` threads and move each reviewed
@@ -56,6 +61,35 @@ Routing order:
 SharePoint mapping:
 - Prefer deterministic folder naming with leading matter number
 - Use `05_MATTERS/_REGISTRY/matter_sharepoint_map.yml` for explicit overrides
+
+## 5A) ML1 Triage Rules
+
+Durable matter attributes remain:
+
+- `delivery_status`
+- `fulfillment_status`
+
+The command layer must not overwrite those durable attributes with a shadow
+classification. Instead, it computes a narrower ML1-action layer using:
+
+- `next_ML1_decision_required`
+- `decision_due_date`
+- `decision_age_days`
+- `blocking_actor`
+- `inactivity_days`
+
+Interpretive rules:
+
+- `delivery_status` answers durable ML1 relevance and delivery importance.
+- `fulfillment_status` answers delegated fulfillment operating posture.
+- `next_ML1_decision_required` answers whether ML1 judgment is required now.
+- `decision_due_date` is the primary timeliness anchor for ML1 action.
+- `decision_age_days` measures unresolved ML1 decision aging.
+- `blocking_actor` identifies who presently owns the blockage.
+- `inactivity_days` is a drift signal only and does not by itself create ML1
+  action.
+- Ordinary fulfillment handling remains delegated.
+- Only fulfillment escalation belongs in the ML1-action layer.
 
 ## 6) Agent Responsibilities (Operational)
 

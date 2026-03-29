@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-24
-last_updated: 2026-03-23
+last_updated: 2026-03-28
 tags: [policy, matters]
 
 effective_date:
@@ -28,13 +28,13 @@ provenance:
 
 ## 1. Purpose
 
-The Matter Summary is the canonical, compressed representation of a matter's current economic, status, delivery, fulfillment, risk, and strategic state.
+The Matter Summary is the canonical, compressed representation of a matter's current economic, status, delivery, fulfillment, risk, strategic, and ML1-decision state.
 
 It exists to answer, in under 60 seconds:
 - What is this matter?
 - Why does it matter economically?
-- What is its current control state?
-- What is the next material decision?
+- What should remain visible to ML1?
+- What, if anything, requires ML1 action now?
 - Where is the risk?
 - What tension does it create for the firm?
 
@@ -53,6 +53,16 @@ The Matter Summary:
 - must be reproducible from structured state
 
 It is the matter-level cognitive interface.
+
+The Matter Summary must distinguish between:
+
+- **ML1 visibility** — the facts ML1 should continue to see because the matter
+  remains important, active, strategic, risky, or otherwise relevant
+- **ML1 action** — the narrower set of matters where ML1 judgment, approval, or
+  intervention is actually required now
+
+Ordinary fulfillment handling must not be treated as ML1 action. Only
+**fulfillment escalation** belongs in the ML1-action layer.
 
 ## 3. Design Principles
 
@@ -106,14 +116,44 @@ Purpose: show monetization structure.
 ### D. Control Snapshot
 - matter_status
 - engagement_stage
+- delivery_status
 - fulfillment_status
 - days_in_engagement_stage
-- next_decision_required
+- next_ML1_decision_required
+- decision_due_date
 - decision_age_days
 - blocking_actor (if any)
 - inactivity_days
 
-Purpose: show flow friction.
+Purpose: show flow friction, decision pressure, and the difference between
+visibility and action.
+
+### D1. Control Snapshot Definitions
+
+- `next_ML1_decision_required`
+  - The next decision that actually requires ML1 judgment.
+  - This is not the next task, next email, or next operational step.
+  - If no ML1 decision is presently required, this field should be null.
+
+- `decision_due_date`
+  - The date by which the ML1 decision should be made under the applicable
+    operational expectation or SLA.
+  - This is the primary timeliness anchor for ML1 action.
+
+- `decision_age_days`
+  - How long the unresolved ML1 decision has been pending.
+  - Useful for aging and breach detection, but secondary to
+    `decision_due_date`.
+
+- `blocking_actor`
+  - The actor presently preventing material forward movement.
+  - Examples: `ML1`, `client`, `counterparty`, `regulator`, `fulfillment`,
+    `unknown`.
+
+- `inactivity_days`
+  - Days since the matter last had meaningful movement.
+  - This is a drift signal only. It must not by itself imply that ML1 action is
+    required.
 
 ### E. Risk Snapshot
 
@@ -151,7 +191,7 @@ Purpose: show direction fit.
 One structured sentence:
 
 Format:
-"This matter is [economic significance] and currently [control state]. Primary tension: [risk/control/capacity driver]. Next leverage point: [decision/action]."
+"This matter is [economic significance] and currently [ML1 visibility + action posture]. Primary tension: [risk/control/capacity driver]. Next leverage point: [decision/action]."
 
 This is the only narrative field allowed.
 
@@ -167,6 +207,9 @@ The Matter Summary must be recomputed on:
 - A/R aging update
 - risk threshold breach
 - daily snapshot run
+- change to `next_ML1_decision_required`
+- change to `decision_due_date`
+- change to `blocking_actor`
 
 Stored as:
 - 05_MATTERS/<matter_id>/matter_summary.json, or
@@ -183,3 +226,6 @@ Snapshotted in 06_RUNS during periodic firm-state runs.
 - Manual overrides must appear in override_reason and override_timestamp.
 - Matter Summary is authoritative for dashboard display.
 - If structured fields conflict with summary content, structured fields win.
+- The Matter Summary must not collapse ML1 visibility into ML1 action.
+- Fulfillment issues appear in the ML1-action layer only when they qualify as
+  fulfillment escalation.

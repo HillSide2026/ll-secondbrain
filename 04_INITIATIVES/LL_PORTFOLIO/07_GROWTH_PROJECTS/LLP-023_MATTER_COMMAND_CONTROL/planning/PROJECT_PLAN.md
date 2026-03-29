@@ -4,7 +4,7 @@ title: Matter Command and Control - Project Plan
 owner: ML1
 status: draft
 created_date: 2026-03-23
-last_updated: 2026-03-23
+last_updated: 2026-03-28
 tags: [matter-command-control, planning, project-plan]
 ---
 
@@ -25,21 +25,24 @@ the matter command layer.
 2. What must be built first, and what must explicitly wait?
 3. What evidence justifies moving from one slice to the next?
 4. What controls prevent the command layer from becoming a shadow system?
+5. How should the command layer distinguish ML1 visibility from ML1 action?
+6. How should fulfillment escalation surface without pulling ordinary
+   fulfillment handling back onto ML1?
 
 ## Planning Workstreams
 
 | Workstream | Objective | Primary Output |
 | --- | --- | --- |
 | WS-01 Slice Prioritization | Freeze slice order, define deferrals, and decide what is not built yet | `SCOPE_STATEMENT.md`, this file |
-| WS-02 Boundary Control | Freeze read-only, citation, cache, and ambiguity-handling rules | `ASSUMPTIONS_CONSTRAINTS.md`, `RISK_REGISTER.md` |
+| WS-02 Boundary Control | Freeze read-only, citation, cache, ambiguity-handling, and ML1-visibility-versus-action rules | `ASSUMPTIONS_CONSTRAINTS.md`, `RISK_REGISTER.md` |
 | WS-03 Dependency Normalization | Identify what the command layer depends on across systems, config, and ML1 review | `DEPENDENCIES.md` |
-| WS-04 Metrics and Gates | Define slice-promotion thresholds and the evidence needed for ML1 review | `METRICS.md` |
+| WS-04 Metrics and Gates | Define slice-promotion thresholds, ML1-action thresholds, and the evidence needed for ML1 review | `METRICS.md` |
 
 ## Priority Stack
 
 | Priority | Slice | Why It Goes First / Later | What Is Explicitly Deferred |
 | --- | --- | --- | --- |
-| P1 | Slice 1 | Establish whether a daily derivative command layer plus a governed `25`-thread Gmail review pass is useful at all | document deltas, deadline radar, comms drafts |
+| P1 | Slice 1 | Establish whether a daily derivative command layer plus a governed `25`-thread Gmail review pass is useful at all, while separating ML1 visibility from ML1 action | document deltas, deadline radar, comms drafts |
 | P2 | Slice 2 | Add document visibility only after routing and daily packet logic are stable | deadlines and comms drafts |
 | P3 | Slice 3 | Add deadline intelligence only if it is the next highest-value blind spot | comms drafts |
 | P4 | Slice 4 | Drafting support is valuable only after trust, routing, and source discipline are proven | any autonomous communication behavior |
@@ -55,6 +58,14 @@ packet uses a proposal-first pattern: the review pass writes a batch proposal to
 that bounded batch with an ML1 approval artifact and audit trail. Later slices
 should not be built immediately simply because they are already conceptually
 defined.
+
+Slice 1 also needs to stop treating coarse rollups such as `ML Active` and
+`ML Watch` as sufficient ML1 triage logic. The command layer should show:
+
+- which matters remain visible to ML1
+- which matters actually require ML1 action now
+- which matters remain delegated to fulfillment
+- which fulfillment issues have escalated back into the ML1-action layer
 
 ## Planning Milestones
 
@@ -81,10 +92,12 @@ defined.
 - define the control tests that block shadow-system drift
 - define how ambiguous routing is surfaced instead of hidden
 - lock the `25`-thread daily review cap and the one-state-label-per-reviewed-thread rule
+- define the ML1-decision fields that drive `Needs ML1 Review Today`
+- define how fulfillment escalation is separated from ordinary fulfillment work
 
 ## Completion Condition
 
 Planning is complete when ML1 can answer one question cleanly:
 
 **Is the slice order correct, are the boundaries defensible, and is Slice 1
-worth continuing under explicit promotion rules?**
+worth continuing under explicit promotion rules and clean ML1 triage logic?**

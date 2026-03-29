@@ -4,7 +4,7 @@ title: Matter Summary - Schema
 owner: ML1
 status: draft
 created_date: 2026-02-24
-last_updated: 2026-02-24
+last_updated: 2026-03-28
 tags: [schema, matters]
 ---
 
@@ -54,7 +54,10 @@ Derived matter-level summary object.
   "control": {
     "matter_state": "enum",
     "days_in_current_state": "integer",
-    "next_decision_required": "string | null",
+    "delivery_status": "enum",
+    "fulfillment_status": "enum",
+    "next_ML1_decision_required": "string | null",
+    "decision_due_date": "date | null",
     "decision_age_days": "integer | null",
     "blocking_actor": "string | null",
     "inactivity_days": "integer"
@@ -116,6 +119,15 @@ relationship_risk_flags:
 - scope_disputes
 - expansion_resistance
 
+blocking_actor:
+- ML1
+- client
+- counterparty
+- regulator
+- fulfillment
+- internal_staff
+- unknown
+
 ## Pipeline Computation (Authoritative)
 
 ### pipeline_solutions_count (Authoritative Definition)
@@ -144,7 +156,10 @@ Rounding rule:
 - economic_risk_score_0_100 must be 0-100.
 - execution_risk_score_0_100 must be 0-100.
 - tension_summary <= 500 characters.
-- If matter_state = engaged_decision_constrained: next_decision_required must not be null.
+- If decision_due_date is present and generated_at is present, decision_age_days
+  must reflect the unresolved aging of `next_ML1_decision_required`.
+- If next_ML1_decision_required is null, decision_due_date and
+  decision_age_days must also be null.
 - If ar_balance > 0: ar_age_bucket must not be null.
 - If execution_risk_score_0_100 > 0: execution_driver_solution_id must reference valid solution_id.
 
@@ -154,4 +169,13 @@ Rounding rule:
 - economic risk components must match firm-level computation logic
 - days_in_current_state = today - state_effective_date
 - inactivity_days = today - last_activity_date
+- decision_age_days = today - ML1_decision_opened_date
 - No field in Matter Summary may contradict canonical Matter or Solution objects.
+
+## Interpretive Rule
+
+- `delivery_status` and `fulfillment_status` are durable matter attributes and
+  do not by themselves determine whether ML1 action is required now.
+- `next_ML1_decision_required` expresses the narrower ML1-action layer.
+- Ordinary fulfillment handling does not populate `next_ML1_decision_required`;
+  only fulfillment escalation may do so.

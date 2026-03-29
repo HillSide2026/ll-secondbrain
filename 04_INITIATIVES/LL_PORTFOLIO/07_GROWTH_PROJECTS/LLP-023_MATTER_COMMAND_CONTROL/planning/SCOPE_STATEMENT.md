@@ -4,7 +4,7 @@ title: Matter Command and Control - Scope Statement
 owner: ML1
 status: draft
 created_date: 2026-03-23
-last_updated: 2026-03-23
+last_updated: 2026-03-28
 tags: [matter-command-control, planning, scope]
 ---
 
@@ -27,11 +27,17 @@ LLP-023 succeeds only if uncertain cases stay visibly uncertain.
 ## In Scope
 
 - a deterministic, derivative command layer for matter visibility
+- a narrower derivative ML1-action layer inside that command layer
 - explicit slice prioritization across:
   - Slice 1: matter index, Gmail routing, digest, unmapped exceptions
   - Slice 2: SharePoint document index and delta visibility
   - Slice 3: deadline extraction and radar
   - Slice 4: communications draft packets
+- refinement of Matter Summary and digest outputs so they distinguish:
+  - persistent ML1 visibility
+  - ML1 action required now
+  - delegated fulfillment handling
+  - fulfillment escalation
 - source-of-truth boundaries across Clio, Gmail, and SharePoint
 - citation-backed output rules
 - approved cache and run-state limits
@@ -44,6 +50,8 @@ LLP-023 succeeds only if uncertain cases stay visibly uncertain.
 ## Out of Scope
 
 - replacing Clio, Gmail, or SharePoint as systems of record
+- replacing durable matter attributes such as `delivery_status` or
+  `fulfillment_status`
 - broad or unapproved source-system mutation
 - maintaining a shadow source-of-truth database
 - silently assigning ambiguous threads instead of surfacing them
@@ -68,7 +76,8 @@ Current planning direction is:
 
 1. **Priority 1 — Slice 1**
    Minimal daily command layer: matter index, label-first Gmail routing,
-   `MATTER_DIGEST.md`, `INBOX_UNMAPPED.md`, and routed matter status files.
+   `MATTER_DIGEST.md`, `INBOX_UNMAPPED.md`, routed matter status files, and a
+   clean distinction between ML1 visibility and ML1 action.
 
 2. **Priority 2 — Slice 2**
    Document visibility only after Slice 1 is stable enough to trust the command
@@ -90,6 +99,18 @@ Not part of the current initial execution-readiness target:
 - broad comms automation
 - advanced heuristic routing beyond bounded review-required fallbacks
 - downstream operational adoption beyond the derivative command layer
+
+## Visibility vs Action Rule
+
+- `delivery_status` remains the durable matter attribute for ML1 relevance and
+  economic/delivery importance.
+- `fulfillment_status` remains the durable matter attribute for delegated
+  fulfillment operating posture.
+- The daily command outputs must separately answer:
+  - what ML1 should continue to see
+  - what actually requires ML1 action now
+- Ordinary fulfillment handling should stay delegated.
+- Only fulfillment escalation belongs in the ML1-action layer.
 
 ## Ambiguity Rule
 
@@ -113,4 +134,6 @@ quietly converting uncertainty into apparent confidence.
 - routing, citation, and exception logic are measurable
 - reviewed Gmail threads are bounded to `25` per daily pass and end in exactly
   one canonical state label through the governed write path
+- command outputs distinguish ML1 visibility from ML1 action without creating a
+  shadow state model that conflicts with durable matter attributes
 - ML1 can decide whether to continue, narrow, pause, or promote the next slice
