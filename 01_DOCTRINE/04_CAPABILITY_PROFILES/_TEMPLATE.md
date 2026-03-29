@@ -1,90 +1,83 @@
 ---
 id: 01_doctrine__03_capability_profiles___template_md
-title: AGENT-CAPABILITY-PROFILE-XXXX: [Profile Name]
+title: Capability Profile: [Profile Name]
 owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-03-28
 tags: []
 ---
 
-# AGENT-CAPABILITY-PROFILE-XXXX: [Profile Name]
+# Capability Profile: [Profile Name]
 
 **Status:** DRAFT | ACTIVE | REVOKED
 **Effective:** YYYY-MM-DD
 **Supersedes:** None
-**Parent Doctrine:** DOCTRINE-AGENTS-0001
+**Governing Doctrine:** [INV/POL/PRO references]
+**Applies To:** [layer | agent exception | tool | wrapper]
 
 ---
 
 ## 1. Purpose
 
-Defines narrowly scoped exceptions to the Canonical Agent Doctrine for a specific agent role and task class.
+Define the explicit permission boundary for a narrowly scoped governed surface.
 
 This profile does not replace doctrine. It grants explicit, limited permissions under controlled conditions.
 
 ---
 
-## 2. Applies To
+## 2. Allowed Actions
 
-**Agent Role(s):**
-- [role-name]
-
-**Task Classes:**
-- [task-class-1]
-- [task-class-2]
-
----
-
-## 3. Doctrine Clauses Relaxed
-
-| Doctrine Section | Default Rule | Relaxation |
-|------------------|--------------|------------|
-| §X | [default] | [relaxed to] |
-
-All other clauses remain fully in force.
-
----
-
-## 4. Explicit Permissions Granted
-
-The agent MAY:
+The governed surface MAY:
 - [permission-1]
 - [permission-2]
 
-Only within:
-- [scope-path]
-
 ---
 
-## 5. Explicit Prohibitions (Still Enforced)
+## 3. Disallowed Actions
 
-The agent MAY NOT:
+The governed surface MAY NOT:
 - [prohibition-1]
 - [prohibition-2]
 
 ---
 
-## 6. Provenance & Labeling Requirements
+## 4. Inputs (Typed)
 
-All outputs MUST:
-- Be labeled `status: draft`
-- Include agent role attribution
-- Include generation timestamp
-- Include source references
+- [input-1]
+- [input-2]
 
 ---
 
-## 7. Confidence & Halt Conditions (Inherited + Tightened)
+## 5. Outputs (Typed)
 
-In addition to Canonical Doctrine §5:
-- [additional-halt-condition-1]
-- [additional-halt-condition-2]
+- [output-1]
+- [output-2]
 
 ---
 
-## 8. Review & Revocation
+## 6. Required Logs
+
+- [log-field-1]
+- [log-field-2]
+
+---
+
+## 7. Approval Mode
+
+- Auto | Propose | ML1 token/reference required
+
+---
+
+## 8. Boundary Rules
+
+- [boundary-rule-1]
+- [boundary-rule-2]
+
+---
+
+## 9. Review & Revocation
 
 - Profile is valid until explicitly revoked
 - ML1 may revoke at any time
@@ -92,7 +85,7 @@ In addition to Canonical Doctrine §5:
 
 ---
 
-## 9. Approval Record
+## 10. Approval Record
 
 | Field | Value |
 |-------|-------|

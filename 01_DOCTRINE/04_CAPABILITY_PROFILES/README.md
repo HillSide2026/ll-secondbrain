@@ -17,8 +17,8 @@ Boundary: Profiles do not replace binding doctrine, policies, or protocols.
 
 This directory contains capability profiles for:
 - Layer/component authority boundaries
-- Agent-level exceptions
-- Tool-level operational permissions
+- Legacy agent-level exception profiles
+- Tool and wrapper operational permissions
 
 ---
 
@@ -34,9 +34,27 @@ Profiles define **what specific agents may do under controlled conditions**.
 
 ---
 
-## Agent Profile Relaxation Axes
+## Profile Families
 
-Profiles relax constraints along **one axis at a time**:
+This folder currently contains three profile families:
+
+| Family | Pattern | Use |
+|--------|---------|-----|
+| Layer profiles | `CAP-###-*` | Stable authority boundaries for constitutional layers/components |
+| Legacy agent exception profiles | historical one-off format | Narrow agent-specific relaxations retained for continuity |
+| Tool / wrapper profiles | `<namespace>.<tool>.md` | Bounded MCP or integration permissions for concrete runtime surfaces |
+
+## Status Semantics
+
+| Status | Meaning |
+|--------|---------|
+| `ACTIVE` | The profile is approved and operative for a current governed surface |
+| `DRAFT` | The profile is being formalized or the surface is not yet fully admitted |
+| `REVOKED` | The profile must not be used |
+
+## Relaxation Axes
+
+Profiles typically relax constraints along **one axis at a time**:
 
 | Axis | Example Relaxation |
 |------|-------------------|
@@ -74,13 +92,17 @@ For agent execution profiles, at no point does an agent: **decide**, **approve**
 | gmail.get_thread | Capability Profile: Gmail.GetThread | DRAFT | Gmail read retrieval |
 | gmail.search_threads | Capability Profile: Gmail.SearchThreads | DRAFT | Gmail search |
 | gmail.create_draft | Capability Profile: Gmail.CreateDraft | DRAFT | Draft-only outbound composition |
-| sharepoint.find_latest_template | Capability Profile: SharePoint.FindLatestTemplate | DRAFT | Template lookup |
-| sharepoint.diff_docs | Capability Profile: SharePoint.DiffDocs | DRAFT | Read-only comparison |
-| sharepoint.copy_template_to_wip | Capability Profile: SharePoint.CopyTemplateToWIP | DRAFT | WIP copy in allowlisted zones |
-| sharepoint.review_site_page | Capability Profile: SharePoint.ReviewSitePage | DRAFT | Clients site page review helper |
-| sharepoint.update_site_page_content | Capability Profile: SharePoint.UpdateSitePageContent | DRAFT | Clients site page update helper |
-| sharepoint.provision_client_workspace | Capability Profile: SharePoint.ProvisionClientWorkspace | DRAFT | Clients workspace provisioning helper |
-| sharepoint.manage_clients_site | Capability Profile: SharePoint.ManageClientsSite | DRAFT | Broad Clients site authority |
+| sharepoint.list_folder | Capability Profile: SharePoint.ListFolder | ACTIVE | Metadata-only folder enumeration across approved drive aliases |
+| sharepoint.get_item | Capability Profile: SharePoint.GetItem | ACTIVE | Metadata-only item retrieval across approved drive aliases |
+| sharepoint.upload_draft | Capability Profile: SharePoint.UploadDraft | ACTIVE | Documentation DRAFTS upload surface |
+| sharepoint.find_latest_template | Capability Profile: SharePoint.FindLatestTemplate | ACTIVE | Template lookup |
+| sharepoint.diff_docs | Capability Profile: SharePoint.DiffDocs | ACTIVE | Read-only comparison |
+| sharepoint.copy_template_to_wip | Capability Profile: SharePoint.CopyTemplateToWIP | ACTIVE | WIP copy in allowlisted zones |
+| sharepoint.review_site_page | Capability Profile: SharePoint.ReviewSitePage | ACTIVE | Clients site page review helper |
+| sharepoint.update_site_page_content | Capability Profile: SharePoint.UpdateSitePageContent | ACTIVE | Clients site page update helper |
+| sharepoint.provision_client_workspace | Capability Profile: SharePoint.ProvisionClientWorkspace | ACTIVE | Clients workspace provisioning helper |
+| sharepoint.manage_clients_site | Capability Profile: SharePoint.ManageClientsSite | ACTIVE | Broad Clients site authority wrapper |
+| sharepoint.manage_documentation_site | Capability Profile: SharePoint.ManageDocumentationSite | DRAFT | Formalized broad Documentation wrapper pattern; not yet exposed as a dedicated MCP tool |
 | calendar.list_events | Capability Profile: Calendar.ListEvents | DRAFT | Read-only schedule retrieval |
 | calendar.generate_prep_packet | Capability Profile: Calendar.GeneratePrepPacket | DRAFT | Prep packet generation |
 
@@ -88,11 +110,11 @@ For agent execution profiles, at no point does an agent: **decide**, **approve**
 
 ## Creating a New Profile
 
-1. Copy `_TEMPLATE.md`
-2. Assign next sequential ID
+1. Copy `_TEMPLATE.md` or the nearest existing profile family
+2. Use the canonical naming/id pattern for that family
 3. Define scope narrowly
 4. Document all relaxations explicitly
-5. Require ML1 approval
+5. Require ML1 approval or explicit runtime admission context
 
 ---
 

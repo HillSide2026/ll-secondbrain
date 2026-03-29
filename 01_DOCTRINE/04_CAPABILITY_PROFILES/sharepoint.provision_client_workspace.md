@@ -2,7 +2,7 @@
 id: 01_doctrine__03_capability_profiles__sharepoint_provision_client_workspace_md
 title: Capability Profile: SharePoint.ProvisionClientWorkspace
 owner: ML1
-status: draft
+status: active
 version: 0.2
 created_date: 2026-03-28
 last_updated: 2026-03-28
