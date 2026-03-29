@@ -4,7 +4,7 @@ title: Agent Typology
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-03-23
+last_updated: 2026-03-28
 tags: []
 ---
 
@@ -79,10 +79,20 @@ Canonical folder: `00_SYSTEM/AGENTS/specs/matter_admin/README.md`
 | --- | --- | --- | --- | --- |
 | Matter Index Agent | MAA | Active | `00_SYSTEM/AGENTS/specs/matter_admin/MAA_MATTER_INDEX.md` | bound action: `agent_matter_index` |
 | Inbox Router Agent | MAA | Active | `00_SYSTEM/AGENTS/specs/matter_admin/MAA_INBOX_ROUTER.md` | bound actions: `agent_inbox_router`, `agent_inbox_router_scoped` |
-| Document Delta Agent | MAA | Active | `00_SYSTEM/AGENTS/specs/matter_admin/MAA_DOCUMENT_DELTA.md` | bound action: `agent_document_delta` |
 | Matter Digest Compiler Agent | MAA | Active | `00_SYSTEM/AGENTS/specs/matter_admin/MAA_MATTER_DIGEST_COMPILER.md` | bound actions: `agent_digest_compiler`, `agent_matter_digest_scoped` |
 | Deadline Extractor Agent | MAA | Planned | `00_SYSTEM/AGENTS/specs/matter_admin/MAA_DEADLINE_EXTRACTOR.md` | Slice 3 |
 | Comms Drafter Agent | MAA | Planned | `00_SYSTEM/AGENTS/specs/matter_admin/MAA_COMMS_DRAFTER.md` | Slice 4 |
+
+### Matter File Administration Agents (MFA)
+
+Canonical folder: `00_SYSTEM/AGENTS/specs/matter_file_admin/README.md`
+
+| Agent | Class | Status | Path | Notes |
+| --- | --- | --- | --- | --- |
+| Matter File Map Agent | MFA | Planned | `00_SYSTEM/AGENTS/specs/matter_file_admin/MFA_MATTER_FILE_MAP.md` | planned actions: `agent_matter_file_map`, `agent_matter_file_map_scoped` |
+| Folder Protocol Agent | MFA | Planned | `00_SYSTEM/AGENTS/specs/matter_file_admin/MFA_FOLDER_PROTOCOL.md` | planned actions: `agent_folder_protocol`, `agent_folder_protocol_scoped` |
+| Document Delta Agent | MFA | Active | `00_SYSTEM/AGENTS/specs/matter_file_admin/MFA_DOCUMENT_DELTA.md` | bound action: `agent_document_delta`; transitional alias retained at `MAA_DOCUMENT_DELTA` |
+| Authority Verifier Agent | MFA | Planned | `00_SYSTEM/AGENTS/specs/matter_file_admin/MFA_AUTHORITY_VERIFIER.md` | planned actions: `agent_authority_verifier`, `agent_authority_verifier_scoped` |
 
 ### Marketing Agents (MKT)
 

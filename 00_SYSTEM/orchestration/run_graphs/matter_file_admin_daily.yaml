@@ -1,0 +1,31 @@
+schema_version: 0.1
+id: matter_file_admin_daily
+name: Matter File Admin Daily
+description: Planned daily Matter File Administration run for federated matter-file mapping, SharePoint folder protocol assessment, authority verification, and document deltas.
+bundle: matter_file_admin_daily
+transitional_note: Current execution remains partially bundled in matter_admin_daily and scripts/run_matter_admin.py until the runner is split.
+gates:
+  - ml1_approval_required
+  - no_unapproved_source_writeback
+  - citation_pointer_required
+steps:
+  - id: load_clio_matters
+    action: connector_clio_read
+  - id: load_gmail_threads
+    action: connector_gmail_read
+  - id: load_sharepoint_docs
+    action: connector_sharepoint_read
+  - id: map_matter_files
+    action: agent_matter_file_map
+  - id: assess_folder_protocol
+    action: agent_folder_protocol
+  - id: verify_authority
+    action: agent_authority_verifier
+  - id: compile_document_deltas
+    action: agent_document_delta
+    outputs:
+      - path: 05_MATTERS/DASHBOARDS/SHAREPOINT_GAPS.md
+        label: DERIVED_ARTIFACT
+run_logging:
+  runlog: 06_RUNS/logs/matter_file_admin/runlog.md
+  provenance: 06_RUNS/logs/matter_file_admin/provenance.json

@@ -23,7 +23,7 @@ Prepare immediate execution of a Sunday matter-reconciliation function across SB
 | --- | --- | --- | --- |
 | WS-01 Reconciliation Control Model | Define cycle boundaries, authoritative-field rules, and no-writeback controls | ML1 + Matter Maintenance Orchestrator | `SCOPE_STATEMENT.md`, `ASSUMPTIONS_CONSTRAINTS.md` |
 | WS-02 Clio/SB Status Parity | Define deterministic parity checks for matter status and ownership fields | MAA_MATTER_INDEX | `DEPENDENCIES.md`, `RISK_REGISTER.md` |
-| WS-03 SharePoint Linkage Controls | Define folder/linkage and document-index exception rules | MAA_DOCUMENT_DELTA | `RISK_REGISTER.md`, `COMMUNICATION_PLAN.md` |
+| WS-03 SharePoint Linkage Controls | Define folder/linkage and document-index exception rules | MFA_DOCUMENT_DELTA | `RISK_REGISTER.md`, `COMMUNICATION_PLAN.md` |
 | WS-04 Asana Reconciliation | Define matter-tag/task linkage checks and unresolved-work exceptions | MAA_ASANA_RECON (new worker) | `DEPENDENCIES.md`, `METRIC_DEFINITION.md` inputs |
 | WS-05 Measurement + Gate Packet | Finalize KPI architecture, baseline window, validation method, and ML1 approval packet | Matter Maintenance Orchestrator | `METRIC_DEFINITION.md`, `MEASUREMENT_METHOD.md`, `BASELINE_CAPTURE_PERIOD.md`, `VALIDATION_REVIEW.md`, `ML1_METRIC_APPROVAL.md` |
 
@@ -54,7 +54,7 @@ Prepare immediate execution of a Sunday matter-reconciliation function across SB
 | ML1 | Approval authority for thresholds, exceptions, and source writeback decisions |
 | Matter Maintenance Orchestrator | End-to-end Sunday cycle orchestration and reconciliation packet assembly |
 | MAA_MATTER_INDEX | Clio/SB matter identity and status parity checks |
-| MAA_DOCUMENT_DELTA | SharePoint mapping and document delta exceptions |
+| MFA_DOCUMENT_DELTA | SharePoint mapping and document delta exceptions |
 | MAA_INBOX_ROUTER | Thread-to-matter evidence support where comms context is required |
 | MAA_ASANA_RECON (new worker) | Asana task-state reconciliation against active matter set |
 

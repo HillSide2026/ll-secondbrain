@@ -1,9 +1,9 @@
 id: 00_system__config__run_schedule
-title: Matter Admin Run Schedule
+title: Matter Admin and Matter File Admin Run Schedule
 owner: ML1
 status: draft
 created_date: 2026-03-04
-last_updated: 2026-03-05
+last_updated: 2026-03-28
 
 runs:
   daily:
@@ -21,6 +21,15 @@ runs:
     run_id: RUN_MATTER_ADMIN_ONE
     enabled: true
     requires_matter_number: true
+  matter_file_daily:
+    run_id: RUN_MATTER_FILE_ADMIN_DAILY
+    enabled: false
+    note: Planned standalone split. Current document-delta execution remains bundled in RUN_MATTER_ADMIN_DAILY.
+  matter_file_one:
+    run_id: RUN_MATTER_FILE_ADMIN_ONE
+    enabled: false
+    requires_matter_number: true
+    note: Planned standalone split. No dedicated runner mode is active yet.
 
 digest:
   stalled_days: 14

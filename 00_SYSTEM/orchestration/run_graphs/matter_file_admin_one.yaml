@@ -1,0 +1,26 @@
+schema_version: 0.1
+id: matter_file_admin_one
+name: Matter File Admin One Matter
+description: Planned on-demand Matter File Administration run scoped to a single matter number.
+bundle: matter_file_admin_one
+transitional_note: Standalone scoped execution is not yet implemented; current scoped runtime remains matter-admin centric.
+gates:
+  - ml1_approval_required
+  - no_unapproved_source_writeback
+  - citation_pointer_required
+steps:
+  - id: load_clio_matter
+    action: connector_clio_read
+  - id: load_gmail_threads
+    action: connector_gmail_read
+  - id: load_sharepoint_docs
+    action: connector_sharepoint_read
+  - id: map_matter_file
+    action: agent_matter_file_map_scoped
+  - id: assess_folder_protocol
+    action: agent_folder_protocol_scoped
+  - id: verify_authority
+    action: agent_authority_verifier_scoped
+run_logging:
+  runlog: 06_RUNS/logs/matter_file_admin/runlog.md
+  provenance: 06_RUNS/logs/matter_file_admin/provenance.json

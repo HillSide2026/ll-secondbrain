@@ -62,7 +62,7 @@ SharePoint mapping:
 1. Matter Index Agent
 2. Inbox to Matter Router
 3. Deadline Extractor (Slice 3)
-4. Document Delta Agent (Slice 2)
+4. Document Delta Agent (Matter File Admin / Slice 2)
 5. Comms Drafting Agent (Slice 4)
 6. Matter Digest Compiler
 
@@ -95,6 +95,6 @@ Under `00_SYSTEM/CONFIG/`:
 ## 10) Delivery Slices
 
 - Slice 1: matter index + Gmail routing + digest/unmapped
-- Slice 2: SharePoint doc index + deltas
+- Slice 2: Matter File Administration document index + deltas
 - Slice 3: deadline extraction + radar
 - Slice 4: comms draft packets

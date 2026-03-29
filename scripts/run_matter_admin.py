@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Matter Command and Control runner (Slice 1 + Slice 2).
+"""Matter Command and Control runner (transitional Matter Admin + Matter File Admin bundle).
 
 Slice 1 includes:
 - Clio Matter Index Agent
 - Inbox to Matter Router (label-first)
 - Firm Matter Digest compiler (minimal)
 
-Slice 2 includes:
+Slice 2 currently includes the active Matter File Administration step:
 - SharePoint document index per matter
 - SharePoint delta reporting per matter
 - Firm-wide SharePoint gaps dashboard
@@ -3317,7 +3317,9 @@ def write_runlog(path: Path, payload: Dict[str, Any], dry_run: bool) -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Run Matter Command and Control (Slice 1 + Slice 2)")
+    parser = argparse.ArgumentParser(
+        description="Run Matter Command and Control (transitional Matter Admin + Matter File Admin bundle)"
+    )
     parser.add_argument("--mode", choices=("daily", "one"), default="daily")
     parser.add_argument("--matter-number", help="Required for --mode one")
     parser.add_argument("--live-gmail", action="store_true", help="Read live Gmail threads for the review pass instead of cache/fallback data.")

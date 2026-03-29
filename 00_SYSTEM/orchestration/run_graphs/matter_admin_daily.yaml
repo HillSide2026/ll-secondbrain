@@ -1,8 +1,9 @@
 schema_version: 0.1
 id: matter_admin_daily
 name: Matter Admin Daily
-description: Daily Matter Command and Control run (25-thread review cap + routing + SharePoint deltas + digest).
+description: Daily Matter Administration run for matter identity, inbox routing, and digest compilation. During transition, the active Matter File Administration document-delta step remains bundled here.
 bundle: matter_admin_daily
+transitional_note: agent_document_delta is doctrinally governed by Matter File Administration even though the current runner still executes it inside this bundle.
 gates:
   - ml1_approval_required
   - no_unapproved_source_writeback

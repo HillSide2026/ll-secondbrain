@@ -1,8 +1,9 @@
 schema_version: 0.1
 id: matter_admin_one
 name: Matter Admin One Matter
-description: On-demand Matter Command and Control run scoped to a single matter number with governed Gmail label-write boundaries.
+description: On-demand Matter Administration run scoped to a single matter number with governed Gmail label-write boundaries. Matter File Administration remains separately defined and only partially bundled in the current runtime.
 bundle: matter_admin_one
+transitional_note: no standalone scoped Matter File Administration runner is active yet; this graph remains matter-admin focused.
 gates:
   - ml1_approval_required
   - no_unapproved_source_writeback

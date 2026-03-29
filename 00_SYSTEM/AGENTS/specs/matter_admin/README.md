@@ -4,14 +4,15 @@ title: Matter Administration Agents
 owner: ML1
 status: draft
 created_date: 2026-03-05
-last_updated: 2026-03-05
+last_updated: 2026-03-28
 tags: []
 ---
 
 # Matter Administration Agents
 
 This folder defines Matter Administration Agent (MAA) charters used by
-the Matter Command and Control pipeline.
+the matter-identity and matter-state layer of the Matter Command and Control
+pipeline.
 
 ## Run Graphs
 - `00_SYSTEM/orchestration/run_graphs/matter_admin_daily.yaml`
@@ -24,9 +25,18 @@ the Matter Command and Control pipeline.
 - `MAA_MATTER_INDEX`
 - `MAA_INBOX_ROUTER`
 - `MAA_DEADLINE_EXTRACTOR`
-- `MAA_DOCUMENT_DELTA`
 - `MAA_COMMS_DRAFTER`
 - `MAA_MATTER_DIGEST_COMPILER`
+
+## Relationship to Matter File Administration
+- Matter Administration governs matter identity, routing, status, deadlines,
+  digesting, and other matter-level administrative signals.
+- Matter File Administration governs the federated Matter File across
+  SharePoint, Gmail, Clio, and other approved systems.
+- The authoritative Matter File Admin charters live under
+  `00_SYSTEM/AGENTS/specs/matter_file_admin/`.
+- During the current transition, `scripts/run_matter_admin.py` still executes
+  the active `agent_document_delta` step inside the bundled daily pipeline.
 
 ## System-of-Record Doctrine
 - Clio = matter registry authority
