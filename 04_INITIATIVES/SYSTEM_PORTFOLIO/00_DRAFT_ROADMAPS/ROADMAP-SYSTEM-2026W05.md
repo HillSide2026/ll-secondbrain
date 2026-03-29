@@ -110,12 +110,12 @@ ROADMAP-SYSTEM-2026W05
 
 **Backlog Items:** SYS-001, SMA-001 to SMA-005
 
-### 2.2 Integration Activation 📋 PLANNED
+### 2.2 Integration Activation 🔄 ACTIVE / NORMALIZING
 **DoD:**
-- Gmail read-only integration active with audit logging
-- SharePoint read-only integration active with audit logging
+- Gmail integration active with audit logging
+- SharePoint integration active with audit logging
 - Word/OneDrive read-only integration active with audit logging
-- No-write-path verification completed for all
+- Planning packets opened for SYS-002, SYS-003, and SYS-004
 
 **Sequence:** Gmail → SharePoint → Word (per ML1 decision)
 
@@ -193,9 +193,9 @@ ROADMAP-SYSTEM-2026W05
 ### Stage 2.2 — Integrations
 | ID | Description | Owner | Status |
 |----|-------------|-------|--------|
-| SYS-002 | Gmail read-only integration | Integration Steward | pending (first) |
-| SYS-003 | SharePoint read-only integration | Integration Steward | pending (second) |
-| SYS-004 | Word/OneDrive integration | Integration Steward | pending (third) |
+| SYS-002 | Gmail integration surface | Integration Steward | planning |
+| SYS-003 | SharePoint integration surface | Integration Steward | planning |
+| SYS-004 | Word/OneDrive integration | Integration Steward | planning |
 
 ### Stage 2.3 — Validation
 | ID | Description | Owner | Status |

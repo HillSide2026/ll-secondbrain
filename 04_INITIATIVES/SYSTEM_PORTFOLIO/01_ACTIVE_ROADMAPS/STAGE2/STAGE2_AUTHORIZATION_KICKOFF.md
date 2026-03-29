@@ -112,10 +112,19 @@ Located at `01_ACTIVE_ROADMAPS/STAGE1/STAGE1.4/`:
 - [x] Runbook & QA Agent deployed and tested (SMA-005) — v1.0 Active
 
 ### 2.2 Integration Activation criteria
-- [ ] Gmail read-only integration active (SYS-002)
-- [ ] SharePoint read-only integration active (SYS-003)
+- [x] Gmail integration active (SYS-002)
+- [x] SharePoint integration active (SYS-003)
 - [ ] Word/OneDrive read-only integration active (SYS-004)
 - [ ] No-write-path verification completed
+
+Note: the original Stage 2 wording assumed read-only integrations. The current
+Gmail and SharePoint surfaces have evolved into governed active runtimes and
+now require retroactive packetization and boundary formalization rather than
+initial activation.
+
+Planning for `SYS-002`, `SYS-003`, and `SYS-004` was authorized by ML1 on
+`2026-03-28`. For `SYS-004`, that planning authority is exploratory only and
+does not authorize runtime implementation.
 
 ### 2.3 Operational Validation criteria
 - [ ] First operating cycle completed (SYS-010)

@@ -27,9 +27,9 @@ inclusion in active roadmaps but do not authorize execution by themselves.
 | ID | Description | Owner | Dependencies | Priority | Status |
 |----|-------------|-------|--------------|----------|--------|
 | SYS-001 | Choose and implement agent runtime (Claude Code agents, MCP servers, or custom SDK) | ML1 | Stage 3 agent roster | P0 | candidate |
-| SYS-002 | Set up Gmail read-only integration (OAuth app, scopes, audit logging) | Integration Steward | Stage 2 specs, SYS-001 | P1 | candidate |
-| SYS-003 | Set up SharePoint read-only integration (Graph API, site scopes) | Integration Steward | Stage 2 specs, SYS-001 | P1 | candidate |
-| SYS-004 | Set up Word/OneDrive read-only integration (document access) | Integration Steward | Stage 2 specs, SYS-001 | P1 | candidate |
+| SYS-002 | Formalize and govern the active Gmail integration surface (read plus controlled label writes) | Integration Steward | Stage 2 specs; active Gmail runtime | P1 | planning |
+| SYS-003 | Formalize and govern the active SharePoint integration surface (LegalMatters read-only plus managed Documentation / Clients surfaces) | Integration Steward | Stage 2 specs; active SharePoint runtime | P1 | planning |
+| SYS-004 | Define and stand up the Word/OneDrive document-access integration surface | Integration Steward | Stage 2 specs; scope clarification from Gmail and SharePoint lessons | P1 | planning |
 | SMA-001 | Deploy and configure System Governance Agent | Runbook & QA | SYS-001 | P1 | candidate |
 | SMA-002 | Deploy and configure Portfolio Planning Agent | Runbook & QA | SYS-001 | P1 | candidate |
 | SMA-003 | Deploy and configure Integration Steward Agent | Runbook & QA | SYS-001 | P1 | candidate |

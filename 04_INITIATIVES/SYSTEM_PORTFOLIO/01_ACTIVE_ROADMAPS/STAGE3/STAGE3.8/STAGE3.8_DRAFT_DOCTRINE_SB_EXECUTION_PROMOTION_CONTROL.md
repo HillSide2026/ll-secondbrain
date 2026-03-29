@@ -15,7 +15,7 @@ SB Execution Promotion Control
 **Stage:** Pre-3.8 Pressure Test
 **Version:** v0.1
 
-**Note:** Draft only. Non-authoritative until explicitly approved under DOCTRINE-2026-001.
+**Note:** Draft only. Non-authoritative until explicitly approved under INV-0007.
 
 ---
 

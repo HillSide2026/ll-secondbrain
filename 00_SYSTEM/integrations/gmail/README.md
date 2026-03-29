@@ -2,10 +2,10 @@
 id: 00_system__integrations__gmail__readme_md
 title: Gmail Integration
 owner: ML1
-status: draft
+status: active
 version: 2.0
 created_date: 2026-02-15
-last_updated: 2026-03-14
+last_updated: 2026-03-28
 tags: [integration, gmail, mcp]
 ---
 
