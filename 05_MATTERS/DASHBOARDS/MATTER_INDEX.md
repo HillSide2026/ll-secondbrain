@@ -1,6 +1,6 @@
 # Matter Index
 
-Generated at: 2026-03-24T06:01:08Z
+Generated at: 2026-03-29T01:56:49Z
 Connector source: `cache:cache/clio_matters.json (repo_fallback:05_MATTERS)`
 
 | Matter Number | Name | Status | Category | Delivery | Fulfillment | Services | Responsible | Client | Source Pointer |
@@ -15,7 +15,7 @@ Connector source: `cache:cache/clio_matters.json (repo_fallback:05_MATTERS)`
 | 24-601-00001 | Meta Bytes North America Inc | Open | ML Watch | Parked | keep in view | 0 | unassigned | Meta Bytes North America Inc | repo://05_MATTERS/PARKED/24-601-00001/MATTER.yaml |
 | 24-646-00001 | ByNature Design | Open | ML Active | Standard | active | 0 | unassigned | ByNature Design | repo://05_MATTERS/STANDARD/24-646-00001/MATTER.yaml |
 | 24-682-00002 | Stream Ventures Limited | Open | ML Watch | Parked | keep in view | 0 | unassigned | Stream Ventures Limited | repo://05_MATTERS/PARKED/24-682-00002/MATTER.yaml |
-| 24-845-00001 | STAR 333 SPORTS INC. | Open | Other | unknown | unknown | 0 | unassigned | STAR 333 SPORTS INC. | repo://05_MATTERS/STANDARD/24-845-00001/MATTER.yaml |
+| 24-845-00001 | STAR 333 SPORTS INC. | Open | Other | Standard | keep in view | 0 | unassigned | STAR 333 SPORTS INC. | repo://05_MATTERS/STANDARD/24-845-00001/MATTER.yaml |
 | 25-1024-00001 | AllPro Construction Group | Open | ML Watch | Parked | active | 0 | unassigned | AllPro Construction Group | repo://05_MATTERS/PARKED/25-1024-00001/MATTER.yaml |
 | 25-1185-00001 | Alexander Klys | Open | ML Active | Standard | active | 0 | unassigned | Alexander Klys | repo://05_MATTERS/STANDARD/25-1185-00001/MATTER.yaml |
 | 25-1192-00001 | The Knot Churros International Limited | Open | ML Watch | Parked | active | 0 | unassigned | The Knot Churros International Limited | repo://05_MATTERS/PARKED/25-1192-00001/MATTER.yaml |

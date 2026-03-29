@@ -1,25 +1,32 @@
 # Firm Matter Digest
 
-Generated at: 2026-03-24T06:01:08Z
+Generated at: 2026-03-29T01:56:49Z
 
 ## Summary
 - Moved matters: 0
 - ML Active matters: 23
 - ML Active matters with zero services: 22
 - ML Watch matters: 11
-- Inbox-linked active matters (last 7 days): 1
-- Stalled matters: 34
+- Fulfillment escalation candidates (urgent): 1
+- Inbox-linked active matters (last 7 days): 0
+- Inbox-signal stalled matters: 35
 - Due soon: 0 (Deadline Extractor not active in Slice 1)
-- Unmapped inbox threads: 22
+- Unmapped inbox threads: 5
 - SharePoint file changes: 0
 
 ## Needs ML1 Review Today
-- Fallback-routed threads requiring review: 3
-- Unmapped threads requiring routing decision: 22
+- Fallback-routed threads requiring review: 1
+- Unmapped threads requiring routing decision: 5
+- Fulfillment escalation candidates (urgent): 1
+
+### Fulfillment Escalation Candidates
+- 25-927-00003 :: Stream Ventures Limited (delivery=Essential; fulfillment=urgent; services=0; latest signal=2026-03-05T04:08:22Z; repo://05_MATTERS/ESSENTIAL/25-927-00003/MATTER.yaml)
+
+## Operational Gaps (Not automatic ML1 review)
 - ML Active matters missing service definitions: 22
 - SharePoint unmapped items: 226
 
-## LL Working On (Signal 1: ML Active Delivery Status)
+## ML1 Visibility Context
 - Taxonomy contract: `repo://00_SYSTEM/CONFIG/matter_delivery_taxonomy.yml`
 
 ### ML Active Queue
@@ -89,9 +96,7 @@ Generated at: 2026-03-24T06:01:08Z
 - 26-259-00003 :: LL Onboarding (services=0; repo://05_MATTERS/STANDARD/26-259-00003/MATTER.yaml)
 
 ## Inbox Signal (Signal 2: Matter-Linked Comms, Last 7 Days)
-| Matter Number | Matter | Routed Threads | Last Activity (UTC) | Age (days) | Latest Subject | Source Pointer |
-| --- | --- | --- | --- | --- | --- | --- |
-| 25-927-00003 | Stream Ventures Limited | 3 | 2026-03-23T19:41:29Z | 0 | Re: 1:1 | gmail://thread/19d07ea7b61a1153 |
+- No matter-linked comms activity in this time window.
 
 ## Waiting External
 - None flagged in Slice 1 heuristics
@@ -104,65 +109,49 @@ Generated at: 2026-03-24T06:01:08Z
 - SharePoint unmapped items: 226
 - Matters with zero mapped SharePoint items: 30
 
-## Stalled (Inbox Signal)
-- 22-194-00006
-- 23-169-00003
-- 23-194-00013
-- 23-235-00001
-- 24-336-00004
-- 24-347-00002
-- 24-409-00001
-- 24-601-00001
-- 24-646-00001
-- 24-682-00002
-- 24-845-00001
-- 25-1024-00001
-- 25-1185-00001
-- 25-1192-00001
-- 25-1231-00001
-- 25-1318-00001
-- 25-1363-00001
-- 25-1525-00001
-- 25-1538-00002
-- 25-1553-00001
-- 25-1571-00001
-- 25-1588-00001
-- 25-1593-00001
-- 25-1603-00001
-- 25-1614-00001
-- 25-174-00001
-- 25-192-00003
-- 25-194-00059
-- 25-256-00005
-- 25-822-00001
-- 25-845-00002
-- 26-1593-00002
-- 26-1630-00001
-- 26-259-00003
+## Inbox Signal Stalled (Overlay)
+- `stalled` is an inbox-signal overlay, not a replacement for delivery status.
+| Matter Number | Matter | Category | Delivery | Fulfillment | Last Signal (UTC) | Source Pointer |
+| --- | --- | --- | --- | --- | --- | --- |
+| 25-927-00003 | Stream Ventures Limited | ML Active | Essential | urgent | 2026-03-05T04:08:22Z | repo://05_MATTERS/ESSENTIAL/25-927-00003/MATTER.yaml |
+| 24-336-00004 | Mascore Helical Piles | ML Active | Strategic | active | none | repo://05_MATTERS/STRATEGIC/24-336-00004/MATTER.yaml |
+| 25-1231-00001 | Charmaine Spiteri | ML Active | Strategic | active | none | repo://05_MATTERS/STRATEGIC/25-1231-00001/MATTER.yaml |
+| 25-1318-00001 | Zelko Culibrk | ML Active | Strategic | active | none | repo://05_MATTERS/STRATEGIC/25-1318-00001/MATTER.yaml |
+| 25-256-00005 | Aspire Infusions Inc | ML Active | Strategic | active | none | repo://05_MATTERS/STRATEGIC/25-256-00005/MATTER.yaml |
+| 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | ML Active | Strategic | active | none | repo://05_MATTERS/STRATEGIC/26-1593-00002/MATTER.yaml |
+| 22-194-00006 | Rousseau Mazzuca LLP | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/22-194-00006/MATTER.yaml |
+| 23-194-00013 | Rousseau Mazzuca LLP | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/23-194-00013/MATTER.yaml |
+| 23-235-00001 | Baobab Energy Africa Ltd | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/23-235-00001/MATTER.yaml |
+| 24-646-00001 | ByNature Design | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/24-646-00001/MATTER.yaml |
+| 25-1185-00001 | Alexander Klys | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-1185-00001/MATTER.yaml |
+| 25-1363-00001 | Raevan Joy Sambrano | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-1363-00001/MATTER.yaml |
+| 25-1525-00001 | Kleenup Cleaning Services Inc. | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-1525-00001/MATTER.yaml |
+| 25-1538-00002 | Georgiana Nicoară | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-1538-00002/MATTER.yaml |
+| 25-1553-00001 | 15652227 Canada Inc. | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-1553-00001/MATTER.yaml |
+| 25-1571-00001 | Kishmish Inc. | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-1571-00001/MATTER.yaml |
+| 25-1588-00001 | Gregory Popov | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-1588-00001/MATTER.yaml |
+| 25-1593-00001 | 1001162998 Ontario Corp. o/a KaleMart | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-1593-00001/MATTER.yaml |
+| 25-1603-00001 | IBERBANCO LTD | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-1603-00001/MATTER.yaml |
+| 25-1614-00001 | HillSide | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-1614-00001/MATTER.yaml |
+| 25-194-00059 | Rousseau Mazzuca LLP | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-194-00059/MATTER.yaml |
+| 25-845-00002 | STAR 333 SPORTS INC. | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-845-00002/MATTER.yaml |
+| 26-259-00003 | LL Onboarding | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/26-259-00003/MATTER.yaml |
+| 24-845-00001 | STAR 333 SPORTS INC. | Other | Standard | keep in view | none | repo://05_MATTERS/STANDARD/24-845-00001/MATTER.yaml |
+| 23-169-00003 | Best Bottles Inc. | ML Watch | Parked | active | none | repo://05_MATTERS/PARKED/23-169-00003/MATTER.yaml |
+| 25-1024-00001 | AllPro Construction Group | ML Watch | Parked | active | none | repo://05_MATTERS/PARKED/25-1024-00001/MATTER.yaml |
+| 25-1192-00001 | The Knot Churros International Limited | ML Watch | Parked | active | none | repo://05_MATTERS/PARKED/25-1192-00001/MATTER.yaml |
+| 25-822-00001 | Majid Hajibeigy | ML Watch | Parked | active | none | repo://05_MATTERS/PARKED/25-822-00001/MATTER.yaml |
+| 24-347-00002 | Brand Butter | ML Watch | Parked | keep in view | none | repo://05_MATTERS/PARKED/24-347-00002/MATTER.yaml |
+| 24-409-00001 | A. Mukherjee & Co. | ML Watch | Parked | keep in view | none | repo://05_MATTERS/PARKED/24-409-00001/MATTER.yaml |
+| 24-601-00001 | Meta Bytes North America Inc | ML Watch | Parked | keep in view | none | repo://05_MATTERS/PARKED/24-601-00001/MATTER.yaml |
+| 24-682-00002 | Stream Ventures Limited | ML Watch | Parked | keep in view | none | repo://05_MATTERS/PARKED/24-682-00002/MATTER.yaml |
+| 25-174-00001 | Danielle Thompson | ML Watch | Parked | keep in view | none | repo://05_MATTERS/PARKED/25-174-00001/MATTER.yaml |
+| 25-192-00003 | If Not Me Inc | ML Watch | Parked | keep in view | none | repo://05_MATTERS/PARKED/25-192-00003/MATTER.yaml |
+| 26-1630-00001 | Marcela Hernandez | ML Watch | Parked | keep in view | none | repo://05_MATTERS/PARKED/26-1630-00001/MATTER.yaml |
 
 ## Unmapped Comms Intake
-- 19d1e59e0f2d2eb9 :: Chloe Nguyen resolved a comment on "images - Levine Law" (gmail://thread/19d1e59e0f2d2eb9)
-- 19d1e41cecfef638 :: Clips - your clip got its first view (gmail://thread/19d1e41cecfef638)
-- 196ff9e76761f782 :: LL - Accounts -  WIP INVOICING - CLIO  .xlsx (gmail://thread/196ff9e76761f782)
-- 19d1e362adcdd63e :: LL - Accounts -  ... - @matthew@levinelegal.ca For this peri... (gmail://thread/19d1e362adcdd63e)
-- 19d1d8d702cb44a2 :: Manual time was added (gmail://thread/19d1d8d702cb44a2)
-- 19d1ce69c727bde3 :: New missed call from (647) 277-3554. (gmail://thread/19d1ce69c727bde3)
-- 19d1adf874e3eafe :: Re: AI Call Recap (gmail://thread/19d1adf874e3eafe)
-- 19d1be91511ce06a :: New voicemail from +52 33 2009 7759 (gmail://thread/19d1be91511ce06a)
-- 19d1be77a5c32341 :: New missed call from +52 33 2009 7759. (gmail://thread/19d1be77a5c32341)
-- 19d1bf08339f1102 :: Reminder - Annual Report Must Be Filed by March 31/Rappel - La déclaration annuelle doit être déposée au plus tard le 31 mars (gmail://thread/19d1bf08339f1102)
-- 19d1bc1f89ced48c :: Payment Received - Thank You! (gmail://thread/19d1bc1f89ced48c)
-- 19d1b8e6f6e08f3b :: New voicemail from (416) 421-2034 (gmail://thread/19d1b8e6f6e08f3b)
-- 19d1b8b03b4b90a7 :: New missed call from (416) 421-2034. (gmail://thread/19d1b8b03b4b90a7)
-- 19d1b7289710c44f :: New missed call from (416) 961-1177. (gmail://thread/19d1b7289710c44f)
-- 19d1b674b82ebb9f :: Matthew, here is your weekly billing report (gmail://thread/19d1b674b82ebb9f)
-- 19d1b6372995f501 :: Clips - your clip got its first view (gmail://thread/19d1b6372995f501)
-- 19d1afebb00b3420 :: Notification: LLA 2 @ Mon Mar 23, 2026 11am - 11:45am (EDT) (Matthew AJ Levine) (gmail://thread/19d1afebb00b3420)
-- 19d1b20f8092220f :: Upcoming live replays in April! (gmail://thread/19d1b20f8092220f)
-- 19d1b0385a0c2bb3 :: One login to connect Glassdoor and Indeed (gmail://thread/19d1b0385a0c2bb3)
-- 19d1afed0ef1f08a :: [CPD Webinar] Multiple Will Planning and Drafting Pt. 2 (gmail://thread/19d1afed0ef1f08a)
-- ... 2 more
-
-## Exceptions
-- Missing local matter folder for SharePoint packet generation:
-  - 24-845-00001
+- 19cbc278e9a83941 :: Make your first purchase on our P2P platform and pay up to 20% less (repo://06_RUNS/ops/gmail_fetch_latest.json#thread:19cbc278e9a83941)
+- 19cbc1ec63a11987 :: Re: Outstanding credit REGUS RENT (repo://06_RUNS/ops/gmail_fetch_latest.json#thread:19cbc1ec63a11987)
+- 19cbbe2198583039 :: Re: Tax Implication of Shareholder Distributions (repo://06_RUNS/ops/gmail_fetch_latest.json#thread:19cbbe2198583039)
+- 19cbbad1f7269a9f :: Manual time was added (repo://06_RUNS/ops/gmail_fetch_latest.json#thread:19cbbad1f7269a9f)
+- 19cbba71918a97a6 :: Khanh N. has started working. Review work done. (repo://06_RUNS/ops/gmail_fetch_latest.json#thread:19cbba71918a97a6)

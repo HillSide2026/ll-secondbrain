@@ -3126,6 +3126,75 @@ def build_digest(
     delivery_active_rows = sorted(delivery_active_rows, key=_delivery_sort)
     delivery_watch_rows = sorted(delivery_watch_rows, key=_delivery_sort)
     active_service_gaps = [row for row in delivery_active_rows if int(row.get("service_count") or "0") == 0]
+    urgent_fulfillment_rows = sorted(
+        [
+            row
+            for row in (delivery_active_rows + delivery_watch_rows)
+            if str(row.get("fulfillment_status") or "").strip().lower() == "urgent"
+        ],
+        key=_delivery_sort,
+    )
+
+    def _latest_signal_for_matter(matter_number: str) -> str:
+        return str(current_latest.get(matter_number) or previous_latest.get(matter_number) or "").strip()
+
+    row_lookup: Dict[str, Dict[str, str]] = {
+        row["matter_number"]: row for row in (delivery_active_rows + delivery_watch_rows)
+    }
+    stalled_detail_rows: List[Dict[str, str]] = []
+    for matter_number in stalled:
+        row = row_lookup.get(matter_number)
+        if row is None:
+            matter = matter_lookup.get(matter_number)
+            if matter is None:
+                row = {
+                    "matter_number": matter_number,
+                    "matter_name": matter_number,
+                    "status": "unknown",
+                    "delivery_status": "unknown",
+                    "fulfillment_status": "unknown",
+                    "category_label": "Other",
+                    "service_count": "0",
+                    "services": "0",
+                    "source_pointer": "",
+                }
+            else:
+                _, category_label = classify_delivery_category(matter, delivery_taxonomy)
+                row = {
+                    "matter_number": matter.matter_number,
+                    "matter_name": matter.name,
+                    "status": matter.status or "unknown",
+                    "delivery_status": matter.delivery_status.strip() or "unknown",
+                    "fulfillment_status": matter.fulfillment_status.strip() or "unknown",
+                    "category_label": category_label,
+                    "service_count": str(len(matter.services)),
+                    "services": service_summary(matter.services, max_items=4),
+                    "source_pointer": matter.source_pointer,
+                }
+        stalled_detail_rows.append(
+            {
+                **row,
+                "last_signal_at": _latest_signal_for_matter(matter_number) or "none",
+            }
+        )
+
+    stalled_detail_rows = sorted(stalled_detail_rows, key=_delivery_sort)
+
+    ml1_review_lines: List[str] = []
+    if review_required:
+        ml1_review_lines.append(f"- Fallback-routed threads requiring review: {len(review_required)}")
+    if unmapped:
+        ml1_review_lines.append(f"- Unmapped threads requiring routing decision: {len(unmapped)}")
+    if urgent_fulfillment_rows:
+        ml1_review_lines.append(f"- Fulfillment escalation candidates (urgent): {len(urgent_fulfillment_rows)}")
+
+    operational_gap_lines: List[str] = []
+    if active_service_gaps:
+        operational_gap_lines.append(f"- {active_label} matters missing service definitions: {len(active_service_gaps)}")
+    if sharepoint_ambiguous_count:
+        operational_gap_lines.append(f"- SharePoint ambiguous mapping items: {sharepoint_ambiguous_count}")
+    if sharepoint_unmapped_count:
+        operational_gap_lines.append(f"- SharePoint unmapped items: {sharepoint_unmapped_count}")
 
     lines = [
         "# Firm Matter Digest",
@@ -3137,8 +3206,9 @@ def build_digest(
         f"- {active_label} matters: {len(delivery_active_rows)}",
         f"- {active_label} matters with zero services: {len(active_service_gaps)}",
         f"- {watch_label} matters: {len(delivery_watch_rows)}",
+        f"- Fulfillment escalation candidates (urgent): {len(urgent_fulfillment_rows)}",
         f"- Inbox-linked active matters (last {active_window_days} days): {len(inbox_signal_rows)}",
-        f"- Stalled matters: {len(stalled)}",
+        f"- Inbox-signal stalled matters: {len(stalled)}",
         "- Due soon: 0 (Deadline Extractor not active in Slice 1)",
         f"- Unmapped inbox threads: {len(unmapped)}",
         f"- SharePoint file changes: {int(sharepoint_summary.get('file_changes') or 0)}",
@@ -3146,24 +3216,34 @@ def build_digest(
         "## Needs ML1 Review Today",
     ]
 
-    if review_required or unmapped or sharepoint_unmapped_count or sharepoint_ambiguous_count:
-        if review_required:
-            lines.append(f"- Fallback-routed threads requiring review: {len(review_required)}")
-        if unmapped:
-            lines.append(f"- Unmapped threads requiring routing decision: {len(unmapped)}")
-        if active_service_gaps:
-            lines.append(f"- {active_label} matters missing service definitions: {len(active_service_gaps)}")
-        if sharepoint_ambiguous_count:
-            lines.append(f"- SharePoint ambiguous mapping items: {sharepoint_ambiguous_count}")
-        if sharepoint_unmapped_count:
-            lines.append(f"- SharePoint unmapped items: {sharepoint_unmapped_count}")
+    if ml1_review_lines:
+        lines.extend(ml1_review_lines)
+    else:
+        lines.append("- None")
+
+    lines.extend(["", "### Fulfillment Escalation Candidates"])
+    if urgent_fulfillment_rows:
+        for row in urgent_fulfillment_rows:
+            latest_signal = _latest_signal_for_matter(row["matter_number"])
+            latest_fragment = f"; latest signal={latest_signal}" if latest_signal else ""
+            lines.append(
+                f"- {row['matter_number']} :: {row['matter_name']} "
+                f"(delivery={row['delivery_status']}; fulfillment={row['fulfillment_status']}; "
+                f"services={row['service_count']}{latest_fragment}; {row['source_pointer']})"
+            )
+    else:
+        lines.append("- None")
+
+    lines.extend(["", "## Operational Gaps (Not automatic ML1 review)"])
+    if operational_gap_lines:
+        lines.extend(operational_gap_lines)
     else:
         lines.append("- None")
 
     lines.extend(
         [
             "",
-            f"## LL Working On (Signal 1: {active_label} Delivery Status)",
+            "## ML1 Visibility Context",
             f"- Taxonomy contract: `repo://{display_path(DEFAULT_MATTER_DELIVERY_TAXONOMY)}`",
             "",
             f"### {active_label} Queue",
@@ -3271,9 +3351,35 @@ def build_digest(
     lines.append(f"- SharePoint unmapped items: {sharepoint_unmapped_count}")
     lines.append(f"- Matters with zero mapped SharePoint items: {matters_without_sharepoint}")
 
-    lines.extend(["", "## Stalled (Inbox Signal)"])
-    if stalled:
-        lines.extend([f"- {matter_number}" for matter_number in stalled])
+    lines.extend(["", "## Inbox Signal Stalled (Overlay)"])
+    lines.append("- `stalled` is an inbox-signal overlay, not a replacement for delivery status.")
+    if stalled_detail_rows:
+        rows = [
+            [
+                row["matter_number"],
+                row["matter_name"],
+                row["category_label"],
+                row["delivery_status"],
+                row["fulfillment_status"],
+                row["last_signal_at"],
+                row["source_pointer"],
+            ]
+            for row in stalled_detail_rows
+        ]
+        lines.append(
+            format_table(
+                [
+                    "Matter Number",
+                    "Matter",
+                    "Category",
+                    "Delivery",
+                    "Fulfillment",
+                    "Last Signal (UTC)",
+                    "Source Pointer",
+                ],
+                rows,
+            )
+        )
     else:
         lines.append("- None")
 
@@ -3298,6 +3404,14 @@ def build_digest(
             "active_category_label": active_label,
             "watch_category_key": watch_category_key,
             "watch_category_label": watch_label,
+        },
+        "ml1_triage": {
+            "fallback_review_required": len(review_required),
+            "unmapped_threads": len(unmapped),
+            "fulfillment_escalation_candidates": len(urgent_fulfillment_rows),
+            "operational_service_gaps": len(active_service_gaps),
+            "sharepoint_ambiguous_items": int(sharepoint_ambiguous_count or 0),
+            "sharepoint_unmapped_items": int(sharepoint_unmapped_count or 0),
         },
         "sharepoint_summary": {
             "current_items": int(sharepoint_summary.get("current_items") or 0),
