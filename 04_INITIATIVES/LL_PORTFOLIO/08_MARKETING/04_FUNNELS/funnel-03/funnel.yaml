@@ -28,6 +28,14 @@ spec:
     core_offers:
       - Ongoing AML Counsel Retainer
 history:
+- v: 2.3.0
+  date: '2026-03-30'
+  by: ML1
+  change: >
+    EO1 MSB registration content cluster complete. 21 blog posts written, saved to repo,
+    and posted to levinelegal.ca as WordPress drafts (WP IDs 1867–1884, 1903–1905).
+    Internal linking architecture applied across all posts via wp_apply_linking_architecture.py.
+    Pending ML1 review and publish in WP Admin. EO2 (STR cluster) not yet started — 27 posts planned.
 - v: 2.2.0
   date: '2026-03-29'
   by: ML1
