@@ -31,6 +31,8 @@ Role: Bridge channel sustaining qualified intake while F02 is built
 | Actual performance | Hitting 4/month in best months only; average is below target |
 | 2025 origin mix | Almost all `2025` matters originated through `F01`, with `Mascore` and `Stream` as explicit exceptions |
 | Economic contribution signal | `F01`-generated revenue in `2025` appears to have significantly exceeded `F01` spend |
+| 2025 all-in ROAS (Jan–Oct) | ~1.47x ($36,654 F1 revenue / $25,000 all-in cost: $15k ads + $10k management fee) |
+| ROAS threshold hypothesis | >2.0x required to justify continued F1 spend — ML1 hypothesis 2026-03-30, not yet a formal threshold |
 | Matter quality issue | A portion of retained matters are very low value — fees do not justify intake cost or ML1 time |
 | Implied CPM (cost per matter) at target | $375/matter ($1,500 ÷ 4) |
 | Implied CPM (actual) | Higher than $375 given below-target volume |

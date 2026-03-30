@@ -27,6 +27,16 @@ Stage: Planning
 ## Target Status
 - Target thresholds are `TBD` pending ML1 metric approval for Planning -> Executing gate authorization.
 
+## ROAS Threshold Hypothesis
+
+| Metric | Hypothesis | Status | Source |
+|--------|------------|--------|--------|
+| ROAS (all-in) | Must exceed **2.0x** to justify continued F1 spend | ML1 hypothesis — not yet validated | ML1 2026-03-30 |
+
+**Context:** 2025 all-in ROAS was ~1.47x (Jan–Oct, $36,654 revenue / $25,000 cost). Below the hypothesized threshold.
+This hypothesis is not yet a formal target — it requires ML1 approval to become a governance threshold.
+Until validated, it serves as the working benchmark for F1 investment decisions.
+
 ## Measurement Cadence
 - Weekly operational review
 - Monthly governance summary
