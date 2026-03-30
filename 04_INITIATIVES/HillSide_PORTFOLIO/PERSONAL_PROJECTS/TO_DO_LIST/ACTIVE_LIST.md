@@ -4,7 +4,7 @@ title: Active List
 owner: ML1
 status: draft
 created_date: 2026-03-16
-last_updated: 2026-03-16
+last_updated: 2026-03-28
 tags: [hillside, personal-projects, to-do-list]
 ---
 
@@ -17,3 +17,6 @@ Track the current set of active personal tasks that require action.
 | 1 | Talk to doctor re blood pressure, nose, testosterone | Book appointment | Personal Health | — | Active | 2026-03-25 |
 | 2 | Be a better father | — | Personal | — | Active | 2026-03-25 |
 | 3 | Cultivate joy | — | Personal | — | Active | 2026-03-25 |
+| 4 | Attention management | — | Personal Wellbeing | — | Active | 2026-03-28 |
+| 5 | Stress management | — | Personal Wellbeing | — | Active | 2026-03-28 |
+| 6 | Anxiety management | — | Personal Wellbeing | — | Active | 2026-03-28 |

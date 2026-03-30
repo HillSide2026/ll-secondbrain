@@ -45,7 +45,7 @@ Define agent roles that operate within the Corporate Playbooks system. Specifica
 
 | Layer | Purpose |
 |-------|---------|
-| Agent Doctrine (DOCTRINE-AGENTS-0001) | Universal constraints on all agents |
+| Agent Doctrine (INV-0015) | Universal constraints on all agents |
 | Capability Profiles | Permissions granted to specific roles |
 | **Agent Role Specifications** | What a specific agent type does |
 | **Supporting References** | Operational resources for agent behavior |

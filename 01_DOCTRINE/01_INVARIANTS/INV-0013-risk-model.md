@@ -1,27 +1,27 @@
 ---
-id: DOCTRINE-RISK_MODEL-0001
-title: Risk Model Doctrine (Economic, Execution, Operational, Financial, Strategic)
+id: INV-0013
+title: 'INV-0013: Risk Model Doctrine (Economic, Execution, Operational, Financial, Strategic)'
 owner: ML1
-status: draft
+status: approved
 version: 1.0
 created_date: 2026-02-24
-last_updated: 2026-03-15
+last_updated: 2026-03-28
 tags: [doctrine, risk]
 
-effective_date:
+effective_date: 2026-03-28
 supersedes:
 
 provenance:
   decided_by: ML1
-  decided_on:
-  context:
+  decided_on: 2026-03-28
+  context: Approved risk model doctrine for invariant-layer use
 ---
 
-# Risk Model Doctrine (Economic, Execution, Operational, Financial, Strategic)
+# INV-0013 — Risk Model Doctrine (Economic, Execution, Operational, Financial, Strategic)
 
-**Document ID:** DOCTRINE-RISK_MODEL-0001  
-**Status:** DRAFT  
-**Effective:** TBD  
+**Invariant ID:** INV-0013  
+**Status:** APPROVED  
+**Effective:** 2026-03-28  
 **Authority:** ML1
 
 ---

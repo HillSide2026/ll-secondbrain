@@ -1,18 +1,18 @@
 ---
-id: 01_doctrine__01_invariants__doctrine-2026-004-stage_phase_numbering_md
-title: Canonical Stage & Phase Numbering Doctrine
+id: INV-0010
+title: 'INV-0010: Canonical Stage & Phase Numbering Doctrine'
 owner: ML1
-status: draft
+status: approved
 version: 1.0
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-03-28
 tags: []
 ---
 
-# Canonical Stage & Phase Numbering Doctrine
+# INV-0010 — Canonical Stage & Phase Numbering Doctrine
 
-**Document ID:** DOCTRINE-2026-004
-**Status:** INVARIANT
+**Invariant ID:** INV-0010
+**Status:** APPROVED
 **Effective:** 2026-01-27
 **Authority:** ML1
 

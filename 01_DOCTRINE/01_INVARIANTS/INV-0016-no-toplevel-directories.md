@@ -1,18 +1,18 @@
 ---
-id: 01_doctrine__01_invariants__doctrine-repo-0001-no-toplevel-directories_md
-title: Doctrine: Claude Code Must Not Create Top-Level Directories
+id: INV-0016
+title: 'INV-0016: No Top-Level Directories'
 owner: ML1
-status: draft
+status: approved
 version: 1.0
 created_date: 2026-02-08
-last_updated: 2026-02-08
+last_updated: 2026-03-28
 tags: []
 ---
 
-# Doctrine: Claude Code Must Not Create Top-Level Directories
+# INV-0016 — No Top-Level Directories
 
-**Status:** INVARIANT
-**Doctrine ID:** DOCTRINE-REPO-0001
+**Status:** APPROVED
+**Invariant ID:** INV-0016
 **Effective:** 2026-02-07
 **Authority:** ML1
 **Applies To:** Claude Code; any agent writing to the LL-Secondbrain repo

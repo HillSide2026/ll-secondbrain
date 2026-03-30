@@ -35,6 +35,11 @@ Classification:
 - If it defines enforcement logic, it belongs in Protocols.
 - If it defines interpretive posture, it belongs in Principles.
 
+Naming convention:
+- Canonical numbered invariants in this folder should use `INV-####-descriptive-name.md`.
+- `README.md`, `SECOND_BRAIN_MODEL.md`, and `SYSTEM_IDENTITY.md` are the only unnumbered exceptions that should remain active in this folder.
+- Legacy `DOCTRINE-*` filename prefixes should not remain in this folder once an artifact has been normalized into the active invariant sequence.
+
 Typical examples in the ML1/ML2/System/LL model:
 - ML1 retains final judgment authority.
 - ML2 is a system of record, not an autonomous actor.

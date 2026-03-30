@@ -33,7 +33,7 @@ matter doctrine.
 
 Project ontology and structural boundaries are defined in:
 
-- `01_DOCTRINE/01_INVARIANTS/DOCTRINE-PROJECTS-0001-project-structural-boundaries.md`
+- `01_DOCTRINE/01_INVARIANTS/INV-0012-project-structural-boundaries.md`
 
 ## 3. Policy Hierarchy
 
@@ -238,7 +238,7 @@ may be reclassified into another project type before material execution begins.
 This project delivery-stage policy is distinct from:
 
 - roadmap stage/phase numbering governed by
-  `01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0004-stage-phase-numbering.md`
+  `01_DOCTRINE/01_INVARIANTS/INV-0010-stage-phase-numbering.md`
 - client engagement stages governed by
   `01_DOCTRINE/03_POLICIES/POL-052_Client_Engagement_Stage_Policy.md`
 - register-level decision lifecycles used for portfolio triage or screening
@@ -247,7 +247,7 @@ These systems must not be collapsed into one stage vocabulary.
 
 ## 10. Related Artifacts
 
-- `01_DOCTRINE/01_INVARIANTS/DOCTRINE-PROJECTS-0001-project-structural-boundaries.md`
+- `01_DOCTRINE/01_INVARIANTS/INV-0012-project-structural-boundaries.md`
 - `01_DOCTRINE/03_POLICIES/POL-056_Firm_Project_Policy.md`
 - `04_INITIATIVES/HillSide_PORTFOLIO/BUSINESS_PROJECTS/PROJECT_ARTIFACT_POLICY.md`
 - `01_DOCTRINE/03_POLICIES/POL-063_Project_Risk_Artifact_Lifecycle_Policy.md`

@@ -2,10 +2,10 @@
 id: 04_initiatives_ll_portfolio_08_marketing_04_funnels_funnel_03_readme_md
 title: funnel-03
 owner: ML1
-status: draft
-project_stage: initiating
+status: active
+project_stage: executing
 created_date: 2026-03-07
-last_updated: 2026-03-15
+last_updated: 2026-03-29
 tags: [marketing, funnel-03, networking]
 ---
 
@@ -43,7 +43,7 @@ ML1 approval is required for scope, changes, and any execution commitments.
 
 ## Approval State
 
-`draft`
+`active`
 
 ## Canonical Offer Map
 
@@ -60,7 +60,7 @@ Core offers:
 
 ## Last ML1 Review Date
 
-`2026-03-07`
+`2026-03-29`
 
 ## Supporting Assets
 

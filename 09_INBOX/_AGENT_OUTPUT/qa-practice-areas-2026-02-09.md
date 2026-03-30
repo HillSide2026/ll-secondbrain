@@ -27,7 +27,7 @@ tags: []
 - 02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/payments/agents/README.md — `../../../00_SYSTEM/agents/specs/AGENT_TYPOLOGY.md` (missing_target)
 - 02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/payments/agents/PAYMENTSERVICES_MASTER_AGENT.md — `../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md` (missing_target)
 - 02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/payments/agents/PAYMENTSERVICES_MASTER_AGENT.md — `../../../00_SYSTEM/agents/specs/PRACTICE_AREA_MASTER_AGENT_SPEC.md` (missing_target)
-- 02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/payments/agents/PAYMENTSERVICES_MASTER_AGENT.md — `../../../01_DOCTRINE/01_INVARIANTS/DOCTRINE-AGENTS-0001-second-brain-agent-authority.md` (missing_target)
+- 02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/payments/agents/PAYMENTSERVICES_MASTER_AGENT.md — `../../../01_DOCTRINE/01_INVARIANTS/INV-0015-second-brain-agent-authority.md` (missing_target)
 - 02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/payments/agents/PAYMENTSERVICES_MASTER_AGENT.md — `../../../00_SYSTEM/agents/specs/AGENT_TYPOLOGY.md` (missing_target)
 
 ### Agent Specs Missing Required Sections (Medium)

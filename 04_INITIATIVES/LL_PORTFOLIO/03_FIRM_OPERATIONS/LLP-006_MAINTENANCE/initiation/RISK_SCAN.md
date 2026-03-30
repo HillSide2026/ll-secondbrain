@@ -12,7 +12,7 @@ last_updated: 2026-03-07
 # Risk Scan
 
 **Project:** LLP-006 — Matter Maintenance
-**Project Type:** Operational — risk categories limited to Scope / Schedule / Budget (DOCTRINE-RISK-0001 §7)
+**Project Type:** Operational — risk categories limited to Scope / Schedule / Budget (INV-0013 §7)
 
 > **ML2 DRAFT — Awaiting ML1 review and approval.**
 

@@ -49,7 +49,7 @@ Only approval creates authority.
 An artifact’s location, quality, reuse, frequency of reference, or automation does not grant it authority.
 
 Authority is granted **only** when all of the following are true:
-- The artifact qualifies as doctrine under DOCTRINE-2026-001
+- The artifact qualifies as doctrine under INV-0007
 - The artifact is explicitly approved by ML1
 - The artifact is marked `status: approved`
 - The approval is recorded in the Decision Log

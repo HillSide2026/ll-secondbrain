@@ -28,16 +28,16 @@ This log records all system-level decisions affecting the Second Brain.
 
 ## 2026-01-04 — Approve Doctrine 2026-001 (What Qualifies as Doctrine)
 
-**Decision:** Approved foundational doctrine defining what constitutes authoritative doctrine  
-**Approved by:** ML1  
-**Artifacts impacted:** /01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0001-what-qualifies-as-doctrine.md  
+**Decision:** Approved foundational doctrine defining what constitutes authoritative doctrine
+**Approved by:** ML1
+**Artifacts impacted:** /01_DOCTRINE/01_INVARIANTS/INV-0007-what-qualifies-as-doctrine.md
 **Notes:** Establishes authority criteria and prevents implicit or automated doctrine creation
 
 ## 2026-01-04 — Approve Doctrine 2026-002 (Authority Hierarchy)
 
-**Decision:** Approved doctrine defining authority hierarchy between ML1, ML2, and LL  
-**Approved by:** ML1  
-**Artifacts impacted:** /01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0002-authority-hierarchy-ml1-ml2-ll.md  
+**Decision:** Approved doctrine defining authority hierarchy between ML1, ML2, and LL
+**Approved by:** ML1
+**Artifacts impacted:** /01_DOCTRINE/01_INVARIANTS/INV-0008-authority-hierarchy-ml1-ml2-system-ll.md
 **Notes:** Establishes non-delegable human authority and execution-only role of LL
 
 ## 2026-01-04 — Approve Doctrine 2026-003 (Promotion Rules)

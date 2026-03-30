@@ -351,6 +351,20 @@ Current target organization types:
 - ecosystem communities, trade bodies, and event platforms with international
   fintech audiences
 
+## Active Meetings and Agreements
+
+### Latvian Trade Commissioner — 2026-03-30 (Monday afternoon)
+
+Meeting booked with the Latvian trade commissioner to discuss Latvian fintechs with Canada exposure or Canada-entry interest. Latvia is already identified as a hub jurisdiction in Area 4. This meeting is the first direct government-to-intermediary touchpoint in the international lane.
+
+Objective: understand the volume and profile of Latvian fintech operators asking Canada questions; identify whether the trade commissioner can serve as a referral or introduction channel.
+
+### Interpolitan — Introducer Agreement
+
+ML1 to sign back an introducer agreement with Interpolitan. Interpolitan is an EMI (Electronic Money Institution) and MSB that provides multi-jurisdiction bank accounts to HNW individuals. Once executed, this becomes an active referral relationship in the international lane — Interpolitan clients with Canadian regulatory questions or Canada-entry needs are a natural referral pathway into Funnel 03.
+
+---
+
 Initial geographic lanes:
 
 - United States

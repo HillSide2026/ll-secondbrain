@@ -1,15 +1,15 @@
 ---
-id: 01_doctrine__01_invariants__doctrine-projects-0001-project-structural-boundaries_md
-title: Project Structural Boundaries
+id: INV-0012
+title: 'INV-0012: Project Structural Boundaries'
 owner: ML1
-status: draft
+status: approved
 version: '1.0'
 created_date: 2026-03-15
-last_updated: 2026-03-15
+last_updated: 2026-03-28
 tags: [doctrine, invariants, projects, structure]
 ---
 
-# Project Structural Boundaries
+# INV-0012 — Project Structural Boundaries
 
 ## Purpose
 
@@ -256,4 +256,4 @@ No artifact may:
 - `01_DOCTRINE/03_POLICIES/POL-038_Module_Policy.md`
 - `01_DOCTRINE/03_POLICIES/POL-039_Solution_Policy.md`
 - `01_DOCTRINE/03_POLICIES/POL-040_Workflow_Policy.md`
-- `01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK-0001-risk-model.md`
+- `01_DOCTRINE/01_INVARIANTS/INV-0013-risk-model.md`

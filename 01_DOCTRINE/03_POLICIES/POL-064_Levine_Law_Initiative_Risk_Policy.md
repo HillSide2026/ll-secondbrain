@@ -93,6 +93,6 @@ This policy governs internal Levine Law initiative work. It is not the policy fo
 
 ## 7. Related Doctrine
 
-- `01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK-0001-risk-model.md`
-- `01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK-0005-risk-classification-invariants.md`
+- `01_DOCTRINE/01_INVARIANTS/INV-0013-risk-model.md`
+- `01_DOCTRINE/01_INVARIANTS/INV-0014-risk-classification-invariants.md`
 - `01_DOCTRINE/03_POLICIES/POL-063_Project_Risk_Artifact_Lifecycle_Policy.md`

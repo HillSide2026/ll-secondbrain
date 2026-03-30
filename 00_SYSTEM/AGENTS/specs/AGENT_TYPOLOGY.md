@@ -169,7 +169,7 @@ System Agents perform **infrastructure, operational, and coordination functions*
 
 ### Governing Doctrine
 
-- [DOCTRINE-AGENTS-0001](../../../01_DOCTRINE/01_INVARIANTS/DOCTRINE-AGENTS-0001-second-brain-agent-authority.md)
+- [INV-0015](../../../01_DOCTRINE/01_INVARIANTS/INV-0015-second-brain-agent-authority.md)
 - [AGENT-CAPABILITY-PROFILE-0001](../../../01_DOCTRINE/04_CAPABILITY_PROFILES/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md)
 
 ---

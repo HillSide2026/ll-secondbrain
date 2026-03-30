@@ -1,26 +1,26 @@
 ---
-id: DOCTRINE-2026-003
-title: LL-SB Architecture Doctrine
+id: INV-0009
+title: 'INV-0009: LL-SB Architecture Doctrine'
 owner: ML1
-status: draft
+status: approved
 version: 1.1
 created_date: 2026-02-27
-last_updated: 2026-03-21
+last_updated: 2026-03-28
 tags: [architecture, governance, authority]
 
-effective_date:
+effective_date: 2026-03-28
 supersedes:
 
 provenance:
   decided_by: ML1
-  decided_on: 2026-02-27
-  context: Draft architecture doctrine provided for LL-SB system design
+  decided_on: 2026-03-28
+  context: Approved architecture doctrine for LL-SB system design
 ---
 
-# LL-SB Architecture Doctrine
+# INV-0009 — LL-SB Architecture Doctrine
 
-**Document ID:** DOCTRINE-2026-003  
-**Status:** DRAFT  
+**Invariant ID:** INV-0009  
+**Status:** APPROVED  
 **Authority:** ML1
 
 ---

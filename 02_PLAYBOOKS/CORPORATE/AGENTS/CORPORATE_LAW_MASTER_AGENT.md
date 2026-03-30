@@ -307,6 +307,6 @@ Solutions do not replace expertise — they discipline it.
 
 ## 16. Doctrine References
 
-- Parent Doctrine: [DOCTRINE-AGENTS-0001](../../../01_DOCTRINE/01_INVARIANTS/DOCTRINE-AGENTS-0001-second-brain-agent-authority.md)
+- Parent Doctrine: [INV-0015](../../../01_DOCTRINE/01_INVARIANTS/INV-0015-second-brain-agent-authority.md)
 - Capability Profile: [AGENT-CAPABILITY-PROFILE-0001](../../../01_DOCTRINE/04_CAPABILITY_PROFILES/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md)
 - Solutions: [SOLUTIONS/](../SOLUTIONS/)

@@ -1,15 +1,15 @@
 ---
-id: DOCTRINE-RISK-0005
-title: Risk Classification Invariants
+id: INV-0014
+title: 'INV-0014: Risk Classification Invariants'
 owner: ML1
-status: draft
+status: approved
 version: 1.0
 created_date: 2026-03-13
-last_updated: 2026-03-13
+last_updated: 2026-03-28
 tags: [doctrine, invariant, risk]
 ---
 
-# DOCTRINE-RISK-0005 - RISK CLASSIFICATION INVARIANTS
+# INV-0014 — Risk Classification Invariants
 
 ## 1. Purpose
 
@@ -44,7 +44,7 @@ Every canonical risk artifact must make it possible to answer:
 
 ## 5. Related Doctrine
 
-- `01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK-0001-risk-model.md`
+- `01_DOCTRINE/01_INVARIANTS/INV-0013-risk-model.md`
 - `01_DOCTRINE/03_POLICIES/POL-063_Project_Risk_Artifact_Lifecycle_Policy.md`
 - `01_DOCTRINE/03_POLICIES/POL-064_Levine_Law_Initiative_Risk_Policy.md`
 - `01_DOCTRINE/03_POLICIES/POL-065_Matthew_Holdings_Initiative_Risk_Policy.md`

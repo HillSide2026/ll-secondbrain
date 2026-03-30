@@ -1,10 +1,10 @@
 meta:
   id: funnel-03
   name: Book + Blog -> GHL Intake
-  status: planned
+  status: active
   owner: ML1
-  version: 2.1.1
-  last_updated: '2026-03-15'
+  version: 2.2.0
+  last_updated: '2026-03-29'
 lineage:
   type: independent
   of: null
@@ -28,6 +28,13 @@ spec:
     core_offers:
       - Ongoing AML Counsel Retainer
 history:
+- v: 2.2.0
+  date: '2026-03-29'
+  by: ML1
+  change: >
+    Status advanced to active. fintechlawyer.ca has home page, MVP product, and lead capture funnel live.
+    Latvian trade commissioner meeting booked for Monday afternoon (2026-03-30) — Latvian fintech Canada-entry discussion.
+    Interpolitan introducer agreement to be signed back.
 - v: 2.1.1
   date: '2026-03-15'
   by: ML1

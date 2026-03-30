@@ -1,17 +1,17 @@
 ---
-id: 01_doctrine__01_invariants__doctrine-agents-0001-second-brain_agent_authority_md
-title: DOCTRINE-AGENTS-0001: Second Brain Agent Authority
+id: INV-0015
+title: 'INV-0015: Second Brain Agent Authority'
 owner: ML1
-status: draft
+status: approved
 version: 1.0
 created_date: 2026-02-08
-last_updated: 2026-03-21
+last_updated: 2026-03-28
 tags: []
 ---
 
-# DOCTRINE-AGENTS-0001: Second Brain Agent Authority
+# INV-0015 — Second Brain Agent Authority
 
-**Status:** INVARIANT
+**Status:** APPROVED
 **Effective:** 2026-02-04
 **Scope:** All agents operating within the Second Brain system
 
@@ -126,5 +126,5 @@ When in doubt, the agent defaults to:
 
 ## References
 
-- `DOCTRINE-2026-001` — What Qualifies as Doctrine
-- `DOCTRINE-2026-002` — Authority Hierarchy (ML1/ML2/System/LL)
+- `INV-0007` — What Qualifies as Doctrine
+- `INV-0008` — Authority Hierarchy (ML1/ML2/System/LL)

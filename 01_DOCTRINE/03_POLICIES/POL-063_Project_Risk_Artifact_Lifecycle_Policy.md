@@ -126,8 +126,8 @@ Legal matters carry no project risk artifacts under this policy.
 
 ## 7. Related Doctrine
 
-- `01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK-0001-risk-model.md`
-- `01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK-0005-risk-classification-invariants.md`
+- `01_DOCTRINE/01_INVARIANTS/INV-0013-risk-model.md`
+- `01_DOCTRINE/01_INVARIANTS/INV-0014-risk-classification-invariants.md`
 - `01_DOCTRINE/02_PRINCIPLES/PRN-013_Risk_Lifecycle_Governance.md`
 - `01_DOCTRINE/03_POLICIES/POL-064_Levine_Law_Initiative_Risk_Policy.md`
 - `01_DOCTRINE/03_POLICIES/POL-065_Matthew_Holdings_Initiative_Risk_Policy.md`

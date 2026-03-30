@@ -57,7 +57,7 @@ echo ""
 # -----------------------------------------------------------------------------
 # Check 2: Stage folder structure matches doctrine
 # -----------------------------------------------------------------------------
-echo "Check 2: Stage folder structure (per DOCTRINE-2026-004)"
+echo "Check 2: Stage folder structure (per INV-0010)"
 
 # Check for invalid top-level stage folders (should be STAGE1, STAGE2, etc., not STAGE1.1)
 INVALID_STAGES=$(find 04_INITIATIVES/SYSTEM_PORTFOLIO/01_ACTIVE_ROADMAPS -maxdepth 1 -type d -name "STAGE*.*" 2>/dev/null | head -5)

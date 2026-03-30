@@ -1534,6 +1534,6 @@ ML1 holds authority.
 
 ## 15. Doctrine References
 
-- Agent Doctrine: [DOCTRINE-AGENTS-0001](../../../../01_DOCTRINE/01_INVARIANTS/DOCTRINE-AGENTS-0001-second-brain-agent-authority.md)
+- Agent Doctrine: [INV-0015](../../../../01_DOCTRINE/01_INVARIANTS/INV-0015-second-brain-agent-authority.md)
 - Agent Typology: [AGENT_TYPOLOGY](../../../../00_SYSTEM/AGENTS/AGENT_TYPOLOGY.md)
 - Foundational Library: [Foundational-Library v0.1](../../../../../08_RESEARCH/FINANCIAL_SERVICES_LAW/2026-03-23__Financial-Services-Law__Foundational-Library__v0.1.md)

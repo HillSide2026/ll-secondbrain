@@ -2,10 +2,10 @@
 id: inv-ml2-boundary
 title: ML2 Ontology Boundary
 owner: ML1
-status: draft
+status: approved
 version: 1.0
 created_date: 2026-02-14
-last_updated: 2026-02-14
+last_updated: 2026-03-28
 tags: [invariant, boundary, ontology, governance]
 ---
 

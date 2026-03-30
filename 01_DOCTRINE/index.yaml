@@ -726,65 +726,65 @@ protocols:
   policy: unknown
   history: []
 doctrine:
-- id: 01_doctrine__01_invariants__doctrine-projects-0001-project-structural-boundaries_md
-  title: Project Structural Boundaries
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-PROJECTS-0001-project-structural-boundaries.md
-  version: '1.0'
-  status: draft
-  history: []
-- id: DOCTRINE-2026-001
-  title: What Qualifies as Doctrine
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0001-what-qualifies-as-doctrine.md
+- id: INV-0012
+  title: 'INV-0012: Project Structural Boundaries'
+  path: 01_DOCTRINE/01_INVARIANTS/INV-0012-project-structural-boundaries.md
   version: '1.0'
   status: approved
   history: []
-- id: DOCTRINE-2026-002
-  title: Authority Hierarchy (ML1 / ML2 / System / LL)
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0002-authority-hierarchy-ml1-ml2-system-ll.md
+- id: INV-0007
+  title: 'INV-0007: What Qualifies as Doctrine'
+  path: 01_DOCTRINE/01_INVARIANTS/INV-0007-what-qualifies-as-doctrine.md
+  version: '1.0'
+  status: approved
+  history: []
+- id: INV-0008
+  title: 'INV-0008: Authority Hierarchy (ML1 / ML2 / System / LL)'
+  path: 01_DOCTRINE/01_INVARIANTS/INV-0008-authority-hierarchy-ml1-ml2-system-ll.md
   version: '2.0'
   status: approved
   history: []
-- id: DOCTRINE-2026-003
-  title: LL-SB Architecture Doctrine
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0003-ll-sb-architecture.md
+- id: INV-0009
+  title: 'INV-0009: LL-SB Architecture Doctrine'
+  path: 01_DOCTRINE/01_INVARIANTS/INV-0009-ll-sb-architecture.md
   version: '1.1'
-  status: draft
+  status: approved
   history: []
-- id: DOCTRINE-INTEGRATIONS-0001
-  title: Integration Doctrine (External Platform Governance)
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-INTEGRATIONS-0001-integration-doctrine.md
+- id: INV-0011
+  title: 'INV-0011: Integration Doctrine (External Platform Governance)'
+  path: 01_DOCTRINE/01_INVARIANTS/INV-0011-integration-doctrine.md
   version: '1.0'
-  status: draft
+  status: approved
   history: []
-- id: DOCTRINE-RISK_MODEL-0001
-  title: Risk Model Doctrine (Economic, Execution, Operational, Financial, Strategic)
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK-0001-risk-model.md
+- id: INV-0013
+  title: 'INV-0013: Risk Model Doctrine (Economic, Execution, Operational, Financial, Strategic)'
+  path: 01_DOCTRINE/01_INVARIANTS/INV-0013-risk-model.md
   version: '1.0'
-  status: draft
+  status: approved
   history: []
-- id: DOCTRINE-RISK-0005
-  title: Risk Classification Invariants
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-RISK-0005-risk-classification-invariants.md
+- id: INV-0014
+  title: 'INV-0014: Risk Classification Invariants'
+  path: 01_DOCTRINE/01_INVARIANTS/INV-0014-risk-classification-invariants.md
   version: '1.0'
-  status: draft
+  status: approved
   history: []
-- id: 01_doctrine__01_invariants__doctrine-2026-004-stage_phase_numbering_md
-  title: Canonical Stage & Phase Numbering Doctrine
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-CORE-0004-stage-phase-numbering.md
+- id: INV-0010
+  title: 'INV-0010: Canonical Stage & Phase Numbering Doctrine'
+  path: 01_DOCTRINE/01_INVARIANTS/INV-0010-stage-phase-numbering.md
   version: '1.0'
-  status: draft
+  status: approved
   history: []
-- id: 01_doctrine__01_invariants__doctrine-agents-0001-second-brain_agent_authority_md
-  title: 'DOCTRINE-AGENTS-0001: Second Brain Agent Authority'
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-AGENTS-0001-second-brain-agent-authority.md
+- id: INV-0015
+  title: 'INV-0015: Second Brain Agent Authority'
+  path: 01_DOCTRINE/01_INVARIANTS/INV-0015-second-brain-agent-authority.md
   version: '1.0'
-  status: draft
+  status: approved
   history: []
-- id: 01_doctrine__01_invariants__doctrine-repo-0001-no-toplevel-directories_md
-  title: 'Doctrine: Claude Code Must Not Create Top-Level Directories'
-  path: 01_DOCTRINE/01_INVARIANTS/DOCTRINE-REPO-0001-no-toplevel-directories.md
+- id: INV-0016
+  title: 'INV-0016: No Top-Level Directories'
+  path: 01_DOCTRINE/01_INVARIANTS/INV-0016-no-toplevel-directories.md
   version: '1.0'
-  status: draft
+  status: approved
   history: []
 - id: 01_doctrine__01_invariants__readme_md
   title: Invariants (Level 1)
@@ -886,19 +886,19 @@ doctrine:
   title: ML2 Ontology Boundary
   path: 01_DOCTRINE/01_INVARIANTS/INV-0001-ml2-boundary.md
   version: '1.0'
-  status: draft
+  status: approved
   history: []
 - id: inv-no-autonomous-publish
   title: No Autonomous Publish (Binding Invariant)
   path: 01_DOCTRINE/01_INVARIANTS/INV-0002-no-autonomous-publish.md
   version: '0.1'
-  status: draft
+  status: approved
   history: []
 - id: inv-matter-model-structural
   title: Matter Model Structural Invariants
   path: 01_DOCTRINE/01_INVARIANTS/INV-0003-matter-model-structural-invariants.md
-  version: '1.0'
-  status: draft
+  version: '1.1'
+  status: approved
   history: []
 - id: inv-worker-boundary-output-authority
   title: Worker Boundary and Final Output Issuance
@@ -911,6 +911,12 @@ doctrine:
   path: 01_DOCTRINE/01_INVARIANTS/INV-0005-runtime-authority-separation-and-output-invariants.md
   version: '1.0'
   status: active
+  history: []
+- id: inv-matter-file-subordination-identity-boundary
+  title: Matter File Subordination and Identity Boundary Invariant
+  path: 01_DOCTRINE/01_INVARIANTS/INV-0006-matter-file-subordination-and-identity-boundary.md
+  version: '1.0'
+  status: approved
   history: []
 - id: 00_system__system_identity_md
   title: "System Identity \u2014 LL Second Brain (ML2)"

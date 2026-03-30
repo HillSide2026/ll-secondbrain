@@ -35,7 +35,7 @@ This policy does not redefine matter structural invariants. It consumes and oper
 - POL-052
 - POL-053
 - POL-054
-- DOCTRINE-RISK_MODEL-0001
+- INV-0013
 
 ---
 
@@ -91,7 +91,7 @@ Each task must have:
 2. Docketing may only occur from the Docket Queue.
 3. A matter without a solution may not enter the Docket Queue.
 4. Matters with blocking delivery_status values may not enter the Docket Queue.
-5. Risk thresholds defined in DOCTRINE-RISK_MODEL-0001 may restrict docketing.
+5. Risk thresholds defined in INV-0013 may restrict docketing.
 6. All escalations must be logged in the Office Day record.
 
 ## 4. Control Objectives

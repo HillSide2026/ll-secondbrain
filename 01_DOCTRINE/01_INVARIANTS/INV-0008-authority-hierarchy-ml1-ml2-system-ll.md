@@ -1,6 +1,6 @@
 ---
-id: DOCTRINE-2026-002
-title: Authority Hierarchy (ML1 / ML2 / System / LL)
+id: INV-0008
+title: 'INV-0008: Authority Hierarchy (ML1 / ML2 / System / LL)'
 owner: ML1
 status: approved
 version: 2.0
@@ -9,7 +9,7 @@ last_updated: 2026-03-21
 tags: [authority, governance, hierarchy]
 
 effective_date: 2026-03-21
-supersedes: DOCTRINE-2026-002 v1.0 (2026-01-04)
+supersedes: INV-0008 v1.0 (formerly DOCTRINE-2026-002 v1.0) (2026-01-04)
 
 provenance:
   decided_by: ML1
@@ -19,9 +19,9 @@ provenance:
 
 ---
 
-# Authority Hierarchy (ML1 / ML2 / System / LL)
+# INV-0008 — Authority Hierarchy (ML1 / ML2 / System / LL)
 
-**Document ID:** DOCTRINE-2026-002
+**Invariant ID:** INV-0008
 **Status:** APPROVED
 **Effective:** 2026-03-21
 **Authority:** ML1
@@ -184,6 +184,6 @@ This doctrine governs all future system design and usage.
 
 ## Relationship to Other Doctrine
 
-- This doctrine operates **in conjunction with** DOCTRINE-2026-001 (What Qualifies as Doctrine)
+- This doctrine operates **in conjunction with** INV-0007 (What Qualifies as Doctrine)
 - This doctrine is the canonical authority stack referenced by runtime and portfolio doctrine
 - Where ambiguity exists, ML1 judgment prevails

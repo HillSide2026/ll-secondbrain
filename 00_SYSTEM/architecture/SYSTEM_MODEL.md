@@ -251,7 +251,7 @@ Binding promotion rules remain in:
 # Canon Promotion Model (Current vs Proposed)
 
 Current binding model:
-Inbox → Research → Doctrine (see DOCTRINE-2026-003).
+Inbox → Research → Doctrine (see INV-0009).
 
 Proposed ladder (non-binding, requires ML1 approval to formalize):
 Research → Template → Playbook → Doctrine.

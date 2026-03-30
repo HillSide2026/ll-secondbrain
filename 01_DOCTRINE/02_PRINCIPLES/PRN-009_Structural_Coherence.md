@@ -3,9 +3,9 @@ id: PRN-009
 title: Structural Coherence
 owner: ML1
 status: active
-version: 1.0
+version: 1.1
 created_date: 2026-02-13
-last_updated: 2026-03-08
+last_updated: 2026-03-28
 tags: [principle]
 applies_to: [ML2, System, LL, HillSide]
 ---
@@ -14,7 +14,8 @@ applies_to: [ML2, System, LL, HillSide]
 
 Title: Structural Coherence
 Statement: Active artifacts at the same layer must not conflict; supersession and version history must be explicit.
+Derived views, overlays, and summaries must remain coherent with canonical fields and must not present derived signals as if they were canonical truth.
 Rationale: Coherence prevents contradictory guidance and preserves system consistency.
 Supersedes: None
-Version: 1.0
+Version: 1.1
 Status: Active

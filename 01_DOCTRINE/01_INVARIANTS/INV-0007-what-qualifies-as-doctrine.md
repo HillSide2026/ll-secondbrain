@@ -1,6 +1,6 @@
 ---
-id: DOCTRINE-2026-001
-title: What Qualifies as Doctrine
+id: INV-0007
+title: 'INV-0007: What Qualifies as Doctrine'
 owner: ML1
 status: approved
 version: 1.0
@@ -17,9 +17,9 @@ provenance:
   context: Defines what constitutes authoritative doctrine within the Second Brain system
 ---
 
-# What Qualifies as Doctrine
+# INV-0007 — What Qualifies as Doctrine
 
-**Document ID:** DOCTRINE-2026-001
+**Invariant ID:** INV-0007
 **Status:** APPROVED
 **Effective:** 2026-01-04
 **Authority:** ML1

@@ -14,7 +14,7 @@ Agent Name: Matter Operations Queue Tracker
 Agent ID: AGENT-MATTER-OPERATIONS-QUEUE-TRACKER-0001  
 Status: Draft for ML1 approval  
 Effective Date: TBD  
-Governing Doctrine: DOCTRINE-AGENTS-0001 (Agent Authority) + POL-060 (No Fictional Execution Constructs)
+Governing Doctrine: INV-0015 (Agent Authority) + POL-060 (No Fictional Execution Constructs)
 
 ## 1) Role Purpose
 Maintain an accurate, inspectable view of the Matter Operations Queue by:
