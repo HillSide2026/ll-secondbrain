@@ -170,6 +170,26 @@ POSTS = {
         "anchor": "what FINTRAC looks for in a compliance review",
         "role": "compliance",
     },
+    1903: {
+        "slug": "saas-embedded-payments-msb-canada",
+        "title": "Do SaaS Platforms with Embedded Payments Need to Register as MSBs in Canada?",
+        "anchor": "SaaS platforms with embedded payments and MSB registration",
+        "role": "classification",
+        "sideways": [1876, 1882, 1881],
+    },
+    1904: {
+        "slug": "how-banks-assess-msb-risk-canada",
+        "title": "How Banks Assess MSB Risk in Canada (From a Fintech Perspective)",
+        "anchor": "how banks assess MSB risk in Canada",
+        "role": "consequence",
+        "back_classification": [1876, 1883, 1903],
+    },
+    1905: {
+        "slug": "designing-payment-flows-msb-risk-canada",
+        "title": "Designing Payment Flows to Reduce MSB Risk in Canada",
+        "anchor": "designing payment flows to reduce MSB risk",
+        "role": "operator",
+    },
 }
 
 
@@ -195,7 +215,7 @@ def build_related_block(post_id):
         items.append(("<strong>Classification: Is Your Business an MSB?</strong>", [
             (1876, None), (1877, None), (1879, None),
             (1880, None), (1881, None), (1882, None),
-            (1883, None), (1870, None),
+            (1883, None), (1870, None), (1903, None),
         ]))
         items.append(("<strong>Registration</strong>", [
             (1878, None), (1873, None), (1871, None),
