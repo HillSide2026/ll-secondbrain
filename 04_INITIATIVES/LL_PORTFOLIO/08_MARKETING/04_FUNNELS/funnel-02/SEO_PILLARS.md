@@ -2,7 +2,7 @@
 
 Funnel: Ontario Corporate Health Check
 Target: Owner / CEO / CFO, Ontario operating businesses, $1M–$8M, 5–30 employees
-Last Updated: 2026-03-16
+Last Updated: 2026-03-30
 Research Method: Web search — competitor content mapping, SERP topic analysis. No volume data. Volume and difficulty data requires Ahrefs/SEMrush.
 
 ---
@@ -60,24 +60,26 @@ Competitive context: Ontario.ca and Canada.ca dominate generic informational que
 
 ---
 
-## Pillar 3 — Minute Book Ontario
+## Pillar 3 — Ontario / Canadian Subsidiary
 
-**Confirmed search behavior:** Active search term with confirmed law firm content. Pawlina Law appears dominant (ranks twice in top results). KMB Law, Hadri Law, Willis Business Law, Sorbara Law, Ontario Business Central all present. Content gap: most existing content explains *what* a minute book is; less content explains the *business consequences* of neglect in plain commercial terms (sale price impact, CRA dividend reclassification, financing friction).
+**Target audience:** Foreign businesses (primarily US) establishing Canadian operations, or Canadian businesses structuring subsidiaries. Earlier-stage than other pillars — these businesses are making foundational decisions, not remediation decisions.
 
-**Pillar page anchor:** `minute book ontario`
+**Pillar page anchor:** `set up subsidiary canada` / `canadian subsidiary ontario`
+**Competition:** Lower than P1/P2. Government sources cover registration mechanics. Law firm content is sparse on the practical operational and compliance side — opportunity is in consequence-oriented framing for business operators, not incorporation agents.
 
 ### Content to Publish
 
 | # | Working Title | Target Keyword | What Searcher Wants | Competition Notes |
 |---|--------------|----------------|---------------------|-------------------|
-| 1 | Minute Book Requirements for Ontario Corporations: What You Need to Maintain and Why It Actually Matters | `minute book ontario` | What goes in it, legal requirement, consequences of gaps | Competitive: Pawlina Law is dominant. Opportunity: business-consequence framing (sale price, CRA, financing) rather than compliance checklist |
-| 2 | What Happens to Your Minute Book When You Prepare for Financing or a Business Sale | `minute book ontario financing sale` | Due diligence exposure, what buyers and investors look for, how gaps reduce valuation | Low competition on this specific angle; strong conversion content |
-| 3 | Annual Resolutions for Ontario Corporations: What You Are Required to Document Each Year | `annual resolutions ontario corporation` | What decisions require resolutions, who approves what, practical cadence | Low competition; practical compliance question |
-| 4 | Director and Officer Appointments in Ontario: What the Documentation Actually Requires | `director officer appointment ontario corporation` | How to properly document changes, what's missing in most minute books | Low competition; niche enough to rank on |
-| 5 | How to Get Your Corporate Records in Order Before a Financing Round | `corporate records ontario financing` | Practical checklist, what to update, timeline | Low competition; high commercial intent |
-| 6 | What CRA Looks for in Corporate Records During an Audit | `corporate records CRA audit ontario` | How out-of-date minute books create tax exposure, dividend reclassification risk | Low competition; accountant-referred searchers; strong anxiety trigger |
+| 1 | Setting Up a Subsidiary in Canada: What Foreign Businesses Need to Know | `set up subsidiary canada` | Branch vs. subsidiary, CBCA vs. OBCA, director residency, why structure matters before operations begin | Low law firm competition; government sources cover mechanics only |
+| 2 | Branch vs. Subsidiary in Canada: Which Structure Makes Sense | `branch vs subsidiary canada` | Liability isolation, tax treatment, operational flexibility, when each is appropriate | Low competition; mostly accounting firm content — law firm framing is underserved |
+| 3 | Director Residency Requirements for Canadian Corporations: What Has Changed | `canadian corporation director residency requirement` | Historical residency rules, CBCA amendments, OBCA current position, practical implications for foreign-controlled companies | Low competition; high practical relevance for US-parent structures |
+| 4 | Ongoing Compliance for a Canadian Subsidiary: What the Parent Company Is Responsible For | `canadian subsidiary compliance obligations` | Annual filings, minute book, resolutions, reporting obligations, what gets missed | Low competition; strong conversion — compliance gaps are exactly what the Health Check finds |
+| 5 | Intercompany Agreements Between a Foreign Parent and Canadian Subsidiary | `intercompany agreement canada subsidiary` | Why they need to exist, what they cover, transfer pricing exposure without them | Low competition; high anxiety for companies that have been operating without them |
+| 6 | Banking and Regulatory Setup for a New Canadian Subsidiary | `open business bank account canada foreign company` | Account opening friction, MSB considerations if applicable, FINTRAC triggers | Low competition; very practical early-stage question |
+| 7 | Hiring in Canada Through a Subsidiary: What Employment Law Actually Requires | `hiring employees canada foreign company ontario` | Ontario ESA applicability, contractor vs employee in Canadian context, payroll obligations | Low competition on the foreign-parent angle; complements P2 |
 
-**Bridge to offer:** Corporate governance integrity is one of five review pillars in the Corporate Health Check.
+**Bridge to offer:** A newly established or recently acquired Canadian subsidiary is a natural Corporate Health Check candidate — incomplete records, undocumented intercompany arrangements, and misaligned governance are almost universal at early stages.
 
 ---
 
