@@ -33,6 +33,7 @@ import logging
 import os
 import re
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -55,6 +56,7 @@ except ImportError:
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
 
 
 CANONICAL_STATE_LABELS = {
@@ -663,9 +665,34 @@ def _get_gmail_service() -> Any:
 
     creds_data = json.loads(token_path.read_text())
     creds = Credentials.from_authorized_user_info(creds_data)
-    if creds.expired and creds.refresh_token:
-        creds.refresh(Request())
+    if creds.expired:
+        if not creds.refresh_token:
+            raise RuntimeError(
+                "Gmail OAuth token is expired or invalid. Re-authenticate and update credentials."
+            )
+        try:
+            creds.refresh(Request())
+        except Exception as exc:
+            raise RuntimeError(
+                "Gmail OAuth token is expired or invalid. Re-authenticate and update credentials."
+            ) from exc
     return build("gmail", "v1", credentials=creds)
+
+
+def _with_backoff(fn: Any, context: str = "") -> Any:
+    """Call fn(), retrying up to 3 times on HTTP 429/503 with exponential backoff."""
+    for attempt in range(4):
+        try:
+            return fn()
+        except HttpError as exc:
+            if exc.resp.status in (429, 503) and attempt < 3:
+                wait = 2 ** attempt  # 1s, 2s, 4s
+                msg = f"[backoff] {context} attempt {attempt + 1} got HTTP {exc.resp.status}, retrying in {wait}s"
+                print(msg, file=sys.stderr)
+                _append_audit({"timestamp": _now_iso(), "event": "backoff_retry", "context": context, "attempt": attempt + 1, "status": exc.resp.status})
+                time.sleep(wait)
+            else:
+                raise
 
 
 def _list_all_labels(service: Any) -> List[Dict[str, Any]]:
@@ -1060,9 +1087,9 @@ def tool_execute_inbox_cleanup(args: Dict[str, Any]) -> str:
         add_label_ids = query_set["add_label_ids"]
         remove_label_ids = query_set["remove_label_ids"]
         for query in query_set["queries"]:
-            ids = _collect_message_ids_by_query(service, query)
+            ids = _with_backoff(lambda q=query: _collect_message_ids_by_query(service, q), f"collect_ids:{query[:60]}")
             if ids:
-                _batch_modify_messages(service, ids, add_label_ids, remove_label_ids)
+                _with_backoff(lambda: _batch_modify_messages(service, ids, add_label_ids, remove_label_ids), f"batch_modify:{query[:60]}")
             _log_cleanup_event(
                 "query={!r} | class={} | count={} | add={} | remove={}".format(
                     query,
@@ -1200,7 +1227,7 @@ def tool_resolve_confirmed_junk_threads(args: Dict[str, Any]) -> str:
     results: List[Dict[str, Any]] = []
 
     for thread_id in clean_thread_ids:
-        thread = _get_thread(service, thread_id)
+        thread = _with_backoff(lambda tid=thread_id: _get_thread(service, tid), f"resolve_junk:get_thread:{thread_id}")
         thread_label_ids = _collect_thread_label_ids(thread)
         current_state_labels = [
             label_name
@@ -1222,11 +1249,9 @@ def tool_resolve_confirmed_junk_threads(args: Dict[str, Any]) -> str:
         )
 
         if not no_change:
-            _apply_thread_modify(
-                service,
-                thread_id,
-                [target_label_id],
-                sorted(remove_label_ids),
+            _with_backoff(
+                lambda tid=thread_id, rl=sorted(remove_label_ids): _apply_thread_modify(service, tid, [target_label_id], rl),
+                f"resolve_junk:modify:{thread_id}",
             )
 
         result = {
@@ -1387,7 +1412,7 @@ def tool_apply_matter_label_query(args: Dict[str, Any]) -> str:
     results: List[Dict[str, Any]] = []
 
     for thread_id in thread_ids:
-        thread = _get_thread(service, thread_id)
+        thread = _with_backoff(lambda tid=thread_id: _get_thread(service, tid), f"matter_label_query:get_thread:{thread_id}")
         thread_label_ids = _collect_thread_label_ids(thread)
         current_matter_label_ids = _find_existing_matter_label_ids(thread_label_ids, label_id_to_name)
         current_matter_labels = [
@@ -1398,7 +1423,10 @@ def tool_apply_matter_label_query(args: Dict[str, Any]) -> str:
 
         no_change = len(current_matter_label_ids) == 1 and current_matter_label_ids[0] == target_label_id
         if not no_change:
-            _apply_thread_modify(service, thread_id, [target_label_id], current_matter_label_ids)
+            _with_backoff(
+                lambda tid=thread_id, cml=current_matter_label_ids: _apply_thread_modify(service, tid, [target_label_id], cml),
+                f"matter_label_query:modify:{thread_id}",
+            )
 
         result = {
             "thread_id": thread_id,

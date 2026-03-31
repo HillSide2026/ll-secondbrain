@@ -48,6 +48,7 @@ Generated on 2026-03-23.
 | SMA-004 — Knowledge Curation | SMA | Active | `00_SYSTEM/AGENTS/SMA-004_KNOWLEDGE_CURATION.md` | evidence: 06_RUNS/RUN-2026-02-27-SYSTEM-MANAGEMENT-SWEEP-001122Z/system_management/SMA-004_KNOWLEDGE_CURATION_REPORT.md |
 | SMA-005 — Runbook & QA | SMA | Active | `00_SYSTEM/AGENTS/SMA-005_RUNBOOK_QA.md` | evidence: 06_RUNS/RUN-2026-02-27-SYSTEM-MANAGEMENT-SWEEP-001122Z/system_management/SMA-005_RUNBOOK_QA_REPORT.md |
 | SMA-006 — System Librarian | SMA | Planned | `00_SYSTEM/AGENTS/SMA-006_SYSTEM_LIBRARIAN.md` |  |
+| SMA-007 — System Capability Auditor | SMA | Draft | `00_SYSTEM/AGENTS/SMA-007_SYSTEM_CAPABILITY_AUDITOR.md` | audits MCP quality, agent tool surface, commands, skills, sub-agent architecture |
 
 ### Levine Law Management Agents (LLM)
 

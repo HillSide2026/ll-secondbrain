@@ -9,6 +9,10 @@ Draft an email response or summary for ML1 review, with explicit labeling and pr
 - 01_DOCTRINE/03_POLICIES/POL-005_Low_Confidence_Escalation.md (POL-005)
 - 01_DOCTRINE/03_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md (DOCTRINE-2026-005)
 
+# Run ID Convention
+Format: `RUN-YYYY-MM-DD-<SLUG>` where SLUG is a short kebab-case descriptor.
+See `.claude/run_id_convention.md` for full specification.
+
 # Steps
 1. Create or confirm the run folder `06_RUNS/<run_id>/` and record the run id.
 2. Gather the source email thread and any matter context from `05_MATTERS/<matter_id>/context.md` if applicable.
@@ -18,6 +22,12 @@ Draft an email response or summary for ML1 review, with explicit labeling and pr
 6. If confidence is low or the email is external/client-facing, flag and require ML1 approval per POL-005 and POL-004.
 7. Ensure output labeling and provenance are present per POL-001 and POL-002.
 8. Save the draft to the run folder using the naming convention below.
+
+# Error Handling
+- **Matter context file missing**: if matter context was requested but `05_MATTERS/<matter_id>/context.md` does not exist, note the gap and proceed only if the email thread itself is sufficient. Flag the missing context in the output.
+- **Template file missing** (`03_TEMPLATES/STAGE3/NEUTRAL_SUMMARY_FORMAT.md` not found): halt. Surface the missing path.
+- **Low confidence / external-facing output**: halt per POL-005. Surface the specific claim(s) causing low confidence and ask ML1 before proceeding. Do not flag-and-continue — halt and surface.
+- **Run folder cannot be created**: halt and surface the path error.
 
 # Output Requirements
 - Output file: `06_RUNS/<run_id>/email__<short_slug>.md`

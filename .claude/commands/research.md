@@ -9,6 +9,10 @@ Produce a neutral, source-bound research summary suitable for ML1 review and dow
 - 01_DOCTRINE/03_POLICIES/POL-005_Low_Confidence_Escalation.md (POL-005)
 - 01_DOCTRINE/03_POLICIES/DOCTRINE-CORE-0005-no-fictional-execution-constructs.md (DOCTRINE-2026-005)
 
+# Run ID Convention
+Format: `RUN-YYYY-MM-DD-<SLUG>` where SLUG is a short kebab-case descriptor.
+See `.claude/run_id_convention.md` for full specification.
+
 # Steps
 1. Create or confirm the run folder `06_RUNS/<run_id>/` and record the run id.
 2. Gather source materials and note any missing inputs; if matter-related, pull `05_MATTERS/<matter_id>/context.md` when available.
@@ -17,6 +21,12 @@ Produce a neutral, source-bound research summary suitable for ML1 review and dow
 5. Flag low-confidence items explicitly and escalate per POL-005 if needed.
 6. Ensure output labeling and provenance are present per POL-001 and POL-002.
 7. Save the draft to the run folder using the naming convention below.
+
+# Error Handling
+- **Template file missing** (`03_TEMPLATES/STAGE3/NEUTRAL_SUMMARY_FORMAT.md` not found): halt. Surface the missing path.
+- **Source materials unavailable or ambiguous**: note all gaps in the research output. Do not fill gaps by inference. Flag them as `[SOURCE MISSING]`.
+- **Low confidence on any claim** (POL-005): flag inline as `[LOW CONFIDENCE — reason]`. Escalate to ML1 if the low-confidence claim is material to the research question.
+- **Run folder cannot be created**: halt and surface the path error.
 
 # Output Requirements
 - Output file: `06_RUNS/<run_id>/research__<short_slug>.md`
