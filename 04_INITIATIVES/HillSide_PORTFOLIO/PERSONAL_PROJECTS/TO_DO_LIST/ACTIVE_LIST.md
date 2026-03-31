@@ -20,3 +20,7 @@ Track the current set of active personal tasks that require action.
 | 4 | Attention management | — | Personal Wellbeing | — | Active | 2026-03-28 |
 | 5 | Stress management | — | Personal Wellbeing | — | Active | 2026-03-28 |
 | 6 | Anxiety management | — | Personal Wellbeing | — | Active | 2026-03-28 |
+| 7 | Schedule dentist | Book appointment | Personal Health | — | Active | 2026-03-30 |
+| 8 | Buy crypto | — | Personal Finance | — | Active | 2026-03-30 |
+| 9 | Buy stablecoins | — | Personal Finance | — | Active | 2026-03-30 |
+| 10 | Move money from TD to BMO | — | Personal Finance | — | Active | 2026-03-30 |
