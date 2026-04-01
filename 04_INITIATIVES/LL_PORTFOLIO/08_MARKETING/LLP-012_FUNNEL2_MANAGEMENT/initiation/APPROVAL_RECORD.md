@@ -4,7 +4,7 @@ Project ID: LLP-012
 Project Path: 08_MARKETING/LLP-012_FUNNEL2_MANAGEMENT
 Stage: Planning
 
-Approval Status: Planning Authorized (Execution Not Yet Approved)
+Approval Status: Executing Authorized
 
 ## Current State
 
@@ -42,4 +42,29 @@ Planning Stage Authorized: Yes
 
 Notes:
 - Planning is authorized as of `2026-03-16`.
-- Execution-stage work remains non-authoritative until ML1 approves `Planning -> Executing`.
+- Execution is authorized as of `2026-04-01` per ML1 confirmation (see gate record below).
+
+## Stage Gate: Planning → Executing
+
+| Item | Status | Date | Notes |
+|------|--------|------|-------|
+| Gate confirmed by ML1 | approved | 2026-04-01 | ML1 confirmed Planning→Executing gate closed; execution already running (F02 blog content, linking/tagging scripts committed March 2026) |
+| Matter ceiling | approved | 2026-04-01 | No matter ceiling — no cap on active F02 matters |
+| Matter value floor | approved | 2026-04-01 | Minimum $1,000 projected matter value for F02 intake |
+| Practice area scope | approved | 2026-04-01 | Corporate, Contracts, and Financial Services all in scope; primary focus on Corporate and Contracts |
+
+ML1 Decision: Approved to advance to Executing
+Planning-to-Executing Approved By: ML1
+Date: 2026-04-01
+Executing Stage Authorized: Yes
+
+## Capacity Decisions (Governing Constraints for Executing Stage)
+
+These decisions govern ICP gate configuration in GHL, intake screening, and all downstream F02 execution artifacts.
+
+| Decision | Value | Approved By | Date |
+|----------|-------|-------------|------|
+| Matter ceiling | None — no cap | ML1 | 2026-04-01 |
+| Matter value floor | $1,000 minimum projected matter value | ML1 | 2026-04-01 |
+| Practice area scope | Corporate, Contracts, Financial Services — all in scope | ML1 | 2026-04-01 |
+| Primary focus | Corporate and Contracts | ML1 | 2026-04-01 |
