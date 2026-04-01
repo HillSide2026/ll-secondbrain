@@ -655,7 +655,18 @@ def _get_token_path() -> Path:
     return _REPO_ROOT / "00_SYSTEM" / "local_secrets" / "google_token.json"
 
 
+_GMAIL_SERVICE_CACHE: Optional[Any] = None
+_GMAIL_CREDS_CACHE: Optional[Any] = None
+
+
 def _get_gmail_service() -> Any:
+    global _GMAIL_SERVICE_CACHE, _GMAIL_CREDS_CACHE
+
+    # Reuse cached service if credentials are still valid.
+    if _GMAIL_SERVICE_CACHE is not None and _GMAIL_CREDS_CACHE is not None:
+        if not _GMAIL_CREDS_CACHE.expired:
+            return _GMAIL_SERVICE_CACHE
+
     token_path = _get_token_path()
     if not token_path.exists():
         raise FileNotFoundError(
@@ -672,11 +683,16 @@ def _get_gmail_service() -> Any:
             )
         try:
             creds.refresh(Request())
+            # Persist the refreshed token so the next call doesn't re-refresh.
+            token_path.write_text(creds.to_json())
         except Exception as exc:
             raise RuntimeError(
                 "Gmail OAuth token is expired or invalid. Re-authenticate and update credentials."
             ) from exc
-    return build("gmail", "v1", credentials=creds)
+
+    _GMAIL_CREDS_CACHE = creds
+    _GMAIL_SERVICE_CACHE = build("gmail", "v1", credentials=creds)
+    return _GMAIL_SERVICE_CACHE
 
 
 def _with_backoff(fn: Any, context: str = "") -> Any:
@@ -977,7 +993,10 @@ def tool_list_messages(args: Dict[str, Any]) -> str:
         kwargs["q"] = str(query).strip()
     if label_ids:
         kwargs["labelIds"] = [str(item) for item in label_ids]
-    messages = service.users().messages().list(**kwargs).execute().get("messages", [])
+    messages = _with_backoff(
+        lambda: service.users().messages().list(**kwargs).execute(),
+        "list_messages",
+    ).get("messages", [])
     return json.dumps(messages, indent=2)
 
 
@@ -991,11 +1010,12 @@ def tool_get_message(args: Dict[str, Any]) -> str:
     if format_name not in VALID_MESSAGE_FORMATS:
         raise ValueError(f"'format' must be one of {sorted(VALID_MESSAGE_FORMATS)}.")
 
-    message = service.users().messages().get(
-        userId="me",
-        id=message_id,
-        format=format_name,
-    ).execute()
+    message = _with_backoff(
+        lambda: service.users().messages().get(
+            userId="me", id=message_id, format=format_name,
+        ).execute(),
+        f"get_message:{message_id}",
+    )
     return json.dumps(message, indent=2)
 
 
@@ -1010,7 +1030,10 @@ def tool_list_threads(args: Dict[str, Any]) -> str:
     kwargs: Dict[str, Any] = {"userId": "me", "maxResults": max_results}
     if query:
         kwargs["q"] = query
-    threads = service.users().threads().list(**kwargs).execute().get("threads", [])
+    threads = _with_backoff(
+        lambda: service.users().threads().list(**kwargs).execute(),
+        "list_threads",
+    ).get("threads", [])
     return json.dumps(threads, indent=2)
 
 
@@ -1021,14 +1044,20 @@ def tool_get_thread(args: Dict[str, Any]) -> str:
     if not thread_id:
         raise ValueError("'thread_id' is required.")
 
-    thread = _get_thread(service, thread_id)
+    thread = _with_backoff(
+        lambda: _get_thread(service, thread_id),
+        f"get_thread:{thread_id}",
+    )
     return json.dumps(thread, indent=2)
 
 
 def tool_list_labels(args: Dict[str, Any]) -> str:
     service = _get_gmail_service()
     prefix = str(args.get("prefix", "")).strip()
-    labels = service.users().labels().list(userId="me").execute().get("labels", [])
+    labels = _with_backoff(
+        lambda: service.users().labels().list(userId="me").execute(),
+        "list_labels",
+    ).get("labels", [])
     if prefix:
         labels = [label for label in labels if str(label.get("name", "")).startswith(prefix)]
     return json.dumps(labels, indent=2)

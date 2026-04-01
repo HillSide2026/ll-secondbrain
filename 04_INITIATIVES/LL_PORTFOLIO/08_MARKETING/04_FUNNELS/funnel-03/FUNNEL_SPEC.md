@@ -72,19 +72,58 @@ Specialized payments and stablecoin regulatory counsel for operators making stru
 
 ## Pipeline Stages
 
-- lead_captured
-- screened
-- booked
-- consult_complete
-- retained
-- closed_lost
+| Stage | Sub-Stage | Description |
+|-------|-----------|-------------|
+| `lead_captured` | `new_lead` | Opted in, no contact made |
+| `lead_captured` | `contacted` | First contact attempted or made |
+| `screened` | `intake_submitted` | Intake/screening form complete |
+| `screened` | `qualified` | Passed qualification gates |
+| `booked` | `consult_booked` | Consult scheduled |
+| `booked` | `consult_confirmed` | Confirmed; reminder sent |
+| `consult_complete` | `consult_showed` | Attended the consult |
+| `consult_complete` | `proposal_sent` | Engagement letter or scope sent |
+| `retained` | `retained` | Engagement executed |
+| `closed_lost` | `unqualified` | Failed qualification gates |
+| `closed_lost` | `no_show` | Booked but did not show |
+| `closed_lost` | `no_decision` | Consult complete, no engagement |
+| `closed_lost` | `lost_to_competitor` | Chose another provider |
+
+Contact fields (not pipeline stages): `entry_offer` (EO1/EO2/EO3), `acquisition_source` (content/networking/paid_ads)
 
 ## Primary Metrics
 
+### Macro (Funnel-Level)
+
 - cost_per_qualified_lead
-- consult_show_rate
-- retention_rate
+- lead_to_retained_rate
 - entry_offer_to_retainer_conversion
+
+### Top of Funnel — Content / Networking / Paid Ads
+Stages: traffic → lead_captured
+
+- website_sessions
+- opt_in_rate
+- lead_magnet_downloads_by_offer
+- networking_sourced_leads
+- content_to_lead_conversion_rate
+- impressions / click_through_rate / cost_per_click / cost_per_form_submission (paid ads — when active)
+
+### Middle of Funnel — Nurture / Inquiry / Scheduling
+Stages: lead_captured → screened → booked
+
+- lead_to_screened_rate
+- qualification_rate
+- lead_to_booked_rate
+- speed_to_contact
+- booking_no_show_rate
+
+### Bottom of Funnel — Conversion
+Stages: booked → consult_complete → retained
+
+- consult_show_rate
+- consult_to_retained_rate
+- entry_offer_to_retainer_conversion (per EO)
+- payment_friction_rate
 
 ## KPI Targets (Must Map to Goals)
 
@@ -100,9 +139,10 @@ Specialized payments and stablecoin regulatory counsel for operators making stru
 - Strategy: Payments/MSB/PSP Regulatory Counsel
 - Strategy folder: 02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/STRATEGIES/PAYMENTS_MSB_PSP_REGULATORY_COUNSEL/
 - Entry offers:
-  - MSB Registration Mandate
-  - Suspicious Transaction Triage & STR Filing
-  - AML Health Check
+  - EO1: MSB Registration Mandate
+  - EO2: Suspicious Transaction Triage & STR Filing
+  - EO3: AML Health Check
+  - EO4: Payment Token & Utility Token Regulatory Structuring (candidate — pending offer definition at practice layer)
 - Core offers:
   - Suspicious Transaction Reporting Triage & Playbook
   - MSB Effectiveness Review
@@ -115,11 +155,24 @@ Specialized payments and stablecoin regulatory counsel for operators making stru
   - RPAA_REGISTRATION
   - RPAA_THREE_YEAR_REVIEW
 
+## EO4 Scope Note — Payment Token & Utility Token Regulatory Structuring
+
+- Framing: regulatory structuring for operators issuing or deploying payment tokens and utility tokens — not "token issuance" as a general service
+- Scope: FINTRAC classification, RPAA applicability, AML obligations, banking relationship structuring for token-based payment systems
+- Excludes: securities law advice; non-securities status is a matter-by-matter determination, not a blanket marketing claim
+- Status: candidate — offer must be defined at the practice layer before marketing activation
+- Compliance note: marketing materials must not represent that payment tokens or utility tokens are categorically outside securities law
+
+## Planning Decisions
+
+- **2026-04-01 — No bundled campaign with Funnel 01:** Funnel 03 (payments/regulatory) and Funnel 01 (fractional general counsel) target different ICPs with different purchase triggers. Campaigns must remain separate. Fractional counsel is an upsell path, not an acquisition offer for this funnel.
+
 ## Compliance Constraints / Disclaimers
 
 - Marketing only; no legal advice or acceptance decisions
 - ML1 approval required for acceptance
 - Activation remains gated pending ML1-approved planning-stage controls
+- EO4 requires practice-layer offer definition before any marketing activation
 
 ## Owner + Review Cadence
 

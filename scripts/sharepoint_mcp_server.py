@@ -193,6 +193,7 @@ _DOC_LIBRARY_PREFIXES = {
 
 _ALLOWLIST_CACHE: Optional[dict] = None
 _TEMPLATE_REGISTRY_CACHE: Optional[dict] = None
+_TOKEN_CACHE: Dict[str, Any] = {}  # resource_base -> {"token": str, "expires_at": float}
 
 
 # =============================================================================
@@ -527,6 +528,13 @@ def _require_valid_drive(drive_alias: str) -> None:
 # =============================================================================
 
 def _get_resource_token(resource_base: str) -> str:
+    import time as _time_module
+
+    # Return cached token if it has more than 60 seconds of validity remaining.
+    cached = _TOKEN_CACHE.get(resource_base)
+    if cached and _time_module.time() < cached["expires_at"] - 60:
+        return cached["token"]
+
     tenant    = os.environ.get("AZURE_TENANT_ID")
     client_id = os.environ.get("AZURE_CLIENT_ID")
     secret    = os.environ.get("AZURE_CLIENT_SECRET")
@@ -548,6 +556,12 @@ def _get_resource_token(resource_base: str) -> str:
     )
     if "access_token" not in result:
         raise RuntimeError(f"Token acquisition failed: {result}")
+
+    expires_in = int(result.get("expires_in", 3600))
+    _TOKEN_CACHE[resource_base] = {
+        "token": result["access_token"],
+        "expires_at": _time_module.time() + expires_in,
+    }
     return result["access_token"]
 
 
@@ -2543,6 +2557,48 @@ def _slim_item(item: dict) -> dict:
     else:
         result["type"] = "unknown"
     return result
+
+
+def tool_refresh_drive_ids(args: dict) -> str:
+    """
+    Validate that each hardcoded drive ID in _DRIVES is accessible via Graph API.
+    For each drive, calls GET /drives/{drive_id} and reports whether the drive is
+    reachable. Mismatches (404, permission error, etc.) are surfaced as warnings.
+    No writes are performed. Safe to call at any time.
+    """
+    import time as _time_module
+    results = []
+    warnings = []
+    for alias, cfg in _DRIVES.items():
+        drive_id = cfg["drive_id"]
+        url = f"{GRAPH_BASE}/drives/{drive_id}"
+        try:
+            data = _graph_get_optional(url)
+            if data is None:
+                warnings.append(f"{alias}: drive_id NOT FOUND (404) — may need updating")
+                results.append({"alias": alias, "drive_id": drive_id, "status": "not_found"})
+            else:
+                results.append({
+                    "alias": alias,
+                    "drive_id": drive_id,
+                    "status": "ok",
+                    "drive_name": data.get("name"),
+                    "drive_type": data.get("driveType"),
+                    "web_url": data.get("webUrl"),
+                })
+        except Exception as exc:
+            warnings.append(f"{alias}: error — {exc}")
+            results.append({"alias": alias, "drive_id": drive_id, "status": "error", "detail": str(exc)})
+
+    return json.dumps({
+        "checked_at": datetime.now(timezone.utc).isoformat(),
+        "total": len(results),
+        "ok": sum(1 for r in results if r["status"] == "ok"),
+        "not_found": sum(1 for r in results if r["status"] == "not_found"),
+        "errors": sum(1 for r in results if r["status"] == "error"),
+        "warnings": warnings,
+        "drives": results,
+    }, indent=2)
 
 
 def tool_list_folder(args: dict) -> str:
@@ -4753,6 +4809,21 @@ def tool_copy_template_to_wip(args: dict) -> str:
 
 _TOOLS = [
     {
+        "name": "refresh_drive_ids",
+        "description": (
+            "Validate that each hardcoded drive ID in the server's drive registry is "
+            "accessible via the Graph API. Calls GET /drives/{drive_id} for each entry "
+            "and returns a report of ok / not_found / error status per drive. "
+            "Mismatches indicate the drive ID is stale and needs updating. "
+            "No writes performed — safe to call at any time."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {},
+            "required": [],
+        },
+    },
+    {
         "name": "list_folder",
         "description": (
             "List the children (files and subfolders) of a folder path within an "
@@ -5465,6 +5536,7 @@ _TOOLS = [
 ]
 
 _TOOL_FN_MAP = {
+    "refresh_drive_ids": tool_refresh_drive_ids,
     "list_folder":   tool_list_folder,
     "get_item":      tool_get_item,
     "review_site_page": tool_review_site_page,

@@ -1,8 +1,39 @@
 system: ghl
+
 stages:
-- lead_captured
-- screened
-- booked
-- consult_complete
-- retained
-- closed_lost
+  - lead_captured
+  - screened
+  - booked
+  - consult_complete
+  - retained
+  - closed_lost
+
+sub_stages:
+  lead_captured:
+    - new_lead        # opted in, no contact made
+    - contacted       # first contact attempted or made
+
+  screened:
+    - intake_submitted  # intake/screening form complete
+    - qualified         # passed qualification gates
+
+  booked:
+    - consult_booked    # consult scheduled
+    - consult_confirmed # confirmed; reminder sent
+
+  consult_complete:
+    - consult_showed    # attended the consult
+    - proposal_sent     # engagement letter or scope sent
+
+  retained:
+    - retained          # engagement executed
+
+  closed_lost:
+    - unqualified       # failed qualification gates
+    - no_show           # booked but did not show
+    - no_decision       # consult complete, no engagement
+    - lost_to_competitor
+
+contact_fields:
+  - entry_offer         # EO1 | EO2 | EO3 — tag on contact, not a pipeline stage
+  - acquisition_source  # content | networking | paid_ads

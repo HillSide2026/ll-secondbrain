@@ -1,7 +1,43 @@
-primary_metrics:
-- cost_per_qualified_lead
-- consult_show_rate
-- retention_rate
+macro_metrics:
+  description: Funnel-level efficiency and unit economics — span the full pipeline
+  metrics:
+  - cost_per_qualified_lead
+  - lead_to_retained_rate
+  - entry_offer_to_retainer_conversion  # tracked per EO1/EO2/EO3 via contact field
+
+top_of_funnel:
+  description: Content, networking, and paid ads (when active) — traffic to lead_captured
+  stages: [traffic, lead_captured]
+  metrics:
+  - website_sessions
+  - opt_in_rate
+  - lead_magnet_downloads_by_offer      # EO1 / EO2 / EO3 breakdown via contact field
+  - networking_sourced_leads
+  - content_to_lead_conversion_rate
+  # paid ads metrics — activate when paid channel is live
+  - impressions                         # paid only
+  - click_through_rate                  # paid only
+  - cost_per_click                      # paid only
+  - cost_per_form_submission            # paid only
+
+middle_of_funnel:
+  description: Nurture, inquiry, and scheduling — lead_captured to booked
+  stages: [lead_captured, screened, booked]
+  metrics:
+  - lead_to_screened_rate
+  - qualification_rate
+  - lead_to_booked_rate
+  - speed_to_contact
+  - booking_no_show_rate
+
+bottom_of_funnel:
+  description: Conversion — booked to retained
+  stages: [booked, consult_complete, retained]
+  metrics:
+  - consult_show_rate
+  - consult_to_retained_rate
+  - entry_offer_to_retainer_conversion  # per EO; reference macro
+  - payment_friction_rate
+
 secondary_metrics:
 - emotional_drain_index
-- payment_friction_rate

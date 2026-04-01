@@ -22,9 +22,10 @@ spec:
   offer:
     primary: Payments / MSB / PSP counsel
     entry_offers:
-      - MSB Registration Mandate
-      - Suspicious Transaction Triage and STR Filing
-      - AML Health Check
+      - EO1: MSB Registration Mandate
+      - EO2: Suspicious Transaction Triage and STR Filing
+      - EO3: AML Health Check
+      - EO4: Payment Token and Utility Token Regulatory Structuring (candidate — pending practice-layer offer definition)
     core_offers:
       - Ongoing AML Counsel Retainer
 history:

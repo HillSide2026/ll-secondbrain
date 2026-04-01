@@ -1,15 +1,25 @@
 channels:
 - content
 - networking
+- paid_ads           # not currently active; viable pending audience-size and CPL validation
+
 lead_magnets:
   - funnel3_entryoffer1_leadmagnet_v1.md
   - funnel3_entryoffer2_leadmagnet_v3.md
   - funnel3_entryoffer3_leadmagnet_v1.md
+
 networking_sources:
   - industry_events
   - direct_introductions
   - referral_relationships
   - curated_one_to_one_outreach
+
+paid_ads_note: >
+  LinkedIn and other paid channels are not excluded. Activation requires ML1
+  approval and a projected CPL validated against audience size. The ICP
+  (fintech/payments decision-makers with Canada exposure) is a narrow audience;
+  economics must be confirmed before budget commitment.
+
 keywords: []
 budget_owner: ML1
 optimization_goal: Qualified consults

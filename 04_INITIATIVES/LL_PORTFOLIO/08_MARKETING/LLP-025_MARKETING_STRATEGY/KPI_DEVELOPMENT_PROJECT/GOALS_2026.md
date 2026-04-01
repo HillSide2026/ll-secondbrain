@@ -64,11 +64,41 @@ Only at this stage define:
 
 Status: Active
 
-| KPI | Target | Measurement Method / Source of Truth | Review Cadence | Owner | Notes / Assumptions |
-|-----|--------|--------------------------------------|----------------|-------|---------------------|
-| Cost per qualified lead | TBD | TBD | TBD | ML1 | TBD |
-| Consult show rate | TBD | TBD | TBD | ML1 | TBD |
-| Retention rate | TBD | TBD | TBD | ML1 | TBD |
+### Macro
+
+| KPI | Target | Source of Truth | Review Cadence | Owner | Notes |
+|-----|--------|-----------------|----------------|-------|-------|
+| cost_per_qualified_lead | TBD | GHL | TBD | ML1 | TBD |
+| lead_to_retained_rate | TBD | GHL | TBD | ML1 | TBD |
+| cac | TBD | GHL + ad spend | TBD | ML1 | Total spend / new clients retained |
+
+### Top of Funnel — Ads
+
+| KPI | Target | Source of Truth | Review Cadence | Owner | Notes |
+|-----|--------|-----------------|----------------|-------|-------|
+| impressions | TBD | Google Ads | TBD | ML1 | TBD |
+| click_through_rate | TBD | Google Ads | TBD | ML1 | TBD |
+| cost_per_click | TBD | Google Ads | TBD | ML1 | TBD |
+| cost_per_form_submission | TBD | Google Ads + GHL | TBD | ML1 | Ad spend / GHL submissions |
+| form_submission_rate | TBD | Google Ads + GHL | TBD | ML1 | Submissions / clicks |
+
+### Middle of Funnel — Nurture / Inquiry / Scheduling
+
+| KPI | Target | Source of Truth | Review Cadence | Owner | Notes |
+|-----|--------|-----------------|----------------|-------|-------|
+| lead_to_screened_rate | TBD | GHL | TBD | ML1 | TBD |
+| qualification_rate | TBD | GHL | TBD | ML1 | TBD |
+| lead_to_booked_rate | TBD | GHL | TBD | ML1 | TBD |
+| speed_to_contact | TBD | GHL | TBD | ML1 | Time from form submission to first contact |
+| booking_no_show_rate | TBD | GHL | TBD | ML1 | TBD |
+
+### Bottom of Funnel — Conversion
+
+| KPI | Target | Source of Truth | Review Cadence | Owner | Notes |
+|-----|--------|-----------------|----------------|-------|-------|
+| consult_show_rate | TBD | GHL | TBD | ML1 | TBD |
+| consult_to_retained_rate | TBD | GHL | TBD | ML1 | TBD |
+| payment_friction_rate | TBD | GHL | TBD | ML1 | Retained leads that stall at payment step |
 
 ---
 
@@ -88,9 +118,43 @@ Status: Planned
 
 Status: Active
 
-| KPI | Target | Measurement Method / Source of Truth | Review Cadence | Owner | Notes / Assumptions |
-|-----|--------|--------------------------------------|----------------|-------|---------------------|
-| Cost per qualified lead | TBD | TBD | TBD | ML1 | TBD |
-| Consult show rate | TBD | TBD | TBD | ML1 | TBD |
-| Retention rate | TBD | TBD | TBD | ML1 | TBD |
-| Entry-offer to retainer conversion | TBD | TBD | TBD | ML1 | TBD |
+### Macro
+
+| KPI | Target | Source of Truth | Review Cadence | Owner | Notes |
+|-----|--------|-----------------|----------------|-------|-------|
+| cost_per_qualified_lead | TBD | GHL | TBD | ML1 | TBD |
+| lead_to_retained_rate | TBD | GHL | TBD | ML1 | TBD |
+| entry_offer_to_retainer_conversion | TBD | GHL | TBD | ML1 | Per EO1/EO2/EO3 via contact field |
+
+### Top of Funnel — Content / Networking / Paid Ads
+
+| KPI | Target | Source of Truth | Review Cadence | Owner | Notes |
+|-----|--------|-----------------|----------------|-------|-------|
+| website_sessions | TBD | fintechlawyer.ca analytics | TBD | ML1 | TBD |
+| opt_in_rate | TBD | Analytics + GHL | TBD | ML1 | Sessions → lead magnet downloads |
+| lead_magnet_downloads_by_offer | TBD | GHL | TBD | ML1 | EO1/EO2/EO3 via contact field |
+| networking_sourced_leads | TBD | GHL | TBD | ML1 | TBD |
+| content_to_lead_conversion_rate | TBD | Analytics + GHL | TBD | ML1 | TBD |
+| impressions | TBD | Ad platform | TBD | ML1 | Paid ads — when active |
+| click_through_rate | TBD | Ad platform | TBD | ML1 | Paid ads — when active |
+| cost_per_click | TBD | Ad platform | TBD | ML1 | Paid ads — when active |
+| cost_per_form_submission | TBD | Ad platform + GHL | TBD | ML1 | Paid ads — when active |
+
+### Middle of Funnel — Nurture / Inquiry / Scheduling
+
+| KPI | Target | Source of Truth | Review Cadence | Owner | Notes |
+|-----|--------|-----------------|----------------|-------|-------|
+| lead_to_screened_rate | TBD | GHL | TBD | ML1 | TBD |
+| qualification_rate | TBD | GHL | TBD | ML1 | TBD |
+| lead_to_booked_rate | TBD | GHL | TBD | ML1 | TBD |
+| speed_to_contact | TBD | GHL | TBD | ML1 | Time from opt-in to first contact |
+| booking_no_show_rate | TBD | GHL | TBD | ML1 | TBD |
+
+### Bottom of Funnel — Conversion
+
+| KPI | Target | Source of Truth | Review Cadence | Owner | Notes |
+|-----|--------|-----------------|----------------|-------|-------|
+| consult_show_rate | TBD | GHL | TBD | ML1 | TBD |
+| consult_to_retained_rate | TBD | GHL | TBD | ML1 | TBD |
+| entry_offer_to_retainer_conversion | TBD | GHL | TBD | ML1 | Per EO — which entry point closes |
+| payment_friction_rate | TBD | GHL | TBD | ML1 | Retained leads that stall at payment |

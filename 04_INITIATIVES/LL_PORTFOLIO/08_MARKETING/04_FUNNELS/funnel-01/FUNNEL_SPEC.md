@@ -80,11 +80,36 @@ Structured legal function for growing Ontario businesses, providing ongoing gove
 
 ## Primary Metrics
 
+### Macro (Funnel-Level)
+
 - cost_per_qualified_lead
-- lead_to_booked_rate
 - lead_to_retained_rate
+- cac
+
+### Top of Funnel — Ads
+Stages: traffic → lead_captured
+
+- impressions
+- click_through_rate
+- cost_per_click
+- cost_per_form_submission
+- form_submission_rate
+
+### Middle of Funnel — Nurture / Inquiry / Scheduling
+Stages: lead_captured → screened → booked
+
+- lead_to_screened_rate
+- qualification_rate
+- lead_to_booked_rate
+- speed_to_contact
+- booking_no_show_rate
+
+### Bottom of Funnel — Conversion
+Stages: booked → consult_complete → retained
+
 - consult_show_rate
 - consult_to_retained_rate
+- payment_friction_rate
 
 ## KPI Targets (Must Map to Goals)
 
