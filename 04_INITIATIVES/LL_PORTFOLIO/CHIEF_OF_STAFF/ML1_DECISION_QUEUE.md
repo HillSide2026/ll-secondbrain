@@ -1,12 +1,12 @@
 # ML1 Decision Queue
 
-- Generated: 2026-03-25T00:00:00+00:00
+- Generated: 2026-04-01T00:00:00+00:00
 - Agent: LLM-001 Chief of Staff
 - Input freshness: LLM-004 run 2026-03-20T02:27:05+00:00, LLM-005 run 2026-03-20T02:27:05+00:00, LLM-006 run 2026-03-20T02:27:05+00:00
 
 > Advisory output. ML1 approval required before any action is taken.
 
-**Input staleness notice:** Management agent inputs are 5 days old (generated 2026-03-20). A fresh agent run is recommended before acting on any item whose status may have changed.
+**Input staleness notice:** Management agent inputs are 12 days old (generated 2026-03-20). Git history between March 20 and April 1 shows material execution activity in LLP-024 (NDA Esq landing page) and LLP-012 (F02 blog content, linking/tagging scripts). These events are not reflected in agent outputs. A fresh LLM-004, LLM-005, LLM-006 run is recommended before acting on any queue item.
 
 ---
 
@@ -14,44 +14,41 @@
 
 | Rank | Project | Decision Needed | Cash Flow Impact | ML1 or System | Urgency | Blocking | Source |
 |------|---------|----------------|-----------------|---------------|---------|----------|--------|
-| 1 | LLP-012 Funnel 2 Management | Provide three capacity decisions: (a) matter ceiling, (b) value floor, (c) practice area exclusions for F02, then approve six missing planning artifacts | direct | ML1_REQUIRED | high | yes — F02 planning gate cannot close; execution cannot begin | LLM-004, LLM-005, LLM-006 |
-| 2 | LLP-011 Funnel 1 Management | Approve consolidated METRICS.md for live F01 intake funnel; record ML1 metric approval | direct | ML1_REQUIRED | high | yes — live funnel is ungoverned at the measurement layer | LLM-004, LLM-005, LLM-006 |
-| 3 | LLP-025 Marketing Strategy | Approve canonical METRICS.md and decide Planning-to-Executing gate | indirect | ML1_REQUIRED | high | yes — upstream marketing gate blocks downstream funnel sequencing | LLM-004, LLM-005, LLM-006 |
-| 4 | LLP-030 Firm Strategy | Sign initiation APPROVAL_RECORD.md and lock strategic frame (BUSINESS_CASE.md required) | indirect | ML1_REQUIRED | high | yes — strategic frame blocks clean sequencing of strategic and marketing downstream work | LLM-004, LLM-005, LLM-006 |
-| 5 | LLP-015, LLP-035, LLP-036 (batch) | Formalise or park decision for three unstaged projects each missing all 7 initiation artifacts | none near-term | ML1_REQUIRED | medium | partial — inflating at-risk count and consuming governance cycle; no direct delivery block | LLM-004, LLM-005, LLM-006 |
-| 6 | LLP-014, LLP-026, LLP-027, LLP-028, LLP-029, LLP-043 (batch) | Formalise or park decision for six unstaged projects each missing 6 initiation artifacts | none near-term | ML1_REQUIRED | medium | partial — same as above; largest single source of governance noise in the portfolio | LLM-004, LLM-005, LLM-006 |
-| 7 | LLP-007, LLP-008, LLP-016 (batch) | Sign APPROVAL_RECORD.md or formally park each of the three initiating projects | none near-term | ML1_REQUIRED | medium | yes — each is blocked at initiation gate | LLM-004, LLM-006 |
-| 8 | LLP-031, LLP-032, LLP-033 (batch) | Complete BUSINESS_CASE.md or formally defer initiation for each project | none near-term | ML1_REQUIRED | medium | yes — blocked at initiation gate | LLM-004, LLM-006 |
-| 9 | LLP-004 Planning | Approve METRICS.md to close measurement gap and unblock planning gate advancement | none near-term | ML1_REQUIRED | low | yes — cannot advance planning stage without metric approval | LLM-004, LLM-006 |
-| 10 | LLP-023 Matter Command and Control | Record one canonical stage decision and confirm go/no-go posture | none near-term | ML1_REQUIRED | low | no — stage ambiguity is a governance reporting issue, not an execution block | LLM-004, LLM-005, LLM-006 |
-| 11 | LLP-005 Opening | Confirm whether execution is active; if yes, direct creation of canonical Stage 3 execution packet | none near-term | ML1_REQUIRED | low | no — watch status reflects governance packaging gap | LLM-004, LLM-005 |
-| 12 | Fresh agent run (LLM-004, LLM-005, LLM-006) | Trigger refresh of all management agent outputs before acting on queue items | n/a | SYSTEM_CAN_HANDLE | high | no — staleness risk only | LLM-001 |
-| 13 | LLP-012 six planning artifact drafting | After ML1 provides capacity decisions, agents draft SCOPE_STATEMENT.md, PROJECT_PLAN.md, ASSUMPTIONS_CONSTRAINTS.md, DEPENDENCIES.md, RISK_REGISTER.md, COMMUNICATION_PLAN.md | direct | SYSTEM_CAN_HANDLE | high (pending Rank 1) | yes — unblocked by ML1 capacity decisions | LLM-004, LLM-005 |
-| 14 | LLP-011 and LLP-025 METRICS.md consolidation | Agents consolidate split-schema measurement files into draft canonical METRICS.md for ML1 review | direct/indirect | SYSTEM_CAN_HANDLE | high (pending Ranks 1-2) | yes — unblocked by ML1 approval | LLM-004, LLM-006 |
-| 15 | LLP-037 through LLP-041 service cluster | Single define/consolidate/park decision across all five initiating shells | none near-term | ML1_REQUIRED | low | no | LLM-004, LLM-005 |
+| 1 | LLP-012 Funnel 2 Management | Confirm Planning-to-Executing gate status: was the gate formally approved after 2026-03-20? If yes, direct ML2 to record it in APPROVAL_RECORD.md. If no, confirm F02 blog content and scripts are pre-execution preparatory work and gate remains open. | direct | ML1_REQUIRED | high | yes — gate status ambiguity means F02 execution artifacts have no confirmed authorization basis | LLM-006 (APPROVAL_RECORD.md and 6 planning artifacts missing), git history 2026-03-20 to 2026-04-01 |
+| 2 | LLP-012 Funnel 2 Management | Provide three F02 capacity decisions: (a) maximum active matter count ceiling, (b) minimum projected matter value floor for new corporate work, (c) practice area categories to stop accepting to protect F02 capacity | direct | ML1_REQUIRED | high | yes — six missing planning artifacts cannot be written without these inputs; GHL ICP gate cannot be confirmed as correctly configured | LLM-004 (at-risk, 6 gaps), LLM-005 (Priority Rank 1 score 23), LLP-012 PROJECT_CHARTER.md Section 5 |
+| 3 | LLP-011 Funnel 1 Management | Define the F01 matter value floor (minimum acceptable fee per matter retained from F01 spend); then review and approve consolidated METRICS.md including the >2.0x ROAS hypothesis as a formal governance threshold or redirect | direct | ML1_REQUIRED | high | yes — live intake funnel has no formally approved measurement baseline; F01 investment decision has no governance trigger | LLM-006 (METRICS.md missing), LLM-005 (watch, Rank 20), LLP-025 METRIC_FRAMEWORK.md |
+| 4 | LLP-024 NDA Esq | Authorize ML2 to update EXECUTION_LOG.md and DELIVERABLES_TRACKER.md to reflect execution events since 2026-03-19 (landing page completion at minimum); confirm whether May 18, 2026 MVP deadline is actively tracked | direct | ML1_REQUIRED | high | yes — executing project has no governance record of its primary post-authorization event; 60-day MVP deadline is 47 days away | LLM-004 (on-track), git history (NDA Esq landing page committed post-March 20) |
+| 5 | LLP-025 Marketing Strategy | Review and approve METRIC_FRAMEWORK.md as canonical METRICS.md; decide Planning-to-Executing gate | indirect | ML1_REQUIRED | medium-high | yes — downstream intake and lead capture projects (LLP-027, LLP-028, LLP-029, LLP-026) cannot be formally scoped without LLP-025 gate closure | LLM-006 (METRICS.md missing), LLM-005 (watch, Rank 21), LLM-004 (watch) |
+| 6 | LLP-030 Firm Strategy | Complete or authorize drafting of BUSINESS_CASE.md and formally close the initiation gate | indirect | ML1_REQUIRED | medium | yes — firm strategy cannot become the governing frame for downstream strategic and marketing sequencing | LLM-006 (BUSINESS_CASE.md missing), LLM-005 (at-risk), LLM-004 (at-risk) |
+| 7 | LLP-004 Onboarding | Review and approve METRICS.md to clear the watch-status planning gate gap | none near-term | ML1_REQUIRED | medium | yes — planning gate cannot advance without metric approval | LLM-006 (METRICS.md missing), LLM-004 (watch) |
+| 8 | LLP-007, LLP-008, LLP-016 (batch) | Sign APPROVAL_RECORD.md for each initiating project or explicitly direct park | none near-term | ML1_REQUIRED | low-medium | yes — each is frozen at initiation gate; three approval gap entries per governance cycle | LLM-006 (APPROVAL_RECORD.md missing x3), LLM-005 (at-risk Ranks 11-13) |
+| 9 | LLP-031, LLP-032, LLP-033 (batch) | Complete BUSINESS_CASE.md or explicitly park each growth project placeholder | none near-term | ML1_REQUIRED | low-medium | yes — initiation gate frozen x3; inflating at-risk count | LLM-006 (BUSINESS_CASE.md missing x3), LLM-005 (at-risk Ranks 14-17) |
+| 10 | LLP-015, LLP-035, LLP-036 (batch) | Formalise or park these three practice area placeholder projects (7 missing initiation artifacts each) | none near-term | ML1_REQUIRED | low | partial — 21 total missing artifact entries; no portfolio output | LLM-006 (Stage Gate Violations), LLM-005 (at-risk Ranks 2-4) |
+| 11 | LLP-014, LLP-026, LLP-027, LLP-028, LLP-029, LLP-043 (batch) | Formalise or park these six unstaged marketing and governance placeholder projects (6 missing initiation artifacts each) | none near-term | ML1_REQUIRED | low | partial — 36 total missing artifact entries; largest source of governance noise | LLM-006 (APPROVAL_RECORD.md missing x6), LLM-005 (at-risk Ranks 5-10) |
+| 12 | LLP-037, LLP-038, LLP-039, LLP-040, LLP-041 (batch) | Define substantive content, consolidate, or formally park the 09_SERVICE_MANAGEMENT cluster | none near-term | ML1_REQUIRED | low | no | LLM-004 (on-track x5), LLM-005 |
+| 13 | Fresh agent run (LLM-004, LLM-005, LLM-006) | Trigger refresh of all management agent outputs before acting on any queue item | n/a | SYSTEM_CAN_HANDLE | high | no — staleness risk only; 12-day gap with known execution events not yet captured | LLM-001 |
+| 14 | LLP-012 six planning artifact drafting | After ML1 provides capacity decisions (Rank 2), agents draft SCOPE_STATEMENT.md, PROJECT_PLAN.md, ASSUMPTIONS_CONSTRAINTS.md, DEPENDENCIES.md, RISK_REGISTER.md, COMMUNICATION_PLAN.md | direct | SYSTEM_CAN_HANDLE | high (pending Rank 2) | yes — unblocked by ML1 capacity decisions | LLM-004, LLM-005 |
+| 15 | LLP-011 and LLP-025 METRICS.md consolidation | Agents consolidate existing split-schema measurement files into draft canonical METRICS.md for ML1 review and approval | direct/indirect | SYSTEM_CAN_HANDLE | high (pending Ranks 3, 5) | yes — unblocked by ML1 approval | LLM-004, LLM-006 |
+| 16 | LLP-024 EXECUTION_LOG and DELIVERABLES_TRACKER update | After ML1 authorization (Rank 4), agents update execution log to reflect post-March 19 events | direct | SYSTEM_CAN_HANDLE | high (pending Rank 4) | yes — unblocked by ML1 authorization | LLM-004 |
 
 ---
 
 ## Queue Notes
 
-**Ranking logic:**
+**Ranking logic:** Ranks 1–4 are ordered by direct cash flow impact. LLP-012 gate confirmation (Rank 1) is highest because execution may be occurring without authorization — a governance integrity issue, not just a compliance flag. LLP-012 capacity decisions (Rank 2) immediately follow because they are the input that unlocks the planning gate. LLP-011 METRICS.md (Rank 3) is the live funnel governance gap. LLP-024 (Rank 4) is an executing project with an approaching deadline that needs its record updated. Ranks 5–6 are indirect cash flow. Ranks 7–12 are governance cleanup with no near-term revenue effect. Ranks 13–16 are SYSTEM_CAN_HANDLE items included for completeness, sequenced behind the ML1_REQUIRED decisions they depend on.
 
-Ranks 1 through 4 are ordered by direct cash flow impact. LLP-012 (F02, Rank 1) is ranked above LLP-011 (F01, Rank 2) because LLP-012 is completely blocked at the planning gate — nothing can advance — while LLP-011 is in live execution and the governance gap is a compliance issue rather than an execution stop. LLP-025 (Rank 3) is the highest-leverage indirect cash flow item because it governs the downstream marketing sequence. LLP-030 (Rank 4) is the cleanest single-decision unlock for strategic portfolio clarity.
+**Ranks 1 and 2 can be addressed in a single ML1 session.** The gate confirmation and the capacity decisions are naturally connected — ML1 will likely resolve both simultaneously when reviewing F02 status.
 
-Ranks 5 and 6 are batched formalise/park decisions. The nine projects in these two rows are the largest single source of governance noise and at-risk inflation in the portfolio. Resolving them as a batch — even with a simple park decision — would materially reduce the compliance load on every future cycle.
+**Ranks 3 and 5 are substantively linked.** The F01 matter value floor (Rank 3) is referenced as an open ML1 decision in the LLP-025 METRIC_FRAMEWORK.md (Rank 5). A single review session covering F01 performance data and the marketing strategy metrics framework resolves both.
 
-Ranks 7 and 8 are initiation gate holds. All six projects (LLP-007, LLP-008, LLP-016, LLP-031, LLP-032, LLP-033) require a single artifact each; they can be reviewed and signed off in one batch session.
-
-Ranks 9 through 11 are watch-status cleanup items. They matter but do not carry time-sensitive execution pressure.
-
-Ranks 12 through 14 are SYSTEM_CAN_HANDLE items included in the queue for completeness. They are sequenced behind the ML1_REQUIRED decisions they depend on.
-
-Rank 15 is a low-urgency portfolio shaping decision that can be deferred until higher-priority items are resolved.
+**Ranks 8, 9, 10, 11, and 12 are all batchable.** These 15 projects require either a simple sign-off or a park decision. A single portfolio cleanup session could resolve all of them, reducing the at-risk count by up to 13 projects and eliminating approximately 75 missing artifact entries from future governance reports.
 
 **Dependency chain for cash-flow items:**
 
-LLP-012 capacity decisions (ML1, Rank 1) → system drafts six planning artifacts (Rank 13) → ML1 reviews and approves → planning gate closes → LLP-012 advances to execution.
+LLP-012 capacity decisions (ML1, Rank 2) → system drafts six planning artifacts (Rank 14) → ML1 reviews and approves → planning gate closes → LLP-012 advances to authorized execution.
 
-LLP-011 METRICS.md consolidation (system, Rank 14) → ML1 approves (Rank 2) → governance hold lifted, funnel fully governed.
+LLP-011 METRICS.md consolidation (system, Rank 15) → ML1 approves (Rank 3) → governance hold lifted, F01 funnel fully governed.
 
-LLP-025 METRICS.md consolidation (system, Rank 14) → ML1 approves and decides gate (Rank 3) → downstream marketing sequencing can proceed.
+LLP-025 METRICS.md consolidation (system, Rank 15) → ML1 approves and decides gate (Rank 5) → downstream intake and lead capture sequencing can proceed.
+
+LLP-024 execution log update (system, Rank 16) → authorized by ML1 (Rank 4) → governance record reflects actual delivery state.
