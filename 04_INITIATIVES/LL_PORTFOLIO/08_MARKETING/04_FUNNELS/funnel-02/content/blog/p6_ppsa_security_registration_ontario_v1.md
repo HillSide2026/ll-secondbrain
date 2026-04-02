@@ -1,6 +1,6 @@
 ---
 id: funnel2__p6__blog__ppsa_security_registration_ontario
-title: "PPSA Security in Ontario: What It Means When a Lender Registers Against Your Business"
+title: "PPSA Security in Ontario: What It Means When a Lender Registers Against a Business"
 owner: ML1
 status: draft
 version: 1.0
@@ -12,13 +12,13 @@ entry_offer: EO — Corporate Health Check
 wp_id:
 ---
 
-# PPSA Security in Ontario: What It Means When a Lender Registers Against Your Business
+# PPSA Security in Ontario: What It Means When a Lender Registers Against a Business
 
-If a lender registers a PPSA security interest against your business, it means they have claimed legal rights over your assets to secure a loan or obligation.
+If a lender registers a PPSA security interest against a business, it means they have claimed legal rights over the borrower's assets to secure a loan or obligation.
 
-In Ontario, this is done under the Personal Property Security Act. The registration itself does not mean you are in default. It means a lender has taken steps to protect its position if a default occurs.
+In Ontario, this is done under the Personal Property Security Act. The registration itself does not mean the business is in default. It means a lender has taken steps to protect its position if a default occurs.
 
-Most business owners only encounter this system when they search their company and discover a registration, or when a new lender raises it during financing. At that point, the question is not what the PPSA is in theory. The question is what this specific registration means for your business.
+Most business owners only encounter this system when they search the company and discover a registration, or when a new lender raises it during financing. At that point, the question is not what the PPSA is in theory. The question is what a specific registration means for the business.
 
 ## What a PPSA Registration Actually Does
 
@@ -80,10 +80,10 @@ Businesses often discover registrations when preparing for new financing or a sa
 
 Those questions are harder to resolve when a transaction is already in progress and timelines are tight.
 
-## Why This Matters Before You Borrow Again
+## Why This Matters Before the Next Financing
 
-A PPSA registration is part of the legal infrastructure of your business. It sits alongside your corporate records, shareholder structure, and existing contracts.
+A PPSA registration is part of the legal infrastructure of a business. It sits alongside the corporate records, shareholder structure, and existing contracts.
 
 When a new lender enters the picture, all of these elements are reviewed together. If the registration does not align cleanly with the current state of the business, it becomes an issue to resolve under time pressure.
 
-Understanding what has been registered, and why, puts you in a better position before that process begins.
+Understanding what has been registered, and why, puts the business in a better position before that process begins.
