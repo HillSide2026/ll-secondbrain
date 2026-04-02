@@ -2,14 +2,14 @@
 
 Funnel: Ontario Corporate Health Check
 Target: Owner / CEO / CFO, Ontario operating businesses, $1M–$8M, 5–30 employees
-Last Updated: 2026-03-30
+Last Updated: 2026-04-01
 Research Method: Web search — competitor content mapping, SERP topic analysis. No volume data. Volume and difficulty data requires Ahrefs/SEMrush.
 
 ---
 
 ## Architecture Note
 
-Five SEO-driven pillars, each anchored to confirmed real search terms with active competitor content. A sixth section covers brand framework content — not SEO plays. "Structural drift" is a brand concept, not a search term.
+Six SEO-driven pillars, each anchored to confirmed real search terms with active competitor content. A seventh section covers brand framework content — not SEO plays. "Structural drift" is a brand concept, not a search term.
 
 Competitive context: Ontario.ca and Canada.ca dominate generic informational queries (e.g., "employee vs contractor ontario"). The opportunity is in employer-framed, consequence-and-action-oriented content that government pages don't produce.
 
@@ -132,6 +132,31 @@ Competitive context: Ontario.ca and Canada.ca dominate generic informational que
 
 ---
 
+## Pillar 6 — Commercial Lending and Private Lending Ontario
+
+**Confirmed search behavior:** The head terms ("commercial loan ontario", "business loan ontario") are dominated by banks, brokers, and BDC — not a viable law firm SERP. The legal documentation and obligation layer — PPSA security, guarantee review, private lender documentation, loan enforcement — is underserved by law firm content. Private mortgage and private lender content has low competition outside of broker-facing material. The borrower-side legal obligation framing is almost entirely absent from Ontario SERP results.
+
+**Pillar page anchor:** `commercial lending lawyer ontario` / `private lender ontario`
+**Note on positioning:** Do not compete on "how to get a business loan." The opportunity is the legal documentation, obligation, and enforcement layer — content banks and brokers do not produce and that law firm competitors have largely ignored. Serves two audiences: (1) Ontario businesses in a live financing transaction who need document review and guarantee advice; (2) private lenders who need loan documentation, PPSA registration, and enforcement support.
+
+**Why this pillar belongs in Funnel 2:** The $1M–$8M operating business is the primary commercial borrower seeking term loans, lines of credit, equipment financing, and private mortgages. Before any lender advances funds, they review corporate structure, minute book, shareholder resolutions, and guarantees — exactly what the Corporate Health Check surfaces. The bridge is identical to P5's seller-preparation angle: a lender's due diligence will find what the Health Check finds, except there is no time to fix it once the deal is in motion. Personal guarantees (already in P4) are the downstream content; this pillar is the upstream context.
+
+### Content to Publish
+
+| # | Working Title | Target Keyword | What Searcher Wants | Competition Notes |
+|---|--------------|----------------|---------------------|-------------------|
+| 1 | Commercial Lending in Ontario: What the Legal Documents Actually Say | `commercial loan agreement ontario` | What a commercial loan agreement contains, what the key obligations are, what borrowers routinely miss | Low law firm competition; banks and brokers dominate but produce no legal-obligation content |
+| 2 | PPSA Security in Ontario: What It Means When a Lender Registers Against Your Business | `PPSA security registration ontario` | What a PPSA registration is, what it encumbers, what happens on default, how to discharge | Low competition; highly practical; searchers are often business owners who just received a notice |
+| 3 | Personal Guarantees in Commercial Lending: What Ontario Business Owners Are Actually Signing | `personal guarantee commercial loan ontario` | What the guarantee covers, joint and several liability, what can be negotiated, when to push back | Moderate competition (Devry Law, Ira Smith have general guarantee content); opportunity is lending-specific framing |
+| 4 | Private Lenders in Ontario: What Borrowers Need to Know Before They Sign | `private lender ontario business` | How private lending differs from bank lending, what documentation to expect, what protections borrowers have | Low law firm competition; broker content dominates but covers rates and access, not legal obligations |
+| 5 | Private Mortgage Lending in Ontario: Legal Requirements for Lenders and Borrowers | `private mortgage lender ontario` | What documentation is required, what FSRA requires of private lenders, what happens on default | Low competition on the legal documentation side; broker-heavy SERP |
+| 6 | What Happens When a Commercial Lender Enforces Against an Ontario Business | `commercial loan default ontario` | Demand letters, receivership, PPSA enforcement, director liability, what options exist | Low competition; high anxiety content for businesses in distress |
+| 7 | Setting Up a Private Lending Operation in Ontario: Legal Structure and Documentation Requirements | `set up private lending company ontario` | Corporate structure, FSRA licensing considerations, loan documentation, PPSA registration process | Very low competition; serves private lenders seeking to formalize operations |
+
+**Bridge to offer:** A business entering a financing transaction — bank or private — will have its corporate records, shareholder structure, minute book, and guarantee obligations scrutinized. The Corporate Health Check produces exactly the clean corporate record a lender expects to see. A business owner who discovers gaps through the Health Check before approaching a lender is in a materially stronger position than one who discovers them during diligence.
+
+---
+
 ## Offer Pillar — Ontario Corporate Health Check
 
 **Search behavior:** Low volume but high commercial intent. No confirmed competitors ranking on "corporate health check ontario" as a service — this is a differentiated positioning. Bottom-of-funnel and Google Ads destination.
@@ -167,9 +192,10 @@ These articles belong on the site but do not anchor to real search terms. They s
 | 2 | P2 — Contractor/Employment (articles 4–5 first: non-compete, termination) | Highest active search demand in 2025; active court decisions mean searchers are looking right now |
 | 3 | P1 — Shareholder Agreements (articles 1–3 first) | High volume, clear buyer intent, defensible framing angle vs. startup-focused competitors |
 | 4 | P5 — Transactions (articles 1, 4, 6 first: share vs. asset, due diligence, selling) | Strong conversion bridge — seller-preparation content feeds directly into the Health Check offer |
-| 5 | P3 — Minute Book (articles 1–2 first) | Strong conversion content; financing and sale angles have low competition |
-| 6 | P4 — Commercial Contracts | Depth play after authority is established; individual clause topics may outperform pillar page |
-| 7 | Remaining cluster articles + brand framework content | — |
+| 5 | P3 — Canadian Subsidiary (articles 1–2 first) | Strong conversion content; financing and sale angles have low competition |
+| 6 | P6 — Commercial Lending (articles 2–4 first: PPSA, personal guarantee, private lender) | Low competition on the legal obligation layer; PPSA and guarantee content has high practical anxiety — searchers are in-deal and primed to act |
+| 7 | P4 — Commercial Contracts | Depth play after authority is established; individual clause topics may outperform pillar page |
+| 8 | Remaining cluster articles + brand framework content | — |
 
 ---
 

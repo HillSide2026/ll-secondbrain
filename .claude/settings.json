@@ -3,21 +3,14 @@
     "sharepoint": {
       "command": "python3",
       "args": [
-        "/Users/matthewajlevinelaw/Repos/ll-secondbrain/scripts/sharepoint_mcp_server.py"
+        "/Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/sharepoint_mcp_server.py"
       ],
       "env": {}
     },
     "gmail": {
       "command": "python3",
       "args": [
-        "/Users/matthewajlevinelaw/Repos/ll-secondbrain/scripts/gmail_mcp_server.py"
-      ],
-      "env": {}
-    },
-    "canva": {
-      "command": "python3",
-      "args": [
-        "/Users/matthewajlevinelaw/Repos/ll-secondbrain/canva_bridge.py"
+        "/Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/gmail_mcp_server.py"
       ],
       "env": {}
     }
@@ -29,7 +22,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 /Users/matthewajlevinelaw/Repos/ll-secondbrain/scripts/validate_canonical_write.py"
+            "command": "python3 /Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/validate_canonical_write.py"
           }
         ]
       }
