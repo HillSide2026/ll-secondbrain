@@ -22,6 +22,15 @@ Govern the weekly delivery-facing matter report so ML1 receives a consistent, bo
 - Delivery-state visibility, blockers, and escalations
 - Read-only aggregation from existing matter systems
 
+### Upstream Relationship
+
+- The weekly report may consume fulfillment-readiness and queue signals from
+  `03_FIRM_OPERATIONS/MATTER_OPERATIONS_QUEUE/`.
+- The weekly report may also consume lawyer-facing derivative visibility from
+  `LLP-023 Matter Command and Control`.
+- `LLP-003` does not own either upstream layer; it is a bounded reporting
+  surface that summarizes them for delivery use.
+
 ### Out of Scope
 
 - Modifying Clio source-of-truth fields
