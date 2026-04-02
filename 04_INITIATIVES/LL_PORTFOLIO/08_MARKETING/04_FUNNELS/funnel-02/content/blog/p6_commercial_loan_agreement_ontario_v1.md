@@ -111,3 +111,11 @@ At that stage, the borrower's ability to change structure, fix documentation gap
 That is why the legal review of a commercial loan agreement is not just about understanding the document. It is about understanding how that document interacts with the existing corporate structure, prior obligations, and future plans of the business.
 
 For Ontario operators in the $1M–$10M range, that interaction is often where the real risk sits.
+
+## The Ontario Corporate Health Check
+
+Before a lender advances funds, the borrowing corporation's records, shareholder structure, minute book, and existing obligations are reviewed.
+
+Gaps in those records — incomplete minutes, undocumented resolutions, inconsistent shareholder arrangements — are not negotiated away during the financing process. They become conditions to closing, or reasons for delay. A business that has identified and addressed those gaps before approaching a lender is in a materially stronger position.
+
+For Ontario businesses between $1M and $8M preparing for a financing transaction, the Corporate Health Check is the structured entry point for that preparation.

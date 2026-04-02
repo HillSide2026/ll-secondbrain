@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-03-30
-last_updated: 2026-03-30
+last_updated: 2026-04-01
 tags: [funnel-02, blog, p4, commercial-contracts, pillar, ontario, corporate]
 content_type: pillar
 entry_offer: EO — Corporate Health Check
@@ -85,3 +85,11 @@ Most businesses review contracts reactively.
 The better question is whether the contract would hold under pressure before that pressure exists.
 
 That is not always clear from the document alone.
+
+## The Ontario Corporate Health Check
+
+Commercial contract risk is one of five areas reviewed in the Ontario Corporate Health Check.
+
+A structured review maps how key contracts allocate risk and whether that allocation aligns with how the business actually operates. Where provisions — individually or in combination — create exposure the business cannot absorb, that is identified and prioritized before a counterparty, a claim, or a transaction makes it active.
+
+For Ontario businesses between $1M and $8M, the Corporate Health Check is the structured entry point for that process.

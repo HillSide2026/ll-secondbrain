@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-03-30
-last_updated: 2026-03-30
+last_updated: 2026-04-01
 tags: [funnel-02, blog, p5, transactions, buying, selling, business, pillar, ontario, corporate]
 content_type: pillar
 entry_offer: EO — Corporate Health Check
@@ -83,3 +83,11 @@ Most transactions reach a point where assumptions are tested.
 Price, structure, and risk allocation are revisited. At that stage, leverage depends on preparation and clarity.
 
 The transaction reflects not just the business, but how well it has been organized for transfer.
+
+## The Ontario Corporate Health Check
+
+Pre-transaction structural readiness is one of five areas reviewed in the Ontario Corporate Health Check.
+
+A buyer's due diligence will examine ownership clarity, minute book integrity, contract consistency, employment classification, and governance alignment. A business owner who identifies and addresses those gaps before going to market is in a materially stronger position — on price, on conditions, and on timeline — than one who discovers them during diligence.
+
+For Ontario businesses between $1M and $8M contemplating a sale or acquisition, the Corporate Health Check is the structured entry point for that preparation.

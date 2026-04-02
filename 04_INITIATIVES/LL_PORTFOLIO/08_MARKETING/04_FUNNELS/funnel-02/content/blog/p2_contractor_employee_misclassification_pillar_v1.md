@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-03-30
-last_updated: 2026-03-30
+last_updated: 2026-04-01
 tags: [funnel-02, blog, p2, contractor, employee, misclassification, pillar, ontario, employment]
 content_type: pillar
 entry_offer: EO — Corporate Health Check
@@ -113,3 +113,11 @@ They assess it when something forces the issue.
 By then, the relationship has already developed, and the exposure has already accrued.
 
 Understanding that gap is the starting point.
+
+## The Ontario Corporate Health Check
+
+Employment and contractor classification is one of five areas reviewed in the Ontario Corporate Health Check.
+
+A structured review maps how current contractor and employment relationships function in practice against the legal tests applied by the CRA and Ontario courts. Where the gap between structure and reality creates exposure, that exposure is identified before a claim, audit, or transaction forces the issue.
+
+For Ontario businesses between $1M and $8M, the Corporate Health Check is the structured entry point for that process.

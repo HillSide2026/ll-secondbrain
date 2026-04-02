@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-03-30
-last_updated: 2026-03-30
+last_updated: 2026-04-01
 tags: [funnel-02, blog, p3, subsidiary, canada, ontario, foreign-business, pillar, corporate]
 content_type: pillar
 entry_offer: EO — Corporate Health Check
@@ -101,3 +101,11 @@ Once operations begin, structure becomes harder to change.
 The initial decisions continue to shape how the business is taxed, regulated, and managed.
 
 Understanding those decisions at the outset determines whether the structure will hold as the business scales.
+
+## The Ontario Corporate Health Check
+
+A newly established or recently acquired Canadian subsidiary is a natural Corporate Health Check candidate.
+
+Incomplete corporate records, undocumented intercompany arrangements, and misaligned governance structures are almost universal at early stages. A structured review identifies where the Canadian entity's legal framework does not yet reflect how the business actually operates — before those gaps are exposed by a regulator, a bank, or an external transaction.
+
+For foreign businesses operating in Ontario through a subsidiary, the Corporate Health Check is the structured entry point for that review.

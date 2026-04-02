@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-03-30
-last_updated: 2026-03-30
+last_updated: 2026-04-01
 tags: [funnel-02, blog, sha, pillar, shareholder-agreement, ontario, corporate]
 content_type: pillar
 entry_offer: EO — Corporate Health Check
@@ -117,3 +117,11 @@ At that point, the agreement becomes active.
 Whether it works or not depends on whether it has kept pace with the business.
 
 Understanding that gap is the first step. Closing it is a separate exercise.
+
+## The Ontario Corporate Health Check
+
+Shareholder and ownership structure is one of five areas reviewed in the Ontario Corporate Health Check.
+
+A structured review maps how the existing agreement interacts with actual ownership, decision-making authority, and the expectations of each shareholder. Where the agreement no longer reflects reality, that gap is identified and prioritized before it becomes a dispute or a transaction problem.
+
+For Ontario businesses between $1M and $8M, the Corporate Health Check is the structured entry point for that process.
