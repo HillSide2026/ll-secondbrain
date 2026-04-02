@@ -12,7 +12,8 @@ tags: []
 
 ## Core Rule
 
-Each matter is represented using **THREE independent fields**. These fields are orthogonal and must not be conflated.
+Each matter is represented using **THREE canonical fields**. These fields are
+orthogonal and must not be conflated.
 
 ---
 
@@ -41,9 +42,26 @@ Each matter is represented using **THREE independent fields**. These fields are 
 | Attribute | Value |
 |-----------|-------|
 | Source of truth | Admin team / ops |
-| Allowed values | `urgent` \| `active` \| `keep in view` \| `dormant` |
+| Allowed values | `urgent` \| `active` \| `keep in view` \| `dormant` \| `closing` |
 | Meaning | Admin workload state for the matter |
 | Storage | Metadata field in 00_META.md |
+
+---
+
+## Secondary Operational Field
+
+### fulfillment_stage (Operational Workflow Guide) — SECONDARY
+
+| Attribute | Value |
+|-----------|-------|
+| Source of truth | Team workflow / governed operational handling |
+| Typical values | `onboarding` \| `opening` \| `maintenance` \| `pending_close` \| `closed` |
+| Meaning | Guides how the team should handle the matter operationally |
+| Canonical standing | Secondary — useful operationally, but not one of the core canonical matter fields |
+
+`fulfillment_stage` is allowed and useful for workflow guidance, handoffs, and
+team coordination, but it must not be presented as a peer to the three
+canonical matter fields.
 
 ---
 
@@ -59,7 +77,8 @@ Each matter is represented using **THREE independent fields**. These fields are 
 └── PARKED/
 ```
 
-status (Clio) and fulfillment_status (admin) are metadata fields within each matter's 00_META.md.
+status (Clio) and fulfillment_status (admin) are metadata fields within each
+matter's `00_META.md`.
 
 ---
 
@@ -73,6 +92,7 @@ status (Clio) and fulfillment_status (admin) are metadata fields within each mat
 | urgent → Essential | Admin workload ≠ lawyer priority |
 | Closed → dormant | Clio status ≠ admin workload |
 | Essential → urgent | Lawyer priority ≠ admin workload |
+| fulfillment_stage → fulfillment_status | Workflow position ≠ admin workload state |
 
 ---
 
@@ -92,7 +112,14 @@ When listing matters, present three fields separately:
 ```yaml
 status: Open|Pending|Closed
 delivery_status: Essential|Strategic|Standard|Parked
-fulfillment_status: urgent|active|keep in view|dormant
+fulfillment_status: urgent|active|keep in view|dormant|closing
 ```
 
-Do not merge or rename fields.
+Secondary operational field when needed:
+
+```yaml
+fulfillment_stage: onboarding|opening|maintenance|pending_close|closed
+```
+
+Do not merge or rename the canonical fields. Do not treat `fulfillment_stage`
+as a fourth canonical field.

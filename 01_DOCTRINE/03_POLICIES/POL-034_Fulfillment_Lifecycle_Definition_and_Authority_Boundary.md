@@ -13,11 +13,21 @@ tags: [policy, fulfillment, lifecycle, authority, gates]
 
 Policy Statement: Fulfillment is the governed administrative system that begins at Onboarding and ends at Closed. Fulfillment is not legal delivery and must operate within explicit gate, scope, and authority boundaries.
 
-Scope: Fulfillment operates at the **matter level** — one fulfillment lifecycle instance per matter.
+Scope: Fulfillment operates at the **matter level** — one fulfillment lifecycle
+instance per matter.
 
-Two fulfillment fields exist on every matter. They are independent:
-- `fulfillment_stage` — the sequential lifecycle position (defined in this policy)
-- `fulfillment_status` — the operational priority state within the current stage (`urgent` / `active` / `keep in view` / `closing`)
+`fulfillment_status` is the canonical fulfillment-side matter field. It
+captures the operational posture of the matter for admin / ops purposes.
+
+`fulfillment_stage` is a secondary operational field. It is useful for guiding
+team workflow, sequencing, handoffs, and readiness logic, but it is not one of
+the core canonical matter fields.
+
+The two fulfillment concepts are independent:
+- `fulfillment_status` — the canonical operational priority state (`urgent` /
+  `active` / `keep in view` / `dormant` / `closing`)
+- `fulfillment_stage` — the sequential lifecycle position defined in this
+  policy
 
 Terminology rules:
 - `onboarding` is the canonical fulfillment-stage label for the first stage.

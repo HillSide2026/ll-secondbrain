@@ -24,22 +24,30 @@ This protocol governs:
 
 1. The per-matter summary file (`MATTER_BRIEF.md`) — its required content, creation, and currency rules
 2. The firm-wide task surface (`LAWYER_TASK_TRACKER.md`) — how tasks are identified, added, updated, and closed
-3. The three matter status fields (Clio Status, Delivery Status, Fulfillment Status) — their definitions, source of truth, and permitted values
+3. The three canonical matter fields (Clio Status, Delivery Status, Fulfillment Status) — their definitions, source of truth, and permitted values
 
 ---
 
 ## 2. Matter Status Fields
 
-Four fields describe every matter. They are independent axes.
+Three canonical fields describe every matter. They are independent axes.
 
 | Field | Level | Source of truth | Permitted values | Who sets it |
 |-------|-------|----------------|-----------------|-------------|
 | **Clio Status** | Matter | Clio (hardwired) | `Open`, `Closed`, `Pending` | Clio only |
 | **Delivery Status** | Matter | Matter folder location in repo | `Essential`, `Strategic`, `Standard`, `Parked` | ML1 only |
-| **Fulfillment Stage** | Matter | MATTER.yaml in repo | `onboarding`, `opening`, `maintenance`, `pending_close`, `closed` | ML1 only |
-| **Fulfillment Status** | Matter | MATTER.yaml in repo | `urgent`, `active`, `keep in view`, `closing` | ML1 only |
+| **Fulfillment Status** | Matter | MATTER.yaml in repo | `urgent`, `active`, `keep in view`, `dormant`, `closing` | ML1 only |
 
 Note: `engagement_stage` is a client-level field (not a matter field) governed by POL-052. It does not appear in MATTER.yaml or any matter-level artifact.
+
+### Secondary Operational Field
+
+`Fulfillment Stage` is a secondary operational field, not a core canonical
+matter field.
+
+It is useful for guiding team workflow and handoffs and is governed by
+`POL-034`, but it should not be presented as a peer to the three canonical
+matter fields.
 
 **Definitions:**
 
@@ -49,22 +57,25 @@ Note: `engagement_stage` is a client-level field (not a matter field) governed b
   - `Standard` — ordinary active matters; billable but not disproportionately important
   - `Parked` — not currently active; monitoring only
 
-- **Fulfillment Stage** reflects the sequential administrative lifecycle position of the matter (governed by POL-034).
+- **Fulfillment Status** reflects the operational priority state of the matter within its current stage.
+  - `urgent` — immediate action required; delivery or deadline pressure
+  - `active` — normal active state; work proceeding
+  - `keep in view` — low or no immediate action; monitoring
+  - `dormant` — presently inactive from an admin / ops perspective but not necessarily closed
+  - `closing` — matter winding down toward Pending Close
+
+- **Fulfillment Stage** is the secondary operational workflow guide for the
+  matter (governed by `POL-034`).
   - `onboarding` — consult scheduled; engagement letter being prepared; `status = pending`
   - `opening` — engagement signed; matter setup underway; `status = open`
   - `maintenance` — necessary administration of matter; `status = open`
   - `pending_close` — work complete; administrative file closure; `status = pending`
   - `closed` — terminal; requires `close_reason` (`completed` / `declined` / `terminated`); `status = closed`
 
-- **Fulfillment Status** reflects the operational priority state of the matter within its current stage.
-  - `urgent` — immediate action required; delivery or deadline pressure
-  - `active` — normal active state; work proceeding
-  - `keep in view` — low or no immediate action; monitoring
-  - `closing` — matter winding down toward Pending Close
-
 **Rules:**
 - ML2 must never change any of these fields without explicit ML1 instruction.
 - Delivery Status is encoded in the matter's folder path (e.g., `05_MATTERS/ESSENTIAL/`). The folder is the source of truth — if MATTER.yaml disagrees with the folder, flag to ML1.
+- Fulfillment Stage is secondary and operational; it must not be treated as a fourth canonical field.
 - Fulfillment Stage and Fulfillment Status are independent — any combination is valid (e.g., `maintenance` / `urgent`).
 
 ---
