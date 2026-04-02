@@ -27,7 +27,7 @@ so ML1 can see whether the open-matter base is actually being kept
 reconciled and action-ready.
 
 Downstream visibility overlays may build on this maintained base. In
-particular, the Matter Operations Queue depends on Matter Maintenance to keep
+particular, the Fulfillment Matter Queue depends on Matter Maintenance to keep
 the open-matter base sufficiently reconciled that matters across onboarding,
 opening, maintenance, and closing can be surfaced reliably to fee earners,
 including which matters are docketing-ready.
@@ -46,7 +46,7 @@ A running maintenance cycle that produces, on each execution:
 - Inbox governance (Gmail threads triaged, labeled, and linked to Clio matter IDs)
 
 These outputs are administrative and reconciliation outputs first. They may be
-be consumed by downstream layers such as the Matter Operations Queue, but they
+be consumed by downstream layers such as the Fulfillment Matter Queue, but they
 do not themselves determine delivery posture for fee earners.
 
 ## 4. Authority

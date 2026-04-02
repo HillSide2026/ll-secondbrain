@@ -32,7 +32,7 @@ Final approval authority: ML1.
 
 ## 6. Promotion Path
 Outputs may migrate to:
-- `03_FIRM_OPERATIONS/MATTER_OPERATIONS_QUEUE`
+- `03_FIRM_OPERATIONS/FULFILLMENT_MATTER_QUEUE`
 - `05_MATTER_DOCKETING`
 - `00_SYSTEM/orchestration`
 

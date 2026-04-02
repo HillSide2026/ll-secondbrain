@@ -12,4 +12,4 @@ Project Path: 05_MATTER_DOCKETING/LLP-003_WEEKLY_REPORT
 - Matter-docketing workflows that contribute delivery-state signals
 
 ## Governance Stakeholders
-- 03_FIRM_OPERATIONS/MATTER_OPERATIONS_QUEUE, where queue semantics and delivery-state language are defined
+- 03_FIRM_OPERATIONS/FULFILLMENT_MATTER_QUEUE, where queue semantics and delivery-state language are defined

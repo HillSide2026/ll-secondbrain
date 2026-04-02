@@ -25,7 +25,7 @@ Govern the weekly delivery-facing matter report so ML1 receives a consistent, bo
 ### Upstream Relationship
 
 - The weekly report may consume fulfillment-readiness and queue signals from
-  `03_FIRM_OPERATIONS/MATTER_OPERATIONS_QUEUE/`.
+  `03_FIRM_OPERATIONS/FULFILLMENT_MATTER_QUEUE/`.
 - The weekly report may also consume lawyer-facing derivative visibility from
   `LLP-023 Matter Command and Control`.
 - `LLP-003` does not own either upstream layer; it is a bounded reporting

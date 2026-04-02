@@ -131,8 +131,8 @@ Skill map: `00_SYSTEM/AGENTS/specs/marketing/MARKETING_AGENT_SKILL_MAP.md`
 | Agent | Class | Status | Path | Notes |
 | --- | --- | --- | --- | --- |
 | Matter Management Agent — Stage 2.11 | SMA | Draft | `00_SYSTEM/AGENTS/specs/AGENT__MATTER_MANAGEMENT__STAGE_2_11.md` |  |
-| AGENT SPEC — Matter Operations Queue Tracker | SMA | Draft | `00_SYSTEM/AGENT_SPEC-MATTER_OPERATIONS_QUEUE_TRACKER.md` |  |
-| AGENT SPEC — Matter Operations Queue Tracker | SMA | Draft | `04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/AGENT_SPEC-MATTER_OPERATIONS_QUEUE_TRACKER.md` |  |
+| AGENT SPEC — Fulfillment Matter Queue Tracker | SMA | Draft | `00_SYSTEM/AGENT_SPEC-FULFILLMENT_MATTER_QUEUE_TRACKER.md` |  |
+| AGENT SPEC — Fulfillment Matter Queue Tracker | SMA | Draft | `04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/AGENT_SPEC-FULFILLMENT_MATTER_QUEUE_TRACKER.md` |  |
 
 ### Agent Frameworks (Not Agents)
 

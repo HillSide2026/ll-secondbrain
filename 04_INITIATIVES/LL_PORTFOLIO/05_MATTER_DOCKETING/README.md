@@ -77,10 +77,10 @@ Admin and accounting workflows exist as **parallel systems** and may create depe
 
 ## 5. Core Components
 
-### 5.1 Matter Operations Queue Relationship
+### 5.1 Fulfillment Matter Queue Relationship
 
-The Matter Operations Queue is a **fulfillment-side reporting mechanism**
-defined under `03_FIRM_OPERATIONS/MATTER_OPERATIONS_QUEUE/`.
+The Fulfillment Matter Queue is a **fulfillment-side reporting mechanism**
+defined under `03_FIRM_OPERATIONS/FULFILLMENT_MATTER_QUEUE/`.
 
 It is not owned by the Matter Docketing portfolio.
 
@@ -134,7 +134,7 @@ Dependencies are **facts**, not tasks.
 ## 6. Interaction With Other Portfolios
 
 * **Practice Areas:** Provide reusable execution knowledge; do not own matter state
-* **Firm Operations:** Own fulfillment mechanics and the Matter Operations Queue; Matter Docketing consumes those readiness signals but does not define them
+* **Firm Operations:** Own fulfillment mechanics and the Fulfillment Matter Queue; Matter Docketing consumes those readiness signals but does not define them
 * **LLP-023 Matter Command and Control:** Provides the derivative,
   cross-system matter-visibility layer for lawyers; Matter Docketing may
   consume those visibility outputs but does not own the command layer
@@ -162,7 +162,7 @@ ML1 is the sole authority for:
 - Judgment, prioritization, and acceptance of matters
 - Approving State transitions
 - Defining new States or Activity Periods
-- Authorizing any automated operations queue changes
+- Authorizing any automated Fulfillment Matter Queue changes
 
 ## Explicit Prohibitions
 
@@ -172,7 +172,7 @@ The System must NOT:
 - Make or enforce decisions
 - Track billing, accounting, or admin work
 - Model intake, leads, sales, or marketing
-- Redefine Matter Operations Queue states or fulfillment readiness rules
+- Redefine Fulfillment Matter Queue states or fulfillment readiness rules
 
 ## Approval State
 

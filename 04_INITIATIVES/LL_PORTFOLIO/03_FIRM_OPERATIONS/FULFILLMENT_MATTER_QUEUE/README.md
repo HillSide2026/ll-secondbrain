@@ -1,6 +1,6 @@
 ---
-id: 04_initiatives__ll_portfolio__03_firm_operations__matter_operations_queue__readme_md
-title: Matter Operations Queue
+id: 04_initiatives__ll_portfolio__03_firm_operations__fulfillment_matter_queue__readme_md
+title: Fulfillment Matter Queue
 owner: ML1
 status: draft
 created_date: 2026-02-08
@@ -8,9 +8,9 @@ last_updated: 2026-02-08
 tags: []
 ---
 
-# Matter Operations Queue
+# Fulfillment Matter Queue
 
-**Location:** `LL_PORTFOLIO/03_FIRM_OPERATIONS/MATTER_OPERATIONS_QUEUE/`
+**Location:** `LL_PORTFOLIO/03_FIRM_OPERATIONS/FULFILLMENT_MATTER_QUEUE/`
 
 **Status:** Draft — Requires ML1 Approval
 
@@ -18,7 +18,7 @@ tags: []
 
 ## 1. Purpose
 
-The Matter Operations Queue defines **fulfillment-stage visibility and
+The Fulfillment Matter Queue defines **fulfillment-stage visibility and
 docketing flow** for matters across the governed fulfillment lifecycle.
 
 It covers matters at all fulfillment stages:
@@ -36,43 +36,43 @@ Administrative and accounts work still exists as a **parallel workstream** for
 many purposes, but fulfillment-stage visibility across onboarding, opening,
 maintenance, and closing is in scope for the queue.
 
-The operations queue is therefore optimized to answer:
+The Fulfillment Matter Queue is therefore optimized to answer:
 
 * Which matters are docketing-ready?
 * Which matters are actively being delivered?
 * How much delivery capacity is currently in use?
 * Where is each matter in the fulfillment lifecycle right now?
 
-It is **not a linear workflow**. Legal delivery is episodic, cyclical, and frequently dormant. The operations queue therefore models matters as:
+It is **not a linear workflow**. Legal delivery is episodic, cyclical, and frequently dormant. The Fulfillment Matter Queue therefore models matters as:
 
 * **States** — stable, low-cardinality delivery conditions describing what a matter *is*
 * **Activity Periods** — repeatable, high-cardinality descriptions of what is *happening (or not happening)* in delivery over time
 
 ### Relationship to Matter Maintenance
 
-The Matter Operations Queue sits downstream of Matter Maintenance.
+The Fulfillment Matter Queue sits downstream of Matter Maintenance.
 
 Matter Maintenance is a specific scope of work assigned to a teammate within
 LL. The governed fulfillment system monitors that maintenance work and keeps a
 reconciled view of whether the open-matter base is actually being maintained.
 
-The Matter Operations Queue builds on that monitored maintenance substrate to
+The Fulfillment Matter Queue builds on that monitored maintenance substrate to
 make fulfillment-stage visibility salient to fee earners, especially by
 answering which matters are in onboarding, opening, maintenance, or closing,
 which are docketing-ready, and where current delivery load sits.
 
-The operations queue is therefore an extension of Matter Maintenance, not a
+The Fulfillment Matter Queue is therefore an extension of Matter Maintenance, not a
 replacement for it. It must not be used to compensate for unresolved
 maintenance gaps in the underlying matter substrate.
 
-The Matter Operations Queue has not yet been assigned inside LL. For now, its
+The Fulfillment Matter Queue has not yet been assigned inside LL. For now, its
 operating owner is ML2.
 
 ---
 
 ## 2. Hard Scope Boundary
 
-The Matter Operations Queue applies **only to matters**.
+The Fulfillment Matter Queue applies **only to matters**.
 
 It explicitly excludes:
 
@@ -88,7 +88,7 @@ out of scope.
 
 ### Relationship to System of Record
 
-The Matter Operations Queue **does not replace or modify** existing matter status fields in the system of record.
+The Fulfillment Matter Queue **does not replace or modify** existing matter status fields in the system of record.
 
 Matters already carry authoritative tags such as:
 
@@ -100,14 +100,14 @@ Matters already carry authoritative tags such as:
 
 **These remain the source-of-truth fields.**
 
-The Matter Operations Queue introduces **additional, real-time operational tags**:
+The Fulfillment Matter Queue introduces **additional, real-time operational tags**:
 
 | Field | Source | Purpose |
 |-------|--------|---------|
-| State | Matter Operations Queue | Delivery posture |
-| Activity Period(s) | Matter Operations Queue | What is happening now |
+| State | Fulfillment Matter Queue | Delivery posture |
+| Activity Period(s) | Fulfillment Matter Queue | What is happening now |
 
-The operations queue tags are **supplementary** — they do not override or conflict with system of record fields.
+The Fulfillment Matter Queue tags are **supplementary** — they do not override or conflict with system of record fields.
 
 ---
 
@@ -234,9 +234,9 @@ The matter remains **Active** throughout.
 
 ---
 
-## 6. What the Matter Operations Queue Does NOT Do
+## 6. What the Fulfillment Matter Queue Does NOT Do
 
-The operations queue does not:
+The Fulfillment Matter Queue does not:
 
 * Evaluate performance
 * Judge efficiency
@@ -287,7 +287,7 @@ The System may **observe and report** against this intent but must not:
 
 ## 9. Enforcement Rules
 
-* The Matter Operations Queue governs **matter visibility across onboarding, opening, maintenance, and closing**
+* The Fulfillment Matter Queue governs **matter visibility across onboarding, opening, maintenance, and closing**
 * Billing and accounting remain parallel workstreams and must not be modeled as queue states or activity periods
 * No linear progression assumptions are permitted
 * No lead, funnel, or sales concepts may be introduced
@@ -305,7 +305,7 @@ ML1 is the sole authority for:
 - Approving state transitions
 - Defining new states or periods
 - Setting capacity targets
-- Interpreting operations queue conditions
+- Interpreting Fulfillment Matter Queue conditions
 
 ## Explicit Prohibitions
 

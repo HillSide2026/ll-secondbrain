@@ -23,7 +23,7 @@ Stand up a governed weekly reconciliation workflow (Sunday cadence) that refresh
   whether the LL teammate responsible for maintenance is keeping the open
   matter base reconciled and action-ready.
 - Preparing a sufficiently reconciled open-matter substrate for downstream
-  visibility layers, including the Matter Operations Queue.
+  visibility layers, including the Fulfillment Matter Queue.
 
 ## Out of Scope
 - Legal judgment, legal strategy, or client-facing substantive decisions.
