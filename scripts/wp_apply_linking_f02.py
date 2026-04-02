@@ -28,6 +28,9 @@ Flows:
   P5 Transactions (pillar: 2000):
     2007 → 1999 → 2003 → 2001 → 2005 → 2002 → 2006 → 2004 → back to 2000
 
+  P6 Commercial Lending (pillar: 3001 — PLACEHOLDER IDs, replace after WP publish):
+    3002 → 3003 → 3004 → 3005 → 3006 → 3007 → 3008 → back to 3001
+
 Tags: pillar-based + topic-based from frontmatter (filtered to SEO-relevant terms)
 """
 
@@ -67,7 +70,7 @@ HEADERS = {
 # ── Post registry ─────────────────────────────────────────────────────────────
 
 # Tags: skip internal/system tags, keep SEO-relevant ones
-SKIP_TAGS = {"funnel-02", "blog", "pillar", "supporting", "p1", "p2", "p3", "p4", "p5", "sha"}
+SKIP_TAGS = {"funnel-02", "blog", "pillar", "supporting", "p1", "p2", "p3", "p4", "p5", "p6", "sha"}
 
 POSTS = {
     # P1 — SHA
@@ -340,6 +343,87 @@ POSTS = {
         "topic_tags": ["assignment", "sale", "restructure", "ontario", "corporate", "contracts"],
     },
 
+    # P6 — Commercial Lending
+    # WP IDs are placeholders — replace with real IDs after publishing
+    3001: {
+        "slug": "commercial-loan-agreement-ontario",
+        "title": "Commercial Lending in Ontario: What the Legal Documents Actually Say",
+        "anchor": "what commercial loan documents actually contain",
+        "role": "pillar",
+        "pillar_tags": ["commercial-lending"],
+        "topic_tags": ["commercial-lending", "ppsa", "ontario", "corporate"],
+    },
+    3002: {
+        "slug": "ppsa-security-registration-ontario",
+        "title": "PPSA Security in Ontario: What It Means When a Lender Registers Against a Business",
+        "anchor": "what a PPSA registration means for a business",
+        "role": "post",
+        "forward": 3003,
+        "forward_anchor": "what personal guarantees cover in commercial lending",
+        "pillar_tags": ["commercial-lending"],
+        "topic_tags": ["ppsa", "commercial-lending", "ontario", "corporate"],
+    },
+    3003: {
+        "slug": "personal-guarantee-commercial-loan-ontario",
+        "title": "Personal Guarantees in Commercial Lending: What Ontario Business Owners Are Actually Signing",
+        "anchor": "what personal guarantees cover in commercial lending",
+        "role": "post",
+        "forward": 3004,
+        "forward_anchor": "how private lending differs from bank lending in Ontario",
+        "pillar_tags": ["commercial-lending"],
+        "topic_tags": ["personal-guarantee", "commercial-lending", "ontario", "corporate"],
+    },
+    3004: {
+        "slug": "private-lender-ontario",
+        "title": "Private Lenders in Ontario: What Borrowers Need to Know Before They Sign",
+        "anchor": "how private lending differs from bank lending in Ontario",
+        "role": "post",
+        "forward": 3005,
+        "forward_anchor": "legal requirements for private mortgage lending in Ontario",
+        "pillar_tags": ["commercial-lending"],
+        "topic_tags": ["private-lending", "commercial-lending", "ontario", "corporate"],
+    },
+    3005: {
+        "slug": "private-mortgage-lending-ontario",
+        "title": "Private Mortgage Lending in Ontario: Legal Requirements for Lenders and Borrowers",
+        "anchor": "legal requirements for private mortgage lending in Ontario",
+        "role": "post",
+        "forward": 3006,
+        "forward_anchor": "how commercial lenders enforce against Ontario businesses",
+        "pillar_tags": ["commercial-lending"],
+        "topic_tags": ["private-lending", "private-mortgage", "ontario", "corporate"],
+    },
+    3006: {
+        "slug": "commercial-loan-default-enforcement-ontario",
+        "title": "What Happens When a Commercial Lender Enforces Against an Ontario Business",
+        "anchor": "how commercial lenders enforce against Ontario businesses",
+        "role": "post",
+        "forward": 3007,
+        "forward_anchor": "the legal risks of crypto-backed lending in Ontario",
+        "pillar_tags": ["commercial-lending"],
+        "topic_tags": ["commercial-lending", "ppsa", "enforcement", "default", "ontario", "corporate"],
+    },
+    3007: {
+        "slug": "crypto-backed-lending-ontario",
+        "title": "Crypto-Backed Lending in Ontario: What Borrowers Need to Know About Using Digital Assets as Collateral",
+        "anchor": "the legal risks of crypto-backed lending in Ontario",
+        "role": "post",
+        "forward": 3008,
+        "forward_anchor": "how to structure a private lending operation in Ontario",
+        "pillar_tags": ["commercial-lending"],
+        "topic_tags": ["crypto", "digital-assets", "ppsa", "commercial-lending", "ontario", "corporate"],
+    },
+    3008: {
+        "slug": "set-up-private-lending-ontario",
+        "title": "Setting Up a Private Lending Operation in Ontario: Legal Structure and Documentation Requirements",
+        "anchor": "how to structure a private lending operation in Ontario",
+        "role": "post",
+        "forward": 3001,
+        "forward_anchor": "what commercial loan documents actually contain",
+        "pillar_tags": ["commercial-lending"],
+        "topic_tags": ["private-lending", "ppsa", "ontario", "corporate"],
+    },
+
     # P5 — Transactions
     2000: {
         "slug": "buying-selling-business-ontario",
@@ -438,6 +522,7 @@ PILLAR_MAP = {
     1991: [1987, 1988, 1992, 1990, 1986, 1989],
     1994: [1998, 1997, 1996, 1993, 1995],
     2000: [2007, 1999, 2003, 2001, 2005, 2002, 2006, 2004],
+    3001: [3002, 3003, 3004, 3005, 3006, 3007, 3008],  # P6 — placeholder IDs
 }
 
 # Build reverse: post → pillar
