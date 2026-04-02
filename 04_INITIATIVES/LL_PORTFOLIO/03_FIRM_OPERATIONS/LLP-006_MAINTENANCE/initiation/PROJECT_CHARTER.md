@@ -21,6 +21,17 @@ last_updated: 2026-03-19
 
 Establish a repeatable, bounded matter maintenance function that keeps open matter records accurate, consistent, and action-ready across Clio, SharePoint, and Gmail. Produce a structured exception list for ML1 review on each maintenance cycle. Includes inbox governance and filing protocol.
 
+This function is a specific scope of work assigned to a teammate within LL.
+The governed system exists in part to monitor that teammate's maintenance work
+so ML1 can see whether the open-matter base is actually being kept
+reconciled and action-ready.
+
+Downstream visibility overlays may build on this maintained base. In
+particular, the Matter Operations Queue depends on Matter Maintenance to keep
+the open-matter base sufficiently reconciled that matters across onboarding,
+opening, maintenance, and closing can be surfaced reliably to fee earners,
+including which matters are docketing-ready.
+
 ## 2. Nature of Project
 
 Operational — this is ongoing hygiene work, not a capability build. It has a bounded implementation phase (standing up the process) followed by a steady-state operating phase. It does not carry financial or strategic risk — only operational risk (scope, schedule, budget).
@@ -33,6 +44,10 @@ A running maintenance cycle that produces, on each execution:
 - An ML1 action queue (items requiring judgment or authorization)
 - Real filing (documents placed into correct SharePoint matter folders per filing protocol)
 - Inbox governance (Gmail threads triaged, labeled, and linked to Clio matter IDs)
+
+These outputs are administrative and reconciliation outputs first. They may be
+be consumed by downstream layers such as the Matter Operations Queue, but they
+do not themselves determine delivery posture for fee earners.
 
 ## 4. Authority
 

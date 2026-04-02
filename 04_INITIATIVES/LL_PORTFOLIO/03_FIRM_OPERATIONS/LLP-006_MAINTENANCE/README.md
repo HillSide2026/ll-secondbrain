@@ -14,6 +14,24 @@ tags: [firm-operations, maintenance, executing]
 
 Run the governed matter-maintenance cycle across Clio, SharePoint, Gmail, and related firm systems so open matter records remain accurate, reconciled, and action-ready.
 
+## Relationship to Matter Operations Queue
+
+Matter Maintenance is a specific scope of work assigned to a teammate within
+LL. The governed fulfillment system monitors that teammate's maintenance work
+by checking whether open matter records are being kept accurate, reconciled,
+and action-ready across the relevant firm systems.
+
+The Matter Operations Queue is one such downstream layer. It builds on Matter
+Maintenance to make fulfillment-stage visibility salient to fee earners,
+especially by surfacing which matters are in onboarding, opening,
+maintenance, or closing, and which are docketing-ready or actively
+delivering.
+
+The Matter Operations Queue has not yet been assigned inside LL. For now, its
+operating owner is ML2. It therefore remains an ML2-owned extension layer on
+top of the monitored Matter Maintenance function, not a replacement for that
+assigned maintenance work.
+
 ## Approval State
 
 Planning -> Executing was retroactively approved by ML1 on `2026-03-18`.

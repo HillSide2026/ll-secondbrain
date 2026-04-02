@@ -19,6 +19,11 @@ Stand up a governed weekly reconciliation workflow (Sunday cadence) that refresh
 - Asana linkage checks (matter-tagged work aligned to active matters).
 - Exception list generation, diff vs prior run, and ML1 action queue production.
 - Run logging and provenance capture for each reconciliation cycle.
+- Monitoring the assigned Matter Maintenance scope of work so ML1 can inspect
+  whether the LL teammate responsible for maintenance is keeping the open
+  matter base reconciled and action-ready.
+- Preparing a sufficiently reconciled open-matter substrate for downstream
+  visibility layers, including the Matter Operations Queue.
 
 ## Out of Scope
 - Legal judgment, legal strategy, or client-facing substantive decisions.
@@ -26,6 +31,9 @@ Stand up a governed weekly reconciliation workflow (Sunday cadence) that refresh
 - Autonomous writeback to Clio, SharePoint, or Asana.
 - New matter intake design and marketing funnel operations.
 - Infrastructure/credential administration outside approved connectors.
+- Fee-earner delivery prioritization, docketing selection, or delivery-state
+  interpretation beyond producing the maintained substrate those downstream
+  layers rely on.
 
 ## Implementation Readiness Deliverables
 - `WORKPLAN.md`

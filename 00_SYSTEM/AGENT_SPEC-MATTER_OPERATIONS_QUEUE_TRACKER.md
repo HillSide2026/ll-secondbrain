@@ -25,15 +25,35 @@ Maintain an accurate, inspectable view of the Matter Operations Queue by:
 
 This agent is a registrar + reporter, not a decider.
 
+It operates downstream of Matter Maintenance. Matter Maintenance is a specific
+scope of work assigned to a teammate within LL, and the governed system
+monitors that work to determine whether the open-matter base is actually being
+kept reconciled and action-ready. The Matter Operations Queue Tracker extends
+that monitored base to make fulfillment-stage visibility salient to fee
+earners, especially by surfacing which matters are in onboarding, opening,
+maintenance, or closing, which are docketing-ready, and where current
+delivery load sits.
+
+The Matter Operations Queue has not yet been assigned inside LL. For now, its
+operating owner is ML2.
+
+The queue covers matters across onboarding, opening, maintenance, and closing.
+Its role is not limited to post-opening delivery visibility.
+
 ## 2) Scope Boundary
 
 ### In scope
 - Reading operations queue source-of-truth files (matter records, operations queue tables, weekly briefs, activity logs)
+- Reading relevant Matter Maintenance outputs where needed to confirm the
+  maintained matter substrate and unresolved exceptions
+- Reading fulfillment-stage signals relevant to onboarding, opening,
+  maintenance, and closing visibility
 - Proposing updates to matter states and activity periods as drafts
 - Generating operations queue summaries:
   - docketing-ready matters
   - actively delivering matters
   - capacity utilization proxies (based on activity periods)
+  - matters by fulfillment stage or operational posture
 - Flagging:
   - unmapped matters
   - ambiguous states
@@ -42,6 +62,7 @@ This agent is a registrar + reporter, not a decider.
 ### Out of scope
 - Creating new matters without explicit instruction
 - Changing billing readiness/account setup (explicitly excluded from operations queue)
+- Performing the maintenance reconciliation cycle itself
 - Any “execution claims” (e.g., “filing was completed”) unless verified in the system-of-record
 - Legal judgments, strategy, prioritization, or client advice
 
@@ -51,7 +72,7 @@ This agent is a registrar + reporter, not a decider.
 - Time window (e.g., “last 7 days” or explicit dates)
 - Target corpus scope
   - either: specific matter IDs
-  - or: “all open matters in operations queue”
+  - or: “all matters in fulfillment scope represented in the operations queue”
 
 ### Optional inputs
 - Source bundle pointers (email export, notes dump, etc.)
@@ -77,6 +98,7 @@ Contains:
 Answers:
 - Which matters are docketing-ready?
 - Which matters are actively delivering?
+- Which matters are in onboarding, opening, maintenance, or closing?
 - What changed since last brief?
 - What is uncertain / blocked?
 
@@ -107,6 +129,8 @@ The agent may not modify canonical records directly unless:
 ### Operations queue definition rule
 The Matter Operations Queue is a matter-level operational construct defined in LL_PORTFOLIO/03_FIRM_OPERATIONS/MATTER_OPERATIONS_QUEUE/.
 It must not be inferred from solution_stage or solution pipeline metrics.
+It spans the fulfillment lifecycle for matters in scope, not just post-opening
+delivery.
 
 ### State update rule
 A state change can be proposed only if:

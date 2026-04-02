@@ -18,22 +18,55 @@ tags: []
 
 ## 1. Purpose
 
-The Matter Operations Queue defines **delivery and docketing flow** for matters once a matter has been formally opened.
+The Matter Operations Queue defines **fulfillment-stage visibility and
+docketing flow** for matters across the governed fulfillment lifecycle.
 
-It models **legal delivery work only** — not administrative, accounting, or billing activity.
+It covers matters at all fulfillment stages:
 
-Administrative and accounts work exists as a **parallel workstream** that may create dependencies (e.g., billing readiness, account setup), but is **explicitly excluded from the delivery operations queue**.
+* Onboarding
+* Opening
+* Maintenance
+* Closing
+
+Its practical purpose is to make salient to fee earners which matters are in
+onboarding, opening, maintenance, or closing, and which are ready for
+docketing, actively delivering, blocked, paused, or moving toward closure.
+
+Administrative and accounts work still exists as a **parallel workstream** for
+many purposes, but fulfillment-stage visibility across onboarding, opening,
+maintenance, and closing is in scope for the queue.
 
 The operations queue is therefore optimized to answer:
 
 * Which matters are docketing-ready?
 * Which matters are actively being delivered?
 * How much delivery capacity is currently in use?
+* Where is each matter in the fulfillment lifecycle right now?
 
 It is **not a linear workflow**. Legal delivery is episodic, cyclical, and frequently dormant. The operations queue therefore models matters as:
 
 * **States** — stable, low-cardinality delivery conditions describing what a matter *is*
 * **Activity Periods** — repeatable, high-cardinality descriptions of what is *happening (or not happening)* in delivery over time
+
+### Relationship to Matter Maintenance
+
+The Matter Operations Queue sits downstream of Matter Maintenance.
+
+Matter Maintenance is a specific scope of work assigned to a teammate within
+LL. The governed fulfillment system monitors that maintenance work and keeps a
+reconciled view of whether the open-matter base is actually being maintained.
+
+The Matter Operations Queue builds on that monitored maintenance substrate to
+make fulfillment-stage visibility salient to fee earners, especially by
+answering which matters are in onboarding, opening, maintenance, or closing,
+which are docketing-ready, and where current delivery load sits.
+
+The operations queue is therefore an extension of Matter Maintenance, not a
+replacement for it. It must not be used to compensate for unresolved
+maintenance gaps in the underlying matter substrate.
+
+The Matter Operations Queue has not yet been assigned inside LL. For now, its
+operating owner is ML2.
 
 ---
 
@@ -45,10 +78,13 @@ It explicitly excludes:
 
 * Leads
 * Prospects
-* Pre-engagement evaluation
+* Pre-engagement evaluation before a governed matter record exists
 * Sales funnels or CRM stages
 
-If a matter has not been formally opened, it is **out of scope** by definition.
+The queue enters scope once a governed matter record exists within fulfillment.
+That includes pending matters in onboarding and matters progressing through
+opening, maintenance, and closing. Leads and pre-matter opportunities remain
+out of scope.
 
 ### Relationship to System of Record
 
@@ -75,26 +111,30 @@ The operations queue tags are **supplementary** — they do not override or conf
 
 ---
 
-## 3. Matter States (Delivery-Focused)
+## 3. Matter States (Fulfillment-Focused)
 
-Matter States describe the **delivery posture** of a matter — not its administrative or accounting status.
+Matter States describe the **operational posture** of a matter across the
+fulfillment lifecycle, with special emphasis on stage visibility, delivery
+readiness, and docketing salience for fee earners.
 
 They are:
 
 * Mutually exclusive
 * Few in number
 * Infrequently changed
-* Oriented around docketing and legal work
+* Oriented around fulfillment-stage visibility and docketing readiness
 
-> **Scope note:** This taxonomy applies **only to matters that are open in the system of record (Clio)**. Closed matters are out of scope and not modeled here.
+> **Scope note:** This taxonomy applies to matters in fulfillment scope,
+> including matters in onboarding, opening, maintenance, and closing. Closed
+> matters are out of scope once closure is complete.
 
 ### Minimal, Neutral State Set
 
 1. **Initiating**
 
-   * Matter has been opened in the system of record
-   * Engagement approved
-   * Delivery setup and docketing readiness activities may occur
+   * Matter exists in governed fulfillment scope
+   * Onboarding or opening activity may still be underway
+   * Docketing readiness may still be developing
    * No assumption of substantive legal work yet
 
 2. **Backlog**
@@ -125,15 +165,20 @@ They are:
 
 ---
 
-## 4. Activity Periods (Delivery Only)
+## 4. Activity Periods (Delivery-Salience Layer)
 
-Activity Periods describe **what is happening in legal delivery** during a span of time.
+Activity Periods describe **what is happening in legal delivery** during a
+span of time.
 
 They:
 
-* May occur when a matter is in **Initiating**, **Backlog**, or **Docketing Active**
+* May occur when a matter is in **Initiating**, **Backlog**, **Docketing Active**, or **Closing**
 * Are repeatable
 * Are descriptive, not evaluative
+
+Not every fulfillment stage requires an activity period. Matters in onboarding
+or opening may be in scope for the queue before substantive legal delivery
+activity begins.
 
 They explicitly **exclude**:
 
@@ -242,8 +287,8 @@ The System may **observe and report** against this intent but must not:
 
 ## 9. Enforcement Rules
 
-* The Matter Operations Queue governs **delivery only**
-* Admin, accounting, and billing are parallel workstreams and must not be modeled as delivery states or periods
+* The Matter Operations Queue governs **matter visibility across onboarding, opening, maintenance, and closing**
+* Billing and accounting remain parallel workstreams and must not be modeled as queue states or activity periods
 * No linear progression assumptions are permitted
 * No lead, funnel, or sales concepts may be introduced
 * States must remain minimal and stable

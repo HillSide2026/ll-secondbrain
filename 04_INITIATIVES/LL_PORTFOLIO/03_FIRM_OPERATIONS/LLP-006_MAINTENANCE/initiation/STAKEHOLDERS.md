@@ -17,7 +17,8 @@ tags: [llp-006, maintenance, stakeholders]
 | Role | Party | Responsibility |
 |------|-------|----------------|
 | Approval Authority | ML1 | Approves scope, exceptions, maintenance rules, and promotion to operations |
-| System Operator | System | Runs maintenance cycles, produces exception lists, and maintains governed artifacts |
+| Assigned Matter Maintenance Teammate | LL | Performs the Matter Maintenance scope of work inside LL |
+| ML2 Monitoring Layer | System | Monitors maintenance-cycle outputs, produces exception lists, and maintains governed artifacts |
 | Source of Record — Matters | Clio | Matter IDs, status, responsible lawyer, next action fields |
 | Source of Record — Documents | SharePoint | Folder structure linked to matter IDs |
 | Source of Record — Communications | Gmail | Thread labels keyed by matter number |
