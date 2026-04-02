@@ -95,6 +95,20 @@ Slice 1 also needs to stop treating coarse rollups such as `ML Active` and
 - define the ML1-decision fields that drive `Needs ML1 Review Today`
 - define how fulfillment escalation is separated from ordinary fulfillment work
 
+## Deferred Cleanup Backlog
+
+The following doctrinal cleanup items are acknowledged and deferred for a
+separate follow-on pass after the current terminology and boundary work:
+
+1. Fulfillment Matter Queue README:
+   replace the invalid `Active` example with `Docketing Active`.
+2. Matter Docketing README:
+   narrow authority language around `States` so it does not read as reclaiming
+   Fulfillment Matter Queue state ownership.
+3. Fulfillment Matter Queue tracker specs:
+   replace phrases such as `source-of-truth files` and `Operations Queue Update Draft`
+   so they align with the derivative, supplementary nature of the queue.
+
 ## Completion Condition
 
 Planning is complete when ML1 can answer one question cleanly:
