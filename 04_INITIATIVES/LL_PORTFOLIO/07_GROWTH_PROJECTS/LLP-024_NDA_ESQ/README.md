@@ -4,7 +4,7 @@ title: LLP-024 — NDA Esq
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-15
+last_updated: 2026-04-02
 tags: [nda-esq, strategic-project]
 ---
 
@@ -12,16 +12,16 @@ tags: [nda-esq, strategic-project]
 
 ## Purpose
 
-Define and launch an AI-powered NDA review SaaS project that allows users to
-upload NDAs, receive AI-generated risk analysis, and optionally access human
-lawyer review.
+Define and launch an AI-powered NDA generation product that allows users to
+complete a guided intake, generate a bounded first-pass NDA, and route into
+Levine Law when the use case exceeds the product boundary.
 
 ## Workstream Structure
 
 NDA Esq is one project structured around three coordinated workstreams:
 
 1. `Product Development`
-   Build and launch the NDA review application, AI review engine, payments, and user dashboard.
+   Build and launch the NDA generation application, generation engine, payments, and user dashboard.
 2. `Customer Acquisition`
    Drive traffic, conversions, and revenue through focused acquisition channels.
 3. `Operations and Performance Monitoring`
@@ -32,55 +32,62 @@ Boundary note:
 Its customer-acquisition workstream may overlap with Funnel 02 marketing
 surfaces, but the project is not subordinate to `LLP-012_FUNNEL2_MANAGEMENT`.
 
+Target client clarification:
+- Primary target client: SMB operating business
+- Startups and freelancers may appear only as adjacent MVP-validation cohorts
+- Funnel 02 overlap applies only where a user also meets the stricter F02 ICP
+
 ## 1. Product Development
 
 ### Objective
 
-Develop and launch a fully functional AI-powered NDA review SaaS that allows
-users to upload NDAs, receive AI-generated risk analysis, and access optional
-human lawyer review.
+Develop and launch a fully functional AI-powered NDA generation product that
+allows users to complete a guided intake, generate a bounded first-pass NDA,
+and route to separate legal help when they exceed the product boundary.
 
 ### Included
 
-- web application with file upload, AI processing, and results dashboard
-- AI model/API integration to analyze NDA clauses
+- web application with guided input flow, generation processing, and output dashboard
+- AI model/API integration to generate bounded NDA outputs
 - payment gateway for pay-per-use and subscriptions
 - user account system with saved documents and transaction history
-- dashboard for NDA review results, including risk flags and missing clauses
-- downloadable reports for premium users
+- dashboard for generated NDA history and downloads
+- downloadable NDA output for users
 
 ### Excluded
 
-- manual contract drafting or editing
-- full-service legal consultation unless separately approved as a premium add-on
+- negotiation support or strategy
+- redlining or revision workflows
+- manual bespoke contract drafting or editing
+- full-service legal consultation unless separately approved as a separate follow-on service
 
 ### Deliverables
 
 - landing page
 - web app build
-- AI risk analysis engine
-- user dashboard with review summaries
+- AI NDA generation engine
+- user dashboard with generated NDA history
 - payment integration
-- basic email automation for confirmations, reports, and follow-up
+- basic email automation for confirmations and follow-up
 
 ### Success Metrics
 
 - MVP ready in `60 days`
-- `100+` users onboarded within the first month
-- AI review reaches `85%+` accuracy in flagging NDA risks
+- generated NDA output meets ML1-approved QA benchmark
+- retained-client usage begins within the first `30 days` after launch
 
 ## 2. Customer Acquisition
 
 ### Objective
 
-Acquire paying customers quickly and at scale, focusing on low-friction
-conversions via SEO, paid ads, and outreach.
+Acquire qualified users efficiently, with external usage treated primarily as
+qualification data and secondarily as product revenue.
 
 ### Included
 
 - Google Ads and LinkedIn Ads for targeted acquisition
 - SEO and content marketing for NDA-related search demand
-- cold outreach to startups, freelancers, and SMBs
+- cold outreach to SMB operators
 - referral and affiliate partnerships
 - email marketing for onboarding, upsells, and renewals
 
@@ -99,20 +106,20 @@ conversions via SEO, paid ads, and outreach.
 
 ### Success Metrics
 
-- `1,000` users within the first `3 months`
-- `$5,000+` MRR within `4 months`
-- CAC below `$50` per paid user
+- external usage produces qualified consults within the first `90 days`
+- retained-client adoption is active and measurable after launch
+- product revenue is tracked as a secondary signal, not the primary success definition
 
 ## 3. Operations and Performance Monitoring
 
 ### Objective
 
-Ensure efficient business operations with real-time tracking of user activity,
-cash flow, and performance metrics.
+Ensure efficient business operations with real-time tracking of qualified
+consults, retained-client usage, revenue, and support performance.
 
 ### Included
 
-- financial monitoring dashboard for revenue, CAC, churn, and LTV
+- financial monitoring dashboard for qualified consults, retained-client usage, revenue, and support
 - user engagement tracking
 - customer support system with AI chatbot and VA escalation
 - automated billing and subscription management
@@ -120,19 +127,20 @@ cash flow, and performance metrics.
 
 ### Excluded
 
-- direct legal consulting services unless separately approved as a future premium feature
+- direct legal consulting services inside the base product
+- negotiation, redlining, or bespoke drafting features
 
 ### Deliverables
 
-- custom dashboard for revenue, conversions, churn, CAC, and LTV
+- custom dashboard for qualified consults, retained-client usage, revenue, and support performance
 - automated billing and subscription management system
 - customer support system with live chat, FAQs, and ticketing
 - quarterly performance review reports
 
 ### Success Metrics
 
-- MRR growth rate of `10%+` per month
-- customer retention rate above `80%`
+- qualified consult routing works end-to-end
+- retained-client repeat usage is measurable and reviewable
 - customer support response time below `24 hours`
 
 ## ML1 Authority Statement

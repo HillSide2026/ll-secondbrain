@@ -4,7 +4,7 @@ title: NDA Esq - Scope Statement
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-15
+last_updated: 2026-04-02
 tags: [nda-esq, strategic-project, planning, scope]
 ---
 
@@ -17,7 +17,7 @@ Stage: Planning
 ## Implementation Objective
 
 Define the controlled implementation scope required to launch NDA Esq as an
-AI-powered NDA review SaaS project with three coordinated workstreams:
+AI-powered NDA generation product with three coordinated workstreams:
 
 - Product Development
 - Customer Acquisition
@@ -25,12 +25,12 @@ AI-powered NDA review SaaS project with three coordinated workstreams:
 
 ## In Scope
 
-- MVP web application for NDA upload, AI review, and user-facing results
-- AI clause and risk analysis workflow for NDA review
+- MVP web application for guided intake, NDA generation, and user-facing output delivery
+- AI generation workflow for bounded NDA outputs
 - payment and subscription handling for pay-per-use and subscription offers
 - basic user account, saved-document, and transaction-history functions
-- premium downloadable report flow
-- optional lawyer-review escalation path as a separately controlled add-on
+- downloadable NDA output flow
+- separate consult escalation path as a separately controlled follow-on
 - focused acquisition channels:
   - Google Ads
   - LinkedIn Ads
@@ -38,22 +38,25 @@ AI-powered NDA review SaaS project with three coordinated workstreams:
   - cold outreach
   - referral and affiliate partnerships
   - onboarding, upsell, and renewal email sequences
-- operating dashboard for revenue, CAC, churn, LTV, retention, and support
-- customer support system, billing controls, and quarterly performance review loop
+- operating dashboard for qualified consults, retained-client usage, product revenue, and support
+- customer support system, billing controls, and qualification-routing loop
 
 ## Out of Scope
 
-- manual contract drafting or editing
+- negotiation support or strategy
+- redlining or revision workflows
+- manual bespoke contract drafting or editing
 - full-service legal consultation as part of the base product
 - broad untargeted social media campaigns
 - enterprise sales team buildout in the initial implementation window
-- expansion beyond NDA review into broader contract categories
-- autonomous legal judgment beyond the approved AI-review workflow and ML1-approved escalation path
+- expansion beyond NDA generation into broader contract categories
+- autonomous legal judgment beyond the approved AI-generation workflow and ML1-approved consult escalation path
 
 ## Scope Boundaries
 
-- The base offer is NDA review only.
-- Human lawyer review, if offered, is an optional premium escalation and not the default product path.
+- The base offer is NDA generation only.
+- No negotiation or redlining is permitted inside the base product.
+- Human legal follow-on, if offered, is a separate consult or retainer path and not the default product path.
 - Product, acquisition, and operations workstreams must remain synchronized to the approved roadmap.
 - overlap with Funnel 02 may exist at the customer-acquisition surface, but
   `LLP-024_NDA_ESQ` remains a standalone project with separate stage governance

@@ -4,7 +4,7 @@ title: NDA Esq - Stakeholders
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-14
+last_updated: 2026-04-02
 tags: [nda-esq, strategic-project, stakeholders]
 ---
 
@@ -20,7 +20,8 @@ ML1 - Final decision-maker
 - Marketing and growth owner
 - Operations and performance monitoring owner
 - Optional lawyer-review provider
-- Target users: startups, freelancers, and SMBs
+- Target users: SMB operating businesses (primary); startups and freelancers
+  only as adjacent MVP-validation cohorts
 
 ## Governance Stakeholders
 

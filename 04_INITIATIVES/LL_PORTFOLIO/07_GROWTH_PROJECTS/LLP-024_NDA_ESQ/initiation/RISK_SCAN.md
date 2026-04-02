@@ -15,9 +15,9 @@ Project Name: NDA Esq
 
 ## Scope Risks
 
-- The project may sprawl from NDA review into manual drafting, broader contract review, or general legal-advice delivery.
+- The project may sprawl from NDA generation into negotiation support, redlining, broader contract drafting, or general legal-advice delivery.
 - The three workstreams may drift apart and produce inconsistent product, acquisition, and operating assumptions.
-- Traffic-generation goals may expand beyond what the initial NDA-only offer can support credibly.
+- Traffic-generation goals may expand beyond what the initial generation-only offer can support credibly.
 
 ## Market And Commercial Risks
 
@@ -27,25 +27,26 @@ Project Name: NDA Esq
 
 ## Execution Risks
 
-- MVP delivery may slip because AI review quality, payments, auth, and reporting all need to work together.
+- MVP delivery may slip because AI generation quality, payments, auth, and reporting all need to work together.
 - Analytics instrumentation may be too weak to prove whether traffic and lead-generation goals are being met.
-- Support, billing, or optional lawyer-review escalation may create more operating load than the launch model assumes.
+- Support, billing, or separate consult escalation may create more operating load than the launch model assumes.
 
 ## Brand And Boundary Risks
 
-- Public positioning may blur the line between software-assisted NDA review and legal services.
+- Public positioning may blur the line between software-generated NDA output and legal services.
 - Traffic campaigns may generate demand that is misaligned with Levine Law's target client profile.
 - Lead-routing from the product to `levine-law.ca` may be undefined or inconsistently controlled.
 
 ## Key Assumptions
 
-- NDA review is narrow enough to support a bounded first product.
+- NDA generation is narrow enough to support a bounded first product.
 - The project can serve both direct SaaS revenue goals and Levine Law lead-generation goals without collapsing those objectives into one metric.
-- Optional lawyer review can remain a controlled escalation path rather than becoming the default offer.
+- Separate consult escalation can remain controlled rather than becoming the default offer.
 - The initial launch can be instrumented well enough to evaluate traffic, leads, conversion, and revenue separately.
 
 ## Go / No-Go Judgment
 
-Proceed within Planning only if the project remains bounded to NDA review, the
-traffic-to-lead path for `levine-law.ca` is made explicit, and the launch model
-can measure revenue diversification and lead generation without scope drift.
+Proceed within Planning only if the project remains bounded to NDA generation,
+the traffic-to-lead path for `levine-law.ca` is made explicit, and the launch
+model can measure revenue diversification and lead generation without scope
+drift.

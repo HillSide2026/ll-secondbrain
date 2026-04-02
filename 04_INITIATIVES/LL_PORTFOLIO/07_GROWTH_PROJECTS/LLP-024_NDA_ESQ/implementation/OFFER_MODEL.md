@@ -30,16 +30,26 @@ Canada-focused, AI-powered NDA generator.
   payment at the paid tier.
 - Paid tier price is not yet defined. Stripe product to be created when
   ML1 confirms pricing.
+- The base product is generation only. It does not include negotiation
+  support, redlining, or bespoke drafting.
 - The free use for non-clients is the primary acquisition mechanism —
   users who experience the product are the target conversion population
   for both paid tier and Levine Law client engagement.
 
+## Target Client Clarification
+
+- The primary target client is the SMB operating business.
+- Startups and freelancers may appear during MVP validation as adjacent,
+  limited test cohorts, but they are not the canonical target client.
+- Funnel 2 overlap applies only where an NDA Esq user also satisfies
+  Funnel 2 qualification criteria; not every NDA Esq user is an F02-fit lead.
+
 ## Funnel Relationship
 
 NDA Esq surfaces as an offer within Funnel 2 (LLP-012). The F02 ICP
-(Ontario $1M–$8M operating businesses) is a natural user of NDA review —
-commercial agreements are a recurring governance need for this segment.
-The free-use offer functions as a lead capture mechanism within F02:
+(Ontario $1M–$8M operating businesses) is a natural user of bounded NDA
+generation — commercial agreements are a recurring governance need for this
+segment. The free-use offer functions as a lead capture mechanism within F02:
 non-client users who engage with NDA Esq are candidates for the Corporate
 Governance Triage Consult or the Corporate Health Check.
 

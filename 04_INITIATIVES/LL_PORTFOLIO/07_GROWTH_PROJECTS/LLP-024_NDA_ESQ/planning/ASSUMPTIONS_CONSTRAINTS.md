@@ -4,7 +4,7 @@ title: NDA Esq - Assumptions and Constraints
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-14
+last_updated: 2026-04-02
 tags: [nda-esq, strategic-project, planning, assumptions]
 ---
 
@@ -16,17 +16,19 @@ Stage: Planning
 
 ## Assumptions
 
-- There is real demand for low-friction NDA review from startups, freelancers, and SMBs.
+- There is real demand for low-friction NDA generation from SMBs.
+- Startups and freelancers may appear as adjacent MVP-validation cohorts, but
+  they are not the canonical target client.
 - A lightweight MVP can be shipped inside a 60-day window if the feature set stays narrow.
-- GPT-4-based NDA review can achieve useful risk-flagging performance when paired with bounded prompts and a defined validation method.
+- GPT-4-based NDA generation can produce useful bounded first-pass outputs when paired with strong templates, prompts, and validation.
 - Paid and organic acquisition channels can generate enough traffic to test early conversion economics.
 - Operational instrumentation for revenue, usage, churn, retention, and support can be implemented alongside MVP launch.
-- Optional human lawyer review can be routed as a controlled premium add-on without redefining the base product.
+- Separate consult escalation can be routed without redefining the base product.
 
 ## Constraints
 
-- The base product is NDA review only.
-- No manual drafting or contract editing is permitted in the base offer.
+- The base product is NDA generation only.
+- No negotiation support, redlining, or manual contract editing is permitted in the base offer.
 - No full-service legal consultation is included unless separately approved by ML1 as an add-on.
 - Initial acquisition channels are limited to Google Ads, LinkedIn Ads, SEO/content, outreach, referrals, and lifecycle email.
 - No broad untargeted social campaigns or enterprise sales buildout are allowed in the initial stage.

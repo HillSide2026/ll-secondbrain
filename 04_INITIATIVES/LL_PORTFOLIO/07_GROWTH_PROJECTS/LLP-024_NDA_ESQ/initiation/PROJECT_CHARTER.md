@@ -4,7 +4,7 @@ title: NDA Esq - Project Charter
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-15
+last_updated: 2026-04-02
 tags: [nda-esq, strategic-project, charter]
 ---
 
@@ -19,9 +19,9 @@ Stage: Initiation
 
 ## 1. Purpose
 
-Build and launch an AI-powered NDA review SaaS that enables users to upload
-NDAs, receive AI-generated risk analysis, and optionally purchase human lawyer
-review.
+Build and launch an AI-powered NDA generation product that enables users to
+complete a guided intake, generate a bounded first-pass NDA, and route into a
+separate Levine Law consult path when the matter exceeds product scope.
 
 ## 2. Nature of Project
 
@@ -31,21 +31,22 @@ Strategic product project with three coordinated workstreams:
 - Customer Acquisition
 - Operations and Performance Monitoring
 
-The project is initiation-defined but not yet authorized for Planning or launch.
-The base offer is NDA review only, not manual drafting or full-service legal
-consultation.
+The project is initiation-defined but not yet authorized for Planning or
+launch. The base offer is NDA generation only, not negotiation, redlining,
+manual bespoke drafting, or full-service legal consultation.
 
 Boundary rule:
 - `LLP-024_NDA_ESQ` remains a standalone project
 - overlap between its customer-acquisition workstream and Funnel 02 does not
   collapse project identity or stage governance
+- the primary target client is the SMB operating business; startups and
+  freelancers are MVP-adjacent only and do not define the canonical ICP
 
 ## 3. Strategic Rationale
 
-- Create a scalable, low-friction NDA review offering.
-- Use AI to expand reach while preserving a controlled optional lawyer-review path.
-- Build a productized revenue stream for NDA review demand from startups,
-  freelancers, and SMBs.
+- Create a scalable, low-friction NDA generation offering.
+- Use AI to expand reach while preserving a controlled separate consult path.
+- Build a productized revenue stream for NDA generation demand from SMBs.
 - Separate product build, growth, and operating control into clear workstreams.
 
 ## 4. Deliverable (High-Level)
@@ -53,14 +54,14 @@ Boundary rule:
 Project deliverables include:
 
 - landing page
-- NDA review web application
-- AI risk analysis engine
-- user dashboard and downloadable review summaries
+- NDA generation web application
+- AI NDA generation engine
+- user dashboard and downloadable NDA outputs
 - payment and subscription infrastructure
 - basic confirmation, reporting, and follow-up email automation
 - acquisition engine across SEO, paid ads, outreach, referrals, and lifecycle email
 - customer onboarding and upsell email sequences
-- operating dashboard for revenue, CAC, churn, LTV, and support performance
+- operating dashboard for qualified consults, retained-client usage, revenue, and support performance
 - automated billing and subscription management
 - customer support system with live chat, FAQ, and ticketing
 - quarterly performance review reports

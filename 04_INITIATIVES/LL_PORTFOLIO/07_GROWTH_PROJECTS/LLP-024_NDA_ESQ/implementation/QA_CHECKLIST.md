@@ -4,7 +4,7 @@ title: LLP-024 NDA Esq — QA Checklist
 owner: ML1
 status: active
 created_date: 2026-03-19
-last_updated: 2026-03-19
+last_updated: 2026-04-02
 tags: [nda-esq, executing, qa]
 ---
 
@@ -18,12 +18,13 @@ Stage: Executing
 
 | Check | Owner | Status | Notes |
 |-------|-------|--------|-------|
-| NDA risk flag accuracy rate ≥ benchmark (per METRICS.md) | Product lead | Not checked | Required before public launch |
-| User authentication flow end-to-end tested | Product lead | Not checked | |
-| Billing and subscription flow tested | Product lead | Not checked | |
+| Generated NDA QA pass rate ≥ benchmark (per METRICS.md) | Product lead | Not checked | Required before public launch |
+| Guided intake and generation flow end-to-end tested | Product lead | Not checked | |
+| Billing and payment flow tested | Product lead | Not checked | |
 | Data privacy compliance review complete | ML1 | Not checked | Required — SaaS product with user data |
 | Terms of service and acceptable use policy reviewed by ML1 | ML1 | Not checked | |
-| Unauthorized legal advice guardrails confirmed in product copy | ML1 | Not checked | |
+| No negotiation, redlining, or bespoke drafting paths appear in product copy or UX | ML1 | Not checked | |
+| Qualified consult routing path tested | Operations lead | Not checked | |
 | Support response path tested | Operations lead | Not checked | |
 | Performance under simulated load tested | Product lead | Not checked | |
 
@@ -31,8 +32,9 @@ Stage: Executing
 
 | Check | Owner | Status | Notes |
 |-------|-------|--------|-------|
-| `first_month_onboarded_users` threshold met | ML1 | Not checked | Per METRICS.md |
-| `nda_risk_flag_accuracy_rate` validated against benchmark | ML1 | Not checked | |
+| `retained_client_usage_30_day` threshold met | ML1 | Not checked | Per METRICS.md |
+| `generated_nda_qa_pass_rate` validated against benchmark | ML1 | Not checked | |
+| Qualified consult routing is producing usable handoff data | ML1 | Not checked | |
 | Support response time within SLA | Operations lead | Not checked | |
 | No data or privacy incidents | ML1 | Not checked | |
 

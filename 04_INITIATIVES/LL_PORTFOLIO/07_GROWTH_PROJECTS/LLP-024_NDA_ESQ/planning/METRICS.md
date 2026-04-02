@@ -4,7 +4,7 @@ title: NDA Esq - Metrics
 owner: ML1
 status: approved
 created_date: 2026-03-14
-last_updated: 2026-03-15
+last_updated: 2026-04-02
 tags: [nda-esq, strategic-project, planning, metrics]
 ---
 
@@ -19,20 +19,19 @@ Stage: Planning
 | KPI | Definition | Formula |
 | --- | --- | --- |
 | `mvp_ready_on_or_before_target` | Whether the MVP is launched on or before the approved target date | `1 if launch_date <= target_date, else 0` |
-| `first_month_onboarded_users` | Number of onboarded users in the first 30 days after MVP launch | `count(onboarded_users in first_30_days)` |
-| `nda_risk_flag_accuracy_rate` | Share of sampled NDA risk flags that match the approved validation benchmark | `(correct_risk_flags / sampled_risk_flags) * 100` |
-| `first_90_day_users` | Number of users acquired in the first 90 days after launch | `count(users in first_90_days)` |
-| `mrr_4_month` | Monthly recurring revenue achieved by month 4 | `sum(active_recurring_revenue at month_4_close)` |
-| `cac_per_paid_user` | Average acquisition cost per paid user | `acquisition_spend / paid_users` |
-| `monthly_mrr_growth_rate` | Month-over-month MRR growth rate | `((current_month_mrr - prior_month_mrr) / prior_month_mrr) * 100` |
-| `customer_retention_rate` | Share of customers retained over the defined retention window | `(retained_customers / starting_customers) * 100` |
+| `generated_nda_qa_pass_rate` | Share of sampled generated NDAs that meet the ML1-approved QA benchmark | `(qa_pass_generated_ndas / sampled_generated_ndas) * 100` |
+| `retained_client_usage_30_day` | Number of retained clients who complete at least one NDA generation in the first 30 days after launch | `count(retained_clients with >=1 completed_generation in first_30_days)` |
+| `qualified_consults_90_day` | Number of qualified consults produced from external NDA Esq usage in the first 90 days after launch | `count(qualified_consults from external_users in first_90_days)` |
+| `product_revenue_4_month` | Total NDA Esq product revenue recognized by the close of month 4 | `sum(product_revenue through month_4_close)` |
+| `cac_per_qualified_consult` | Average acquisition cost per qualified consult generated from external usage | `acquisition_spend / qualified_consults_from_external_users` |
+| `retained_client_repeat_usage_rate` | Share of active retained-client users who complete more than one NDA generation in the measurement window | `(retained_clients_with_2plus_generations / active_retained_client_users) * 100` |
 | `support_response_time_hours` | Average or monitored response time for customer support | `average(first_response_time_hours)` |
 
 ### Goal Alignment
 
-- `mvp_ready_on_or_before_target`, `first_month_onboarded_users`, and `nda_risk_flag_accuracy_rate` support product-readiness goals.
-- `first_90_day_users`, `mrr_4_month`, and `cac_per_paid_user` support acquisition and growth goals.
-- `monthly_mrr_growth_rate`, `customer_retention_rate`, and `support_response_time_hours` support operating-performance goals.
+- `mvp_ready_on_or_before_target`, `generated_nda_qa_pass_rate`, and `retained_client_usage_30_day` support product-readiness goals.
+- `qualified_consults_90_day`, `product_revenue_4_month`, and `cac_per_qualified_consult` support acquisition and growth goals.
+- `retained_client_repeat_usage_rate` and `support_response_time_hours` support operating-performance goals.
 
 ### Target Status
 
@@ -57,24 +56,22 @@ Stage: Planning
 
 - `mvp_ready_on_or_before_target`
   Rule: binary success measure based on launch date versus approved target date.
-- `first_month_onboarded_users`
+- `generated_nda_qa_pass_rate`
+  Numerator: generated NDAs that pass the approved QA benchmark in the sampled set.
+  Denominator: total sampled generated NDAs reviewed against the approved benchmark.
+- `retained_client_usage_30_day`
   Window: first 30 calendar days after MVP launch.
-  Rule: count unique onboarded users with completed account activation.
-- `nda_risk_flag_accuracy_rate`
-  Numerator: correctly flagged risks in the approved sample set.
-  Denominator: total sampled risk flags reviewed against the approved benchmark.
-- `first_90_day_users`
+  Rule: count unique retained clients who complete at least one NDA generation.
+- `qualified_consults_90_day`
   Window: first 90 calendar days after launch.
-  Rule: count unique users meeting onboarding definition.
-- `mrr_4_month`
-  Rule: recurring revenue run-rate at the close of month 4.
-- `cac_per_paid_user`
+  Rule: count qualified consults attributable to external NDA Esq usage.
+- `product_revenue_4_month`
+  Rule: total recognized product revenue through the close of month 4.
+- `cac_per_qualified_consult`
   Numerator: attributable acquisition spend for the relevant measurement window.
-  Denominator: count of paid users acquired in the same window.
-- `monthly_mrr_growth_rate`
-  Rule: compare current-month MRR to prior-month MRR using the standard month-over-month formula.
-- `customer_retention_rate`
-  Rule: cohort-based retention using the approved retention window.
+  Denominator: count of qualified consults generated from external users in the same window.
+- `retained_client_repeat_usage_rate`
+  Rule: cohort-based repeat usage measure for retained-client users in the approved review window.
 - `support_response_time_hours`
   Rule: measure first-response lag for inbound support requests.
 
@@ -87,11 +84,12 @@ Stage: Planning
 ### Data Sources
 
 - application event logs and user-account records
-- Stripe revenue and subscription records
+- generated NDA QA sample set and benchmark review notes
+- Stripe revenue and payment records
 - campaign and ad-platform spend and conversion exports
+- consult-booking, intake, and routing records
 - email automation and onboarding records
 - support and ticketing or chat records
-- sampled NDA review validation set and benchmark review notes
 
 ## Baseline Capture Period
 
@@ -122,16 +120,16 @@ as the first reference point for post-launch optimization.
 
 ### Output
 
-- first-30-day baseline for onboarding, AI quality, and support metrics
-- first-90-day baseline for user growth and acquisition metrics
-- initial monthly operating baseline for MRR growth and retention review
+- first-30-day baseline for generation QA, retained-client usage, and support metrics
+- first-90-day baseline for qualified consults and acquisition metrics
+- initial operating baseline for product revenue and retained-client repeat usage review
 
 ## Validation Review
 
 ### Review Criteria
 
 - scope boundaries are explicit across product, acquisition, and operations workstreams
-- exclusions are clear enough to prevent drafting and consultation creep
+- exclusions are clear enough to prevent negotiation, redlining, drafting, and consultation creep
 - metric formulas and denominators are reproducible from approved evidence sources
 - launch and growth baseline windows are unambiguous
 - threshold package is sufficient to judge MVP, acquisition, and operations success
@@ -158,13 +156,12 @@ Date: ______________________
 ### Metrics Submitted for Approval
 
 - `mvp_ready_on_or_before_target`
-- `first_month_onboarded_users`
-- `nda_risk_flag_accuracy_rate`
-- `first_90_day_users`
-- `mrr_4_month`
-- `cac_per_paid_user`
-- `monthly_mrr_growth_rate`
-- `customer_retention_rate`
+- `generated_nda_qa_pass_rate`
+- `retained_client_usage_30_day`
+- `qualified_consults_90_day`
+- `product_revenue_4_month`
+- `cac_per_qualified_consult`
+- `retained_client_repeat_usage_rate`
 - `support_response_time_hours`
 
 ### Proposed Thresholds
@@ -172,13 +169,12 @@ Date: ______________________
 | KPI | Direction | Proposed Threshold |
 | --- | --- | --- |
 | `mvp_ready_on_or_before_target` | Higher is better | `= 1` |
-| `first_month_onboarded_users` | Higher is better | `>= 100` |
-| `nda_risk_flag_accuracy_rate` | Higher is better | `>= 85%` |
-| `first_90_day_users` | Higher is better | `>= 1000` |
-| `mrr_4_month` | Higher is better | `>= 5000` |
-| `cac_per_paid_user` | Lower is better | `< 50` |
-| `monthly_mrr_growth_rate` | Higher is better | `>= 10%` |
-| `customer_retention_rate` | Higher is better | `> 80%` |
+| `generated_nda_qa_pass_rate` | Higher is better | `>= 85%` |
+| `retained_client_usage_30_day` | Higher is better | `>= 10` |
+| `qualified_consults_90_day` | Higher is better | `>= 10` |
+| `product_revenue_4_month` | Higher is better | `>= 5000` |
+| `cac_per_qualified_consult` | Lower is better | `< 250` |
+| `retained_client_repeat_usage_rate` | Higher is better | `>= 30%` |
 | `support_response_time_hours` | Lower is better | `< 24` |
 
 ### Threshold Status

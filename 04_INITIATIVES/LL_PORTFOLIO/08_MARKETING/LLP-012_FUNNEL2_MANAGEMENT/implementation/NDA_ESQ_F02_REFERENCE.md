@@ -21,6 +21,10 @@ Canonical project and offer model:
 
 ## F02 Offer Role
 
+Within Funnel 2, NDA Esq is relevant only for the subset of SMB users who also
+meet the F02 qualification criteria. The broader MVP testing surface for NDA
+Esq should not be treated as identical to the F02 ICP.
+
 | Tier | Who | Access |
 |------|-----|--------|
 | Client | Levine Law retained clients | Lifetime free |

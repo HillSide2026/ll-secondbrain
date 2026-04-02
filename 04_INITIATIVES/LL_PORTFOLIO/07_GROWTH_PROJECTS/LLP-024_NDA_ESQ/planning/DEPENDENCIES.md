@@ -4,7 +4,7 @@ title: NDA Esq - Dependencies
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-15
+last_updated: 2026-04-02
 tags: [nda-esq, strategic-project, planning, dependencies]
 ---
 
@@ -27,11 +27,11 @@ Stage: Planning
 ## Product Dependencies
 
 - web application build environment
-- file-upload handling for NDA documents
-- GPT-4 API integration for clause and risk analysis
-- prompt/version-control method for the AI review workflow
+- guided-input flow for NDA generation
+- GPT-4 API integration for NDA generation
+- template/version-control method for the AI generation workflow
 - user authentication and account-management layer
-- document/report generation layer
+- document generation and delivery layer
 
 ## Commercial Dependencies
 
