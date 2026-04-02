@@ -4,7 +4,7 @@ title: Marketing Agent Skill Map
 owner: ML1
 status: draft
 created_date: 2026-03-08
-last_updated: 2026-03-22
+last_updated: 2026-04-01
 tags: [marketing, agents, skills, mapping]
 ---
 
@@ -26,6 +26,9 @@ Skill files are stored under `00_SYSTEM/AGENTS/specs/marketing/skills/`.
   existing filenames.
 - Added 2026-03-22: mapped initiative-layer funnel agents into the marketing
   skill inventory for one-layer operational reference.
+- Added 2026-04-01: introduced `frontend_design.skill.md` as the shared
+  distinctive-frontend and detail-standard skill for design, UX, Thrive, and
+  website implementation agents.
 
 ## MKT_CHIEF_MARKETING_OFFICER_AGENT
 - `task_decomposition.skill.md`
@@ -78,6 +81,7 @@ Meta-execution chain:
 - `brand_voice_validation.skill.md`
 
 ## MKT_DESIGN_PRODUCTION_AGENT
+- `frontend_design.skill.md`
 - `design_brief_translation.skill.md`
 - `template_slot_selection.skill.md`
 - `canva_design_instantiation.skill.md`
@@ -103,6 +107,7 @@ Meta-execution chain:
 - `brand_kit_enforcement.skill.md`
 
 ## MKT_WEBSITE_IMPLEMENTATION_AGENT
+- `frontend_design.skill.md`
 - `landing_page_copywriting.skill.md`
 - `conversion_path_design.skill.md`
 - `landing_flow_optimization.skill.md`
@@ -151,6 +156,7 @@ Meta-execution chain:
 - `integration_workflow_execution.skill.md`
 
 ## MKT_UX_DESIGN_AGENT
+- `frontend_design.skill.md`
 - `information_architecture.skill.md`
 - `user_flow_design.skill.md`
 - `wireframe_production.skill.md`
@@ -167,6 +173,7 @@ Meta-execution chain:
 - `component_design.skill.md`
 
 ## MKT_THRIVE_THEMES_AGENT
+- `frontend_design.skill.md`
 - `thrive_element_mapping.skill.md`
 - `thrive_build_packet.skill.md`
 - `thrive_symbol_design.skill.md`

@@ -146,6 +146,7 @@ Minimum skill bundle:
 Role: governed draft design production from approved copy and templates.
 
 Minimum skill bundle:
+- `frontend_design.skill.md`
 - `design_brief_translation.skill.md`
 - `template_slot_selection.skill.md`
 - `canva_design_instantiation.skill.md`
@@ -162,6 +163,7 @@ Minimum skill bundle:
 Role: transform approved content into wireframes, interaction specs, and implementation handoff.
 
 Minimum skill bundle:
+- `frontend_design.skill.md`
 - `information_architecture.skill.md`
 - `user_flow_design.skill.md`
 - `wireframe_production.skill.md`
@@ -178,6 +180,7 @@ Minimum skill bundle:
 Role: translate approved UX/page specifications into exact Thrive Architect build packets.
 
 Minimum skill bundle:
+- `frontend_design.skill.md`
 - `thrive_element_mapping.skill.md`
 - `thrive_build_packet.skill.md`
 - `thrive_symbol_design.skill.md`
@@ -194,6 +197,7 @@ Minimum skill bundle:
 Role: implement or package approved website and landing-page changes for execution.
 
 Minimum skill bundle:
+- `frontend_design.skill.md`
 - `landing_page_copywriting.skill.md`
 - `conversion_path_design.skill.md`
 - `landing_flow_optimization.skill.md`

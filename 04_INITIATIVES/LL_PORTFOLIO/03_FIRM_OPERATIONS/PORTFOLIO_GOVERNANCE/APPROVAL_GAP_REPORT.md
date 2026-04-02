@@ -1,14 +1,11 @@
 # APPROVAL GAP REPORT
 
-- Generated: 2026-03-20T02:27:05+00:00
-- Run ID: RUN-2026-03-20-LL-PORTFOLIO-AGENTS-022705Z
+- Generated: 2026-04-02T02:17:33+00:00
+- Run ID: RUN-2026-04-02-LL-PORTFOLIO-AGENTS-021733Z
 
 > Advisory output. ML1 approval remains required for decisions.
 ## Approval Gap Report
 
-- `LLP-015` missing `APPROVAL_RECORD.md`.
-- `LLP-035` missing `APPROVAL_RECORD.md`.
-- `LLP-036` missing `APPROVAL_RECORD.md`.
 - `LLP-007` missing `APPROVAL_RECORD.md`.
 - `LLP-008` missing `APPROVAL_RECORD.md`.
 - `LLP-016` missing `APPROVAL_RECORD.md`.

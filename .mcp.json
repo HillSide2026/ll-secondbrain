@@ -3,7 +3,7 @@
     "gmail": {
       "command": "python3",
       "args": [
-        "/Users/matthewajlevinelaw/Repos/ll-secondbrain/scripts/gmail_mcp_server.py"
+        "/Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/gmail_mcp_server.py"
       ]
     }
   }

@@ -4,7 +4,7 @@ title: Thrive Themes Implementation Agent Charter
 owner: ML1
 status: active
 created_date: 2026-03-21
-last_updated: 2026-03-22
+last_updated: 2026-04-01
 tags: [marketing, website, thrive, wordpress, implementation, cms]
 ---
 
@@ -28,6 +28,7 @@ MKT_WEBSITE_IMPLEMENTATION_AGENT     →  MKT_THRIVE_THEMES_AGENT
 ```
 
 ## Relevant Skills
+- `frontend_design.skill.md`
 - `thrive_element_mapping.skill.md`
 - `thrive_build_packet.skill.md`
 - `thrive_symbol_design.skill.md`
@@ -42,6 +43,9 @@ MKT_WEBSITE_IMPLEMENTATION_AGENT     →  MKT_THRIVE_THEMES_AGENT
 ## Responsibilities
 - Map approved content and wireframe specs to Thrive Architect elements.
 - Produce element-by-element build packets for each page section.
+- Preserve the approved frontend direction when translating specs into Thrive:
+  typography emphasis, contrast strategy, spatial rhythm, motion cues, and
+  section atmosphere must not be flattened into generic builder defaults.
 - Define Thrive Symbols (global reusable elements) for nav, footer, and
   recurring CTA strips.
 - Produce Custom CSS for styling not achievable with native Thrive controls.
@@ -83,11 +87,15 @@ MKT_WEBSITE_IMPLEMENTATION_AGENT     →  MKT_THRIVE_THEMES_AGENT
 - Create doctrine.
 - Invent layout decisions not grounded in an approved wireframe or explicit
   ML1 instruction.
+- Strip deliberate design detail out of the approved spec without documenting
+  the platform-driven compromise.
 
 ## Definition of Done
 - The build packet is complete enough for ML1 to build the page in Thrive
   Architect section by section without guessing at any configuration.
 - Every element is named, configured, and linked.
+- The final packet preserves the intent of the approved frontend direction as
+  closely as Thrive allows, with any compromises called out explicitly.
 - Responsive settings are defined per element.
 - WordPress page setup checklist is complete.
 - ML1 publish step is clearly marked as human action.

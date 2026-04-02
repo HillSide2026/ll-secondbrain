@@ -4,7 +4,7 @@ title: LLP-030 Firm Strategy and Business Plan
 owner: ML1
 status: initiating
 created_date: 2026-03-17
-last_updated: 2026-03-20
+last_updated: 2026-04-01
 tags: [firm-strategy, business-plan, strategic-projects]
 ---
 
@@ -55,6 +55,13 @@ Initiation was approved by ML1 on `2026-03-19`.
 Stage-gate artifacts now live in `initiation/`.
 `FIRM_STRATEGY.md`, `BUSINESS_PLAN.md`, and `FINANCIAL_MODEL.md` remain at the
 project root as governed project components.
+
+## Supporting Analysis
+
+- `BENCHMARK_NOTE__BILL_HAUSER_FOUR_BUCKET_MODEL__2026-04-01.md` saves the
+  Bill Hauser four-bucket operating benchmark lens for Levine Law and records
+  the current working conclusion that LL is below benchmark in intake maturity,
+  self-managing-team maturity, and profit resilience.
 
 ## Last ML1 Review Date
 `2026-03-17`

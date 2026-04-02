@@ -8,6 +8,23 @@
 
 **Input staleness notice:** All three management agent outputs carry a 2026-03-20 timestamp. Today is 2026-04-01. These inputs are 12 days old. Additionally, git history between March 20 and April 1 shows material execution activity: NDA Esq landing page built and committed, F02 blog content added across all five pillars (P1–P5), a meta descriptions script added, and an F02 linking and tagging script committed. These represent real execution events in LLP-024 and LLP-012 that are not yet reflected in any management agent output. The synthesis below incorporates this supplemental signal where it is material. A fresh full agent run (LLM-004 → LLM-005 → LLM-006) should be triggered before acting on any queue item.
 
+**Superseded by fresh management run:** LLM-004, LLM-005, and LLM-006 were rerun on 2026-04-02T02:17:33+00:00 under `RUN-2026-04-02-LL-PORTFOLIO-AGENTS-021733Z`. This brief has not yet been re-synthesized by LLM-001 against those fresh inputs. Until a refreshed Chief of Staff packet is produced, treat the analysis below as a stale April 1 advisory artifact and consult the latest April 2 management outputs first.
+
+---
+
+## LL Incentive Lens
+
+This brief uses an LL-first incentive frame. The primary decision basis is:
+stable Levine Law revenue and cash collection against the approved 2026 target,
+support for the approved owner-compensation target, margin discipline, capacity
+and client-quality control, approved-lane compounding, and the intended channel
+sequencing of `F01 -> F02 -> F03`.
+
+HillSide-level incentives are treated as a secondary thread only. They are
+relevant where LL performance affects Matthew-level cash flow, cross-entity
+reconciliation, or HillSide oversight, but they do not replace LL-first
+prioritization in this brief.
+
 ---
 
 ## Portfolio Health Summary
@@ -16,7 +33,7 @@ The portfolio's dominant condition is execution moving faster than governance ca
 
 ---
 
-## Cash Flow Priority — Top Actions
+## LL Incentive Priority — Top Actions
 
 **1. LLP-012 Funnel 2 — planning gate has not closed, but execution is already running**
 

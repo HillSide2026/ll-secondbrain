@@ -4,7 +4,7 @@ title: Marketing Agents
 owner: ML1
 status: active
 created_date: 2026-03-08
-last_updated: 2026-03-23
+last_updated: 2026-04-01
 tags: [marketing, agents, orchestration]
 ---
 
@@ -37,6 +37,9 @@ preparation, market-signal capture, and repository governance.
 - Consolidated one-layer operating view: `00_SYSTEM/AGENTS/specs/marketing/SINGLE_LAYER_MARKETING_AGENT_STACK.md`
 - Agent-level bindings are listed in each charter under `Relevant Skills`.
 - Skill files location: `00_SYSTEM/AGENTS/specs/marketing/skills/`
+- Shared design doctrine for the suite now includes
+  `frontend_design.skill.md`, which enforces distinctive frontend direction,
+  detailed layout/hierarchy specs, and non-generic implementation standards.
 
 ## Optional Specialized Agents
 - `MKT_SEO_DISCOVERABILITY_AGENT`
@@ -48,14 +51,17 @@ preparation, market-signal capture, and repository governance.
 1. Chief Marketing Officer agent decomposes objective and sequences skills.
 2. Strategy agent defines campaign and funnel requirements.
 3. Content agent produces draft artifacts.
-4. Design Production agent creates governed design drafts from approved templates.
+4. Design Production agent creates governed design drafts from approved
+   templates and commits each artifact to a clear visual direction.
 5. Editorial QA agent validates strategy, doctrine, and policy alignment.
 6. UX Design agent translates approved content into wireframes, component specs,
-   interaction patterns, and implementation handoff packets.
+   interaction patterns, frontend detail standards, and implementation handoff
+   packets.
 7. Thrive Themes agent translates wireframe specs into Thrive Architect build
-   packets for ML1 execution in WordPress.
+   packets for ML1 execution in WordPress while preserving approved design
+   intent.
 8. Website Implementation agent assembles approved website changes, local patch
-   sets, and WIP deployment packets.
+   sets, fidelity notes, and WIP deployment packets.
 9. Distribution orchestration agent prepares channel handoff and deployment packages.
 10. Market signal agent reports market feedback as operational signals.
 11. Repository governance agent stores assets with lifecycle and provenance controls.

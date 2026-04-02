@@ -8,6 +8,17 @@
 
 **Input staleness notice:** Management agent inputs are 12 days old (generated 2026-03-20). Git history between March 20 and April 1 shows material execution activity in LLP-024 (NDA Esq landing page) and LLP-012 (F02 blog content, linking/tagging scripts). These events are not reflected in agent outputs. A fresh LLM-004, LLM-005, LLM-006 run is recommended before acting on any queue item.
 
+**Superseded by fresh management run:** LLM-004, LLM-005, and LLM-006 were rerun on 2026-04-02T02:17:33+00:00 under `RUN-2026-04-02-LL-PORTFOLIO-AGENTS-021733Z`. This file has not yet been re-synthesized by LLM-001 against those fresh inputs. Until a refreshed Chief of Staff packet is produced, treat the ranked queue below as a stale April 1 advisory artifact and consult the latest April 2 management outputs first, especially `03_FIRM_OPERATIONS/PORTFOLIO_MANAGEMENT/SEQUENCING_RECOMMENDATIONS.md`, `PROJECT_PRIORITY_MATRIX.md`, `03_FIRM_OPERATIONS/PORTFOLIO_GOVERNANCE/STAGE_GATE_VIOLATION_REPORT.md`, and `METRIC_SCHEMA_INTEGRITY_REPORT.md`.
+
+---
+
+## Execution Prerequisite
+
+- `SYSTEM_CAN_HANDLE`: Trigger a fresh LLM-004, LLM-005, LLM-006 run before using the ranked queue below.
+- Treat the ranked queue as the post-refresh order of ML1 decisions. It is not authorization to act on stale inputs.
+- Apply an LL-first incentive frame after refresh: revenue / cash collection, owner-compensation support, margin discipline, capacity / client-quality control, approved-lane compounding, and `F01 -> F02 -> F03` sequencing.
+- Treat HillSide-level incentives as a secondary linkage thread only unless ML1 explicitly asks for cross-portfolio prioritization.
+
 ---
 
 ## Decision Queue
@@ -26,16 +37,27 @@
 | 10 | LLP-015, LLP-035, LLP-036 (batch) | Formalise or park these three practice area placeholder projects (7 missing initiation artifacts each) | none near-term | ML1_REQUIRED | low | partial — 21 total missing artifact entries; no portfolio output | LLM-006 (Stage Gate Violations), LLM-005 (at-risk Ranks 2-4) |
 | 11 | LLP-014, LLP-026, LLP-027, LLP-028, LLP-029, LLP-043 (batch) | Formalise or park these six unstaged marketing and governance placeholder projects (6 missing initiation artifacts each) | none near-term | ML1_REQUIRED | low | partial — 36 total missing artifact entries; largest source of governance noise | LLM-006 (APPROVAL_RECORD.md missing x6), LLM-005 (at-risk Ranks 5-10) |
 | 12 | LLP-037, LLP-038, LLP-039, LLP-040, LLP-041 (batch) | Define substantive content, consolidate, or formally park the 09_SERVICE_MANAGEMENT cluster | none near-term | ML1_REQUIRED | low | no | LLM-004 (on-track x5), LLM-005 |
-| 13 | Fresh agent run (LLM-004, LLM-005, LLM-006) | Trigger refresh of all management agent outputs before acting on any queue item | n/a | SYSTEM_CAN_HANDLE | high | no — staleness risk only; 12-day gap with known execution events not yet captured | LLM-001 |
-| 14 | LLP-012 six planning artifact drafting | After ML1 provides capacity decisions (Rank 2), agents draft SCOPE_STATEMENT.md, PROJECT_PLAN.md, ASSUMPTIONS_CONSTRAINTS.md, DEPENDENCIES.md, RISK_REGISTER.md, COMMUNICATION_PLAN.md | direct | SYSTEM_CAN_HANDLE | high (pending Rank 2) | yes — unblocked by ML1 capacity decisions | LLM-004, LLM-005 |
-| 15 | LLP-011 and LLP-025 METRICS.md consolidation | Agents consolidate existing split-schema measurement files into draft canonical METRICS.md for ML1 review and approval | direct/indirect | SYSTEM_CAN_HANDLE | high (pending Ranks 3, 5) | yes — unblocked by ML1 approval | LLM-004, LLM-006 |
-| 16 | LLP-024 EXECUTION_LOG and DELIVERABLES_TRACKER update | After ML1 authorization (Rank 4), agents update execution log to reflect post-March 19 events | direct | SYSTEM_CAN_HANDLE | high (pending Rank 4) | yes — unblocked by ML1 authorization | LLM-004 |
+
+---
+
+## System Actions
+
+1. Trigger the fresh LLM-004, LLM-005, LLM-006 run immediately. This is a blocking prerequisite before the ranked ML1 queue is used.
+2. After ML1 resolves Rank 2, agents draft the six LLP-012 planning artifacts: `SCOPE_STATEMENT.md`, `PROJECT_PLAN.md`, `ASSUMPTIONS_CONSTRAINTS.md`, `DEPENDENCIES.md`, `RISK_REGISTER.md`, `COMMUNICATION_PLAN.md`.
+3. After ML1 resolves Ranks 3 and 5, agents consolidate draft canonical `METRICS.md` files for LLP-011 and LLP-025.
+4. After ML1 resolves Rank 4, agents update LLP-024 `EXECUTION_LOG.md` and `DELIVERABLES_TRACKER.md` to reflect post-March 19 execution events.
 
 ---
 
 ## Queue Notes
 
-**Ranking logic:** Ranks 1–4 are ordered by direct cash flow impact. LLP-012 gate confirmation (Rank 1) is highest because execution may be occurring without authorization — a governance integrity issue, not just a compliance flag. LLP-012 capacity decisions (Rank 2) immediately follow because they are the input that unlocks the planning gate. LLP-011 METRICS.md (Rank 3) is the live funnel governance gap. LLP-024 (Rank 4) is an executing project with an approaching deadline that needs its record updated. Ranks 5–6 are indirect cash flow. Ranks 7–12 are governance cleanup with no near-term revenue effect. Ranks 13–16 are SYSTEM_CAN_HANDLE items included for completeness, sequenced behind the ML1_REQUIRED decisions they depend on.
+**Prerequisite sequencing:** Trigger fresh management agent outputs before acting on any ranked item below. The refresh is treated as a blocking system action, not as a ranked ML1 decision, because stale inputs reduce the reliability of every downstream rank.
+
+**Primary ranking basis:** LL incentive alignment. The queue prioritizes the decisions most material to Levine Law revenue / cash collection, owner-compensation support, margin discipline, capacity / client-quality control, approved-lane compounding, and `F01 -> F02 -> F03` sequencing.
+
+**Secondary linkage basis:** HillSide-level incentives may be noted where LL outcomes affect Matthew-level cash flow, cross-entity reconciliation, or HillSide oversight, but those effects do not override LL-first ranking here.
+
+**Ranking logic:** Ranks 1–4 are ordered by the strongest combined LL incentive effect. LLP-012 gate confirmation (Rank 1) is highest because execution may be occurring without authorization — a governance integrity issue that also blocks the intended F02 channel sequence. LLP-012 capacity decisions (Rank 2) immediately follow because they unlock the planning gate and protect capacity / client-quality control. LLP-011 METRICS.md (Rank 3) is the live funnel governance gap tied to real revenue, spend, and owner-compensation support. LLP-024 (Rank 4) is an executing project with an approaching deadline that needs its record updated. Ranks 5–6 are indirect LL growth and control items. Ranks 7–12 are governance cleanup with no near-term LL operating effect.
 
 **Ranks 1 and 2 can be addressed in a single ML1 session.** The gate confirmation and the capacity decisions are naturally connected — ML1 will likely resolve both simultaneously when reviewing F02 status.
 
@@ -45,10 +67,10 @@
 
 **Dependency chain for cash-flow items:**
 
-LLP-012 capacity decisions (ML1, Rank 2) → system drafts six planning artifacts (Rank 14) → ML1 reviews and approves → planning gate closes → LLP-012 advances to authorized execution.
+LLP-012 capacity decisions (ML1, Rank 2) → system drafts six planning artifacts (System Actions 2) → ML1 reviews and approves → planning gate closes → LLP-012 advances to authorized execution.
 
-LLP-011 METRICS.md consolidation (system, Rank 15) → ML1 approves (Rank 3) → governance hold lifted, F01 funnel fully governed.
+LLP-011 METRICS.md consolidation (system, System Actions 3) → ML1 approves (Rank 3) → governance hold lifted, F01 funnel fully governed.
 
-LLP-025 METRICS.md consolidation (system, Rank 15) → ML1 approves and decides gate (Rank 5) → downstream intake and lead capture sequencing can proceed.
+LLP-025 METRICS.md consolidation (system, System Actions 3) → ML1 approves and decides gate (Rank 5) → downstream intake and lead capture sequencing can proceed.
 
-LLP-024 execution log update (system, Rank 16) → authorized by ML1 (Rank 4) → governance record reflects actual delivery state.
+LLP-024 execution log update (system, System Actions 4) → authorized by ML1 (Rank 4) → governance record reflects actual delivery state.
