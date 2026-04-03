@@ -1,0 +1,12 @@
+id: 02_playbooks__financial_services__payments__initial_screening__readme_md
+owner: ML1
+status: draft
+version: 1.0
+category: core
+domains:
+  - financial_services
+  - payments
+  - securities
+principles: []
+policies: []
+protocols: []

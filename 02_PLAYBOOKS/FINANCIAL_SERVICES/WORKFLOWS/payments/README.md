@@ -75,6 +75,7 @@ Drafting and review of provider agreements lives in `02_PLAYBOOKS/CONTRACTS/WORK
 | [agents/](agents/) | Agent catalog, permissions, handoffs |
 | [decision_lenses/](decision_lenses/) | Analytical frameworks |
 | [failure_modes/](failure_modes/) | Known failure patterns |
+| [initial_screening/](initial_screening/) | Internal front-door screening workflow for hybrid token/payment matters |
 | [issue_maps/](issue_maps/) | Structured issue taxonomies |
 | [question_banks/](question_banks/) | Intake and scoping questions |
 | [regulatory_surfaces/](regulatory_surfaces/) | Statutory/regulatory touchpoints |

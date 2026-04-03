@@ -69,6 +69,7 @@ Canonical registry of playbook workflows.
 | substantive | Financial Services Playbooks | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/README.md |
 | substantive | Financial Services — Payments | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/payments/README.md |
 | substantive | FINTRAC Response — Overview | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS/FINTRAC_RESPONSE/MODULES/MODULE_001_PRIMARY/WORKFLOWS/README.md |
+| core | Initial Screening — Payments | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/payments/initial_screening/README.md |
 | substantive | Incorporation | draft | ML1 | 02_PLAYBOOKS/CORPORATE/WORKFLOWS/solutions/incorporation/README.md |
 | substantive | Intercompany | draft | ML1 | 02_PLAYBOOKS/CONTRACTS/WORKFLOWS/solutions/intercompany/README.md |
 | substantive | Issue Maps Templates | draft | ML1 | 02_PLAYBOOKS/FINANCIAL_SERVICES/WORKFLOWS/payments/issue_maps/templates/README.md |

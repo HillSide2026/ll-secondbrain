@@ -1,0 +1,36 @@
+schema_version: 0.1
+playbook: INITIAL_SCREENING_PAYMENTS
+steps:
+  - id: collect_trigger_facts
+    action: collect_intake_facts
+    required_fields:
+      - product_description
+      - jurisdictional_hooks
+      - issuance_or_distribution_model
+      - custody_or_control_model
+      - payment_or_transfer_functions
+      - marketing_or_return_language
+  - id: separate_regimes
+    action: identify_primary_and_secondary_regulatory_lenses
+    outputs:
+      - primary_regulatory_lens
+      - secondary_regulatory_lenses
+      - unresolved_overlap_flags
+  - id: rate_risk
+    action: assign_risk_rating_and_touchability
+    outputs:
+      - client_risk_rating
+      - touchability
+      - escalation_required
+  - id: route_matter
+    action: recommend_specialist_routing
+    outputs:
+      - muggah_securities
+      - muggah_money_services
+      - muggah_payment_services
+      - ml1_review
+  - id: write_outputs
+    action: write_outputs
+    outputs:
+      - outputs/initial_screening_note.md
+      - outputs/regime_routing_note.md

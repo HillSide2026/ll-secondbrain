@@ -31,7 +31,8 @@ Matthew Holdings serves as:
 
 - equity holding company
 - service-provider corporation for the Andersen Service Line
-- direct operating company for FinSure
+- owning and operating company for FinSure
+- owning and operating company for the Payment Services Consulting Line
 - governance layer for portfolio entities
 - strategic control entity
 
@@ -40,7 +41,8 @@ YellowBricks, Federal MSB, and Ontario MSB Corp sit under this entity.
 ## Current Lines of Business
 
 - Andersen Service Line
-- operation of FinSure
+- ownership and operation of FinSure
+- ownership and operation of the Payment Services Consulting Line
 - ownership of YellowBricks, Federal MSB (`17409052 Canada Inc`), and Ontario MSB Corp (`1001494374 Ontario Corp`)
 
 Under the Andersen Service Line, `17513721 Canada Inc` provides services to
@@ -51,6 +53,9 @@ Operational matters tied to the Andersen Service Line are tracked inside
 Levine Law. The Andersen Service Line continues to follow the Levine Law
 time-for-money delivery model, even though the Andersen fees are received by
 `17513721 Canada Inc`.
+
+FinSure and the Payment Services Consulting Line are owned and operated
+through `17513721 Canada Inc`.
 
 ---
 

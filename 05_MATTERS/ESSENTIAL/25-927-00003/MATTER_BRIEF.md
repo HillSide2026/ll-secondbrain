@@ -5,7 +5,7 @@ title: Matter Brief — 25-927-00003 — Stream Ventures Limited
 owner: ML1
 status: draft
 created_date: 2026-02-01
-last_updated: 2026-03-22
+last_updated: 2026-04-03
 tags: [matter, 25-927-00003]
 ---
 
@@ -51,6 +51,30 @@ Stream Ventures Limited is a payments/MSB client with active CAMLO (Chief AML Of
 - Attend KYC analyst interview
 - Follow up with Verto
 
+## Working Budget Envelope (Remaining 2026)
+
+- Relationship billing target basis: `10` billable hours/week at `CAD 440/hour`
+  over approximately `38` remaining weeks in 2026
+- Relationship value on that basis: `CAD 167,200`
+- Provisional matter allocation: `4` billable hours/week
+- Remaining-2026 hour budget on that basis: `152` hours
+- Remaining-2026 fee budget on that basis: `CAD 66,880`
+
+## Budgeted Work Emphasis
+
+- ongoing CAMLO operations support
+- AML / ATF compliance process maintenance
+- build AML processes and SOPs
+- support RPAA-adjacent compliance workflow where it remains part of the CAMLO
+  workstream
+- maintain related banking-partner and compliance-operating follow-through
+
+## Budget Note
+
+This is a working planning allocation for internal budgeting and forecasting.
+It is not a fixed-fee quote and does not prevent reallocation between the
+Stream matters if ML1 changes the operating split.
+
 ## Open questions
 
 - Verto — nature and status of follow-up TBD
@@ -59,3 +83,5 @@ Stream Ventures Limited is a payments/MSB client with active CAMLO (Chief AML Of
 
 - 2026-02-01 — Brief populated from SharePoint metadata analysis
 - 2026-03-22 — Updated: AML-ATF Risk Assessment approval confirmed done; Wolfsberg FCCQ client feedback confirmed done; Diameter Agreement sent (done); RPAA Payments Agreement removed pending ML1 confirmation of status; Equals and Verto tasks added
+- 2026-04-03 — Working remaining-2026 matter budget added using a provisional
+  `4 hours/week` allocation from the Stream relationship target

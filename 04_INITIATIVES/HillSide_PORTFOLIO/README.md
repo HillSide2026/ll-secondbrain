@@ -112,6 +112,10 @@ The HillSide personal task-list reference is maintained in:
 - `PERSONAL_PROJECTS/TO_DO_LIST`
 - `PERSONAL_PROJECTS/BUILD_MONEY_MACHINE`
 
+Working strategic synthesis for Matthew's active 2026 priorities:
+
+- `MATTHEW_2026_REAL_GOALS.md`
+
 ---
 
 ## Governance Rules
