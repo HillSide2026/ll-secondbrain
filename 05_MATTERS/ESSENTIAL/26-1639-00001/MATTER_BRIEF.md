@@ -26,12 +26,15 @@ Client relationship management matter for Andersen. This is the umbrella matter 
 ## Current posture
 
 - **State:** Active
-- **Primary Activity:** Client relationship management
+- **Primary Activity:** Client relationship management plus relationship-level business-development oversight across Andersen lane matters
 
 ## Open questions
 
-- Active tasks and deliverables under this matter TBD
+- Which Andersen lane should be prioritized first at the relationship level
+- What relationship-level next actions should be surfaced across `26-1639-00002` and `26-1639-00003`
+- Whether additional lane-specific monitoring tools are needed beyond the trade-remedies CITT monitor
 
 ## Change log
 
 - 2026-03-22 — Brief created; scope confirmed by ML1
+- 2026-04-03 — Reframed as the umbrella Andersen relationship matter above the two Andersen sales-pipeline lane matters

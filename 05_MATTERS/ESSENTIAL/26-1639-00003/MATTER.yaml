@@ -5,3 +5,10 @@ status: "Open"
 delivery_status: "Essential"
 fulfillment_status: "keep in view"
 created_date: "2026-03-09"
+services:
+  - service_type: solution
+    service_name: "Pecans from Northern Israel — agri-food market-access file"
+    status: "identified"
+  - service_type: solution
+    service_name: "Flavored butter from Manitoba — agri-food market-access file"
+    status: "identified"

@@ -1,0 +1,45 @@
+---
+id: MATTER-26-1639-00001-BUSINESS_DEVELOPMENT_OVERVIEW
+title: Business Development Overview — 26-1639-00001 — Andersen
+owner: ML1
+status: draft
+created_date: 2026-04-03
+last_updated: 2026-04-03
+tags: [matter, business-development, 26-1639-00001]
+---
+
+# Business Development Overview — 26-1639-00001 — Andersen
+
+## Purpose
+
+Provide a single relationship-level view of Andersen-related business
+development across the Andersen lane matters.
+
+Andersen is the LL client of record. The opportunities tracked below are
+prospective end-client files pursued through the Andersen relationship.
+
+## Current Lanes
+
+| Lane Matter | Lane | Current posture | Visible tracks | Current tools | Primary next focus |
+|-------------|------|-----------------|----------------|---------------|--------------------|
+| [`26-1639-00002`](../26-1639-00002/README.md) | Trade remedies | Active Andersen end-client sales pipeline | `TR-001` qualified; `TR-002` identified | `TRM_CITT_UPDATE_SCANNER`, `CITT_SIGNAL_REPORT.md` | Clarify whether `TR-001` should move into active closing |
+| [`26-1639-00003`](../26-1639-00003/README.md) | Market access | Active Andersen end-client sales pipeline | `MA-001` identified; `MA-002` identified | Matter-local notes, pipeline artifacts, and segment model | Confirm parties, jurisdictions, actual legal ask, and segment priority across the initial market-access sectors |
+
+## Operating Model
+
+- Relationship-level BD visibility is governed by the Andersen relationship
+  matter, not by either lane matter alone.
+- Lane matters hold the concrete end-client file opportunities.
+- Lane-specific tools may exist where useful.
+- The trade-remedies CITT monitor is one lane-specific tool; it is not the
+  Andersen-wide BD agent.
+
+## Governing Agent
+
+- Relationship-level agent:
+  `00_SYSTEM/AGENTS/specs/client_relationships/ANDERSEN_BUSINESS_DEVELOPMENT_AGENT.md`
+
+## Notes
+
+- Use [`MATTER_BRIEF.md`](MATTER_BRIEF.md) for relationship-matter posture.
+- Use lane-local `SALES_PIPELINE.md` files for track-level detail.

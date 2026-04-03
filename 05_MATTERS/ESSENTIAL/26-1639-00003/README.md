@@ -1,16 +1,15 @@
 ---
 id: MATTER-26-1639-00003-README
-
-title: Andersen
+title: Andersen (Market Access)
 owner: ML1
 status: draft
 created_date: 2026-03-09
-last_updated: 2026-03-28
+last_updated: 2026-04-03
 tags: [matter, 26-1639-00003]
-practice_areas: [TBD]
+practice_areas: [market_access, trade, customs]
 ---
 
-# Andersen
+# Andersen (Market Access)
 
 ## Matter ID
 `26-1639-00003`
@@ -28,7 +27,12 @@ Market Access
 - **Key Deadlines:** [list]
 
 ## Current Focus
-[What is the current priority/next action]
+- Track prospective end-client files inside the established Andersen client relationship.
+- Establish and refine the market-access industry segment model for this lane.
+- Clarify whether the pecans and flavored-butter agri-food tracks are real market-access legal opportunities or still only thin commercial leads.
+- Keep the market-access lane aligned with the Andersen relationship-level BD view.
 
 ## Working Artifacts
+- Matter brief: [`MATTER_BRIEF.md`](MATTER_BRIEF.md)
+- Sales pipeline: [`SALES_PIPELINE.md`](SALES_PIPELINE.md)
 - Local notes-to-file holding record: [`NOTES_TO_FILE.md`](NOTES_TO_FILE.md)

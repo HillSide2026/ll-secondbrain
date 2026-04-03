@@ -4,7 +4,7 @@ title: Notes to File — 26-1639-00003 — Andersen (Market Access)
 owner: ML1
 status: draft
 created_date: 2026-03-28
-last_updated: 2026-03-28
+last_updated: 2026-04-03
 tags: [matter, notes-to-file, 26-1639-00003]
 practice_areas: [market_access, trade]
 location_status: ml2_local_pending_sharepoint_sync
@@ -34,6 +34,9 @@ Intended SharePoint destination when ready:
   - Agri-food: We are trying to broker the sale of pecans from Northern Israel.
   - Agri-food: We are also trying to broker the sale of flavored butter from Manitoba.
 - Action items:
+  - Confirm whether there is a real end-client organization behind the pecans track.
+  - Confirm countries in scope, route, and whether there is a concrete market-access, customs, import, or export issue.
+  - Confirm whether either agri-food track should move from `identified` to `contacted` or `qualified`.
 - Related references:
 - SharePoint sync status: pending
 

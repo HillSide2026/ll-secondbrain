@@ -11,8 +11,11 @@ tags: [trade-remedies, agents]
 # Trade Remedies Agents
 
 This folder defines trade-remedies-specific agent charters used to monitor,
-interpret, and support the Andersen trade-remedies lane and any later LL trade
-remedies matters.
+interpret, and support trade-remedies lanes inside broader LL business
+development and matter systems.
+
+For the current Andersen implementation, these trade-remedies tools sit under
+the relationship-level `ANDERSEN_BUSINESS_DEVELOPMENT_AGENT`.
 
 ## Run Graphs
 - `00_SYSTEM/orchestration/run_graphs/trade_remedies_citt_daily.yaml`
@@ -30,6 +33,12 @@ remedies matters.
 ## Local Scheduler
 - `00_SYSTEM/scripts/install_trade_remedies_citt_launch_agent.py`
 - Schedule config: `00_SYSTEM/CONFIG/run_schedule.yml`
+
+## Current Relationship Context
+- Relationship-level agent:
+  `00_SYSTEM/AGENTS/specs/client_relationships/ANDERSEN_BUSINESS_DEVELOPMENT_AGENT.md`
+- Andersen trade-remedies lane matter:
+  `05_MATTERS/ESSENTIAL/26-1639-00002/`
 
 ## Authority Boundary
 - Official-source monitoring and reporting only

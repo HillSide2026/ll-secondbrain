@@ -20,6 +20,10 @@ relevant to trade-remedies pipeline monitoring.
 The current operating use case is the Andersen trade-remedies sales pipeline in
 [`05_MATTERS/ESSENTIAL/26-1639-00002/`](../../../../05_MATTERS/ESSENTIAL/26-1639-00002/).
 
+This scanner is a lane-specific monitoring tool inside the broader Andersen
+business-development system. It is not the relationship-level Andersen BD
+agent.
+
 ## Action Bindings
 - `agent_citt_update_scan` (matter-scoped scheduled or ad hoc run)
 
@@ -55,6 +59,12 @@ The current operating use case is the Andersen trade-remedies sales pipeline in
 - Daily trade-remedies scheduler: `00_SYSTEM/scripts/run_trade_remedies_daily.py`
 - Local machine installer: `00_SYSTEM/scripts/install_trade_remedies_citt_launch_agent.py`
 - Schedule contract: `00_SYSTEM/CONFIG/run_schedule.yml`
+
+## Relationship Position
+- Relationship-level owner:
+  `00_SYSTEM/AGENTS/specs/client_relationships/ANDERSEN_BUSINESS_DEVELOPMENT_AGENT.md`
+- Lane matter:
+  `05_MATTERS/ESSENTIAL/26-1639-00002/`
 
 ## Does Not
 - Contact target organizations automatically
