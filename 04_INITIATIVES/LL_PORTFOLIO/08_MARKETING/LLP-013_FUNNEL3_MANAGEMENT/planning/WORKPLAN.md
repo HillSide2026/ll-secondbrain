@@ -4,7 +4,7 @@ title: LLP-013 Funnel 3 — Workplan
 owner: ML1
 status: draft
 created_date: 2026-03-18
-last_updated: 2026-03-21
+last_updated: 2026-04-03
 tags: [funnel-03, marketing, planning, workplan]
 ---
 
@@ -51,9 +51,10 @@ Stage: Planning
 
 ---
 
-### WS-3: Channel Activation
+### WS-3: Execution Readiness and Launch
 
-**Goal:** Launch LinkedIn Ads and BetaKit presence with tracking in place.
+**Goal:** Move Funnel 3 from planning into `pre-launch` readiness, then into
+`launch` once ML1 authorizes public activation.
 
 **Dependencies:** WS-1 complete, WS-2 M2.3 (website live), signal tracking defined (WS-4).
 
@@ -62,12 +63,18 @@ Stage: Planning
 | ID | Milestone | Owner | Target | Gate |
 |----|-----------|-------|--------|------|
 | M3.1 | LinkedIn Ads campaign structured (audience, budget, creative) | ML1 | 2026-04-25 | WS-1 and WS-2 must be complete |
-| M3.2 | LinkedIn Ads campaign ML1 approved and launched | ML1 | 2026-05-02 | Signal tracking must be live |
-| M3.3 | BetaKit outreach initiated (sponsorship or editorial inquiry) | ML1 | 2026-04-18 | WS-1 M1.2 required |
-| M3.4 | Podcast channel identified and outreach initiated | ML1 | 2026-04-25 | WS-1 M1.2 required |
-| M3.5 | RPAA deadline posts published on LinkedIn | ML1 | 2026-04-04 | WS-2 M2.6 required — RPAA deadline pressure |
+| M3.2 | Pre-Launch entry approved by ML1 | ML1 | 2026-05-02 | WS-1, WS-2, and WS-4 complete |
+| M3.3 | BetaKit outreach package prepared | ML1 | 2026-04-18 | WS-1 M1.2 required |
+| M3.4 | Podcast channel identified and outreach prepared | ML1 | 2026-04-25 | WS-1 M1.2 required |
+| M3.5 | RPAA deadline posts approved and ready to publish | ML1 | 2026-04-04 | WS-2 M2.6 required — RPAA deadline pressure |
+| M3.6 | Launch authorization recorded by ML1 | ML1 | TBD | Pre-Launch complete; signal tracking and budget live |
+| M3.7 | LinkedIn Ads campaign launched | ML1 | TBD | M3.6 required |
+| M3.8 | BetaKit outreach initiated | ML1 | TBD | M3.6 required unless ML1 authorizes narrower pre-launch testing |
+| M3.9 | RPAA deadline posts published on LinkedIn | ML1 | TBD | M3.6 required unless ML1 authorizes controlled pre-launch publication |
 
-Note: RPAA registration deadline is 2026-03-31. Organic RPAA content should be published as soon as M2.6 is complete, even before full channel launch.
+Note: RPAA registration deadline is 2026-03-31. If timing pressure warrants
+earlier publication, ML1 may expressly authorize a narrow `pre-launch`
+publication step without treating Funnel 3 as fully launched.
 
 ---
 
@@ -90,7 +97,7 @@ Note: RPAA registration deadline is 2026-03-31. Organic RPAA content should be p
 
 | Resource | Allocation | Notes |
 |----------|-----------|-------|
-| ML1 (Matthew Levine) | ~2 hrs/week planning; ~3 hrs/week executing | Positioning, approval, and channel decisions require ML1 |
+| ML1 (Matthew Levine) | ~2 hrs/week planning; ~3 hrs/week in Pre-Launch / Launch | Positioning, approval, and channel decisions require ML1 |
 | System agents (SE-01, SEO-01, MKT_WEBSITE_IMPLEMENTATION_AGENT) | On-demand | SE-01 reviews all outward-facing content; SEO-01 not activated for F3 until website live; Website Implementation Agent owns page implementation work |
 | LinkedIn Ads budget | TBD — ML1 to approve | Soulpepper benchmark: $1,500–$3,000/month to generate meaningful signal |
 | BetaKit | TBD — editorial or sponsorship | Pricing inquiry required |
@@ -113,4 +120,5 @@ Planning stage complete when:
 - WS-4 attribution rules defined.
 - METRICS.md thresholds approved by ML1.
 
-Executing stage begins when Planning→Executing gate is ML1-approved.
+`Pre-launch` begins when the Planning→Executing gate is ML1-approved.
+`Launch` begins only when ML1 separately authorizes public go-live.

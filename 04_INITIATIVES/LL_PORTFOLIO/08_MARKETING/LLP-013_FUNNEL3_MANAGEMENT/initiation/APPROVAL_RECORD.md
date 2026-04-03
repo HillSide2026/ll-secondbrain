@@ -12,7 +12,8 @@ Approval Status: Planning In Progress (Initiation Approved)
 - The project has advanced to `Planning`.
 - Measurement-package drafts are present for planning-stage structuring.
 - Canonical planning artifacts remain incomplete.
-- No `Planning -> Executing` approval is recorded yet.
+- No `Planning -> Executing` approval into `Pre-Launch` is recorded yet.
+- No `Pre-Launch -> Launch` approval is recorded yet.
 - No live optimization or execution change is authorized.
 
 ## Stage Gate: Initiating -> Planning
@@ -31,12 +32,12 @@ Initiation Approved By: ML1
 Date: 2026-03-15
 Planning Stage Authorized: Yes
 
-## Stage Gate: Planning -> Executing
+## Stage Gate: Planning -> Executing (`Pre-Launch`)
 
 | Item | Status | Date | Notes |
 |------|--------|------|-------|
 | `planning/SCOPE_STATEMENT.md` | drafted | 2026-03-18 | ICP-02, positioning, channel architecture, entry offer, core offer map, and completion condition defined |
-| `planning/WORKPLAN.md` | drafted | 2026-03-18 | Four workstreams (positioning, assets, channel activation, signal tracking) with milestones and resource plan |
+| `planning/WORKPLAN.md` | drafted | 2026-03-18 | Four workstreams (positioning, assets, execution readiness/launch, signal tracking) with milestones and resource plan |
 | `planning/ASSUMPTIONS_CONSTRAINTS.md` | drafted | 2026-03-18 | Market, operational, and conversion assumptions; hard and soft constraints documented |
 | `planning/DEPENDENCIES.md` | drafted | 2026-03-18 | Agent dependencies (SE-01, SEO-01, BSE-01, SPE-01) and cross-project dependencies (F01, F02, LLP-025, LLP-030) documented |
 | `planning/RISK_REGISTER.md` | drafted | 2026-03-18 | 10 risks identified with likelihood/impact/mitigation; escalation conditions defined |
@@ -45,11 +46,25 @@ Planning Stage Authorized: Yes
 | `planning/METRICS_LEGACY_DRAFT.md` | drafted | 2026-03-15 | Legacy planning metric draft retained for historical continuity |
 | `planning/ML1_METRIC_APPROVAL.md` | proposed | 2026-03-15 | Placeholder approval artifact; threshold approval not yet recorded |
 
-Planning Gate Decision (Pending): [Approved to execute | Held | Rejected]
+Planning Gate Decision (Pending): [Approved to enter Pre-Launch | Held | Rejected]
 Planning Approved By: ______________________
+Date: ______________________
+
+## Stage Gate: Pre-Launch -> Launch
+
+| Item | Status | Date | Notes |
+|------|--------|------|-------|
+| Public-facing assets | pending | __________ | Confirm live assets are approved and ready for outward publication |
+| Tracking and attribution | pending | __________ | Confirm tracking is live and usable before go-live |
+| Budget approvals | pending | __________ | Confirm spend authority for launch channels |
+| Risk controls | pending | __________ | Confirm launch risks and escalation triggers are acceptable |
+
+Launch Gate Decision (Pending): [Approved to launch | Held | Rejected]
+Launch Approved By: ______________________
 Date: ______________________
 
 Notes:
 - Initiation approval confirms scope and project framing for Funnel 03 governance.
 - Planning artifacts are now authorized.
-- Execution remains subject to separate ML1 approval.
+- `Pre-Launch` remains subject to separate ML1 approval.
+- `Launch` remains subject to an additional later ML1 approval.

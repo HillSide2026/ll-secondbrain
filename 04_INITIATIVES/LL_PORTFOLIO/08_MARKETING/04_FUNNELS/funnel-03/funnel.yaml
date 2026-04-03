@@ -1,10 +1,14 @@
 meta:
   id: funnel-03
   name: Book + Blog -> GHL Intake
-  status: active
+  status: planned
   owner: ML1
-  version: 2.2.0
-  last_updated: '2026-03-29'
+  version: 2.3.2
+  last_updated: '2026-04-03'
+  execution_state: gated
+  execution_substages:
+    - pre-launch
+    - launch
 lineage:
   type: independent
   of: null
@@ -29,6 +33,21 @@ spec:
     core_offers:
       - Ongoing AML Counsel Retainer
 history:
+- v: 2.3.2
+  date: '2026-04-03'
+  by: ML1
+  change: >
+    Clarified that execution is split into pre-launch and launch. Planning ->
+    Executing authorizes pre-launch only; public launch remains separately
+    gated.
+- v: 2.3.1
+  date: '2026-04-03'
+  by: ML1
+  change: >
+    Governance normalization. Funnel 03 remains planned and gated at the
+    Planning -> Executing boundary. Existing WordPress drafts, Stripe product
+    setup, and similar preparatory artifacts are treated as early execution
+    work only and do not constitute live activation approval.
 - v: 2.3.0
   date: '2026-03-30'
   by: ML1

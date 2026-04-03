@@ -4,7 +4,7 @@ title: Financial Services — Payments
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-03-09
+last_updated: 2026-04-03
 tags: []
 ---
 
@@ -47,6 +47,18 @@ Overlays are shared modules invoked by solutions. They are not solutions themsel
 ## Provider Agreements
 
 Drafting and review of provider agreements lives in FINANCIAL_SERVICES/CONTRACTS (not here). This practice area may reference provider agreement terms but does not produce or review them.
+
+---
+
+## Related Specialist Agents
+
+- `00_SYSTEM/AGENTS/specs/marketing/MKT_MUGGAH_MONEY_SERVICES_AGENT.md`
+- `00_SYSTEM/AGENTS/specs/marketing/MKT_MUGGAH_PAYMENT_SERVICES_AGENT.md`
+
+These are Funnel 3 specialist agents cross-referenced to the financial
+services practice area. They support internal issue mapping and scope
+discipline only; they do not change doctrine or activate the parked LLP-036
+practice-area initiative.
 
 ---
 

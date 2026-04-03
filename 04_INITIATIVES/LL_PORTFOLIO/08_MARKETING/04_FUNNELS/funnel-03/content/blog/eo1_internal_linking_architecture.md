@@ -2,14 +2,17 @@
 id: funnel3__eo1__internal_linking_architecture
 title: "EO1 Internal Linking Architecture — MSB Cluster"
 owner: ML1
-status: active
+status: draft
 version: 1.0
 created_date: 2026-03-30
-last_updated: 2026-03-30
+last_updated: 2026-04-03
 tags: [funnel-03, content-strategy, internal-linking, seo, entry-offer-1]
 ---
 
 # EO1 Internal Linking Architecture — MSB Cluster
+
+Planning-stage content architecture prepared for EO1 drafts. It is not, by
+itself, approval to publish or activate Funnel 03 channels.
 
 ## Core Principle
 

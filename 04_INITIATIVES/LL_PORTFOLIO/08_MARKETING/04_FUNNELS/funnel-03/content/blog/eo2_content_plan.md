@@ -2,10 +2,10 @@
 id: funnel3__eo2__content_plan
 title: "EO2 Blog Content Plan — STR Cluster"
 owner: ML1
-status: active
+status: draft
 version: 1.0
 created_date: 2026-03-30
-last_updated: 2026-03-30
+last_updated: 2026-04-03
 tags: [funnel-03, content-plan, entry-offer-2, str, aml, msb]
 entry_offer: EO2 — Suspicious Transaction Triage and STR Filing
 ---
@@ -14,7 +14,8 @@ entry_offer: EO2 — Suspicious Transaction Triage and STR Filing
 
 ## Status
 
-Content plan approved. Posts not yet written.
+Planning-stage content plan. Posts not yet written. No live publishing or
+funnel activation is implied by this artifact.
 
 ---
 

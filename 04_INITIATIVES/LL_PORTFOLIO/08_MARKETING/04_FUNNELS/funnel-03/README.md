@@ -2,10 +2,10 @@
 id: 04_initiatives_ll_portfolio_08_marketing_04_funnels_funnel_03_readme_md
 title: funnel-03
 owner: ML1
-status: active
-project_stage: executing
+status: planning
+project_stage: planning
 created_date: 2026-03-07
-last_updated: 2026-03-29
+last_updated: 2026-04-03
 tags: [marketing, funnel-03, networking]
 ---
 
@@ -40,10 +40,31 @@ ML1 approval is required for scope, changes, and any execution commitments.
 
 - Do not treat this stub as approved operating instruction.
 - Do not execute external actions based on this stub.
+- Do not infer activation approval from early artifacts such as WordPress drafts,
+  Stripe setup, or other preparatory execution work.
 
 ## Approval State
 
-`active`
+`planning — Planning -> Executing (Pre-Launch entry) remains gated`
+
+## Current Governance State
+
+- Funnel 03 remains in planning.
+- The governing project for this funnel remains
+  `LLP-013_FUNNEL3_MANAGEMENT`, which has not yet cleared the
+  Planning -> Executing gate into `pre-launch`.
+- Some execution-stage artifacts exist as early or provisional preparation
+  work, but they do not constitute live activation approval.
+- Publishing, paid channel launch, checkout activation, and external promotion
+  remain gated pending separate ML1 approval at the `launch` boundary.
+
+## Execution Stage Model
+
+- `pre-launch`: early execution work after planning approval, including
+  platform setup, asset finalization, QA, and other controlled preparation.
+  This stage does not by itself authorize public rollout.
+- `launch`: public publishing, paid channel activation, checkout/live
+  conversion activity, and external promotion.
 
 ## Canonical Offer Map
 
@@ -60,7 +81,7 @@ Core offers:
 
 ## Last ML1 Review Date
 
-`2026-03-29`
+`2026-04-03`
 
 ## Supporting Assets
 

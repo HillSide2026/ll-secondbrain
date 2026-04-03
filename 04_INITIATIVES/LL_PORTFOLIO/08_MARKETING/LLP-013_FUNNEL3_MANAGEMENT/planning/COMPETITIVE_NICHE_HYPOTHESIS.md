@@ -36,7 +36,7 @@ Canadian payments / MSB / PSP / stablecoin regulatory market by positioning as:
 
 The most defensible niche may be:
 
-- Canadian payments / MSB / PSP / stablecoin regulatory counsel
+- Canadian payments / MSB / PSP regulatory counsel, with tokenized-payment and stablecoin-adjacent issues handled as bounded adjacent matters rather than a standalone securities lane
 - focused on operator-side regulatory structuring, licensing, compliance, and
   banking-access-related problems
 - with strong relevance to founders, operators, compliance leads, and referral

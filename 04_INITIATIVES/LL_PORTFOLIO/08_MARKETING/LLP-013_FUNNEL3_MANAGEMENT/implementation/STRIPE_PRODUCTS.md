@@ -2,13 +2,16 @@
 id: llp-013_funnel3_stripe_products
 title: Stripe Products — Funnel 3
 owner: ML1
-status: active
+status: draft
 created_date: 2026-04-01
-last_updated: 2026-04-02
+last_updated: 2026-04-03
 tags: [funnel-03, stripe, products, lead-magnet, consultation]
 ---
 
 # Stripe Products — Funnel 3
+
+This file records early Stripe setup work completed during planning. It does
+not authorize live promotion, checkout activation, or external launch.
 
 Products created in Stripe on 2026-04-01.
 

@@ -4,7 +4,7 @@ title: LLP-036 — Financial Services Practice Area Initiative
 owner: ML1
 status: parked
 created_date: 2026-02-26
-last_updated: 2026-04-01
+last_updated: 2026-04-03
 tags: [practice-area, financial-services, parked]
 ---
 
@@ -61,6 +61,18 @@ time.
 - `initiation/RISK_SCAN.md`
 - `initiation/APPROVAL_RECORD.md`
 - `initiation/BUSINESS_CASE.md`
+
+## Related Cross-References
+
+- Financial services playbook anchor:
+  `02_PLAYBOOKS/FINANCIAL_SERVICES/PAYMENTS/`
+- Funnel 3 specialist agent:
+  `00_SYSTEM/AGENTS/specs/marketing/MKT_MUGGAH_MONEY_SERVICES_AGENT.md`
+- Funnel 3 specialist agent:
+  `00_SYSTEM/AGENTS/specs/marketing/MKT_MUGGAH_PAYMENT_SERVICES_AGENT.md`
+
+These are cross-references only. They do not change the parked status of
+LLP-036 and do not authorize new practice-area build activity.
 
 ## Reactivation Trigger
 

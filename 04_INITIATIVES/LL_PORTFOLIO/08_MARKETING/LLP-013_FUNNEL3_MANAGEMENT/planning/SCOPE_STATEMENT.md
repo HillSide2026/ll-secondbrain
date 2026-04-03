@@ -4,7 +4,7 @@ title: LLP-013 Funnel 3 — Scope Statement
 owner: ML1
 status: draft
 created_date: 2026-03-18
-last_updated: 2026-03-18
+last_updated: 2026-04-03
 tags: [funnel-03, marketing, planning, scope]
 ---
 
@@ -16,13 +16,21 @@ Stage: Planning
 
 ---
 
+## Execution Stage Model
+
+- `pre-launch`: first execution stage after planning approval. Includes
+  controlled setup, asset finalization, platform configuration, QA, and
+  readiness work.
+- `launch`: second execution stage. Includes public publishing, paid channel
+  activation, external promotion, and live conversion activity.
+
 ## In Scope
 
 ### 1. Positioning and ICP Formalization
 
 - Define and lock the Funnel 3 ICP as ICP-02: Canadian payments/MSB/fintech operators with Canadian regulatory exposure.
 - Sub-segments to target: MSBs seeking registration or effectiveness reviews, RPAA-regulated fintechs, neobanks, embedded finance operators, crypto businesses with Canadian regulatory exposure, international fintechs entering Canada.
-- Confirm positioning claim: Levine Law as GTA's specialist payments + fintech regulatory counsel — not a fractional GC, not a full-service firm. Specialist boutique for operator-side regulatory and compliance work.
+- Confirm positioning claim: Levine Law as GTA's specialist payments regulatory counsel for operator-side MSB, RPAA, AML, and adjacent payment-structuring work — not a fractional GC, not a full-service firm. Tokenized-payment matters are adjacent and bounded, not a standalone securities lane.
 - Define the competitive white space explicitly: no GTA firm currently holds the "specialist payments regulatory + fractional GC" position. Funnel 3 exists to claim it.
 
 ### 2. Channel Architecture
@@ -67,12 +75,13 @@ Core offer map must be documented in a canonical artifact before channel activat
 
 ### 5. Asset Production
 
-Assets required before channel launch:
+Assets required before `launch`:
 - Website page: Payments/MSB/Fintech regulatory counsel page on levine-law.ca. Must be live before LinkedIn Ads activation.
 - LinkedIn profile optimization: Levine Law positioning language updated on ML1's LinkedIn profile.
 - Content calendar: minimum 8 LinkedIn posts addressing regulatory deadlines before paid campaign launch.
 
-Asset production is in scope for Planning workplan definition. Execution of assets is in scope for Executing stage.
+Asset production is in scope for Planning workplan definition. Controlled asset
+execution may occur in `pre-launch`. Public rollout belongs to `launch`.
 
 ### 6. Distribution and Signal Tracking
 
@@ -83,7 +92,7 @@ Asset production is in scope for Planning workplan definition. Execution of asse
 ### 7. Regulatory Deadline Targeting
 
 Buying trigger calendar to be built:
-- RPAA registration deadline: 2026-03-31 (imminent — immediate content and outreach opportunity).
+- RPAA registration deadline: 2026-03-31 (passed; retain as a historical demand trigger and reframe future content around post-deadline applicability, remediation, reporting, and ongoing operating discipline).
 - CARF (Crypto Asset Reporting Framework): 2027 filing obligations, operator prep needed in 2026.
 - Open banking framework: timeline uncertain, creates ongoing advisory demand.
 - OSFI operational risk guideline: September 2026 deadline for regulated firms.
@@ -95,7 +104,8 @@ Buying trigger calendar to be built:
 - F01 funnel (Google Ads, GHL reactive intake) — governed under LLP-011.
 - F02 funnel (Corporate Health Check) — governed under LLP-012.
 - Matter delivery and execution of client work.
-- Any content publishing, ad activation, or channel launch — these are Executing-stage actions.
+- Any content publishing, ad activation, or channel launch — these are
+  execution-stage actions and remain outside Planning.
 - Hiring or staffing decisions.
 - CA-01 Conversion Architect activation (blocked until F02 traffic baseline established).
 - SPE-01 Selective Provocation Engine activation (blocked until ≥3 accountant referral relationships active).
@@ -104,11 +114,17 @@ Buying trigger calendar to be built:
 
 ## Completion Condition
 
-Funnel 3 is in Executing when:
+Planning stage completion authorizes entry into `pre-launch`, not automatic
+entry into `launch`.
+
+Funnel 3 may enter `pre-launch` when:
 1. ICP-02 and positioning are formally locked.
 2. Entry offer pricing and scope are ML1-approved.
 3. Core offer map is documented.
-4. Website page is live.
-5. LinkedIn Ads campaign is configured and ready to launch.
+4. Website page implementation path is approved and publication-ready.
+5. LinkedIn Ads campaign is configured and ready for controlled activation.
 6. Signal tracking baseline is captured.
 7. RPAA deadline content calendar (minimum 4 posts) is drafted and SE-01 reviewed.
+
+`Launch` requires a later ML1 decision confirming that public publishing, paid
+channel activation, and external promotion should actually go live.

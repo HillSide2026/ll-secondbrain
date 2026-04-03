@@ -2,10 +2,10 @@
 id: funnel3__eo4__content_plan
 title: "EO4 Blog Content Plan — Crypto AML Cluster"
 owner: ML1
-status: active
+status: draft
 version: 1.0
 created_date: 2026-03-30
-last_updated: 2026-03-30
+last_updated: 2026-04-03
 tags: [funnel-03, content-plan, entry-offer-4, crypto, aml, msb, virtual-currency]
 entry_offer: EO4 — Crypto AML
 ---
@@ -14,7 +14,9 @@ entry_offer: EO4 — Crypto AML
 
 ## Status
 
-Pillar written. Supporting posts not yet written (except #1 which already exists in EO2).
+Planning-stage content plan. Pillar written; supporting posts not yet written
+(except #1 which already exists in EO2). No live publishing or funnel
+activation is implied by this artifact.
 
 ---
 

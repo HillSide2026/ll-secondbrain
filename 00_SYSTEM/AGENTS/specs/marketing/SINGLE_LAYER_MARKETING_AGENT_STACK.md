@@ -4,7 +4,7 @@ title: Single-Layer Marketing Agent Stack
 owner: ML1
 status: draft
 created_date: 2026-03-22
-last_updated: 2026-03-22
+last_updated: 2026-04-03
 tags: [marketing, agents, consolidated, skills]
 ---
 
@@ -42,6 +42,9 @@ It does not replace the source charters or source activation records.
 | `MKT_UX_DESIGN_AGENT` | UI/UX specification and handoff | active | system marketing suite |
 | `MKT_THRIVE_THEMES_AGENT` | Thrive Architect build-packet generation | active | system marketing suite |
 | `MKT_WEBSITE_IMPLEMENTATION_AGENT` | Website implementation and release prep | active | system marketing suite |
+| `MKT_MUGGAH_SECURITIES_AGENT` | Funnel 3 securities-adjacent perimeter specialist | draft | system marketing suite |
+| `MKT_MUGGAH_MONEY_SERVICES_AGENT` | Funnel 3 money-services perimeter specialist | draft | system marketing suite |
+| `MKT_MUGGAH_PAYMENT_SERVICES_AGENT` | Funnel 3 payment-services perimeter specialist | draft | system marketing suite |
 
 ## Agent Skill Bundles
 
@@ -209,6 +212,59 @@ Minimum skill bundle:
 - `accessibility_audit_and_remediation.skill.md`
 - `design_to_implementation_handoff.skill.md`
 
+### `MKT_MUGGAH_SECURITIES_AGENT`
+
+Role: securities-adjacent issue spotting, claim-boundary control, and client-risk
+rating for Funnel 3 token, stablecoin, marketplace, and exempt-distribution
+fact patterns.
+
+Minimum skill bundle:
+- `securities_law_knowledge.skill.md`
+- `securities_law_analysis.skill.md`
+- `securities_law_document_review.skill.md`
+- `doctrine_alignment_check.skill.md`
+- `market_position_mapping.skill.md`
+- `offer_tightening_and_polishing.skill.md`
+- `campaign_brief_tightening_and_polishing.skill.md`
+- `audience_segmentation.skill.md`
+- `differentiation_detection.skill.md`
+- `competitor_message_analysis.skill.md`
+
+### `MKT_MUGGAH_MONEY_SERVICES_AGENT`
+
+Role: money-services issue spotting, claim-boundary control, and client-risk
+rating for Funnel 3 MSB, virtual-currency, remittance, foreign-exchange, and
+AML/reporting fact patterns.
+
+Minimum skill bundle:
+- `money_services_law_knowledge.skill.md`
+- `money_services_law_analysis.skill.md`
+- `money_services_law_document_review.skill.md`
+- `doctrine_alignment_check.skill.md`
+- `market_position_mapping.skill.md`
+- `offer_tightening_and_polishing.skill.md`
+- `campaign_brief_tightening_and_polishing.skill.md`
+- `audience_segmentation.skill.md`
+- `differentiation_detection.skill.md`
+- `competitor_message_analysis.skill.md`
+
+### `MKT_MUGGAH_PAYMENT_SERVICES_AGENT`
+
+Role: payment-services issue spotting, claim-boundary control, and client-risk
+rating for Funnel 3 PSP, RPAA, safeguarding, and payment-function fact patterns.
+
+Minimum skill bundle:
+- `payment_services_law_knowledge.skill.md`
+- `payment_services_law_analysis.skill.md`
+- `payment_services_law_document_review.skill.md`
+- `doctrine_alignment_check.skill.md`
+- `market_position_mapping.skill.md`
+- `offer_tightening_and_polishing.skill.md`
+- `campaign_brief_tightening_and_polishing.skill.md`
+- `audience_segmentation.skill.md`
+- `differentiation_detection.skill.md`
+- `competitor_message_analysis.skill.md`
+
 ## Operating Sequence
 
 1. `MKT_CHIEF_MARKETING_OFFICER_AGENT` sequences the run.
@@ -234,3 +290,6 @@ Minimum skill bundle:
 - `00_SYSTEM/AGENTS/specs/marketing/MKT_UX_DESIGN_AGENT.md`
 - `00_SYSTEM/AGENTS/specs/marketing/MKT_THRIVE_THEMES_AGENT.md`
 - `00_SYSTEM/AGENTS/specs/marketing/MKT_WEBSITE_IMPLEMENTATION_AGENT.md`
+- `00_SYSTEM/AGENTS/specs/marketing/MKT_MUGGAH_SECURITIES_AGENT.md`
+- `00_SYSTEM/AGENTS/specs/marketing/MKT_MUGGAH_MONEY_SERVICES_AGENT.md`
+- `00_SYSTEM/AGENTS/specs/marketing/MKT_MUGGAH_PAYMENT_SERVICES_AGENT.md`

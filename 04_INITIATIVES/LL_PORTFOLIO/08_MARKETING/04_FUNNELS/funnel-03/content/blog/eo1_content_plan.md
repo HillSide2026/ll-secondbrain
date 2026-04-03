@@ -2,10 +2,10 @@
 id: funnel3__eo1__content_plan
 title: "EO1 Blog Content Plan — MSB Registration Cluster"
 owner: ML1
-status: active
+status: draft
 version: 2.0
 created_date: 2026-03-29
-last_updated: 2026-03-30
+last_updated: 2026-04-03
 tags: [funnel-03, content-plan, entry-offer-1, msb]
 entry_offer: EO1 — MSB Registration Mandate
 ---
@@ -14,9 +14,11 @@ entry_offer: EO1 — MSB Registration Mandate
 
 ## Status
 
-All 21 EO1 posts written, saved to repo, and posted to levinelegal.ca as WordPress drafts.
+Planning-stage asset packet. All 21 EO1 posts are written, saved to repo, and
+posted to levinelegal.ca as WordPress drafts.
 Pending ML1 review and publish in WP Admin.
 Slugs and internal linking architecture applied via `scripts/wp_apply_linking_architecture.py`.
+These drafts are early execution artifacts and do not mean Funnel 03 is activated.
 
 ---
 

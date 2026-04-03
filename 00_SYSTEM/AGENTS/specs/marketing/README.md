@@ -4,7 +4,7 @@ title: Marketing Agents
 owner: ML1
 status: active
 created_date: 2026-03-08
-last_updated: 2026-04-01
+last_updated: 2026-04-03
 tags: [marketing, agents, orchestration]
 ---
 
@@ -46,6 +46,9 @@ preparation, market-signal capture, and repository governance.
 - `MKT_SOCIAL_NARRATIVE_AGENT`
 - `MKT_OFFER_FUNNEL_AGENT`
 - `MKT_COMPETITIVE_POSITIONING_AGENT`
+- `MKT_MUGGAH_SECURITIES_AGENT`
+- `MKT_MUGGAH_MONEY_SERVICES_AGENT`
+- `MKT_MUGGAH_PAYMENT_SERVICES_AGENT`
 
 ## Reference Workflow
 1. Chief Marketing Officer agent decomposes objective and sequences skills.

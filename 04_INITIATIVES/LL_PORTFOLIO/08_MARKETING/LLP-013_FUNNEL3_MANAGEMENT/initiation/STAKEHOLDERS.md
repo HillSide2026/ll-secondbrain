@@ -12,6 +12,9 @@ Project Path: 08_MARKETING/LLP-013_FUNNEL3_MANAGEMENT
 - Content Production Agent
 - Editorial QA Agent
 - MKT_WEBSITE_IMPLEMENTATION_AGENT
+- MKT_MUGGAH_SECURITIES_AGENT (optional specialist for securities-adjacent F3 analysis)
+- MKT_MUGGAH_MONEY_SERVICES_AGENT (optional specialist for MSB / AML / FINTRAC-adjacent F3 analysis)
+- MKT_MUGGAH_PAYMENT_SERVICES_AGENT (optional specialist for PSP / RPAA-adjacent F3 analysis)
 - Distribution Orchestration Agent
 - Market Signal Agent
 - Repository / Asset Governance Agent
@@ -22,6 +25,9 @@ Project Path: 08_MARKETING/LLP-013_FUNNEL3_MANAGEMENT
 - Financial services / payments practice stakeholders
 - Networking and referral relationship surfaces in the payments/MSB/PSP market
 - AML and reporting subject-matter stakeholders
+- securities-adjacent subject-matter stakeholders for token / stablecoin / marketplace issues
+- money-services subject-matter stakeholders for MSB / virtual-currency / reporting issues
+- payment-services subject-matter stakeholders for PSP / RPAA / safeguarding issues
 
 ## Governance Stakeholders
 - ML2 doctrine and policy controls

@@ -4,7 +4,7 @@ title: LLP-013 Funnel 3 — Metrics
 owner: ML1
 status: proposed
 created_date: 2026-03-18
-last_updated: 2026-03-18
+last_updated: 2026-04-03
 tags: [funnel-03, marketing, planning, metrics]
 ---
 
@@ -14,7 +14,8 @@ Project ID: LLP-013
 Project Path: 08_MARKETING/LLP-013_FUNNEL3_MANAGEMENT
 Stage: Planning
 
-> Status: proposed. Requires ML1 approval before Planning→Executing gate can close.
+> Status: proposed. Requires ML1 approval before the Planning→Executing
+> (`Pre-Launch`) gate can close.
 
 ---
 
@@ -48,7 +49,8 @@ Stage: Planning
 
 ## Baseline Capture
 
-Baseline capture period: First 30 days of channel activation (after LinkedIn Ads launch).
+Baseline capture period: First 30 days of live channel activity after ML1
+authorizes `launch`.
 
 If baseline for `f3_qualified_consults_per_month` is zero at 30 days, reassess channel targeting and ICP before month 2 spend.
 
@@ -60,7 +62,8 @@ Metrics are reviewed at the following gates:
 
 | Gate | Timing | Reviewer | Decision |
 |------|--------|---------|---------|
-| Planning→Executing | 2026-04-18 (target) | ML1 | Approve thresholds; authorize channel launch |
+| Planning→Executing (`Pre-Launch`) | 2026-04-18 (target) | ML1 | Approve thresholds; authorize controlled execution readiness work |
+| Pre-Launch→Launch | TBD | ML1 | Confirm public launch thresholds, budget, and tracking before go-live |
 | 45-day campaign review | 45 days post LinkedIn Ads launch | ML1 | Review CPL and consult rate; continue, adjust, or pause |
 | 90-day funnel review | 90 days post channel activation | ML1 | Assess all thresholds; determine if F3 is generating viable pipeline or requires channel/messaging revision |
 

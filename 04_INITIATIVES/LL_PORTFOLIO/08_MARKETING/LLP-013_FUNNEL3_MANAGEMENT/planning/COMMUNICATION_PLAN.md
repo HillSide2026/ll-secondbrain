@@ -4,7 +4,7 @@ title: LLP-013 Funnel 3 — Communication Plan
 owner: ML1
 status: draft
 created_date: 2026-03-18
-last_updated: 2026-03-18
+last_updated: 2026-04-03
 tags: [funnel-03, marketing, planning, communication]
 ---
 
@@ -20,9 +20,10 @@ Stage: Planning
 
 | Cadence | Format | Participants | Purpose |
 |---------|--------|-------------|---------|
-| Weekly (during Executing) | ML1 solo review — 15 min | ML1 | Check LinkedIn Ads CPL, consult bookings, content calendar progress. Flag any signals that require attention. |
+| Weekly (during Pre-Launch / Launch) | ML1 solo review — 15 min | ML1 | Check execution readiness, content calendar progress, campaign status, and early conversion signals. Flag any issues requiring attention. |
 | Monthly | Portfolio management cycle (LLM-004/005/006) | System agents + ML1 | F3 project health included in PROJECT_HEALTH_ROLLUP. Metric actuals vs. targets reviewed. |
-| Gate review (one-time) | Planning→Executing gate review | ML1 | All 7 planning artifacts reviewed; metrics approved; Executing authorized. Target: 2026-04-18. |
+| Gate review (one-time) | Planning→Executing (`Pre-Launch`) gate review | ML1 | All planning artifacts reviewed; metrics approved; Pre-Launch execution authorized. Target: 2026-04-18. |
+| Gate review (one-time) | Pre-Launch→Launch gate review | ML1 | Confirm public-facing assets, tracking, budget, and risk controls before live rollout. |
 | Ad hoc | ML1 escalation review | ML1 | Triggered by any escalation condition in RISK_REGISTER.md. |
 
 ---
@@ -35,7 +36,7 @@ Stage: Planning
 | LinkedIn Ads creative and targeting | ML1 review and approval before activation |
 | Budget commitments (LinkedIn Ads, BetaKit sponsorship) | ML1 approval required before any spend |
 | Entry offer pricing and scope | ML1 approval required; must be recorded in APPROVAL_RECORD.md |
-| Metric threshold approval | ML1 sign-off on METRICS.md; recorded in APPROVAL_RECORD.md at Planning→Executing gate |
+| Metric threshold approval | ML1 sign-off on METRICS.md; recorded in APPROVAL_RECORD.md at Planning→Executing (`Pre-Launch`) gate |
 | New channel additions beyond LinkedIn/BetaKit/podcast | ML1 required — no new paid channels without explicit authorization |
 
 ---
@@ -57,9 +58,12 @@ Escalation triggers (from RISK_REGISTER.md):
 | Agent | Invocation | Output Routing |
 |-------|-----------|----------------|
 | SE-01 (Strategic Editor) | Invoked by ML1 per output — no autonomous batch processing | Output (score + reason codes) → ML1 decision queue |
-| SEO-01 (SEO Metrics Master) | Not activated for F3 until website live | N/A in Planning |
+| SEO-01 (SEO Metrics Master) | Not activated for F3 until website is live in Pre-Launch or Launch | N/A in Planning |
 | BSE-01 (Blog/SEO Engine) | Blocked until F02 website live | N/A in Planning |
 | SPE-01 (Selective Provocation Engine) | Blocked until ≥3 accountant referrals | N/A in Planning |
+| MKT_MUGGAH_SECURITIES_AGENT | Invoked by ML1 for token, stablecoin, marketplace, custody, or exempt-distribution fact patterns | Internal issue map / instrument note → ML1 decision queue |
+| MKT_MUGGAH_MONEY_SERVICES_AGENT | Invoked by ML1 for MSB, virtual-currency, remittance, FX, AML-program, or reporting fact patterns | Internal issue map / authority note → ML1 decision queue |
+| MKT_MUGGAH_PAYMENT_SERVICES_AGENT | Invoked by ML1 for PSP, payment-function, safeguarding, end-user-funds, or RPAA fact patterns | Internal issue map / authority note → ML1 decision queue |
 | LLM-004/005/006 | Automated monthly cycle | Outputs in PROJECT_HEALTH_ROLLUP and PORTFOLIO_STATUS_DASHBOARD |
 
 ---

@@ -4,7 +4,7 @@ title: Funnel Spec — Funnel 03
 owner: ML1
 status: planned
 created_date: 2026-02-25
-last_updated: 2026-03-15
+last_updated: 2026-04-03
 tags: []
 ---
 
@@ -14,6 +14,9 @@ tags: []
 
 - funnel_id: funnel-03
 - status: planned
+- execution_stage_model:
+  - pre-launch
+  - launch
 
 ## Purpose / Role
 
@@ -64,7 +67,7 @@ Excludes:
 
 ## Core Narrative / Promise
 
-Specialized payments and stablecoin regulatory counsel for operators making structural, capital-impacting decisions.
+Specialized payments, MSB, and PSP regulatory counsel for operators making structural, capital-impacting decisions, with tokenized-payment fact patterns handled as bounded adjacent issues rather than a standalone securities lane.
 
 ## Conversion Event Definition
 
@@ -142,7 +145,7 @@ Stages: booked → consult_complete → retained
   - EO1: MSB Registration Mandate
   - EO2: Suspicious Transaction Triage & STR Filing
   - EO3: AML Health Check
-  - EO4: Payment Token & Utility Token Regulatory Structuring (candidate — pending offer definition at practice layer)
+  - EO4: Tokenized Payment Systems Regulatory Structuring (candidate — pending offer definition at practice layer)
 - Core offers:
   - Suspicious Transaction Reporting Triage & Playbook
   - MSB Effectiveness Review
@@ -155,13 +158,13 @@ Stages: booked → consult_complete → retained
   - RPAA_REGISTRATION
   - RPAA_THREE_YEAR_REVIEW
 
-## EO4 Scope Note — Payment Token & Utility Token Regulatory Structuring
+## EO4 Scope Note — Tokenized Payment Systems Regulatory Structuring
 
-- Framing: regulatory structuring for operators issuing or deploying payment tokens and utility tokens — not "token issuance" as a general service
+- Framing: regulatory structuring for operators deploying tokenized payment systems — not "token issuance" as a general service
 - Scope: FINTRAC classification, RPAA applicability, AML obligations, banking relationship structuring for token-based payment systems
 - Excludes: securities law advice; non-securities status is a matter-by-matter determination, not a blanket marketing claim
 - Status: candidate — offer must be defined at the practice layer before marketing activation
-- Compliance note: marketing materials must not represent that payment tokens or utility tokens are categorically outside securities law
+- Compliance note: marketing materials must not represent tokenized payment systems or their component tokens as categorically outside securities law
 
 ## Planning Decisions
 
@@ -172,6 +175,8 @@ Stages: booked → consult_complete → retained
 - Marketing only; no legal advice or acceptance decisions
 - ML1 approval required for acceptance
 - Activation remains gated pending ML1-approved planning-stage controls
+- Planning -> Executing authorizes `pre-launch` only; public `launch` requires a
+  later ML1 approval
 - EO4 requires practice-layer offer definition before any marketing activation
 
 ## Owner + Review Cadence

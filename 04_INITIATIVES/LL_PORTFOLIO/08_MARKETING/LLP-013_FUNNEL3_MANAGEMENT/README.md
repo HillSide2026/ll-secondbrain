@@ -4,7 +4,7 @@ title: LLP-013_FUNNEL3_MANAGEMENT
 owner: ML1
 status: planning
 created_date: 2026-02-26
-last_updated: 2026-03-15
+last_updated: 2026-04-03
 tags: [marketing, funnel-03, planning]
 ---
 
@@ -35,7 +35,8 @@ ML1 is the sole authority for approval, activation, and promotion of this projec
 ## Approval State
 Initiating -> Planning gate approved by ML1. Planning is now authorized, but
 execution remains gated until the planning packet is completed and separately
-approved for Planning -> Executing.
+approved for Planning -> Executing (`pre-launch` entry). `Launch` is a later
+execution sub-stage and requires separate ML1 authorization.
 
 Canonical offer map:
 - Entry offers: `MSB Registration Mandate`, `Suspicious Transaction Triage & STR Filing`, `AML Health Check`
@@ -50,6 +51,11 @@ Canonical offer map:
 ## Supplemental Project Documents
 
 - `planning/COMPETITIVE_NICHE_HYPOTHESIS.md`
+- `planning/CANADIAN_TOKEN_ISSUER_NOTES.md`
+- `planning/FUNNEL3_REVIEW_BACKLOG.md`
+- `00_SYSTEM/AGENTS/specs/marketing/MKT_MUGGAH_SECURITIES_AGENT.md`
+- `00_SYSTEM/AGENTS/specs/marketing/MKT_MUGGAH_MONEY_SERVICES_AGENT.md`
+- `00_SYSTEM/AGENTS/specs/marketing/MKT_MUGGAH_PAYMENT_SERVICES_AGENT.md`
 
 ## Initiation Packet Status
 
@@ -71,5 +77,24 @@ Canonical offer map:
   - `planning/RISK_REGISTER.md`
   - `planning/COMMUNICATION_PLAN.md`
 
+## Implementation Artifact Status
+
+- Files under `implementation/` are early or provisional execution-stage
+  artifacts recorded during planning.
+- They do not mean Funnel 03 has cleared the Planning -> Executing gate into
+  `pre-launch`.
+- Live publishing, paid channel launch, product promotion, and external
+  conversion activity remain gated until separate ML1 authorization at
+  `launch`.
+
+## Execution Stage Model
+
+- `pre-launch`: first execution stage. Controlled setup, asset finalization,
+  implementation QA, and readiness work may proceed here once planning is
+  approved.
+- `launch`: second execution stage. Public publishing, paid activation,
+  outward promotion, and live conversion activity occur here only after ML1
+  authorizes launch.
+
 ## Last ML1 Review Date
-`2026-03-15`
+`2026-04-03`

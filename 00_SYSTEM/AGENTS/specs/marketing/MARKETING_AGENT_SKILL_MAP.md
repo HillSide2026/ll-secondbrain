@@ -4,7 +4,7 @@ title: Marketing Agent Skill Map
 owner: ML1
 status: draft
 created_date: 2026-03-08
-last_updated: 2026-04-01
+last_updated: 2026-04-03
 tags: [marketing, agents, skills, mapping]
 ---
 
@@ -29,6 +29,11 @@ Skill files are stored under `00_SYSTEM/AGENTS/specs/marketing/skills/`.
 - Added 2026-04-01: introduced `frontend_design.skill.md` as the shared
   distinctive-frontend and detail-standard skill for design, UX, Thrive, and
   website implementation agents.
+- Added 2026-04-03: mapped `MKT_MUGGAH_SECURITIES_AGENT` as an optional
+  specialist for Funnel 3 securities-adjacent issue mapping.
+- Added 2026-04-03: mapped `MKT_MUGGAH_MONEY_SERVICES_AGENT` and
+  `MKT_MUGGAH_PAYMENT_SERVICES_AGENT` as optional Funnel 3 legal-domain
+  specialists.
 
 ## MKT_CHIEF_MARKETING_OFFICER_AGENT
 - `task_decomposition.skill.md`
@@ -300,3 +305,39 @@ merged one-layer marketing operating model.
 - `campaign_brief_generation.skill.md`
 - `keyword_mapping.skill.md`
 - `search_intent_clustering.skill.md`
+
+### MKT_MUGGAH_SECURITIES_AGENT
+- `securities_law_knowledge.skill.md`
+- `securities_law_analysis.skill.md`
+- `securities_law_document_review.skill.md`
+- `doctrine_alignment_check.skill.md`
+- `market_position_mapping.skill.md`
+- `offer_tightening_and_polishing.skill.md`
+- `campaign_brief_tightening_and_polishing.skill.md`
+- `audience_segmentation.skill.md`
+- `differentiation_detection.skill.md`
+- `competitor_message_analysis.skill.md`
+
+### MKT_MUGGAH_MONEY_SERVICES_AGENT
+- `money_services_law_knowledge.skill.md`
+- `money_services_law_analysis.skill.md`
+- `money_services_law_document_review.skill.md`
+- `doctrine_alignment_check.skill.md`
+- `market_position_mapping.skill.md`
+- `offer_tightening_and_polishing.skill.md`
+- `campaign_brief_tightening_and_polishing.skill.md`
+- `audience_segmentation.skill.md`
+- `differentiation_detection.skill.md`
+- `competitor_message_analysis.skill.md`
+
+### MKT_MUGGAH_PAYMENT_SERVICES_AGENT
+- `payment_services_law_knowledge.skill.md`
+- `payment_services_law_analysis.skill.md`
+- `payment_services_law_document_review.skill.md`
+- `doctrine_alignment_check.skill.md`
+- `market_position_mapping.skill.md`
+- `offer_tightening_and_polishing.skill.md`
+- `campaign_brief_tightening_and_polishing.skill.md`
+- `audience_segmentation.skill.md`
+- `differentiation_detection.skill.md`
+- `competitor_message_analysis.skill.md`
