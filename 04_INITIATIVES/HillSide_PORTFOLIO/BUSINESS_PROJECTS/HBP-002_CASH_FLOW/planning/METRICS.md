@@ -4,7 +4,7 @@ title: Cash Flow - Metrics
 owner: ML1
 status: active
 created_date: 2026-03-20
-last_updated: 2026-03-22
+last_updated: 2026-04-03
 tags: [cash-flow, planning, metrics]
 ---
 
@@ -37,32 +37,42 @@ monthly management-pack build.
 | Pack readiness | The minimum viable management-pack structure is explicit enough to build for the Matthew-level view | one execution-ready pack design and scope boundary | `PROJECT_PLAN.md`, planning folder |
 | ML1 gate readiness | The planning packet is complete enough for a `Planning -> Executing` decision | all required planning artifacts drafted and coherent | planning folder and `../APPROVAL_RECORD.md` |
 
-## 2027 Onwards — Net Savings Consideration
+## 2027 Onwards — Business Income Vs Investment Income
 
-The current 2026 compensation model (CAD 72,000 salary + CAD 8,000 bonus =
-CAD 80,000) approximately equals living costs. At this level, professional
-income covers expenses but generates no material net savings — wealth
-accumulation depends entirely on investment returns on the existing base.
+The management pack should distinguish between two different Matthew-level
+lanes:
 
-From 2027 onwards, the cash flow model must explicitly track and project
-**net savings**: income less living costs and taxes, available for wealth
-accumulation.
+- business income to Matthew: cash actually paid from `Levine Professional
+  Corporation` or `17513721 Canada Inc` to Matthew, including compensation,
+  bonus, dividends, and approved distributions
+- investment income / return on capital: high-interest savings interest,
+  portfolio dividends, realized gains, and broader portfolio-performance effects
+  on the personal capital base
+
+The current explicit 2026 business-income model (`CAD 72,000` salary +
+`CAD 8,000` bonus = `CAD 80,000`) approximately equals living costs. At this
+level, business income covers expenses but generates no material net savings.
+Wealth-path progress therefore still depends mostly on the investment-return
+lane.
 
 | Threshold | Implication |
 |-----------|-------------|
-| ML revenue ~CAD 80,000 | Net savings ≈ CAD 0; wealth growth = investment returns only |
-| ML revenue ~CAD 130,000–150,000 | Net savings ~CAD 50,000–70,000/year; materially accelerates wealth accumulation and reduces dependence on hitting investment return targets |
-| ML revenue ~CAD 160,000+ | Net savings sufficient to noticeably compound the base and provide margin against return shortfalls |
+| Business income to Matthew ~CAD 80,000 | Net savings from business income ≈ CAD 0; refill is weak and wealth growth depends mostly on the investment-return lane |
+| Business income to Matthew high enough to create ~CAD 50,000–70,000 of annual net savings | materially accelerates wealth accumulation and reduces dependence on hitting investment-return targets |
+| Business income to Matthew strong and durable | provides real reserve-refill capacity and margin against return shortfalls |
 
 **Planning requirement from 2027:** The monthly management pack must include
-a net savings line — income less living costs and taxes — not just gross
-inflow. This is the metric that connects HBP-002 (Cash Flow) to HBP-001
-(Wealth Management) and to the revenue growth targets in HBP-008 (Levine
-Law 2027) and HBP-009 (2027 Business Ideas).
+separate lines for business income to Matthew, investment income / return on
+capital, and net savings from business income. It should not rely on one
+undifferentiated "income" line or only on gross inflow. This is the metric
+structure that connects HBP-002 (Cash Flow) to HBP-001 (Wealth Management) and
+to the growth targets in HBP-008 (Levine Law 2027) and HBP-009 (2027 Business
+Ideas).
 
-Whether ML revenue reaches the $130–150K threshold depends on LL or other
-venture revenue growth from 2027 onward. Until it does, the net savings
-line will be near zero and should be reported as such — not assumed away.
+Whether business income to Matthew becomes strong enough to create material net
+savings will depend on Levine Law growth, `17513721 Canada Inc` distributions,
+or other venture income from 2027 onward. Until it does, the net-savings line
+should remain near zero in the reporting and should not be assumed away.
 
 ---
 

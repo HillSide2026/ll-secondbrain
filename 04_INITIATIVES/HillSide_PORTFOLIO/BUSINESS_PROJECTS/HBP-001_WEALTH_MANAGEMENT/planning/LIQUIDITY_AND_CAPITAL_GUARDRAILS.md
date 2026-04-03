@@ -62,5 +62,6 @@ quickly refill itself.
 
 - reserve breach
 - forced sale of strategic or illiquid assets
-- dependence on optimistic income growth not yet visible in `HBP-002_CASH_FLOW`
+- dependence on optimistic business-income growth not yet visible in
+  `HBP-002_CASH_FLOW`
 - unresolved tax, legal, or close-cost exposure large enough to make the budget misleading

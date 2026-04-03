@@ -34,7 +34,7 @@ net worth by `2030-12-31` and CAD 4,000,000 by `2040-12-31`.
 | Workstream | Objective | Primary Output |
 | --- | --- | --- |
 | WS-01 Baseline Definition | Fix the in-scope asset, liability, and valuation boundary | `SCOPE_STATEMENT.md`, `OPENING_BALANCE_SHEET.md`, `VALUATION_AND_CLASSIFICATION_POLICY.md` |
-| WS-02 Gap and Path Model | Quantify the baseline gap and required compounding path to `2030-12-31` and `2040-12-31` | `PROJECT_PLAN.md`, `METRICS.md` |
+| WS-02 Gap and Path Model | Quantify the baseline gap and required compounding path to `2030-12-31` and `2040-12-31` | `PROJECT_PLAN.md`, `METRICS.md`, `SG_01_2030_SCENARIO_MODEL.md` |
 | WS-03 Capital Governance | Define liquidity reserve, deployment guardrails, refill logic, and housing-budget rules | `LIQUIDITY_AND_CAPITAL_GUARDRAILS.md`, `NET_SAVINGS_AND_REFILL_MODEL.md`, `HOUSING_BUDGET_POLICY.md` |
 | WS-04 Integrated Wealth Plan | Consolidate the planning packet into one decision-useful capital-governance view | `WEALTH_PLAN.md` |
 | WS-05 Gate Packet Assembly | Prepare the execution-readiness recommendation for ML1 | `COMMUNICATION_PLAN.md`, `../APPROVAL_RECORD.md` |
@@ -53,6 +53,7 @@ net worth by `2030-12-31` and CAD 4,000,000 by `2040-12-31`.
 
 - lock the valuation rule for liquid assets, business equity, and liabilities
 - quantify the required annual delta from the opening baseline to `2030-12-31` and the implied continuation path to `2040-12-31`
+- stress-test the `2030-12-31` path under `4%`, `6%`, and `8%` investment-return assumptions and state the business-income savings requirement clearly
 - define what proportion of the path must come from portfolio returns versus business cash generation and equity growth
 - define the liquidity floor and the triggers for hold, redeploy, or defer decisions
 - define how Toronto and Japan housing budgets are tested against the same

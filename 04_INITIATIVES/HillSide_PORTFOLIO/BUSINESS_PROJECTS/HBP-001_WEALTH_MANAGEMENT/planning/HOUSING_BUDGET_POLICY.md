@@ -50,11 +50,12 @@ Use this file to set the shared wealth-plan rules that govern
    - financing assumption
    - transaction buffer
    - explicit no-go triggers
-7. If current net savings are near zero, a housing budget must prove that the
-   post-close liquidity position remains resilient without assuming quick refill.
+7. If current net savings from business income are near zero, a housing budget
+   must prove that the post-close liquidity position remains resilient without
+   assuming quick refill.
 8. Any option that breaches reserve rules, requires forced sale of illiquid
-   assets, or depends on optimism not yet visible in `HBP-002_CASH_FLOW` is a
-   no-go.
+   assets, or depends on business-income optimism not yet visible in
+   `HBP-002_CASH_FLOW` is a no-go.
 
 ## Budget Status Levels
 

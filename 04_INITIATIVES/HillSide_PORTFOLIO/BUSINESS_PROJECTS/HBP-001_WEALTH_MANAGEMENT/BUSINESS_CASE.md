@@ -40,17 +40,17 @@ or governance model.
 
 ### Lever 1
 
-Liquid portfolio income and compounding.
+Investment income, return on capital, and compounding.
 
-- Focus: treasury discipline, portfolio yield, and compounding from liquid assets
+- Focus: treasury discipline, portfolio yield, realized investment income, and compounding from liquid assets
 - Upside: easier measurement and faster control feedback
 - Main limitation: may not be sufficient alone to close the gap to target
 
 ### Lever 2
 
-Operating-business earnings, distributions, and equity appreciation.
+Operating-business income, distributions, and equity appreciation.
 
-- Focus: Levine Law and other Matthew-built businesses as wealth engines
+- Focus: owner cash flow from Levine Law and `17513721 Canada Inc`, plus business-equity growth
 - Upside: may drive larger step-changes in net worth
 - Main limitation: higher execution variability and concentration risk
 
