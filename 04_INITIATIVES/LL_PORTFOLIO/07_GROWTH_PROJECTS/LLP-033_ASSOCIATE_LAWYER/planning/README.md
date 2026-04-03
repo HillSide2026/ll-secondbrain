@@ -4,7 +4,7 @@ title: Associate Lawyer - Planning
 owner: ML1
 status: draft
 created_date: 2026-03-23
-last_updated: 2026-03-23
+last_updated: 2026-04-03
 tags: [associate-lawyer, planning]
 ---
 
@@ -36,6 +36,13 @@ economic test.
 3. Monitoring cadence and exception reporting are explicit.
 4. Economic tests for delegated delivery are explicit.
 5. ML1 has a clear basis to approve, defer, narrow, or reject activation.
+
+## Working Recommendation Note
+
+- `STAFFING_RECOMMENDATION_NOTE__2026-04-03.md` records a compact planning
+  recommendation that separates the recommended mid-level supervised associate
+  scenario from a later senior-lawyer scenario and compares three candidate
+  compensation structures.
 
 ## Immediate Planning Sprint
 

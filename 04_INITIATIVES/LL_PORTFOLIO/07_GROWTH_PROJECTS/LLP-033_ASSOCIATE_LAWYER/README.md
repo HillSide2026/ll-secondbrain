@@ -4,7 +4,7 @@ title: LLP-033 — Associate Lawyer
 owner: ML1
 status: draft
 created_date: 2026-02-26
-last_updated: 2026-03-23
+last_updated: 2026-04-03
 tags: []
 ---
 
@@ -74,6 +74,7 @@ Core planning:
 - `DEPENDENCIES.md`
 - `RISK_REGISTER.md`
 - `COMMUNICATION_PLAN.md`
+- `STAFFING_RECOMMENDATION_NOTE__2026-04-03.md`
 
 Measurement architecture:
 - `METRICS.md`

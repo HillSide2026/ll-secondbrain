@@ -4,7 +4,7 @@ title: LLP-030 Firm Strategy and Business Plan
 owner: ML1
 status: initiating
 created_date: 2026-03-17
-last_updated: 2026-04-01
+last_updated: 2026-04-03
 tags: [firm-strategy, business-plan, strategic-projects]
 ---
 
@@ -62,6 +62,10 @@ project root as governed project components.
   Bill Hauser four-bucket operating benchmark lens for Levine Law and records
   the current working conclusion that LL is below benchmark in intake maturity,
   self-managing-team maturity, and profit resilience.
+- `SECOND_FEE_EARNER_2030_REVENUE_SENSITIVITY__2026-04-03.md` saves a simple
+  planning shorthand for how much total firm revenue may be needed to support
+  the `2030` owner-income target if all revenue above the current `CAD 240,000`
+  baseline is billed by a second fee earner at different contribution margins.
 
 ## Last ML1 Review Date
 `2026-03-17`
