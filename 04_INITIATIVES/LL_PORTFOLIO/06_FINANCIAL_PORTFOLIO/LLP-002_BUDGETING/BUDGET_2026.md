@@ -70,8 +70,8 @@ Owner salary remains fixed at $72k regardless of scenario. The current forward-l
 Total owner compensation is modeled as $80k regardless of scenario, split as $72k salary + $8k bonus. The firm does not break even on total owner compensation until revenue exceeds approximately $183k–$188k (total owner compensation + overhead floor).
 
 **Cross-entity Andersen treatment:**
-- Andersen fee receipts are excluded from direct Levine Law revenue in this budget and remain a cross-entity reconciliation item because the cash lands in `17513721 Canada Inc`
-- if direct Levine Law economics are insufficient to support the $80k owner-compensation target, any Andersen Service Line credit to Levine Law must be formalized as a separate governance decision rather than assumed in the base budget
+- Andersen fee receipts land in `17513721 Canada Inc`, but the Andersen relationship is credited to Levine Law in the 2026 operating picture
+- the budgeting view must keep the cross-entity reconciliation explicit so Andersen economics are not omitted from Levine Law planning or double-counted across entities
 
 **Margin:**
 - Scenario 1 margin ($12k–$22k) is thin relative to total owner compensation risk
@@ -81,4 +81,4 @@ Total owner compensation is modeled as $80k regardless of scenario, split as $72
 - Actual 2025 revenue vs. these scenario targets — needed to calibrate which scenario is realistic
 - F02 build costs (landing page, GHL config) — likely absorbed within client acquisition budget
 - Setter and senior lawyer costs — would increase Direct Cost / COGS materially; not yet modeled
-- Whether ML1 wants a defined Andersen-to-Levine-Law crediting rule as a contingency if direct Levine Law economics do not support the $80k owner-compensation target
+- The exact reconciliation rule that credits Andersen to Levine Law in the operating picture while preserving entity-level cash receipt in `17513721 Canada Inc`

@@ -50,7 +50,7 @@ business lines.
 - Slightly more than CAD 27,000 has now been received from the sale of Yellowbricks, and that cash went into 17513721 Canada Inc.
 - Under the Andersen Service Line, 17513721 Canada Inc provides services to clients of Andersen Consulting and Andersen Consulting pays 17513721 Canada Inc.
 - Operational matters tied to the Andersen Service Line are tracked inside Levine Law.
-- The Andersen Service Line continues to follow the Levine Law time-for-money business model even though the Andersen fees are received by 17513721 Canada Inc.
+- The Andersen Service Line continues to follow the Levine Law time-for-money business model, and the Andersen relationship is credited to Levine Law in the 2026 operating picture even though the Andersen fees are received by 17513721 Canada Inc.
 - FinSure and the Payment Services Consulting Line are owned and operated by 17513721 Canada Inc, not by 17409052 Canada Inc.
 - Ontario MSB Corp (1001494374 Ontario Corp) is owned by 17513721 Canada Inc and is being marketed for sale.
 - 17513721 Canada Inc is optimistic that Ontario MSB Corp can be sold in 2026 for slightly more than CAD 27,000 of corporate revenue if the transaction closes.

@@ -16,15 +16,14 @@ This document consumes the current owner compensation target defined in
 `04_INITIATIVES/LL_PORTFOLIO/06_FINANCIAL_PORTFOLIO/LLP-002_BUDGETING/BUDGET_2026.md`.
 
 Operational Andersen matters are tracked inside Levine Law because they follow
-the same time-for-money model, but Andersen fee receipts land in
-`17513721 Canada Inc` and therefore require separate cross-entity treatment
-from direct Levine Law cash receipts.
+the same time-for-money model. In the 2026 operating picture, the Andersen
+relationship is credited to Levine Law even though Andersen fee receipts land
+in `17513721 Canada Inc` and therefore require explicit cross-entity
+reconciliation.
 
-Unless ML1 explicitly approves a separate crediting rule, Andersen fee
-receipts are excluded from direct Levine Law revenue in this model. A live
-planning risk is that Levine Law may need Andersen Service Line economics to
-be credited to the firm in order to support the current `CAD 80,000` owner
-compensation target.
+The live planning risk is not whether Andersen should count toward Levine Law
+at all, but whether the crediting and reconciliation method causes omission,
+misclassification, or double counting in the model.
 
 Historical channel note for downstream interpretation: ML1 reports that, with
 the specific exceptions of `Mascore` and `Stream`, `2025` matters originated
@@ -54,7 +53,7 @@ This document will contain a P&L projection linking:
 | Owner bonus target | $8,000 | LLP-002 `BUDGET_2026.md` | Yes |
 | Total owner compensation | $80,000 | LLP-002 `BUDGET_2026.md` | Yes |
 | Overhead | $40,000–$50,000/year | Budget Scenario 1 | Yes |
-| Andersen direct revenue credit | **Backlog** — assigned to LLP-001 (Accounting) | Cross-entity rule | No — pending LLP-001 resolution; excluded from model until decided |
+| Andersen operating credit | Included in Levine Law operating picture; cash lands in `17513721 Canada Inc` | Cross-entity rule | Partially — crediting direction is set, reconciliation method still needs to be locked |
 
 ### 2. P&L Projection by Target / Reference Case
 

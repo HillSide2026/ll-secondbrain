@@ -30,7 +30,7 @@ defined in `STAGE_REFERENCE.md`.
 | HBP-008 | Levine Law 2027 | Levine Law | initiating | Track and govern the 2027 Levine Law strategic program as a HillSide project | Premature planning assumptions, sequencing risk, resource allocation drift | pending | ML1 | 2026-03-20 |
 | HBP-009 | 2027 Business Ideas | HBP-009_2027_BUSINESS_IDEAS | initiating | Create a controlled HillSide project for capturing, shaping, and prioritizing 2027 business ideas | Scope drift, planning delay, premature spend | pending | ML1 | 2026-03-20 |
 | HBP-010 | Rhizome White Label | HBP-010_RHIZOME_WHITE_LABEL | executing | Execute the approved Rhizome services-led wrapper path under a bounded implementation scope | Partner misalignment, single-channel dependency, integration sprawl | approved | ML1 | 2026-03-20 |
-| HBP-011 | Payments Regulatory & Compliance Consulting Agency | HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY | executing | Stand up the approved payment services compliance service under `17513721 Canada Inc` using FinSure as the entry offer | Weak differentiation, slow revenue ramp, execution sprawl | approved | ML1 | 2026-03-20 |
+| HBP-011 | Payments Regulatory & Compliance Consulting Agency | HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY | executing | Stand up the approved Payment Services Consulting Line under `17513721 Canada Inc` using FinSure as the entry offer | Weak differentiation, slow revenue ramp, execution sprawl | approved | ML1 | 2026-03-20 |
 
 ## Folder Coverage
 

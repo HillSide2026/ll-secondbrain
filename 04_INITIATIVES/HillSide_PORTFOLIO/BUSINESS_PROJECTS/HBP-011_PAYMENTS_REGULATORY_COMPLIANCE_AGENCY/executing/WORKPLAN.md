@@ -19,6 +19,9 @@ Stage: `Executing`
 Operationalize a narrow payment services compliance service under
 `17513721 Canada Inc` with FinSure as the initial entry offer.
 
+Working business-line posture: the Payment Services Consulting Line operated
+through `17513721 Canada Inc`.
+
 ## Current Execution Priorities
 
 1. formalize the initial service package around:

@@ -25,8 +25,9 @@ The firm is built on three principles:
 
 The current operating model remains time-for-money. Andersen-related
 operational matters are tracked inside Levine Law because they follow the same
-delivery model, even though Andersen fees are received by `17513721 Canada
-Inc`.
+delivery model, and the Andersen relationship is credited to Levine Law in the
+2026 operating picture even though Andersen fees are received by
+`17513721 Canada Inc`.
 
 `F01` has generated real and likely positive revenue contribution for Levine
 Law. ML1 reports that, except for `Mascore` and `Stream`, `2025` matters were

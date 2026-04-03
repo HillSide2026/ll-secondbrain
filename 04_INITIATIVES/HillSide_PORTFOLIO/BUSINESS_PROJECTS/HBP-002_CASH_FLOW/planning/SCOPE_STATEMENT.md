@@ -22,7 +22,7 @@ redesign.
 
 ## In Scope
 
-- all positive and negative cash flow between Matthew and Matthew Holdings (`17513721 Canada Inc`), including the Andersen Service Line and FinSure activity
+- all positive and negative cash flow between Matthew and Matthew Holdings (`17513721 Canada Inc`), including the Andersen Service Line, FinSure activity, and Payment Services Consulting Line activity
 - all positive and negative cash flow between Matthew and YellowBricks, including residual post-closing cash events until final settlement
 - all positive and negative cash flow between Matthew and Federal MSB (`17409052 Canada Inc`), which is licensed but has no current operating activity
 - all positive and negative cash flow between Matthew and Ontario MSB Corp (`1001494374 Ontario Corp`), which is owned by 175 and being marketed for sale

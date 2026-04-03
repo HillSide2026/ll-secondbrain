@@ -17,10 +17,10 @@ Project: `HBP-002` - Cash Flow
 | --- | --- | --- |
 | ML1 | Decision authority | Approves scope, reporting boundary, and stage-gate advancement |
 | Matthew / ML1 | Reporting-view owner | Confirms what counts as positive and negative cash flow to Matthew and resolves boundary questions |
-| Matthew Holdings (`17513721 Canada Inc`) | In-scope corporation | Supplies records for cash received by or paid to Matthew, including Andersen Service Line cash receipts, YellowBricks sale receipts, and FinSure activity |
+| Matthew Holdings (`17513721 Canada Inc`) | In-scope corporation | Supplies records for cash received by or paid to Matthew, including Andersen Service Line cash receipts, YellowBricks sale receipts, FinSure activity, and Payment Services Consulting Line activity |
 | Accounting / bookkeeping / CPA support | Source-data and method assurance | Confirms source-system completeness, chart-of-accounts mapping, and treatment of taxes, capex, and working capital |
 | Levine Law | In-scope operating business | Supplies records for cash received by or paid to Matthew, tracks Andersen operational matters, and helps explain underlying drivers where needed |
-| Federal MSB (`17409052 Canada Inc`) | In-scope corporation | Supplies records for any cash received by or paid to Matthew and confirms that FinSure is not operated through 174 |
+| Federal MSB (`17409052 Canada Inc`) | In-scope corporation | Supplies records for any cash received by or paid to Matthew and confirms that FinSure and the Payment Services Consulting Line are not operated through 174 |
 | Ontario MSB Corp (`1001494374 Ontario Corp`) | In-scope corporation | Supplies records for any cash received by or paid to Matthew and tracks sale-related activity while the corporation is being marketed |
 | YellowBricks | In-scope post-closing cash source | Captures residual receipts, post-closing costs, adjustments, and any remaining obligations tied to Matthew |
 

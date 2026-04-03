@@ -49,7 +49,7 @@ closed and reviewed within 10 business days of month-end, that reports:
 - Intercompany transfers that do not create a cash movement to or from Matthew are excluded from the primary metric view and may be shown only for reconciliation.
 - Supporting entity-level operating or free-cash-flow views may be calculated separately if needed to explain Matthew-level movements, but they do not define the primary project boundary.
 - Andersen Service Line activity must be reconciled across two layers: cash receipt in `17513721 Canada Inc` and operational matter tracking inside Levine Law.
-- Andersen fee receipts remain a cross-entity reconciliation item and are not treated as direct Levine Law revenue unless ML1 explicitly approves a separate crediting rule.
+- In the 2026 operating picture, the Andersen relationship is credited to Levine Law even though the cash receipt remains in `17513721 Canada Inc`.
 - YellowBricks remains in scope for all residual receipts, payments, and adjustments until fully settled.
 
 ## Known Current Inputs
@@ -57,8 +57,8 @@ closed and reviewed within 10 business days of month-end, that reports:
 - Current explicit Levine Law -> Matthew compensation target for 2026: `CAD 72,000` salary + `CAD 8,000` bonus = `CAD 80,000`
 - For `HBP-002`, this target is treated as compensation inflow from Levine Law to Matthew inside the Matthew gross inflow by entity metric family.
 - Current realized YellowBricks sale inflow already received into `17513721 Canada Inc`: slightly more than `CAD 27,000`
-- Andersen fees are received by `17513721 Canada Inc`, while Andersen operational matters are tracked inside Levine Law.
-- Risk to monitor: if direct Levine Law economics do not support the `CAD 80,000` compensation target, Andersen Service Line economics may need explicit crediting to Levine Law for planning purposes rather than being assumed automatically.
+- Andersen fees are received by `17513721 Canada Inc`, while Andersen operational matters are tracked inside Levine Law and credited to Levine Law in the 2026 operating picture.
+- Risk to monitor: Andersen Service Line economics could be omitted, misclassified, or double-counted if the cross-entity reconciliation rule is not applied consistently.
 
 ## Current Forward-Looking Sale Thesis
 

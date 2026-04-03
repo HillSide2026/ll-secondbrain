@@ -24,8 +24,8 @@ Canadian federal regulation.
 
 Current operating activity: none.
 
-FinSure is not operated through this entity. FinSure is run by
-`17513721 Canada Inc`.
+FinSure and the Payment Services Consulting Line are not operated through this
+entity. They are run by `17513721 Canada Inc`.
 
 Activities may include:
 

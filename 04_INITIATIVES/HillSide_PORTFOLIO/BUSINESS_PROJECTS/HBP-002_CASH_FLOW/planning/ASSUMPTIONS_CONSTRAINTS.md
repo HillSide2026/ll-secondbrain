@@ -29,7 +29,7 @@ Stage: `Planning`
 - unrealized gains and losses are not part of the core cash-flow metrics
 - no automation build, software purchase, or advisory spend is assumed without explicit ML1 approval
 - planning should not blur Matthew-level inflows and outflows with internal entity operating views that do not affect Matthew
-- Andersen fee receipts should not be reclassified as direct Levine Law revenue during planning unless ML1 explicitly approves a crediting rule
+- Andersen fee receipts should not be reclassified as Levine Law cash receipts during planning; the Andersen relationship is credited to Levine Law in the operating picture while the underlying cash remains in `17513721 Canada Inc`
 
 ## Locked Planning Direction
 
@@ -40,9 +40,9 @@ Currently locked:
 - slightly more than `CAD 27,000` has already been received from the sale of YellowBricks into `17513721 Canada Inc`
 - supporting entity-level internal views may be used only for reconciliation or explanation
 - Andersen fees are received by `17513721 Canada Inc`, while Andersen operational matters are tracked inside Levine Law under the same time-for-money model
-- Andersen fee receipts remain a cross-entity reconciliation item by default, not direct Levine Law revenue
+- the Andersen relationship is credited to Levine Law in the 2026 operating picture even though the cash receipt remains in `17513721 Canada Inc`
 - Levine Law -> Matthew compensation target for 2026 is currently modeled as `CAD 72,000` salary + `CAD 8,000` bonus
-- if direct Levine Law economics are insufficient to support the `CAD 80,000` compensation target, any Andersen-to-Levine-Law crediting must be handled as an explicit governance decision
+- the cross-entity reconciliation rule must prevent Andersen economics from being omitted, misclassified, or double-counted
 - the monthly management pack must close within 10 business days of month-end
 
 Still not locked:

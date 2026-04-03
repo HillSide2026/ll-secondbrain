@@ -21,8 +21,8 @@ This project is a planning-stage HillSide strategic project.
 ## Current State
 
 - Approximate initiation baseline: CAD 1.6M in cash and securities under Matthew Holdings
-- In-scope Matthew-level cash-flow boundary: Matthew Holdings (`17513721 Canada Inc`), including the Andersen Service Line and FinSure activity; YellowBricks; Federal MSB (`17409052 Canada Inc`), which is licensed but currently inactive; Ontario MSB Corp (`1001494374 Ontario Corp`), which is owned by 175 and being marketed for sale; and Levine Law
-- Andersen boundary note: Andersen fees are received by `17513721 Canada Inc`, but Andersen operational matters are tracked inside Levine Law and continue to follow the Levine Law time-for-money model
+- In-scope Matthew-level cash-flow boundary: Matthew Holdings (`17513721 Canada Inc`), including the Andersen Service Line, FinSure activity, and Payment Services Consulting Line activity; YellowBricks; Federal MSB (`17409052 Canada Inc`), which is licensed but currently inactive; Ontario MSB Corp (`1001494374 Ontario Corp`), which is owned by 175 and being marketed for sale; and Levine Law
+- Andersen boundary note: Andersen fees are received by `17513721 Canada Inc`, Andersen operational matters are tracked inside Levine Law, and the Andersen relationship is credited to Levine Law in the 2026 operating picture
 - Current YellowBricks sale receipt note: slightly more than `CAD 27,000` has now been received from the sale, and that cash went into `17513721 Canada Inc`
 - Current optimistic Ontario MSB sale thesis: `17513721 Canada Inc` is optimistic it can sell `1001494374 Ontario Corp` in 2026 for slightly more than `CAD 27,000` of corporate revenue
 - Current explicit 2026 Levine Law -> Matthew compensation target: `CAD 72,000` salary + `CAD 8,000` bonus = `CAD 80,000`

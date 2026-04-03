@@ -51,8 +51,9 @@ Inc`.
 
 Operational matters tied to the Andersen Service Line are tracked inside
 Levine Law. The Andersen Service Line continues to follow the Levine Law
-time-for-money delivery model, even though the Andersen fees are received by
-`17513721 Canada Inc`.
+time-for-money delivery model, and the Andersen relationship is credited to
+Levine Law in the 2026 operating picture even though the Andersen fees are
+received by `17513721 Canada Inc`.
 
 FinSure and the Payment Services Consulting Line are owned and operated
 through `17513721 Canada Inc`.

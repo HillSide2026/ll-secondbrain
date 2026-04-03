@@ -19,6 +19,9 @@ Stage: `Executing`
 Stand up the approved payment services compliance service path under
 `17513721 Canada Inc` using FinSure as the initial entry offer.
 
+Working business-line posture: the Payment Services Consulting Line operated
+through `17513721 Canada Inc`.
+
 ## Stage Authority
 
 Executing is authorized effective 2026-03-20.
@@ -30,6 +33,7 @@ Approved now:
 - payment services compliance service model
 - operation through `17513721 Canada Inc`
 - FinSure as the entry-offer wedge
+- Payment Services Consulting Line as the owning business line
 - program design services
 - CAMLO services
 

@@ -76,6 +76,7 @@ Authorized direction:
 - proceed with a payment services compliance service rather than a broad agency
 - operate through `17513721 Canada Inc`
 - use FinSure as the entry-offer wedge
+- treat the Payment Services Consulting Line as the operating business line
 - consider `FinSure` as the business name
 - start with:
   - program design

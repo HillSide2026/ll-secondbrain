@@ -24,7 +24,7 @@ monthly management-pack build.
 - Levine Law -> Matthew compensation target for 2026: `CAD 72,000` salary + `CAD 8,000` bonus = `CAD 80,000`
 - This target should be modeled in the pack as compensation inflow within the Levine Law source line, not as a separate entity-revenue metric.
 - Slightly more than `CAD 27,000` has already been received from the sale of YellowBricks into `17513721 Canada Inc`.
-- Andersen fees are received by `17513721 Canada Inc`, while Andersen operational matters are tracked inside Levine Law.
+- Andersen fees are received by `17513721 Canada Inc`, while Andersen operational matters are tracked inside Levine Law and credited to Levine Law in the 2026 operating picture.
 
 ## Planning Exit Metrics
 
