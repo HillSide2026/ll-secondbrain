@@ -4,7 +4,7 @@ title: Notes to File — 26-1639-00002 — Andersen (Trade Remedies)
 owner: ML1
 status: draft
 created_date: 2026-03-28
-last_updated: 2026-03-28
+last_updated: 2026-04-02
 tags: [matter, notes-to-file, 26-1639-00002]
 practice_areas: [trade_remedies, trade]
 location_status: ml2_local_pending_sharepoint_sync
@@ -31,7 +31,7 @@ Intended SharePoint destination when ready:
 - Author: ML1 note captured in ML2
 - Topic: Trade remedies / countervailing duties / agri-food
 - Facts: Agri-food: We are looking at a countervailing duties investigation on the import of frozen vegetables into Canada.
-- Action items:
+- Action items: Confirm the underlying end client identity, current posture, and whether the file should move into active closing.
 - Related references:
 - SharePoint sync status: pending
 
@@ -40,7 +40,7 @@ Intended SharePoint destination when ready:
 - Author: ML1 note captured in ML2
 - Topic: Trade remedies / manufacturing
 - Facts: Manufacturing: We also have potential client work with a custom furniture manufacturer.
-- Action items:
+- Action items: Confirm the underlying end client, the trade issue, and whether this is becoming a qualified file opportunity.
 - Related references:
 - SharePoint sync status: pending
 

@@ -1,9 +1,9 @@
 id: 00_system__config__run_schedule
-title: Matter Admin and Matter File Admin Run Schedule
+title: Operational Run Schedule
 owner: ML1
 status: draft
 created_date: 2026-03-04
-last_updated: 2026-03-28
+last_updated: 2026-04-02
 
 runs:
   daily:
@@ -30,6 +30,16 @@ runs:
     enabled: false
     requires_matter_number: true
     note: Planned standalone split. No dedicated runner mode is active yet.
+  trade_remedies_citt_daily:
+    run_id: RUN_TRADE_REMEDIES_CITT_DAILY
+    enabled: true
+    timezone: America/Toronto
+    schedule_local: '07:15'
+    scope:
+      watches:
+        - watchlist: 05_MATTERS/ESSENTIAL/26-1639-00002/CITT_WATCHLIST.yaml
+          report: 05_MATTERS/ESSENTIAL/26-1639-00002/CITT_SIGNAL_REPORT.md
+          state: 06_RUNS/state/citt_scan_26-1639-00002.json
 
 digest:
   stalled_days: 14

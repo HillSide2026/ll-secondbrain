@@ -1,0 +1,22 @@
+schema_version: 0.1
+id: trade_remedies_citt_daily
+name: Trade Remedies CITT Daily
+description: Daily official-source CITT monitoring run for configured trade-remedies watchlists.
+bundle: trade_remedies_citt_daily
+gates:
+  - official_source_only
+  - no_automatic_outreach
+  - no_automatic_pipeline_stage_change
+steps:
+  - id: load_run_schedule
+    action: config_run_schedule_read
+  - id: run_citt_update_scanner
+    action: agent_citt_update_scan
+    outputs:
+      - path: 05_MATTERS/ESSENTIAL/26-1639-00002/CITT_SIGNAL_REPORT.md
+        label: DERIVED_ARTIFACT
+      - path: 06_RUNS/state/citt_scan_26-1639-00002.json
+        label: STATE_SNAPSHOT
+run_logging:
+  runlog: 06_RUNS/logs/trade_remedies/citt_daily/runlog.md
+  provenance: 06_RUNS/logs/trade_remedies/citt_daily/provenance.json

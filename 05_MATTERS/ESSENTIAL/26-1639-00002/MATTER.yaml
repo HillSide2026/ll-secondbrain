@@ -1,7 +1,14 @@
 matter_id: "26-1639-00002"
 matter_name: "Andersen"
-matter_description: "Customs"
+matter_description: "Trade Remedies / Trade Defence"
 status: "Open"
 delivery_status: "Essential"
 fulfillment_status: "keep in view"
 created_date: "2026-03-09"
+services:
+  - service_type: solution
+    service_name: "Frozen vegetables imports into Canada — countervailing duties file"
+    status: "qualified"
+  - service_type: solution
+    service_name: "Custom furniture manufacturer — trade remedies file"
+    status: "identified"
