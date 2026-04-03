@@ -4,7 +4,7 @@ title: Personal Projects
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-26
+last_updated: 2026-04-03
 tags: [hillside, personal-projects]
 ---
 
@@ -17,6 +17,8 @@ Current personal projects:
 - `DECISION_MAKING`
 - `TO_DO_LIST`
 - `BUILD_MONEY_MACHINE`
+- `TORONTO_HOUSING`
+- `JAPAN_HOME_DECISION`
 
 ## Decision-Making
 
@@ -39,3 +41,17 @@ Current personal projects:
 - It uses `Initiating -> Planning -> Executing` as its stage path inside
   `PERSONAL_PROJECTS`.
 - It does not replace `BUSINESS_PROJECTS` governance for real HillSide ventures.
+
+## Toronto Housing
+
+- [TORONTO_HOUSING/README.md](TORONTO_HOUSING/README.md) is the standalone
+  personal project for resolving the Toronto housing question into an explicit
+  housing strategy.
+- Current stage: `Planning`
+
+## Japan Home Decision
+
+- [JAPAN_HOME_DECISION/README.md](JAPAN_HOME_DECISION/README.md) is the
+  standalone personal project for deciding whether to pursue acquisition of a
+  home in Japan.
+- Current stage: `Planning`

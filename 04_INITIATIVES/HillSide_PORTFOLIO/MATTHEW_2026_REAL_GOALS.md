@@ -17,7 +17,8 @@ appear to be based on the active HillSide packets.
 
 It is not itself a stage-gate artifact and does not override the underlying
 project files. Where this document uses summary language, that language is an
-inference from the linked source materials.
+inference from the linked source materials unless an explicit later ML1
+clarification is noted.
 
 ## Short Version
 
@@ -32,6 +33,8 @@ Matthew's real 2026 goal set appears to be:
 5. monetize venture assets already on an identified monetization path
 6. launch and commercialize selected software assets
 7. build tighter personal money and wealth-control systems
+8. deal with housing in Toronto and make a decision on a potential home
+   acquisition in Japan
 
 ## The Real 2026 Goals
 
@@ -203,6 +206,37 @@ Primary sources:
 - `PERSONAL_PROJECTS/BUILD_MONEY_MACHINE/planning/SCOPE_STATEMENT.md`
 - `BUSINESS_PROJECTS/HBP-001_WEALTH_MANAGEMENT/planning/METRICS.md`
 
+### 8. Resolve Toronto Housing And Japan Home Acquisition Decision
+
+Based on later ML1 clarification, housing is also an active 2026 priority and
+should be treated as part of the real-goals picture rather than as background
+noise.
+
+Working reading:
+
+- deal with housing in Toronto rather than leaving it as an open operational
+  drag
+- make a decision on whether to pursue acquisition of a home in Japan
+- govern Toronto housing and the Japan home question as separate standalone
+  personal projects rather than as loose background issues
+- treat both questions as linked life-structure and capital-allocation
+  decisions rather than as casual side considerations
+- reduce the planning uncertainty these unresolved housing questions create for
+  personal cash-flow, wealth, and operating stability
+
+Clarification source:
+
+- ML1 addition on `2026-04-03`
+
+Current project packets:
+
+- `PERSONAL_PROJECTS/TORONTO_HOUSING/`
+- `PERSONAL_PROJECTS/JAPAN_HOME_DECISION/`
+
+Current status:
+
+- both housing items are now admitted as standalone HillSide personal projects
+
 ## What The 2026 Goals Do Not Seem To Be
 
 The repo suggests the 2026 goal set is not:
@@ -223,4 +257,5 @@ The dominant pattern across the HillSide materials is:
 - monetize what already has a path
 - commercialize a few focused assets
 - tighten money governance
+- reduce housing uncertainty
 - compound from a more stable base
