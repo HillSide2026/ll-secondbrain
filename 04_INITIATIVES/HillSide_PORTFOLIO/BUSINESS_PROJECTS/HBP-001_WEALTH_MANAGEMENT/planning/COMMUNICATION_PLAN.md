@@ -4,7 +4,7 @@ title: Wealth Management - Communication Plan
 owner: ML1
 status: active
 created_date: 2026-03-20
-last_updated: 2026-03-20
+last_updated: 2026-04-03
 tags: [wealth-management, planning, communications]
 ---
 
@@ -22,7 +22,7 @@ baseline, target path, or governance assumptions drift.
 ## Audiences
 
 - ML1
-- Matthew Holdings / HillSide
+- ML1 personal wealth-governance layer
 - accounting / bookkeeping support
 - adjacent project owner for `HBP-002`, when cash-flow dependency inputs are required
 
@@ -32,7 +32,7 @@ baseline, target path, or governance assumptions drift.
 | --- | --- | --- | --- |
 | ML1 | Weekly | Planning status, decisions required, and risk updates | Project Owner |
 | Accounting / bookkeeping support | Bi-weekly | Baseline and record-completeness check | Project Owner |
-| Matthew Holdings / HillSide | Bi-weekly | Wealth-path and governance note | Project Owner |
+| ML1 personal wealth-governance layer | Bi-weekly | Wealth-path and governance note | Project Owner |
 | `HBP-002` linkage review | As needed | Cash-flow dependency sync | Project Owner |
 
 ## Escalation Triggers

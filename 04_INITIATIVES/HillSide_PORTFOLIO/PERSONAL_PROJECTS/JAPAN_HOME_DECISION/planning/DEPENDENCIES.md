@@ -16,7 +16,7 @@ Stage: `Planning`
 | Dependency | Type | Why It Matters | Current Status |
 | --- | --- | --- | --- |
 | ML1 decision authority | Internal | Controls path selection, guardrails, and planning exit | available |
-| `HBP-001_WEALTH_MANAGEMENT` capital-governance model | Internal | Needed to anchor any Japan-home budget and liquidity rule | open dependency |
+| `HBP-001_WEALTH_MANAGEMENT` wealth plan and housing budget policy | Internal | Needed to anchor any Japan-home budget, liquidity rule, and no-go trigger set | materially improved; still needs Japan-specific budget card |
 | Real use-case thesis | Strategic | Needed to distinguish a disciplined path from romanticized aspiration | open |
 | Japan legal / tax / financing diligence | External | Needed to surface the highest-risk unknowns before any pursue recommendation | open |
 | Local market access and property-process clarity | External | Needed only if pursue remains credible after planning | not yet engaged |
@@ -24,5 +24,6 @@ Stage: `Planning`
 ## Dependency Rule
 
 No pursue recommendation should be treated as credible until the budget is
-anchored in `HBP-001_WEALTH_MANAGEMENT` and the highest-value cross-border
+anchored in `HBP-001_WEALTH_MANAGEMENT` through `planning/WEALTH_PLAN.md`
+and `planning/HOUSING_BUDGET_POLICY.md`, and the highest-value cross-border
 diligence questions are explicit enough to support a real ML1 judgment.

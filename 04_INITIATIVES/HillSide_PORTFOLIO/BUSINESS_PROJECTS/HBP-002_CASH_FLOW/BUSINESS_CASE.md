@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 project_type: strategic
 created_date: 2026-03-15
-last_updated: 2026-03-22
+last_updated: 2026-04-03
 tags: [cash-flow, initiation, business-case]
 ---
 
@@ -35,9 +35,14 @@ core control layer for capital stewardship across the HillSide branch.
 If this project succeeds, HillSide should gain:
 
 - one monthly pack showing gross inflows to Matthew, gross outflows from Matthew, and net cash flow by entity and in aggregate
-- explicit line-item treatment for Matthew Holdings (`17513721 Canada Inc`), YellowBricks, Federal MSB (`17409052 Canada Inc`), Ontario MSB Corp (`1001494374 Ontario Corp`), and Levine Law
+- explicit line-item treatment for `17513721 Canada Inc`, YellowBricks,
+  Federal MSB (`17409052 Canada Inc`), Ontario MSB Corp (`1001494374 Ontario Corp`), and `Levine Professional Corporation` (`Levine Law`)
 - consistent treatment of distributions, compensation, reimbursements, loans, capital contributions, and YellowBricks post-closing cash events
 - a more reliable basis for deciding when to hold, reinvest, distribute, or reallocate capital
+
+`Matthew Holdings` may still appear elsewhere in HillSide as ML1's internal
+planning label for the layer between himself and `17513721 Canada Inc`, but it
+is not a separate entity in this cash-flow model.
 
 ## Constraints
 

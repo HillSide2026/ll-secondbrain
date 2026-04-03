@@ -82,8 +82,10 @@ loose background possibility.
 - the decision touches both lifestyle design and capital allocation
 - cross-border legal, tax, financing, and operating facts could materially
   change the answer
-- ML1 currently reports `CAD 1,500,000` in cash, which changes the liquidity
-  analysis but does not remove the need for a formal wealth-plan anchor
+- ML1 currently reports `CAD 900,000` in a high-interest savings account and
+  `CAD 560,000` in managed equities as at `2026-04-03`, which changes the
+  liquidity analysis but does not remove the need for a formal wealth-plan
+  anchor
 
 ## Constraints
 

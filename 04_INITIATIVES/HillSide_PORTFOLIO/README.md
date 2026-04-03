@@ -4,7 +4,7 @@ title: HillSide Portfolio
 owner: ML1
 status: draft
 created_date: 2026-03-06
-last_updated: 2026-03-26
+last_updated: 2026-04-03
 tags: []
 ---
 
@@ -31,9 +31,19 @@ Those remain in the law firm systems.
 
 Current high-level ownership map:
 
-- `Levine Holdings` -> owns `Levine Law`
-- `Matthew Holdings` -> owns the downstream HillSide entities and ventures tracked here
-- Approx. `$1.5M` of capital currently sits outside both holdcos and is not attributed to this folder as a controlled entity asset
+- ML1 personally owns `Levine Professional Corporation` (`Levine Law`)
+- ML1 personally owns `17513721 Canada Inc`
+- `Matthew Holdings` is an internal planning label used by ML1 for the layer
+  between himself and `17513721 Canada Inc`; it is not a separate legal entity
+- `17513721 Canada Inc` owns Federal MSB (`17409052 Canada Inc`) and Ontario
+  MSB Corp (`1001494374 Ontario Corp`) and formerly owned YellowBricks, which
+  is now sold and in post-closing handling
+- `17513721 Canada Inc` currently has approximately `CAD 27,000` in its bank
+  account from YellowBricks sale proceeds
+- As at `2026-04-03`, ML1 reports `CAD 900,000` in a high-interest savings
+  account and `CAD 560,000` in managed equities (`CAD 1,460,000` total) on the
+  personal side, outside the controlled HillSide entity asset layer unless
+  expressly moved
 
 Accordingly, `HillSide_PORTFOLIO` should be read as the
 **HillSide branch map**, not as the complete enterprise ownership map.
@@ -46,8 +56,8 @@ Accordingly, `HillSide_PORTFOLIO` should be read as the
 HillSide_PORTFOLIO
 ├── BUSINESS_PROJECTS
 ├── PERSONAL_PROJECTS
-└── Matthew Holdings (17513721 Canada Inc)
-   ├── Yellowbricks
+└── 17513721 Canada Inc ("Matthew Holdings" planning label)
+   ├── Yellowbricks (sold; post-closing)
    ├── Federal MSB (17409052 Canada Inc)
    └── Ontario MSB Corp (1001494374 Ontario Corp)
 ```

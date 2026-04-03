@@ -18,7 +18,7 @@ Stage: `Planning`
 | Metric | Planning exit test | Outcome | Evidence |
 | --- | --- | --- | --- |
 | Option set clarity | the two real paths are fixed cleanly, without ambient side paths | pending | `DECISION_FRAME.md` |
-| Budget anchor | the housing budget is formalized inside `HBP-001_WEALTH_MANAGEMENT` | pending | `ASSUMPTIONS_CONSTRAINTS.md`, `DEPENDENCIES.md` |
+| Budget anchor | the housing budget is formalized inside `HBP-001_WEALTH_MANAGEMENT` | pending | `HBP-001_WEALTH_MANAGEMENT / planning/WEALTH_PLAN.md`, `HBP-001_WEALTH_MANAGEMENT / planning/HOUSING_BUDGET_POLICY.md`, `DEPENDENCIES.md` |
 | Guardrail clarity | monthly cost, liquidity, and flexibility rules are explicit enough to reject weak paths | pending | `METRICS.md`, `RISK_REGISTER.md` |
 | Comparison completeness | owned Toronto housing and leaving Toronto have been compared directly against the same criteria | pending | `DECISION_FRAME.md`, `PROJECT_PLAN.md` |
 | Execution readiness | one direction has a realistic next-step sequence and no-go triggers | pending | `PROJECT_PLAN.md`, `RISK_REGISTER.md` |

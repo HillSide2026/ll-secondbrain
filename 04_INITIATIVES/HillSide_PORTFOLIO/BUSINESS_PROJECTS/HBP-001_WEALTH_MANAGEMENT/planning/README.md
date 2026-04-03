@@ -4,7 +4,7 @@ title: Wealth Management - Planning
 owner: ML1
 status: active
 created_date: 2026-03-20
-last_updated: 2026-03-20
+last_updated: 2026-04-03
 tags: [wealth-management, planning]
 ---
 
@@ -30,9 +30,20 @@ CAD 2,000,000 by `2030-12-31` and at least CAD 4,000,000 by `2040-12-31`.
 
 1. An opening consolidated net-worth baseline is fixed.
 2. The gap to the `2030-12-31` and `2040-12-31` targets is quantified.
-3. Wealth engines, capital-allocation rules, and liquidity guardrails are defined.
+3. Wealth engines, capital-allocation rules, liquidity guardrails, and housing-budget policy are defined.
 4. The quarterly review and annual reforecast model is defined.
 5. The `Planning -> Executing` packet is ready for ML1.
+
+## Active Planning Artifacts
+
+- `PROJECT_PLAN.md`
+- `METRICS.md`
+- `WEALTH_PLAN.md`
+- `OPENING_BALANCE_SHEET.md`
+- `VALUATION_AND_CLASSIFICATION_POLICY.md`
+- `LIQUIDITY_AND_CAPITAL_GUARDRAILS.md`
+- `NET_SAVINGS_AND_REFILL_MODEL.md`
+- `HOUSING_BUDGET_POLICY.md`
 
 ## Immediate Planning Sprint
 

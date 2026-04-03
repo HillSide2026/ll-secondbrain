@@ -45,7 +45,9 @@ either move to new owned housing in Toronto or leave Toronto.
 
 - This project governs housing strategy, decision criteria, and next-step
   sequencing for Toronto.
-- Current working capital context: ML1 reports `CAD 1,500,000` in cash.
+- Current working capital context: ML1 reports `CAD 900,000` in a
+  high-interest savings account and `CAD 560,000` in managed equities as at
+  `2026-04-03`.
 - Executing is not yet authorization to sign a lease, buy property, or execute
   a move until ML1 closes the `Planning -> Executing` gate.
 

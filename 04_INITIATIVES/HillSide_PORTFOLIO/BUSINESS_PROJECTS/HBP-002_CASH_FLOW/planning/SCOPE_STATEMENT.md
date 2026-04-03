@@ -4,7 +4,7 @@ title: Cash Flow - Scope Statement
 owner: ML1
 status: active
 created_date: 2026-03-20
-last_updated: 2026-03-22
+last_updated: 2026-04-03
 tags: [cash-flow, planning, scope]
 ---
 
@@ -22,11 +22,14 @@ redesign.
 
 ## In Scope
 
-- all positive and negative cash flow between Matthew and Matthew Holdings (`17513721 Canada Inc`), including the Andersen Service Line, FinSure activity, and Payment Services Consulting Line activity
+- all positive and negative cash flow between Matthew and `17513721 Canada Inc`
+  (personally owned by Matthew), including the Andersen Service Line, FinSure
+  activity, and Payment Services Consulting Line activity
 - all positive and negative cash flow between Matthew and YellowBricks, including residual post-closing cash events until final settlement
 - all positive and negative cash flow between Matthew and Federal MSB (`17409052 Canada Inc`), which is licensed but has no current operating activity
 - all positive and negative cash flow between Matthew and Ontario MSB Corp (`1001494374 Ontario Corp`), which is owned by 175 and being marketed for sale
-- all positive and negative cash flow between Matthew and Levine Law
+- all positive and negative cash flow between Matthew and
+  `Levine Professional Corporation` (`Levine Law`)
 - reconciliation between Andersen cash receipts in `17513721 Canada Inc` and Andersen operational matter tracking inside Levine Law
 - cash-category taxonomy for distributions, compensation, reimbursements, loans, capital contributions, sale proceeds, post-closing obligations, taxes, and similar direct movements
 - source-record mapping, reconciliation rules, and monthly close design for the Matthew-level view

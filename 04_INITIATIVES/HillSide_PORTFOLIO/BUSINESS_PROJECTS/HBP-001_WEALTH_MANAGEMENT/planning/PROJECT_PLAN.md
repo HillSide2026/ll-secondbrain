@@ -4,7 +4,7 @@ title: Wealth Management - Project Plan
 owner: ML1
 status: active
 created_date: 2026-03-20
-last_updated: 2026-03-20
+last_updated: 2026-04-03
 tags: [wealth-management, planning, project-plan]
 ---
 
@@ -24,17 +24,20 @@ net worth by `2030-12-31` and CAD 4,000,000 by `2040-12-31`.
 
 1. fix the opening baseline and measurement rule
 2. quantify the gap to target and the annual path required
-3. define wealth-engine priorities, capital-allocation rules, and liquidity limits
-4. assemble a clean `Planning -> Executing` packet for ML1
+3. define wealth-engine priorities, capital-allocation rules, liquidity limits,
+   and housing-budget policy
+4. connect `HBP-002_CASH_FLOW` net-savings logic to deployable-capital rules
+5. assemble a clean `Planning -> Executing` packet for ML1
 
 ## Planning Workstreams
 
 | Workstream | Objective | Primary Output |
 | --- | --- | --- |
-| WS-01 Baseline Definition | Fix the in-scope asset, liability, and valuation boundary | `SCOPE_STATEMENT.md`, `METRICS.md` |
+| WS-01 Baseline Definition | Fix the in-scope asset, liability, and valuation boundary | `SCOPE_STATEMENT.md`, `OPENING_BALANCE_SHEET.md`, `VALUATION_AND_CLASSIFICATION_POLICY.md` |
 | WS-02 Gap and Path Model | Quantify the baseline gap and required compounding path to `2030-12-31` and `2040-12-31` | `PROJECT_PLAN.md`, `METRICS.md` |
-| WS-03 Capital Governance | Define liquidity reserve, deployment guardrails, and review cadence | `ASSUMPTIONS_CONSTRAINTS.md`, `RISK_REGISTER.md` |
-| WS-04 Gate Packet Assembly | Prepare the execution-readiness recommendation for ML1 | `COMMUNICATION_PLAN.md`, `../APPROVAL_RECORD.md` |
+| WS-03 Capital Governance | Define liquidity reserve, deployment guardrails, refill logic, and housing-budget rules | `LIQUIDITY_AND_CAPITAL_GUARDRAILS.md`, `NET_SAVINGS_AND_REFILL_MODEL.md`, `HOUSING_BUDGET_POLICY.md` |
+| WS-04 Integrated Wealth Plan | Consolidate the planning packet into one decision-useful capital-governance view | `WEALTH_PLAN.md` |
+| WS-05 Gate Packet Assembly | Prepare the execution-readiness recommendation for ML1 | `COMMUNICATION_PLAN.md`, `../APPROVAL_RECORD.md` |
 
 ## Planning Milestones
 
@@ -52,6 +55,10 @@ net worth by `2030-12-31` and CAD 4,000,000 by `2040-12-31`.
 - quantify the required annual delta from the opening baseline to `2030-12-31` and the implied continuation path to `2040-12-31`
 - define what proportion of the path must come from portfolio returns versus business cash generation and equity growth
 - define the liquidity floor and the triggers for hold, redeploy, or defer decisions
+- define how Toronto and Japan housing budgets are tested against the same
+  capital pool
+- build one integrated wealth-plan artifact that can answer real major-capital
+  questions
 - define the review cadence and escalation triggers for off-path performance
 
 ## Completion Condition

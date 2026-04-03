@@ -4,7 +4,7 @@ title: Wealth Management - Project Charter
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-20
+last_updated: 2026-04-03
 tags: [wealth-management, charter, strategic]
 ---
 
@@ -18,14 +18,15 @@ tags: [wealth-management, charter, strategic]
 
 ## Sponsor
 
-ML1 (Matthew Holdings)
+ML1
 
 ## Mission
 
-Build a disciplined internal wealth-management program under Matthew Holdings
-that reaches consolidated net worth of at least CAD 2,000,000 by `2030-12-31`
-(when Matthew is 50) and at least CAD 4,000,000 by `2040-12-31` (when Matthew
-is 60).
+Build a disciplined internal wealth-management program for ML1 across
+personally owned assets and corporations, including `17513721 Canada Inc` and
+`Levine Professional Corporation`, that reaches consolidated net worth of at
+least CAD 2,000,000 by `2030-12-31` (when Matthew is 50) and at least
+CAD 4,000,000 by `2040-12-31` (when Matthew is 60).
 
 ## SMART Goals
 

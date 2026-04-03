@@ -4,7 +4,7 @@ title: Cash Flow - Problem Statement
 owner: ML1
 status: draft
 created_date: 2026-03-15
-last_updated: 2026-03-22
+last_updated: 2026-04-03
 tags: [cash-flow, initiation, problem]
 ---
 
@@ -17,13 +17,17 @@ Project: `HBP-002` - Cash Flow
 Matthew does not yet have a CPA-quality cash-flow measurement model for all
 positive and negative cash flow between himself and the core HillSide entities.
 Approximately CAD 1.6M of cash and securities is under management under
-Matthew Holdings, and Levine Law also affects Matthew's capital picture, but
-the reporting boundary and metric definitions are not yet formalized well
-enough to support confident capital decisions.
+his personal wealth boundary, and `Levine Professional Corporation`
+(`Levine Law`) also affects Matthew's capital picture, but the reporting
+boundary and metric definitions are not yet formalized well enough to support
+confident capital decisions.
 
 Current gaps:
 
-- no controlled list of in-scope entities and Matthew-level cash movements, including Matthew Holdings (`17513721 Canada Inc`), YellowBricks, Federal MSB (`17409052 Canada Inc`), Ontario MSB Corp (`1001494374 Ontario Corp`), and Levine Law
+- no controlled list of in-scope entities and Matthew-level cash movements,
+  including `17513721 Canada Inc`, YellowBricks, Federal MSB (`17409052
+  Canada Inc`), Ontario MSB Corp (`1001494374 Ontario Corp`), and
+  `Levine Professional Corporation` (`Levine Law`)
 - no locked definitions for gross inflow, gross outflow, and net cash flow by entity
 - no defined month-end close, review, or variance discipline
 - no decision-ready plan for how source records roll into management reporting

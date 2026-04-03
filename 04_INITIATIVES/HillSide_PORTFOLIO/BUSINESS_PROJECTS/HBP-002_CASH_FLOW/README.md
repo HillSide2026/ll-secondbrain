@@ -4,7 +4,7 @@ title: Cash Flow
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-22
+last_updated: 2026-04-03
 tags: [cash-flow, hillside, strategic, planning]
 ---
 
@@ -20,10 +20,27 @@ This project is a planning-stage HillSide strategic project.
 
 ## Current State
 
-- Approximate initiation baseline: CAD 1.6M in cash and securities under Matthew Holdings
-- In-scope Matthew-level cash-flow boundary: Matthew Holdings (`17513721 Canada Inc`), including the Andersen Service Line, FinSure activity, and Payment Services Consulting Line activity; YellowBricks; Federal MSB (`17409052 Canada Inc`), which is licensed but currently inactive; Ontario MSB Corp (`1001494374 Ontario Corp`), which is owned by 175 and being marketed for sale; and Levine Law
+- Approximate initiation baseline: CAD 1.6M in cash and securities across ML1's
+  personal wealth boundary, subject to reconciliation
+- Current personal liquid / near-liquid input as at `2026-04-03`:
+  `CAD 900,000` in a high-interest savings account plus `CAD 560,000` in
+  managed equities (`CAD 1,460,000` total)
+- Ownership note: ML1 personally owns `17513721 Canada Inc` and
+  `Levine Professional Corporation`
+- Ownership-chain note: ML1 personally owns `17513721 Canada Inc`, which owns
+  Federal MSB (`17409052 Canada Inc`) and Ontario MSB Corp
+  (`1001494374 Ontario Corp`) and formerly owned YellowBricks, which is now
+  sold and in post-closing handling
+- In-scope Matthew-level cash-flow boundary: `17513721 Canada Inc`, including
+  the Andersen Service Line, FinSure activity, and Payment Services Consulting
+  Line activity; YellowBricks; Federal MSB (`17409052 Canada Inc`), which is
+  licensed but currently inactive; Ontario MSB Corp (`1001494374 Ontario Corp`),
+  which is owned by 175 and being marketed for sale; and `Levine Professional
+  Corporation` (`Levine Law`)
 - Andersen boundary note: Andersen fees are received by `17513721 Canada Inc`, Andersen operational matters are tracked inside Levine Law, and the Andersen relationship is credited to Levine Law in the 2026 operating picture
 - Current YellowBricks sale receipt note: slightly more than `CAD 27,000` has now been received from the sale, and that cash went into `17513721 Canada Inc`
+- `17513721 Canada Inc` currently has approximately `CAD 27,000` in its bank
+  account from those YellowBricks sale proceeds
 - Current optimistic Ontario MSB sale thesis: `17513721 Canada Inc` is optimistic it can sell `1001494374 Ontario Corp` in 2026 for slightly more than `CAD 27,000` of corporate revenue
 - Current explicit 2026 Levine Law -> Matthew compensation target: `CAD 72,000` salary + `CAD 8,000` bonus = `CAD 80,000`
 - Initiating -> Planning gate approved on `2026-03-20`
@@ -35,9 +52,10 @@ This project is a planning-stage HillSide strategic project.
 
 Create a CPA-quality cash-flow reporting and control project for Matthew that
 captures monthly positive and negative cash flow between Matthew and the
-following in-scope entities: Matthew Holdings (`17513721 Canada Inc`),
-YellowBricks, Federal MSB (`17409052 Canada Inc`), Ontario MSB Corp
-(`1001494374 Ontario Corp`), and Levine Law.
+following in-scope entities: `17513721 Canada Inc` (personally owned by
+Matthew), YellowBricks, Federal MSB (`17409052 Canada Inc`), Ontario MSB Corp
+(`1001494374 Ontario Corp`), and `Levine Professional Corporation`
+(`Levine Law`).
 
 Supporting entity-level analysis may be used for reconciliation, but the
 primary reporting boundary is Matthew-level cash movement.

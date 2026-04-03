@@ -4,7 +4,7 @@ title: Wealth Management - Approval Record
 owner: ML1
 status: active
 created_date: 2026-03-14
-last_updated: 2026-03-20
+last_updated: 2026-04-03
 tags: [wealth-management, approval, planning]
 ---
 
@@ -52,7 +52,9 @@ Executing Stage Authorized: No
 
 ## Notes
 
-- Project folder created under the Matthew Holdings / HillSide branch.
+- Project folder created under the HillSide branch.
+- `Matthew Holdings` is retained only as an internal planning label, not as a
+  separate legal entity.
 - `README.md` exists as supporting folder documentation and is not a stage-gate artifact.
 - Initiating is complete and planning opened on 2026-03-20.
 - Planning is focused on baseline definition, gap quantification, capital governance, and execution readiness for the internal wealth-management model.

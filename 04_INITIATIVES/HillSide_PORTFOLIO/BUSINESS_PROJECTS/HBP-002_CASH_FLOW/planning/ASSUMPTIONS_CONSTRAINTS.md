@@ -4,7 +4,7 @@ title: Cash Flow - Assumptions and Constraints
 owner: ML1
 status: active
 created_date: 2026-03-20
-last_updated: 2026-03-22
+last_updated: 2026-04-03
 tags: [cash-flow, planning, assumptions, constraints]
 ---
 
@@ -15,8 +15,21 @@ Stage: `Planning`
 
 ## Assumptions
 
-- the approximate current asset base remains about CAD 1.6M in cash and securities under Matthew Holdings
-- records for Matthew Holdings (`17513721 Canada Inc`), YellowBricks, Federal MSB (`17409052 Canada Inc`), Ontario MSB Corp (`1001494374 Ontario Corp`), and Levine Law can be classified consistently enough for planning
+- the approximate current asset base remains about CAD 1.6M in cash and
+  securities across ML1's personal wealth boundary
+- the current personal liquid / near-liquid split as at `2026-04-03` is
+  `CAD 900,000` in a high-interest savings account plus `CAD 560,000` in
+  managed equities
+- ML1 personally owns `17513721 Canada Inc` and `Levine Professional Corporation`
+- `17513721 Canada Inc` owns Federal MSB (`17409052 Canada Inc`) and Ontario
+  MSB Corp (`1001494374 Ontario Corp`) and formerly owned YellowBricks, which
+  is now sold and in post-closing handling
+- `17513721 Canada Inc` currently holds approximately `CAD 27,000` in its bank
+  account from YellowBricks sale proceeds
+- records for `17513721 Canada Inc`, YellowBricks, Federal MSB (`17409052
+  Canada Inc`), Ontario MSB Corp (`1001494374 Ontario Corp`), and
+  `Levine Professional Corporation` (`Levine Law`) can be classified
+  consistently enough for planning
 - Andersen cash receipts in `17513721 Canada Inc` can be cross-walked against Andersen operational matters tracked inside Levine Law
 - Andersen fee receipts can remain outside direct Levine Law revenue while still being reconciled across entities
 - Ontario MSB Corp may produce slightly more than `CAD 27,000` of corporate revenue into `17513721 Canada Inc` if the currently marketed 2026 sale closes
@@ -35,9 +48,14 @@ Stage: `Planning`
 
 Currently locked:
 
-- all positive and negative cash flow between Matthew and Matthew Holdings (`17513721 Canada Inc`), YellowBricks, Federal MSB (`17409052 Canada Inc`), Ontario MSB Corp (`1001494374 Ontario Corp`), and Levine Law is in scope
+- all positive and negative cash flow between Matthew and `17513721 Canada Inc`,
+  YellowBricks, Federal MSB (`17409052 Canada Inc`), Ontario MSB Corp
+  (`1001494374 Ontario Corp`), and `Levine Professional Corporation`
+  (`Levine Law`) is in scope
 - YellowBricks residual receipts, payments, and adjustments remain in scope until fully settled
 - slightly more than `CAD 27,000` has already been received from the sale of YellowBricks into `17513721 Canada Inc`
+- that slightly more than `CAD 27,000` currently sits in the `17513721 Canada Inc`
+  bank account unless otherwise moved
 - supporting entity-level internal views may be used only for reconciliation or explanation
 - Andersen fees are received by `17513721 Canada Inc`, while Andersen operational matters are tracked inside Levine Law under the same time-for-money model
 - the Andersen relationship is credited to Levine Law in the 2026 operating picture even though the cash receipt remains in `17513721 Canada Inc`

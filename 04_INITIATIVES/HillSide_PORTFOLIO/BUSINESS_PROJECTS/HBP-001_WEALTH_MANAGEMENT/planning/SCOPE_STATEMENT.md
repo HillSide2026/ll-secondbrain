@@ -4,7 +4,7 @@ title: Wealth Management - Scope Statement
 owner: ML1
 status: active
 created_date: 2026-03-20
-last_updated: 2026-03-20
+last_updated: 2026-04-03
 tags: [wealth-management, planning, scope]
 ---
 
@@ -21,7 +21,9 @@ model and to prevent scope drift into unrelated businesses or public offerings.
 
 ## In Scope
 
-- consolidated net-worth measurement boundary for Matthew Holdings / HillSide
+- consolidated net-worth measurement boundary for ML1 across personally owned
+  assets and corporations, including `17513721 Canada Inc` and
+  `Levine Professional Corporation`
 - opening balance-sheet view of in-scope assets and liabilities
 - treatment of liquid holdings, securities, and business equity
 - target-gap calculation relative to CAD 2,000,000 by `2030-12-31` (SG-01) and CAD 4,000,000 by `2040-12-31` (SG-02)

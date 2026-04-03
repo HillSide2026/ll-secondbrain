@@ -4,7 +4,7 @@ title: Corporate Identity Card — Matthew Holdings (17513721 Canada Inc)
 owner: ML1
 status: draft
 created_date: 2026-03-07
-last_updated: 2026-03-22
+last_updated: 2026-04-03
 tags: [corporate-identity, governance, portfolio]
 ---
 
@@ -30,9 +30,11 @@ Matthew Holdings functions as both the ownership and governance vehicle for
 HillSide portfolio entities and a direct operating corporation for selected
 business lines.
 
+ML1 personally owns `17513721 Canada Inc`.
+
 ## Subsidiary / Entity Links
 
-- Yellowbricks
+- Yellowbricks (formerly owned; now sold and in post-closing handling)
 - Federal MSB (17409052 Canada Inc)
 - Ontario MSB Corp (1001494374 Ontario Corp)
 
@@ -48,6 +50,7 @@ business lines.
 - 17513721 Canada Inc has received, and is expected to continue receiving, remaining revenue from Yellowbricks.
 - Sale of Yellowbricks is in post-closing transaction status.
 - Slightly more than CAD 27,000 has now been received from the sale of Yellowbricks, and that cash went into 17513721 Canada Inc.
+- That slightly more than CAD 27,000 currently sits in the 17513721 Canada Inc bank account unless otherwise moved.
 - Under the Andersen Service Line, 17513721 Canada Inc provides services to clients of Andersen Consulting and Andersen Consulting pays 17513721 Canada Inc.
 - Operational matters tied to the Andersen Service Line are tracked inside Levine Law.
 - The Andersen Service Line continues to follow the Levine Law time-for-money business model, and the Andersen relationship is credited to Levine Law in the 2026 operating picture even though the Andersen fees are received by 17513721 Canada Inc.

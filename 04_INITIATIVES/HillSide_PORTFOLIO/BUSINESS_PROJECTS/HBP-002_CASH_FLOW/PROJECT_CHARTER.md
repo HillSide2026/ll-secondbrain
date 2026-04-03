@@ -4,7 +4,7 @@ title: Cash Flow - Project Charter
 owner: ML1
 status: draft
 created_date: 2026-03-15
-last_updated: 2026-03-22
+last_updated: 2026-04-03
 tags: [cash-flow, charter, hillside]
 ---
 
@@ -31,7 +31,8 @@ entities for capital-allocation decisions.
 By `2026-06-30`, Matthew has a monthly management-reporting pack,
 closed and reviewed within 10 business days of month-end, that reports:
 
-- gross cash inflows to Matthew from Matthew Holdings (`17513721 Canada Inc`), YellowBricks, Federal MSB (`17409052 Canada Inc`), Ontario MSB Corp (`1001494374 Ontario Corp`), and Levine Law
+- gross cash inflows to Matthew from `17513721 Canada Inc`, YellowBricks,
+  Federal MSB (`17409052 Canada Inc`), Ontario MSB Corp (`1001494374 Ontario Corp`), and `Levine Professional Corporation` (`Levine Law`)
 - gross cash outflows from Matthew to each in-scope entity
 - net cash flow by entity and in aggregate across the in-scope set
 - explicit classification of YellowBricks residual post-closing receipts, obligations, and adjustments until fully settled

@@ -4,13 +4,14 @@ title: Wealth Management
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-20
+last_updated: 2026-04-03
 tags: [wealth-management, strategic, planning]
 ---
 
 # Wealth Management
 
-This project is a planning-stage strategic project under Matthew Holdings.
+This project is a planning-stage strategic project for ML1's personal wealth
+and capital stewardship across personally owned assets and corporations.
 
 ---
 
@@ -22,7 +23,8 @@ This project is a planning-stage strategic project under Matthew Holdings.
 
 ## Current State
 
-- Ownership branch: `Matthew Holdings / HillSide`
+- Governance branch: `HillSide`
+- Ownership note: ML1 personally owns `17513721 Canada Inc` and `Levine Professional Corporation`
 - SG-01: consolidated net worth ≥ CAD 2,000,000 by `2030-12-31`
 - SG-02: consolidated net worth ≥ CAD 4,000,000 by `2040-12-31`
 - Initiating -> Planning gate approved on `2026-03-20`
@@ -33,9 +35,11 @@ This project is a planning-stage strategic project under Matthew Holdings.
 
 ## Objective
 
-Define the internal wealth-management strategy under Matthew Holdings needed to
-reach consolidated net worth of at least CAD 2,000,000 by `2030-12-31` (Matthew
-at 50) and at least CAD 4,000,000 by `2040-12-31` (Matthew at 60).
+Define the internal wealth-management strategy for ML1 across personally owned
+assets and corporations, including `17513721 Canada Inc` and
+`Levine Professional Corporation`, needed to reach consolidated net worth of at
+least CAD 2,000,000 by `2030-12-31` (Matthew at 50) and at least CAD 4,000,000
+by `2040-12-31` (Matthew at 60).
 
 ---
 
@@ -44,7 +48,9 @@ at 50) and at least CAD 4,000,000 by `2040-12-31` (Matthew at 60).
 - establish the opening consolidated net-worth baseline and valuation rule
 - quantify the gap to target and the required annual accumulation rate
 - define capital-allocation, liquidity, and risk guardrails
+- define the housing-budget policy that anchors Toronto and Japan housing decisions
 - define the quarterly review cadence and annual reforecast rule
+- integrate the planning artifacts into one decision-useful wealth plan
 - prepare the `Planning -> Executing` gate packet for ML1
 
 ## Notes
@@ -64,6 +70,12 @@ at 50) and at least CAD 4,000,000 by `2040-12-31` (Matthew at 60).
 - `planning/RISK_REGISTER.md`
 - `planning/COMMUNICATION_PLAN.md`
 - `planning/METRICS.md`
+- `planning/WEALTH_PLAN.md`
+- `planning/OPENING_BALANCE_SHEET.md`
+- `planning/VALUATION_AND_CLASSIFICATION_POLICY.md`
+- `planning/LIQUIDITY_AND_CAPITAL_GUARDRAILS.md`
+- `planning/NET_SAVINGS_AND_REFILL_MODEL.md`
+- `planning/HOUSING_BUDGET_POLICY.md`
 
 ---
 

@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 project_type: strategic
 created_date: 2026-03-15
-last_updated: 2026-03-20
+last_updated: 2026-04-03
 tags: [wealth-management, initiation, stakeholders]
 ---
 
@@ -16,7 +16,8 @@ Project: `HBP-001` - Wealth Management
 | Stakeholder | Role | Responsibility |
 | --- | --- | --- |
 | ML1 | Decision authority | Approves scope, constraints, and stage-gate advancement |
-| Matthew Holdings | Ownership entity | Holds strategic ownership context, capital-allocation logic, and portfolio fit |
+| `17513721 Canada Inc` | Personally owned corporation | Supplies ownership-context, capital-location, and entity-level planning inputs |
+| `Levine Professional Corporation` | Personally owned corporation | Supplies operating-business and equity-context inputs for the wealth boundary |
 | Accounting / bookkeeping support | Financial-record support | Helps assemble the opening balance sheet, liability view, and recurring measurement inputs |
 | Business or asset operators | Input owners | Supply current-state information on business equity, distributions, liquidity needs, and valuation assumptions |
 

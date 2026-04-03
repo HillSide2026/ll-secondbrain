@@ -4,7 +4,7 @@ title: Wealth Management - Metrics
 owner: ML1
 status: active
 created_date: 2026-03-20
-last_updated: 2026-03-20
+last_updated: 2026-04-03
 tags: [wealth-management, planning, metrics]
 ---
 
@@ -17,11 +17,12 @@ Stage: `Planning`
 
 | Metric | Definition | Target | Evidence |
 | --- | --- | --- | --- |
-| Baseline completeness | Share of in-scope assets and liabilities classified under one approved methodology | all material in-scope items classified | `SCOPE_STATEMENT.md`, working baseline |
-| Opening baseline | Consolidated net worth as at `2026-03-23` | CAD 1,600,000 (first-pass; subject to valuation confirmation) | ML1 |
+| Baseline completeness | Share of in-scope assets and liabilities classified under one approved methodology | all material in-scope items classified | `SCOPE_STATEMENT.md`, `OPENING_BALANCE_SHEET.md`, `VALUATION_AND_CLASSIFICATION_POLICY.md` |
+| Opening baseline | Consolidated net worth as at `2026-03-23` | CAD 1,600,000 (first-pass; subject to valuation confirmation) | `OPENING_BALANCE_SHEET.md`, ML1 |
 | Gap to SG-01 | CAD 2,000,000 − CAD 1,600,000 | CAD 400,000 remaining; requires ~4.8% CAGR on existing base over 4.75 years — path is primarily investment returns, not savings from income | `PROJECT_PLAN.md` |
 | Gap to SG-02 | CAD 4,000,000 − CAD 1,600,000 | CAD 2,400,000 remaining; requires ~6.4% CAGR over 14.75 years — at $2M in 2030, a further ~7.2% CAGR for 10 years reaches $4M | `PROJECT_PLAN.md` |
-| Governance readiness | Capital-allocation, liquidity, and review rules are explicit enough to govern execution | governance rules documented clearly enough for ML1 review | `ASSUMPTIONS_CONSTRAINTS.md`, `COMMUNICATION_PLAN.md` |
+| Governance readiness | Capital-allocation, liquidity, refill, and review rules are explicit enough to govern execution | governance rules documented clearly enough for ML1 review | `LIQUIDITY_AND_CAPITAL_GUARDRAILS.md`, `NET_SAVINGS_AND_REFILL_MODEL.md`, `COMMUNICATION_PLAN.md`, `WEALTH_PLAN.md` |
+| Housing budget anchor | Shared housing-budget rules exist for Toronto and Japan planning | one housing-budget policy and output standard documented clearly enough for ML1 review | `HOUSING_BUDGET_POLICY.md`, `WEALTH_PLAN.md` |
 | Dependency alignment | Critical dependencies needed for execution are identified and narrowed enough to manage | no unresolved dependency that makes the path unusable for decision-making | `DEPENDENCIES.md`, `RISK_REGISTER.md` |
 | ML1 gate readiness | The planning packet is complete enough for a `Planning -> Executing` decision | all required planning artifacts drafted and coherent | planning folder and `../APPROVAL_RECORD.md` |
 

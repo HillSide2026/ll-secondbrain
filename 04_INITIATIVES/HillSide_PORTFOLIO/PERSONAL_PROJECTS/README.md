@@ -17,6 +17,7 @@ Current personal projects:
 - `DECISION_MAKING`
 - `TO_DO_LIST`
 - `BUILD_MONEY_MACHINE`
+- `PERSONAL_ACCOUNTING`
 - `TORONTO_HOUSING`
 - `JAPAN_HOME_DECISION`
 
@@ -41,6 +42,14 @@ Current personal projects:
 - It uses `Initiating -> Planning -> Executing` as its stage path inside
   `PERSONAL_PROJECTS`.
 - It does not replace `BUSINESS_PROJECTS` governance for real HillSide ventures.
+
+## Personal Accounting
+
+- [PERSONAL_ACCOUNTING/README.md](PERSONAL_ACCOUNTING/README.md) is the
+  placeholder container for ML1 personal accounting governance.
+- It is the repo-side pointer for personal accounting facts and source-record
+  discipline.
+- It does not store raw statements in git.
 
 ## Toronto Housing
 

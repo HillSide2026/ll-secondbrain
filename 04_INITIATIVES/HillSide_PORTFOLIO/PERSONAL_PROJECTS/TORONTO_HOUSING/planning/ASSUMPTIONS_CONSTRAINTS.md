@@ -16,8 +16,10 @@ Stage: `Planning`
 ## Assumptions
 
 - the real branch choice is owned housing in Toronto versus leaving Toronto
-- ML1 currently reports `CAD 1,500,000` in cash
+- ML1 currently reports `CAD 900,000` in a high-interest savings account and
+  `CAD 560,000` in managed equities as at `2026-04-03`
 - the housing budget should be set inside `HBP-001_WEALTH_MANAGEMENT`
+  through `planning/WEALTH_PLAN.md` and `planning/HOUSING_BUDGET_POLICY.md`
 - decision quality matters more than reacting quickly to market noise
 
 ## Constraints
@@ -25,5 +27,6 @@ Stage: `Planning`
 - no property acquisition or relocation execution is authorized during planning
 - no broker-led pseudo-planning should be treated as a substitute for a real
   wealth plan
-- no option is viable if it breaks the liquidity rules set through `HBP-001`
+- no option is viable if it breaks the liquidity rules or housing-budget policy
+  set through `HBP-001`
 - the project must stay focused on the two live paths and avoid side-path sprawl

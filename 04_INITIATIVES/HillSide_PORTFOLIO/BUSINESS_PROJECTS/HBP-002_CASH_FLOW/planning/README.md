@@ -4,7 +4,7 @@ title: Cash Flow - Planning
 owner: ML1
 status: active
 created_date: 2026-03-20
-last_updated: 2026-03-22
+last_updated: 2026-04-03
 tags: [cash-flow, planning]
 ---
 
@@ -17,9 +17,10 @@ Stage: `Planning`
 ## Planning Objective
 
 Define an execution-ready monthly reporting and control model for all positive
-and negative cash flow between Matthew and Matthew Holdings
-(`17513721 Canada Inc`), YellowBricks, Federal MSB (`17409052 Canada Inc`),
-Ontario MSB Corp (`1001494374 Ontario Corp`), and Levine Law.
+and negative cash flow between Matthew and `17513721 Canada Inc` (personally
+owned by Matthew), YellowBricks, Federal MSB (`17409052 Canada Inc`), Ontario
+MSB Corp (`1001494374 Ontario Corp`), and `Levine Professional Corporation`
+(`Levine Law`).
 
 ## Planning Status (2026-03-20)
 

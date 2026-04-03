@@ -4,7 +4,7 @@ title: Wealth Management - Problem Statement
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-20
+last_updated: 2026-04-03
 tags: [wealth-management, initiation, problem]
 ---
 
@@ -15,7 +15,9 @@ Project: `HBP-001` - Wealth Management
 ## Problem
 
 Matthew has a real wealth objective, but there is no approved baseline,
-quantified path, or governance model for reaching it under Matthew Holdings.
+quantified path, or governance model for reaching it across ML1's personal
+balance sheet and personally owned corporations, including `17513721 Canada Inc`
+and `Levine Professional Corporation`.
 
 Current gaps:
 

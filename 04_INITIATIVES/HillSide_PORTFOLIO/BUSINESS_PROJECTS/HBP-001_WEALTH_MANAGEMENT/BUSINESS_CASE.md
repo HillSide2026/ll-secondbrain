@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 project_type: strategic
 created_date: 2026-03-15
-last_updated: 2026-03-20
+last_updated: 2026-04-03
 tags: [wealth-management, initiation, business-case]
 ---
 
@@ -16,9 +16,13 @@ Project: `HBP-001` - Wealth Management
 ## Opportunity
 
 Matthew needs a measurable wealth-management objective rather than a general
-ambition. The immediate opportunity is to manage Matthew Holdings against a
-two targets: consolidated net worth of at least CAD 2,000,000 by `2030-12-31`
-and at least CAD 4,000,000 by `2040-12-31`.
+ambition. The immediate opportunity is to manage ML1's personal wealth boundary
+against two targets: consolidated net worth of at least CAD 2,000,000 by
+`2030-12-31` and at least CAD 4,000,000 by `2040-12-31`.
+
+For this project, `Matthew Holdings` is treated as an internal planning label
+used by ML1 to keep the relationship between himself and `17513721 Canada Inc`
+salient. It is not a separate legal entity.
 
 The business case for initiation is not that the full strategy is already
 finalized. It is that a controlled definition effort is warranted before

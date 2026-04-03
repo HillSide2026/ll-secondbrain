@@ -4,7 +4,7 @@ title: Matthew Holdings (17513721 Canada Inc)
 owner: ML1
 status: draft
 created_date: 2026-03-06
-last_updated: 2026-03-22
+last_updated: 2026-04-03
 tags: []
 ---
 
@@ -113,6 +113,15 @@ This folder may contain:
 - strategic portfolio planning
 
 Formal legal records remain in the firm's document management systems.
+
+## Current Capital Note
+
+- ML1 personally owns `17513721 Canada Inc`
+- `17513721 Canada Inc` owns Federal MSB (`17409052 Canada Inc`) and Ontario
+  MSB Corp (`1001494374 Ontario Corp`) and formerly owned YellowBricks, which
+  is now sold and in post-closing handling
+- `17513721 Canada Inc` currently has approximately `CAD 27,000` in its bank
+  account from YellowBricks sale proceeds
 
 ## Potential Business Initiatives
 

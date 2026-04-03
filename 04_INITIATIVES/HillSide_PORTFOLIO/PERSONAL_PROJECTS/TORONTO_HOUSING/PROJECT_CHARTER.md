@@ -32,7 +32,8 @@ to either new owned housing in Toronto or leaving Toronto.
 - determine whether the correct 2026 direction is to move to new owned housing
   in Toronto or leave Toronto
 - define acceptable monthly cost, liquidity, and flexibility guardrails in
-  light of ML1's reported `CAD 1,500,000` cash position
+  light of ML1's reported `CAD 900,000` in a high-interest savings account and
+  `CAD 560,000` in managed equities as at `2026-04-03`
 - formalize the housing budget inside the overall wealth plan rather than
   treating housing as a standalone capital-allocation decision
 - compare realistic housing paths instead of letting the issue remain ambient
@@ -85,8 +86,9 @@ to either new owned housing in Toronto or leaving Toronto.
 - housing choices affect cash flow, stability, and focus
 - the core path set is already narrowed to ownership in Toronto or leaving
   Toronto
-- ML1 currently reports `CAD 1,500,000` in cash, which changes the liquidity
-  analysis but does not eliminate the need for guardrails
+- ML1 currently reports `CAD 900,000` in a high-interest savings account and
+  `CAD 560,000` in managed equities as at `2026-04-03`, which changes the
+  liquidity analysis but does not eliminate the need for guardrails
 
 ## Constraints
 

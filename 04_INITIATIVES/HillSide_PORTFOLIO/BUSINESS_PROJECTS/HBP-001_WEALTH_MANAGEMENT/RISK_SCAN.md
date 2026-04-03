@@ -4,7 +4,7 @@ title: Wealth Management - Risk Scan
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-20
+last_updated: 2026-04-03
 tags: [wealth-management, initiation, risk]
 ---
 
@@ -29,7 +29,8 @@ Project: `HBP-001` - Wealth Management
 ## Key Assumptions
 
 - the primary objective is consolidated net worth of at least CAD 2,000,000 by `2030-12-31`
-- the initiative is internal to Matthew Holdings and is not a client-facing business
+- the initiative is internal to ML1's personal wealth-governance layer and is
+  not a client-facing business
 - in-scope assets and liabilities can be measured reliably enough to support planning
 
 ## Go / No-Go Judgment

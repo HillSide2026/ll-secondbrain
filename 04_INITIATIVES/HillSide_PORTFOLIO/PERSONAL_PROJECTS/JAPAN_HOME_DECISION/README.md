@@ -44,7 +44,9 @@ in Japan, defer it, or rule it out for now.
 ## Notes
 
 - This project governs the decision question first.
-- Current working capital context: ML1 reports `CAD 1,500,000` in cash.
+- Current working capital context: ML1 reports `CAD 900,000` in a
+  high-interest savings account and `CAD 560,000` in managed equities as at
+  `2026-04-03`.
 - Executing is not authorization to begin acquisition execution until ML1
   closes the `Planning -> Executing` gate.
 

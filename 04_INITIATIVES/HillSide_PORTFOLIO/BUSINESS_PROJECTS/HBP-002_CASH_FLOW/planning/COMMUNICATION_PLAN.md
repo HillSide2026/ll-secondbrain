@@ -4,7 +4,7 @@ title: Cash Flow - Communication Plan
 owner: ML1
 status: active
 created_date: 2026-03-20
-last_updated: 2026-03-22
+last_updated: 2026-04-03
 tags: [cash-flow, planning, communications]
 ---
 
@@ -23,8 +23,8 @@ records, Matthew-level cash classification, and close-process readiness.
 
 - ML1
 - accounting / bookkeeping / CPA support
-- Matthew Holdings (`17513721 Canada Inc`)
-- Levine Law
+- `17513721 Canada Inc`
+- `Levine Professional Corporation` (`Levine Law`)
 - Federal MSB (`17409052 Canada Inc`)
 - Ontario MSB Corp (`1001494374 Ontario Corp`)
 
@@ -34,8 +34,8 @@ records, Matthew-level cash classification, and close-process readiness.
 | --- | --- | --- | --- |
 | ML1 | Weekly | Planning status, decisions required, and risk updates | Project Owner |
 | Accounting / bookkeeping / CPA support | Weekly | Formula, source-record, and close-feasibility review | Project Owner |
-| Matthew Holdings (`17513721 Canada Inc`) | Bi-weekly or as needed | Entity-input and treatment sync | Project Owner |
-| Levine Law | Bi-weekly or as needed | Entity-input and treatment sync | Project Owner |
+| `17513721 Canada Inc` | Bi-weekly or as needed | Entity-input and treatment sync | Project Owner |
+| `Levine Professional Corporation` (`Levine Law`) | Bi-weekly or as needed | Entity-input and treatment sync | Project Owner |
 | Federal MSB (`17409052 Canada Inc`) | Bi-weekly or as needed | Entity-input and treatment sync | Project Owner |
 | Ontario MSB Corp (`1001494374 Ontario Corp`) | Bi-weekly or as needed | Entity-input and treatment sync | Project Owner |
 

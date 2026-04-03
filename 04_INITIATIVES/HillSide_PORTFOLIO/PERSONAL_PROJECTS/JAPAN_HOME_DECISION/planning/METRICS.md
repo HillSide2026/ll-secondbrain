@@ -18,7 +18,7 @@ Stage: `Planning`
 | Metric | Planning exit test | Outcome | Evidence |
 | --- | --- | --- | --- |
 | Use-case clarity | the real reason for considering a Japan home is explicit and decision-useful | pending | `DECISION_FRAME.md` |
-| Budget anchor | any Japan-home budget is formalized inside `HBP-001_WEALTH_MANAGEMENT` | pending | `ASSUMPTIONS_CONSTRAINTS.md`, `DEPENDENCIES.md` |
+| Budget anchor | any Japan-home budget is formalized inside `HBP-001_WEALTH_MANAGEMENT` | pending | `HBP-001_WEALTH_MANAGEMENT / planning/WEALTH_PLAN.md`, `HBP-001_WEALTH_MANAGEMENT / planning/HOUSING_BUDGET_POLICY.md`, `DEPENDENCIES.md` |
 | Diligence clarity | the top legal, tax, financing, and operating questions are explicit and prioritized | pending | `DEPENDENCIES.md`, `RISK_REGISTER.md` |
 | Decision clarity | the go / defer / no rule is explicit enough for ML1 to choose | pending | `DECISION_FRAME.md`, `METRICS.md` |
 | Execution readiness | if pursue is selected, there is a realistic next-step sequence and no-go triggers | pending | `PROJECT_PLAN.md`, `RISK_REGISTER.md` |
