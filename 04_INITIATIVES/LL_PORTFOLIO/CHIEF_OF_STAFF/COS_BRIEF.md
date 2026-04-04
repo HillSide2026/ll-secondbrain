@@ -1,8 +1,8 @@
 # Chief of Staff Brief
 
-- Generated: 2026-04-04T00:32:32Z
+- Generated: 2026-04-04T01:29:33Z
 - Agent: LLM-001 Chief of Staff
-- Input freshness: LLM-004 run 2026-04-04T00:30:07+00:00, LLM-005 run 2026-04-04T00:30:07+00:00, LLM-006 run 2026-04-04T00:30:07+00:00
+- Input freshness: LLM-004 run 2026-04-04T01:29:33+00:00, LLM-005 run 2026-04-04T01:29:33+00:00, LLM-006 run 2026-04-04T01:29:33+00:00
 
 > Advisory output. ML1 approval required before any action is taken.
 
@@ -23,16 +23,26 @@ ranking.
 
 ## Portfolio Health Summary
 
-The refreshed April 4, 2026 management run shows a much tighter LL portfolio
-than the stale April 1 Chief of Staff packet suggested. The current mix is 24
-on-track, 10 watch, and 5 at-risk across 39 projects. The dominant condition is
-not broad portfolio instability but a concentrated planning-and-normalization
-cluster: `LLP-012` remains the main gating item, `LLP-011` is the live-funnel
-measurement priority, `LLP-025` still carries open strategic choices that make
-a canonical KPI sheet premature, and `LLP-004` plus `LLP-005` still need
-canonical `METRICS.md` treatment. The true at-risk set is now narrow:
-`LLP-007`, `LLP-008`, `LLP-016`, and `LLP-043` have approval/initiation gaps,
-and `LLP-030` still lacks `BUSINESS_CASE.md`.
+The refreshed April 4, 2026 management run shows a stable LL portfolio rather
+than a distressed one. The current mix is 29 on-track, 10 watch, and 0
+at-risk across 39 projects. The dominant condition is not broad instability
+but a small control-and-normalization cluster:
+
+- `LLP-012` remains the highest-priority item, but it is now better understood
+  as a packet and operating-model normalization issue around F02 rather than as
+  a generic incomplete project
+- `LLP-011` is the highest-value live measurement priority because F01 is an
+  active funnel and the real question is profitable revenue quality, not just
+  gross revenue
+- `LLP-004` and `LLP-005` are operationally real, but still present as watch
+  because the canonical measurement wrapper is not yet normalized
+- `LLP-025` still carries open strategic choices that make a fully canonical
+  KPI sheet premature even though it remains an important downstream strategy
+  dependency
+
+The former true at-risk cluster has now cleared. `LLP-007`, `LLP-008`,
+`LLP-016`, `LLP-043`, and `LLP-030` no longer drive portfolio concern in the
+current run.
 
 One structural caution matters to every reading of the current management
 outputs: the deterministic governance layer is still flagging
@@ -40,65 +50,69 @@ outputs: the deterministic governance layer is still flagging
 and the `LLM-004` spec treat `SCOPE_STATEMENT.md` as canonical. That means part
 of the present watch/violation signal is real project incompleteness, and part
 is tool/doctrine drift that should be normalized rather than treated as
-substantive non-compliance.
+substantive non-compliance. A packet-level review also shows one more nuance
+not surfaced by the deterministic checks: `LLP-012` has inconsistent stage
+signals across its README, approval record, and planning artifacts.
 
 ## Top 3 Items Requiring ML1 Decision
 
-1. `LLP-012` — confirm the intended rule for F02: should adjacent build work be
-   held behind closure of the six planning gaps, or is limited preparatory work
-   allowed while the stage-2 packet is completed?
-2. `LLP-011` / `LLP-025` — confirm the measurement-governance stance: make the
-   canonical live-funnel scorecard for `LLP-011` a priority now, defer a
-   canonical strategy KPI sheet for `LLP-025` until the open strategic choices
-   close, and tolerate temporary document messiness in `LLP-025` meanwhile.
-3. `LLP-030` plus the remaining approval-gap cluster (`LLP-007`, `LLP-008`,
-   `LLP-016`, `LLP-043`) — decide whether to formalize, complete, or park these
-   few genuine at-risk items.
+1. `LLP-012` — confirm the canonical F02 operating path and normalize the
+   packet to that decision. The current project surface mixes planning-stage
+   documents, an executing authorization, and multiple entry-path expressions
+   (`Health Check` versus `lead magnet -> triage consult -> Health Check`).
+2. `LLP-011` — approve the canonical live-funnel scorecard and profitability
+   lens for F01. The highest-value measurement task now is to govern the active
+   funnel using a single decision-useful scorecard rather than scattered metric
+   artifacts.
+3. `LLP-004` / `LLP-005` / `LLP-025` — confirm the normalization stance across
+   the supporting intake and strategy layers: create canonical measurement
+   wrappers for the operating lanes now, but continue to tolerate temporary
+   KPI-sheet incompleteness in `LLP-025` until the open strategic questions
+   close.
 
 ## Cross-Agent Conflicts
 
 No cross-agent conflicts are detected in the April 4, 2026 dataset.
 
-`LLM-005` and `LLM-006` are aligned on the highest-priority cluster:
-`LLP-012`, `LLP-043`, `LLP-004`, `LLP-005`, `LLP-011`, and `LLP-025`. The
-current issue is not disagreement between flow and governance agents. The
-current issue is that both agents are surfacing the same planning /
-measurement backlog, while the deterministic governance layer is also carrying
-an outdated scope-artifact expectation.
+`LLM-005` and `LLM-006` remain aligned on the highest-priority cluster:
+`LLP-012`, `LLP-004`, `LLP-005`, `LLP-011`, and `LLP-025`. The current issue
+is not disagreement between flow and governance agents. The current issue is a
+small set of concentrated planning and measurement normalization tasks, plus
+the stale deterministic scope-artifact expectation.
 
 ## Governance Holds
 
 These items should be treated as current governance holds:
 
-- `LLP-012` — six stage-2 planning gaps remain open; it is the highest-priority
-  planning project in the portfolio.
-- `LLP-011` — still missing canonical `METRICS.md` treatment.
+- `LLP-012` — highest-priority normalization item. Packet-level review should
+  reconcile its stage, ICP gate, and canonical F02 path before more execution
+  surface is added.
+- `LLP-011` — still missing canonical `METRICS.md` treatment for the live
+  funnel.
+- `LLP-004` and `LLP-005` — still present watch status because the operating
+  lanes use approved legacy metric artifacts rather than a canonical
+  `METRICS.md` wrapper.
 - `LLP-025` — remains a key downstream sequencing dependency for intake and
-  lead-capture work, but it should currently be treated as a temporary
-  strategy-layer measurement exception rather than as an immediate canonical
-  `METRICS.md` normalization priority.
-- `LLP-030` — still missing `BUSINESS_CASE.md`.
-- `LLP-007`, `LLP-008`, `LLP-016`, `LLP-043` — still missing
-  `APPROVAL_RECORD.md`, with `LLP-043` also missing its initiation packet.
+  lead-capture work, but it should still be treated as a temporary
+  strategy-layer measurement exception rather than as an immediate
+  KPI-normalization priority.
 
-The watch status on `LLP-004`, `LLP-005`, `LLP-006`, `LLP-023`, `LLP-024`,
-`LLP-013`, and `LLP-033` should be read more carefully. Some of that signal is
-real planning cleanup, but some is inflated by the stale
+The watch status on `LLP-006`, `LLP-023`, `LLP-024`, `LLP-013`, and `LLP-033`
+should also be read carefully. Some of that signal is real planning cleanup,
+but some is inflated by the stale
 `SCOPE_DEFINITION.md` check.
 
 ## Flow Bottlenecks
 
 The main flow bottleneck is concentrated rather than broad:
 
-- `LLP-012` is the top priority by score (`23`) and the largest single planning
-  packet gap.
-- The shared planning / measurement coordination set is only seven projects:
-  `LLP-004`, `LLP-023`, `LLP-024`, `LLP-033`, `LLP-012`, `LLP-013`, and
-  `LLP-025`.
-- The repeated planning artifacts creating the most drag are
-  `SCOPE_DEFINITION.md` in the deterministic reports, the missing live-funnel
-  scorecard in `LLP-011`, and `METRICS.md` gaps across `LLP-004` and
-  `LLP-005`.
+- `LLP-012` remains the top priority by score (`23`) and the largest single
+  project-level normalization problem.
+- The real watch cluster is small: `LLP-004`, `LLP-005`, `LLP-006`, `LLP-011`,
+  `LLP-012`, `LLP-013`, `LLP-023`, `LLP-024`, `LLP-025`, and `LLP-033`.
+- The repeated artifacts creating the most drag are
+  `SCOPE_DEFINITION.md` in the deterministic reports and missing canonical
+  `METRICS.md` wrappers in the most active operating and funnel lanes.
 
 So the portfolio is not bottlenecked by too many unrelated projects. It is
 bottlenecked by a small cluster of recurring planning standards not yet fully
@@ -128,8 +142,8 @@ The HillSide oversight target remains cash collected by LL of at least
 fees are received in `17513721 Canada Inc`, while Andersen work is credited to
 Levine Law in the 2026 operating picture. That means the most important LL
 portfolio decisions remain the ones that improve controlled revenue generation
-without distorting the cross-entity cash picture: F02 packet closure,
-measurement normalization, and closure of the small true at-risk set.
+without distorting the cross-entity cash picture: F02 normalization, live
+funnel scorecard control, and cleaner intake-to-opening operating discipline.
 
 ## Deferred Items
 
@@ -140,8 +154,8 @@ These do not currently require immediate ML1 judgment:
   `LLP-028`, `LLP-029`, `LLP-026`, `LLP-037`, `LLP-038`, `LLP-039`,
   `LLP-040`, and `LLP-041` are currently on-track with no open gates in the
   refreshed run.
-- `LLP-043` is genuinely incomplete, but its importance is mainly governance
-  hygiene rather than near-term cash-flow risk.
+- `LLP-030`, `LLP-007`, `LLP-008`, `LLP-016`, and `LLP-043` have fallen out of
+  the live concern set after the packet-completion pass.
 - `LLP-024` remains important, but in the fresh run it is better understood as
   part of the broader planning-normalization cluster rather than as an isolated
   emergency.

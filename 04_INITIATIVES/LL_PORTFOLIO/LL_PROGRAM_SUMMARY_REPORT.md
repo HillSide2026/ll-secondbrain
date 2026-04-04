@@ -4,7 +4,7 @@ title: LL Portfolio Program Summary Report
 owner: ML1
 status: draft
 created_date: 2026-03-19
-last_updated: 2026-03-19
+last_updated: 2026-04-04
 tags: [portfolio, programs, summary, governance]
 ---
 
@@ -42,6 +42,23 @@ The current governed portfolio contains 39 packets across these 9 programs.
 | `08_MARKETING` | Pre-matter pipeline from lead capture through conversion | 9 | Largest program by packet count; strong structure with mixed stage maturity |
 | `09_SERVICE_MANAGEMENT` | Service-tier classification and monitoring across matters | 5 | Internally consistent early-stage management program |
 
+## Current Health Snapshot
+
+As of the refreshed management run dated `2026-04-04T01:29:33+00:00`, the
+portfolio mix is `29` on-track, `10` watch, and `0` at-risk.
+
+| Program | On-Track | Watch | At-Risk | Current dominant condition |
+| --- | ---: | ---: | ---: | --- |
+| `01_ACCOUNTING` | 1 | 0 | 0 | Quiet and governed |
+| `02_PRACTICE_AREAS` | 3 | 0 | 0 | Registry-like but stable |
+| `03_FIRM_OPERATIONS` | 5 | 3 | 0 | Operationally real; normalization work remains in onboarding/opening/maintenance |
+| `04_RISK` | 2 | 0 | 0 | Calm and bounded |
+| `05_MATTER_DOCKETING` | 3 | 0 | 0 | Structurally clear and quiet |
+| `06_FINANCIAL_PORTFOLIO` | 1 | 0 | 0 | Narrow and stable |
+| `07_GROWTH_PROJECTS` | 4 | 3 | 0 | Mixed maturity; active strategy/control projects plus packet-normalization work |
+| `08_MARKETING` | 5 | 4 | 0 | Main live management cluster; funnels and strategy still carry the highest active decision load |
+| `09_SERVICE_MANAGEMENT` | 5 | 0 | 0 | Structurally coherent, early-stage, low-pressure |
+
 ## Program Summaries
 
 ### 01_ACCOUNTING
@@ -64,6 +81,7 @@ The current governed portfolio contains 39 packets across these 9 programs.
 - Packet count: 8 governed packets.
 - Current packet set: `LLP-004_ONBOARDING`, `LLP-005_OPENING`, `LLP-006_MAINTENANCE`, `LLP-007_ADMIN`, `LLP-008_CLOSING`, `LLP-016_COMPLIANCE`, `LLP-042 (PORTFOLIO_MANAGEMENT)`, `LLP-043 (PROJECT_MANAGEMENT)`.
 - Current posture: this is the most operationally mature program in the portfolio. `LLP-004`, `LLP-005`, and `LLP-006` now form a live governed fulfillment chain across onboarding, opening, and maintenance, while `LLP-042` and `LLP-043` formalize the portfolio/project management layer that produces rollups, dashboards, and stage-gate governance outputs.
+  Current dominant condition in the latest run: operationally real, but still carrying a small normalization queue around canonical measurement wrappers and scope-artifact drift.
 
 ### 04_RISK
 
@@ -91,14 +109,14 @@ The current governed portfolio contains 39 packets across these 9 programs.
 - Purpose: hold strategic growth, experimentation, business planning, and other long-horizon change initiatives.
 - Packet count: 7 governed packets.
 - Current packet set: `LLP-023_MATTER_COMMAND_CONTROL`, `LLP-024_NDA_ESQ`, `LLP-030_FIRM_STRATEGY`, `LLP-031_CORPORATE_ENTITY_MANAGEMENT`, `LLP-032_CORPORATE_CLERK`, `LLP-033_ASSOCIATE_LAWYER`, `LLP-034_PARTNER_SUPERVISION`.
-- Current posture: this is a mixed-maturity strategic program. `LLP-024_NDA_ESQ` is a real executing growth initiative, `LLP-023` is an active planning-stage systems build, and `LLP-030` anchors firm strategy. The remaining packets are future-state slots or early concept containers. The digest shows a broader growth program than the local folder README currently reflects.
+- Current posture: this is a mixed-maturity strategic program. `LLP-024_NDA_ESQ` is a real executing growth initiative, `LLP-023` is an active planning-stage systems build, and `LLP-030` now reads as a materially normalized strategy-control project rather than a drifted packet. The remaining packets are future-state slots or early concept containers.
 
 ### 08_MARKETING
 
 - Purpose: govern the pre-matter pipeline from lead capture through intake and conversion, ending before legal delivery begins.
 - Packet count: 9 governed packets.
 - Current packet set: `LLP-011_FUNNEL1_MANAGEMENT`, `LLP-012_FUNNEL2_MANAGEMENT`, `LLP-013_FUNNEL3_MANAGEMENT`, `LLP-014_INTAKE_MANAGEMENT`, `LLP-025_MARKETING_STRATEGY`, `LLP-026_LEAD_CAPTURE`, `LLP-027_INQUIRIES`, `LLP-028_CONSULTS`, `LLP-029_ONBOARDING`.
-- Current posture: this is the largest program by governed packet count and one of the most structurally defined. It already formalizes funnel management, marketing strategy, lead capture, and the intake sub-pipeline. Maturity is mixed: `LLP-011` is executing, `LLP-012/013/014/025` are in planning, and `LLP-026/027/028/029` are formalized but still unstaged draft packets.
+- Current posture: this is the largest program by governed packet count and the main current management center of gravity. It already formalizes funnel management, marketing strategy, lead capture, and the intake sub-pipeline. Maturity is mixed: `LLP-011` is live, `LLP-012` is the highest-priority normalization item, `LLP-025` remains a key strategy dependency with open questions, and the remaining funnel/intake packets are materially calmer.
 
 ### 09_SERVICE_MANAGEMENT
 
@@ -110,11 +128,12 @@ The current governed portfolio contains 39 packets across these 9 programs.
 ## Overall Read
 
 - `03_FIRM_OPERATIONS` is currently the most mature and execution-linked program.
-- `08_MARKETING` is the broadest program by packet count and has the most explicit pre-matter pipeline architecture.
-- `07_GROWTH_PROJECTS` contains the strongest mix of active strategy and future-state incubation.
+- `08_MARKETING` is the broadest program by packet count and has the most explicit pre-matter pipeline architecture; it is also the main current watch cluster.
+- `07_GROWTH_PROJECTS` contains the strongest mix of active strategy and future-state incubation, but is calmer than the marketing layer after the `LLP-030` normalization pass.
 - `04_RISK`, `05_MATTER_DOCKETING`, and `06_FINANCIAL_PORTFOLIO` now have clearer packet footing than the prior summary suggested, but they still need deeper downstream stage artifacts.
 - `02_PRACTICE_AREAS` remains the main program in this set where packet-level initiation/planning completeness is still missing across all governed slots.
 - `01_ACCOUNTING` and `06_FINANCIAL_PORTFOLIO` are intentionally constrained and should remain sharply separated: accounting stores facts, financial portfolio stores models.
+- There are no current at-risk projects in the latest management run. The live portfolio issue is concentrated watch-level normalization, not broad structural failure.
 
 ## Source Basis
 
@@ -123,3 +142,4 @@ This report is based on:
 - `LL_PORTFOLIO/README.md`
 - each program-level `README.md`
 - `LL_PROJECT_DIGEST.md` as of `2026-03-19`
+- refreshed management outputs dated `2026-04-04T01:29:33+00:00`

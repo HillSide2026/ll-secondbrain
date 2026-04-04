@@ -1,7 +1,7 @@
 # PORTFOLIO STATUS DASHBOARD
 
-- Generated: 2026-04-04T00:30:07+00:00
-- Run ID: RUN-2026-04-04-LL-PORTFOLIO-AGENTS-003007Z
+- Generated: 2026-04-04T01:29:33+00:00
+- Run ID: RUN-2026-04-04-LL-PORTFOLIO-AGENTS-012933Z
 
 > Advisory output. ML1 approval remains required for decisions.
 ## Portfolio Status
@@ -15,11 +15,11 @@
 | LLP-004 | Planning | watch | 2 | 60% |
 | LLP-005 | Executing | watch | 2 | 60% |
 | LLP-006 | Executing | watch | 1 | 80% |
-| LLP-007 | Initiating | at-risk | 1 | n/a |
-| LLP-008 | Initiating | at-risk | 1 | n/a |
-| LLP-016 | Initiating | at-risk | 1 | n/a |
+| LLP-007 | Initiating | on-track | 0 | n/a |
+| LLP-008 | Initiating | on-track | 0 | n/a |
+| LLP-016 | Initiating | on-track | 0 | n/a |
 | LLP-042 | Initiating | on-track | 0 | n/a |
-| LLP-043 | Unstaged | at-risk | 6 | n/a |
+| LLP-043 | Initiating | on-track | 0 | n/a |
 | LLP-017 | Initiating | on-track | 0 | n/a |
 | LLP-018 | Initiating | on-track | 0 | n/a |
 | LLP-003 | Initiating | on-track | 0 | n/a |
@@ -28,7 +28,7 @@
 | LLP-002 | Initiating | on-track | 0 | n/a |
 | LLP-023 | Planning | watch | 1 | 86% |
 | LLP-024 | Planning | watch | 1 | 86% |
-| LLP-030 | Initiating | at-risk | 1 | n/a |
+| LLP-030 | Planning | on-track | 0 | 100% |
 | LLP-031 | Initiating | on-track | 0 | n/a |
 | LLP-032 | Initiating | on-track | 0 | n/a |
 | LLP-033 | Planning | watch | 1 | 86% |
@@ -49,4 +49,4 @@
 | LLP-039 | Initiating | on-track | 0 | n/a |
 
 - Total projects: 39
-- Health mix: on-track=24, watch=10, at-risk=5
+- Health mix: on-track=29, watch=10, at-risk=0

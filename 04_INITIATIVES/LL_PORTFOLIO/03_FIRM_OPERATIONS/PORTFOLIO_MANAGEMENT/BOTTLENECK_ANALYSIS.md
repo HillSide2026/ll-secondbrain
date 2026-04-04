@@ -1,13 +1,13 @@
 # BOTTLENECK ANALYSIS
 
-- Generated: 2026-04-04T00:30:07+00:00
-- Run ID: RUN-2026-04-04-LL-PORTFOLIO-AGENTS-003007Z
+- Generated: 2026-04-04T01:29:33+00:00
+- Run ID: RUN-2026-04-04-LL-PORTFOLIO-AGENTS-012933Z
 
 > Advisory output. ML1 approval remains required for decisions.
 ## Bottleneck Analysis
 
-- Planning bottleneck candidates: 39
-- Measurement bottleneck candidates: 33
+- Planning bottleneck candidates: 38
+- Measurement bottleneck candidates: 32
 
 ## Top Portfolio Bottlenecks
 

@@ -4,7 +4,7 @@ title: Repo Review
 owner: ML1
 status: draft
 created_date: 2026-04-03
-last_updated: 2026-04-03
+last_updated: 2026-04-04
 tags: [initiatives, repo-review, chief-of-staff]
 ---
 
@@ -22,8 +22,7 @@ Start with:
 2. `CHIEF_OF_STAFF/ML1_DECISION_QUEUE.md`
 3. `CHIEF_OF_STAFF/CROSS_PORTFOLIO_LINKAGES.md`
 
-If those files are placeholder-only or stale, review the underlying layers in
-this order:
+If those files are stale, review the underlying layers in this order:
 
 1. `LL_PORTFOLIO/CHIEF_OF_STAFF/COS_BRIEF.md`
 2. `HillSide_PORTFOLIO/MATTHEW_2026_REAL_GOALS.md`
