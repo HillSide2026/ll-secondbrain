@@ -49,9 +49,34 @@ Not the first delegation set:
 
 | Structure | How it works | Cost structure to firm | Best use | Main risk |
 | --- | --- | --- | --- | --- |
-| Contractor split | Lawyer is paid a percentage of collected fees on eligible delegated matters | variable lawyer cost + direct matter cost + allocated acquisition cost + ML1 supervision time; little idle-capacity burden | safest first-entry model when matter volume is still being tested | split can look efficient while supervision time quietly erodes margin |
-| Base salary + bonus | Lawyer receives fixed base pay plus a bonus tied to collected revenue, contribution, or quality targets | fixed salary cost + payroll burden/benefits + bonus + direct matter cost + allocated acquisition cost + ML1 supervision time | makes sense only after the eligible matter set and revenue floor are both stable | fixed cost arrives before the model is fully proven |
-| Low-base / high-variable | Lawyer receives a smaller fixed base or retainer plus larger variable pay tied to collections or contribution | moderate fixed cost + variable comp + direct matter cost + allocated acquisition cost + ML1 supervision time | useful if ML1 wants some stability without taking full salary risk immediately | can create incentive tension if quality control and variable comp are not designed carefully |
+| Contractor split | Lawyer is paid a percentage of collected fees on eligible delegated matters | variable lawyer cost + direct matter cost + allocated acquisition cost + ML1 supervision time; little idle-capacity burden | only suitable for someone comfortable with variability and needing strong self-management skills and experience | candidate wants employee security; candidate has significant financial obligations |
+| Low-base / high-variable | Lawyer receives a smaller fixed base or retainer plus larger variable pay tied to collections or contribution | moderate fixed cost + variable comp + direct matter cost + allocated acquisition cost + ML1 supervision time | best for a hybrid profile that combines discipline with some entrepreneurial tolerance | candidate wants upside like a contractor but behaves like they expect guaranteed economics |
+| Base salary + bonus | Lawyer receives fixed base pay plus a bonus tied to collected revenue, contribution, or quality targets | fixed salary cost + payroll burden/benefits + bonus + direct matter cost + allocated acquisition cost + ML1 supervision time | best for someone who wants stable integration and shows stronger consistency, teamwork, and long-term operating discipline | candidate expects stability but will not work inside structured supervision or process |
+
+### Primary Selection Rule
+
+The first question is not which compensation model looks best in theory.
+
+The first question is:
+
+**How much repeatable delegated work does Levine Law actually have?**
+
+The compensation model should be chosen only after ML1 has a real view of:
+
+- current eligible delegated matter volume
+- stability of that volume month to month
+- collections reliability on that work
+- supervision burden per matter
+- confidence that the delegated workset will persist long enough to justify the
+  cost structure
+
+### Workload-Driven Model Choice
+
+| Workload condition at Levine Law | Best-fit model | Why |
+| --- | --- | --- |
+| work volume is still uncertain, intermittent, or being tested | Contractor split | keeps fixed-cost risk low while ML1 proves that the delegated workset is real |
+| work volume looks real but is not yet fully stable or collections are still uneven | Low-base / high-variable | adds some stability without assuming a fully proven recurring workload |
+| work volume is sustained, repeatable, and operationally stable | Base salary + bonus | makes sense only once Levine Law can support true integration with confidence |
 
 ### Working Recommendation On Structure
 
@@ -59,14 +84,17 @@ Preferred order for the first activation test:
 
 1. contractor split
 2. low-base / high-variable
-3. base salary + bonus only after the delegated matter set is proven
+3. base salary + bonus only after the delegated matter set is proven and the
+   operating model is stable
 
 Why:
 
+- model choice should follow Levine Law's actual workload and revenue stability
 - Levine Law still needs to prove the supervision model
 - Levine Law still needs to prove the real delegated contribution margin
 - the first implementation should minimize fixed-cost risk while the model is
   still being validated
+- the commercial model should match candidate temperament, not just legal skill
 
 ## Separate Scenario
 

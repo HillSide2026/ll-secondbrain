@@ -43,6 +43,10 @@ economic test.
   recommendation that separates the recommended mid-level supervised associate
   scenario from a later senior-lawyer scenario and compares three candidate
   compensation structures.
+- `HIRING_SCORECARD__MID_LEVEL_ASSOCIATE__2026-04-03.md` records the practical
+  evaluation scorecard for the recommended mid-level associate scenario.
+- `HIRING_SCORECARD__SENIOR_LAWYER__2026-04-03.md` records the separate
+  evaluation scorecard for the later senior-lawyer scenario.
 
 ## Immediate Planning Sprint
 
