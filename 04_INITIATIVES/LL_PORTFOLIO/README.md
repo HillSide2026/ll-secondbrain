@@ -4,7 +4,7 @@ title: LL_PORTFOLIO — Levine Law Workstream Registry
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-03-14
+last_updated: 2026-04-03
 tags: []
 ---
 
@@ -25,6 +25,27 @@ The LL Portfolio is a **governed, non-autonomous registry** where:
 - **ML1** is the sole authority for judgment, approval, pricing, and strategy
 - **ML2** preserves structure, scope, constraints, and state
 - **LL** consumes ONLY ML1-approved outputs
+
+## Portfolio Review Entry Points
+
+Use these files to review the LL portfolio quickly:
+
+- `LL_PORTFOLIO_REVIEW.md` — single front door for the portfolio review stack
+- `CHIEF_OF_STAFF/README.md` — canonical synthesis layer for ML1 review
+- `LL_PROGRAM_REVIEW_MATRIX.md` — fast path for program-by-program review
+- `LL_PROGRAM_SUMMARY_REPORT.md` — current summary of the 9 numbered programs
+
+When the Chief of Staff packet is current, start with:
+
+1. `CHIEF_OF_STAFF/COS_BRIEF.md`
+2. `CHIEF_OF_STAFF/ML1_DECISION_QUEUE.md`
+
+When the Chief of Staff packet is stale, start with:
+
+1. `LL_PROGRAM_SUMMARY_REPORT.md`
+2. `03_FIRM_OPERATIONS/PORTFOLIO_MANAGEMENT/PORTFOLIO_STATUS_DASHBOARD.md`
+3. `03_FIRM_OPERATIONS/PORTFOLIO_GOVERNANCE/GOVERNANCE_COMPLIANCE_AUDIT.md`
+4. `03_FIRM_OPERATIONS/PROJECT_MANAGEMENT/PROJECT_HEALTH_ROLLUP.md`
 
 ## Project Identity (Canonical)
 
@@ -129,6 +150,19 @@ LL_PORTFOLIO/
 **This structure is LOCKED unless explicitly changed by ML1.**
 
 You must not infer, reorder, merge, or repurpose these folders.
+
+## Review Support Artifacts Outside the 9 Numbered Programs
+
+These support review and synthesis but are not part of the 9 numbered
+program directories:
+
+- `CHIEF_OF_STAFF/`
+- `LL_PROGRAM_SUMMARY_REPORT.md`
+- `LL_PROJECT_DIGEST.md`
+- `LL_PROJECT_DIGEST.tsv`
+- `LL_GLOSSARY.md`
+- `LL_PORTFOLIO_REVIEW.md`
+- `LL_PROGRAM_REVIEW_MATRIX.md`
 
 ---
 

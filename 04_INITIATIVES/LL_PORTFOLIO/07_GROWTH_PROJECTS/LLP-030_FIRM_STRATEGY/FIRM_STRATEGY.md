@@ -4,7 +4,7 @@ title: Levine Law — Firm Strategy
 owner: ML1
 status: draft
 created_date: 2026-03-17
-last_updated: 2026-03-22
+last_updated: 2026-04-03
 tags: [llp-030, firm-strategy, doctrine]
 ---
 
@@ -14,16 +14,16 @@ tags: [llp-030, firm-strategy, doctrine]
 
 ## 1. What the Firm Is Building
 
-Levine Law is building a **boutique corporate law practice** that generates strong personal income and profit for the founding lawyer, serves a defined client profile, and does not require unsustainable hours or reactive overload to operate.
+Levine Law is building a **boutique corporate law practice** that generates strong personal income and profit for the founder, serves a defined client profile, and does not require unsustainable hours or reactive overload to operate.
 
-The firm is not optimizing for maximum revenue or maximum volume. It is optimizing for a controlled portfolio of well-fit clients, paid appropriately, with a practice structure the founding lawyer can sustain and — if needed — exit at value.
+The firm is not optimizing for maximum revenue or maximum volume. It is optimizing for a controlled portfolio of well-fit clients, paid appropriately, with a practice structure the founding lawyer can sustain and — if desired — exit at value.
 
 The structural shift the firm must execute to get there:
 
 > **From**: Reactive, transaction-driven intake (Google Ads → whatever comes in)
 > **To**: Preventative, diagnostic-led acquisition (Corporate Health Check → retained operator clients)
 
-This shift is not complete. F01 is the current primary channel. F02 does not yet exist. The strategy governs the sequencing of that transition.
+This shift is not complete. F01 is the current primary channel. F02 and F03 do not yet exist. The strategy governs the sequencing of that transition.
 
 The medium-term planning arc is:
 
@@ -37,7 +37,7 @@ The medium-term planning arc is:
 
 Listed in priority order. Where trade-offs arise, higher-ranked priorities win.
 
-1. **Capacity and sustainability** — Workload must stay within bounds ML1 can maintain without quality or health risk. This is the core bottleneck: ML1 ceiling is ~20 billable hours per week. At current matter mix, that ceiling is frequently breached or the work is compressed into lower quality. Growth that requires exceeding that ceiling is not authorized until staffing (setter, senior lawyer) is in place to absorb the load.
+1. **Capacity and sustainability** — Workload must stay within bounds ML1 can maintain without quality or health risk. This is the core bottleneck: ML1 ceiling is ~20 billable hours per week. At current matter mix, that ceiling is frequently breached or the work is compressed into lower quality. Growth that requires exceeding that ceiling is not authorized until staffing (setter, intermediate associate lawyer) is in place to absorb the load.
 
 2. **Client quality** — Matters must align with ICP-01 or ICP-02. Low-fit, high-friction, or low-value work is excluded regardless of short-term revenue need. This is the primary lever for improving per-hour economics.
 
@@ -45,7 +45,7 @@ Listed in priority order. Where trade-offs arise, higher-ranked priorities win.
 
 4. **Revenue growth** — Target is CAD 240k of 2026 banked cash as the current operating baseline. Growth is through F02 and F03, not by increasing F01 volume.
 
-5. **Delegation of billable work** — From 2027 onwards, ML1 must be able to delegate billable execution to a senior lawyer or supervised delivery resource. This is a medium-term priority: it does not override 1–4 in 2026, but it is a required precondition for scaling beyond the ML1 capacity ceiling without degrading client quality or economics. The architecture of delivery systems, templates, and supervision protocols built in 2026 must be designed with delegation in mind.
+5. **Delegation of billable work** — From 2027 onwards, ML1 must be able to delegate billable execution to an associate lawyer or supervised delivery resource. This is a medium-term priority: it does not override 1–4 in 2026, but it is a required precondition for scaling beyond the ML1 capacity ceiling without degrading client quality or economics. The architecture of delivery systems, templates, and supervision protocols built in 2026 must be designed with delegation in mind.
 
 6. **Transferable value and reputation** — The practice should be buildable toward an asset that could be sold or handed off. This requires client relationships that are not entirely ML1-personal, documented systems, and authority positioning in defined verticals. This is a background priority that influences architecture decisions; it does not override 1–5.
 
@@ -56,7 +56,7 @@ Listed in priority order. Where trade-offs arise, higher-ranked priorities win.
 ### ICP-01 — Ontario Business Operators (Core)
 
 - Ontario-based businesses, established and operating (not formation-stage)
-- Annual revenue $1M–$8M; 5–30 employees
+- Annual revenue $2M+; 5–30 employees
 - Accountant involved — operators who have basic professional infrastructure
 - Need: corporate structure, governance, compensation, ongoing legal advisory
 - Not in crisis — the work is structural and preventative, not reactive fire-fighting
@@ -65,7 +65,7 @@ Listed in priority order. Where trade-offs arise, higher-ranked priorities win.
 ### ICP-02 — Payments / MSB / Fintech Operators (Vertical)
 
 - Operators with Canadian regulatory exposure in payments, money services, or fintech
-- Need: AML compliance, MSB registration, regulatory structuring, ongoing counsel
+- Need: AML compliance, MSB registration, RPAA registration, regulatory structuring and reporting, ongoing counsel
 - Higher complexity, higher matter value, stronger repeat potential than ICP-01
 - Primary acquisition channel: F03 (authority content → entry offer → retainer)
 
@@ -108,9 +108,9 @@ The service model IS moving toward:
 These are non-negotiable constraints, not aspirational targets.
 
 - **No matters below the matter value floor** — soft floor set at **$1,000**. Matters below this threshold require explicit ML1 exception. Floor is soft pending financial model validation against actual matter mix data.
-- **No clients below ICP thresholds**: revenue < $1M, employees < 5, no accountant, or in acute crisis
+- **No clients below ICP thresholds**: revenue < $2M, employees < 5, no accountant, or in acute crisis
 - **No commodity work**: simple incorporations, one-off NDA reviews, or matters that are purely transaction-fee work with no advisory potential
-- **No growth that exceeds capacity before staffing is in place**: adding a setter or senior lawyer is a precondition for volume growth, not a response to it
+- **No growth that exceeds capacity before staffing is in place**: adding a setter or associate lawyer is a precondition for volume growth, not a response to it
 
 ---
 

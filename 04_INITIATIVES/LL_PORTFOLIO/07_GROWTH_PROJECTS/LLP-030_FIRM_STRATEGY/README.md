@@ -2,7 +2,7 @@
 id: llp-030_firm_strategy
 title: LLP-030 Firm Strategy and Business Plan
 owner: ML1
-status: initiating
+status: planning
 created_date: 2026-03-17
 last_updated: 2026-04-03
 tags: [firm-strategy, business-plan, strategic-projects]
@@ -26,7 +26,7 @@ This project has three components:
 
 ### In Scope
 - Firm Strategy: what the firm is optimizing for (explicit priority order: margin, lifestyle, revenue growth, reputation, sellability), positioning, ICP definitions, service model (preventative/fractional counsel vs. reactive), strategic exclusions, 3–5 year vision.
-- Business Plan: 2026 operating target, acquisition architecture (F01 → F02 → F03 sequencing), capacity model (ML1 ceiling + staffing trigger points), staffing roadmap (setter, senior lawyer), quarterly milestones.
+- Business Plan: 2026 operating target, acquisition architecture (F01 → F02 → F03 sequencing), capacity model (ML1 ceiling + staffing trigger points), staffing roadmap (setter, associate lawyer first, senior lawyer later if justified), quarterly milestones.
 - Financial Model: P&L projection against the current 2026 operating target and reference cases (marketing spend → matter volume → revenue → margin), break-even analysis, staffing cost impact modeling.
 - Alignment of the Business Plan and Financial Model with existing LLP-002 budget assumptions and the current 2026 operating target.
 - Integration with LLP-025 (Marketing Strategy), LLP-011 (Funnel 1), LLP-012 (Funnel 2).
@@ -51,10 +51,24 @@ ML1 is the sole authority for all Firm Strategy and Business Plan decisions, app
 
 ## Approval State
 
+Initiation is complete and the project is now in planning.
 Initiation was approved by ML1 on `2026-03-19`.
-Stage-gate artifacts now live in `initiation/`.
+Stage-gate artifacts live in `initiation/`.
+The initiation packet now includes `initiation/BUSINESS_CASE.md` for review.
 `FIRM_STRATEGY.md`, `BUSINESS_PLAN.md`, and `FINANCIAL_MODEL.md` remain at the
-project root as governed project components.
+project root as the substantive governed planning work product consumed by the
+canonical Stage 2 packet in `planning/`.
+
+## Planning (Stage 2) Artifacts
+
+- `planning/README.md`
+- `planning/SCOPE_STATEMENT.md`
+- `planning/PROJECT_PLAN.md`
+- `planning/ASSUMPTIONS_CONSTRAINTS.md`
+- `planning/DEPENDENCIES.md`
+- `planning/RISK_REGISTER.md`
+- `planning/COMMUNICATION_PLAN.md`
+- `planning/METRICS.md`
 
 ## Supporting Analysis
 

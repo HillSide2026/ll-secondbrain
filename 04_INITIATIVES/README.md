@@ -4,7 +4,7 @@ title: 04_INITIATIVES — Strategic Initiatives & Projects
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-03-14
+last_updated: 2026-04-03
 tags: []
 ---
 
@@ -20,6 +20,7 @@ This directory contains all strategic initiatives and projects, organized by por
 
 ```
 04_INITIATIVES/
+├── CHIEF_OF_STAFF/         # Repo-level synthesis across portfolios
 ├── HillSide_PORTFOLIO/     # HillSide portfolio initiatives
 ├── SYSTEM_PORTFOLIO/       # Second Brain system development
 │   ├── 00_DRAFT_ROADMAPS/
@@ -36,6 +37,23 @@ This directory contains all strategic initiatives and projects, organized by por
     ├── 08_MARKETING/
     └── 09_SERVICE_MANAGEMENT/
 ```
+
+---
+
+## Repo-Level Review
+
+Cross-portfolio synthesis for `04_INITIATIVES` now lives at:
+
+- `CHIEF_OF_STAFF/README.md`
+- `REPO_REVIEW.md`
+
+This layer is intended to sit above:
+
+- `LL_PORTFOLIO/CHIEF_OF_STAFF/`
+- `HillSide_PORTFOLIO/`
+- `SYSTEM_PORTFOLIO/`
+
+It is an advisory synthesis layer only.
 
 ---
 

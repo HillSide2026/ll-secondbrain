@@ -155,7 +155,7 @@ All inputs are read-only. LLM-001 must not modify these files.
 
 ## Outputs
 
-**Location:** `04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/CHIEF_OF_STAFF/`
+**Location:** `04_INITIATIVES/LL_PORTFOLIO/CHIEF_OF_STAFF/`
 
 All outputs are advisory to ML1 only. ML1 approval is required before any item in these outputs is acted upon.
 
@@ -325,7 +325,7 @@ You MUST:
 8. Write CROSS_AGENT_CONFLICTS.md: document every case where LLM-005 and LLM-006
    signal opposite things about the same project.
 
-Output location: 04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/CHIEF_OF_STAFF/
+Output location: 04_INITIATIVES/LL_PORTFOLIO/CHIEF_OF_STAFF/
 
 All outputs are advisory. Label every output with:
 > Advisory output. ML1 approval required before any action is taken.
@@ -376,7 +376,8 @@ LLM-001 requires a language model to execute. Unlike LLM-004/005/006 (which are 
 **Build prerequisites before activation:**
 1. This spec approved by ML1
 2. LLM-004/005/006 outputs confirmed stable across at least two runs
-3. `CHIEF_OF_STAFF/` canonical directory created under `03_FIRM_OPERATIONS/`
+3. `CHIEF_OF_STAFF/` canonical directory created at the `LL_PORTFOLIO` root
+   (outside the 9 numbered programs)
 4. Run script updated to support LLM-001 invocation (or separate invocation script created)
 5. Status updated to Active in AGENT_TYPOLOGY.md
 

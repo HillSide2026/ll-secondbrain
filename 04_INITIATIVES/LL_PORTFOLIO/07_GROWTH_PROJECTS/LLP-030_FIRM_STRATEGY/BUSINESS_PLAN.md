@@ -4,7 +4,7 @@ title: Levine Law — Business Plan
 owner: ML1
 status: draft
 created_date: 2026-03-17
-last_updated: 2026-03-23
+last_updated: 2026-04-03
 tags: [llp-030, business-plan, doctrine]
 ---
 
@@ -29,17 +29,17 @@ delivery model, and the Andersen relationship is credited to Levine Law in the
 2026 operating picture even though Andersen fees are received by
 `17513721 Canada Inc`.
 
-`F01` has generated real and likely positive revenue contribution for Levine
-Law. ML1 reports that, except for `Mascore` and `Stream`, `2025` matters were
-originated through `F01 / Google Ads`. The strategic problem with `F01` is not
-that it failed to generate revenue, but that it produces more reactive,
-lower-fit, and less controllable demand than the firm's desired future mix.
+`F01` has generated real revenue contribution for Levine Law. ML1 reports
+that, except for `Mascore` and `Stream`, `2025` matters were originated
+through `F01 / Google Ads`. The problem with `F01` is not that it failed to
+generate revenue, but that it failed to produce profitable revenue and
+produces more reactive, lower-fit, and less controllable demand than the
+firm's intended portfolio.
 
 This document is the `2026` operating expression of a broader `2026-2028`
-strategy: `2026` validates the platform, `2027` consolidates the payments
+plan: `2026` validates the platform, `2027` consolidates the payments
 specialty, and `2028` determines whether selective leverage or a partner layer
-can be added without breaking the firm's niche positioning or capacity
-discipline.
+can be added profitably.
 
 ---
 
@@ -78,7 +78,7 @@ include bounded regulatory review where the client's facts require it.
 |---|---|---|---|---|
 | `2026` | Can Levine Law launch F02 and F03 without destabilizing the core business? | F01 funds operations; F02 launches; F03 activates in early authority form | Reach Tier 5 emerging specialist standing in Ontario payments-services work | No core hires; only contractors and preparatory role definitions |
 | `2027` | Can the firm convert early authority into repeat specialist work and referrals? | F02 becomes the primary core-business engine; F03 becomes a functioning specialist channel | Become a recognized niche reference point for payments/MSB/RPAA/AML matters while remaining a solid Tier 5 boutique | Add leverage only if intake or delivery constraint is persistent and economically justified |
-| `2028` | Can the specialty platform support selective leverage without losing control? | F02 and F03 are repeatable; F01 is secondary or optional | Grow bigger and stronger inside Tier 5 with deeper authority and a more durable niche position | Decide whether a senior lawyer or partner layer should be activated while preserving Tier 5 focus |
+| `2028` | Can the specialty platform support selective leverage without losing control? | F02 and F03 are repeatable; F01 is secondary or optional | Grow bigger and stronger inside Tier 5 with deeper authority and a more durable niche position | Decide whether an associate-lawyer delivery layer, and later any senior-lawyer or partner layer, should be activated while preserving Tier 5 focus |
 
 ---
 
@@ -90,7 +90,7 @@ The firm operates three acquisition channels (funnel definitions are canonical a
 
 - Google Ads driving inbound inquiries via GHL
 - Reactive, undifferentiated demand — matters vary in quality and fit
-- Qualification gate: revenue ≥ $1M, employees ≥ 5, accountant involved
+- Qualification gate: revenue ≥ $2M, employees ≥ 5, accountant involved
 
 **Role**: Current primary revenue source and the dominant historical origin
 channel in `2025`; funds operations while F02 is built, but remains
@@ -130,7 +130,7 @@ Three-tier fixed-fee diagnostic offer. ICP-01 qualified leads only; intake gate 
 ### F03 — Payments / MSB Authority → ICP-02 Acquisition
 
 - Authority content targeting payments, MSB, and fintech operators
-- Entry offer: AML / MSB registration engagement
+- Entry offer: AML / MSB / RPAA registration or regulatory-readiness engagement
 - Longer build time; Blog/SEO engine does not activate until Health Check landing page is live
 
 **Role**: Vertical growth channel; authority-driven, longer conversion cycle;
@@ -192,12 +192,17 @@ Permitted support: ad hoc contractors (admin, formatting, filings). No fixed emp
 - Trigger: **2 consecutive months at $20K+/month** with intake as the identifiable constraint
 - Gate: role definition, script, and GHL handoff workflow must be ML1-approved before activation
 
-**Senior Lawyer (Delivery Role)**
+**Associate Lawyer (Delivery Role)**
 - Function: absorb execution workload; extend matter delivery capacity
 - Trigger: sustained capacity breach at $300K+ annualized revenue with persistent overflow work
 - Gate: matter eligibility list, supervision model, and compensation structure ML1-approved before activation
 
-**Staffing Doctrine**: Hiring is triggered by constraint, funded by existing revenue, and justified by throughput gain. From 2027 onwards, delegation of billable execution is a strategic priority (Firm Strategy, priority 5) — delivery systems and templates built in 2026 must be designed to support supervised handoff.
+**Senior Lawyer (Separate Later Scenario)**
+- Function: add a more autonomous delivery layer only after bounded delegated delivery is proven or the matter mix justifies it
+- Trigger: later-stage decision once the associate-lawyer model is working or the firm is carrying complexity that exceeds the first delivery-layer design
+- Gate: separate ML1 staffing decision; not the default first leverage hire
+
+**Staffing Doctrine**: Hiring is triggered by constraint, funded by existing revenue, and justified by throughput gain. From 2027 onwards, delegation of billable execution is a strategic priority (Firm Strategy, priority 5) — delivery systems and templates built in 2026 must be designed to support supervised handoff, with associate-lawyer leverage considered before a senior-lawyer layer.
 
 ---
 
@@ -328,4 +333,4 @@ Levine Law is not built as a traditional law firm. It is a controlled production
 
 - Levine Law operates as a partner-ready specialty platform rather than a pure solo practice
 - Payments positioning is stronger, deeper, and more durable within Tier 5
-- Any senior-lawyer or partner layer is justified by throughput, supervision readiness, and niche economics rather than by ambition alone
+- Any associate-lawyer, senior-lawyer, or partner layer is justified by throughput, supervision readiness, and niche economics rather than by ambition alone

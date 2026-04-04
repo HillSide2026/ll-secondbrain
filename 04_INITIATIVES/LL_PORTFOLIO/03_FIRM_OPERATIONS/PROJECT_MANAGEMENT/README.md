@@ -4,7 +4,7 @@ title: PROJECT_MANAGEMENT — Project Governance Tooling
 owner: ML1
 status: draft
 created_date: 2026-03-19
-last_updated: 2026-03-19
+last_updated: 2026-04-03
 tags: [project-management, governance, tooling]
 ---
 
@@ -44,7 +44,7 @@ ML1 is the sole authority for project approvals, stage advancement, and governan
 
 ## Approval State
 
-`draft`
+Draft — initiation packet prepared for ML1 review
 
 ## Last ML1 Review Date
 

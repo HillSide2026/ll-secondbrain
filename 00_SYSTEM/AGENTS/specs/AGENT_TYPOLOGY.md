@@ -4,7 +4,7 @@ title: Agent Typology
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-03-28
+last_updated: 2026-04-03
 tags: []
 ---
 
@@ -36,7 +36,7 @@ This document reflects the current state of the system and explicitly identifies
 
 ## Agents Index (Derived from AGENTS.md)
 
-Generated on 2026-03-23.
+Generated on 2026-04-03.
 
 ### System Management Agents (SMA)
 
@@ -60,6 +60,12 @@ Generated on 2026-03-23.
 | LLM-005 — Portfolio Management Agent | LLM | Draft | `00_SYSTEM/AGENTS/LLM-005_PORTFOLIO_MANAGEMENT_AGENT.md` | agent file: `.claude/agents/llm-005-portfolio-management.md` |
 | LLM-006 — Portfolio Governance Agent | LLM | Draft | `00_SYSTEM/AGENTS/LLM-006_PORTFOLIO_GOVERNANCE_AGENT.md` | agent file: `.claude/agents/llm-006-portfolio-governance.md` |
 | LLM-007 — Fulfillment Orchestrator Agent | LLM | Draft | `00_SYSTEM/AGENTS/LLM-007_FULFILLMENT_ORCHESTRATOR_AGENT.md` | fulfillment lifecycle orchestration (`LLP-004` to `LLP-008`) under `POL-034` |
+
+### Repo-Level Synthesis Agents (RLS)
+
+| Agent | Class | Status | Path | Notes |
+| --- | --- | --- | --- | --- |
+| Repo Chief of Staff | RLS | Draft | `00_SYSTEM/AGENTS/REPO_CHIEF_OF_STAFF_AGENT.md` | repo-level synthesis across LL CoS outputs, HillSide strategy/project state, system-portfolio status, and cash-flow / wealth signals |
 
 ### System Admin Agents (SAA)
 
@@ -172,6 +178,48 @@ System Agents perform **infrastructure, operational, and coordination functions*
 
 - [INV-0015](../../../01_DOCTRINE/01_INVARIANTS/INV-0015-second-brain-agent-authority.md)
 - [AGENT-CAPABILITY-PROFILE-0001](../../../01_DOCTRINE/04_CAPABILITY_PROFILES/AGENT-CAPABILITY-PROFILE-0001-DRAFT_WRITE_ACCESS.md)
+
+---
+
+## Type 1A: Repo-Level Synthesis Agents
+
+### Definition
+
+Repo-Level Synthesis Agents are **cross-portfolio ML1-facing synthesis agents**
+that read already-governed portfolio outputs and convert them into one
+decision-ready repo view.
+
+They do not generate raw project governance data. They synthesize portfolio
+signal that already exists.
+
+### Characteristics
+
+| Attribute | Value |
+|-----------|-------|
+| Domain expertise | Cross-portfolio contextual synthesis |
+| Judgment authority | Advisory only |
+| Output type | Briefs, ranked ML1 decision queues, linkage maps |
+| Source scope | Multiple governed portfolio layers |
+| Escalation target | ML1 |
+
+### Constraints
+
+- May not approve portfolio actions
+- May not replace portfolio-specific source artifacts
+- May not collapse entity or portfolio boundaries informally
+- Must carry forward freshness and staleness limitations from upstream inputs
+
+### Example
+
+| Agent | Location |
+|-------|----------|
+| Repo Chief of Staff | `00_SYSTEM/AGENTS/REPO_CHIEF_OF_STAFF_AGENT.md` |
+
+### Hierarchy Note
+
+Repo-Level Synthesis Agents sit **above** portfolio-specific synthesis layers
+such as the LL Chief of Staff. They are orthogonal to the system /
+practice-area / solution-agent stack below.
 
 ---
 
@@ -361,6 +409,12 @@ To be implemented. Instantiation pattern TBD — expected to require:
 | system-governance | SMA | TBD | Planned |
 | project-manager | SMA | TBD | Planned |
 
+### Type 1A Agents
+
+| Agent | Class | Location | Status |
+|-------|-------|----------|--------|
+| REPO_CHIEF_OF_STAFF_AGENT | RLS | 00_SYSTEM/AGENTS/REPO_CHIEF_OF_STAFF_AGENT.md | Draft |
+
 ### Type 2 Agents
 
 | Agent | Class | Practice Area | Location | Status |
@@ -382,6 +436,13 @@ No Type 3 agents have been instantiated. This type is planned.
 2. Specify inputs/outputs
 3. Grant capability profile if write access needed
 4. No Solution binding required
+
+### Type 1A
+1. Define the cross-portfolio synthesis question
+2. Define the canonical upstream portfolio inputs
+3. Specify freshness / staleness handling rules
+4. Specify the ML1-facing output set
+5. Register in typology index
 
 ### Type 2
 1. Apply PRACTICE_AREA_MASTER_AGENT_SPEC.md
