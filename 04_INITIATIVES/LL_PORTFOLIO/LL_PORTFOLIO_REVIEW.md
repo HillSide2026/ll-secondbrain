@@ -40,6 +40,8 @@ Use this review order:
 2. `03_FIRM_OPERATIONS/PORTFOLIO_MANAGEMENT/PORTFOLIO_STATUS_DASHBOARD.md`
 3. `03_FIRM_OPERATIONS/PORTFOLIO_GOVERNANCE/GOVERNANCE_COMPLIANCE_AUDIT.md`
 4. `03_FIRM_OPERATIONS/PROJECT_MANAGEMENT/PROJECT_HEALTH_ROLLUP.md`
+5. `../05_MATTERS/DASHBOARDS/MATTER_DIGEST.md`
+6. `../05_MATTERS/LAWYER_TASK_TRACKER.md`
 
 This sequence gives:
 
@@ -47,6 +49,7 @@ This sequence gives:
 - portfolio flow and capacity second
 - structural integrity third
 - project-by-project drill-down fourth
+- matter-control visibility fifth
 
 ## Canonical Review Stack
 
@@ -59,6 +62,9 @@ This sequence gives:
 | Portfolio flow | `03_FIRM_OPERATIONS/PORTFOLIO_MANAGEMENT/PORTFOLIO_STATUS_DASHBOARD.md` | on-track / watch / at-risk, bottlenecks, sequencing | `LLM-005` |
 | Structural integrity | `03_FIRM_OPERATIONS/PORTFOLIO_GOVERNANCE/GOVERNANCE_COMPLIANCE_AUDIT.md` | stage-gate, approval, metric, and schema gaps | `LLM-006` |
 | Project drill-down | `03_FIRM_OPERATIONS/PROJECT_MANAGEMENT/PROJECT_HEALTH_ROLLUP.md` | project-by-project review | `LLM-004` |
+| Matter visibility | `../05_MATTERS/DASHBOARDS/MATTER_DIGEST.md` | active / watch / urgent / stalled matter control read | matter command-and-control layer |
+| Matter index | `../05_MATTERS/DASHBOARDS/MATTER_INDEX.md` | full matter roster and current category/delivery posture | matter command-and-control layer |
+| Lawyer tasks | `../05_MATTERS/LAWYER_TASK_TRACKER.md` | current lawyer task load and immediate action concentration | matter layer |
 
 ## Drill-Down Files
 
@@ -74,6 +80,8 @@ specific:
 - `03_FIRM_OPERATIONS/PORTFOLIO_GOVERNANCE/APPROVAL_GAP_REPORT.md`
 - `03_FIRM_OPERATIONS/PORTFOLIO_GOVERNANCE/METRIC_SCHEMA_INTEGRITY_REPORT.md`
 - `03_FIRM_OPERATIONS/PORTFOLIO_GOVERNANCE/DOCTRINE_DRIFT_REPORT.md`
+- `../05_MATTERS/DASHBOARDS/MATTER_INDEX.md`
+- `../05_MATTERS/LAWYER_TASK_TRACKER.md`
 
 ## Agent Logic
 

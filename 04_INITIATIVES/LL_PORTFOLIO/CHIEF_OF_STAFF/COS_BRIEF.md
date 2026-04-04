@@ -54,6 +54,27 @@ substantive non-compliance. A packet-level review also shows one more nuance
 not surfaced by the deterministic checks: `LLP-012` has inconsistent stage
 signals across its README, approval record, and planning artifacts.
 
+## Matter Layer Notes
+
+The current LL Chief of Staff should also be read against the matter-control
+layer, not just the portfolio packet layer. The matter-control surfaces were
+repo-refreshed on April 3, 2026 and now show:
+
+- `27` ML Active matters
+- `11` ML Watch matters
+- `1` urgent fulfillment escalation candidate: `25-927-00003` (Stream Ventures)
+- `24` ML Active matters with zero service definitions
+- `17` open lawyer tasks across `10` matters
+
+The inbox-routing and SharePoint overlays beneath those matter dashboards still
+rest on the latest available matter-admin run dated March 29, 2026, including
+the `35` inbox-signal stalled matters figure.
+
+That means the LL operating picture is not only about project readiness. It is
+also carrying a meaningful matter-visibility gap: a large share of the active
+matter book is still weakly service-defined, and the matter layer shows at
+least one urgent current-file signal that should stay visible to ML1.
+
 ## Top 3 Items Requiring ML1 Decision
 
 1. `LLP-012` — confirm the canonical F02 operating path and normalize the
@@ -69,6 +90,12 @@ signals across its README, approval record, and planning artifacts.
    wrappers for the operating lanes now, but continue to tolerate temporary
    KPI-sheet incompleteness in `LLP-025` until the open strategic questions
    close.
+
+Matter-layer urgency should also remain visible beneath this top three:
+`25-927-00003` is currently the only urgent fulfillment escalation candidate in
+the matter dashboard, and the service-definition gap across ML Active matters
+is now large enough to be treated as a control issue rather than background
+noise.
 
 ## Cross-Agent Conflicts
 

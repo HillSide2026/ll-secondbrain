@@ -19,7 +19,8 @@ None. The management-agent inputs were refreshed on `2026-04-04` under
 | 2 | `LLP-011` Funnel 1 Management | Approve the canonical live-funnel scorecard and profitability lens for F01 so the active funnel is governed by one decision-useful metric surface. | direct | ML1_REQUIRED | high | yes — live funnel remains active and still lacks canonical `METRICS.md` | `LLM-006` metric schema gap; packet-level review of `planning/ML1_METRIC_APPROVAL.md` and `implementation/EXECUTION_LOG.md` |
 | 3 | `LLP-004` + `LLP-005` | Confirm the intake-to-opening normalization stance: treat these as real operating lanes, create canonical measurement wrappers, and require live runtime logging rather than only packet establishment. | indirect | ML1_REQUIRED | medium-high | partial — these projects support revenue control but are not the first growth bottleneck | `LLM-004` / `LLM-005` watch status; packet-level review of onboarding/opening implementation logs |
 | 4 | `LLP-025` Marketing Strategy | Confirm the strategy-layer measurement rule: keep the project active, defer a fully canonical KPI sheet until open strategy choices close, and treat current incompleteness as intentional rather than as immediate failure. | indirect | ML1_REQUIRED | medium | yes — strategy still conditions F02 and broader marketing sequencing | `planning/OPEN_QUESTIONS.md`; `planning/METRIC_FRAMEWORK.md`; `LLM-006` watch status |
-| 5 | Portfolio-wide planning normalization | Confirm that the doctrine rule is controlling: `SCOPE_STATEMENT.md` is canonical, and the deterministic governance layer should be normalized accordingly rather than treating `SCOPE_DEFINITION.md` as a current requirement. | indirect | ML1_REQUIRED | medium | yes — 10 reported stage violations are still being inflated by a stale schema check | `LLM-006` / `LLM-005` reports versus current doctrine and `LLM-004` spec |
+| 5 | Matter layer visibility | Confirm that the LL Chief of Staff should permanently read the matter dashboards and lawyer task tracker, and decide whether the active-matter service-definition gap should be treated as a live normalization priority. | indirect | ML1_REQUIRED | medium | partial — affects operating visibility and control quality more than immediate stage advancement | `05_MATTERS/DASHBOARDS/MATTER_DIGEST.md`; `05_MATTERS/DASHBOARDS/MATTER_INDEX.md`; `05_MATTERS/LAWYER_TASK_TRACKER.md` |
+| 6 | Portfolio-wide planning normalization | Confirm that the doctrine rule is controlling: `SCOPE_STATEMENT.md` is canonical, and the deterministic governance layer should be normalized accordingly rather than treating `SCOPE_DEFINITION.md` as a current requirement. | indirect | ML1_REQUIRED | medium | yes — 10 reported stage violations are still being inflated by a stale schema check | `LLM-006` / `LLM-005` reports versus current doctrine and `LLM-004` spec |
 
 ## System Actions
 
@@ -27,8 +28,9 @@ None. The management-agent inputs were refreshed on `2026-04-04` under
 2. Draft the canonical live-funnel `METRICS.md` for `LLP-011` immediately after ML1 resolves Rank 2.
 3. Create canonical measurement wrappers for `LLP-004` and `LLP-005`, then require live runtime entries in their implementation logs.
 4. Record a temporary strategy-layer measurement exception for `LLP-025` pending closure of its open strategic questions.
-5. Normalize the deterministic management layer so it recognizes `SCOPE_STATEMENT.md` as the canonical scope artifact, consistent with current LL doctrine.
-6. Re-run the LL Chief of Staff after the scope / metrics normalization pass so the portfolio health counts stop carrying stale-schema noise.
+5. Treat the matter dashboards and lawyer task tracker as standing LL Chief of Staff inputs and surface any urgent, stalled, or weakly defined matter conditions in the next refresh.
+6. Normalize the deterministic management layer so it recognizes `SCOPE_STATEMENT.md` as the canonical scope artifact, consistent with current LL doctrine.
+7. Re-run the LL Chief of Staff after the scope / metrics normalization pass so the portfolio health counts stop carrying stale-schema noise.
 
 ## Queue Notes
 

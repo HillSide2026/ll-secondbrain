@@ -1,7 +1,19 @@
 # Matter Index
 
-Generated at: 2026-03-29T01:56:49Z
-Connector source: `cache:cache/clio_matters.json (repo_fallback:05_MATTERS)`
+Generated at: 2026-04-03T22:30:00-04:00
+Connector source: `repo:05_MATTERS (repo-grounded refresh 2026-04-03); legacy cache reference: cache/clio_matters.json generated 2026-03-05T04:54:38Z`
+
+## Summary
+- Total matters: 41
+- ML Active matters: 27
+- ML Watch matters: 11
+- Other matters: 3
+- Matters with non-zero service definitions: 5
+
+## Freshness Notes
+- This refresh is grounded in the current repo matter canon under `05_MATTERS/`.
+- `Responsible` is populated only where the repo contains an explicit matter-side assignment; otherwise it remains `unassigned`.
+- This roster is fresher than the March 29 matter-admin dashboards because it includes newer repo-side matters and service definitions.
 
 | Matter Number | Name | Status | Category | Delivery | Fulfillment | Services | Responsible | Client | Source Pointer |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -35,8 +47,14 @@ Connector source: `cache:cache/clio_matters.json (repo_fallback:05_MATTERS)`
 | 25-194-00059 | Rousseau Mazzuca LLP | Open | ML Active | Standard | active | 0 | unassigned | Rousseau Mazzuca LLP | repo://05_MATTERS/STANDARD/25-194-00059/MATTER.yaml |
 | 25-256-00005 | Aspire Infusions Inc | Open | ML Active | Strategic | active | 0 | unassigned | Aspire Infusions Inc | repo://05_MATTERS/STRATEGIC/25-256-00005/MATTER.yaml |
 | 25-822-00001 | Majid Hajibeigy | Open | ML Watch | Parked | active | 0 | unassigned | Majid Hajibeigy | repo://05_MATTERS/PARKED/25-822-00001/MATTER.yaml |
-| 25-845-00002 | STAR 333 SPORTS INC. | Open | ML Active | Standard | active | 4 (solution:Franchise agreement(s); solution:Master license agreement with Cricket Canada; solution:Venue agreement; +1 more) | unassigned | STAR 333 SPORTS INC. | repo://05_MATTERS/STANDARD/25-845-00002/MATTER.yaml |
+| 25-845-00001 | STAR 333 SPORTS INC. | Open | ML Active | Standard | active | 6 | unassigned | STAR 333 SPORTS INC. | repo://05_MATTERS/STANDARD/25-845-00001/MATTER.yaml |
+| 25-845-00002 | STAR 333 SPORTS INC. | Open | ML Active | Standard | active | 4 | unassigned | STAR 333 SPORTS INC. | repo://05_MATTERS/STANDARD/25-845-00002/MATTER.yaml |
 | 25-927-00003 | Stream Ventures Limited | Open | ML Active | Essential | urgent | 0 | unassigned | Stream Ventures Limited | repo://05_MATTERS/ESSENTIAL/25-927-00003/MATTER.yaml |
 | 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | Open | ML Active | Strategic | active | 0 | unassigned | 1001162998 Ontario Corp. o/a KaleMart | repo://05_MATTERS/STRATEGIC/26-1593-00002/MATTER.yaml |
 | 26-1630-00001 | Marcela Hernandez | Open | ML Watch | Parked | keep in view | 0 | unassigned | Marcela Hernandez | repo://05_MATTERS/PARKED/26-1630-00001/MATTER.yaml |
+| 26-1631-00001 | 1713425 Ontario Inc. (Tejvir Boparai) | Open | ML Active | Strategic | active | 2 | ML1 | 1713425 Ontario Inc. (Tejvir Boparai) | repo://05_MATTERS/STRATEGIC/26-1631-00001/MATTER.yaml |
+| 26-1639-00001 | Andersen | Open | ML Active | Essential | active | 0 | unassigned | Andersen | repo://05_MATTERS/ESSENTIAL/26-1639-00001/MATTER.yaml |
+| 26-1639-00002 | Andersen | Open | Other | Essential | keep in view | 2 | unassigned | Andersen | repo://05_MATTERS/ESSENTIAL/26-1639-00002/MATTER.yaml |
+| 26-1639-00003 | Andersen | Open | Other | Essential | keep in view | 2 | unassigned | Andersen | repo://05_MATTERS/ESSENTIAL/26-1639-00003/MATTER.yaml |
 | 26-259-00003 | LL Onboarding | Open | ML Active | Standard | active | 0 | unassigned | LL Onboarding | repo://05_MATTERS/STANDARD/26-259-00003/MATTER.yaml |
+| 26-927-00004 | Stream Ventures Limited | Open | ML Active | Essential | active | 0 | unassigned | Stream Ventures Limited | repo://05_MATTERS/ESSENTIAL/26-927-00004/MATTER.yaml |

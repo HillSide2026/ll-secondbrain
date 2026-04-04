@@ -14,11 +14,13 @@ tags: [ll-portfolio, chief-of-staff, review]
 
 This folder is the canonical synthesis layer for Levine Law portfolio review.
 
-It sits above the three management-agent layers:
+It sits above the three management-agent layers and also reads the canonical
+matter-visibility layer:
 
 - `LLM-004` Project Management
 - `LLM-005` Portfolio Management
 - `LLM-006` Portfolio Governance
+- `05_MATTERS` dashboards and task surfaces
 
 When current, this folder is the fastest place for ML1 to start a full LL
 portfolio review.
@@ -28,6 +30,16 @@ portfolio review.
 - `COS_BRIEF.md` — narrative portfolio read for ML1
 - `ML1_DECISION_QUEUE.md` — ranked decisions requiring ML1 judgment
 - `CROSS_AGENT_CONFLICTS.md` — explicit flow-vs-governance conflicts
+
+## Canonical Matter Inputs
+
+The LL Chief of Staff should read these matter-layer inputs as part of a real
+firm-running review:
+
+- `../../../05_MATTERS/DASHBOARDS/MATTER_DIGEST.md`
+- `../../../05_MATTERS/DASHBOARDS/MATTER_INDEX.md`
+- `../../../05_MATTERS/LAWYER_TASK_TRACKER.md`
+- `../../../05_MATTERS/DASHBOARDS/DEADLINE_RADAR.md` when populated
 
 ## Freshness Rule
 

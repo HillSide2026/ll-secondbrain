@@ -47,6 +47,19 @@ When the Chief of Staff packet is stale, start with:
 3. `03_FIRM_OPERATIONS/PORTFOLIO_GOVERNANCE/GOVERNANCE_COMPLIANCE_AUDIT.md`
 4. `03_FIRM_OPERATIONS/PROJECT_MANAGEMENT/PROJECT_HEALTH_ROLLUP.md`
 
+## Review Hierarchy
+
+The intended review hierarchy for Levine Law is:
+
+1. Portfolio
+2. Relevant programs
+3. Relevant projects
+4. Matters
+
+That means matters sit inside the LL operating picture. They are not a
+separate peer portfolio even though their source-of-truth files live under
+`05_MATTERS/`.
+
 ## Project Identity (Canonical)
 
 - Every project has one canonical identifier: `Project ID` (globally unique).
