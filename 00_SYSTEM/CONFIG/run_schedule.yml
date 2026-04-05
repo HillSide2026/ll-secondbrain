@@ -6,9 +6,21 @@ created_date: 2026-03-04
 last_updated: 2026-04-02
 
 runs:
+  daily_full_sweep:
+    run_id: RUN_DAILY_FULL_SWEEP
+    enabled: true
+    timezone: America/Toronto
+    schedule_local: '06:30'
+    description: >
+      End-to-end daily chain. Replaces standalone matter admin invocation.
+      Sequence: Matter Admin → Portfolio Agents (LLM-004/005/006) → Chief of Staff (LLM-001).
+    runner: 00_SYSTEM/scripts/run_daily_full_sweep.py
+    installer: 00_SYSTEM/scripts/install_daily_sweep_launch_agent.py
+    launchd_label: ca.levinelaw.ml2.daily-sweep
   daily:
     run_id: RUN_MATTER_ADMIN_DAILY
-    enabled: true
+    enabled: false
+    note: Superseded by RUN_DAILY_FULL_SWEEP. Retained for standalone matter-admin-only invocation if needed.
     timezone: America/Toronto
     schedule_local: '06:30'
     scope:
@@ -30,6 +42,17 @@ runs:
     enabled: false
     requires_matter_number: true
     note: Planned standalone split. No dedicated runner mode is active yet.
+  weekly_cycle:
+    run_id: RUN_WEEKLY_CYCLE
+    enabled: true
+    timezone: America/Toronto
+    schedule_local: '09:00'
+    schedule_day: Monday
+    description: >
+      Weekly system management sweep. Sequence: System Admin Sweep (SAA) → System Management Sweep (SMA-001..005).
+    runner: 00_SYSTEM/scripts/run_weekly_cycle.py
+    installer: 00_SYSTEM/scripts/install_weekly_cycle_launch_agent.py
+    launchd_label: ca.levinelaw.ml2.weekly-cycle
   trade_remedies_citt_daily:
     run_id: RUN_TRADE_REMEDIES_CITT_DAILY
     enabled: true

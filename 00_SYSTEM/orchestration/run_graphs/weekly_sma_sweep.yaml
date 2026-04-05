@@ -1,0 +1,43 @@
+schema_version: 0.1
+id: weekly_sma_sweep
+name: Weekly SMA Sweep
+description: >
+  Weekly system management sweep. Runs system admin SAA agents and system
+  management SMA agents. Produces governance, compliance, and QA reports.
+run_root: 06_RUNS/${run_id}
+schedule:
+  run_id: RUN_WEEKLY_CYCLE
+  timezone: America/Toronto
+  day: Monday
+  schedule_local: '09:00'
+steps:
+  - id: system_admin_sweep
+    action: run_python
+    script: 00_SYSTEM/scripts/run_system_admin_sweep.py
+    description: >
+      Run SAA agents: repo linter, folder map drift, metadata enforcer,
+      reference integrity, registry sync. Produces unified findings report.
+    outputs:
+      - path: 06_RUNS/${run_id}/system_admin/SYSTEM_ADMIN_REPORT.md
+        label: DERIVED_ARTIFACT
+      - path: 06_RUNS/${run_id}/system_admin/findings.json
+        label: DERIVED_ARTIFACT
+    failure_mode:
+      on_error: log_and_continue
+
+  - id: system_management_sweep
+    action: run_python
+    script: 00_SYSTEM/scripts/run_system_management_sweep.py
+    depends_on: [system_admin_sweep]
+    description: >
+      Run SMA-001 through SMA-005: governance, portfolio planning, integration
+      steward, knowledge curation, runbook QA.
+    outputs:
+      - path: 06_RUNS/${run_id}/system_management/
+        label: DERIVED_ARTIFACT
+    failure_mode:
+      on_error: log_and_continue
+
+run_logging:
+  runlog: 06_RUNS/${run_id}/RUN_LOG.md
+  provenance: 06_RUNS/${run_id}/provenance.json

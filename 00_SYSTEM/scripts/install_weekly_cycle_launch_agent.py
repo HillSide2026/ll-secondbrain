@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """
-Install or remove the local launchd job for the daily trade-remedies CITT run.
+Install or remove the local launchd job for the weekly SMA cycle.
+
+Schedules run_weekly_cycle.py every Monday at 09:00 Toronto time.
+The sweep chains: System Admin Sweep (SAA) → System Management Sweep (SMA-001..005).
 """
 
 from __future__ import annotations
@@ -11,31 +14,19 @@ import plistlib
 import subprocess
 import sys
 from pathlib import Path
-from typing import Tuple
-
-import yaml
 
 
-LABEL = "ca.levinelaw.ml2.trade-remedies-citt-daily"
+LABEL = "ca.levinelaw.ml2.weekly-cycle"
 REPO_ROOT = Path(__file__).resolve().parents[2]
-CONFIG_PATH = REPO_ROOT / "00_SYSTEM" / "CONFIG" / "run_schedule.yml"
-RUNNER_PATH = REPO_ROOT / "00_SYSTEM" / "scripts" / "run_trade_remedies_daily.py"
+RUNNER_PATH = REPO_ROOT / "00_SYSTEM" / "scripts" / "run_weekly_cycle.py"
 LAUNCH_AGENTS_DIR = Path.home() / "Library" / "LaunchAgents"
 PLIST_PATH = LAUNCH_AGENTS_DIR / f"{LABEL}.plist"
-LOG_DIR = REPO_ROOT / "06_RUNS" / "logs" / "trade_remedies" / "citt_daily"
+LOG_DIR = REPO_ROOT / "06_RUNS" / "logs" / "weekly_cycle"
 
-
-def load_yaml(path: Path) -> dict:
-    with path.open("r", encoding="utf-8") as handle:
-        return yaml.safe_load(handle) or {}
-
-
-def parse_schedule() -> Tuple[int, int]:
-    config = load_yaml(CONFIG_PATH)
-    run_cfg = ((config.get("runs") or {}).get("trade_remedies_citt_daily") or {})
-    schedule_local = str(run_cfg.get("schedule_local") or "07:15").strip()
-    hour_text, minute_text = schedule_local.split(":", 1)
-    return int(hour_text), int(minute_text)
+# Monday = 2 in launchd Weekday (0=Sunday, 1=Monday... wait, launchd uses 0=Sunday)
+WEEKDAY_MONDAY = 1
+HOUR = 9
+MINUTE = 0
 
 
 def launchctl_domain() -> str:
@@ -47,17 +38,17 @@ def service_target() -> str:
 
 
 def build_plist() -> dict:
-    hour, minute = parse_schedule()
     LOG_DIR.mkdir(parents=True, exist_ok=True)
     return {
         "Label": LABEL,
         "ProgramArguments": [sys.executable, str(RUNNER_PATH)],
         "WorkingDirectory": str(REPO_ROOT),
-        "RunAtLoad": True,
+        "RunAtLoad": False,
         "ProcessType": "Background",
         "StartCalendarInterval": {
-            "Hour": hour,
-            "Minute": minute,
+            "Weekday": WEEKDAY_MONDAY,
+            "Hour": HOUR,
+            "Minute": MINUTE,
         },
         "StandardOutPath": str(LOG_DIR / "launchd.stdout.log"),
         "StandardErrorPath": str(LOG_DIR / "launchd.stderr.log"),
@@ -83,6 +74,7 @@ def install() -> None:
     run_launchctl("enable", service_target(), check=False)
     print(f"Installed launch agent: {PLIST_PATH}")
     print(f"Service target: {service_target()}")
+    print(f"Scheduled: every Monday at {HOUR:02d}:{MINUTE:02d} (America/Toronto)")
 
 
 def uninstall() -> None:
@@ -105,8 +97,8 @@ def status() -> int:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Install or remove the daily trade-remedies CITT launch agent.")
-    parser.add_argument("--uninstall", action="store_true", help="Remove the launch agent instead of installing it.")
+    parser = argparse.ArgumentParser(description="Install or remove the weekly SMA cycle launch agent.")
+    parser.add_argument("--uninstall", action="store_true", help="Remove the launch agent.")
     parser.add_argument("--status", action="store_true", help="Print current launch agent status.")
     return parser.parse_args()
 

@@ -45,3 +45,18 @@ These measure whether ML2 is actually useful — whether ML1 thinking is compoun
 **Definition:** Elapsed time from task initiation to first draft, when work is generated from an approved template.
 
 **Signal:** Measures template coverage and retrieval efficiency. High values suggest missing templates or poor artifact discoverability.
+
+---
+
+## KPI-001-B: Doctrine Utilization Rate
+
+**Definition:** % of ML2 artifacts (templates, playbooks) actively used within a defined time window.
+
+**Why it matters:** Low utilization means doctrine is wrong, not discoverable, or the workflow is bypassing ML2 entirely.
+
+**What low utilization diagnoses:**
+- Doctrine does not reflect actual work being done
+- Artifacts are not surfaced at the right moment
+- ML2 is being bypassed in favor of manual or ad hoc approaches
+
+**Status:** Deferred — revisit once system is operational. Thresholds cannot be set meaningfully before live utilization data exists.

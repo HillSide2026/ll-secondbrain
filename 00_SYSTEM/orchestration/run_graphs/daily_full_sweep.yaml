@@ -1,0 +1,77 @@
+schema_version: 0.1
+id: daily_full_sweep
+name: Daily Full Sweep
+description: >
+  End-to-end daily orchestration chain. Sequences matter admin, portfolio agent
+  analysis, and Chief of Staff synthesis into a single governed run.
+  Replaces manual invocation of each step independently.
+run_root: 06_RUNS/${run_id}/daily_sweep
+schedule:
+  run_id: RUN_DAILY_FULL_SWEEP
+  timezone: America/Toronto
+  schedule_local: '06:30'
+gates:
+  - ml1_approval_required
+  - no_unapproved_source_writeback
+  - citation_pointer_required
+steps:
+  - id: matter_admin
+    action: run_python
+    script: scripts/run_matter_admin.py
+    description: >
+      Load Gmail, SharePoint, and Clio. Build matter index, route inbox threads,
+      compile matter digest, compile SharePoint gaps.
+    outputs:
+      - path: 05_MATTERS/DASHBOARDS/MATTER_INDEX.md
+        label: DERIVED_ARTIFACT
+      - path: 05_MATTERS/DASHBOARDS/INBOX_UNMAPPED.md
+        label: DERIVED_ARTIFACT
+      - path: 05_MATTERS/DASHBOARDS/MATTER_DIGEST.md
+        label: DERIVED_ARTIFACT
+      - path: 05_MATTERS/DASHBOARDS/SHAREPOINT_GAPS.md
+        label: DERIVED_ARTIFACT
+    failure_mode:
+      on_error: abort_chain
+      reason: Matter dashboards are required inputs for portfolio and CoS synthesis.
+
+  - id: portfolio_agents
+    action: run_python
+    script: 00_SYSTEM/scripts/run_ll_portfolio_agents.py
+    depends_on: [matter_admin]
+    description: >
+      Run LLM-004 (project health), LLM-005 (portfolio flow), and LLM-006
+      (portfolio governance) as deterministic Python analysis. Produces
+      PROJECT_HEALTH_ROLLUP.md and portfolio management outputs.
+    outputs:
+      - path: 04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/PROJECT_MANAGEMENT/PROJECT_HEALTH_ROLLUP.md
+        label: DERIVED_ARTIFACT
+      - path: 04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/PORTFOLIO_MANAGEMENT/
+        label: DERIVED_ARTIFACT
+      - path: 04_INITIATIVES/LL_PORTFOLIO/03_FIRM_OPERATIONS/PORTFOLIO_GOVERNANCE/
+        label: DERIVED_ARTIFACT
+    failure_mode:
+      on_error: abort_chain
+      reason: Portfolio outputs are required inputs for LLM-001 synthesis.
+
+  - id: chief_of_staff_synthesis
+    action: run_claude_agent
+    agent: llm-001-chief-of-staff
+    depends_on: [portfolio_agents]
+    description: >
+      Invoke LLM-001 Chief of Staff via Claude CLI. Reads portfolio agent
+      outputs and matter dashboards. Produces COS_BRIEF.md,
+      ML1_DECISION_QUEUE.md, and CROSS_AGENT_CONFLICTS.md.
+    outputs:
+      - path: 04_INITIATIVES/LL_PORTFOLIO/CHIEF_OF_STAFF/COS_BRIEF.md
+        label: DERIVED_ARTIFACT
+      - path: 04_INITIATIVES/LL_PORTFOLIO/CHIEF_OF_STAFF/ML1_DECISION_QUEUE.md
+        label: DERIVED_ARTIFACT
+      - path: 04_INITIATIVES/LL_PORTFOLIO/CHIEF_OF_STAFF/CROSS_AGENT_CONFLICTS.md
+        label: DERIVED_ARTIFACT
+    failure_mode:
+      on_error: log_and_continue
+      reason: CoS synthesis failure does not invalidate upstream outputs.
+
+run_logging:
+  runlog: ${run_root}/RUN_LOG.md
+  provenance: ${run_root}/provenance.json
