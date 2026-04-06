@@ -1,53 +1,44 @@
 # ML1 Decision Queue
 
-- Generated: 2026-04-04T01:29:33Z
-- Agent: LLM-001 Chief of Staff
-- Input freshness: LLM-004 run 2026-04-04T01:29:33+00:00, LLM-005 run 2026-04-04T01:29:33+00:00, LLM-006 run 2026-04-04T01:29:33+00:00
+- Generated: 2026-04-05T11:33:55+00:00
+- Run ID: RUN-2026-04-05-DAILY-SWEEP-103355Z
+- Source run: RUN-2026-04-05-LL-PORTFOLIO-AGENTS-110005Z (LLM-004/005/006)
 
 > Advisory output. ML1 approval required before any action is taken.
 
+---
+
 ## Execution Prerequisite
 
-None. The management-agent inputs were refreshed on `2026-04-04` under
-`RUN-2026-04-04-LL-PORTFOLIO-AGENTS-012933Z`.
+All inputs carry timestamps from 2026-04-05T11:00:06+00:00 under Run ID RUN-2026-04-05-LL-PORTFOLIO-AGENTS-110005Z. Inputs verified; no stale or missing files.
+
+---
 
 ## Decision Queue
 
-| Rank | Project | Decision Needed | Cash Flow Impact | ML1 or System | Urgency | Blocking | Source |
-|------|---------|----------------|-----------------|---------------|---------|----------|--------|
-| 1 | `LLP-012` Funnel 2 Management | Confirm the canonical F02 operating path and normalize the packet to match it: reconcile planning-stage docs, April 1 execution authorization, ICP gate, and the current offer architecture. | direct | ML1_REQUIRED | high | yes — highest priority project and still the main growth/control bottleneck | `LLM-005` priority rank 1; packet-level review of `README.md`, `initiation/APPROVAL_RECORD.md`, `planning/SCOPE_STATEMENT.md`, and `implementation/` |
-| 2 | `LLP-011` Funnel 1 Management | Approve the canonical live-funnel scorecard and profitability lens for F01 so the active funnel is governed by one decision-useful metric surface. | direct | ML1_REQUIRED | high | yes — live funnel remains active and still lacks canonical `METRICS.md` | `LLM-006` metric schema gap; packet-level review of `planning/ML1_METRIC_APPROVAL.md` and `implementation/EXECUTION_LOG.md` |
-| 3 | `LLP-004` + `LLP-005` | Confirm the intake-to-opening normalization stance: treat these as real operating lanes, create canonical measurement wrappers, and require live runtime logging rather than only packet establishment. | indirect | ML1_REQUIRED | medium-high | partial — these projects support revenue control but are not the first growth bottleneck | `LLM-004` / `LLM-005` watch status; packet-level review of onboarding/opening implementation logs |
-| 4 | `LLP-025` Marketing Strategy | Confirm the strategy-layer measurement rule: keep the project active, defer a fully canonical KPI sheet until open strategy choices close, and treat current incompleteness as intentional rather than as immediate failure. | indirect | ML1_REQUIRED | medium | yes — strategy still conditions F02 and broader marketing sequencing | `planning/OPEN_QUESTIONS.md`; `planning/METRIC_FRAMEWORK.md`; `LLM-006` watch status |
-| 5 | Matter layer visibility | Confirm that the LL Chief of Staff should permanently read the matter dashboards and lawyer task tracker, and decide whether the active-matter service-definition gap should be treated as a live normalization priority. | indirect | ML1_REQUIRED | medium | partial — affects operating visibility and control quality more than immediate stage advancement | `05_MATTERS/DASHBOARDS/MATTER_DIGEST.md`; `05_MATTERS/DASHBOARDS/MATTER_INDEX.md`; `05_MATTERS/LAWYER_TASK_TRACKER.md` |
-| 6 | Portfolio-wide planning normalization | Confirm that the doctrine rule is controlling: `SCOPE_STATEMENT.md` is canonical, and the deterministic governance layer should be normalized accordingly rather than treating `SCOPE_DEFINITION.md` as a current requirement. | indirect | ML1_REQUIRED | medium | yes — 10 reported stage violations are still being inflated by a stale schema check | `LLM-006` / `LLM-005` reports versus current doctrine and `LLM-004` spec |
+| Rank | Project | Decision Needed | Cash-Flow Impact | Urgency | Blocking | Source |
+|------|---------|----------------|-----------------|---------|----------|--------|
+| 1 | **LLP-011** Funnel 1 Management | Approve the canonical METRICS.md for the live F01 funnel so performance is governed by one decision-useful scorecard (lead volume, cost-per-lead, conversion rate). | Direct — active ad spend has no governed performance baseline | High | Yes — live funnel active, no auditable performance record inside second brain | LLM-006 metric schema gap; METRIC_SCHEMA_INTEGRITY_REPORT.md |
+| 2 | **LLP-012** Funnel 2 Management | (a) Decide: close 6 planning gaps now or issue a written hold with reason. (b) Reconcile the packet's staging and offer architecture — README, approval record, and planning artifacts currently express different stages and entry paths. | Direct — second revenue lane (premium corporate law) cannot launch until this is resolved | High | Yes — highest priority project by score (23); cannot advance to Executing without gap closure | LLM-005 priority rank 1; SEQUENCING_RECOMMENDATIONS.md; prior COS run packet-level analysis |
+| 3 | **LLP-004 + LLP-005** Onboarding / Opening | Confirm normalization stance: direct creation of canonical METRICS.md wrappers for both operating lanes and require live runtime logging in implementation logs. | Indirect — controls revenue quality through intake-to-opening discipline | Medium-High | Partial — watch flags persist; operating lanes are live but ungoverned at the measurement layer | LLM-004/005 watch status; METRIC_SCHEMA_INTEGRITY_REPORT.md |
+| 4 | **LLP-025** Marketing Strategy | Confirm whether METRICS.md incompleteness is intentional (open strategy choices) or a real gap. If intentional, record a formal exception in the packet. If not, direct gap closure. LLP-025 conditions LLP-011, LLP-012, LLP-013, LLP-014, and LLP-026. | Indirect — foundational to all downstream funnel and marketing projects | Medium | Yes — five downstream projects depend on LLP-025 for positioning and measurement baseline | LLM-006 watch status; DOCTRINE_DRIFT_REPORT.md |
+| 5 | **LLP-033** Associate Lawyer | Schedule the first ML1 review of the capacity and economics model. No recruitment activity should begin before this review. | Indirect — associate economics directly affect owner compensation and margin | Medium | Partial — no ML1 review on record; project may drift without a review date | LLM-004 watch status; no review date in current run |
+| 6 | **Portfolio-wide SCOPE artifact** | Confirm that SCOPE_STATEMENT.md (not SCOPE_DEFINITION.md) is the canonical scope artifact under current LL doctrine, and authorize the governance toolchain to be updated accordingly. Resolves up to 10 watch flags that may be schema-mismatch artifacts rather than genuine non-compliance. | Indirect — governance noise obscures real risk signals | Medium | Yes — 10 reported stage violations may be inflated; prior COS run flagged same issue, still unresolved | DOCTRINE_DRIFT_REPORT.md; STAGE_GATE_VIOLATION_REPORT.md; prior COS brief 2026-04-04 |
 
-## System Actions
+---
 
-1. Normalize `LLP-012` so its README, approval record, planning packet, and implementation packet all express the same stage and offer architecture.
-2. Draft the canonical live-funnel `METRICS.md` for `LLP-011` immediately after ML1 resolves Rank 2.
-3. Create canonical measurement wrappers for `LLP-004` and `LLP-005`, then require live runtime entries in their implementation logs.
-4. Record a temporary strategy-layer measurement exception for `LLP-025` pending closure of its open strategic questions.
-5. Treat the matter dashboards and lawyer task tracker as standing LL Chief of Staff inputs and surface any urgent, stalled, or weakly defined matter conditions in the next refresh.
-6. Normalize the deterministic management layer so it recognizes `SCOPE_STATEMENT.md` as the canonical scope artifact, consistent with current LL doctrine.
-7. Re-run the LL Chief of Staff after the scope / metrics normalization pass so the portfolio health counts stop carrying stale-schema noise.
+## System Actions (Post-ML1-Decision)
+
+1. Draft METRICS.md for LLP-011 immediately after ML1 resolves Rank 1.
+2. If ML1 authorizes LLP-012 gap closure: assign capacity to draft SCOPE_STATEMENT.md and the five other missing planning artifacts; reconcile README and APPROVAL_RECORD to canonical stage and offer path.
+3. Create canonical METRICS.md wrappers for LLP-004 and LLP-005; add live runtime logging requirement to implementation logs.
+4. Record strategy-layer measurement exception in LLP-025 packet if ML1 confirms intentional incompleteness.
+5. Add ML1 review date to LLP-033 workplan.
+6. Update the deterministic governance layer to check for SCOPE_STATEMENT.md once ML1 confirms the canonical rule.
+7. Re-run the full portfolio cycle after the normalization pass so health counts reflect resolved gaps.
+
+---
 
 ## Queue Notes
 
-The refreshed April 4, 2026 management run materially improves the portfolio
-picture relative to the earlier Chief of Staff packet:
-
-- current mix is `29` on-track, `10` watch, `0` at-risk
-- approval gaps are now `0`
-- the dominant issue is now concentrated planning and measurement normalization,
-  not broad portfolio disorder
-
-This queue therefore prioritizes:
-
-1. `LLP-012` because it remains the top growth / sequencing item
-2. live-funnel scorecard normalization because it directly affects the active funnel layer
-3. intake-to-opening control normalization because those lanes directly support
-   the quality of converted work
-
-The main caution is that some governance noise is now coming from a stale tool
-expectation (`SCOPE_DEFINITION.md`) rather than genuine project non-compliance.
+This is the second consecutive daily run showing the same 10 watch projects and same dominant gap pattern. The portfolio is not deteriorating — it is stable but stalled at the planning-normalization layer. The Rank 1 and Rank 2 items are the only ones with direct revenue-signal stakes. Ranks 3–6 are real governance work but do not block revenue operations today.

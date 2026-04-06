@@ -1,10 +1,13 @@
 # Chief of Staff Brief
 
-- Generated: 2026-04-04T01:29:33Z
-- Agent: LLM-001 Chief of Staff
-- Input freshness: LLM-004 run 2026-04-04T01:29:33+00:00, LLM-005 run 2026-04-04T01:29:33+00:00, LLM-006 run 2026-04-04T01:29:33+00:00
+- Generated: 2026-04-05T11:33:55+00:00
+- Run ID: RUN-2026-04-05-DAILY-SWEEP-103355Z
+- Source run: RUN-2026-04-05-LL-PORTFOLIO-AGENTS-110005Z (LLM-004/005/006)
+- Prior run: RUN-2026-04-04-LL-PORTFOLIO-AGENTS-012933Z (reference only)
 
 > Advisory output. ML1 approval required before any action is taken.
+
+---
 
 ## LL Incentive Lens
 
@@ -15,174 +18,78 @@ This brief applies an LL-first incentive frame:
 - margin discipline
 - capacity and client-quality control
 - compounding expertise inside approved lanes
-- intended channel sequencing of `F01 -> F02 -> F03`
+- intended channel sequencing of F01 → F02 → F03
 
-Secondary HillSide linkage matters where it affects Matthew-level cash flow,
-cross-entity reconciliation, or oversight, but it does not replace LL-first
-ranking.
+Secondary HillSide linkage matters where it affects Matthew-level cash flow, cross-entity reconciliation, or oversight, but does not replace LL-first ranking.
 
-## Portfolio Health Summary
+---
 
-The refreshed April 4, 2026 management run shows a stable LL portfolio rather
-than a distressed one. The current mix is 29 on-track, 10 watch, and 0
-at-risk across 39 projects. The dominant condition is not broad instability
-but a small control-and-normalization cluster:
+## Bottom Line
 
-- `LLP-012` remains the highest-priority item, but it is now better understood
-  as a packet and operating-model normalization issue around F02 rather than as
-  a generic incomplete project
-- `LLP-011` is the highest-value live measurement priority because F01 is an
-  active funnel and the real question is profitable revenue quality, not just
-  gross revenue
-- `LLP-004` and `LLP-005` are operationally real, but still present as watch
-  because the canonical measurement wrapper is not yet normalized
-- `LLP-025` still carries open strategic choices that make a fully canonical
-  KPI sheet premature even though it remains an important downstream strategy
-  dependency
+The April 5 portfolio picture is materially unchanged from April 4. The same 10 projects are on watch, no projects are at-risk, and the 29 on-track count is stable. No new compliance violations or approval gaps have appeared. The dominant issue remains a concentrated planning-normalization cluster rather than broad portfolio disorder.
 
-The former true at-risk cluster has now cleared. `LLP-007`, `LLP-008`,
-`LLP-016`, `LLP-043`, and `LLP-030` no longer drive portfolio concern in the
-current run.
+Two things still require immediate ML1 attention: the live Funnel 1 scorecard (LLP-011 is running with ad spend and no governed METRICS.md) and the Funnel 2 planning packet (LLP-012 has 6 gaps and cannot advance). Everything else in the watch cluster is either a real-but-unhurried documentation task or an artifact of a governance layer that still checks for SCOPE_DEFINITION.md when current doctrine uses SCOPE_STATEMENT.md as the canonical artifact. That schema mismatch was flagged in the prior COS run and is still present. It inflates the reported watch count but does not change the substantive decision set.
 
-One structural caution matters to every reading of the current management
-outputs: the deterministic governance layer is still flagging
-`SCOPE_DEFINITION.md` as missing in 10 projects even though current LL doctrine
-and the `LLM-004` spec treat `SCOPE_STATEMENT.md` as canonical. That means part
-of the present watch/violation signal is real project incompleteness, and part
-is tool/doctrine drift that should be normalized rather than treated as
-substantive non-compliance. A packet-level review also shows one more nuance
-not surfaced by the deterministic checks: `LLP-012` has inconsistent stage
-signals across its README, approval record, and planning artifacts.
+---
 
-## Matter Layer Notes
+## Live Funnel Without a Scorecard (LLP-011 — Revenue Signal Risk)
 
-The current LL Chief of Staff should also be read against the matter-control
-layer, not just the portfolio packet layer. The matter-control surfaces were
-repo-refreshed on April 3, 2026 and now show:
+Funnel 1 (Google Ads → GHL intake) is your current active acquisition channel. It is in the Executing stage and has ad spend running against it. The portfolio governance layer still shows METRICS.md as missing. Until a canonical METRICS.md exists and is approved, there is no governed baseline inside the second brain for lead volume, cost-per-lead, or conversion rate. The firm cannot formally assess whether the funnel is producing profitable revenue quality or just gross volume.
 
-- `27` ML Active matters
-- `11` ML Watch matters
-- `1` urgent fulfillment escalation candidate: `25-927-00003` (Stream Ventures)
-- `24` ML Active matters with zero service definitions
-- `17` open lawyer tasks across `10` matters
+This is the highest revenue-signal risk in the current run. Drafting and approving METRICS.md for LLP-011 is the first concrete action that should follow this brief.
 
-The inbox-routing and SharePoint overlays beneath those matter dashboards still
-rest on the latest available matter-admin run dated March 29, 2026, including
-the `35` inbox-signal stalled matters figure.
+---
 
-That means the LL operating picture is not only about project readiness. It is
-also carrying a meaningful matter-visibility gap: a large share of the active
-matter book is still weakly service-defined, and the matter layer shows at
-least one urgent current-file signal that should stay visible to ML1.
+## Funnel 2 Planning Blockage (LLP-012 — Highest Portfolio Priority)
 
-## Top 3 Items Requiring ML1 Decision
+Funnel 2 (corporate law for $1M+ businesses, entry via Corporate Health Check) remains the top-scoring project in the priority matrix (score 23, six planning gaps). It cannot leave the Planning stage until those six artifacts are closed. The F01 → F02 → F03 sequencing logic makes this consequential: F01 is live but unmetered, F02 is stalled, and F03 (payments/MSB regulatory counsel) has only 1 gap and could clear faster.
 
-1. `LLP-012` — confirm the canonical F02 operating path and normalize the
-   packet to that decision. The current project surface mixes planning-stage
-   documents, an executing authorization, and multiple entry-path expressions
-   (`Health Check` versus `lead magnet -> triage consult -> Health Check`).
-2. `LLP-011` — approve the canonical live-funnel scorecard and profitability
-   lens for F01. The highest-value measurement task now is to govern the active
-   funnel using a single decision-useful scorecard rather than scattered metric
-   artifacts.
-3. `LLP-004` / `LLP-005` / `LLP-025` — confirm the normalization stance across
-   the supporting intake and strategy layers: create canonical measurement
-   wrappers for the operating lanes now, but continue to tolerate temporary
-   KPI-sheet incompleteness in `LLP-025` until the open strategic questions
-   close.
+The prior run also noted a packet-level staging inconsistency in LLP-012: its README, approval record, and planning artifacts expressed different stages and offer architectures. That inconsistency is not resolved by the deterministic checks in this run. Before adding more execution surface to LLP-012, the packet should be reconciled to one canonical F02 path.
 
-Matter-layer urgency should also remain visible beneath this top three:
-`25-927-00003` is currently the only urgent fulfillment escalation candidate in
-the matter dashboard, and the service-definition gap across ML Active matters
-is now large enough to be treated as a control issue rather than background
-noise.
+**Decision needed:** Authorize gap closure work for LLP-012 now, or formally defer with a written hold reason.
 
-## Cross-Agent Conflicts
+---
 
-No cross-agent conflicts are detected in the April 4, 2026 dataset.
+## Marketing Strategy as Sequencing Dependency (LLP-025)
 
-`LLM-005` and `LLM-006` remain aligned on the highest-priority cluster:
-`LLP-012`, `LLP-004`, `LLP-005`, `LLP-011`, and `LLP-025`. The current issue
-is not disagreement between flow and governance agents. The current issue is a
-small set of concentrated planning and measurement normalization tasks, plus
-the stale deterministic scope-artifact expectation.
+LLP-025 (Marketing Strategy) is the foundational project for LLP-011, LLP-012, LLP-013, LLP-014, and LLP-026. It is in Planning with SCOPE_DEFINITION.md and METRICS.md flagged as missing. The prior run noted that the METRICS.md gap here may be intentional — open strategic choices make a fully canonical KPI sheet premature. That nuance should be confirmed: if ML1 intends LLP-025 to remain measurement-incomplete while strategy choices are live, a temporary exception record should be written into the packet. Without it, the governance layer will continue to flag it as non-compliant.
 
-## Governance Holds
+---
 
-These items should be treated as current governance holds:
+## Operations Core — Real Gaps, Manageable (LLP-004, LLP-005, LLP-006)
 
-- `LLP-012` — highest-priority normalization item. Packet-level review should
-  reconcile its stage, ICP gate, and canonical F02 path before more execution
-  surface is added.
-- `LLP-011` — still missing canonical `METRICS.md` treatment for the live
-  funnel.
-- `LLP-004` and `LLP-005` — still present watch status because the operating
-  lanes use approved legacy metric artifacts rather than a canonical
-  `METRICS.md` wrapper.
-- `LLP-025` — remains a key downstream sequencing dependency for intake and
-  lead-capture work, but it should still be treated as a temporary
-  strategy-layer measurement exception rather than as an immediate
-  KPI-normalization priority.
+Onboarding (LLP-004), Opening (LLP-005), and Maintenance (LLP-006) are all Executing. Their watch flags come from SCOPE_DEFINITION.md and METRICS.md being absent. The SCOPE_DEFINITION flag may be a schema-mismatch artifact (see Structural Note below). The METRICS gap in LLP-004 and LLP-005 is real — these operating lanes lack canonical measurement wrappers. This is a medium-priority normalization task, not an operational emergency. Day-to-day intake and delivery are running.
 
-The watch status on `LLP-006`, `LLP-023`, `LLP-024`, `LLP-013`, and `LLP-033`
-should also be read carefully. Some of that signal is real planning cleanup,
-but some is inflated by the stale
-`SCOPE_DEFINITION.md` check.
+---
 
-## Flow Bottlenecks
+## Associate Lawyer Capacity Planning (LLP-033)
 
-The main flow bottleneck is concentrated rather than broad:
+LLP-033 is in Planning, has 1 gap, and has not yet received an ML1 review. The economics of adding a supervised associate directly affect owner compensation and margin. This project should be scheduled for an ML1 review before any recruitment activity begins. No urgency signal in this run, but it should not drift indefinitely without a review date.
 
-- `LLP-012` remains the top priority by score (`23`) and the largest single
-  project-level normalization problem.
-- The real watch cluster is small: `LLP-004`, `LLP-005`, `LLP-006`, `LLP-011`,
-  `LLP-012`, `LLP-013`, `LLP-023`, `LLP-024`, `LLP-025`, and `LLP-033`.
-- The repeated artifacts creating the most drag are
-  `SCOPE_DEFINITION.md` in the deterministic reports and missing canonical
-  `METRICS.md` wrappers in the most active operating and funnel lanes.
+---
 
-So the portfolio is not bottlenecked by too many unrelated projects. It is
-bottlenecked by a small cluster of recurring planning standards not yet fully
-normalized.
+## Structural Note: Schema Mismatch on Scope Artifacts
 
-## Doctrine Drift Signal
+The governance layer (LLM-006) reports SCOPE_DEFINITION.md as missing in 10 projects. Current LL doctrine and the LLM-004 spec both use SCOPE_STATEMENT.md as the canonical artifact. If those 10 projects carry SCOPE_STATEMENT.md, the reported violations are a tool/doctrine mismatch, not substantive non-compliance. The prior COS run flagged this; it is still unresolved. Until the deterministic governance layer is updated to check for SCOPE_STATEMENT.md, the watch count will continue to be partially inflated. ML1 should confirm the doctrine rule so the governance toolchain can be corrected.
 
-The strongest doctrine-drift signal is now explicit:
+---
 
-- the LL doctrine says `SCOPE_STATEMENT.md` is canonical
-- the `LLM-004` spec says `SCOPE_STATEMENT.md` is canonical
-- the April 4 deterministic management outputs still flag
-  `SCOPE_DEFINITION.md` as missing in 10 projects
+## Matter Layer Note
 
-That is not just project drift. It is a tool / doctrine mismatch. Until the
-deterministic management layer is updated, part of the governance output will
-continue to overstate current risk. The metric drift issue is more mixed:
-`LLP-011`, `LLP-004`, and `LLP-005` still present real canonical measurement
-gaps, while `LLP-025` should currently be read as intentionally incomplete at
-the KPI-sheet level because strategy choices remain open.
+Matter dashboards (MATTER_DIGEST, MATTER_INDEX) and the Lawyer Task Tracker are standing inputs to the LL Chief of Staff review. The most recently available matter-control data is from the April 3–4 refresh and is not re-run in this cycle. The prior COS brief flagged 25-927-00003 (Stream Ventures) as an urgent fulfillment escalation candidate and a 24-matter service-definition gap. Those signals remain visible and should not be displaced by the portfolio cycle. If the matter layer has not been refreshed since April 3, a re-run should be scheduled.
 
-## HillSide Linkage Notes (Secondary)
+---
 
-The HillSide oversight target remains cash collected by LL of at least
-`CAD 240,000` and revenue to Matthew of at least `CAD 80,000` by
-`2026-12-31`. In the cash-flow layer, Andersen remains a cross-entity item:
-fees are received in `17513721 Canada Inc`, while Andersen work is credited to
-Levine Law in the 2026 operating picture. That means the most important LL
-portfolio decisions remain the ones that improve controlled revenue generation
-without distorting the cross-entity cash picture: F02 normalization, live
-funnel scorecard control, and cleaner intake-to-opening operating discipline.
+## HillSide Linkage Note (Secondary)
 
-## Deferred Items
+HillSide cash-flow target remains CAD 240,000 collected by LL and at least CAD 80,000 revenue to Matthew by 2026-12-31. The cross-entity Andersen fee structure (fees received in 17513721 Canada Inc, credited to Levine Law) remains the key reconciliation item. No new HillSide-specific signals in this run. LL-first priorities — F02 normalization, live funnel scorecard, intake-to-opening discipline — are the actions most directly supporting the HillSide target without distorting the cross-entity picture.
 
-These do not currently require immediate ML1 judgment:
+---
 
-- `LLP-001`, `LLP-015`, `LLP-035`, `LLP-036`, `LLP-042`, `LLP-017`, `LLP-018`,
-  `LLP-003`, `LLP-009`, `LLP-010`, `LLP-002`, `LLP-014`, `LLP-027`,
-  `LLP-028`, `LLP-029`, `LLP-026`, `LLP-037`, `LLP-038`, `LLP-039`,
-  `LLP-040`, and `LLP-041` are currently on-track with no open gates in the
-  refreshed run.
-- `LLP-030`, `LLP-007`, `LLP-008`, `LLP-016`, and `LLP-043` have fallen out of
-  the live concern set after the packet-completion pass.
-- `LLP-024` remains important, but in the fresh run it is better understood as
-  part of the broader planning-normalization cluster rather than as an isolated
-  emergency.
+## Summary: Five Items for ML1 Attention
+
+1. **LLP-011** — Authorize METRICS.md for Funnel 1. Live funnel, active ad spend, no governed performance baseline.
+2. **LLP-012** — Decide: allocate capacity to close 6 planning gaps now, or issue a written hold. Also reconcile the packet's staging and offer architecture inconsistency.
+3. **LLP-025** — If METRICS.md incompleteness is intentional pending strategy choices, record a formal exception in the packet. If not intentional, direct gap closure.
+4. **LLP-033** — Schedule the first ML1 review of the Associate Lawyer capacity and economics model before any recruitment activity.
+5. **SCOPE_DEFINITION drift** — Confirm whether SCOPE_STATEMENT.md is canonical across the portfolio so the governance toolchain can be updated and the inflated watch count resolved.
