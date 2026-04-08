@@ -1,0 +1,27 @@
+{
+  "run_id": "TEST-SYNTAX-CHECK",
+  "generated_at": "2026-04-05T13:46:15+00:00",
+  "steps": [
+    {
+      "label": "Matter Admin",
+      "script": "scripts/run_matter_admin.py",
+      "return_code": 0,
+      "status": "ok",
+      "stdout": "Matter admin run complete: matters=35 threads=6 reviewed=6 unmapped=5 state_label_changes=0 sharepoint_items=584 sharepoint_unmapped=226",
+      "stderr": ""
+    },
+    {
+      "label": "Portfolio Agents (LLM-004/005/006)",
+      "script": "00_SYSTEM/scripts/run_ll_portfolio_agents.py",
+      "return_code": 0,
+      "status": "ok",
+      "stdout": "LL portfolio agents run complete: /Users/matthewlevine/Repos/ll-secondbrain_fresh/06_RUNS/RUN-2026-04-05-LL-PORTFOLIO-AGENTS-134615Z/ll_portfolio_agents",
+      "stderr": ""
+    },
+    {
+      "label": "LLM-001 Chief of Staff",
+      "status": "skipped",
+      "return_code": "\u2014"
+    }
+  ]
+}
