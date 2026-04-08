@@ -4,7 +4,7 @@ title: LLP-011_FUNNEL1_MANAGEMENT
 owner: ML1
 status: executing
 created_date: 2026-02-26
-last_updated: 2026-03-19
+last_updated: 2026-04-07
 tags: [marketing, funnel-01, executing]
 ---
 
@@ -47,11 +47,16 @@ ML1 is the sole authority for approval, activation, and promotion of this projec
 - `planning/DEPENDENCIES.md`
 - `planning/RISK_REGISTER.md`
 - `planning/COMMUNICATION_PLAN.md`
+- `planning/METRICS.md`
 - `planning/METRIC_DEFINITION.md`
 - `planning/MEASUREMENT_METHOD.md`
 - `planning/BASELINE_CAPTURE_PERIOD.md`
 - `planning/VALIDATION_REVIEW.md`
 - `planning/ML1_METRIC_APPROVAL.md`
+
+Canonical note:
+- `planning/METRICS.md` is now the canonical measurement artifact.
+- The split measurement files remain in the packet for provenance only.
 
 ## Implementation Artifacts
 - `implementation/EXECUTION_LOG.md`

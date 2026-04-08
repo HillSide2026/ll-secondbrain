@@ -4,7 +4,7 @@ title: Marketing Strategy
 owner: ML1
 status: draft
 created_date: 2026-02-25
-last_updated: 2026-03-23
+last_updated: 2026-04-07
 tags: []
 ---
 
@@ -42,6 +42,32 @@ tags: []
 - F01 sustains qualified intake and has already proven real revenue contribution, while the transition to preventative positioning is built.
 - F02 becomes the primary corporate entry path through paid diagnostics and anchors the core 2026 offer stack.
 - F03 grows vertical authority and conversion for payments regulatory work, feeding specialist matters into the broader ongoing counsel layer.
+
+## F01 Transition Rule
+
+F01 is a bridge channel, not a permanent strategic home. It should be wound
+down only after F02 has demonstrated replacement capacity in live operation.
+
+### Wind-Down Trigger
+
+Begin F01 wind-down only when all conditions below are true for `2`
+consecutive rolling `30`-day windows:
+
+- F02 produces at least `3` paid Corporate Health Checks in each window
+- F02 converts at least `1` Health Check client in each window into
+  remediation work or a monthly retainer
+- F02 Health Check -> retained/remediation conversion rate is `>=` F01
+  consult -> retained conversion rate over the same window
+- F02 generates at least `CAD 8,000` in combined collected Health Check
+  revenue plus first-month value of signed downstream engagements in each
+  window
+- Total firm active matters remain below `15`
+
+### Wind-Down Action
+
+- Reduce F01 Google Ads spend by `50%` for the next `30` days
+- If the same conditions hold during that reduced-spend month and firm monthly
+  revenue remains `>= CAD 22,000`, pause F01 entirely
 
 ## Constraints
 

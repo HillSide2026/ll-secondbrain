@@ -1,7 +1,7 @@
 # Project Health Rollup
 
-- Generated: 2026-04-05T13:46:15+00:00
-- Run ID: RUN-2026-04-05-LL-PORTFOLIO-AGENTS-134615Z
+- Generated: 2026-04-08T01:52:37+00:00
+- Run ID: RUN-2026-04-08-LL-PORTFOLIO-AGENTS-015237Z
 
 > Advisory output. ML1 approval remains required for decisions.
 ## Project Health Rollup
@@ -12,9 +12,9 @@
 | LLP-015 | on-track | 0 | 0 | 0 |
 | LLP-035 | on-track | 0 | 0 | 0 |
 | LLP-036 | on-track | 0 | 0 | 0 |
-| LLP-004 | watch | 2 | 1 | 1 |
-| LLP-005 | watch | 2 | 1 | 1 |
-| LLP-006 | watch | 1 | 1 | 0 |
+| LLP-004 | on-track | 0 | 0 | 0 |
+| LLP-005 | on-track | 0 | 0 | 0 |
+| LLP-006 | on-track | 0 | 0 | 0 |
 | LLP-007 | on-track | 0 | 0 | 0 |
 | LLP-008 | on-track | 0 | 0 | 0 |
 | LLP-016 | on-track | 0 | 0 | 0 |
@@ -26,21 +26,21 @@
 | LLP-009 | on-track | 0 | 0 | 0 |
 | LLP-010 | on-track | 0 | 0 | 0 |
 | LLP-002 | on-track | 0 | 0 | 0 |
-| LLP-023 | watch | 1 | 1 | 0 |
-| LLP-024 | watch | 1 | 1 | 0 |
+| LLP-023 | on-track | 0 | 0 | 0 |
+| LLP-024 | on-track | 0 | 0 | 0 |
 | LLP-030 | on-track | 0 | 0 | 0 |
 | LLP-031 | on-track | 0 | 0 | 0 |
 | LLP-032 | on-track | 0 | 0 | 0 |
-| LLP-033 | watch | 1 | 1 | 0 |
+| LLP-033 | on-track | 0 | 0 | 0 |
 | LLP-034 | on-track | 0 | 0 | 0 |
-| LLP-011 | watch | 2 | 1 | 1 |
-| LLP-012 | watch | 6 | 6 | 0 |
-| LLP-013 | watch | 1 | 1 | 0 |
+| LLP-011 | on-track | 0 | 0 | 0 |
+| LLP-012 | on-track | 0 | 0 | 0 |
+| LLP-013 | on-track | 0 | 0 | 0 |
 | LLP-014 | on-track | 0 | 0 | 0 |
 | LLP-027 | on-track | 0 | 0 | 0 |
 | LLP-028 | on-track | 0 | 0 | 0 |
 | LLP-029 | on-track | 0 | 0 | 0 |
-| LLP-025 | watch | 2 | 1 | 1 |
+| LLP-025 | on-track | 0 | 0 | 0 |
 | LLP-026 | on-track | 0 | 0 | 0 |
 | LLP-037 | on-track | 0 | 0 | 0 |
 | LLP-038 | on-track | 0 | 0 | 0 |
@@ -51,7 +51,7 @@
 ## Summary
 
 - Projects reviewed: 39
-- On-track: 29
-- Watch: 10
+- On-track: 39
+- Watch: 0
 - At-risk: 0
-- Average stage-2 readiness: 21%
+- Average stage-2 readiness: 28%

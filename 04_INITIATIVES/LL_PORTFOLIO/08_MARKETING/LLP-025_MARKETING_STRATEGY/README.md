@@ -5,7 +5,7 @@ owner: ML1
 status: draft
 project_stage: planning
 created_date: 2026-03-17
-last_updated: 2026-03-17
+last_updated: 2026-04-07
 tags: [marketing, strategy, positioning, objectives, goals]
 ---
 
@@ -48,7 +48,8 @@ Consolidated project governing Levine Law's market positioning, objectives, goal
 | `planning/DEPENDENCIES.md` | Doctrine, downstream project, platform, and governance dependencies |
 | `planning/RISK_REGISTER.md` | Strategic, execution, capacity, and financial risks with mitigations |
 | `planning/COMMUNICATION_PLAN.md` | Review cadence, escalation protocol, communication boundaries |
-| `planning/METRIC_FRAMEWORK.md` | KPI definitions, measurement method, and ML1 approval record (combined) |
+| `planning/METRICS.md` | Canonical KPI, baseline, validation, and approval artifact |
+| `planning/METRIC_FRAMEWORK.md` | Legacy supporting measurement note retained for reference |
 
 **Doctrine Artifacts**
 | `MARKET_POSITIONING.md` | Market positioning doctrine (ICP, differentiation, brand posture) |

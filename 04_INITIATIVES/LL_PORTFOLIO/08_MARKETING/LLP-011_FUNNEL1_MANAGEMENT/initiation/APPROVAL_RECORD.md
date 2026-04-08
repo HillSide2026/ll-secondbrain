@@ -32,6 +32,7 @@ Planning Stage Authorized: Yes
 | `planning/DEPENDENCIES.md` | approved | 2026-03-16 | Doctrine, platform, and governance dependencies accepted for live governance |
 | `planning/RISK_REGISTER.md` | approved | 2026-03-16 | Execution risks by category accepted for live governance |
 | `planning/COMMUNICATION_PLAN.md` | approved | 2026-03-16 | Execution communication cadence and escalation paths accepted for live governance |
+| `planning/METRICS.md` | normalized | 2026-04-07 | Canonical measurement wrapper created from the approved legacy measurement packet |
 | `planning/ML1_METRIC_APPROVAL.md` | approved | 2026-03-16 | Metric framework approved; numeric thresholds to be set from first 4-week operational baseline. |
 
 Planning Gate Decision: Approved to execute
@@ -41,4 +42,6 @@ Date: 2026-03-16
 Notes:
 - Funnel 01 remains active. Execution governance is now authorized.
 - Canonical stage-3 execution artifacts were established in `implementation/` on 2026-03-19.
+- Canonical `METRICS.md` was added on 2026-04-07 to normalize the packet to the
+  current planning-artifact standard.
 - Metric thresholds are recorded in `planning/ML1_METRIC_APPROVAL.md` within 30 days of execution start, based on operational baseline.

@@ -61,11 +61,14 @@ REQUIRED_STAGE2_MEASUREMENT = [
     "METRICS.md",
 ]
 
+SCOPE_ARTIFACT = "SCOPE_STATEMENT.md"
+SCOPE_ARTIFACT_ALIASES = {SCOPE_ARTIFACT, "SCOPE_DEFINITION.md"}
+
 PLANNING_PLAN_ARTIFACT = "PROJECT_PLAN.md"
 PLANNING_PLAN_ALIASES = {PLANNING_PLAN_ARTIFACT, "WORKPLAN.md"}
 
 STRATEGIC_MANAGEMENT_STAGE2_PLANNING = [
-    "SCOPE_DEFINITION.md",
+    SCOPE_ARTIFACT,
     # PROJECT_PLAN.md is preferred. Legacy WORKPLAN.md remains accepted for compatibility.
     PLANNING_PLAN_ARTIFACT,
     "ASSUMPTIONS_CONSTRAINTS.md",
@@ -75,7 +78,7 @@ STRATEGIC_MANAGEMENT_STAGE2_PLANNING = [
 ]
 
 OPERATIONAL_STAGE2_PLANNING = [
-    "SCOPE_DEFINITION.md",
+    SCOPE_ARTIFACT,
     # PROJECT_PLAN.md is preferred. Legacy WORKPLAN.md remains accepted for compatibility.
     PLANNING_PLAN_ARTIFACT,
     "DEPENDENCIES.md",
@@ -209,6 +212,8 @@ def generate_run_id() -> str:
 
 
 def requirement_aliases(name: str) -> set[str]:
+    if name == SCOPE_ARTIFACT:
+        return set(SCOPE_ARTIFACT_ALIASES)
     if name == PLANNING_PLAN_ARTIFACT:
         return set(PLANNING_PLAN_ALIASES)
     return {name}

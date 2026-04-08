@@ -28,7 +28,7 @@ All other workstreams (KPI formalization, agent governance, payments vertical) r
 |---|---|---|---|
 | WS-01 ICP-01 Channel Strategy | Evaluate candidate channels; select SEO keyword direction; select F02 distribution architecture | ML1 | Channel strategy decision; updated `MARKET_POSITIONING.md` if ICP refined |
 | WS-02 F02 Build | Select entry offer framing; define scope, pricing, delivery format, landing page; set launch milestone | ML1 | F02 product spec; updated `funnel-02/` artifacts |
-| WS-03 KPI Formalization | Complete Phase 2 (provisional targets) and Phase 3 (KPI lock) using existing 30-day baseline | ML1 | `METRIC_FRAMEWORK.md` (ML1-approved) |
+| WS-03 KPI Formalization | Complete Phase 2 (provisional targets) and Phase 3 (KPI lock) using existing 30-day baseline | ML1 | `METRICS.md` (ML1-approved) |
 | WS-04 Payments Vertical Program | Define governed content cadence and conversion architecture for F03; set entry-offer-to-retainer targets | ML1 + Blog/SEO Agent | Updated `funnel-03/` artifacts; content cadence schedule |
 | WS-05 Agent Architecture Governance | Finalize activation status, review cadence, and scope for all five agents; confirm Strategic Editor protocol | ML1 | Updated `AGENT_ROSTER.md`; agent activation decisions |
 | WS-06 F01 Wind-Down Framework | Define trigger conditions and decision criteria for reducing F01 spend | ML1 | Wind-down framework added to `MARKETING_STRATEGY.md` |
@@ -88,8 +88,8 @@ The F02 entry offer is internally called "Corporate Health Check." Alternative f
 | M1 — Initiation approved, Planning authorized | 2026-03-17 | complete | `APPROVAL_RECORD.md` |
 | M2 — ICP-01 channel hypothesis selected | TBD | pending | Channel strategy decision memo |
 | M3 — F02 entry offer defined and scoped | TBD | pending | F02 product spec |
-| M4 — KPI provisional targets set (Phase 2) | TBD | pending | `METRIC_FRAMEWORK.md` draft |
-| M5 — KPI targets ML1-approved (Phase 3) | TBD | pending | `METRIC_FRAMEWORK.md` approved |
+| M4 — KPI provisional targets set (Phase 2) | TBD | pending | `METRICS.md` draft |
+| M5 — KPI targets ML1-approved (Phase 3) | TBD | pending | `METRICS.md` approved |
 | M6 — Agent architecture confirmed | TBD | pending | Updated `AGENT_ROSTER.md` |
 | M7 — Planning gate packet submitted | TBD | pending | Updated `APPROVAL_RECORD.md` |
 | M8 — F02 launched | TBD | pending | F02 landing page live; first diagnostic available |

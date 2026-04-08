@@ -32,6 +32,7 @@ Planning Stage Authorized: Yes
 | `planning/DEPENDENCIES.md` | drafted | 2026-03-17 | Doctrine, platform, and governance dependencies documented |
 | `planning/RISK_REGISTER.md` | drafted | 2026-03-17 | Execution risks by category documented |
 | `planning/COMMUNICATION_PLAN.md` | drafted | 2026-03-17 | Review cadence and escalation paths documented |
-| `planning/METRIC_FRAMEWORK.md` | drafted | 2026-03-17 | KPI definitions, measurement method, and threshold placeholders documented |
+| `planning/METRICS.md` | drafted | 2026-04-07 | Canonical measurement artifact created by consolidating the legacy metric framework |
+| `planning/METRIC_FRAMEWORK.md` | drafted | 2026-03-17 | Legacy supporting measurement note retained for reference |
 
 Planning Gate Decision: Pending ML1 review

@@ -4,15 +4,15 @@ title: LLP-004 Approval Record
 owner: ML1
 status: approved
 created_date: 2026-03-08
-last_updated: 2026-03-08
+last_updated: 2026-04-07
 ---
 
 # Approval Record
 
 Project: LLP-004 - Onboarding
-Stage: Planning
+Stage: Executing
 
-Approval Status: Planning In Progress (Initiation Approved)
+Approval Status: Executing Authorized
 
 ## Stage Gate: Initiating -> Planning
 
@@ -42,10 +42,11 @@ Planning Stage Authorized: Yes
 | DEPENDENCIES.md | drafted | 2026-03-08 | System and process dependencies documented. |
 | RISK_REGISTER.md | drafted | 2026-03-08 | Scope/schedule/budget execution risks documented. |
 | COMMUNICATION_PLAN.md | drafted | 2026-03-08 | Weekly operating cadence and escalation paths defined. |
-| METRIC_DEFINITION.md | drafted | 2026-03-08 | KPI set finalized for onboarding execution control. |
-| MEASUREMENT_METHOD.md | drafted | 2026-03-08 | KPI measurement rules and evidence method defined. |
-| BASELINE_CAPTURE_PERIOD.md | drafted | 2026-03-08 | Baseline window and inclusion criteria defined. |
-| VALIDATION_REVIEW.md | drafted | 2026-03-08 | Readiness validation criteria documented. |
+| METRICS.md | normalized | 2026-04-07 | Canonical measurement wrapper created from the approved legacy measurement packet. |
+| METRIC_DEFINITION.md | drafted | 2026-03-08 | Legacy source artifact retained for provenance. |
+| MEASUREMENT_METHOD.md | drafted | 2026-03-08 | Legacy source artifact retained for provenance. |
+| BASELINE_CAPTURE_PERIOD.md | drafted | 2026-03-08 | Legacy source artifact retained for provenance. |
+| VALIDATION_REVIEW.md | drafted | 2026-03-08 | Legacy source artifact retained for provenance. |
 | ML1_METRIC_APPROVAL.md | approved | 2026-03-16 | Thresholds approved by ML1. |
 
 Planning Gate Decision: Approved to execute
@@ -53,4 +54,5 @@ Planning Approved By: ML1
 Date: 2026-03-16
 
 Notes:
-- Execution artifacts are prepared in `implementation/`, but runtime execution remains gated by explicit ML1 Planning -> Executing approval.
+- Canonical `METRICS.md` was added on 2026-04-07 to normalize the packet to the
+  current planning-artifact standard.

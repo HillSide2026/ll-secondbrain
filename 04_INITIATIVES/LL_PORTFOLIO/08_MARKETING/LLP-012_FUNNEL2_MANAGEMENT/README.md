@@ -2,9 +2,9 @@
 id: llp-012_funnel2_management__readme_md
 title: LLP-012_FUNNEL2_MANAGEMENT
 owner: ML1
-status: initiating
+status: executing
 created_date: 2026-02-26
-last_updated: 2026-03-15
+last_updated: 2026-04-07
 tags: [marketing, funnel-02, initiation]
 ---
 
@@ -46,8 +46,9 @@ ML1 is the sole authority for approval, activation, and promotion of this projec
 
 ## Approval State
 Initiating -> Planning was approved by ML1 on `2026-03-16`.
-Planning drafts and research notes now live in `planning/`.
-Execution remains unauthorized.
+Planning -> Executing was confirmed by ML1 on `2026-04-01`.
+The packet was normalized on `2026-04-07` so the planning and implementation
+artifacts match the live project state.
 
 Canonical funnel definition:
 - corporate law services for growing businesses with more than `$1M` annual cash flow

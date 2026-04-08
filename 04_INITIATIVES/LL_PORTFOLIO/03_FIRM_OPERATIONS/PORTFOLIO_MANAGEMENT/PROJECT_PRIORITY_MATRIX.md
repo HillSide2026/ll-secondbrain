@@ -1,42 +1,42 @@
 # PROJECT PRIORITY MATRIX
 
-- Generated: 2026-04-05T13:46:15+00:00
-- Run ID: RUN-2026-04-05-LL-PORTFOLIO-AGENTS-134615Z
+- Generated: 2026-04-08T01:52:37+00:00
+- Run ID: RUN-2026-04-08-LL-PORTFOLIO-AGENTS-015237Z
 
 > Advisory output. ML1 approval remains required for decisions.
 ## Priority Matrix
 
 | Rank | Project | Priority Score | Health | Relevant Open Gates | Next Focus |
 | --- | --- | --- | --- | --- | --- |
-| 1 | LLP-012 | 23 | watch | 6 | Complete stage-2 planning packet |
-| 2 | LLP-004 | 12 | watch | 2 | Complete stage-2 planning packet |
-| 3 | LLP-005 | 12 | watch | 2 | Complete stage-2 planning packet |
-| 4 | LLP-011 | 12 | watch | 2 | Complete stage-2 planning packet |
-| 5 | LLP-025 | 12 | watch | 2 | Complete stage-2 planning packet |
-| 6 | LLP-006 | 8 | watch | 1 | Complete stage-2 planning packet |
-| 7 | LLP-013 | 8 | watch | 1 | Complete stage-2 planning packet |
-| 8 | LLP-023 | 8 | watch | 1 | Complete stage-2 planning packet |
-| 9 | LLP-024 | 8 | watch | 1 | Complete stage-2 planning packet |
-| 10 | LLP-033 | 8 | watch | 1 | Complete stage-2 planning packet |
-| 11 | LLP-001 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
-| 12 | LLP-002 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
-| 13 | LLP-003 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
-| 14 | LLP-007 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
-| 15 | LLP-008 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
-| 16 | LLP-009 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
-| 17 | LLP-010 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
-| 18 | LLP-014 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
-| 19 | LLP-015 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
-| 20 | LLP-016 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
-| 21 | LLP-017 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
-| 22 | LLP-018 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
-| 23 | LLP-026 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
-| 24 | LLP-027 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
-| 25 | LLP-028 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
-| 26 | LLP-029 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
-| 27 | LLP-030 | 0 | on-track | 0 | Advance to next gated artifact set |
-| 28 | LLP-031 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
-| 29 | LLP-032 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 1 | LLP-001 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 2 | LLP-002 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 3 | LLP-003 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 4 | LLP-004 | 0 | on-track | 0 | Advance to next gated artifact set |
+| 5 | LLP-005 | 0 | on-track | 0 | Advance to next gated artifact set |
+| 6 | LLP-006 | 0 | on-track | 0 | Advance to next gated artifact set |
+| 7 | LLP-007 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 8 | LLP-008 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 9 | LLP-009 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 10 | LLP-010 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 11 | LLP-011 | 0 | on-track | 0 | Advance to next gated artifact set |
+| 12 | LLP-012 | 0 | on-track | 0 | Advance to next gated artifact set |
+| 13 | LLP-013 | 0 | on-track | 0 | Advance to next gated artifact set |
+| 14 | LLP-014 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 15 | LLP-015 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 16 | LLP-016 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 17 | LLP-017 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 18 | LLP-018 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 19 | LLP-023 | 0 | on-track | 0 | Advance to next gated artifact set |
+| 20 | LLP-024 | 0 | on-track | 0 | Advance to next gated artifact set |
+| 21 | LLP-025 | 0 | on-track | 0 | Advance to next gated artifact set |
+| 22 | LLP-026 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 23 | LLP-027 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 24 | LLP-028 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 25 | LLP-029 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 26 | LLP-030 | 0 | on-track | 0 | Advance to next gated artifact set |
+| 27 | LLP-031 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 28 | LLP-032 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
+| 29 | LLP-033 | 0 | on-track | 0 | Advance to next gated artifact set |
 | 30 | LLP-034 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
 | 31 | LLP-035 | 0 | on-track | 0 | Hold in Initiating until ML1 review |
 | 32 | LLP-036 | 0 | on-track | 0 | Hold in Initiating until ML1 review |

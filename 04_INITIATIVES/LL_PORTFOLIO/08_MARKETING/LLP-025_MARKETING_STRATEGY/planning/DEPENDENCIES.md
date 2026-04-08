@@ -36,7 +36,7 @@ Stage: Planning
 
 | Item | Dependency |
 |---|---|
-| KPI target approval | ML1 must review and approve METRIC_FRAMEWORK.md before execution is authorized |
+| KPI target approval | ML1 must review and approve METRICS.md before execution is authorized |
 | ICP-01 channel hypothesis | ML1 decision memo required before F02 distribution architecture can be defined |
 | F02 offer scope | ML1 approval required before build begins |
 | Agent activation decisions | ML1 approval required for any agent moving from specified to active |
