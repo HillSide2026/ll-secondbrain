@@ -16,7 +16,7 @@ Levine Law currently operates with two Ontario business audiences and one separa
 
 - **ICP-01**: the reactive Funnel 01 Ontario entrepreneur audience
 - **ICP-02**: the intended Funnel 02 Ontario operating company audience
-- **ICP-03**: the Funnel 03 payments / regulatory audience
+- **ICP-03**: the Funnel 03 payments / regulatory audience, with a Canada-connected primary lane and an emerging-markets stablecoin / tokenized-payments secondary lane
 
 The current channel portfolio is as follows:
 

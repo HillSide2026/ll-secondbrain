@@ -29,7 +29,8 @@ ICP-02: Ontario Operating Company
 - Not in active crisis
 
 ICP-03: Payments / Regulatory Audience
-- Canada exposure
+- Primary: Canada-connected payments operators or managers with live regulatory, compliance, reporting, or payments-structure needs
+- Secondary: international (emerging markets) stablecoin or tokenized-payments operators whose legal/commercial risk is driven by strategic-partnership architecture, even before a Canada nexus exists
 - Commercially minded
 - Structural clarity preference
 - Regulatory awareness
@@ -41,7 +42,7 @@ Primary Category:
 - Fractional Counsel / Legal Function as a Service (Ontario SMB operators)
 
 Secondary Category:
-- Payments/MSB/PSP Regulatory Counsel (Canada exposure)
+- Payments/MSB/PSP Regulatory Counsel with adjacent tokenized-payments and strategic-partnership architecture matters
 
 Core 2026 Offer Stack:
 - Corporate Health Check as the core entry offer, with bounded regulatory review where relevant
@@ -51,7 +52,7 @@ Core 2026 Offer Stack:
 Core Market Definition:
 - Ontario entrepreneurs entering through reactive legal needs (F01 / ICP-01)
 - Ontario-based operating businesses with more than $1M revenue (F02 / ICP-02)
-- Payments / regulatory operators with Canada exposure (F03 / ICP-03)
+- Payments / regulatory operators with a Canada-connected primary lane and an emerging-markets tokenized-payments secondary lane (F03 / ICP-03)
 
 ## Differentiation Thesis
 
@@ -67,6 +68,7 @@ Core Market Definition:
 - Preventative, systems-oriented counsel for operators
 - Governance clarity and regulatory stability focus
 - Structured entry points that filter for fit and lead into ongoing counsel
+- Bay Street-caliber strategic and regulatory framing at a price point serious non-incumbent operators can actually afford
 
 ## What LL Is NOT
 
@@ -81,6 +83,7 @@ Core Market Definition:
 - Paid diagnostics and entry services (used to filter for fit)
 - Productized entry points prior to broader engagements
 - Fractional counsel as the principal ongoing relationship model
+- For F03 especially, major-firm-style strategic judgment at a materially more accessible price point than a Wall Street, City, or Bay Street firm
 
 ## Risk Posture
 

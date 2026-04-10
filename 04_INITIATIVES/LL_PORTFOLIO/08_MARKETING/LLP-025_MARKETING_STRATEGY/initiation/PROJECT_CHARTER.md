@@ -41,7 +41,8 @@ Govern Levine Law's marketing strategy as a managed project — maintaining posi
 - Document-ready; not in active crisis
 
 **ICP-03 — Payments / Regulatory Audience**
-- Canada exposure
+- Primary: Canada-connected payments operators or managers with live regulatory, compliance, reporting, or payments-structure needs
+- Secondary: international (emerging markets) stablecoin or tokenized-payments operators whose legal/commercial risk is driven by strategic-partnership architecture, even before a Canada nexus exists
 - Commercially minded; structural clarity preference
 - Regulatory awareness; decision-maker access
 
@@ -50,7 +51,7 @@ Govern Levine Law's marketing strategy as a managed project — maintaining posi
 | Category | Description |
 |---|---|
 | Primary | Fractional Counsel / Legal Function as a Service (Ontario SMB operators) |
-| Secondary | Payments / MSB / PSP Regulatory Counsel (Canada exposure) |
+| Secondary | Payments / MSB / PSP Regulatory Counsel with adjacent tokenized-payments and strategic-partnership architecture matters |
 
 ## Differentiation Thesis
 
@@ -59,6 +60,7 @@ Govern Levine Law's marketing strategy as a managed project — maintaining posi
 - Regulatory systems literacy (payments/MSB/PSP)
 - Operator-aligned counsel (not academic, not alarmist)
 - Productized entry points as fit filter (Corporate Health Check, MSB registration, AML health check)
+- For sophisticated F03 buyers, Bay Street-caliber strategic and regulatory framing at a more accessible price point than major-firm counsel
 
 ## Marketing Objectives
 

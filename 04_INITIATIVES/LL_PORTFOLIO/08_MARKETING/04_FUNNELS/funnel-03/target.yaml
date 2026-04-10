@@ -1,4 +1,12 @@
-summary: ICP-03 is the F03 payments / regulatory audience.
+summary: ICP-03 is the F03 payments / regulatory audience with a Canada-connected primary lane and an emerging-markets tokenized-payments secondary lane.
+
+primary_profile:
+  label: Canada-connected payments operator or manager
+  summary: Canada-connected payments operators or managers with live regulatory, compliance, reporting, or payments-structure needs.
+
+secondary_profile:
+  label: Emerging-markets stablecoin or tokenized-payments operator
+  summary: International emerging-markets stablecoin or tokenized-payments operators whose legal/commercial risk is driven by strategic-partnership architecture, even before a Canada nexus exists.
 
 focus_areas:
   - fintech
@@ -6,8 +14,9 @@ focus_areas:
   - MSBs
   - RPAA registrants
   - stablecoin participants
+  - strategic partnership architecture
 
-core_identity: Decision-maker in a payments business where regulatory classification affects capital, banking access, or launch viability.
+core_identity: Decision-maker in a payments business where regulatory classification, reporting obligations, or strategic-partnership structure affects capital, banking access, or launch viability.
 
 roles:
   - Founder / Co-Founder (fintech)
@@ -18,7 +27,9 @@ roles:
   - Product lead responsible for payments rails or stablecoin infrastructure
   - CFO where regulatory exposure affects capital planning
 
-geography: Canada (active operations, exposure, or entry interest)
+geography:
+  primary: Canada-connected
+  secondary: international emerging markets
 
 business_profile:
   stage: pre-launch to growth
@@ -32,6 +43,8 @@ business_profile:
     - custody and safeguarding requirements
     - bank reaction and onboarding risk
     - reporting obligations
+    - sponsor-bank, processor, issuer, or infrastructure partner dependence
+    - strategic partnership contracts shape legal and commercial risk
 
 maturity_triggers:
   - investor diligence flags regulatory uncertainty
@@ -40,6 +53,7 @@ maturity_triggers:
   - stablecoin architecture moves from idea to implementation
   - cross-border expansion triggers Canadian registration issues
   - product design depends on regulatory perimeter decisions
+  - strategic partnership negotiation exposes structural or regulatory weakness
 
 conversion_mode: Capital consequences, not fear or crisis.
 
@@ -59,13 +73,19 @@ psych_profile:
     - clear perimeter framing
     - order of operations for regulatory decisions
     - commercially grounded guidance
+    - institutional-grade judgment without major-firm pricing
 
 economic_buyer:
   budget_profile:
     - accepts five-figure engagements
     - budget for specialized regulatory advice
     - capital at risk justifies proper structuring
+    - cannot support Wall Street, City, or Bay Street rates on an ongoing basis
   relationship_potential: May evolve into long-term advisory relationship
+
+counsel_preference:
+  - would prefer a Wall Street, City, or Bay Street law firm if budget permitted
+  - wants similar strategic rigor at an acceptable price point
 
 excludes:
   - retail crypto traders

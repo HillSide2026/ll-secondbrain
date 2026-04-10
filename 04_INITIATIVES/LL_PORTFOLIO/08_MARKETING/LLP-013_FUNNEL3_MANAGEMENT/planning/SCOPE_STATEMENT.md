@@ -4,7 +4,7 @@ title: LLP-013 Funnel 3 — Scope Statement
 owner: ML1
 status: draft
 created_date: 2026-03-18
-last_updated: 2026-04-03
+last_updated: 2026-04-09
 tags: [funnel-03, marketing, planning, scope]
 ---
 
@@ -29,8 +29,12 @@ Stage: Planning
 ### 1. Positioning and ICP Formalization
 
 - Define and lock the Funnel 3 ICP as ICP-03: the F03 payments / regulatory audience.
+- Define the primary ICP-03 profile: Canada-connected payments operators or managers with live regulatory, compliance, reporting, or payments-structure needs.
+- Define the secondary ICP-03 profile: international (emerging markets) stablecoin or tokenized-payments operators whose legal/commercial risk is driven by strategic-partnership architecture, even before a Canada nexus exists.
 - Confirm positioning claim: Levine Law as GTA's specialist payments regulatory counsel for operator-side MSB, RPAA, AML, and adjacent payment-structuring work — not a fractional GC, not a full-service firm. Tokenized-payment matters are adjacent and bounded, not a standalone securities lane.
+- Confirm value proposition claim: Bay Street-caliber strategic and regulatory judgment at an acceptable price point for serious operators who cannot support major-firm pricing.
 - Define the competitive white space explicitly: no GTA firm currently holds the "specialist payments regulatory + fractional GC" position. Funnel 3 exists to claim it.
+- Record the internal strategic upside of the secondary profile explicitly: access to market information and practice-skill development in tokenized-payments and strategic-partnership architecture matters.
 
 ### 2. Channel Architecture
 

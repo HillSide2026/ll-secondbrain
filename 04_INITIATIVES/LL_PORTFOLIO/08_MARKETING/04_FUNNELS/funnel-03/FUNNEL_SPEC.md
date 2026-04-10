@@ -4,7 +4,7 @@ title: Funnel Spec — Funnel 03
 owner: ML1
 status: planned
 created_date: 2026-02-25
-last_updated: 2026-04-03
+last_updated: 2026-04-09
 tags: []
 ---
 
@@ -20,7 +20,7 @@ tags: []
 
 ## Purpose / Role
 
-Authority-building acquisition for payments/MSB/PSP regulatory counsel with Canada exposure.
+Authority-building acquisition for payments/MSB/PSP regulatory counsel, including adjacent tokenized-payments and strategic-partnership architecture matters.
 
 ## Positioning Reference
 
@@ -32,7 +32,13 @@ Authority-building acquisition for payments/MSB/PSP regulatory counsel with Cana
 
 ICP-03: Payments / Regulatory Audience
 
-- Fintech, payments, or stablecoin decision-makers with Canada exposure
+Primary:
+- Canada-connected payments operators or managers with live regulatory, compliance, reporting, or payments-structure needs
+
+Secondary:
+- International (emerging markets) stablecoin or tokenized-payments operators whose legal/commercial risk is driven by strategic-partnership architecture, even before a Canada nexus exists
+
+Shared traits:
 - Commercially minded; prefers structural clarity
 - Decision-maker access
 
@@ -69,7 +75,7 @@ Excludes:
 
 ## Core Narrative / Promise
 
-Specialized payments, MSB, and PSP regulatory counsel for operators making structural, capital-impacting decisions, with tokenized-payment fact patterns handled as bounded adjacent issues rather than a standalone securities lane.
+Bay Street-caliber payments, MSB, and PSP regulatory counsel for serious operators making structural, capital-impacting decisions at a price point below major-firm counsel, with tokenized-payment fact patterns handled as bounded adjacent issues rather than a standalone securities lane.
 
 ## Conversion Event Definition
 

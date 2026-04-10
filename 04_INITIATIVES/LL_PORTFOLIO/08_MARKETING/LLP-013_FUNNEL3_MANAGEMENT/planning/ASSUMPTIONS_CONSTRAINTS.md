@@ -4,7 +4,7 @@ title: LLP-013 Funnel 3 — Assumptions and Constraints
 owner: ML1
 status: draft
 created_date: 2026-03-18
-last_updated: 2026-03-18
+last_updated: 2026-04-09
 tags: [funnel-03, marketing, planning, assumptions, constraints]
 ---
 
@@ -23,6 +23,7 @@ Stage: Planning
 - RPAA registration and MSB compliance work is the clearest near-term demand signal — these are not hypothetical needs, they are current regulatory obligations.
 - LinkedIn Ads can target decision-makers at GTA payments/fintech companies effectively at a budget of $1,500–$3,000/month. This assumption must be validated within 60 days of campaign launch.
 - No GTA law firm currently holds a dominant, recognized "specialist payments regulatory + boutique" position that would block Levine Law from claiming the niche. (Confirmed by Soulpepper competitive analysis March 2026.)
+- The secondary ICP-03 profile values Bay Street-caliber strategic judgment but is often priced out of Wall Street, City, or Bay Street firms; Levine Law can win this work without abandoning specialist positioning.
 
 **Operations:**
 - ML1 can handle F3-sourced consult demand within the 20-billable-hour/week ceiling. F3 targets 1–3 new matters per month, which does not materially increase total matter volume if F1 and F2 volumes are stable.
@@ -32,6 +33,7 @@ Stage: Planning
 **Conversion:**
 - The regulatory triage consultation at a fixed fee is a viable entry offer for ICP-03. Buyers with active regulatory questions will book a defined-scope session.
 - RPAA and CARF deadlines in 2026 and 2027 are genuine buying triggers — operators facing deadlines are more likely to convert from content to consultation than operators browsing for general information.
+- Strategic-partnership pressure is a real conversion trigger for the secondary ICP-03 profile even before Canada exposure exists.
 
 ---
 

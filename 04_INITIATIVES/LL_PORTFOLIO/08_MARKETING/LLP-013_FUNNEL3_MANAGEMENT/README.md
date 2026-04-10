@@ -4,7 +4,7 @@ title: LLP-013_FUNNEL3_MANAGEMENT
 owner: ML1
 status: planning
 created_date: 2026-02-26
-last_updated: 2026-04-03
+last_updated: 2026-04-09
 tags: [marketing, funnel-03, planning]
 ---
 
@@ -44,6 +44,15 @@ Canonical offer map:
 
 Canonical audience map:
 - `ICP-03` = F03 payments / regulatory audience
+- Primary = Canada-connected payments operators or managers with live regulatory, compliance, reporting, or payments-structure needs
+- Secondary = international (emerging markets) stablecoin or tokenized-payments operators whose legal/commercial risk is driven by strategic-partnership architecture, even before a Canada nexus exists
+
+Positioning note:
+- For the secondary ICP-03 profile especially, Levine Law offers Bay Street-caliber strategic and regulatory framing at an acceptable price point for operators who would prefer Wall Street, City, or Bay Street counsel but cannot afford those firms.
+
+Strategic upside to LL:
+- Access to valuable market information from emerging-markets stablecoin and tokenized-payments operators
+- Exposure to strategic-partnership architecture issues that deepen payments-regulatory pattern recognition and practice skill
 
 ## Supporting Funnel Assets
 
