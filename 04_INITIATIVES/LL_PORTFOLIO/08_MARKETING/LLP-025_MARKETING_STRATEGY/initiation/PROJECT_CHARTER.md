@@ -40,7 +40,7 @@ Govern Levine Law's marketing strategy as a managed project — maintaining posi
 - Has an accountant involved
 - Document-ready; not in active crisis
 
-**F03 Audience — Fintech / Payments Operator**
+**ICP-03 — Payments / Regulatory Audience**
 - Canada exposure
 - Commercially minded; structural clarity preference
 - Regulatory awareness; decision-maker access

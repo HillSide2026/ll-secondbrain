@@ -25,10 +25,12 @@ Authority-building acquisition for payments/MSB/PSP regulatory counsel with Cana
 ## Positioning Reference
 
 - 00_POSITIONING/MARKET_POSITIONING.md
-- ICP-02: Fintech / Payments Operator
+- ICP-03: Payments / Regulatory Audience
 - Category: Payments/MSB/PSP Regulatory Counsel
 
 ## Target ICP (Must Match Positioning)
+
+ICP-03: Payments / Regulatory Audience
 
 - Fintech, payments, or stablecoin decision-makers with Canada exposure
 - Commercially minded; prefers structural clarity

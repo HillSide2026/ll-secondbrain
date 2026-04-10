@@ -14,7 +14,7 @@ ML1 Approval Status: **Pending**
 - Targets are set in phases: provisional (Day 30–45), then locked (Day 60–90).
 - Positioning overrides metrics. If hitting a metric target requires compromising positioning or ICP, the metric target is wrong.
 - 30-day baseline data is available. Provisional targets should be set now.
-- Audience schema for this framework: `ICP-01` = F01 Ontario entrepreneur, `ICP-02` = F02 Ontario operating company, `F03 audience` = payments / fintech / MSB / PSP operator.
+- Audience schema for this framework: `ICP-01` = F01 Ontario entrepreneur, `ICP-02` = F02 Ontario operating company, `ICP-03` = F03 payments / regulatory audience.
 
 ---
 
@@ -102,7 +102,7 @@ Role: Vertical authority build; entry offers → AML counsel retainer
 
 | KPI | Definition | Measurement Source | Review Cadence | Provisional Target | Locked Target | Notes |
 |---|---|---|---|---|---|---|
-| Cost per qualified lead (CPL) | Spend ÷ qualified leads (F03 audience filter) | Ads + GHL | Monthly | TBD — set from 30-day baseline | TBD | Qualified = Canadian exposure, decision-maker access |
+| Cost per qualified lead (CPL) | Spend ÷ qualified leads (ICP-03 filter) | Ads + GHL | Monthly | TBD — set from 30-day baseline | TBD | Qualified = Canadian exposure, decision-maker access |
 | Consult show rate | Booked consults that occur ÷ total booked | GHL | Monthly | TBD | TBD | |
 | Entry-offer conversion rate | Entry offer purchases ÷ qualified leads | GHL / Clio | Monthly | TBD | TBD | Entry offers: MSB registration, AML health check |
 | Entry-offer to retainer conversion | AML retainers ÷ entry offers delivered | Clio | Monthly | TBD | TBD | Primary economic metric for F03 |
@@ -159,12 +159,12 @@ Role: Vertical authority build; entry offers → AML counsel retainer
 | KPI | Formula | What It Tells You | Leading or Lagging |
 |---|---|---|---|
 | Content impressions and CTR (payments topics) | Impressions and click-through rate on payments/MSB content | Whether the authority content is reaching the right audience | Leading |
-| Qualified F03 lead volume | Count of F03 audience leads (Canadian exposure, decision-maker access) | Whether authority content is converting to actionable pipeline | Leading |
+| Qualified F03 lead volume | Count of ICP-03 leads (Canadian exposure, decision-maker access) | Whether authority content is converting to actionable pipeline | Leading |
 | Entry offer conversion rate | Entry offer purchases ÷ qualified F03 leads | Whether the productized entry (MSB registration, AML health check) is compelling to this audience | Leading |
 | Entry offer to retainer conversion | AML/regulatory retainers ÷ entry offers delivered | Whether entry offer clients see LL as their ongoing regulatory counsel | Lagging |
 | Retainer ARR from F03 | Annualized retainer revenue from F03 clients | Economic output of the vertical | Lagging |
 
-**Failure signal**: High impressions + low CTR = content is not specific enough to the F03 audience problem. High CTR + low entry offer conversion = audience is interested but not convinced to purchase. High entry offer purchase + low retainer conversion = entry offer is satisfying the immediate need but not establishing ongoing counsel relationship.
+**Failure signal**: High impressions + low CTR = content is not specific enough to the ICP-03 problem set. High CTR + low entry offer conversion = audience is interested but not convinced to purchase. High entry offer purchase + low retainer conversion = entry offer is satisfying the immediate need but not establishing ongoing counsel relationship.
 
 ---
 

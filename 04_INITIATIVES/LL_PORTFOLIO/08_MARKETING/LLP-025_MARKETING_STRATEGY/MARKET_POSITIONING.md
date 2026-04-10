@@ -28,7 +28,7 @@ ICP-02: Ontario Operating Company
 - Document-ready
 - Not in active crisis
 
-F03 Audience: Fintech / Payments Operator
+ICP-03: Payments / Regulatory Audience
 - Canada exposure
 - Commercially minded
 - Structural clarity preference
@@ -51,7 +51,7 @@ Core 2026 Offer Stack:
 Core Market Definition:
 - Ontario entrepreneurs entering through reactive legal needs (F01 / ICP-01)
 - Ontario-based operating businesses with more than $1M revenue (F02 / ICP-02)
-- Fintech / payments / MSB / PSP operators with Canadian exposure (F03 audience)
+- Payments / regulatory operators with Canada exposure (F03 / ICP-03)
 
 ## Differentiation Thesis
 

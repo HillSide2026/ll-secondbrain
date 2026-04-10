@@ -1,4 +1,4 @@
-summary: Fintech, payments, or stablecoin decision-makers with exposure to or interest in Canada.
+summary: ICP-03 is the F03 payments / regulatory audience.
 
 focus_areas:
   - fintech
@@ -18,12 +18,12 @@ roles:
   - Product lead responsible for payments rails or stablecoin infrastructure
   - CFO where regulatory exposure affects capital planning
 
-geography: Canada (exposure or interest)
+geography: Canada (active operations, exposure, or entry interest)
 
 business_profile:
-  stage: pre-launch to early-growth
+  stage: pre-launch to growth
   revenue_range: varies (can be pre-revenue but funded)
-  funding_profile: venture-backed or planning to raise
+  funding_profile: venture-backed, growth-financed, or planning to raise
   operating_reality:
     - integrating payments rails or digital asset flows
     - facing MSB registration questions

@@ -42,6 +42,9 @@ Canonical offer map:
 - Entry offers: `MSB Registration Mandate`, `Suspicious Transaction Triage & STR Filing`, `AML Health Check`
 - Core offers: `Suspicious Transaction Reporting Triage & Playbook`, `MSB Effectiveness Review`, `RPAA Reporting`, `Ongoing AML Counsel Retainer`
 
+Canonical audience map:
+- `ICP-03` = F03 payments / regulatory audience
+
 ## Supporting Funnel Assets
 
 - `04_FUNNELS/funnel-03/BD_NETWORKING_PLAN.md`

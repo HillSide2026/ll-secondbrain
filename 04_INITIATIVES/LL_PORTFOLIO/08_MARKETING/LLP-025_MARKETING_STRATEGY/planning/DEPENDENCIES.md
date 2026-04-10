@@ -8,7 +8,7 @@ Stage: Planning
 
 | Dependency | Source | Risk if Unavailable |
 |---|---|---|
-| Audience definitions (ICP-01, ICP-02, F03 audience) | `MARKET_POSITIONING.md` | All channel and funnel decisions are unanchored |
+| Audience definitions (ICP-01, ICP-02, ICP-03) | `MARKET_POSITIONING.md` | All channel and funnel decisions are unanchored |
 | Marketing objectives (OBJ-01, OBJ-02, OBJ-03) | `OBJECTIVES.md` | KPI targets lose upstream alignment |
 | Marketing strategy thesis and governance rules | `MARKETING_STRATEGY.md` | Funnel creation and agent decisions have no governing rules |
 | Funnel specs (F01, F02, F03) | `04_FUNNELS/funnel-01,02,03/` | Offer mapping and channel strategy cannot be defined without funnel specs |

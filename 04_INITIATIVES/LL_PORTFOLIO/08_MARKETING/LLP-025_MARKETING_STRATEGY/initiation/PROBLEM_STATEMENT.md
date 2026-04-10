@@ -16,13 +16,13 @@ Levine Law currently operates with two Ontario business audiences and one separa
 
 - **ICP-01**: the reactive Funnel 01 Ontario entrepreneur audience
 - **ICP-02**: the intended Funnel 02 Ontario operating company audience
-- **F03 audience**: payments / fintech / MSB / PSP operators with Canadian exposure
+- **ICP-03**: the Funnel 03 payments / regulatory audience
 
 The current channel portfolio is as follows:
 
 - **Funnel 01 (Google Ads)**: Active. Generates reactive, search-intent-driven inquiries. This is the live ICP-01 bridge audience: Ontario entrepreneurs and small business owners with reactive legal triggers. It also skews toward crisis-driven, transactional, and low-fit matters.
 - **Funnel 02 (Paid Corporate Health Check)**: Not launched. This is the intended primary acquisition path for ICP-02, but the entry offer has not been built or deployed.
-- **Funnel 03 (Payments/MSB)**: Active. Serves the F03 payments audience. Separate vertical; does not address the ICP-02 gap.
+- **Funnel 03 (Payments/MSB)**: Active. Serves ICP-03. Separate vertical; does not address the ICP-02 gap.
 
 Baseline KPI data has been collected (30+ days). Targets have not been formalized.
 

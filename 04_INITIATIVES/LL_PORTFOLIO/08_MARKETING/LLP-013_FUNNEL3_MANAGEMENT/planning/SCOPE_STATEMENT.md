@@ -28,8 +28,7 @@ Stage: Planning
 
 ### 1. Positioning and ICP Formalization
 
-- Define and lock the Funnel 3 ICP as ICP-02: Canadian payments/MSB/fintech operators with Canadian regulatory exposure.
-- Sub-segments to target: MSBs seeking registration or effectiveness reviews, RPAA-regulated fintechs, neobanks, embedded finance operators, crypto businesses with Canadian regulatory exposure, international fintechs entering Canada.
+- Define and lock the Funnel 3 ICP as ICP-03: the F03 payments / regulatory audience.
 - Confirm positioning claim: Levine Law as GTA's specialist payments regulatory counsel for operator-side MSB, RPAA, AML, and adjacent payment-structuring work — not a fractional GC, not a full-service firm. Tokenized-payment matters are adjacent and bounded, not a standalone securities lane.
 - Define the competitive white space explicitly: no GTA firm currently holds the "specialist payments regulatory + fractional GC" position. Funnel 3 exists to claim it.
 
@@ -118,7 +117,7 @@ Planning stage completion authorizes entry into `pre-launch`, not automatic
 entry into `launch`.
 
 Funnel 3 may enter `pre-launch` when:
-1. ICP-02 and positioning are formally locked.
+1. ICP-03 and positioning are formally locked.
 2. Entry offer pricing and scope are ML1-approved.
 3. Core offer map is documented.
 4. Website page implementation path is approved and publication-ready.

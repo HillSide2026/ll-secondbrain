@@ -26,11 +26,11 @@ Stage: Planning
 
 **Operations:**
 - ML1 can handle F3-sourced consult demand within the 20-billable-hour/week ceiling. F3 targets 1–3 new matters per month, which does not materially increase total matter volume if F1 and F2 volumes are stable.
-- The firm's current regulatory specialization (MSB, RPAA, AML, payments program agreements) is sufficient to serve ICP-02 without additional hires in 2026.
+- The firm's current regulatory specialization (MSB, RPAA, AML, payments program agreements) is sufficient to serve ICP-03 without additional hires in 2026.
 - levine-law.ca can be updated with a Payments/MSB/Fintech page by the target date without a full site rebuild.
 
 **Conversion:**
-- The regulatory triage consultation at a fixed fee is a viable entry offer for ICP-02. Buyers with active regulatory questions will book a defined-scope session.
+- The regulatory triage consultation at a fixed fee is a viable entry offer for ICP-03. Buyers with active regulatory questions will book a defined-scope session.
 - RPAA and CARF deadlines in 2026 and 2027 are genuine buying triggers — operators facing deadlines are more likely to convert from content to consultation than operators browsing for general information.
 
 ---
@@ -43,7 +43,7 @@ Stage: Planning
 |------------|-------------|
 | ML1 capacity ceiling | 20 billable hours/week is the firm's operational ceiling. F3 demand growth must not push total matter volume beyond the 12–18 active matter ceiling defined in BUSINESS_PLAN.md. |
 | No content publishing without SE-01 review | All externally facing F3 content — LinkedIn posts, website copy, BetaKit copy — must be SE-01 scored before ML1 approval. No exceptions. |
-| No channel activation before positioning lock | LinkedIn Ads, BetaKit sponsorship, and paid channels cannot launch until ICP-02 and positioning are ML1-approved (M1.1, M1.2). |
+| No channel activation before positioning lock | LinkedIn Ads, BetaKit sponsorship, and paid channels cannot launch until ICP-03 and positioning are ML1-approved (M1.1, M1.2). |
 | No F3 entry offer activation before pricing approved | Regulatory triage consultation pricing must be ML1-approved before the offer is promoted via any channel. |
 | Regulated-market content standards | All F3 content must avoid unauthorized legal advice, guarantee language, and outcome claims. SE-01 failure mode: non-compliant content rejected regardless of score. |
 | No F2/F3 conflation | The Health Check (F02) and the regulatory triage consultation (F03) are distinct offers for distinct ICPs. Messaging must not conflate them. Website pages must be distinct. |

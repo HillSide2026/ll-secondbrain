@@ -71,6 +71,6 @@ Metrics are reviewed at the following gates:
 
 ## Notes
 
-- `f3_avg_matter_value` threshold of $8,000 (Month 6) is a working hypothesis. The canonical matter value floor for ICP-02 work is not yet defined — this metric validates the assumption over time. If average matter value is consistently <$5,000, the ICP or offer scope requires revision.
+- `f3_avg_matter_value` threshold of $8,000 (Month 6) is a working hypothesis. The canonical matter value floor for ICP-03 work is not yet defined — this metric validates the assumption over time. If average matter value is consistently <$5,000, the ICP or offer scope requires revision.
 - LinkedIn CPL threshold of $600 (Month 3) is based on Soulpepper's benchmark for comparable B2B legal service LinkedIn campaigns. ML1 must set a hard pause threshold before campaign activation.
 - All F3 matters must be tagged with source = F3 in Clio at matter opening for attribution to work. This is an operational dependency — Clio tagging discipline must be established before channel launch.

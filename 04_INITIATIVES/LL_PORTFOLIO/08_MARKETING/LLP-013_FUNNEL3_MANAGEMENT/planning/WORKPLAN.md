@@ -20,13 +20,13 @@ Stage: Planning
 
 ### WS-1: Positioning and ICP Lock
 
-**Goal:** Finalize and approve ICP-02 definition, competitive positioning, and core offer map before any channel activation.
+**Goal:** Finalize and approve the ICP-03 definition, competitive positioning, and core offer map before any channel activation.
 
 **Milestones:**
 
 | ID | Milestone | Owner | Target | Gate |
 |----|-----------|-------|--------|------|
-| M1.1 | ICP-02 definition finalized and ML1-approved | ML1 | 2026-03-28 | Required before WS-3 |
+| M1.1 | ICP-03 definition finalized and ML1-approved | ML1 | 2026-03-28 | Required before WS-3 |
 | M1.2 | Competitive positioning claim approved by ML1 and SE-01 scored | ML1 + SE-01 | 2026-03-28 | Required before WS-3 |
 | M1.3 | Core offer map documented and ML1-approved | ML1 | 2026-04-04 | Required before WS-3 channel launch |
 | M1.4 | Entry offer pricing and scope approved | ML1 | 2026-04-04 | Required before WS-3 |
