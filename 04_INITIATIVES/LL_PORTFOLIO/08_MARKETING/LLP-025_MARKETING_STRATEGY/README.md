@@ -34,7 +34,7 @@ Consolidated project governing Levine Law's market positioning, objectives, goal
 |---|---|
 **Initiation Artifacts**
 | `initiation/PROJECT_CHARTER.md` | ICP, objectives, funnel portfolio, constraints, agent architecture |
-| `initiation/PROBLEM_STATEMENT.md` | Current state, core problem (ICP-01 channel gap, F02 unbuilt), desired state |
+| `initiation/PROBLEM_STATEMENT.md` | Current state, core problem (ICP-02 channel gap, F02 unbuilt), desired state |
 | `initiation/STAKEHOLDERS.md` | Stakeholder map and authority assignments |
 | `initiation/SUCCESS_CRITERIA.md` | Project-level success criteria and F01→F02 transition milestone |
 | `initiation/RISK_SCAN.md` | Initiation-stage risk scan; Go decision recorded |

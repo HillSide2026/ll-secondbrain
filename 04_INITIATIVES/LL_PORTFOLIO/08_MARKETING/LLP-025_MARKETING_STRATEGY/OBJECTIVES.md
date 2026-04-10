@@ -4,7 +4,7 @@ title: Marketing Objectives
 owner: ML1
 status: draft
 created_date: 2026-02-25
-last_updated: 2026-03-22
+last_updated: 2026-04-09
 tags: []
 ---
 
@@ -13,44 +13,44 @@ tags: []
 ## Marketing Mandate
 
 Marketing is responsible for:
-- Acquiring qualified, maturity-filtered operator clients
-- Transitioning reactive acquisition toward preventative diagnostics
+- Sustaining economically viable reactive entrepreneur intake where it still serves a bridge role
+- Acquiring qualified Ontario operating companies through preventative diagnostics
 - Establishing authority in Canadian payments/MSB regulatory counsel
 - Feeding strategy-level engagements (Fractional Counsel; payments-specific ongoing counsel where relevant)
 
 ## Objective List
 
-### OBJ-01: Acquire Qualified Ontario Operator Leads
+### OBJ-01: Sustain Qualified Ontario Entrepreneur Intake
 
 Description:
-- Acquire qualified Ontario operators aligned to ICP-01 for Fractional Counsel and corporate remediation work.
+- Sustain economically viable Ontario entrepreneur leads aligned to ICP-01 through F01 while filtering low-value and no-fit reactive matters.
 
 Owned Metric Family:
 - Qualified leads
 - Consult show rate
-- Retention rate
+- Matter value quality
 
 Supported Service Layer (Strategy/Solution/Practice Area):
 - Strategy: Fractional Counsel / Legal Function as a Service
-- Solution: Corporate Health Check (entry diagnostic, with bounded regulatory review where relevant)
+- Solution: Fractional Counsel consult (bridge intake)
 - Practice Area: Corporate
 
 Exclusions:
-- Pre-revenue startups
-- Crisis-only engagements
+- Personal legal issues
+- Crisis-only engagements with no fit or budget
 - One-off incorporations without fit
 
 ---
 
-### OBJ-02: Shift from Reactive to Preventative Entry Point
+### OBJ-02: Acquire Qualified Ontario Operating Company Leads
 
 Description:
-- Replace keyword-only reactive acquisition with paid Corporate Health Check diagnostics and content-led entry.
+- Acquire qualified Ontario operating companies aligned to ICP-02 through paid Corporate Health Check diagnostics and content-led entry, reducing reliance on reactive F01 acquisition over time.
 
 Owned Metric Family:
 - Paid diagnostic conversion rate
 - Lead magnet conversion rate
-- Document readiness rate
+- Remediation and retainer conversion
 
 Supported Service Layer (Strategy/Solution/Practice Area):
 - Strategy: Corporate Health Check -> Remediation -> Fractional Counsel (industry-agnostic base layer, with bounded regulatory review where relevant)
@@ -65,7 +65,7 @@ Exclusions:
 ### OBJ-03: Establish Regulatory Authority in Payments/MSB Space
 
 Description:
-- Build authority and conversion for payments/MSB regulatory work leading to ongoing payments counsel within the firm's broader fractional counsel layer.
+- Build authority and conversion for the F03 payments audience leading to ongoing payments counsel within the firm's broader fractional counsel layer.
 
 Owned Metric Family:
 - Qualified consults

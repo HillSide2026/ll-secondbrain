@@ -8,7 +8,7 @@ Stage: Planning
 
 | ID | Risk | Likelihood | Impact | Mitigation |
 |---|---|---|---|---|
-| SR-01 | No viable channel identified for ICP-01 — mature Ontario operators are not reachable through any cost-effective marketing channel | Medium | High | WS-01 evaluates multiple hypotheses (referral network, LinkedIn, targeted SEO) in parallel; if no channel is viable, strategy pivots to referral-only acquisition and marketing scope is redefined |
+| SR-01 | No viable channel identified for ICP-02 — mature Ontario operating companies are not reachable through any cost-effective marketing channel | Medium | High | WS-01 evaluates multiple hypotheses (referral network, LinkedIn, targeted SEO) in parallel; if no channel is viable, strategy pivots to referral-only acquisition and marketing scope is redefined |
 | SR-02 | F02 Corporate Health Check does not convert — operators pay for the diagnostic but do not proceed to remediation or retainer | Medium | High | Conversion Architect agent designs F02 conversion architecture before launch; success criteria include minimum retainer conversion threshold before F01 wind-down is triggered |
 | SR-03 | Positioning drift under optimization pressure — agents or funnel changes gradually erode ICP quality in favor of volume | Medium | High | Strategic Editor is the coherence gate on all changes; positioning overrides metrics; no metric threshold may be set that incentivizes ICP dilution |
 | SR-04 | F01 wind-down is triggered prematurely — F02 is not performing sufficiently when F01 is reduced | Low | Very High | Wind-down framework requires explicit ML1 approval; F02 must meet minimum performance thresholds before any F01 reduction |

@@ -4,7 +4,7 @@ title: Market Positioning
 owner: ML1
 status: draft
 created_date: 2026-02-25
-last_updated: 2026-03-22
+last_updated: 2026-04-09
 tags: []
 ---
 
@@ -12,15 +12,23 @@ tags: []
 
 ## Primary ICP(s)
 
-ICP-01: Ontario Operating Company
-- $1M-$8M revenue
+ICP-01: Ontario Entrepreneur
+- Ontario-based entrepreneur or owner-operator
+- Cash-flow dependent and budget sensitive
+- Reactive, issue-triggered, or distress-adjacent
+- More likely to search for broad legal help than a preventative structural review
+- Likely not enterprise or GC-type
+- Often unevenly prepared
+
+ICP-02: Ontario Operating Company
+- More than $1M revenue
 - 5-30 employees
 - 2+ years operating
 - Accountant involved
 - Document-ready
 - Not in active crisis
 
-ICP-02: Fintech / Payments Operator
+F03 Audience: Fintech / Payments Operator
 - Canada exposure
 - Commercially minded
 - Structural clarity preference
@@ -41,8 +49,9 @@ Core 2026 Offer Stack:
 - Payments-specific ongoing counsel fits inside that ongoing layer where relevant
 
 Core Market Definition:
-- Ontario-based operating businesses ($1M-$8M revenue, 5-30 employees)
-- Fintech / payments / MSB / PSP operators with Canadian exposure
+- Ontario entrepreneurs entering through reactive legal needs (F01 / ICP-01)
+- Ontario-based operating businesses with more than $1M revenue (F02 / ICP-02)
+- Fintech / payments / MSB / PSP operators with Canadian exposure (F03 audience)
 
 ## Differentiation Thesis
 

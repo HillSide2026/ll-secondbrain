@@ -14,7 +14,7 @@ Stage: Planning
 | A-04 | ML1 has capacity to review and approve planning artifacts and KPI targets within the planning window | Planning gate is delayed; execution authorization cannot proceed |
 | A-05 | F03 (Payments/MSB) continues operating during planning; payments vertical authority build is not paused | Payments vertical falls behind; F03 conversion data is unavailable for KPI formalization |
 | A-06 | Website / landing page infrastructure is available or buildable to support F02 launch | F02 launch milestone requires platform work not currently scoped |
-| A-07 | ICP-01 (mature Ontario operators) can be reached through at least one scalable channel once identified | If no channel exists for ICP-01, the firm's differentiated positioning cannot be operationalized through marketing |
+| A-07 | ICP-02 (mature Ontario operating companies) can be reached through at least one scalable channel once identified | If no channel exists for ICP-02, the firm's differentiated positioning cannot be operationalized through marketing |
 
 ## Hard Constraints
 

@@ -14,13 +14,14 @@ ML1 Approval Status: **Pending**
 - Targets are set in phases: provisional (Day 30–45), then locked (Day 60–90).
 - Positioning overrides metrics. If hitting a metric target requires compromising positioning or ICP, the metric target is wrong.
 - 30-day baseline data is available. Provisional targets should be set now.
+- Audience schema for this framework: `ICP-01` = F01 Ontario entrepreneur, `ICP-02` = F02 Ontario operating company, `F03 audience` = payments / fintech / MSB / PSP operator.
 
 ---
 
 ## Funnel 01 — Reactive (Google Ads)
 
 Status: Active
-Role: Bridge channel sustaining qualified intake while F02 is built
+Role: Bridge channel sustaining qualified ICP-01 intake while F02 is built
 
 ### Known Performance Baseline (ML1-observed)
 
@@ -80,7 +81,7 @@ Role: Bridge channel sustaining qualified intake while F02 is built
 ## Funnel 02 — Preventative (Corporate Health Check)
 
 Status: Not launched — entry offer unbuilt
-Role: Intended primary corporate acquisition path
+Role: Intended primary ICP-02 acquisition path
 
 | KPI | Definition | Measurement Source | Review Cadence | Provisional Target | Locked Target | Notes |
 |---|---|---|---|---|---|---|
@@ -101,7 +102,7 @@ Role: Vertical authority build; entry offers → AML counsel retainer
 
 | KPI | Definition | Measurement Source | Review Cadence | Provisional Target | Locked Target | Notes |
 |---|---|---|---|---|---|---|
-| Cost per qualified lead (CPL) | Spend ÷ qualified leads (ICP-02 filter) | Ads + GHL | Monthly | TBD — set from 30-day baseline | TBD | Qualified = Canadian exposure, decision-maker access |
+| Cost per qualified lead (CPL) | Spend ÷ qualified leads (F03 audience filter) | Ads + GHL | Monthly | TBD — set from 30-day baseline | TBD | Qualified = Canadian exposure, decision-maker access |
 | Consult show rate | Booked consults that occur ÷ total booked | GHL | Monthly | TBD | TBD | |
 | Entry-offer conversion rate | Entry offer purchases ÷ qualified leads | GHL / Clio | Monthly | TBD | TBD | Entry offers: MSB registration, AML health check |
 | Entry-offer to retainer conversion | AML retainers ÷ entry offers delivered | Clio | Monthly | TBD | TBD | Primary economic metric for F03 |
@@ -111,33 +112,34 @@ Role: Vertical authority build; entry offers → AML counsel retainer
 
 ## Objective-Level Metrics
 
-### OBJ-01 — Acquire Qualified Ontario Operators (ICP-01)
+### OBJ-01 — Sustain Qualified Ontario Entrepreneur Intake (ICP-01)
 
-**What this objective measures**: The firm's ability to attract and convert mature Ontario operators into retained clients. Success is not raw lead volume — it is ICP-filtered lead quality progressing through the full pipeline to retained status.
+**What this objective measures**: The firm's ability to attract reactive but economically viable Ontario entrepreneur leads through F01 without over-indexing on low-value single engagements. Success is not raw lead volume — it is economically useful bridge intake.
 
 **Pipeline stages**: `visitor → qualified lead → booked consult → consult complete → retained`
 
 | KPI | Formula | What It Tells You | Leading or Lagging |
 |---|---|---|---|
-| Qualified lead volume | Count of leads passing ICP-01 gate (revenue ≥ $1M, employees ≥ 5, not in crisis) | Whether the channel is attracting the right operators at all | Leading |
+| Qualified F01 lead volume | Count of F01 leads passing active intake screening and fit review | Whether the bridge channel is producing enough viable ICP-01 intake to matter | Leading |
 | Qualification rate | Qualified leads ÷ total inquiries | Whether channel targeting is efficient; high disqualification = wrong channel or wrong messaging | Leading |
 | Consult show rate | Consults completed ÷ consults booked | Quality of leads and effectiveness of pre-consult nurture | Leading |
-| Consult-to-retained rate | Retainers signed ÷ consults completed | Quality of the consult itself; offer-to-ICP fit | Lagging |
-| 90-day retention rate | Clients retained at 90 days ÷ clients onboarded | Whether retained clients are genuinely well-fit | Lagging |
+| Consult-to-paid-project rate | Paid projects ÷ consults completed | Whether reactive consults convert into economically real work | Lagging |
+| % matters above value floor | Matters at or above floor ÷ total F01 matters | Whether retained F01 matters justify intake cost and ML1 time | Lagging |
+| 90-day retention rate | Clients retained at 90 days ÷ clients onboarded | Whether retained F01 clients become genuine relationships vs one-off projects | Lagging |
 
-**Failure signal**: High inquiry volume + low qualification rate = wrong channel or messaging attracting wrong audience. High qualification rate + low consult-to-retained = offer misalignment or ICP gate is wrong.
+**Failure signal**: High inquiry volume + low qualification rate = wrong channel or messaging attracting the wrong reactive audience. High qualification rate + low consult-to-paid-project = consults are not producing economically useful work. High paid-project volume + low value-floor compliance = F01 is producing noise, not viable bridge revenue.
 
 ---
 
-### OBJ-02 — Shift from Reactive to Preventative Entry Point
+### OBJ-02 — Acquire Qualified Ontario Operating Companies (ICP-02)
 
-**What this objective measures**: Whether F02 (paid diagnostic) is replacing F01 (reactive Google Ads) as the primary corporate acquisition path. This is a structural transition, not just a conversion metric. The goal is a different *type* of client entering the pipeline, not just more clients.
+**What this objective measures**: Whether F02 is reaching and converting the intended ICP-02 audience of Ontario operating companies through a preventative paid diagnostic. This is also the mechanism by which LL transitions away from F01 dependence over time.
 
 **Pipeline stages (F02)**: `visitor → lead magnet download → diagnostic purchase → health check delivered → remediation engagement → retainer`
 
 | KPI | Formula | What It Tells You | Leading or Lagging |
 |---|---|---|---|
-| Lead magnet conversion rate | Lead magnet downloads ÷ landing page visitors | Whether content is attracting ICP-01 operators; quality of targeting | Leading |
+| Lead magnet conversion rate | Lead magnet downloads ÷ landing page visitors | Whether content is attracting ICP-02 operators; quality of targeting | Leading |
 | Diagnostic purchase rate | Health Check purchases ÷ qualified visitors | Whether operators will pay for a structural review vs. seeking a free consult | Leading |
 | Health Check to remediation conversion | Remediation engagements ÷ Health Checks delivered | Whether the diagnostic surfaces real work and ML1 converts that finding into an engagement | Lagging |
 | Remediation to retainer conversion | Retainers ÷ remediation engagements completed | Whether remediation clients see ongoing value in fractional counsel | Lagging |
@@ -157,12 +159,12 @@ Role: Vertical authority build; entry offers → AML counsel retainer
 | KPI | Formula | What It Tells You | Leading or Lagging |
 |---|---|---|---|
 | Content impressions and CTR (payments topics) | Impressions and click-through rate on payments/MSB content | Whether the authority content is reaching the right audience | Leading |
-| Qualified F03 lead volume | Count of ICP-02 leads (Canadian exposure, decision-maker access) | Whether authority content is converting to actionable pipeline | Leading |
+| Qualified F03 lead volume | Count of F03 audience leads (Canadian exposure, decision-maker access) | Whether authority content is converting to actionable pipeline | Leading |
 | Entry offer conversion rate | Entry offer purchases ÷ qualified F03 leads | Whether the productized entry (MSB registration, AML health check) is compelling to this audience | Leading |
 | Entry offer to retainer conversion | AML/regulatory retainers ÷ entry offers delivered | Whether entry offer clients see LL as their ongoing regulatory counsel | Lagging |
 | Retainer ARR from F03 | Annualized retainer revenue from F03 clients | Economic output of the vertical | Lagging |
 
-**Failure signal**: High impressions + low CTR = content is not specific enough to the ICP-02 problem. High CTR + low entry offer conversion = audience is interested but not convinced to purchase. High entry offer purchase + low retainer conversion = entry offer is satisfying the immediate need but not establishing ongoing counsel relationship.
+**Failure signal**: High impressions + low CTR = content is not specific enough to the F03 audience problem. High CTR + low entry offer conversion = audience is interested but not convinced to purchase. High entry offer purchase + low retainer conversion = entry offer is satisfying the immediate need but not establishing ongoing counsel relationship.
 
 ---
 

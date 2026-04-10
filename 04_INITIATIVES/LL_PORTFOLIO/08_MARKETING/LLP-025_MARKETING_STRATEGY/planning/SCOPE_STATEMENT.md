@@ -6,11 +6,11 @@ Stage: Planning
 
 ## Implementation Objective
 
-Define the controlled execution scope for LLP-025: resolve the ICP-01 channel gap, build and launch F02, formalize KPI targets, govern the payments vertical program, and anchor the agent architecture — advancing LL's marketing from a reactive acquisition posture to a governed, preventative acquisition system.
+Define the controlled execution scope for LLP-025: resolve the ICP-02 channel gap, build and launch F02, formalize KPI targets, govern the payments vertical program, and anchor the agent architecture — advancing LL's marketing from a reactive acquisition posture to a governed, preventative acquisition system.
 
 ## In Scope
 
-- **ICP-01 Channel Strategy**: Define, evaluate, and select the primary channel(s) for reaching mature Ontario operators (ICP-01). Includes accountant/advisor referral network hypothesis, LinkedIn hypothesis, and targeted SEO/content hypothesis.
+- **ICP-02 Channel Strategy**: Define, evaluate, and select the primary channel(s) for reaching mature Ontario operating companies (ICP-02). Includes accountant/advisor referral network hypothesis, LinkedIn hypothesis, and targeted SEO/content hypothesis.
 - **F02 Build and Launch**: Define the Corporate Health Check entry offer (product scope, pricing, delivery format), build the landing page, and launch to market. F02 is the intended primary corporate acquisition path.
 - **KPI Formalization**: Complete Phase 2 (provisional targets, Day 30–45) and Phase 3 (KPI lock, Day 60–90) using the existing 30-day baseline. Set formal targets for CPL, show rate, diagnostic conversion, retainer conversion for F01, F02, and F03.
 - **Payments Vertical Program**: Define a governed content cadence and conversion architecture for F03. Set authority-building milestones and entry-offer-to-retainer conversion targets.
@@ -40,7 +40,7 @@ Define the controlled execution scope for LLP-025: resolve the ICP-01 channel ga
 
 ## Gate Criteria for Implementation Authorization
 
-- ICP-01 channel hypothesis is selected and approved by ML1
+- ICP-02 channel hypothesis is selected and approved by ML1
 - F02 entry offer is defined with scope, pricing, and launch milestone
 - KPI provisional targets are set (Phase 2 complete)
 - Agent architecture activation plan is approved

@@ -4,7 +4,7 @@ title: LLP-025 Project Charter
 owner: ML1
 status: draft
 created_date: 2026-03-17
-last_updated: 2026-03-22
+last_updated: 2026-04-09
 tags: [marketing, strategy, initiation, charter]
 ---
 
@@ -26,14 +26,21 @@ Govern Levine Law's marketing strategy as a managed project — maintaining posi
 
 ## Target Client Profile (ICP)
 
-**ICP-01 — Ontario Operating Company**
-- Revenue: $1M–$8M
+**ICP-01 — Ontario Entrepreneur**
+- Ontario-based entrepreneur or owner-operator
+- Cash-flow dependent; budget sensitive
+- Reactive, issue-triggered, or distress-adjacent
+- More likely to search for broad legal help than a preventative structural review
+- Likely not enterprise or GC-type
+
+**ICP-02 — Ontario Operating Company**
+- Revenue: more than $1M
 - Employees: 5–30
 - Operating: 2+ years
 - Has an accountant involved
 - Document-ready; not in active crisis
 
-**ICP-02 — Fintech / Payments Operator**
+**F03 Audience — Fintech / Payments Operator**
 - Canada exposure
 - Commercially minded; structural clarity preference
 - Regulatory awareness; decision-maker access
@@ -57,19 +64,19 @@ Govern Levine Law's marketing strategy as a managed project — maintaining posi
 
 | ID | Objective | Entry Vehicle | Target Service |
 |---|---|---|---|
-| OBJ-01 | Acquire qualified Ontario operator leads | Fractional Counsel consult | Fractional Counsel / Corporate |
-| OBJ-02 | Shift from reactive to preventative entry point | Paid Corporate Health Check | Health Check → Remediation → Fractional Counsel |
+| OBJ-01 | Sustain qualified Ontario entrepreneur intake | Fractional Counsel consult | Fractional Counsel / reactive corporate matters |
+| OBJ-02 | Acquire qualified Ontario operating company leads | Paid Corporate Health Check | Health Check → Remediation → Fractional Counsel |
 | OBJ-03 | Establish regulatory authority in payments/MSB | MSB/AML entry services | Ongoing payments counsel within Fractional Counsel layer |
 
 ## Funnel Portfolio
 
 | Funnel | Channel | Entry Offer | Core Offer | Strategic Role |
 |---|---|---|---|---|
-| F01 | Google Ads (reactive) | Fractional Counsel consult | Ongoing retainer | Sustains qualified intake during F02 build |
-| F02 | Content + lead magnets | Paid Corporate Health Check | Remediation + Fractional Counsel, with bounded regulatory review where relevant | Intended primary corporate acquisition path and core 2026 offer stack |
+| F01 | Google Ads (reactive) | Fractional Counsel consult | Ongoing retainer | Sustains qualified ICP-01 intake while F02 is built |
+| F02 | Content + lead magnets | Paid Corporate Health Check | Remediation + Fractional Counsel, with bounded regulatory review where relevant | Intended primary ICP-02 acquisition path and core 2026 offer stack |
 | F03 | Authority content | MSB/AML entry services | Ongoing payments counsel within Fractional Counsel layer | Vertical authority and payments conversion for deeper or standalone regulatory matters |
 
-**Transition Thesis**: F01 is temporary. F02 is the structural replacement. The trigger for F01 wind-down is defined by KPI targets (CAC, retainer conversion) established at Day 60–90 baseline lock.
+**Transition Thesis**: F01 is a temporary bridge for ICP-01 intake. F02 is the structural acquisition path for ICP-02. The trigger for F01 wind-down is defined by KPI targets (CAC, retainer conversion) established at Day 60–90 baseline lock.
 
 ## Governing Constraints
 

@@ -8,12 +8,12 @@ These are open research and decision questions that must be resolved before the 
 
 ---
 
-## OQ-01 — ICP-01 Channel Hypothesis
+## OQ-01 — ICP-02 Channel Hypothesis
 
-**Question**: What is the primary channel for reaching mature Ontario operators (ICP-01)?
+**Question**: What is the primary channel for reaching mature Ontario operating companies (ICP-02)?
 
-**Context**: No current acquisition channel reliably reaches ICP-01. Candidate hypotheses:
-- Accountant/advisor referral network (ICP-01 operators already have accountants involved)
+**Context**: No current acquisition channel reliably reaches ICP-02. Candidate hypotheses:
+- Accountant/advisor referral network (ICP-02 operators already have accountants involved)
 - LinkedIn (founder/operator audience; relationship-driven)
 - Targeted SEO on specific operational problems (see OQ-02)
 - Paid diagnostics distributed through trusted professional channels
@@ -26,7 +26,7 @@ These are open research and decision questions that must be resolved before the 
 
 ## OQ-02 — SEO Keyword Direction: Exits vs Structuring
 
-**Question**: Which SEO keyword cluster should LL pursue to reach ICP-01 operators — Exits or Structuring?
+**Question**: Which SEO keyword cluster should LL pursue to reach ICP-02 operators — Exits or Structuring?
 
 **Context**: Current keyword is "toronto corporate lawyer" (reactive, undifferentiated). Two alternative clusters have been proposed:
 
