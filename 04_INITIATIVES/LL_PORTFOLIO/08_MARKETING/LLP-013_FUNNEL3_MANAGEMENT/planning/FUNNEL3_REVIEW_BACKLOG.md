@@ -4,7 +4,7 @@ title: Funnel 3 Review Backlog
 owner: ML1
 status: draft
 created_date: 2026-04-03
-last_updated: 2026-04-03
+last_updated: 2026-04-09
 tags: [marketing, funnel-03, backlog, review]
 ---
 
@@ -60,3 +60,18 @@ Capture unresolved higher-severity findings from the April 3, 2026 three-Muggah 
 - Key refs:
   - `04_FUNNELS/funnel-03/entry_offers.md`
   - `00_SYSTEM/AGENTS/specs/marketing/MKT_MUGGAH_SECURITIES_AGENT.md`
+
+### 6. Resolve F03 Top-of-Funnel Training Content vs. Paid Lead-Magnet Architecture
+- Problem: the current F03 packet contains a `$97` paid lead-magnet / tripwire pricing scaffold, but the ICP and authority-building logic may point instead to executive-grade training or orientation content as the more realistic first-step asset.
+- Why it matters: if the first paid asset is mismatched to actual buyer behavior, the funnel can overprice cold authority content, misread `lead magnet` metrics, and confuse training/orientation assets with true consult-intent signals.
+- Initial action direction: decide whether the realistic first-step F03 asset is:
+  1. free authority content plus paid consult,
+  2. a paid orientation / training resource,
+  3. a premium report / tripwire,
+  or 4. a segmented combination by trigger type.
+- Additional design question: if training is used, determine whether it should be framed as compliance training, executive orientation, effectiveness-readiness briefing, or a post-registration / post-consult add-on rather than a universal cold-acquisition asset.
+- Key refs:
+  - `LLP-013_FUNNEL3_MANAGEMENT/implementation/STRIPE_PRODUCTS.md`
+  - `04_FUNNELS/funnel-03/funnel3_entryoffer2_leadmagnet_v3.md`
+  - `04_FUNNELS/funnel-03/funnel3_entryoffer3_leadmagnet_v1.md`
+  - `04_FUNNELS/funnel-03/funnel_02_payments_msb_psp/README.md`
