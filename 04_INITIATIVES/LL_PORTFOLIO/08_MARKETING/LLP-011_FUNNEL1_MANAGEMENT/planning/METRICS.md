@@ -4,7 +4,7 @@ title: LLP-011 Funnel 1 - Metrics
 owner: ML1
 status: approved
 created_date: 2026-04-07
-last_updated: 2026-04-07
+last_updated: 2026-04-09
 tags: [llp-011, funnel-01, planning, metrics]
 ---
 
@@ -35,6 +35,9 @@ legacy split measurement packet retained in this folder for provenance.
 - `lead_volume`: count of `lead_captured` events in the measurement window.
 - `all_in_roas_hypothesis`: `> 2.0x` remains a working ML1 investment
   hypothesis, not yet an approved threshold.
+- `cash_flow_working_premise`: `CAD 500,000+` annual business cash flow remains
+  the current F01 fit heuristic for reactive SMB matters. This is a working
+  premise, not doctrine.
 
 ## Thresholds
 
@@ -45,6 +48,24 @@ legacy split measurement packet retained in this folder for provenance.
 | `lead_to_retained_rate` | TBD | Lock after first 4-week operational baseline |
 | `consult_show_rate` | TBD | Lock after first 4-week operational baseline |
 | `consult_to_retained_rate` | TBD | Lock after first 4-week operational baseline |
+
+## Working-Premise Review Metrics
+
+These review metrics test whether the F01 cash-flow working premise is useful
+for filtering reactive, lower-value demand. They are review tools, not
+governed KPI thresholds.
+
+| Review Metric | Definition | Use |
+| --- | --- | --- |
+| `share_of_retained_matters_below_cash_flow_premise` | Share of retained F01 matters where the business appears below the `CAD 500,000` annual cash-flow premise | Tests whether low-fit retained work is clustering below the premise |
+| `revenue_from_below_premise_matters` | Collected revenue from retained F01 matters assessed below the `CAD 500,000` cash-flow premise | Measures economic drag from below-premise matters |
+| `roas_above_vs_below_cash_flow_premise` | Compare attributable F01 ROAS for matters assessed above vs below the premise | Tests whether the premise improves channel economics |
+
+### Review Rule
+
+- Where exact cash-flow data is unavailable, use screening evidence and business-size proxies to place matters into practical bands for review.
+- Recommended review bands: `< CAD 250,000`, `CAD 250,000-CAD 500,000`, `CAD 500,000-CAD 1,000,000`, `CAD 1,000,000+`.
+- The `CAD 500,000` line is a working premise for analysis and screening judgment. It does not create an automatic rejection rule.
 
 ## F01 Wind-Down Control
 

@@ -12,6 +12,7 @@ Implementation scope must cover the full funnel lifecycle from lead capture thro
 - Funnel 01 implementation for the active acquisition path (`Google Ads -> GHL Intake`).
 - Full pre-matter funnel lifecycle coverage from `lead_captured` -> `screened` -> `booked` -> `consult_complete` -> `retained` (conversion).
 - Qualification-gate implementation (`revenue_min`, `employee_min`, intake form required).
+- Operating use of the F01 cash-flow working premise (`CAD 500,000+` annual business cash flow) as a fit heuristic for reactive SMB matters.
 - Campaign asset and editorial QA controls for approved messaging only.
 - Distribution and follow-up execution sequencing for pre-matter lifecycle stages.
 - KPI and baseline operation for lead quality, consult progression, and retained outcomes.
@@ -20,8 +21,16 @@ Implementation scope must cover the full funnel lifecycle from lead capture thro
 ## Out of Scope
 - Creating new funnels or replacing Funnel 01 with Funnel 02.
 - Doctrine changes or policy reinterpretation.
+- Treating the F01 cash-flow working premise as doctrine, as a formal ICP rewrite, or as a standalone automatic rejection rule.
 - Legal advice, legal delivery work, or post-conversion matter execution.
 - Autonomous acceptance/rejection of clients without ML1 approval.
+
+## F01 Cash-Flow Working Premise
+
+- Working premise: Funnel 01 economically fits businesses with approximately `CAD 500,000+` annual business cash flow.
+- Calculation: `CAD 2,500` minimum meaningful first engagement divided by `0.5%` acceptable upfront legal-spend tolerance = `CAD 500,000` annual business cash flow.
+- Intended use: intake review, consult screening, and exception review for reactive SMB matters.
+- Non-use: this premise does not replace the existing F01 intake gates and does not, on its own, authorize automatic decline.
 
 ## Implementation Readiness Deliverables
 - `WORKPLAN.md`
