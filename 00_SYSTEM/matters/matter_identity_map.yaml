@@ -584,6 +584,15 @@ matters:
     notes: Imported from participant_mapping.yaml
   brief:
     delivery_status: STANDARD
+- matter_id: DELIVERY_SUPPORT
+  aliases:
+    email:
+      name_keys: []
+      domains: []
+      senders: []
+  review:
+    status: system_defined
+    notes: Firm-wide delivery support work (Clerk Work/, templates, precedents, clerk admin). Not a client matter.
 - matter_id: FIRM_INTERNAL
   aliases:
     email:

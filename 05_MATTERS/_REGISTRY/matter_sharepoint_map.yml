@@ -1,13 +1,29 @@
 id: 05_matters__registry__matter_sharepoint_map
 title: Matter to SharePoint Map
 owner: ML1
-status: draft
+status: active
 created_date: 2026-03-04
-last_updated: 2026-03-04
+last_updated: 2026-04-13
 
-mappings: []
-# Example:
-# - matter_number: 25-1234-00001
-#   drive_item_id: 01ABCDEF...
-#   web_url: https://...
-#   path: LL Matters (Strategic)/25-1234-00001 - Client Name
+mappings:
+
+  # 24-682-00003 is a sub-matter of 24-682-00002 (Stream Ventures / SnowCap CAMLO Operations).
+  # The SharePoint folder was created under the sub-matter Clio ID. All items in this
+  # path should resolve to the parent matter 24-682-00002.
+  - matter_number: 24-682-00002
+    drive_item_id: ""
+    web_url: ""
+    path: "LL Matters (Essential)/24-682-00003 -- Stream"
+
+  # Clerk Work/ is a firm-wide delivery support folder (templates, precedents, clerk admin).
+  # It is not associated with any individual client matter. Categorised as DELIVERY_SUPPORT.
+  - matter_number: DELIVERY_SUPPORT
+    drive_item_id: ""
+    web_url: ""
+    path: "Clerk Work"
+
+# Field reference:
+# - matter_number: canonical matter ID (or special: DELIVERY_SUPPORT, FIRM_INTERNAL)
+# - drive_item_id: exact SharePoint drive item ID (overrides path/web_url if set)
+# - path: SharePoint path prefix (case-insensitive startswith match)
+# - web_url: SharePoint web URL prefix (case-insensitive startswith match)

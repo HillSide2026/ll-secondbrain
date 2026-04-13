@@ -58,6 +58,17 @@ else
     echo "No matter files staged - skipping matter validation"
 fi
 
+# -----------------------------------------------------------------------------
+# Check 3: Matter registry integrity (always runs — registry drift is cheap to check)
+# -----------------------------------------------------------------------------
+echo "Running matter registry integrity check..."
+if ! python3 ./scripts/validate_matter_registry.py > /dev/null 2>&1; then
+    echo -e "${RED}FAIL${NC}: Matter registry integrity check failed!"
+    echo "  Run: python3 ./scripts/validate_matter_registry.py"
+    exit 1
+fi
+echo -e "${GREEN}OK${NC}: Matter registry integrity passed"
+
 echo ""
 echo -e "${GREEN}Pre-commit checks passed${NC}"
 exit 0
