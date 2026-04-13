@@ -35,7 +35,7 @@ REQUIRED_FIELDS = {
 
 STATUS_VALUES = ['Open', 'Pending', 'Closed']
 DELIVERY_STATUS_VALUES = ['Essential', 'Strategic', 'Standard', 'Parked']
-FULFILLMENT_STATUS_VALUES = ['urgent', 'active', 'keep in view', 'dormant', 'inactive', 'pausing']
+FULFILLMENT_STATUS_VALUES = ['urgent', 'active', 'closing', 'keep in view', 'dormant', 'inactive', 'pausing']
 SERVICE_TYPE_VALUES = ['solution', 'strategy']
 LEGACY_SERVICE_FIELDS = {'solutions': 'solution', 'strategies': 'strategy'}
 

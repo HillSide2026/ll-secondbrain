@@ -3,4 +3,5 @@ matter_name: "HillSide"
 status: "Open"
 delivery_status: "Standard"
 fulfillment_status: "active"
+non_billable: true
 created_date: "2025-01-01"
