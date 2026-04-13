@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# CANONICAL LOCATION: scripts/inbox_classifier.py
+# DIVERGENCE WARNING: This copy has different folder path mappings (04_INITIATIVES vs
+# 04_OPERATIONS, 10_ARCHIVE vs 09_ARCHIVE). ML1 decision required before converting to
+# a shim — confirm which folder map reflects current repo structure.
 """
 Inbox Classifier Module
 Stage 2.3 / 2.4 — Inbox Intelligence Layer

@@ -4,12 +4,14 @@
 
 ### MCP Servers
 
-Two MCP servers are registered for this repo in `.mcp.json` at the project root:
+Two MCP servers are registered for this repo. Both appear in `.mcp.json` (project-level) and in `.claude/settings.json` (local settings with hooks):
 
 | Server | Script | Purpose |
 |--------|--------|---------|
 | `gmail` | `scripts/gmail_mcp_server.py` | Read Gmail inbox; controlled label writes |
 | `sharepoint` | `scripts/sharepoint_mcp_server.py` | Read SharePoint folder/item metadata |
+
+`.claude/settings.json` additionally defines the `PreToolUse` hook that validates all Write/Edit operations via `scripts/validate_canonical_write.py`. This is the only intentional split between the two config files.
 
 **Before claiming a tool is unavailable**, use ToolSearch to check whether it loaded. If a tool is missing, check `.mcp.json` — do not assume it does not exist.
 

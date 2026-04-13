@@ -18,6 +18,7 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
 # Local secrets
 00_SYSTEM/local_secrets/
 00_SYSTEM/integrations/local_secrets/
@@ -27,6 +28,26 @@ logs/
 06_RUNS/logs/
 *.log
 sharepoint_sources.yaml
+
+# ---------------------------------------------------------------------------
+# GENERATED ARTIFACT POLICY
+#
+# COMMITTED (canonical snapshots — changes tracked in git):
+#   05_MATTERS/DASHBOARDS/   — daily matter + inbox digest snapshots
+#   05_MATTERS/MATTER_REGISTRY.md — hand-maintained registry (edit directly)
+#   05_MATTERS/INDEX.md      — ML1-gated index (ML1 instruction required)
+#   06_RUNS/ops/MATTER_TODO_REPORT.md — committed weekly report
+#   06_RUNS/ops/MATTER_TODO_LEDGER.json — committed ledger (human-editable)
+#   04_INITIATIVES/LL_PORTFOLIO/CHIEF_OF_STAFF/ — portfolio briefs
+#
+# IGNORED (ephemeral run artifacts — never commit):
+#   06_RUNS/RUN-*/           — timestamped run output directories
+#   06_RUNS/state/           — runtime state (rebuilt on each run)
+#   06_RUNS/logs/            — append-only audit logs
+#   06_RUNS/ops/gmail_fetch_latest.json — per-run email cache
+#   cache/*.json             — Clio/Gmail/SharePoint cache files
+#   tokens.json, oauth_state.json — Google OAuth tokens
+# ---------------------------------------------------------------------------
 
 # Runtime artifacts
 state/

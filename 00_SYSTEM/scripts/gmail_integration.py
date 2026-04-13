@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# CANONICAL LOCATION: scripts/gmail_integration.py
+# DIVERGENCE WARNING: This copy is ~1.2KB larger than scripts/gmail_integration.py.
+# ML1 decision required before converting to a shim — determine which version is current.
 """
 Gmail Integration Module
 Proposal-first Gmail API access with audit logging.

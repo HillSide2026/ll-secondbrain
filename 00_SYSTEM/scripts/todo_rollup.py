@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# CANONICAL LOCATION: scripts/todo_rollup.py
+# DIVERGENCE WARNING: This copy is ~5KB larger than scripts/todo_rollup.py. The two
+# versions have diverged. ML1 decision required before converting to a shim — review
+# which version is current and merge or retire the other.
 """
 todo_rollup.py — Firmwide To-Do Rollup (v2)
 

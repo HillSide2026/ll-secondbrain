@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# CANONICAL LOCATION: scripts/sharepoint_integration.py
+# DIVERGENCE WARNING: This copy is ~7KB larger than scripts/sharepoint_integration.py.
+# ML1 decision required before converting to a shim — determine which version is current.
 """
 SharePoint Integration (Stage 2.2.2) — READ ONLY
 

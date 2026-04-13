@@ -5,6 +5,12 @@
       "args": [
         "/Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/gmail_mcp_server.py"
       ]
+    },
+    "sharepoint": {
+      "command": "python3",
+      "args": [
+        "/Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/sharepoint_mcp_server.py"
+      ]
     }
   }
 }
