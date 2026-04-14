@@ -29,6 +29,7 @@ Classification rules (both modes):
 
 Authority: ML1 approval per Hourly Inbox Triage Agent spec (2026-04-13)
 Policy: POL-042 Inbox Governance Policy
+Skill:   agents/inbox-agent/skill.md  (decision order, invariants, failure bias)
 """
 
 import argparse
@@ -64,6 +65,7 @@ from batch_classifier import (
 AGENT_VERSION = "inbox-triage-v1.1"
 APPROVAL_ARTIFACT = "AI Agent Spec — Hourly Inbox Triage Agent (2026-04-13)"
 APPROVAL_BY = "ML1"
+SKILL_DOC = REPO_ROOT / "agents" / "inbox-agent" / "skill.md"
 
 # Matter label tier prefix → priority classification (for logging only)
 TIER_TO_PRIORITY: Dict[str, str] = {
@@ -258,6 +260,9 @@ def classify_thread_full(
       needs_review:       bool
       reason:             str
     """
+    # skill.md § Decision Order: attempt matter detection first.
+    # skill.md § Matter Authority Rule: existing matter labels are authoritative;
+    #   do not override without strong contradictory evidence.
     matter = resolve_thread_matter(
         subject=thread_detail["subject"],
         sender=thread_detail["sender"],
@@ -300,7 +305,7 @@ def classify_thread_full(
         has_matter_association=has_matter,
     )
 
-    # Low confidence overrides to 00_Triage
+    # skill.md § Failure Bias: when uncertain, assign 00_Triage; do not guess a matter.
     state_label = "00_Triage" if confidence < CONFIDENCE_LOW else raw_state
     needs_review = confidence < CONFIDENCE_AUTO
 
@@ -535,6 +540,10 @@ def main():
     run_start = datetime.datetime.now(datetime.timezone.utc)
 
     logging.info(f"=== Inbox Triage Agent | mode={mode} | run={run_id} ===")
+    if SKILL_DOC.exists():
+        logging.info(f"Skill: {SKILL_DOC}")
+    else:
+        logging.warning(f"Skill doc not found: {SKILL_DOC}")
 
     prior_state = load_run_state(mode)
     service = get_gmail_service()
