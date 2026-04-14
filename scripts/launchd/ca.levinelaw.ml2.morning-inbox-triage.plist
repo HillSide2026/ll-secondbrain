@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Morning Inbox Triage Agent — launchd schedule
+  Runs scripts/hourly_inbox_triage.py --mode morning at 08:00, Sun–Fri.
+  Review window: 17:01 previous business day → 08:00 today.
+
+  Install:
+    cp scripts/launchd/ca.levinelaw.ml2.morning-inbox-triage.plist \
+       ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/ca.levinelaw.ml2.morning-inbox-triage.plist
+
+  Unload:
+    launchctl unload ~/Library/LaunchAgents/ca.levinelaw.ml2.morning-inbox-triage.plist
+
+  Run manually:
+    launchctl start ca.levinelaw.ml2.morning-inbox-triage
+
+  Logs:
+    06_RUNS/logs/hourly_inbox_triage/launchd.stdout.log
+    06_RUNS/logs/hourly_inbox_triage/launchd.stderr.log
+    06_RUNS/INBOX_TRIAGE/logs/hourly_triage_run.ndjson  (per-thread decisions)
+    06_RUNS/INBOX_TRIAGE/state/last_run_morning.json    (run state)
+-->
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>ca.levinelaw.ml2.morning-inbox-triage</string>
+
+	<key>ProcessType</key>
+	<string>Background</string>
+
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3</string>
+		<string>/Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/hourly_inbox_triage.py</string>
+		<string>--mode</string>
+		<string>morning</string>
+	</array>
+
+	<key>WorkingDirectory</key>
+	<string>/Users/matthewlevine/Repos/ll-secondbrain_fresh</string>
+
+	<key>RunAtLoad</key>
+	<false/>
+
+	<key>StandardOutPath</key>
+	<string>/Users/matthewlevine/Repos/ll-secondbrain_fresh/06_RUNS/logs/hourly_inbox_triage/launchd.stdout.log</string>
+
+	<key>StandardErrorPath</key>
+	<string>/Users/matthewlevine/Repos/ll-secondbrain_fresh/06_RUNS/logs/hourly_inbox_triage/launchd.stderr.log</string>
+
+	<!-- Run at 08:00 Sun–Fri (Saturday only excluded)                        -->
+	<!-- Sun=1 Mon=2 Tue=3 Wed=4 Thu=5 Fri=6 in launchd Weekday notation      -->
+	<key>StartCalendarInterval</key>
+	<array>
+		<dict><key>Hour</key><integer>8</integer><key>Minute</key><integer>0</integer><key>Weekday</key><integer>1</integer></dict>
+		<dict><key>Hour</key><integer>8</integer><key>Minute</key><integer>0</integer><key>Weekday</key><integer>2</integer></dict>
+		<dict><key>Hour</key><integer>8</integer><key>Minute</key><integer>0</integer><key>Weekday</key><integer>3</integer></dict>
+		<dict><key>Hour</key><integer>8</integer><key>Minute</key><integer>0</integer><key>Weekday</key><integer>4</integer></dict>
+		<dict><key>Hour</key><integer>8</integer><key>Minute</key><integer>0</integer><key>Weekday</key><integer>5</integer></dict>
+		<dict><key>Hour</key><integer>8</integer><key>Minute</key><integer>0</integer><key>Weekday</key><integer>6</integer></dict>
+	</array>
+</dict>
+</plist>

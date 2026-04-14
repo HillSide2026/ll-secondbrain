@@ -48,9 +48,18 @@
 	<string>/Users/matthewlevine/Repos/ll-secondbrain_fresh/06_RUNS/logs/hourly_inbox_triage/launchd.stderr.log</string>
 
 	<!-- Run at 09:00, 10:00, 11:00, 12:00, 13:00, 14:00, 15:00, 16:00, 17:00 -->
-	<!-- Mon=2 Tue=3 Wed=4 Thu=5 Fri=6 in launchd Weekday notation            -->
+	<!-- Sun=1 Mon=2 Tue=3 Wed=4 Thu=5 Fri=6 in launchd Weekday notation      -->
 	<key>StartCalendarInterval</key>
 	<array>
+		<dict><key>Hour</key><integer>9</integer><key>Minute</key><integer>0</integer><key>Weekday</key><integer>1</integer></dict>
+		<dict><key>Hour</key><integer>10</integer><key>Minute</key><integer>0</integer><key>Weekday</key><integer>1</integer></dict>
+		<dict><key>Hour</key><integer>11</integer><key>Minute</key><integer>0</integer><key>Weekday</key><integer>1</integer></dict>
+		<dict><key>Hour</key><integer>12</integer><key>Minute</key><integer>0</integer><key>Weekday</key><integer>1</integer></dict>
+		<dict><key>Hour</key><integer>13</integer><key>Minute</key><integer>0</integer><key>Weekday</key><integer>1</integer></dict>
+		<dict><key>Hour</key><integer>14</integer><key>Minute</key><integer>0</integer><key>Weekday</key><integer>1</integer></dict>
+		<dict><key>Hour</key><integer>15</integer><key>Minute</key><integer>0</integer><key>Weekday</key><integer>1</integer></dict>
+		<dict><key>Hour</key><integer>16</integer><key>Minute</key><integer>0</integer><key>Weekday</key><integer>1</integer></dict>
+		<dict><key>Hour</key><integer>17</integer><key>Minute</key><integer>0</integer><key>Weekday</key><integer>1</integer></dict>
 		<dict><key>Hour</key><integer>9</integer><key>Minute</key><integer>0</integer><key>Weekday</key><integer>2</integer></dict>
 		<dict><key>Hour</key><integer>10</integer><key>Minute</key><integer>0</integer><key>Weekday</key><integer>2</integer></dict>
 		<dict><key>Hour</key><integer>11</integer><key>Minute</key><integer>0</integer><key>Weekday</key><integer>2</integer></dict>

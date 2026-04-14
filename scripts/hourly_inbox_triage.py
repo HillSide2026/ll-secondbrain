@@ -1,30 +1,37 @@
 #!/usr/bin/env python3
 """
-Hourly Inbox Triage Agent
-=========================
-AI Agent Spec — Hourly Inbox Triage Agent (approved 2026-04-13)
+Inbox Triage Agent
+==================
+AI Agent Spec — Hourly Inbox Triage Agent + Morning Run (approved 2026-04-13)
 
-Runs every hour during business hours (09:00–17:00, Mon–Fri) to:
+Two scheduled modes of the same script:
 
-  1. Fetch Gmail threads updated since the last run
-  2. Classify each thread: Essential Matter, Strategic Matter, or Non-Priority
-     (for logging and surfacing only — this does not change labeling behaviour)
-  3. Apply exactly one canonical state label to every thread
-     (removes competing state labels; does NOT touch matter labels)
-  4. Log every decision to NDJSON run log, including priority classification
+  --mode intraday  (default)
+      Runs every hour 09:00–17:00, Sun–Fri.
+      Review window: threads updated since the last intraday run.
+      For each thread: apply matter label (if matched) + one canonical state label.
 
-Priority classification uses the existing matter label tier:
-  LL/1./1.1/ = Essential delivery tier → logged as ESSENTIAL_MATTER
-  LL/1./1.2/ = Strategic delivery tier → logged as STRATEGIC_MATTER
-  LL/1./1.3/ and LL/1./1.4/ → logged as NON_PRIORITY
+  --mode morning
+      Runs once at 08:00, Sun–Fri.
+      Review window: 17:01 previous business day → 08:00 today.
+      Same classification logic as intraday.
+      Outbound queue send: NOT YET IMPLEMENTED (future slice).
 
-No new Gmail labels are created. Priority classification is purely for
-surfacing and logging; all threads receive a canonical state label.
+Business day definition: Sunday–Friday (Saturday is the only non-business day).
+
+Classification rules (both modes):
+  1. Resolve thread → matter via matter_identity_map + existing matter labels
+  2. If matched: apply matter label + one state label (single API call)
+  3. If not matched: apply one state label only
+  4. Low confidence → 00_Triage + needs_review flag in log
+  Priority tier (Essential/Strategic) is recorded in the log via the matched
+  matter label's tier prefix; no new priority Gmail labels are created.
 
 Authority: ML1 approval per Hourly Inbox Triage Agent spec (2026-04-13)
 Policy: POL-042 Inbox Governance Policy
 """
 
+import argparse
 import datetime
 import json
 import logging
@@ -41,7 +48,11 @@ sys.path.insert(0, str(REPO_ROOT / "gmail_governance"))
 # ── Shared imports from gmail_governance ──────────────────────────────────────
 
 from state_enforcement import get_gmail_service, CANONICAL_LABELS
-from matter_enforcement import get_matter_labels
+from matter_enforcement import (
+    get_matter_labels,
+    MATTER_TIER_PREFIXES,
+    MATTER_LEAF_PATTERN,
+)
 from batch_classifier import (
     classify_thread,
     get_matter_signal_confidence,
@@ -50,29 +61,82 @@ from batch_classifier import (
 
 # ── Constants ──────────────────────────────────────────────────────────────────
 
-AGENT_VERSION = "hourly-triage-v1.0"
+AGENT_VERSION = "inbox-triage-v1.1"
 APPROVAL_ARTIFACT = "AI Agent Spec — Hourly Inbox Triage Agent (2026-04-13)"
 APPROVAL_BY = "ML1"
 
-# Matter label tier prefix → priority classification (logging only)
+# Matter label tier prefix → priority classification (for logging only)
 TIER_TO_PRIORITY: Dict[str, str] = {
     "LL/1./1.1/": "ESSENTIAL_MATTER",
     "LL/1./1.2/": "STRATEGIC_MATTER",
+    "LL/1./1.3/": "STANDARD_MATTER",
+    "LL/1./1.4/": "PARKED_MATTER",
 }
 
 # Confidence thresholds
-CONFIDENCE_LOW = 0.65   # Below this → 00_Triage + needs_review=True
-CONFIDENCE_AUTO = 0.75  # Below this → needs_review=True in log
+CONFIDENCE_LOW = 0.65   # Below → 00_Triage + needs_review=True
+CONFIDENCE_AUTO = 0.75  # Below → needs_review=True in log
 
-# Fetch threads with activity in the last N minutes
-# 70 min ensures overlap between hourly runs with no gaps
-LOOKBACK_MINUTES = 70
+# Fallback lookback window for intraday mode if no prior run state exists (minutes)
+INTRADAY_FALLBACK_MINUTES = 70
 
 # File paths
 STATE_DIR = REPO_ROOT / "06_RUNS" / "INBOX_TRIAGE" / "state"
 LOG_DIR = REPO_ROOT / "06_RUNS" / "INBOX_TRIAGE" / "logs"
-STATE_FILE = STATE_DIR / "last_run.json"
 RUN_LOG_FILE = LOG_DIR / "hourly_triage_run.ndjson"
+
+
+def _state_file(mode: str) -> Path:
+    return STATE_DIR / f"last_run_{mode}.json"
+
+
+# ── Business day calendar (Sun–Fri; Sat is the only non-business day) ──────────
+
+def is_business_day(d: datetime.date) -> bool:
+    """Return True if d is a business day (Sunday–Friday)."""
+    return d.weekday() != 5  # 5 = Saturday
+
+
+def previous_business_day(d: datetime.date) -> datetime.date:
+    """Return the most recent business day strictly before d."""
+    candidate = d - datetime.timedelta(days=1)
+    while not is_business_day(candidate):
+        candidate -= datetime.timedelta(days=1)
+    return candidate
+
+
+# ── Review window calculation ──────────────────────────────────────────────────
+
+def morning_review_window() -> Tuple[int, int]:
+    """
+    Return (start_epoch, end_epoch) for the morning run:
+      start = 17:01:00 local time on the previous business day
+      end   = 08:00:00 local time today
+    Uses local system time (matches launchd fire time).
+    """
+    today = datetime.date.today()
+    prev_bd = previous_business_day(today)
+
+    local_start = datetime.datetime(
+        prev_bd.year, prev_bd.month, prev_bd.day, 17, 1, 0
+    )
+    local_end = datetime.datetime(
+        today.year, today.month, today.day, 8, 0, 0
+    )
+
+    start_epoch = int(local_start.timestamp())
+    end_epoch = int(local_end.timestamp())
+    return start_epoch, end_epoch
+
+
+def intraday_review_window(last_run_epoch: Optional[int]) -> int:
+    """
+    Return the after_epoch for the intraday Gmail query.
+    Falls back to INTRADAY_FALLBACK_MINUTES if no prior run.
+    """
+    if last_run_epoch:
+        return last_run_epoch
+    return int(time.time()) - (INTRADAY_FALLBACK_MINUTES * 60)
 
 
 # ── Gmail label utilities ──────────────────────────────────────────────────────
@@ -83,15 +147,34 @@ def get_full_label_map(service) -> Dict[str, str]:
     return {lbl["name"]: lbl["id"] for lbl in results.get("labels", [])}
 
 
+def get_matter_label_ids_on_thread(
+    current_label_ids: set, label_id_to_name: Dict[str, str]
+) -> List[str]:
+    """
+    Return the IDs of any canonical matter labels (LL/1./x.x/...) currently
+    on the thread. Used to remove old matter labels before applying a new one.
+    """
+    result = []
+    for lid in current_label_ids:
+        name = label_id_to_name.get(lid, "")
+        if not any(name.startswith(p) for p in MATTER_TIER_PREFIXES):
+            continue
+        parts = name.split("/")
+        if len(parts) >= 4 and MATTER_LEAF_PATTERN.match(parts[-1]):
+            result.append(lid)
+    return result
+
+
 # ── Thread fetching ────────────────────────────────────────────────────────────
 
-def fetch_updated_threads(service, last_run_epoch: Optional[int]) -> List[Dict]:
+def fetch_threads_in_window(service, after_epoch: int, before_epoch: Optional[int] = None) -> List[Dict]:
     """
-    Return thread stubs for threads that received a new message since
-    last_run_epoch. Falls back to a LOOKBACK_MINUTES window if no prior run.
+    Return thread stubs for threads with new messages after after_epoch.
+    Optional before_epoch constrains the upper bound (morning mode).
     """
-    after_ts = last_run_epoch if last_run_epoch else int(time.time()) - (LOOKBACK_MINUTES * 60)
-    query = f"after:{after_ts}"
+    query = f"after:{after_epoch}"
+    if before_epoch:
+        query += f" before:{before_epoch}"
 
     threads, page_token = [], None
     while True:
@@ -155,22 +238,25 @@ def fetch_thread_detail(
     }
 
 
-# ── Priority classification (logging only) ────────────────────────────────────
+# ── Classification ─────────────────────────────────────────────────────────────
 
-def classify_priority(
+def classify_thread_full(
     thread_detail: Dict[str, Any],
     matter_labels: Dict,
-) -> Tuple[str, Optional[str], float]:
+) -> Dict[str, Any]:
     """
-    Determine whether a thread belongs to an Essential Matter, Strategic Matter,
-    or is Non-Priority. Used for logging and surfacing only — does not affect
-    which state label is applied.
+    Full classification result for a thread.
 
-    Returns:
-        (priority, matter_number, confidence)
-          priority:      'ESSENTIAL_MATTER' | 'STRATEGIC_MATTER' | 'NON_PRIORITY'
-          matter_number: matched Clio matter ID, or None
-          confidence:    float 0.0–1.0
+    Returns a dict with:
+      matter_number:      matched Clio matter ID or None
+      matter_label_name:  full Gmail label path or None
+      matter_label_id:    Gmail label ID or None
+      priority:           'ESSENTIAL_MATTER' | 'STRATEGIC_MATTER' | 'STANDARD_MATTER' |
+                          'PARKED_MATTER' | 'NON_PRIORITY'
+      state_label:        one of CANONICAL_LABELS
+      confidence:         float
+      needs_review:       bool
+      reason:             str
     """
     matter = resolve_thread_matter(
         subject=thread_detail["subject"],
@@ -180,62 +266,116 @@ def classify_priority(
         matter_labels=matter_labels,
     )
 
-    if matter["status"] != "matched":
-        return "NON_PRIORITY", None, 0.90
+    matter_matched = matter["status"] == "matched"
+    matter_number = matter.get("matter_number") if matter_matched else None
+    matter_label_name = matter.get("proposed_label") if matter_matched else None
+    matter_label_id = matter.get("proposed_label_id") if matter_matched else None
 
-    proposed_label = matter.get("proposed_label") or ""
-    matter_number = matter.get("matter_number")
     signal = matter.get("signal", "")
-
     confidence = {
         "determinative": 0.99,
         "high": 0.90,
         "medium": 0.75,
         "none": 0.50,
-    }.get(get_matter_signal_confidence(signal), 0.70)
+    }.get(get_matter_signal_confidence(signal), 0.70) if matter_matched else 0.90
 
-    for tier_prefix, priority_key in TIER_TO_PRIORITY.items():
-        if proposed_label.startswith(tier_prefix):
-            return priority_key, matter_number, confidence
+    # Priority tier from matter label path (for logging)
+    priority = "NON_PRIORITY"
+    if matter_label_name:
+        for tier_prefix, priority_key in TIER_TO_PRIORITY.items():
+            if matter_label_name.startswith(tier_prefix):
+                priority = priority_key
+                break
 
-    # Standard or Parked tier → non-priority
-    return "NON_PRIORITY", matter_number, 0.85
+    # State label — pass has_matter_association so classifier steers toward
+    # 10_Action_Matthew for matched threads rather than falling to 00_Triage
+    has_matter = matter_matched and confidence >= CONFIDENCE_AUTO
+    raw_state = classify_thread(
+        subject=thread_detail["subject"],
+        sender=thread_detail["sender"],
+        snippet=thread_detail["snippet"],
+        current_labels=thread_detail["current_labels"],
+        last_sender=thread_detail["last_sender"],
+        message_count=thread_detail["message_count"],
+        has_matter_association=has_matter,
+    )
+
+    # Low confidence overrides to 00_Triage
+    state_label = "00_Triage" if confidence < CONFIDENCE_LOW else raw_state
+    needs_review = confidence < CONFIDENCE_AUTO
+
+    # Reason string
+    if matter_number:
+        reason = f"Matter {matter_number} ({priority.lower().replace('_', ' ')}) → {state_label}"
+    else:
+        reason = f"non_priority → {state_label}"
+    if confidence < CONFIDENCE_LOW:
+        reason += " [low confidence → triage]"
+
+    return {
+        "matter_number": matter_number,
+        "matter_label_name": matter_label_name,
+        "matter_label_id": matter_label_id,
+        "priority": priority,
+        "state_label": state_label,
+        "confidence": confidence,
+        "needs_review": needs_review,
+        "reason": reason,
+    }
 
 
-# ── State label application ────────────────────────────────────────────────────
+# ── Label application ──────────────────────────────────────────────────────────
 
-def apply_state_label_to_thread(
+def apply_labels_to_thread(
     service,
     thread_id: str,
+    matter_label_id: Optional[str],
     state_label_name: str,
     label_map: Dict[str, str],
+    label_id_to_name: Dict[str, str],
     current_label_ids: set,
 ) -> bool:
     """
-    Apply exactly one canonical state label to the thread.
-    Removes all competing canonical state labels.
-    Does NOT touch matter labels or any other labels.
+    Apply matter label (if provided) + one canonical state label in a single
+    threads.modify call. Removes:
+      - all existing matter labels (if applying a new matter label)
+      - all competing canonical state labels
+
+    Does NOT touch any other labels on the thread.
     """
     if state_label_name not in CANONICAL_LABELS:
         logging.error(f"'{state_label_name}' is not a canonical state label")
         return False
 
-    target_id = label_map.get(state_label_name)
-    if not target_id:
+    state_label_id = label_map.get(state_label_name)
+    if not state_label_id:
         logging.error(f"State label '{state_label_name}' not found in Gmail")
         return False
 
-    canonical_ids = {label_map[n] for n in CANONICAL_LABELS if n in label_map}
-    remove_ids = list((current_label_ids & canonical_ids) - {target_id})
+    add_ids: List[str] = [state_label_id]
+    remove_ids: set = set()
 
-    # Idempotent: already the sole canonical state label on this thread
-    if target_id in current_label_ids and not remove_ids:
+    # State exclusivity: remove all other canonical state labels
+    canonical_ids = {label_map[n] for n in CANONICAL_LABELS if n in label_map}
+    remove_ids.update(current_label_ids & canonical_ids - {state_label_id})
+
+    # Matter label: add new, remove old
+    if matter_label_id:
+        old_matter_ids = get_matter_label_ids_on_thread(current_label_ids, label_id_to_name)
+        remove_ids.update(mid for mid in old_matter_ids if mid != matter_label_id)
+        if matter_label_id not in current_label_ids:
+            add_ids.append(matter_label_id)
+
+    remove_list = list(remove_ids)
+
+    # Idempotent: nothing to add or remove
+    if all(aid in current_label_ids for aid in add_ids) and not remove_list:
         return True
 
     service.users().threads().modify(
         userId="me",
         id=thread_id,
-        body={"addLabelIds": [target_id], "removeLabelIds": remove_ids},
+        body={"addLabelIds": add_ids, "removeLabelIds": remove_list},
     ).execute()
     return True
 
@@ -250,17 +390,14 @@ def write_log_entry(entry: Dict[str, Any]):
 
 def build_thread_log(
     run_id: str,
+    mode: str,
     thread_detail: Dict[str, Any],
-    priority: str,
-    state_label: str,
-    matter_number: Optional[str],
-    confidence: float,
+    classification: Dict[str, Any],
     action_taken: str,
-    reason: str,
-    needs_review: bool,
 ) -> Dict[str, Any]:
     return {
         "run_id": run_id,
+        "mode": mode,
         "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "agent_version": AGENT_VERSION,
         "thread_id": thread_detail["thread_id"],
@@ -269,13 +406,14 @@ def build_thread_log(
         "latest_message_at": thread_detail.get("latest_message_at"),
         "is_unread": thread_detail.get("is_unread", False),
         "existing_labels": thread_detail["current_labels"],
-        "priority_classification": priority.lower(),
-        "state_label": state_label,
-        "matter_number": matter_number,
-        "confidence": round(confidence, 3),
-        "reason_summary": reason,
+        "priority_classification": classification["priority"].lower(),
+        "matter_number": classification["matter_number"],
+        "matter_label": classification["matter_label_name"],
+        "state_label": classification["state_label"],
+        "confidence": round(classification["confidence"], 3),
+        "reason_summary": classification["reason"],
         "action_taken": action_taken,
-        "needs_review": needs_review,
+        "needs_review": classification["needs_review"],
         "approval_artifact": APPROVAL_ARTIFACT,
         "approved_by": APPROVAL_BY,
     }
@@ -283,61 +421,42 @@ def build_thread_log(
 
 # ── Run state ──────────────────────────────────────────────────────────────────
 
-def load_run_state() -> Dict[str, Any]:
+def load_run_state(mode: str) -> Dict[str, Any]:
     STATE_DIR.mkdir(parents=True, exist_ok=True)
-    if STATE_FILE.exists():
-        with open(STATE_FILE) as f:
+    sf = _state_file(mode)
+    if sf.exists():
+        with open(sf) as f:
             return json.load(f)
     return {}
 
 
-def save_run_state(run_id: str, thread_count: int):
+def save_run_state(mode: str, run_id: str, thread_count: int, extra: Optional[Dict] = None):
     STATE_DIR.mkdir(parents=True, exist_ok=True)
-    with open(STATE_FILE, "w") as f:
-        json.dump({
-            "last_run_id": run_id,
-            "last_run_timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-            "last_run_epoch": int(time.time()),
-            "threads_processed": thread_count,
-        }, f, indent=2)
-
-
-# ── Main ───────────────────────────────────────────────────────────────────────
-
-def main():
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-    )
-
-    run_id = datetime.datetime.now(datetime.timezone.utc).strftime("triage-%Y%m%d-%H%M%S")
-    run_start = datetime.datetime.now(datetime.timezone.utc)
-
-    logging.info(f"=== Hourly Inbox Triage | Run: {run_id} ===")
-
-    prior_state = load_run_state()
-    last_run_epoch = prior_state.get("last_run_epoch")
-
-    service = get_gmail_service()
-    label_map = get_full_label_map(service)
-    label_id_to_name = {v: k for k, v in label_map.items()}
-
-    matter_labels = get_matter_labels(service)
-    raw_threads = fetch_updated_threads(service, last_run_epoch)
-
-    logging.info(f"Fetched {len(raw_threads)} threads since last run")
-
-    stats = {
-        "total": len(raw_threads),
-        "essential_matter": 0,
-        "strategic_matter": 0,
-        "non_priority": 0,
-        "low_confidence": 0,
-        "errors": 0,
-        "skipped": 0,
-        "by_state": {lbl: 0 for lbl in CANONICAL_LABELS},
+    state = {
+        "mode": mode,
+        "last_run_id": run_id,
+        "last_run_timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "last_run_epoch": int(time.time()),
+        "threads_processed": thread_count,
     }
+    if extra:
+        state.update(extra)
+    with open(_state_file(mode), "w") as f:
+        json.dump(state, f, indent=2)
 
+
+# ── Thread processing loop (shared by both modes) ─────────────────────────────
+
+def process_threads(
+    service,
+    raw_threads: List[Dict],
+    matter_labels: Dict,
+    label_map: Dict[str, str],
+    label_id_to_name: Dict[str, str],
+    run_id: str,
+    mode: str,
+    stats: Dict[str, Any],
+):
     for thread_stub in raw_threads:
         thread_id = thread_stub["id"]
         try:
@@ -346,38 +465,20 @@ def main():
                 stats["skipped"] += 1
                 continue
 
-            current_label_ids: set = detail["all_label_ids"]
+            classification = classify_thread_full(detail, matter_labels)
 
-            # ── Step 1: Priority classification (logging only) ────────────────
-            priority, matter_number, confidence = classify_priority(detail, matter_labels)
-
-            needs_review = confidence < CONFIDENCE_AUTO
-            if confidence < CONFIDENCE_LOW:
-                stats["low_confidence"] += 1
-
-            # ── Step 2: State label (all threads, regardless of priority) ─────
-            # has_matter_association informs the state classifier when priority
-            # matter resolution is high-confidence
-            has_matter = priority in ("ESSENTIAL_MATTER", "STRATEGIC_MATTER") and confidence >= CONFIDENCE_AUTO
-
-            raw_state = classify_thread(
-                subject=detail["subject"],
-                sender=detail["sender"],
-                snippet=detail["snippet"],
-                current_labels=detail["current_labels"],
-                last_sender=detail["last_sender"],
-                message_count=detail["message_count"],
-                has_matter_association=has_matter,
+            apply_labels_to_thread(
+                service=service,
+                thread_id=thread_id,
+                matter_label_id=classification["matter_label_id"],
+                state_label_name=classification["state_label"],
+                label_map=label_map,
+                label_id_to_name=label_id_to_name,
+                current_label_ids=detail["all_label_ids"],
             )
 
-            # Low confidence → 00_Triage
-            state_label = "00_Triage" if confidence < CONFIDENCE_LOW else raw_state
-
-            apply_state_label_to_thread(
-                service, thread_id, state_label, label_map, current_label_ids
-            )
-
-            stats["by_state"][state_label] += 1
+            # Stats
+            priority = classification["priority"]
             if priority == "ESSENTIAL_MATTER":
                 stats["essential_matter"] += 1
             elif priority == "STRATEGIC_MATTER":
@@ -385,57 +486,126 @@ def main():
             else:
                 stats["non_priority"] += 1
 
-            reason = f"{priority.lower().replace('_', ' ')} → {state_label}"
-            if matter_number:
-                reason = f"Matter {matter_number} ({priority.lower().replace('_', ' ')}) → {state_label}"
-            if confidence < CONFIDENCE_LOW:
-                reason += " [low confidence → triage]"
+            if classification["needs_review"] and classification["confidence"] < CONFIDENCE_LOW:
+                stats["low_confidence"] += 1
 
-            write_log_entry(build_thread_log(
-                run_id=run_id,
-                thread_detail=detail,
-                priority=priority,
-                state_label=state_label,
-                matter_number=matter_number,
-                confidence=confidence,
-                action_taken=f"apply_state:{state_label}",
-                reason=reason,
-                needs_review=needs_review,
-            ))
+            if classification["matter_label_name"]:
+                stats["matter_labels_applied"] += 1
+
+            stats["by_state"][classification["state_label"]] += 1
+
+            action = f"apply_state:{classification['state_label']}"
+            if classification["matter_label_id"]:
+                action = f"apply_matter+state:{classification['matter_label_name']}+{classification['state_label']}"
+
+            write_log_entry(build_thread_log(run_id, mode, detail, classification, action))
 
         except Exception as exc:
             stats["errors"] += 1
             logging.error(f"Thread {thread_id}: {exc}")
             write_log_entry({
                 "run_id": run_id,
+                "mode": mode,
                 "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(),
                 "thread_id": thread_id,
                 "error": str(exc),
                 "action_taken": "error",
             })
 
-    save_run_state(run_id, len(raw_threads))
+
+# ── Main ───────────────────────────────────────────────────────────────────────
+
+def main():
+    parser = argparse.ArgumentParser(description="Inbox Triage Agent")
+    parser.add_argument(
+        "--mode",
+        choices=["intraday", "morning"],
+        default="intraday",
+        help="Run mode: intraday (default) or morning",
+    )
+    args = parser.parse_args()
+    mode = args.mode
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+    )
+
+    run_id = datetime.datetime.now(datetime.timezone.utc).strftime(f"triage-{mode}-%Y%m%d-%H%M%S")
+    run_start = datetime.datetime.now(datetime.timezone.utc)
+
+    logging.info(f"=== Inbox Triage Agent | mode={mode} | run={run_id} ===")
+
+    prior_state = load_run_state(mode)
+    service = get_gmail_service()
+    label_map = get_full_label_map(service)
+    label_id_to_name = {v: k for k, v in label_map.items()}
+    matter_labels = get_matter_labels(service)
+
+    # ── Review window ─────────────────────────────────────────────────────────
+    before_epoch: Optional[int] = None
+    checkpoint_extra: Dict[str, Any] = {}
+
+    if mode == "morning":
+        start_epoch, end_epoch = morning_review_window()
+        before_epoch = end_epoch
+        after_epoch = start_epoch
+        window_start_iso = datetime.datetime.fromtimestamp(start_epoch).isoformat()
+        window_end_iso = datetime.datetime.fromtimestamp(end_epoch).isoformat()
+        logging.info(f"Morning window: {window_start_iso} → {window_end_iso}")
+        checkpoint_extra = {
+            "covered_start": window_start_iso,
+            "covered_end": window_end_iso,
+        }
+    else:
+        after_epoch = intraday_review_window(prior_state.get("last_run_epoch"))
+
+    raw_threads = fetch_threads_in_window(service, after_epoch, before_epoch)
+    logging.info(f"Fetched {len(raw_threads)} threads")
+
+    stats: Dict[str, Any] = {
+        "total": len(raw_threads),
+        "essential_matter": 0,
+        "strategic_matter": 0,
+        "non_priority": 0,
+        "matter_labels_applied": 0,
+        "low_confidence": 0,
+        "errors": 0,
+        "skipped": 0,
+        "by_state": {lbl: 0 for lbl in CANONICAL_LABELS},
+    }
+
+    process_threads(
+        service, raw_threads, matter_labels,
+        label_map, label_id_to_name,
+        run_id, mode, stats,
+    )
+
+    save_run_state(mode, run_id, len(raw_threads), checkpoint_extra)
 
     duration = (datetime.datetime.now(datetime.timezone.utc) - run_start).total_seconds()
 
     print(f"\n{'='*56}")
-    print(f"  Hourly Inbox Triage  |  {run_id}")
+    print(f"  Inbox Triage  |  mode={mode}  |  {run_id}")
     print(f"{'='*56}")
-    print(f"  Duration:        {duration:.1f}s")
-    print(f"  Threads total:   {stats['total']}")
-    print(f"  Essential:       {stats['essential_matter']}")
-    print(f"  Strategic:       {stats['strategic_matter']}")
-    print(f"  Non-priority:    {stats['non_priority']}")
-    print(f"  Low confidence:  {stats['low_confidence']}")
-    print(f"  Errors:          {stats['errors']}")
-    print(f"  Skipped:         {stats['skipped']}")
+    print(f"  Duration:          {duration:.1f}s")
+    print(f"  Threads total:     {stats['total']}")
+    print(f"  Essential matters: {stats['essential_matter']}")
+    print(f"  Strategic matters: {stats['strategic_matter']}")
+    print(f"  Non-priority:      {stats['non_priority']}")
+    print(f"  Matter labels:     {stats['matter_labels_applied']}")
+    print(f"  Low confidence:    {stats['low_confidence']}")
+    print(f"  Errors:            {stats['errors']}")
+    print(f"  Skipped:           {stats['skipped']}")
     active_states = {k: v for k, v in stats["by_state"].items() if v > 0}
     if active_states:
         print(f"\n  State label breakdown:")
         for lbl, count in sorted(active_states.items()):
             print(f"    {lbl}: {count}")
+    if mode == "morning" and checkpoint_extra:
+        print(f"\n  Window: {checkpoint_extra.get('covered_start')} → {checkpoint_extra.get('covered_end')}")
     print(f"\n  Log:   {RUN_LOG_FILE}")
-    print(f"  State: {STATE_FILE}")
+    print(f"  State: {_state_file(mode)}")
     print(f"{'='*56}\n")
 
 
