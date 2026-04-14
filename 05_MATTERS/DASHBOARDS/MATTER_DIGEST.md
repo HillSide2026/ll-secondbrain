@@ -1,11 +1,11 @@
 # Firm Matter Digest
 
-Generated at: 2026-04-13T10:31:07Z
+Generated at: 2026-04-14T10:30:42Z
 
 ## Summary
 - Moved matters: 0
 - ML Active matters: 18
-- ML Active matters with zero services: 17
+- ML Active matters with zero services: 13
 - ML Watch matters: 11
 - Fulfillment escalation candidates (urgent): 1
 - Inbox-linked active matters (last 7 days): 0
@@ -20,10 +20,10 @@ Generated at: 2026-04-13T10:31:07Z
 - Fulfillment escalation candidates (urgent): 1
 
 ### Fulfillment Escalation Candidates
-- 25-927-00003 :: Stream Ventures Limited (delivery=Essential; fulfillment=urgent; services=0; latest signal=2026-03-05T04:08:22Z; repo://05_MATTERS/ESSENTIAL/25-927-00003/MATTER.yaml)
+- 25-927-00003 :: Stream Ventures Limited (delivery=Essential; fulfillment=urgent; services=5; latest signal=2026-03-05T04:08:22Z; repo://05_MATTERS/ESSENTIAL/25-927-00003/MATTER.yaml)
 
 ## Operational Gaps (Not automatic ML1 review)
-- ML Active matters missing service definitions: 17
+- ML Active matters missing service definitions: 13
 - SharePoint unmapped items: 50
 
 ## ML1 Visibility Context
@@ -32,10 +32,10 @@ Generated at: 2026-04-13T10:31:07Z
 ### ML Active Queue
 | Matter Number | Matter | Category | Delivery | Fulfillment | Services | Status | Source Pointer |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 25-927-00003 | Stream Ventures Limited | ML Active | Essential | urgent | 0 | Open | repo://05_MATTERS/ESSENTIAL/25-927-00003/MATTER.yaml |
-| 24-336-00004 | Mascore Helical Piles | ML Active | Strategic | active | 0 | Open | repo://05_MATTERS/STRATEGIC/24-336-00004/MATTER.yaml |
-| 25-1231-00001 | Charmaine Spiteri | ML Active | Strategic | active | 0 | Open | repo://05_MATTERS/STRATEGIC/25-1231-00001/MATTER.yaml |
-| 25-256-00005 | Aspire Infusions Inc | ML Active | Strategic | active | 0 | Open | repo://05_MATTERS/STRATEGIC/25-256-00005/MATTER.yaml |
+| 25-927-00003 | Stream Ventures Limited | ML Active | Essential | urgent | 5 (solution:AML/ATF Policy Development and FINTRAC Compliance; solution:RPAA Compliance — Incident Risk Policy and Application; solution:Terms and Conditions Review — Equals Money Cross-Reference; solution:Wolfsberg FCCQ Completion; +1 more) | Open | repo://05_MATTERS/ESSENTIAL/25-927-00003/MATTER.yaml |
+| 24-336-00004 | Mascore Helical Piles | ML Active | Strategic | active | 2 (solution:Cohabitation Agreement — Max Hill (ILA Review); strategy:Wealth Management and Trusts Advisory — Max Hill) | Open | repo://05_MATTERS/STRATEGIC/24-336-00004/MATTER.yaml |
+| 25-1231-00001 | Charmaine Spiteri | ML Active | Strategic | active | 3 (solution:Corporate Exit — 1720388 Ontario Inc. and Terrastone Construction Inc. (substantially complete); solution:Corporate Exit — 1761859 Ontario Inc. (OBR Director Record Update); solution:CRA Representative Authorization — Charmaine Spiteri) | Open | repo://05_MATTERS/STRATEGIC/25-1231-00001/MATTER.yaml |
+| 25-256-00005 | Aspire Infusions Inc | ML Active | Strategic | active | 3 (solution:NDA Review and Negotiation — Loosh Brands (RapidSense Technology); solution:Seeker Cannabis Agreement Review (complete); strategy:Corporate Re-organization Advisory (status unconfirmed)) | Open | repo://05_MATTERS/STRATEGIC/25-256-00005/MATTER.yaml |
 | 22-194-00006 | Rousseau Mazzuca LLP | ML Active | Standard | active | 0 | Open | repo://05_MATTERS/STANDARD/22-194-00006/MATTER.yaml |
 | 23-194-00013 | Rousseau Mazzuca LLP | ML Active | Standard | active | 0 | Open | repo://05_MATTERS/STANDARD/23-194-00013/MATTER.yaml |
 | 24-646-00001 | ByNature Design | ML Active | Standard | active | 0 | Open | repo://05_MATTERS/STANDARD/24-646-00001/MATTER.yaml |
@@ -67,10 +67,6 @@ Generated at: 2026-04-13T10:31:07Z
 | 26-1630-00001 | Marcela Hernandez | ML Watch | Parked | keep in view | 0 | Open | repo://05_MATTERS/PARKED/26-1630-00001/MATTER.yaml |
 
 ### ML Active Service Coverage Gaps
-- 25-927-00003 :: Stream Ventures Limited (services=0; repo://05_MATTERS/ESSENTIAL/25-927-00003/MATTER.yaml)
-- 24-336-00004 :: Mascore Helical Piles (services=0; repo://05_MATTERS/STRATEGIC/24-336-00004/MATTER.yaml)
-- 25-1231-00001 :: Charmaine Spiteri (services=0; repo://05_MATTERS/STRATEGIC/25-1231-00001/MATTER.yaml)
-- 25-256-00005 :: Aspire Infusions Inc (services=0; repo://05_MATTERS/STRATEGIC/25-256-00005/MATTER.yaml)
 - 22-194-00006 :: Rousseau Mazzuca LLP (services=0; repo://05_MATTERS/STANDARD/22-194-00006/MATTER.yaml)
 - 23-194-00013 :: Rousseau Mazzuca LLP (services=0; repo://05_MATTERS/STANDARD/23-194-00013/MATTER.yaml)
 - 24-646-00001 :: ByNature Design (services=0; repo://05_MATTERS/STANDARD/24-646-00001/MATTER.yaml)

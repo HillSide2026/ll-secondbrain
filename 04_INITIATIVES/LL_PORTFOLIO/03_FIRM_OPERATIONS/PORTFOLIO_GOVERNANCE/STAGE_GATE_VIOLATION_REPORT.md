@@ -1,7 +1,7 @@
 # STAGE GATE VIOLATION REPORT
 
-- Generated: 2026-04-13T10:31:37+00:00
-- Run ID: RUN-2026-04-13-LL-PORTFOLIO-AGENTS-103136Z
+- Generated: 2026-04-14T10:31:04+00:00
+- Run ID: RUN-2026-04-14-LL-PORTFOLIO-AGENTS-103103Z
 
 > Advisory output. ML1 approval remains required for decisions.
 ## Stage Gate Violations
