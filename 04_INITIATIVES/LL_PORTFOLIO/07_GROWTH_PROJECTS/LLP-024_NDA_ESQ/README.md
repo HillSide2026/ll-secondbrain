@@ -194,6 +194,12 @@ alignment with the repo-level project policy.
 - `planning/COMMUNICATION_PLAN.md`
 - `planning/METRICS.md`
 
+## Current Status (2026-04-14)
+
+- **Build progress:** Mostly complete. Exact per-deliverable progress to be confirmed by ML1 and recorded in DELIVERABLES_TRACKER.
+- **Hosting:** levinellp.ca and levine-law.ca (confirmed 2026-04-14)
+- **Surface role:** NDA Esq is the upsell pipeline surface within levinellp.ca — owns contacts, re-sale opportunities, re-engagement commercial workflow, and extension-stage commercial coordination. Does not own matter lifecycle. See DECISION_LOG.md for full surface map.
+
 ## Last ML1 Review Date
 
-`2026-03-14`
+`2026-04-14`
