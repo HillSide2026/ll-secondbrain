@@ -5,9 +5,13 @@ status: "Open"
 delivery_status: "Strategic"
 fulfillment_status: "active"
 created_date: "2026-01-30"
+practice_area: "Corporate/Commercial — Franchise"
 services:
-  - service_type: solution
-    service_name: "Asset purchase agreement review and negotiation"
-  - service_type: solution
-    service_name: "Franchise transfer documentation review"
-
+  - service_type: "solution"
+    service_name: "Asset Purchase Agreement — Review, Negotiation, and Execution (Subway Store #37499)"
+  - service_type: "solution"
+    service_name: "Franchise Transfer — Subway Initiation Package and Transfer Approval"
+  - service_type: "solution"
+    service_name: "Vendor Release — Franchise Agreement and Sublease Discharge Confirmation"
+  - service_type: "solution"
+    service_name: "Closing Coordination — APA Schedules, Price Allocation, and Closing Agenda"

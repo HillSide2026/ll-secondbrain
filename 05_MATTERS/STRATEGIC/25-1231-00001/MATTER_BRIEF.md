@@ -26,15 +26,20 @@ Corporate strategy matter for Charmaine Spiteri. Work involves her exit from mul
 - Exit from 1761859 remains pending.
 
 ## Current posture
-- Active. Waiting on client CRA authorization and completion of 1761859 exit.
+- Active. Two live workstreams:
+  1. **1761859 OBR Director Record**: OBR search (Apr 10) shows Charmaine listed as director of 1761859. LL's position: she was not properly appointed and did not consent. OBR does not allow retroactive deletion — fix is to set start date = cease date. Only Charmaine and Ron are listed as directors (Ron's parents are shareholders, not directors). LL has written to OBR; resolution pending.
+  2. **CRA Representative Authorization**: LL has written to CRA to register as Charmaine's representative. Authorization from Charmaine is outstanding.
+- 1720388 Ontario Inc. and Terrastone Construction Inc. exits: substantially complete (documents circulated and in archive).
 
 ## Near-term milestones
-- Client to authorize LL as CRA representative.
-- Complete exit from 1761859.
+- Obtain Charmaine's CRA representative authorization.
+- Resolve 1761859 OBR director record (set start = cease date).
 
 ## Open questions
-- Status of 1761859 exit documents — what remains outstanding?
+- Confirmation from OBR that 1761859 director record correction has been processed.
+- Status of CRA authorization submission.
 
 ## Change log
 - 2026-02-16 -- Summary updated from README.
 - 2026-03-22 -- Updated: CRA representative registration confirmed; 1761859 exit pending; scope clarified from SharePoint documents.
+- 2026-04-12 -- Updated from Gmail: OBR search Apr 10 shows Charmaine as director of 1761859; LL position and OBR fix strategy documented; CRA authorization still outstanding.

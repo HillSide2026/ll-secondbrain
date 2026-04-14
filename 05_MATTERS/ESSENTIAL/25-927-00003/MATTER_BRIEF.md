@@ -37,19 +37,27 @@ Stream Ventures Limited is a payments/MSB client with active CAMLO (Chief AML Of
 - **State:** Docketing Active
 - **Primary Activity:** SnowCap CAMLO Operations / RPAA workstream
 - Active work on:
-  - RPAA - Incident Risk Policy (in progress)
-  - RPAA - Application (in progress)
+  - RPAA — Incident Risk Policy (in progress)
+  - RPAA — Application (in progress)
+  - T&C drafting: Gevork Grigorian (gevorkg@stream.money) has requested incorporation of Equals Money corporate terms by reference into Stream's Terms and Conditions
 - Pending:
   - Meet with Equals
-  - Attend KYC analyst interview
+  - Attend KYC analyst interview (Sumsub — Slack workspace `#ext-stream_money-sumsub` set up Apr 7)
   - Follow up: Verto
+  - Stream to settle outstanding trust request (covering work already performed) — Harry Bedi confirmed Apr 10
+  - Discuss fee arrangement: $20,000/month retainer proposed by ML1; Harry Bedi wants call before committing; Clio payment plan set up Apr 15 start, AMEX ending 2002
+  - Corsa case management demo: Apr 21 2026 (Corsa Finance / michelle@corsa.finance)
 
 ## Near-term milestones
 
 - Complete RPAA Incident Risk Policy and Application
+- Draft Equals Money cross-reference clause for T&C
 - Meet with Equals
-- Attend KYC analyst interview
+- Attend KYC analyst interview (Sumsub Slack invite sent Apr 7)
+- Resolve outstanding trust request
+- Confirm monthly retainer arrangement ($20k/month) after discussion with Harry Bedi
 - Follow up with Verto
+- Corsa case management demo — Apr 21
 
 ## Working Budget Envelope (Remaining 2026)
 
@@ -83,5 +91,5 @@ Stream matters if ML1 changes the operating split.
 
 - 2026-02-01 — Brief populated from SharePoint metadata analysis
 - 2026-03-22 — Updated: AML-ATF Risk Assessment approval confirmed done; Wolfsberg FCCQ client feedback confirmed done; Diameter Agreement sent (done); RPAA Payments Agreement removed pending ML1 confirmation of status; Equals and Verto tasks added
-- 2026-04-03 — Working remaining-2026 matter budget added using a provisional
-  `4 hours/week` allocation from the Stream relationship target
+- 2026-04-03 — Working remaining-2026 matter budget added using a provisional `4 hours/week` allocation from the Stream relationship target
+- 2026-04-12 — Updated from Gmail: Sumsub KYC Slack workspace set up Apr 7; T&C Equals Money cross-reference request from Gevork; $20k/month retainer proposed, Clio payment plan Apr 15 start; outstanding trust request confirmed by Harry Bedi; Corsa demo Apr 21

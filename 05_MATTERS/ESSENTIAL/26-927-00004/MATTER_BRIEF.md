@@ -34,6 +34,9 @@ Ad hoc Head of Legal for SnowCap Financial Limited operating as Stream Money. Sn
   - RPAA registration
   - RPAA: Incident Risk Policy (in progress)
   - RPAA Application (in progress)
+  - Stream x Innowise — recurring weekly meetings (Mondays and Thursdays, 7am–8am ET); ML1 participates as SnowCap counsel
+  - Corsa case management software demo: Apr 21 2026 (michelle@corsa.finance); Stream/SnowCap team attending (Harry Bedi, Tulika D.)
+- Billing: Consolidated account statement issued Apr 9 to sonia@stream.money; invoices 2785–2788 (paid and unpaid), trust request 2789
 
 ## Near-term milestones
 
@@ -73,5 +76,5 @@ Stream matters if ML1 changes the operating split.
 ## Change log
 
 - 2026-03-22 — Brief created; scope confirmed by ML1
-- 2026-04-03 — Working remaining-2026 matter budget added using a provisional
-  `6 hours/week` allocation from the Stream relationship target
+- 2026-04-03 — Working remaining-2026 matter budget added using a provisional `6 hours/week` allocation from the Stream relationship target
+- 2026-04-12 — Updated from Gmail: Innowise meetings confirmed recurring 2x/week; Corsa demo Apr 21; billing statement Apr 9

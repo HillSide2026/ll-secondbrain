@@ -25,6 +25,7 @@ Mascore Helical Piles (helical piles / construction) corporate client matter. Cu
 
 ## Current posture
 - Active. Cohabitation agreement requires final edits and referral to a new family lawyer for ILA review.
+- Billing: $624 WIP unresolved — ML1 noted "not sure" on Apr 9; decision pending (Jocelyn Ong tracking).
 
 ## Near-term milestones
 - Finalize cohabitation agreement.
@@ -38,3 +39,4 @@ Mascore Helical Piles (helical piles / construction) corporate client matter. Cu
 ## Change log
 - 2026-02-16 -- Summary updated from README.
 - 2026-03-22 -- Removed Dani Frodis as ILA counsel; task updated to find replacement family lawyer.
+- 2026-04-12 -- practice_area and services added; billing WIP noted from Gmail
