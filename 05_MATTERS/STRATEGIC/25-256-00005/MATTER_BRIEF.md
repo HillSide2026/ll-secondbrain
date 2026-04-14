@@ -35,7 +35,7 @@ Aspire Infusions Inc corporate/commercial matter for a cannabis brand client. Se
 - Corp re-org steps: discussed; status unconfirmed; to be confirmed with client.
 
 ## Near-term milestones
-- ML1 to produce final clean NDA (Loosh Brands) for Sy to execute.
+- Clarify whether ML1 needs to circulate final clean NDA (clause 3.4 removed, bilateral changes retained) or whether client is waiting on something else; then circulate if ML1's move.
 - Confirm corp re-org status with client.
 
 ## Open questions
@@ -44,4 +44,5 @@ Aspire Infusions Inc corporate/commercial matter for a cannabis brand client. Se
 ## Change log
 - 2026-02-16 -- Summary updated from README.
 - 2026-03-22 -- Updated: Seeker review done; AR outstanding; corp re-org status unconfirmed.
-- 2026-04-12 -- Updated from Gmail: Loosh Brands NDA active; ML1 markups negotiated; Sy aligned; final clean version pending ML1.
+- 2026-04-12 -- Updated from Gmail: Loosh Brands NDA active; ML1 markups negotiated; Sy aligned; final clean version pending.
+- 2026-04-13 -- ML1 note: unclear whether client is waiting on ML1 to circulate or vice versa; to be confirmed before producing clean version.

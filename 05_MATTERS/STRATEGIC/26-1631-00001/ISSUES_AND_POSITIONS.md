@@ -5,7 +5,7 @@ title: Issues & Positions — 26-1631-00001 — 1713425 Ontario Inc. (Tejvir Bop
 owner: ML1
 status: draft
 created_date: 2026-03-28
-last_updated: 2026-04-12
+last_updated: 2026-04-13
 tags: [matter, 26-1631-00001]
 ---
 
@@ -13,12 +13,14 @@ tags: [matter, 26-1631-00001]
 
 ## Issues
 
-1. **APA Re-execution — Consolidated Signature Package (URGENT)**
+1. **APA Re-execution — Consolidated Signature Package**
    - Buyer's counsel (Alecia Lewis, Horwitz Finder) sent consolidated PDF (Apr 10) requiring Tejvir Boparai and Geetika Boparai to sign and initial every page
    - Buyer's counsel chased Apr 10 and Apr 13
-   - ML1 email Apr 13: seller re-signed; ML1 circulating to clients for e-signature
+   - ML1 circulated document to both principals Apr 13
+   - Tejvir Boparai: signed
+   - Geetika Boparai: document sent; signature outstanding
    - Blocking dependency: fully executed APA required before Subway transfer submission can begin
-   - Status: URGENT — Pending client signatures
+   - Status: Pending Geetika Boparai signature
 
 2. **Subway Transfer Submission — Transfer Fee and Approval Package**
    - Subway transfer initiation requires: (a) fully executed APA, and (b) $3,616 CAD transfer fee (wire to Subway Franchise Systems of Canada ULC, RBC)
@@ -51,7 +53,7 @@ tags: [matter, 26-1631-00001]
 
 ## ML1 Positions
 
-- Issue 1 (APA Re-execution) — [URGENT: Circulate consolidated APA to Tejvir + Geetika for e-signature; return to Horwitz Finder]
+- Issue 1 (APA Re-execution) — [PENDING GEETIKA: Document sent to both principals; Tejvir signed; awaiting Geetika Boparai signature; return fully executed copy to Horwitz Finder]
 - Issue 2 (Subway Transfer) — [PENDING APA EXECUTION: Once executed, submit APA + $3,616 transfer fee to Subway]
 - Issue 3 (Vendor Release) — [WRITTEN DOCS REQUIRED: Verbal confirmation from Brendan Shaw; written termination/release must be obtained before closing]
 - Issue 4 (Indemnity Cap) — [CLOSED: Client authorized proceeding without cap]
@@ -67,4 +69,5 @@ tags: [matter, 26-1631-00001]
 - 2026-04-08 — ML1 stated buyer silence on closing agenda treated as acceptance
 - 2026-04-10 — Alecia Lewis sent consolidated APA for vendor client signatures (importance: high)
 - 2026-04-13 — ML1 emailed Tejvir + Geetika: seller re-signed; circulating for e-signature
+- 2026-04-13 — Document sent to both principals; Tejvir signed; Geetika signature outstanding
 - 2026-04-12 — Issues populated from Gmail analysis

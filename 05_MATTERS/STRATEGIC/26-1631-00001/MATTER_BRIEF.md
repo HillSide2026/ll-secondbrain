@@ -33,8 +33,7 @@ security-deposit treatment, and PPSA / encumbrance follow-up.
 
 ## Current posture
 - Active. Transaction is in execution bottleneck as of Apr 13, 2026:
-  - **APA signed by both sides** but not yet fully consolidated. Buyer's counsel (Alecia Lewis, Horwitz Finder) sent a consolidated PDF (Apr 10) requesting Tejvir Boparai and Geetika Boparai sign and initial every page. Alecia has chased twice (Apr 10 + Apr 13).
-  - **ML1 email Apr 13** to Tejvir + Geetika: confirming seller re-signed; ML1 circulating for e-signature. This is the current critical path.
+  - **APA re-execution in progress.** Consolidated PDF sent to both principals (Tejvir + Geetika Boparai) Apr 13. Tejvir has signed. Geetika Boparai has not yet signed. Fully executed copy to be returned to Alecia Lewis (Horwitz Finder) once both sign.
   - **Transaction structure confirmed by Subway (Brendan Shaw, Mar 30)**: termination of existing franchise agreement + new agreements issued to buyer. All links to Tejvir, Geetika, and 1713425 Ontario Inc. to be terminated. Written documentation not yet received.
   - **Subway transfer submission not yet initiated** — requires fully executed APA + $3,616 CAD transfer fee.
   - **Closing agenda** circulated by ML1 (Mar 29); buyer's counsel has not responded; ML1 stated Apr 8 he would treat silence as acceptance.
@@ -44,7 +43,7 @@ security-deposit treatment, and PPSA / encumbrance follow-up.
   - **Personal context**: Tejvir's wife (Geetika) is undergoing 33 radiation treatments, Mon–Fri. Availability may be limited.
 
 ## Near-term milestones
-- ML1: Circulate consolidated APA to Tejvir + Geetika for e-signature (in progress Apr 13).
+- Geetika Boparai to sign consolidated APA (document sent; outstanding).
 - Return fully executed APA to Horwitz Finder.
 - Tejvir: Pay $3,616 Subway transfer fee (wire) once APA is executed.
 - Obtain written Subway release documentation (franchise agreement + sublease).
@@ -59,4 +58,5 @@ security-deposit treatment, and PPSA / encumbrance follow-up.
 ## Change log
 - 2026-03-28 — Matter canon created from task-tracker and email-derived context.
 - 2026-04-12 — Updated from Gmail: APA execution status, Subway transfer structure confirmed, current posture and milestones refreshed.
+- 2026-04-13 — ML1 update: document sent to both principals; Tejvir signed; Geetika signature outstanding.
 
