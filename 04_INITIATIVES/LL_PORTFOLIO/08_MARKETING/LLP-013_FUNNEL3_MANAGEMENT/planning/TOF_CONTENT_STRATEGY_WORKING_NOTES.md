@@ -3,11 +3,39 @@ title: F3 Top-of-Funnel Content Strategy — Working Notes
 owner: ML1
 status: working-notes
 created_date: 2026-04-14
-last_updated: 2026-04-14
+last_updated: 2026-04-15
 tags: [funnel-03, content-strategy, top-of-funnel, working-notes]
 ---
 
 # F3 Top-of-Funnel Content Strategy — Working Notes
+
+## 0. ICP Scope
+
+F3 targets fintech operators — founders, product leads, and compliance heads at
+companies building or operating financial infrastructure that enables the movement,
+storage, access, or lending of money or value.
+
+**In scope:** payments operators (PSPs, MSBs, cross-border payment companies,
+remittance platforms, stablecoin payment infrastructure); embedded finance and BaaS
+operators (program managers, neobanks, card program operators); crypto wallet and
+custody operators; lending and BNPL platforms; treasury and compliance infrastructure
+providers tied to regulated financial activity.
+
+**Out of scope:** securities dealers, investment advisers, portfolio managers, token
+issuers, investment funds, robo-advisers, and any operator whose primary function is
+holding or issuing value as an investment product rather than moving, storing, or
+enabling access to it.
+
+**Boundary test:** Is the operator building or running financial infrastructure that
+enables movement, storage, access, or lending of money or value? → In scope.
+Is the operator's primary function investing in, advising on, or issuing investment
+products? → Out of scope.
+
+For the crypto subset specifically, see Section 1.
+
+Six ICP profiles are documented in ICP_PROFILES.md.
+
+---
 
 ## 1. Crypto ICP Boundary
 
@@ -66,21 +94,20 @@ once they've already decided this is a voice worth following.
 
 ### What categories 1–6 are doing
 
-Categories 1–6 are payments operations content, not legal content. Each targets something
+Categories 1–6 are fintech operations content, not legal content. Each targets something
 the ICP already cares about before they have a legal problem.
 
-- **Category 1 — Expansion & growth:** Operators thinking about new corridors and markets.
-  Their growth frame.
-- **Category 2 — Speed & reliability:** Product and ops people dealing with payment delays
-  and failures. Their daily frustration.
-- **Category 3 — Cost & margin:** Universal. Everyone in payments cares about where fees go.
-  Widest net.
+- **Category 1 — Expansion & growth:** Operators thinking about new markets, jurisdictions,
+  and product lines. Their growth frame.
+- **Category 2 — Speed & reliability:** Product and ops people dealing with operational
+  delays and failures. Their daily frustration.
+- **Category 3 — Cost & margin:** Universal. Everyone in fintech cares about where costs
+  accumulate. Widest net.
 - **Category 4 — Infrastructure & rails:** How money actually moves. Attracts technically
   curious operators and product leads.
-- **Category 5 — Product design & UX:** Founders and PMs making payment product decisions.
-- **Category 6 — Stablecoins & new rails:** High-interest. Attracts the secondary ICP
-  (international tokenized-payments operators) and seeds the idea that new infrastructure
-  creates new questions.
+- **Category 5 — Product design & UX:** Founders and PMs making financial product decisions.
+- **Category 6 — Stablecoins & new rails:** High-interest. Attracts the stablecoin and
+  crypto infrastructure ICP and seeds the idea that new infrastructure creates new questions.
 
 Together: establish that this voice understands payments — not just law about payments.
 After 8–12 pieces of this content, the ICP has filed Levine Law as "someone who gets my
