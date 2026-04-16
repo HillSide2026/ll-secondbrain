@@ -3,8 +3,8 @@ meta:
   name: Google Ads -> GHL Intake
   status: active
   owner: ML1
-  version: 1.2.3
-  last_updated: '2026-03-10'
+  version: 1.3.0
+  last_updated: '2026-04-15'
 lineage:
   type: state-of
   of: funnel-01
@@ -20,13 +20,24 @@ structure:
   metrics: metrics.yaml
 spec:
   offer:
-    primary: Fractional Counsel / Legal Function as a Service
-    entry_offer: None (paid consultation in backlog)
+    primary: Fractional Counsel / Fractional Legal Function
+    entry_offer: Free consult form (no lead magnet; no intermediate capture)
+    core_offer: Reactive Legal Support → Fractional Counsel / Fractional Legal Function
     description: Structured legal function for growing Ontario businesses, providing
       ongoing governance, contract, employment, and risk oversight.
+  entry_point: Google Ads → free consult form
   acquisition_mode: warm_traffic_quick_conversion
   awareness_role: secondary
+  infrastructure:
+    landing_page: built
+    level_3_offer_page: missing
+    ghl_follow_up_sequence: built
+    lead_magnet: none
 history:
+- v: 1.3.0
+  date: '2026-04-15'
+  by: ML1
+  change: Updated infrastructure status (landing page built, Level 3 offer page missing, GHL sequence built); corrected entry point and core offer wording.
 - v: 1.2.3
   date: '2026-03-10'
   by: ML1

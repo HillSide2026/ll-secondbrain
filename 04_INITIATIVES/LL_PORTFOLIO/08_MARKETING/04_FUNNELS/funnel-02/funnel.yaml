@@ -1,10 +1,10 @@
 meta:
   id: funnel-02
-  name: Funnel 02 Future State
+  name: Funnel 02 — Corporate Health Check
   status: planned
   owner: ML1
-  version: 3.0.3
-  last_updated: '2026-03-10'
+  version: 3.1.0
+  last_updated: '2026-04-15'
 lineage:
   type: state-of
   of: funnel-01
@@ -22,10 +22,17 @@ spec:
   offer:
     primary: Ontario Corporate Health Check
     entry_offer: Corporate Health Check (paid diagnostic)
+    core_offer: Corporate Health Check → Remediation → Fractional Counsel
     tagline: Structural Stability Audit for Growing Ontario Businesses
     description: Structured governance and risk exposure assessment for operating companies that have outgrown their original setup.
+  entry_point: Lead magnet → inquiry form
   acquisition_mode: awareness_interest_to_conversion
   awareness_role: primary
+  infrastructure:
+    landing_page: not built
+    level_3_offer_page: draft exists, not published
+    ghl_follow_up_sequence: not built
+    lead_magnet: drafted (Growth Without Structural Drift v2), not deployed
   positioning_intent:
     target_funnel_traits:
       - maturity-led
@@ -34,6 +41,10 @@ spec:
       - structured assessment entry point
     buyer_time_horizon: Operators thinking in quarters and years, not days.
 history:
+- v: 3.1.0
+  date: '2026-04-15'
+  by: ML1
+  change: Updated infrastructure status (landing page not built, Level 3 offer page draft not published, GHL sequence not built, lead magnet drafted not deployed); added entry_point and core_offer fields.
 - v: 3.0.3
   date: '2026-03-10'
   by: ML1
