@@ -56,7 +56,11 @@ HEADERS = {
 }
 
 FEATURED_MEDIA_ID = 1240
-CATEGORY_ID = 105  # Ontario Corporate
+
+# Category IDs
+CAT_SECONDBRAIN = 174       # always included — triggers Thrive template routing
+CAT_ONTARIO_CORPORATE = 105
+CAT_FINANCIAL_SERVICES = 104
 
 F1_CONTENT_DIR = Path(
     "04_INITIATIVES/LL_PORTFOLIO/08_MARKETING/04_FUNNELS"
@@ -211,9 +215,10 @@ def load_content(filename, is_pillar_page=False):
 
 # ── Phase 1 & 2: Publish posts ────────────────────────────────────────────────
 
-def publish_cluster(cluster, phase_label):
+def publish_cluster(cluster, phase_label, topic_category):
     print(f"\n=== {phase_label} ===")
     results = {}
+    categories = [topic_category, CAT_SECONDBRAIN]
 
     # First item in each cluster is the pillar/overview page
     for i, (filename, slug, title) in enumerate(cluster):
@@ -225,7 +230,7 @@ def publish_cluster(cluster, phase_label):
             "slug": slug,
             "content": html_content,
             "status": "publish",
-            "categories": [CATEGORY_ID],
+            "categories": categories,
             "featured_media": FEATURED_MEDIA_ID,
         }
 
@@ -241,11 +246,11 @@ def publish_cluster(cluster, phase_label):
 
 
 def phase1_publish_shareholder_disputes():
-    return publish_cluster(SHAREHOLDER_DISPUTES_CLUSTER, "PHASE 1: Shareholder Disputes cluster")
+    return publish_cluster(SHAREHOLDER_DISPUTES_CLUSTER, "PHASE 1: Shareholder Disputes cluster", CAT_ONTARIO_CORPORATE)
 
 
 def phase2_publish_business_structure():
-    return publish_cluster(BUSINESS_STRUCTURE_CLUSTER, "PHASE 2: Business Structure cluster")
+    return publish_cluster(BUSINESS_STRUCTURE_CLUSTER, "PHASE 2: Business Structure cluster", CAT_ONTARIO_CORPORATE)
 
 
 # ── Phase 3: Create F1 hub page ───────────────────────────────────────────────
