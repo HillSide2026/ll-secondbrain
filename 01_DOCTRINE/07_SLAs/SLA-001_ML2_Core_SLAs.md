@@ -2,7 +2,8 @@
 id: sla-001
 title: ML2 Core SLAs
 owner: ML1
-status: approved
+status: superseded
+superseded_by: sla-ml2-core
 approved_by: ML1
 approved_date: 2026-04-18
 version: 1.0
