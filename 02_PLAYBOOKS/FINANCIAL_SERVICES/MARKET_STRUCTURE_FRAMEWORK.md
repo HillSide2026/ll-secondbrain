@@ -237,6 +237,8 @@ Participants:
 - Wallets / stored value accounts
 - Prepaid programs
 - Stored value models operating under RPAA function (b)
+- Trust companies (holding client funds under trust arrangements)
+- Credit unions (in their fund-holding capacity, outside deposit-taking functions)
 - Fiat-backed stablecoins (open legal questions — see below)
 
 **Note on "EMI-style models":** Electronic money institutions (EMIs) are a
