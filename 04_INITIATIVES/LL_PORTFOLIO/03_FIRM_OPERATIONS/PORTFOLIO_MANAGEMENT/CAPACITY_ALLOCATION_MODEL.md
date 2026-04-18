@@ -1,7 +1,7 @@
 # CAPACITY ALLOCATION MODEL
 
-- Generated: 2026-04-15T11:00:01+00:00
-- Run ID: RUN-2026-04-15-LL-PORTFOLIO-AGENTS-110001Z
+- Generated: 2026-04-17T11:46:01+00:00
+- Run ID: RUN-2026-04-17-LL-PORTFOLIO-AGENTS-114600Z
 
 > Advisory output. ML1 approval remains required for decisions.
 ## Capacity Allocation Model (Advisory)
