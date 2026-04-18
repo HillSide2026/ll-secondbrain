@@ -51,3 +51,16 @@ Do not:
 - split a thread across multiple state labels
 - archive threads that may still require action
 - downgrade a matter thread into a state label
+
+---
+
+## Controlling ML2 Artifacts
+
+This agent operates from the following ML2-held artifacts. Changes to these
+artifacts take precedence over this skill.md where they conflict.
+
+| Artifact | Path | Status |
+|---|---|---|
+| Inbox Governance Protocol | `01_DOCTRINE/05_PROTOCOLS/PRO-014_Inbox_Governance_Protocol.md` | draft |
+| Inbox Governance Policy | `01_DOCTRINE/03_POLICIES/POL-042_Inbox_Governance_Policy.md` | draft |
+| 09_INBOX Pipeline Specification | `09_INBOX/README.md` | draft |

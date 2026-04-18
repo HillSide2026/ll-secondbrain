@@ -3,6 +3,8 @@ id: DOCTRINE-OPERATIONS-0002
 title: Promotion Rules (Inbox → Research → Doctrine)
 owner: ML1
 status: approved
+approved_by: ML1
+approved_date: 2026-03-21
 version: 1.0
 effective_date: 2026-01-04
 supersedes:

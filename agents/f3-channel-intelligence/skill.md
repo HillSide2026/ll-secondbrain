@@ -52,3 +52,16 @@ Do not:
 - pitch or contact any channel
 - make claims about audience size without a source
 - conflate "fintech" with "payments operator"
+
+---
+
+## Controlling ML2 Artifacts
+
+This agent operates from the following ML2-held artifacts. Changes to these
+artifacts take precedence over this skill.md where they conflict.
+
+| Artifact | Path | Status |
+|---|---|---|
+| F3 ICP definition | `04_INITIATIVES/LL_PORTFOLIO/08_MARKETING/04_FUNNELS/funnel-03/target.yaml` | active |
+| F3 funnel specification | `04_INITIATIVES/LL_PORTFOLIO/08_MARKETING/04_FUNNELS/funnel-03/funnel.yaml` | active |
+| Financial Services Market Structure Framework | `02_PLAYBOOKS/FINANCIAL_SERVICES/MARKET_STRUCTURE_FRAMEWORK.md` | approved |

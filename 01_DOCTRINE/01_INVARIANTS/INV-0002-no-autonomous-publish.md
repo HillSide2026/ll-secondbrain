@@ -3,6 +3,8 @@ id: inv-no-autonomous-publish
 title: No Autonomous Publish (Binding Invariant)
 owner: ML1
 status: approved
+approved_by: ML1
+approved_date: 2026-03-28
 version: 0.1
 created_date: 2026-02-26
 last_updated: 2026-03-28

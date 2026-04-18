@@ -3,6 +3,8 @@ id: inv-matter-file-subordination-identity-boundary
 title: Matter File Subordination and Identity Boundary Invariant
 owner: ML1
 status: approved
+approved_by: ML1
+approved_date: 2026-03-28
 version: 1.0
 created_date: 2026-03-28
 last_updated: 2026-03-28

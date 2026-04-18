@@ -3,6 +3,8 @@ id: INV-0012
 title: 'INV-0012: Project Structural Boundaries'
 owner: ML1
 status: approved
+approved_by: ML1
+approved_date: 2026-03-28
 version: '1.0'
 created_date: 2026-03-15
 last_updated: 2026-03-28

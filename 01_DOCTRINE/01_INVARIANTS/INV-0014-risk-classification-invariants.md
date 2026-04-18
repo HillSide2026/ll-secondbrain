@@ -3,6 +3,8 @@ id: INV-0014
 title: 'INV-0014: Risk Classification Invariants'
 owner: ML1
 status: approved
+approved_by: ML1
+approved_date: 2026-03-28
 version: 1.0
 created_date: 2026-03-13
 last_updated: 2026-03-28

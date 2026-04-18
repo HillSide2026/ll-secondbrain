@@ -3,6 +3,8 @@ id: INV-0007
 title: 'INV-0007: What Qualifies as Doctrine'
 owner: ML1
 status: approved
+approved_by: ML1
+approved_date: 2026-03-21
 version: 1.0
 created_date: 2026-01-04
 last_updated: 2026-03-21

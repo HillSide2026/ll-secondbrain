@@ -3,6 +3,8 @@ id: INV-0009
 title: 'INV-0009: LL-SB Architecture Doctrine'
 owner: ML1
 status: approved
+approved_by: ML1
+approved_date: 2026-03-28
 version: 1.1
 created_date: 2026-02-27
 last_updated: 2026-03-28

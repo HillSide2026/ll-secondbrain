@@ -3,6 +3,8 @@ id: POL-061
 title: Canonical Agent Policy
 owner: ML1
 status: approved
+approved_by: ML1
+approved_date: 2026-03-23
 version: 1.0
 created_date: 2026-02-03
 last_updated: 2026-03-23

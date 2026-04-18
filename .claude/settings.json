@@ -22,7 +22,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 /Users/matthewajlevinelaw/Repos/ll-secondbrain/scripts/validate_canonical_write.py"
+            "command": "python3 /Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/validate_canonical_write.py"
           }
         ]
       }

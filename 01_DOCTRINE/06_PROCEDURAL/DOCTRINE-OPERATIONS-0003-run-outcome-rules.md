@@ -3,6 +3,8 @@ id: DOCTRINE-OPERATIONS-0003
 title: Run Outcome Rules (Promote / Park / Archive)
 owner: ML1
 status: approved
+approved_by: ML1
+approved_date: 2026-03-21
 version: 1.0
 effective_date: 2026-02-19
 created_date: 2026-02-19

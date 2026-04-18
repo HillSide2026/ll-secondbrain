@@ -94,3 +94,16 @@ This agent does NOT:
 - decide email importance beyond defined rules
 - infer legal relevance
 - replace human judgment on edge cases
+
+---
+
+## Controlling ML2 Artifacts
+
+This agent operates from the following ML2-held artifacts. Changes to these
+artifacts take precedence over this skill.md where they conflict.
+
+| Artifact | Path | Status |
+|---|---|---|
+| Approved operating spec (ML1) | `agents/backlog-cleanup-agent/WORKFLOW_SPEC.md` | ML1-approved |
+| Inbox Soft Junk Cleanup Protocol | `01_DOCTRINE/05_PROTOCOLS/PRO-018_Inbox_Soft_Junk_Cleanup_Protocol.md` | draft |
+| Inbox Governance Policy | `01_DOCTRINE/03_POLICIES/POL-042_Inbox_Governance_Policy.md` | draft |
