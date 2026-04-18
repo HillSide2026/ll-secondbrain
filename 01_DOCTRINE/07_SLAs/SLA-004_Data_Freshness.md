@@ -13,7 +13,7 @@ classification: System Core SLA (Runtime Integrity)
 tags: [doctrine, sla, system, runtime, data-freshness, integrations]
 ---
 
-# SLA-003-B: Data Freshness SLA
+# SLA-004: Data Freshness SLA
 
 Classification: System Core SLA (Runtime Integrity)
 

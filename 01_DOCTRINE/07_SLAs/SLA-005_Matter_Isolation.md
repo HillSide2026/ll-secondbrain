@@ -8,12 +8,12 @@ approved_date: 2026-04-18
 version: 1.0
 created_date: 2026-04-04
 last_updated: 2026-04-04
-applies_to: [System]
+applies_to: [ML2, System]
 classification: System Core SLA (Security + Boundary Enforcement)
 tags: [doctrine, sla, system, matter-isolation, confidentiality, security]
 ---
 
-# SLA-003-C: Matter Isolation SLA
+# SLA-005: Matter Isolation SLA
 
 Classification: System Core SLA (Security + Boundary Enforcement)
 
@@ -124,8 +124,8 @@ Each run must log:
 
 ## 9. Relationship to Other SLAs
 
-- Supports **SLA-001** (Traceability)
-- Reinforces **SLA-003** (Execution discipline)
+- Supports **SLA-SB-003** (Traceability) — operationalized by SLA-ML2-003 and SLA-ML2-004
+- Reinforces **SLA-SB-004** (Boundary Discipline) — operationalized by SLA-SYS-004
 - Enables **KPI-002** (Unauthorized Output Rate = 0)
 
 ---
