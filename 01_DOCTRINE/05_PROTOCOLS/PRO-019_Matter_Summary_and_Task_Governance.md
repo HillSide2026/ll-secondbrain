@@ -2,9 +2,10 @@
 id: PRO-019
 title: Matter Summary and Task Governance
 owner: ML1
-status: draft
-approval: pending
-approved_by: ~
+status: approved
+approval: ML1
+approved_by: ML1
+approved_date: 2026-04-18
 version: 0.1
 created_date: 2026-03-22
 last_updated: 2026-03-22

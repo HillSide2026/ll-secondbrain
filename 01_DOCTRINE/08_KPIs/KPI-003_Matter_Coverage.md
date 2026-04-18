@@ -2,7 +2,9 @@
 id: kpi-003
 title: Matter Coverage KPI
 owner: ML1
-status: draft
+status: approved
+approved_by: ML1
+approved_date: 2026-04-18
 version: 1.0
 created_date: 2026-04-04
 last_updated: 2026-04-04

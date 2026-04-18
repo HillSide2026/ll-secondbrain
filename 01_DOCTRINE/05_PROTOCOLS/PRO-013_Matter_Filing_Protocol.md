@@ -2,9 +2,10 @@
 id: PRO-013
 title: Matter Filing Protocol
 owner: ML1
-status: draft
-approval: pending
-approved_by: ~
+status: approved
+approval: ML1
+approved_by: ML1
+approved_date: 2026-04-18
 project: LLP-006
 version: 0.5
 created_date: 2026-03-07
@@ -17,7 +18,7 @@ tags: [protocol, sharepoint, legalmatters, filing, provenance, classification]
 > **DRAFT — PENDING ML1 APPROVAL.**
 > This protocol has not been approved and is not in effect.
 > Classification rules defined here must not be implemented in any script,
-> agent, or automated workflow until ML1 approves and sets `status: active`.
+> agent, or automated workflow until ML1 approves and sets `status: approved`.
 
 ---
 

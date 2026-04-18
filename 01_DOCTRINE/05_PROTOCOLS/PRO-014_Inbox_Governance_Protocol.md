@@ -3,8 +3,9 @@ id: PRO-014
 title: Inbox State and Matter Management Protocol
 owner: ML1
 status: draft
-approval: pending
-approved_by: ~
+approval: ML1
+approved_by: ML1
+approved_date: 2026-04-18
 project: LLP-006
 version: 0.4
 created_date: 2026-03-07

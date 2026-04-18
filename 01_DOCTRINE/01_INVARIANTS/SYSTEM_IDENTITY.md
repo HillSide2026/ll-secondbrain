@@ -2,7 +2,9 @@
 id: 00_system__system_identity_md
 title: System Identity — LL Second Brain (ML2)
 owner: ML1
-status: draft
+status: approved
+approved_by: ML1
+approved_date: 2026-04-18
 version: 1.0
 created_date: 2026-01-25
 last_updated: 2026-03-21

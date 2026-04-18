@@ -2,7 +2,9 @@
 id: 01_doctrine__01_invariants__readme_md
 title: Invariants (Level 1)
 owner: ML1
-status: draft
+status: approved
+approved_by: ML1
+approved_date: 2026-04-18
 version: 1.0
 created_date: 2026-02-13
 last_updated: 2026-03-21

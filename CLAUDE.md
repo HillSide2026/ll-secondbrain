@@ -85,13 +85,19 @@ Use this map to locate controlling artifacts. When in doubt about which artifact
 | `04_INITIATIVES/LL_PORTFOLIO/08_MARKETING/04_FUNNELS/` | Funnel definitions (funnel-01 active, funnel-02 planned, funnel-03 payments/MSB) |
 | `04_INITIATIVES/HillSide_PORTFOLIO/` | HillSide business project portfolio |
 
-### Status vocabulary (current)
+### Status vocabulary
 
 | Status value | Meaning |
 |---|---|
-| `approved` | ML1 has explicitly approved — currently used on invariants and select high-authority artifacts |
-| `active` | Operationally in force — used on most principles, policies, and protocols |
-| `draft` | Not yet approved — do not treat as authoritative without ML1 confirmation |
+| `approved` | ML1-approved — the single authoritative status for all in-force doctrine, playbooks, and artifacts. `active` was a prior vocabulary variant; it has been unified to `approved`. |
+| `draft` | Not yet approved — do not treat as authoritative |
 | `superseded` | Replaced by a newer artifact — do not use |
 
-**Note:** The distinction between `approved` and `active` is an open question for ML1. Until resolved, treat both as in-force doctrine. Do not treat either as definitively less authoritative than the other without ML1 direction.
+### Output classification (ML1-approved 2026-04-18)
+
+| Output source | Classification |
+|---|---|
+| Portfolio management agents (LLM-001 through LLM-006): portfolio briefs, decision queues, health rollups | **Internal working material** — not for LL consumption |
+| Practice area agents: outputs produced in `05_MATTERS/` | **LL consumable** |
+
+**LL consumption labeling standard:** To be determined. No structural output labeling mechanism exists yet. This is an open item pending ML1 definition.

@@ -2,7 +2,9 @@
 id: 01_doctrine__03_capability_profiles__calendar_list_events_md
 title: Capability Profile: Calendar.ListEvents
 owner: ML1
-status: draft
+status: approved
+approved_by: ML1
+approved_date: 2026-04-18
 version: 0.1
 created_date: 2026-02-26
 last_updated: 2026-02-26

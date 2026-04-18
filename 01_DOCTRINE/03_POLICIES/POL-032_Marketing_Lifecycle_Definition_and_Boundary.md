@@ -2,7 +2,9 @@
 id: POL-032
 title: Marketing Lifecycle Definition and Boundary
 owner: ML1
-status: draft
+status: approved
+approved_by: ML1
+approved_date: 2026-04-18
 version: 0.2
 created_date: 2026-03-08
 last_updated: 2026-03-09

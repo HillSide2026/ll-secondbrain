@@ -2,7 +2,9 @@
 id: PRO-016
 title: Fulfillment Stage Classification and Handoff
 owner: ML1
-status: draft
+status: approved
+approved_by: ML1
+approved_date: 2026-04-18
 version: 0.3
 created_date: 2026-03-09
 last_updated: 2026-03-22

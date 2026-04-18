@@ -2,7 +2,9 @@
 id: POL-055
 title: Repository Project Policy
 owner: ML1
-status: draft
+status: approved
+approved_by: ML1
+approved_date: 2026-04-18
 version: '1.1'
 created_date: 2026-03-15
 last_updated: 2026-03-23

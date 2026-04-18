@@ -2,7 +2,9 @@
 id: CAP-003
 title: Capability Profile: System (Execution Layer)
 owner: ML1
-status: active
+status: approved
+approved_by: ML1
+approved_date: 2026-04-18
 version: 1.0
 created_date: 2026-03-08
 last_updated: 2026-03-08

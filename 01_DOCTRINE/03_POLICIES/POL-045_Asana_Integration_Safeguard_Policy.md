@@ -2,9 +2,10 @@
 id: POL-045
 title: Asana Integration Safeguard Policy
 owner: ML1
-status: draft
-approval: pending
-approved_by: ~
+status: approved
+approval: ML1
+approved_by: ML1
+approved_date: 2026-04-18
 project: LLP-006
 version: 0.1
 created_date: 2026-03-10

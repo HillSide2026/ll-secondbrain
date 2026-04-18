@@ -2,7 +2,9 @@
 id: POL-058
 title: System Write-Back Policy
 owner: ML1
-status: draft
+status: approved
+approved_by: ML1
+approved_date: 2026-04-18
 version: 1.2
 created_date: 2026-02-09
 last_updated: 2026-03-28

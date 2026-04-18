@@ -2,7 +2,9 @@
 id: PRN-030
 title: Levine Law Brand Identity Signal Integrity
 owner: ML1
-status: draft
+status: approved
+approved_by: ML1
+approved_date: 2026-04-18
 version: 1.0
 created_date: 2026-03-10
 last_updated: 2026-03-10

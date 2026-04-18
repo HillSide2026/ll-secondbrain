@@ -19,13 +19,15 @@ principles:
   title: Decision Principles
   path: 01_DOCTRINE/02_PRINCIPLES/PRN-001_Decision_Principles.md
   version: '1.0'
-  status: draft
+  status: approved
+approved_by: ML1
+approved_date: 2026-04-18
   history: []
 - id: PRN-002
   title: Human Primacy
   path: 01_DOCTRINE/02_PRINCIPLES/PRN-002_Human_Primacy.md
   version: '1.0'
-  status: active
+  status: approved
   history: []
 - id: PRN-003
   title: Auditability

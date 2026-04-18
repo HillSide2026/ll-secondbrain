@@ -1,6 +1,6 @@
 # CITT Signal Report — Andersen (Trade Remedies)
 
-- Generated at: `2026-04-17 11:45:16Z`
+- Generated at: `2026-04-18 13:53:37Z`
 - Matter ID: `26-1639-00002`
 - Client of record: `Andersen`
 - Scanner: `TRM_CITT_UPDATE_SCANNER`
@@ -22,12 +22,12 @@
 
 ### Measures in Force and Expiry Time Lines
 
-- `Current`: Expiry review underway — Whole Potatoes (RR-2020-002); tentative notice April 1, 2026 (16 days ago); measure expiry June 1, 2026 (in 45 days); review marked underway on the CITT page
-- `Current`: Upcoming notice of expiry review — Concrete Reinforcing Bar III (NQ-2020-004); tentative notice April 20, 2026 (in 3 days); measure expiry June 3, 2026 (in 47 days)
-- `Current`: Upcoming notice of expiry review — Concrete Reinforcing Bar IV (NQ-2020-005); tentative notice April 20, 2026 (in 3 days); measure expiry July 1, 2026 (in 75 days)
-- `Current`: Approaching measure expiry — Wheat Gluten (NQ-2020-003); tentative notice March 2, 2026 (46 days ago); measure expiry April 21, 2026 (in 4 days); review marked underway on the CITT page
-- `Current`: Upcoming notice of expiry review — Refined Sugar (RR-2020-003); tentative notice July 2, 2026 (in 76 days); measure expiry August 5, 2026 (in 110 days)
-- `Current`: Upcoming notice of expiry review — Grinding Media (NQ-2021-001); tentative notice August 4, 2026 (in 109 days); measure expiry August 26, 2026 (in 131 days)
+- `Current`: Expiry review underway — Whole Potatoes (RR-2020-002); tentative notice April 1, 2026 (17 days ago); measure expiry June 1, 2026 (in 44 days); review marked underway on the CITT page
+- `Current`: Upcoming notice of expiry review — Concrete Reinforcing Bar III (NQ-2020-004); tentative notice April 20, 2026 (in 2 days); measure expiry June 3, 2026 (in 46 days)
+- `Current`: Upcoming notice of expiry review — Concrete Reinforcing Bar IV (NQ-2020-005); tentative notice April 20, 2026 (in 2 days); measure expiry July 1, 2026 (in 74 days)
+- `Current`: Approaching measure expiry — Wheat Gluten (NQ-2020-003); tentative notice March 2, 2026 (47 days ago); measure expiry April 21, 2026 (in 3 days); review marked underway on the CITT page
+- `Current`: Upcoming notice of expiry review — Refined Sugar (RR-2020-003); tentative notice July 2, 2026 (in 75 days); measure expiry August 5, 2026 (in 109 days)
+- `Current`: Upcoming notice of expiry review — Grinding Media (NQ-2021-001); tentative notice August 4, 2026 (in 108 days); measure expiry August 26, 2026 (in 130 days)
 - Source: https://www.citt-tcce.gc.ca/en/anti-dumping-injury-inquiries/measures-force-and-expiry-time-lines
 
 ## Matter-Specific Track Matches

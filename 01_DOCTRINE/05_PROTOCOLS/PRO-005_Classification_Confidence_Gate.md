@@ -2,7 +2,9 @@
 id: PRO-005
 title: Classification Confidence Gate
 owner: ML1
-status: active
+status: approved
+approved_by: ML1
+approved_date: 2026-04-18
 version: 1.0
 created_date: 2026-02-13
 last_updated: 2026-02-13

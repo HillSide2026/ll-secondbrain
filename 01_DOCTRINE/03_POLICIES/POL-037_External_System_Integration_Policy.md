@@ -2,7 +2,9 @@
 id: POL-037
 title: External System Integration Policy
 owner: ML2
-status: draft
+status: approved
+approved_by: ML1
+approved_date: 2026-04-18
 version: 0.2
 created_date: 2026-03-09
 last_updated: 2026-03-21

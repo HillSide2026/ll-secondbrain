@@ -2,7 +2,9 @@
 id: 01_doctrine__principles__readme_md
 title: Principles (Level 2)
 owner: ML1
-status: draft
+status: approved
+approved_by: ML1
+approved_date: 2026-04-18
 version: 1.0
 created_date: 2026-02-13
 last_updated: 2026-03-23

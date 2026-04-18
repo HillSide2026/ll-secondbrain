@@ -2,7 +2,9 @@
 id: 01_doctrine__03_capability_profiles__sharepoint_manage_clients_site_md
 title: Capability Profile: SharePoint.ManageClientsSite
 owner: ML1
-status: active
+status: approved
+approved_by: ML1
+approved_date: 2026-04-18
 version: 0.1
 created_date: 2026-03-28
 last_updated: 2026-03-28

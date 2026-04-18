@@ -2,7 +2,9 @@
 id: 01_doctrine__03_capability_profiles__sharepoint_diff_docs_md
 title: Capability Profile: SharePoint.DiffDocs
 owner: ML1
-status: active
+status: approved
+approved_by: ML1
+approved_date: 2026-04-18
 version: 0.2
 created_date: 2026-02-26
 last_updated: 2026-03-28

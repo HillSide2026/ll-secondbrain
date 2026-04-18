@@ -2,7 +2,9 @@
 id: PRO-017
 title: Repository Sync Verification Protocol
 owner: ML1
-status: active
+status: approved
+approved_by: ML1
+approved_date: 2026-04-18
 version: 1.0
 created_date: 2026-03-09
 last_updated: 2026-03-09
