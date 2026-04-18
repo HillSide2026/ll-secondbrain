@@ -2,7 +2,8 @@
 id: sla-003
 title: System Core SLAs
 owner: ML1
-status: approved
+status: superseded
+superseded_by: sla-sys-core
 approved_by: ML1
 approved_date: 2026-04-18
 version: 1.0
