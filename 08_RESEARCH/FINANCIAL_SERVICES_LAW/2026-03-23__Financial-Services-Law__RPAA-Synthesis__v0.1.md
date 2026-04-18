@@ -112,15 +112,27 @@ The Bank of Canada anticipated approximately **2,500 PSPs** would seek registrat
 
 ## 3. Payment Functions
 
-The RPAA defines five **payment functions** that trigger registration obligations when performed as part of a business:
+The RPAA defines five **payment functions** in s. 2 that trigger registration obligations when performed as part of a business. Exact statutory language:
 
-| # | Payment Function | Description |
-|---|-----------------|-------------|
-| 1 | **Holding funds** | Holding end-user funds in an account or instrument used to make electronic funds transfers (EFTs) |
-| 2 | **Initiating EFTs** | Initiating electronic funds transfers at the direction of an end-user |
-| 3 | **Authorizing EFTs** | Authorizing an EFT within a payment system, or directing the payment of funds to an end-user |
-| 4 | **Clearing/settlement services** | Providing clearing or settlement services to PSPs or financial institutions |
-| 5 | **Safeguarding/custodying instruments** | Safeguarding or custodying payment instruments or devices used to access funds for EFTs |
+| # | Payment Function | Statutory Text |
+|---|-----------------|----------------|
+| (a) | **Account provision/maintenance** | The provision or maintenance of an account that, in relation to an electronic funds transfer, is held on behalf of one or more end users |
+| (b) | **Holding funds** | The holding of funds on behalf of an end user until they are withdrawn or transferred |
+| (c) | **Initiating EFTs** | The initiation of an electronic funds transfer at the request of an end user |
+| (d) | **Authorizing / transmitting EFTs** | The authorization of an electronic funds transfer or the transmission, reception or facilitation of an instruction in relation to an electronic funds transfer |
+| (e) | **Clearing or settlement** | The provision of clearing or settlement services |
+
+**Note — prior synthesis error:** An earlier draft of this synthesis incorrectly listed function 5 as "safeguarding/custodying payment instruments." That is wrong. Safeguarding is an *obligation* that attaches to PSPs performing function (b); it is not itself a payment function.
+
+### The (a)/(b) Structural Distinction
+
+Functions (a) and (b) are legally separate and architecturally significant.
+
+Function (a) — *provision or maintenance of an account* — is an infrastructure role. The PSP maintains the account as a record or ledger. The account can be provided without the PSP controlling or holding the funds in it. A PSP performing only (a) may have a bank sponsor or other institution holding the underlying funds while the PSP operates the account layer.
+
+Function (b) — *holding funds* — is where the PSP takes actual custody of end-user money until withdrawn or transferred.
+
+A PSP can perform (a) without (b). This is the structural design of most pass-through and bank-sponsored fintech models. The safeguarding obligation under the RPAA attaches only to PSPs performing function (b).
 
 **Practical note:** A single entity may perform multiple functions. The Bank of Canada has published **case scenarios** clarifying how these functions apply to specific business models, including acquirers, card managers, cryptocurrency services (fiat-touching aspects), marketplace lending, and cloud computing arrangements. Registration is triggered by the performance of any one of the five functions.
 
