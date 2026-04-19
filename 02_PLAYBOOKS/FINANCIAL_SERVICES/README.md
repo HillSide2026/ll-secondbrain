@@ -2,7 +2,7 @@
 id: 02_playbooks__financial_services__readme_md
 title: Financial Services — Practice Area
 owner: ML1
-status: active
+status: draft
 created_date: 2026-04-17
 last_updated: 2026-04-17
 tags: [financial-services, practice-area]

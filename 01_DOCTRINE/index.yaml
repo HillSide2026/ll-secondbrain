@@ -1,4 +1,5 @@
 schema_version: '1.0'
+owner: ML1
 last_updated: '2026-03-23'
 rules_dir: 01_DOCTRINE/RULES
 tests_dir: 01_DOCTRINE/TESTS

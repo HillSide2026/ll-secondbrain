@@ -8,6 +8,8 @@ supersedes:
 created_date: 2026-02-11
 last_updated: 2026-02-11
 tags: [qa, scoring, execution-gate]
+approved_by: ML1
+approved_date: 2026-04-19
 ---
 
 ## Playbook Header

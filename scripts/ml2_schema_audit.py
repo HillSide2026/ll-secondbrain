@@ -177,14 +177,35 @@ def _draft_age_days(fm: dict) -> int:
 
 # ── Audit Runner ──────────────────────────────────────────────────────────────
 
-def run_audit(scan_paths: list[str]) -> dict:
+def is_doctrine_artifact(path: Path) -> bool:
+    """Return True if this file should be validated as a doctrine artifact.
+
+    Rules:
+    - All .md files are doctrine artifacts.
+    - .yaml files in 01_DOCTRINE are doctrine artifacts (index files, etc.).
+    - .yaml files in 02_PLAYBOOKS are workflow config/data (steps.yaml,
+      metadata.yaml, etc.) and are NOT doctrine artifacts — skip schema checks.
+    """
+    if path.suffix == ".md":
+        return True
+    if path.suffix == ".yaml":
+        parts = path.parts
+        for part in parts:
+            if part == "01_DOCTRINE":
+                return True
+        return False
+    return False
+
+
+def run_audit(scan_paths: list) -> dict:
     """Scan all paths and return audit results."""
     all_files = []
     for rel in scan_paths:
         base = REPO_ROOT / rel
         for ext in ("*.md", "*.yaml"):
             for p in base.rglob(ext):
-                all_files.append(p)
+                if is_doctrine_artifact(p):
+                    all_files.append(p)
 
     total = 0
     approved_count = 0

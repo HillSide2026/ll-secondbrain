@@ -1,3 +1,9 @@
+---
+id: financial_services_solutions_bank_review_modules_readme_md
+title: MODULES — BANK_REVIEW
+owner: ML1
+status: draft
+---
 # MODULES — BANK_REVIEW
 
 Module-layer container for solution `BANK_REVIEW`.
