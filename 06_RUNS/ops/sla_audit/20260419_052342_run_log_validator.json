@@ -1,0 +1,384 @@
+{
+  "run_id": "20260419_052342_run_log_validator",
+  "run_date": "2026-04-19",
+  "run_time": "05:23:42 UTC",
+  "agent_or_script": "run_log_validator.py",
+  "scan_dir": "06_RUNS",
+  "files_scanned": 6,
+  "files_passed": 0,
+  "files_failed": 6,
+  "violation_count": 61,
+  "violations": [
+    {
+      "file": "06_RUNS/RUN-2026-02-13-STAGE5-template/runlog.md",
+      "field": "frontmatter",
+      "severity": "critical",
+      "issue": "No frontmatter block found"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_001.md",
+      "field": "run_date",
+      "severity": "critical",
+      "issue": "Missing required field: run_date"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_001.md",
+      "field": "run_time",
+      "severity": "critical",
+      "issue": "Missing required field: run_time"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_001.md",
+      "field": "agent_or_script",
+      "severity": "critical",
+      "issue": "Missing required field: agent_or_script"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_001.md",
+      "field": "matter_id",
+      "severity": "critical",
+      "issue": "Missing required field: matter_id"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_001.md",
+      "field": "task",
+      "severity": "critical",
+      "issue": "Missing required field: task"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_001.md",
+      "field": "slas_covered",
+      "severity": "critical",
+      "issue": "Missing required field: slas_covered"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_001.md",
+      "field": "output_classification",
+      "severity": "critical",
+      "issue": "Missing required field: output_classification"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_001.md",
+      "field": "run_id",
+      "severity": "major",
+      "issue": "run_id format invalid: 'STAGE4.1_RUN_001' (expected YYYYMMDD_HHMMSS_<agent>)"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_001.md",
+      "field": "status",
+      "severity": "major",
+      "issue": "Invalid status: 'draft' (must be complete/partial/failed)"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_001.md",
+      "field": "body",
+      "severity": "major",
+      "issue": "Missing required body section: 'findings'"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_001.md",
+      "field": "body",
+      "severity": "major",
+      "issue": "Missing required body section: 'violations'"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_001.md",
+      "field": "body",
+      "severity": "major",
+      "issue": "Missing required body section: 'next actions'"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_002.md",
+      "field": "run_date",
+      "severity": "critical",
+      "issue": "Missing required field: run_date"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_002.md",
+      "field": "run_time",
+      "severity": "critical",
+      "issue": "Missing required field: run_time"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_002.md",
+      "field": "agent_or_script",
+      "severity": "critical",
+      "issue": "Missing required field: agent_or_script"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_002.md",
+      "field": "matter_id",
+      "severity": "critical",
+      "issue": "Missing required field: matter_id"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_002.md",
+      "field": "task",
+      "severity": "critical",
+      "issue": "Missing required field: task"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_002.md",
+      "field": "slas_covered",
+      "severity": "critical",
+      "issue": "Missing required field: slas_covered"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_002.md",
+      "field": "output_classification",
+      "severity": "critical",
+      "issue": "Missing required field: output_classification"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_002.md",
+      "field": "run_id",
+      "severity": "major",
+      "issue": "run_id format invalid: 'STAGE4.1_RUN_002' (expected YYYYMMDD_HHMMSS_<agent>)"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_002.md",
+      "field": "status",
+      "severity": "major",
+      "issue": "Invalid status: 'draft' (must be complete/partial/failed)"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_002.md",
+      "field": "body",
+      "severity": "major",
+      "issue": "Missing required body section: 'findings'"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_002.md",
+      "field": "body",
+      "severity": "major",
+      "issue": "Missing required body section: 'violations'"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_002.md",
+      "field": "body",
+      "severity": "major",
+      "issue": "Missing required body section: 'next actions'"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_003.md",
+      "field": "run_date",
+      "severity": "critical",
+      "issue": "Missing required field: run_date"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_003.md",
+      "field": "run_time",
+      "severity": "critical",
+      "issue": "Missing required field: run_time"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_003.md",
+      "field": "agent_or_script",
+      "severity": "critical",
+      "issue": "Missing required field: agent_or_script"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_003.md",
+      "field": "matter_id",
+      "severity": "critical",
+      "issue": "Missing required field: matter_id"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_003.md",
+      "field": "task",
+      "severity": "critical",
+      "issue": "Missing required field: task"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_003.md",
+      "field": "slas_covered",
+      "severity": "critical",
+      "issue": "Missing required field: slas_covered"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_003.md",
+      "field": "output_classification",
+      "severity": "critical",
+      "issue": "Missing required field: output_classification"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_003.md",
+      "field": "run_id",
+      "severity": "major",
+      "issue": "run_id format invalid: 'STAGE4.1_RUN_003' (expected YYYYMMDD_HHMMSS_<agent>)"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_003.md",
+      "field": "status",
+      "severity": "major",
+      "issue": "Invalid status: 'draft' (must be complete/partial/failed)"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_003.md",
+      "field": "body",
+      "severity": "major",
+      "issue": "Missing required body section: 'findings'"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_003.md",
+      "field": "body",
+      "severity": "major",
+      "issue": "Missing required body section: 'violations'"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_003.md",
+      "field": "body",
+      "severity": "major",
+      "issue": "Missing required body section: 'next actions'"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_004.md",
+      "field": "run_date",
+      "severity": "critical",
+      "issue": "Missing required field: run_date"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_004.md",
+      "field": "run_time",
+      "severity": "critical",
+      "issue": "Missing required field: run_time"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_004.md",
+      "field": "agent_or_script",
+      "severity": "critical",
+      "issue": "Missing required field: agent_or_script"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_004.md",
+      "field": "matter_id",
+      "severity": "critical",
+      "issue": "Missing required field: matter_id"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_004.md",
+      "field": "task",
+      "severity": "critical",
+      "issue": "Missing required field: task"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_004.md",
+      "field": "slas_covered",
+      "severity": "critical",
+      "issue": "Missing required field: slas_covered"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_004.md",
+      "field": "output_classification",
+      "severity": "critical",
+      "issue": "Missing required field: output_classification"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_004.md",
+      "field": "run_id",
+      "severity": "major",
+      "issue": "run_id format invalid: 'STAGE4.1_RUN_004' (expected YYYYMMDD_HHMMSS_<agent>)"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_004.md",
+      "field": "status",
+      "severity": "major",
+      "issue": "Invalid status: 'draft' (must be complete/partial/failed)"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_004.md",
+      "field": "body",
+      "severity": "major",
+      "issue": "Missing required body section: 'findings'"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_004.md",
+      "field": "body",
+      "severity": "major",
+      "issue": "Missing required body section: 'violations'"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_004.md",
+      "field": "body",
+      "severity": "major",
+      "issue": "Missing required body section: 'next actions'"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_005.md",
+      "field": "run_date",
+      "severity": "critical",
+      "issue": "Missing required field: run_date"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_005.md",
+      "field": "run_time",
+      "severity": "critical",
+      "issue": "Missing required field: run_time"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_005.md",
+      "field": "agent_or_script",
+      "severity": "critical",
+      "issue": "Missing required field: agent_or_script"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_005.md",
+      "field": "matter_id",
+      "severity": "critical",
+      "issue": "Missing required field: matter_id"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_005.md",
+      "field": "task",
+      "severity": "critical",
+      "issue": "Missing required field: task"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_005.md",
+      "field": "slas_covered",
+      "severity": "critical",
+      "issue": "Missing required field: slas_covered"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_005.md",
+      "field": "output_classification",
+      "severity": "critical",
+      "issue": "Missing required field: output_classification"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_005.md",
+      "field": "run_id",
+      "severity": "major",
+      "issue": "run_id format invalid: 'STAGE4.1_RUN_005' (expected YYYYMMDD_HHMMSS_<agent>)"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_005.md",
+      "field": "status",
+      "severity": "major",
+      "issue": "Invalid status: 'draft' (must be complete/partial/failed)"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_005.md",
+      "field": "body",
+      "severity": "major",
+      "issue": "Missing required body section: 'findings'"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_005.md",
+      "field": "body",
+      "severity": "major",
+      "issue": "Missing required body section: 'violations'"
+    },
+    {
+      "file": "06_RUNS/STAGE4.1/RUN_005.md",
+      "field": "body",
+      "severity": "major",
+      "issue": "Missing required body section: 'next actions'"
+    }
+  ],
+  "sla_summary": {
+    "SLA-ML2-001": "BREACH",
+    "KPI-ML2-004_schema_compliance": "0.0%"
+  },
+  "exit_code": 1
+}

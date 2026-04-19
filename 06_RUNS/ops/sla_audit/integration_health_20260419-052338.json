@@ -1,0 +1,50 @@
+{
+  "run_id": "20260419-052338",
+  "timestamp": "2026-04-19T05:23:38.181539Z",
+  "sla": "SLA-SYS-001",
+  "overall_status": "pass",
+  "total_checks": 5,
+  "failures": 0,
+  "checks": [
+    {
+      "label": ".mcp.json \u2192 gmail",
+      "declared_path": "/Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/gmail_mcp_server.py",
+      "exists": true,
+      "executable": false,
+      "status": "pass",
+      "issue": null
+    },
+    {
+      "label": ".mcp.json \u2192 sharepoint",
+      "declared_path": "/Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/sharepoint_mcp_server.py",
+      "exists": true,
+      "executable": false,
+      "status": "pass",
+      "issue": null
+    },
+    {
+      "label": ".claude/settings.json \u2192 PreToolUse hook",
+      "declared_path": "/Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/validate_canonical_write.py",
+      "exists": true,
+      "executable": true,
+      "status": "pass",
+      "issue": null
+    },
+    {
+      "label": ".claude/settings.json \u2192 mcpServer:sharepoint",
+      "declared_path": "/Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/sharepoint_mcp_server.py",
+      "exists": true,
+      "executable": false,
+      "status": "pass",
+      "issue": null
+    },
+    {
+      "label": ".claude/settings.json \u2192 mcpServer:gmail",
+      "declared_path": "/Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/gmail_mcp_server.py",
+      "exists": true,
+      "executable": false,
+      "status": "pass",
+      "issue": null
+    }
+  ]
+}
