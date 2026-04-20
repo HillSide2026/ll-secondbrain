@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Daily Inbox Cleanup Agent — launchd schedule
+  Runs scripts/backlog_cleanup_agent.py daily at 07:00 (every day including weekends).
+
+  Authority: STANDING-APPROVAL-PRO018-DAILY-2026-04-19
+  Policy:    POL-042 §7, PRO-018
+  Scope:     Deterministic rules only (Phase 2). No AI. No delete.
+
+  Install:
+    cp scripts/launchd/ca.levinelaw.ml2.daily-inbox-cleanup.plist \
+       ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/ca.levinelaw.ml2.daily-inbox-cleanup.plist
+
+  Unload:
+    launchctl unload ~/Library/LaunchAgents/ca.levinelaw.ml2.daily-inbox-cleanup.plist
+
+  Run manually:
+    launchctl start ca.levinelaw.ml2.daily-inbox-cleanup
+
+  Logs:
+    06_RUNS/logs/daily_inbox_cleanup/launchd.stdout.log
+    06_RUNS/logs/daily_inbox_cleanup/launchd.stderr.log
+    06_RUNS/ops/backlog_cleanup/run_*.ndjson  (per-thread audit log)
+-->
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>ca.levinelaw.ml2.daily-inbox-cleanup</string>
+
+	<key>ProcessType</key>
+	<string>Background</string>
+
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/bin/python3</string>
+		<string>/Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/backlog_cleanup_agent.py</string>
+		<string>--phase</string>
+		<string>2</string>
+		<string>--max-threads</string>
+		<string>500</string>
+		<string>--before-date</string>
+		<string>2026-01-01</string>
+	</array>
+
+	<key>WorkingDirectory</key>
+	<string>/Users/matthewlevine/Repos/ll-secondbrain_fresh</string>
+
+	<key>RunAtLoad</key>
+	<false/>
+
+	<key>StandardOutPath</key>
+	<string>/Users/matthewlevine/Repos/ll-secondbrain_fresh/06_RUNS/logs/daily_inbox_cleanup/launchd.stdout.log</string>
+
+	<key>StandardErrorPath</key>
+	<string>/Users/matthewlevine/Repos/ll-secondbrain_fresh/06_RUNS/logs/daily_inbox_cleanup/launchd.stderr.log</string>
+
+	<!-- Run daily at 07:00 — no Weekday restriction, fires every day -->
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>7</integer>
+		<key>Minute</key>
+		<integer>0</integer>
+	</dict>
+</dict>
+</plist>

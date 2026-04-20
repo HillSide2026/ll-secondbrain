@@ -10,6 +10,7 @@ ACCESS POLICY (per ML1 directive):
   - Controlled writes are permitted only for explicit label application tools.
   - Write tools require approved_by, approval_artifact, and reason.
   - No broader permissions than the existing Gmail script workflows.
+  - Sending is permanently prohibited. No send_message tool may be added (POL-042 §7).
 
 PERMITTED OPERATIONS:
   1. list_messages            — list message stubs using Gmail query semantics
@@ -21,6 +22,7 @@ PERMITTED OPERATIONS:
   7. apply_matter_label       — apply one canonical matter label to a thread
   8. apply_matter_label_query — apply one canonical matter label to all threads
                                  matching a Gmail query
+  9. create_draft             — create a Gmail draft (optionally threaded reply)
 
 Python 3.9 compatible. No external MCP SDK required.
 Implements MCP JSON-RPC 2.0 stdio transport manually.
@@ -28,6 +30,9 @@ Implements MCP JSON-RPC 2.0 stdio transport manually.
 
 from __future__ import annotations
 
+import base64
+import email.mime.multipart
+import email.mime.text
 import json
 import logging
 import os
@@ -1490,6 +1495,56 @@ def tool_apply_matter_label_query(args: Dict[str, Any]) -> str:
     return json.dumps(summary, indent=2)
 
 
+def tool_create_draft(args: Dict[str, Any]) -> str:
+    approval = _require_write_approval(args, "create_draft")
+    to = str(args.get("to", "")).strip()
+    subject = str(args.get("subject", "")).strip()
+    body = str(args.get("body", "")).strip()
+    thread_id = str(args.get("thread_id", "")).strip() or None
+    cc = str(args.get("cc", "")).strip() or None
+
+    if not to:
+        raise ValueError("'to' is required.")
+    if not subject:
+        raise ValueError("'subject' is required.")
+    if not body:
+        raise ValueError("'body' is required.")
+
+    msg = email.mime.text.MIMEText(body, "plain")
+    msg["to"] = to
+    msg["subject"] = subject
+    if cc:
+        msg["cc"] = cc
+
+    raw = base64.urlsafe_b64encode(msg.as_bytes()).decode("utf-8")
+    message_body: Dict[str, Any] = {"raw": raw}
+    if thread_id:
+        message_body["threadId"] = thread_id
+
+    service = _get_gmail_service()
+    draft = service.users().drafts().create(
+        userId="me", body={"message": message_body}
+    ).execute()
+
+    draft_id = draft.get("id", "")
+    result = {
+        "draft_id": draft_id,
+        "to": to,
+        "subject": subject,
+        "thread_id": thread_id,
+        "cc": cc,
+        "approved_by": approval["approved_by"],
+        "approval_artifact": approval["approval_artifact"],
+        "reason": approval["reason"],
+    }
+    _append_audit({
+        "timestamp": _now_iso(),
+        "tool": "create_draft",
+        **result,
+    })
+    return json.dumps(result, indent=2)
+
+
 _TOOLS = [
     {
         "name": "list_messages",
@@ -1810,6 +1865,51 @@ _TOOLS = [
             "required": ["query", "approved_by", "approval_artifact", "reason"],
         },
     },
+    {
+        "name": "create_draft",
+        "description": (
+            "Create a Gmail draft. Optionally threaded as a reply by passing thread_id. "
+            "Write tool — requires approved_by, approval_artifact, and reason."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "to": {
+                    "type": "string",
+                    "description": "Recipient email address.",
+                },
+                "subject": {
+                    "type": "string",
+                    "description": "Email subject line.",
+                },
+                "body": {
+                    "type": "string",
+                    "description": "Plain-text email body.",
+                },
+                "thread_id": {
+                    "type": "string",
+                    "description": "Gmail thread id. When provided the draft is created as a reply in that thread.",
+                },
+                "cc": {
+                    "type": "string",
+                    "description": "Optional CC address.",
+                },
+                "approved_by": {
+                    "type": "string",
+                    "description": "Who approved this write (e.g. 'ML1').",
+                },
+                "approval_artifact": {
+                    "type": "string",
+                    "description": "Repo-relative or absolute path to the approval artifact.",
+                },
+                "reason": {
+                    "type": "string",
+                    "description": "Short reason for creating this draft.",
+                },
+            },
+            "required": ["to", "subject", "body", "approved_by", "approval_artifact", "reason"],
+        },
+    },
 ]
 
 _TOOL_FN_MAP = {
@@ -1826,6 +1926,7 @@ _TOOL_FN_MAP = {
     "apply_state_label": tool_apply_state_label,
     "apply_matter_label": tool_apply_matter_label,
     "apply_matter_label_query": tool_apply_matter_label_query,
+    "create_draft": tool_create_draft,
 }
 
 

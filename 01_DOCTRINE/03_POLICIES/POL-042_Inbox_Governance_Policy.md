@@ -7,9 +7,9 @@ approval: ML1
 approved_by: ML1
 approved_date: 2026-04-18
 project: LLP-006
-version: 0.2
+version: 0.3
 created_date: 2026-03-09
-last_updated: 2026-03-14
+last_updated: 2026-04-19
 tags: [policy, gmail, inbox, labeling, classification, legalmatters, clio, cleanup]
 ---
 
@@ -167,7 +167,17 @@ All classification results are proposals only.
 
 ---
 
-## 7. Approval Gate Policy
+## 7. Draft and Send Policy
+
+The System may create Gmail drafts on ML1 direction. **Sending is permanently prohibited.**
+
+No agent, script, or MCP tool may send a Gmail message or transmit a draft to any recipient. Only ML1 may send email. This rule has no exceptions and may not be overridden by any downstream approval or automation instruction.
+
+No `send_message`, `send_draft`, or equivalent capability may be added to the Gmail MCP server or any other system integration without explicit ML1 doctrine amendment to this policy.
+
+---
+
+## 8. Approval Gate Policy
 
 No Gmail labels may be written by agents or scripts unless
 ML1 approval has been recorded.
@@ -184,7 +194,7 @@ execution must halt.
 
 ---
 
-## 8. Audit and Enforcement
+## 9. Audit and Enforcement
 
 The system must provide enforcement checks for:
 
@@ -201,7 +211,7 @@ The log is reviewed periodically by ML1.
 
 ---
 
-## 9. Data Access Policy
+## 10. Data Access Policy
 
 Inbox classification agents may access only the minimum data necessary
 for classification.
@@ -218,7 +228,7 @@ Email content must never appear in external outputs.
 
 ---
 
-## 10. Policy Limitations
+## 11. Policy Limitations
 
 This policy governs label classification only.
 
@@ -232,7 +242,7 @@ These are defined in supporting protocols.
 
 ---
 
-## 11. Open Governance Items
+## 12. Open Governance Items
 
 | ID | Item |
 |----|------|
@@ -242,9 +252,10 @@ These are defined in supporting protocols.
 
 ---
 
-## 12. Change Log
+## 13. Change Log
 
 | Version | Date | Change |
 |---------|------|--------|
 | 0.1 | 2026-03-09 | Initial policy. Derived from PRO-014 v0.2. |
 | 0.2 | 2026-03-14 | Distinguish inbox state-and-matter management from soft-junk cleanup. Add `PRO-018` as a separate enforcement protocol. |
+| 0.3 | 2026-04-19 | Add §7 Draft and Send Policy: System may create drafts; sending is permanently prohibited; no send capability may be added without doctrine amendment. |

@@ -43,7 +43,7 @@ from state_enforcement import get_gmail_service  # type: ignore
 
 # ── Constants ──────────────────────────────────────────────────────────────────
 
-AGENT_VERSION = "backlog-cleanup-v0.1"
+AGENT_VERSION = "backlog-cleanup-v0.2"
 APPROVAL_BY = "ML1"
 APPROVAL_DATE = "2026-04-16"
 SKILL_DOC = REPO_ROOT / "agents" / "backlog-cleanup-agent" / "skill.md"
@@ -93,6 +93,24 @@ PHASE2_ARCHIVE_CATEGORIES = {
 MATTER_LABEL_PREFIX = "LL/"
 MANUAL_LABEL_SKIP_PREFIXES = ("LL/",)  # any matter label = skip
 
+# Canonical state labels applied by the triage agent — if any present, skip
+CANONICAL_STATE_LABELS = {
+    "00_Triage", "10_Action_Matthew", "20_Action_Team", "30_Waiting_External",
+    "40_Replied_Awaiting_Response", "50_Calendar", "60_Filing",
+    "70_Filed", "80_Junk_to_Review", "90_Archive",
+}
+
+# Sender domains that are system-generated but matter-related — never archive
+PROTECTED_SENDER_DOMAINS = {
+    "clio.com", "adobesign.com", "docusign.com", "dropbox.com",
+    "bcregistries.gov.bc.ca", "corporateonline.gov.bc.ca",
+    "ontario.ca", "courts.gc.ca", "osb-bsf.gc.ca", "fintrac-canafe.gc.ca",
+    "lsbc.ca", "lso.ca",
+}
+
+# Clio matter ID pattern in subject — protect if present
+_MATTER_ID_RE = re.compile(r"\b\d{2}-\d{3,5}-\d{5}\b")
+
 # ── Helpers ────────────────────────────────────────────────────────────────────
 
 
@@ -119,15 +137,33 @@ def has_unsubscribe_in_body(snippet: str) -> bool:
     return bool(re.search(r"unsubscribe", snippet, re.IGNORECASE))
 
 
-def is_protected(thread_labels: List[str], is_starred: bool, has_recent_reply: bool) -> Tuple[bool, str]:
+def is_protected(
+    thread_labels: List[str],
+    is_starred: bool,
+    has_recent_reply: bool,
+    sender: str,
+    subject: str,
+) -> Tuple[bool, str]:
     """Return (protected, reason)."""
     if is_starred:
         return True, "starred"
     if has_recent_reply:
-        return True, "recent_reply"
+        return True, "ml1_replied"
     for label in thread_labels:
         if label.startswith(MATTER_LABEL_PREFIX):
             return True, f"matter_label:{label}"
+    # Triage agent has classified this thread — leave it alone
+    for label in thread_labels:
+        if label in CANONICAL_STATE_LABELS:
+            return True, f"triage_label:{label}"
+    # Matter number in subject
+    if _MATTER_ID_RE.search(subject):
+        return True, "matter_id_in_subject"
+    # Protected sender domain
+    sender_lower = sender.lower()
+    for domain in PROTECTED_SENDER_DOMAINS:
+        if domain in sender_lower:
+            return True, f"protected_domain:{domain}"
     return False, ""
 
 
@@ -196,8 +232,11 @@ def parse_args() -> argparse.Namespace:
                         help="Max threads to process per run.")
     parser.add_argument("--backlog-days", type=int, default=DEFAULT_BACKLOG_DAYS,
                         help="Only process threads older than this many days.")
+    parser.add_argument("--before-date", type=str, default=None,
+                        help="Hard cutoff date (YYYY-MM-DD). Only process threads "
+                             "older than this date. Overrides --backlog-days.")
     parser.add_argument("--recent-reply-days", type=int, default=14,
-                        help="Threads with reply within N days are protected.")
+                        help="Deprecated — any reply now protects a thread regardless of age.")
     return parser.parse_args()
 
 
@@ -225,7 +264,14 @@ def main() -> None:
     service = get_gmail_service()
 
     # Build query
-    cutoff = datetime.now(timezone.utc) - timedelta(days=args.backlog_days)
+    if args.before_date:
+        from datetime import date as _date
+        cutoff = datetime(
+            *[int(x) for x in args.before_date.split("-")], tzinfo=timezone.utc
+        )
+        logging.info(f"before_date={args.before_date} (overrides --backlog-days)")
+    else:
+        cutoff = datetime.now(timezone.utc) - timedelta(days=args.backlog_days)
     cutoff_epoch = int(cutoff.timestamp())
     query = f"in:inbox before:{cutoff_epoch} ({SCOPE_QUERY_CATEGORIES})"
     logging.info(f"query: {query}")
@@ -248,10 +294,6 @@ def main() -> None:
 
     logging.info(f"threads_fetched={len(thread_ids)}")
 
-    recent_reply_cutoff_ms = int(
-        (datetime.now(timezone.utc) - timedelta(days=args.recent_reply_days)).timestamp() * 1000
-    )
-
     stats = {"total": 0, "archived": 0, "skipped_protected": 0, "skipped_uncertain": 0, "errors": 0}
 
     for thread_id in thread_ids:
@@ -259,7 +301,7 @@ def main() -> None:
         try:
             thread = service.users().threads().get(
                 userId="me", id=thread_id, format="metadata",
-                metadataHeaders=["From", "List-ID", "List-Unsubscribe", "Precedence"],
+                metadataHeaders=["From", "Subject", "List-ID", "List-Unsubscribe", "Precedence"],
             ).execute()
         except Exception as exc:
             logging.warning(f"get thread {thread_id} failed: {exc}")
@@ -276,16 +318,18 @@ def main() -> None:
 
         headers = first_msg.get("payload", {}).get("headers", [])
         sender = get_header(headers, "From")
+        subject = get_header(headers, "Subject")
         snippet = first_msg.get("snippet", "")
         thread_labels = thread.get("messages", [{}])[0].get("labelIds", [])
         is_starred = "STARRED" in thread_labels
 
-        # Recent reply: last message internal date > cutoff
-        last_internal_date = int(last_msg.get("internalDate", 0))
-        has_recent_reply = last_internal_date > recent_reply_cutoff_ms and len(messages) > 1
+        # Protect if ML1 has ever replied (any SENT message in thread)
+        has_recent_reply = any("SENT" in msg.get("labelIds", []) for msg in messages)
 
         # Step 1: Protected check
-        protected, protect_reason = is_protected(thread_labels, is_starred, has_recent_reply)
+        protected, protect_reason = is_protected(
+            thread_labels, is_starred, has_recent_reply, sender, subject
+        )
         if protected:
             stats["skipped_protected"] += 1
             append_log(run_id, {
