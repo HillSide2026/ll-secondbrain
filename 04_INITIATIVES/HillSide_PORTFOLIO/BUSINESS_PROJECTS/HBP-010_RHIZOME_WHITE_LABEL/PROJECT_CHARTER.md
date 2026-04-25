@@ -14,7 +14,7 @@ tags: [rhizome-white-label, charter, hillside]
 **Project ID:** HBP-010  
 **Project Path:** `04_INITIATIVES/HillSide_PORTFOLIO/BUSINESS_PROJECTS/HBP-010_RHIZOME_WHITE_LABEL`  
 **Project Type:** Decision  
-**Stage:** Initiating
+**Stage:** Executing
 
 ## Sponsor
 
@@ -66,6 +66,13 @@ which structure should advance to formal planning?
 - the project could move too quickly into partner assumptions before the model is defined
 - dependency on one external channel could be underestimated
 - integration or customization work could be implied before it is intentionally approved
+
+## Public Front-End
+
+dominionpartners.ca is the shared public face for this project and for the
+broader 17513721 Canada Inc service lines. The FinSure micro product (HBP-011)
+and the Rhizome white-label path both surface under the Payment Services line
+on that site. Owner: 17513721 Canada Inc.
 
 ## Governance
 

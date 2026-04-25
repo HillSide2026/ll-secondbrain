@@ -14,7 +14,7 @@ tags: [payments-regulatory-compliance-agency, charter, hillside]
 **Project ID:** HBP-011  
 **Project Path:** `04_INITIATIVES/HillSide_PORTFOLIO/BUSINESS_PROJECTS/HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY`  
 **Project Type:** Decision  
-**Stage:** Initiating
+**Stage:** Executing
 
 ## Sponsor
 
@@ -68,6 +68,14 @@ planning?
 - the project may blur legal services, consulting, and agency execution into one unclear offer
 - channel overlap with Levine Law may create positioning or governance conflict
 - the agency model may imply more capability build than the economics justify
+
+## Public Front-End
+
+dominionpartners.ca is the shared public face for this project and for the
+broader 17513721 Canada Inc service lines. Payment Services on that site has
+two lanes: (i) referral-based introductions to providers such as Interpolitan
+and KwiikPay; (ii) the FinSure micro product as the entry point leading to
+white-label Rhizome (HBP-010). Owner: 17513721 Canada Inc.
 
 ## Governance
 

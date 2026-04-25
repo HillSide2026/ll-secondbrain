@@ -47,8 +47,8 @@ As of 2026-03-20:
   - build
   - browser smoke coverage
 - the application is deployed on Render at `https://finsure-w321.onrender.com`
-- the intended public domain is `https://fintechlawyer.ca`
-- the remaining launch blocker is HostGator DNS cutover from the current WordPress site to Render
+- the public domain is `https://finsure.dominionpartners.ca`
+- the remaining launch blocker is HostGator DNS cutover to Vercel for `finsure.dominionpartners.ca`
 
 ## Why This Matters To HBP-011
 

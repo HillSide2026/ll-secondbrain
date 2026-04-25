@@ -13,7 +13,7 @@ tags: [hillside, hbp-012, info-product, charter]
 **Project ID:** HBP-012
 **Entity:** 17513721 Canada Inc (Matthew Holdings)
 **Project Type:** Strategic
-**Stage:** Initiating
+**Stage:** Executing
 **Owner:** ML1
 
 ## Sponsor

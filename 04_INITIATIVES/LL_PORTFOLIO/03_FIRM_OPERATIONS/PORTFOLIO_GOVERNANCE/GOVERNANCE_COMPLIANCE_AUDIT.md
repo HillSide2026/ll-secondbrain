@@ -1,7 +1,7 @@
 # GOVERNANCE COMPLIANCE AUDIT
 
-- Generated: 2026-04-21T10:41:31+00:00
-- Run ID: RUN-2026-04-21-LL-PORTFOLIO-AGENTS-104131Z
+- Generated: 2026-04-25T10:32:18+00:00
+- Run ID: RUN-2026-04-25-LL-PORTFOLIO-AGENTS-103218Z
 
 > Advisory output. ML1 approval remains required for decisions.
 ## Governance Compliance Audit

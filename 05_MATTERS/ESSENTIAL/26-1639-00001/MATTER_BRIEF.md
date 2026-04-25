@@ -43,8 +43,16 @@ Client relationship management matter for Andersen. This is the umbrella matter 
 - Whether additional lane-specific monitoring tools are needed beyond the trade-remedies CITT monitor
 - Whether TR-001 (trade remedies) should move to active closing
 
+## Public Front-End
+
+dominionpartners.ca is the shared public face for trade services delivered via
+the Andersen relationship, as well as payment services under 17513721 Canada
+Inc. The Trade Services line on that site connects to this matter and the
+26-1639-00002 and 26-1639-00003 lane matters. Owner: 17513721 Canada Inc.
+
 ## Change log
 
 - 2026-03-22 — Brief created; scope confirmed by ML1
 - 2026-04-03 — Reframed as the umbrella Andersen relationship matter above the two Andersen sales-pipeline lane matters
 - 2026-04-12 — Updated from Gmail: ESG mining BD POC strategy (Hernany V.); Data Centre disputes; Investment arbitration contacts; Sanctions advisory tracks added
+- 2026-04-25 — dominionpartners.ca noted as shared public front-end for trade services line

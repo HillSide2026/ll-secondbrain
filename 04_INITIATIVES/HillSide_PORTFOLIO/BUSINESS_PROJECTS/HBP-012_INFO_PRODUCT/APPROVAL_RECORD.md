@@ -14,9 +14,9 @@ tags: [hillside, hbp-012, info-product]
 
 | Gate | Decision | Date | Notes |
 |---|---|---|---|
-| Project admitted to register | Pending ML1 | — | Add HBP-012 to PROJECT_REGISTER.md |
-| Initiating → Planning | Pending ML1 | — | Requires initiation artifact set complete |
-| Planning → Executing | Pending | — | — |
+| Project admitted to register | Approved ML1 | 2026-04-25 | Added to PROJECT_REGISTER.md |
+| Initiating → Planning | Approved ML1 | 2026-04-25 | Initiation artifacts complete; execution underway |
+| Planning → Executing | Approved ML1 | 2026-04-25 | Stripe product live; bundle and cover page done; advanced inline |
 | Executing → Closing | Pending | — | — |
 | Closing → Closed | Pending | — | — |
 

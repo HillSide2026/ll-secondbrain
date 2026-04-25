@@ -1,20 +1,71 @@
 meta:
   id: funnel-03
-  name: Book + Blog -> GHL Intake
+  name: Fintech Authority + Levine Law Conversion
   status: planned
-  owner: ML1
-  version: 2.3.2
-  last_updated: '2026-04-03'
+  owner: Levine Law
+  version: 3.0.0
+  last_updated: '2026-04-25'
   execution_state: gated
   execution_substages:
     - pre-launch
     - launch
+
 lineage:
   type: independent
   of: null
   state: null
   renumbered_from: funnel-02
-  note: This funnel was previously tracked as Funnel 02; renumbered to Funnel 03 to free Funnel 02 for F1 future-state.
+  note: Previously tracked as Funnel 02; renumbered to Funnel 03 to free Funnel 02 for F1 future-state.
+
+description: >
+  Funnel 3 is a Levine Law funnel spanning fintechlawyer.ca (discovery and
+  education) and the Levine Law site (credibility and conversion). It is not
+  product-driven and does not host primary content outside the authority layer.
+
+architecture:
+  discovery_education:
+    domain: fintechlawyer.ca
+    owner: Levine Professional Corporation
+    controlling_artifact: 04_INITIATIVES/LL_PORTFOLIO/08_MARKETING/FINTECHLAWYER_AUTHORITY_SITE.md
+    role:
+      - authority_content
+      - issue_education
+      - trust_building
+      - initial_lead_capture
+
+  credibility_conversion:
+    domain: Levine Law site
+    role:
+      - firm_validation
+      - consultation_booking
+      - mandate_conversion
+
+product:
+  name: FinSure
+  domain: finsure.dominionpartners.ca
+  relationship: excluded_from_funnel_3
+
+stages:
+  - discovery:
+      source: fintechlawyer.ca
+
+  - education:
+      mechanisms:
+        - blog_content
+        - regulatory_guides
+        - email_capture
+
+  - qualification:
+      signals:
+        - fintrac_issue
+        - compliance_review_need
+        - amp_risk
+        - payment_structuring_need
+
+  - conversion:
+      action: legal_consultation
+      destination: Levine Law
+
 structure:
   positioning: positioning.yaml
   target: target.yaml
@@ -22,17 +73,31 @@ structure:
   intake: intake.yaml
   pipeline: pipeline.yaml
   metrics: metrics.yaml
+
 spec:
   offer:
     primary: Payments / MSB / PSP counsel
     entry_offers:
-      - EO1: MSB Registration Mandate
-      - EO2: Suspicious Transaction Triage and STR Filing
-      - EO3: AML Health Check
-      - EO4: Payment Token and Utility Token Regulatory Structuring (candidate — pending practice-layer offer definition)
+      - EO1: FINTRAC Compliance and Reporting Obligations
+      - EO2: Suspicious Transaction Triage and STR Drafting
+      - EO3: AML Program Health Check
+      - EO4: Payment Token and Digital Asset Regulatory Structuring
     core_offers:
-      - Ongoing AML Counsel Retainer
+      - Ongoing AML and Payments Regulatory Counsel Retainer
+
 history:
+- v: 3.0.0
+  date: '2026-04-25'
+  by: ML1
+  change: >
+    Major refactor. Funnel 3 redefined as a two-layer Levine Law funnel spanning
+    fintechlawyer.ca (discovery and education) and the Levine Law site
+    (credibility and conversion). Product layer removed: FinSure is excluded
+    from Funnel 3 and operates at finsure.dominionpartners.ca. Two-layer
+    architecture, stage definitions, and qualification signals added.
+    FINTECHLAWYER_AUTHORITY_SITE.md established as the controlling artifact
+    for the fintechlawyer.ca layer. EO1 renamed to reflect FINTRAC compliance
+    framing rather than MSB registration mandate framing.
 - v: 2.3.2
   date: '2026-04-03'
   by: ML1
@@ -53,16 +118,18 @@ history:
   by: ML1
   change: >
     EO1 MSB registration content cluster complete. 21 blog posts written, saved to repo,
-    and posted to levinelegal.ca as WordPress drafts (WP IDs 1867–1884, 1903–1905).
+    and posted to levinelegal.ca as WordPress drafts (WP IDs 1867-1884, 1903-1905).
     Internal linking architecture applied across all posts via wp_apply_linking_architecture.py.
     Pending ML1 review and publish in WP Admin. EO2 (STR cluster) not yet started — 27 posts planned.
 - v: 2.2.0
   date: '2026-03-29'
   by: ML1
   change: >
-    Status advanced to active. fintechlawyer.ca has home page, MVP product, and lead capture funnel live.
-    Latvian trade commissioner meeting booked for Monday afternoon (2026-03-30) — Latvian fintech Canada-entry discussion.
-    Interpolitan introducer agreement to be signed back.
+    Status advanced to active. fintechlawyer.ca home page and lead capture live.
+    Note: product layer (FinSure) referenced in this entry has since been separated
+    to finsure.dominionpartners.ca and is excluded from Funnel 3 (see v3.0.0).
+    Latvian trade commissioner meeting booked for 2026-03-30. Interpolitan
+    introducer agreement to be signed back.
 - v: 2.1.1
   date: '2026-03-15'
   by: ML1

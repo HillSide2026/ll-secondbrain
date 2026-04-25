@@ -4,7 +4,7 @@ title: Rhizome White Label - Executing Workplan
 owner: ML1
 status: active
 created_date: 2026-03-20
-last_updated: 2026-03-20
+last_updated: 2026-04-25
 tags: [rhizome-white-label, executing, workplan]
 ---
 
@@ -16,29 +16,76 @@ Stage: `Executing`
 
 ## Objective
 
-Execute the approved Rhizome services-led wrapper path without drifting into
-FinSure product work or payment-services delivery execution.
+Execute the approved Rhizome services-led wrapper path (Option C: Technical Service Provider / clean perimeter model) without drifting into FinSure product work or payment services delivery execution.
 
-## Current Execution Priorities
+## EW-01 — Commercial Structure (LOCKED 2026-04-25)
 
-1. define the Rhizome services-led wrapper commercial structure
-2. lock client, support, escalation, and control boundaries
-3. finalize minimum acceptable economics and partner-term guardrails
-4. define dependency protections and unwind logic
-5. prepare a clean implementation sequence for the wrapper model
+**Model:** Technical Service Provider (Option C, clean perimeter)
 
-## Immediate Workstreams
+| Party | Role |
+|---|---|
+| PSP / MSB (Client) | Buys and uses compliance software |
+| FinSure (us) | Commercial front-end: sell, onboard, support |
+| Rhizome | Software provider: rules engine, monitoring, case management |
 
-| Workstream | Objective | Evidence |
-| --- | --- | --- |
-| EW-01 Commercial Structure | Define the baseline wrapper model and partner-term architecture | commercial-structure note or term outline |
-| EW-02 Control Boundary | Document ownership of client relationship, onboarding, support, escalation, and delivery | boundary memo or operating model note |
-| EW-03 Economics Guardrails | Define the minimum acceptable commercial terms and effort assumptions | economics baseline or pricing guardrails note |
-| EW-04 Dependency Protection | Define unwind rights, lock-in controls, and dependency-protection conditions | dependency-protection note |
-| EW-05 Implementation Sequence | Convert the approved path into a controlled next-step sequence | implementation note or execution memo |
+**Contract stack:**
+- FinSure ↔ PSP: SaaS agreement
+- FinSure ↔ Rhizome: white-label / OEM agreement
+- No other contractual layer
+
+**Non-negotiables:**
+- No funds flow
+- No onboarding decisions
+- No AML decisioning
+- No linkage to payment economics
+
+## EW-02 — Control Boundary (LOCKED 2026-04-25)
+
+| Area | Owner |
+|---|---|
+| PSP customer relationships | PSP |
+| KYC / onboarding | PSP |
+| AML decisions / reporting | PSP |
+| Transaction authorization | PSP |
+| Compliance tooling | Rhizome |
+| Alerts / flags | Rhizome |
+| Software onboarding + L1 support | FinSure |
+
+**Rule:** FinSure provides tools only. PSP makes all decisions.
+
+## EW-03 — Economics Guardrails (OUTSTANDING)
+
+Minimum acceptable commercial terms and effort assumptions not yet defined.
+
+Required before contract execution:
+- Minimum acceptable per-PSP fee
+- Rhizome OEM cost structure and margin floor
+- No-go triggers on unit economics
+
+## EW-04 — Dependency Protection (LOCKED 2026-04-25)
+
+- PSP can integrate multiple tools (non-exclusive)
+- FinSure supports multiple PSPs (no concentration risk)
+- Data export and portability guaranteed
+- No single PSP exceeds 25% of revenue
+
+## EW-05 — Implementation Sequence (LOCKED 2026-04-25)
+
+| Window | Tasks |
+|---|---|
+| Week 0–2 | Lock perimeter language in contracts; finalize PSP-facing SaaS terms |
+| Week 2–6 | Integrate with 1 PSP (pilot) |
+| Week 6–10 | Validate usability and alert quality |
+| Week 10–12 | Roll out to additional PSPs |
 
 ## Control Notes
 
 - `HBP-010` is about Rhizome wrapper structure and execution, not service-delivery execution.
 - FinSure product work and payment services delivery remain outside this project packet.
 - Any move into client-service delivery or CAMLO execution should be handled in `HBP-011` or a later delivery project.
+- dominionpartners.ca is the shared public front-end for this service line.
+
+## Change Log
+
+- 2026-03-20 — Workplan created; execution priorities authorized
+- 2026-04-25 — EW-01, EW-02, EW-04, EW-05 locked per ML1 working parameters; EW-03 flagged as outstanding
