@@ -1,4 +1,17 @@
 {
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/validate_canonical_write.py"
+          }
+        ]
+      }
+    ]
+  },
   "mcpServers": {
     "sharepoint": {
       "command": "python3",
@@ -15,17 +28,9 @@
       "env": {}
     }
   },
-  "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "Write|Edit",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "python3 /Users/matthewlevine/Repos/ll-secondbrain_fresh/scripts/validate_canonical_write.py"
-          }
-        ]
-      }
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:s29.q4cdn.com)"
     ]
   }
 }
