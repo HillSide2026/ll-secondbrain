@@ -1,41 +1,41 @@
-# COS Brief for ML1
+# COS Brief
 
-Generated: 2026-04-25T00:00:00Z | Agent: LLM-001 | Run: RUN-2026-04-25-DAILY-SWEEP-103210Z
+Generated: 2026-04-26T00:00:00Z | Agent: LLM-001 | Run: RUN-2026-04-26-DAILY-SWEEP-143045Z
 
 ## Portfolio Health Summary
 
-All 39 active projects are currently reported as on-track. There are no projects flagged as at-risk or watch. Average stage 2 readiness is 28%.
+All 39 projects in the portfolio are currently reported as on-track. Average Stage 2 Readiness is 28%.
 
 ## Cash Flow Priority Top Actions
 
-The highest priority items are those that could directly influence near-term revenue. Based on project progress, ML1 attention is required on projects in the initiating stage that are awaiting ML1 review. Projects in the executing and planning stages can advance to the next gated artifact set. Recommended sequencing actions are to close initiation, planning, and measurement gaps.
+Several projects in the Executing and Planning stages (LLP-004, LLP-005, LLP-006, LLP-011, LLP-012, LLP-013, LLP-023, LLP-024, LLP-025, LLP-030, LLP-033) are ready to advance to the next gated artifact set. Prioritize these projects, as they directly impact near-term revenue. Additionally, ensure Projects LLP-001, LLP-002, LLP-003, and LLP-004 advance to the next stage gate.
 
 ## What Requires ML1 Input (ML1_REQUIRED items)
 
-ML1 review is needed for projects in the initiating stage, specifically LLP-001, LLP-002, LLP-003, LLP-007, LLP-008, LLP-009, LLP-010, LLP-014, LLP-015, LLP-016, LLP-017, LLP-018, LLP-026, LLP-027, LLP-028, LLP-029, LLP-031, LLP-032, LLP-034, LLP-035, LLP-036, LLP-037, LLP-038, LLP-039, LLP-040, LLP-041, LLP-042, and LLP-043 before those projects proceed from initiation.
+ML1 review is required to move forward `LLP-001`, `LLP-002`, `LLP-003`, `LLP-007`, `LLP-008`, `LLP-009`, `LLP-010`, `LLP-014`, `LLP-015`, `LLP-016`, `LLP-017`, `LLP-018`, `LLP-026`, `LLP-027`, `LLP-028`, `LLP-029`, `LLP-031`, `LLP-032`, `LLP-034`, `LLP-035`, `LLP-036`, `LLP-037`, `LLP-038`, `LLP-039`, `LLP-040`, `LLP-041`, `LLP-042`, and `LLP-043` out of Initiation.
 
 ## What the System Can Handle (SYSTEM_CAN_HANDLE)
 
-The system can handle advancing projects in the executing and planning phases to the next gated artifact set. This includes projects LLP-004, LLP-005, LLP-006, LLP-011, LLP-012, LLP-013, LLP-023, LLP-024, LLP-025, LLP-030, and LLP-033.
+The system can handle advancing projects in the executing and planning stages (LLP-004, LLP-005, LLP-006, LLP-011, LLP-012, LLP-013, LLP-023, LLP-024, LLP-025, LLP-030, LLP-033) to the next gated artifact set once ML1 provides the go-ahead.
 
 ## Cross-Agent Conflicts
 
-No cross-agent conflicts were detected in this run.
+No cross-agent conflicts detected in this run.
 
 ## Governance Holds
 
-There are no current governance holds on any projects.
+31 Projects are being held in the "Initiating" phase until ML1 review.
 
 ## Flow Bottlenecks
 
-While 28 projects are candidates for planning and measurement bottlenecks, none are rising to the level of a top portfolio bottleneck.
+Bottleneck analysis identifies 28 projects stuck in planning and 28 stuck in measurement, presenting portfolio-wide planning gaps totaling 148.
 
 ## Doctrine Drift Signal
 
-No repeated planning or measurement drift patterns were detected. Doctrine interpretation remains under ML1 authority.
+No structural drift patterns of repeated missing artifacts were detected.
 
 ## Deferred Items
 
 None.
 
-> Advisory output. ML1 approval required before any action is taken.>
+> Advisory output. ML1 approval required before any action is taken.

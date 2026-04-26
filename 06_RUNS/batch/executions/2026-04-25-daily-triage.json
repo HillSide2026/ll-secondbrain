@@ -1,0 +1,108 @@
+{
+  "run_id": "2026-04-25-daily-triage",
+  "run_mode": "RUN_MATTER_ADMIN_DAILY",
+  "generated_at": "2026-04-25T18:45:00Z",
+  "operator": "LLP-023 Matter Command and Control Agent",
+  "gmail_account": "Matthew@levinelegalservices.com",
+  "threads_reviewed": 25,
+  "threads_matter_routed": 2,
+  "threads_admin_noise": 23,
+  "threads_unmapped_new": 0,
+  "threads_unmapped_carried": 5,
+
+  "routed": [
+    {
+      "thread_id": "19dc52dfdd5de5dd",
+      "subject": "Meeting to Discuss Next Steps",
+      "from": "laura@levine-law.ca",
+      "date": "2026-04-25T15:06:46Z",
+      "matter_id": "25-927-00003",
+      "matter_name": "Stream Ventures Limited",
+      "routing_rule": "subject_and_identity_match",
+      "routing_notes": "Sender is laura@levine-law.ca (Barrister & Solicitor). Body explicitly references 'Stream Money'. No matter number in subject or label; routed by identity and body content match to 25-927-00003.",
+      "open_loop": "Matthew has not replied. Laura Hinton is awaiting available dates/times for meeting.",
+      "proposed_label_write": {
+        "label_id": "Label_68",
+        "label_name": "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+        "status": "proposed_pending_ml1_approval"
+      }
+    },
+    {
+      "thread_id": "19dc329d93860ad1",
+      "subject": "Nearly there! Complete your Verto application today",
+      "from": "support@verto.co",
+      "original_to": "matthew@stream.money",
+      "forwarded_to": "clients@levinelegal.ca",
+      "date": "2026-04-25T05:43:07Z",
+      "matter_id": "25-927-00003",
+      "matter_name": "Stream Ventures Limited",
+      "routing_rule": "identity_match",
+      "routing_notes": "Email originated at matthew@stream.money (Stream Ventures entity address) and was forwarded to clients@levinelegal.ca. Sender Verto (verto.co) is a FX/banking platform. Content is an onboarding prompt for the Stream Money Verto application. Aligns with 25-927-00003 banking relationships scope.",
+      "open_loop": "Verto application for Stream Money requires completion.",
+      "proposed_label_write": {
+        "label_id": "Label_68",
+        "label_name": "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+        "status": "proposed_pending_ml1_approval"
+      }
+    }
+  ],
+
+  "admin_noise_no_action": [
+    {"thread_id": "19dc77498efd4b5b", "subject": "Manual time was added", "classification": "admin/ops", "source": "upwork.com"},
+    {"thread_id": "19dc25332a197a1a", "subject": "Manual time was added", "classification": "admin/ops", "source": "upwork.com"},
+    {"thread_id": "19dc6bb1613f8f2d", "subject": "Update your sign in credentials for TD Canada Trust (EasyWeb) account", "classification": "admin/finance", "source": "quickbooks.intuit.com"},
+    {"thread_id": "19dc5180511bdf09", "subject": "Spending Limits for all Neon accounts, Snapshot Metrics in API, Neon MCP in Kiro", "classification": "noise/tech_newsletter", "source": "neon.tech"},
+    {"thread_id": "19dc4f7571e9576c", "subject": "Watch our Podcast - Policies, Liquidity & Strategy in Private Real Estate", "classification": "marketing/noise", "source": "lankin.com"},
+    {"thread_id": "19dc46c50eac0eeb", "subject": "See Why 4,000+ Investors Continue to Choose Lankin", "classification": "marketing/noise", "source": "lankin.com"},
+    {"thread_id": "19dc45d16bcbd370", "subject": "Trello board activity", "classification": "admin/tool_notification", "source": "trello.com"},
+    {"thread_id": "19dc4300188ab86e", "subject": "WordPress plugin auto-update (levinelegalservices.com)", "classification": "admin/noise", "source": "wordpress"},
+    {"thread_id": "19dc375a3a7c68f0", "subject": "WordPress plugin auto-update (mtt.lxh.temporary.site)", "classification": "admin/noise", "source": "wordpress"},
+    {"thread_id": "19dc3384af938405", "subject": "WordPress plugin auto-update (studentrights.site)", "classification": "admin/noise", "source": "wordpress"},
+    {"thread_id": "19dc26859c344a24", "subject": "Neon feedback on onboarding", "classification": "admin/tech_tool", "source": "neon.tech"},
+    {"thread_id": "19dc21b1f5b076ef", "subject": "A new class of intelligence for real work", "classification": "marketing/ai_promo", "source": "unknown AI vendor"},
+    {"thread_id": "19dc21036a1a14cf", "subject": "WordPress plugin auto-update (levinelegalservices.com)", "classification": "admin/noise", "source": "wordpress"},
+    {"thread_id": "19dc222d55f1e794", "subject": "[HillSide2026/ll-corporate] Check workflow run", "classification": "admin/system", "source": "github.com"},
+    {"thread_id": "19dc2227393394a1", "subject": "[HillSide2026/ll-corporate] .github/workflows/contract-check.yml workflow run", "classification": "admin/system", "source": "github.com"},
+    {"thread_id": "19dc21c1a6228287", "subject": "[HillSide2026/ll-corporate] Check workflow run", "classification": "admin/system", "source": "github.com"},
+    {"thread_id": "19dc21bb37edc697", "subject": "[HillSide2026/ll-corporate] .github/workflows/contract-check.yml workflow run", "classification": "admin/system", "source": "github.com"},
+    {"thread_id": "19dc212b3a6f8f86", "subject": "[HillSide2026/ll-corporate] Check workflow run", "classification": "admin/system", "source": "github.com"},
+    {"thread_id": "19dc2126294a81c4", "subject": "[HillSide2026/ll-corporate] .github/workflows/contract-check.yml workflow run", "classification": "admin/system", "source": "github.com"},
+    {"thread_id": "19dc20492e59d35e", "subject": "[HillSide2026/ll-corporate] Check workflow run", "classification": "admin/system", "source": "github.com"},
+    {"thread_id": "19dc204331d0a5a4", "subject": "[HillSide2026/ll-corporate] .github/workflows/contract-check.yml workflow run", "classification": "admin/system", "source": "github.com"},
+    {"thread_id": "19dc1ad6a1699cf7", "subject": "[HillSide2026/ll-corporate] Playwright Tests workflow run", "classification": "admin/system", "source": "github.com"},
+    {"thread_id": "19dc1ac0f989041e", "subject": "[HillSide2026/ll-corporate] Check workflow run", "classification": "admin/system", "source": "github.com"}
+  ],
+
+  "unmapped_carried": [
+    "19cbc278e9a83941",
+    "19cbc1ec63a11987",
+    "19cbbe2198583039",
+    "19cbbad1f7269a9f",
+    "19cbba71918a97a6"
+  ],
+
+  "gmail_label_writes_executed": [],
+  "gmail_label_writes_proposed_pending_approval": [
+    {
+      "thread_id": "19dc52dfdd5de5dd",
+      "label_id": "Label_68",
+      "label_name": "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+      "reason": "Matter routing confirmed. Approval artifact 06_RUNS/2026-04-20-inbox-cleanup-approval.md does not cover this write. New ML1 approval required."
+    },
+    {
+      "thread_id": "19dc329d93860ad1",
+      "label_id": "Label_68",
+      "label_name": "LL/1./1.1/25-927-00003 -- Stream Ventures Limited",
+      "reason": "Matter routing confirmed. Approval artifact 06_RUNS/2026-04-20-inbox-cleanup-approval.md does not cover this write. New ML1 approval required."
+    }
+  ],
+
+  "artifacts_updated": [
+    "05_MATTERS/DASHBOARDS/MATTER_DIGEST.md",
+    "05_MATTERS/DASHBOARDS/INBOX_UNMAPPED.md",
+    "05_MATTERS/ESSENTIAL/25-927-00003/MATTER_STATUS.md"
+  ],
+
+  "stop_conditions_triggered": false,
+  "ambiguities": []
+}

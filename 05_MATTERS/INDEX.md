@@ -2,7 +2,7 @@
 
 _Generated: 2026-04-03 22:07_
 
-**Total Matters:** 41
+**Total Matters:** 42
 
 ## Essential (5)
 
@@ -14,7 +14,7 @@ _Generated: 2026-04-03 22:07_
 | [26-1639-00003](ESSENTIAL/26-1639-00003/README.md) | Andersen | Open | Other | keep in view | 2 |
 | [26-927-00004](ESSENTIAL/26-927-00004/README.md) | Stream Ventures Limited | Open | ML Active | active | 0 |
 
-## Strategic (6)
+## Strategic (7)
 
 | Matter ID | Client/Name | Status | Category | Fulfillment | Services |
 |-----------|-------------|--------|----------|-------------|----------|
@@ -24,6 +24,7 @@ _Generated: 2026-04-03 22:07_
 | [25-256-00005](STRATEGIC/25-256-00005/README.md) | Aspire Infusions Inc | Open | ML Active | active | 0 |
 | [26-1593-00002](STRATEGIC/26-1593-00002/README.md) | 1001162998 Ontario Corp. o/a KaleMart | Open | ML Active | active | 0 |
 | [26-1631-00001](STRATEGIC/26-1631-00001/README.md) | 1713425 Ontario Inc. (Tejvir Boparai) | Open | ML Active | active | 2 |
+| [26-1637-00001](STRATEGIC/26-1637-00001/MATTER_BRIEF.md) | MRKT (Nilabh Anand) | Open | ML Active | active | 0 |
 
 ## Standard (19)
 

@@ -721,6 +721,13 @@ protocols:
   status: draft
   policy: POL-042
   history: []
+- id: PRO-025
+  title: Matter Update Context Hydration
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-025_Matter_Update_Context_Hydration.md
+  version: '1.0'
+  status: approved
+  policy: PRO-019
+  history: []
 - id: 01_doctrine__protocols__readme_md
   title: Protocols (Level 4)
   path: 01_DOCTRINE/05_PROTOCOLS/README.md
@@ -900,7 +907,7 @@ doctrine:
 - id: inv-matter-model-structural
   title: Matter Model Structural Invariants
   path: 01_DOCTRINE/01_INVARIANTS/INV-0003-matter-model-structural-invariants.md
-  version: '1.1'
+  version: '1.2'
   status: approved
   history: []
 - id: inv-worker-boundary-output-authority

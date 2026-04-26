@@ -11,5 +11,7 @@ services:
     service_name: "NDA Review and Negotiation — Loosh Brands (RapidSense Technology)"
   - service_type: "solution"
     service_name: "Seeker Cannabis Agreement Review (complete)"
+  - service_type: "solution"
+    service_name: "Manufacturing Agreement — Review and Circulation"
   - service_type: "strategy"
     service_name: "Corporate Re-organization Advisory (status unconfirmed)"

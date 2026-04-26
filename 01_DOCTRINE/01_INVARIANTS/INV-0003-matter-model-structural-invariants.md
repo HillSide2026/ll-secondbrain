@@ -4,10 +4,10 @@ title: Matter Model Structural Invariants
 owner: ML1
 status: approved
 approved_by: ML1
-approved_date: 2026-03-28
-version: 1.1
+approved_date: 2026-04-26
+version: 1.2
 created_date: 2026-03-08
-last_updated: 2026-03-28
+last_updated: 2026-04-26
 tags: [invariant, matters, model]
 ---
 
@@ -31,6 +31,9 @@ The matter domain model is a structural contract. The following properties must 
 12. Canonical structured fields are source of truth; summaries, dashboards, digests, and action queues are derived views and must not override canonical fields.
 13. Derived command-layer outputs may append ML1-action fields and operational-signal overlays, but may not collapse, recode, or substitute for canonical `delivery_status` or `fulfillment_status`.
 14. Matter File mappings and external artifacts may enrich or evidence a Matter, but may not redefine `matter_id`, `status`, `delivery_status`, or `fulfillment_status`.
+15. **Taxonomy Separation Rule:** `delivery_status` (matter-level) and `service_type` (service-level) are independent classification axes. `delivery_status` must not be used to infer `service_type`. `service_type` must not be used to infer `delivery_status`. A matter with `delivery_status: strategic` may contain services of `service_type: strategy` or `service_type: solution` or both.
+16. Every Matter must contain at least one Service.
+17. Service streams (also called service workstreams) are sub-units of a specific Service. They are described within the service entry and must not be listed as separate top-level Service entries in MATTER.yaml.
 
 ## Boundary
 This invariant defines structure and cardinality only. Policy documents define operational status vocabularies, transitions, and thresholds.

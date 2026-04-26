@@ -2,7 +2,8 @@
 id: payments-commercial-architect-v0.2
 title: Payments Commercial Architect — Agent Spec v0.2
 owner: ML1
-status: approved
+status: superseded
+superseded_by: payments-commercial-architect-v0.3
 approved_by: ML1
 approved_date: 2026-04-25
 version: 0.2

@@ -64,3 +64,11 @@ artifacts take precedence over this skill.md where they conflict.
 | Inbox Governance Protocol | `01_DOCTRINE/05_PROTOCOLS/PRO-014_Inbox_Governance_Protocol.md` | draft |
 | Inbox Governance Policy | `01_DOCTRINE/03_POLICIES/POL-042_Inbox_Governance_Policy.md` | draft |
 | 09_INBOX Pipeline Specification | `09_INBOX/README.md` | draft |
+| Matter Update Context Hydration | `01_DOCTRINE/05_PROTOCOLS/PRO-025_Matter_Update_Context_Hydration.md` | approved |
+
+## Pre-Processing Requirement
+
+Before updating any matter record (MATTER.yaml, MATTER_BRIEF.md, MATTER_STATUS.md,
+LAWYER_TASK_TRACKER.md, INDEX.md), this agent must execute the Context Hydration
+pre-processing step defined in PRO-025. Email-derived classifications must not
+overwrite existing service taxonomy without ML1 confirmation.
