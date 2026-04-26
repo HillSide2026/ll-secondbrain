@@ -71,12 +71,21 @@ Structured legal function for growing Ontario businesses, providing ongoing gove
 
 ## Pipeline Stages
 
-- lead_captured
-- screened
-- booked
-- consult_complete
-- retained
-- closed_lost
+GHL pipeline: **LL - Corporate Law** (id: `emVIxH1FUQbwMM1MVW5V`, synced 2026-04-26)
+
+| Position | GHL Stage Name | Abstract Stage |
+|----------|---------------|----------------|
+| 0 | New Inquiry / Lead | lead_captured |
+| 1 | Outbound - No Answer | lead_captured |
+| 2 | Unresponsive | lead_captured |
+| 3 | Pending Qualification | screened |
+| 4 | Consultation Booked | booked |
+| 5 | Rescheduled / No-Show | booked |
+| 6 | Consultation Completed | consult_complete |
+| 7 | Engagement Sent | consult_complete |
+| 8 | Retained (Closed - Won) | retained |
+| 9 | Closed - Not Proceeding | closed_lost |
+| 10 | Disqualified | closed_lost |
 
 ## Primary Metrics
 

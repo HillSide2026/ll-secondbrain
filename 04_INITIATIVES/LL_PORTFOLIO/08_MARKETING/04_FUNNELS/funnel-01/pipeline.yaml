@@ -1,8 +1,61 @@
 system: ghl
+ghl_pipeline_id: emVIxH1FUQbwMM1MVW5V
+ghl_pipeline_name: "LL - Corporate Law"
+ghl_location_id: Rw6TfoPhzjwqlVSn6oa8
+last_synced: 2026-04-26
+
 stages:
-- lead_captured
-- screened
-- booked
-- consult_complete
-- retained
-- closed_lost
+  - position: 0
+    ghl_stage_id: 1d221dec-5123-4313-9ae0-f45f468d8384
+    ghl_name: "New Inquiry / Lead"
+    abstract: lead_captured
+
+  - position: 1
+    ghl_stage_id: 0f1995bb-db3b-4e55-959b-32b4ce447e7d
+    ghl_name: "Outbound - No Answer"
+    abstract: lead_captured
+
+  - position: 2
+    ghl_stage_id: ffd9fb94-5592-4d67-8467-3cb2d0dc6add
+    ghl_name: "Unresponsive"
+    abstract: lead_captured
+
+  - position: 3
+    ghl_stage_id: 3ec47124-4f74-4fa0-a614-cc0406913b1f
+    ghl_name: "Pending Qualification"
+    abstract: screened
+
+  - position: 4
+    ghl_stage_id: 30d3c77f-6ade-468a-aa94-9634aaf7917c
+    ghl_name: "Consultation Booked"
+    abstract: booked
+
+  - position: 5
+    ghl_stage_id: f81886f1-d9ca-4726-9a8e-f3114e7a5851
+    ghl_name: "Rescheduled / No-Show"
+    abstract: booked
+
+  - position: 6
+    ghl_stage_id: d9e0aa93-a5e5-403c-aa92-a37fb816dfd7
+    ghl_name: "Consultation Completed"
+    abstract: consult_complete
+
+  - position: 7
+    ghl_stage_id: dae582c5-d24c-43fe-8f4e-8e4bc68adfc4
+    ghl_name: "Engagement Sent"
+    abstract: consult_complete
+
+  - position: 8
+    ghl_stage_id: 0513d36f-8067-49d9-8fb0-aa7351b65bcf
+    ghl_name: "Retained (Closed - Won)"
+    abstract: retained
+
+  - position: 9
+    ghl_stage_id: b4c10b22-10e4-407e-a5db-54477a33d42a
+    ghl_name: "Closed - Not Proceeding"
+    abstract: closed_lost
+
+  - position: 10
+    ghl_stage_id: e8b715a9-c6e3-4282-aa99-e9ef7c3ff265
+    ghl_name: "Disqualified"
+    abstract: closed_lost
