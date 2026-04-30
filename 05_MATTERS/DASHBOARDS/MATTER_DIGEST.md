@@ -1,6 +1,6 @@
 # Firm Matter Digest
 
-Generated at: 2026-04-28T18:00:00Z
+Generated at: 2026-04-29T10:45:00Z
 
 ## Summary
 - Moved matters: 0
@@ -8,27 +8,19 @@ Generated at: 2026-04-28T18:00:00Z
 - ML Active matters with zero services: 13
 - ML Watch matters: 11
 - Fulfillment escalation candidates (urgent): 1
-- Inbox-linked active matters (last 7 days): 2
-- Inbox-signal stalled matters: 33
+- Inbox-linked active matters (last 7 days): 0
+- Inbox-signal stalled matters: 35
 - Due soon: 0 (Deadline Extractor not active in Slice 1)
-- Unmapped inbox threads: 7
+- Unmapped inbox threads: 5
 - SharePoint file changes: 0
 
 ## Needs ML1 Review Today
-- Routed threads requiring confirmation (identity-match, review-required): 3
-- Unmapped threads requiring routing decision: 7
+- Fallback-routed threads requiring review: 1
+- Unmapped threads requiring routing decision: 5
 - Fulfillment escalation candidates (urgent): 1
 
 ### Fulfillment Escalation Candidates
-- 25-927-00003 :: Stream Ventures Limited (delivery=Essential; fulfillment=urgent; services=5; latest signal=2026-04-28T12:00:00Z; repo://05_MATTERS/ESSENTIAL/25-927-00003/MATTER.yaml)
-
-### New Activity — Inbox-Linked Matters (Last 7 Days)
-
-| Matter | Thread ID | Subject | Last Message (UTC) | Routing Rule |
-| --- | --- | --- | --- | --- |
-| 25-927-00003 Stream Ventures Limited | 19dd3b02298fc60c | Document shared with you: 'FCA Crypto FSMA_Business_Plan_Client_Questionnaire.docx' | 2026-04-28 | identity-match (review-required) |
-| 25-927-00003 Stream Ventures Limited | 19dd3afca5e1ef42 | Document shared with you: 'FCA EMI Authorisation Business Plan Client Questionnaire.docx' | 2026-04-28 | identity-match (review-required) |
-| 25-1525-00001 Kleenup Cleaning Services Inc. | 19dd1d80b5bcf867 | Laura Hinton added a comment to TERM SHEET based on kleenup precedent | 2026-04-27 | identity-match (review-required) |
+- 25-927-00003 :: Stream Ventures Limited (delivery=Essential; fulfillment=urgent; services=5; latest signal=2026-03-05T04:08:22Z; repo://05_MATTERS/ESSENTIAL/25-927-00003/MATTER.yaml)
 
 ## Operational Gaps (Not automatic ML1 review)
 - ML Active matters missing service definitions: 13
@@ -89,11 +81,7 @@ Generated at: 2026-04-28T18:00:00Z
 - 26-259-00003 :: LL Onboarding (services=0; repo://05_MATTERS/STANDARD/26-259-00003/MATTER.yaml)
 
 ## Inbox Signal (Signal 2: Matter-Linked Comms, Last 7 Days)
-
-| Matter | Threads | Last Signal (UTC) | Source Pointer |
-| --- | --- | --- | --- |
-| 25-927-00003 Stream Ventures Limited | 2 | 2026-04-28 | repo://05_MATTERS/ESSENTIAL/25-927-00003/MATTER_STATUS.md |
-| 25-1525-00001 Kleenup Cleaning Services Inc. | 1 | 2026-04-27 | repo://05_MATTERS/STANDARD/25-1525-00001/MATTER_STATUS.md |
+- No matter-linked comms activity in this time window.
 
 ## Waiting External
 - None flagged in Slice 1 heuristics
@@ -110,6 +98,7 @@ Generated at: 2026-04-28T18:00:00Z
 - `stalled` is an inbox-signal overlay, not a replacement for delivery status.
 | Matter Number | Matter | Category | Delivery | Fulfillment | Last Signal (UTC) | Source Pointer |
 | --- | --- | --- | --- | --- | --- | --- |
+| 25-927-00003 | Stream Ventures Limited | ML Active | Essential | urgent | 2026-03-05T04:08:22Z | repo://05_MATTERS/ESSENTIAL/25-927-00003/MATTER.yaml |
 | 24-336-00004 | Mascore Helical Piles | ML Active | Strategic | active | none | repo://05_MATTERS/STRATEGIC/24-336-00004/MATTER.yaml |
 | 25-1231-00001 | Charmaine Spiteri | ML Active | Strategic | active | none | repo://05_MATTERS/STRATEGIC/25-1231-00001/MATTER.yaml |
 | 25-1318-00001 | Zelko Culibrk | Other | Strategic | closing | none | repo://05_MATTERS/STRATEGIC/25-1318-00001/MATTER.yaml |
@@ -118,6 +107,7 @@ Generated at: 2026-04-28T18:00:00Z
 | 23-194-00013 | Rousseau Mazzuca LLP | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/23-194-00013/MATTER.yaml |
 | 24-646-00001 | ByNature Design | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/24-646-00001/MATTER.yaml |
 | 25-1185-00001 | Alexander Klys | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-1185-00001/MATTER.yaml |
+| 25-1525-00001 | Kleenup Cleaning Services Inc. | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-1525-00001/MATTER.yaml |
 | 25-1538-00002 | Georgiana Nicoară | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-1538-00002/MATTER.yaml |
 | 25-1553-00001 | 15652227 Canada Inc. | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-1553-00001/MATTER.yaml |
 | 25-1571-00001 | Kishmish Inc. | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-1571-00001/MATTER.yaml |
@@ -145,16 +135,11 @@ Generated at: 2026-04-28T18:00:00Z
 | 25-256-00005 | Aspire Infusions Inc | Other | unknown | unknown | none | repo://05_MATTERS/STRATEGIC/25-256-00005/MATTER.yaml |
 
 ## Unmapped Comms Intake
-- 19dd1cdc58b5ee02 :: Proposed Email to Nilabh (ambiguous: corporate matter identity unclear; subject mentions shares/board composition; no matter number; repo://06_RUNS/ops/gmail_threads_2026-04-28.json#thread:19dd1cdc58b5ee02)
-- 19dd0a338fd176b2 :: Airwallex welcome / platform onboarding email (no matter routing signal; repo://06_RUNS/ops/gmail_threads_2026-04-28.json#thread:19dd0a338fd176b2)
-- 19d60ee52349d24d :: TheZ8 / Maryna Panchenko MSB FINTRAC prospect (no Clio matter exists; C100000573; repo://06_RUNS/ops/gmail_threads_2026-04-28.json#thread:19d60ee52349d24d)
-- 19dcfa570c8ee934 :: Sonia / Steinberg introduction — BD cooperation (no matter routing signal; repo://06_RUNS/ops/gmail_threads_2026-04-28.json#thread:19dcfa570c8ee934)
-- 19dc134cb9906ba1 :: Sonia BD cooperation follow-up (no matter routing signal; repo://06_RUNS/ops/gmail_threads_2026-04-28.json#thread:19dc134cb9906ba1)
-- 19dd3516ef6ddfe7 :: Soulpepper CRM / Marina P contact (no matter routing signal; repo://06_RUNS/ops/gmail_threads_2026-04-28.json#thread:19dd3516ef6ddfe7)
-- 19dd163652c7bf2d :: Upwork Daniel M notification (no matter routing signal; repo://06_RUNS/ops/gmail_threads_2026-04-28.json#thread:19dd163652c7bf2d)
-
-## Suppressed (Operational Noise)
-15 threads suppressed as non-matter operational noise (calendar invites, newsletters, shipping, CI failures, platform notifications). No routing decision required.
+- 19cbc278e9a83941 :: Make your first purchase on our P2P platform and pay up to 20% less (repo://06_RUNS/ops/gmail_fetch_latest.json#thread:19cbc278e9a83941)
+- 19cbc1ec63a11987 :: Re: Outstanding credit REGUS RENT (repo://06_RUNS/ops/gmail_fetch_latest.json#thread:19cbc1ec63a11987)
+- 19cbbe2198583039 :: Re: Tax Implication of Shareholder Distributions (repo://06_RUNS/ops/gmail_fetch_latest.json#thread:19cbbe2198583039)
+- 19cbbad1f7269a9f :: Manual time was added (repo://06_RUNS/ops/gmail_fetch_latest.json#thread:19cbbad1f7269a9f)
+- 19cbba71918a97a6 :: Khanh N. has started working. Review work done. (repo://06_RUNS/ops/gmail_fetch_latest.json#thread:19cbba71918a97a6)
 
 ## Exceptions
 - Missing local matter folder for SharePoint packet generation:

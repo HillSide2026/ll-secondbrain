@@ -1,6 +1,6 @@
 # Matter Index
 
-Generated at: 2026-04-26T14:30:53Z
+Generated at: 2026-04-29T10:45:00Z
 Connector source: `cache:cache/clio_matters.json (repo_fallback:05_MATTERS)`
 
 | Matter Number | Name | Status | Category | Delivery | Fulfillment | Services | Responsible | Client | Source Pointer |
@@ -33,7 +33,7 @@ Connector source: `cache:cache/clio_matters.json (repo_fallback:05_MATTERS)`
 | 25-174-00001 | Danielle Thompson | Open | ML Watch | Parked | keep in view | 0 | unassigned | Danielle Thompson | repo://05_MATTERS/PARKED/25-174-00001/MATTER.yaml |
 | 25-192-00003 | If Not Me Inc | Open | ML Watch | Parked | keep in view | 0 | unassigned | If Not Me Inc | repo://05_MATTERS/PARKED/25-192-00003/MATTER.yaml |
 | 25-194-00059 | Rousseau Mazzuca LLP | Open | ML Active | Standard | active | 0 | unassigned | Rousseau Mazzuca LLP | repo://05_MATTERS/STANDARD/25-194-00059/MATTER.yaml |
-| 25-256-00005 | Aspire Infusions Inc | Open | ML Active | Strategic | active | 3 (solution:NDA Review and Negotiation — Loosh Brands (RapidSense Technology); solution:Seeker Cannabis Agreement Review (complete); strategy:Corporate Re-organization Advisory (status unconfirmed)) | unassigned | Aspire Infusions Inc | repo://05_MATTERS/STRATEGIC/25-256-00005/MATTER.yaml |
+| 25-256-00005 | Aspire Infusions Inc | Open | Other | unknown | unknown | 0 | unassigned | Aspire Infusions Inc | repo://05_MATTERS/STRATEGIC/25-256-00005/MATTER.yaml |
 | 25-822-00001 | Majid Hajibeigy | Open | ML Watch | Parked | active | 0 | unassigned | Majid Hajibeigy | repo://05_MATTERS/PARKED/25-822-00001/MATTER.yaml |
 | 25-845-00002 | STAR 333 SPORTS INC. | Open | ML Active | Standard | active | 4 (solution:Franchise agreement(s); solution:Master license agreement with Cricket Canada; solution:Venue agreement; +1 more) | unassigned | STAR 333 SPORTS INC. | repo://05_MATTERS/STANDARD/25-845-00002/MATTER.yaml |
 | 25-927-00003 | Stream Ventures Limited | Open | ML Active | Essential | urgent | 5 (solution:AML/ATF Policy Development and FINTRAC Compliance; solution:RPAA Compliance — Incident Risk Policy and Application; solution:Terms and Conditions Review — Equals Money Cross-Reference; +2 more) | unassigned | Stream Ventures Limited | repo://05_MATTERS/ESSENTIAL/25-927-00003/MATTER.yaml |
