@@ -4,7 +4,7 @@ title: Levine Law — Firm Strategy
 owner: ML1
 status: draft
 created_date: 2026-03-17
-last_updated: 2026-04-03
+last_updated: 2026-05-03
 tags: [llp-030, firm-strategy, doctrine]
 ---
 
@@ -47,7 +47,7 @@ Listed in priority order. Where trade-offs arise, higher-ranked priorities win.
 
 5. **Delegation of billable work** — From 2027 onwards, ML1 must be able to delegate billable execution to an associate lawyer or supervised delivery resource. This is a medium-term priority: it does not override 1–4 in 2026, but it is a required precondition for scaling beyond the ML1 capacity ceiling without degrading client quality or economics. The architecture of delivery systems, templates, and supervision protocols built in 2026 must be designed with delegation in mind.
 
-6. **Transferable value and reputation** — The practice should be buildable toward an asset that could be sold or handed off. This requires client relationships that are not entirely ML1-personal, documented systems, and authority positioning in defined verticals. This is a background priority that influences architecture decisions; it does not override 1–5.
+6. **Incremental equity sale** — The medium-to-long-term objective is to incrementally sell ML1's equity in LL, not to operate it indefinitely. This is a planned, phased exit from ownership: the firm should be built as an asset whose value can be realized in stages rather than through a single transaction or wind-down. This requires client relationships that are not entirely ML1-personal, documented systems, and authority positioning in defined verticals. It is a background priority in 2026–2027 that influences architecture decisions; it does not override 1–5 in the current period, but becomes an active planning priority as the firm approaches the 2028+ horizon and the equity sale window opens.
 
 ---
 
@@ -125,6 +125,13 @@ These horizon statements are planning targets, not approved KPI baselines
 | `2026` | Build the controlled platform and launch the specialty layer | Establish Levine Law as a Tier 5 emerging specialist boutique in Ontario payments-services legal work | Launch F02 and F03 while F01 continues funding operations | Reach and sustain `CAD 240k` annualized revenue, keep workload within ML1 capacity, and maintain margin discipline after `CAD 80,000` owner compensation |
 | `2027` | Consolidate authority and deepen the specialist book | Become a recognized specialist reference point for defined payments/MSB/RPAA/AML matters in the target market while remaining a solid Tier 5 boutique | F02 becomes the primary core-business acquisition engine; F03 produces repeat matters, referral flow, and first ongoing specialist relationships | Formalize delivery standards, narrow the matter mix further, and activate leverage only if the bottleneck is persistent and economics justify it |
 | `2028` | Convert specialist credibility into a larger, stronger Tier 5 platform | Deepen Levine Law's specialist standing, authority, and durability inside Tier 5 | F02 and F03 are both repeatable channels; F01 is secondary or optional rather than the growth engine | Decide whether selective leverage, including a senior lawyer or partner layer, can be added without breaking capacity discipline, niche positioning, or Tier 5 focus |
+
+**Open strategic decision — Path A vs. Path B (must be resolved by end of 2027):**
+The 2028 platform decision is not merely operational — it is an identity decision for LL. Two paths are available:
+- **Path A — Controlled Boutique**: 1–2 lawyers, high realization, niche authority (F03-led), high income stability, limited enterprise value, ML1-adjacent.
+- **Path B — Early Platform**: associate layer working, partial client independence from ML1, repeatable service lines, actual enterprise value, margin compression, operational complexity.
+
+The current strategy implicitly targets Path B (equity sale objective, leverage architecture) but the capacity discipline language reflects Path A instincts. This tension must be resolved — not deferred — by the end of 2027, because the 2028 decisions (staffing, leverage, investment) depend on it. The Delivery Spine project (LLP-038) and the associate model (LLP-033) will generate the evidence needed to make this call.
 
 Working payments market ladder used in this strategy:
 

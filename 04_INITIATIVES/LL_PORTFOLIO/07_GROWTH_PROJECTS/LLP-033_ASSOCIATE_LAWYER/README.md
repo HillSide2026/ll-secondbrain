@@ -92,6 +92,19 @@ Current planning workstreams are:
 - monitoring
 - analytics
 
+## Ongoing Analytical Work
+
+The following items are open analytical workstreams within LLP-033 — prerequisites for the associate hire decision. They are shared with LLP-030 and depend on LLP-038 (Delivery Spine) producing scope and hours data.
+
+| Item | Status | Dependency |
+|---|---|---|
+| ML1 hours per file vs. associate hours per file | Not yet defined — requires LLP-038 scope and delegation classification | LLP-038 |
+| Review ratio (ML1 QA time per delegated file) | Not yet defined — must be ≤20% of original delivery time for delegation to be viable | LLP-038 |
+| Associate hire trigger condition | Defined as "30–40% of work is repeatable, spec-able, and reviewable in <20% of ML1 time" — not yet measurable until LLP-038 is operational | LLP-038 |
+| Contribution margin per file under leverage | Shared with LLP-030 financial model | LLP-038, LLP-030 |
+
+The analytics workstream in this project cannot produce credible outputs until LLP-038 is sufficiently built to generate actual delivery data.
+
 ## Last ML1 Review Date
 
 *Not yet reviewed*

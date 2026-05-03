@@ -86,6 +86,47 @@ Maturity-based, not panic-based. The buyer is not in crisis — they have reache
 
 ---
 
+## Economic Model — CHC Is a Conversion Product, Not a Revenue Product
+
+**The CHC is not the firm's revenue engine. It is its diagnostic and trust engine.**
+
+At a realistic volume of approximately 30 CHCs per year, CHC gross revenue (~$90K at a blended V1/V2 average) covers roughly one-third of the firm's operating target. The model only works if CHC clients re-convert into ongoing advisory at a meaningful rate. That re-conversion — not the CHC fee itself — is where the economic value of Funnel 02 lives.
+
+The full client journey is:
+
+```
+CHC (diagnosis + trust) → Remediation (urgency + delivery proof) → Fractional Counsel (recurring revenue + LTV)
+```
+
+Each stage must be designed to earn the next one:
+- The **findings report** creates urgency that is real, prioritized, and bounded — not overwhelming. It must make the remediation roadmap feel necessary and achievable.
+- The **debrief** is the primary conversion moment for remediation. It is structured around a follow-on proposal, not just a handoff.
+- **Remediation delivery** is the proof event that earns the fractional counsel relationship. Quality here is more important to LTV than any marketing.
+- The **fractional counsel offer** is made explicitly at the close of remediation, not as an afterthought.
+
+**Economics at a 25% CHC → fractional counsel conversion rate:**
+- 7–8 clients at V2 Fractional Corporate Counsel ($2,750/month) = ~$228K/year recurring
+- Combined with CHC fees (~$90K) and remediation work: total firm revenue approaches or exceeds target
+- Five to six sticky fractional counsel clients effectively fund the firm
+
+**Implication for Spine design:** The "Close" stage of the Delivery Spine (LLP-038) is the strategically critical stage. The findings report, debrief, and remediation-to-counsel transition must be designed as a conversion architecture, not just a delivery checklist.
+
+---
+
+## Portal Hypothesis — Fractional Counsel as a Digital Product (Unvalidated)
+
+**Status: Active hypothesis. Not confirmed. ML1 must evaluate.**
+
+The bet: modern business operators in the ICP-01 segment ($1M–$10M+ revenue, accountant-involved, commercially sophisticated) are accustomed to B2B SaaS tools for their professional services stack — accounting, HR, payments. A fractional counsel experience delivered through a proper client portal (matter tracking, document library, retainer visibility, structured requests) could feel like **legal infrastructure** rather than a professional service transaction. That positioning could be a meaningful differentiator in accountant referral conversations and in client retention.
+
+The counter-argument: operators at this scale may simply want reliable, fast legal advice. A portal only differentiates if it is genuinely better than responsive email — if it adds friction without adding visibility or control, it is worse. The portal is not inherently a differentiator; it is only one if it reduces friction and increases client confidence.
+
+**The validation question:** Do ICP-01 clients at $1M–$10M revenue actually prefer a structured portal over direct email access to their lawyer? Or does the portal introduce distance that reduces perceived responsiveness?
+
+This hypothesis should be tested explicitly — not built speculatively. The minimum test is whether accountant referral partners and early fractional counsel clients respond to the concept positively before any portal is built.
+
+---
+
 ## Export Sub-Segment
 
 Exporters are not a separate ICP — they are a targetable sub-segment within Funnel 02. Cross-border/multi-jurisdiction exposure is already a mandatory operational characteristic in `target.yaml`. The acquisition question is whether businesses actively preparing to export can be reached before they have sorted their legal exposure.

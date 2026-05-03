@@ -81,5 +81,18 @@ canonical Stage 2 packet in `planning/`.
   the `2030` owner-income target if all revenue above the current `CAD 240,000`
   baseline is billed by a second fee earner at different contribution margins.
 
+## Ongoing Analytical Work
+
+The following items are open analytical workstreams within LLP-030 — they are prerequisites for the 2027 leverage decision and the 2028 Path A/B identity decision. They cannot be completed until the Delivery Spine (LLP-038) produces scope and hours data per service type.
+
+| Item | Status | Dependency |
+|---|---|---|
+| Revenue per file by service type | Not yet modeled — requires LLP-038 scope caps | LLP-038 |
+| Hours per file — ML1 vs. associate | Not yet modeled — requires LLP-038 delegation classification | LLP-038, LLP-033 |
+| Contribution margin per file under leverage | Not yet modeled — requires hours per file and associate compensation structure | LLP-038, LLP-033 |
+| Review ratio (ML1 QA time per delegated file) | Not yet defined | LLP-038 |
+
+These belong in `FINANCIAL_MODEL.md` once input data is available from LLP-038. Do not treat LLP-030's financial model as complete until these are addressed.
+
 ## Last ML1 Review Date
 `2026-03-17`
