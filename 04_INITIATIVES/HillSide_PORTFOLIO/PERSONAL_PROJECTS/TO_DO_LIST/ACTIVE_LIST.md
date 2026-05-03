@@ -4,7 +4,7 @@ title: Active List
 owner: ML1
 status: draft
 created_date: 2026-03-16
-last_updated: 2026-03-28
+last_updated: 2026-05-03
 tags: [hillside, personal-projects, to-do-list]
 ---
 
@@ -24,3 +24,4 @@ Track the current set of active personal tasks that require action.
 | 8 | Buy crypto | — | Personal Finance | — | Active | 2026-03-30 |
 | 9 | Buy stablecoins | — | Personal Finance | — | Active | 2026-03-30 |
 | 10 | Move money from TD to BMO | — | Personal Finance | — | Active | 2026-03-30 |
+| 11 | Call with potential client | Prepare for call; confirm who the client is | Levine Law / HBP-007 | 2026-05-05 10:00am | Active | 2026-05-03 |

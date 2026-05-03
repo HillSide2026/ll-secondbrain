@@ -1,16 +1,14 @@
 ---
 id: 04_initiatives__hillside_portfolio__personal_projects__to_do_list__in_tray_md
-title: To-Do In Tray
+title: To-Do In Tray (retired)
 owner: ML1
-status: draft
+status: superseded
 created_date: 2026-03-16
-last_updated: 2026-03-16
+last_updated: 2026-05-03
 tags: [hillside, personal-projects, to-do-list]
 ---
 
-# To-Do In Tray
+# Retired
 
-Capture new or untriaged items here before they are prioritized.
-
-| Item | Context | Linked Project or Area | Date Added | Notes |
-| --- | --- | --- | --- | --- |
+Superseded 2026-05-03. Flow simplified to BACKLOG → ACTIVE → COMPLETED.
+Use `BACKLOG.md` for new captures.

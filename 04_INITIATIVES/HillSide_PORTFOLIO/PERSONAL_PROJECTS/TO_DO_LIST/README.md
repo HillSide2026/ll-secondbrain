@@ -4,55 +4,37 @@ title: To-Do List
 owner: ML1
 status: draft
 created_date: 2026-03-16
-last_updated: 2026-03-16
+last_updated: 2026-05-03
 tags: [hillside, personal-projects, to-do-list]
 ---
 
 # To-Do List
 
-This personal project maintains a lightweight personal task list inside the
-HillSide personal-project area.
-
-## Purpose
-
-Use this project to track:
-
-- personal follow-ups, reminders, and next actions
-- personal admin or life-organization items that need visibility
-- blocked or waiting personal items that still require follow-up
-
-## Boundaries
-
-This project is:
-
-- an execution aid for ML1
-- a lightweight personal task overlay
-- suitable for personal follow-up and prioritization
-
-This project is not:
-
-- a business-project tracker
-- a substitute for project packets, approval records, registers, or business planning files
-- a place for Levine Law matter-delivery to-dos
-
-## Working Artifacts
-
-Use the following documents to manage the list:
-
-- `IN_TRAY.md`
-- `ACTIVE_LIST.md`
-- `WAITING_ON.md`
-- `COMPLETED_LOG.md`
+A lightweight personal task list inside the HillSide personal-project area.
 
 ## Flow
 
-- Capture new items in `IN_TRAY.md`.
-- Move active priorities into `ACTIVE_LIST.md`.
-- Move blocked or dependency-driven items into `WAITING_ON.md`.
+```
+BACKLOG → ACTIVE → COMPLETED
+```
+
+- Capture new items in `BACKLOG.md`.
+- Move items you are ready to action into `ACTIVE_LIST.md`.
 - Move finished items into `COMPLETED_LOG.md`.
+
+## Working Artifacts
+
+- `BACKLOG.md` — captured items not yet active
+- `ACTIVE_LIST.md` — items currently being actioned
+- `COMPLETED_LOG.md` — finished items; kept for reference
 
 ## Usage Notes
 
 - Keep `ACTIVE_LIST.md` short and current.
-- Use one clear next action per active item where possible.
-- Move stale items out of active view rather than letting the list sprawl.
+- Blocked or waiting items stay in `ACTIVE_LIST.md` with the block noted in the Notes column.
+- Move stale items back to `BACKLOG.md` rather than letting the active list sprawl.
+
+## Boundaries
+
+This project is not a substitute for project packets, approval records, or
+business planning files, and is not for Levine Law matter-delivery to-dos.

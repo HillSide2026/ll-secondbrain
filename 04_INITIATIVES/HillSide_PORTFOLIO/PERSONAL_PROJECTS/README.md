@@ -20,6 +20,8 @@ Current personal projects:
 - `PERSONAL_ACCOUNTING`
 - `TORONTO_HOUSING`
 - `JAPAN_HOME_DECISION`
+- `JAPAN_PROPERTY_PIPELINE`
+- `WORRY_EATER`
 
 ## Decision-Making
 
@@ -64,3 +66,17 @@ Current personal projects:
   standalone personal project for deciding whether to pursue acquisition of a
   home in Japan.
 - Current stage: `Planning`
+
+## Japan Property Pipeline
+
+- [JAPAN_PROPERTY_PIPELINE/README.md](JAPAN_PROPERTY_PIPELINE/README.md) governs
+  the property search, evaluation, and acquisition process for a Japan home.
+- Companion to `JAPAN_HOME_DECISION`. Budget ceiling: CAD 400,000.
+- Current stage: `Planning`
+
+## Worry Eater
+
+- [WORRY_EATER/README.md](WORRY_EATER/README.md) is a personal project for
+  recording and tracking things ML1 is worried about.
+- Active worries: `WORRY_EATER/WORRIES.md`
+- Resolved worries: `WORRY_EATER/RESOLVED.md`

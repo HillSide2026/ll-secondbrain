@@ -38,6 +38,26 @@ Full tool surface documented in:
 
 `05_MATTERS/INDEX.md` is updated on explicit ML1 instruction only. Do not modify it as part of any automated pipeline or housekeeping task.
 
+## Personal To-Do List Governance
+
+`04_INITIATIVES/HillSide_PORTFOLIO/PERSONAL_PROJECTS/TO_DO_LIST/` is maintained
+by the system subject to ML1 override. Flow: `BACKLOG.md` → `ACTIVE_LIST.md` → `COMPLETED_LOG.md`.
+
+**Session capture rule:** During any session, if ML1 mentions a personal to-do,
+appointment, follow-up, or action item that is not a Levine Law matter task, add it
+to `BACKLOG.md` immediately without waiting to be asked. Tag it to an existing
+HillSide project where one exists.
+
+**Gmail capture rule:** When reading Gmail in any context, flag personal action items
+that are not Levine Law matter tasks — appointments, advisor follow-ups, personal
+obligations — and add them to `BACKLOG.md`. Do not add matter-level tasks here;
+those belong in `LAWYER_TASK_TRACKER.md`.
+
+**Promotion:** Move items from `BACKLOG.md` to `ACTIVE_LIST.md` only on ML1
+instruction. Do not auto-promote.
+
+---
+
 ## Lawyer Task Tracker Governance
 
 `05_MATTERS/LAWYER_TASK_TRACKER.md` is maintained by the system subject to ML1 override.
