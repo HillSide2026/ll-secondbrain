@@ -1,6 +1,6 @@
 # CITT Signal Report — Andersen (Trade Remedies)
 
-- Generated at: `2026-05-02 11:53:45Z`
+- Generated at: `2026-05-03 11:32:46Z`
 - Matter ID: `26-1639-00002`
 - Client of record: `Andersen`
 - Scanner: `TRM_CITT_UPDATE_SCANNER`
@@ -13,20 +13,27 @@
 | CITT Home / What's New | not stated | no | ok |
 | Active Dumping and Subsidizing Cases | May 1, 2026 | no | ok |
 | Measures in Force and Expiry Time Lines | not stated | no | ok |
-| Active Safeguard Inquiries | not stated | no | ('Connection aborted.', TimeoutError(60, 'Operation timed out')) |
+| Active Safeguard Inquiries | April 21, 2026 | yes | ok |
 | List of Tribunal Decisions Not Yet Published | April 29, 2026 | no | ok |
 
 ## Proceeding Signals
+
+### Active Safeguard Inquiries
+
+- `New`: GC-2025-001—Certain Vegetable Goods
+- `New`: GC-2026-001—Certain Wood Goods
+- Source: https://www.citt-tcce.gc.ca/en/safeguard-inquiries/active-safeguard-inquiries
 
 ## Upcoming Expiry Review Signals
 
 ### Measures in Force and Expiry Time Lines
 
-- `Current`: Expiry review underway — Concrete Reinforcing Bar III (NQ-2020-004); tentative notice April 20, 2026 (12 days ago); measure expiry June 3, 2026 (in 32 days); review marked underway on the CITT page
-- `Current`: Expiry review underway — Concrete Reinforcing Bar IV (NQ-2020-005); tentative notice April 20, 2026 (12 days ago); measure expiry July 1, 2026 (in 60 days); review marked underway on the CITT page
-- `Current`: Approaching measure expiry — Whole Potatoes (RR-2020-002); tentative notice April 1, 2026 (31 days ago); measure expiry June 1, 2026 (in 30 days); review marked underway on the CITT page
-- `Current`: Upcoming notice of expiry review — Refined Sugar (RR-2020-003); tentative notice July 2, 2026 (in 61 days); measure expiry August 5, 2026 (in 95 days)
-- `Current`: Upcoming notice of expiry review — Grinding Media (NQ-2021-001); tentative notice August 4, 2026 (in 94 days); measure expiry August 26, 2026 (in 116 days)
+- `Current`: Expiry review underway — Concrete Reinforcing Bar III (NQ-2020-004); tentative notice April 20, 2026 (13 days ago); measure expiry June 3, 2026 (in 31 days); review marked underway on the CITT page
+- `Current`: Expiry review underway — Concrete Reinforcing Bar IV (NQ-2020-005); tentative notice April 20, 2026 (13 days ago); measure expiry July 1, 2026 (in 59 days); review marked underway on the CITT page
+- `Current`: Approaching measure expiry — Whole Potatoes (RR-2020-002); tentative notice April 1, 2026 (32 days ago); measure expiry June 1, 2026 (in 29 days); review marked underway on the CITT page
+- `Current`: Upcoming notice of expiry review — Refined Sugar (RR-2020-003); tentative notice July 2, 2026 (in 60 days); measure expiry August 5, 2026 (in 94 days)
+- `Current`: Upcoming notice of expiry review — Grinding Media (NQ-2021-001); tentative notice August 4, 2026 (in 93 days); measure expiry August 26, 2026 (in 115 days)
+- `New`: Upcoming notice of expiry review — Upholstered Domestic Seating (NQ-2021-002); tentative notice August 31, 2026 (in 120 days); measure expiry September 1, 2026 (in 121 days)
 - Source: https://www.citt-tcce.gc.ca/en/anti-dumping-injury-inquiries/measures-force-and-expiry-time-lines
 
 ## Matter-Specific Track Matches
@@ -52,6 +59,10 @@
 - Observed signal: Safeguard inquiries: Active inquiries [Measures in Force and Expiry Time Lines]
 - Observed signal: Safeguard inquiries: Forms, practices and procedures [Measures in Force and Expiry Time Lines]
 - Observed signal: Safeguard inquiries: Legislation [Measures in Force and Expiry Time Lines]
+- Observed signal: Below you will find all active safeguard inquiries. This page was last updated on April 21, 2026. [Active Safeguard Inquiries]
+- Observed signal: Revised notice of commencement of safeguard inquiry [Active Safeguard Inquiries]
+- Observed signal: GC-2026-001—Certain Wood Goods [Active Safeguard Inquiries]
+- Observed signal: Notice of commencement of safeguard inquiry [Active Safeguard Inquiries]
 
 ### TR-001 — Frozen vegetables — INACTIVE
 
@@ -72,5 +83,5 @@
 - Review generic proceeding signals from `CITT Home / What's New` for possible business-development relevance.
 - Review generic proceeding signals from `Active Dumping and Subsidizing Cases` for possible business-development relevance.
 - Review generic proceeding signals from `Measures in Force and Expiry Time Lines` for possible business-development relevance.
-- Review fetch failure for `Active Safeguard Inquiries`: ('Connection aborted.', TimeoutError(60, 'Operation timed out'))
+- Review generic proceeding signals from `Active Safeguard Inquiries` for possible business-development relevance.
 - Review generic proceeding signals from `List of Tribunal Decisions Not Yet Published` for possible business-development relevance.

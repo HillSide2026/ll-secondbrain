@@ -1,9 +1,9 @@
 # STAGE GATE VIOLATION REPORT
 
-- Generated: 2026-05-02T11:05:04+00:00
-- Run ID: RUN-2026-05-02-LL-PORTFOLIO-AGENTS-110503Z
+- Generated: 2026-05-03T10:41:04+00:00
+- Run ID: RUN-2026-05-03-LL-PORTFOLIO-AGENTS-104104Z
 
 > Advisory output. ML1 approval remains required for decisions.
 ## Stage Gate Violations
 
-- None.
+- `LLP-037`: relevant missing artifacts=6 (BUSINESS_CASE.md, PROJECT_PLAN.md, DEPENDENCIES.md, RISK_REGISTER.md, COMMUNICATION_PLAN.md, METRICS.md)

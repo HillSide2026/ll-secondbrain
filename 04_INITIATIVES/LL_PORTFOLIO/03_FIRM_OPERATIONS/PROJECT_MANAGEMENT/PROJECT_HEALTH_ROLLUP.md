@@ -1,7 +1,7 @@
 # Project Health Rollup
 
-- Generated: 2026-05-02T11:05:04+00:00
-- Run ID: RUN-2026-05-02-LL-PORTFOLIO-AGENTS-110503Z
+- Generated: 2026-05-03T10:41:04+00:00
+- Run ID: RUN-2026-05-03-LL-PORTFOLIO-AGENTS-104104Z
 
 > Advisory output. ML1 approval remains required for decisions.
 ## Project Health Rollup
@@ -33,6 +33,7 @@
 | LLP-032 | on-track | 0 | 0 | 0 |
 | LLP-033 | on-track | 0 | 0 | 0 |
 | LLP-034 | on-track | 0 | 0 | 0 |
+| LLP-037 | at-risk | 6 | 4 | 1 |
 | LLP-011 | on-track | 0 | 0 | 0 |
 | LLP-012 | on-track | 0 | 0 | 0 |
 | LLP-013 | on-track | 0 | 0 | 0 |
@@ -50,8 +51,8 @@
 
 ## Summary
 
-- Projects reviewed: 39
+- Projects reviewed: 40
 - On-track: 39
 - Watch: 0
-- At-risk: 0
+- At-risk: 1
 - Average stage-2 readiness: 28%
