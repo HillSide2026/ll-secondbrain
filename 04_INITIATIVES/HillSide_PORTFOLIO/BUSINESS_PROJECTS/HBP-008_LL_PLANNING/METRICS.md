@@ -4,7 +4,7 @@ title: LL Planning - Metrics
 owner: ML1
 status: draft
 created_date: 2026-05-02
-last_updated: 2026-05-02
+last_updated: 2026-05-04
 tags: [levine-law, 2027, metrics, hillside]
 ---
 
@@ -99,8 +99,36 @@ tags: [levine-law, 2027, metrics, hillside]
 
 ---
 
+## M-07 — F02 Paid Health Checks
+
+| Field | Value |
+|---|---|
+| Metric ID | `ll_2027_f02_paid_health_checks` |
+| SMART Goal | SG-08 |
+| Definition | Number of paid Corporate Health Checks with fees collected in calendar year 2027 |
+| Target | >= 30 by `2027-12-31` |
+| Measurement frequency | Monthly cumulative |
+| Measurement owner | ML1 |
+| Reporting | Monthly oversight pack; quarterly channel review |
+
+---
+
+## M-08 — F02 Direct Health Check Revenue
+
+| Field | Value |
+|---|---|
+| Metric ID | `ll_2027_f02_health_check_revenue` |
+| SMART Goal | SG-09 |
+| Definition | Revenue directly attributable to paid Corporate Health Checks in calendar year 2027, excluding downstream remediation and fractional counsel revenue |
+| Target | >= CAD 90,000 by `2027-12-31` |
+| Measurement frequency | Monthly cumulative |
+| Measurement owner | Accounting support / ML1 |
+| Reporting | Monthly oversight pack; quarterly channel review |
+
+---
+
 ## Metric Alignment Note
 
-M-01, M-02, M-03, and M-04 must be defined jointly with `HBP-002_CASH_FLOW`
+M-01, M-02, M-03, M-04, and M-08 must be defined jointly with `HBP-002_CASH_FLOW`
 before the Planning to Executing gate is closed. Definitions must be consistent
 across both projects. Any divergence requires ML1 resolution before execution begins.

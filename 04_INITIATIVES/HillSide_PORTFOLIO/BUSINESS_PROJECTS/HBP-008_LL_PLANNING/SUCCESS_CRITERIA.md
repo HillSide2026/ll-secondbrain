@@ -4,7 +4,7 @@ title: LL Planning - Success Criteria
 owner: ML1
 status: draft
 created_date: 2026-05-02
-last_updated: 2026-05-02
+last_updated: 2026-05-04
 tags: [levine-law, 2027, success-criteria, hillside]
 ---
 
@@ -40,7 +40,7 @@ tags: [levine-law, 2027, success-criteria, hillside]
 
 | Criterion | Target | Notes |
 |---|---|---|
-| F02 — Corporate Health Check | Primary acquisition channel | Health Check volume + fractional counsel conversions driving majority of ML1 new-matter intake |
+| F02 — Corporate Health Check | 30 paid Health Checks and CAD 90,000 direct Health Check revenue | Baseline 2027 F02 goal; downstream remediation and fractional counsel conversions remain separate channel-quality indicators |
 | F03 — Payments/MSB specialist | CAD 30,000+ specialist revenue | Named revenue contribution; practice is a functioning specialist channel, not only content |
 | F01 — Google Ads | Declining share | Associate absorbs delegable F01 corporate/commercial files |
 | Stream relationship | Named revenue target | Anchor client with explicit 2027 billing target |

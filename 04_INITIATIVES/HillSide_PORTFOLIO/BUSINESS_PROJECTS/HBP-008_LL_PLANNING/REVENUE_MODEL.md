@@ -4,7 +4,7 @@ title: LL Planning - Revenue Model
 owner: ML1
 status: draft
 created_date: 2026-05-02
-last_updated: 2026-05-02
+last_updated: 2026-05-04
 tags: [levine-law, 2027, revenue-model, financial-model, hillside]
 ---
 
@@ -22,6 +22,8 @@ tags: [levine-law, 2027, revenue-model, financial-model, hillside]
 | Associate billing target | CAD 160,000 | Upside; CAD 100,000 is floor |
 | Total firm revenue target | CAD 400,000 | ML1 confirmed 2026-05-02 |
 | Associate split | 40% of collected fees | ML1 confirmed 2026-05-02 |
+| F02 paid Health Check target | 30 Health Checks | ML1 confirmed 2026-05-04 |
+| F02 direct Health Check revenue target | CAD 90,000 | ML1 confirmed 2026-05-04; excludes downstream remediation and fractional counsel revenue |
 | Billing rate (standard) | $480/hour | LLP-030 Business Plan |
 | Billing rate (regulatory) | $550/hour | LLP-030 Business Plan |
 | Fixed revenue to ML1 | CAD 85,000 | Step from CAD 80,000 in 2026 |
