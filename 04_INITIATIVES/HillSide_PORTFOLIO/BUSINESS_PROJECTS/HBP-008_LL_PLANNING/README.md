@@ -96,6 +96,12 @@ These are Levine Law revenue-to-owner references, not managing-lawyer
 after-tax take-home numbers. They can later be compared against HBP-001 wealth
 planning, but they are not determined by HBP-001.
 
+## Backlog
+
+- fully tax-adjusted corporate model: deferred backlog item for HBP-008;
+  current retained-profit references are pre-tax corporate planning shorthand,
+  not the final after-tax corporate answer
+
 ## Initiation Packet Status
 
 - `PROJECT_CHARTER.md` drafted

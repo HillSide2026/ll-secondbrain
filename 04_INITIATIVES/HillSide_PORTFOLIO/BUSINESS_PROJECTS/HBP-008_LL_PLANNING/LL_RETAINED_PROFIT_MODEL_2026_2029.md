@@ -68,6 +68,21 @@ sensitivity shorthand. Using the same retained-profit logic:
   extra distributions bounded, and preserve enough retained profit to fund
   durability and leverage.
 
+## Backlog
+
+The fully tax-adjusted corporate model remains backlog work for HBP-008.
+
+That future model should explicitly address:
+
+- corporate tax on retained earnings inside Levine Law
+- tax treatment differences between salary, bonus, dividend, and other owner
+  payment forms
+- whether retained profit is actually left inside Levine Law or distributed
+- how much of the nominal retained-profit line is truly deployable after tax
+
+Until that work is completed, this note should be read as a pre-tax corporate
+planning shorthand rather than a finalized after-tax corporate model.
+
 ## Source Anchors
 
 - `../HBP-007_LEVINE_LAW_2026/PROJECT_CHARTER.md`
