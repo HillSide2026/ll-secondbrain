@@ -1,42 +1,41 @@
 # COS Brief
 
-Generated: 2026-05-03T00:00:00Z | Agent: LLM-001 | Run: RUN-2026-05-03-DAILY-SWEEP-104051Z
+Generated: 2026-05-04T00:00:00Z | Agent: LLM-001 | Run: RUN-2026-05-04-DAILY-SWEEP-103000Z
 
-**Portfolio Health Summary:**
+## Portfolio Health Summary
 
-The portfolio is generally healthy, with 39 of 40 projects on track. LLP-037 is currently at-risk due to multiple missing artifacts. Average stage-2 readiness is 28%.
+The portfolio is generally healthy, with 39 of 41 projects on track. Two projects, LLP-037 and LLP-038, are at risk due to multiple missing artifacts. Average Stage 2 readiness is 28%.
 
-**Cash Flow Priority Top Actions:**
+## Cash Flow Priority Top Actions
 
-The highest priority is to address the issues with LLP-037 to get it back on track. The immediate action is to complete the stage-2 planning packet. Projects in the executing stage (LLP-004, LLP-005, LLP-006, LLP-011, LLP-012) and planning stage (LLP-023, LLP-024, LLP-030, LLP-033, LLP-013, LLP-025) should advance to their next gated artifact set if possible.
+The immediate priorities are LLP-037 and LLP-038, given their "at-risk" status. LLP-037 needs to complete its stage-2 planning packet by closing 4 planning and 1 measurement gaps, while LLP-038 needs to complete its initiation packet by closing 7 initiation gaps.
 
-**What Requires ML1 Input (ML1_REQUIRED):**
+## What Requires ML1 Input (ML1_REQUIRED items)
 
-*   All projects in the "Initiating" stage (LLP-001, LLP-002, LLP-003, LLP-007, LLP-008, LLP-009, LLP-010, LLP-014, LLP-015, LLP-016, LLP-017, LLP-018, LLP-026, LLP-027, LLP-028, LLP-029, LLP-031, LLP-032, LLP-034, LLP-035, LLP-036, LLP-037, LLP-038, LLP-039, LLP-040, LLP-041, LLP-042, LLP-043) are being held in initiating pending ML1 review.
-*   Resolution of the duplicate project identifier for LLP-037.
+ML1 review is needed for initial gating decisions on several projects (LLP-001, LLP-002, LLP-003, LLP-007, LLP-008, LLP-009, LLP-010, LLP-014, LLP-015, LLP-016, LLP-017, LLP-018, LLP-026, LLP-027, LLP-028, LLP-029, LLP-031, LLP-032, LLP-034, LLP-035, LLP-036, LLP-037, LLP-038, LLP-039, LLP-040, LLP-041, LLP-042, LLP-043). The system flags two "at-risk" projects with stage gate violations and approval gaps, for ML1's awareness.
 
-**What the System Can Handle (SYSTEM_CAN_HANDLE):**
+## What the System Can Handle (SYSTEM_CAN_HANDLE)
 
-The system can automatically sequence tasks within individual projects, as long as there are no gating gaps that require ML1 review.
+The system can prompt artifact creation and workflow routing for on-track projects. The system-guided workflows include advancing projects to the next gated artifact set.
 
-**Cross-Agent Conflicts:**
+## Cross-Agent Conflicts
 
-No cross-agent conflicts detected in this run.
+No cross-agent conflicts are detected in this run. (Report suppressed for brevity.)
 
-**Governance Holds:**
+## Governance Holds
 
-LLP-037 is under a governance hold due to missing artifacts.
+No immediate governance holds besides those implied by stage gate reviews.
 
-**Flow Bottlenecks:**
+## Flow Bottlenecks
 
-The primary bottlenecks are missing artifacts, specifically `PROJECT_PLAN.md`, `DEPENDENCIES.md`, `RISK_REGISTER.md`, and `METRICS.md`.
+Potential planning bottlenecks exist across the portfolio (`PROJECT_PLAN.md`, `DEPENDENCIES.md`, `RISK_REGISTER.md` are missing in projects), and a potential measurement bottleneck (`METRICS.md` is missing). The system is generating alerts to fill these gaps.
 
-**Doctrine Drift Signal:**
+## Doctrine Drift Signal
 
-There are signals of doctrine drift related to missing `PROJECT_PLAN.md`, `DEPENDENCIES.md`, `RISK_REGISTER.md`, `COMMUNICATION_PLAN.md`, and `METRICS.md` files. ML1's interpretation remains authoritative.
+There is structural drift detected in planning and measurement artifacts, specifically missing `PROJECT_PLAN.md`, `DEPENDENCIES.md`, `RISK_REGISTER.md`, `COMMUNICATION_PLAN.md`, and `METRICS.md`. Doctrine interpretation remains with ML1.
 
-**Deferred Items:**
+## Deferred Items
 
-None.
+Initiatives with priority score of 0 are being automatically managed through the system.
 
 > Advisory output. ML1 approval required before any action is taken.>

@@ -1,7 +1,7 @@
 # PORTFOLIO STATUS DASHBOARD
 
-- Generated: 2026-05-03T10:41:04+00:00
-- Run ID: RUN-2026-05-03-LL-PORTFOLIO-AGENTS-104104Z
+- Generated: 2026-05-04T10:30:11+00:00
+- Run ID: RUN-2026-05-04-LL-PORTFOLIO-AGENTS-103011Z
 
 > Advisory output. ML1 approval remains required for decisions.
 ## Portfolio Status
@@ -34,6 +34,7 @@
 | LLP-033 | Planning | on-track | 0 | 100% |
 | LLP-034 | Initiating | on-track | 0 | n/a |
 | LLP-037 | Planning | at-risk | 6 | 29% |
+| LLP-038 | Unstaged | at-risk | 7 | n/a |
 | LLP-011 | Executing | on-track | 0 | 100% |
 | LLP-012 | Executing | on-track | 0 | 100% |
 | LLP-013 | Planning | on-track | 0 | 100% |
@@ -49,5 +50,5 @@
 | LLP-040 | Initiating | on-track | 0 | n/a |
 | LLP-039 | Initiating | on-track | 0 | n/a |
 
-- Total projects: 40
-- Health mix: on-track=39, watch=0, at-risk=1
+- Total projects: 41
+- Health mix: on-track=39, watch=0, at-risk=2
