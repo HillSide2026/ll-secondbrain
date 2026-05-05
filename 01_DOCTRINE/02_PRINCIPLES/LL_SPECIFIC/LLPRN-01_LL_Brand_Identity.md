@@ -1,5 +1,5 @@
 ---
-id: PRN-030
+id: LLPRN-01
 title: Levine Law Brand Identity Signal Integrity
 owner: ML1
 status: approved
@@ -12,7 +12,7 @@ tags: [principle, brand, identity, canva, website, client-documents, social, pit
 applies_to: [LL]
 ---
 
-# PRN-030 - Levine Law Brand Identity Signal Integrity
+# LLPRN-01 - Levine Law Brand Identity Signal Integrity
 
 Title: Levine Law Brand Identity Signal Integrity
 

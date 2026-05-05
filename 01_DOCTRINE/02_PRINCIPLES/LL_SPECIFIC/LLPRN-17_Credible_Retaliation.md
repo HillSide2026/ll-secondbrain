@@ -1,5 +1,5 @@
 ---
-id: PRN-049
+id: LLPRN-17
 title: Credible Retaliation
 owner: ML1
 status: draft
@@ -10,7 +10,7 @@ tags: [principle, strategy, game-theory, retaliation, deterrence, negotiation]
 applies_to: [LL]
 ---
 
-# PRN-049 - Credible Retaliation
+# LLPRN-17 - Credible Retaliation
 
 Title: Credible Retaliation
 
@@ -22,7 +22,7 @@ Trigger strategies (Grim Trigger, Tit-for-Tat) in repeated game theory demonstra
 
 Note: Retaliation must be calibrated to remain credible without becoming disproportionate. Disproportionate retaliation destroys the cooperative surplus and escalates unnecessarily. The Tit-for-Tat model (match the defection, then return to cooperation if the opponent cooperates) is generally superior to Grim Trigger (permanent defection after any single defection) because it leaves room for relationship repair.
 
-Counterpart: See PRN-046 (Credible Commitment) for how pre-commitment amplifies the deterrence of retaliation.
+Counterpart: See LLPRN-14 (Credible Commitment) for how pre-commitment amplifies the deterrence of retaliation.
 
 Application Notes:
 1. Proportionality: calibrate retaliation to the defection. Disproportionate retaliation signals irrationality rather than strength and invites escalation rather than deterrence. The goal is restoration of equilibrium, not punishment. Once the defector returns to cooperation, so do you.

@@ -1,5 +1,5 @@
 ---
-id: PRN-039
+id: LLPRN-07
 title: Retainer Precedence
 owner: ML1
 status: draft
@@ -10,7 +10,7 @@ tags: [principle, client, retainer, fee, engagement]
 applies_to: [LL]
 ---
 
-# PRN-039 - Retainer Precedence
+# LLPRN-07 - Retainer Precedence
 
 Title: Retainer Precedence
 
@@ -22,7 +22,7 @@ Engaging substantively before payment creates leverage imbalance and makes it ha
 
 Application Notes:
 1. Scope expansion: apply retainer discipline at every scope expansion, not only at inception. When a matter grows beyond the original retainer, require the additional commitment before proceeding on the expanded scope. The most common failure of this principle is applying it at engagement and abandoning it as the matter develops.
-2. Structural link to commitment: requiring a retainer is itself a commitment device (see PRN-046). The client's financial commitment changes their incentives — they have skin in the game — and establishes the commercial character of the relationship from the outset.
+2. Structural link to commitment: requiring a retainer is itself a commitment device (see LLPRN-14). The client's financial commitment changes their incentives — they have skin in the game — and establishes the commercial character of the relationship from the outset.
 
 Supersedes: None
 Version: 1.0

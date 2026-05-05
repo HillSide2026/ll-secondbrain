@@ -1,5 +1,5 @@
 ---
-id: PRN-032
+id: LLPRN-03
 title: Levine Law Layout Discipline
 owner: ML1
 status: approved
@@ -12,7 +12,7 @@ tags: [principle, brand, layout, typography, visual-identity]
 applies_to: [LL]
 ---
 
-# PRN-032 - Levine Law Layout Discipline
+# LLPRN-03 - Levine Law Layout Discipline
 
 Title: Levine Law Layout Discipline
 

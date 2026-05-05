@@ -1,5 +1,5 @@
 ---
-id: PRN-035
+id: LLPRN-06
 title: Off-Template Brand Conformity
 owner: ML1
 status: approved
@@ -12,7 +12,7 @@ tags: [principle, brand, templates, conformity, review]
 applies_to: [LL]
 ---
 
-# PRN-035 - Off-Template Brand Conformity
+# LLPRN-06 - Off-Template Brand Conformity
 
 Title: Off-Template Brand Conformity
 

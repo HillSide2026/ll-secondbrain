@@ -25,13 +25,13 @@ Typical examples:
 
 Governance Documents:
 - [PRINCIPLE_POLICY_TRACEABILITY.md](PRINCIPLE_POLICY_TRACEABILITY.md) — Cross-reference showing which policies implement each principle
-- [LL_BRAND_PRINCIPLES_SUITE.md](LL_BRAND_PRINCIPLES_SUITE.md) — Consolidated suite of LL brand principles (PRN-030 through PRN-035)
+- [LL_BRAND_PRINCIPLES_SUITE.md](LL_BRAND_PRINCIPLES_SUITE.md) — Consolidated suite of LL brand principles (LLPRN-01 through LLPRN-06)
 - [LL_SPECIFIC_PRINCIPLES_INDEX.md](LL_SPECIFIC_PRINCIPLES_INDEX.md) — Index of LL-level principles (portfolio-specific principles and LL applicability reference)
 
 Naming convention:
 - Canonical active principles in this folder should use `PRN-###_Descriptive_Name.md`.
 - `README.md` is the only non-`PRN` exception in the active principles layer.
-- LL-only principles (applies_to: [LL]) reside in the [`LL_SPECIFIC/`](LL_SPECIFIC/) subfolder.
+- LL-only principles (applies_to: [LL]) reside in the [`LL_SPECIFIC/`](LL_SPECIFIC/) subfolder and use the `LLPRN-##_Descriptive_Name.md` naming convention.
 
 Numbering:
 - Principles are numbered sequentially from PRN-001 onwards.

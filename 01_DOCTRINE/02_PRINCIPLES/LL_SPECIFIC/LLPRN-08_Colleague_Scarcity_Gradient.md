@@ -1,5 +1,5 @@
 ---
-id: PRN-040
+id: LLPRN-08
 title: Colleague Scarcity Gradient
 owner: ML1
 status: draft
@@ -10,7 +10,7 @@ tags: [principle, colleague, professional-relationships, referral, network]
 applies_to: [LL]
 ---
 
-# PRN-040 - Colleague Scarcity Gradient
+# LLPRN-08 - Colleague Scarcity Gradient
 
 Title: Colleague Scarcity Gradient
 

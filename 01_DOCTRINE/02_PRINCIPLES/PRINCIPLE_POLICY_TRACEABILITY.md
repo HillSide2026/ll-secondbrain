@@ -105,12 +105,12 @@ Use this index to:
 | Principle | Title | Related Policies |
 |-----------|-------|------------------|
 | PRN-019 | Observable Drift | POL-019 (Practice Area Tagging Requirement), POL-041 (Repository State Reporting Accuracy) |
-| PRN-030 | LL Brand Identity Signal Integrity | POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-049 (LL Brand Color Palette), POL-050 (LL Brand Identity) |
-| PRN-031 | LL Brand Personality Expression | POL-046 (Canva Template Enforcement), POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-050 (LL Brand Identity) |
-| PRN-032 | LL Layout Discipline | POL-046 (Canva Template Enforcement), POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-051 (LL Website Information Architecture) |
-| PRN-033 | LL Image Style Restraint | POL-046 (Canva Template Enforcement), POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-049 (LL Brand Color Palette), POL-050 (LL Brand Identity) |
-| PRN-034 | LL Voice and Copy Alignment | POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-050 (LL Brand Identity), POL-068 (Draft Email Voice Standard) |
-| PRN-035 | Off-Template Brand Conformity | POL-046 (Canva Template Enforcement), POL-048 (Off Template Asset Compliance), POL-050 (LL Brand Identity) |
+| LLPRN-01 | LL Brand Identity Signal Integrity | POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-049 (LL Brand Color Palette), POL-050 (LL Brand Identity) |
+| LLPRN-02 | LL Brand Personality Expression | POL-046 (Canva Template Enforcement), POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-050 (LL Brand Identity) |
+| LLPRN-03 | LL Layout Discipline | POL-046 (Canva Template Enforcement), POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-051 (LL Website Information Architecture) |
+| LLPRN-04 | LL Image Style Restraint | POL-046 (Canva Template Enforcement), POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-049 (LL Brand Color Palette), POL-050 (LL Brand Identity) |
+| LLPRN-05 | LL Voice and Copy Alignment | POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-050 (LL Brand Identity), POL-068 (Draft Email Voice Standard) |
+| LLPRN-06 | Off-Template Brand Conformity | POL-046 (Canva Template Enforcement), POL-048 (Off Template Asset Compliance), POL-050 (LL Brand Identity) |
 | PRN-037 | Wealth Building | POL-064 (Levine Law Initiative Risk Policy), POL-065 (Matthew Holdings Initiative Risk Policy) |
 
 ---
@@ -121,13 +121,13 @@ Use this index to:
 
 | Principle | Title | Related Policies |
 |-----------|-------|------------------|
-| PRN-039 | Retainer Precedence | POL-052 (Client Engagement Stage Policy) — partial; dedicated retainer policy pending |
-| PRN-040 | Colleague Scarcity Gradient | *No governing policy yet — candidate for LL professional relationship policy* |
-| PRN-041 | Good Colleague Reciprocity | *No governing policy yet — candidate for LL professional relationship policy* |
-| PRN-042 | Colleague-Friend Distinction | *No governing policy yet — candidate for LL professional relationship policy* |
-| PRN-043 | Demonstrate Understanding Before Probing | *No governing policy yet — candidate for LL client intake policy* |
-| PRN-044 | Friendship Defines Altruistic Reciprocity | *No governing policy yet — candidate for LL professional relationship policy* |
-| PRN-045 | Client-Friend Exclusion | *No governing policy yet — candidate for LL client engagement policy* |
+| LLPRN-07 | Retainer Precedence | POL-052 (Client Engagement Stage Policy) — partial; dedicated retainer policy pending |
+| LLPRN-08 | Colleague Scarcity Gradient | *No governing policy yet — candidate for LL professional relationship policy* |
+| LLPRN-09 | Good Colleague Reciprocity | *No governing policy yet — candidate for LL professional relationship policy* |
+| LLPRN-10 | Colleague-Friend Distinction | *No governing policy yet — candidate for LL professional relationship policy* |
+| LLPRN-11 | Demonstrate Understanding Before Probing | *No governing policy yet — candidate for LL client intake policy* |
+| LLPRN-12 | Friendship Defines Altruistic Reciprocity | *No governing policy yet — candidate for LL professional relationship policy* |
+| LLPRN-13 | Client-Friend Exclusion | *No governing policy yet — candidate for LL client engagement policy* |
 
 ---
 
@@ -137,11 +137,11 @@ Use this index to:
 
 | Principle | Title | Related Policies |
 |-----------|-------|------------------|
-| PRN-046 | Credible Commitment | *No governing policy yet* |
-| PRN-047 | Cooperative Equilibrium | *No governing policy yet* |
-| PRN-048 | Regulatory Mechanism Design | POL-052 (Client Engagement Stage Policy) — partial; covers when external enforcement is introduced |
-| PRN-049 | Credible Retaliation | *No governing policy yet* |
-| PRN-050 | Reputation Investment | *No governing policy yet* |
+| LLPRN-14 | Credible Commitment | *No governing policy yet* |
+| LLPRN-15 | Cooperative Equilibrium | *No governing policy yet* |
+| LLPRN-16 | Regulatory Mechanism Design | POL-052 (Client Engagement Stage Policy) — partial; covers when external enforcement is introduced |
+| LLPRN-17 | Credible Retaliation | *No governing policy yet* |
+| LLPRN-18 | Reputation Investment | *No governing policy yet* |
 
 ---
 

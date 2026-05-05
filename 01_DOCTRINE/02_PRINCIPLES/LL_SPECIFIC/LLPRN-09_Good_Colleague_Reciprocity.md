@@ -1,5 +1,5 @@
 ---
-id: PRN-041
+id: LLPRN-09
 title: Good Colleague Reciprocity
 owner: ML1
 status: draft
@@ -10,7 +10,7 @@ tags: [principle, colleague, reciprocity, quid-pro-quo, referral]
 applies_to: [LL]
 ---
 
-# PRN-041 - Good Colleague Reciprocity
+# LLPRN-09 - Good Colleague Reciprocity
 
 Title: Good Colleague Reciprocity
 
@@ -23,7 +23,7 @@ Reciprocity calibrated to demonstrated value maintains professional equity and p
 Application Notes:
 1. Running account: reciprocity operates on a running account, not a transaction-by-transaction basis. You do not owe immediate reciprocity for every individual referral; the account should balance over a reasonable horizon.
 2. Referral quality: a referral only counts if it is a fit. Sending work that is outside your practice, poorly matched to your capacity, or clearly not viable is not reciprocity. A colleague who sends poor-fit referrals consistently should be re-evaluated for good-colleague status.
-3. Network reputation: your reputation among good colleagues is a high-return specific asset. This network observes how you handle referrals, whether you follow through, and whether you reciprocate. Consistent behavior here compounds faster than diffuse professional prominence (see PRN-050).
+3. Network reputation: your reputation among good colleagues is a high-return specific asset. This network observes how you handle referrals, whether you follow through, and whether you reciprocate. Consistent behavior here compounds faster than diffuse professional prominence (see LLPRN-18).
 
 Supersedes: None
 Version: 1.0

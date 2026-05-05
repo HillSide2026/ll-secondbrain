@@ -1,5 +1,5 @@
 ---
-id: PRN-031
+id: LLPRN-02
 title: Levine Law Brand Personality Expression
 owner: ML1
 status: approved
@@ -12,7 +12,7 @@ tags: [principle, brand, personality, design, visual-identity]
 applies_to: [LL]
 ---
 
-# PRN-031 - Levine Law Brand Personality Expression
+# LLPRN-02 - Levine Law Brand Personality Expression
 
 Title: Levine Law Brand Personality Expression
 

@@ -1,5 +1,5 @@
 ---
-id: PRN-034
+id: LLPRN-05
 title: Levine Law Voice and Copy Alignment
 owner: ML1
 status: approved
@@ -12,7 +12,7 @@ tags: [principle, brand, voice, copy, communications]
 applies_to: [LL]
 ---
 
-# PRN-034 - Levine Law Voice and Copy Alignment
+# LLPRN-05 - Levine Law Voice and Copy Alignment
 
 Title: Levine Law Voice and Copy Alignment
 

@@ -1,5 +1,5 @@
 ---
-id: PRN-033
+id: LLPRN-04
 title: Levine Law Image Style Restraint
 owner: ML1
 status: approved
@@ -12,7 +12,7 @@ tags: [principle, brand, imagery, visual-identity]
 applies_to: [LL]
 ---
 
-# PRN-033 - Levine Law Image Style Restraint
+# LLPRN-04 - Levine Law Image Style Restraint
 
 Title: Levine Law Image Style Restraint
 

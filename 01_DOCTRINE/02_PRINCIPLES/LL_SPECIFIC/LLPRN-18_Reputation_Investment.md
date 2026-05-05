@@ -1,5 +1,5 @@
 ---
-id: PRN-050
+id: LLPRN-18
 title: Reputation Investment
 owner: ML1
 status: draft
@@ -10,7 +10,7 @@ tags: [principle, strategy, game-theory, reputation, signaling, long-term]
 applies_to: [LL]
 ---
 
-# PRN-050 - Reputation Investment
+# LLPRN-18 - Reputation Investment
 
 Title: Reputation Investment
 
@@ -25,7 +25,7 @@ The corollary: reputational capital is destroyed by inconsistency. One retreat f
 Application Notes:
 1. Domain specificity: reputation does not transfer automatically across practice areas or professional networks. Reputation in one area or community does not carry to another. Target investment at the specific networks where it generates return; diffuse reputation investment across networks you do not inhabit is waste.
 2. Decay: reputation requires maintenance through consistent present behavior. Historical reputation that diverges from current behavior will correct eventually — and the correction is sudden, not gradual. Do not rest on accumulated reputation while current behavior drifts from it.
-3. Network targeting: the highest-return reputation investment is within the good-colleague network (see PRN-041). These are the people who control referral flow and who observe your behavior most closely. Consistent behavior here compounds faster than general professional prominence.
+3. Network targeting: the highest-return reputation investment is within the good-colleague network (see LLPRN-09). These are the people who control referral flow and who observe your behavior most closely. Consistent behavior here compounds faster than general professional prominence.
 
 Supersedes: None
 Version: 1.0

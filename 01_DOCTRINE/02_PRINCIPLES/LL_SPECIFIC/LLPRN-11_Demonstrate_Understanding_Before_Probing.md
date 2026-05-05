@@ -1,5 +1,5 @@
 ---
-id: PRN-043
+id: LLPRN-11
 title: Demonstrate Understanding Before Probing
 owner: ML1
 status: draft
@@ -10,7 +10,7 @@ tags: [principle, client, intake, business-development, prospect]
 applies_to: [LL]
 ---
 
-# PRN-043 - Demonstrate Understanding Before Probing
+# LLPRN-11 - Demonstrate Understanding Before Probing
 
 Title: Demonstrate Understanding Before Probing
 

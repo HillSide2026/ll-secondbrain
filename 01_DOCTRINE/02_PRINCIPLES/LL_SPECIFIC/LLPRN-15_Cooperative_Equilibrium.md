@@ -1,5 +1,5 @@
 ---
-id: PRN-047
+id: LLPRN-15
 title: Cooperative Equilibrium
 owner: ML1
 status: draft
@@ -10,7 +10,7 @@ tags: [principle, strategy, game-theory, cooperation, professional-relationships
 applies_to: [LL]
 ---
 
-# PRN-047 - Cooperative Equilibrium
+# LLPRN-15 - Cooperative Equilibrium
 
 Title: Cooperative Equilibrium
 

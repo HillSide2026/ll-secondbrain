@@ -1,5 +1,5 @@
 ---
-id: PRN-048
+id: LLPRN-16
 title: Regulatory Mechanism Design
 owner: ML1
 status: draft
@@ -10,7 +10,7 @@ tags: [principle, strategy, game-theory, regulation, enforcement, contract]
 applies_to: [LL]
 ---
 
-# PRN-048 - Regulatory Mechanism Design
+# LLPRN-16 - Regulatory Mechanism Design
 
 Title: Regulatory Mechanism Design
 
@@ -22,7 +22,7 @@ In mechanism design and contract theory, a third-party enforcer changes the game
 
 Application Notes:
 1. Mechanism selection: choose the enforcement mechanism that most efficiently changes the payoff matrix. Litigation is expensive for both sides; a regulatory complaint may be faster and more targeted; well-drafted contractual penalties may deter without any proceeding. Match the mechanism to the deterrence need, not to the most aggressive available option.
-2. Threat as mechanism: the credible threat of external enforcement is often more powerful than the enforcement itself, because the target also bears costs from the process regardless of outcome. The threat functions only if it is credible (see PRN-046). An empty threat of litigation trains the counterparty to disregard the next one.
+2. Threat as mechanism: the credible threat of external enforcement is often more powerful than the enforcement itself, because the target also bears costs from the process regardless of outcome. The threat functions only if it is credible (see LLPRN-14). An empty threat of litigation trains the counterparty to disregard the next one.
 
 Supersedes: None
 Version: 1.0

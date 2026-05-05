@@ -1,5 +1,5 @@
 ---
-id: PRN-042
+id: LLPRN-10
 title: Colleague-Friend Distinction
 owner: ML1
 status: draft
@@ -10,7 +10,7 @@ tags: [principle, colleague, friend, professional-relationships, boundary]
 applies_to: [LL]
 ---
 
-# PRN-042 - Colleague-Friend Distinction
+# LLPRN-10 - Colleague-Friend Distinction
 
 Title: Colleague-Friend Distinction
 
@@ -21,7 +21,7 @@ Rationale:
 Conflating colleague warmth with friendship leads to overextension, boundary erosion, and disappointment when professional contacts behave as professionals rather than friends. Clarity about relationship type prevents misaligned expectations. A good colleague who stops referring is behaving normally; a friend who withdraws without cause is a different matter entirely.
 
 Application Notes:
-1. Transition: a good colleague can become a friend over time, but the professional relationship and the friendship should not coexist simultaneously at the same tier. When a friendship becomes genuine, the commercial relationship should clarify accordingly — a client engagement is no longer appropriate at that point (see PRN-045).
+1. Transition: a good colleague can become a friend over time, but the professional relationship and the friendship should not coexist simultaneously at the same tier. When a friendship becomes genuine, the commercial relationship should clarify accordingly — a client engagement is no longer appropriate at that point (see LLPRN-13).
 
 Supersedes: None
 Version: 1.0

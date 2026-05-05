@@ -28,12 +28,12 @@ These principles are portfolio-specific to Levine Law and do not constrain Syste
 
 | ID | Title | Scope | Purpose |
 |----|-------|-------|---------|
-| PRN-030 | LL Brand Identity Signal Integrity | LL | Brand signal strategy (authority, precision, calm competence) |
-| PRN-031 | LL Brand Personality Expression | LL | Visual and design personality guidelines |
-| PRN-032 | LL Layout Discipline | LL | Structural and grid discipline in LL materials |
-| PRN-033 | LL Image Style Restraint | LL | Image selection and restraint (avoid legal clichés) |
-| PRN-034 | LL Voice and Copy Alignment | LL | Verbal voice, tone, and copy discipline |
-| PRN-035 | Off-Template Brand Conformity | LL | Review and conformity requirements for non-templated assets |
+| LLPRN-01 | LL Brand Identity Signal Integrity | LL | Brand signal strategy (authority, precision, calm competence) |
+| LLPRN-02 | LL Brand Personality Expression | LL | Visual and design personality guidelines |
+| LLPRN-03 | LL Layout Discipline | LL | Structural and grid discipline in LL materials |
+| LLPRN-04 | LL Image Style Restraint | LL | Image selection and restraint (avoid legal clichés) |
+| LLPRN-05 | LL Voice and Copy Alignment | LL | Verbal voice, tone, and copy discipline |
+| LLPRN-06 | Off-Template Brand Conformity | LL | Review and conformity requirements for non-templated assets |
 
 **Consolidated Reference:** See [LL_BRAND_PRINCIPLES_SUITE.md](LL_BRAND_PRINCIPLES_SUITE.md) for integrated guidance on all LL brand principles.
 
@@ -43,13 +43,13 @@ These principles are portfolio-specific to Levine Law and do not constrain Syste
 
 | ID | Title | Scope | Purpose | Status |
 |----|-------|-------|---------|--------|
-| PRN-044 | Friendship Defines Altruistic Reciprocity | LL | Only friends get altruistic reciprocity; this is distinct from unconditional giving and from quid pro quo | Draft |
-| PRN-042 | Colleague-Friend Distinction | LL | Neither colleagues nor good colleagues are friends | Draft |
-| PRN-045 | Client-Friend Exclusion | LL | Client cannot be a friend; friend cannot be a client — bidirectional and absolute | Draft |
-| PRN-039 | Retainer Precedence | LL | Secure the retainer before extending advice, time, or goodwill | Draft |
-| PRN-043 | Demonstrate Understanding Before Probing | LL | Establish domain competence before asking the client to articulate their pain | Draft |
-| PRN-040 | Colleague Scarcity Gradient | LL | Distinguish general contacts (abundant) from good colleagues (scarce and valuable) | Draft |
-| PRN-041 | Good Colleague Reciprocity | LL | Good colleagues get quid pro quo; calibrate reciprocity to demonstrated value | Draft |
+| LLPRN-12 | Friendship Defines Altruistic Reciprocity | LL | Only friends get altruistic reciprocity; this is distinct from unconditional giving and from quid pro quo | Draft |
+| LLPRN-10 | Colleague-Friend Distinction | LL | Neither colleagues nor good colleagues are friends | Draft |
+| LLPRN-13 | Client-Friend Exclusion | LL | Client cannot be a friend; friend cannot be a client — bidirectional and absolute | Draft |
+| LLPRN-07 | Retainer Precedence | LL | Secure the retainer before extending advice, time, or goodwill | Draft |
+| LLPRN-11 | Demonstrate Understanding Before Probing | LL | Establish domain competence before asking the client to articulate their pain | Draft |
+| LLPRN-08 | Colleague Scarcity Gradient | LL | Distinguish general contacts (abundant) from good colleagues (scarce and valuable) | Draft |
+| LLPRN-09 | Good Colleague Reciprocity | LL | Good colleagues get quid pro quo; calibrate reciprocity to demonstrated value | Draft |
 
 ### A.3 Strategic Principles (Non-Cooperative Game Theory)
 
@@ -57,11 +57,11 @@ These principles are portfolio-specific to Levine Law and do not constrain Syste
 
 | ID | Title | Scope | Purpose | Status |
 |----|-------|-------|---------|--------|
-| PRN-046 | Credible Commitment | LL | Limit your own retreat options to make threats and promises credible | Draft |
-| PRN-047 | Cooperative Equilibrium | LL | In repeated engagements, cooperation beats defection because the long-term loss from destroying the relationship exceeds any short-term gain | Draft |
-| PRN-048 | Regulatory Mechanism Design | LL | When private payoffs favor cheating, introduce external enforcement (contract, regulator, court) to shift the equilibrium | Draft |
-| PRN-049 | Credible Retaliation | LL | Reliable, calibrated punishment of defectors (Tit-for-Tat) deters future defection without requiring escalation | Draft |
-| PRN-050 | Reputation Investment | LL | Reputation is accumulated capital that makes threats credible by default and reduces future enforcement costs | Draft |
+| LLPRN-14 | Credible Commitment | LL | Limit your own retreat options to make threats and promises credible | Draft |
+| LLPRN-15 | Cooperative Equilibrium | LL | In repeated engagements, cooperation beats defection because the long-term loss from destroying the relationship exceeds any short-term gain | Draft |
+| LLPRN-16 | Regulatory Mechanism Design | LL | When private payoffs favor cheating, introduce external enforcement (contract, regulator, court) to shift the equilibrium | Draft |
+| LLPRN-17 | Credible Retaliation | LL | Reliable, calibrated punishment of defectors (Tit-for-Tat) deters future defection without requiring escalation | Draft |
+| LLPRN-18 | Reputation Investment | LL | Reputation is accumulated capital that makes threats credible by default and reduces future enforcement costs | Draft |
 
 **Enforcement:** Governed by:
 - POL-046 (Canva Template Enforcement)
@@ -157,7 +157,7 @@ These principles apply universally across ML2, System, and all portfolios, but a
 ### For LL Personnel & Execution Teams
 
 **Start Here:**
-1. Review [LL_BRAND_PRINCIPLES_SUITE.md](LL_BRAND_PRINCIPLES_SUITE.md) for brand discipline (PRN-030 through PRN-035)
+1. Review [LL_BRAND_PRINCIPLES_SUITE.md](LL_BRAND_PRINCIPLES_SUITE.md) for brand discipline (LLPRN-01 through LLPRN-06)
 2. Reference PRN-038 (Relevance Does Not Imply Intervention) when receiving visibility signals but unsure of action requirements
 3. Use Section C (System-Wide) as reference when executing work:
    - **Before starting:** Check PRN-005 (scope clarity), PRN-015 (dependencies)
@@ -193,7 +193,7 @@ These principles apply universally across ML2, System, and all portfolios, but a
 
 ## Related Documents
 
-- [LL_BRAND_PRINCIPLES_SUITE.md](LL_BRAND_PRINCIPLES_SUITE.md) — Consolidated LL brand principles (PRN-030–035)
+- [LL_BRAND_PRINCIPLES_SUITE.md](LL_BRAND_PRINCIPLES_SUITE.md) — Consolidated LL brand principles (LLPRN-01 through LLPRN-06)
 - [PRINCIPLE_POLICY_TRACEABILITY.md](PRINCIPLE_POLICY_TRACEABILITY.md) — Principle-to-policy mapping for all principles
 - [README.md](README.md) — Principles governance overview
 

@@ -1,5 +1,5 @@
 ---
-id: PRN-044
+id: LLPRN-12
 title: Friendship Defines Altruistic Reciprocity
 owner: ML1
 status: draft
@@ -10,7 +10,7 @@ tags: [principle, friend, colleague, client, reciprocity, relationship-boundary]
 applies_to: [LL]
 ---
 
-# PRN-044 - Friendship Defines Altruistic Reciprocity
+# LLPRN-12 - Friendship Defines Altruistic Reciprocity
 
 Title: Friendship Defines Altruistic Reciprocity
 
@@ -23,7 +23,7 @@ Altruistic reciprocity is distinct from both unconditional giving and from quid 
 Application Notes:
 1. Friend classification: friendship is evidenced by mutual off-the-clock investment, genuine personal disclosure, and behavior in adversity — not by warmth or professional pleasantness alone. A warm, reliable good colleague is not thereby a friend.
 2. Asymmetric classification: the most expensive misclassification is treating someone as a friend who treats you as a good colleague. This asymmetry is typically invisible until a moment of real cost makes it apparent. Assess whether the other person would describe the relationship the same way you would.
-3. Transition: a good colleague can become a friend, but the shift requires the professional relationship to wind down. Holding both simultaneously corrupts the reciprocity norms of each (see PRN-042, PRN-045).
+3. Transition: a good colleague can become a friend, but the shift requires the professional relationship to wind down. Holding both simultaneously corrupts the reciprocity norms of each (see LLPRN-10, LLPRN-13).
 
 Supersedes: None
 Version: 1.0
