@@ -1,6 +1,6 @@
 # Matter Index
 
-Generated at: 2026-05-03T10:40:52Z
+Generated at: 2026-05-05T14:07:36Z
 Connector source: `cache:cache/clio_matters.json (repo_fallback:05_MATTERS)`
 
 | Matter Number | Name | Status | Category | Delivery | Fulfillment | Services | Responsible | Client | Source Pointer |
