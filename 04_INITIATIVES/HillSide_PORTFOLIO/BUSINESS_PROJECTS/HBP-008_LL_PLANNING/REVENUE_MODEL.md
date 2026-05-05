@@ -1,10 +1,10 @@
 ---
-id: 04_initiatives__hillside_portfolio__business_projects__hbp_008_levine_law_2027__revenue_model_md
+id: 04_initiatives__hillside_portfolio__business_projects__hbp_008_ll_planning__revenue_model_md
 title: LL Planning - Revenue Model
 owner: ML1
 status: draft
 created_date: 2026-05-02
-last_updated: 2026-05-04
+last_updated: 2026-05-05
 tags: [levine-law, 2027, revenue-model, financial-model, hillside]
 ---
 
@@ -111,7 +111,7 @@ The `2027` HBP-008 model is now structured as:
 The exact distribution inside that range depends on year-end profit and the
 retained-earnings decision.
 
-## Connection to HBP-001 Wealth Plan
+## Corporate Planning Interface
 
 | Item | Value |
 |---|---|
@@ -119,12 +119,12 @@ retained-earnings decision.
 | 2027 total revenue to ML1 | CAD 90,000–95,000 |
 | 2027 discretionary distribution above fixed line | about CAD 5,000–10,000 |
 | Firm retained earnings (upside illustration) | CAD 158,000 |
-| Firm retained available for investment or distribution | To be governed by HBP-001 and HBP-002 |
+| Firm retained available for investment or distribution | Subject to HBP-008 corporate-tax adjustment and HBP-002 cash-flow definition |
 
-The firm retained earnings line is the primary new wealth-plan input from 2027.
-How that retained amount is treated — as reinvestment in Levine Law,
-distribution to ML1, or accumulation inside the professional corporation — is
-a decision for HBP-001 and HBP-002, not this project.
+The firm retained earnings line is a pre-tax LL corporate planning line. Its
+after-tax corporate deployable-capital view is modeled in
+`LL_TAX_ADJUSTED_CORPORATE_MODEL_2026_2029.md`. Personal wealth-plan treatment
+is outside this project.
 
 ---
 

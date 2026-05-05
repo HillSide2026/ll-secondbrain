@@ -1,11 +1,11 @@
 ---
-id: 04_initiatives__hillside_portfolio__business_projects__hbp_008_levine_law_2027__business_case_md
+id: 04_initiatives__hillside_portfolio__business_projects__hbp_008_ll_planning__business_case_md
 title: LL Planning - Business Case
 owner: ML1
 status: draft
 created_date: 2026-05-02
-last_updated: 2026-05-02
-tags: [levine-law, 2027, business-case, hillside]
+last_updated: 2026-05-05
+tags: [levine-law, 2027, 2028, 2029, business-case, hillside]
 ---
 
 # Business Case
@@ -46,8 +46,8 @@ only the corporate lane.
 - total revenue to ML1 of CAD 90,000–95,000 after any profit distribution made
   after retained earnings
 - first proof point that the Levine Law leverage model works
-- firm retained earnings of approximately CAD 155,000–160,000 available to flow
-  through to HBP-001 wealth targets
+- pre-tax firm retained earnings of approximately CAD 155,000-160,000 in the
+  2027 target case, before the HBP-008 corporate-tax adjustment
 - F03 payments practice producing named specialist revenue rather than remaining
   a content experiment
 - associate model proven as a repeatable delivery layer

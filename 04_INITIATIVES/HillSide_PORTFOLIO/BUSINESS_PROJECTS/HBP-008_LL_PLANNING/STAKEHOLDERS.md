@@ -1,5 +1,5 @@
 ---
-id: 04_initiatives__hillside_portfolio__business_projects__hbp_008_levine_law_2027__stakeholders_md
+id: 04_initiatives__hillside_portfolio__business_projects__hbp_008_ll_planning__stakeholders_md
 title: LL Planning - Stakeholders
 owner: ML1
 status: draft

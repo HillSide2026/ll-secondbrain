@@ -1,11 +1,11 @@
 ---
-id: 04_initiatives__hillside_portfolio__business_projects__hbp_008_levine_law_2027__success_criteria_md
+id: 04_initiatives__hillside_portfolio__business_projects__hbp_008_ll_planning__success_criteria_md
 title: LL Planning - Success Criteria
 owner: ML1
 status: draft
 created_date: 2026-05-02
-last_updated: 2026-05-04
-tags: [levine-law, 2027, success-criteria, hillside]
+last_updated: 2026-05-05
+tags: [levine-law, 2027, 2028, 2029, success-criteria, hillside]
 ---
 
 # Success Criteria
@@ -22,7 +22,7 @@ tags: [levine-law, 2027, success-criteria, hillside]
 | Associate collections | CAD 160,000 | Upside target; CAD 100,000 is the floor |
 | Fixed revenue to ML1 | CAD 85,000 | Step from CAD 80,000 in 2026 |
 | Total revenue to ML1 | CAD 90,000–95,000 | Fixed line plus discretionary distribution after retained earnings |
-| Firm retained earnings | CAD 125,000+ | Remains positive after fixed line and any discretionary distribution |
+| Pre-tax firm retained earnings | CAD 125,000+ | Remains positive after fixed line and any discretionary distribution; corporate-tax adjustment is modeled separately |
 
 ## Associate Layer
 

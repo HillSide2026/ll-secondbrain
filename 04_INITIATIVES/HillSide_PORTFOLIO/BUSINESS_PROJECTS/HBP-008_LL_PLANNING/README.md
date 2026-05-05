@@ -1,10 +1,10 @@
 ---
-id: 04_initiatives__hillside_portfolio__business_projects__hbp_008_levine_law_2027__readme_md
+id: 04_initiatives__hillside_portfolio__business_projects__hbp_008_ll_planning__readme_md
 title: LL Planning
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-05-04
+last_updated: 2026-05-05
 tags: [levine-law, 2027, 2028, 2029, hillside, project, initiating]
 ---
 
@@ -21,11 +21,12 @@ tags: [levine-law, 2027, 2028, 2029, hillside, project, initiating]
 ## Objective
 
 Define and govern the 2027 Levine Law operating program as a HillSide oversight project
-with three core goals: total firm collections of CAD 400,000, ML1 billings capped at
-CAD 240,000, and activation of a part-time contractor associate with corporate/commercial
-and financial services experience to deliver the incremental CAD 160,000 — while governing
-margin, capacity, and client-quality controls and staying inside approved Levine Law
-practice areas, solution frames, and strategy.
+with four core goals: total firm collections of CAD 400,000, ML1 billings capped at
+CAD 240,000, F02 producing 30 paid Health Checks and CAD 90,000 of direct Health
+Check revenue, and activation of a part-time contractor associate with
+corporate/commercial and financial services experience to deliver the incremental
+CAD 160,000 - while governing margin, capacity, and client-quality controls and
+staying inside approved Levine Law practice areas, solution frames, and strategy.
 
 This folder also houses the forward annual-plan horizon for `2028` and `2029`
 so the HillSide oversight layer covers the immediate leverage-validation year
@@ -53,9 +54,10 @@ Within this folder:
 
 - This is a HillSide business-project record, not the full Levine Law operating portfolio.
 - It does not govern underlying Levine Law execution work.
-- Two supplementary artifacts document the 2027 planning model in detail:
-  `REVENUE_MODEL.md`, `ASSOCIATE_MODEL.md`, and
-  `LL_RETAINED_PROFIT_MODEL_2026_2029.md`.
+- Four supplementary artifacts document the 2027 planning model in detail:
+  `REVENUE_MODEL.md`, `ASSOCIATE_MODEL.md`,
+  `LL_RETAINED_PROFIT_MODEL_2026_2029.md`, and
+  `LL_TAX_ADJUSTED_CORPORATE_MODEL_2026_2029.md`.
 - `ANNUAL_PLAN_2028.md` and `ANNUAL_PLAN_2029.md` are horizon artifacts housed
   here so HBP-008 covers `2027-2029` in one oversight folder.
 - The stage-gate packet in this folder remains primarily `2027`-specific. The
@@ -120,5 +122,6 @@ planning, but they are not determined by HBP-001.
 - `LL_TAX_ADJUSTED_CORPORATE_MODEL_2026_2029.md` drafted
 - `ANNUAL_PLAN_2028.md` drafted
 - `ANNUAL_PLAN_2029.md` drafted
+- `QA_RECONCILIATION_2026-05-05.md` drafted
 
 `README.md` remains the folder shell and is not itself a stage-gate artifact.

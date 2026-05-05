@@ -1,14 +1,14 @@
 ---
-id: llp_030_annual_plan_2028
-title: Levine Law - Annual Plan 2028
+id: 04_initiatives__hillside_portfolio__business_projects__hbp_008_ll_planning__annual_plan_2028_md
+title: LL Planning - Annual Plan 2028
 owner: ML1
 status: draft
 created_date: 2026-05-04
 last_updated: 2026-05-04
-tags: [llp-030, hbp-008, annual-plan, 2028, strategy, hillside]
+tags: [hbp-008, ll-planning, annual-plan, 2028, strategy, hillside]
 ---
 
-# Levine Law - Annual Plan 2028
+# LL Planning - Annual Plan 2028
 
 ## Purpose
 

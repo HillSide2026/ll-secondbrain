@@ -1,11 +1,11 @@
 ---
-id: 04_initiatives__hillside_portfolio__business_projects__hbp_008_levine_law_2027__metrics_md
+id: 04_initiatives__hillside_portfolio__business_projects__hbp_008_ll_planning__metrics_md
 title: LL Planning - Metrics
 owner: ML1
 status: draft
 created_date: 2026-05-02
-last_updated: 2026-05-04
-tags: [levine-law, 2027, metrics, hillside]
+last_updated: 2026-05-05
+tags: [levine-law, 2027, 2028, 2029, metrics, hillside]
 ---
 
 # Metrics
@@ -104,7 +104,7 @@ tags: [levine-law, 2027, metrics, hillside]
 | Field | Value |
 |---|---|
 | Metric ID | `ll_2027_f02_paid_health_checks` |
-| SMART Goal | SG-08 |
+| SMART Goal | SG-06 |
 | Definition | Number of paid Corporate Health Checks with fees collected in calendar year 2027 |
 | Target | >= 30 by `2027-12-31` |
 | Measurement frequency | Monthly cumulative |
@@ -118,7 +118,7 @@ tags: [levine-law, 2027, metrics, hillside]
 | Field | Value |
 |---|---|
 | Metric ID | `ll_2027_f02_health_check_revenue` |
-| SMART Goal | SG-09 |
+| SMART Goal | SG-06 |
 | Definition | Revenue directly attributable to paid Corporate Health Checks in calendar year 2027, excluding downstream remediation and fractional counsel revenue |
 | Target | >= CAD 90,000 by `2027-12-31` |
 | Measurement frequency | Monthly cumulative |

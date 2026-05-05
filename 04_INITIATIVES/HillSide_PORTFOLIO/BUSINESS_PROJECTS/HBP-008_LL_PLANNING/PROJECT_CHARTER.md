@@ -1,11 +1,11 @@
 ---
-id: 04_initiatives__hillside_portfolio__business_projects__hbp_008_levine_law_2027__project_charter_md
+id: 04_initiatives__hillside_portfolio__business_projects__hbp_008_ll_planning__project_charter_md
 title: LL Planning - Project Charter
 owner: ML1
 status: draft
 created_date: 2026-05-02
-last_updated: 2026-05-02
-tags: [levine-law, 2027, charter, hillside]
+last_updated: 2026-05-05
+tags: [levine-law, 2027, 2028, 2029, charter, hillside]
 ---
 
 # Project Charter
@@ -36,7 +36,7 @@ at or below $25,000 per month and proving that the Levine Law leverage model wor
 | SG-03 | By `2027-12-31`, associate-attributed collections reach at least CAD 100,000. | Associate collections >= CAD 100,000 (CAD 160,000 upside target) |
 | SG-04 | By `2027-12-31`, total revenue to ML reaches at least CAD 90,000, with the fixed owner line set at CAD 85,000 and any excess achieved through approved profit distribution after retained earnings. | Total 2027 revenue to ML >= CAD 90,000 |
 | SG-05 | By `2027-06-30`, a contractor associate with corporate/commercial and financial services experience is engaged and active on delegated files. | Associate engagement confirmed; first delegated files active |
-| SG-06 | During 2027, F02 operates as the primary corporate acquisition channel with a defined Health Check volume and fractional counsel conversion pipeline. | Monthly oversight pack confirms F02 as primary channel |
+| SG-06 | By `2027-12-31`, F02 produces at least 30 paid Corporate Health Checks and CAD 90,000 in direct Health Check revenue. | F02 paid Health Checks >= 30; F02 direct Health Check revenue >= CAD 90,000 |
 | SG-07 | By `2027-12-31`, F03 has produced named specialist revenue from payments/MSB/regulatory matters. | At least CAD 30,000 attributable to F03 specialist matters |
 
 ## Program Definition

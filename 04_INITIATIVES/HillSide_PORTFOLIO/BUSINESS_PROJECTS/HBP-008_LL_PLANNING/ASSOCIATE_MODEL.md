@@ -1,5 +1,5 @@
 ---
-id: 04_initiatives__hillside_portfolio__business_projects__hbp_008_levine_law_2027__associate_model_md
+id: 04_initiatives__hillside_portfolio__business_projects__hbp_008_ll_planning__associate_model_md
 title: LL Planning - Associate Model
 owner: ML1
 status: draft
