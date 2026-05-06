@@ -34,7 +34,7 @@ because they answer different planning questions.
 | Lane | Current State | Planning Use |
 |--------|-------------|---------------------|
 | Investment income and return on capital | The existing base still needs about ~4.8% CAGR to reach SG-01 and ~6.4% CAGR to reach SG-02 | Shows how the current balance sheet compounds over time |
-| Business income to Matthew | The current explicit Levine Law -> Matthew compensation target is `CAD 80,000`; no recurring `17513721 Canada Inc` -> Matthew distribution is yet assumed | Shows whether the liquid base can be refilled through owner cash flow rather than market performance |
+| Business income to Matthew | This lane includes compensation, bonus, dividends, and approved distributions to Matthew from Levine Law and `17513721 Canada Inc`. The current explicit baseline locks Levine Law -> Matthew at `CAD 80,000`; no recurring `17513721 Canada Inc` -> Matthew distribution is yet assumed in the baseline. | Shows whether the liquid base can be refilled through owner cash flow rather than market performance |
 
 **Current position:** business income to Matthew approximately covers living
 costs, so net savings from business income are near zero. That means the
@@ -48,7 +48,7 @@ effect of savings plus compounding meaningfully reduces dependence on hitting
 investment-return targets and accelerates SG-02.
 
 **Where the business-income improvement is expected to come from:** `HBP-008`
-(Levine Law 2027) and `HBP-009` (2027 Business Ideas) remain the main growth
+(LL Planning) and `HBP-009` (2027 Business Ideas) remain the main growth
 projects. Any recurring `17513721 Canada Inc` -> Matthew distributions should
 also be documented in `HBP-002_CASH_FLOW` rather than assumed informally.
 

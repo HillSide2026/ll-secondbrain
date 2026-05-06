@@ -21,17 +21,38 @@ the email. Root cause identified: the search was operating at the **thread level
 not the message level. The email existed but was not found because thread-level
 search does not resolve all individual messages within a thread.
 
+Star 333 has two active matters in Clio. The thread-level search could not
+distinguish between them:
+
+| Matter | Description | Status |
+|---|---|---|
+| `24-845-00001` | Corporate / Commercial Matters (ML1 to correct description in Clio) | Pending / Active |
+| `25-845-00002` | League Operational Matters | Confirmed / Active |
+
 ---
 
-## Governing Rule Established
+## State Labels — Confirmed
 
-There are **nine state labels** in Gmail.
+There are **10 state labels** in Gmail. (Earlier reference to 9 was a ML1
+correction.)
+
+| Label | Count (2026-05-05) |
+|---|---|
+| `00_Triage` | 332 |
+| `10_Action_Matthew` | 87 |
+| `20_Action_Team` | 19 |
+| `30_Waiting_External` | — |
+| `40_Replied_Awaiting_Response` | — |
+| `50_Calendar` | 216 |
+| `60_Filing` | 8 |
+| `70_Filed` | — |
+| `80_Junk_to_Review` | 7 |
+| `90_Archive` | 111 |
 
 **Rule:** Every email must be assigned to at least one state label.
 
 **Corollary:** Any email that carries a state label must not remain in the inbox.
-Having a state label means the email has been processed — it should be out of the
-inbox. Inbox presence + state label = a contradiction.
+Inbox presence + state label = a contradiction.
 
 ---
 
@@ -55,38 +76,75 @@ settled truth**, until a verification layer is in place.
 
 ---
 
-## Implications for LLP-023 Slice 1
+## Three-Pass Remediation Plan
 
-1. **Thread-level search is insufficient.** The system must be capable of
-   resolving at the message level when a thread-level search fails to surface a
-   known email.
+### Pass A — Inbox Contamination (approved to plan; execute pending ML1 batch approval)
 
-2. **Inbox presence check must be part of the label audit.** A correct state
-   label on an email that remains in the inbox is a governance failure — both
-   the label assignment and the inbox status must be reconciled together.
+**Logic:** Any thread that is `in:inbox` AND carries any state label is a
+contradiction. Archive it (remove inbox flag only — no relabeling, no deletion).
 
-3. **Label accuracy cannot be assumed.** The batch proposal and execution
-   pipeline must account for the possibility that prior labels are wrong, not
-   just missing.
+**Steps:**
 
-4. **A label audit and reconciliation pass is required before Slice 1 can be
-   considered stable.** The two problems above mean the current Gmail label
-   state is not a reliable foundation for the daily review pass.
+1. **Audit query (read-only)**
+   Gmail search per label: `in:inbox label:<state_label>` for all 10 labels.
+   Output: thread count + thread list with current labels and subjects.
 
----
+2. **Proposal artifact**
+   Write to `06_RUNS/batch/proposals/YYYY-MM-DD_inbox_contamination.json`.
+   Fields: thread_id, subject, current_labels, proposed_action (`archive`).
+   No Gmail writes at this step.
 
-## Open Questions
+3. **ML1 review**
+   ML1 reviews proposal. Flag any threads to exclude. Approve remainder.
+   Approval artifact written to `06_RUNS/` before execution.
 
-- What are the nine state labels? (To be confirmed with ML1.)
-- What is the correct rule for correcting a wrong state label vs. removing it?
-- Should the inbox contamination fix (removing inbox flag from state-labeled
-  emails) be a separate authorized pass, or folded into the daily review pass?
-- Is the Star 333 search failure a one-off retrieval gap or a systemic issue
-  with the thread-level search path?
+4. **Execution with audit trail**
+   Archive approved threads. Write execution record to
+   `06_RUNS/batch/executions/YYYY-MM-DD_inbox_contamination.json`.
+   Archiving removes the inbox flag only — labels are preserved.
 
 ---
 
-## Next Step
+### Pass B — Label Accuracy (planned; scope to be defined before execution)
 
-ML1 to confirm the nine state labels and authorize a reconciliation pass scope
-before Slice 1 proceeds further.
+**Logic:** Some emails carry state labels that do not accurately reflect their
+actual state. Existing labels are candidate truth, not settled truth.
+
+Priority order for review: `10_Action_Matthew` (87 threads — highest operational
+impact if mislabeled), then `20_Action_Team`, then others by count.
+
+This pass requires human judgment. Automation can surface candidates; ML1 makes
+the call on each correction.
+
+---
+
+### Pass C — Party Extraction (planned; runs on matter-tagged threads)
+
+**Logic:** For all emails or threads tagged to a matter label, extract all
+relevant parties — including non-clients. Parties include senders, recipients,
+CC'd parties, and any named individuals in the thread.
+
+**Purpose:** Build a complete participant map per matter from Gmail communications.
+This supplements Clio contact records with parties who appear in email but are
+not formally registered as Clio contacts (opposing counsel, third parties,
+advisors, etc.).
+
+**Scope:** All threads carrying a matter label (not state labels — matter labels
+are the Clio matter number labels applied to routed threads).
+
+**Output:** Per-matter party roster, flagging any party not matched to a known
+Clio contact on that matter.
+
+This pass can run independently of Pass A and Pass B — it operates on
+already-labeled matter threads, not on inbox state.
+
+---
+
+## Open Items
+
+- Full label name confirmed: `40_Replied_Awaiting_Response`.
+- ML1 to update `24-845-00001` description in Clio to "Corporate / Commercial Matters"
+  (simpler canonical name).
+- Pass A: run audit query (Step 1) when ML1 is ready to proceed.
+- Pass B: define review scope and sampling approach before starting.
+- Pass C: define output schema and destination before starting.

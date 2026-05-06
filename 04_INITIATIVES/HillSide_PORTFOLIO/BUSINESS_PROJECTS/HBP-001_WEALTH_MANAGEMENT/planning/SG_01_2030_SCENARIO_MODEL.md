@@ -97,6 +97,10 @@ low-return scenario, not yet as a locked operating budget.
 If the business-income funds must be paid to Matthew personally and taxed before
 they become personal savings, the staircase above has to be grossed up.
 
+For clarity, this gross-up is for combined pre-tax business income to Matthew.
+That combined inflow may include compensation, bonus, dividends, and approved
+distributions from Levine Law and `17513721 Canada Inc`, not only Levine Law.
+
 This planning gross-up uses the following simplifying assumptions:
 
 - Ontario resident
@@ -110,7 +114,7 @@ This planning gross-up uses the following simplifying assumptions:
 - CPP, EI, dividend-tax integration, and other personal deductions or credits
   are not reflected in this planning table
 
-| Year | Working Net Savings from Business Income | Required Pre-Tax Business Income | Increment Above `CAD 80,000` Lifestyle Base |
+| Year | Working Net Savings from Business Income | Required Combined Pre-Tax Business Income to Matthew | Increment Above `CAD 80,000` Lifestyle Base |
 | --- | --- | --- | --- |
 | `2026` | `CAD 0` | `CAD 80,000` | `CAD 0` |
 | `2027` | `CAD 7,000` | about `CAD 89,950` | about `CAD 9,950` |

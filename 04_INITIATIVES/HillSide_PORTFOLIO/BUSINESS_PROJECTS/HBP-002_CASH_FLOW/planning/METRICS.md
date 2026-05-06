@@ -66,7 +66,7 @@ separate lines for business income to Matthew, investment income / return on
 capital, and net savings from business income. It should not rely on one
 undifferentiated "income" line or only on gross inflow. This is the metric
 structure that connects HBP-002 (Cash Flow) to HBP-001 (Wealth Management) and
-to the growth targets in HBP-008 (Levine Law 2027) and HBP-009 (2027 Business
+to the growth targets in HBP-008 (LL Planning) and HBP-009 (2027 Business
 Ideas).
 
 Whether business income to Matthew becomes strong enough to create material net
