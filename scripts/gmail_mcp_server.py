@@ -1315,6 +1315,80 @@ def tool_resolve_confirmed_junk_threads(args: Dict[str, Any]) -> str:
     return json.dumps(summary, indent=2)
 
 
+def tool_pass_a_archive_threads(args: Dict[str, Any]) -> str:
+    """Pass A inbox contamination cleanup: remove INBOX from threads, preserve all existing labels."""
+    approval = _require_write_approval(args, "pass_a_archive_threads")
+    thread_ids = args.get("thread_ids", [])
+    if not isinstance(thread_ids, list) or not thread_ids:
+        raise ValueError("'thread_ids' must be a non-empty list.")
+
+    clean_thread_ids = [str(tid).strip() for tid in thread_ids if str(tid).strip()]
+    if not clean_thread_ids:
+        raise ValueError("'thread_ids' must contain at least one non-empty thread id.")
+
+    execution_artifact = str(args.get("execution_artifact", "")).strip() or \
+        "06_RUNS/batch/executions/2026-05-05_inbox_contamination.json"
+
+    service = _get_gmail_service()
+    results: List[Dict[str, Any]] = []
+    skipped = 0
+    archived = 0
+
+    for thread_id in clean_thread_ids:
+        thread = _with_backoff(
+            lambda tid=thread_id: _get_thread(service, tid),
+            f"pass_a_archive:get_thread:{thread_id}",
+        )
+        thread_label_ids = _collect_thread_label_ids(thread)
+
+        if "INBOX" not in thread_label_ids:
+            skipped += 1
+            result = {"thread_id": thread_id, "action": "skip", "reason": "not_in_inbox"}
+        else:
+            _with_backoff(
+                lambda tid=thread_id: _apply_thread_modify(service, tid, [], ["INBOX"]),
+                f"pass_a_archive:modify:{thread_id}",
+            )
+            archived += 1
+            result = {"thread_id": thread_id, "action": "archived"}
+
+        results.append(result)
+        _append_audit({
+            "timestamp": _now_iso(),
+            "tool": "pass_a_archive_threads",
+            "approved_by": approval["approved_by"],
+            "approval_artifact": approval["approval_artifact"],
+            "reason": approval["reason"],
+            "execution_artifact": execution_artifact,
+            **result,
+        })
+
+    execution_path = Path(_REPO_ROOT) / execution_artifact
+    execution_path.parent.mkdir(parents=True, exist_ok=True)
+    execution_data = {
+        "run_date": _now_iso(),
+        "pass": "A",
+        "description": "Inbox contamination cleanup — remove INBOX label, preserve state labels",
+        "approved_by": approval["approved_by"],
+        "approval_artifact": approval["approval_artifact"],
+        "reason": approval["reason"],
+        "thread_count_submitted": len(clean_thread_ids),
+        "archived": archived,
+        "skipped_not_in_inbox": skipped,
+        "results": results,
+    }
+    execution_path.write_text(json.dumps(execution_data, indent=2))
+
+    summary = {
+        "thread_count_submitted": len(clean_thread_ids),
+        "archived": archived,
+        "skipped_not_in_inbox": skipped,
+        "execution_artifact": execution_artifact,
+        "approved_by": approval["approved_by"],
+    }
+    return json.dumps(summary, indent=2)
+
+
 def tool_apply_state_label(args: Dict[str, Any]) -> str:
     approval = _require_write_approval(args, "apply_state_label")
     thread_id = str(args.get("thread_id", "")).strip()
@@ -1755,6 +1829,43 @@ _TOOLS = [
         },
     },
     {
+        "name": "pass_a_archive_threads",
+        "description": (
+            "Pass A inbox contamination cleanup: remove INBOX label from a list of threads, "
+            "preserving all existing state and matter labels. "
+            "Use for threads that carry a state label but remain in inbox (inbox + state label = contradiction). "
+            "Writes execution artifact to 06_RUNS/batch/executions/. "
+            "Requires approved_by, approval_artifact, and reason."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "thread_ids": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "List of Gmail thread ids to archive (remove INBOX).",
+                },
+                "approved_by": {
+                    "type": "string",
+                    "description": "Approving human, typically ML1.",
+                },
+                "approval_artifact": {
+                    "type": "string",
+                    "description": "Repo-relative path to the approval artifact.",
+                },
+                "reason": {
+                    "type": "string",
+                    "description": "Short reason for the operation.",
+                },
+                "execution_artifact": {
+                    "type": "string",
+                    "description": "Repo-relative path for the execution output JSON. Default: 06_RUNS/batch/executions/2026-05-05_inbox_contamination.json",
+                },
+            },
+            "required": ["thread_ids", "approved_by", "approval_artifact", "reason"],
+        },
+    },
+    {
         "name": "apply_state_label",
         "description": (
             "Apply one canonical state label to a Gmail thread with exclusivity enforcement. "
@@ -1923,6 +2034,7 @@ _TOOL_FN_MAP = {
     "execute_inbox_cleanup": tool_execute_inbox_cleanup,
     "execute_category_sweep": tool_execute_category_sweep,
     "resolve_confirmed_junk_threads": tool_resolve_confirmed_junk_threads,
+    "pass_a_archive_threads": tool_pass_a_archive_threads,
     "apply_state_label": tool_apply_state_label,
     "apply_matter_label": tool_apply_matter_label,
     "apply_matter_label_query": tool_apply_matter_label_query,
