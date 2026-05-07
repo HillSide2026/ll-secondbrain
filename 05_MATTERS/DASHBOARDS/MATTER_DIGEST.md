@@ -1,6 +1,6 @@
 # Firm Matter Digest
 
-Generated at: 2026-05-05T14:07:36Z
+Generated at: 2026-05-06T10:33:47Z
 
 ## Summary
 - Moved matters: 0

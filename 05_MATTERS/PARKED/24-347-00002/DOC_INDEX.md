@@ -1,6 +1,6 @@
 # Document Index — 24-347-00002
 
-Generated at: 2026-05-05T14:07:36Z
+Generated at: 2026-05-06T10:33:47Z
 Connector source: `repo:09_INBOX/_sources/sharepoint/metadata/legalmatters_library`
 
 ## Summary

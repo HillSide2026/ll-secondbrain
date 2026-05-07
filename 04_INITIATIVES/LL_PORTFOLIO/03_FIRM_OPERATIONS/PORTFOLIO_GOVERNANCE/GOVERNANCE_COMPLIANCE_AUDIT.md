@@ -1,19 +1,19 @@
 # GOVERNANCE COMPLIANCE AUDIT
 
-- Generated: 2026-05-05T14:08:10+00:00
-- Run ID: RUN-2026-05-05-LL-PORTFOLIO-AGENTS-140810Z
+- Generated: 2026-05-06T11:00:01+00:00
+- Run ID: RUN-2026-05-06-LL-PORTFOLIO-AGENTS-110001Z
 
 > Advisory output. ML1 approval remains required for decisions.
 ## Governance Compliance Audit
 
-- Projects audited: 41
-- Stage violations: 2
-- Approval gaps: 1
+- Projects audited: 42
+- Stage violations: 3
+- Approval gaps: 2
 - Metric schema gaps: 1
-- Planning schema gaps: 1
+- Planning schema gaps: 2
 
 ## Severity Mix
 
-- Critical: 2
+- Critical: 3
 - High: 28
 - Medium: 0
