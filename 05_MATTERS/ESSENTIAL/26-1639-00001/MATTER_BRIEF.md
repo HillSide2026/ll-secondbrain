@@ -32,6 +32,7 @@ Client relationship management matter for Andersen. This is the umbrella matter 
   - **Data Centre & Critical Infrastructure Disputes**: BNM-Andersen services proposed; ALLIANZ flagged as potential client. Hernany V. email Apr 7.
   - **Investment arbitration with South American government officials**: List of contacts shared by Hernany V. (Ecuador, Peru, Costa Rica, Panama, Brazil, Chile)
   - **Sao Paulo embed**: Opportunity to embed with Andersen Sao Paulo for 1–2 months. Details TBD — ML1 to assess timing and scope.
+  - **Barcelona conference**: Andersen-wide conference in Barcelona, October 2026. Attendance opportunity — details TBD.
   - **Sanctions advisory**: Aircraft, maritime, defence goods flagged as expansion area
   - **Trade remedies (CITT)**: Lane 26-1639-00002 — TR-003 identified (plywood / trade remedies); TR-004 identified (processed wood / safeguards); GC-2026-001 (Certain Wood Goods safeguard inquiry) is a live CITT signal for TR-004; TR-001 and TR-002 now inactive
   - **Market access**: Lane 26-1639-00003 — no active tracks; MA-001 (pecans) and MA-002 (flavored butter) both inactive as of 2026-04-29; matter held open for future leads
@@ -59,3 +60,4 @@ Inc. The Trade Services line on that site connects to this matter and the
 - 2026-04-25 — dominionpartners.ca noted as shared public front-end for trade services line
 - 2026-04-29 — Pipeline corrected: trade remedies tracks updated to TR-003/TR-004 (wood); TR-001/TR-002 inactive; market access MA-001/MA-002 both inactive; no converted cash in any Andersen lane as of this date
 - 2026-05-07 — Sao Paulo embed opportunity noted: 1–2 month embed with Andersen Sao Paulo; details and timing TBD
+- 2026-05-07 — Barcelona conference noted: Andersen-wide conference, October 2026; attendance details TBD
