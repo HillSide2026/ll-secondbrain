@@ -1,42 +1,41 @@
 # COS Brief
 
-Generated: 2026-05-06T00:00:00Z | Agent: LLM-001 | Run: RUN-2026-05-06-DAILY-SWEEP-103347Z
+Generated: 2026-05-09T00:00:00Z | Agent: LLM-001 | Run: RUN-2026-05-09-DAILY-SWEEP-104728Z
 
 ## Portfolio Health Summary
 
-The portfolio consists of 42 projects, with 39 currently on track and 3 flagged as at-risk: LLP-037, LLP-038, and LLP-039. Average stage-2 readiness is 28%. Three projects, LLP-037, LLP-038, and LLP-039 have serious stage gate violations.
+The portfolio consists of 42 projects. 39 are currently on-track, while 3 are flagged as at-risk: LLP-037, LLP-038, and LLP-039. Average stage-2 readiness across all projects is 28%. There appear to be duplicate entries for LLP-037, LLP-038, and LLP-039, which should be investigated.
 
 ## Cash Flow Priority Top Actions
 
-The top priority is resolving the stage gate violations in LLP-037 and LLP-039, as these projects have the highest priority scores and are currently at-risk. Per the sequencing recommendations: for LLP-037, focus on closing 4 planning and 1 measurement gaps; for LLP-039, focus on closing 4 planning gaps; for LLP-038, focus on closing 7 initiation gaps, keeping planning drafts non-authoritative pending ML1 review. These three items constitute FLOW_BLOCKED issues.
+The immediate priority is to address the "at-risk" projects, specifically LLP-037, LLP-039, and LLP-038, as they have the highest priority scores (27, 26 and 17 respectively) and open stage gate violations. Focus on completing stage-2 planning packets for LLP-037 and LLP-039, and the initiation packet for LLP-038. These projects directly influence near-term revenue.
 
 ## What Requires ML1 Input (ML1_REQUIRED items)
 
-ML1 review is required to keep planning drafts non-authoritative for LLP-038.
-ML1 review is still required for projects currently in the initiating stage. Per the Project Priority Matrix, all projects in the Initiating stage should be held until ML1 review. Those projects are: LLP-001, LLP-002, LLP-003, LLP-007, LLP-008, LLP-009, LLP-010, LLP-014, LLP-015, LLP-016, LLP-017, LLP-018, LLP-026, LLP-027, LLP-028, LLP-029, LLP-031, LLP-032, LLP-034, LLP-035, LLP-036, LLP-037, LLP-038, LLP-039, LLP-040, LLP-041, LLP-042, LLP-043.
+ML1 review is required for projects in the initiating stage (LLP-001, LLP-002, LLP-003, LLP-007, LLP-008, LLP-009, LLP-010, LLP-014, LLP-015, LLP-016, LLP-017, LLP-018, LLP-026, LLP-027, LLP-028, LLP-029, LLP-031, LLP-032, LLP-034, LLP-035, LLP-036, LLP-037, LLP-038, LLP-039, LLP-040, LLP-041, LLP-042, LLP-043). Stage gate violations also require ML1 attention.
 
 ## What the System Can Handle (SYSTEM_CAN_HANDLE)
 
-The system can begin assembling complete stage-2 planning packets for LLP-037 and LLP-039 and the complete initiation packet for LLP-038, but these must be non-authoritative until ML1 review. The system can advance on-track projects currently in the Executing or Planning stages: LLP-004, LLP-005, LLP-006, LLP-011, LLP-012, LLP-013, LLP-023, LLP-024, LLP-025, LLP-030, and LLP-033.
+The system can handle advancing on-track projects (LLP-004, LLP-005, LLP-006, LLP-011, LLP-012, LLP-013, LLP-023, LLP-024, LLP-025, LLP-030, LLP-033) to the next gated artifact set once ML1 has approved initial stage-gating. The system can monitor project health and flag deviations from established metrics, planning, and stage gates through its violation reports and dashboards.
 
 ## Cross-Agent Conflicts
 
-See CROSS_AGENT_CONFLICTS.md for any cases where advancement has been recommended despite a conflict flag and requires ML1-level conflict resolution.
+No cross-agent conflicts detected in this run. However, it's worth noting the duplicate entries for LLP-037, LLP-038, and LLP-039 may cause conflicting recommendations in future sweeps.
 
 ## Governance Holds
 
-There are 3 stage violations in LLP-037, LLP-038 and LLP-039, 2 approval gaps in LLP-038 and LLP-039, 1 metric schema gap, and 2 planning schema gaps.
+Projects LLP-038 and LLP-039 are currently held due to missing approval records. This blocks progression and requires ML1 decision on the appropriate approval pathway.
 
 ## Flow Bottlenecks
 
-Dependencies.md, Risk_Register.md and Communication_Plan.md are the top portfolio bottlenecks.
+The top portfolio bottlenecks are missing dependencies, risk registers, and communication plans. Focus on defining artifact completeness requirements for the planning stage, particularly for these frequently missing documents.
 
 ## Doctrine Drift Signal
 
-Repeated missing artifacts signal potential doctrine drift. Specifically, there is planning drift associated with Dependencies.md, Risk_Register.md, Communication_Plan.md, Project_Plan.md, and Assumptions_Constraints.md. There is also measurement drift associated with Metrics.md.
+Doctrine drift is signaled by repeated missing artifacts across projects, particularly `DEPENDENCIES.md`, `RISK_REGISTER.md`, `COMMUNICATION_PLAN.md`, `PROJECT_PLAN.md`, `ASSUMPTIONS_CONSTRAINTS.md`, and `METRICS.md`. This requires ML1's interpretation and potential adjustment of doctrine.
 
 ## Deferred Items
 
-Items requiring ML1 approval (gates, metrics, scope changes, doctrine).
+The high number of projects in the initiating stage (28) suggests the need to either accelerate initial gating or reprioritize onboarding of new projects into the portfolio.
 
 > Advisory output. ML1 approval required before any action is taken.
