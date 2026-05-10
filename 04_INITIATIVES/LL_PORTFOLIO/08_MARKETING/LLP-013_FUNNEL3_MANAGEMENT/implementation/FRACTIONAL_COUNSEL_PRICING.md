@@ -4,7 +4,7 @@ title: Fractional Counsel Pricing Model — Funnel 3
 owner: ML1
 status: draft
 created_date: 2026-04-02
-last_updated: 2026-04-02
+last_updated: 2026-05-10
 tags: [funnel-03, fractional-counsel, pricing, retainer]
 ---
 
@@ -15,22 +15,27 @@ tags: [funnel-03, fractional-counsel, pricing, retainer]
 | Parameter | Value |
 |-----------|-------|
 | Model | Monthly retainer |
-| Range | $4,000–$16,000 CAD/month |
-| Status | Crude — entry-level model; tiers and scope not yet defined |
+| Range | CAD 8,000 / CAD 12,000 / CAD 20,000 per month |
+| Status | Superseded for operating purposes by LLP-039 tiered mandate model |
 
 ## Notes
 
-- Range is indicative. Specific tiers, scope definitions, and engagement
-  terms are not yet defined.
+- LLP-039 is the canonical operating project for fintech retainer pricing,
+  scope, capacity, and mandate-mix decisions.
 - Retainer pricing reflects the F03 ICP: Canadian payments, MSB, and fintech
   operators with ongoing regulatory exposure; higher complexity and
   higher-stakes compliance obligations justify a higher floor than F02.
-- Floor ($4,000/month) is the minimum engagement for a recurring fractional
-  counsel relationship in the payments/fintech regulatory space.
-- Ceiling ($16,000/month) reflects the upper range for operators with
-  multi-regime regulatory exposure (PCMLTFA, RPAA, CARF, bank relationships).
+- Tier 1 (CAD 8,000/month) is not ready for sale until scope and weekly
+  capacity are defined in LLP-039.
+- Tier 2 (CAD 12,000/month) is the core bounded fintech advisory tier with a
+  6-hour/week cap.
+- Tier 3 (CAD 20,000/month) uses the same substantive scope envelope as Tier 2
+  with a 10-hour/week cap.
+- The CAD 20,000/month tier buys more weekly reserved capacity. It does not buy
+  crisis coverage, exam response, launch counsel, securities/tax advice, or an
+  embedded compliance function.
 - Stripe products for fractional counsel retainer tiers are not yet created.
-  Tier structure and scope definitions required before Stripe configuration.
+  Stripe configuration must follow the LLP-039 approved tier and scope model.
 
 ## Relationship to Entry Offer
 
@@ -45,7 +50,7 @@ compliance obligations expand or multiply.
 | Funnel | ICP | Retainer Range |
 |--------|-----|----------------|
 | F02 | Ontario $1M–$8M operating businesses | $2,000–$8,000 CAD/month |
-| F03 | Canadian payments / MSB / fintech operators | $4,000–$16,000 CAD/month |
+| F03 | Canadian payments / MSB / fintech operators | CAD 8,000 / CAD 12,000 / CAD 20,000 per month |
 
-F03 floor is 2× F02 floor, reflecting higher regulatory complexity and
-ongoing compliance obligations in the payments/fintech space.
+F03 retainer pricing is now governed by LLP-039. This artifact is retained as
+the Funnel 3 marketing/pricing reference, not as the canonical operating model.

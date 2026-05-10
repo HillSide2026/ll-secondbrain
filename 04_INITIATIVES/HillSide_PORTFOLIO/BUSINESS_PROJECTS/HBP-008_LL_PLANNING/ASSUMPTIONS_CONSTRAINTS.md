@@ -4,7 +4,7 @@ title: LL Planning - Assumptions and Constraints
 owner: ML1
 status: draft
 created_date: 2026-05-02
-last_updated: 2026-05-02
+last_updated: 2026-05-10
 tags: [levine-law, 2027, assumptions, constraints, hillside]
 ---
 
@@ -20,6 +20,8 @@ tags: [levine-law, 2027, assumptions, constraints, hillside]
   by Q4 2026
 - F02 is operational as a primary acquisition channel before 2027 begins
 - F03 has produced at least early authority and specialist revenue by Q4 2026
+- F03 fintech retainer pricing, scope, capacity, and rate posture are governed
+  by LLP-039, not by HBP-008
 - ML1's standard billing rate remains $480/hour for corporate/commercial work and
   $550/hour for regulatory/specialist work
 - the contractor associate is engaged on the same billing rates; the 40% split
@@ -48,6 +50,13 @@ tags: [levine-law, 2027, assumptions, constraints, hillside]
 - no hiring, engagement, or file delegation is authorized during the Initiating stage
 - 2027 targets must be revised in Q4 2026 against actual HBP-007 performance before
   planning is authorized
+- HBP-008 may not treat fintech retainer capacity as expandable beyond the
+  LLP-039 solo-owner constraints without a separate ML1-approved update to the
+  LLP-039 capacity model
+- expanded founder investment in LL strategy, marketing, systems, service
+  design, or leverage development must be justified under
+  `LL_TIME_INVESTMENT_BENCHMARKS.md`; client delivery obligations are separate
+  and remain mandatory once accepted
 
 ## Planning Boundary
 

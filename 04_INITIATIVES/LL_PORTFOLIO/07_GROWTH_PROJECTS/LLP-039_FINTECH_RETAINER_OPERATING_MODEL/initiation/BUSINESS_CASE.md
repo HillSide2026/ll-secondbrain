@@ -4,7 +4,7 @@ title: LLP-039 Business Case
 owner: ML1
 status: draft
 created_date: 2026-05-06
-last_updated: 2026-05-06
+last_updated: 2026-05-10
 tags: [llp-039, business-case, fintech, recurring-revenue, realization]
 ---
 
@@ -12,36 +12,40 @@ tags: [llp-039, business-case, fintech, recurring-revenue, realization]
 
 ## Strategic Thesis
 
-The fintech retainer model can turn Levine Law's scarce owner capacity into high-quality recurring revenue if the firm sells bounded advisory value rather than raw hours.
+The fintech retainer model can turn Levine Law's scarce owner capacity into high-quality recurring revenue if the firm sells bounded advisory value through defined mandate types rather than raw hours.
 
-The model is not to raise the posted hourly rate from CAD 480/hour to CAD 800/hour immediately. The model is to sell a CAD 12,000/month advisory product and standardize delivery so the effective rate approaches CAD 800/hour.
+The model is not to raise the posted hourly rate from CAD 480/hour immediately.
+The model is to define the CAD 8,000/month, CAD 12,000/month, and CAD
+20,000/month mandate types, then determine the number and mix that can be
+concurrently sustained inside ML1 capacity.
 
 ## Unit Economics
 
-| Metric | Baseline |
-|---|---:|
-| Monthly retainer | CAD 12,000 |
-| Annual retainer value | CAD 144,000 |
-| Nominal LL rate | CAD 480/hour |
-| Implied monthly capacity | 25 hours |
-| Target monthly delivery time | 15 hours |
-| Target effective hourly yield | CAD 800/hour |
+| Mandate Type | Monthly Retainer | Annual Value | Weekly Capacity Limit | Scope Treatment |
+|---|---:|---:|---:|---|
+| Tier 1 | CAD 8,000 | CAD 96,000 | TBD | To be determined |
+| Tier 2 | CAD 12,000 | CAD 144,000 | 6 hours/week | Core bounded fintech advisory scope |
+| Tier 3 | CAD 20,000 | CAD 240,000 | 10 hours/week | Same scope envelope as Tier 2; higher weekly capacity |
 
 ## Portfolio Economics
 
-| Retainer Clients | Monthly Revenue | Annual Revenue | Target Monthly Hours at 15/client |
-|---:|---:|---:|---:|
-| 1 | CAD 12,000 | CAD 144,000 | 15 |
-| 2 | CAD 24,000 | CAD 288,000 | 30 |
-| 3 | CAD 36,000 | CAD 432,000 | 45 |
+| Mandate Mix | Monthly Revenue | Annual Revenue | Weekly Capacity Ceiling |
+|---|---:|---:|---:|
+| 3 x CAD 12,000 | CAD 36,000 | CAD 432,000 | 18 hours/week |
+| 2 x CAD 20,000 | CAD 40,000 | CAD 480,000 | 20 hours/week |
+| 1 x CAD 20,000 + 1 x CAD 12,000 | CAD 32,000 | CAD 384,000 | 16 hours/week |
+| CAD 8,000 mix | Variable | Variable | TBD |
 
-At three clients, the model produces CAD 432,000/year recurring revenue while consuming approximately 45 hours/month at target efficiency. This is meaningfully better than consuming 75 hours/month at the nominal 25-hour assumption.
+The key planning question is not raw client count. It is mandate mix. Three CAD
+12,000/month mandates produce CAD 432,000/year at an 18-hour/week capacity
+ceiling. Two CAD 20,000/month mandates produce CAD 480,000/year while consuming
+the full 20-hour/week capacity ceiling before any non-retainer work.
 
 ## Why This Matters
 
 This model creates:
 - predictable recurring revenue;
-- higher effective realization;
+- higher effective realization if actual usage stays below promised capacity;
 - better client selection discipline;
 - stronger ability to reject low-fit work;
 - a premium wedge into separately scoped regulatory, incident, launch, banking, and safeguarding work; and
@@ -49,5 +53,6 @@ This model creates:
 
 ## Principal Risk
 
-The model fails if the firm sells a recurring advisory product but delivers an uncapped legal/compliance department. The principal economic risk is not client acquisition; it is scope leakage.
-
+The model fails if the firm sells recurring advisory mandates but delivers an
+uncapped legal/compliance department. The principal economic risk is not client
+acquisition; it is scope leakage and overcommitted concurrent capacity.

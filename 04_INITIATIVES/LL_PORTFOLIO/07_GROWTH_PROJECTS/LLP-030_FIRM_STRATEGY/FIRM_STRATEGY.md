@@ -4,7 +4,7 @@ title: Levine Law — Firm Strategy
 owner: ML1
 status: draft
 created_date: 2026-03-17
-last_updated: 2026-05-03
+last_updated: 2026-05-10
 tags: [llp-030, firm-strategy, doctrine]
 ---
 
@@ -48,6 +48,18 @@ Listed in priority order. Where trade-offs arise, higher-ranked priorities win.
 5. **Delegation of billable work** — From 2027 onwards, ML1 must be able to delegate billable execution to an associate lawyer or supervised delivery resource. This is a medium-term priority: it does not override 1–4 in 2026, but it is a required precondition for scaling beyond the ML1 capacity ceiling without degrading client quality or economics. The architecture of delivery systems, templates, and supervision protocols built in 2026 must be designed with delegation in mind.
 
 6. **Incremental equity sale** — The medium-to-long-term objective is to incrementally sell ML1's equity in LL, not to operate it indefinitely. This is a planned, phased exit from ownership: the firm should be built as an asset whose value can be realized in stages rather than through a single transaction or wind-down. This requires client relationships that are not entirely ML1-personal, documented systems, and authority positioning in defined verticals. It is a background priority in 2026–2027 that influences architecture decisions; it does not override 1–5 in the current period, but becomes an active planning priority as the firm approaches the 2028+ horizon and the equity sale window opens.
+
+## 2.1 Founder Time Investment Gate
+
+The higher-level investment question is governed in HBP-008 by
+`LL_TIME_INVESTMENT_BENCHMARKS.md`: how much ML1 time LL deserves as a business,
+separate from time required to serve existing clients.
+
+LL receives continued or expanded founder investment only when the evidence
+supports cash reliability, controlled capacity, improving client quality,
+better per-hour economics, and decreasing dependence on pure ML1 effort. Revenue
+growth that requires sustained capacity breach does not satisfy the strategy,
+even if collections rise.
 
 ---
 

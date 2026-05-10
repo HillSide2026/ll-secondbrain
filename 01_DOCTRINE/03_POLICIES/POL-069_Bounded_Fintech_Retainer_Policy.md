@@ -3,9 +3,9 @@ id: POL-069
 title: Bounded Fintech Retainer Policy
 owner: ML1
 status: draft
-version: 0.1
+version: 0.2
 created_date: 2026-05-06
-last_updated: 2026-05-06
+last_updated: 2026-05-10
 tags: [policy, ll, fintech, retainer, recurring-revenue, scope, collections]
 
 effective_date:
@@ -13,8 +13,8 @@ supersedes:
 
 provenance:
   decided_by: ML1
-  decided_on: 2026-05-06
-  context: $12,000/month fintech retainer operating model
+  decided_on: 2026-05-10
+  context: LLP-039 tiered fintech retainer mandate model
 ---
 
 # Bounded Fintech Retainer Policy
@@ -28,7 +28,7 @@ provenance:
 
 ## 1. Purpose
 
-This policy governs the operating constraints for Levine Law's $12,000/month fintech retainer model.
+This policy governs the operating constraints for Levine Law's tiered fintech retainer mandate model.
 
 The policy exists to preserve the economics of recurring advisory work by preventing scope leakage, unpaid capacity expansion, embedded-function drift, and concentration risk drift.
 
@@ -48,11 +48,21 @@ This policy implements:
 
 ## 3. Core Commercial Rule
 
-The standard fintech retainer is priced at $12,000/month and must be paid monthly in advance unless ML1 approves an exception.
+The current fintech retainer mandate model has three planning tiers:
 
-The retainer carries an implied monthly capacity allocation of approximately 25 hours at a nominal $480/hour rate.
+| Tier | Monthly Retainer | Scope | Weekly Capacity |
+|---|---:|---|---:|
+| Tier 1 | CAD 8,000 | To be determined | To be determined |
+| Tier 2 | CAD 12,000 | Core bounded fintech advisory scope | 6 hours/week |
+| Tier 3 | CAD 20,000 | Same scope envelope as Tier 2 | 10 hours/week |
+
+All tiers must be paid monthly in advance unless ML1 approves an exception.
 
 The retainer does not create an unlimited service obligation.
+
+Tier 1 must not be sold until scope and weekly capacity are defined and approved.
+
+Tier 3 buys additional reserved weekly capacity. It does not buy a broader substantive scope.
 
 ---
 
@@ -74,15 +84,17 @@ Included work must remain consistent with the monthly capacity allocation and th
 
 ## 5. Capacity Controls
 
-Work exceeding the implied 25-hour monthly capacity allocation must trigger one of the following:
+Work exceeding the applicable weekly capacity cap must trigger one of the following:
 - express ML1 approval to absorb the overage;
 - additional-fee approval;
 - deferral to a later period; or
 - separate scoping.
 
-Accelerated timelines, urgent turnaround, unusual intensity, or repeated unscheduled requests may trigger additional fees or separate scoping even if the nominal hour count has not yet exceeded 25 hours.
+Accelerated timelines, urgent turnaround, unusual intensity, or repeated unscheduled requests may trigger additional fees or separate scoping even if the nominal weekly cap has not yet been exceeded.
 
 Unused capacity does not automatically roll forward unless expressly agreed in writing.
+
+Under the current solo-owner model, LL should maintain two to three active fintech retainer mandates. Fewer than two active fintech retainers creates existential business risk. More than three active fintech retainers is not currently sustainable without additional delivery support, offboarding/replacement, deferral, or a revised capacity model approved by ML1.
 
 ---
 
@@ -94,8 +106,10 @@ The following must be separately scoped unless ML1 expressly approves inclusion:
 - incident or crisis management, including safeguarding breaches, operational outages, third-party failures, banking de-risking events, or material compliance failures;
 - new product launches;
 - entry into new jurisdictions;
+- full market-entry or jurisdiction-expansion execution;
 - material transactions;
 - significant changes to the client's business model;
+- RPAA safeguarding design for PSPs that hold, settle, clear, or otherwise control client/end-user funds;
 - tax advice;
 - securities law advice; and
 - litigation, dispute, or contentious regulatory work.
@@ -168,3 +182,22 @@ Any deviation from this policy requires ML1 approval.
 Any retainer template, scope statement, pricing schedule, or client-facing description for this model must remain consistent with this policy unless expressly approved by ML1.
 
 This policy does not itself create a client-facing engagement term. Client-facing language must be separately drafted and approved.
+
+## 12. 2026 Scope Lock
+
+Through December 31, 2026, the fintech retainer model is limited to basic bounded advisory scope.
+
+Premium adjacent work may be issue-spotted, deferred, referred, waitlisted, or separately scoped later, but should not become active 2026 retainer delivery unless ML1 expressly approves an exception.
+
+## 13. Rate Posture
+
+The planning rate ladder for fintech/regulatory work is governed by LLP-039 unless later superseded by ML1-approved pricing doctrine.
+
+| Year | Minimum | Middle | Maximum |
+|---|---:|---:|---:|
+| 2026 | CAD 480/hr | CAD 510/hr | CAD 550/hr |
+| 2027 | CAD 505/hr | CAD 600/hr | CAD 650/hr |
+| 2028 | CAD 550/hr | CAD 690/hr | CAD 750/hr |
+| 2029 | CAD 600/hr | CAD 780/hr | CAD 850/hr |
+
+The maximum planning rate is CAD 850/hour.

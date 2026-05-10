@@ -2,9 +2,9 @@
 id: llp-039_fintech_retainer_operating_model
 title: LLP-039 Fintech Retainer Operating Model
 owner: ML1
-status: initiating
+status: planning
 created_date: 2026-05-06
-last_updated: 2026-05-06
+last_updated: 2026-05-10
 tags: [llp-039, fintech, retainer, recurring-revenue, operating-model, premium-scope]
 ---
 
@@ -12,23 +12,43 @@ tags: [llp-039, fintech, retainer, recurring-revenue, operating-model, premium-s
 
 ## Purpose
 
-Build Levine Law's governed $12,000/month fintech retainer model: a bounded recurring advisory product that protects scope, standardizes delivery, and drives effective realization toward CAD 800/hour by reducing average delivery time to approximately 15 hours/month/client without degrading client value.
+Build Levine Law's governed fintech retainer mandate model by answering the controlling capacity question: how many high-cash-flow fintech retainer mandates can be concurrently sustained without degrading client value, ML1 capacity, scope control, or effective realization.
 
 The operating thesis:
 
-> Keep the $12,000 retainer, narrow the scope, standardize the work, and drive average delivery time toward 15 hours/month/client without degrading value.
+> Define the mandate tiers, narrow the scope, standardize the work, and determine the sustainable concurrent mandate count.
+
+## Mandate Types
+
+| Mandate Type | Monthly Retainer | Scope | Weekly Capacity Limit | Current Status |
+|---|---:|---|---:|---|
+| Tier 1 | CAD 8,000 | To be determined | To be determined | Scope design required |
+| Tier 2 | CAD 12,000 | Core bounded fintech advisory scope | 6 hours/week | Working reference tier |
+| Tier 3 | CAD 20,000 | Same scope envelope as Tier 2, with higher weekly access/capacity | 10 hours/week | Premium capacity tier |
+
+## 2026 Operating Constraint
+
+Through December 31, 2026, LLP-039 is basic bounded-scope only. LL should not
+accept premium adjacent fintech matters into the retainer model during 2026.
+Out-of-scope work may be identified, deferred, referred, or preserved for a
+later separate-scope project, but the 2026 retainer is not a vehicle for crisis
+response, regulatory exams, remediation, launches, jurisdiction expansion,
+securities/tax advice, or embedded compliance work.
 
 ## Strategic Target
 
-| Metric | Target |
-|---|---:|
-| Monthly retainer price | CAD 12,000 |
-| Nominal hourly rate | CAD 480/hour |
-| Implied capacity at nominal rate | 25 hours/month/client |
-| Target delivery time | 15 hours/month/client |
-| Target effective rate | CAD 800/hour |
-| Solo-owner sustainable client count | 3 retainer clients |
-| Annual revenue at 3 clients | CAD 432,000 |
+| Metric | Target / Rule |
+|---|---|
+| Standard mandate set | CAD 8,000 / CAD 12,000 / CAD 20,000 per month |
+| CAD 12,000 mandate capacity | Maximum 6 hours/week/client |
+| CAD 20,000 mandate capacity | Maximum 10 hours/week/client |
+| CAD 8,000 mandate capacity | To be determined during planning |
+| Nominal hourly rate reference | CAD 480/hour |
+| Capacity question | Number and mix of concurrent mandates sustainable by ML1 |
+
+The prior three-client working ceiling applies only to a CAD 12,000/month
+mandate mix. Planning must now test sustainable capacity by mandate mix, because
+a CAD 20,000/month mandate consumes materially more weekly capacity.
 
 ## Core Constraint
 
@@ -62,6 +82,11 @@ The fintech retainer must remain bounded strategic legal advisory. It must not b
 | Workplan | `planning/WORKPLAN.md` | Build sequence and milestones |
 | Skill map | `planning/SKILL_MASTERY_MAP.md` | Capabilities LL must master to deliver and upsell safely |
 | Metrics | `planning/METRICS.md` | Operating measures for price, hours, yield, scope leakage, and concentration |
+| Pricing and capacity protocol | `planning/PRICING_AND_CAPACITY_DECISION_PROTOCOL.md` | Decision rules for accepting, deferring, repricing, or declining mandates |
+| Risk register | `planning/RISK_REGISTER.md` | Capacity, existential-risk, scope-leakage, and pricing risks |
+| 2026 client scope | `planning/CLIENT_SCOPE_2026.md` | Defines which fintech client types are in scope through December 31, 2026 |
+| Rate posture | `planning/RATE_POSTURE_2026_2029.md` | Minimum / middle / maximum rate model through 2029, with CAD 850/hour ceiling |
+| Consolidated model | `planning/CONSOLIDATED_MODEL_2026_2029.md` | Cross-project synthesis for LLP-039, POL-069, LLPRN-26, LLP-013, and HBP-008 |
 
 ## Relationship to Other Projects
 
@@ -78,5 +103,4 @@ ML1 is the sole authority for project approval, scope changes, pricing changes, 
 
 ## Current Status
 
-Initiating. Strategic thesis accepted by ML1 in conversation on 2026-05-06; project artifacts opened for formalization.
-
+Planning. Initiation approved on 2026-05-10. The next planning task is to validate the sustainable concurrent mandate count and the controls required to preserve it.

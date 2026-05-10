@@ -84,7 +84,7 @@ These principles are portfolio-specific to Levine Law and do not constrain Syste
 | LLPRN-23 | Standardized Scope Enables Leverage | LL | Repeatable scoped work enables delegation, automation, templating, and higher realization | Draft |
 | LLPRN-24 | Collections Are Economic Discipline | LL | Collections velocity and receivables control are strategic operating disciplines, not back-office administration | Draft |
 | LLPRN-25 | KPI-Governed Scaling | LL | Scale only against stable operating metrics; growth amplifies the existing model rather than fixing instability | Draft |
-| LLPRN-26 | Bounded Fintech Retainer Model | LL | The $12,000/month fintech retainer is viable only as bounded strategic legal advisory, not an uncapped embedded function | Draft |
+| LLPRN-26 | Bounded Fintech Retainer Model | LL | Fintech retainer mandates are viable only as bounded strategic legal advisory with tiered scope, capacity, and mandate-count controls | Draft |
 
 ---
 

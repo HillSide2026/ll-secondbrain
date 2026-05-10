@@ -4,7 +4,7 @@ title: LL Planning - Metrics
 owner: ML1
 status: draft
 created_date: 2026-05-02
-last_updated: 2026-05-05
+last_updated: 2026-05-10
 tags: [levine-law, 2027, 2028, 2029, metrics, hillside]
 ---
 
@@ -127,8 +127,25 @@ tags: [levine-law, 2027, 2028, 2029, metrics, hillside]
 
 ---
 
+## M-09 — LL Time Investment Gate
+
+| Field | Value |
+|---|---|
+| Metric ID | `ll_time_investment_gate` |
+| SMART Goal | SG-09 |
+| Definition | Owner-level continue / expand / hold / reduce decision for ML1 non-client time invested in LL strategy, marketing, systems, service design, and leverage development |
+| Target | Quarterly score of 8-10 under `LL_TIME_INVESTMENT_BENCHMARKS.md`, with no hard-rule override |
+| Floor | Quarterly score of 4-5 (`Defend`) with no expanded founder investment unless needed to protect existing cash and client obligations |
+| Failure | Quarterly score of 0-3, or any hard-rule override requiring `Pause / Reduce` |
+| Measurement frequency | Quarterly; mandatory annual gate by `2027-12-31` |
+| Measurement owner | ML1 |
+| Reporting | HBP-008 oversight pack; governed by `LL_TIME_INVESTMENT_BENCHMARKS.md` |
+
+---
+
 ## Metric Alignment Note
 
 M-01, M-02, M-03, M-04, and M-08 must be defined jointly with `HBP-002_CASH_FLOW`
-before the Planning to Executing gate is closed. Definitions must be consistent
-across both projects. Any divergence requires ML1 resolution before execution begins.
+before the Planning to Executing gate is closed. M-09 must be read with
+`LL_TIME_INVESTMENT_BENCHMARKS.md`. Definitions must be consistent across both
+projects. Any divergence requires ML1 resolution before execution begins.

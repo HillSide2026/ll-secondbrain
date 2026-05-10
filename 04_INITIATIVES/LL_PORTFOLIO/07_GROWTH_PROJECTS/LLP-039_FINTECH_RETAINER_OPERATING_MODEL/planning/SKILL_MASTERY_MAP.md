@@ -4,7 +4,7 @@ title: LLP-039 Skill Mastery Map
 owner: ML1
 status: draft
 created_date: 2026-05-06
-last_updated: 2026-05-06
+last_updated: 2026-05-10
 tags: [llp-039, skills, fintech, rpaa, fintrac, safeguarding, premium-scope]
 ---
 
@@ -82,7 +82,7 @@ This is a priority premium skill cluster because fintech PSPs that hold, settle,
 
 ## D. Operating-Model Skills
 
-These are internal skills LL must master to make the retainer profitable.
+These are internal skills LL must master to make the mandate mix profitable.
 
 | Skill | Operating Requirement |
 |---|---|
@@ -93,7 +93,7 @@ These are internal skills LL must master to make the retainer profitable.
 | Renewal review | Evaluate each client for yield, behavior, scope discipline, strategic value, and concentration risk |
 | Client education | Teach clients what belongs inside the retainer and what requires separate scope |
 | Knowledge capture | Convert recurring questions into reusable internal playbooks |
-| Effective-rate measurement | Track actual time against retainer price to monitor movement toward CAD 800/hour |
+| Mandate-mix capacity measurement | Track actual time against each mandate type's weekly cap and against total ML1 weekly capacity |
 
 ---
 
@@ -101,9 +101,8 @@ These are internal skills LL must master to make the retainer profitable.
 
 | Phase | Focus | Outcome |
 |---|---|---|
-| Phase 1 | Core retainer triage and short-form advice | Retainer can be delivered safely at 25 hours/month/client |
-| Phase 2 | Template and checklist standardization | Average delivery time begins moving below 20 hours/month/client |
+| Phase 1 | Core retainer triage and short-form advice | CAD 12,000 and CAD 20,000 mandates can be delivered safely inside weekly caps |
+| Phase 2 | Template and checklist standardization | Actual usage trends below promised weekly capacity where possible |
 | Phase 3 | RPAA / FINTRAC / banking premium-scope conversion | Excluded work becomes monetizable rather than absorbed |
 | Phase 4 | Safeguarding and funds-flow deepening | LL can price higher-value PSP funds-flow and safeguarding projects |
 | Phase 5 | Renewal/offboarding discipline | Portfolio remains high-quality despite concentration risk |
-

@@ -4,7 +4,7 @@ title: LL Planning
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-05-05
+last_updated: 2026-05-10
 tags: [levine-law, 2027, 2028, 2029, hillside, project, initiating]
 ---
 
@@ -41,6 +41,8 @@ HBP-008 is the post-HBP-007 operating year. It assumes:
   has been met by late 2026
 - F02 is operational as a primary acquisition channel
 - F03 has produced at least early specialist revenue
+- LLP-039 governs the F03 fintech retainer operating model, including mandate
+  tiers, capacity limits, 2026 scope lock, and the 2026-2029 rate posture
 - Levine Law is ready to activate a first associate delivery layer under a
   contractor-split model
 
@@ -60,6 +62,13 @@ Within this folder:
   `LL_TAX_ADJUSTED_CORPORATE_MODEL_2026_2029.md`.
 - `ANNUAL_PLAN_2028.md` and `ANNUAL_PLAN_2029.md` are horizon artifacts housed
   here so HBP-008 covers `2027-2029` in one oversight folder.
+- LLP-039 is the canonical source for fintech retainer mandate pricing, scope,
+  capacity, and rate posture. HBP-008 may use it as a planning input, but does
+  not override it.
+- `LL_TIME_INVESTMENT_BENCHMARKS.md` governs the higher-level owner question:
+  how much ML1 time LL deserves as a business, and what cash, capacity,
+  channel, leverage, and client-quality evidence must be present before LL
+  receives continued or expanded founder investment.
 - The stage-gate packet in this folder remains primarily `2027`-specific. The
   `2028` and `2029` documents are planning surfaces, not authorization to
   execute those future-year programs automatically.
@@ -122,6 +131,7 @@ planning, but they are not determined by HBP-001.
 - `LL_TAX_ADJUSTED_CORPORATE_MODEL_2026_2029.md` drafted
 - `ANNUAL_PLAN_2028.md` drafted
 - `ANNUAL_PLAN_2029.md` drafted
+- `LL_TIME_INVESTMENT_BENCHMARKS.md` drafted
 - `QA_RECONCILIATION_2026-05-05.md` drafted
 
 `README.md` remains the folder shell and is not itself a stage-gate artifact.

@@ -74,6 +74,11 @@ Retainer and recurring work served by Funnel 3:
 - International fintech entry into Canada (MSB/RPAA triage)
 - Ongoing compliance counsel retainers for regulated operators
 
+F03 retainer pricing, retainer scope, mandate capacity, and 2026 delivery
+constraints are governed by `LLP-039_FINTECH_RETAINER_OPERATING_MODEL`. Funnel 3
+may route qualified opportunities into that model, but does not define the
+retainer operating envelope.
+
 Core offer map must be documented in a canonical artifact before channel activation.
 
 ### 5. Asset Production

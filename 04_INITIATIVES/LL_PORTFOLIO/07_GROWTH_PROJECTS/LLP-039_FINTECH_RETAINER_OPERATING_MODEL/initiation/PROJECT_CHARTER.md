@@ -4,7 +4,7 @@ title: LLP-039 Project Charter
 owner: ML1
 status: draft
 created_date: 2026-05-06
-last_updated: 2026-05-06
+last_updated: 2026-05-10
 tags: [llp-039, charter, fintech, retainer, operating-model]
 ---
 
@@ -16,14 +16,19 @@ Stage: Initiating
 
 ## Problem Statement Summary
 
-Levine Law needs a governed operating model for a CAD 12,000/month fintech retainer that can reach CAD 800/hour effective economics by standardizing delivery and narrowing scope. The model must preserve client value while preventing scope leakage into embedded compliance, crisis response, regulatory exams, launches, and other high-intensity work that should be separately scoped.
+Levine Law needs a governed operating model for CAD 8,000/month, CAD
+12,000/month, and CAD 20,000/month fintech retainer mandates that determines
+how many mandates can be concurrently sustained by mandate mix. The model must
+preserve client value while preventing scope leakage into embedded compliance,
+crisis response, regulatory exams, launches, and other high-intensity work that
+should be separately scoped.
 
 ## Project Objectives
 
 | ID | Objective |
 |---|---|
-| OBJ-01 | Define the client-facing and internal service envelope for the CAD 12,000/month fintech retainer |
-| OBJ-02 | Build operating controls that protect the 25-hour implied capacity and target 15-hour delivery average |
+| OBJ-01 | Define the client-facing and internal service envelope for the three fintech retainer mandate types |
+| OBJ-02 | Determine the sustainable concurrent mandate count under ML1 solo-owner capacity |
 | OBJ-03 | Identify and sequence the skills LL must master to deliver core advisory work and monetize excluded premium work |
 | OBJ-04 | Create metrics for effective rate, scope leakage, overage conversion, renewal quality, and concentration risk |
 | OBJ-05 | Align the model with POL-069 and the Delivery Spine project |
@@ -36,7 +41,7 @@ Levine Law needs a governed operating model for a CAD 12,000/month fintech retai
 | SC-02 | Delivery plan identifies templates, checklists, research assets, and review gates needed to reduce delivery time |
 | SC-03 | Skill mastery map separates core retainer skills from premium adjacent skills |
 | SC-04 | Metrics can determine whether a client remains profitable, strategically useful, and renewable |
-| SC-05 | The model supports three retainer clients without exceeding the managing lawyer's 20-hour/week capacity |
+| SC-05 | The model identifies the number of concurrent retainer mandates LL can sustain without exceeding the managing lawyer's 20-hour/week capacity |
 
 ## Constraints
 
@@ -57,5 +62,4 @@ Levine Law needs a governed operating model for a CAD 12,000/month fintech retai
 
 ## Go Decision
 
-Go - opening initiation stage based on ML1's accepted strategic thesis on 2026-05-06.
-
+Go - initiation approved and planning authorized on 2026-05-10. Planning must validate the sustainable concurrent mandate count before any client-facing activation.

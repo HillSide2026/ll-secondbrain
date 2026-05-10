@@ -4,7 +4,7 @@ title: LL Planning - Success Criteria
 owner: ML1
 status: draft
 created_date: 2026-05-02
-last_updated: 2026-05-05
+last_updated: 2026-05-10
 tags: [levine-law, 2027, 2028, 2029, success-criteria, hillside]
 ---
 
@@ -54,6 +54,14 @@ tags: [levine-law, 2027, 2028, 2029, success-criteria, hillside]
 | ML1 billing cap | No month exceeds $25k | Hard ceiling; delegation is the release valve |
 | Delegation working | Associate running files end-to-end | Not waiting for ML1 instruction on standard files |
 
+## Owner Time Investment Gate
+
+| Criterion | Target | Notes |
+|---|---|---|
+| LL receives continued active founder investment | Quarterly score of 8-10 under `LL_TIME_INVESTMENT_BENCHMARKS.md` with no hard-rule override | Requires cash reliability, controlled ML1 capacity, improving client quality, and channel/leverage evidence |
+| LL avoids unjustified expansion | No expanded founder investment if LL is only in `Defend`, `Hold / Harvest`, or `Pause / Reduce` mode | Existing client delivery continues; speculative business-building time is constrained |
+| 2027 annual gate completed | By `2027-12-31` | Determines whether 2028 expansion, controlled boutique consolidation, or reduced LL investment is justified |
+
 ## Failure Signals
 
 | Signal | Implication |
@@ -63,3 +71,4 @@ tags: [levine-law, 2027, 2028, 2029, success-criteria, hillside]
 | ML1 consistently billing above $25k | Delegation not functioning; review matter eligibility and associate capability |
 | F03 revenue at zero by Q3 2027 | Payments practice is still a content experiment; requires ML1 decision |
 | Total collections below CAD 320,000 at year-end | Leverage model not validated; 2028 decision required |
+| LL requires sustained ML1 capacity breach to hit revenue targets | Continued founder investment is not justified unless scope, pricing, or delivery capacity is reset |
