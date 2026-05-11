@@ -185,7 +185,9 @@ If your organization:
 
 You may consider a structured AML Health Check (TM).
 
-A no-obligation consultation call is available to assess engagement suitability.
+Engagement suitability may be assessed through intake qualification and, where
+appropriate, a lawyer pre-scope call. These calls are for fit and scope only;
+they do not provide legal advice or create a solicitor-client relationship.
 
 ## Closing Line
 Registration begins the regulatory journey.

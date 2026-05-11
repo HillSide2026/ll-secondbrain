@@ -74,16 +74,36 @@ The objective is to provide:
 
 This engagement focuses on regulatory positioning and registration architecture under the framework administered by FINTRAC.
 
-**2. Complimentary Initial Consultation**  
-Prior to engagement, Levine Law offers a no-obligation consultation call.
+**2. Suitability / Pre-Scope Process**
 
-Purpose of this call:
-- High-level review of the client's business model
-- Preliminary discussion of potential MSB triggers
-- Clarification of regulatory exposure areas
-- Determination of engagement suitability
+Prior to engagement, Levine Law may use two non-advice call layers:
 
-This call does not constitute formal legal advice and does not create a solicitor-client relationship unless and until a formal engagement agreement is executed.
+**A. Setter Qualification Call**
+
+Purpose:
+- Confirm basic fit and gating facts.
+- Confirm urgency and decision-maker access.
+- Identify whether the inquiry appears to belong in F03 or should be routed
+  elsewhere.
+- Determine whether a lawyer pre-scope call, paid triage consult, or direct
+  fixed-fee mandate discussion is the next appropriate step.
+
+This call is intake support only. It does not provide legal advice, legal
+conclusions, or matter acceptance.
+
+**B. Lawyer Suitability / Pre-Scope Call**
+
+Purpose:
+- Confirm conflicts and legal-service fit.
+- Clarify the scope shape at a high level.
+- Identify urgency, documentation needs, and likely engagement path.
+- Determine whether paid triage or a fixed-fee mandate is appropriate.
+
+This call does not constitute legal advice and does not create a
+solicitor-client relationship unless and until a formal engagement agreement is
+executed.
+
+Neither call should be marketed as a "free consultation."
 
 **3. Core Scope of Services**  
 The MSB Registration Mandate (TM) includes the following components:
@@ -157,7 +177,8 @@ Professional fees for the MSB Registration Mandate (TM) are determined based on:
 - Ownership and governance structure
 - Urgency of filing
 
-A fixed-fee quote will be provided following the initial consultation call.
+A fixed-fee quote may be provided following the suitability / pre-scope process
+where the matter is appropriate for engagement.
 
 **8. Engagement Outcome**  
 This engagement is designed to deliver:

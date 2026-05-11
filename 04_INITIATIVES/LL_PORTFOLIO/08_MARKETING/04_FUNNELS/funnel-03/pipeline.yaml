@@ -15,15 +15,20 @@ sub_stages:
 
   screened:
     - intake_submitted  # intake/screening form complete
-    - qualified         # passed qualification gates
+    - setter_qualified  # setter confirms basic fit and routing path; no legal advice
+    - lawyer_pre_scope_fit # lawyer confirms conflicts/scope fit and next paid step; no legal advice
 
   booked:
-    - consult_booked    # consult scheduled
-    - consult_confirmed # confirmed; reminder sent
+    - setter_call_booked      # qualification call scheduled
+    - lawyer_pre_scope_booked # suitability/pre-scope call scheduled
+    - paid_triage_booked      # paid consult scheduled
+    - consult_confirmed       # confirmed; reminder sent
 
   consult_complete:
-    - consult_showed    # attended the consult
-    - proposal_sent     # engagement letter or scope sent
+    - setter_call_complete       # attended setter qualification call
+    - lawyer_pre_scope_complete  # attended lawyer pre-scope call
+    - paid_triage_complete       # attended paid triage consult
+    - proposal_sent              # engagement letter or scope sent
 
   retained:
     - retained          # engagement executed
@@ -37,3 +42,4 @@ sub_stages:
 contact_fields:
   - entry_offer         # EO1 | EO2 | EO3 — tag on contact, not a pipeline stage
   - acquisition_source  # content | networking | paid_ads
+  - call_layer          # setter_qualification | lawyer_pre_scope | paid_triage

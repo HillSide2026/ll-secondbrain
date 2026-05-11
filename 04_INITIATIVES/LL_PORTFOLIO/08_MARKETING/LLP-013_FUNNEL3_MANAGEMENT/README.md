@@ -40,12 +40,27 @@ execution sub-stage and requires separate ML1 authorization.
 
 Canonical offer map:
 - Entry offers: `MSB Registration Mandate`, `Suspicious Transaction Triage & STR Filing`, `AML Health Check`
-- Core offers: `Suspicious Transaction Reporting Triage & Playbook`, `MSB Effectiveness Review`, `RPAA Reporting`, `Ongoing AML Counsel Retainer`
+- Core offers: `Suspicious Transaction Reporting Triage & Playbook`, `MSB Effectiveness Review`, `RPAA Reporting`, `Ongoing AML / Payments Regulatory Counsel`, `Specialist Fractional Counsel for payments-regulatory matters`
 
 Canonical audience map:
 - `ICP-03` = F03 payments / regulatory audience
 - Primary = Canada-connected payments operators or managers with live regulatory, compliance, reporting, or payments-structure needs
 - Secondary = international (emerging markets) stablecoin or tokenized-payments operators whose legal/commercial risk is driven by strategic-partnership architecture, even before a Canada nexus exists
+
+F02 / F03 routing rule:
+- Fintech corporate, contracts, governance, financing-readiness, and general
+  commercial legal issues route to Funnel 02 where the F02 cash-flow and
+  qualification gates are met.
+- MSB, RPAA, AML, STR, payments-infrastructure, stablecoin settlement, PSP, and
+  payments-regulatory classification issues route to Funnel 03.
+
+F03 downstream mandate rule:
+- F03 should not acquire as "fractional GC" or general business counsel.
+- "Fractional Counsel" is acceptable when it refers to specialist ongoing
+  payments-regulatory counsel.
+- The goal is to create qualified ongoing mandate opportunities where
+  appropriate, while recognizing that some suitable F03 matters will remain
+  bounded entry offers or discrete regulatory mandates.
 
 Positioning note:
 - For the secondary ICP-03 profile especially, Levine Law offers Bay Street-caliber strategic and regulatory framing at an acceptable price point for operators who would prefer Wall Street, City, or Bay Street counsel but cannot afford those firms.
@@ -98,6 +113,19 @@ Strategic upside to LL:
 - Live publishing, paid channel launch, product promotion, and external
   conversion activity remain gated until separate ML1 authorization at
   `launch`.
+- Draft lead magnet packet:
+  `implementation/lead_magnets/SIX_MSB_CLASSIFICATION_TRIGGERS_DRAFT.md`.
+- Draft free authority guide:
+  `implementation/lead_magnets/CANADIAN_FINTECH_LAW_2026_FREE_GUIDE_DRAFT.md`.
+
+F3 e-book authority asset:
+- `LL Funnel 2026 — Launch Your Payments Business in Canada`
+- Distinct from `Canadian Fintech Law in 2026`.
+- Free for the first three months after release.
+- After the free launch window, revise and post on a separate platform for sale.
+- Planned 2027 update.
+- Current draft concept is referenced in
+  `04_FUNNELS/funnel-03/funnel_02_payments_msb_psp/README.md`.
 
 ## Execution Stage Model
 

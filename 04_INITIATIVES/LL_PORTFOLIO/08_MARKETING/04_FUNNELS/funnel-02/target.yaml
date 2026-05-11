@@ -8,7 +8,7 @@
 
 firmographics:
   geography: Based in or operating in Ontario (or with legal exposure there)
-  revenue_range: $1M–$20M
+  annual_cash_flow_gate: CAD 5M+ unless ML1 exception applies
   structure: Incorporated, multiple shareholders
   industry_focus:
     - Consumer, Food & Agri-business
@@ -33,9 +33,10 @@ operational_characteristics:
 typical_legal_needs:
   - Commercial contracts (supply, distribution, manufacturing)
   - Cross-border agreements (Canada–US focus)
-  - Regulatory and compliance guidance
+  - Bounded regulatory and compliance guidance incidental to corporate or commercial needs
   - Dispute prevention and resolution
   - Corporate structuring and transactions
+  - Fintech corporate, contracts, governance, and financing-readiness issues where the primary issue is not MSB/RPAA/AML/payments-regulatory classification
 
 decision_makers:
   - Owner / Founder
@@ -45,10 +46,11 @@ decision_makers:
 disqualifiers:
   do_not_target:
     - Individuals and personal legal matters
-    - Businesses under $1M revenue
+    - Businesses below CAD 5M annual cash flow unless ML1 grants an exception
     - One-off legal issues with no ongoing need
     - Price shoppers
     - Startups without revenue
+    - MSB, RPAA, AML, STR, payments-infrastructure, stablecoin settlement, PSP, or payments-regulatory classification matters that should route to F03
   red_flags:
     - No clear business model
     - No decision-maker involved in the conversation

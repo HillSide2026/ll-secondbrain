@@ -54,7 +54,12 @@ Excludes:
 
 ## Traffic / Acquisition
 
-- Lead magnets:
+- Free authority assets:
+  - `LL Funnel 2026 — Launch Your Payments Business in Canada` (draft e-book;
+    free for first three months after release, then revised and posted on a
+    separate platform for sale, with a planned 2027 update)
+  - `Canadian Fintech Law in 2026` (free guide; separate asset from the e-book)
+- Paid / promotional lead magnets:
   - funnel3_entryoffer1_leadmagnet_v1.md
   - funnel3_entryoffer2_leadmagnet_v3.md
   - funnel3_entryoffer3_leadmagnet_v1.md
@@ -88,10 +93,15 @@ Bay Street-caliber payments, MSB, and PSP regulatory counsel for serious operato
 | `lead_captured` | `new_lead` | Opted in, no contact made |
 | `lead_captured` | `contacted` | First contact attempted or made |
 | `screened` | `intake_submitted` | Intake/screening form complete |
-| `screened` | `qualified` | Passed qualification gates |
-| `booked` | `consult_booked` | Consult scheduled |
+| `screened` | `setter_qualified` | Setter confirms basic fit and routing path; no legal advice |
+| `screened` | `lawyer_pre_scope_fit` | Lawyer confirms conflicts, scope fit, urgency, and next paid step; no legal advice |
+| `booked` | `setter_call_booked` | Setter qualification call scheduled |
+| `booked` | `lawyer_pre_scope_booked` | Suitability / pre-scope call with lawyer scheduled |
+| `booked` | `paid_triage_booked` | Paid triage consult scheduled |
 | `booked` | `consult_confirmed` | Confirmed; reminder sent |
-| `consult_complete` | `consult_showed` | Attended the consult |
+| `consult_complete` | `setter_call_complete` | Attended setter qualification call |
+| `consult_complete` | `lawyer_pre_scope_complete` | Attended lawyer pre-scope call |
+| `consult_complete` | `paid_triage_complete` | Attended paid triage consult |
 | `consult_complete` | `proposal_sent` | Engagement letter or scope sent |
 | `retained` | `retained` | Engagement executed |
 | `closed_lost` | `unqualified` | Failed qualification gates |
@@ -99,7 +109,22 @@ Bay Street-caliber payments, MSB, and PSP regulatory counsel for serious operato
 | `closed_lost` | `no_decision` | Consult complete, no engagement |
 | `closed_lost` | `lost_to_competitor` | Chose another provider |
 
-Contact fields (not pipeline stages): `entry_offer` (EO1/EO2/EO3), `acquisition_source` (content/networking/paid_ads)
+Contact fields (not pipeline stages): `entry_offer` (EO1/EO2/EO3), `acquisition_source` (content/networking/paid_ads), `call_layer` (setter_qualification/lawyer_pre_scope/paid_triage)
+
+## Call Layer Distinction
+
+- Setter qualification call: intake-support call to confirm fit, gating facts,
+  urgency, decision-maker access, and routing path. No legal advice, no legal
+  conclusions, and no matter acceptance.
+- Lawyer suitability / pre-scope call: short lawyer call to confirm conflicts,
+  legal-service fit, scope shape, urgency, and whether paid triage or a
+  fixed-fee mandate is appropriate. No legal advice and no solicitor-client
+  relationship unless and until an engagement agreement is executed.
+- Paid triage consult: paid diagnostic consultation with a defined regulatory
+  question and a scoped output or decision path.
+
+Neither the setter call nor the lawyer pre-scope call should be marketed as a
+"free consultation."
 
 ## Primary Metrics
 
@@ -158,7 +183,9 @@ Stages: booked → consult_complete → retained
   - Suspicious Transaction Reporting Triage & Playbook
   - MSB Effectiveness Review
   - RPAA Reporting
-  - Ongoing AML Counsel Retainer
+  - Ongoing AML / Payments Regulatory Counsel
+  - Fractional Counsel for payments-regulatory matters where the mandate
+    supports an ongoing relationship
 - Solutions (as applicable):
   - MSB_INTAKE_AND_REGISTRATION
   - FINTRAC_RESPONSE
@@ -176,7 +203,21 @@ Stages: booked → consult_complete → retained
 
 ## Planning Decisions
 
-- **2026-04-01 — No bundled campaign with Funnel 01:** Funnel 03 (payments/regulatory) and Funnel 01 (fractional general counsel) target different ICPs with different purchase triggers. Campaigns must remain separate. Fractional counsel is an upsell path, not an acquisition offer for this funnel.
+- **2026-04-01 — No bundled campaign with Funnel 01:** Funnel 03
+  (payments/regulatory) and Funnel 01 (general corporate intake) target
+  different ICPs with different purchase triggers. Campaigns must remain
+  separate. F03 should not acquire as "fractional GC" or general business
+  counsel, although "Fractional Counsel" is acceptable for specialist ongoing
+  payments-regulatory counsel where the mandate supports it.
+- **2026-05-11 — Ongoing mandate rule:** The goal of F03 is to create qualified
+  ongoing counsel opportunities where appropriate. F03 cannot insist that every
+  engagement become an ongoing mandate; entry offers and discrete regulatory
+  mandates remain valid where the client need is bounded.
+- **2026-05-11 — F02 / F03 routing rule:** fintech corporate, contracts,
+  governance, financing-readiness, and general commercial legal issues route to
+  Funnel 02 where the F02 cash-flow and qualification gates are met. MSB, RPAA,
+  AML, STR, payments-infrastructure, stablecoin settlement, PSP, and
+  payments-regulatory classification issues route to Funnel 03.
 
 ## Compliance Constraints / Disclaimers
 

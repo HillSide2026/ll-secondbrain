@@ -31,9 +31,9 @@ Stage: Planning
 - Define and lock the Funnel 3 ICP as ICP-03: the F03 payments / regulatory audience.
 - Define the primary ICP-03 profile: Canada-connected payments operators or managers with live regulatory, compliance, reporting, or payments-structure needs.
 - Define the secondary ICP-03 profile: international (emerging markets) stablecoin or tokenized-payments operators whose legal/commercial risk is driven by strategic-partnership architecture, even before a Canada nexus exists.
-- Confirm positioning claim: Levine Law as GTA's specialist payments regulatory counsel for operator-side MSB, RPAA, AML, and adjacent payment-structuring work — not a fractional GC, not a full-service firm. Tokenized-payment matters are adjacent and bounded, not a standalone securities lane.
+- Confirm positioning claim: Levine Law as GTA's specialist payments regulatory counsel for operator-side MSB, RPAA, AML, and adjacent payment-structuring work — not a general fractional GC and not a full-service firm. "Fractional Counsel" remains acceptable when used for specialist ongoing payments-regulatory counsel where the mandate supports it. Tokenized-payment matters are adjacent and bounded, not a standalone securities lane.
 - Confirm value proposition claim: Bay Street-caliber strategic and regulatory judgment at an acceptable price point for serious operators who cannot support major-firm pricing.
-- Define the competitive white space explicitly: no GTA firm currently holds the "specialist payments regulatory + fractional GC" position. Funnel 3 exists to claim it.
+- Define the competitive white space explicitly: no GTA firm currently holds the specialist payments regulatory counsel position for operators that may need discrete entry work, recurring regulatory counsel, or specialist Fractional Counsel over time. Funnel 3 exists to claim that specialist position without acquiring as general fractional GC.
 - Record the internal strategic upside of the secondary profile explicitly: access to market information and practice-skill development in tokenized-payments and strategic-partnership architecture matters.
 
 ### 2. Channel Architecture
@@ -73,11 +73,17 @@ Retainer and recurring work served by Funnel 3:
 - Embedded finance regulatory structuring
 - International fintech entry into Canada (MSB/RPAA triage)
 - Ongoing compliance counsel retainers for regulated operators
+- Specialist Fractional Counsel for payments-regulatory matters where the client
+  need supports an ongoing relationship
 
 F03 retainer pricing, retainer scope, mandate capacity, and 2026 delivery
 constraints are governed by `LLP-039_FINTECH_RETAINER_OPERATING_MODEL`. Funnel 3
 may route qualified opportunities into that model, but does not define the
 retainer operating envelope.
+
+F03 is designed to create qualified ongoing mandate opportunities where
+appropriate, but it must also accept that some suitable F03 matters will remain
+bounded entry offers or discrete regulatory mandates.
 
 Core offer map must be documented in a canonical artifact before channel activation.
 

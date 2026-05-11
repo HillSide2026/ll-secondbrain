@@ -15,8 +15,8 @@ tags: [marketing, funnel, legacy]
 This folder name reflects an older funnel numbering model.
 
 Current canonical rule:
-- Funnel 02 = corporate law services for growing businesses with more than
-  `$1M` annual cash flow
+- Funnel 02 = corporate law services for growing businesses with at least
+  `CAD 5M` annual cash flow, unless ML1 grants an exception
 - Funnel 03 = payments / MSB / PSP regulatory counsel
 
 So the assets in this folder should now be interpreted as legacy
@@ -25,7 +25,7 @@ definition of Funnel 02.
 
 ## Operational Snapshot
 
-Acquisition: Book: "LL Funnel 2026 — Launch Your Payments Business in Canada", Blog / thought leadership (e.g., Stablecoins, payments regulation)  
+Acquisition: E-book: "LL Funnel 2026 — Launch Your Payments Business in Canada", Blog / thought leadership (e.g., Stablecoins, payments regulation)  
 Intake & conversion tracking system: Go High Level (GHL)  
 Entry offers:
 - MSB Registration
@@ -81,3 +81,14 @@ Public content is informational only. Formal legal advice begins after engagemen
 
 ### Internal North Star
 The book earns trust through friendliness. The ecosystem earns authority through discernment.
+
+## E-book Lifecycle
+
+`LL Funnel 2026 — Launch Your Payments Business in Canada` is a distinct F3
+authority asset. It is not the same asset as `Canadian Fintech Law in 2026`.
+
+Lifecycle:
+- free for the first three months after release
+- revised after the free launch window
+- posted on a separate platform for sale after revision
+- updated again in 2027

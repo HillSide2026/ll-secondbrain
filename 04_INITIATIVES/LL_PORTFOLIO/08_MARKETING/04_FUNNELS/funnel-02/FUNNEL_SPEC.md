@@ -17,8 +17,9 @@ tags: []
 
 ## Purpose / Role
 
-Corporate-law acquisition path for growing businesses with more than `$1M`
-annual cash flow, using a preventative paid diagnostic as the entry point.
+Corporate-law acquisition path for growing businesses with at least `CAD 5M`
+annual cash flow, unless ML1 grants an exception, using a preventative paid
+diagnostic as the entry point.
 
 ## Funnel Distinction
 
@@ -37,7 +38,7 @@ consideration and inquiry before conversion handoff.
 ## Target ICP (Must Match Positioning)
 
 - Ontario-based operating businesses
-- more than `$1M` annual cash flow
+- at least `CAD 5M` annual cash flow unless ML1 grants an exception
 - 5-30 employees
 - 2+ years in operation
 - Accountant involved
@@ -71,7 +72,7 @@ Secondary planning hypothesis (research only):
 
 ## Qualification Gates
 
-- annual_cash_flow_min: $1M
+- annual_cash_flow_min: CAD 5M unless ML1 exception applies
 - employee_min: 5
 - years_in_operation_min: 2
 - ontario_incorporation_required: true
@@ -95,6 +96,14 @@ Required documents:
 
 Structured corporate-law and governance assessment for operating companies that
 have outgrown their original setup.
+
+## F02 / F03 Routing Rule
+
+- Fintech corporate, contracts, governance, financing-readiness, and general
+  commercial legal issues route to Funnel 02 where the F02 cash-flow and
+  qualification gates are met.
+- MSB, RPAA, AML, STR, payments-infrastructure, stablecoin settlement, PSP, and
+  payments-regulatory classification issues route to Funnel 03.
 
 ## Conversion Event Definition
 

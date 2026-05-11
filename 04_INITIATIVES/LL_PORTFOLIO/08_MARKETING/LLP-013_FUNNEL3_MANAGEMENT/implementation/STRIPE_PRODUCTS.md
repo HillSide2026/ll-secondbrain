@@ -34,8 +34,12 @@ Products created in Stripe on 2026-04-01.
   list price anchors perceived value; expected to be sold at heavily discounted
   prices.
 - Pre-entry consults are triage consultations that lead into the F03 entry
-  offer (regulatory advisory retainer). The $859 list price anchors
-  consultation value; expected to be heavily discounted to drive bookings.
+  offer or fixed-fee mandate. The $859 list price anchors consultation value.
+  Any discounting should preserve the distinction between non-advice
+  suitability calls and paid diagnostic triage.
+- Setter qualification calls and lawyer suitability / pre-scope calls are not
+  Stripe products and should not be marketed as free consultations. They are
+  intake and scoping steps only.
 - Each consultation maps to a specific F03 service entry point:
   - AML Health Check Consult → AML program review for MSBs and regulated fintechs
   - STR Triage Consult → suspicious transaction reporting analysis

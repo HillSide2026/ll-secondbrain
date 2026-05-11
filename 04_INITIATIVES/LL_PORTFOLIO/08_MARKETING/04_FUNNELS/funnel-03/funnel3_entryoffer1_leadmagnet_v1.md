@@ -178,16 +178,22 @@ The objective is to provide:
 
 This engagement focuses on regulatory positioning and registration architecture under the framework administered by FINTRAC.
 
-### 2. Complimentary Initial Consultation
-Prior to engagement, Levine Law offers a no-obligation consultation call.
+### 2. Suitability / Pre-Scope Process
+Prior to engagement, Levine Law may use two non-advice call layers.
 
-Purpose of this call:
-- High-level review of the client's business model
-- Preliminary discussion of potential MSB triggers
-- Clarification of regulatory exposure areas
-- Determination of engagement suitability
+Setter qualification call:
+- Confirm basic fit and gating facts.
+- Confirm urgency and decision-maker access.
+- Identify whether the inquiry belongs in F03 or should be routed elsewhere.
 
-This call does not constitute formal legal advice and does not create a solicitor-client relationship unless and until a formal engagement agreement is executed.
+Lawyer suitability / pre-scope call:
+- Confirm conflicts and legal-service fit.
+- Clarify scope shape, urgency, and documentation needs.
+- Determine whether paid triage or a fixed-fee mandate is appropriate.
+
+Neither call provides legal advice, legal conclusions, or matter acceptance. No
+solicitor-client relationship is created unless and until a formal engagement
+agreement is executed. Neither call should be marketed as a "free consultation."
 
 ### 3. Core Scope of Services
 The MSB Registration Mandate (TM) includes the following components:
@@ -261,7 +267,8 @@ Professional fees for the MSB Registration Mandate (TM) are determined based on:
 - Ownership and governance structure
 - Urgency of filing
 
-A fixed-fee quote will be provided following the initial consultation call.
+A fixed-fee quote may be provided following the suitability / pre-scope process
+where the matter is appropriate for engagement.
 
 ### 8. Engagement Outcome
 This engagement is designed to deliver:

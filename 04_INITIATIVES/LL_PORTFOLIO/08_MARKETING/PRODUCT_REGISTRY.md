@@ -29,6 +29,7 @@ tags: [product-registry, funnel-01, funnel-02, funnel-03, pricing]
 | 8 | Whitepaper: Tokenization in Canadian Capital Markets | $97 | — | F3 | PDF whitepaper | Fintech / token issuers with Canadian capital markets exposure | Not documented in current F3 content files |
 | 9 | Six (6) STR Mistakes That Create Unnecessary Regulatory Risk | $97 | — | F3 | PDF or digital guide | Canadian MSBs / PSPs with STR reporting obligations | Not documented in current F3 content files |
 | 10 | Six (6) Hidden MSB Triggers in Fintech & Crypto | $97 | — | F3 | PDF or digital guide | Fintech and crypto operators with potential unregistered MSB exposure | Not documented in current F3 content files |
+| 11 | LL Funnel 2026 — Launch Your Payments Business in Canada | Free for first 3 months; paid platform version after revision | — | F3 | E-book | Payments, MSB, PSP, stablecoin, and embedded-finance operators seeking a Canada-entry/regulatory-readiness mental model | Draft concept documented in legacy payments folder; distinct from `Canadian Fintech Law in 2026`; requires lifecycle tracking |
 
 ---
 
@@ -95,6 +96,18 @@ Products 8–10 are $97 PDF/digital products not currently documented in any F3 
 These three products represent a parallel low-ticket F3 entry layer (similar to F1's Product A), and may benefit from the same GHL + Stripe build approach used in F1.
 
 **No action taken** — pending ML1 confirmation of whether these are approved for the F3 product stack.
+
+Product 11 is a distinct e-book authority asset, not the same asset as
+`Canadian Fintech Law in 2026`.
+
+Lifecycle:
+- launch version: free for the first three months after release
+- revision: revise after the free launch window
+- paid platform version: post revised version on a separate platform for sale
+- planned update: update again in 2027
+
+This e-book should sit at the free authority / trust-building layer of F3 during
+the launch window, then become a paid external-platform asset after revision.
 
 ---
 

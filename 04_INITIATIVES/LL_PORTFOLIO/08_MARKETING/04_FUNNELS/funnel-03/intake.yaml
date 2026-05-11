@@ -4,5 +4,19 @@ gates:
   revenue_min: TBD
   employee_min: TBD
 routing:
-  qualified: book_consult
+  qualified: book_setter_qualification_call
+  setter_qualified: book_lawyer_pre_scope_call_or_paid_triage
+  lawyer_pre_scope_fit: paid_triage_or_fixed_fee_mandate
   unqualified: decline_or_refer
+
+call_layers:
+  setter_qualification_call:
+    owner: setter_or_intake_support
+    purpose: Confirm fit, basic gating facts, urgency, decision-maker access, and routing path.
+    advice_boundary: No legal advice, no legal conclusions, no matter acceptance.
+    public_positioning: Intake qualification call, not a free consultation.
+  lawyer_pre_scope_call:
+    owner: ML1_or_lawyer
+    purpose: Confirm conflicts, legal-service fit, scope shape, urgency, and whether paid triage or a fixed-fee mandate is appropriate.
+    advice_boundary: No legal advice and no solicitor-client relationship unless and until an engagement agreement is executed.
+    public_positioning: Suitability / pre-scope call, not a marketed free consultation.

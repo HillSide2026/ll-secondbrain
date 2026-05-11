@@ -17,7 +17,10 @@ tags: []
 - Funnel 02 is the intended structural replacement: paid Corporate Health Check diagnostic, higher-quality clients, lower noise, and greater strategic leverage.
 - The core 2026 offer stack is Corporate Health Check -> blended Fractional Counsel.
 - The Corporate Health Check may include bounded regulatory review where the client's facts require it.
-- Funnel 03 builds vertical authority in regulated payments space and should feed payments-specific matters into the same ongoing counsel layer where appropriate.
+- Funnel 03 builds vertical authority in regulated payments space and should
+  feed payments-specific matters into ongoing counsel / specialist Fractional
+  Counsel where appropriate, without requiring every suitable matter to become
+  an ongoing mandate.
 
 ## Channel Strategy
 
@@ -35,13 +38,15 @@ tags: []
 |--------|-------------|------------|
 | F01 | Fractional Counsel consult | Ongoing retainer |
 | F02 | Paid Corporate Health Check | Remediation + Fractional Counsel (industry-agnostic base layer, with bounded regulatory review where relevant) |
-| F03 | MSB/AML entry services | Ongoing payments counsel within broader Fractional Counsel layer for deeper or standalone regulatory matters |
+| F03 | MSB/AML entry services | Ongoing payments counsel / specialist Fractional Counsel where appropriate, with discrete regulatory mandates still valid |
 
 ## Funnel Portfolio Intent
 
 - F01 sustains qualified intake and has already proven real revenue contribution, while the transition to preventative positioning is built.
 - F02 becomes the primary corporate entry path through paid diagnostics and anchors the core 2026 offer stack.
-- F03 grows vertical authority and conversion for payments regulatory work, feeding specialist matters into the broader ongoing counsel layer.
+- F03 grows vertical authority and conversion for payments regulatory work,
+  with a preference for qualified ongoing mandates while preserving discrete
+  entry offers and bounded regulatory mandates where that is the correct fit.
 
 ## F01 Transition Rule
 

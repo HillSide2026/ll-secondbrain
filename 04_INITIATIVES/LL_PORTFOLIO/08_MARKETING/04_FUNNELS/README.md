@@ -45,12 +45,20 @@ ML1 approval is required for scope, changes, and any execution commitments.
 ## Canonical Funnel Map
 
 - `Funnel 01`: reactive Toronto corporate-law intake
-- `Funnel 02`: corporate law services for growing businesses with more than
-  `$1M` annual cash flow
+- `Funnel 02`: corporate law services for growing businesses with at least
+  `CAD 5M` annual cash flow, unless ML1 grants an exception
 - `Funnel 03`: payments / MSB / PSP regulatory counsel
 
 Each funnel must remain structurally distinct even where assets, channels, or
 qualification logic overlap.
+
+## F02 / F03 Routing Rule
+
+- Fintech corporate, contracts, governance, financing-readiness, and general
+  commercial legal issues route to `Funnel 02` where the F02 cash-flow and
+  qualification gates are met.
+- MSB, RPAA, AML, STR, payments-infrastructure, stablecoin settlement, PSP, and
+  payments-regulatory classification issues route to `Funnel 03`.
 
 ## Last ML1 Review Date
 
