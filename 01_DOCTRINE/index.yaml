@@ -595,6 +595,12 @@ policies:
   version: '1.0'
   status: draft
   history: []
+- id: POL-066
+  title: Lexaro Integration Scope Policy
+  path: 01_DOCTRINE/03_POLICIES/POL-066_Lexaro_Integration_Scope_Policy.md
+  version: '1.0'
+  status: draft
+  history: []
 - id: POL-051
   title: LL Website Information Architecture Policy
   path: 01_DOCTRINE/03_POLICIES/POL-051_LL_Website_Information_Architecture_Policy.md
@@ -728,6 +734,13 @@ protocols:
   status: approved
   policy: PRO-019
   history: []
+- id: PRO-026
+  title: Lexaro Mode 1 Integration Protocol
+  path: 01_DOCTRINE/05_PROTOCOLS/PRO-026_Lexaro_Mode1_Integration_Protocol.md
+  version: '1.0'
+  status: draft
+  policy: POL-066
+  history: []
 - id: 01_doctrine__protocols__readme_md
   title: Protocols (Level 4)
   path: 01_DOCTRINE/05_PROTOCOLS/README.md
@@ -763,9 +776,15 @@ doctrine:
 - id: INV-0011
   title: 'INV-0011: Integration Doctrine (External Platform Governance)'
   path: 01_DOCTRINE/01_INVARIANTS/INV-0011-integration-doctrine.md
-  version: '1.0'
+  version: '1.1'
   status: approved
-  history: []
+  history:
+  - version: '1.0'
+    date: '2026-03-28'
+    note: Original approval
+  - version: '1.1'
+    date: '2026-05-12'
+    note: Added Lexaro as read-only Tier-1 system; added §3.7; referenced POL-066 and PRO-026
 - id: INV-0013
   title: 'INV-0013: Risk Model Doctrine (Economic, Execution, Operational, Financial, Strategic)'
   path: 01_DOCTRINE/01_INVARIANTS/INV-0013-risk-model.md
@@ -843,6 +862,30 @@ doctrine:
   path: 01_DOCTRINE/04_CAPABILITY_PROFILES/CAP-005-execution-bridge-integration-layer.md
   version: '1.0'
   status: active
+  history: []
+- id: lexaro.list_matters
+  title: 'Capability Profile: Lexaro.ListMatters'
+  path: 01_DOCTRINE/04_CAPABILITY_PROFILES/lexaro.list_matters.md
+  version: '0.1'
+  status: draft
+  history: []
+- id: lexaro.list_clients
+  title: 'Capability Profile: Lexaro.ListClients'
+  path: 01_DOCTRINE/04_CAPABILITY_PROFILES/lexaro.list_clients.md
+  version: '0.1'
+  status: draft
+  history: []
+- id: lexaro.list_tasks
+  title: 'Capability Profile: Lexaro.ListTasks'
+  path: 01_DOCTRINE/04_CAPABILITY_PROFILES/lexaro.list_tasks.md
+  version: '0.1'
+  status: draft
+  history: []
+- id: lexaro.list_documents
+  title: 'Capability Profile: Lexaro.ListDocuments'
+  path: 01_DOCTRINE/04_CAPABILITY_PROFILES/lexaro.list_documents.md
+  version: '0.1'
+  status: draft
   history: []
 - id: 01_doctrine__03_capability_profiles__readme_md
   title: Capability Profiles

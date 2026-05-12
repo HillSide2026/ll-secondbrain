@@ -5,9 +5,9 @@ owner: ML1
 status: approved
 approved_by: ML1
 approved_date: 2026-03-28
-version: 1.0
+version: 1.1
 created_date: 2026-02-27
-last_updated: 2026-03-28
+last_updated: 2026-05-12
 tags: [integration, governance, execution]
 
 effective_date: 2026-03-28
@@ -62,6 +62,7 @@ The following systems are classified as Tier-1 External Integration Points:
 | **Clio** | Practice management, matter metadata, matter_id authority | Tier-1 | Permitted for matter identity verification, matter status retrieval, client-of-record lookup | Write only for matter lifecycle signals (status updates, closed/archived flagging) via gated protocols |
 | **Asana** | Task management, project workflow coordination, external task tracking | Tier-1 | Permitted for task status, project progress monitoring, deadline tracking | Write only to designated project/task boards with audit logging |
 | **Canva** | Brand asset templates, design templates, marketing collateral | Tier-1 | Permitted for template catalog enumeration, version tracking | Write only to designated template repositories with brand compliance verification |
+| **Lexaro** | Practice management under evaluation (potential Clio replacement) — matter, client, task, document metadata | Tier-1 | Permitted for read-only observation of matters, clients, tasks, and document metadata via `/api/external/v1/*` | **Read-only. No writes permitted under any mode.** (Mode 1 only) |
 
 ### 2.3 Integration Tiers Defined
 
@@ -210,6 +211,34 @@ All template changes are staged locally, verified against brand policy (POL-047,
 
 ---
 
+### 3.7 Lexaro (Tier-1, Read-Only)
+
+#### Read Permissions
+
+Permitted for:
+
+- Matter metadata retrieval (name, status, client reference, dates, identifiers)
+- Client and contact metadata retrieval
+- Task metadata and task state observation
+- Document metadata and document index retrieval (metadata only; no content download)
+- Document folder structure enumeration
+- Task reminders and deadlines-due-soon observation
+
+All reads must use `GET` requests against `/api/external/v1/*` endpoints.
+
+#### Write Permissions
+
+**Prohibited in all modes.** ML2 may not write to Lexaro under any circumstance.
+
+This includes but is not limited to: creating records, updating records, deleting records,
+changing matter or task status, uploading documents, writing notes, writing comments,
+triggering workflows, marking anything complete, creating calendar events, modifying deadlines,
+or sending communications.
+
+No write method may exist in the Lexaro integration layer. The prohibition is enforced in code.
+
+---
+
 ## 4. Prohibited Behaviors
 
 - Overwriting canonical ML2 artifacts
@@ -260,6 +289,8 @@ This invariant is complemented by integration-specific policies and protocols:
 | POL-045 | Asana Integration Safeguard Policy |
 | POL-046 | Canva Template Enforcement Policy |
 | POL-059 | Integration Control Policy |
+| POL-066 | Lexaro Integration Scope Policy |
+| PRO-026 | Lexaro Mode 1 Integration Protocol |
 | PRO-014 | Inbox Governance Protocol (Gmail) |
 | PRO-020 | LL Matters SharePoint Protocol |
 | PRO-021 | LL Matters Folder Protocol |
