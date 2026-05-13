@@ -4,7 +4,7 @@ title: LL_PORTFOLIO — Levine Law Workstream Registry
 owner: ML1
 status: draft
 created_date: 2026-02-08
-last_updated: 2026-04-03
+last_updated: 2026-05-13
 tags: []
 ---
 
@@ -149,12 +149,12 @@ the Planning -> Executing gate decision, it should be merged or removed.
 ```
 LL_PORTFOLIO/
 ├── README.md                    ← You are here (authoritative)
-├── 01_ACCOUNTING/               # Historical fact
+├── 01_ACCOUNTING/               # Accounting: bookkeeping, management accounting, budgeting, financial risk, cash/collections
 ├── 02_PRACTICE_AREAS/           # Durable legal operating knowledge
 ├── 03_FIRM_OPERATIONS/          # How the firm runs
 ├── 04_RISK/                     # Defensive clarity
 ├── 05_MATTER_DOCKETING/         # Delivery overlay for matters
-├── 06_FINANCIAL_PORTFOLIO/      # Models & constraints (not decisions)
+├── 06_FINANCIAL_PORTFOLIO/      # Finance: capital, liabilities, strategic banking, tax interfaces, transactions
 ├── 07_GROWTH_PROJECTS/          # Change and evolution
 ├── 08_MARKETING/                # Pre-matter pipeline (leads -> conversion; handoff enters fulfillment onboarding)
 └── 09_SERVICE_MANAGEMENT/       # Service tier management across matters
@@ -181,20 +181,22 @@ program directories:
 
 ## Portfolio Definitions
 
-### 01_ACCOUNTING (Historical Fact)
+### 01_ACCOUNTING (Accounting)
 
-**Purpose:** Record what already happened.
+**Purpose:** Govern accounting across bookkeeping, management accounting, budgeting, financial risk, and cash/collections.
 
-**Characteristics:** Backward-looking, factual, non-interpretive
+**Characteristics:** Layered accounting domain; each artifact must label whether it is bookkeeping, management accounting, budgeting, financial risk, or cash/collections.
 
 | ALLOWED | PROHIBITED |
 |---------|------------|
-| Bookkeeping records | Forecasting |
-| Historical financial statements | Scenario modeling |
-| Reconciliations | Pricing logic |
-| Invoices, payments, expense logs | Recommendations, optimization |
+| Bookkeeping records | Unlabelled mixing of accounting layers |
+| Historical financial statements | Treating management accounting as bookkeeping |
+| Reconciliations | Pricing decisions without ML1 approval |
+| Invoices, payments, expense logs | Recommendations or optimization without explicit authority |
+| Management accounting: revenue security, recurring vs one-off, revenue timing, trust-funded vs unsecured AR, matter-level profitability, lawyer production, WIP conversion, collection reliability | Unsupported assumptions about the future |
+| Budgeting boundaries and controls | Treating budget outputs as operating decisions |
 
-**Rule:** If it could influence a future decision, it DOES NOT belong here.
+**Rule:** Accounting artifacts may inform decisions, but bookkeeping, management accounting, budgeting, financial risk, and cash/collections must be labelled and not collapsed into one another.
 
 ---
 
@@ -248,24 +250,28 @@ program directories:
 
 ---
 
-### 06_FINANCIAL_PORTFOLIO (Models & Constraints)
+### 06_FINANCIAL_PORTFOLIO (Finance)
 
-**Purpose:** Financial visibility and modeling WITHOUT decision authority.
+**Purpose:** Govern non-operating finance matters: capital, liabilities, strategic banking, tax-planning interfaces, major asset/liability decisions, investment/reserve policy, corporate finance, acquisition financing, and partner/shareholder distribution structures.
 
-**Characteristics:** Analytical, assumption-bound, advisory only
+**Characteristics:** Strategic finance domain. This is distinct from Accounting, which governs bookkeeping, management accounting, budgeting, financial risk, and cash/collections.
 
 | ALLOWED | PROHIBITED |
 |---------|------------|
-| Revenue and pricing frameworks | Setting prices |
-| Unit economics | Approving discounts |
-| Cost models | Declaring profitability |
-| Scenario and sensitivity analysis | Auto-feeding outputs into operations/sales |
-| Financial constraints (e.g., margin floors) | Treating models as decisions |
+| External financing, including shareholder funding | Bookkeeping records |
+| Debt facilities, including credit cards and credit lines | Management accounting revenue classification |
+| Tax-planning interfaces, including pension and health insurance | Operating cash/collections workflow |
+| Major asset/liability decisions, including leases | Matter-level WIP conversion analysis |
+| Strategic banking relationships | Budget baseline control unless expressly cross-referenced |
+| Investment / reserve policy | Treating finance models as decisions |
+| Corporate finance decisions, including property acquisition through LawCo | Auto-feeding outputs into operations or sales |
+| M&A or acquisition financing, including buying a book of business |  |
+| Partner/shareholder distributions, including recruiting a lawyer with a book of business |  |
 
 **Critical Boundary:**
-- Accounting = facts
-- Financial Portfolio = models
-- **They must never be mixed.**
+- Accounting governs the operating money system.
+- Finance governs capital, balance-sheet structure, strategic banking, tax interfaces, and major transactions.
+- Finance artifacts are advisory unless ML1 approves a specific decision.
 
 ---
 

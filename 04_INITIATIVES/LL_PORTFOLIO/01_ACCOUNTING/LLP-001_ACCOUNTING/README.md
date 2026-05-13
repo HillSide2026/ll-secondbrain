@@ -22,6 +22,7 @@ Govern the accounting fact layer for Levine Law so booked transactions, reconcil
 - Reconciliations and variance capture against booked facts
 - Invoices, payments, expense logs, and supporting schedules
 - Boundaries and handoffs from accounting facts to downstream model consumers
+- Management accounting classifications where they are clearly labelled as internal analysis, including revenue security, recurring vs one-off revenue, revenue timing, trust-funded revenue vs unsecured AR, matter-level profitability, lawyer production, WIP conversion, and collection reliability
 
 ### Out of Scope
 
@@ -29,9 +30,12 @@ Govern the accounting fact layer for Levine Law so booked transactions, reconcil
 - Pricing decisions
 - Recommendations or optimization logic
 - Treating accounting records as authority for strategic decisions without ML1 review
+- Collapsing bookkeeping, management accounting, and budgeting into a single undifferentiated layer
 
 ## Relevant Artifacts
 
+- `ACTUALS_EVIDENCE_INDEX_2026_JAN_MAY.md`
+- `management_accounting/REVENUE_TIMING_SECURITY_TAXONOMY.md`
 - `initiation/PROJECT_CHARTER.md`
 - `initiation/PROBLEM_STATEMENT.md`
 - `initiation/SUCCESS_CRITERIA.md`

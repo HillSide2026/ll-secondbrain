@@ -1,19 +1,83 @@
 ---
 id: llp-002_budget_2026
-title: LL Budget 2026 — Assumptions and Scenarios
+title: LL Budget 2026 — Approved Base Case and Scenarios
 owner: ML1
 status: draft
 created_date: 2025-11-25
 last_updated: 2026-05-13
-source: 2026 LAWCORP BUDGET Scenario 1 - Assumption.pdf
+<<<<<<< HEAD
+source: 2026 LAWCORP BUDGET Scenario 1 and Dec. 2025 / Jan. 2026 Joy Ong budgeting emails
+=======
+source: 2026 LAWCORP BUDGET Scenario 1 and Dec. 2025 / Jan. 2026 Joy Ong budgeting emails
+>>>>>>> 1db9e7c4 (Clarify LL accounting and finance architecture)
 tags: [budget, financial, 2026]
 ---
 
-# LL Budget 2026 — Assumptions and Scenarios
+# LL Budget 2026 — Approved Base Case and Scenarios
 
 Source document date: 2025-11-25
 
 ---
+
+## Budget Model Foundation
+
+The foundation of the 2026 budget model is the **margin-calibrated base case**
+approved in the December 2025 budgeting exchange with Joy / Jocelyn Ong.
+
+The revenue-based scenario matrix and the margin-calibrated base case are not
+separate budgets. They are two views of the same budget model:
+
+- the scenario matrix tests different revenue and cost assumptions;
+- the margin-calibrated base case solves backward from covered owner
+  compensation and target profit margin to required revenue;
+- the Game 2026 scorecards translate the approved base case into weekly WIP
+  and monthly cash collection controls.
+
+## Approved Base Case — Margin-Calibrated Budget
+
+The approved/base-case foundation is:
+
+| Base-case item | Amount / assumption |
+|---|---:|
+| Total operating expenses, including ML1 salary | `CAD 191,567` |
+| Target profit margin | `20%` |
+| Required revenue | `CAD 239,458.75` |
+| Projected profit / base-case margin | `CAD 47,891.75` |
+
+Interpretation:
+
+- ML1's basic salary is covered.
+- Profit remains stable at the target margin.
+- Additional legal work may be handled primarily by an associate.
+- Associate cost is included under production / direct costs as variable
+  revenue-producing cost, not as an immediate fixed payroll commitment.
+- Freelance clerk cost is treated as an operating / outsourced expense unless
+  directly billable to specific matters.
+
+This base case should be treated as the starting point for 2026 budget
+analysis. The scenario matrix below remains useful as sensitivity analysis, but
+the margin-calibrated base case is the approved foundation.
+
+The approved base case remains the operative baseline unless ML1 records a
+specific reason, explanation, and justification for using a different baseline.
+Sensitivity scenarios may inform review, but they do not replace the approved
+baseline by implication.
+
+## Game 2026 Operating Control Layer
+
+The Game 2026 tracking layer translates the approved base case into operating
+controls:
+
+| Control | Target |
+|---|---:|
+| Annual cash collection target | `CAD 250,000` |
+| Monthly cash benchmark | approximately `CAD 20,800` |
+| Weekly WIP target | `CAD 5,000` |
+| Pipeline / coverage rule | maintain approximately `CAD 40,000-60,000` in active matters / WIP coverage |
+
+The weekly WIP and monthly cash scorecards are control artifacts. They do not
+replace the budget model; they are used to monitor whether the firm is staying
+on track against the approved base-case economics.
 
 ## Budget Assumptions by Scenario
 
