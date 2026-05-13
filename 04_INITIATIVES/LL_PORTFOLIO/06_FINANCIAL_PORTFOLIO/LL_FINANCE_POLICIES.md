@@ -25,27 +25,47 @@ Policies are different from principles and invariants:
 
 ## Current Policy Status
 
-No finance policies are approved unless expressly marked approved by ML1.
+Finance policies are included only when expressly approved or separately articulated by ML1.
 
-The items below are draft policy candidates derived from current finance principles and invariants. They require ML1 review before being treated as operative policy.
+The following finance policies are approved by ML1:
 
-## Draft Policy Candidates
+- FP-01 — Payment-First Preference
+- FP-02 — Optionality Reserve
+- FP-03 — Trust Is Not Cash
+- FP-04 — No Nominal Revenue Equivalence
+- FP-05 — Cash-Risk Adjustment
 
-### FP-01 — Finance Decision Authority
+## Approved Policies
 
-All external financing, debt facilities, strategic banking changes, major asset/liability commitments, corporate finance decisions, acquisition financing, and partner/shareholder distribution structures require ML1 approval.
+### FP-01 — Payment-First Preference
 
-Status: draft.
+LL must prefer revenue models where payment is received, secured, or trust-funded before material work is performed.
 
-### FP-02 — Trust Funds Exclusion From Operating Liquidity
+Status: approved by ML1.
 
-Finance analysis must not treat trust funds as operating cash unless and until transfer conditions are satisfied.
+### FP-02 — Optionality Reserve
 
-Status: draft.
+LL must preserve some liquidity/credit capacity for opportunities and shocks.
 
-### FP-03 — Cash-Risk Adjustment
+Status: approved by ML1.
 
-Finance analysis should classify revenue by cash-risk category before treating revenue streams as equivalent.
+### FP-03 — Trust Is Not Cash
+
+Trust balances may reduce collection risk but cannot be counted as operating liquidity.
+
+Status: approved by ML1.
+
+### FP-04 — No Nominal Revenue Equivalence
+
+Revenue should not be compared on gross dollars alone. It must be weighted by timing, security, and collectability.
+
+Status: approved by ML1.
+
+### FP-05 — Cash-Risk Adjustment
+
+Finance analysis must classify revenue by cash-risk category before treating revenue streams as economically equivalent.
+
+Nominal revenue must be adjusted for payment timing, payment security, collectability, working-capital strain, liquidity impact, and professional restrictions on trust funds.
 
 Relevant accounting categories:
 
@@ -54,25 +74,14 @@ Relevant accounting categories:
 - trust-funded earned fees;
 - recurring / subscription-like.
 
-Status: draft.
+Policy implications:
 
-### FP-04 — Major Commitment Review
+- Unsecured post-pay revenue is the highest cash-risk revenue and should not be valued the same as secured, trust-funded, or payment-first revenue.
+- Trust-funded earned fees may have lower collection risk but must not be treated as operating cash until transfer conditions are satisfied.
+- Recurring / subscription-like revenue may have the lowest cash risk, but if paid before legal work is earned or billed, it is professionally sensitive and may belong in trust rather than operating revenue.
+- Revenue quality analysis must distinguish nominal revenue from finance value.
 
-Leases, property acquisition through LawCo, debt facilities, shareholder financing, and acquisition of a book of business require a finance review before commitment.
-
-Status: draft.
-
-### FP-05 — Owner Distribution Review
-
-Partner/shareholder distributions should be reviewed against operating liquidity, tax obligations, debt obligations, reserves, and strategic finance commitments before approval.
-
-Status: draft.
-
-### FP-06 — Acquisition / Lawyer-with-Book Review
-
-Buying a book of business or recruiting a lawyer with a book requires finance analysis of expected cash flows, retention risk, transition risk, financing source, compensation/distribution structure, and downside case.
-
-Status: draft.
+Status: approved by ML1.
 
 ## Related Sources
 
