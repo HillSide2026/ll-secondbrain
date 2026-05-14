@@ -4,7 +4,7 @@ title: Japan Home Decision - Assumptions and Constraints
 owner: ML1
 status: draft
 created_date: 2026-04-03
-last_updated: 2026-05-02
+last_updated: 2026-05-14
 tags: [hillside, personal-projects, japan-home, housing, planning, assumptions, constraints]
 ---
 
@@ -18,12 +18,12 @@ Stage: `Planning`
 - the Japan home question is real enough to justify planning attention
 - ML1 currently reports `CAD 900,000` in a high-interest savings account and
   `CAD 560,000` in managed equities as at `2026-04-03`
-- **budget range confirmed (2026-04-29):** CAD 100-200k is comfortably within budget; precise upper limit is outstanding and must be formalized in `HBP-001_WEALTH_MANAGEMENT`
+- **budget ceiling confirmed (2026-05-02):** CAD 400k cash is the active planning ceiling; the prior CAD 100-200k range remains a lower-cost reference point, not the live ceiling
 - **use case — two scenarios under active consideration (reopened 2026-05-02):**
   - **Scenario A — Part-time residence:** ML1 and family use the property for periodic visits from Canada; no one is primarily resident in Japan
   - **Scenario B — Primary housing (family residency):** wife and son primarily resident in Japan for most of the year; ML1 splits time but does not exceed 180 days per year in Japan to avoid triggering Japanese tax residency; maintaining Canadian tax residency is a separate question; property is the family's primary base, not a vacation property
 - **location clusters confirmed (2026-04-29):** (1) Kanagawa west of Yokohama — Kamakura and/or Atami; (2) Nikko area including Imaichi sub-municipality
-- **property type confirmed (2026-04-30):** mid-sized, comfortable house; minimum 2 bedrooms and 2 bathrooms; single-family detached
+- **property type confirmed (2026-05-14):** mid-sized, comfortable house; minimum 2 bedrooms; requirement: at least 2 separate toilet rooms; preference: 2 full bathrooms; single-family detached
 - **search activity:** wife conducting active search via Japanese-language internet; Nikko/Imaichi akiya inventory is primarily on Japanese platforms
 - **financing:** cash purchase only; Japanese bank financing not available to non-resident foreigners
 - **Canadian tax compliance:** T1135 filing required if property cost exceeds CAD 100,000; annual obligation

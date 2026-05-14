@@ -4,7 +4,7 @@ title: Japan Home Decision - Decision Frame
 owner: ML1
 status: draft
 created_date: 2026-04-03
-last_updated: 2026-05-02
+last_updated: 2026-05-14
 tags: [hillside, personal-projects, japan-home, housing, planning, decision-frame]
 ---
 
@@ -61,11 +61,11 @@ Scenario B materially changes the diligence picture:
 Two geographic clusters under active consideration:
 
 **Cluster 1 — Kanagawa west of Yokohama**
-- Kamakura (Kanagawa Prefecture): historic city, coastal, ~1 hour from Tokyo; affluent market, constrained purchasing power at CAD 100-200k
-- Atami (Shizuoka Prefecture, just west of Kanagawa border): onsen resort town; more affordable resort-era property stock; watch management fees on older condo buildings
+- Kamakura (Kanagawa Prefecture): historic city, coastal, ~1 hour from Tokyo; affluent market, with some viable stock at CAD 400k but much prime inventory still above ceiling
+- Atami (Shizuoka Prefecture, just west of Kanagawa border): onsen resort town; more affordable resort-era property stock; comfortable purchasing power at CAD 400k; watch management fees on older condo buildings
 
 **Cluster 2 — Nikko area including Imaichi**
-- Nikko City / Imaichi sub-municipality (Tochigi Prefecture): ~2 hours from Tokyo; mountain/rural character; UNESCO vicinity; strong purchasing power at CAD 100-200k; classic akiya territory; colder winters
+- Nikko City / Imaichi sub-municipality (Tochigi Prefecture): ~2 hours from Tokyo; mountain/rural character; UNESCO vicinity; very strong purchasing power at CAD 400k; classic akiya territory; colder winters
 - Wife is conducting active property search via Japanese-language internet
 
 ## Active Search
@@ -74,4 +74,4 @@ Property search is active via wife's Japanese internet research. Inventory for N
 
 ## Current Planning Status
 
-Planning is open. Use-case thesis reopened — two scenarios active (part-time residence; primary housing / family residency). Location clusters confirmed. Budget range confirmed as CAD 100-200k. Property type confirmed: mid-sized house, min 2 bed / 2 bath, single-family detached. No option (pursue / defer / rule out) selected yet. Japan primary housing scenario is also being modeled as a standalone what-if in `HBP-001_WEALTH_MANAGEMENT`.
+Planning is open. Use-case thesis reopened — two scenarios active (part-time residence; primary housing / family residency). Location clusters confirmed. Budget ceiling confirmed as CAD 400k cash; prior CAD 100-200k range is no longer the active ceiling. Property type confirmed: mid-sized house, minimum 2 bedrooms, at least 2 separate toilet rooms, with 2 full bathrooms preferred; single-family detached. No option (pursue / defer / rule out) selected yet. Japan primary housing scenario is also being modeled as a standalone what-if in `HBP-001_WEALTH_MANAGEMENT`.

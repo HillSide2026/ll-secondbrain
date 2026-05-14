@@ -4,7 +4,7 @@ title: Japan Property Acquisition
 owner: ML1
 status: draft
 created_date: 2026-04-30
-last_updated: 2026-05-02
+last_updated: 2026-05-14
 tags: [hillside, personal-projects, japan-home, housing, acquisition]
 ---
 
@@ -26,7 +26,7 @@ and acquisition process.
 - Buyer of record: **wife** (Japanese national; Japanese bank account; registered at Nikko city hall)
 - Financing: cash purchase only — wife's current income is zero; Japanese mortgage unavailable at present
 - Active search: wife conducting research via Japanese-language internet and akiya bank platforms
-- 2 properties logged in pipeline; both currently over the prior CAD 200k budget but within the revised CAD 400k ceiling
+- 7 properties logged in pipeline; 3 are within the revised CAD 400k ceiling and 4 are above ceiling as market references or stretch cases
 - No acquisition authorized; pursue decision remains open in `JAPAN_HOME_DECISION`
 
 ---
@@ -86,7 +86,8 @@ strongly Kamakura / Atami. Nikko remains a fallback if search in preferred clust
 | Type | Single-family detached house |
 | Size | Mid-sized, comfortable |
 | Bedrooms | Minimum 2 |
-| Bathrooms | Minimum 2 (full bathrooms; not separate toilet rooms) |
+| Toilet rooms | Requirement: at least 2 separate toilet rooms |
+| Full bathrooms | Preference: 2 full bathrooms |
 | Seismic standard | Post-1981 construction (new seismic standard) |
 | Management fees | Prefer none or minimal |
 
@@ -103,7 +104,7 @@ strongly Kamakura / Atami. Nikko remains a fallback if search in preferred clust
 | OQ-05 | ML1 co-ownership — should ML1 be on the title? Tax and inheritance implications of joint vs. wife-only ownership | Medium |
 | OQ-06 | Cross-border tax advice — engage a professional with Canadian and Japanese expertise across all of the above | High |
 | OQ-07 | Wife employment in Japan — needed for future mortgage optionality; no timeline set | Low — future planning |
-| OQ-08 | JP-002 bathroom count — 1 full bath + 2 separate toilet rooms; confirm whether this meets the 2-bath criterion | Low |
+| OQ-08 | JP-002 and similar listings meet the 2-toilet requirement but not the 2-full-bath preference; confirm how strongly ML1 wants to enforce the bath preference in practice | Low |
 
 ---
 
