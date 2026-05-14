@@ -1,0 +1,19 @@
+{
+  "adminUrl": "https://levinelegal.ca/wp-admin/",
+  "pageUrl": "https://levinelegal.ca/apprentice-registration-page/",
+  "steps": [
+    {
+      "step": "open_admin",
+      "url": "https://levinelegal.ca/wp-login.php?redirect_to=https%3A%2F%2Flevinelegal.ca%2Fwp-admin%2F&reauth=1"
+    },
+    {
+      "step": "login_failed",
+      "url": "https://levinelegal.ca/wp-login.php",
+      "loginError": [
+        "Error: The password you entered for the username SB_Bot is incorrect. Lost your password?"
+      ]
+    }
+  ],
+  "frames": [],
+  "error": "Browser login failed: Error: The password you entered for the username SB_Bot is incorrect. Lost your password?"
+}
