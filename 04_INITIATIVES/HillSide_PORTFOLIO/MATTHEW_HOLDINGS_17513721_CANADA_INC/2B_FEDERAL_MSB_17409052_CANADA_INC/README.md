@@ -82,6 +82,9 @@ accepting fees, exclusivity, lock-in, or control terms that reduce sale value.
 For the full build plan, see:
 
 - `VALUE_STACK.md`
+- `EMI_AND_PARTNERSHIP_OPTIONS.md`
+- `PRODUCT_SOFTWARE_CANDIDATES.md`
+- `SALE_READINESS_NEXT_STEPS.md`
 
 ---
 

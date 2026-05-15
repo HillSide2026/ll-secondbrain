@@ -519,34 +519,31 @@ The completion standard is buyer diligence readiness.
 
 The minimum build is complete when all of the following are true:
 
-- FINTRAC status is resolved or the pending status is documented with current
-  correspondence and expected next steps;
-- RPAA application status is documented, including whether any re-registration
-  issue would arise on sale;
+- FINTRAC status is established;
+- RPAA application status is documented;
 - AML program package is complete enough for buyer review;
-- product-software candidate is selected or deliberately deferred;
-- compliance-software decision is made, with Rhizome as default unless EMI,
-  bank, or safeguarding counterparties require Sumsub;
-- EMI target shortlist is complete;
-- at least one EMI has provided written indication of willingness to onboard or
-  continue discussions with the entity;
-- buyer-facing flow-of-funds and safeguarding memo is complete;
-- architecture memo confirms bank-agnostic adapter design; and
-- sale package clearly states that the entity is not intended to carry
-  significant pre-sale funds flow.
+- product-software candidates are known;
+- EMI target shortlist exists; and
+- at least one EMI has provided written indication of willingness to onboard
+  174.
 
 ### Preferred Completion Gate
 
-The preferred build is complete when the minimum gate is satisfied and:
+The preferred sale-readiness gate is complete when:
 
-- EMI term sheet or draft agreement is received;
-- EMI pricing, minimums, termination, exclusivity, and change-of-control terms
-  are documented;
-- contract structure preserves buyer optionality;
-- lightweight API integration plan is documented;
-- reconciliation-feed availability is confirmed;
-- safeguarding visibility is confirmed at least in principle; and
-- buyer can inherit or replace the EMI without destroying value.
+- FINTRAC status is established against the public registry;
+- RPAA application status is established against the public registry;
+- AML / control package is complete enough for buyer review;
+- product software is selected;
+- compliance-software decision is made, with Rhizome as default unless EMI,
+  bank, or safeguarding counterparties require Sumsub;
+- at least one EMI has provided a draft agreement;
+- EUR 12,000 EMI offer has been diligence-tested;
+- EMI pricing, setup fee, minimums, limits, termination, exclusivity,
+  assignment, and change-of-control terms are documented;
+- Kwiikpay role as a 174 infrastructure path is established; and
+- buyer can understand both outcomes: keep the EMI path or replace it without
+  destroying value.
 
 ### Stretch Completion Gate
 

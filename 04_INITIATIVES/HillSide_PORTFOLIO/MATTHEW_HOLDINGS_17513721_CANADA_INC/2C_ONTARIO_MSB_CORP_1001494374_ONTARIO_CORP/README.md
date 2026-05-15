@@ -39,6 +39,10 @@ into a transferable regulated payments infrastructure layer with direct EMI
 and direct sponsor-bank relationships. That strategy is documented in
 `PROJECT_LOCARNO_DIRECT_BANK_SPONSORSHIP_STRATEGY.md`.
 
+The sponsor-bank search belongs in this Ontario MSB Corp / Locarno branch. It
+is not part of the current 174 / Granville EMI option analysis unless ML1
+separately approves a 174 sponsor-bank workstream.
+
 ---
 
 ## Regulatory Context
@@ -102,3 +106,4 @@ Current strategic posture: being marketed for sale. Sale governed by
 Project Locarno direct bank sponsorship strategy:
 
 - `PROJECT_LOCARNO_DIRECT_BANK_SPONSORSHIP_STRATEGY.md`
+- `SPONSOR_BANK_SEARCH.md`
