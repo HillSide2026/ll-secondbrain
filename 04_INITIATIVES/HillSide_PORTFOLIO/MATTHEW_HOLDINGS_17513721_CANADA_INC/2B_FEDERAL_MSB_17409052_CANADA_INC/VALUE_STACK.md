@@ -264,9 +264,8 @@ The decision is how to contract with an EMI so that:
 
 | Provider | Type | Accessibility | Cost | Notes |
 | --- | --- | --- | --- | --- |
-| Moorwand | EMI | High | High | Flexible structurer; may accept non-standard setups |
-| Paynetics | EMI / processor hybrid | Medium-High | Medium | More infrastructure-driven and less retail-facing; still viable |
-| Wallester | EMI | Medium-High | Medium | Fast onboarding; more platformized |
+| Airwallex | EMI / global payments platform | TBC | TBC | Current primary candidate |
+| Modulr | EMI / payments infrastructure | TBC | TBC | Current secondary candidate |
 
 ### Target Relationship Structure
 
@@ -519,42 +518,38 @@ The completion standard is buyer diligence readiness.
 
 The minimum build is complete when all of the following are true:
 
-- FINTRAC status is established;
-- RPAA application status is documented;
-- AML program package is complete enough for buyer review;
-- product-software candidates are known;
-- EMI target shortlist exists; and
-- at least one EMI has provided written indication of willingness to onboard
-  174.
+- FINTRAC is registered; and
+- AML program is complete enough for buyer review.
 
 ### Preferred Completion Gate
 
-The preferred sale-readiness gate is complete when:
+The preferred sale-readiness gate is complete when the minimum gate is
+satisfied and all of the following are true:
 
-- FINTRAC status is established against the public registry;
-- RPAA application status is established against the public registry;
-- AML / control package is complete enough for buyer review;
-- product software is selected;
-- compliance-software decision is made, with Rhizome as default unless EMI,
-  bank, or safeguarding counterparties require Sumsub;
-- at least one EMI has provided a draft agreement;
-- EUR 12,000 EMI offer has been diligence-tested;
-- EMI pricing, setup fee, minimums, limits, termination, exclusivity,
-  assignment, and change-of-control terms are documented;
-- Kwiikpay role as a 174 infrastructure path is established; and
+- FINTRAC and RPAA status are established against the public registry;
+- at least one EMI has provided written indication of willingness to onboard
+  174;
+- compliance-software decision is made, with Rhizome as default unless EMI
+  or bank requires Sumsub;
+- Kwiikpay role as a 174 infrastructure path is established or ruled out; and
 - buyer can understand both outcomes: keep the EMI path or replace it without
   destroying value.
 
 ### Stretch Completion Gate
 
-The stretch build is complete when the preferred gate is satisfied and:
+The stretch build is complete when the preferred gate is satisfied and all of
+the following are true:
 
 - direct EMI agreement is signed;
 - lightweight integration has been tested;
 - compliance workflow is demo-ready;
-- diligence folder includes AML, RPAA, flow-of-funds, software, and EMI
-  documentation;
-- no exclusivity or long-term lock-in impairs sale; and
+- diligence folder is complete, including:
+  - AML program;
+  - RPAA analysis / status;
+  - flow of funds;
+  - compliance software decision; and
+  - EMI documentation;
+- no exclusivity, lock-in, or dependency that impairs sale; and
 - buyer transition steps are mapped.
 
 ### Not Complete If

@@ -31,9 +31,8 @@ Current operating activity: none.
 FinSure and the Payment Services Consulting Line are not operated through this
 entity. They are run by `17513721 Canada Inc`.
 
-FINTRAC registration is still pending. The wait for FINTRAC has motivated the
-effort to add value to the entity through a clearer payments infrastructure
-stack.
+FINTRAC registration application is filed; awaiting registration. The remaining
+work is on FINTRAC, RPAA, EMI, and software.
 
 An RPAA application has been initiated.
 
@@ -90,11 +89,9 @@ For the full build plan, see:
 
 ## Regulatory Context
 
-This entity has a **FINTRAC MSB registration application pending**.
+**FINTRAC status:** application filed; awaiting registration.
 
-**FINTRAC status:** waiting for FINTRAC.
-
-**RPAA status:** application initiated.
+**RPAA status:** not yet filed.
 
 No current operating activity. Before launch, ML1 must confirm the final
 FINTRAC status, RPAA posture, AML program, and any required dormant-period or

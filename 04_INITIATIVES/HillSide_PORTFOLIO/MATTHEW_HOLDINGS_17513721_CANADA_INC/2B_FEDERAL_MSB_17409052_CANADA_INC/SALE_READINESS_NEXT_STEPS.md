@@ -4,7 +4,7 @@ title: 17409052 Canada Inc Sale-Readiness Next Steps
 owner: ML1
 status: draft
 created_date: 2026-05-15
-last_updated: 2026-05-15
+last_updated: 2026-05-17
 tags: [granville, federal-msb, sale-readiness, rppa, emi, product-software, users]
 ---
 
@@ -57,11 +57,8 @@ Each candidate should be asked for:
 4. Implementation timeline.
 5. Required integrations.
 6. Whether an EMI or bank relationship is required first.
-7. Whether the platform can support no significant pre-sale funds flow.
-8. Data export and portability.
-9. Assignment, change-of-control, and buyer-transfer treatment.
-10. Whether the relationship can be inherited or replaced by a buyer.
-11. Whether the offer can be documented in a buyer diligence folder.
+7. Data export and portability.
+8. Whether the offer can be documented in a buyer diligence folder.
 
 ### Desired Output
 
@@ -79,6 +76,14 @@ Create a pricing and offer grid with:
 - ML1 posture: pursue, hold, reject, or use as pricing leverage.
 
 ## Advance RPAA Application
+
+The Bank of Canada RPAA registration requires a description of the intended
+safeguarding arrangement, not proof of a signed EMI contract. A written
+indication from an EMI that it is willing to onboard 174 is sufficient to
+support the safeguarding description in the application. The signed EMI
+contract gates actual operations, not the application itself. The RPAA
+application may be filed once both an EMI written indication and a software
+written indication are in hand — it does not need to wait for signed deals.
 
 The RPAA workstream should produce a current status record.
 
