@@ -1,43 +1,39 @@
 # ML1 Decision Queue
 
-Generated: 2026-05-16T00:00:00Z | Agent: LLM-001 | Run: RUN-2026-05-16-DAILY-SWEEP-103001Z
+Generated: 2026-05-17T00:00:00Z | Agent: LLM-001 | Run: RUN-2026-05-17-DAILY-SWEEP-103001Z
 
 | Rank | Project | Decision Needed | Cash Flow Impact | ML1 or System | Urgency | Blocking | Source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | LLP-037 | Resolve duplicate project identifier | High | ML1 | High | True | CONTRADICTION_ALERTS.md |
-| 2 | LLP-038 | Resolve duplicate project identifier | Medium | ML1 | High | True | CONTRADICTION_ALERTS.md |
-| 3 | LLP-039 | Resolve duplicate project identifier | Medium | ML1 | High | True | CONTRADICTION_ALERTS.md |
-| 4 | LLP-037 | Address stage gate violations; missing artifacts | High | ML1 | High | True | STAGE_GATE_VIOLATION_REPORT.md |
-| 5 | LLP-039 | Address stage gate violations; missing artifacts | Medium | ML1 | High | True | STAGE_GATE_VIOLATION_REPORT.md |
-| 6 | LLP-038 | Address stage gate violations; missing artifacts | Medium | ML1 | High | True | STAGE_GATE_VIOLATION_REPORT.md |
-| 7 | LLP-038 | Approve missing approval record | Medium | ML1 | Medium | True | APPROVAL_GAP_REPORT.md |
-| 8 | LLP-002 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 9 | LLP-003 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 10 | LLP-007 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 11 | LLP-008 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 12 | LLP-009 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 13 | LLP-010 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 14 | LLP-014 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 15 | LLP-015 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 16 | LLP-016 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 17 | LLP-017 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 18 | LLP-018 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 19 | LLP-026 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 20 | LLP-027 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 21 | LLP-028 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 22 | LLP-029 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 23 | LLP-031 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 24 | LLP-032 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 25 | LLP-034 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 26 | LLP-035 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 27 | LLP-036 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 28 | LLP-037 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 29 | LLP-038 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 30 | LLP-039 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 31 | LLP-040 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 32 | LLP-041 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 33 | LLP-042 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 34 | LLP-043 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
-| 35 | LLP-044 | Review and advance from Initiating | Low | ML1 | Medium | False | PROJECT_PRIORITY_MATRIX.md |
+| 1 | LLP-037 | Resolve duplicate project identifier | High | ML1 | High | Yes | CONTRADICTION_ALERTS.md |
+| 2 | LLP-038 | Resolve duplicate project identifier | High | ML1 | High | Yes | CONTRADICTION_ALERTS.md |
+| 3 | LLP-039 | Resolve duplicate project identifier | High | ML1 | High | Yes | CONTRADICTION_ALERTS.md |
+| 4 | LLP-002 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 5 | LLP-003 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 6 | LLP-007 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 7 | LLP-008 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 8 | LLP-009 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 9 | LLP-010 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 10 | LLP-014 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 11 | LLP-015 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 12 | LLP-016 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 13 | LLP-017 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 14 | LLP-018 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 15 | LLP-026 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 16 | LLP-027 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 17 | LLP-028 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 18 | LLP-029 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 19 | LLP-031 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 20 | LLP-032 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 21 | LLP-034 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 22 | LLP-035 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 23 | LLP-036 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 24 | LLP-037 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 25 | LLP-038 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 26 | LLP-039 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 27 | LLP-040 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 28 | LLP-041 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 29 | LLP-042 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 30 | LLP-043 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
+| 31 | LLP-044 | Advance from initiating stage | Medium | ML1 | Medium | Yes | PROJECT_PRIORITY_MATRIX.md |
 
-> Advisory output. ML1 approval required before any action is taken.>
+> Advisory output. ML1 approval required before any action is taken.

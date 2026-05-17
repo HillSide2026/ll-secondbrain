@@ -502,6 +502,17 @@ The sale package should show:
 Significant funds should not be routed through the entity unless a separate
 decision is made.
 
+## Use of Proceeds
+
+Sale proceeds from 174, at any gate, flow into `17513721 Canada Inc` (175 /
+Matthew Holdings).
+
+If the preferred gate is reached before sale, 175 will invest in a NewCo
+called Matthew Capital. Matthew Capital is not yet incorporated. It will sit
+under 175 as the investing entity. Matthew Capital's objective is to become
+either a restricted dealer or an exempt market dealer of securities under
+Canadian securities law. The registration path is an open question.
+
 Pre-sale activity should be limited to what is needed to preserve regulatory
 credibility, support diligence, and improve buyer confidence.
 
