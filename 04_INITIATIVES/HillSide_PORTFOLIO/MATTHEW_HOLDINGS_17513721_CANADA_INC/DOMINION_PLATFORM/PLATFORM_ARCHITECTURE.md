@@ -18,6 +18,55 @@ tags: [dominion, platform, architecture, 17513721, payments, flowsignal, d-airpa
 
 ## 1. Core Structure
 
+### Corporate Role
+
+17513721 Canada Inc / Dominion Partners is primarily the vehicle for the
+Andersen Consulting collaborating firm agreement. The Dominion Platform should
+be assessed as part of 175's enterprise-value strategy, not only as a marketing
+or delivery wrapper.
+
+The Andersen relationship is tied to Sidera, an Andersen member firm, and is
+dependent on the Sidera relationship. Dominion Partners should seek additional
+Andersen allies without damaging that relationship, including through other
+Canadian Andersen member or collaborating firms and Andersen growth segments
+such as energy or pharma.
+
+Sidera wants Dominion Partners to do trade remedies work on North American
+files. That lane is acceptable in principle, but Sidera does not currently have
+North American files and 175 / ML1 does not yet have deep trade remedies
+experience. The relationship is valuable because the Sidera principal is a
+former ML1 classmate who has become highly successful in Brazil.
+
+Sidera is owned by the Saldanha family. It was founded by Mr. Saldanha and has
+been grown by his daughter. Ms. Saldanha is married to Mr. Ures. Mr. Saldanha,
+Ms. Saldanha, and Mr. Ures are wealthy, highly skilled, and formidable
+collaborators.
+
+They have extensive C-suite relationships with Brazilian industry, especially
+agri-food, as well as European and, to some extent, North American investors
+and traders into Brazil.
+
+Dominion Partners needs to identify an offering that is repeatable for 175,
+linked to Canada, seen as valuable by Sidera, and within international trade,
+because Sidera's relationship to Andersen hinges on developing an International
+Trade Services Line.
+
+Current offering work:
+
+- `CANADA_TRADE_READINESS_MARKET_DIAGNOSTIC.md` — product for foreign
+  manufacturers, exporters, investors, distributors, and industry groups
+  evaluating or expanding Canadian trade activity.
+- `GLOBAL_TRADE_DIVERSIFICATION_MARKET_ACCESS_DIAGNOSTIC.md` — companion
+  product for Canadian manufacturers, distributors, exporters, investors, and
+  industrial groups evaluating international expansion, sourcing
+  diversification, or non-U.S. market development.
+
+Current platform-level work includes improving `dominionpartners.ca` and
+developing Dominion Partners branding to maximize credibility and Andersen
+synergy, subject to what the collaborating firm agreement permits and the risk
+of overreliance on the Andersen brand. 175 is also considering whether renting
+or leasing space for Dominion Partners would increase brand value.
+
 ### Entity Ownership
 
 All assets owned and controlled by 17513721 Canada Inc, to be registered as

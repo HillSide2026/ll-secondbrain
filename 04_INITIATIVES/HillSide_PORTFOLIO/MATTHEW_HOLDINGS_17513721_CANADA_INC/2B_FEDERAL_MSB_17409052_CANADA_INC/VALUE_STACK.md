@@ -507,9 +507,16 @@ decision is made.
 Sale proceeds from 174, at any gate, flow into `17513721 Canada Inc` (175 /
 Matthew Holdings).
 
-Upon sale of Granville, part of the proceeds will be invested by 175 in a NewCo
-called Kendal Securities. Kendal Securities is not yet incorporated. It will
-sit under 175 as the dealer-registration entity.
+The approved core scenario for Q4 2026 is the Q4 Target Restructuring:
+
+1. Matthew Capital is incorporated as a new holding corporation.
+2. Matthew Capital acquires shares of 175.
+3. Granville is sold and sale proceeds flow into 175.
+4. 175 distributes the intended capital to Matthew Capital by dividend or other
+   approved corporate mechanism.
+5. Kendal Securities is incorporated as a direct subsidiary of Matthew Capital.
+6. Matthew Capital capitalizes Kendal Securities.
+
 Kendal Securities is expected to become an exempt market dealer of securities
 under Canadian securities law, though a restricted dealer path remains
 possible. Kendal Securities will hold the invested funds to support its dealer
@@ -518,10 +525,22 @@ registration application and related capital or financial resource criteria.
 Kendal Securities will appoint Matthew Levine as ultimate designated person and
 chief compliance officer.
 
-Concurrently, a new holding corporation called Matthew Capital will be
-incorporated. Matthew Capital will acquire shares of 175. The remainder of the
-Granville sale proceeds will be distributed by dividend from 175 to Matthew
-Capital.
+Matthew Capital, not 175 directly, is expected to own Kendal Securities.
+
+Upon sale of 174 and / or Ontario MSB Corp, and before approval and
+implementation of the Q4 Target Restructuring, 175 must assess whether capital
+is better used for Kendal Securities, passive investing through Matthew
+Capital, or strengthening 175's own enterprise value.
+
+The assessment parameters are:
+
+- target gross revenue of `EUR 100,000`;
+- gross revenue may come from the sale of 174 alone or from the combined sale
+  of 174 and Ontario MSB Corp; and
+- the investment case for Kendal Securities must be weighed against passive
+  investing alternatives through Matthew Capital, including private equity or
+  real estate opportunities, and against strengthening 175's own enterprise
+  value.
 
 Pre-sale activity should be limited to what is needed to preserve regulatory
 credibility, support diligence, and improve buyer confidence.

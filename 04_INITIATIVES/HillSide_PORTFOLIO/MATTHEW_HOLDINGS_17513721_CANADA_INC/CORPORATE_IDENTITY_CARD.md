@@ -27,9 +27,9 @@ tags: [corporate-identity, governance, portfolio]
 
 ## Corporate Function
 
-Matthew Holdings functions as both the ownership and governance vehicle for
-HillSide portfolio entities and a direct operating corporation for selected
-business lines.
+Matthew Holdings functions primarily as the vehicle for the Andersen Consulting
+collaborating firm agreement. It also acts as the ownership and governance
+vehicle for selected HillSide portfolio entities and operating lines.
 
 `17513721 Canada Inc` will be registered as `Dominion Partners`.
 
@@ -57,6 +57,51 @@ See `DOMINION_PLATFORM/PLATFORM_ARCHITECTURE.md` for full architecture.
 `17513721 Canada Inc`, registered as `Dominion Partners`, will enter into a
 collaborating firm agreement with Andersen Consulting.
 
+This is the primary corporate function of 175.
+
+The relationship to Andersen is tied to Sidera, an Andersen member firm. The
+175 / Dominion Partners relationship is dependent on Sidera.
+
+Sidera wants 175 / Dominion Partners to do trade remedies work on North
+American files. That lane is acceptable in principle, but Sidera does not
+currently have North American files and 175 / ML1 does not yet have deep trade
+remedies experience. The principal of Sidera is a former classmate of ML1 who
+has become highly successful in Brazil, so the relationship should be handled
+with care.
+
+Sidera is owned by the Saldanha family. It was founded by Mr. Saldanha and has
+been grown by his daughter. Ms. Saldanha is married to Mr. Ures. Mr. Saldanha,
+Ms. Saldanha, and Mr. Ures are wealthy, highly skilled, and formidable
+collaborators.
+
+They have extensive C-suite relationships with Brazilian industry, especially
+agri-food, as well as European and, to some extent, North American investors
+and traders into Brazil.
+
+175 / Dominion Partners needs to identify an offering that is repeatable for
+175, linked to Canada, seen as valuable by Sidera, and within international
+trade, because Sidera's relationship to Andersen hinges on developing an
+International Trade Services Line.
+
+Current offering work:
+
+- `DOMINION_PLATFORM/CANADA_TRADE_READINESS_MARKET_DIAGNOSTIC.md` — product
+  for foreign manufacturers, exporters, investors, distributors, and industry
+  groups evaluating or expanding Canadian trade activity.
+- `DOMINION_PLATFORM/GLOBAL_TRADE_DIVERSIFICATION_MARKET_ACCESS_DIAGNOSTIC.md`
+  — companion product for Canadian manufacturers, distributors, exporters,
+  investors, and industrial groups evaluating international expansion, sourcing
+  diversification, or non-U.S. market development.
+
+One priority is to find additional allies within Andersen without damaging the
+Sidera relationship. Potential channels include:
+
+- other Canadian Andersen member firms or collaborating firms, including
+  accounting firms and trade-adjacent consultants, especially customs
+  consultants; and
+- Andersen growth segments, meaning large industry areas such as energy or
+  pharma.
+
 Fees for Andersen-related work are received by 17513721 Canada Inc. The pipeline and file-level tracking for this service line lives in three LL matters:
 
 | Matter | Scope | Current state |
@@ -66,6 +111,28 @@ Fees for Andersen-related work are received by 17513721 Canada Inc. The pipeline
 | [26-1639-00003](../../../../../05_MATTERS/ESSENTIAL/26-1639-00003/MATTER_BRIEF.md) | Market Access | No active tracks; held open for future leads |
 
 No HillSide project governs this service line yet. When a file converts, the right action is to open an HBP or add an Andersen revenue line to HBP-007 — whichever is appropriate at that time.
+
+## Enterprise Value Strategy Requirement
+
+175 needs a strategy for developing enterprise value in its own right. The
+strategy should assess how the Andersen Consulting collaboration and Dominion
+Partners platform can create durable corporate value through repeatable service
+lines, owned client/channel relationships, reusable operating assets, and
+revenue that is not solely dependent on ML1 personal delivery.
+
+The enterprise-value strategy should also assess whether FinSure, the Payment
+Services Consulting Line, and Dominion Platform assets increase 175 value or
+remain adjunct service tools.
+
+Current 175-level workstreams:
+
+- review the Andersen Consulting collaborating firm agreement;
+- develop Dominion Partners branding to maximize credibility and synergy with
+  Andersen, subject to what the agreement permits and the risk of overreliance
+  on the Andersen brand;
+- improve the `dominionpartners.ca` website; and
+- consider whether renting or leasing space for Dominion Partners would
+  increase brand value.
 
 ## Commercial and Transaction Notes
 
