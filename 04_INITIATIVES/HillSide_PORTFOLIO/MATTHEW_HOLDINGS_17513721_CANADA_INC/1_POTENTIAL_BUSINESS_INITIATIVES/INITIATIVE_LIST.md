@@ -17,7 +17,7 @@ potential venture paths.
 
 - `PBI-001` Sale of YellowBricks. Stage: `closing`. Transaction tag: `post-closing`. Focus: liquidity event. Risks: valuation, buyer process cost, and timeline slippage.
 - `PBI-002` Sale of Ontario MSBShellCo. Stage: `initiating`. Focus: monetize a regulated shell. Risks: buyer process cost, FINTRAC timing, and closing slippage.
-- `PBI-003` Andersen Tie-Up. Stage: `initiating`. Focus: partnership or distribution leverage. Risks: partner misalignment, channel dependency, and integration overhead.
+- `PBI-003` Andersen Collaborating Firm Agreement. Stage: `initiating`. Focus: collaborating firm agreement between Andersen Consulting and `17513721 Canada Inc`, to be registered as `Dominion Partners`. Risks: partner misalignment, channel dependency, and integration overhead.
 - `PBI-004` Build & Launch. Stage: `executing`. Focus: build and launch a digital asset under Matthew Holdings. Risks: product-market fit, launch economics, scope growth, and timeline drag.
 - `PBI-005` Sale of Micro SaaS. Stage: `initiating`. Focus: evaluate a future sale path once the asset is commercially ready. Risks: weak exit value, timing misfit, and transaction sprawl.
 - `PBI-006` B2C Micro SaaS. Stage: `initiating`. Focus: test a direct-to-consumer micro SaaS path. Risks: channel mismatch, weak acquisition economics, and product-support sprawl.

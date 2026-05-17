@@ -507,11 +507,21 @@ decision is made.
 Sale proceeds from 174, at any gate, flow into `17513721 Canada Inc` (175 /
 Matthew Holdings).
 
-If the preferred gate is reached before sale, 175 will invest in a NewCo
-called Matthew Capital. Matthew Capital is not yet incorporated. It will sit
-under 175 as the investing entity. Matthew Capital's objective is to become
-either a restricted dealer or an exempt market dealer of securities under
-Canadian securities law. The registration path is an open question.
+Upon sale of Granville, part of the proceeds will be invested by 175 in a NewCo
+called Kendal Securities. Kendal Securities is not yet incorporated. It will
+sit under 175 as the dealer-registration entity.
+Kendal Securities is expected to become an exempt market dealer of securities
+under Canadian securities law, though a restricted dealer path remains
+possible. Kendal Securities will hold the invested funds to support its dealer
+registration application and related capital or financial resource criteria.
+
+Kendal Securities will appoint Matthew Levine as ultimate designated person and
+chief compliance officer.
+
+Concurrently, a new holding corporation called Matthew Capital will be
+incorporated. Matthew Capital will acquire shares of 175. The remainder of the
+Granville sale proceeds will be distributed by dividend from 175 to Matthew
+Capital.
 
 Pre-sale activity should be limited to what is needed to preserve regulatory
 credibility, support diligence, and improve buyer confidence.

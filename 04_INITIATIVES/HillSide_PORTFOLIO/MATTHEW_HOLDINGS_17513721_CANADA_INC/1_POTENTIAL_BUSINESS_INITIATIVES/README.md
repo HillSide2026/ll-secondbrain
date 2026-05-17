@@ -23,7 +23,7 @@ Primary tracking artifact:
 Current tracked initiatives:
 - Sale of YellowBricks
 - Sale of Ontario MSBShellCo
-- Andersen Tie-Up
+- Andersen Collaborating Firm Agreement
 - Build & Launch
 - Sale of Micro SaaS
 - B2C Micro SaaS

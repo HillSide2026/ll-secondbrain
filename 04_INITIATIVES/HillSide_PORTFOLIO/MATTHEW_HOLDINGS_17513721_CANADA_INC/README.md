@@ -15,6 +15,10 @@ tags: []
 Matthew Holdings is the primary corporation within the HillSide portfolio
 branch tracked here.
 
+`17513721 Canada Inc` will be registered as `Dominion Partners`. Matthew
+Holdings remains the internal portfolio label for the corporation in this
+folder.
+
 It functions as both an **ownership vehicle for controlled entities** and a
 direct operating corporation for selected HillSide business lines.
 
@@ -30,14 +34,15 @@ It is not the only holdco in the broader structure:
 Matthew Holdings serves as:
 
 - equity holding company
-- service-provider corporation for the Andersen Service Line
+- service-provider corporation for the Andersen Consulting collaborating firm
+  agreement
 - owning and operating company for FinSure
 - owning and operating company for the Payment Services Consulting Line
 - governance layer for portfolio entities
 - strategic control entity
 
-YellowBricks, 17409052 Canada Inc, and Ontario MSB Corp sit under this
-entity.
+YellowBricks, 17409052 Canada Inc, Ontario MSB Corp, and the planned Kendal
+Securities dealer-registration entity sit under this entity.
 
 ## Current Lines of Business
 
@@ -48,9 +53,10 @@ entity.
   - D-AirPay (d-airpay.dominionpartners.ca): payments execution; fiat and stablecoin rails abstraction
 - ownership of `17409052 Canada Inc` and Ontario MSB Corp (`1001494374 Ontario Corp`)
 
-Under the Andersen Service Line, `17513721 Canada Inc` provides services to
-clients of Andersen Consulting and Andersen Consulting pays `17513721 Canada
-Inc`.
+Under the Andersen Service Line, `17513721 Canada Inc`, registered as
+`Dominion Partners`, will enter into a collaborating firm agreement with
+Andersen Consulting. Under that agreement, 175 provides services to clients of
+Andersen Consulting and Andersen Consulting pays `17513721 Canada Inc`.
 
 Operational matters tied to the Andersen Service Line are tracked inside
 Levine Law. The Andersen Service Line continues to follow the Levine Law
@@ -73,8 +79,14 @@ Matthew Holdings
 │   └── D-AirPay (d-airpay.dominionpartners.ca)
 ├── 17409052 Canada Inc (federal company; Granville internal tag)
 ├── Ontario MSB Corp (1001494374 Ontario Corp)
+├── Kendal Securities (planned dealer-registration entity)
 └── CORPORATE_IDENTITY_CARD.md
 ```
+
+The broader structure also contemplates a new holding corporation, Matthew
+Capital, which will acquire shares of `17513721 Canada Inc` and receive the
+remainder of Granville sale proceeds by dividend after 175 funds Kendal
+Securities.
 
 ## HillSide Program Linkage
 
@@ -128,6 +140,10 @@ Formal legal records remain in the firm's document management systems.
   now fully divested (HBP-003 closed 2026-04-29)
 - `17513721 Canada Inc` currently has approximately `CAD 27,000` in its bank
   account from YellowBricks sale proceeds
+- On the contemplated Granville sale-proceeds path, 175 will fund Kendal
+  Securities for dealer-registration purposes, Matthew Capital will acquire
+  shares of 175, and the remainder of proceeds will be distributed by dividend
+  from 175 to Matthew Capital
 
 ## Potential Business Initiatives
 

@@ -10,7 +10,8 @@ tags: [dominion, platform, architecture, 17513721, payments, flowsignal, d-airpa
 
 # Dominion Platform Architecture
 
-**Entity owner:** 17513721 Canada Inc (Matthew Holdings)
+**Entity owner:** 17513721 Canada Inc, to be registered as Dominion Partners
+**Internal portfolio label:** Matthew Holdings
 **Last updated:** 2026-05-03
 
 ---
@@ -19,7 +20,8 @@ tags: [dominion, platform, architecture, 17513721, payments, flowsignal, d-airpa
 
 ### Entity Ownership
 
-All assets owned and controlled by 17513721 Canada Inc.
+All assets owned and controlled by 17513721 Canada Inc, to be registered as
+Dominion Partners.
 
 ### Brand and Domain Hierarchy
 

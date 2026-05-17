@@ -14,7 +14,8 @@ tags: [corporate-identity, governance, portfolio]
 
 | Field | Value | Status |
 | --- | --- | --- |
-| Operating Name | Matthew Holdings | Confirmed |
+| Operating / Registered Name | Dominion Partners | Planned registration |
+| Internal Portfolio Label | Matthew Holdings | Confirmed |
 | Legal Name | 17513721 Canada Inc | Confirmed |
 | Corporate Number | 17513721 | Confirmed |
 | Jurisdiction | Canada (exact jurisdiction label TBD) | Pending confirmation |
@@ -29,6 +30,8 @@ tags: [corporate-identity, governance, portfolio]
 Matthew Holdings functions as both the ownership and governance vehicle for
 HillSide portfolio entities and a direct operating corporation for selected
 business lines.
+
+`17513721 Canada Inc` will be registered as `Dominion Partners`.
 
 ML1 personally owns `17513721 Canada Inc`.
 
@@ -51,6 +54,9 @@ See `DOMINION_PLATFORM/PLATFORM_ARCHITECTURE.md` for full architecture.
 
 ## Andersen Service Line — Governing Matter Layer
 
+`17513721 Canada Inc`, registered as `Dominion Partners`, will enter into a
+collaborating firm agreement with Andersen Consulting.
+
 Fees for Andersen-related work are received by 17513721 Canada Inc. The pipeline and file-level tracking for this service line lives in three LL matters:
 
 | Matter | Scope | Current state |
@@ -67,7 +73,8 @@ No HillSide project governs this service line yet. When a file converts, the rig
 - Sale of Yellowbricks is in post-closing transaction status.
 - Slightly more than CAD 27,000 has now been received from the sale of Yellowbricks, and that cash went into 17513721 Canada Inc.
 - That slightly more than CAD 27,000 currently sits in the 17513721 Canada Inc bank account unless otherwise moved.
-- Under the Andersen Service Line, 17513721 Canada Inc provides services to clients of Andersen Consulting and Andersen Consulting pays 17513721 Canada Inc.
+- Under the Andersen Service Line, 17513721 Canada Inc, registered as Dominion Partners, will enter into a collaborating firm agreement with Andersen Consulting.
+- Under that collaborating firm agreement, 17513721 Canada Inc provides services to clients of Andersen Consulting and Andersen Consulting pays 17513721 Canada Inc.
 - Operational matters tied to the Andersen Service Line are tracked inside Levine Law.
 - The Andersen Service Line continues to follow the Levine Law time-for-money business model, and the Andersen relationship is credited to Levine Law in the 2026 operating picture even though the Andersen fees are received by 17513721 Canada Inc.
 - FinSure and the Payment Services Consulting Line are owned and operated by 17513721 Canada Inc, not by 17409052 Canada Inc.
