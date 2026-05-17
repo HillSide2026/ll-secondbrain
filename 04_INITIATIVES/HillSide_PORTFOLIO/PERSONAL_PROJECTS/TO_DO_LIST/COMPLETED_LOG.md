@@ -15,3 +15,5 @@ short history.
 
 | Date Completed | Item | Linked Project or Area | Outcome or Notes |
 | --- | --- | --- | --- |
+| 2026-05-17 | Move money from TD to BMO | Personal Finance | Done |
+| 2026-05-05 | Call with The Z8 / thez8.com (Dubai payments co — Canadian MSB / stablecoin) | LLP-028 (Consults) | Call completed; scope: ongoing counsel + RPAA application triage (they declared "holding funds" on RPAA, triggering bank safeguarding questions); lead subsequently went silent |

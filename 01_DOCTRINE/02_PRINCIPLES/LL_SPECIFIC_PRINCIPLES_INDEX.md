@@ -18,7 +18,7 @@ This document identifies and categorizes principles that apply to **Levine Law (
 
 ---
 
-## A. LL-Only Principles (26 principles)
+## A. LL-Only Principles (28 principles)
 
 These principles are portfolio-specific to Levine Law and do not constrain System architecture, ML2 governance, or other portfolios.
 
@@ -58,6 +58,7 @@ These principles are portfolio-specific to Levine Law and do not constrain Syste
 | LLPRN-11 | Demonstrate Understanding Before Probing | LL | Establish domain competence before asking the client to articulate their pain | Draft |
 | LLPRN-08 | Colleague Scarcity Gradient | LL | Distinguish general contacts (abundant) from good colleagues (scarce and valuable) | Draft |
 | LLPRN-09 | Good Colleague Reciprocity | LL | Good colleagues get quid pro quo; calibrate reciprocity to demonstrated value | Draft |
+| LLPRN-27 | Lead-Client Distinction | LL | A lead is not a client — pre-conversion contacts carry no legal engagement; legal analysis and regulatory assessment are reserved for clients | Draft |
 
 ### A.3 Strategic Principles (Non-Cooperative Game Theory)
 
@@ -85,6 +86,7 @@ These principles are portfolio-specific to Levine Law and do not constrain Syste
 | LLPRN-24 | Collections Are Economic Discipline | LL | Collections velocity and receivables control are strategic operating disciplines, not back-office administration | Draft |
 | LLPRN-25 | KPI-Governed Scaling | LL | Scale only against stable operating metrics; growth amplifies the existing model rather than fixing instability | Draft |
 | LLPRN-26 | Bounded Fintech Retainer Model | LL | Fintech retainer mandates are viable only as bounded strategic legal advisory with tiered scope, capacity, and mandate-count controls | Draft |
+| LLPRN-28 | Standard Retainer Floor | LL | Standard retainer is CAD $5,000; below-floor retainers require ML1-approved justification | Draft |
 
 ---
 
@@ -199,7 +201,7 @@ These principles apply universally across ML2, System, and all portfolios, but a
 
 | Portfolio | Unique Principles | System-Wide | Notes |
 |-----------|-------------------|-------------|-------|
-| **LL** | 18 LL-only (6 brand + 7 practice/relationship + 5 strategic) + 1 LL-plus | 31 shared | Brand, professional relationship, and strategic disciplines |
+| **LL** | 20 LL-only (6 brand + 8 practice/relationship + 5 strategic + 1 retainer economics) + 1 LL-plus | 31 shared | Brand, professional relationship, strategic, and firm economics disciplines |
 | **HillSide** | 1 (PRN-037: Wealth Building) | 31 shared | Wealth-building focus is HillSide-specific |
 | **System** | 0 (none exclusive) | 31 shared | System applies all universal principles |
 | **ML2** | 0 (none exclusive) | 31 shared | ML2 applies all universal principles |

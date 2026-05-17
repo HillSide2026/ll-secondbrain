@@ -4,7 +4,7 @@ title: Active List
 owner: ML1
 status: draft
 created_date: 2026-03-16
-last_updated: 2026-05-03
+last_updated: 2026-05-17
 tags: [hillside, personal-projects, to-do-list]
 ---
 
@@ -23,5 +23,4 @@ Track the current set of active personal tasks that require action.
 | 7 | Schedule dentist | Book appointment | Personal Health | — | Active | 2026-03-30 |
 | 8 | Buy crypto | — | Personal Finance | — | Active | 2026-03-30 |
 | 9 | Buy stablecoins | — | Personal Finance | — | Active | 2026-03-30 |
-| 10 | Move money from TD to BMO | — | Personal Finance | — | Active | 2026-03-30 |
-| 11 | Call with potential client | Prepare for call; confirm who the client is | Levine Law / HBP-007 | 2026-05-05 10:00am | Active | 2026-05-03 |
+| 11 | Follow up with The Z8 (thez8.com — Dubai payments co, Canadian MSB/stablecoin — went silent post-consult; one follow-up already sent) | Send second follow-up | LLP-028 (Consults) | End of May 2026 | Active | 2026-05-17 |

@@ -43,6 +43,11 @@ decision_makers:
   - CEO / Managing Director
   - CFO / Finance Director
 
+engagement_economics:
+  target_matter_value: CAD 10,000+ (problems worth less than this are not the target)
+  absolute_floor: CAD 5,000 (ref LLPRN-28 — below-floor requires ML1-approved justification)
+  note: F02 clients typically present with ongoing or recurring legal needs; engagement value should be assessed across the expected relationship, not a single matter
+
 disqualifiers:
   do_not_target:
     - Individuals and personal legal matters
@@ -51,6 +56,7 @@ disqualifiers:
     - Price shoppers
     - Startups without revenue
     - MSB, RPAA, AML, STR, payments-infrastructure, stablecoin settlement, PSP, or payments-regulatory classification matters that should route to F03
+    - Problems with expected engagement value below CAD 10,000 unless strategic exception applies
   red_flags:
     - No clear business model
     - No decision-maker involved in the conversation

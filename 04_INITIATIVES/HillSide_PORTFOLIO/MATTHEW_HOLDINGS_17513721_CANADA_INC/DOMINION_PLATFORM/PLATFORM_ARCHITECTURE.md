@@ -67,6 +67,21 @@ synergy, subject to what the collaborating firm agreement permits and the risk
 of overreliance on the Andersen brand. 175 is also considering whether renting
 or leasing space for Dominion Partners would increase brand value.
 
+### Commercial Infrastructure Requirements
+
+**Per-offer pipeline and coverage:**
+Each offering (Canada market entry; Canadian trade diversification away from
+US) requires its own pipeline, SDR function, and account manager. These are
+not shared across offers — each audience, channel, and Andersen relationship
+lane is sufficiently distinct to require dedicated commercial coverage.
+
+**Rates schedule:**
+175 requires a rates schedule. A rates schedule is a prerequisite for serious
+client and partner conversations, for the Andersen collaborating firm
+relationship, and for any SDR or account manager to operate credibly. The
+rates schedule should cover both offers and should reflect 175's positioning
+as an advisory firm, not a commodity provider.
+
 ### Entity Ownership
 
 All assets owned and controlled by 17513721 Canada Inc, to be registered as
