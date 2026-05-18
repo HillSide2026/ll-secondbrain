@@ -613,6 +613,12 @@ policies:
   version: '1.0'
   status: approved
   history: []
+- id: POL-071
+  title: Matter Delivery Stage Policy
+  path: 01_DOCTRINE/03_POLICIES/POL-071_Matter_Delivery_Stage_Policy.md
+  version: '1.0'
+  status: approved
+  history: []
 protocols:
 - id: PRO-001
   title: Enforce Output Labeling

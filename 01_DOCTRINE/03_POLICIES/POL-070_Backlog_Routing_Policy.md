@@ -22,7 +22,10 @@ work and personal to-do items do not accumulate in the wrong location.
 |----------|------|----------|
 | System Portfolio Backlog | `04_INITIATIVES/SYSTEM_PORTFOLIO/BACKLOG.md` | System-level work items |
 | Personal Actions Backlog | `04_INITIATIVES/HillSide_PORTFOLIO/PERSONAL_PROJECTS/PERSONAL_ACTIONS/BACKLOG.md` | ML1 personal action items |
-| LL Actions Hub | `05_MATTERS/LL_ACTIONS/README.md` | Index only — routes to `LL_TASK_TRACKER.md` and content backlogs |
+| LL Task Backlog | `05_MATTERS/LL_ACTIONS/LL_BACKLOG.md` | LL tasks not yet active (all LL task types) |
+| LL Matter Backlog | `05_MATTERS/LL_ACTIONS/MATTER_BACKLOG.md` | Matters with `delivery_stage: backlog` |
+| LL Project Backlog | `04_INITIATIVES/LL_PORTFOLIO/LL_PROJECT_BACKLOG.md` | LL Portfolio projects pre-Initiating stage |
+| LL Actions Hub | `05_MATTERS/LL_ACTIONS/README.md` | Index only — routes to task, matter, and project backlogs and active trackers |
 
 ## Routing Rules
 
@@ -43,8 +46,31 @@ not a Levine Law task — including:
 - HillSide / personal project next steps
 - Items with no system execution component
 
-### LL Actions Hub
-An item belongs in the LL Actions layer if it is Levine Law work. Classify it as:
+### LL Task Backlog
+An item belongs here if it is a Levine Law task not yet ready for the active
+tracker — including:
+- Tasks mentioned but not yet instructed for action
+- Tasks blocked before they can be made active
+- LL Firm Management Tasks with no active tracker yet
+
+Promotion to `LL_TASK_TRACKER.md` requires explicit ML1 instruction. Do not auto-promote.
+
+### LL Matter Backlog
+A matter belongs here if ML1 assigns it `delivery_stage: backlog` — it is a
+registered matter that is not currently being worked but may be worked in future.
+
+Governed by POL-071. Promotion to active requires ML1 instruction.
+
+### LL Project Backlog
+An item belongs here if it is a Levine Law Portfolio project that has been
+identified but not yet initiated — pre-Initiating stage under POL-055 / POL-056.
+
+Promotion to an active project folder requires ML1 instruction and an `LLP-NNN`
+identifier per POL-056.
+
+### LL Actions Hub (active tracker)
+An item belongs in the LL Actions layer if it is Levine Law work ready to be made
+active. Classify it as:
 - `LL Legal Task` for client or matter work involving legal judgment, legal
   delivery, matter strategy, drafting, review, negotiation, filing, or
   client-facing legal advice

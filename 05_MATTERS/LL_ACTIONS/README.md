@@ -29,12 +29,25 @@ not by professional role.
 
 | Task Type | Owner | Artifact | Status |
 |-----------|-------|----------|--------|
-| LL Legal Tasks | ML1 | `05_MATTERS/LL_TASK_TRACKER.md` | Exists |
+| LL Legal Tasks (backlog) | ML1 | `05_MATTERS/LL_ACTIONS/LL_BACKLOG.md` | Exists |
+| LL Legal Tasks (active) | ML1 | `05_MATTERS/LL_TASK_TRACKER.md` | Exists |
 | LL Legal Tasks | Other | — | Gap — no artifact yet |
-| LL Admin Tasks | ML1 | `05_MATTERS/LL_TASK_TRACKER.md` | Partial — matter-linked ML1 admin tasks only |
+| LL Admin Tasks (backlog) | ML1 | `05_MATTERS/LL_ACTIONS/LL_BACKLOG.md` | Exists |
+| LL Admin Tasks (active) | ML1 | `05_MATTERS/LL_TASK_TRACKER.md` | Partial — matter-linked ML1 admin tasks only |
 | LL Admin Tasks | Other | — | Gap — no artifact yet |
-| LL Firm Management Tasks | ML1 | — | Gap — no artifact yet |
+| LL Firm Management Tasks (backlog) | ML1 | `05_MATTERS/LL_ACTIONS/LL_BACKLOG.md` | Exists |
+| LL Firm Management Tasks (active) | ML1 | — | Gap — no artifact yet |
 | LL Firm Management Tasks | Other | — | Gap — no artifact yet |
+
+## Matter Backlog
+
+Matters with `delivery_stage: backlog` are indexed at `05_MATTERS/LL_ACTIONS/MATTER_BACKLOG.md`.
+
+Governed by POL-071 (Matter Delivery Stage Policy).
+
+## Project Backlog
+
+LL Portfolio projects not yet Initiated are staged at `04_INITIATIVES/LL_PORTFOLIO/LL_PROJECT_BACKLOG.md`.
 
 ## Content Queues
 
