@@ -38,9 +38,9 @@ Full tool surface documented in:
 
 `05_MATTERS/INDEX.md` is updated on explicit ML1 instruction only. Do not modify it as part of any automated pipeline or housekeeping task.
 
-## Personal To-Do List Governance
+## Personal Actions Governance
 
-`04_INITIATIVES/HillSide_PORTFOLIO/PERSONAL_PROJECTS/TO_DO_LIST/` is maintained
+`04_INITIATIVES/HillSide_PORTFOLIO/PERSONAL_PROJECTS/PERSONAL_ACTIONS/` is maintained
 by the system subject to ML1 override. Flow: `BACKLOG.md` → `ACTIVE_LIST.md` → `COMPLETED_LOG.md`.
 
 **Session capture rule:** During any session, if ML1 mentions a personal to-do,
@@ -55,6 +55,12 @@ those belong in `LAWYER_TASK_TRACKER.md`.
 
 **Promotion:** Move items from `BACKLOG.md` to `ACTIVE_LIST.md` only on ML1
 instruction. Do not auto-promote.
+
+---
+
+## LL Actions Hub
+
+`05_MATTERS/LL_ACTIONS/README.md` is the firm-wide task index for Levine Law. It covers all task types (lawyer, admin) and all owners (ML1, staff). It references (but does not replace) the constituent artifacts: `LAWYER_TASK_TRACKER.md` and the marketing content backlogs. Artifacts for non-ML1 lawyer tasks and admin tasks do not yet exist — they are created on ML1 instruction.
 
 ---
 

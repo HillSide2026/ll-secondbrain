@@ -1,11 +1,11 @@
 ---
-id: 04_initiatives__hillside_portfolio__personal_projects__to_do_list__active_list_md
+id: 04_initiatives__hillside_portfolio__personal_projects__personal_actions__active_list_md
 title: Active List
 owner: ML1
 status: draft
 created_date: 2026-03-16
 last_updated: 2026-05-17
-tags: [hillside, personal-projects, to-do-list]
+tags: [hillside, personal-projects, personal-actions]
 ---
 
 # Active List

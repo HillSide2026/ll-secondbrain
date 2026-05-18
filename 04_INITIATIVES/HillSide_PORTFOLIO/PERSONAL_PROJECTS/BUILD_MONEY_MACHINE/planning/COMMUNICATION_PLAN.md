@@ -16,7 +16,7 @@ tags: [hillside, personal-projects, money-machine, planning, communication]
 | ML1 monthly money review | Monthly | Income, expenses, savings rate, investing activity, surplus / deficit, stage qualification, and exceptions | ML1 |
 | ML1 quarterly review | Quarterly | Trend review, target-path check, passive-income coverage, category adjustments, and constraint review | ML1 |
 | ML1 annual review | Annually | Net-worth progress, stage progression, target-path reforecast, and major system adjustments | ML1 |
-| `TO_DO_LIST` | As needed | Action items promoted out of reviews into personal execution | ML1 |
+| `PERSONAL_ACTIONS` | As needed | Action items promoted out of reviews into personal execution | ML1 |
 | `BUSINESS_PROJECTS` | On trigger only | Formal handoff if a money engine becomes an actual HillSide business packet | ML1 |
 
 ## Review Rhythm

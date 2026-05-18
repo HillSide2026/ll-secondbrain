@@ -16,12 +16,13 @@ tags: [backlog, routing, system, personal]
 Define which backlog file receives a given candidate item, so that system-level
 work and personal to-do items do not accumulate in the wrong location.
 
-## Backlog Files
+## Backlog and Action Files
 
-| Backlog | Path | Receives |
-|---------|------|----------|
+| Artifact | Path | Receives |
+|----------|------|----------|
 | System Portfolio Backlog | `04_INITIATIVES/SYSTEM_PORTFOLIO/BACKLOG.md` | System-level work items |
-| Personal To-Do Backlog | `04_INITIATIVES/HillSide_PORTFOLIO/PERSONAL_PROJECTS/TO_DO_LIST/BACKLOG.md` | ML1 personal action items |
+| Personal Actions Backlog | `04_INITIATIVES/HillSide_PORTFOLIO/PERSONAL_PROJECTS/PERSONAL_ACTIONS/BACKLOG.md` | ML1 personal action items |
+| LL Actions Hub | `05_MATTERS/LL_ACTIONS/README.md` | Index only — routes to LAWYER_TASK_TRACKER.md and content backlogs |
 
 ## Routing Rules
 

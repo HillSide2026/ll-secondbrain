@@ -1,16 +1,16 @@
 ---
-id: 04_initiatives__hillside_portfolio__personal_projects__to_do_list__readme_md
-title: To-Do List
+id: 04_initiatives__hillside_portfolio__personal_projects__personal_actions__readme_md
+title: Personal Actions
 owner: ML1
 status: draft
 created_date: 2026-03-16
-last_updated: 2026-05-03
-tags: [hillside, personal-projects, to-do-list]
+last_updated: 2026-05-17
+tags: [hillside, personal-projects, personal-actions]
 ---
 
-# To-Do List
+# Personal Actions
 
-A lightweight personal task list inside the HillSide personal-project area.
+ML1 personal action items within the HillSide personal-project area.
 
 ## Flow
 

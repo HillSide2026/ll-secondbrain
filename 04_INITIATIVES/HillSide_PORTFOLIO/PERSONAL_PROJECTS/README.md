@@ -15,7 +15,7 @@ This program contains HillSide personal projects.
 Current personal projects:
 
 - `DECISION_MAKING`
-- `TO_DO_LIST`
+- `PERSONAL_ACTIONS`
 - `BUILD_MONEY_MACHINE`
 - `PERSONAL_ACCOUNTING`
 - `TORONTO_HOUSING`
@@ -31,11 +31,10 @@ Current personal projects:
 - Authoritative `HBP` stages are maintained in
   [../BUSINESS_PROJECTS/STAGE_REFERENCE.md](../BUSINESS_PROJECTS/STAGE_REFERENCE.md).
 
-## To-Do List
+## Personal Actions
 
-- [TO_DO_LIST/README.md](TO_DO_LIST/README.md) maintains a lightweight HillSide
-  personal task flow using:
-  `INBOX -> ACTIVE -> WAITING -> COMPLETED`
+- [PERSONAL_ACTIONS/README.md](PERSONAL_ACTIONS/README.md) maintains ML1 personal actions
+  using the flow: `BACKLOG → ACTIVE → COMPLETED`
 
 ## Build Money Machine
 

@@ -72,7 +72,7 @@ HillSide currently has two programs:
 Current personal project folders include:
 
 - `PERSONAL_PROJECTS/DECISION_MAKING`
-- `PERSONAL_PROJECTS/TO_DO_LIST`
+- `PERSONAL_PROJECTS/PERSONAL_ACTIONS`
 - `PERSONAL_PROJECTS/BUILD_MONEY_MACHINE`
 
 HillSide business-project artifact rules are maintained in:
@@ -117,9 +117,9 @@ The HillSide personal concept-queue workspace is maintained in:
 
 - `PERSONAL_PROJECTS/DECISION_MAKING`
 
-The HillSide personal task-list reference is maintained in:
+The ML1 personal actions system is maintained in:
 
-- `PERSONAL_PROJECTS/TO_DO_LIST`
+- `PERSONAL_PROJECTS/PERSONAL_ACTIONS`
 - `PERSONAL_PROJECTS/BUILD_MONEY_MACHINE`
 
 Working strategic synthesis for Matthew's active 2026 priorities:

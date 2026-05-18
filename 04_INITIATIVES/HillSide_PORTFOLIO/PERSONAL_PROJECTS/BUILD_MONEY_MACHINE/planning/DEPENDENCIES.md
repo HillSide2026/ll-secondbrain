@@ -21,7 +21,7 @@ tags: [hillside, personal-projects, money-machine, planning, dependencies]
 | Income engine map | Cash-flow design | Needed to distinguish active, portfolio, and passive / leveraged income | required |
 | Banking and investment accounts | Financial infrastructure | Needed to implement transfers, reserves, and investing cadence | required |
 | ML1 review time | Governance | Needed to keep monthly, quarterly, and annual reviews real | required |
-| `PERSONAL_PROJECTS/TO_DO_LIST` | Execution overlay | Receives practical follow-up items once the system starts running | active |
+| `PERSONAL_PROJECTS/PERSONAL_ACTIONS` | Execution overlay | Receives practical follow-up items once the system starts running | active |
 | `HBP-001` / `HBP-002` context | Strategic context | Can inform target path assumptions, liquidity posture, and capital discipline | optional |
 | `BUSINESS_PROJECTS` promotion path | Structural | Required if any money engine becomes a formal HillSide business packet | conditional |
 

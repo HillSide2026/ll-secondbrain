@@ -23,10 +23,11 @@ Folder placement reflects `delivery_status` only. The other fields (`status`, `f
 
 ```
 05_MATTERS/
-├── ESSENTIAL/   # Highest lawyer attention
-├── STRATEGIC/   # Strategic importance
-├── STANDARD/    # Normal priority
-└── PARKED/      # Temporarily deprioritized
+├── ESSENTIAL/      # Highest lawyer attention
+├── STRATEGIC/      # Strategic importance
+├── STANDARD/       # Normal priority
+├── PARKED/         # Temporarily deprioritized
+└── LL_ACTIONS/     # LL to-do hub — indexes LAWYER_TASK_TRACKER.md and content backlogs
 ```
 
 ---
@@ -49,9 +50,7 @@ Folder placement reflects `delivery_status` only. The other fields (`status`, `f
 |-----------|-------------|--------|-----------------|-------------------|------|
 | 24-336-00004 | Mascore Helical Piles | Open | Strategic | active | `STRATEGIC/24-336-00004/` |
 | 25-1231-00001 | Charmaine Spiteri | Open | Strategic | active | `STRATEGIC/25-1231-00001/` |
-| 25-1318-00001 | Zelko Culibrk | Open | Strategic | active | `STRATEGIC/25-1318-00001/` |
 | 25-256-00005 | Aspire Infusions Inc | Open | Strategic | active | `STRATEGIC/25-256-00005/` |
-| 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | Open | Strategic | active | `STRATEGIC/26-1593-00002/` |
 | 26-1631-00001 | 1713425 Ontario Inc. (Tejvir Boparai) | Open | Strategic | active | `STRATEGIC/26-1631-00001/` |
 
 ---
@@ -77,6 +76,8 @@ Folder placement reflects `delivery_status` only. The other fields (`status`, `f
 | 25-194-00059 | Rousseau Mazzuca LLP | Open | Standard | active | `STANDARD/25-194-00059/` |
 | 25-845-00001 | STAR 333 SPORTS INC. | Open | Standard | active | `STANDARD/25-845-00001/` |
 | 25-845-00002 | STAR 333 SPORTS INC. | Open | Standard | active | `STANDARD/25-845-00002/` |
+| 25-1318-00001 | Zelko Culibrk | Open | Standard | closing | `STANDARD/25-1318-00001/` |
+| 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | Open | Standard | closing | `STANDARD/26-1593-00002/` |
 | 26-259-00003 | LL Onboarding | Open | Standard | active | `STANDARD/26-259-00003/` |
 
 ---
