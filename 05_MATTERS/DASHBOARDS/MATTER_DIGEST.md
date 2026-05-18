@@ -1,6 +1,6 @@
 # Firm Matter Digest
 
-Generated at: 2026-05-17T10:30:02Z
+Generated at: 2026-05-18T10:32:24Z
 
 ## Role
 
@@ -116,8 +116,6 @@ Use `ML1 monitoring point` for a matter-linked signal that ML1 must keep visible
 | 25-927-00003 | Stream Ventures Limited | ML Active | Essential | urgent | 2026-03-05T04:08:22Z | repo://05_MATTERS/ESSENTIAL/25-927-00003/MATTER.yaml |
 | 24-336-00004 | Mascore Helical Piles | ML Active | Strategic | active | none | repo://05_MATTERS/STRATEGIC/24-336-00004/MATTER.yaml |
 | 25-1231-00001 | Charmaine Spiteri | ML Active | Strategic | active | none | repo://05_MATTERS/STRATEGIC/25-1231-00001/MATTER.yaml |
-| 25-1318-00001 | Zelko Culibrk | Other | Strategic | closing | none | repo://05_MATTERS/STRATEGIC/25-1318-00001/MATTER.yaml |
-| 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | Other | Strategic | closing | none | repo://05_MATTERS/STRATEGIC/26-1593-00002/MATTER.yaml |
 | 22-194-00006 | Rousseau Mazzuca LLP | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/22-194-00006/MATTER.yaml |
 | 23-194-00013 | Rousseau Mazzuca LLP | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/23-194-00013/MATTER.yaml |
 | 24-646-00001 | ByNature Design | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/24-646-00001/MATTER.yaml |
@@ -132,10 +130,11 @@ Use `ML1 monitoring point` for a matter-linked signal that ML1 must keep visible
 | 25-194-00059 | Rousseau Mazzuca LLP | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-194-00059/MATTER.yaml |
 | 25-845-00002 | STAR 333 SPORTS INC. | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/25-845-00002/MATTER.yaml |
 | 26-259-00003 | LL Onboarding | ML Active | Standard | active | none | repo://05_MATTERS/STANDARD/26-259-00003/MATTER.yaml |
-| 24-845-00001 | STAR 333 SPORTS INC. | Other | Standard | keep in view | none | repo://05_MATTERS/STANDARD/24-845-00001/MATTER.yaml |
 | 23-235-00001 | Baobab Energy Africa Ltd | Other | Standard | closing | none | repo://05_MATTERS/STANDARD/23-235-00001/MATTER.yaml |
+| 25-1318-00001 | Zelko Culibrk | Other | Standard | closing | none | repo://05_MATTERS/STANDARD/25-1318-00001/MATTER.yaml |
 | 25-1363-00001 | Raevan Joy Sambrano | Other | Standard | closing | none | repo://05_MATTERS/STANDARD/25-1363-00001/MATTER.yaml |
 | 25-1603-00001 | IBERBANCO LTD | Other | Standard | closing | none | repo://05_MATTERS/STANDARD/25-1603-00001/MATTER.yaml |
+| 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | Other | Standard | closing | none | repo://05_MATTERS/STANDARD/26-1593-00002/MATTER.yaml |
 | 23-169-00003 | Best Bottles Inc. | ML Watch | Parked | active | none | repo://05_MATTERS/PARKED/23-169-00003/MATTER.yaml |
 | 25-1024-00001 | AllPro Construction Group | ML Watch | Parked | active | none | repo://05_MATTERS/PARKED/25-1024-00001/MATTER.yaml |
 | 25-1192-00001 | The Knot Churros International Limited | ML Watch | Parked | active | none | repo://05_MATTERS/PARKED/25-1192-00001/MATTER.yaml |
@@ -147,6 +146,7 @@ Use `ML1 monitoring point` for a matter-linked signal that ML1 must keep visible
 | 25-174-00001 | Danielle Thompson | ML Watch | Parked | keep in view | none | repo://05_MATTERS/PARKED/25-174-00001/MATTER.yaml |
 | 25-192-00003 | If Not Me Inc | ML Watch | Parked | keep in view | none | repo://05_MATTERS/PARKED/25-192-00003/MATTER.yaml |
 | 26-1630-00001 | Marcela Hernandez | ML Watch | Parked | keep in view | none | repo://05_MATTERS/PARKED/26-1630-00001/MATTER.yaml |
+| 24-845-00001 | STAR 333 SPORTS INC. | Other | unknown | unknown | none | repo://05_MATTERS/STANDARD/24-845-00001/MATTER.yaml |
 | 25-256-00005 | Aspire Infusions Inc | Other | unknown | unknown | none | repo://05_MATTERS/STRATEGIC/25-256-00005/MATTER.yaml |
 
 ## Unmapped Comms Intake
@@ -158,4 +158,5 @@ Use `ML1 monitoring point` for a matter-linked signal that ML1 must keep visible
 
 ## Exceptions
 - Missing local matter folder for SharePoint packet generation:
+  - 24-845-00001
   - 25-256-00005

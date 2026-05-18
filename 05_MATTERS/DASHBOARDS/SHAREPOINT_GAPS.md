@@ -1,6 +1,6 @@
 # SharePoint Gaps
 
-Generated at: 2026-05-17T10:30:02Z
+Generated at: 2026-05-18T10:32:24Z
 Connector source: `repo:09_INBOX/_sources/sharepoint/metadata/legalmatters_library`
 
 ## Summary
@@ -79,7 +79,7 @@ No ambiguous SharePoint mappings.
 - 25-1024-00001 :: AllPro Construction Group (repo://05_MATTERS/PARKED/25-1024-00001/MATTER.yaml)
 - 25-1185-00001 :: Alexander Klys (repo://05_MATTERS/STANDARD/25-1185-00001/MATTER.yaml)
 - 25-1192-00001 :: The Knot Churros International Limited (repo://05_MATTERS/PARKED/25-1192-00001/MATTER.yaml)
-- 25-1318-00001 :: Zelko Culibrk (repo://05_MATTERS/STRATEGIC/25-1318-00001/MATTER.yaml)
+- 25-1318-00001 :: Zelko Culibrk (repo://05_MATTERS/STANDARD/25-1318-00001/MATTER.yaml)
 - 25-1363-00001 :: Raevan Joy Sambrano (repo://05_MATTERS/STANDARD/25-1363-00001/MATTER.yaml)
 - 25-1525-00001 :: Kleenup Cleaning Services Inc. (repo://05_MATTERS/STANDARD/25-1525-00001/MATTER.yaml)
 - 25-1538-00002 :: Georgiana Nicoară (repo://05_MATTERS/STANDARD/25-1538-00002/MATTER.yaml)
@@ -95,7 +95,7 @@ No ambiguous SharePoint mappings.
 - 25-256-00005 :: Aspire Infusions Inc (repo://05_MATTERS/STRATEGIC/25-256-00005/MATTER.yaml)
 - 25-845-00002 :: STAR 333 SPORTS INC. (repo://05_MATTERS/STANDARD/25-845-00002/MATTER.yaml)
 - 25-927-00003 :: Stream Ventures Limited (repo://05_MATTERS/ESSENTIAL/25-927-00003/MATTER.yaml)
-- 26-1593-00002 :: 1001162998 Ontario Corp. o/a KaleMart (repo://05_MATTERS/STRATEGIC/26-1593-00002/MATTER.yaml)
+- 26-1593-00002 :: 1001162998 Ontario Corp. o/a KaleMart (repo://05_MATTERS/STANDARD/26-1593-00002/MATTER.yaml)
 - 26-1630-00001 :: Marcela Hernandez (repo://05_MATTERS/PARKED/26-1630-00001/MATTER.yaml)
 - 26-259-00003 :: LL Onboarding (repo://05_MATTERS/STANDARD/26-259-00003/MATTER.yaml)
 
