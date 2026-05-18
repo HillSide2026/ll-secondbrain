@@ -607,6 +607,12 @@ policies:
   version: '0.1'
   status: draft
   history: []
+- id: POL-070
+  title: Backlog Routing Policy
+  path: 01_DOCTRINE/03_POLICIES/POL-070_Backlog_Routing_Policy.md
+  version: '1.0'
+  status: approved
+  history: []
 protocols:
 - id: PRO-001
   title: Enforce Output Labeling

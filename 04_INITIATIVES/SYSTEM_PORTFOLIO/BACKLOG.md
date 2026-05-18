@@ -38,6 +38,7 @@ inclusion in active roadmaps but do not authorize execution by themselves.
 | SYS-010 | Execute first operating cycle (weekly cadence test) | All Agents | SMA-001 to SMA-005 | P2 | candidate |
 | SYS-011 | Archive completed Stage 3 + Stage 4 artifacts | Knowledge Curation | Stage closures approved | P2 | candidate |
 | SYS-012 | Standardize per-solution module taxonomy in `02_PLAYBOOKS/FINANCIAL_SERVICES/SOLUTIONS` (define canonical module sets/names and replace placeholder `MODULE_001_PRIMARY`) | Playbook Governance | ML1 module architecture approval; existing solution packets | P1 | candidate |
+| SYS-013 | Configure local Gmail MCP server on ML1 laptop so Gmail inbox is accessible via Claude Code CLI / VS Code (not just the claude.ai desktop app) | Integration Steward | Must be executed on the laptop to test credentials and config; reference `00_SYSTEM/integrations/gmail/README.md` | P2 | candidate |
 
 ---
 
