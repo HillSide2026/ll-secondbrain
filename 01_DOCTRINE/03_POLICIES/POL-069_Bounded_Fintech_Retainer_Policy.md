@@ -176,6 +176,19 @@ Active management includes:
 
 Concentration risk acceptance does not authorize relaxing scope, pricing, collection, or renewal discipline.
 
+### Retainer Portfolio Composition
+
+The second and third retainer mandates do not need to be outside the payments
+sector. A complementary payments client — one in a non-competing position — is
+acceptable and can be preferable. Payments expertise compounds across mandates.
+
+The constraint is competition, not sector. A second payments retainer is acceptable
+if the client operates in a different corridor, client profile, or product segment,
+with no material overlap in target markets and no conflict of interest under LSO
+rules.
+
+ML1-confirmed: 2026-05-19.
+
 ---
 
 ## 10. Collection Rules

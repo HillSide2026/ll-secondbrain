@@ -11,12 +11,12 @@ distinguish client legal work, matter administration, and firm management.
 - Connector note: this refresh did not rely on a new Gmail or SharePoint connector run
 
 ## Summary
-- Open tasks: `8`
+- Open tasks: `9`
 - In-progress tasks: `1`
 - Waiting tasks: `5`
 - LL Legal Tasks: `5`
 - LL Admin Tasks: `4`
-- LL Firm Management Tasks: `5`
+- LL Firm Management Tasks: `6`
 - Matters represented: `7`
 - Dated overdue tasks on the face of the tracker: `0`
 
@@ -29,6 +29,7 @@ distinguish client legal work, matter administration, and firm management.
 | LLP-013 | fintechlawyer.ca | LL Firm Management Task | — | Marketing / Content | Produce Banking relationships cluster P6: 8 posts (de-risking, bank onboarding, account termination) | Open | |
 | LLP-013 | fintechlawyer.ca | LL Firm Management Task | — | Marketing / Content | Produce Cross-border payments cluster P7: 6 posts | Open | |
 | LLP-013 | fintechlawyer.ca | LL Firm Management Task | — | Marketing / Content | Add stablecoin cluster to fintechlawyer.ca content plan and scope production | Open | |
+| LLP-013 | fintechlawyer.ca | LL Firm Management Task | — | Business Development / Funnel 3 | Prepare conference talk on Real Time Rails (invited conference; presentation is an existing thought leadership asset; linked to Funnel 3 positioning) | Open | |
 | 24-646-00001 | ByNature Design | LL Legal Task | Standard | Corporate | Respond to client | Open | |
 | 25-1185-00001 | Alexander Klys | LL Legal Task | Standard | Corporate | Follow up with Alexander to scope Deal 2 intake (second business acquisition — instructed 2026-03-12, not yet scoped) | Open | |
 | 24-336-00004 | Mascore Helical Piles | LL Legal Task | Strategic | Corporate | Finalize cohabitation agreement | In Progress | |

@@ -251,16 +251,21 @@ The following assets exist and are not regulatory-classification cluster content
 They are infrastructure and market-structure thought leadership, suitable for
 top-of-funnel authority positioning on fintechlawyer.ca.
 
-| Asset | Format | Subject |
-|---|---|---|
-| Real-Time Rails | Presentation (conference) | Real-time payment rails infrastructure and market context |
-| Real-Time Rails vs. Stablecoins | Article | Comparative analysis of real-time rails and stablecoin payment infrastructure |
-| Real-Time Rails vs. Stablecoins in Remittance | Article | Comparative analysis focused on the remittance use case |
+| Asset | Format | Subject | Status |
+|---|---|---|---|
+| Real-Time Rails | Presentation (conference) | Real-time payment rails infrastructure and market context | Invited conference talk — preparation in progress (added to task tracker 2026-05-19) |
+| Real-Time Rails vs. Stablecoins | Article | Comparative analysis of real-time rails and stablecoin payment infrastructure | Existing asset |
+| Real-Time Rails vs. Stablecoins in Remittance | Article | Comparative analysis focused on the remittance use case | Existing asset |
 
 These map to the payments infrastructure themes in the funnel spec (Treasury-as-a-Service,
 stablecoin settlement, cross-border money movement, payment orchestration). They do not
 map to the regulatory compliance clusters and should not be slotted into the pillar/cluster
 structure. Placement and publication treatment to be confirmed by ML1.
+
+The Real-Time Rails conference presentation is an invited talk. Preparation is an active
+LL Firm Management Task linked to Funnel 3. The talk is a direct authority-positioning
+event for the fintechlawyer.ca audience and should be treated as a content production
+and distribution opportunity (slide deck, article derivative, potential Funnel 3 lead capture).
 
 ---
 

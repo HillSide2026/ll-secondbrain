@@ -54,9 +54,12 @@ capacity, scope maturity, and mandate-mix decisions.
 | Year | Minimum | Middle | Maximum |
 |---|---:|---:|---:|
 | 2026 | CAD 480/hr | CAD 510/hr | CAD 550/hr |
-| 2027 | CAD 505/hr | CAD 600/hr | CAD 650/hr |
-| 2028 | CAD 550/hr | CAD 690/hr | CAD 750/hr |
-| 2029 | CAD 600/hr | CAD 780/hr | CAD 850/hr |
+| 2027 | CAD 555/hr | CAD 600/hr | CAD 650/hr |
+| 2028 | CAD 630/hr | CAD 690/hr | CAD 750/hr |
+| 2029 | CAD 680/hr | CAD 780/hr | CAD 850/hr |
+
+Minimum rates updated 2026-05-19 per ML1 instruction. Governing document:
+`RATE_POSTURE_2026_2029.md`.
 
 The rate ladder does not expand retainer scope. Higher rates support
 separately scoped premium work only when that work is greenlit.
@@ -74,6 +77,41 @@ separately scoped premium work only when that work is greenlit.
 | `POL-069` | Policy boundary for bounded fintech retainers |
 | `LLPRN-26` | Principle-level expression of the bounded retainer model |
 | `LLP-013` pricing | Marketing/offer surface; must defer to LLP-039 for retainer tiers |
+
+## Retainer Portfolio Composition
+
+The minimum retainer floor is 2 active mandates. The maximum under the solo model
+is 3. The following rules govern how those mandates should be composed.
+
+**The second retainer does not need to be outside payments.** A complementary
+payments client — one in a non-competing position — is acceptable and can be
+preferable. Payments expertise compounds across retainer clients. The practice
+becomes stronger, not diluted, if multiple clients operate in adjacent segments
+of the same regulatory space.
+
+**The constraint is competition, not sector.** A second retainer in payments is
+acceptable if it meets all of the following:
+
+- Different corridor, client profile, or product segment from Stream
+- No material overlap in target markets or direct competition with Stream
+- No conflict of interest under LSO rules
+- Client aware that LL acts for other payments operators
+
+**Examples of acceptable complementary payments clients:**
+- A domestic Canadian PSP where Stream is cross-border focused
+- A crypto-asset service provider (CASP) where Stream is fiat payments
+- A payment gateway focused on e-commerce vs. Stream's B2B remittance profile
+- A foreign PSP entering Canada where Stream is a Canadian-rooted operator
+
+**Examples of conflicts that would disqualify:**
+- A direct competitor to Stream in the same corridors
+- A client whose banking or regulatory relationships create adversarial exposure
+  to Stream
+
+**Renewal stagger:** Regardless of sector composition, renewal dates should be
+staggered where practical to avoid simultaneous concentration risk.
+
+ML1-confirmed: 2026-05-19.
 
 ## Consolidation Notes
 
