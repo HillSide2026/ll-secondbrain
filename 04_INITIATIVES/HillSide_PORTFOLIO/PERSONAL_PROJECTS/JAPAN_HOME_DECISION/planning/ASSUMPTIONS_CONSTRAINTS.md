@@ -22,7 +22,7 @@ Stage: `Planning`
 - **use case — two scenarios under active consideration (reopened 2026-05-02):**
   - **Scenario A — Part-time residence:** ML1 and family use the property for periodic visits from Canada; no one is primarily resident in Japan
   - **Scenario B — Primary housing (family residency):** wife and son primarily resident in Japan for most of the year; ML1 splits time but does not exceed 180 days per year in Japan to avoid triggering Japanese tax residency; maintaining Canadian tax residency is a separate question; property is the family's primary base, not a vacation property
-- **location clusters confirmed (2026-04-29):** (1) Kanagawa west of Yokohama — Kamakura and/or Atami; (2) Nikko area including Imaichi sub-municipality
+- **location clusters confirmed (2026-04-29, updated 2026-05-18):** (1) 湘南・鎌倉・熱海 — Shonan coastal strip (Zushi, Hayama, Fujisawa, Chigasaki, Hiratsuka), Kamakura, and Atami; (2) Nikko area including Imaichi sub-municipality
 - **property type confirmed (2026-05-14):** mid-sized, comfortable house; minimum 2 bedrooms; requirement: at least 2 separate toilet rooms; preference: 2 full bathrooms; single-family detached
 - **seasonal housing thesis updated (2026-05-16):** ML1 intends to buy a house in Japan and not spend fall/winter in Toronto; working annual pattern is fall in Japan, winter in Brazil or Thailand, and spring in Japan
 - **search activity:** wife conducting active search via Japanese-language internet; Nikko/Imaichi akiya inventory is primarily on Japanese platforms

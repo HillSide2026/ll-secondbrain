@@ -78,7 +78,8 @@ Scenario B materially changes the diligence picture:
 
 Two geographic clusters under active consideration:
 
-**Cluster 1 — Kanagawa west of Yokohama**
+**Cluster 1 — 湘南・鎌倉・熱海 (Shonan / Kamakura / Atami)**
+- Shonan (湘南) coastal strip (Kanagawa Prefecture): Zushi, Hayama, Fujisawa, Chigasaki, Hiratsuka — relaxed coastal character, strong lifestyle fit, broader inventory than Kamakura alone
 - Kamakura (Kanagawa Prefecture): historic city, coastal, ~1 hour from Tokyo; affluent market, with some viable stock at CAD 400k but much prime inventory still above ceiling
 - Atami (Shizuoka Prefecture, just west of Kanagawa border): onsen resort town; more affordable resort-era property stock; comfortable purchasing power at CAD 400k; watch management fees on older condo buildings
 

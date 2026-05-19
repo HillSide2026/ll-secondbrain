@@ -52,6 +52,11 @@ Working reading:
   because it should be credited to Levine Law in the 2026 operating picture
   even if 2026 Andersen revenue remains limited
 
+Cash flow prize incentive structure (ML1-confirmed 2026-05-18):
+
+- 2025 target: CAD 160,000 — achieved; ML1 entitled to a watch prize (to be claimed)
+- 2026 target: CAD 240,000 — prize is a Rolex Explorer
+
 Primary sources:
 
 - `BUSINESS_PROJECTS/HBP-007_LEVINE_LAW_2026/BUSINESS_CASE.md`

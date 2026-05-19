@@ -14,6 +14,7 @@ Items captured but not yet active. Move to ACTIVE_LIST.md when ready to action.
 
 | Item | Context | Linked Project or Area | Date Added | Notes |
 |---|---|---|---|---|
+| Claim 2025 LL cash flow prize watch | 2025 cash flow target of CAD 160K achieved; ML1 is entitled to a watch prize. Not yet claimed/ordered. Watch: Marathon 41mm CeraShell Quartz Nav-D on Ballistic Nylon Strap. https://www.marathonwatch.com/products/41mm-cerashell-quartz-nav-d-on-ballistic-nylon-strap | HBP-007 | 2026-05-18 | Purchase from Marathon Watch |
 | Follow up with financial advisor | ML1 mentioned during session | HBP-001 | 2026-05-03 | — |
 | Meeting with Crassula | Product software candidate for Granville (17409052) | HBP-005 | 2026-05-15 | Week of 2026-05-18; exact date TBC |
 | Meeting with FinLego | New conversation — payments infrastructure candidate for Granville (17409052) | HBP-005 | 2026-05-15 | Week of 2026-05-18; exact date TBC; FinLego not yet in candidate list |

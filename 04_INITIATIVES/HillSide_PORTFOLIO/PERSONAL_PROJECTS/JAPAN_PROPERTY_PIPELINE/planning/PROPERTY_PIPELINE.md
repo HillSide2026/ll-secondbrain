@@ -33,13 +33,13 @@ property.
 
 | ID | Location | Cluster | Type | Asking Price (JPY) | Approx. CAD | Source | Status | Notes |
 |---|---|---|---|---|---|---|---|---|
-| JP-001 | Kamakura City (Kamakura High School Mae stn, 12 min walk) | Kanagawa west of Yokohama | House — steel frame, 2-storey | ¥119,900,000 | ~CAD 1.07M | realkamakuraestate.jp listing n=25300 | Under review | Well over CAD 400k ceiling; retained as market reference for Kamakura; see detail below |
-| JP-002 | Usui, Ito City, Shizuoka Prefecture (Usui stn, 12 min walk) | Shizuoka — Izu Peninsula (Ito City, adjacent to Atami; preferred cluster) | House — RC (1F) + wood (2F/3F), 3-storey | ¥32,500,000 | ~CAD 290k | realkamakuraestate.jp listing n=24426 | Under review | Within revised CAD 400k ceiling; notable architecture; meets 2-toilet requirement but below 2-full-bath preference; see detail below |
+| JP-001 | Kamakura City (Kamakura High School Mae stn, 12 min walk) | 湘南・鎌倉・熱海 (Kamakura) | House — steel frame, 2-storey | ¥119,900,000 | ~CAD 1.07M | realkamakuraestate.jp listing n=25300 | Under review | Well over CAD 400k ceiling; retained as market reference for Kamakura; see detail below |
+| JP-002 | Usui, Ito City, Shizuoka Prefecture (Usui stn, 12 min walk) | 湘南・鎌倉・熱海 (Atami adjacent / Izu Peninsula) | House — RC (1F) + wood (2F/3F), 3-storey | ¥32,500,000 | ~CAD 290k | realkamakuraestate.jp listing n=24426 | Under review | Within revised CAD 400k ceiling; notable architecture; meets 2-toilet requirement but below 2-full-bath preference; see detail below |
 | JP-003 | 芹沼 イオンの近く 4LDK | Nikko / Imaichi fallback cluster (to confirm exact municipality) | House — 4LDK | ¥29,300,000 | ~CAD 262k | homes.co.jp listing b-1293880001199 | Identified | Within revised CAD 400k ceiling; 1 full bath + 2 toilets; built ~5 years ago |
 | JP-004 | 霧降 — currently pension | Nikko / Imaichi fallback cluster | House / pension property — 11LDK | ¥19,800,000 | ~CAD 177k | homes.co.jp listing b-1204290000352 | Identified | Within revised CAD 400k ceiling; current pension use; conversion concept: 3 rooms with large bath and toilet |
-| JP-005 | 鎌倉市津 — sea / station within ~10 min walk | Kanagawa west of Yokohama (Kamakura) | House | ¥114,900,000 | ~CAD 1.03M | homes.co.jp listing b-78730032210 | Identified | Well over CAD 400k ceiling; 2 baths + 2 toilets; market reference for Kamakura fit and quality |
-| JP-006 | 鎌倉市手広2丁目 — hilltop 2LDK | Kanagawa west of Yokohama (Kamakura) | House — 2LDK | ¥46,970,000 | ~CAD 419k | homes.co.jp listing b-86570014395 | Identified | Slightly above CAD 400k ceiling; 1 full bath + 2 toilets; may be worth watching for price movement |
-| JP-007 | 鎌倉市腰越1丁目 — outdoor shower | Kanagawa west of Yokohama (Kamakura) | House | ¥84,990,000 | ~CAD 759k | homes.co.jp listing b-1563320000361 | Identified | Well over CAD 400k ceiling; 1 full bath + 2 toilets + 1 outdoor shower |
+| JP-005 | 鎌倉市津 — sea / station within ~10 min walk | 湘南・鎌倉・熱海 (Kamakura) | House | ¥114,900,000 | ~CAD 1.03M | homes.co.jp listing b-78730032210 | Identified | Well over CAD 400k ceiling; 2 baths + 2 toilets; market reference for Kamakura fit and quality |
+| JP-006 | 鎌倉市手広2丁目 — hilltop 2LDK | 湘南・鎌倉・熱海 (Kamakura) | House — 2LDK | ¥46,970,000 | ~CAD 419k | homes.co.jp listing b-86570014395 | Identified | Slightly above CAD 400k ceiling; 1 full bath + 2 toilets; may be worth watching for price movement |
+| JP-007 | 鎌倉市腰越1丁目 — outdoor shower | 湘南・鎌倉・熱海 (Kamakura) | House | ¥84,990,000 | ~CAD 759k | homes.co.jp listing b-1563320000361 | Identified | Well over CAD 400k ceiling; 1 full bath + 2 toilets + 1 outdoor shower |
 
 ---
 
