@@ -196,8 +196,8 @@ The planning rate ladder for fintech/regulatory work is governed by LLP-039 unle
 | Year | Minimum | Middle | Maximum |
 |---|---:|---:|---:|
 | 2026 | CAD 480/hr | CAD 510/hr | CAD 550/hr |
-| 2027 | CAD 505/hr | CAD 600/hr | CAD 650/hr |
-| 2028 | CAD 550/hr | CAD 690/hr | CAD 750/hr |
-| 2029 | CAD 600/hr | CAD 780/hr | CAD 850/hr |
+| 2027 | CAD 555/hr | CAD 600/hr | CAD 650/hr |
+| 2028 | CAD 630/hr | CAD 690/hr | CAD 750/hr |
+| 2029 | CAD 680/hr | CAD 780/hr | CAD 850/hr |
 
 The maximum planning rate is CAD 850/hour.

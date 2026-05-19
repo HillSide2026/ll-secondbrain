@@ -163,6 +163,25 @@ Total owner compensation is modeled as $80k regardless of scenario, split as $72
 - Scenario 1 margin ($12k–$22k) is thin relative to total owner compensation risk
 - Scenario 3 margin ($27k–$42k) is the more sustainable target if the firm is to build reserves or invest in staffing (setter, senior lawyer)
 
+---
+
+## Best Case Scenario — 2026-2029 (Without Leverage)
+
+Confirmed by ML1 on 2026-05-18. Strategic session context: Bet 1 (fintech/payments/CARF boutique) + Bet 2 (corporate governance, $5M-$20M band).
+
+Rate basis: POL-069 planning rate ladder (fintech/regulatory). Retainer basis: POL-069 Tier 2 ($12K/month, 6 hrs/week), Tier 3 ($20K/month, 10 hrs/week). Solo ceiling: 2-3 active retainers.
+
+| Year | Best Case Revenue | Key Driver |
+|---|---:|---|
+| 2026 | CAD $200K-$250K | Q2-Q4 recovery; Stream/SnowCap retainer; matters in WIP converting |
+| 2027 | CAD $300K-$375K | fintechlawyer.ca inbound converting; CARF scoping engagements; 2 retainers |
+| 2028 | CAD $425K-$550K | CARF implementation peak; 3 retainers; corporate Health Check systematic |
+| 2029 | CAD $500K-$650K | Approaching solo capacity ceiling; higher-fee matter mix; rate at $600-$850/hr |
+
+Note: at 2 Tier 2 retainers ($288K/year recurring) plus 400 hours of project work at mid-rate ($690-$780/hr in 2028-2029), the top of the 2028-2029 range is reachable without unusual volume. The binding constraint is capacity, not demand. Revenue beyond $650K before 2030 requires leverage.
+
+---
+
 **Key open items (not in source document):**
 - Actual 2025 revenue vs. these scenario targets — needed to calibrate which scenario is realistic
 - F02 build costs (landing page, GHL config) — likely absorbed within client acquisition budget

@@ -87,6 +87,28 @@ The following clusters are planned but not yet written:
 | P7-005 | Sanctions Screening Obligations for Canadian Payments Operators | Compliance |
 | P7-006 | Regulatory Arbitrage Risk in Multi-Jurisdiction Payments Structures | Cross-border |
 
+#### Cluster P8: Stablecoin Regulatory Framework
+
+**Target reader:** Stablecoin issuers, fiat-backed token operators, and payments
+businesses considering stablecoin settlement infrastructure in the Canadian market.
+
+**Scope note:** This cluster covers the payments and regulatory characterization
+of stablecoins under Canadian law (RPAA Level 3, Bank Act constraints, FINTRAC
+classification). Securities characterization of stablecoin tokens is addressed
+in Vertical 5. Posts in this cluster do not address token issuance as a capital
+markets matter.
+
+**Status:** Cluster added 2026-05-18. Post-level scope to be defined.
+
+| # | Title | Role |
+|---|---|---|
+| P8-001 | Stablecoins in Canada: Regulatory Framework for Fiat-Backed Token Issuers | Pillar |
+| P8-002 | Does a Stablecoin Issuer Need to Register Under the RPAA? | Classification |
+| P8-003 | The Bank Act and Stablecoin Issuance: Where the Hard Legal Line Is | Classification |
+| P8-004 | FINTRAC Registration for Stablecoin Operators: MSB Obligations | Compliance |
+| P8-005 | Stablecoin Reserve Requirements and Safeguarding Under Canadian Law | Compliance |
+| P8-006 | Payment Stablecoins vs. Security Tokens: How Canadian Regulators Draw the Line | Classification |
+
 ---
 
 ## Vertical 2: Lending
@@ -244,11 +266,20 @@ structure. Placement and publication treatment to be confirmed by ML1.
 
 ## Production Priorities
 
-Not yet set. ML1 to confirm which vertical and which cluster to produce first.
+Set by ML1 on 2026-05-18.
 
-Existing payments content (EO1-EO4) represents approximately 60 posts in draft or
-written state. The RPAA cluster (P5) and banking relationships cluster (P6) are the
-most natural next payments additions.
+1. **Review EO1-EO4 (FINTRAC/PCMLTFA layer) for quality.** 53 posts written, in WP draft.
+   Quality review required before publication. Blocking step for all Vertical 1 publication.
+
+2. **Produce RPAA cluster P5** (10 posts): pillar, PSP registration, classification,
+   operational risk, safeguarding, enforcement. Direct gap for tier 5 boutique positioning.
+
+3. **Produce Banking relationships cluster P6** (8 posts): de-risking, bank onboarding,
+   account termination. High-search-intent, high-ICP-resonance content.
+
+4. **Produce Cross-border payments cluster P7** (6 posts).
+
+5. **Scope and produce stablecoin cluster** (see Cluster P8 below).
 
 For new verticals, Lending (V2) has the most overlap with existing practice area work.
 Crypto (V5) has the clearest demand signal from the existing ICP. Insurance (V3) and

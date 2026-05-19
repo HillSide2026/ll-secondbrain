@@ -32,9 +32,9 @@ The maximum planning rate is CAD 850/hour.
 | Year | Greenlit Scope | Minimum | Middle | Maximum | Rate Decision Posture |
 |---|---|---:|---:|---:|---|
 | 2026 | Basic bounded advisory only | CAD 480/hr | CAD 510/hr | CAD 550/hr | Use existing rates; do not rely on premium-rate work to make the model viable |
-| 2027 | Basic scope plus controlled premium triage | CAD 505/hr | CAD 600/hr | CAD 650/hr | Introduce higher-rate quoting only for tightly scoped exceptions or separate projects |
-| 2028 | Select premium adjacent matters if delivery spine is proven | CAD 550/hr | CAD 690/hr | CAD 750/hr | Use formal specialist-rate band or fixed-fee equivalents for bounded premium projects |
-| 2029 | Mature premium specialist model if Path A/B evidence supports it | CAD 600/hr | CAD 780/hr | CAD 850/hr | Maximum rate ceiling available only for proven premium specialist work |
+| 2027 | Basic scope plus controlled premium triage | CAD 555/hr | CAD 600/hr | CAD 650/hr | Introduce higher-rate quoting only for tightly scoped exceptions or separate projects |
+| 2028 | Select premium adjacent matters if delivery spine is proven | CAD 630/hr | CAD 690/hr | CAD 750/hr | Use formal specialist-rate band or fixed-fee equivalents for bounded premium projects |
+| 2029 | Mature premium specialist model if Path A/B evidence supports it | CAD 680/hr | CAD 780/hr | CAD 850/hr | Maximum rate ceiling available only for proven premium specialist work |
 
 ## Retainer Interaction
 
