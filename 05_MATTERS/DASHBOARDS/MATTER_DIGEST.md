@@ -1,6 +1,6 @@
 # Firm Matter Digest
 
-Generated at: 2026-05-18T10:32:24Z
+Generated at: 2026-05-19T10:32:52Z
 
 ## Role
 
@@ -18,7 +18,7 @@ Use `ML1 monitoring point` for a matter-linked signal that ML1 must keep visible
 - Moved matters: 0
 - ML Active matters: 17
 - ML Active matters with zero services: 13
-- ML Watch matters: 11
+- ML Watch matters: 0
 - Fulfillment escalation candidates (urgent): 1
 - Inbox-linked active matters (last 7 days): 0
 - Inbox-signal stalled matters: 35
@@ -66,19 +66,7 @@ Use `ML1 monitoring point` for a matter-linked signal that ML1 must keep visible
 | 26-259-00003 | LL Onboarding | ML Active | Standard | active | 0 | Open | repo://05_MATTERS/STANDARD/26-259-00003/MATTER.yaml |
 
 ### ML Watch Queue
-| Matter Number | Matter | Category | Delivery | Fulfillment | Services | Status | Source Pointer |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 23-169-00003 | Best Bottles Inc. | ML Watch | Normal | active | 0 | Open | repo://05_MATTERS/NORMAL/23-169-00003/MATTER.yaml |
-| 25-1024-00001 | AllPro Construction Group | ML Watch | Normal | active | 0 | Open | repo://05_MATTERS/NORMAL/25-1024-00001/MATTER.yaml |
-| 25-1192-00001 | The Knot Churros International Limited | ML Watch | Normal | active | 0 | Open | repo://05_MATTERS/NORMAL/25-1192-00001/MATTER.yaml |
-| 25-822-00001 | Majid Hajibeigy | ML Watch | Normal | active | 0 | Open | repo://05_MATTERS/NORMAL/25-822-00001/MATTER.yaml |
-| 24-347-00002 | Brand Butter | ML Watch | Normal | keep in view | 0 | Open | repo://05_MATTERS/NORMAL/24-347-00002/MATTER.yaml |
-| 24-409-00001 | A. Mukherjee & Co. | ML Watch | Normal | keep in view | 0 | Open | repo://05_MATTERS/NORMAL/24-409-00001/MATTER.yaml |
-| 24-601-00001 | Meta Bytes North America Inc | ML Watch | Normal | keep in view | 0 | Open | repo://05_MATTERS/NORMAL/24-601-00001/MATTER.yaml |
-| 24-682-00002 | Stream Ventures Limited | ML Watch | Normal | keep in view | 0 | Open | repo://05_MATTERS/NORMAL/24-682-00002/MATTER.yaml |
-| 25-174-00001 | Danielle Thompson | ML Watch | Normal | keep in view | 0 | Open | repo://05_MATTERS/NORMAL/25-174-00001/MATTER.yaml |
-| 25-192-00003 | If Not Me Inc | ML Watch | Normal | keep in view | 0 | Open | repo://05_MATTERS/NORMAL/25-192-00003/MATTER.yaml |
-| 26-1630-00001 | Marcela Hernandez | ML Watch | Normal | keep in view | 0 | Open | repo://05_MATTERS/NORMAL/26-1630-00001/MATTER.yaml |
+- None
 
 ### ML Active Service Coverage Gaps
 - 22-194-00006 :: Rousseau Mazzuca LLP (services=0; repo://05_MATTERS/STANDARD/22-194-00006/MATTER.yaml)
@@ -135,19 +123,19 @@ Use `ML1 monitoring point` for a matter-linked signal that ML1 must keep visible
 | 25-1363-00001 | Raevan Joy Sambrano | Other | Standard | closing | none | repo://05_MATTERS/STANDARD/25-1363-00001/MATTER.yaml |
 | 25-1603-00001 | IBERBANCO LTD | Other | Standard | closing | none | repo://05_MATTERS/STANDARD/25-1603-00001/MATTER.yaml |
 | 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | Other | Standard | closing | none | repo://05_MATTERS/STANDARD/26-1593-00002/MATTER.yaml |
-| 23-169-00003 | Best Bottles Inc. | ML Watch | Normal | active | none | repo://05_MATTERS/NORMAL/23-169-00003/MATTER.yaml |
-| 25-1024-00001 | AllPro Construction Group | ML Watch | Normal | active | none | repo://05_MATTERS/NORMAL/25-1024-00001/MATTER.yaml |
-| 25-1192-00001 | The Knot Churros International Limited | ML Watch | Normal | active | none | repo://05_MATTERS/NORMAL/25-1192-00001/MATTER.yaml |
-| 25-822-00001 | Majid Hajibeigy | ML Watch | Normal | active | none | repo://05_MATTERS/NORMAL/25-822-00001/MATTER.yaml |
-| 24-347-00002 | Brand Butter | ML Watch | Normal | keep in view | none | repo://05_MATTERS/NORMAL/24-347-00002/MATTER.yaml |
-| 24-409-00001 | A. Mukherjee & Co. | ML Watch | Normal | keep in view | none | repo://05_MATTERS/NORMAL/24-409-00001/MATTER.yaml |
-| 24-601-00001 | Meta Bytes North America Inc | ML Watch | Normal | keep in view | none | repo://05_MATTERS/NORMAL/24-601-00001/MATTER.yaml |
-| 24-682-00002 | Stream Ventures Limited | ML Watch | Normal | keep in view | none | repo://05_MATTERS/NORMAL/24-682-00002/MATTER.yaml |
-| 25-174-00001 | Danielle Thompson | ML Watch | Normal | keep in view | none | repo://05_MATTERS/NORMAL/25-174-00001/MATTER.yaml |
-| 25-192-00003 | If Not Me Inc | ML Watch | Normal | keep in view | none | repo://05_MATTERS/NORMAL/25-192-00003/MATTER.yaml |
-| 26-1630-00001 | Marcela Hernandez | ML Watch | Normal | keep in view | none | repo://05_MATTERS/NORMAL/26-1630-00001/MATTER.yaml |
+| 23-169-00003 | Best Bottles Inc. | Other | unknown | unknown | none | repo://05_MATTERS/PARKED/23-169-00003/MATTER.yaml |
+| 24-347-00002 | Brand Butter | Other | unknown | unknown | none | repo://05_MATTERS/PARKED/24-347-00002/MATTER.yaml |
+| 24-409-00001 | A. Mukherjee & Co. | Other | unknown | unknown | none | repo://05_MATTERS/PARKED/24-409-00001/MATTER.yaml |
+| 24-601-00001 | Meta Bytes North America Inc | Other | unknown | unknown | none | repo://05_MATTERS/PARKED/24-601-00001/MATTER.yaml |
+| 24-682-00002 | Stream Ventures Limited | Other | unknown | unknown | none | repo://05_MATTERS/PARKED/24-682-00002/MATTER.yaml |
 | 24-845-00001 | STAR 333 SPORTS INC. | Other | unknown | unknown | none | repo://05_MATTERS/STANDARD/24-845-00001/MATTER.yaml |
+| 25-1024-00001 | AllPro Construction Group | Other | unknown | unknown | none | repo://05_MATTERS/PARKED/25-1024-00001/MATTER.yaml |
+| 25-1192-00001 | The Knot Churros International Limited | Other | unknown | unknown | none | repo://05_MATTERS/PARKED/25-1192-00001/MATTER.yaml |
+| 25-174-00001 | Danielle Thompson | Other | unknown | unknown | none | repo://05_MATTERS/PARKED/25-174-00001/MATTER.yaml |
+| 25-192-00003 | If Not Me Inc | Other | unknown | unknown | none | repo://05_MATTERS/PARKED/25-192-00003/MATTER.yaml |
 | 25-256-00005 | Aspire Infusions Inc | Other | unknown | unknown | none | repo://05_MATTERS/STRATEGIC/25-256-00005/MATTER.yaml |
+| 25-822-00001 | Majid Hajibeigy | Other | unknown | unknown | none | repo://05_MATTERS/PARKED/25-822-00001/MATTER.yaml |
+| 26-1630-00001 | Marcela Hernandez | Other | unknown | unknown | none | repo://05_MATTERS/PARKED/26-1630-00001/MATTER.yaml |
 
 ## Unmapped Comms Intake
 - 19cbc278e9a83941 :: Make your first purchase on our P2P platform and pay up to 20% less (repo://06_RUNS/ops/gmail_fetch_latest.json#thread:19cbc278e9a83941)
@@ -158,5 +146,16 @@ Use `ML1 monitoring point` for a matter-linked signal that ML1 must keep visible
 
 ## Exceptions
 - Missing local matter folder for SharePoint packet generation:
+  - 23-169-00003
+  - 24-347-00002
+  - 24-409-00001
+  - 24-601-00001
+  - 24-682-00002
   - 24-845-00001
+  - 25-1024-00001
+  - 25-1192-00001
+  - 25-174-00001
+  - 25-192-00003
   - 25-256-00005
+  - 25-822-00001
+  - 26-1630-00001
