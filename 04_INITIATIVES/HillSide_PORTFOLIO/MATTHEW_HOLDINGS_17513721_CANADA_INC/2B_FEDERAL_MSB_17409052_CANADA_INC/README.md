@@ -4,7 +4,7 @@ title: 2B Federal Company / Granville Tag (17409052 Canada Inc)
 owner: ML1
 status: draft
 created_date: 2026-03-06
-last_updated: 2026-05-11
+last_updated: 2026-05-19
 tags: [granville, federal-msb, value-stack, payments]
 ---
 
@@ -91,6 +91,7 @@ For the full build plan, see:
 - `EMI_AND_PARTNERSHIP_OPTIONS.md`
 - `PRODUCT_SOFTWARE_CANDIDATES.md`
 - `SALE_READINESS_NEXT_STEPS.md`
+- `../../BUSINESS_PROJECTS/HBP-013_SALE_OF_GRANVILLE/PROJECT_PLAN.md`
 
 ---
 
@@ -129,4 +130,5 @@ This folder may contain:
 - strategic development plans
 
 This entity is a federal company in the current HillSide structure with no
-current operating activity. No disposition is planned.
+current operating activity. Its disposition is now being pursued through
+`HBP-013_SALE_OF_GRANVILLE`.

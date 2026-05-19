@@ -4,7 +4,7 @@ title: HillSide Portfolio
 owner: ML1
 status: draft
 created_date: 2026-03-06
-last_updated: 2026-04-03
+last_updated: 2026-05-19
 tags: []
 ---
 
@@ -94,6 +94,8 @@ HillSide projects use the `HBP-###` series.
 - `HBP-009` -> `HBP-009_2027_BUSINESS_IDEAS`
 - `HBP-010` -> `HBP-010_RHIZOME_WHITE_LABEL`
 - `HBP-011` -> `HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY`
+- `HBP-012` -> `HBP-012_INFO_PRODUCT`
+- `HBP-013` -> `HBP-013_SALE_OF_GRANVILLE`
 
 Projects with dedicated folders currently include:
 
@@ -108,6 +110,8 @@ Projects with dedicated folders currently include:
 - `HBP-009` -> `BUSINESS_PROJECTS/HBP-009_2027_BUSINESS_IDEAS`
 - `HBP-010` -> `BUSINESS_PROJECTS/HBP-010_RHIZOME_WHITE_LABEL`
 - `HBP-011` -> `BUSINESS_PROJECTS/HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY`
+- `HBP-012` -> `BUSINESS_PROJECTS/HBP-012_INFO_PRODUCT`
+- `HBP-013` -> `BUSINESS_PROJECTS/HBP-013_SALE_OF_GRANVILLE`
 
 The canonical HillSide business-project stage reference is maintained in:
 

@@ -4,7 +4,7 @@ title: Business Projects
 owner: ML1
 status: draft
 created_date: 2026-03-14
-last_updated: 2026-03-20
+last_updated: 2026-05-19
 tags: [hillside, business-projects]
 ---
 
@@ -33,6 +33,8 @@ Current folder-backed projects:
 - `HBP-009` -> `HBP-009_2027_BUSINESS_IDEAS`
 - `HBP-010` -> `HBP-010_RHIZOME_WHITE_LABEL`
 - `HBP-011` -> `HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY`
+- `HBP-012` -> `HBP-012_INFO_PRODUCT`
+- `HBP-013` -> `HBP-013_SALE_OF_GRANVILLE`
 
 Each HillSide business project now has a numbered folder starting with its
 canonical `HBP-###` label.

@@ -4,7 +4,7 @@ title: 17409052 Canada Inc Sale-Readiness Next Steps
 owner: ML1
 status: draft
 created_date: 2026-05-15
-last_updated: 2026-05-17
+last_updated: 2026-05-19
 tags: [granville, federal-msb, sale-readiness, rpaa, emi, product-software, users]
 ---
 
@@ -12,11 +12,40 @@ tags: [granville, federal-msb, sale-readiness, rpaa, emi, product-software, user
 
 ## Purpose
 
-This document converts the 174 minimum and preferred sale-readiness gates into
-near-term execution workstreams.
+This document converts the 174 sale-readiness gates (minimum, preferred, stretch)
+into near-term execution workstreams.
 
 The objective is to move `17409052 Canada Inc` from a federal MSB / payments
 infrastructure concept into a buyer-readable sale package.
+
+## Sale-Readiness Gates
+
+### Minimum
+- FINTRAC MSB registration issued; and
+- AML program complete enough for buyer review.
+
+### Preferred
+*(minimum gate satisfied, plus:)*
+- FINTRAC and RPAA status established on the public registry;
+- at least one EMI has provided written indication of willingness to onboard 174;
+- compliance-software decision made (Rhizome as default unless EMI or bank requires Sumsub);
+- Kwiikpay role as a 174 infrastructure path established or ruled out; and
+- buyer can understand both outcomes: keep the EMI path or replace it without destroying value.
+
+### Stretch
+*(preferred gate satisfied, plus:)*
+- direct EMI agreement is signed;
+- lightweight integration has been tested;
+- some actual flow of funds has occurred through the entity;
+- compliance workflow is demo-ready;
+- diligence folder is complete, including:
+  - AML program;
+  - RPAA analysis / status;
+  - flow of funds (documented, with actual transaction evidence);
+  - compliance software decision; and
+  - EMI documentation;
+- no exclusivity, lock-in, or dependency that impairs sale; and
+- buyer transition steps are mapped.
 
 ## Current Priority Workstreams
 
@@ -44,9 +73,9 @@ The current 174 product-software candidates are:
 | --- | --- | --- |
 | Mambu Payments / Payments Hub | No full public quote located. Public materials point to sales contact / payment transformation discussion. | Request pricing and implementation proposal. |
 | Toqio | No full public quote located. Public materials point to demo / sales discussion. | Request pricing and implementation proposal. |
-| Crassula | Public materials describe white-label banking, payment hub, connectors, and price-list functionality, but no complete vendor quote located. **Meeting scheduled week of 2026-05-18.** | Attend meeting; capture pricing, modules, and implementation terms. |
+| Crassula | Meeting held week of 2026-05-18. Crassula pitched software plus connectors. Modules discussed: UI, fiat accounts, EUR/GBP/USD. Opening pricing is still pending final confirmation at roughly 20k setup and 11k/month. Robust EMI connector list may be the main differentiator. Possible sandbox availability for regulator review is a bright spot, but prerequisites are unclear. | Confirm final quote and currency, EMI connector availability for 174, and sandbox prerequisites for regulator review. |
 | SDK.finance | Public pricing page describes enterprise licensing options and quote process; no fixed price captured. | Request annual, lifetime, and SaaS / source-code options. |
-| FinLego | Software provider — core banking and ledger platform; secondary EMI distribution capability. New candidate added 2026-05-15. **Meeting scheduled week of 2026-05-18.** | Attend meeting; assess core banking / ledger scope, EMI distribution structure, pricing, and fit for Granville value stack. |
+| FinLego | Meeting held week of 2026-05-18. Software provider with UI, fiat accounts, and EUR/GBP/USD support. Banking access was described through Kanzum, which does not satisfy RPAA safeguarding. Opening pricing received at EUR 15k setup and EUR 4k/month; final offer pending. | Confirm final offer, whether software is separable from Kanzum, and whether any part of the structure materially helps the 174 value stack despite the safeguarding issue. |
 
 ### Offer Request Questions
 
@@ -60,6 +89,11 @@ Each candidate should be asked for:
 6. Whether an EMI or bank relationship is required first.
 7. Data export and portability.
 8. Whether the offer can be documented in a buyer diligence folder.
+9. Whether a non-core-banking package exists for an EMI-led, pre-revenue sale
+   asset.
+10. Whether sandbox or demo access can be provided for buyer or regulator review
+    without full production deployment.
+11. Which modules can be removed if 174 is not trying to market "banking."
 
 ### Desired Output
 
@@ -67,10 +101,12 @@ Create a pricing and offer grid with:
 
 - vendor;
 - product modules;
+- minimum non-banking package;
 - setup fee;
 - recurring fee;
 - implementation timeline;
 - regulated-provider dependency;
+- sandbox / demo availability;
 - transferability;
 - key restrictions;
 - buyer-diligence usefulness; and
@@ -256,16 +292,18 @@ Desired output:
 
 ## Immediate Action List
 
-1. Request pricing and offer terms from Mambu Payments / Payments Hub.
-2. Request pricing and offer terms from Toqio.
-3. Request pricing and offer terms from Crassula.
-4. Request pricing and offer terms from SDK.finance.
-5. Build the 174 product-software pricing grid.
-6. Produce current RPAA application status note.
-7. Identify at least two alternatives to the EUR 12,000 EMI offer.
-8. Prepare EMI comparison grid.
-9. Draft 174 user-acquisition / demand-proof test plan.
-10. Decide whether minimum sale-readiness gate is satisfied after candidates,
+1. Ask Crassula and FinLego whether 174 can buy a thinner non-core-banking
+   package rather than full "core banking."
+2. Request pricing and offer terms from Mambu Payments / Payments Hub.
+3. Request pricing and offer terms from Toqio.
+4. Confirm final pricing, connector availability, and sandbox / regulator-review terms from Crassula.
+5. Request pricing and offer terms from SDK.finance.
+6. Build the 174 product-software pricing grid.
+7. Produce current RPAA application status note.
+8. Identify at least two alternatives to the EUR 12,000 EMI offer.
+9. Prepare EMI comparison grid.
+10. Draft 174 user-acquisition / demand-proof test plan.
+11. Decide whether minimum sale-readiness gate is satisfied after candidates,
     RPAA, EMI, and user-proof evidence are updated.
 
 ## Current Working Conclusion
@@ -275,6 +313,7 @@ The next phase for 174 is not more abstract strategy.
 It is evidence capture:
 
 - vendor pricing and offers;
+- thinner non-banking package availability;
 - RPAA status;
 - EMI alternatives; and
 - narrow user or demand proof.
