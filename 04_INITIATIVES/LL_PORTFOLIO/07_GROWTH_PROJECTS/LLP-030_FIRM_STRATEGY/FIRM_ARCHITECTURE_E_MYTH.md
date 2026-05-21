@@ -30,28 +30,10 @@ This document organizes those layers.
 **Definition:** The fundamental reason Levine Law exists beyond simply making a
 profit.
 
+Canonical detail: `PURPOSE.md`.
+
 Levine Law exists to make serious business operators stronger, clearer, and
 better protected by turning legal complexity into structured business judgment.
-
-The firm champions the idea that growing businesses should not have to choose
-between inaccessible Bay Street counsel and reactive commodity legal service.
-They should be able to access disciplined corporate and regulatory judgment in
-a form that is practical, ongoing, and built around how their business actually
-operates.
-
-Levine Law also exists to give Matthew a firm that produces strong income,
-professional pride, personal sustainability, and long-term asset value without
-requiring constant reactive overload.
-
-The problem Levine Law exists to solve:
-
-- serious operators often do not know which legal rules matter until the rules
-  begin to constrain growth, financing, banking, compliance, or exit options
-- fintech and regulated-business founders need corporate and regulatory
-  judgment before issues become emergencies
-- small and mid-market businesses need structure, governance, and legal
-  infrastructure without being treated as either too small for serious counsel
-  or too large for practical pricing
 
 ---
 
@@ -205,40 +187,13 @@ Behavioral rules:
 **Definition:** The operational translation of Levine Law's values and mission:
 how the firm works every day.
 
+Canonical detail: `PRACTICE.md`.
+
 Levine Law's practice is built around the promise that clients should feel
 protected, informed, and in control.
 
 The firm does not sell commodities. It sells structured legal judgment,
 reliable execution, and business clarity.
-
-In practice, this means:
-
-- every matter has a clear owner, scope, next step, and delivery path
-- every recurring service has defined deliverables, pricing logic, and renewal
-  expectations
-- every standardized solution has intake criteria, scope boundaries, workflow,
-  templates, quality control, pricing, and follow-on pathway
-- every important deadline, filing, renewal, and client obligation is recorded
-  in a system rather than held in someone's head
-- every team member understands the systems that make the firm run and owns
-  their role within those systems
-- routine work is automated or templated where possible; human expertise is
-  reserved for judgment, risk, strategy, and client trust
-- meetings are short, structured, and outcome-focused
-- communication is plain, documented, and useful
-- retainers are requested before work begins or before trust balances become
-  inadequate
-- WIP is reviewed before it becomes stale
-- invoices are issued on a predictable cadence with clear narratives
-- overdue accounts are followed up promptly and consistently
-- the operating savings account meets or exceeds the annual reserve target in
-  the Financial Architecture table below
-- monthly recurring revenue is tracked against the annual target in the
-  Financial Architecture table below; if committed MRR is below target, the
-  gap must be covered by identified project work, WIP conversion, or a revised
-  acquisition plan
-- work is paused, narrowed, or escalated when payment risk threatens service
-  reliability
 
 ---
 
