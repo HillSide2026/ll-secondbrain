@@ -1,7 +1,7 @@
 # METRIC SCHEMA INTEGRITY REPORT
 
-- Generated: 2026-05-22T11:35:59+00:00
-- Run ID: RUN-2026-05-22-LL-PORTFOLIO-AGENTS-113558Z
+- Generated: 2026-05-23T10:30:12+00:00
+- Run ID: RUN-2026-05-23-LL-PORTFOLIO-AGENTS-103012Z
 
 > Advisory output. ML1 approval remains required for decisions.
 ## Metric Schema Integrity

@@ -1,6 +1,6 @@
 # Matter Index
 
-Generated at: 2026-05-22T11:13:10Z
+Generated at: 2026-05-23T10:30:03Z
 Connector source: `cache:cache/clio_matters.json (repo_fallback:05_MATTERS) + repo_fallback:05_MATTERS`
 
 ## Role

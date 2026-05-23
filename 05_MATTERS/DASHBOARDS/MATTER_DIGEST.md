@@ -1,6 +1,6 @@
 # Firm Matter Digest
 
-Generated at: 2026-05-22T11:13:10Z
+Generated at: 2026-05-23T10:30:03Z
 
 ## Role
 
