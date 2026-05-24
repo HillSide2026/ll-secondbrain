@@ -1,3 +1,13 @@
+---
+id: 06_runs_2026_04_25_inbox_triage_approval_md
+title: Inbox Triage Approval — 2026-04-25
+owner: ML2
+status: draft
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
+---
+
 # Inbox Triage Approval — 2026-04-25
 
 **Approved by:** ML1 (inline instruction)

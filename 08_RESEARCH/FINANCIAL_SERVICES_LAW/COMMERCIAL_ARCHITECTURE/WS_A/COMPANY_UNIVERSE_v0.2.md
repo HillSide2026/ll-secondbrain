@@ -8,6 +8,10 @@ approved_by: ML1
 approved_date: 2026-04-25
 version: 0.2
 output_label: Derived from disclosed agreement (SEC)
+owner: ML1
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
 ---
 
 # WS-A/0 — Company Universe v0.2

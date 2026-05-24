@@ -52,7 +52,7 @@ Violation Type: Write to doctrine folder (prohibited)
 
 ### Step 2: Agent Refusal Check
 
-Per SYS-008 definition ([SMA_KNOWLEDGE_CURATION.md:121-128](../../../00_SYSTEM/agents/specs/system_management/SMA_KNOWLEDGE_CURATION.md#L121-L128)):
+Per SYS-008 definition ([SMA-004_KNOWLEDGE_CURATION.md](../../../00_SYSTEM/AGENTS/SMA-004_KNOWLEDGE_CURATION.md)):
 
 ```markdown
 ## Refusal Conditions
@@ -130,7 +130,7 @@ $ ./scripts/safety-rails.sh
 
 ## Evidence
 
-- 00_SYSTEM/agents/specs/system_management/SMA_KNOWLEDGE_CURATION.md:121-128 — Refusal conditions
+- 00_SYSTEM/AGENTS/SMA-004_KNOWLEDGE_CURATION.md — Refusal conditions
 - 01_DOCTRINE/03_POLICIES/WRITE_BACK_POLICY.md — Write-back policy
 - scripts/safety-rails.sh — Safety rails script
 - 03_TESTS/fixtures/misplaced_artifact.md — Misplacement test fixture

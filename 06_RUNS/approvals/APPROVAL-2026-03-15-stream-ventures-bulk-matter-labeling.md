@@ -5,6 +5,9 @@ type: label_write_approval
 status: PENDING_ML1_APPROVAL
 created: 2026-03-15
 owner: ML1
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
 ---
 
 # Approval — Stream Ventures Bulk Matter Labeling (2026)

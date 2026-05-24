@@ -45,6 +45,11 @@ next_actions:
   - Confirm annual assessment fee methodology once Bank of Canada publishes post-registration framework
   - Review Bank of Canada case scenarios on crypto/stablecoin services
   - Consider promotion to 07_REFERENCE once ML1 reviews and content stabilizes
+id: 08_research_financial_services_law_2026_03_23_financial_services_law_rpaa_synthesis_v0_1_md
+title: RPAA Research Synthesis — v0.1
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
 ---
 
 # RPAA Research Synthesis — v0.1

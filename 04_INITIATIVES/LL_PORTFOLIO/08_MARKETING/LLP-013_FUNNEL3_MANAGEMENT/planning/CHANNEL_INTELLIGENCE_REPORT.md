@@ -6,6 +6,7 @@ created_date: 2026-04-14
 last_updated: 2026-04-14
 skill: agents/f3-channel-intelligence/skill.md
 id: 04_initiatives_ll_portfolio_08_marketing_llp_013_funnel3_management_planning_channel_intelligence_report_md
+tags: []
 ---
 
 # F3 Channel Intelligence Report

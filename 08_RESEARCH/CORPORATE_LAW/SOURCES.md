@@ -14,6 +14,11 @@ sources:
     citation: "Local source archive"
 open_questions: []
 next_actions: []
+id: 08_research_corporate_law_sources_md
+title: Corporate Law Source Archive
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
 ---
 
 # Corporate Law Source Archive

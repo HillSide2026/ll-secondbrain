@@ -1,3 +1,13 @@
+---
+id: 06_runs_20260411_dryrun_stream_money_classification_md
+title: Stream Money Gmail Classification — 20260411_dryrun
+owner: ML2
+status: draft
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
+---
+
 # Stream Money Gmail Classification — 20260411_dryrun
 
 ## Scope

@@ -19,7 +19,7 @@ underway, but two early agri-food tracks are now visible inside the matter.
 
 ## Governing Framework
 
-- [`02_PLAYBOOKS/TRADE_REMEDIES_MARKET_ACCESS/CANADIAN_WOOD_PRODUCTS_FRAMEWORK.md`](../../../../../02_PLAYBOOKS/TRADE_REMEDIES_MARKET_ACCESS/CANADIAN_WOOD_PRODUCTS_FRAMEWORK.md) — market access methodology, operating constraints, output labeling, Andersen interface protocol, wood products focus layer
+- [`02_PLAYBOOKS/TRADE_REMEDIES_MARKET_ACCESS/CANADIAN_WOOD_PRODUCTS_FRAMEWORK.md`](../../../02_PLAYBOOKS/TRADE_REMEDIES_MARKET_ACCESS/CANADIAN_WOOD_PRODUCTS_FRAMEWORK.md) — market access methodology, operating constraints, output labeling, Andersen interface protocol, wood products focus layer
 
 ## Parties
 

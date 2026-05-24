@@ -1,3 +1,13 @@
+---
+id: 06_runs_inbox_governance_pro_018_soft_junk_readme_md
+title: PRO-018 Soft Junk Artifacts
+owner: ML2
+status: draft
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
+---
+
 # PRO-018 Soft Junk Artifacts
 
 Canonical inbox-governance artifact location for substantive `PRO-018`

@@ -5,6 +5,12 @@ to: chris@roop.ca
 subject: Re: License
 thread_id: 19d9c5153beacc0f
 status: pending_send
+id: 06_runs_inbox_governance_drafts_20260419_draft_roop_licensing_md
+title: 20260419 Draft Roop Licensing
+owner: ML2
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
 ---
 
 Hi Chris,

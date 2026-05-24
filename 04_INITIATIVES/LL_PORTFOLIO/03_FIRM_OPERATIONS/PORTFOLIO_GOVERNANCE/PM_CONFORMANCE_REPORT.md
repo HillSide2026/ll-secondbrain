@@ -1,3 +1,13 @@
+---
+id: 04_initiatives_ll_portfolio_03_firm_operations_portfolio_governance_pm_conformance_report_md
+title: PM Conformance Report
+owner: ML1
+status: draft
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
+---
+
 # PM Conformance Report
 
 - Generated: 2026-05-19T22:13:13+00:00

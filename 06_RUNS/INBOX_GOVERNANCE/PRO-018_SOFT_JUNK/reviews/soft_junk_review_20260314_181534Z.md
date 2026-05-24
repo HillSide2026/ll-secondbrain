@@ -1,3 +1,13 @@
+---
+id: 06_runs_inbox_governance_pro_018_soft_junk_reviews_soft_junk_review_20260314_181534z_md
+title: Soft Junk Review 20260314_181534Z
+owner: ML2
+status: draft
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
+---
+
 # Soft Junk Review 20260314_181534Z
 
 - Query: `in:inbox (category:promotions OR category:social OR category:forums)`

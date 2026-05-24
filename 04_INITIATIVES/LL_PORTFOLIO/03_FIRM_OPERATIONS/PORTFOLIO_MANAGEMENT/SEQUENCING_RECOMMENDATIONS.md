@@ -1,3 +1,13 @@
+---
+id: 04_initiatives_ll_portfolio_03_firm_operations_portfolio_management_sequencing_recommendations_md
+title: SEQUENCING RECOMMENDATIONS
+owner: ML1
+status: draft
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
+---
+
 # SEQUENCING RECOMMENDATIONS
 
 - Generated: 2026-05-23T10:30:12+00:00

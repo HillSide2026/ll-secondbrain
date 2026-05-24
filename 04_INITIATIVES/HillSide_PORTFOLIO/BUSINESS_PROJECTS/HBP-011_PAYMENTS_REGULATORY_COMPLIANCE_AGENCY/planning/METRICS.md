@@ -4,7 +4,7 @@ title: Payment Services Consulting Line - Metrics
 owner: ML1
 status: approved
 created_date: 2026-03-16
-last_updated: 2026-03-20
+last_updated: 2026-05-24
 tags: [payment-services-consulting-line, planning, metrics]
 ---
 
@@ -28,3 +28,18 @@ Stage: `Planning`
 
 These metrics are used to determine whether planning has produced a real
 decision or only more conceptual noise.
+
+## Interim Channel Evidence
+
+Live performance data is not yet sufficient to decide whether the overlapping
+payment-compliance demand should be prioritized through Funnel 3 /
+`fintechlawyer.ca` or through HBP-011 / FinSure.
+
+Until that data exists, HBP-011 will use
+`CHANNEL_EVALUATION_WITHOUT_DATA.md` to:
+
+- distinguish legal buyers from compliance buyers;
+- route legal work to Levine Law and agency / productized work to HBP-011;
+- capture every relevant conversation in a manual evidence ledger; and
+- test willingness to pay over a 30 to 90 day period before declaring one
+  channel superior.

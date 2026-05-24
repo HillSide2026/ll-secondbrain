@@ -4,7 +4,7 @@ title: Payment Services Consulting Line - Project Plan
 owner: ML1
 status: approved
 created_date: 2026-03-16
-last_updated: 2026-03-20
+last_updated: 2026-05-24
 tags: [payment-services-consulting-line, planning, project-plan]
 ---
 
@@ -110,3 +110,5 @@ Execution-stage refinement still required:
 - go-to-market framing for both entry points
 - conversion path from the FINTRAC effectiveness review readiness lead magnet
   into a paid AML Effectiveness Review Readiness Assessment
+- channel evaluation and manual evidence capture before live performance data
+  exists, governed by `CHANNEL_EVALUATION_WITHOUT_DATA.md`

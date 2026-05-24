@@ -16,6 +16,11 @@ open_questions:
   - "Validate keyword mapping and add missing sources."
 next_actions:
   - "Confirm solution taxonomy and remap ambiguous sources."
+id: 08_research_corporate_law_2026_02_10_corporate_law_solution_coverage_matrix_v0_1_md
+title: Corporate Law Solution-Coverage Matrix (Draft)
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
 ---
 
 # Corporate Law Solution-Coverage Matrix (Draft)

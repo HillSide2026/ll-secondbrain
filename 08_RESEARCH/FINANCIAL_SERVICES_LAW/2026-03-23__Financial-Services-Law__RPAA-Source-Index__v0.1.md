@@ -32,6 +32,11 @@ next_actions:
   - Download FSB December 2024 PDF directly for substantive recommendations
   - Retry MNP and Payments Canada RPAA articles
   - Search KPMG and PwC Canada websites directly for RPAA publications
+id: 08_research_financial_services_law_2026_03_23_financial_services_law_rpaa_source_index_v0_1_md
+title: RPAA Source Index
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
 ---
 
 # RPAA Source Index

@@ -7,6 +7,7 @@ created_date: 2026-03-21
 agent: MKT_EDITORIAL_QA_AGENT
 source_document: INDUSTRIES_PILLAR_PAGE_DRAFT_v1.md
 last_updated: 2026-05-18
+tags: []
 ---
 
 # Editorial QA Report — Industries Pillar Page Draft v1

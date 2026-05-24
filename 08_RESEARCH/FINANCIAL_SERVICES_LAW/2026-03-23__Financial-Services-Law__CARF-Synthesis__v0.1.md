@@ -36,6 +36,11 @@ next_actions:
   - Review draft Canadian CARF legislation (August 2025 release) directly
   - Validate penalty figures once legislation finalized
   - Consider promotion to 07_REFERENCE once ML1 reviews and content stabilizes
+id: 08_research_financial_services_law_2026_03_23_financial_services_law_carf_synthesis_v0_1_md
+title: CARF Research Synthesis — v0.1
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
 ---
 
 # CARF Research Synthesis — v0.1

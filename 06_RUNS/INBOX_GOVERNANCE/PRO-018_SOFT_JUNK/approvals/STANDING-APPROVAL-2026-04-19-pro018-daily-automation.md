@@ -8,6 +8,10 @@ policy: POL-042
 protocol: PRO-018
 script: scripts/backlog_cleanup_agent.py
 status: active
+owner: ML2
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
 ---
 
 # Standing Approval — PRO-018 Daily Automated Cleanup

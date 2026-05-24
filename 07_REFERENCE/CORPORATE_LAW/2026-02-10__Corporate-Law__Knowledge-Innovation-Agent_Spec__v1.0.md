@@ -12,6 +12,11 @@ supersedes: null
 sources:
   - type: memo
     citation: "Corporate Law Knowledge & Innovation Agent guidance (2026-02-10)"
+id: 07_reference_corporate_law_2026_02_10_corporate_law_knowledge_innovation_agent_spec_v1_0_md
+title: Corporate Law Knowledge & Innovation Agent — Spec v1.0
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
 ---
 
 # Corporate Law Knowledge & Innovation Agent — Spec v1.0

@@ -16,7 +16,7 @@ Trade remedies / trade defence workstream inside the established Andersen client
 
 ## Governing Framework
 
-- [`02_PLAYBOOKS/TRADE_REMEDIES_MARKET_ACCESS/CANADIAN_WOOD_PRODUCTS_FRAMEWORK.md`](../../../../../02_PLAYBOOKS/TRADE_REMEDIES_MARKET_ACCESS/CANADIAN_WOOD_PRODUCTS_FRAMEWORK.md) — trade remedies methodology, operating constraints, output labeling, Andersen interface protocol, wood products focus layer
+- [`02_PLAYBOOKS/TRADE_REMEDIES_MARKET_ACCESS/CANADIAN_WOOD_PRODUCTS_FRAMEWORK.md`](../../../02_PLAYBOOKS/TRADE_REMEDIES_MARKET_ACCESS/CANADIAN_WOOD_PRODUCTS_FRAMEWORK.md) — trade remedies methodology, operating constraints, output labeling, Andersen interface protocol, wood products focus layer
 
 ## Parties
 

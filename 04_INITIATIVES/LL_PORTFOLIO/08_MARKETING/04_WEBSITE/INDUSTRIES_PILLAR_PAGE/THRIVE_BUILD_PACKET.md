@@ -8,6 +8,7 @@ page: /industries
 platform: Thrive Architect + WordPress
 approval: pending ML1 review
 last_updated: 2026-05-18
+tags: []
 ---
 
 # Thrive Architect Build Packet — Industries We Serve

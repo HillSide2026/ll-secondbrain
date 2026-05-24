@@ -1,3 +1,13 @@
+---
+id: 05_matters_standard_25_1525_00001_matter_status_md
+title: Matter Status — 25-1525-00001
+owner: ML1
+status: draft
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
+---
+
 # Matter Status — 25-1525-00001
 
 Generated at: 2026-04-28T18:00:00Z

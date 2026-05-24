@@ -5,6 +5,12 @@ to: michael@aspireinfusions.com
 subject: Re: Loosh Brands NDA review
 thread_id: 19d72d9697c802b7
 status: pending_send
+id: 06_runs_inbox_governance_drafts_20260419_draft_bou_doumit_loosh_nda_repurpose_md
+title: 20260419 Draft Bou Doumit Loosh Nda Repurpose
+owner: ML2
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
 ---
 
 Hey Michael,

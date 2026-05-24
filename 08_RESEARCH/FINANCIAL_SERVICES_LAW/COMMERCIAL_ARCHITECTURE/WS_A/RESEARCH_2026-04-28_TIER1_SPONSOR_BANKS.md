@@ -7,6 +7,9 @@ created_date: 2026-04-28
 ml1_approval_required: YES
 output_label: Derived from disclosed agreement (SEC)
 targets: [The Bancorp, Pathward Financial, Green Dot]
+owner: ML1
+last_updated: 2026-05-24
+tags: []
 ---
 
 # WS-A Tier 1 Harvest: Sponsor Banks — Bancorp, Pathward/MetaBank, Green Dot

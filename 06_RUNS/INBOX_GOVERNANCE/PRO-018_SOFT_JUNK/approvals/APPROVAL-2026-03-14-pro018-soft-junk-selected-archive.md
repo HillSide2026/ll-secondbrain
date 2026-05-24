@@ -1,3 +1,13 @@
+---
+id: 06_runs_inbox_governance_pro_018_soft_junk_approvals_approval_2026_03_14_pro018_soft_junk_selected_archive_md
+title: Approval Record - PRO-018 Selected Soft-Junk Archive
+owner: ML2
+status: draft
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
+---
+
 # Approval Record - PRO-018 Selected Soft-Junk Archive
 
 - Date: 2026-03-14

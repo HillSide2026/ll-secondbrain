@@ -40,6 +40,11 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Return exit code 1 when packet-started projects are missing required artifacts.",
     )
+    parser.add_argument(
+        "--warn-on-findings",
+        action="store_true",
+        help="Return exit code 2 when packet-started projects are missing required artifacts.",
+    )
     return parser.parse_args()
 
 
@@ -111,6 +116,8 @@ def main() -> int:
 
     if findings and args.fail_on_findings:
         return 1
+    if findings and args.warn_on_findings:
+        return 2
     return 0
 
 

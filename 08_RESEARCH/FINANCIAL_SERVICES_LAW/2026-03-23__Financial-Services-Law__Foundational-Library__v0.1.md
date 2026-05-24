@@ -21,6 +21,11 @@ next_actions:
   - Confirm whether Carswell / WestlawNext carries Ogilvie and Ogden
   - Retry Condon SSRN page to list available fintech papers
   - Add retrieved abstracts/summaries once content is accessible
+id: 08_research_financial_services_law_2026_03_23_financial_services_law_foundational_library_v0_1_md
+title: Financial Services Law — Foundational Library
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
 ---
 
 # Financial Services Law — Foundational Library

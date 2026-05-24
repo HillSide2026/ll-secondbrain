@@ -7,6 +7,9 @@ created_date: 2026-04-25
 ml1_approval_required: YES
 output_label: Derived from disclosed agreement (SEC)
 targets: [Marqeta, Adyen, PayPal, Block]
+owner: ML1
+last_updated: 2026-05-24
+tags: []
 ---
 
 # WS-A Initial Harvest: SEC Disclosure Mining

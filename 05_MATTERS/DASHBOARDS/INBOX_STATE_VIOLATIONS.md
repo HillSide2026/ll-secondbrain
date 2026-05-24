@@ -1,3 +1,13 @@
+---
+id: 05_matters_dashboards_inbox_state_violations_md
+title: Inbox State Violations
+owner: ML1
+status: generated
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
+---
+
 # Inbox State Violations
 
 Generated at: 2026-05-23T19:00:07.060318+00:00

@@ -6,6 +6,7 @@ status: active
 project_type: operational
 created_date: 2026-03-08
 last_updated: 2026-03-19
+tags: []
 ---
 
 # Project Charter

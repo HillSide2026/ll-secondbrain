@@ -7,6 +7,8 @@ created_date: 2026-04-28
 last_updated: 2026-04-28
 ml1_approval_required: NO
 output_label: Derived from disclosed agreement (SEC)
+owner: ML1
+tags: []
 ---
 
 # WS-A — PM ↔ Fintech / Product Partner Agreement Corpus

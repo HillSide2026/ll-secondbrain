@@ -8,6 +8,9 @@ proposed_action: archive
 labels_audited: 10
 labels_contaminated: 7
 labels_clean: 3
+owner: ML2
+last_updated: 2026-05-24
+tags: []
 ---
 
 # Pass A — Inbox Contamination Audit

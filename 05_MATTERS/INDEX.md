@@ -1,3 +1,13 @@
+---
+id: 05_matters_index_md
+title: Matter Index
+owner: ML1
+status: draft
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
+---
+
 # Matter Index
 
 _Generated: 2026-04-03 22:07_
@@ -25,8 +35,8 @@ _Generated: 2026-04-03 22:07_
 | [24-256-00005](STRATEGIC/24-256-00005/MATTER_BRIEF.md) | Aspire Infusions Inc — Legal Strategy | Open | ML Active | active | 1 |
 | [24-336-00004](STRATEGIC/24-336-00004/README.md) | Mascore Helical Piles | Open | ML Active | active | 0 |
 | [25-1231-00001](STRATEGIC/25-1231-00001/README.md) | Charmaine Spiteri | Open | ML Active | active | 0 |
-| [25-1318-00001](STRATEGIC/25-1318-00001/README.md) | Zelko Culibrk | Open | ML Active | active | 0 |
-| [26-1593-00002](STRATEGIC/26-1593-00002/README.md) | 1001162998 Ontario Corp. o/a KaleMart | Open | ML Active | active | 0 |
+| [25-1318-00001](STANDARD/25-1318-00001/README.md) | Zelko Culibrk | Open | ML Active | active | 0 |
+| [26-1593-00002](STANDARD/26-1593-00002/README.md) | 1001162998 Ontario Corp. o/a KaleMart | Open | ML Active | active | 0 |
 | [26-1631-00001](STRATEGIC/26-1631-00001/README.md) | 1713425 Ontario Inc. (Tejvir Boparai) | Open | ML Active | active | 2 |
 | [26-1637-00001](STRATEGIC/26-1637-00001/MATTER_BRIEF.md) | MRKT (Nilabh Anand) | Open | ML Active | active | 0 |
 
@@ -38,7 +48,6 @@ _Generated: 2026-04-03 22:07_
 | [23-194-00013](STANDARD/23-194-00013/README.md) | Rousseau Mazzuca LLP | Open | ML Active | active | 0 |
 | [23-235-00001](STANDARD/23-235-00001/README.md) | Baobab Energy Africa Ltd | Open | ML Active | active | 0 |
 | [24-646-00001](STANDARD/24-646-00001/README.md) | ByNature Design | Open | ML Active | active | 0 |
-| [24-845-00001](STANDARD/24-845-00001/README.md) | STAR 333 SPORTS INC. | Open | Other | keep in view | 0 |
 | [25-1185-00001](STANDARD/25-1185-00001/README.md) | Alexander Klys | Open | ML Active | active | 0 |
 | [25-1363-00001](STANDARD/25-1363-00001/README.md) | Raevan Joy Sambrano | Open | ML Active | active | 0 |
 | [25-1525-00001](STANDARD/25-1525-00001/README.md) | Kleenup Cleaning Services Inc. | Open | ML Active | active | 0 |
@@ -58,17 +67,17 @@ _Generated: 2026-04-03 22:07_
 
 | Matter ID | Client/Name | Status | Category | Fulfillment | Services |
 |-----------|-------------|--------|----------|-------------|----------|
-| [23-169-00003](PARKED/23-169-00003/README.md) | Best Bottles Inc. | Open | ML Watch | active | 0 |
-| [24-347-00002](PARKED/24-347-00002/README.md) | Brand Butter | Open | ML Watch | keep in view | 0 |
-| [24-409-00001](PARKED/24-409-00001/README.md) | A. Mukherjee & Co. | Open | ML Watch | keep in view | 0 |
-| [24-601-00001](PARKED/24-601-00001/README.md) | Meta Bytes North America Inc | Open | ML Watch | keep in view | 0 |
-| [24-682-00002](PARKED/24-682-00002/README.md) | Stream Ventures Limited | Open | ML Watch | keep in view | 0 |
-| [25-1024-00001](PARKED/25-1024-00001/README.md) | AllPro Construction Group | Open | ML Watch | active | 0 |
-| [25-1192-00001](PARKED/25-1192-00001/README.md) | The Knot Churros International Limited | Open | ML Watch | active | 0 |
-| [25-174-00001](PARKED/25-174-00001/README.md) | Danielle Thompson | Open | ML Watch | keep in view | 0 |
-| [25-192-00003](PARKED/25-192-00003/README.md) | If Not Me Inc | Open | ML Watch | keep in view | 0 |
-| [25-822-00001](PARKED/25-822-00001/README.md) | Majid Hajibeigy | Open | ML Watch | active | 0 |
-| [26-1630-00001](PARKED/26-1630-00001/README.md) | Marcela Hernandez | Open | ML Watch | keep in view | 0 |
+| [23-169-00003](NORMAL/23-169-00003/README.md) | Best Bottles Inc. | Open | ML Watch | active | 0 |
+| [24-347-00002](NORMAL/24-347-00002/README.md) | Brand Butter | Open | ML Watch | keep in view | 0 |
+| [24-409-00001](NORMAL/24-409-00001/README.md) | A. Mukherjee & Co. | Open | ML Watch | keep in view | 0 |
+| [24-601-00001](NORMAL/24-601-00001/README.md) | Meta Bytes North America Inc | Open | ML Watch | keep in view | 0 |
+| [24-682-00002](NORMAL/24-682-00002/README.md) | Stream Ventures Limited | Open | ML Watch | keep in view | 0 |
+| [25-1024-00001](NORMAL/25-1024-00001/README.md) | AllPro Construction Group | Open | ML Watch | active | 0 |
+| [25-1192-00001](NORMAL/25-1192-00001/README.md) | The Knot Churros International Limited | Open | ML Watch | active | 0 |
+| [25-174-00001](NORMAL/25-174-00001/README.md) | Danielle Thompson | Open | ML Watch | keep in view | 0 |
+| [25-192-00003](NORMAL/25-192-00003/README.md) | If Not Me Inc | Open | ML Watch | keep in view | 0 |
+| [25-822-00001](NORMAL/25-822-00001/README.md) | Majid Hajibeigy | Open | ML Watch | active | 0 |
+| [26-1630-00001](NORMAL/26-1630-00001/README.md) | Marcela Hernandez | Open | ML Watch | keep in view | 0 |
 
 ## Summary by Fulfillment Status
 

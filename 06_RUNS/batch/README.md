@@ -1,3 +1,13 @@
+---
+id: 06_runs_batch_readme_md
+title: 06_RUNS/batch
+owner: ML2
+status: draft
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
+---
+
 # 06_RUNS/batch
 
 Machine-generated run artifacts from the LL Inbox Governance batch classification system.

@@ -7,6 +7,7 @@ project_type: operational
 risk_categories: [scope, schedule, budget]
 created_date: 2026-03-07
 last_updated: 2026-03-07
+tags: []
 ---
 
 # Risk Scan

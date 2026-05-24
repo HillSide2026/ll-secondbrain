@@ -1,3 +1,13 @@
+---
+id: 05_matters_essential_26_1639_00002_citt_signal_report_md
+title: CITT Signal Report — Andersen (Trade Remedies)
+owner: ML1
+status: draft
+created_date: 2026-05-24
+last_updated: 2026-05-24
+tags: []
+---
+
 # CITT Signal Report — Andersen (Trade Remedies)
 
 - Generated at: `2026-05-23 11:18:37Z`

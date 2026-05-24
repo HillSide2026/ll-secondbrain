@@ -7,6 +7,9 @@ created_date: 2026-04-28
 ml1_approval_required: NO
 output_label: Derived from disclosed agreement (SEC)
 targets: [Toronto-Dominion Bank, Bank of Montreal]
+owner: ML1
+last_updated: 2026-05-24
+tags: []
 ---
 
 # WS-A Screen — Canadian Banks 40-F (TD, BMO)

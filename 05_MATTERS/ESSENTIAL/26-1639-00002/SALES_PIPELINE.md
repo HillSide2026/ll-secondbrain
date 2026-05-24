@@ -59,5 +59,5 @@ All seven threshold criteria must be met. When a track is qualified, record the 
 - Use [`../26-1639-00001/MATTER_BRIEF.md`](../26-1639-00001/MATTER_BRIEF.md) for Andersen relationship-level management.
 - Use [`../26-1639-00001/BUSINESS_DEVELOPMENT_OVERVIEW.md`](../26-1639-00001/BUSINESS_DEVELOPMENT_OVERVIEW.md) for cross-lane Andersen business-development visibility.
 - Use this matter for the trade-remedies lane within that Andersen relationship.
-- Use [`../26-259-00003/README.md`](../26-259-00003/README.md) as the comparison point for LL's own onboarding matter, not as a claim that this pipeline is identical to LL Onboarding.
+- Use [`../../STANDARD/26-259-00003/README.md`](../../STANDARD/26-259-00003/README.md) as the comparison point for LL's own onboarding matter, not as a claim that this pipeline is identical to LL Onboarding.
 - Use [`CITT_WATCHLIST.yaml`](CITT_WATCHLIST.yaml) and [`CITT_SIGNAL_REPORT.md`](CITT_SIGNAL_REPORT.md) to monitor official CITT signals relevant to this pipeline.
