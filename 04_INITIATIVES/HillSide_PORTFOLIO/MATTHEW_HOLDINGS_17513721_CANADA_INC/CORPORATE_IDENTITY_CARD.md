@@ -4,7 +4,7 @@ title: Corporate Identity Card — Matthew Holdings (17513721 Canada Inc)
 owner: ML1
 status: draft
 created_date: 2026-03-07
-last_updated: 2026-05-11
+last_updated: 2026-05-23
 tags: [corporate-identity, governance, portfolio]
 ---
 
@@ -83,6 +83,16 @@ and traders into Brazil.
 trade, because Sidera's relationship to Andersen hinges on developing an
 International Trade Services Line.
 
+The five Dominion / 175 service lines are:
+
+- trade remedies
+- market access
+- data centers
+- mining
+- payment services
+
+Each service line should be positioned clearly before being advanced.
+
 Current offering work:
 
 - `DOMINION_PLATFORM/CANADA_TRADE_READINESS_MARKET_DIAGNOSTIC.md` — product
@@ -110,7 +120,13 @@ Fees for Andersen-related work are received by 17513721 Canada Inc. The pipeline
 | [26-1639-00002](../../../05_MATTERS/ESSENTIAL/26-1639-00002/MATTER_BRIEF.md) | Trade Remedies | Two wood-sector leads at `contacted` stage (TR-003 plywood, TR-004 processed wood); no active file |
 | [26-1639-00003](../../../05_MATTERS/ESSENTIAL/26-1639-00003/MATTER_BRIEF.md) | Market Access | No active tracks; held open for future leads |
 
-No HillSide project governs this service line yet. When a file converts, the right action is to open an HBP or add an Andersen revenue line to HBP-007 — whichever is appropriate at that time.
+HillSide project governance for this service line now lives in:
+
+- `../BUSINESS_PROJECTS/HBP-014_175_DOMINION_ANDERSEN_SERVICE_LINE/`
+
+When a file converts, the file-level work should continue to live in the
+appropriate Andersen matter, while HBP-014 governs the 175 / Dominion
+business-line strategy.
 
 ## Enterprise Value Strategy Requirement
 

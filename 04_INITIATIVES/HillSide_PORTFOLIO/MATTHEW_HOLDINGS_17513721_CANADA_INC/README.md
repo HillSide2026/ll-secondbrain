@@ -4,7 +4,7 @@ title: Matthew Holdings (17513721 Canada Inc)
 owner: ML1
 status: draft
 created_date: 2026-03-06
-last_updated: 2026-05-11
+last_updated: 2026-05-23
 tags: []
 ---
 
@@ -90,6 +90,16 @@ and traders into Brazil.
 - within international trade, because Sidera's relationship to Andersen hinges
   on developing an International Trade Services Line.
 
+The five Dominion / 175 service lines are:
+
+- trade remedies
+- market access
+- data centers
+- mining
+- payment services
+
+Each service line should be positioned clearly before being advanced.
+
 Current offering work:
 
 - `DOMINION_PLATFORM/CANADA_TRADE_READINESS_MARKET_DIAGNOSTIC.md` — product
@@ -151,6 +161,10 @@ Current 175-level workstreams:
 - improving the `dominionpartners.ca` website; and
 - considering whether renting or leasing space for Dominion Partners would
   increase brand value.
+
+The controlled HillSide project for this business line is:
+
+- `../BUSINESS_PROJECTS/HBP-014_175_DOMINION_ANDERSEN_SERVICE_LINE/`
 
 This strategy is separate from, but relevant to, the Q4 Target Restructuring.
 Upon sale of 174 and / or Ontario MSB Corp, and before the Q4 Target

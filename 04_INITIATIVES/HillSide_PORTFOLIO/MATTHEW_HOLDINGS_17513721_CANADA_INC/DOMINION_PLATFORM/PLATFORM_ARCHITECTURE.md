@@ -51,6 +51,16 @@ linked to Canada, seen as valuable by Sidera, and within international trade,
 because Sidera's relationship to Andersen hinges on developing an International
 Trade Services Line.
 
+The five Dominion / 175 service lines are:
+
+- trade remedies
+- market access
+- data centers
+- mining
+- payment services
+
+Each service line should be positioned clearly before being advanced.
+
 Current offering work:
 
 - `CANADA_TRADE_READINESS_MARKET_DIAGNOSTIC.md` — product for foreign

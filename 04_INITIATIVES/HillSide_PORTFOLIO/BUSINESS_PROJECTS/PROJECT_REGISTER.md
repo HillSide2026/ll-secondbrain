@@ -4,7 +4,7 @@ title: HillSide Project Register
 owner: ML1
 status: draft
 created_date: 2026-03-12
-last_updated: 2026-05-19
+last_updated: 2026-05-23
 tags: [hillside, projects, register]
 ---
 
@@ -36,6 +36,7 @@ model governed by:
 | HBP-011 | Payments Regulatory & Compliance Consulting Agency | HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY | executing | Stand up the approved Payment Services Consulting Line under `17513721 Canada Inc` using FinSure as the entry offer | Weak differentiation, slow revenue ramp, execution sprawl | approved | ML1 | 2026-03-20 |
 | HBP-012 | Launch, Market, Sell and Monetize Information Product | HBP-012_INFO_PRODUCT | executing | Convert ML1 contract template IP into a sellable digital product ($197) under 17513721 Canada Inc — near-zero cash outlay, 48-hour launch constraint, warm outreach validation | Production overrun, no scalable traffic plan beyond warm outreach, ICP affordability mismatch ($197 vs "can't afford counsel"), legal positioning risk (templates ≠ legal advice) | approved | ML1 | 2026-04-25 |
 | HBP-013 | Sale of Granville | 2B_FEDERAL_MSB_17409052_CANADA_INC | planning | Convert `17409052 Canada Inc` into a controlled sell-side process and recycle proceeds into `17513721 Canada Inc` | FINTRAC timing, thin buyer package, EMI lock-in, diligence drag | approved | ML1 | 2026-05-19 |
+| HBP-014 | 175 Dominion Andersen Service Line | HBP-014_175_DOMINION_ANDERSEN_SERVICE_LINE | planning | Build `17513721 Canada Inc` / Dominion Partners as the Andersen Consulting collaborating firm across five service lines: trade remedies, market access, data centers, mining, and payment services | Andersen permission constraints, Sidera channel conflict, thin trade-remedies bench, pipeline conversion risk, cross-entity double-counting | approved | ML1 | 2026-05-23 |
 
 ## Folder Coverage
 
@@ -52,6 +53,7 @@ model governed by:
 - `HBP-011` currently has folder coverage in `HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY/`.
 - `HBP-012` currently has folder coverage in `HBP-012_INFO_PRODUCT/`.
 - `HBP-013` currently has folder coverage in `HBP-013_SALE_OF_GRANVILLE/`.
+- `HBP-014` currently has folder coverage in `HBP-014_175_DOMINION_ANDERSEN_SERVICE_LINE/`.
 
 ## Stage Reference
 
