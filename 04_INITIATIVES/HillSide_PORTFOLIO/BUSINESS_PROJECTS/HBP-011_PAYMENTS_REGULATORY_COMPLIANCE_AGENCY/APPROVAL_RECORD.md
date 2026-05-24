@@ -1,16 +1,16 @@
 ---
 id: 04_initiatives__hillside_portfolio__business_projects__hbp_011_payments_regulatory_compliance_agency__approval_record_md
-title: Payments Regulatory & Compliance Consulting Agency - Approval Record
+title: Payment Services Consulting Line - Approval Record
 owner: ML1
 status: approved
 created_date: 2026-03-15
 last_updated: 2026-03-20
-tags: [payments-regulatory-compliance-agency, approval, planning]
+tags: [payment-services-consulting-line, approval, planning]
 ---
 
 # Approval Record
 
-Project: `HBP-011` - Payments Regulatory & Compliance Consulting Agency
+Project: `HBP-011` - Payment Services Consulting Line
 Stage: Executing
 
 Approval Status: Proceed Approved (Executing Authorized)
@@ -33,7 +33,7 @@ Planning Stage Authorized: Yes
 
 | Item | Status | Date | Notes |
 | --- | --- | --- | --- |
-| `planning/DECISION_FRAME.md` | approved | 2026-03-20 | Selected path narrowed to a payment services compliance service rather than a broad agency model. |
+| `planning/DECISION_FRAME.md` | approved | 2026-03-20 | Selected path narrowed to the Payment Services Consulting Line rather than a broad agency model. |
 | `planning/PROJECT_PLAN.md` | approved | 2026-03-20 | Planning output now reflects proceed decision, execution priorities, and the HBP-011 scope boundary. |
 | `planning/ASSUMPTIONS_CONSTRAINTS.md` | approved | 2026-03-20 | Boundary remains narrow; Rhizome work is excluded from this packet. |
 | `planning/DEPENDENCIES.md` | approved | 2026-03-20 | FinSure signal and channel-path dependencies recognized as live execution inputs. |
@@ -52,12 +52,18 @@ Date: 2026-03-20
 - This project is classified as `Decision`.
 - Initiation stage is approved and planning is authorized.
 - Planning concluded with a proceed decision on 2026-03-20.
-- The selected path is a payment services compliance service operated through `17513721 Canada Inc`.
-- `FinSure` is under consideration as the business name.
-- The FinSure product is approved as the entry offer.
+- The selected path is the Payment Services Consulting Line operated through `17513721 Canada Inc`.
+- The business model is an agency model.
+- HBP-011 has two entry points:
+  - FinSure STR report
+  - FINTRAC effectiveness review readiness lead magnet with paid consultation
+    offer
 - The initial service model is:
   - program design
-  - CAMLO services
+  - managed compliance, no CAMLO provision
+  - CAMS operational consulting
+  - licensing support
+  - CAMLO sourcing
 - Rhizome white-labeling is excluded from `HBP-011` and, if pursued, belongs in a separate project packet.
 - Pricing remains work in progress.
 - Exact in-scope and out-of-scope exclusions remain to be finalized.

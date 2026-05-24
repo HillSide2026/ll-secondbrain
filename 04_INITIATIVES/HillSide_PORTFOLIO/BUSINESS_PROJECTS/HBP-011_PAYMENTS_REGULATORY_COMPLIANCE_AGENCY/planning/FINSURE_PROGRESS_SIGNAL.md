@@ -1,11 +1,11 @@
 ---
 id: 04_initiatives__hillside_portfolio__business_projects__hbp_011_payments_regulatory_compliance_agency__planning__finsure_progress_signal_md
-title: Payments Regulatory & Compliance Consulting Agency - FinSure Progress Signal
+title: Payment Services Consulting Line - FinSure Progress Signal
 owner: ML1
 status: approved
 created_date: 2026-03-20
 last_updated: 2026-03-20
-tags: [payments-regulatory-compliance-agency, planning, finsure, signal]
+tags: [payment-services-consulting-line, planning, finsure, signal]
 ---
 
 # FinSure Progress Signal
@@ -16,9 +16,9 @@ Stage: `Planning`
 ## Purpose
 
 Record the current FinSure build as planning-stage evidence relevant to the
-question of whether Matthew Holdings should pursue a narrower payment services
-compliance service instead of a broad payments regulatory and compliance
-agency.
+question of how `17513721 Canada Inc` should pursue the narrower Payment
+Services Consulting Line instead of a broad payments regulatory and compliance
+business.
 
 ## What FinSure Is
 
@@ -53,9 +53,9 @@ As of 2026-03-20:
 ## Why This Matters To HBP-011
 
 FinSure is evidence that a narrower service concept may be more credible than a
-generic agency concept.
+generic broad-services concept.
 
-The signal supports consideration of a payment services compliance service with
+The signal supports the Payment Services Consulting Line with
 characteristics such as:
 
 - practical MSB / FINTRAC workflow support
@@ -69,12 +69,12 @@ FinSure does not yet prove:
 
 - repeatable customer demand
 - a stable pricing model
-- a full agency operating model
+- a full broad-services operating model
 - a clean Levine Law / Matthew Holdings service boundary
-- that a broad standalone consulting agency is the right path
+- that a broad standalone consulting business is the right path
 
 ## Planning Implication
 
-The existence of FinSure should push `HBP-011` to evaluate a narrower payment
-services compliance service path explicitly before endorsing a broad payments
-regulatory and compliance agency model.
+The existence of FinSure should push `HBP-011` to maintain the narrower Payment
+Services Consulting Line before endorsing a broader payments regulatory and
+compliance model.

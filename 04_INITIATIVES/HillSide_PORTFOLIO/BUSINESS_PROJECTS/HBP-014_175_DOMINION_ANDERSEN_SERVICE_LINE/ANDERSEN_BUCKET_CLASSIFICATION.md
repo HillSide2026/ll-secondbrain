@@ -41,7 +41,7 @@ Those service lines are the HBP-014 service architecture.
 | Market Access | Market entry, Canada trade-readiness, global trade diversification, non-U.S. market development, approvals, routes to market, and regulatory barriers | Includes Canadian market entry and global trade diversification diagnostics |
 | Data Centers | Data-centre and critical-infrastructure advisory tied to Andersen opportunities | Includes regulatory, project, infrastructure, energy, and cross-border advisory angles where data centres are the industry focus |
 | Mining | Lowest-priority service line unless a named-company mandate appears | Includes mining, ESG mining disputes, Latin America mining, junior-miner advisory, TSX Venture / LatAm opportunities, and ESG / forced-labour reporting angles where mining is the industry focus |
-| Payment Services | Stablecoin adoption, cross-border treasury, payment rails, licensing, registration, and regulatory compliance for payment services | Includes consulting on stablecoin adoption and payment-services licensing / regulatory compliance |
+| Payment Services | Stablecoin adoption, cross-border treasury, payment rails, licensing, registration, and regulatory compliance for payment services | Includes HBP-011 Payment Services Consulting Line as the execution packet for the regulated-scope consulting offer; current lead magnet is "Is Your MSB Ready for FINTRAC Effectiveness Review?" |
 
 ## Classification Test
 

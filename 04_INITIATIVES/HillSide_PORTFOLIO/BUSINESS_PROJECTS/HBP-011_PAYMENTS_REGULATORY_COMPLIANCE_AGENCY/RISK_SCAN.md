@@ -1,16 +1,16 @@
 ---
 id: 04_initiatives__hillside_portfolio__business_projects__hbp_011_payments_regulatory_compliance_agency__risk_scan_md
-title: Payments Regulatory & Compliance Consulting Agency - Risk Scan
+title: Payment Services Consulting Line - Risk Scan
 owner: ML1
 status: draft
 created_date: 2026-03-15
 last_updated: 2026-03-15
-tags: [payments-regulatory-compliance-agency, initiation, risk]
+tags: [payment-services-consulting-line, initiation, risk]
 ---
 
 # Risk Scan
 
-Project: `HBP-011` - Payments Regulatory & Compliance Consulting Agency
+Project: `HBP-011` - Payment Services Consulting Line
 
 ## Strategic Risks
 
@@ -24,7 +24,7 @@ Project: `HBP-011` - Payments Regulatory & Compliance Consulting Agency
 
 ## Scope Risks
 
-- the agency concept may sprawl from a narrow consulting thesis into a diffuse services business
+- the agency may sprawl from a narrow consulting thesis into a diffuse services business
 - legal, compliance, operational, and implementation work may be blended too early into one unclear offer
 
 ## Schedule Risks

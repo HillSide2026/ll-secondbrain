@@ -1,16 +1,16 @@
 ---
 id: 04_initiatives__hillside_portfolio__business_projects__hbp_011_payments_regulatory_compliance_agency__project_charter_md
-title: Payments Regulatory & Compliance Consulting Agency - Project Charter
+title: Payment Services Consulting Line - Project Charter
 owner: ML1
 status: draft
 created_date: 2026-03-15
 last_updated: 2026-03-15
-tags: [payments-regulatory-compliance-agency, charter, hillside]
+tags: [payment-services-consulting-line, charter, hillside]
 ---
 
 # Project Charter
 
-**Project:** Payments Regulatory & Compliance Consulting Agency  
+**Project:** Payment Services Consulting Line  
 **Project ID:** HBP-011  
 **Project Path:** `04_INITIATIVES/HillSide_PORTFOLIO/BUSINESS_PROJECTS/HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY`  
 **Project Type:** Decision  
@@ -22,60 +22,71 @@ ML1
 
 ## Mission
 
-Produce a controlled ML1 decision on whether a standalone payments regulatory
-and compliance consulting agency should be built under Matthew Holdings.
+Stand up the Payment Services Consulting Line under `17513721 Canada Inc`,
+using two entry points and a bounded non-legal service ladder for payment-
+services compliance, CAMS operations, licensing support, and CAMLO sourcing.
+
+Business model: agency model. `17513721 Canada Inc` owns the client offer,
+coordinates delivery, uses outsourced providers where appropriate, and preserves
+separation from Levine Law legal services.
 
 ## Decision Question
 
 What exactly are we deciding?
 
-Should Matthew Holdings build a standalone payments regulatory and compliance
-consulting agency and, if so, which operating boundary should advance to formal
-planning?
+How should `17513721 Canada Inc` operate the Payment Services Consulting Line
+as an agency business model without collapsing into Levine Law legal services,
+a broad unbounded agency concept, or an uncontrolled outsourced-provider
+business?
 
 ## Real Options Under Consideration
 
-1. standalone agency
-2. adjacent consulting layer
-3. internal capability only
-4. defer / no-go
+1. FinSure STR report
+2. FINTRAC effectiveness review readiness lead magnet with paid consultation offer
+3. Rhizome white-label implementation path through `HBP-010`
+4. managed compliance, no CAMLO provision
+5. CAMS operational consulting, outsourced operations track
+6. licensing support, outsourced high-ticket track
+7. CAMLO sourcing, 1-year contract minimum
 
 ## Evaluation Criteria
 
 - service-boundary clarity relative to Levine Law legal services
-- differentiation and niche credibility
-- believable channel access and business-development path
-- economic viability after delivery and business-development effort
+- clear separation between tiers 1-6 and Levine Law referral pathways
+- outsourced-provider fit for CAMS operational consulting and licensing
+- economic viability after delivery, coordination, diligence, and business-development effort
 - operating burden relative to expected upside
-- overall portfolio fit and conflict avoidance
+- overall fit inside the 175 / Dominion payment-services line
 
 ## Stage Plan
 
-1. define the agency concept and service boundary
-2. assess channel fit, differentiation, and adjacency to Levine Law
-3. apply the evaluation criteria to the option set
-4. prepare an ML1 decision packet for next-step authorization
+1. maintain the six-tier payment-services consulting ladder
+2. lock service boundaries, exclusions, and referral rules
+3. diligence outsourced providers for tiers 4-5
+4. reprice tier 6 CAMLO sourcing before activation
 
 ## Immediate Next Actions
 
-- define whether the agency is advisory, implementation support, managed compliance, or a narrower subset
-- clarify how the offer would differ from Levine Law legal work and from general consulting competitors
-- identify the minimum credible lead source and revenue path
-- document what conditions would make the agency path a no-go
+- finalize tier 3 managed compliance inclusions and exclusions
+- diligence Rödl Latvia for tier 4 CAMS operational consulting
+- diligence Spridzans for tier 5 licensing support
+- revisit the tier 6 CAMLO sourcing price because `$3,000 CAD/month` may be too low
 
 ## Risks
 
-- the project may blur legal services, consulting, and agency execution into one unclear offer
+- the project may blur legal services, consulting, outsourced operations, and CAMLO sourcing into one unclear offer
 - channel overlap with Levine Law may create positioning or governance conflict
-- the agency model may imply more capability build than the economics justify
+- outsourced-provider reliance may exceed the economics or control model
+- tier 6 CAMLO sourcing may be underpriced if 175 carries diligence, replacement, escalation, or account-management burden
 
 ## Public Front-End
 
 dominionpartners.ca is the shared public face for this project and for the
 broader 17513721 Canada Inc service lines. Payment Services on that site has
 two lanes: (i) referral-based introductions to providers such as Interpolitan
-and KwiikPay; (ii) the FinSure micro product as the entry point leading to
-white-label Rhizome (HBP-010). Owner: 17513721 Canada Inc.
+and KwiikPay; (ii) the FinSure STR report entry point; and (iii) the FINTRAC
+effectiveness review readiness lead magnet with paid consultation offer. Owner:
+17513721 Canada Inc.
 
 ## Governance
 

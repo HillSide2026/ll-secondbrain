@@ -104,7 +104,7 @@ Dominion Partners.
 | Dominion | dominionpartners.ca | Branding and intake for enterprise clients |
 | FlowSignal | flowsignal.dominionpartners.ca | Intelligence layer |
 | D-AirPay | d-airpay.dominionpartners.ca | Monetization / payments execution |
-| FinSure | finsure.dominionpartners.ca | Compliance product — landing page, portal, and entry-level product with upsell to higher-ticket services |
+| FinSure | finsure.dominionpartners.ca | Payment Services Consulting Line subdomain: home page, STR report landing page, FINTRAC readiness lead-magnet landing page, and portal access to the STR product |
 
 ---
 
@@ -216,51 +216,77 @@ To avoid system drift:
 
 ---
 
-## 8. FinSure Product Model
+## 8. FinSure Web / Product Model
 
-FinSure is a compliance product for Canadian PSPs and fintechs, operated under
-17513721 Canada Inc and governed by HBP-011.
+FinSure is the product / demand-generation subdomain for the HBP-011 Payment
+Services Consulting Line, operated under 17513721 Canada Inc.
 
-**Funnel structure:**
+FinSure sits under the Dominion Platform as a subdomain:
+`finsure.dominionpartners.ca`. The root Dominion site (`dominionpartners.ca`)
+remains the 175 / Dominion enterprise brand and service-line gateway; FinSure is
+the focused payment-services compliance product surface.
+
+**Required subdomain structure:**
 
 ```
-finsure.dominionpartners.ca (landing page)
-   ↓
-Portal (authenticated)
-   ↓
-Entry-level product (compliance tool / assessment)
-   ↓
-Opt-in to higher-ticket services
+finsure.dominionpartners.ca
+   ├── home page / product overview
+   ├── STR report landing page
+   │      ↓
+   │   portal access
+   │      ↓
+   │   STR product inside authenticated portal
+   └── FINTRAC effectiveness review readiness landing page
+          ↓
+       lead magnet
+          ↓
+       paid AML Effectiveness Review Readiness Assessment
 ```
 
 **Product layers:**
-- Landing page: conversion-focused; positions FinSure for the target buyer (PSP / MSB / fintech)
-- Portal: authenticated client area; access to the entry-level product
-- Entry-level product: the existing FinSure compliance tool (previously deployed at finsure-w321.onrender.com); to be re-hosted at finsure.dominionpartners.ca
-- Higher-ticket opt-in path: four-tier upsell funnel (confirmed 2026-05-03):
+- Home page: explains FinSure and routes users to the two entry points
+- STR report landing page: explains and routes to the paid FinSure STR report product
+- Portal access: authenticated client area; the STR product lives inside the portal
+- Lead-magnet landing page: hosts **Is Your MSB Ready for FINTRAC Effectiveness
+  Review?** and converts to a paid consultation offer
+- Paid consultation: AML Effectiveness Review Readiness Assessment
+
+**HBP-011 service ladder:**
 
 ```
-Tier 1 — FinSure entry product (portal)
+Entry point 1 — FinSure STR report
+Entry point 2 — FINTRAC readiness lead magnet / paid consultation offer
+   ↓
+Tier 1 — FinSure STR report, consulting only
    ↓
 Tier 2 — Rhizome white label (HBP-010)
    ↓
-Tier 3 — Managed compliance (including fractional CAMLO if and as required)
+Tier 3 — Managed compliance, no CAMLO provision
    ↓
-Tier 4 — Levine Law F03 regulatory advisory (premium tier; Levine Law entity)
+Tier 4 — CAMS operational consulting
+   ↓
+Tier 5 — Licensing support
+   ↓
+Tier 6 — CAMLO sourcing
 ```
 
-**Governance note:** Tier 4 (Levine Law F03) is a Levine Law service, not a 17513721
-Canada Inc service. The boundary between tiers 1-3 (17513721 Canada Inc) and tier 4
-(Levine Law) must be maintained. Referral or handoff from tier 3 to tier 4 is a
-deliberate cross-entity step requiring ML1 authorization per engagement.
+**Governance note:** HBP-011 tiers 1-6 are non-legal 17513721 Canada Inc
+services. Levine Law monthly / quarterly review and fractional counsel are
+separate referral pathways, not part of the 175 service ladder. Any
+cross-entity referral requires ML1 authorization per engagement.
 
 **Confirmed decisions:**
 - Portal authentication: shared via Dominion `packages/auth` module across FinSure and dominionpartners.ca (confirmed 2026-05-03)
+- DNS target: `finsure.dominionpartners.ca` as a Vercel-hosted subdomain using
+  CNAME to `cname.vercel-dns.com`
 
 **Open questions:**
 - Whether the existing finsure-w321.onrender.com build migrates directly or is rebuilt — TBD
+- Whether the STR report landing page and FINTRAC readiness lead-magnet landing
+  page live in one FinSure app as routes or as separate Vercel projects under
+  the same subdomain — TBD
 
-**Governing project:** HBP-011 (Payments Regulatory and Compliance Agency)
+**Governing project:** HBP-011 (Payment Services Consulting Line)
 
 ---
 
@@ -271,6 +297,6 @@ The prior recorded structure (as of 2026-04-25) had a two-lane model:
 - Lane 2: FinSure as entry product at `finsure.dominionpartners.ca`
 
 The three-tier Dominion / FlowSignal / D-AirPay architecture supersedes that model.
-The status of FinSure and the prior HBP-010 (Rhizome White Label) and HBP-011
-(Payments Regulatory Compliance Agency) in relation to this architecture is an
-open question pending ML1 direction.
+FinSure is now retained as the HBP-011 payment-services subdomain inside the
+Dominion Platform, with two entry points: FinSure STR report and FINTRAC
+effectiveness review readiness lead magnet / paid consultation offer.

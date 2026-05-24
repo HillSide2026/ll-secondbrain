@@ -43,8 +43,8 @@ HBP-014 does not govern:
 - client commitments or staffing commitments before the relevant gate
 - sale of Granville / `17409052 Canada Inc`
 - sale of Ontario MSB Corp
-- FinSure execution except where it supports the Dominion / 175 service-line
-  story
+- HBP-011 execution details, except where they support the Dominion / 175
+  payment-services service-line story
 
 ## Boundaries
 
@@ -58,6 +58,24 @@ remain the matter-level operating records:
 Cash receipts through 175 and operating credit to Levine Law must remain
 separately tracked.
 
+## Relationship To HBP-011
+
+`HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY` is the execution packet for the
+payment-services service line inside HBP-014.
+
+HBP-014 governs the 175 / Dominion / Andersen positioning and portfolio-level
+fit of payment services. HBP-011 governs the Payment Services Consulting Line
+offer, agency business model, FinSure entry path, provider bench, lead magnet,
+pricing, and delivery boundaries.
+
+Current HBP-011 lead magnet:
+
+**Is Your MSB Ready for FINTRAC Effectiveness Review?**
+
+This lead magnet qualifies existing MSBs into a paid AML Effectiveness Review
+Readiness Assessment before the MSB commissions an independent effectiveness
+review.
+
 ## Planning Deliverable
 
 Planning should produce a controlled package that lets ML1 decide whether HBP-014
@@ -70,4 +88,3 @@ is ready to move into execution, including:
 - agreement / brand-permission constraints
 - relationship-management guardrails
 - metrics for pipeline and economics
-

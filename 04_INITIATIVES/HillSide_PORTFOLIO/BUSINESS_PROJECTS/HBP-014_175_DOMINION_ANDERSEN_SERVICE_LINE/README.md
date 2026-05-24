@@ -46,6 +46,11 @@ Dominion / 175 has five working service lines:
 Each service line should be positioned for Andersen-facing purposes before it
 is advanced.
 
+Payment services is linked to `HBP-011`, which executes the Payment Services
+Consulting Line under `17513721 Canada Inc` using an agency business model.
+Current HBP-011 lead magnet: **Is Your MSB Ready for FINTRAC Effectiveness
+Review?**
+
 This project is the controlled HillSide project for turning that positioning
 into a repeatable business line owned by 175.
 
@@ -67,7 +72,8 @@ into a repeatable business line owned by 175.
 - individual client files once formally opened under Levine Law or Andersen
 - sale of `17409052 Canada Inc` / Granville
 - sale of Ontario MSB Corp
-- FinSure execution except where it supports the 175 / Dominion platform story
+- HBP-011 / FinSure execution except where it supports the 175 / Dominion
+  payment-services platform story
 
 ## Core Artifacts
 

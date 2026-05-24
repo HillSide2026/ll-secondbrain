@@ -19,4 +19,4 @@ tags: [hillside, hbp-014, dependencies]
 | Rates schedule | Needed for credible partner and client conversations | draft exists |
 | Trade-remedies capability plan | Required before aggressively pursuing trade remedies work | pending |
 | Market access diagnostic | Candidate repeatable offer | draft exists |
-
+| HBP-011 Payment Services Consulting Line | Execution packet for the HBP-014 payment-services service line, including FinSure, agency business model, provider bench, lead magnet, pricing, and delivery boundaries | executing |
