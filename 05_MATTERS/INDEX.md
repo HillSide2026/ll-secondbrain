@@ -10,9 +10,9 @@ tags: []
 
 # Matter Index
 
-_Generated: 2026-05-20 16:28_
+_Generated: 2026-05-25 16:49_
 
-**Total Matters:** 34
+**Total Matters:** 45
 
 ## Essential (5)
 
@@ -62,20 +62,38 @@ _Generated: 2026-05-20 16:28_
 | [25-845-00002](STANDARD/25-845-00002/README.md) | STAR 333 SPORTS INC. | Open | ML Active | active | 4 |
 | [26-1593-00002](STANDARD/26-1593-00002/README.md) | 1001162998 Ontario Corp. o/a KaleMart | Open | Other | closing | 0 |
 | [26-259-00003](STANDARD/26-259-00003/README.md) | LL Onboarding | Open | ML Active | active | 0 |
+
+## Normal (11)
+
+| Matter ID | Client/Name | Status | Category | Fulfillment | Services |
+|-----------|-------------|--------|----------|-------------|----------|
+| [23-169-00003](NORMAL/23-169-00003/README.md) | Best Bottles Inc. | Open | ML Watch | active | 0 |
+| [24-347-00002](NORMAL/24-347-00002/README.md) | Brand Butter | Open | ML Watch | keep in view | 0 |
+| [24-409-00001](NORMAL/24-409-00001/README.md) | A. Mukherjee & Co. | Open | ML Watch | keep in view | 0 |
+| [24-601-00001](NORMAL/24-601-00001/README.md) | Meta Bytes North America Inc | Open | ML Watch | keep in view | 0 |
+| [24-682-00002](NORMAL/24-682-00002/README.md) | Stream Ventures Limited | Open | ML Watch | keep in view | 0 |
+| [25-1024-00001](NORMAL/25-1024-00001/README.md) | AllPro Construction Group | Open | ML Watch | active | 0 |
+| [25-1192-00001](NORMAL/25-1192-00001/README.md) | The Knot Churros International Limited | Open | ML Watch | active | 0 |
+| [25-174-00001](NORMAL/25-174-00001/README.md) | Danielle Thompson | Open | ML Watch | keep in view | 0 |
+| [25-192-00003](NORMAL/25-192-00003/README.md) | If Not Me Inc | Open | ML Watch | keep in view | 0 |
+| [25-822-00001](NORMAL/25-822-00001/README.md) | Majid Hajibeigy | Open | ML Watch | active | 0 |
+| [26-1630-00001](NORMAL/26-1630-00001/README.md) | Marcela Hernandez | Open | ML Watch | keep in view | 0 |
 ## Summary by Fulfillment Status
 
-- **active:** 28
+- **active:** 32
 - **closing:** 5
+- **keep in view:** 7
 - **urgent:** 1
 
 ## Summary by Delivery Category
 
 - **ML Active:** 29
+- **ML Watch:** 11
 - **Other:** 5
 
-## Recently Created (Top 10)
+## Recently Opened (Top 10)
 
-| Matter ID | Client/Name | Created |
+| Matter ID | Client/Name | Opened |
 |-----------|-------------|---------|
 | 26-1637-00001 | MRKT (Nilabh Anand) | 2026-04-25 |
 | 26-1639-00003 | Andersen | 2026-03-09 |

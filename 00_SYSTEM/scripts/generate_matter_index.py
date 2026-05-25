@@ -28,7 +28,8 @@ DELIVERY_ACTIVE_RULE = {
 }
 DELIVERY_WATCH_RULE = {
     "status": {"open", "pending"},
-    "delivery_status": {"parked"},
+    "delivery_status": {"normal"},
+    "delivery_stage": {"parked", "backlog"},
     "fulfillment_status": {"keep in view", "active", "urgent"},
 }
 
@@ -37,9 +38,17 @@ def normalize_token(value: str) -> str:
     return str(value or "").strip().lower()
 
 
+def display_delivery_status(value: str) -> str:
+    token = normalize_token(value)
+    if not token:
+        return "Unknown"
+    return token.capitalize()
+
+
 def classify_category(matter: dict) -> str:
     status = normalize_token(matter.get("status"))
     delivery = normalize_token(matter.get("delivery_status", matter.get("folder", "")))
+    stage = normalize_token(matter.get("delivery_stage"))
     fulfillment = normalize_token(matter.get("fulfillment_status"))
 
     if (
@@ -51,6 +60,7 @@ def classify_category(matter: dict) -> str:
     if (
         status in DELIVERY_WATCH_RULE["status"]
         and delivery in DELIVERY_WATCH_RULE["delivery_status"]
+        and stage in DELIVERY_WATCH_RULE["delivery_stage"]
         and fulfillment in DELIVERY_WATCH_RULE["fulfillment_status"]
     ):
         return "ML Watch"
@@ -96,15 +106,25 @@ def load_matter(matter_path: Path) -> dict:
     return data
 
 
+def summary_target(matter_path: Path) -> str:
+    for candidate in ("README.md", "MATTER_BRIEF.md", "MATTER.yaml"):
+        target = matter_path / candidate
+        if target.exists():
+            return candidate
+    return ""
+
+
 def find_all_matters() -> list:
     """Find all matter directories."""
     matters = []
-    for delivery_folder in ['ESSENTIAL', 'STRATEGIC', 'STANDARD', 'NORMAL', 'PARKED']:
+    for delivery_folder in ['ESSENTIAL', 'STRATEGIC', 'STANDARD', 'NORMAL']:
         folder = MATTERS_ROOT / delivery_folder
         if folder.exists():
             for item in folder.iterdir():
                 if item.is_dir() and not item.name.startswith('.'):
-                    matters.append(load_matter(item))
+                    matter = load_matter(item)
+                    matter["summary_target"] = summary_target(item)
+                    matters.append(matter)
     return matters
 
 
@@ -122,11 +142,11 @@ def generate_index(matters: list) -> str:
     # Group by delivery status
     by_status = defaultdict(list)
     for m in matters:
-        status = m.get('delivery_status', m.get('folder', 'Unknown'))
+        status = display_delivery_status(m.get('delivery_status', m.get('folder', 'Unknown')))
         by_status[status].append(m)
 
     # Status order
-    status_order = ['Essential', 'Strategic', 'Standard', 'normal', 'Parked']
+    status_order = ['Essential', 'Strategic', 'Standard', 'Normal']
 
     for status in status_order:
         status_matters = by_status.get(status, [])
@@ -143,15 +163,17 @@ def generate_index(matters: list) -> str:
 
         for m in status_matters:
             matter_id = m.get('matter_id', '?')
-            name = m.get('matter_name', '?')
+            name = m.get('matter_name') or m.get('client_name', '?')
             clio_status = m.get('status', '?')
             category = classify_category(m)
             fulfillment = m.get('fulfillment_status', '?')
             services = service_count(m)
             path = m.get('path', '')
+            target = m.get('summary_target', 'README.md')
 
             # Create link
-            link = f"[{matter_id}]({path}/README.md)"
+            link_target = f"{path}/{target}" if target else path
+            link = f"[{matter_id}]({link_target})"
             lines.append(f"| {link} | {name} | {clio_status} | {category} | {fulfillment} | {services} |")
 
         lines.append("")
@@ -176,18 +198,23 @@ def generate_index(matters: list) -> str:
         lines.append(f"- **{category}:** {count}")
     lines.append("")
 
-    # Recent matters (by created_date if available)
-    dated_matters = [m for m in matters if m.get('created_date')]
+    # Recent matters (by engagement/opening date if available)
+    dated_matters = [m for m in matters if m.get('engagement_date') or m.get('created_date')]
     if dated_matters:
-        dated_matters.sort(key=lambda x: x.get('created_date', ''), reverse=True)
+        dated_matters.sort(
+            key=lambda x: x.get('engagement_date') or x.get('created_date', ''),
+            reverse=True,
+        )
         recent = dated_matters[:10]
 
-        lines.append("## Recently Created (Top 10)")
+        lines.append("## Recently Opened (Top 10)")
         lines.append("")
-        lines.append("| Matter ID | Client/Name | Created |")
+        lines.append("| Matter ID | Client/Name | Opened |")
         lines.append("|-----------|-------------|---------|")
         for m in recent:
-            lines.append(f"| {m.get('matter_id')} | {m.get('matter_name', '?')} | {m.get('created_date')} |")
+            opened = m.get('engagement_date') or m.get('created_date')
+            name = m.get('matter_name') or m.get('client_name', '?')
+            lines.append(f"| {m.get('matter_id')} | {name} | {opened} |")
         lines.append("")
 
     return '\n'.join(lines)

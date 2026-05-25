@@ -18,7 +18,7 @@ practice_areas: [franchise_dispute]
 ## Status
 - **Clio Status:** Open
 - **Delivery Status:** Standard
-- **Fulfillment Status:** Paused
+- **Fulfillment Status:** active
 
 ## Client Details
 

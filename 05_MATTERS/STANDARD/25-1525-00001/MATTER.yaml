@@ -1,9 +1,15 @@
 matter_id: "25-1525-00001"
+clio_matter_id: "25-1525-00001"
 matter_name: "Kleenup Cleaning Services Inc."
+client_name: "Kleenup Cleaning Services Inc."
+instructing_officer_name: null
+matter_description: "Corporate Solution"
 status: "Open"
 delivery_status: "Standard"
 fulfillment_status: "active"
+engagement_date: "2025-01-01"
 created_date: "2025-01-01"
+closed_date: null
 services:
   - service_type: "solution"
     service_name: "Corporate review"

@@ -1,7 +1,13 @@
 matter_id: "23-169-00003"
+clio_matter_id: "23-169-00003"
 matter_name: "Best Bottles Inc."
+client_name: "Best Bottles Inc."
+instructing_officer_name: "Kato Wake"
+matter_description: null
 status: "Open"
 delivery_status: "normal"
 delivery_stage: "parked"
 fulfillment_status: "active"
+engagement_date: "2025-01-01"
 created_date: "2025-01-01"
+closed_date: null

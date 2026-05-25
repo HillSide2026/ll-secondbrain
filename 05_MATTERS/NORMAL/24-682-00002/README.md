@@ -17,8 +17,9 @@ practice_areas: [TBD]
 
 ## Status
 - **Clio Status:** Open
-- **Delivery Status:** Parked
-- **Fulfillment Status:** inactive
+- **Delivery Status:** Normal
+- **Delivery Stage:** parked
+- **Fulfillment Status:** keep in view
 
 ## Description
 Acquisition of Stream (legacy folder ID - no longer active matter)

@@ -1,9 +1,15 @@
 matter_id: "25-1185-00001"
+clio_matter_id: "25-1185-00001"
 matter_name: "Alexander Klys"
+client_name: "Alexander Klys"
+instructing_officer_name: "Alexander Klys"
+matter_description: "Deal Solution"
 status: "Open"
 delivery_status: "Standard"
 fulfillment_status: "active"
+engagement_date: "2025-01-01"
 created_date: "2025-01-01"
+closed_date: null
 services:
   - service_type: "strategy"
     service_name: "Business acquisition strategy"

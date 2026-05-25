@@ -1,10 +1,16 @@
 matter_id: "25-194-00059"
+clio_matter_id: "25-194-00059"
 matter_name: "RM - Carps - Training Centre"
-previous_reference: "24-194-00059"
+client_name: "Rousseau Mazzuca LLP"
+instructing_officer_name: "Michael Mazzuca"
+matter_description: "Training Centre"
 status: "Open"
 delivery_status: "Standard"
 fulfillment_status: "active"
+engagement_date: "2025-01-01"
 created_date: "2025-01-01"
+closed_date: null
+previous_reference: "24-194-00059"
 services:
   - service_type: "solution"
     service_name: "General legal services - scope to be confirmed"
