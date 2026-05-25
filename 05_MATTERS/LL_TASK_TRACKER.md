@@ -19,6 +19,8 @@ distinguish client legal work, matter administration, and firm management.
 - Reviewed on: `2026-05-17`
 - Review basis: ML1 verbal update
 - Connector note: this refresh did not rely on a new Gmail or SharePoint connector run
+- Matter update intake added on: `2026-05-24`
+- Matter update intake basis: current `05_MATTERS/DASHBOARDS/MATTER_INDEX.md`; source data may be stale pending refreshed Clio, Gmail, SharePoint, and deadline inputs
 
 ## Summary
 - Open tasks: `9`
@@ -28,6 +30,7 @@ distinguish client legal work, matter administration, and firm management.
 - LL Admin Tasks: `4`
 - LL Firm Management Tasks: `6`
 - Matters represented: `7`
+- Matter update intake rows: `34`
 - Dated overdue tasks on the face of the tracker: `0`
 
 ## Active Tasks
@@ -49,6 +52,49 @@ distinguish client legal work, matter administration, and firm management.
 | 25-256-00005 | Aspire Infusions Inc. | LL Legal Task | Strategic | Corporate | Confirm status of corp re-org steps with client | Waiting | Pending client |
 | 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | LL Legal Task | Standard | Corporate | Follow up with client — appears to want to re-engage | Open | |
 | 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | LL Admin Task | Standard | Corporate | Close file | Waiting | Pending LL admin |
+
+---
+
+## Matter Update Intake
+
+_Use this section to add current matter details before the next governed tracker refresh._
+
+| Matter ID | Client / Matter | Delivery | Current status/details | Next action | Waiting on | Notes |
+|---|---|---|---|---|---|---|
+| 25-927-00003 | Stream Ventures Limited | Essential |  |  |  |  |
+| 26-1639-00001 | Andersen | Essential |  |  |  |  |
+| 26-1639-00002 | Andersen | Essential |  |  |  |  |
+| 26-1639-00003 | Andersen | Essential |  |  |  |  |
+| 26-927-00004 | Stream Ventures Limited | Essential |  |  |  |  |
+| 24-256-00001 | Aspire Infusions Inc — Leadership Team | Strategic |  | na |  |  |
+| 24-256-00002 | Aspire Infusions Inc — Corporate | Strategic |  | na |  |  |
+| 24-256-00003 | Aspire Infusions Inc — Marketing Related Matters | Strategic |  | na |  |  |
+| 24-256-00004 | Aspire Infusions Inc — Product and Personnel Matters | Strategic |  | na |  |  |
+| 24-256-00005 | Aspire Infusions Inc — Legal Strategy | Strategic |  | na |  |  |
+| 24-336-00004 | Mascore Helical Piles | Strategic | Cohabitation agreement | Send to client |  |  |
+| 25-1231-00001 | Charmaine Spiteri | Strategic |  | follow up w charmaine |  |  |
+| 26-1631-00001 | 1713425 Ontario Inc. (Tejvir Boparai) | Strategic |  |  |  |  |
+| 26-1637-00001 | MRKT (Nilabh Anand) | Strategic |  | send comments to laura |  |  |
+| 22-194-00006 | Rousseau Mazzuca LLP | Standard |  | follow up |  |  |
+| 23-194-00013 | Rousseau Mazzuca LLP | Standard |  | na |  |  |
+| 23-235-00001 | Baobab Energy Africa Ltd | Standard |  | na |  |  |
+| 24-646-00001 | ByNature Design | Standard |  | na |  |  |
+| 25-1185-00001 | Alexander Klys | Standard |  |  |  |  |
+| 25-1318-00001 | Zelko Culibrk | Standard |  | na |  |  |
+| 25-1363-00001 | Raevan Joy Sambrano | Standard |  | na |  |  |
+| 25-1525-00001 | Kleenup Cleaning Services Inc. | Standard |  | na |  |  |
+| 25-1538-00002 | Georgiana Nicoară | Standard |  | na |  |  |
+| 25-1553-00001 | 15652227 Canada Inc. | Standard |  |  |  |  |
+| 25-1571-00001 | Kishmish Inc. | Standard |  |  |  |  |
+| 25-1588-00001 | Gregory Popov | Standard |  |  |  |  |
+| 25-1593-00001 | 1001162998 Ontario Corp. o/a KaleMart | Standard |  |  |  |  |
+| 25-1603-00001 | IBERBANCO LTD | Standard |  |  |  |  |
+| 25-1614-00001 | HillSide | Standard |  |  |  |  |
+| 25-194-00059 | Rousseau Mazzuca LLP | Standard |  | follow up |  |  |
+| 25-845-00001 | STAR 333 SPORTS INC. | Standard |  |  |  |  |
+| 25-845-00002 | STAR 333 SPORTS INC. | Standard |  |  |  |  |
+| 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | Standard |  |  |  |  |
+| 26-259-00003 | LL Onboarding | Standard |  |  |  |  |
 
 ---
 

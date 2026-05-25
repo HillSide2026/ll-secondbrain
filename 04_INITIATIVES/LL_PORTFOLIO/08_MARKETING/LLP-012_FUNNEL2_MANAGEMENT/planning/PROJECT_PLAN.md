@@ -4,7 +4,7 @@ title: LLP-012 Funnel 2 - Project Plan
 owner: ML1
 status: draft
 created_date: 2026-04-07
-last_updated: 2026-05-10
+last_updated: 2026-05-24
 tags: [llp-012, funnel-02, planning, project-plan]
 ---
 
@@ -139,6 +139,7 @@ routing tools:
 |---|---|---|
 | Corporate Starter Kit | General below-threshold operators | General corporate, contracts, governance, NDA, contractor, invoice, or payment-terms needs |
 | Corporate Assessment | Cross-F02 | Operational risk and structure assessment that classifies, prioritizes, scores, and routes prospects |
+| Information Product 3 | Funnel 02 / Corporate Health Check | Assigned execution bundle for the landing page, GHL intake path, qualification-call operating spec, Stripe product setup, and metric approval pathway; freelancer execution is assigned but delayed |
 | Fintech White Paper | Fintech-adjacent | Authority infrastructure on real-time payment rails, stablecoins, funds-flow logic, safeguarding, RPAA interaction, and regulatory perimeter mapping |
 | Trade-Impacted Contract Risk Kit | Lumber, steel, plastics, manufacturing, distribution | Contract-breakage analysis under tariff, pricing, FX, supply-chain, and change-in-law volatility |
 | Construction Payment / Lien Triage Kit | Construction / Rousseau Mazzuca referral lane | Time-sensitive operational triage for payment, holdback, lien-period, notice, and upstream-funds risk |
@@ -198,6 +199,7 @@ remediation or recurring counsel before ML1 finalizes locked F02 thresholds.
 | Qualification-call schema frozen | 2026-04-07 | complete | adopted operating decision in this file |
 | Offer and pricing re-review complete | 2026-04-07 | complete | this file + updated implementation pricing doc |
 | Next ML1 operating review prepared | TBD | pending | updated `implementation/` logs and governed metrics |
+| Information Product 3 execution bundle assigned | 2026-05-24 | assigned / delayed | landing page, GHL path, qualification-call schema deployment, Stripe product, and metrics grouped under Information Product 3; freelancer execution slow |
 
 ## Resource Plan
 

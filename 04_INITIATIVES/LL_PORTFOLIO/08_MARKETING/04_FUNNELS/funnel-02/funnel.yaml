@@ -4,7 +4,7 @@ meta:
   status: planned
   owner: ML1
   version: 3.1.0
-  last_updated: '2026-04-15'
+  last_updated: '2026-05-24'
 lineage:
   type: state-of
   of: funnel-01
@@ -33,6 +33,10 @@ spec:
     level_3_offer_page: draft exists, not published
     ghl_follow_up_sequence: not built
     lead_magnet: drafted (Growth Without Structural Drift v2), not deployed
+    information_product_3:
+      status: assigned_delayed
+      owner: freelancer_support
+      note: Landing page, GHL intake path, qualification-call operating spec, Corporate Health Check Stripe product, and metric approval pathway are grouped as Information Product 3; assigned but slow to execute.
   positioning_intent:
     target_funnel_traits:
       - maturity-led
@@ -41,6 +45,10 @@ spec:
       - structured assessment entry point
     buyer_time_horizon: Operators thinking in quarters and years, not days.
 history:
+- v: 3.1.1
+  date: '2026-05-24'
+  by: ML1
+  change: Marked landing page, GHL intake path, qualification-call operating spec, Corporate Health Check Stripe product, and metric approval pathway as Information Product 3; assigned to freelancer support but delayed.
 - v: 3.1.0
   date: '2026-04-15'
   by: ML1

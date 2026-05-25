@@ -4,7 +4,7 @@ title: ML1 Metric Approval
 owner: ML1
 status: draft
 created_date: 2026-05-18
-last_updated: 2026-05-18
+last_updated: 2026-05-24
 tags: []
 ---
 
@@ -20,6 +20,10 @@ Approved By: ______________________
 Date: ______________________
 
 Notes:
+- Information Product 3 now groups the landing page, GHL intake path,
+  qualification-call operating spec, Stripe product setup, and metric approval
+  pathway. Execution has been assigned to freelancer support, but delivery is
+  slow as of 2026-05-24.
 - Intake-stage targets proposed:
   - Leads worked within 24 hours of opt-in: `>= 90%`
   - Leads scheduled: `>= 30%`
