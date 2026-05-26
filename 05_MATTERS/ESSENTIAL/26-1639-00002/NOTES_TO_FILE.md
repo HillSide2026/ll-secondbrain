@@ -4,7 +4,7 @@ title: Notes to File — 26-1639-00002 — Andersen (Trade Remedies)
 owner: ML1
 status: draft
 created_date: 2026-03-28
-last_updated: 2026-05-20
+last_updated: 2026-05-26
 tags: [matter, notes-to-file, 26-1639-00002]
 practice_areas: [trade_remedies, trade]
 location_status: ml2_local_pending_sharepoint_sync
@@ -84,6 +84,35 @@ Intended SharePoint destination when ready:
   - TR-003: Confirm end client identity, role in proceeding, decision-maker access, and scope quickly enough to qualify under the Andersen criteria.
   - TR-004: Confirm contact position and assess whether the missed questionnaire deadline materially ends the opportunity.
 - Related references: MATTER_BRIEF.md; SALES_PIPELINE.md; CITT_WATCHLIST.yaml
+- SharePoint sync status: pending
+
+### 2026-05-26 — Trade remedies Google Sheet identified and relevance markers explained
+
+- Author: ML1 / ML2 sync note
+- Topic: Working source / matter tracking aid
+- Facts:
+  - Google Sheet identified: `trade remedies` — `https://docs.google.com/spreadsheets/d/1LKzEM2GczfMaN5TVNRkJcYz-VQYv9IA3-O7RCPJcfpI/edit?gid=0#gid=0`
+  - `Sheet1` is the operative flat list of trade-remedies matters; entries sit primarily in column `A`.
+  - `Sheet2` is a smaller dated tracking view with columns `Product`, `Investigation No.`, and `Date`.
+  - ML1 uses columns `F` and `G` in `Sheet1` to flag matters of particular relevance.
+  - Column `H` is being used for very brief summaries of the `F`-marked matters.
+- Action items:
+  - Preserve the `F` / `G` relevance markers when working from the sheet.
+  - Treat the sheet as an operational reference layer for this matter, not matter canon.
+- Related references: Google Sheet above
+- SharePoint sync status: pending
+
+### 2026-05-26 — Jushi glass fiber matter is live
+
+- Author: ML1 / ML2 sync note
+- Topic: Brazil anti-dumping / live-file signal
+- Facts:
+  - `BRA AD Glass Fiber - Jushi` is a live matter.
+  - The Brazilian tribunal is dispatching Andersen consultants to Guangxi to confirm the data.
+- Action items:
+  - Reflect the live posture in any short-form tracking summary used from the Google Sheet.
+  - Preserve this as an operational note unless and until it changes qualification or engagement posture.
+- Related references: `trade remedies` Google Sheet (`Sheet1`)
 - SharePoint sync status: pending
 
 ### 2026-03-28 — [Short title]
