@@ -1,6 +1,12 @@
 matter_id: "25-1363-00001"
+clio_matter_id: "25-1363-00001"
 matter_name: "Raevan Joy Sambrano"
+client_name: "Raevan Joy Sambrano"
+instructing_officer_name: "Raevan Joy Sambrano"
+matter_description: "Franchise Transfer Solution"
 status: "Open"
 delivery_status: "Standard"
 fulfillment_status: "closing"
+engagement_date: "2025-01-01"
 created_date: "2025-01-01"
+closed_date: null

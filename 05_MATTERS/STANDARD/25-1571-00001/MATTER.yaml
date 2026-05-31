@@ -1,15 +1,20 @@
 matter_id: "25-1571-00001"
+clio_matter_id: "25-1571-00001"
 matter_name: "Kishmish Inc."
+client_name: "Kishmish Inc."
+instructing_officer_name: null
+matter_description: null
 status: "Open"
 delivery_status: "Standard"
 fulfillment_status: "active"
+engagement_date: "2025-10-28"
 created_date: "2025-10-28"
+closed_date: null
 practice_area: "franchise_dispute"
 notes: "Being paused"
 services:
   - service_type: "strategy"
     service_name: "Franchisee extraction"
-
 client:
   company: "Kishmish Inc."
   registered_address: "Oakville, ON (Halton municipality) — specific street address in Clio"
@@ -22,7 +27,6 @@ client:
       email: "jyotikagahlaut@gmail.com"
       phone: "+1 647 673 0412"
   primary_contact: "Jyotika Gahlaut"
-
 matter_context:
   franchisor: "Nani's Gelato (Parry Sohi, parry@nanisgelato.com)"
   franchisor_counsel: "Adam Ship / Janet Erskine (ship-law-adr.ca)"

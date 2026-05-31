@@ -19,9 +19,9 @@ tags: [policy, doctrine, residency]
 
 # POL-014 — Doctrine Residency Requirement
 
-Policy Statement: All governing doctrine (invariants, principles, policies, protocols) must reside in ML2.
+Policy Statement: All governing doctrine (invariants, principles, policies, protocols) must reside in 01_DOCTRINE.
 Authority (Principles referenced): PRN-005, PRN-009, PRN-020, PRN-021
-Enforcement expectation: Governing doctrine discovered outside ML2 is non-canonical and must be migrated, reconciled, or deprecated before authoritative use.
+Enforcement expectation: Governing doctrine discovered outside 01_DOCTRINE directory is non-canonical and must be migrated, reconciled, or deprecated before authoritative use.
 Supersedes: None
-Version: 1.0
+Version: 2.0
 Status: Active

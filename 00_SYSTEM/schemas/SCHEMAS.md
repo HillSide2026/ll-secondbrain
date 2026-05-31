@@ -52,31 +52,41 @@ Matter = {
 
 Location: `05_MATTERS/{delivery_status}/{matter_id}/MATTER.yaml`
 
-### Required Fields
+### Canonical Matter-Record Fields
 
 ```yaml
-matter_id: string        # Required. Clio matter ID (e.g., "25-927-00003")
-matter_name: string      # Required. Matter/client name
-status: enum             # Required. Clio matter status
-delivery_status: enum    # Required. Lawyer attention priority
-fulfillment_status: enum # Required. Admin workload state
-created_date: date       # Required. Date matter was created
+matter_id: string                  # Canonical matter identifier
+clio_matter_id: string             # Must match matter_id
+client_name: string                # Canonical client identity
+instructing_officer_name: string   # Canonical instructing officer; null if data gap
+matter_description: string         # Canonical matter description; null if data gap
+status: enum                       # Pending | Open | Closed
+delivery_status: enum              # Lawyer attention priority
+fulfillment_status: enum           # Admin workload state
+engagement_date: date              # Canonical engagement/opening date
+closed_date: date                  # Canonical closure date; null until set
+services:
+  - service_type: enum             # solution | strategy
+    service_name: string
 ```
 
-### Optional Fields
+### Compatibility And Operational Fields
 
 ```yaml
-services:                # Optional. Canonical service list for active delivery.
-  - service_type: enum   # solution | strategy
-    service_name: string # Human label for the service on this matter
-    status: string       # Optional service status
-    playbook_ref: string # Optional playbook pointer
+matter_name: string      # Legacy display/matter label retained for compatibility
+created_date: date       # Legacy creation/opening field retained during migration
+delivery_stage: enum     # Operational lifecycle field; important but not matter canon
+practice_area: string    # Optional descriptive field
 ```
 
 Legacy compatibility:
 - `solutions` MAY be present and is normalized to `services` with `service_type=solution`
 - `strategies` MAY be present and is normalized to `services` with `service_type=strategy`
 - New authoring should use `services` only
+- `matter_name` and `created_date` remain supported while canonical consumers
+  migrate to `client_name` / `engagement_date`
+- `delivery_stage` may remain in `MATTER.yaml`, but it is not a matter-level
+  canonical field under Matter Management
 
 ### Field Enums
 
@@ -84,16 +94,17 @@ Legacy compatibility:
 |-------|----------------|
 | `status` | `Open` \| `Pending` \| `Closed` |
 | `delivery_status` | `essential` \| `strategic` \| `standard` \| `normal` (highest to lowest) |
-| `delivery_stage` | `backlog` \| `activated` \| `active` \| `parked` \| `finished` |
+| `delivery_stage` | `backlog` \| `activated` \| `active` \| `parked` \| `finished` (operational; non-canonical) |
 | `fulfillment_status` | `urgent` \| `active` \| `keep in view` \| `dormant` \| `inactive` \| `pausing` |
 | `services[].service_type` | `solution` \| `strategy` |
 
 ### Non-Inference Rule
 
-These three fields are independent. Do not infer any field from any other:
-- `status` (Clio) does not imply `delivery_status` or `fulfillment_status`
-- `delivery_status` (ML1) does not imply `status` or `fulfillment_status`
-- `fulfillment_status` (Admin) does not imply `status` or `delivery_status`
+These fields remain independent. Do not infer any field from any other:
+- `status` (Clio) does not imply `delivery_status`, `delivery_stage`, or `fulfillment_status`
+- `delivery_status` (ML1) does not imply `status`, `delivery_stage`, or `fulfillment_status`
+- `delivery_stage` (ML1 operational lifecycle) does not imply `status`, `delivery_status`, or `fulfillment_status`
+- `fulfillment_status` (Admin) does not imply `status`, `delivery_status`, or `delivery_stage`
 
 ### Derived Category: ML Active
 
@@ -111,11 +122,17 @@ These three fields are independent. Do not infer any field from any other:
 
 ```yaml
 matter_id: "25-927-00003"
+clio_matter_id: "25-927-00003"
 matter_name: "Stream Ventures Limited"
+client_name: "Stream Ventures Limited"
+instructing_officer_name: null
+matter_description: "SnowCap AML Policy Transition"
 status: "Open"
 delivery_status: "Essential"
 fulfillment_status: "urgent"
+engagement_date: "2025-09-27"
 created_date: "2025-09-27"
+closed_date: null
 services:
   - service_type: "solution"
     service_name: "shareholder_agreement"

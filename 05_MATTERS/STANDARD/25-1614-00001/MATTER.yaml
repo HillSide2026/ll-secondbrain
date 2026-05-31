@@ -1,10 +1,16 @@
 matter_id: "25-1614-00001"
+clio_matter_id: "25-1614-00001"
 matter_name: "HillSide"
+client_name: "HillSide"
+instructing_officer_name: null
+matter_description: null
 status: "Open"
 delivery_status: "Standard"
 fulfillment_status: "active"
-non_billable: true
+engagement_date: "2025-01-01"
 created_date: "2025-01-01"
+closed_date: null
+non_billable: true
 services:
   - service_type: "strategy"
     service_name: "Sale of Yellowbricks"

@@ -15,7 +15,7 @@ tags: [matter]
 
 This directory contains matter-level information organized by **Delivery Status**.
 
-Folder placement reflects `delivery_status` only. The other fields (`status`, `fulfillment_status`, `services`) are metadata stored in each matter's `MATTER.yaml`.
+Folder placement reflects `delivery_status` only. Canonical matter-record metadata lives in each matter's `MATTER.yaml`. `delivery_stage` may also be stored in `MATTER.yaml` as an important operational lifecycle field, but it is not matter-level canon.
 
 ---
 
@@ -104,13 +104,22 @@ Folder placement reflects `delivery_status` only. The other fields (`status`, `f
 
 | Field | Storage | Source | Values |
 |-------|---------|--------|--------|
-| `status` | Metadata | Clio | Open \| Pending \| Closed |
-| `delivery_status` | Directory | ML1 | essential \| strategic \| standard \| normal |
-| `delivery_stage` | MATTER.yaml | ML1 | backlog \| activated \| active \| parked \| finished |
-| `fulfillment_status` | Metadata | Admin | urgent \| active \| keep in view \| dormant \| inactive \| pausing |
-| `services` | Metadata | ML1/Admin | Canonical service list (`solution` and `strategy` types) |
+| `matter_id` | MATTER.yaml | Clio / Matter Management | Canonical matter identifier |
+| `clio_matter_id` | MATTER.yaml | Clio / Matter Management | Must match `matter_id` |
+| `client_name` | MATTER.yaml | Matter Management | Canonical client identity |
+| `instructing_officer_name` | MATTER.yaml | Matter Management | Canonical instructing officer; may be `null` where unresolved |
+| `matter_description` | MATTER.yaml | Matter Management | Canonical matter description; may be `null` where unresolved |
+| `status` | MATTER.yaml | Clio | Open \| Pending \| Closed |
+| `delivery_status` | Directory + MATTER.yaml | ML1 | essential \| strategic \| standard \| normal |
+| `fulfillment_status` | MATTER.yaml | Admin | urgent \| active \| keep in view \| dormant \| inactive \| pausing |
+| `services` | MATTER.yaml | ML1/Admin | Canonical service list (`solution` and `strategy` types) |
+| `engagement_date` | MATTER.yaml | Matter Management | Canonical engagement/opening date |
+| `closed_date` | MATTER.yaml | Matter Management | Canonical closure date once set |
+| `delivery_stage` | MATTER.yaml | ML1 | backlog \| activated \| active \| parked \| finished (`important`, but non-canonical) |
+| `matter_name` | MATTER.yaml | Legacy compatibility | Display/matter label retained during migration |
+| `created_date` | MATTER.yaml | Legacy compatibility | Prior opening/creation field retained during migration |
 
-**Non-inference rule:** Do not infer any field from any other.
+**Non-inference rule:** Do not infer any field from any other. `delivery_stage` remains operationally important, but it does not control matter canon.
 
 ## Derived Categories
 

@@ -18,7 +18,7 @@ practice_areas: [TBD]
 ## Status
 - **Clio Status:** Open
 - **Delivery Status:** Standard
-- **Fulfillment Status:** active
+- **Fulfillment Status:** closing
 
 ## Client ID
 `2416385485`

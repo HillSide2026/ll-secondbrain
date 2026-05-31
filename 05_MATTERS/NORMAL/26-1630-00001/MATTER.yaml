@@ -1,7 +1,13 @@
 matter_id: "26-1630-00001"
+clio_matter_id: "26-1630-00001"
 matter_name: "Marcela Hernandez"
+client_name: "Marcela Hernandez"
+instructing_officer_name: "Marcela Hernandez"
+matter_description: null
 status: "Open"
 delivery_status: "normal"
 delivery_stage: "parked"
 fulfillment_status: "keep in view"
+engagement_date: "2025-01-01"
 created_date: "2025-01-01"
+closed_date: null

@@ -1,9 +1,15 @@
 matter_id: "25-1538-00002"
+clio_matter_id: "25-1538-00002"
 matter_name: "Georgiana Nicoară"
+client_name: "Georgiana Nicoară"
+instructing_officer_name: "Georgiana Nicoară"
+matter_description: "Corporate Solution"
 status: "Open"
 delivery_status: "Standard"
 fulfillment_status: "active"
+engagement_date: "2025-01-01"
 created_date: "2025-01-01"
+closed_date: null
 services:
   - service_type: "solution"
     service_name: "Shareholder agreement review"

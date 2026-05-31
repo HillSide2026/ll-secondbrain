@@ -17,7 +17,8 @@ practice_areas: [TBD]
 
 ## Status
 - **Clio Status:** Open
-- **Delivery Status:** Parked
+- **Delivery Status:** Normal
+- **Delivery Stage:** parked
 - **Fulfillment Status:** active
 
 ## Client ID

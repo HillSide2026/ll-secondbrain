@@ -1,6 +1,12 @@
 matter_id: "26-1593-00002"
+clio_matter_id: "26-1593-00002"
 matter_name: "1001162998 Ontario Corp. o/a KaleMart"
+client_name: "1001162998 Ontario Corp. o/a KaleMart"
+instructing_officer_name: null
+matter_description: "KaleMart lease matter"
 status: "Open"
 delivery_status: "Standard"
 fulfillment_status: "closing"
+engagement_date: "2026-01-01"
 created_date: "2026-01-01"
+closed_date: null
