@@ -34,12 +34,12 @@ These principles are portfolio-specific to Levine Law and do not constrain Syste
 
 | ID | Title | Scope | Purpose |
 |----|-------|-------|---------|
-| LLPRN-01 | LL Brand Identity Signal Integrity | LL | Brand signal strategy (authority, precision, calm competence) |
-| LLPRN-02 | LL Brand Personality Expression | LL | Visual and design personality guidelines |
-| LLPRN-03 | LL Layout Discipline | LL | Structural and grid discipline in LL materials |
-| LLPRN-04 | LL Image Style Restraint | LL | Image selection and restraint (avoid legal clichés) |
-| LLPRN-05 | LL Voice and Copy Alignment | LL | Verbal voice, tone, and copy discipline |
-| LLPRN-06 | Off-Template Brand Conformity | LL | Review and conformity requirements for non-templated assets |
+| LLPRN-025 | LL Brand Identity Signal Integrity | LL | Brand signal strategy (authority, precision, calm competence) |
+| LLPRN-026 | LL Brand Personality Expression | LL | Visual and design personality guidelines |
+| LLPRN-027 | LL Layout Discipline | LL | Structural and grid discipline in LL materials |
+| LLPRN-028 | LL Image Style Restraint | LL | Image selection and restraint (avoid legal clichés) |
+| LLPRN-029 | LL Voice and Copy Alignment | LL | Verbal voice, tone, and copy discipline |
+| LLPRN-030 | Off-Template Brand Conformity | LL | Review and conformity requirements for non-templated assets |
 
 **Consolidated Reference:** See [LL_BRAND_PRINCIPLES_SUITE.md](LL_BRAND_PRINCIPLES_SUITE.md) for integrated guidance on all LL brand principles.
 
@@ -57,14 +57,14 @@ These principles are portfolio-specific to Levine Law and do not constrain Syste
 
 | ID | Title | Scope | Purpose | Status |
 |----|-------|-------|---------|--------|
-| LLPRN-12 | Friendship Defines Altruistic Reciprocity | LL | Only friends get altruistic reciprocity; this is distinct from unconditional giving and from quid pro quo | Draft |
-| LLPRN-10 | Colleague-Friend Distinction | LL | Neither colleagues nor good colleagues are friends | Draft |
-| LLPRN-13 | Client-Friend Exclusion | LL | Client cannot be a friend; friend cannot be a client — bidirectional and absolute | Draft |
-| LLPRN-07 | Retainer Precedence | LL | Secure the retainer before extending advice, time, or goodwill | Draft |
-| LLPRN-11 | Demonstrate Understanding Before Probing | LL | Establish domain competence before asking the client to articulate their pain | Draft |
-| LLPRN-08 | Colleague Scarcity Gradient | LL | Distinguish general contacts (abundant) from good colleagues (scarce and valuable) | Draft |
-| LLPRN-09 | Good Colleague Reciprocity | LL | Good colleagues get quid pro quo; calibrate reciprocity to demonstrated value | Draft |
-| LLPRN-27 | Lead-Client Distinction | LL | A lead is not a client — pre-conversion contacts carry no legal engagement; legal analysis and regulatory assessment are reserved for clients | Draft |
+| LLPRN-012 | Friendship Defines Altruistic Reciprocity | LL | Only friends get altruistic reciprocity; this is distinct from unconditional giving and from quid pro quo | Draft |
+| LLPRN-009 | Colleague-Friend Distinction | LL | Neither colleagues nor good colleagues are friends | Draft |
+| LLPRN-004 | Client-Friend Exclusion | LL | Client cannot be a friend; friend cannot be a client — bidirectional and absolute | Draft |
+| LLPRN-006 | Retainer Precedence | LL | Secure the retainer before extending advice, time, or goodwill | Draft |
+| LLPRN-005 | Demonstrate Understanding Before Probing | LL | Establish domain competence before asking the client to articulate their pain | Draft |
+| LLPRN-010 | Colleague Scarcity Gradient | LL | Distinguish general contacts (abundant) from good colleagues (scarce and valuable) | Draft |
+| LLPRN-011 | Good Colleague Reciprocity | LL | Good colleagues get quid pro quo; calibrate reciprocity to demonstrated value | Draft |
+| LLPRN-003 | Lead-Client Distinction | LL | A lead is not a client — pre-conversion contacts carry no legal engagement; legal analysis and regulatory assessment are reserved for clients | Draft |
 
 ### A.3 Strategic Principles (Non-Cooperative Game Theory)
 
@@ -72,11 +72,11 @@ These principles are portfolio-specific to Levine Law and do not constrain Syste
 
 | ID | Title | Scope | Purpose | Status |
 |----|-------|-------|---------|--------|
-| LLPRN-14 | Credible Commitment | LL | Limit your own retreat options to make threats and promises credible | Draft |
-| LLPRN-15 | Cooperative Equilibrium | LL | In repeated engagements, cooperation beats defection because the long-term loss from destroying the relationship exceeds any short-term gain | Draft |
-| LLPRN-16 | Regulatory Mechanism Design | LL | When private payoffs favor cheating, introduce external enforcement (contract, regulator, court) to shift the equilibrium | Draft |
-| LLPRN-17 | Credible Retaliation | LL | Reliable, calibrated punishment of defectors (Tit-for-Tat) deters future defection without requiring escalation | Draft |
-| LLPRN-18 | Reputation Investment | LL | Reputation is accumulated capital that makes threats credible by default and reduces future enforcement costs | Draft |
+| LLPRN-013 | Credible Commitment | LL | Limit your own retreat options to make threats and promises credible | Draft |
+| LLPRN-014 | Cooperative Equilibrium | LL | In repeated engagements, cooperation beats defection because the long-term loss from destroying the relationship exceeds any short-term gain | Draft |
+| LLPRN-015 | Regulatory Mechanism Design | LL | When private payoffs favor cheating, introduce external enforcement (contract, regulator, court) to shift the equilibrium | Draft |
+| LLPRN-016 | Credible Retaliation | LL | Reliable, calibrated punishment of defectors (Tit-for-Tat) deters future defection without requiring escalation | Draft |
+| LLPRN-017 | Reputation Investment | LL | Reputation is accumulated capital that makes threats credible by default and reduces future enforcement costs | Draft |
 
 ### A.4 Firm Economics and Operating Model Principles
 
@@ -84,15 +84,17 @@ These principles are portfolio-specific to Levine Law and do not constrain Syste
 
 | ID | Title | Scope | Purpose | Status |
 |----|-------|-------|---------|--------|
-| LLPRN-19 | Revenue Volatility Destroys Discipline | LL | Revenue volatility pushes the firm into reactive capacity management and degrades utilization, realization, collections, margin, and working capital | Draft |
-| LLPRN-20 | Client-Level Earnings Variability | LL | Client quality must be assessed by realized contribution after qualification, scope, customization, and receivables behavior | Draft |
-| LLPRN-21 | Recurring Revenue as Operating Stabilizer | LL | Recurring and semi-recurring revenue reduce variance and improve pricing discipline, staffing efficiency, realization, and collections predictability | Draft |
-| LLPRN-22 | Portfolio Selectivity Over Client Count | LL | Optimize for predictable realization, margin, utilization, and collections velocity rather than client count, prestige, or legal complexity | Draft |
-| LLPRN-23 | Standardized Scope Enables Leverage | LL | Repeatable scoped work enables delegation, automation, templating, and higher realization | Draft |
-| LLPRN-24 | Collections Are Economic Discipline | LL | Collections velocity and receivables control are strategic operating disciplines, not back-office administration | Draft |
-| LLPRN-25 | KPI-Governed Scaling | LL | Scale only against stable operating metrics; growth amplifies the existing model rather than fixing instability | Draft |
-| LLPRN-26 | Bounded Fintech Retainer Model | LL | Fintech retainer mandates are viable only as bounded strategic legal advisory with tiered scope, capacity, and mandate-count controls | Draft |
-| LLPRN-28 | Standard Retainer Floor | LL | Standard retainer is CAD $5,000; below-floor retainers require ML1-approved justification | Draft |
+| LLPRN-018 | Revenue Volatility Destroys Discipline | LL | Revenue volatility pushes the firm into reactive capacity management and degrades utilization, realization, collections, margin, and working capital | Draft |
+| LLPRN-019 | Client-Level Earnings Variability | LL | Client quality must be assessed by realized contribution after qualification, scope, customization, and receivables behavior | Draft |
+| LLPRN-020 | Recurring Revenue as Operating Stabilizer | LL | Recurring and semi-recurring revenue reduce variance and improve pricing discipline, staffing efficiency, realization, and collections predictability | Draft |
+| LLPRN-021 | Portfolio Selectivity Over Client Count | LL | Optimize for predictable realization, margin, utilization, and collections velocity rather than client count, prestige, or legal complexity | Draft |
+| LLPRN-022 | Standardized Scope Enables Leverage | LL | Repeatable scoped work enables delegation, automation, templating, and higher realization | Draft |
+| LLPRN-023 | Collections Are Economic Discipline | LL | Collections velocity and receivables control are strategic operating disciplines, not back-office administration | Draft |
+| LLPRN-024 | KPI-Governed Scaling | LL | Scale only against stable operating metrics; growth amplifies the existing model rather than fixing instability | Draft |
+| LLPRN-008 | Bounded Fintech Retainer Model | LL | Fintech retainer mandates are viable only as bounded strategic legal advisory with tiered scope, capacity, and mandate-count controls | Draft |
+| LLPRN-007 | Standard Retainer Floor | LL | Standard retainer is CAD $5,000; below-floor retainers require ML1-approved justification | Draft |
+| LLPRN-001 | Capacity Ceiling | LL | ML1 capacity is the primary constraint; growth that requires exceeding the ceiling is not authorized until staffing is in place | Approved |
+| LLPRN-002 | Client Quality Precedes Revenue | LL | When client quality and short-term revenue conflict, client quality wins; below-ICP work is excluded regardless of revenue pressure | Approved |
 
 ---
 
@@ -180,7 +182,7 @@ These principles apply universally across ML2, System, and all portfolios, but a
 ### For LL Personnel & Execution Teams
 
 **Start Here:**
-1. Review [LL_BRAND_PRINCIPLES_SUITE.md](LL_BRAND_PRINCIPLES_SUITE.md) for brand discipline (LLPRN-01 through LLPRN-06)
+1. Review [LL_BRAND_PRINCIPLES_SUITE.md](LL_BRAND_PRINCIPLES_SUITE.md) for brand discipline (LLPRN-025 through LLPRN-030)
 2. Reference PRN-038 (Relevance Does Not Imply Intervention) when receiving visibility signals but unsure of action requirements
 3. Use Section C (System-Wide) as reference when executing work:
    - **Before starting:** Check PRN-005 (scope clarity), PRN-015 (dependencies)
@@ -216,7 +218,7 @@ These principles apply universally across ML2, System, and all portfolios, but a
 
 ## Related Documents
 
-- [LL_BRAND_PRINCIPLES_SUITE.md](LL_BRAND_PRINCIPLES_SUITE.md) — Consolidated LL brand principles (LLPRN-01 through LLPRN-06)
+- [LL_BRAND_PRINCIPLES_SUITE.md](LL_BRAND_PRINCIPLES_SUITE.md) — Consolidated LL brand principles (LLPRN-025 through LLPRN-030)
 - [PRINCIPLE_POLICY_TRACEABILITY.md](PRINCIPLE_POLICY_TRACEABILITY.md) — Principle-to-policy mapping for all principles
 - [README.md](README.md) — Principles governance overview
 

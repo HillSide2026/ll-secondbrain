@@ -19,7 +19,7 @@ This document is the planning-level bridge between:
 
 - `LLP-039`;
 - `POL-069_Bounded_Fintech_Retainer_Policy`;
-- `LLPRN-26_Bounded_Fintech_Retainer_Model`;
+- `LLPRN-008_Bounded_Fintech_Retainer_Model`;
 - `LLP-013`;
 - `HBP-008_LL_PLANNING`.
 
@@ -75,7 +75,7 @@ separately scoped premium work only when that work is greenlit.
 | `planning/RATE_POSTURE_2026_2029.md` | Minimum/middle/maximum rate ladder |
 | `planning/RISK_REGISTER.md` | Capacity, scope, and existential-risk controls |
 | `POL-069` | Policy boundary for bounded fintech retainers |
-| `LLPRN-26` | Principle-level expression of the bounded retainer model |
+| `LLPRN-008` | Principle-level expression of the bounded retainer model |
 | `LLP-013` pricing | Marketing/offer surface; must defer to LLP-039 for retainer tiers |
 
 ## Retainer Portfolio Composition

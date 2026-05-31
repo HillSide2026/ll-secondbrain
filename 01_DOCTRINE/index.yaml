@@ -619,6 +619,24 @@ policies:
   version: '1.0'
   status: approved
   history: []
+- id: LLPOL-001
+  title: Firm Self-Interest
+  path: 01_DOCTRINE/03_POLICIES/LLPOL-001_Firm_Self_Interest.md
+  version: '1.0'
+  status: approved
+  history: []
+- id: LLPOL-002
+  title: Purse First
+  path: 01_DOCTRINE/03_POLICIES/LLPOL-002_Purse_First.md
+  version: '1.0'
+  status: approved
+  history: []
+- id: LLPOL-003
+  title: New Client Retainer Floor
+  path: 01_DOCTRINE/03_POLICIES/LLPOL-003_New_Client_Retainer_Floor.md
+  version: '1.0'
+  status: approved
+  history: []
 protocols:
 - id: PRO-001
   title: Enforce Output Labeling
@@ -824,6 +842,36 @@ doctrine:
 - id: INV-0016
   title: 'INV-0016: No Top-Level Directories'
   path: 01_DOCTRINE/01_INVARIANTS/INV-0016-no-toplevel-directories.md
+  version: '1.0'
+  status: approved
+  history: []
+- id: LLINV-001
+  title: 'LLINV-001: LL Authority Position'
+  path: 01_DOCTRINE/01_INVARIANTS/LLINV-001-ll-authority-position.md
+  version: '1.0'
+  status: approved
+  history: []
+- id: LLINV-002
+  title: 'LLINV-002: LL-SB Architecture — LL Layer'
+  path: 01_DOCTRINE/01_INVARIANTS/LLINV-002-ll-sb-architecture.md
+  version: '1.0'
+  status: approved
+  history: []
+- id: LLINV-003
+  title: 'LLINV-003: Matter Model — LL Boundary'
+  path: 01_DOCTRINE/01_INVARIANTS/LLINV-003-matter-model-ll-boundary.md
+  version: '1.0'
+  status: approved
+  history: []
+- id: LLINV-004
+  title: 'LLINV-004: LL Business Risk'
+  path: 01_DOCTRINE/01_INVARIANTS/LLINV-004-ll-business-risk.md
+  version: '1.0'
+  status: approved
+  history: []
+- id: LLINV-005
+  title: 'LLINV-005: LL Matter Risk Classification'
+  path: 01_DOCTRINE/01_INVARIANTS/LLINV-005-ll-matter-risk-classification.md
   version: '1.0'
   status: approved
   history: []

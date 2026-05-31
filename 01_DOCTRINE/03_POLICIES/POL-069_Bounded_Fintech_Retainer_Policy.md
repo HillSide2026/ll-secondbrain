@@ -37,12 +37,12 @@ The policy exists to preserve the economics of recurring advisory work by preven
 ## 2. Governing Principles
 
 This policy implements:
-- LLPRN-21 (Recurring Revenue as Operating Stabilizer)
-- LLPRN-22 (Portfolio Selectivity Over Client Count)
-- LLPRN-23 (Standardized Scope Enables Leverage)
-- LLPRN-24 (Collections Are Economic Discipline)
-- LLPRN-25 (KPI-Governed Scaling)
-- LLPRN-26 (Bounded Fintech Retainer Model)
+- LLPRN-020 (Recurring Revenue as Operating Stabilizer)
+- LLPRN-021 (Portfolio Selectivity Over Client Count)
+- LLPRN-022 (Standardized Scope Enables Leverage)
+- LLPRN-023 (Collections Are Economic Discipline)
+- LLPRN-024 (KPI-Governed Scaling)
+- LLPRN-008 (Bounded Fintech Retainer Model)
 
 ---
 

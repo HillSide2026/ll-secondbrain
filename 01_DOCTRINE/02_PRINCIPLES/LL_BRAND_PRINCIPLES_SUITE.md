@@ -17,7 +17,7 @@ applies_to: [LL]
 
 # LL Brand Principles Suite
 
-This document consolidates the Levine Law brand principles (LLPRN-01 through LLPRN-06) into a coherent suite for reference and governance.
+This document consolidates the Levine Law brand principles (LLPRN-025 through LLPRN-030) into a coherent suite for reference and governance.
 
 **Authority:** ML1  
 **Portfolio Applicability:** LL (Levine Law)  
@@ -51,7 +51,7 @@ The preferred visual and verbal posture is: **disciplined, technical, calm, deli
 
 ## Individual Principles
 
-### LLPRN-01 — LL Brand Identity Signal Integrity
+### LLPRN-025 — LL Brand Identity Signal Integrity
 
 **Statement:**  
 When creating, selecting, or revising Levine Law visual outputs, prefer choices that reinforce three signals at the same time: judgment authority, systemized precision, and calm competence.
@@ -76,7 +76,7 @@ The Levine Law brand should communicate senior legal judgment, structured and re
 
 ---
 
-### LLPRN-02 — LL Brand Personality Expression
+### LLPRN-026 — LL Brand Personality Expression
 
 **Statement:**  
 Levine Law visual outputs should express authority, intelligence, precision, systems thinking, and calm confidence through strong typography, restrained palette use, clean structure, consistent grids, and minimal ornamentation.
@@ -93,7 +93,7 @@ These traits preserve a professional signal aligned with high-end advisory and t
 
 ---
 
-### LLPRN-03 — LL Layout Discipline
+### LLPRN-027 — LL Layout Discipline
 
 **Statement:**  
 Levine Law materials should use structured grid layouts with generous margins, consistent vertical rhythm, strong headline hierarchy, and meaningful whitespace, while avoiding clutter, dense paragraph walls, and decorative shapes.
@@ -117,7 +117,7 @@ Structured layout discipline signals precision, readability, and controlled prof
 
 ---
 
-### LLPRN-04 — LL Image Style Restraint
+### LLPRN-028 — LL Image Style Restraint
 
 **Statement:**  
 Levine Law visuals should avoid legal clichés (including gavels, courthouse stock photography, handshake tropes, and generic skyline imagery) and favor calm, intelligent, restrained imagery such as architectural minimalism, geometric form language, quiet environments, and editorial-style photography.
@@ -142,7 +142,7 @@ Image restraint reinforces differentiated authority and reduces generic legal-br
 
 ---
 
-### LLPRN-05 — LL Voice and Copy Alignment
+### LLPRN-029 — LL Voice and Copy Alignment
 
 **Statement:**  
 Levine Law visual outputs should use copy that is direct, structured, analytical, and confident, and should avoid hype language, marketing clichés, and exaggerated claims.
@@ -169,7 +169,7 @@ See POL-068 (Draft Email Voice Standard) for specific guidance on internal and c
 
 ---
 
-### LLPRN-06 — Off-Template Brand Conformity
+### LLPRN-030 — Off-Template Brand Conformity
 
 **Statement:**  
 When an LL asset is created outside the approved template system, it should be treated as non-conforming until reviewed against brand controls for palette, typography, layout structure, and tone alignment.
@@ -236,14 +236,14 @@ When brand principles conflict with operational or portfolio principles:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-05-04 | Initial consolidation of LLPRN-01 through LLPRN-06 into coherent suite |
+| 1.0 | 2026-05-04 | Initial consolidation of LLPRN-025 through LLPRN-030 into coherent suite |
 
 ---
 
 ## Using This Document
 
 - **For Designers:** Use as reference for visual direction and brand constraints
-- **For Copywriters:** Use LLPRN-05 and LLPRN-06 for voice and conformity guidance
+- **For Copywriters:** Use LLPRN-029 and LLPRN-030 for voice and conformity guidance
 - **For Governance:** Cross-reference with related policies for enforcement and escalation procedures
 - **For New Team Members:** Use as LL brand onboarding reference
 
@@ -252,9 +252,9 @@ When brand principles conflict with operational or portfolio principles:
 ## Related Individual Principles
 
 Individual principle files remain authoritative:
-- [LLPRN-01_LL_Brand_Identity.md](LL_SPECIFIC/LLPRN-01_LL_Brand_Identity.md)
-- [LLPRN-02_LL_Brand_Personality.md](LL_SPECIFIC/LLPRN-02_LL_Brand_Personality.md)
-- [LLPRN-03_LL_Layout_Discipline.md](LL_SPECIFIC/LLPRN-03_LL_Layout_Discipline.md)
-- [LLPRN-04_LL_Image_Style_Restraint.md](LL_SPECIFIC/LLPRN-04_LL_Image_Style_Restraint.md)
-- [LLPRN-05_LL_Voice_And_Copy_Alignment.md](LL_SPECIFIC/LLPRN-05_LL_Voice_And_Copy_Alignment.md)
-- [LLPRN-06_Off_Template_Brand_Conformity.md](LL_SPECIFIC/LLPRN-06_Off_Template_Brand_Conformity.md)
+- [LLPRN-025_LL_Brand_Identity.md](LL_SPECIFIC/LLPRN-025_LL_Brand_Identity.md)
+- [LLPRN-026_LL_Brand_Personality.md](LL_SPECIFIC/LLPRN-026_LL_Brand_Personality.md)
+- [LLPRN-027_LL_Layout_Discipline.md](LL_SPECIFIC/LLPRN-027_LL_Layout_Discipline.md)
+- [LLPRN-028_LL_Image_Style_Restraint.md](LL_SPECIFIC/LLPRN-028_LL_Image_Style_Restraint.md)
+- [LLPRN-029_LL_Voice_And_Copy_Alignment.md](LL_SPECIFIC/LLPRN-029_LL_Voice_And_Copy_Alignment.md)
+- [LLPRN-030_Off_Template_Brand_Conformity.md](LL_SPECIFIC/LLPRN-030_Off_Template_Brand_Conformity.md)

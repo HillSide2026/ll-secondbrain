@@ -113,12 +113,12 @@ Use this index to:
 | Principle | Title | Related Policies |
 |-----------|-------|------------------|
 | PRN-019 | Observable Drift | POL-019 (Practice Area Tagging Requirement), POL-041 (Repository State Reporting Accuracy) |
-| LLPRN-01 | LL Brand Identity Signal Integrity | POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-049 (LL Brand Color Palette), POL-050 (LL Brand Identity) |
-| LLPRN-02 | LL Brand Personality Expression | POL-046 (Canva Template Enforcement), POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-050 (LL Brand Identity) |
-| LLPRN-03 | LL Layout Discipline | POL-046 (Canva Template Enforcement), POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-051 (LL Website Information Architecture) |
-| LLPRN-04 | LL Image Style Restraint | POL-046 (Canva Template Enforcement), POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-049 (LL Brand Color Palette), POL-050 (LL Brand Identity) |
-| LLPRN-05 | LL Voice and Copy Alignment | POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-050 (LL Brand Identity), POL-068 (Draft Email Voice Standard) |
-| LLPRN-06 | Off-Template Brand Conformity | POL-046 (Canva Template Enforcement), POL-048 (Off Template Asset Compliance), POL-050 (LL Brand Identity) |
+| LLPRN-025 | LL Brand Identity Signal Integrity | POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-049 (LL Brand Color Palette), POL-050 (LL Brand Identity) |
+| LLPRN-026 | LL Brand Personality Expression | POL-046 (Canva Template Enforcement), POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-050 (LL Brand Identity) |
+| LLPRN-027 | LL Layout Discipline | POL-046 (Canva Template Enforcement), POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-051 (LL Website Information Architecture) |
+| LLPRN-028 | LL Image Style Restraint | POL-046 (Canva Template Enforcement), POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-049 (LL Brand Color Palette), POL-050 (LL Brand Identity) |
+| LLPRN-029 | LL Voice and Copy Alignment | POL-047 (LL Brand Governance), POL-048 (Off Template Asset Compliance), POL-050 (LL Brand Identity), POL-068 (Draft Email Voice Standard) |
+| LLPRN-030 | Off-Template Brand Conformity | POL-046 (Canva Template Enforcement), POL-048 (Off Template Asset Compliance), POL-050 (LL Brand Identity) |
 | PRN-037 | Wealth Building | POL-064 (Levine Law Initiative Risk Policy), POL-065 (Matthew Holdings Initiative Risk Policy) |
 
 ---
@@ -129,13 +129,13 @@ Use this index to:
 
 | Principle | Title | Related Policies |
 |-----------|-------|------------------|
-| LLPRN-07 | Retainer Precedence | POL-052 (Client Engagement Stage Policy) — partial; dedicated retainer policy pending |
-| LLPRN-08 | Colleague Scarcity Gradient | *No governing policy yet — candidate for LL professional relationship policy* |
-| LLPRN-09 | Good Colleague Reciprocity | *No governing policy yet — candidate for LL professional relationship policy* |
-| LLPRN-10 | Colleague-Friend Distinction | *No governing policy yet — candidate for LL professional relationship policy* |
-| LLPRN-11 | Demonstrate Understanding Before Probing | *No governing policy yet — candidate for LL client intake policy* |
-| LLPRN-12 | Friendship Defines Altruistic Reciprocity | *No governing policy yet — candidate for LL professional relationship policy* |
-| LLPRN-13 | Client-Friend Exclusion | *No governing policy yet — candidate for LL client engagement policy* |
+| LLPRN-006 | Retainer Precedence | POL-052 (Client Engagement Stage Policy) — partial; dedicated retainer policy pending |
+| LLPRN-010 | Colleague Scarcity Gradient | *No governing policy yet — candidate for LL professional relationship policy* |
+| LLPRN-011 | Good Colleague Reciprocity | *No governing policy yet — candidate for LL professional relationship policy* |
+| LLPRN-009 | Colleague-Friend Distinction | *No governing policy yet — candidate for LL professional relationship policy* |
+| LLPRN-005 | Demonstrate Understanding Before Probing | *No governing policy yet — candidate for LL client intake policy* |
+| LLPRN-012 | Friendship Defines Altruistic Reciprocity | *No governing policy yet — candidate for LL professional relationship policy* |
+| LLPRN-004 | Client-Friend Exclusion | *No governing policy yet — candidate for LL client engagement policy* |
 
 ---
 
@@ -145,11 +145,11 @@ Use this index to:
 
 | Principle | Title | Related Policies |
 |-----------|-------|------------------|
-| LLPRN-14 | Credible Commitment | *No governing policy yet* |
-| LLPRN-15 | Cooperative Equilibrium | *No governing policy yet* |
-| LLPRN-16 | Regulatory Mechanism Design | POL-052 (Client Engagement Stage Policy) — partial; covers when external enforcement is introduced |
-| LLPRN-17 | Credible Retaliation | *No governing policy yet* |
-| LLPRN-18 | Reputation Investment | *No governing policy yet* |
+| LLPRN-013 | Credible Commitment | *No governing policy yet* |
+| LLPRN-014 | Cooperative Equilibrium | *No governing policy yet* |
+| LLPRN-015 | Regulatory Mechanism Design | POL-052 (Client Engagement Stage Policy) — partial; covers when external enforcement is introduced |
+| LLPRN-016 | Credible Retaliation | *No governing policy yet* |
+| LLPRN-017 | Reputation Investment | *No governing policy yet* |
 
 ---
 
@@ -159,14 +159,14 @@ Use this index to:
 
 | Principle | Title | Related Policies |
 |-----------|-------|------------------|
-| LLPRN-19 | Revenue Volatility Destroys Discipline | *No governing policy yet - candidate for LL financial operating model policy* |
-| LLPRN-20 | Client-Level Earnings Variability | POL-052 (Client Engagement Stage Policy) - partial; dedicated client economics policy pending |
-| LLPRN-21 | Recurring Revenue as Operating Stabilizer | POL-069 (Bounded Fintech Retainer Policy) - partial; broader recurring revenue policy pending |
-| LLPRN-22 | Portfolio Selectivity Over Client Count | POL-069 (Bounded Fintech Retainer Policy) - partial; broader portfolio economics policy pending |
-| LLPRN-23 | Standardized Scope Enables Leverage | POL-069 (Bounded Fintech Retainer Policy) - partial; broader service-scope and delivery leverage policy pending |
-| LLPRN-24 | Collections Are Economic Discipline | POL-052 (Client Engagement Stage Policy) - partial; POL-069 (Bounded Fintech Retainer Policy) - partial; dedicated collections policy pending |
-| LLPRN-25 | KPI-Governed Scaling | POL-069 (Bounded Fintech Retainer Policy) - partial; broader operating metrics policy pending |
-| LLPRN-26 | Bounded Fintech Retainer Model | POL-069 (Bounded Fintech Retainer Policy) |
+| LLPRN-018 | Revenue Volatility Destroys Discipline | *No governing policy yet - candidate for LL financial operating model policy* |
+| LLPRN-019 | Client-Level Earnings Variability | POL-052 (Client Engagement Stage Policy) - partial; dedicated client economics policy pending |
+| LLPRN-020 | Recurring Revenue as Operating Stabilizer | POL-069 (Bounded Fintech Retainer Policy) - partial; broader recurring revenue policy pending |
+| LLPRN-021 | Portfolio Selectivity Over Client Count | POL-069 (Bounded Fintech Retainer Policy) - partial; broader portfolio economics policy pending |
+| LLPRN-022 | Standardized Scope Enables Leverage | POL-069 (Bounded Fintech Retainer Policy) - partial; broader service-scope and delivery leverage policy pending |
+| LLPRN-023 | Collections Are Economic Discipline | POL-052 (Client Engagement Stage Policy) - partial; POL-069 (Bounded Fintech Retainer Policy) - partial; dedicated collections policy pending |
+| LLPRN-024 | KPI-Governed Scaling | POL-069 (Bounded Fintech Retainer Policy) - partial; broader operating metrics policy pending |
+| LLPRN-008 | Bounded Fintech Retainer Model | POL-069 (Bounded Fintech Retainer Policy) |
 
 ---
 

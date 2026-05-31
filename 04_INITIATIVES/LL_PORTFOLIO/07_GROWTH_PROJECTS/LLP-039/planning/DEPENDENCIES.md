@@ -19,5 +19,5 @@
 | LLP-038 Delivery Spine | Required for standardization, templates, and QA gates |
 | LLP-013 Funnel 3 | Potential source of fintech prospects |
 | LLP-036 Financial Services Practice Area | Substantive capability base |
-| POL-069 / LLPRN-26 | Governing scope and bounded-retainer doctrine |
+| POL-069 / LLPRN-008 | Governing scope and bounded-retainer doctrine |
 

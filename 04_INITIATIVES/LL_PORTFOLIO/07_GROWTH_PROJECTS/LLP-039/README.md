@@ -65,12 +65,12 @@ The fintech retainer must remain bounded strategic legal advisory. It must not b
 
 | Artifact | Relationship |
 |---|---|
-| LLPRN-21 | Recurring Revenue as Operating Stabilizer |
-| LLPRN-22 | Portfolio Selectivity Over Client Count |
-| LLPRN-23 | Standardized Scope Enables Leverage |
-| LLPRN-24 | Collections Are Economic Discipline |
-| LLPRN-25 | KPI-Governed Scaling |
-| LLPRN-26 | Bounded Fintech Retainer Model |
+| LLPRN-020 | Recurring Revenue as Operating Stabilizer |
+| LLPRN-021 | Portfolio Selectivity Over Client Count |
+| LLPRN-022 | Standardized Scope Enables Leverage |
+| LLPRN-023 | Collections Are Economic Discipline |
+| LLPRN-024 | KPI-Governed Scaling |
+| LLPRN-008 | Bounded Fintech Retainer Model |
 | POL-069 | Bounded Fintech Retainer Policy |
 
 ## Project Components
@@ -86,7 +86,7 @@ The fintech retainer must remain bounded strategic legal advisory. It must not b
 | Risk register | `planning/RISK_REGISTER.md` | Capacity, existential-risk, scope-leakage, and pricing risks |
 | 2026 client scope | `planning/CLIENT_SCOPE_2026.md` | Defines which fintech client types are in scope through December 31, 2026 |
 | Rate posture | `planning/RATE_POSTURE_2026_2029.md` | Minimum / middle / maximum rate model through 2029, with CAD 850/hour ceiling |
-| Consolidated model | `planning/CONSOLIDATED_MODEL_2026_2029.md` | Cross-project synthesis for LLP-039, POL-069, LLPRN-26, LLP-013, and HBP-008 |
+| Consolidated model | `planning/CONSOLIDATED_MODEL_2026_2029.md` | Cross-project synthesis for LLP-039, POL-069, LLPRN-008, LLP-013, and HBP-008 |
 
 ## Relationship to Other Projects
 

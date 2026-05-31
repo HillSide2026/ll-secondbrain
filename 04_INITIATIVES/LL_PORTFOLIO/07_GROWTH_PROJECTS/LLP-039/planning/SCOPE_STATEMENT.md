@@ -19,7 +19,7 @@ tags: [llp-039, scope, fintech, retainer]
 - Define delivery standardization requirements needed to reduce average monthly delivery time toward 15 hours/client.
 - Define skill mastery requirements for core retainer delivery and premium adjacent work.
 - Define metrics for effective hourly yield, overages, renewals, client concentration, and scope leakage.
-- Align the project with LLPRN-26 and POL-069.
+- Align the project with LLPRN-008 and POL-069.
 
 ## Mandate Types
 

@@ -45,7 +45,7 @@ decision_makers:
 
 engagement_economics:
   target_matter_value: CAD 10,000+ (problems worth less than this are not the target)
-  absolute_floor: CAD 5,000 (ref LLPRN-28 — below-floor requires ML1-approved justification)
+  absolute_floor: CAD 5,000 (ref LLPRN-007 — below-floor requires ML1-approved justification)
   note: F02 clients typically present with ongoing or recurring legal needs; engagement value should be assessed across the expected relationship, not a single matter
 
 disqualifiers:

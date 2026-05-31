@@ -91,7 +91,7 @@ psych_profile:
 
 engagement_economics:
   target_matter_value: CAD 10,000+ (problems worth less than this are not the target)
-  absolute_floor: CAD 5,000 (ref LLPRN-28 — below-floor requires ML1-approved justification)
+  absolute_floor: CAD 5,000 (ref LLPRN-007 — below-floor requires ML1-approved justification)
   note: F03 clients typically have capital at risk and regulatory exposure that justifies five-figure engagements; problem size is the primary qualification signal
 
 economic_buyer:

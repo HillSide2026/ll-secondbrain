@@ -31,7 +31,7 @@ Typical examples:
 
 Governance Documents:
 - [PRINCIPLE_POLICY_TRACEABILITY.md](PRINCIPLE_POLICY_TRACEABILITY.md) — Cross-reference showing which policies implement each principle
-- [LL_BRAND_PRINCIPLES_SUITE.md](LL_BRAND_PRINCIPLES_SUITE.md) — Consolidated suite of LL brand principles (LLPRN-01 through LLPRN-06)
+- [LL_BRAND_PRINCIPLES_SUITE.md](LL_BRAND_PRINCIPLES_SUITE.md) — Consolidated suite of LL brand principles (LLPRN-025 through LLPRN-030)
 - [LL_SPECIFIC_PRINCIPLES_INDEX.md](LL_SPECIFIC_PRINCIPLES_INDEX.md) — Index of LL-level principles (portfolio-specific principles and LL applicability reference)
 
 Naming convention:

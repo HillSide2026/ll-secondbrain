@@ -1,0 +1,33 @@
+---
+id: LLPRN-030
+title: Off-Template Brand Conformity
+owner: ML1
+status: approved
+approved_by: ML1
+approved_date: 2026-04-18
+version: 1.0
+effective_date: 2026-04-18
+supersedes:
+provenance:
+  decided_by: ML1
+  decided_on: 2026-04-18
+  context: Metadata normalized by system admin cleanup on 2026-05-24
+created_date: 2026-03-10
+last_updated: 2026-05-04
+tags: [principle, brand, templates, conformity, review]
+applies_to: [LL]
+---
+
+# LLPRN-030 - Off-Template Brand Conformity
+
+Title: Off-Template Brand Conformity
+
+Statement:
+When an LL asset is created outside the approved template system, it should be treated as non-conforming until reviewed against brand controls for palette, typography, layout structure, and tone alignment.
+
+Rationale:
+Template bypass increases brand drift risk. Explicit conformity review preserves signal integrity and avoids silent quality degradation.
+
+Supersedes: None
+Version: 1.0
+Status: Active
