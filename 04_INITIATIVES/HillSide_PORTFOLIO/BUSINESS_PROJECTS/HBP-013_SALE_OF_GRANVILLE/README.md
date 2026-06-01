@@ -15,11 +15,24 @@ tags: [granville, federal-msb, sale, hillside, project, planning]
 This project is a planning-stage HillSide sale-readiness project for the
 eventual sale of the licensed entity.
 
+## 174 and Granville — Distinction
+
+This project contains two related but distinct things:
+
+**174 — `17409052 Canada Inc`**
+The corporate entity. A federal Canadian company with no current operating activity. FINTRAC registration pending. RPAA application initiated. The regulated vehicle being licensed and made sale-ready.
+
+**Granville — `granvillefinance.ca`**
+The payment orchestration platform. A nascent brand and registered domain. Granville Finance is the market-facing product: a provider-portable orchestration layer for businesses that need to move money across borders. See `GRANVILLE_PRODUCT.md` for the full product description.
+
+Both live in this project. The entity sale and the product are related but tracked separately.
+
 ## Current State
 
 - planning authorized on `2026-05-19`
 - initiation packet now represented in this folder
-- primary asset is `17409052 Canada Inc` (`174` / Granville)
+- primary asset is `17409052 Canada Inc` (`174`)
+- Granville (`granvillefinance.ca`) is the brand and product layer on top of 174
 - current focus is licensing, market-ready posture, and entity-sale preparation
 
 ## Objective

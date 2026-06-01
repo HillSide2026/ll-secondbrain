@@ -15,9 +15,9 @@ tags: [granville, federal-msb, emi, payments, orchestration, safeguarding]
 `17409052 Canada Inc` is a federal company within the Matthew Holdings
 structure.
 
-Granville is an internal tag for `17409052 Canada Inc`.
+Granville is the brand and product layer for `17409052 Canada Inc`.
 
-The tag has no operational, legal, branding, or customer-facing significance.
+Granville Finance (`granvillefinance.ca`) is a nascent brand and registered domain. It is the market-facing identity of the payment orchestration platform built on 174. See `HBP-013/GRANVILLE_PRODUCT.md` for the full product description.
 
 Current operating activity: none.
 
@@ -264,8 +264,8 @@ The decision is how to contract with an EMI so that:
 
 | Provider | Type | Accessibility | Cost | Notes |
 | --- | --- | --- | --- | --- |
-| Airwallex | EMI / global payments platform | TBC | TBC | Current primary candidate |
-| Modulr | EMI / payments infrastructure | TBC | TBC | Current secondary candidate |
+| Airwallex | EMI / global payments platform | TBC | TBC | Primary candidate — pending |
+| Modulr | EMI / payments infrastructure | TBC | TBC | Secondary candidate |
 
 ### Target Relationship Structure
 
