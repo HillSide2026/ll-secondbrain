@@ -74,8 +74,7 @@ Product distribution is an unresolved planning problem. Without a credible distr
 Before sale-execution stage begins:
 
 1. Track A shell package is complete and sale-ready
-2. Track selection (A, B, or C) is made by ML1
-3. Market-ready package at the selected track is assembled
-4. No EMI, vendor, or structure term materially impairs transferability
-5. Distribution hypothesis is documented — channel options evaluated, first customer path defined
-6. ML1 approves sale launch in `APPROVAL_RECORD.md`
+2. Distribution Plan is documented
+3. ML1 approves sale launch in `APPROVAL_RECORD.md`
+
+EMI, vendor, and structure transferability terms are reviewed and managed during the executing stage.
