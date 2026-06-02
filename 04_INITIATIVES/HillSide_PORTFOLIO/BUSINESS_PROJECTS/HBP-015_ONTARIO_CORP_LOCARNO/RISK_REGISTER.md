@@ -31,3 +31,4 @@ governing_policy: POL-065
 | EMI integration requirements expand beyond minimum viable posture | Scope | Medium | Medium | Define minimum integration scope upfront; resist EMI requests for bespoke build |
 | No credible distribution approach is identified | Strategic | Medium | High | Distribution Plan confirmed 2026-06-14 |
 | Buyer market for Track B/C is thinner than expected | Strategic | Medium | Medium | Track A at CAD $50k is always-ready as the floor |
+| Approved budget is not established before planning exit, leaving spend ungoverned | Budget | Medium | Medium | Budget establishment is a planning exit condition per POL-065 |

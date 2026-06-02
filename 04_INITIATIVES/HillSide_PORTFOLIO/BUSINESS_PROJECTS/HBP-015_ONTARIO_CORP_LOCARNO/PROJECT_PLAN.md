@@ -75,6 +75,7 @@ Before sale-execution stage begins:
 
 1. Track A shell package is complete and sale-ready
 2. Distribution Plan is documented
-3. ML1 approves sale launch in `APPROVAL_RECORD.md`
+3. Approved budget established and recorded
+4. ML1 approves sale launch in `APPROVAL_RECORD.md`
 
 EMI, vendor, and structure transferability terms are reviewed and managed during the executing stage.

@@ -5,15 +5,15 @@ owner: ML1
 status: approved
 approved_by: ML1
 approved_date: 2026-04-18
-version: 1.0
-effective_date: 2026-04-18
+version: 1.1
+effective_date: 2026-05-31
 supersedes:
 provenance:
   decided_by: ML1
-  decided_on: 2026-04-18
-  context: Metadata normalized by system admin cleanup on 2026-05-24
+  decided_on: 2026-05-31
+  context: v1.1 — Budget always applies; establishing an approved budget is required before exiting planning stage
 created_date: 2026-03-13
-last_updated: 2026-03-23
+last_updated: 2026-05-31
 tags: [policy, risk, hillside, matthew-holdings]
 ---
 
@@ -98,10 +98,10 @@ Use for:
 ### `Budget`
 
 Use for:
-- risk of exceeding an established initiative budget
+- risk of exceeding the approved initiative budget
 - overruns against approved advisor, diligence, or build spend
 
-`Budget` is not a substitute for general financial exposure. If no approved budget exists, do not force a `Budget` risk.
+Budget always applies to Matthew Holdings initiatives. An approved budget must be established before exiting the planning stage. Once established, Budget risks must be identified and tracked in the risk register.
 
 ## 6. Tracking Rules
 

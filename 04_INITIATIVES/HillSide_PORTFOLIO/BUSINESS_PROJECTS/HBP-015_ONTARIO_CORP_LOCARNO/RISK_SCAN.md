@@ -34,6 +34,10 @@ governing_policy: POL-065
 - Scope risk: Track C (direct sponsor-bank) is not achievable pre-revenue — sponsor banks will not engage without operational history.
 - Scope risk: EMI integration requirements expand beyond minimum viable posture, adding build complexity not justified by the sale thesis.
 
+## Budget Risks
+
+- Budget risk: Approved budget is not established before planning exit, leaving initiative spend ungoverned in the executing stage.
+
 ## Strategic Risks
 
 - Strategic risk: No credible distribution approach is identified, constraining Locarno's value proposition to a Track B/C buyer. (Distribution Plan confirmed 2026-06-14.)
