@@ -16,28 +16,23 @@ tags: [locarno, ontario-msb, hillside, hbp-015, risk]
 
 | # | Risk | Category | Track | Likelihood | Impact | Notes |
 |---|---|---|---|---|---|---|
-| R-01 | FINTRAC standing deficient | Operational | A/B/C | Medium | High | Registration was obtained but current standing has not been verified. Deficiencies could impair Track A and block Track B/C entirely. |
-| R-02 | EMI will not contract pre-revenue | Execution | B/C | Medium | High | ConnectPay and other EMIs may require volume or minimums that a pre-revenue entity cannot meet. Pushes toward Track A by default. |
-| R-03 | EMI terms impair transferability | Execution | B/C | Medium | High | Exclusivity, punitive exit fees, or change-of-control termination provisions would reduce buyer attractiveness and sale value. |
-| R-04 | RPAA acquisition-of-control or re-registration risk | Regulatory | A/B/C | Low | High | A share sale transfers the entity with its RPAA registration. However, RPAA rules on acquisition of control or change in business activity could require re-registration or notification. Buyer may treat this as a risk. |
-| R-05 | Sponsor bank unavailable (Track C) | Execution | C | High | Medium | Direct bank relationships require underwriting. Pre-revenue entity with no flows is a weak bank applicant. Track C may not be achievable without meaningful operational history. |
-| R-06 | Overbuild — Track B costs exceed sale premium | Financial | B/C | Medium | Medium | Software, compliance, and institutional relationship costs could exceed the incremental value above Track A. Build discipline required. |
-| R-07 | Track A value ($50k) insufficient for restructuring | Financial | A | Low | Medium | If only Track A is achievable and the sale yield is $50k, contribution to the Q4 2026 restructuring is limited. |
-| R-08 | ML1 capacity competition with HBP-013 | Operational | A/B/C | High | Medium | HBP-013 (174/Granville) runs in parallel. Both require EMI conversations, compliance software decisions, and regulatory work. ML1 time is the constraint. |
-| R-09 | Rhizome arrangement not contracted | Execution | B/C | Medium | Low | HBP-010 Rhizome arrangement is under discussion but not contracted. If Rhizome falls through, Sumsub becomes the fallback at higher cost. |
-| R-10 | Buyer market thin for Track B/C | Strategic | B/C | Medium | Medium | The buyer base for a regulated Canadian payments infrastructure asset is narrow. Track B/C value is achievable only if the right buyer exists and can be reached. |
+| R-01 | FINTRAC standing has unresolved deficiencies | Schedule | A/B/C | Medium | High | Registration was obtained but current standing has not been verified. Deficiencies delay Track A and block Track B/C. |
+| R-02 | ConnectPay will not contract with a pre-revenue entity | Schedule | B/C | Medium | High | Pre-revenue entities are weak EMI applicants. Delays Track B if not resolved. |
+| R-03 | RPAA acquisition-of-control or re-registration triggered on share transfer | Schedule | A/B/C | Low | High | Must be analyzed before any sale outreach. Affects buyer diligence package regardless of track. |
+| R-04 | HBP-013 capacity competition delays HBP-015 milestones | Schedule | A/B/C | High | Medium | Both projects share ML1 time. Sequencing must be explicit. |
+| R-05 | Rhizome arrangement stalls — compliance software undefined | Schedule | B/C | Medium | Low | Sumsub is the defined fallback at higher cost. |
+| R-06 | EMI terms impair transferability — exclusivity, non-assignment, or punitive exit | Scope | B/C | Medium | High | Non-transferable EMI terms reduce buyer attractiveness and could collapse Track B/C value. |
+| R-07 | Project drifts into operating BaaS business | Scope | B/C | Low | High | Scope creep into live operations undermines the entity-sale thesis. |
+| R-08 | Track C not achievable — no sponsor bank will engage pre-revenue entity | Scope | C | High | Medium | Track C remains open but is not the primary target. |
+| R-09 | No credible distribution approach identified | Scope | B/C | Medium | High | Without a viable distribution layer, Locarno's value to a Track B/C buyer is materially constrained. Distribution Plan confirmed 2026-06-14. |
+| R-10 | Buyer market for Track B/C thinner than expected | Financial | B/C | Medium | Medium | Track A at CAD $50k is always-ready as the floor regardless of Track B/C demand. |
+| R-11 | Track B build costs exceed incremental sale premium over Track A | Financial | B/C | Medium | Medium | Minimum viable package discipline required. |
+| R-12 | Distribution build investment exceeds the sale premium it creates | Budget | B/C | Medium | Medium | A credible documented distribution path is sufficient — a live customer base before sale is not required. |
 
 ## High-Priority Risks
 
-**R-01 (FINTRAC standing)** and **R-02 (EMI access)** are the gating risks. Both must be resolved before track selection is possible and before any sale outreach is credible.
+R-01 (FINTRAC) and R-02 (ConnectPay) are the gating risks. Both must be resolved before track selection is credible.
 
-**R-03 (EMI terms)** and **R-04 (RPAA transfer)** are deal-structure risks that must be addressed in the market-ready package regardless of track.
+R-06 (EMI transferability) and R-03 (RPAA transfer) affect the buyer diligence package at all tracks above A.
 
-**R-08 (ML1 capacity)** is a sequencing risk — HBP-013 and HBP-015 should be prioritized against each other explicitly.
-
-## Open Items
-
-- FINTRAC verification: confirm current standing and any outstanding compliance obligations
-- ConnectPay outreach: initiate and assess pre-revenue contracting willingness
-- RPAA transfer analysis: confirm change-of-control and acquisition-of-control implications
-- Track C viability: assess whether any sponsor bank will engage a pre-revenue entity
+R-09 (distribution) is confirmed resolved as of 2026-06-14.

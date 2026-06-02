@@ -12,19 +12,19 @@ tags: [locarno, ontario-msb, hillside, hbp-015, planning, risk-register]
 
 **Project:** Ontario Corp / Locarno
 **Project ID:** HBP-015
-**Stage:** Planning
+**Stage:** Executing
 
 | Risk | Category | Likelihood | Impact | Mitigation |
 |---|---|---|---|---|
-| FINTRAC standing has unresolved deficiencies that impair Track A | Regulatory | Medium | High | Initiate verification immediately; treat as top planning gate |
-| ConnectPay will not contract with a pre-revenue entity | Execution | Medium | High | Approach with low-commitment ask; run secondary EMI in parallel |
-| EMI terms include exclusivity, non-assignment, or punitive exit fees that impair sale | Counterparty | Medium | High | Treat transferability as a non-negotiable in all EMI negotiations |
-| RPAA acquisition-of-control rules require re-registration or buyer notification | Regulatory | Low | High | Complete RPAA transfer analysis before any sale outreach |
-| Sponsor-bank access is not achievable pre-revenue (Track C) | Execution | High | Medium | Track C remains open but is not the primary target; do not block Track B on Track C progress |
+| FINTRAC standing has unresolved deficiencies | Schedule | Medium | High | Initiate verification immediately; top planning priority |
+| ConnectPay will not contract with a pre-revenue entity | Schedule | Medium | High | Approach with low-commitment ask; run secondary EMI in parallel from 2026-07-15 |
+| RPAA acquisition-of-control rules require re-registration or buyer notification | Schedule | Low | High | Complete RPAA transfer analysis before any sale outreach |
+| HBP-013 capacity competition delays key milestones | Schedule | High | Medium | Explicitly sequence HBP-013 and HBP-015 workstreams |
+| Rhizome arrangement (HBP-010) stalls, delaying Track B compliance software | Schedule | Medium | Low | Sumsub is the defined fallback |
+| EMI terms include exclusivity, non-assignment, or punitive exit fees | Scope | Medium | High | Treat transferability as a non-negotiable in all EMI negotiations |
+| Project drifts into operating BaaS business under Locarno branding | Scope | Low | High | Scope reviews at each milestone |
+| Sponsor-bank access is not achievable pre-revenue — Track C not deliverable | Scope | High | Medium | Track C remains open; do not block Track B progress on Track C |
+| No credible distribution approach is identified | Scope | Medium | High | Distribution Plan confirmed 2026-06-14; `DISTRIBUTION_PLAN.md` to document the approach |
+| Buyer market for Track B/C is thinner than expected | Financial | Medium | Medium | Track A is always-ready as the floor |
 | Build costs for Track B exceed incremental sale premium over Track A | Financial | Medium | Medium | Maintain cost discipline; test minimum viable packages only |
-| HBP-013 capacity competition delays key HBP-015 milestones | Operational | High | Medium | Explicitly sequence HBP-013 and HBP-015 workstreams; do not allow implicit competition |
-| Rhizome arrangement (HBP-010) stalls, leaving compliance software undefined | Execution | Medium | Low | Define Sumsub as the fallback with a cost estimate |
-| Buyer market for Track B/C is thinner than expected | Strategic | Medium | Medium | Track A is always-ready as the floor; do not overbuild on speculative Track B demand |
-| Project drifts into operating BaaS business under Locarno branding | Scope | Low | High | Scope reviews at each milestone; Locarno product supports the entity sale, it is not itself a standalone business launch |
-| No credible distribution approach is identified during planning | Strategic | Medium | High | Distribution is a required planning output (WS-08); if no viable channel is found, Track B/C sale value is materially constrained and buyer confidence in the product layer is reduced |
-| Distribution approach is identified but requires build investment that exceeds sale premium | Financial | Medium | Medium | Maintain cost discipline; distribution hypothesis does not require a live customer base before sale — it requires a credible, documented path |
+| Distribution build investment exceeds the sale premium it creates | Budget | Medium | Medium | Distribution does not require a live customer base before sale — a credible documented path is sufficient |
