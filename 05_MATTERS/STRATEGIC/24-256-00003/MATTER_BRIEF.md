@@ -43,3 +43,7 @@ Aspire Infusions marketing contracts matter covering social media, event activat
 
 ## Change log
 - 2026-04-26 -- Created from SharePoint enumeration and Gmail review. Social Media Services Agreement confirmed as 2026 active workstream. Other workstreams appear historical.
+
+## 2026-06-02 Update
+
+Distribution agreement requires review and return to client. Thread 19e6abbfea8f5b40 in inbox — review and send back.

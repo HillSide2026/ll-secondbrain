@@ -63,3 +63,7 @@ Ontario Inc. matter.
   - `06_RUNS/ops/emails_attributed.json`
   - `05_MATTERS/STRATEGIC/26-1631-00001/MATTER_BRIEF.md`
 - Execution status: repo note only; no email sent
+
+## 2026-06-02
+
+Closing is now scheduled. Tejvir forwarded Subway pre-closing documents email from Nikki Proulx (thread 19e6e2a7b77caec1). PEPSICO Change of Ownership spreadsheet attached. Pre-closing checklist needs to be worked through.
