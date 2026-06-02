@@ -29,11 +29,11 @@ tags: [locarno, ontario-msb, hillside, approval]
 | `LOCARNO_PRODUCT.md` | Yes | 2026-05-31 |
 | `APPROVAL_RECORD.md` | Yes | 2026-05-31 |
 | `README.md` | Yes | 2026-05-31 |
-| `PROBLEM_STATEMENT.md` | No | — |
-| `SUCCESS_CRITERIA.md` | No | — |
-| `STAKEHOLDERS.md` | No | — |
-| `RISK_SCAN.md` | No | — |
-| `BUSINESS_CASE.md` | No | — |
+| `PROBLEM_STATEMENT.md` | Yes | 2026-05-31 |
+| `SUCCESS_CRITERIA.md` | Yes | 2026-05-31 |
+| `STAKEHOLDERS.md` | Yes | 2026-05-31 |
+| `RISK_SCAN.md` | Yes | 2026-05-31 |
+| `BUSINESS_CASE.md` | Yes | 2026-05-31 |
 
 ## ML1 Notes
 
