@@ -58,4 +58,4 @@ This project feeds three strategic objectives:
 
 ## Approval Recommendation
 
-Pursue Track B Preferred as the target. Operate in parallel with Track A preparation so the shell is always ready to sell if Track B stalls. Do not proceed to Track C until Track B Preferred is substantially complete and a sponsor bank has expressed concrete interest.
+Pursue Track B Preferred as the primary target. Operate in parallel with Track A preparation so the shell is always ready to sell if Track B stalls. All three tracks remain open — Track C is not ruled out and should be assessed as the institutional build progresses.
