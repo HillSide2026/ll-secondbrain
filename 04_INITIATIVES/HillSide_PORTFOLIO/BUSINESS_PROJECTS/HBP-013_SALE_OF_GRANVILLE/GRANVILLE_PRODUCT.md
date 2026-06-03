@@ -49,11 +49,23 @@ The design philosophy is institutional-grade from the start: deterministic, repl
 
 ## Target Customer
 
-Founders and small businesses that:
+**Who Granville is for:**
 
-- Are outgrowing a single-provider integration and need provider portability
-- Want audit trails and reconciliation without building them from scratch
-- Have or expect operational complexity — approvals, FX exposure — that a raw provider API does not address
+Founders with less than $1M in revenue and small businesses up to $10M in revenue, across e-commerce, SaaS, marketplaces, agencies, and professional services. The defining characteristic is international exposure — these businesses are moving money across borders and need more than a single provider can reliably deliver.
+
+The founder makes the buying decision. This is not a technical purchase driven by a CTO or engineer — it is a founder who has hit a wall with their current payments setup and needs a more reliable, auditable infrastructure layer.
+
+**Who Granville is not for:**
+
+- Freelancers
+- Pure crypto businesses
+- Regulated financial institutions, including MSBs
+
+**Open items — to be confirmed:**
+
+- Direction of cross-border flow: receiving foreign revenue, sending internationally, or multi-currency treasury management — primary pain not yet confirmed
+- Triggering event: what specifically breaks first for the target customer — single provider failure, reconciliation breakdown, new market entry, or hitting provider limits
+- Industry narrowing: all five sectors (e-commerce, SaaS, marketplaces, agencies, professional services) are in scope for now; to be narrowed as distribution channels become clearer
 
 ---
 
