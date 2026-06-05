@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "lint": "node --experimental-strip-types --check scripts/sync-plane-tickets.ts",
     "sync:plane": "node --experimental-strip-types scripts/sync-plane-tickets.ts"
   }
 }
