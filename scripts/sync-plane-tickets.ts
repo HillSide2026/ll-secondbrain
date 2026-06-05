@@ -130,7 +130,7 @@ function resolveProjectMapping(project, mappingByKey) {
   return null;
 }
 
-async function validateMapping(project, mapping, detectedProjects) {
+async function validateMapping(project, mapping) {
   const projectPath = compact(mapping.project_path);
   const ticketDir = compact(mapping.ticket_dir);
   if (!projectPath || !ticketDir) {
@@ -159,13 +159,6 @@ async function validateMapping(project, mapping, detectedProjects) {
   if (!(await pathExists(absoluteProjectPath))) {
     console.warn(
       `Skipping Plane project "${pickName(project)}": mapped project_path does not exist: ${projectPath}`
-    );
-    return null;
-  }
-
-  if (!detectedProjects.has(normalizedProjectPath)) {
-    console.warn(
-      `Skipping Plane project "${pickName(project)}": mapped path is not a detected project folder: ${projectPath}`
     );
     return null;
   }
@@ -424,7 +417,6 @@ async function writeIfChanged(filePath, content) {
 
 async function syncPlaneTickets() {
   const env = requireEnv();
-  const detectedProjects = await scanProjectFolders();
   const rawMapping = await readJsonFile(env.mappingFile);
   const mappingByKey = normalizeMapping(rawMapping);
 
@@ -456,7 +448,7 @@ async function syncPlaneTickets() {
       continue;
     }
 
-    const mappingInfo = await validateMapping(project, mapping, detectedProjects);
+    const mappingInfo = await validateMapping(project, mapping);
     if (!mappingInfo) {
       skippedProjects += 1;
       continue;
