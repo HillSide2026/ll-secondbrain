@@ -1,0 +1,8 @@
+{
+  "name": "ll-secondbrain",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "sync:plane": "node --experimental-strip-types scripts/sync-plane-tickets.ts"
+  }
+}
