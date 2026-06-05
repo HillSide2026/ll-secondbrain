@@ -1,14 +1,14 @@
 ---
-    id: llp_039_fintech_retainer_operating_model__initiation__risk_scan_md
-    title: LLP-039 Fintech Retainer Operating Model - Risk Scan
-    owner: ML1
-    status: draft
-    created_date: 2026-05-25
-    last_updated: 2026-05-25
-    tags: [llp-039, fintech-retainer, initiation]
-    ---
+id: llp_039_fintech_retainer_operating_model__initiation__risk_scan_md
+title: LLP-039 Fintech Retainer Operating Model - Risk Scan
+owner: ML1
+status: draft
+created_date: 2026-05-25
+last_updated: 2026-05-25
+tags: [llp-039, fintech-retainer, initiation]
+---
 
-    # Risk Scan
+# Risk Scan
 
 
 | Risk | Severity | Note |

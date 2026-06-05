@@ -1,17 +1,17 @@
 ---
-    id: llp_038_delivery_spine__planning__communication_plan_md
-    title: LLP-038 Delivery Spine - Communication Plan
-    owner: ML1
-    status: draft
-    created_date: 2026-05-25
-    last_updated: 2026-05-25
-    tags: [llp-038, delivery-spine, planning]
-    ---
+id: llp_038_delivery_spine__planning__communication_plan_md
+title: LLP-038 Delivery Spine - Communication Plan
+owner: ML1
+status: draft
+created_date: 2026-05-25
+last_updated: 2026-05-25
+tags: [llp-038, delivery-spine, planning]
+---
 
-    # Communication Plan
+# Communication Plan
 
-    Project ID: LLP-038
-    Stage: Planning
+Project ID: LLP-038
+Stage: Planning
 
 
 | Audience | Cadence | Content |

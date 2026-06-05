@@ -1,17 +1,17 @@
 ---
-    id: llp_038_delivery_spine__planning__metrics_md
-    title: LLP-038 Delivery Spine - Metrics
-    owner: ML1
-    status: draft
-    created_date: 2026-05-25
-    last_updated: 2026-05-25
-    tags: [llp-038, delivery-spine, planning]
-    ---
+id: llp_038_delivery_spine__planning__metrics_md
+title: LLP-038 Delivery Spine - Metrics
+owner: ML1
+status: draft
+created_date: 2026-05-25
+last_updated: 2026-05-25
+tags: [llp-038, delivery-spine, planning]
+---
 
-    # Metrics
+# Metrics
 
-    Project ID: LLP-038
-    Stage: Planning
+Project ID: LLP-038
+Stage: Planning
 
 
 | Metric | Purpose | Status |

@@ -40,6 +40,33 @@ IGNORED_DIRS = {
     "node_modules",
 }
 DEFAULT_MAX_FINDINGS = 100
+
+# Per-matter generated files that don't require frontmatter
+MATTER_GENERATED_FILENAMES = {"DOC_DELTAS.md", "DOC_INDEX.md", "MATTER_STATUS.md"}
+
+# Portfolio management agent output filenames (internal working material per CLAUDE.md)
+PORTFOLIO_MGMT_OUTPUT_FILENAMES = {
+    "BOTTLENECK_ANALYSIS.md",
+    "CAPACITY_ALLOCATION_MODEL.md",
+    "PORTFOLIO_STATUS_DASHBOARD.md",
+    "PROJECT_PRIORITY_MATRIX.md",
+    "RESOURCE_COLLISION_REPORT.md",
+    "SEQUENCING_RECOMMENDATIONS.md",
+    "STAGE_DISTRIBUTION_REPORT.md",
+    "WIP_LOAD_ANALYSIS.md",
+    "PROJECT_HEALTH_ROLLUP.md",
+    "APPROVAL_GAP_REPORT.md",
+    "CONTRADICTION_ALERTS.md",
+    "DOCTRINE_DRIFT_REPORT.md",
+    "GOVERNANCE_COMPLIANCE_AUDIT.md",
+    "METRIC_SCHEMA_INTEGRITY_REPORT.md",
+    "MIGRATION_VALIDATION_REPORT.md",
+    "PM_CONFORMANCE_REPORT.md",
+    "STAGE_GATE_VIOLATION_REPORT.md",
+    "COS_BRIEF.md",
+    "CROSS_AGENT_CONFLICTS.md",
+    "ML1_DECISION_QUEUE.md",
+}
 REQUIRED_FRONTMATTER_FIELDS = [
     "id",
     "title",
@@ -111,6 +138,23 @@ def is_lint_excluded(path: Path) -> bool:
     if len(relative_parts) >= 3 and relative_parts[:2] == ("09_INBOX", "_sources"):
         return True
     if len(relative_parts) >= 2 and relative_parts[0] in {"cache", "screenshots"}:
+        return True
+    # Per-matter generated operational files
+    if relative_parts[0] == "05_MATTERS" and path.name in MATTER_GENERATED_FILENAMES:
+        return True
+    # Operational matter dashboards
+    if len(relative_parts) >= 2 and relative_parts[:2] == ("05_MATTERS", "DASHBOARDS"):
+        return True
+    # Portfolio management agent outputs (classified as internal working material)
+    if relative_parts[0] == "04_INITIATIVES" and len(relative_parts) >= 3:
+        if relative_parts[1:3] == ("LL_PORTFOLIO", "CHIEF_OF_STAFF"):
+            return True
+        if (
+            len(relative_parts) >= 4
+            and relative_parts[1:4] == ("LL_PORTFOLIO", "03_FIRM_OPERATIONS", "PORTFOLIO_GOVERNANCE")
+        ):
+            return True
+    if relative_parts[0] == "04_INITIATIVES" and path.name in PORTFOLIO_MGMT_OUTPUT_FILENAMES:
         return True
     return False
 

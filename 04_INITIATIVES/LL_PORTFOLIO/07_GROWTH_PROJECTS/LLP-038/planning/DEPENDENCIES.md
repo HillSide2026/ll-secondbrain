@@ -1,17 +1,17 @@
 ---
-    id: llp_038_delivery_spine__planning__dependencies_md
-    title: LLP-038 Delivery Spine - Dependencies
-    owner: ML1
-    status: draft
-    created_date: 2026-05-25
-    last_updated: 2026-05-25
-    tags: [llp-038, delivery-spine, planning]
-    ---
+id: llp_038_delivery_spine__planning__dependencies_md
+title: LLP-038 Delivery Spine - Dependencies
+owner: ML1
+status: draft
+created_date: 2026-05-25
+last_updated: 2026-05-25
+tags: [llp-038, delivery-spine, planning]
+---
 
-    # Dependencies
+# Dependencies
 
-    Project ID: LLP-038
-    Stage: Planning
+Project ID: LLP-038
+Stage: Planning
 
 
 | Dependency | Role |

@@ -1,17 +1,17 @@
 ---
-    id: llp_038_delivery_spine__planning__scope_statement_md
-    title: LLP-038 Delivery Spine - Scope Statement
-    owner: ML1
-    status: draft
-    created_date: 2026-05-25
-    last_updated: 2026-05-25
-    tags: [llp-038, delivery-spine, planning]
-    ---
+id: llp_038_delivery_spine__planning__scope_statement_md
+title: LLP-038 Delivery Spine - Scope Statement
+owner: ML1
+status: draft
+created_date: 2026-05-25
+last_updated: 2026-05-25
+tags: [llp-038, delivery-spine, planning]
+---
 
-    # Scope Statement
+# Scope Statement
 
-    Project ID: LLP-038
-    Stage: Planning
+Project ID: LLP-038
+Stage: Planning
 
 
 ## In Scope

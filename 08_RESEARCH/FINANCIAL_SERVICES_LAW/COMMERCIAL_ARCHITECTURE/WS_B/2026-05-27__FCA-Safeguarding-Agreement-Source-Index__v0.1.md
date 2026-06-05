@@ -6,10 +6,12 @@ domain: financial-services-law
 workstream: WS-B
 artifact_type: source_index
 status: draft
+owner: ML1
+created_date: 2026-05-27
+last_updated: 2026-05-27
+tags: [financial-services, FCA, safeguarding, WS-B]
 authority: not-approved
 confidence: exploratory
-created: 2026-05-27
-updated: 2026-05-27
 scope: "UK FCA payment services / e-money safeguarding"
 matter_id: null
 output_label: "Derived from regulatory reconstruction (FCA) - not explicit contract language"

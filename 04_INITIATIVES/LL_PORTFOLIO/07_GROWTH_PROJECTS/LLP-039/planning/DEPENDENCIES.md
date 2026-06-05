@@ -1,17 +1,17 @@
 ---
-    id: llp_039_fintech_retainer_operating_model__planning__dependencies_md
-    title: LLP-039 Fintech Retainer Operating Model - Dependencies
-    owner: ML1
-    status: draft
-    created_date: 2026-05-25
-    last_updated: 2026-05-25
-    tags: [llp-039, fintech-retainer, planning]
-    ---
+id: llp_039_fintech_retainer_operating_model__planning__dependencies_md
+title: LLP-039 Fintech Retainer Operating Model - Dependencies
+owner: ML1
+status: draft
+created_date: 2026-05-25
+last_updated: 2026-05-25
+tags: [llp-039, fintech-retainer, planning]
+---
 
-    # Dependencies
+# Dependencies
 
-    Project ID: LLP-039
-    Stage: Planning
+Project ID: LLP-039
+Stage: Planning
 
 
 | Dependency | Role |
