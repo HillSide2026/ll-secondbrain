@@ -4,7 +4,7 @@ title: Funnel Spec — Funnel 02
 owner: ML1
 status: planned
 created_date: 2026-02-25
-last_updated: 2026-03-15
+last_updated: 2026-06-07
 tags: []
 ---
 
@@ -111,28 +111,51 @@ have outgrown their original setup.
 
 ## Pipeline Stages
 
-- awareness_discovery
-- awareness_interest
-- lead_magnet_downloaded
-- inquiry_submitted
-- intake_completed
-- health_check_purchased
-- review_in_progress
-- delivery_meeting
-- remediation_project
-- fractional_counsel_retainer
+ML1-approved 2026-06-07. Single pipeline. Canonical spec governs `pipeline.yaml`.
+
+- new_lead
+- worked
+- qualified
+- consult_booked
+- consult_completed
+- engagement_out
+- retained
 - closed_lost
 
-Stage ownership is governed in `pipeline.yaml` under `stage_ownership` and `lifecycle_boundary`.
-Canonical lifecycle mapping is governed in `pipeline.yaml` under `lifecycle_mapping`.
+`worked` = first outreach attempt (call placed, no answer counts). Stage/status
+separation enforced: no-show, rescheduled, and unresponsive are opportunity
+status fields, not stages. See `pipeline.yaml` for custom fields and automation
+definitions.
 
-Lifecycle interpretation:
-- `awareness_discovery` maps to `discovery`.
-- `awareness_interest` maps to `interest`.
-- `lead_magnet_downloaded` maps to `consideration`.
-- `inquiry_submitted` maps to `inquiry` (alias: `intake`).
-- `intake_completed` is an intake-readiness checkpoint within `inquiry`.
-- `health_check_purchased` maps to `conversion` and is the fulfillment handoff state.
+## Diagnostic Offer Routing
+
+The Corporate Health Check (paid diagnostic) is not offered to all leads
+universally. Two lead types enter this funnel with different routing:
+
+**Awareness leads** (source: health check content cluster — blog posts, pillar
+pages): low problem clarity, arrived in learning mode, not carrying a defined
+mandate. These leads are routed automatically to the diagnostic purchase page
+directly from the inquiry form. No SDR judgment required at this step.
+
+**Mandate leads** (source: referral, direct, event, networking): high problem
+clarity, specific legal problem in hand. These leads are routed to a
+consultation to scope and price the work. The diagnostic may still be offered
+by the SDR at Qualified if structural complexity is identified, but it is not
+the default.
+
+Routing decision point: at the Qualified stage, the SDR sets `Offer Path` =
+Diagnostic or Consultation based on lead type. Inbound content leads may be
+pre-routed to Diagnostic via form logic before reaching the SDR.
+
+## Lead Magnet — Corporate Health Check Access Point (Backlog)
+
+Identified 2026-06-07. A Corporate Health Check lead magnet (distinct from
+"Growth Without Structural Drift") should be accessible directly from blog
+posts and the corporate governance pillar page. Its function is to give
+awareness leads a frictionless path from reading content to initiating the
+diagnostic purchase or inquiry, without requiring them to navigate to the main
+services page. Format and specification pending ML1 direction. See
+`funnel2_blog_backlog.md` for content cluster context.
 
 ## Primary Metrics
 

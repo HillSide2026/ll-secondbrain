@@ -4,12 +4,27 @@ owner: ML1
 status: draft
 version: 1.0
 created_date: 2026-02-16
-last_updated: 2026-02-16
+last_updated: 2026-06-07
 tags: [funnel-02, blog-backlog, corporate-health-check, governance]
 title: Funnel 2 Blog Backlog
 ---
 
 # Funnel 2 Blog Backlog
+
+## Lead Magnet Backlog
+
+### Corporate Health Check Lead Magnet (Backlog — identified 2026-06-07)
+
+A dedicated lead magnet providing direct access to the Corporate Health Check
+from within the blog and pillar page content cluster. Purpose: give awareness
+leads (reading corporate governance content) a frictionless path to initiating
+the diagnostic without navigating to the main services page. Distinct from
+"Growth Without Structural Drift" — that is a brand/awareness lead magnet; this
+is a conversion-intent lead magnet placed closer to the diagnostic purchase
+decision. Format (checklist, self-assessment, sample report, direct CTA)
+pending ML1 direction.
+
+---
 
 ## Pillar Content (Cornerstone Articles)
 1. Growth Without Structural Drift (TM): Applying the Churchill and Lewis Model to Ontario Corporations
