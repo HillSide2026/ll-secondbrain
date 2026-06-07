@@ -52,6 +52,5 @@ Govern the accounting fact layer for Levine Law so booked transactions, reconcil
 
 ## Approval State
 
-**ACTIVE / PLANNING** — Initiation is approved, the scope boundary is clarified,
-and the canonical planning packet is now in place. Execution remains gated
-pending a later ML1 decision.
+**ACTIVE / EXECUTING** — Initiation and planning are approved. Executing stage
+authorized by ML1 on 2026-06-07. See `initiation/APPROVAL_RECORD.md`.

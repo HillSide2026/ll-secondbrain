@@ -2,9 +2,9 @@
 id: 04_initiatives_ll_portfolio_01_financial_management_llp_001_accounting_initiation_approval_record_md
 title: Approval Record
 owner: ML1
-status: draft
+status: approved
 created_date: 2026-05-18
-last_updated: 2026-05-18
+last_updated: 2026-06-07
 tags: []
 ---
 
@@ -12,16 +12,16 @@ tags: []
 
 Project ID: LLP-001
 Project Path: 01_FINANCIAL_MANAGEMENT/LLP-001
-Stage: Planning
+Stage: Executing
 
-Approval Status: Planning Authorized (Initiation Approved)
+Approval Status: Executing Authorized (Planning Approved)
 
 ## Current State
 
 - Initiation is complete.
 - Planning is authorized as of 2026-05-13.
-- The planning packet now captures the clarified accounting-fact scope.
-- No executing-stage authorization is recorded.
+- The planning packet captures the clarified accounting-fact scope.
+- Executing is authorized as of 2026-06-07.
 
 ## Stage Gate: Initiating -> Planning
 
@@ -40,19 +40,24 @@ Date: 2026-05-13
 
 Planning Stage Authorized: Yes
 
-## Draft Planning Artifacts Present
+## Stage Gate: Planning -> Executing
 
 | Item | Status | Date | Notes |
 | --- | --- | --- | --- |
-| `planning/README.md` | drafted | 2026-05-13 | Canonical stage-2 packet index created |
-| `planning/SCOPE_STATEMENT.md` | drafted | 2026-05-13 | Execution-ready accounting boundary defined |
-| `planning/PROJECT_PLAN.md` | drafted | 2026-05-13 | Workstreams, milestones, and completion condition defined |
-| `planning/DEPENDENCIES.md` | drafted | 2026-05-13 | Material execution dependencies documented |
-| `planning/RISK_REGISTER.md` | drafted | 2026-05-13 | Planning-stage risks documented |
-| `planning/METRICS.md` | drafted | 2026-05-13 | Fact-layer control metrics proposed |
+| `planning/README.md` | approved | 2026-06-07 | Canonical stage-2 packet index |
+| `planning/SCOPE_STATEMENT.md` | approved | 2026-06-07 | Execution-ready accounting boundary defined |
+| `planning/PROJECT_PLAN.md` | approved | 2026-06-07 | Workstreams, milestones, and completion condition defined |
+| `planning/DEPENDENCIES.md` | approved | 2026-06-07 | Material execution dependencies documented |
+| `planning/RISK_REGISTER.md` | approved | 2026-06-07 | Planning-stage risks documented |
+| `planning/METRICS.md` | approved | 2026-06-07 | Fact-layer control metrics approved |
+
+ML1 Decision: Approved to advance
+Planning Approved By: ML1
+Date: 2026-06-07
+
+Executing Stage Authorized: Yes
 
 Notes:
-- Planning remains limited to historical accounting fact controls.
+- Scope remains limited to historical accounting fact controls.
 - LLP-002 may consume approved accounting facts only; it does not control
   LLP-001 scope.
-- Planning-to-Executing approval remains pending ML1 review.
