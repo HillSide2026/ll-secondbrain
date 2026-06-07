@@ -4,7 +4,7 @@ title: LL Project Backlog
 owner: ML1
 status: draft
 created_date: 2026-05-18
-last_updated: 2026-05-18
+last_updated: 2026-06-07
 tags: [ll, projects, backlog, portfolio]
 ---
 
@@ -21,6 +21,7 @@ Promotion to an active project (Initiating stage, with a project folder under
 
 | Project Name | Type | Description | Date Added | Priority | Notes |
 |---|---|---|---|---|---|
+| GHL Pipeline — One Pipeline Per Funnel | Operational | Each funnel must have one unique GHL pipeline. ML1 has shared an existing GHL pipeline titled "corporate" (presumed Funnel 02). Funnel 03 (Payments/MSB/PSP) needs its own dedicated GHL pipeline. Confirm mapping, create missing pipelines, and register the canonical pipeline ID in each funnel's `pipeline.yaml`. | 2026-06-07 | — | Funnel 02 pipeline may already exist as "corporate" in GHL. Funnel 03 pipeline outstanding. |
 
 ---
 
