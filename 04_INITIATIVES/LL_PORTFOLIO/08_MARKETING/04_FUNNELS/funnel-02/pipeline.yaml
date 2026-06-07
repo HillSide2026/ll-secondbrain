@@ -1,7 +1,7 @@
 system: ghl
 ghl_pipeline_name: "LL - Corporate (New)"
 ghl_pipeline_id: FD64V3fmW7sKvaJKjSVw
-ghl_sync_status: out_of_sync  # GHL stages do not match repo spec; standardization assigned to GHL specialist
+ghl_sync_status: out_of_sync  # GHL stages do not match canonical spec; standardization assigned to GHL specialist
 ghl_note: A second pipeline "LL - Corporate (Google)" (id emVIxH1FUQbwMM1MVW5V) also exists in GHL — governance decision pending on which to retire
 
 ghl_actual_stages:
@@ -17,52 +17,42 @@ ghl_actual_stages:
   - Closed – Not Proceeding
   - Disqualified
 
+# Canonical stage spec (ML1-approved 2026-06-07)
+# Replaces prior health-check-centric stage model.
+# Single pipeline. "Worked" = first outreach attempt (call, no answer).
+# Stage/status separation enforced: no-show, rescheduled, unresponsive are
+# contact/opportunity status fields, not stages.
 stages:
-  - awareness_discovery
-  - awareness_interest
-  - lead_magnet_downloaded
-  - inquiry_submitted
-  - intake_completed
-  - health_check_purchased
-  - review_in_progress
-  - delivery_meeting
-  - remediation_project
-  - fractional_counsel_retainer
+  - new_lead
+  - worked
+  - qualified
+  - consult_booked
+  - consult_completed
+  - engagement_out
+  - retained
   - closed_lost
 
 stage_ownership:
-  awareness_discovery: marketing
-  awareness_interest: marketing
-  lead_magnet_downloaded: marketing
-  inquiry_submitted: marketing
-  intake_completed: marketing
-  health_check_purchased: shared_handoff
-  review_in_progress: fulfillment
-  delivery_meeting: fulfillment
-  remediation_project: fulfillment
-  fractional_counsel_retainer: fulfillment
+  new_lead: intake
+  worked: intake
+  qualified: intake
+  consult_booked: intake
+  consult_completed: shared_handoff
+  engagement_out: ml1
+  retained: ml1
   closed_lost: shared_handoff
 
-lifecycle_boundary:
-  marketing_terminal_event: health_check_purchased
-  handoff_stage: health_check_purchased
-  pre_conversion_readiness_stage: intake_completed
-  fulfillment_entry_stage: review_in_progress
-  terminology_note: conversion is marketing language; onboarding is fulfillment language.
-
-lifecycle_mapping:
-  awareness_discovery:
-    canonical_stage: discovery
-  awareness_interest:
-    canonical_stage: interest
-  lead_magnet_downloaded:
-    canonical_stage: consideration
-  inquiry_submitted:
-    canonical_stage: inquiry
-    alias: intake
-  intake_completed:
-    canonical_stage: inquiry
-    subtype: intake_completed
-  health_check_purchased:
-    canonical_stage: conversion
-    boundary_note: marketing terminal event and fulfillment handoff state.
+custom_fields:
+  - name: Lead In Date
+    type: date
+    purpose: Anchor for speed-to-work SLA calculation
+  - name: First Worked Date
+    type: datetime
+    purpose: Stamped once by automation when opportunity first moves to Worked; never overwritten
+    automation: on stage change to worked, if empty, write current timestamp
+  - name: Speed to Work SLA
+    type: pass_fail
+    purpose: Flags leads not worked within SLA threshold; calculated from First Worked Date minus Lead In Date
+  - name: Outreach Attempts
+    type: integer
+    purpose: Increments per automation each time a call or outreach task is logged; drives max-attempt disposition rule
