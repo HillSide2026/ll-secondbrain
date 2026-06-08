@@ -49,16 +49,20 @@ moment of urgency; the checklist converts them.
 
 ### Working Corporation Taxonomy (ML1-approved 2026-06-07)
 
-Four corporation types served by this funnel:
+Near-exhaustive taxonomy of Ontario private operating businesses in the ICP
+revenue band. Classification notes: VC-backed companies are digital by
+definition and fall under Type 1. PE-backed companies are non-family-controlled
+and fall under Type 3.
 
 | Type | Description |
 |---|---|
-| Start-up (digital) | Digital business model; typically founder-led; IP, equity, and founder agreement surface prominent |
-| Family-owned company | Controlled by a single family; succession, family governance, and shareholder alignment surface prominent |
-| Private company (non-digital, non-family) | Operating business not in a digital sector and not family-controlled; classic corporate governance, commercial contracts, and growth financing surface |
-| Foreign subsidiary in Canada | Canadian entity owned by a foreign parent; local governance compliance, intercompany agreements, and Canadian regulatory surface |
+| 1. Start-up (digital) | Digital business model; typically founder-led; includes VC-backed; IP, equity, and founder agreement surface prominent |
+| 2. Family-owned company | Controlled by a single family; succession, family governance, and shareholder alignment surface prominent |
+| 3. Private company (non-digital, non-family) | Operating business not in a digital sector and not family-controlled; includes PE-backed; classic corporate governance, commercial contracts, and growth financing surface |
+| 4. Foreign subsidiary in Canada | Canadian entity owned by a foreign parent; local governance compliance, intercompany agreements, and Canadian regulatory surface |
+| 5. Professional corporation | Regulated professional practice (accounting, consulting, or similar); ownership and transfer constrained by professional body rules; distinct governance surface |
 
-The 25-point checklist lead magnet applies across all four types at the pillar
+The 25-point checklist lead magnet applies across all five types at the pillar
 level. Individual items within pillars may weight differently by type — to be
 assessed when the checklist is produced.
 

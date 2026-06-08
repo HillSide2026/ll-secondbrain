@@ -146,9 +146,10 @@ After the checklist, the natural next step is:
 
 ## Corporation Type Considerations
 
-Levine Law serves four corporation types within this funnel (see FUNNEL_SPEC.md
-for full taxonomy): start-up (digital), family-owned, private non-digital
-non-family, and foreign subsidiary in Canada.
+Levine Law serves five corporation types within this funnel (see FUNNEL_SPEC.md
+for full taxonomy): start-up (digital, includes VC-backed), family-owned,
+private non-digital non-family (includes PE-backed), foreign subsidiary in
+Canada, and professional corporation.
 
 The five pillars apply across all four types. Individual checklist items may
 weight or present differently by type — for example, IP assignment is more
