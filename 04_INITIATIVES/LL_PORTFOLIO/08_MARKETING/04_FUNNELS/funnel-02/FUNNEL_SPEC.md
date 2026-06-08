@@ -81,49 +81,44 @@ Secondary planning hypothesis (research only):
 
 Status: identified as a focus channel 2026-06-07. Development pending.
 
-### Why Type 4 is a distinct channel
+### Acquisition model
 
-Foreign subsidiaries arriving in Canada do not find their corporate lawyer
-through content or Google search the same way a Canadian-founded company does.
-The foreign parent typically has its own legal relationships; the Canadian
-entity needs a local corporate lawyer but lacks an established referral network
-in Canada. This creates a specific acquisition dynamic: the entry point is
-referral and relationship, not search.
+Type 4 is search-driven, same as the rest of this funnel. The Canadian GM or
+country manager of an existing foreign subsidiary operates as an independent
+buyer — they have a specific problem, a local budget, and they search for help.
+The foreign parent's GC is typically not in the picture for day-to-day Canadian
+legal work.
+
+Exception: new subsidiary setup (initial incorporation and governance) is more
+likely directed by the parent's legal team. That is a one-time referral event,
+not a repeating channel.
+
+The opportunity is Type 4-specific content within the existing SEO strategy —
+not a separate BD or referral relationship model.
 
 ### Decision-maker profile
 
-The buying decision typically involves the Canadian country manager or GM
-(day-to-day contact and felt need), with approval or direction from the foreign
-parent's GC, CFO, or outside counsel. The Canadian entity often cannot
-self-select a lawyer without parent involvement.
+Canadian country manager or GM. Independent buyer for operational legal needs.
+Parent GC involvement is more common for major structural decisions (M&A,
+intercompany restructuring) than for day-to-day corporate legal work.
 
 ### Trigger moments
 
-- Initial Canadian subsidiary setup (incorporation, governance, first
-  commercial contracts)
-- Compliance review required by the parent or a regulator
 - Employment issues with Canadian staff (distinct from home-country norms)
 - Key commercial contract with a Canadian customer or supplier
+- Canadian compliance review (regulatory, corporate records, annual obligations)
 - Intercompany agreement restructuring
 - M&A involving the Canadian entity
 
-### Likely referral and entry sources
+### Type 4-specific content opportunities
 
-- International accounting firms with Canadian practices (Big 4 and mid-tier)
-- Trade commissioners and consulates (foreign governments with Canadian trade
-  presence)
-- Canadian chambers of commerce with international member bases
-- International law firms referring Canadian work
-- Canadian banks with foreign corporate banking relationships
+Search intent for this segment differs from Canadian-founded companies.
+Relevant topics: intercompany agreements, CBCA vs. OBCA election for foreign
+entities, Canadian director requirements, Canadian employment obligations for
+foreign-controlled employers, subsidiary governance and minute book compliance.
 
-### Channel development questions (open)
-
-- Which source country segments are addressable and worth targeting?
-- Does this channel require dedicated content or landing page
-  (e.g., "Canadian subsidiary legal counsel") or does the existing
-  `levine-law.ca` surface adequately capture inbound?
-- What is the referral relationship investment required (trade commissions,
-  international accounting contacts) and is that realistic at current capacity?
+These topics are distinct enough from the general corporate governance content
+cluster to warrant dedicated pages or posts targeting Type 4 search terms.
 
 ## Traffic / Acquisition
 
