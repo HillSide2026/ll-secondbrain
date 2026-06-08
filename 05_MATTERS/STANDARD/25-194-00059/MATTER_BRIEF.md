@@ -12,24 +12,24 @@ tags: [matter, 25-194-00059]
 # Matter Brief — 24-194-00059 — RM Carpenters training center
 
 ## One-paragraph gist
-(Plain-language description of what this matter is about.)
+Rousseau Mazzuca LLP matter for RM Carpenters training center (aka Colwood).
 
 ## Parties
-- Client:
-- Counterparties:
-- Key contacts:
+- Client: Rousseau Mazzuca LLP
+- Counterparties: TBD
+- Key contacts: TBD
 
 ## What's happened so far
-- (High-signal bullets only)
+-
 
 ## Current posture
-- (Where things stand right now)
+- Follow-up pending
 
 ## Near-term milestones
-- (Bullets; not a task list)
+-
 
 ## Open questions
-- (Bullets)
+-
 
 ## Change log
-- YYYY-MM-DD — Summary updated
+- 2026-06-08 — Brief populated from ML1 verbal update; alias Colwood noted

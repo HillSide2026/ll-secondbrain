@@ -14,7 +14,7 @@ Track the current set of active personal tasks that require action.
 
 | Priority | Task | Next Action | Linked Project or Area | Due or Trigger | Status | Last Updated |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Talk to doctor re blood pressure, nose, testosterone | Book appointment | Personal Health | — | Active | 2026-03-25 |
+| 1 | Manage follow-up medical appointments — especially dermatologist; also blood pressure, nose, testosterone follow-through | Book dermatologist; confirm other referrals/follow-ups | Personal Health | — | Active | 2026-06-08 |
 | 2 | Be a better father | — | Personal | — | Active | 2026-03-25 |
 | 3 | Cultivate joy | — | Personal | — | Active | 2026-03-25 |
 | 4 | Attention management | — | Personal Wellbeing | — | Active | 2026-03-28 |
@@ -23,4 +23,4 @@ Track the current set of active personal tasks that require action.
 | 7 | Schedule dentist | Book appointment | Personal Health | — | Active | 2026-03-30 |
 | 8 | Buy crypto | — | Personal Finance | — | Active | 2026-03-30 |
 | 9 | Buy stablecoins | — | Personal Finance | — | Active | 2026-03-30 |
-| 11 | Follow up with The Z8 (thez8.com — Dubai payments co, Canadian MSB/stablecoin — went silent post-consult; one follow-up already sent) | Send second follow-up | LLP-028 (Consults) | End of May 2026 | Active | 2026-05-17 |
+| 11 | Z8 (thez8.com — Dubai payments co, Canadian MSB/stablecoin) — responded; waiting on next step from them | — | LLP-028 (Consults) | — | Waiting | 2026-06-08 |

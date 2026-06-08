@@ -114,13 +114,17 @@ For each real matter, classify the work into one of five postures:
 | LLP-013 | fintechlawyer.ca | LL Firm Management Task | — | Marketing / Content | Produce Cross-border payments cluster P7: 6 posts | Open | |
 | LLP-013 | fintechlawyer.ca | LL Firm Management Task | — | Marketing / Content | Add stablecoin cluster to fintechlawyer.ca content plan and scope production | Open | |
 | LLP-013 | fintechlawyer.ca | LL Firm Management Task | — | Business Development / Funnel 3 | Prepare conference talk on Real Time Rails (invited conference; presentation is an existing thought leadership asset; linked to Funnel 3 positioning) | Open | |
-| 24-646-00001 | ByNature Design | LL Legal Task | Standard | Corporate | Respond to client | Open | |
-| 25-1185-00001 | Alexander Klys | LL Legal Task | Standard | Corporate | Follow up with Alexander to scope Deal 2 intake (second business acquisition — instructed 2026-03-12, not yet scoped) | Open | |
+| 26-1637-00001 | MRKT (Nilabh Anand) | LL Legal Task | Strategic | Corporate | Speak with Laura | Open | |
+| 26-1637-00001 | MRKT (Nilabh Anand) | LL Legal Task | Strategic | Corporate | Speak with client | Open | |
+| 25-1185-00001 | Alexander Klys | LL Legal Task | Standard | Corporate | Prepare playbook | Open | |
+| 25-1185-00001 | Alexander Klys | LL Admin Task | Standard | Corporate | Send bill | Open | |
 | 24-336-00004 | Mascore Helical Piles | LL Legal Task | Strategic | Corporate | Finalize cohabitation agreement | In Progress | |
 | 25-1231-00001 | Charmaine Spiteri | LL Admin Task | Strategic | Corporate | Client to authorize LL as CRA representative | Waiting | Waiting on client |
 | 25-1318-00001 | Zelko Culibrk | LL Admin Task | Standard | Corporate | Close file | Waiting | Pending LL admin |
 | 25-256-00005 | Aspire Infusions Inc. | LL Admin Task | Strategic | Corporate | Collect outstanding fees | Waiting | Pending client |
 | 25-256-00005 | Aspire Infusions Inc. | LL Legal Task | Strategic | Corporate | Confirm status of corp re-org steps with client | Waiting | Pending client |
+| 24-256-00001 | Aspire Infusions Inc. | LL Legal Task | Strategic | Corporate | Review distribution agreement | Open | |
+| 26-1631-00001 | 1713425 Ontario Inc. (Tejvir Boparai) | LL Legal Task | Strategic | Corporate | Speak with Tejvir today | Open | 2026-06-08 |
 | 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | LL Legal Task | Standard | Corporate | Follow up with client — appears to want to re-engage | Open | |
 | 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | LL Admin Task | Standard | Corporate | Close file | Waiting | Pending LL admin |
 
@@ -146,7 +150,7 @@ _Use this section to add current matter details before the next governed tracker
 | 25-1231-00001 | Charmaine Spiteri | Strategic |  | follow up w charmaine |  |  |
 | 26-1631-00001 | 1713425 Ontario Inc. (Tejvir Boparai) | Strategic |  |  |  |  |
 | 26-1637-00001 | MRKT (Nilabh Anand) | Strategic |  | send comments to laura |  |  |
-| 22-194-00006 | Rousseau Mazzuca LLP | Standard |  | follow up |  |  |
+| 22-194-00006 | Rousseau Mazzuca LLP (commercial leasing / Paramount) | Standard |  | Complete LMH tenant workflow |  |  |
 | 23-194-00013 | Rousseau Mazzuca LLP | Standard |  | na |  |  |
 | 23-235-00001 | Baobab Energy Africa Ltd | Standard |  | na |  |  |
 | 24-646-00001 | ByNature Design | Standard |  | na |  |  |
@@ -175,6 +179,9 @@ _Completed tasks are retained here. The system will not recreate a task that app
 
 | Matter ID | Client | LL Task Type | Service | Task | Completed |
 |---|---|---|---|---|---|
+| 26-1637-00001 | MRKT (Nilabh Anand) | LL Legal Task | Corporate | Send comments to Laura | 2026-06-08 |
+| 24-646-00001 | ByNature Design | LL Legal Task | Corporate | Respond to client | 2026-06-08 |
+| 25-1185-00001 | Alexander Klys | LL Legal Task | Corporate | Scope Deal 2 intake — Deal 2 not proceeding | 2026-06-08 |
 | 25-927-00003 | Stream Ventures Limited | LL Legal Task | CAMLO | Meet with Equals | 2026-05-17 |
 | 25-927-00003 | Stream Ventures Limited | LL Legal Task | CAMLO | Attend KYC analyst interview | 2026-05-17 |
 | 25-927-00003 | Stream Ventures Limited | LL Legal Task | CAMLO | Follow up: Verto | 2026-05-17 |

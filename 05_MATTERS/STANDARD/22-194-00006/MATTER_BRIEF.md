@@ -12,24 +12,25 @@ tags: [matter, 22-194-00006]
 # Matter Brief — 22-194-00006 — Rousseau Mazzuca LLP
 
 ## One-paragraph gist
-(Plain-language description of what this matter is about.)
+Commercial leasing matter for Rousseau Mazzuca LLP. Recent negotiation with
+Paramount. Pending workflow: LMH (tenant).
 
 ## Parties
-- Client:
-- Counterparties:
-- Key contacts:
+- Client: Rousseau Mazzuca LLP
+- Counterparties: Paramount (landlord)
+- Key contacts: TBD
 
 ## What's happened so far
-- (High-signal bullets only)
+- Recent negotiation with Paramount
 
 ## Current posture
-- (Where things stand right now)
+- Pending: LMH tenant workflow
 
 ## Near-term milestones
-- (Bullets; not a task list)
+- Complete LMH tenant workflow
 
 ## Open questions
-- (Bullets)
+-
 
 ## Change log
-- YYYY-MM-DD — Summary updated
+- 2026-06-08 — Brief populated from ML1 verbal update
