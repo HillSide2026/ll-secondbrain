@@ -387,7 +387,7 @@ Decline:
 - Police inquiries
 - Non-Canadian nexus
 
-## Entry 3: MSB Health Check (Canada)
+## Regulatory Mandate: MSB Health Check (Canada)
 
 **Strategic Role in Funnel 3**
 If:
@@ -534,11 +534,12 @@ Avoid: "You're exposed."
 
 Use: "Your program may be compliant -- but is it defensible?"
 
-## Pending Entry Offer: RPAA Registration Readiness & Application Review
+## Regulatory Mandate: RPAA Registration Readiness & Application Review
 
 **Status:** Pending ML1 approval; specification pending.
 
-This is a draft candidate entry offer. It is not approved for marketing,
+This is a regulatory mandate offer, not an entry offer. Scoped and priced as
+a full engagement ($7,500-$18,000). It is not approved for marketing,
 activation, Stripe configuration, or external positioning until ML1 approves the
 offer specification.
 

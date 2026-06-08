@@ -192,17 +192,20 @@ Stages: booked → consult_complete → retained
 - Entry offers:
   - EO1: MSB Registration Mandate
   - EO2: Suspicious Transaction Triage & STR Filing
-  - EO3: MSB Health Check
-- Pending entry offer:
-  - RPAA Registration Readiness & Application Review — pending ML1 approval;
-    specification pending
+- Diagnostic products (lead qualification layer):
+  - P4: FINTRAC Review
+  - P5: RPAA Readiness Check
+  - Spec: funnel3_products4_5_diagnostic.md
+  - Pricing: TBD
+- Regulatory mandates:
+  - MSB Health Check ($6,500-$15,000)
+  - RPAA Registration Readiness & Application Review ($7,500-$18,000) —
+    pending ML1 approval; specification pending
 - Core offers:
-  - Suspicious Transaction Reporting Triage & Playbook
+  - STR Playbook
   - MSB Effectiveness Review
   - RPAA Reporting
-  - Ongoing AML / Payments Regulatory Counsel
-  - Fractional Counsel for payments-regulatory matters where the mandate
-    supports an ongoing relationship
+  - Ongoing AML Counsel Retainer
 - Solutions (as applicable):
   - MSB_INTAKE_AND_REGISTRATION
   - FINTRAC_RESPONSE
