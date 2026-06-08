@@ -13,102 +13,113 @@ tags: [funnel-02, lead-magnet, checklist, subsidiary, incorporation, value-ladde
 ## Strategic Purpose
 
 Pre-sell the done-for-you Canadian subsidiary incorporation service (with
-registered office) by surfacing what a foreign company actually needs to
-operate a properly structured Canadian entity. The checklist makes the
-requirement set concrete so the Canadian GM or foreign parent understands
-what is missing and why the done-for-you service resolves it efficiently.
+registered office) by making the full requirement set concrete before the
+foreign company begins. The checklist surfaces what is actually involved so
+the Canadian GM or foreign parent understands the scope — and why the
+done-for-you service is the efficient path.
 
-Target: Type 4 (foreign-owned and controlled subsidiary). Search-driven —
-operator has a specific trigger moment (setting up, or already operating
-without proper structure).
+Target: Type 4 (foreign company planning a Canadian subsidiary). New
+incorporations only. Audience is the foreign parent or incoming Canadian GM
+at the planning stage, not an existing entity.
 
 ## Format
 
-Checklist / scorecard. Three-option response per item: Yes / No / Not sure.
+Checklist. Binary: Done / Not yet done.
 
-"Not sure" is particularly common for this audience — a foreign-controlled
-Canadian entity frequently has structural gaps that the Canadian GM inherited
-or was never briefed on by the parent.
+Unlike the health check and founder agreements checklists, this is not a
+diagnostic for gaps — it is a setup guide that doubles as a pre-sell. The
+operator is not assessing an existing structure; they are planning one.
+Most items will be "Not yet done" by definition. The value is in showing
+the full scope of what is required.
 
 ## Framing
 
-Working title: **"Is Your Canadian Subsidiary Properly Set Up? A 25-Point Checklist for Foreign-Owned Companies Operating in Canada"**
+Working title: **"Setting Up a Canadian Subsidiary: Everything You Need to Do Before You Open for Business"**
 
-Subframe: "Most foreign companies underestimate what a properly structured
-Canadian subsidiary requires. This checklist covers the legal, governance, and
-compliance requirements a Canadian entity must meet — and where gaps typically
-appear."
+Subframe: "A complete setup checklist for foreign companies incorporating
+in Canada. Most companies underestimate the scope. This list covers every
+legal, governance, and registration step required for a properly structured
+Canadian entity."
 
 ## Structure — Five Pillars
 
 ---
 
-### Pillar 1 — Corporate Structure
+### Pillar 1 — Corporate Structure Decisions
 
-- The Canadian entity is incorporated (not operating as a branch of the foreign parent)
-- Federal (CBCA) vs. provincial (OBCA or equivalent) incorporation was a deliberate choice, not a default
-- The corporate name is reserved and registered
-- Articles of incorporation reflect the intended share structure and restrictions
-- The entity is in good standing with its incorporating jurisdiction (annual returns filed)
+- Choose between federal (CBCA) and provincial (OBCA or equivalent)
+  incorporation — this is a deliberate legal decision, not an administrative default
+- Reserve and confirm the corporate name
+- Determine the share structure (classes, restrictions, authorized capital)
+- Determine whether the Canadian entity will operate as a subsidiary (separate
+  legal entity) rather than a branch (extension of the foreign parent)
+- Engage Canadian corporate counsel before filing
 
 ---
 
-### Pillar 2 — Governance and Records
+### Pillar 2 — Governance Setup
 
-- A Canadian registered office address is in place (required by law — must be a physical address in the incorporating jurisdiction)
-- At least 25% of directors are Canadian residents (CBCA requirement; OBCA has no residency requirement)
-- Director and officer appointments are documented by resolution
-- A minute book has been established and is maintained in Canada
-- Initial organizational resolutions have been passed and recorded
+- Identify Canadian resident directors (CBCA requires at least 25% Canadian
+  resident directors; OBCA has no residency requirement)
+- Appoint officers and document appointments by resolution
+- Establish a registered office address in Canada (a physical address in the
+  incorporating jurisdiction is required by law — a P.O. box is not sufficient)
+- Pass initial organizational resolutions (share issuance, banking, officer
+  appointments)
+- Establish and maintain a minute book in Canada
 
 ---
 
 ### Pillar 3 — Tax and Regulatory Registration
 
-- The Canadian entity has its own Business Number (BN) from the CRA
-- HST/GST registration is in place if the entity is making taxable supplies in Canada
-- A payroll deductions account is open if the entity employs Canadian staff
-- Applicable provincial business licences or registrations are current
-- The entity has a Canadian accountant or tax advisor managing Canadian compliance
+- Obtain a Business Number (BN) from the CRA
+- Register for HST/GST if the entity will be making taxable supplies in Canada
+- Open a payroll deductions account if the entity will employ Canadian staff
+- Obtain applicable provincial business licences or registrations
+- Engage a Canadian accountant or tax advisor for ongoing compliance
 
 ---
 
 ### Pillar 4 — Banking and Operations
 
-- The Canadian entity has its own Canadian bank account in its own name
-- Signing authority on the Canadian account is appropriately documented
-- The entity is not operating through the foreign parent's accounts for Canadian transactions
-- Insurance coverage appropriate for Canadian operations is in place
-- Local operational agreements (office lease, service contracts) are in the entity's name
+- Open a Canadian bank account in the entity's own name
+- Document signing authority on the Canadian account by resolution
+- Ensure Canadian operations run through the Canadian entity's accounts,
+  not the foreign parent's
+- Put local operational agreements (office lease, service contracts) in the
+  Canadian entity's name
+- Arrange appropriate Canadian insurance coverage
 
 ---
 
 ### Pillar 5 — Intercompany Framework
 
-- A written intercompany agreement governs services provided by the parent to the Canadian entity (or vice versa)
-- Management fees or cost-sharing arrangements between the parent and the Canadian entity are documented
-- IP used by the Canadian entity is either assigned to it or licensed under a written agreement
-- Transfer pricing between the parent and the Canadian entity has been reviewed by a Canadian tax advisor
-- The Canadian entity's financial statements are prepared separately from the parent's for Canadian compliance purposes
+- Draft a written intercompany agreement governing services between the
+  parent and the Canadian entity
+- Document any management fees or cost-sharing arrangements
+- Establish IP licensing or assignment from the parent to the Canadian entity
+  for IP used in Canada
+- Have a Canadian tax advisor review transfer pricing before operations begin
+- Ensure the Canadian entity's financials can be prepared separately from
+  the parent's for Canadian compliance purposes
 
 ---
 
 ## Gate Mechanics
 
-Option B recommended: deliver the checklist without a gate; capture email at
-completion in exchange for a score summary and "what your Canadian entity
-needs to do next" guidance.
+Option B recommended: deliver the checklist without a gate; capture email
+at completion in exchange for a "next steps" summary and service overview.
+The operator arrives at the CTA having just understood the full scope —
+that is the moment to present the done-for-you service.
 
 ## Bridge to Product
 
-- 3+ items answered "No" or "Not sure": direct CTA to the done-for-you
-  Canadian subsidiary incorporation and registered office service
-- Frame: "We handle the incorporation, the registered office, the initial
-  governance documents, and the minute book. You get a properly structured
-  Canadian entity without navigating the requirements yourself."
-- For existing subsidiaries with gaps (not new incorporations): frame as a
-  "subsidiary cleanup" rather than a new incorporation — the same service
-  addresses both.
+Single CTA after checklist completion:
+
+"This is the complete setup requirement for a Canadian subsidiary. We handle
+every step — incorporation, registered office, initial governance documents,
+and minute book. You get a properly structured Canadian entity without
+navigating Canadian corporate law yourself."
 
 ## Placement
 
@@ -116,12 +127,10 @@ needs to do next" guidance.
 - On pages addressing branch vs. subsidiary, CBCA vs. OBCA, Canadian director
   requirements, and foreign company expansion to Canada
 - Linked from the incorporation service landing page as a pre-purchase
-  self-qualification tool
+  scope-setting tool
 
 ## Production Notes
 
-- Format: interactive scored form preferred; PDF fallback acceptable
-- Single universal checklist — applies to both new incorporations and existing
-  subsidiaries with governance gaps
-- The "existing subsidiary with gaps" use case may be larger than the new
-  incorporation use case — framing should accommodate both
+- Format: interactive checklist preferred; PDF fallback acceptable
+- New incorporations only — no subsidiary cleanup or gap-remediation framing
+- Single universal checklist across all source countries and industries
