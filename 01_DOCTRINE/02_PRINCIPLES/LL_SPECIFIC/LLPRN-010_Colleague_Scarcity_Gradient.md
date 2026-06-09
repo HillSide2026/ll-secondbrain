@@ -11,7 +11,7 @@ provenance:
   decided_on: 2026-05-04
   context: Metadata normalized by system admin cleanup on 2026-05-24
 created_date: 2026-05-04
-last_updated: 2026-05-04
+last_updated: 2026-06-08
 tags: [principle, colleague, professional-relationships, referral, network]
 applies_to: [LL]
 ---
@@ -21,15 +21,10 @@ applies_to: [LL]
 Title: Colleague Scarcity Gradient
 
 Statement:
-Distinguish between general professional contacts (abundant, undifferentiated) and good colleagues (rare, reliable, reciprocating). Colleagues are a dime a dozen. Good colleagues are valuable. Do not invest the same time, referrals, or goodwill in a general contact as in a good colleague.
+Colleagues are abundant and undifferentiated. Good colleagues are rare and reciprocating. Do not invest the same time, referrals, or goodwill in a general contact as in a good colleague. Good-colleague status is earned through reliable fit referrals over time, reciprocal action when asked, and professional reliability in adversity. Volume alone is insufficient; bad-fit referrals are noise. The status is maintained continuously, not permanently conferred, and can be lost. Watch behavior, not stated warmth; your classification of someone as a good colleague may be asymmetric.
 
 Rationale:
 Treating all professional contacts as equally valuable dilutes relationship capital. The distinction between colleague and good colleague determines the appropriate level of investment and expectation. Only good colleagues have demonstrated, through reliable referrals, reciprocity, or substantive support, that they warrant sustained investment.
-
-Application Notes:
-1. Promotion criteria: good-colleague status is earned through reliable referrals over time, reciprocal action when asked, professional reliability in adversity (not just when it is easy), and referral quality. Volume alone is insufficient; a colleague who sends bad-fit clients is providing noise, not value.
-2. Demotion: good-colleague status must be maintained. A good colleague who stops reciprocating reverts to general colleague. The classification is earned continuously, not permanently conferred.
-3. Asymmetric classification: you may regard someone as a good colleague who regards you as a general contact. Observe their behavior rather than their stated warmth, and calibrate investment accordingly.
 
 Supersedes: None
 Version: 1.0

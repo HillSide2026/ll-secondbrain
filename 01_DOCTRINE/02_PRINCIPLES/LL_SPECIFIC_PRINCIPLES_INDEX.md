@@ -73,7 +73,7 @@ These principles are portfolio-specific to Levine Law and do not constrain Syste
 | ID | Title | Scope | Purpose | Status |
 |----|-------|-------|---------|--------|
 | LLPRN-013 | Credible Commitment | LL | Limit your own retreat options to make threats and promises credible | Draft |
-| LLPRN-014 | Cooperative Equilibrium | LL | In repeated engagements, cooperation beats defection because the long-term loss from destroying the relationship exceeds any short-term gain | Draft |
+| LLPRN-014 | Reciprocity Equilibrium | LL | In repeated relationships, the long-term value of sustained reciprocity exceeds the short-term gain of defection | Draft |
 | LLPRN-015 | Regulatory Mechanism Design | LL | When private payoffs favor cheating, introduce external enforcement (contract, regulator, court) to shift the equilibrium | Draft |
 | LLPRN-016 | Credible Retaliation | LL | Reliable, calibrated punishment of defectors (Tit-for-Tat) deters future defection without requiring escalation | Draft |
 | LLPRN-017 | Reputation Investment | LL | Reputation is accumulated capital that makes threats credible by default and reduces future enforcement costs | Draft |
