@@ -21,9 +21,10 @@ Full tool surface documented in:
 
 ### Gmail / Inbox
 
-- **Gmail inbox** = `Matthew@levinelegalservices.com`, accessed via the `gmail` MCP server (`list_messages`, `get_message`, `list_threads`, `get_thread`)
-- **09_INBOX** = ML2's in-tray pipeline for processed data (SharePoint metadata, drive sync, etc.) — this is NOT the Gmail inbox
-- Never conflate these two. When asked to check the inbox, use the Gmail MCP.
+- **Gmail inbox** = `Matthew@levine-law.ca` (alias: `matthew@levinelegal.ca`), accessed via the `gmail` MCP server (`list_messages`, `get_message`, `list_threads`, `get_thread`)
+- **Outlook inbox** = `Matthew@levinelegalservices.com` — separate account, not accessible via the Gmail MCP
+- **09_INBOX** = ML2's in-tray pipeline for processed data (SharePoint metadata, drive sync, etc.) — this is NOT either email inbox
+- Never conflate these. When asked to check the inbox, use the Gmail MCP for the levine-law.ca account.
 
 ### SharePoint
 
@@ -76,7 +77,8 @@ created only on ML1 instruction.
 
 - When ML1 marks a task as Done, move it to the Completed section. Do not delete it.
 - Before adding any new task, check the Completed section. If the same task has already been completed on this matter, do not recreate it. A follow-up task is a new task with a distinct description — it is not the same task.
-- Tasks are added by the system when ML1 directs it. Do not infer or auto-generate tasks from emails or other sources without ML1 instruction.
+- **Gmail capture rule:** When reading Gmail in any context, LL tasks (LL Legal Task, LL Admin Task, LL Firm Management Task) identified from email threads are added to this tracker proactively — no per-session instruction required. This mirrors the personal action capture rule for BACKLOG.md.
+- Do not spontaneously generate tasks outside of inbox review without ML1 instruction.
 
 ---
 

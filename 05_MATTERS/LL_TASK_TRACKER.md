@@ -16,21 +16,21 @@ This tracker covers Levine Law tasks owned by ML1. Use `LL Task Type` to
 distinguish client legal work, matter administration, and firm management.
 
 ## Freshness
-- Reviewed on: `2026-05-17`
-- Review basis: ML1 verbal update
-- Connector note: this refresh did not rely on a new Gmail or SharePoint connector run
+- Reviewed on: `2026-06-08`
+- Review basis: Gmail inbox review (25 threads)
+- Connector note: inbox review via Gmail MCP; 3 new tasks added from inbox (Stream Attrus KYB, Regus invoice, Braden Dennis hiring)
 - Matter update intake added on: `2026-05-24`
 - Matter update intake basis: current `05_MATTERS/DASHBOARDS/MATTER_INDEX.md`; source data may be stale pending refreshed Clio, Gmail, SharePoint, and deadline inputs
 - Client demand / profitability intake added on: `2026-05-25`
 - Profitability intake basis: ML1 note that the matter list does not accurately capture client work, client demand, or the core profitability question
 
 ## Summary
-- Open tasks: `11`
+- Open tasks: `17`
 - In-progress tasks: `1`
 - Waiting tasks: `5`
-- LL Legal Tasks: `5`
-- LL Admin Tasks: `4`
-- LL Firm Management Tasks: `8`
+- LL Legal Tasks: `6`
+- LL Admin Tasks: `6`
+- LL Firm Management Tasks: `7`
 - Matters represented: `7`
 - Matter update intake rows: `34`
 - Dated overdue tasks on the face of the tracker: `0`
@@ -113,7 +113,10 @@ For each real matter, classify the work into one of five postures:
 | LLP-013 | fintechlawyer.ca | LL Firm Management Task | — | Marketing / Content | Produce Banking relationships cluster P6: 8 posts (de-risking, bank onboarding, account termination) | Open | |
 | LLP-013 | fintechlawyer.ca | LL Firm Management Task | — | Marketing / Content | Produce Cross-border payments cluster P7: 6 posts | Open | |
 | LLP-013 | fintechlawyer.ca | LL Firm Management Task | — | Marketing / Content | Add stablecoin cluster to fintechlawyer.ca content plan and scope production | Open | |
-| LLP-013 | fintechlawyer.ca | LL Firm Management Task | — | Business Development / Funnel 3 | Prepare conference talk on Real Time Rails (invited conference; presentation is an existing thought leadership asset; linked to Funnel 3 positioning) | Open | |
+| LLP-013 | fintechlawyer.ca | LL Firm Management Task | — | Business Development / Funnel 3 | Infonex Financial Services Regulation (June 16) — Finalize slides | Open | 2026-06-16 |
+| LLP-013 | fintechlawyer.ca | LL Firm Management Task | — | Business Development / Funnel 3 | Infonex Financial Services Regulation (June 16) — Finalize script | Open | 2026-06-16 |
+| 24-256-00002 | Aspire Infusions Inc — Corporate | LL Legal Task | Strategic | Corporate | Send redline to Michael | Open | |
+| 24-256-00003 | Aspire Infusions Inc — Marketing Related Matters | LL Legal Task | Strategic | Corporate | Review second sales agreement (sales rep, Manitoba) | Open | |
 | 26-1637-00001 | MRKT (Nilabh Anand) | LL Legal Task | Strategic | Corporate | Speak with Laura | Open | |
 | 26-1637-00001 | MRKT (Nilabh Anand) | LL Legal Task | Strategic | Corporate | Speak with client | Open | |
 | 25-1185-00001 | Alexander Klys | LL Legal Task | Standard | Corporate | Prepare playbook | Open | |
@@ -124,6 +127,9 @@ For each real matter, classify the work into one of five postures:
 | 25-256-00005 | Aspire Infusions Inc. | LL Admin Task | Strategic | Corporate | Collect outstanding fees | Waiting | Pending client |
 | 25-256-00005 | Aspire Infusions Inc. | LL Legal Task | Strategic | Corporate | Confirm status of corp re-org steps with client | Waiting | Pending client |
 | 24-256-00001 | Aspire Infusions Inc. | LL Legal Task | Strategic | Corporate | Review distribution agreement | Open | |
+| 26-927-00004 | Stream Ventures Limited | LL Legal Task | Essential | Payments / Counsel | Coordinate Attrus KYB onboarding: provide Articles of Association/Bylaws (SnowCap and MapleWave), Share Register, proof of address, and LGPD form to Attrus compliance team — Katta/Mike actioning, Matthew cc'd | Open | |
+| — | Braden Dennis / fiscal.ai (lead) | LL Admin Task | — | Intake | Run intake qualification — Braden Dennis (fiscal.ai), founder seeking in-house counsel; fiscal.ai processes and sells financial data (cf. MRKT / Nilabh Anand, 26-1637-00001) | Open | |
+| LL-OPS | Levine Law | LL Admin Task | — | Firm Admin | Process Regus invoice (Invoice 943-34053) — office space at 1235 Bay Street | Open | |
 | 26-1631-00001 | 1713425 Ontario Inc. (Tejvir Boparai) | LL Legal Task | Strategic | Corporate | Speak with Tejvir today | Open | 2026-06-08 |
 | 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | LL Legal Task | Standard | Corporate | Follow up with client — appears to want to re-engage | Open | |
 | 26-1593-00002 | 1001162998 Ontario Corp. o/a KaleMart | LL Admin Task | Standard | Corporate | Close file | Waiting | Pending LL admin |
@@ -180,6 +186,7 @@ _Completed tasks are retained here. The system will not recreate a task that app
 | Matter ID | Client | LL Task Type | Service | Task | Completed |
 |---|---|---|---|---|---|
 | 26-1637-00001 | MRKT (Nilabh Anand) | LL Legal Task | Corporate | Send comments to Laura | 2026-06-08 |
+| — | Braden Dennis / fiscal.ai (lead) | LL Admin Task | Corporate | Review fiscal.ai intake video (Workable) — Braden Dennis, founder; company seeking in-house counsel | 2026-06-09 |
 | 24-646-00001 | ByNature Design | LL Legal Task | Corporate | Respond to client | 2026-06-08 |
 | 25-1185-00001 | Alexander Klys | LL Legal Task | Corporate | Scope Deal 2 intake — Deal 2 not proceeding | 2026-06-08 |
 | 25-927-00003 | Stream Ventures Limited | LL Legal Task | CAMLO | Meet with Equals | 2026-05-17 |
