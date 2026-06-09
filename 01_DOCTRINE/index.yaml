@@ -855,6 +855,41 @@ protocols:
   status: draft
   policy: unknown
   history: []
+- id: LLPRO-001
+  title: Intake Qualification Protocol
+  path: 01_DOCTRINE/05_PROTOCOLS/LLPRO-001_Intake_Qualification_Protocol.md
+  version: '1.0'
+  status: draft
+  policy: LLPOL-004, LLPOL-003, LLPOL-002, LLPOL-001
+  history: []
+- id: LLPRO-002
+  title: Engagement Risk Assessment Protocol
+  path: 01_DOCTRINE/05_PROTOCOLS/LLPRO-002_Engagement_Risk_Assessment_Protocol.md
+  version: '1.0'
+  status: draft
+  policy: LLINV-004, LLPOL-001
+  history: []
+- id: LLPRO-003
+  title: A/R Review Protocol
+  path: 01_DOCTRINE/05_PROTOCOLS/LLPRO-003_AR_Review_Protocol.md
+  version: '1.0'
+  status: draft
+  policy: LLPOL-005, LLPOL-001
+  history: []
+- id: LLPRO-004
+  title: KPI Dashboard Review Protocol
+  path: 01_DOCTRINE/05_PROTOCOLS/LLPRO-004_KPI_Dashboard_Review_Protocol.md
+  version: '1.0'
+  status: draft
+  policy: LLPOL-006, LLPOL-001
+  history: []
+- id: LLPRO-005
+  title: Client Economics Audit Protocol
+  path: 01_DOCTRINE/05_PROTOCOLS/LLPRO-005_Client_Economics_Audit_Protocol.md
+  version: '1.0'
+  status: draft
+  policy: LLPOL-001, LLPOL-004
+  history: []
 doctrine:
 - id: INV-0012
   title: 'INV-0012: Project Structural Boundaries'
