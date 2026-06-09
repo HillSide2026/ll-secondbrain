@@ -198,8 +198,12 @@ Permitted support: ad hoc contractors (admin, formatting, filings). No fixed emp
 
 **Associate Lawyer (Delivery Role)**
 - Function: absorb execution workload; extend matter delivery capacity
-- Trigger: sustained capacity breach at $300K+ annualized revenue with persistent overflow work
+- Trigger: sustained capacity breach with persistent overflow work
 - Gate: matter eligibility list, supervision model, and compensation structure ML1-approved before activation
+- **Two scenarios depending on 2026 ML1 actuals:**
+  - *$300K+ ML1 billings:* Target profile — 4–5 years call, financial services experience required, can run F03 payments/regulatory files end to end
+  - *~$240K ML1 billings:* Junior profile — 2+ years call, corporate maintenance only, ML1 retains all F03 work; preferred candidate is a mid-career lawyer maintaining flexible practice around family obligations
+- **Sourcing begins H2 2026** regardless of which profile — profile decision made Q4 2026 based on billing trajectory
 
 **Senior Lawyer (Separate Later Scenario)**
 - Function: add a more autonomous delivery layer only after bounded delegated delivery is proven or the matter mix justifies it
@@ -342,3 +346,33 @@ Levine Law is not built as a traditional law firm. It is a controlled production
 - Payments positioning is stronger, deeper, and credible to adjacent insiders
   as a Tier 6 specialist platform moving toward Tier 5
 - Any associate-lawyer, senior-lawyer, or partner layer is justified by throughput, supervision readiness, and niche economics rather than by ambition alone
+
+---
+
+## 10. Risk Management
+
+Risks that could materially damage 2026 operations or the 2026–2028 trajectory.
+
+| Risk | Category | Likelihood | Impact | Strategy (draft) | 2026 Mitigation |
+|---|---|---|---|---|---|
+| **ML1 incapacity** — illness, burnout, or extended unavailability halts all revenue generation; no backup fee earner exists | Strategic | L | Critical | Acceptance + Mitigation | Capacity discipline: no sustained overload beyond 18 active matters; no 4-week+ periods above ceiling; intake gate enforced to protect ML1 bandwidth |
+| **F01 deterioration before F02/F03 produce** — Google Ads cost increases, quality decline, or lead drought before replacement channels generate revenue | Strategic | M | H | Diversification | Accelerate F02 accountant outreach; do not reduce F01 spend until F02 is producing ≥20% of revenue; maintain 8–12 week F02 activation lead time |
+| **Revenue concentration** — Andersen or one or two large clients represent a disproportionate share; loss of one creates a material shortfall | Strategic | M | H | Diversification | Monitor concentration quarterly; no single client >30% of monthly revenue on a sustained basis; flag Andersen dependency explicitly in 2026 financial reporting |
+| **F02 underperformance** — Health Check fails to convert accountant referrals at the rate the plan requires | Strategic | M | H | Mitigation | Track conversion at each stage (referral → inquiry → booked → completed → remediation); diagnose and adjust within 60 days of launch |
+| **Collections lag / cash flow gap** — AR aging beyond 60 days creates shortfall against fixed overhead and ML1 compensation | Operational | M | H | Mitigation | Net-30 enforced; deposits on retainer and fixed-fee matters; AR reviewed monthly; no new matter onboarding for clients with outstanding balances |
+| **F03 timeline slippage** — RPAA/CARF publishing program delayed, pushing Tier 7 proof base into 2027 without foundation | Operational | M | M | Mitigation | Treat RPAA and CARF publishing as a standing commitment; first publications by Q3 regardless of broader F03 build state |
+| **Professional liability / malpractice** — an error or omission generates a claim, reputational damage, or LawPRO proceedings | Operational | L | H | Transference + Mitigation | LawPRO coverage maintained; scope-of-work letters on every matter; complex matters flagged early |
+| **LawPRO coverage adequacy** — current coverage may not be calibrated for RPAA/FINTRAC/regulatory work; regulatory errors carry different exposure profiles than standard corporate matters | Strategic | L | H | Mitigation | Review LawPRO policy scope and limits against F03 matter types before first regulatory file is opened; confirm coverage annually as F03 grows |
+| **AI / legaltech disruption** — AI compresses demand for commodity corporate drafting, reducing value of work types LL currently prices at standard rates | Strategic | L | M | Mitigation + Diversification | Accelerate specialist positioning (F03); template-driven delivery improves margin defensibility; monitor which matter types are most exposed and adjust offer mix accordingly |
+| **Underpricing** — $480/$550 rates are below market for the target ICP, attracting price-sensitive clients and undermining ICP discipline | Strategic | M | M | Mitigation | Test rate sensitivity at each new engagement; review rates against comparable boutique practices annually; ICP filter enforced to avoid clients whose selection criterion is price |
+| **Accountant channel activation failure** — accountants who do not know ML1 personally do not refer, regardless of offer quality; warm referral network cannot be built fast enough to validate F02 by Q3 | Strategic | M | H | Mitigation | Begin accountant outreach in Q2; prioritize existing professional relationships before cold outreach; track referral source for every F02 inquiry |
+| **Positioning confusion** — dual F02/F03 messaging leads the market to perceive LL as a generalist rather than a payments specialist; ICP-01 and ICP-02 messaging dilutes each other | Strategic | M | M | Mitigation | Maintain distinct channel surfaces for F02 and F03; levinellp.ca (fintech/payments) and levine-law.ca (corporate) separation governs; do not cross-promote in channel-specific content |
+| **Associate sourcing failure** — the right associate profile is not findable in the Toronto market on the required timeline | Strategic | M | M | Mitigation + Acceptance | Begin sourcing H2 2026 through professional networks; junior profile is the defined fallback; do not delay sourcing until gate is formally triggered |
+| **ML1 personal financial pressure** — personal fixed obligations create cash pressure, causing ML1 to accept bad-fit work to generate short-term revenue, undermining ICP discipline | Strategic | L | H | Mitigation | $85K fixed owner line set to remove this pressure; monitor personal cash flow separately from LL P&L; flag immediately if personal obligations require LL income above planned level |
+| **Conflict of interest** — taking on a client in the payments niche precludes taking on a competing client; as F03 grows, conflict checks become a recurring constraint on intake | Operational | L | M | Mitigation | Conflict check protocol enforced at intake for all F03 matters; client universe tracked in Clio; flag conflicts before engagement letter is issued |
+| **Tech stack single point of failure** — GHL, Clio, and QBO each represent a single point of failure; outage halts intake, billing, or collections | Operational | L | M | Mitigation | Document recovery path for each critical tool; maintain offline intake fallback; ensure billing data is backed up independently of QBO |
+| **Data security / client confidentiality** — client files in SharePoint/Clio/email; no named data breach controls for a regulatory practice handling sensitive compliance data | Operational | L | H | Mitigation + Transference | Confirm data residency and access controls on SharePoint and Clio; review email security practices; assess whether LSO data-security obligations are fully met |
+
+### Risk Posture
+
+The highest live risks in 2026 are ML1 incapacity and F01 deterioration before F02 produces. Both are structural features of a solo practice in transition — they cannot be eliminated, only managed through discipline. The primary mitigation for both is the same: protect ML1 capacity, accelerate F02 activation, and do not let F01 decline before a replacement channel is confirmed.

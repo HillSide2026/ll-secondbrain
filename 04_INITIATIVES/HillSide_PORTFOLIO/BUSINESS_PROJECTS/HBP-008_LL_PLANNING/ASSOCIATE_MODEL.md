@@ -29,7 +29,24 @@ competitive for that profile. It is not adequate as a sole income.
 
 ---
 
+## Two-Scenario Framework
+
+The associate profile activated in 2027 depends on 2026 ML1 billing actuals.
+
+| 2026 ML1 actuals | Scenario | Profile | Work scope |
+|---|---|---|---|
+| $300K+ | **Target profile** | 4–5 years call; financial services experience required | Corporate/commercial + payments/regulatory; can run F03 files end to end; extends the full practice |
+| ~$240K | **Junior profile** | 2+ years call; no specialty required | Corporate maintenance only — annual resolutions, minute book, bounded F02 remediation, standard templates; ML1 retains all F03 and bespoke work |
+
+**Strategic consequence of the junior scenario:** A junior associate extends ML1 capacity on commodity corporate work but does not extend the payments practice. F03 files remain ML1-dependent regardless. The junior scenario reduces overload on low-value work; it does not accelerate specialist growth.
+
+**Decision point:** Q4 2026, based on ML1 billing trajectory. If trending toward $300K by October, source the target profile. If tracking at $240K, source the junior profile. Sourcing starts H2 2026 in either case — the right candidate cannot be found in two weeks after the gate is triggered.
+
+---
+
 ## Associate Profile
+
+### Target Profile (activated if 2026 ML1 billings reach $300K+)
 
 | Attribute | Requirement |
 |---|---|
@@ -47,8 +64,25 @@ this, ML1 retains every F03 file and the payments practice cannot scale beyond M
 personal capacity.
 
 **Why 4–5 years call:** End-to-end file management with minimal supervision requires
-developed judgment on scope, risk, and client communication. A junior associate (1–3
-years call) needs material supervision; the model assumes that cost is low.
+developed judgment on scope, risk, and client communication.
+
+---
+
+### Junior Profile (activated if 2026 ML1 billings track at ~$240K)
+
+| Attribute | Requirement |
+|---|---|
+| Call year | 2+ years (Ontario) |
+| Practice depth | Corporate/commercial — comfortable with standard corporate maintenance and bounded transactional work |
+| Specialty | Not required |
+| Supervision requirement | Moderate on novel files; minimal on repeatable corporate maintenance |
+| Work structure | Part-time contractor; other income source or deliberate part-time arrangement |
+| Availability | Reliable 8–10 hours per week; steady rather than burst-based |
+| Temperament | Reliable, self-managing, comfortable with variable income |
+
+**Preferred candidate profile:** Mid-career lawyer maintaining a flexible practice around family obligations — a parent who wants substantive, well-scoped legal work at 10 hours/week without the demands of a full-time role. This profile values steady file flow, clear scope, and autonomy over compensation maximization. It is easier to source than the target profile and more likely to be retained by the structure of the arrangement.
+
+**Scope boundary:** The junior associate handles corporate garbage — annual maintenance, minute book, bounded F02 remediation, standard contract review on templates. ML1 retains all F03 payments/regulatory files, bespoke transactions, and strategic client relationships.
 
 ---
 
@@ -137,18 +171,23 @@ The practical conclusion is:
 
 ## Sourcing Strategy
 
-**Primary method:** Referral through professional networks. This profile does not
-respond to a job posting.
+**Primary method:** Referral through professional networks. Neither profile responds reliably to a job posting.
 
-**Target candidate sources:**
+**Target profile candidate sources:**
 - Former colleagues at boutique firms with banking or fintech practices
 - Alumni of firms with established financial services regulatory groups
 - Lawyers in an in-house role at a payments operator or MSB who want lateral income
 - Lawyers returning from parental or family leave who want flexible re-entry
 
-**Timing:** Sourcing must begin in H2 2026, before the LLP-033 activation gate is
-formally met. The right candidate cannot be found in two weeks. Starting after the gate
-is triggered means the associate is not active until H2 2027 at the earliest.
+**Junior profile candidate sources:**
+- Mid-career lawyers (2–6 years call) maintaining a flexible practice around family obligations
+- Lawyers who left full-time practice and are looking for steady, well-scoped part-time work
+- Former colleagues at any corporate/commercial firm who are now working reduced hours
+- Law society or bar association parent/family networks
+
+**Timing:** Sourcing begins H2 2026 in either scenario, before the activation gate is formally met. The right candidate cannot be found in two weeks. Starting after the gate is triggered means the associate is not active until H2 2027 at the earliest.
+
+**Profile decision:** Made in Q4 2026 based on ML1 billing trajectory.
 
 **Sourcing owner:** ML1.
 
