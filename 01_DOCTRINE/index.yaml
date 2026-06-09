@@ -637,6 +637,48 @@ policies:
   version: '1.0'
   status: approved
   history: []
+- id: LLPOL-004
+  title: Below-ICP Exception Policy
+  path: 01_DOCTRINE/03_POLICIES/LLPOL-004_Below_ICP_Exception.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: LLPOL-005
+  title: A/R Aging Policy
+  path: 01_DOCTRINE/03_POLICIES/LLPOL-005_AR_Aging_Policy.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: LLPOL-006
+  title: KPI Review Cadence Policy
+  path: 01_DOCTRINE/03_POLICIES/LLPOL-006_KPI_Review_Cadence_Policy.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: LLPOL-007
+  title: Hiring Gate Policy
+  path: 01_DOCTRINE/03_POLICIES/LLPOL-007_Hiring_Gate_Policy.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: LLPOL-008
+  title: Fintech Retainer Mandate Bounds Policy
+  path: 01_DOCTRINE/03_POLICIES/LLPOL-008_Fintech_Retainer_Mandate_Bounds_Policy.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: LLPOL-009
+  title: Pre-Conversion Interaction Policy
+  path: 01_DOCTRINE/03_POLICIES/LLPOL-009_Pre_Conversion_Interaction_Policy.md
+  version: '1.0'
+  status: draft
+  history: []
+- id: LLPOL-010
+  title: Client-Friend Exclusion Policy
+  path: 01_DOCTRINE/03_POLICIES/LLPOL-010_Client_Friend_Exclusion_Policy.md
+  version: '1.0'
+  status: draft
+  history: []
 protocols:
 - id: PRO-001
   title: Enforce Output Labeling
