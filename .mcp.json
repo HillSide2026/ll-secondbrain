@@ -11,6 +11,12 @@
       "args": [
         "scripts/sharepoint_mcp_server.py"
       ]
+    },
+    "slides": {
+      "command": "python3",
+      "args": [
+        "scripts/google_slides_mcp_server.py"
+      ]
     }
   }
 }
