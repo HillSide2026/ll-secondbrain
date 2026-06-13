@@ -4,7 +4,7 @@ title: Japan Home Decision
 owner: ML1
 status: draft
 created_date: 2026-04-03
-last_updated: 2026-05-20
+last_updated: 2026-06-11
 tags: [hillside, personal-projects, japan-home, housing]
 ---
 
@@ -28,7 +28,8 @@ This project is a planning-stage HillSide personal decision project.
   subject to guardrails
 - Current budget ceiling: `CAD 400,000` cash
 - Active search clusters: Kamakura / Atami and Nikko / Imaichi
-- Executing is not yet authorized
+- ML1 pursue decision recorded `2026-06-11`: pursue a Japan home acquisition
+- `Planning -> Executing` gate not yet formally closed; see `APPROVAL_RECORD.md`
 - This is a personal project and not an `HBP` business-project packet
 
 ## Objective

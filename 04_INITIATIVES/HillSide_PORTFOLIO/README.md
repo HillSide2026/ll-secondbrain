@@ -4,7 +4,7 @@ title: HillSide Portfolio
 owner: ML1
 status: draft
 created_date: 2026-03-06
-last_updated: 2026-05-19
+last_updated: 2026-06-11
 tags: []
 ---
 
@@ -87,7 +87,7 @@ HillSide projects use the `HBP-###` series.
 - `HBP-002` -> Cash Flow
 - `HBP-003` -> Sale of YellowBricks
 - `HBP-004` -> `HBP-004_MICRO_SAAS_BUILD_AND_LAUNCH`
-- `HBP-005` -> Sale of Ontario MSBShellCo
+- `HBP-005` -> Sale of Ontario MSBShellCo *(retired 2026-05-31; superseded by HBP-015)*
 - `HBP-006` -> Sale Micro SaaS (TariffLookup.ca)
 - `HBP-007` -> Levine Law 2026
 - `HBP-008` -> LL Planning
@@ -96,6 +96,8 @@ HillSide projects use the `HBP-###` series.
 - `HBP-011` -> `HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY`
 - `HBP-012` -> `HBP-012_INFO_PRODUCT`
 - `HBP-013` -> `HBP-013_SALE_OF_GRANVILLE`
+- `HBP-014` -> `HBP-014_175_DOMINION_ANDERSEN_SERVICE_LINE` *(opened 2026-05-23)*
+- `HBP-015` -> `HBP-015_ONTARIO_CORP_LOCARNO` *(opened 2026-05-31; supersedes HBP-005)*
 
 Projects with dedicated folders currently include:
 
@@ -103,7 +105,7 @@ Projects with dedicated folders currently include:
 - `HBP-002` -> `BUSINESS_PROJECTS/HBP-002_CASH_FLOW`
 - `HBP-003` -> `BUSINESS_PROJECTS/HBP-003_SALE_OF_YELLOWBRICKS`
 - `HBP-004` -> `BUSINESS_PROJECTS/HBP-004_MICRO_SAAS_BUILD_AND_LAUNCH`
-- `HBP-005` -> `BUSINESS_PROJECTS/HBP-005_SALE_OF_ONTARIO_MSBSHELLCO`
+- `HBP-005` -> `BUSINESS_PROJECTS/HBP-005_SALE_OF_ONTARIO_MSBSHELLCO` *(retired; superseded by HBP-015)*
 - `HBP-006` -> `BUSINESS_PROJECTS/HBP-006_SALE_MICRO_SAAS`
 - `HBP-007` -> `BUSINESS_PROJECTS/HBP-007_LEVINE_LAW_2026`
 - `HBP-008` -> `BUSINESS_PROJECTS/HBP-008_LL_PLANNING`
@@ -112,6 +114,8 @@ Projects with dedicated folders currently include:
 - `HBP-011` -> `BUSINESS_PROJECTS/HBP-011_PAYMENTS_REGULATORY_COMPLIANCE_AGENCY`
 - `HBP-012` -> `BUSINESS_PROJECTS/HBP-012_INFO_PRODUCT`
 - `HBP-013` -> `BUSINESS_PROJECTS/HBP-013_SALE_OF_GRANVILLE`
+- `HBP-014` -> `BUSINESS_PROJECTS/HBP-014_175_DOMINION_ANDERSEN_SERVICE_LINE`
+- `HBP-015` -> `BUSINESS_PROJECTS/HBP-015_ONTARIO_CORP_LOCARNO`
 
 The canonical HillSide business-project stage reference summary is maintained in:
 

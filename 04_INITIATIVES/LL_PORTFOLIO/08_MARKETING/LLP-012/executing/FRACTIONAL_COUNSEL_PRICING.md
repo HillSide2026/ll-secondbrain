@@ -4,7 +4,7 @@ title: Fractional Counsel Pricing Model — Funnel 2
 owner: ML1
 status: draft
 created_date: 2026-04-02
-last_updated: 2026-05-10
+last_updated: 2026-06-11
 tags: [funnel-02, fractional-counsel, pricing, retainer]
 ---
 
@@ -35,23 +35,29 @@ tags: [funnel-02, fractional-counsel, pricing, retainer]
   Configuration remains pending, but the pricing model itself is no longer
   treated as open.
 
-## Relationship to Health Check Pricing
+## Relationship to F02-T01 Entry Offers
 
-The Health Check entry-offer ladder that feeds this model is:
+The F02-T01 (Corporate Health Check) tactical funnel has three distinct offers
+at different price points. These are not tier variants of the same product —
+they are structurally distinct offers. ML1 confirmed this distinction
+2026-06-11.
 
-| Tier | Name | Price | Primary Route |
-| --- | --- | --- | --- |
-| V1 | Entry Level | `CAD 2,000` | Accountant referral default |
-| V2 | Growth Health Check | `CAD 3,500` | Escalated scope / direct-fit operators |
-| V3 | Pre-Event Health Check | `CAD 6,000` | Event-triggered or high-complexity matters |
+| Offer | Price | Description |
+| --- | --- | --- |
+| Diagnostic | `~CAD 600` | Diagnostic product — default entry offer; ML1-confirmed 2026-06-11 |
+| Consultation | TBC | Consultation offer — price to be confirmed |
+| Implementation | TBC | Implementation offer — price to be confirmed |
+
+Each offer requires its own Stripe product. Scope and deliverable definition
+for each offer is an open item — see `TACTICAL_FUNNEL_MAP.md`.
 
 ## Relationship to Entry Offer
 
 The fractional counsel retainer is the downstream revenue product that the
-Corporate Health Check (entry offer) feeds. A client who completes the
-Health Check and has identified remediation needs is a natural candidate
+F02-T01 entry offers feed. A client who completes the Diagnostic or
+Consultation and has identified remediation needs is a natural candidate
 for an ongoing retainer relationship.
 
-Immediate post-Health-Check conversion should prefer remediation work first.
+Immediate post-engagement conversion should prefer remediation work first.
 Fractional counsel is a downstream relationship offer after trust is
 established through findings and follow-on work.

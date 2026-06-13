@@ -4,7 +4,7 @@ title: LLP-012 Funnel 2 - Deliverables Tracker
 owner: ML1
 status: draft
 created_date: 2026-04-07
-last_updated: 2026-05-24
+last_updated: 2026-06-11
 tags: [llp-012, funnel-02, implementation, deliverables]
 ---
 
@@ -23,5 +23,5 @@ tags: [llp-012, funnel-02, implementation, deliverables]
 | Information Product 3 landing page | Assigned / delayed | Thrive build packet exists; page is not yet built or published. |
 | Information Product 3 GHL intake path | Assigned / delayed | Follow-up / qualification path is not yet built; non-bypass qualification gate still requires live validation. |
 | Information Product 3 qualification-call operating spec | Assigned / delayed | Schema exists in packet; still needs to be frozen into one live operating spec. |
-| Information Product 3 payment / Stripe path | Pending | Lead magnet and triage consult products exist; full Corporate Health Check product remains to be created once ML1 confirms price. |
+| Information Product 3 payment / Stripe path | Unblocked — awaiting execution | Diagnostic price confirmed by ML1 2026-06-11: ~CAD 600. Stripe product creation can proceed for Diagnostic. Consultation and Implementation prices TBC. |
 | Information Product 3 metric approval | Pending ML1 / baseline | Targets are proposed; final metric approval and threshold lock remain pending until baseline conditions are met. |

@@ -4,7 +4,7 @@ title: Stripe Products — Funnel 2
 owner: ML1
 status: active
 created_date: 2026-04-02
-last_updated: 2026-05-24
+last_updated: 2026-06-11
 tags: [funnel-02, stripe, products, lead-magnet, consultation]
 ---
 
@@ -28,11 +28,15 @@ Products created in Stripe on 2026-04-02.
 - Pre-entry consult is the triage consultation that leads into the Corporate
   Health Check (the F02 entry offer). The $859 list price anchors the
   consultation value; expected to be heavily discounted to drive bookings.
-- Corporate Health Check (the F02 entry offer at full price) is part of the
-  Information Product 3 execution bundle — Stripe product to be created when
-  ML1 confirms price.
-- Information Product 3 has been assigned to freelancer execution support, but
-  delivery is slow as of 2026-05-24.
+- F02-T01 has three distinct offers (ML1-confirmed 2026-06-11): Diagnostic
+  (~CAD 600), Consultation (price TBC), Implementation (price TBC). These are
+  structurally distinct products, not tier variants of the same offer. Each
+  requires its own Stripe product.
+- First Stripe product to create: Diagnostic at ~CAD 600 (default entry
+  offer). Consultation and Implementation products to follow once prices
+  are confirmed.
+- Information Product 3 freelancer execution remains slow as of 2026-05-24;
+  price and structure confirmation now removes the ML1 dependency.
 
 ## Relationship to F03 Products
 

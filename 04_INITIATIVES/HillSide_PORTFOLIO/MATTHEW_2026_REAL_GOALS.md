@@ -4,7 +4,7 @@ title: Matthew 2026 Real Goals
 owner: ML1
 status: draft
 created_date: 2026-04-03
-last_updated: 2026-04-03
+last_updated: 2026-06-11
 tags: [hillside, 2026, goals, strategy, synthesis]
 ---
 
@@ -105,6 +105,10 @@ Working reading:
 - maintain Andersen as an active client relationship and referral source
 - cultivate `17513721 Canada Inc` as a collaborating firm under the Andersen
   Consulting banner
+- `HBP-014` is the vehicle for this build-out: `17513721 Canada Inc` operating
+  as Dominion Partners, positioned as an Andersen Consulting collaborating firm
+  for international trade advisory services across five service lines (trade
+  remedies, market access, data centers, mining, payment services)
 - keep relationship-level oversight at the umbrella matter level
 - advance visible trade-remedies and market-access opportunities through the
   Andersen lane matters
@@ -121,6 +125,7 @@ Primary sources:
 - `05_MATTERS/ESSENTIAL/26-1639-00002/MATTER_BRIEF.md`
 - `05_MATTERS/ESSENTIAL/26-1639-00003/MATTER_BRIEF.md`
 - `MATTHEW_HOLDINGS_17513721_CANADA_INC/CORPORATE_IDENTITY_CARD.md`
+- `BUSINESS_PROJECTS/HBP-014_175_DOMINION_ANDERSEN_SERVICE_LINE/README.md`
 
 ### 4. Stand Up A Narrow FinSure-Led Payments Compliance Service Paired With Bounded Rhizome Implementation
 
@@ -155,9 +160,10 @@ Primary sources:
 
 This is narrower than "convert assets into liquidity wherever possible."
 
-The clearest transaction monetization examples are Yellowbricks proceeds and a
-possible 2026 sale of Ontario MSB Corp if that transaction closes. The
-clearest software commercialization examples are TariffLookup.ca and FinSure.
+Transaction monetization: YellowBricks proceeds are complete (HBP-003 closed
+2026-04-29). Ontario MSB Corp is now governed under HBP-015 / Locarno with a
+build-then-sell track structure rather than a simple shell sale. The clearest
+software commercialization examples are TariffLookup.ca and FinSure.
 
 Primary sources:
 

@@ -4,7 +4,7 @@ title: Vendor Positioning Note — HBP-013 — Sale of Granville
 owner: ML1
 status: draft
 created_date: 2026-05-19
-last_updated: 2026-05-19
+last_updated: 2026-06-11
 tags: [hillside, hbp-013, granville, vendors, positioning]
 ---
 
@@ -20,6 +20,12 @@ The project is not selling BaaS services.
 
 The project is licensing `17409052 Canada Inc`, making the licensed entity
 market-ready, and eventually selling the licensed entity.
+
+## Vendor Research Status
+
+Both Crassula and FinLego meetings occurred (week of 2026-05-18). Outcomes
+recorded below. Current read as at `2026-06-11`: neither appears worth the
+investment at this stage. Research is ongoing.
 
 ## FinLego
 
