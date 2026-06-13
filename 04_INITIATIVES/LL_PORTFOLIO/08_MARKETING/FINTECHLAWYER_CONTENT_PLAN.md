@@ -4,7 +4,7 @@ title: fintechlawyer.ca — Five-Vertical Content Plan
 owner: ML1
 status: draft
 created_date: 2026-05-18
-last_updated: 2026-05-18
+last_updated: 2026-06-13
 tags: [marketing, fintechlawyer, content-plan, funnel-03, payments, lending, insurance, investment, crypto]
 ---
 
@@ -254,8 +254,11 @@ top-of-funnel authority positioning on fintechlawyer.ca.
 | Asset | Format | Subject | Status |
 |---|---|---|---|
 | Real-Time Rails | Presentation (conference) | Real-time payment rails infrastructure and market context | Invited conference talk — preparation in progress (added to task tracker 2026-05-19) |
+| RTRs Liquidity, Risk Management & Payment Service Providers | Article / presentation derivative | Real-time rails, liquidity management, operational exposure, and PSP business model implications | Existing authority asset — add to fintechlawyer.ca publication queue |
+| RTRs Operational Risk Management & Ontario's Credit Unions | Article / presentation derivative | Real-time rails operational risk management with Ontario credit union relevance | Existing authority asset — add to fintechlawyer.ca publication queue |
 | Real-Time Rails vs. Stablecoins | Article | Comparative analysis of real-time rails and stablecoin payment infrastructure | Existing asset |
 | Real-Time Rails vs. Stablecoins in Remittance | Article | Comparative analysis focused on the remittance use case | Existing asset |
+| Stablecoins in Canada: A Practical Guide for Issuers, Payment Providers and Infrastructure Businesses | Practical guide | Stablecoin regulatory and infrastructure guide for issuers, payment providers, and infrastructure businesses | Existing authority asset — candidate anchor for P8 stablecoin cluster |
 
 These map to the payments infrastructure themes in the funnel spec (Treasury-as-a-Service,
 stablecoin settlement, cross-border money movement, payment orchestration). They do not

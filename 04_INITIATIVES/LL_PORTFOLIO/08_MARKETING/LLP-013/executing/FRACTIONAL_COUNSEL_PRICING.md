@@ -4,7 +4,7 @@ title: Fractional Counsel Pricing Model — Funnel 3
 owner: ML1
 status: draft
 created_date: 2026-04-02
-last_updated: 2026-05-10
+last_updated: 2026-06-13
 tags: [funnel-03, fractional-counsel, pricing, retainer]
 ---
 
@@ -41,9 +41,10 @@ tags: [funnel-03, fractional-counsel, pricing, retainer]
 
 The fractional counsel retainer is the downstream revenue product that the
 F03 pre-entry consultations (MSB Health Check Consult, STR Triage Consult,
-MSB Registration Consult) feed. A client who engages on a discrete regulatory
-question is a natural candidate for an ongoing retainer relationship as
-compliance obligations expand or multiply.
+MSB Registration Consult, FINTRAC Enrollment Consult for Non-MSBs) feed. A
+client who engages on a discrete regulatory question is a natural candidate
+for an ongoing retainer relationship as compliance obligations expand or
+multiply.
 
 ## F02 / F03 Comparison
 

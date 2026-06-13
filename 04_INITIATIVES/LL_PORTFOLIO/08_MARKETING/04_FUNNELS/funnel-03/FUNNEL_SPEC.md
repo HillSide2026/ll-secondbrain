@@ -4,7 +4,7 @@ title: Funnel Spec — Funnel 03
 owner: ML1
 status: planned
 created_date: 2026-02-25
-last_updated: 2026-05-17
+last_updated: 2026-06-13
 tags: []
 ---
 
@@ -74,6 +74,10 @@ These themes are especially useful where the matter combines financial-infrastru
     free for first three months after release, then revised and posted on a
     separate platform for sale, with a planned 2027 update)
   - `Canadian Fintech Law in 2026` (free guide; separate asset from the e-book)
+  - `RTRs Liquidity, Risk Management & Payment Service Providers`
+  - `RTRs Operational Risk Management & Ontario's Credit Unions`
+  - `Stablecoins in Canada: A Practical Guide for Issuers, Payment Providers
+    and Infrastructure Businesses`
 - Paid / promotional lead magnets:
   - F03-IP-001: Six (6) Hidden MSB Triggers in Fintech & Crypto
   - F03-IP-002: Six (6) STR Mistakes That Create Unnecessary Regulatory Risk
@@ -197,6 +201,12 @@ Stages: booked → consult_complete → retained
   - P5: RPAA Readiness Check
   - Spec: funnel3_products4_5_diagnostic.md
   - Pricing: TBD
+- Pre-entry consults:
+  - MSB Registration Consult
+  - STR Triage Consult
+  - MSB Health Check Consult
+  - RPAA Registration Consult (pending approval)
+  - FINTRAC Enrollment Consult for Non-MSBs
 - Regulatory mandates:
   - MSB Health Check ($6,500-$15,000)
   - RPAA Registration Readiness & Application Review ($7,500-$18,000) —

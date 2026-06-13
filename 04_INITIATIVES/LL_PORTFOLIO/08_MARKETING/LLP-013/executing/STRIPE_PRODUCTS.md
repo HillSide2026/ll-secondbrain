@@ -4,7 +4,7 @@ title: Stripe Products — Funnel 3
 owner: ML1
 status: draft
 created_date: 2026-04-01
-last_updated: 2026-05-27
+last_updated: 2026-06-13
 tags: [funnel-03, stripe, products, lead-magnet, consultation]
 ---
 
@@ -27,6 +27,7 @@ Products created in Stripe on 2026-04-01.
 | F03-C-002 | Pre-entry consult | STR Triage Consult | $859.00 CAD | Draft / Stripe-mapped | Professional Services |
 | F03-C-003 | Pre-entry consult | MSB Health Check Consult | $859.00 CAD | Draft / Stripe-mapped | Professional Services |
 | F03-C-004 | Pre-entry consult | RPAA Registration Consult | $859.00 CAD | Pending offer approval — do not add to Stripe until approved | Professional Services |
+| F03-C-005 | Pre-entry consult | FINTRAC Enrollment Consult for Non-MSBs | $859.00 CAD | Planned — add to Stripe | Professional Services |
 
 ## Info Product Reference Codes
 
@@ -56,6 +57,10 @@ Products created in Stripe on 2026-04-01.
   - STR Triage Consult → suspicious transaction reporting analysis
   - MSB Registration Consult → FINTRAC MSB registration and compliance
   - RPAA Registration Consult → pending approval; Bank of Canada PSP registration readiness and application review
+  - FINTRAC Enrollment Consult for Non-MSBs → FINTRAC enrollment pathway for
+    non-MSB reporting entities or adjacent businesses that need to determine
+    whether a FINTRAC enrollment, reporting-entity setup, or related compliance
+    pathway is required; this is not an MSB registration mandate
 
 ## Relationship to F02 Products
 
@@ -69,6 +74,7 @@ lead magnet ($97 list) → pre-entry consultation ($859 list) → entry offer.
 | F03 | F03-IP-002 | Six (6) STR Mistakes That Create Unnecessary Regulatory Risk | STR Triage Consult |
 | F03 | F03-IP-003 | Six (6) Pillars of MSB Defensibility | MSB Health Check Consult |
 | F03 | F03-IP-004 | RPAA Applicability Checklist for Payment Service Providers (pending approval) | RPAA Registration Consult (pending approval) |
+| F03 | TBD | TBD — FINTRAC enrollment for non-MSBs | FINTRAC Enrollment Consult for Non-MSBs |
 
 Backlog candidate:
 - `Whitepaper: Tokenization in Canadian Capital Markets` is not an active F03

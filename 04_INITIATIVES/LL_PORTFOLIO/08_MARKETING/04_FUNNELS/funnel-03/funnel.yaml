@@ -3,8 +3,8 @@ meta:
   name: Fintech Authority + Levine Law Conversion
   status: planned
   owner: Levine Law
-  version: 3.2.0
-  last_updated: '2026-05-27'
+  version: 3.3.0
+  last_updated: '2026-06-13'
   execution_state: gated
   execution_substages:
     - pre-launch
@@ -85,6 +85,15 @@ spec:
       - RPAA Registration Readiness & Application Review:
           status: pending_approval
           specification: pending
+    pre_entry_consults:
+      - MSB Registration Consult
+      - STR Triage Consult
+      - MSB Health Check Consult
+      - RPAA Registration Consult:
+          status: pending_approval
+      - FINTRAC Enrollment Consult for Non-MSBs:
+          status: planned
+          note: Pre-entry consult for non-MSB FINTRAC enrollment pathway assessment; not an MSB registration mandate.
     core_offers:
       - Ongoing AML and Payments Regulatory Counsel Retainer
     backlog:
@@ -92,6 +101,13 @@ spec:
         - Tokenized Payment Systems Regulatory Structuring
 
 history:
+- v: 3.3.0
+  date: '2026-06-13'
+  by: ML1
+  change: >
+    Added FINTRAC Enrollment Consult for Non-MSBs as a planned pre-entry
+    consult. This is a consult-layer pathway for non-MSB FINTRAC enrollment
+    assessment and does not create a new active entry offer.
 - v: 3.2.0
   date: '2026-05-27'
   by: ML1
