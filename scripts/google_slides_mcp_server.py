@@ -18,6 +18,8 @@ PERMITTED OPERATIONS:
   4. update_text          — replace text in a named shape or placeholder
   5. add_text_box         — insert a new text box at given position/size
   6. get_presentation_url — return the edit and view URLs for a deck
+  7. create_shape         — insert a styled shape (fill, border, text) at given position/size
+  8. style_shape          — apply fill color, border, and text styling to an existing shape by objectId
 
 CREDENTIALS:
   Reads GOOGLE_OAUTH_TOKEN_PATH from environment, falls back to
@@ -219,6 +221,96 @@ def _pt(value: float) -> Dict[str, Any]:
     return {"magnitude": float(value), "unit": "PT"}
 
 
+def _rgb_color(color: Dict[str, float]) -> Dict[str, Any]:
+    return {"rgbColor": {
+        "red": float(color.get("red", 0)),
+        "green": float(color.get("green", 0)),
+        "blue": float(color.get("blue", 0)),
+    }}
+
+
+def _solid_fill(color: Dict[str, float]) -> Dict[str, Any]:
+    return {"solidFill": {"color": _rgb_color(color)}}
+
+
+def _shape_props_requests(
+    object_id: str,
+    fill_color: Optional[Dict],
+    border_color: Optional[Dict],
+    border_width_pt: Optional[float],
+) -> List[Dict[str, Any]]:
+    shape_properties: Dict[str, Any] = {}
+    fields_list: List[str] = []
+
+    if fill_color is not None:
+        shape_properties["shapeBackgroundFill"] = _solid_fill(fill_color)
+        fields_list.append("shapeBackgroundFill")
+
+    if border_color is not None or border_width_pt is not None:
+        outline: Dict[str, Any] = {}
+        if border_color is not None:
+            outline["outlineFill"] = _solid_fill(border_color)
+        if border_width_pt is not None:
+            outline["weight"] = _pt(float(border_width_pt))
+        shape_properties["outline"] = outline
+        fields_list.append("outline")
+
+    if not shape_properties:
+        return []
+    return [{
+        "updateShapeProperties": {
+            "objectId": object_id,
+            "shapeProperties": shape_properties,
+            "fields": ",".join(fields_list),
+        }
+    }]
+
+
+def _text_style_requests(
+    object_id: str,
+    text_color: Optional[Dict],
+    font_size_pt: Optional[float],
+    bold: Optional[bool],
+    text_align: Optional[str],
+) -> List[Dict[str, Any]]:
+    requests: List[Dict[str, Any]] = []
+
+    text_style: Dict[str, Any] = {}
+    text_fields: List[str] = []
+
+    if text_color is not None:
+        text_style["foregroundColor"] = {"opaqueColor": _rgb_color(text_color)}
+        text_fields.append("foregroundColor")
+    if font_size_pt is not None:
+        text_style["fontSize"] = _pt(float(font_size_pt))
+        text_fields.append("fontSize")
+    if bold is not None:
+        text_style["bold"] = bool(bold)
+        text_fields.append("bold")
+
+    if text_style:
+        requests.append({
+            "updateTextStyle": {
+                "objectId": object_id,
+                "style": text_style,
+                "fields": ",".join(text_fields),
+                "textRange": {"type": "ALL"},
+            }
+        })
+
+    if text_align is not None:
+        requests.append({
+            "updateParagraphStyle": {
+                "objectId": object_id,
+                "style": {"alignment": text_align.upper()},
+                "fields": "alignment",
+                "textRange": {"type": "ALL"},
+            }
+        })
+
+    return requests
+
+
 def _presentation_url(presentation_id: str) -> str:
     return f"https://docs.google.com/presentation/d/{presentation_id}/edit"
 
@@ -399,23 +491,35 @@ def tool_update_text(args: Dict[str, Any]) -> str:
     if not object_id:
         raise ValueError("'object_id' is required (the shape or placeholder objectId from get_presentation).")
 
-    requests = [
-        {
+    service = _get_slides_service()
+
+    # Check whether the shape already has text; deleteText fails on empty shapes.
+    prs = _with_backoff(
+        lambda: service.presentations().get(presentationId=presentation_id).execute(),
+        f"update_text:prefetch:{presentation_id}",
+    )
+    existing_text = ""
+    for slide in prs.get("slides", []):
+        for el in slide.get("pageElements", []):
+            if el.get("objectId") == object_id:
+                for te in el.get("shape", {}).get("text", {}).get("textElements", []):
+                    existing_text += te.get("textRun", {}).get("content", "")
+
+    requests = []
+    if existing_text:
+        requests.append({
             "deleteText": {
                 "objectId": object_id,
                 "textRange": {"type": "ALL"},
             }
-        },
-        {
-            "insertText": {
-                "objectId": object_id,
-                "insertionIndex": 0,
-                "text": text,
-            }
-        },
-    ]
-
-    service = _get_slides_service()
+        })
+    requests.append({
+        "insertText": {
+            "objectId": object_id,
+            "insertionIndex": 0,
+            "text": text,
+        }
+    })
     _with_backoff(
         lambda: service.presentations().batchUpdate(
             presentationId=presentation_id,
@@ -508,6 +612,140 @@ def tool_add_text_box(args: Dict[str, Any]) -> str:
         "reason": approval["reason"],
     }
     _append_audit({"timestamp": _now_iso(), "tool": "add_text_box", **output})
+    return json.dumps(output, indent=2)
+
+
+def tool_create_shape(args: Dict[str, Any]) -> str:
+    approval = _require_write_approval(args, "create_shape")
+    presentation_id = str(args.get("presentation_id", "")).strip()
+    slide_id = str(args.get("slide_id", "")).strip()
+
+    if not presentation_id:
+        raise ValueError("'presentation_id' is required.")
+    if not slide_id:
+        raise ValueError("'slide_id' is required.")
+
+    shape_type = str(args.get("shape_type", "ROUND_RECTANGLE")).strip().upper()
+    x_pt = float(args.get("x_pt", 100))
+    y_pt = float(args.get("y_pt", 100))
+    width_pt = float(args.get("width_pt", 200))
+    height_pt = float(args.get("height_pt", 50))
+    text = str(args.get("text", ""))
+
+    fill_color = args.get("fill_color")
+    border_color = args.get("border_color")
+    border_width_pt = args.get("border_width_pt")
+    text_color = args.get("text_color")
+    font_size_pt = args.get("font_size_pt")
+    bold = args.get("bold")
+    text_align = args.get("text_align")
+
+    shape_id = f"shape_{uuid.uuid4().hex[:12]}"
+
+    requests = [
+        {
+            "createShape": {
+                "objectId": shape_id,
+                "shapeType": shape_type,
+                "elementProperties": {
+                    "pageObjectId": slide_id,
+                    "size": {
+                        "width": _pt(width_pt),
+                        "height": _pt(height_pt),
+                    },
+                    "transform": {
+                        "scaleX": 1, "scaleY": 1,
+                        "translateX": x_pt, "translateY": y_pt,
+                        "unit": "PT",
+                    },
+                },
+            }
+        }
+    ]
+
+    requests.extend(_shape_props_requests(shape_id, fill_color, border_color, border_width_pt))
+
+    if text:
+        requests.append({
+            "insertText": {
+                "objectId": shape_id,
+                "insertionIndex": 0,
+                "text": text,
+            }
+        })
+        requests.extend(_text_style_requests(shape_id, text_color, font_size_pt, bold, text_align))
+
+    service = _get_slides_service()
+    _with_backoff(
+        lambda: service.presentations().batchUpdate(
+            presentationId=presentation_id,
+            body={"requests": requests},
+        ).execute(),
+        f"create_shape:{presentation_id}:{slide_id}",
+    )
+
+    output = {
+        "presentationId": presentation_id,
+        "slideObjectId": slide_id,
+        "newShapeObjectId": shape_id,
+        "shapeType": shape_type,
+        "position": {"x_pt": x_pt, "y_pt": y_pt},
+        "size": {"width_pt": width_pt, "height_pt": height_pt},
+        "url": _presentation_url(presentation_id),
+        "approved_by": approval["approved_by"],
+        "approval_artifact": approval["approval_artifact"],
+        "reason": approval["reason"],
+    }
+    _append_audit({"timestamp": _now_iso(), "tool": "create_shape", **output})
+    return json.dumps(output, indent=2)
+
+
+def tool_style_shape(args: Dict[str, Any]) -> str:
+    approval = _require_write_approval(args, "style_shape")
+    presentation_id = str(args.get("presentation_id", "")).strip()
+    object_id = str(args.get("object_id", "")).strip()
+
+    if not presentation_id:
+        raise ValueError("'presentation_id' is required.")
+    if not object_id:
+        raise ValueError("'object_id' is required.")
+
+    fill_color = args.get("fill_color")
+    border_color = args.get("border_color")
+    border_width_pt = args.get("border_width_pt")
+    text_color = args.get("text_color")
+    font_size_pt = args.get("font_size_pt")
+    bold = args.get("bold")
+    text_align = args.get("text_align")
+
+    requests: List[Dict[str, Any]] = []
+    requests.extend(_shape_props_requests(object_id, fill_color, border_color, border_width_pt))
+    requests.extend(_text_style_requests(object_id, text_color, font_size_pt, bold, text_align))
+
+    if not requests:
+        raise ValueError(
+            "At least one styling property must be provided: "
+            "fill_color, border_color, border_width_pt, text_color, font_size_pt, bold, text_align."
+        )
+
+    service = _get_slides_service()
+    _with_backoff(
+        lambda: service.presentations().batchUpdate(
+            presentationId=presentation_id,
+            body={"requests": requests},
+        ).execute(),
+        f"style_shape:{presentation_id}:{object_id}",
+    )
+
+    output = {
+        "presentationId": presentation_id,
+        "objectId": object_id,
+        "url": _presentation_url(presentation_id),
+        "approved_by": approval["approved_by"],
+        "approval_artifact": approval["approval_artifact"],
+        "reason": approval["reason"],
+    }
+    _append_audit({"timestamp": _now_iso(), "tool": "style_shape", **output})
     return json.dumps(output, indent=2)
 
 
@@ -688,6 +926,126 @@ _TOOLS: List[Dict[str, Any]] = [
         },
     },
     {
+        "name": "create_shape",
+        "description": (
+            "Insert a styled shape on a slide at a given position and size (in points). "
+            "Supports fill color, border color/width, text content, text color, font size, "
+            "bold, and text alignment — all in a single call. "
+            "Returns the new shape's objectId. "
+            "Write tool — requires approved_by, approval_artifact, and reason. "
+            "Common shape_type values: ROUND_RECTANGLE (default), RECTANGLE, ELLIPSE. "
+            "Slide dimensions: 720 x 405 pt (widescreen). "
+            "Colors are objects with red, green, blue keys as floats 0.0–1.0."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "presentation_id": {"type": "string", "description": "Google Slides presentation ID."},
+                "slide_id": {"type": "string", "description": "objectId of the target slide."},
+                "shape_type": {
+                    "type": "string",
+                    "description": "Shape type. Default: ROUND_RECTANGLE. Common values: RECTANGLE, ELLIPSE, ROUND_RECTANGLE.",
+                },
+                "x_pt": {"type": "number", "description": "Left edge in points. Default: 100."},
+                "y_pt": {"type": "number", "description": "Top edge in points. Default: 100."},
+                "width_pt": {"type": "number", "description": "Width in points. Default: 200."},
+                "height_pt": {"type": "number", "description": "Height in points. Default: 50."},
+                "fill_color": {
+                    "type": "object",
+                    "description": "Background fill color. Keys: red, green, blue (0.0–1.0).",
+                    "properties": {
+                        "red": {"type": "number"},
+                        "green": {"type": "number"},
+                        "blue": {"type": "number"},
+                    },
+                },
+                "border_color": {
+                    "type": "object",
+                    "description": "Border/outline color. Keys: red, green, blue (0.0–1.0).",
+                    "properties": {
+                        "red": {"type": "number"},
+                        "green": {"type": "number"},
+                        "blue": {"type": "number"},
+                    },
+                },
+                "border_width_pt": {"type": "number", "description": "Border width in points. Default: 1.5 when border_color is set."},
+                "text": {"type": "string", "description": "Optional text to place inside the shape."},
+                "text_color": {
+                    "type": "object",
+                    "description": "Text color. Keys: red, green, blue (0.0–1.0).",
+                    "properties": {
+                        "red": {"type": "number"},
+                        "green": {"type": "number"},
+                        "blue": {"type": "number"},
+                    },
+                },
+                "font_size_pt": {"type": "number", "description": "Font size in points."},
+                "bold": {"type": "boolean", "description": "Set text bold."},
+                "text_align": {
+                    "type": "string",
+                    "enum": ["LEFT", "CENTER", "RIGHT", "JUSTIFIED"],
+                    "description": "Paragraph alignment within the shape.",
+                },
+                **_APPROVAL_FIELDS,
+            },
+            "required": ["presentation_id", "slide_id", "approved_by", "approval_artifact", "reason"],
+        },
+    },
+    {
+        "name": "style_shape",
+        "description": (
+            "Apply fill color, border, and text styling to an existing shape by objectId. "
+            "Use get_presentation to obtain objectIds. Works on shapes created by create_shape "
+            "or add_text_box. Provide only the properties you want to change. "
+            "Write tool — requires approved_by, approval_artifact, and reason. "
+            "Colors are objects with red, green, blue keys as floats 0.0–1.0."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "presentation_id": {"type": "string", "description": "Google Slides presentation ID."},
+                "object_id": {"type": "string", "description": "objectId of the shape to style (from get_presentation)."},
+                "fill_color": {
+                    "type": "object",
+                    "description": "Background fill color. Keys: red, green, blue (0.0–1.0).",
+                    "properties": {
+                        "red": {"type": "number"},
+                        "green": {"type": "number"},
+                        "blue": {"type": "number"},
+                    },
+                },
+                "border_color": {
+                    "type": "object",
+                    "description": "Border/outline color. Keys: red, green, blue (0.0–1.0).",
+                    "properties": {
+                        "red": {"type": "number"},
+                        "green": {"type": "number"},
+                        "blue": {"type": "number"},
+                    },
+                },
+                "border_width_pt": {"type": "number", "description": "Border width in points."},
+                "text_color": {
+                    "type": "object",
+                    "description": "Text color. Keys: red, green, blue (0.0–1.0).",
+                    "properties": {
+                        "red": {"type": "number"},
+                        "green": {"type": "number"},
+                        "blue": {"type": "number"},
+                    },
+                },
+                "font_size_pt": {"type": "number", "description": "Font size in points."},
+                "bold": {"type": "boolean", "description": "Set text bold."},
+                "text_align": {
+                    "type": "string",
+                    "enum": ["LEFT", "CENTER", "RIGHT", "JUSTIFIED"],
+                    "description": "Paragraph alignment within the shape.",
+                },
+                **_APPROVAL_FIELDS,
+            },
+            "required": ["presentation_id", "object_id", "approved_by", "approval_artifact", "reason"],
+        },
+    },
+    {
         "name": "get_presentation_url",
         "description": (
             "Return the edit URL and view/publish URL for a Google Slides presentation "
@@ -712,6 +1070,8 @@ _TOOL_FN_MAP = {
     "add_slide": tool_add_slide,
     "update_text": tool_update_text,
     "add_text_box": tool_add_text_box,
+    "create_shape": tool_create_shape,
+    "style_shape": tool_style_shape,
     "get_presentation_url": tool_get_presentation_url,
 }
 

@@ -17,6 +17,12 @@
       "args": [
         "scripts/google_slides_mcp_server.py"
       ]
+    },
+    "canva": {
+      "command": "python3",
+      "args": [
+        "canva_bridge.py"
+      ]
     }
   }
 }

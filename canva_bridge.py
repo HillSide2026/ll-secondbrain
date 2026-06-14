@@ -43,9 +43,15 @@ from urllib.request import Request, urlopen
 AUTH_URL = "https://www.canva.com/api/oauth/authorize"
 TOKEN_URL = "https://api.canva.com/rest/v1/oauth/token"
 DESIGNS_URL = "https://api.canva.com/rest/v1/designs"
+BRAND_TEMPLATES_URL = "https://api.canva.com/rest/v1/brandtemplates"
+AUTOFILLS_URL = "https://api.canva.com/rest/v1/autofills"
+EXPORTS_URL = "https://api.canva.com/rest/v1/exports"
 
 DEFAULT_REDIRECT_URI = "http://127.0.0.1:3000/oauth/callback"
-DEFAULT_SCOPES = "design:content:read design:content:write design:meta:read"
+DEFAULT_SCOPES = (
+    "design:content:read design:content:write design:meta:read "
+    "brandtemplate:meta:read brandtemplate:content:read"
+)
 TOKEN_REFRESH_SKEW_SECONDS = 60
 
 
@@ -699,6 +705,134 @@ def tool_create_design(args: Dict[str, Any]) -> str:
     return json_pretty(result)
 
 
+def tool_list_brand_templates(args: Dict[str, Any]) -> str:
+    access_token = _ensure_access_token()
+    params: Dict[str, Any] = {}
+    if args.get("page_size") is not None:
+        params["page_size"] = int(args["page_size"])
+    if args.get("continuation"):
+        params["continuation"] = str(args["continuation"])
+
+    status, payload = request_json(
+        "GET",
+        build_url(BRAND_TEMPLATES_URL, params),
+        headers=_canva_headers(access_token),
+    )
+    if status not in (200, 201):
+        raise RuntimeError(f"Canva list_brand_templates failed ({status}): {json_pretty(payload)}")
+
+    _audit_tool("list_brand_templates", True, {"status": status})
+    return json_pretty(payload)
+
+
+def tool_get_brand_template_dataset(args: Dict[str, Any]) -> str:
+    template_id = str(args.get("brand_template_id", "")).strip()
+    if not template_id:
+        raise ValueError("get_brand_template_dataset requires 'brand_template_id'.")
+
+    access_token = _ensure_access_token()
+    status, payload = request_json(
+        "GET",
+        f"{BRAND_TEMPLATES_URL}/{quote(template_id, safe='')}/dataset",
+        headers=_canva_headers(access_token),
+    )
+    if status not in (200, 201):
+        raise RuntimeError(f"Canva get_brand_template_dataset failed ({status}): {json_pretty(payload)}")
+
+    _audit_tool("get_brand_template_dataset", True, {"template_id": template_id})
+    return json_pretty(payload)
+
+
+def tool_create_autofill(args: Dict[str, Any]) -> str:
+    brand_template_id = str(args.get("brand_template_id", "")).strip()
+    if not brand_template_id:
+        raise ValueError("create_autofill requires 'brand_template_id'.")
+
+    data = args.get("data")
+    if not isinstance(data, dict) or not data:
+        raise ValueError(
+            "create_autofill requires 'data': an object mapping field names to "
+            "value objects, e.g. {\"field_name\": {\"type\": \"text\", \"text\": \"...\"}}"
+        )
+
+    title = str(args.get("title", "")).strip() or None
+    body: Dict[str, Any] = {"brand_template_id": brand_template_id, "data": data}
+    if title:
+        body["title"] = title
+
+    access_token = _ensure_access_token()
+    headers = _canva_headers(access_token)
+    headers["Content-Type"] = "application/json"
+    status, payload = request_json("POST", AUTOFILLS_URL, headers=headers, json_data=body)
+    if status not in (200, 201):
+        raise RuntimeError(f"Canva create_autofill failed ({status}): {json_pretty(payload)}")
+
+    _audit_tool("create_autofill", True, {"brand_template_id": brand_template_id, "title": title})
+    return json_pretty(payload)
+
+
+def tool_get_autofill_job(args: Dict[str, Any]) -> str:
+    job_id = str(args.get("job_id", "")).strip()
+    if not job_id:
+        raise ValueError("get_autofill_job requires 'job_id'.")
+
+    access_token = _ensure_access_token()
+    status, payload = request_json(
+        "GET",
+        f"{AUTOFILLS_URL}/{quote(job_id, safe='')}",
+        headers=_canva_headers(access_token),
+    )
+    if status not in (200, 201):
+        raise RuntimeError(f"Canva get_autofill_job failed ({status}): {json_pretty(payload)}")
+
+    _audit_tool("get_autofill_job", True, {"job_id": job_id})
+    return json_pretty(payload)
+
+
+def tool_export_design(args: Dict[str, Any]) -> str:
+    design_id = str(args.get("design_id", "")).strip()
+    if not design_id:
+        raise ValueError("export_design requires 'design_id'.")
+
+    export_format = str(args.get("format", "png")).strip().lower()
+    valid_formats = {"pdf", "png", "jpg", "gif", "pptx", "mp4"}
+    if export_format not in valid_formats:
+        raise ValueError(f"export format must be one of: {sorted(valid_formats)}")
+
+    body: Dict[str, Any] = {
+        "design_id": design_id,
+        "format": {"type": export_format},
+    }
+
+    access_token = _ensure_access_token()
+    headers = _canva_headers(access_token)
+    headers["Content-Type"] = "application/json"
+    status, payload = request_json("POST", EXPORTS_URL, headers=headers, json_data=body)
+    if status not in (200, 201):
+        raise RuntimeError(f"Canva export_design failed ({status}): {json_pretty(payload)}")
+
+    _audit_tool("export_design", True, {"design_id": design_id, "format": export_format})
+    return json_pretty(payload)
+
+
+def tool_get_export_job(args: Dict[str, Any]) -> str:
+    export_id = str(args.get("export_id", "")).strip()
+    if not export_id:
+        raise ValueError("get_export_job requires 'export_id'.")
+
+    access_token = _ensure_access_token()
+    status, payload = request_json(
+        "GET",
+        f"{EXPORTS_URL}/{quote(export_id, safe='')}",
+        headers=_canva_headers(access_token),
+    )
+    if status not in (200, 201):
+        raise RuntimeError(f"Canva get_export_job failed ({status}): {json_pretty(payload)}")
+
+    _audit_tool("get_export_job", True, {"export_id": export_id})
+    return json_pretty(payload)
+
+
 _TOOLS = [
     {
         "name": "auth_status",
@@ -786,6 +920,138 @@ _TOOLS = [
             },
         },
     },
+    {
+        "name": "list_brand_templates",
+        "description": (
+            "List Canva brand templates available to this account. "
+            "Returns template IDs, names, and view URLs. "
+            "Use the returned IDs with get_brand_template_dataset to discover field names "
+            "before calling create_autofill."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "page_size": {
+                    "type": "integer",
+                    "description": "Optional page size.",
+                },
+                "continuation": {
+                    "type": "string",
+                    "description": "Optional pagination cursor from a previous response.",
+                },
+            },
+        },
+    },
+    {
+        "name": "get_brand_template_dataset",
+        "description": (
+            "Return the dataset definition for a Canva brand template: "
+            "all field names and their types (text, image, etc.). "
+            "Call this before create_autofill to know which field names to populate."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "brand_template_id": {
+                    "type": "string",
+                    "description": "Canva brand template ID from list_brand_templates.",
+                },
+            },
+            "required": ["brand_template_id"],
+        },
+    },
+    {
+        "name": "create_autofill",
+        "description": (
+            "Create a new Canva design from a brand template by filling in named data fields. "
+            "Returns a job ID — poll get_autofill_job until status is 'success', "
+            "then retrieve the new design ID and edit URL from the result. "
+            "Field values must match the schema from get_brand_template_dataset. "
+            "Text fields: {\"type\": \"text\", \"text\": \"...\"}. "
+            "Image fields: {\"type\": \"image\", \"asset_id\": \"...\"}."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "brand_template_id": {
+                    "type": "string",
+                    "description": "Canva brand template ID.",
+                },
+                "title": {
+                    "type": "string",
+                    "description": "Optional title for the generated design.",
+                },
+                "data": {
+                    "type": "object",
+                    "description": (
+                        "Map of field names to value objects. "
+                        "E.g. {\"slide_title\": {\"type\": \"text\", \"text\": \"My Title\"}}."
+                    ),
+                },
+            },
+            "required": ["brand_template_id", "data"],
+        },
+    },
+    {
+        "name": "get_autofill_job",
+        "description": (
+            "Poll the status of a Canva autofill job started by create_autofill. "
+            "Status values: 'in_progress', 'success', 'failed'. "
+            "On success, the result contains the new design ID and edit URL."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "job_id": {
+                    "type": "string",
+                    "description": "Autofill job ID from the create_autofill response.",
+                },
+            },
+            "required": ["job_id"],
+        },
+    },
+    {
+        "name": "export_design",
+        "description": (
+            "Start an async export of a Canva design. "
+            "Returns an export job ID — poll get_export_job until status is 'success' "
+            "to get the download URL. "
+            "Supported formats: pdf, png, jpg, gif, pptx, mp4."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "design_id": {
+                    "type": "string",
+                    "description": "Canva design ID to export.",
+                },
+                "format": {
+                    "type": "string",
+                    "enum": ["pdf", "png", "jpg", "gif", "pptx", "mp4"],
+                    "description": "Export format. Default: png.",
+                },
+            },
+            "required": ["design_id"],
+        },
+    },
+    {
+        "name": "get_export_job",
+        "description": (
+            "Poll the status of a Canva export job started by export_design. "
+            "Status values: 'in_progress', 'success', 'failed'. "
+            "On success, the result contains the download URL(s)."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "export_id": {
+                    "type": "string",
+                    "description": "Export job ID from the export_design response.",
+                },
+            },
+            "required": ["export_id"],
+        },
+    },
 ]
 
 _TOOL_FN_MAP = {
@@ -794,6 +1060,12 @@ _TOOL_FN_MAP = {
     "list_designs": tool_list_designs,
     "get_design": tool_get_design,
     "create_design": tool_create_design,
+    "list_brand_templates": tool_list_brand_templates,
+    "get_brand_template_dataset": tool_get_brand_template_dataset,
+    "create_autofill": tool_create_autofill,
+    "get_autofill_job": tool_get_autofill_job,
+    "export_design": tool_export_design,
+    "get_export_job": tool_get_export_job,
 }
 
 

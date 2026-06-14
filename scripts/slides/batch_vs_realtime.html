@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    background: #F7F8FC;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* ── Title bar ── */
+  .title-bar {
+    background: #1C2B6E;
+    color: #fff;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+
+  /* ── Body ── */
+  .body {
+    display: flex;
+    height: 648px;
+    padding: 28px 48px 28px;
+    gap: 0;
+  }
+
+  /* ── Columns ── */
+  .col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .col-left  { padding-right: 32px; }
+  .col-right { padding-left:  32px; }
+
+  /* ── Column header ── */
+  .col-header {
+    border-radius: 8px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+
+  .col-header.batch   { background: #D9600A; }
+  .col-header.realtime { background: #1E7A42; }
+
+  /* ── Steps ── */
+  .step {
+    border-radius: 8px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+  }
+
+  .step.batch {
+    background: #FEF3EA;
+    border: 1.5px solid #D9600A;
+    color: #7A3205;
+  }
+
+  .step.realtime {
+    background: #EAF6EE;
+    border: 1.5px solid #1E7A42;
+    color: #0E4523;
+  }
+
+  /* ── Step number badge ── */
+  .step-num {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+
+  .step.batch   .step-num { background: #D9600A; color: #fff; }
+  .step.realtime .step-num { background: #1E7A42; color: #fff; }
+
+  /* ── Arrow ── */
+  .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+    font-size: 16px;
+    color: #B0B8CC;
+  }
+
+  /* ── Divider ── */
+  .divider {
+    width: 1px;
+    background: #D8DCE8;
+    margin: 0 0;
+    position: relative;
+  }
+
+  .divider::after {
+    content: 'vs';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #6B7394;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 4px 7px;
+    border-radius: 20px;
+  }
+
+  /* ── Footer chips ── */
+  .footer-chip {
+    margin-top: auto;
+    border-radius: 8px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .footer-chip.batch {
+    background: #FEF3EA;
+    border: 1.5px solid #D9600A;
+    color: #D9600A;
+  }
+
+  .footer-chip.realtime {
+    background: #EAF6EE;
+    border: 1.5px solid #1E7A42;
+    color: #1E7A42;
+  }
+</style>
+</head>
+<body>
+
+<div class="title-bar">
+  Real-Time Payments Are Not Faster Batch Systems
+</div>
+
+<div class="body">
+
+  <!-- LEFT: Batch -->
+  <div class="col col-left">
+    <div class="col-header batch">Batch</div>
+
+    <div class="step batch"><span class="step-num">1</span> Files Sent to Bank</div>
+    <div class="arrow">↓</div>
+    <div class="step batch"><span class="step-num">2</span> Bank Queues File</div>
+    <div class="arrow">↓</div>
+    <div class="step batch"><span class="step-num">3</span> ACH File Build</div>
+    <div class="arrow">↓</div>
+    <div class="step batch"><span class="step-num">4</span> Funds Released</div>
+    <div class="arrow">↓</div>
+    <div class="step batch"><span class="step-num">5</span> Settlement</div>
+
+    <div class="footer-chip batch" style="margin-top: 20px;">⏱ Hours to Days</div>
+  </div>
+
+  <!-- DIVIDER -->
+  <div class="divider"></div>
+
+  <!-- RIGHT: Real-Time -->
+  <div class="col col-right">
+    <div class="col-header realtime">Real-Time</div>
+
+    <div class="step realtime"><span class="step-num">1</span> Payment Initiated</div>
+    <div class="arrow">↓</div>
+    <div class="step realtime"><span class="step-num">2</span> Authorized</div>
+    <div class="arrow">↓</div>
+    <div class="step realtime"><span class="step-num">3</span> Screened</div>
+    <div class="arrow">↓</div>
+    <div class="step realtime"><span class="step-num">4</span> Credited</div>
+
+    <div class="footer-chip realtime" style="margin-top: 20px;">⚡ Seconds</div>
+  </div>
+
+</div>
+
+</body>
+</html>
